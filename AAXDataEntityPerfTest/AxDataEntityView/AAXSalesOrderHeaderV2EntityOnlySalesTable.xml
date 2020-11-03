@@ -1,0 +1,1412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxDataEntityView xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Name>AAXSalesOrderHeaderV2EntityOnlySalesTable</Name>
+	<SourceCode>
+		<Declaration><![CDATA[
+public class AAXSalesOrderHeaderV2EntityOnlySalesTable extends common
+{
+}
+]]></Declaration>
+		<Methods>
+			<Method>
+				<Name>salesOrderProcessingStatusCalc</Name>
+				<Source><![CDATA[
+    /// <summary>
+    /// Calculate the sales order processing status depending on the order status and document status.
+    /// </summary>
+    /// <returns>Sales order Integration Status</returns>
+    public static str salesOrderProcessingStatusCalc()
+    {
+        str orderStatus     = SysComputedColumn::comparisonField(tableStr(AAXSalesOrderHeaderV2EntityOnlySalesTable), identifierStr(SalesTable), fieldStr(SalesTable, SalesStatus));
+        str documentStatus  = SysComputedColumn::comparisonField(tableStr(AAXSalesOrderHeaderV2EntityOnlySalesTable), identifierStr(SalesTable), fieldStr(SalesTable, DocumentStatus));
+
+        return SysComputedColumn::if(SysComputedColumn::EqualExpression(documentStatus, SysComputedColumn::comparisonLiteral(DocumentStatus::Invoice)),
+
+            (SysComputedColumn::if(SysComputedColumn::EqualExpression(orderStatus, SysComputedColumn::comparisonLiteral(SalesStatus::Invoiced)),
+            SysComputedColumn::returnLiteral(SalesOrderProcessingStatus::Invoiced),
+            SysComputedColumn::returnLiteral(SalesOrderProcessingStatus::PartiallyInvoiced))),
+
+            SysComputedColumn::if(SysComputedColumn::EqualExpression(documentStatus, SysComputedColumn::comparisonLiteral(DocumentStatus::PackingSlip)),
+
+            (SysComputedColumn::if(SysComputedColumn::EqualExpression(orderStatus, SysComputedColumn::comparisonLiteral(SalesStatus::Delivered)),
+            SysComputedColumn::returnLiteral(SalesOrderProcessingStatus::Delivered),
+            SysComputedColumn::returnLiteral(SalesOrderProcessingStatus::PartiallyDelivered))),
+            
+            SysComputedColumn::if(SysComputedColumn::EqualExpression(documentStatus, SysComputedColumn::comparisonLiteral(DocumentStatus::PickingList)),
+
+            SysComputedColumn::returnLiteral(SalesOrderProcessingStatus::Picked),
+            
+            SysComputedColumn::if(SysComputedColumn::EqualExpression(documentStatus, SysComputedColumn::comparisonLiteral(DocumentStatus::Confirmation)),
+
+            SysComputedColumn::returnLiteral(SalesOrderProcessingStatus::Confirmed),
+            SysComputedColumn::if(SysComputedColumn::EqualExpression(orderStatus, SysComputedColumn::comparisonLiteral(SalesStatus::Canceled)),
+            SysComputedColumn::returnLiteral(SalesOrderProcessingStatus::Canceled),
+            SysComputedColumn::returnLiteral(SalesOrderProcessingStatus::Active))))));
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>initValue</Name>
+				<Source><![CDATA[
+    public void initValue()
+    {
+        if (!this.skipNumberSequenceCheck())
+        {
+            NumberSeqRecordFieldHandler::enableNumberSequenceControlForField(
+                this, fieldNum(AAXSalesOrderHeaderV2EntityOnlySalesTable, SalesOrderNumber), SalesParameters::numRefSalesId());
+        }
+
+        super();
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>getExtension</Name>
+				<Source><![CDATA[
+    /// <summary>
+    /// Returns the table extension used for defaulting.
+    /// </summary>
+    /// <returns>An instance of the <c>SysTableExtension</c> class.</returns>
+    public TableExtension getExtension()
+    {
+        return SysTableExtension::construct();
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>defaultDlvMode</Name>
+				<Source><![CDATA[
+    private void defaultDlvMode()
+    {
+        
+        if (!this.DeliveryModeCode)
+        {
+            CustTable requestingCustomer = CustTable::find(this.OrderingCustomerAccountNumber);
+            this.DeliveryModeCode = requestingCustomer.DlvMode;
+        }
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>getDefaultingDependencies</Name>
+				<Source><![CDATA[
+    /// <summary>
+    /// Retrieves the defaulting dependencies.
+    /// </summary>
+    /// <returns>A container with the defaulting dependencies.</returns>
+    public container getDefaultingDependencies()
+    {
+        return [
+            [fieldNum(AAXSalesOrderHeaderV2EntityOnlySalesTable, DeliveryModeCode)]
+        ];
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>defaultField</Name>
+				<Source><![CDATA[
+    /// <summary>
+    /// Populates default values in a field.
+    /// </summary>
+    /// <param name = "_fieldId">The Id of the field that gets defaulted.</param>
+    public void defaultField(FieldId _fieldId)
+    {
+        super (_fieldId);
+
+        switch (_fieldId)
+        {
+            case fieldNum(AAXSalesOrderHeaderV2EntityOnlySalesTable, DeliveryModeCode):
+                this.defaultDlvMode();
+                break;
+
+        }
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>defaultDeliveryAddressDescription</Name>
+				<Source><![CDATA[
+    private void defaultDeliveryAddressDescription()
+    {
+        CustTable requestingCustomer = CustTable::find(this.OrderingCustomerAccountNumber);
+
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>initializeEntityDataSource</Name>
+				<Source><![CDATA[
+    public void initializeEntityDataSource(DataEntityRuntimeContext _entityCtx, DataEntityDataSourceRuntimeContext _dataSourceCtx)
+    {
+        super(_entityCtx, _dataSourceCtx);
+
+        switch (_dataSourceCtx.name())
+        {
+            case dataEntityDataSourceStr(AAXSalesOrderHeaderV2EntityOnlySalesTable, SalesTable):
+                // clear out 'isFieldSet' so the defaulting logic does not consider fields that were set by initValue as specified by the user
+                _dataSourceCtx.setAllFieldStatesToNotSet();
+                break;
+        }
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>findEntityDataSource</Name>
+				<Source><![CDATA[
+    public Common findEntityDataSource(DataEntityRuntimeContext _entityCtx, DataEntityDataSourceRuntimeContext _dataSourceCtx)
+    {
+        Common ret;
+
+        switch (_dataSourceCtx.name())
+        {
+            default:
+                ret = super(_entityCtx, _dataSourceCtx);
+        }
+
+        return ret;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>insertEntityDataSource</Name>
+				<Source><![CDATA[
+    public boolean insertEntityDataSource(DataEntityRuntimeContext _entityCtx, DataEntityDataSourceRuntimeContext _dataSourceCtx)
+    {
+        switch (_dataSourceCtx.name())
+        {
+            case dataEntityDataSourceStr(AAXSalesOrderHeaderV2EntityOnlySalesTable, SalesTable):
+                this.validateWriteSalesTableDataSource(_dataSourceCtx);
+                break;
+        }
+
+        boolean ret = super(_entityCtx, _dataSourceCtx);
+
+        return ret;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>updateEntityDataSource</Name>
+				<Source><![CDATA[
+    public boolean updateEntityDataSource(DataEntityRuntimeContext _entityCtx, DataEntityDataSourceRuntimeContext _dataSourceCtx)
+    {
+        switch (_dataSourceCtx.name())
+        {
+            case dataEntityDataSourceStr(AAXSalesOrderHeaderV2EntityOnlySalesTable, SalesTable):
+                if (this.CurrencyCode != this.orig().CurrencyCode)
+                {
+                    SalesTable salesTable = _dataSourceCtx.getBuffer();
+                    salesTable.convertCurrencyCode(this.CurrencyCode, TradeCurencyConversion::TradeAgreements);
+                }
+                this.validateWriteSalesTableDataSource(_dataSourceCtx);
+                break;
+
+        }
+
+        return super(_entityCtx, _dataSourceCtx);
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>validateWriteSalesTableDataSource</Name>
+				<Source><![CDATA[
+    private void validateWriteSalesTableDataSource(DataEntityDataSourceRuntimeContext _dataSourceCtx)
+    {
+        SalesTable salesTable = _dataSourceCtx.getBuffer() as SalesTable;
+        SalesTableType salesTableType = salesTable.type();
+
+        boolean isValid = true;
+
+        if (this.isFieldModified(fieldNum(AAXSalesOrderHeaderV2EntityOnlySalesTable, OrderingCustomerAccountNumber)) && !salesTableType.editCustAccount())
+        {
+            isValid = this.allowEditCheckFailed(fieldPName(AAXSalesOrderHeaderV2EntityOnlySalesTable, OrderingCustomerAccountNumber));
+        }
+
+        if (this.isFieldModified(fieldNum(AAXSalesOrderHeaderV2EntityOnlySalesTable, InvoiceCustomerAccountNumber)) && !salesTableType.editInvoiceAccount())
+        {
+            isValid = this.allowEditCheckFailed(fieldPName(AAXSalesOrderHeaderV2EntityOnlySalesTable, InvoiceCustomerAccountNumber));
+        }
+
+        if (this.isFieldModified(fieldNum(AAXSalesOrderHeaderV2EntityOnlySalesTable, TaxExemptNumber)) && !salesTableType.editVATNum())
+        {
+            isValid = this.allowEditCheckFailed(fieldPName(AAXSalesOrderHeaderV2EntityOnlySalesTable, TaxExemptNumber));
+        }
+
+        if (this.isFieldModified(fieldNum(AAXSalesOrderHeaderV2EntityOnlySalesTable, ArePricesIncludingSalesTax)) && !salesTableType.editInclTax())
+        {
+            isValid = this.allowEditCheckFailed(fieldPName(AAXSalesOrderHeaderV2EntityOnlySalesTable, ArePricesIncludingSalesTax));
+        }
+
+        if (this.isFieldModified(fieldNum(AAXSalesOrderHeaderV2EntityOnlySalesTable, CurrencyCode)) && !salesTableType.editCurrencyCode())
+        {
+            isValid = this.allowEditCheckFailed(fieldPName(AAXSalesOrderHeaderV2EntityOnlySalesTable, CurrencyCode));
+        }
+
+
+
+        if (salesTable.isMarkedForBankLC())
+        {
+            List fields = new List(Types::Integer);
+            fields.addEnd(fieldNum(AAXSalesOrderHeaderV2EntityOnlySalesTable, PaymentTermsName));
+            fields.addEnd(fieldNum(AAXSalesOrderHeaderV2EntityOnlySalesTable, FixedDueDate));
+            fields.addEnd(fieldNum(AAXSalesOrderHeaderV2EntityOnlySalesTable, CustomerPaymentMethodName));
+            fields.addEnd(fieldNum(AAXSalesOrderHeaderV2EntityOnlySalesTable, CustomerPaymentMethodSpecificationName));
+            fields.addEnd(fieldNum(AAXSalesOrderHeaderV2EntityOnlySalesTable, PaymentScheduleName));
+            fields.addEnd(fieldNum(AAXSalesOrderHeaderV2EntityOnlySalesTable, CashDiscountCode));
+            fields.addEnd(fieldNum(AAXSalesOrderHeaderV2EntityOnlySalesTable, CustomerTransactionSettlementType));
+            isValid = isValid & this.checkFieldsAreNotModified(fields);
+        }
+
+        if (this.isFieldModified(fieldNum(AAXSalesOrderHeaderV2EntityOnlySalesTable, WillAutomaticInventoryReservationConsiderBatchAttributes)) && !salesTable.canEditPdsBatchAttribAutoRes())
+        {
+            isValid = this.allowEditCheckFailed(fieldPName(AAXSalesOrderHeaderV2EntityOnlySalesTable, WillAutomaticInventoryReservationConsiderBatchAttributes));
+        }
+
+        if (!isValid)
+        {
+            _dataSourceCtx.throwValidateWriteFailed();
+        }
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>validateWriteDataSourceSalesTable_W</Name>
+				<Source><![CDATA[
+    private void validateWriteDataSourceSalesTable_W(DataEntityDataSourceRuntimeContext _dataSourceCtx)
+    {
+        CustParameters custParameters = CustParameters::find();
+        SalesTable_W salesTable_w = _dataSourceCtx.getBuffer() as SalesTable_W;
+
+        boolean isValid = true;
+
+        if (!isValid)
+        {
+            _dataSourceCtx.throwValidateWriteFailed();
+        }
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>mapEntityToDataSource</Name>
+				<Source><![CDATA[
+    public void mapEntityToDataSource(DataEntityRuntimeContext _entityCtx, DataEntityDataSourceRuntimeContext _dataSourceCtx)
+    {
+
+        super(_entityCtx, _dataSourceCtx);
+
+        switch (_dataSourceCtx.name())
+        {
+            case dataEntityDataSourceStr(AAXSalesOrderHeaderV2EntityOnlySalesTable, SalesTable):
+
+                SalesTable salesTable = _dataSourceCtx.getBuffer();
+
+               
+
+                // When SkipCreateAutoCharges is specified, the SkipCreateMarkup field on salesline should be set to the value of the SkipCreateAutoCharges field on the entity
+                if (this.isFieldSet(fieldNum(AAXSalesOrderHeaderV2EntityOnlySalesTable, SkipCreateAutoCharges)))
+                {
+                    salesTable.SkipCreateMarkup = this.SkipCreateAutoCharges;
+                }
+                else
+                {
+                    // When SkipCreateAutoCharges is not specified,keep the original rule
+                    if (this.scopeIdentifier())
+                    {
+                        // Skip creation of markup when doing data migration
+                        salesTable.SkipCreateMarkup = NoYes::Yes;
+                    }
+                }
+                break;
+
+        }
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>mapDataSourceToEntity</Name>
+				<Source><![CDATA[
+    public void mapDataSourceToEntity(DataEntityRuntimeContext _entityCtx, DataEntityDataSourceRuntimeContext _dataSourceCtx)
+    {
+        super(_entityCtx, _dataSourceCtx);
+
+        switch (_dataSourceCtx.name())
+        {
+            case dataEntityDataSourceStr(AAXSalesOrderHeaderV2EntityOnlySalesTable, SalesTable):
+                SalesTable salesTable = _dataSourceCtx.getBuffer();
+
+                this.TradeEntitySpecificDeliveryAddress::mapSavedPostalAddressToEntity(_entityCtx,  salesTable.DeliveryPostalAddress);
+
+                TMSSalesTable tmsSalesTable = TMSSalesTable::find(this.SalesOrderNumber);
+                break;
+        }
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>validateWrite</Name>
+				<Source><![CDATA[
+    public boolean validateWrite()
+    {
+        if (this.RecId)
+        {
+            if (ReverseChargeParameters_W::find().Enabled)
+            {
+                return checkFailed("@SCM:SalesOrderHeaderEntityDoesNotSupportUpdatesWhenReverseChargesAreEnabled");
+            }
+
+            if (RetailParameters::isRetailEnabledAndInUse()
+                && RetailSalesTable::find(this.SalesOrderNumber).RetailChannel)
+            {
+                return checkFailed("@SCM:SalesOrderHeaderEntityDoesNotSupportUpdatesOfRetailOrders");
+            }
+
+            if (!SalesTable::find(this.SalesOrderNumber).checkUpdate(true, true, true))
+            {
+                return false;
+            }
+        }
+
+        return super();
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>validateDelete</Name>
+				<Source><![CDATA[
+    public boolean validateDelete()
+    {
+        if (!SalesTable::find(this.SalesOrderNumber).type().checkDelete(true, true))
+        {
+            return false;
+        }
+
+        return super();
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>deliveryAddressPartyRecId</Name>
+				<Source><![CDATA[
+    // This method implements the interface defined by <c>TradeEntitySpecificDeliveryAddress</c>
+    public RecId deliveryAddressPartyRecId()
+    {
+        return CustTable::find(this.OrderingCustomerAccountNumber).Party;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>isDeliveryAddressOrderSpecificComputedColumnDefinition</Name>
+				<Source><![CDATA[
+    private static str isDeliveryAddressOrderSpecificComputedColumnDefinition()
+    {
+        // The <c>IsDeliveryAddressOrderSpecific</c> field is only designed for import scenarios
+        // so we will always return 'No' for export scnearios to save performance.
+        return SysComputedColumn::returnLiteral(NoYes::No);
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>allowEditCheckFailed</Name>
+				<Source><![CDATA[
+    private boolean allowEditCheckFailed(FieldLabel _fieldLabel)
+    {
+        return checkFailed(strFmt("@ApplicationFoundation:DataEntitiesNoAllowEdit", _fieldLabel));
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>isFieldModified</Name>
+				<Source><![CDATA[
+    private boolean isFieldModified(FieldId _fieldId)
+    {
+        return DataEntityDataSourceRuntimeContextAppSuite_Extension::isFieldModified(this, _fieldId);
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>checkFieldsAreNotModified</Name>
+				<Source><![CDATA[
+    private boolean checkFieldsAreNotModified(List _fieldIds)
+    {
+        var enumerator = _fieldIds.getEnumerator();
+        boolean result = true;
+
+        while (enumerator.moveNext())
+        {
+            FieldId fieldId = enumerator.current();
+            if (this.isFieldModified(fieldId))
+            {
+                result = this.allowEditCheckFailed(fieldId2PName(tableNum(AAXSalesOrderHeaderV2EntityOnlySalesTable), fieldId));
+            }
+        }
+
+        return result;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>defaultCTQuery</Name>
+				<Source><![CDATA[
+    public static Query defaultCTQuery()
+    {
+        Query salesOrderHeaderQuery = new Query();
+
+        var salesTableDS = salesOrderHeaderQuery.addDataSource(tableNum(SalesTable));
+
+        return salesOrderHeaderQuery;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>skipCreateAutoChargesComputedColumnDefinition</Name>
+				<Source><![CDATA[
+    /// <summary>
+    /// The <c>SkipCreateAutoCharges</c> field is only designed for import scenarios
+    /// so we will always return 'Yes' for export scenarios to save performance.
+    /// </summary>
+    /// <returns>Yes</returns>
+    private static str skipCreateAutoChargesComputedColumnDefinition()
+    {
+        return SysComputedColumn::returnLiteral(NoYes::Yes);
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>insert</Name>
+				<Source><![CDATA[
+    public void insert()
+    {
+        SrsReportDataProviderPreProcess::disableLockEscalation(tableNum(SalesOrderHeaderV2Staging));
+
+        this.setReportingCurrencyFixedExchangeRate(this.FixedExchangeRate);
+
+        super();
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>update</Name>
+				<Source><![CDATA[
+    public void update()
+    {
+        this.setReportingCurrencyFixedExchangeRate(this.FixedExchangeRate);
+
+        super();
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>setReportingCurrencyFixedExchangeRate</Name>
+				<Source><![CDATA[
+    /// <summary>
+    /// Sets the <c>ReportingCurrencyFixedExchangeRate</c> to the specified value.
+    /// </summary>
+    /// <param name = "_exchRate">The reporting currency fixed exchange rate.</param>
+    private void setReportingCurrencyFixedExchangeRate(ExchRate _exchRate)
+    {
+        this.AAXCustVendReportingCurrencyFixedExchangeRate::setReportingCurrencyFixedExchangeRate(true);
+    }
+
+]]></Source>
+			</Method>
+		</Methods>
+	</SourceCode>
+	<ConfigurationKey>LogisticsBasic</ConfigurationKey>
+	<DeveloperDocumentation>@SCM:SalesOrderHeaderV2EntityDevDoc</DeveloperDocumentation>
+	<FormRef>SalesTable</FormRef>
+	<Label>Sales Order Headers - Test - SalesTable Only</Label>
+	<Tags>Sales order</Tags>
+	<DataManagementEnabled>Yes</DataManagementEnabled>
+	<DataManagementStagingTable>AAXSalesOrderHeaderV2EntityOnlySalesTableStaging</DataManagementStagingTable>
+	<EntityCategory>Document</EntityCategory>
+	<IsPublic>Yes</IsPublic>
+	<Modules>SalesAndMarketing</Modules>
+	<PrimaryCompanyContext>DataAreaId</PrimaryCompanyContext>
+	<PrimaryKey>EntityKey</PrimaryKey>
+	<PublicCollectionName>SalesOrderHeadersV2EntityOnlySalesTable</PublicCollectionName>
+	<PublicEntityName>SalesOrderHeaderV2EntityOnlySalesTable</PublicEntityName>
+	<SupportsSetBasedSqlOperations>Yes</SupportsSetBasedSqlOperations>
+	<DeleteActions />
+	<FieldGroups>
+		<AxTableFieldGroup>
+			<Name>AutoReport</Name>
+			<Fields>
+				<AxTableFieldGroupField>
+					<DataField>SalesOrderNumber</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>SalesOrderStatus</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>OrderingCustomerAccountNumber</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>InvoiceCustomerAccountNumber</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>LineDiscountCustomerGroupCode</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>CashDiscountCode</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>PaymentTermsBaseDate</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>CommissionCustomerGroupId</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>ContactPersonId</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>CurrencyCode</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>CustomersOrderReference</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>SalesOrderPromisingMethod</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>DeliveryAddressName</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>TotalDiscountPercentage</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>DeliveryModeCode</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>DeliveryReasonCode</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>DeliveryTermsCode</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>Email</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>TotalDiscountCustomerGroupCode</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>ExportReason</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>FixedDueDate</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>FixedExchangeRate</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>InvoicePaymentAttachmentType</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>ArePricesIncludingSalesTax</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>DefaultShippingWarehouseId</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>DefaultShippingSiteId</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>LanguageId</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>EUSalesListCode</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>ChargeCustomerGroupId</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>IsSalesProcessingStopped</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>MultilineDiscountCustomerGroupCode</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>NumberSequenceGroupId</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>IsOneTimeCustomer</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>PaymentTermsName</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>PaymentScheduleName</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>CustomerPaymentMethodName</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>CustomerPaymentMethodSpecificationName</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>WillAutomaticInventoryReservationConsiderBatchAttributes</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>SalesRebateCustomerGroupId</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>TMACustomerGroupId</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>IntrastatPortId</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>CustomerPostingProfileId</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>PriceCustomerGroupCode</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>CustomerRequisitionNumber</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>QuotationNumber</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>ConfirmedReceiptDate</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>RequestedReceiptDate</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>InventoryReservationMethod</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>CommissionSalesRepresentativeGroupId</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>SalesOrderName</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>SalesOrderOriginCode</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>SalesOrderPoolId</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>SalesUnitId</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>CustomerTransactionSettlementType</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>ConfirmedShippingDate</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>RequestedShippingDate</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>CampaignId</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>IntrastatStatisticsProcedureCode</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>SalesTaxGroupCode</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>IntrastatTransactionCode</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>IntrastatTransportModeCode</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>URL</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>TaxExemptNumber</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>ShippingCarrierServiceGroupId</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>IsDeliveryAddressOrderSpecific</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>IsConsolidatedInvoiceTarget</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>EInvoiceDimensionAccountCode</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>IsEInvoiceDimensionAccountCodeSpecifiedPerLine</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>CreditNoteReasonCode</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>OrderCreationDateTime</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>OrderTotalChargesAmount</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>TotalDiscountAmount</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>ProjectId</DataField>
+				</AxTableFieldGroupField>
+			</Fields>
+		</AxTableFieldGroup>
+		<AxTableFieldGroup>
+			<Name>AutoLookup</Name>
+			<Fields />
+		</AxTableFieldGroup>
+		<AxTableFieldGroup>
+			<Name>AutoIdentification</Name>
+			<AutoPopulate>Yes</AutoPopulate>
+			<Fields />
+		</AxTableFieldGroup>
+		<AxTableFieldGroup>
+			<Name>AutoSummary</Name>
+			<Fields />
+		</AxTableFieldGroup>
+		<AxTableFieldGroup>
+			<Name>AutoBrowse</Name>
+			<Fields />
+		</AxTableFieldGroup>
+	</FieldGroups>
+	<Fields>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SalesOrderNumber</Name>
+			<Mandatory>No</Mandatory>
+			<DataField>SalesId</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SalesOrderStatus</Name>
+			<DataField>SalesStatus</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>OrderingCustomerAccountNumber</Name>
+			<Mandatory>No</Mandatory>
+			<DataField>CustAccount</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InvoiceCustomerAccountNumber</Name>
+			<Mandatory>No</Mandatory>
+			<DataField>InvoiceAccount</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>LineDiscountCustomerGroupCode</Name>
+			<DataField>LineDisc</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CashDiscountCode</Name>
+			<DataField>CashDisc</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PaymentTermsBaseDate</Name>
+			<DataField>CashDiscBaseDate</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CommissionCustomerGroupId</Name>
+			<DataField>CommissionGroup</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ContactPersonId</Name>
+			<DataField>ContactPersonId</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CurrencyCode</Name>
+			<Mandatory>No</Mandatory>
+			<DataField>CurrencyCode</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CustomersOrderReference</Name>
+			<DataField>CustomerRef</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DefaultLedgerDimension</Name>
+			<AccessModifier>Private</AccessModifier>
+			<DataField>DefaultDimension</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SalesOrderPromisingMethod</Name>
+			<DataField>DeliveryDateControlType</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DeliveryAddressName</Name>
+			<Label>@SCM:DeliveryAddressName</Label>
+			<DataField>DeliveryName</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DirectDebitMandate</Name>
+			<AccessModifier>Private</AccessModifier>
+			<DataField>DirectDebitMandate</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>TotalDiscountPercentage</Name>
+			<DataField>DiscPercent</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DeliveryModeCode</Name>
+			<DataField>DlvMode</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DeliveryReasonCode</Name>
+			<DataField>DlvReason</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DeliveryTermsCode</Name>
+			<DataField>DlvTerm</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>Email</Name>
+			<DataField>Email</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>TotalDiscountCustomerGroupCode</Name>
+			<DataField>EndDisc</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ExportReason</Name>
+			<DataField>ExportReason</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>FixedDueDate</Name>
+			<DataField>FixedDueDate</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>FixedExchangeRate</Name>
+			<DataField>FixedExchRate</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InvoicePaymentAttachmentType</Name>
+			<DataField>GiroType</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ArePricesIncludingSalesTax</Name>
+			<DataField>InclTax</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DefaultShippingWarehouseId</Name>
+			<DataField>InventLocationId</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DefaultShippingSiteId</Name>
+			<DataField>InventSiteId</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>LanguageId</Name>
+			<Mandatory>No</Mandatory>
+			<DataField>LanguageId</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>EUSalesListCode</Name>
+			<DataField>Listcode</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ChargeCustomerGroupId</Name>
+			<DataField>MarkupGroup</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SalesAgreementNumber</Name>
+			<AccessModifier>Private</AccessModifier>
+			<DataField>MatchingAgreement</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>IsSalesProcessingStopped</Name>
+			<DataField>MCROrderStopped</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>MultilineDiscountCustomerGroupCode</Name>
+			<DataField>MultiLineDisc</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>NumberSequenceGroupId</Name>
+			<DataField>NumberSequenceGroup</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>IsOneTimeCustomer</Name>
+			<DataField>OneTimeCustomer</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PaymentTermsName</Name>
+			<DataField>Payment</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PaymentScheduleName</Name>
+			<DataField>PaymentSched</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CustomerPaymentMethodName</Name>
+			<DataField>PaymMode</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CustomerPaymentMethodSpecificationName</Name>
+			<DataField>PaymSpec</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>WillAutomaticInventoryReservationConsiderBatchAttributes</Name>
+			<DataField>PdsBatchAttribAutoRes</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SalesRebateCustomerGroupId</Name>
+			<DataField>PdsCustRebateGroupId</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>TMACustomerGroupId</Name>
+			<DataField>PdsRebateProgramTMAGroup</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>IntrastatPortId</Name>
+			<DataField>Port</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CustomerPostingProfileId</Name>
+			<DataField>PostingProfile</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PriceCustomerGroupCode</Name>
+			<DataField>PriceGroupId</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CustomerRequisitionNumber</Name>
+			<DataField>PurchOrderFormNum</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>QuotationNumber</Name>
+			<DataField>QuotationId</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ConfirmedReceiptDate</Name>
+			<DataField>ReceiptDateConfirmed</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>RequestedReceiptDate</Name>
+			<DataField>ReceiptDateRequested</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InventoryReservationMethod</Name>
+			<DataField>Reservation</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CommissionSalesRepresentativeGroupId</Name>
+			<DataField>SalesGroup</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SalesOrderName</Name>
+			<DataField>SalesName</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SalesOrderOriginCode</Name>
+			<DataField>SalesOriginId</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SalesOrderPoolId</Name>
+			<DataField>SalesPoolId</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SalesUnitId</Name>
+			<DataField>SalesUnitId</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CustomerTransactionSettlementType</Name>
+			<DataField>SettleVoucher</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ConfirmedShippingDate</Name>
+			<DataField>ShippingDateConfirmed</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>RequestedShippingDate</Name>
+			<Mandatory>No</Mandatory>
+			<DataField>ShippingDateRequested</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SalesTaker</Name>
+			<AccessModifier>Private</AccessModifier>
+			<DataField>WorkerSalesTaker</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CampaignId</Name>
+			<DataField>smmCampaignId</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>IntrastatStatisticsProcedureCode</Name>
+			<DataField>StatProcId</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SalesTaxGroupCode</Name>
+			<DataField>TaxGroup</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>IntrastatTransactionCode</Name>
+			<DataField>TransactionCode</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>IntrastatTransportModeCode</Name>
+			<DataField>Transport</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>URL</Name>
+			<DataField>URL</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>TaxExemptNumber</Name>
+			<DataField>VATNum</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SalesResponsible</Name>
+			<AccessModifier>Private</AccessModifier>
+			<DataField>WorkerSalesResponsible</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewUnmappedFieldEnum">
+			<Name>IsDeliveryAddressOrderSpecific</Name>
+			<AllowEdit>Yes</AllowEdit>
+			<AllowEditOnCreate>Yes</AllowEditOnCreate>
+			<Label>@SCM:IsOneTimeDeliveryAddress</Label>
+			<Mandatory>No</Mandatory>
+			<ComputedFieldMethod>isDeliveryAddressOrderSpecificComputedColumnDefinition</ComputedFieldMethod>
+			<ExtendedDataType>NoYesId</ExtendedDataType>
+			<EnumType>NoYes</EnumType>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>IsConsolidatedInvoiceTarget</Name>
+			<DataField>ConsTarget_JP</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>EInvoiceDimensionAccountCode</Name>
+			<DataField>EInvoiceAccountCode</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>IsEInvoiceDimensionAccountCodeSpecifiedPerLine</Name>
+			<DataField>EInvoiceLineSpec</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewUnmappedFieldEnum">
+			<Name>SalesOrderProcessingStatus</Name>
+			<AllowEdit>No</AllowEdit>
+			<AllowEditOnCreate>No</AllowEditOnCreate>
+			<ComputedFieldMethod>salesOrderProcessingStatusCalc</ComputedFieldMethod>
+			<EnumType>SalesOrderProcessingStatus</EnumType>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>OrderCreationDateTime</Name>
+			<AllowEdit>No</AllowEdit>
+			<AllowEditOnCreate>No</AllowEditOnCreate>
+			<DataField>CreatedDateTime</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ProjectId</Name>
+			<DataField>ProjId</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewUnmappedFieldEnum">
+			<Name>SkipCreateAutoCharges</Name>
+			<AllowEdit>Yes</AllowEdit>
+			<AllowEditOnCreate>Yes</AllowEditOnCreate>
+			<Label>@SCM:SkipAutoChargeCreation</Label>
+			<Mandatory>No</Mandatory>
+			<ComputedFieldMethod>skipCreateAutoChargesComputedColumnDefinition</ComputedFieldMethod>
+			<ExtendedDataType>NoYesId</ExtendedDataType>
+			<EnumType>NoYes</EnumType>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ReportingCurrencyFixedExchangeRate</Name>
+			<Mandatory>No</Mandatory>
+			<DataField>ReportingCurrencyFixedExchRate</DataField>
+			<DataSource>SalesTable</DataSource>
+		</AxDataEntityViewField>
+	</Fields>
+	<Keys>
+		<AxDataEntityViewKey>
+			<Name>EntityKey</Name>
+			<Fields>
+				<AxDataEntityViewKeyField>
+					<DataField>SalesOrderNumber</DataField>
+				</AxDataEntityViewKeyField>
+			</Fields>
+		</AxDataEntityViewKey>
+	</Keys>
+	<Mappings>
+		<AxTableMapping>
+			<MappingTable>AAXCustVendReportingCurrencyFixedExchangeRate</MappingTable>
+			<Connections>
+				<AxTableMappingConnection>
+					<MapField>ExchangeRate</MapField>
+				</AxTableMappingConnection>
+				<AxTableMappingConnection>
+					<MapField>ReportingCurrencyExchangeRate</MapField>
+				</AxTableMappingConnection>
+			</Connections>
+		</AxTableMapping>
+	</Mappings>
+	<Ranges />
+	<Relations>
+		<AxDataEntityViewRelation xmlns=""
+			i:type="AxDataEntityViewRelationForeignKey">
+			<Name>DefaultDimensionDimensionSet</Name>
+			<Cardinality>ZeroMore</Cardinality>
+			<RelatedDataEntity>DimensionSetEntity</RelatedDataEntity>
+			<RelatedDataEntityCardinality>ZeroOne</RelatedDataEntityCardinality>
+			<RelationshipType>Association</RelationshipType>
+			<Validate>No</Validate>
+			<Constraints>
+				<AxDataEntityViewRelationConstraint xmlns=""
+					i:type="AxDataEntityViewRelationConstraintField">
+					<Name>DefaultDimension</Name>
+					<Field>DefaultLedgerDimension</Field>
+					<RelatedField>RecId</RelatedField>
+				</AxDataEntityViewRelationConstraint>
+			</Constraints>
+		</AxDataEntityViewRelation>
+		<AxDataEntityViewRelation xmlns=""
+			i:type="AxDataEntityViewRelationForeignKey">
+			<Name>SalesOrderOrigin</Name>
+			<Cardinality>ZeroMore</Cardinality>
+			<RelatedDataEntity>SalesOrderOriginEntity</RelatedDataEntity>
+			<RelatedDataEntityCardinality>ZeroOne</RelatedDataEntityCardinality>
+			<RelatedDataEntityRole>SalesOrderOrigin</RelatedDataEntityRole>
+			<RelationshipType>Association</RelationshipType>
+			<Role>SalesOrderHeaders</Role>
+			<UseDefaultRoleNames>No</UseDefaultRoleNames>
+			<Validate>No</Validate>
+			<Constraints>
+				<AxDataEntityViewRelationConstraint xmlns=""
+					i:type="AxDataEntityViewRelationConstraintField">
+					<Name>SalesOrderOriginEntity_OriginCode</Name>
+					<Field>SalesOrderOriginCode</Field>
+					<RelatedField>OriginCode</RelatedField>
+				</AxDataEntityViewRelationConstraint>
+			</Constraints>
+			<Key>EntityKey</Key>
+		</AxDataEntityViewRelation>
+		<AxDataEntityViewRelation xmlns=""
+			i:type="AxDataEntityViewRelationForeignKey">
+			<Name>Project</Name>
+			<Cardinality>ZeroMore</Cardinality>
+			<RelatedDataEntity>ProjectEntity</RelatedDataEntity>
+			<RelatedDataEntityCardinality>ZeroOne</RelatedDataEntityCardinality>
+			<RelatedDataEntityRole>Project</RelatedDataEntityRole>
+			<RelationshipType>Association</RelationshipType>
+			<Role>SalesOrderHeaders</Role>
+			<UseDefaultRoleNames>No</UseDefaultRoleNames>
+			<Validate>No</Validate>
+			<Constraints>
+				<AxDataEntityViewRelationConstraint xmlns=""
+					i:type="AxDataEntityViewRelationConstraintField">
+					<Name>ProjectEntity_ProjectID</Name>
+					<Field>ProjectId</Field>
+					<RelatedField>ProjectID</RelatedField>
+				</AxDataEntityViewRelationConstraint>
+			</Constraints>
+			<Key>EntityKey</Key>
+		</AxDataEntityViewRelation>
+	</Relations>
+	<StateMachines />
+	<ViewMetadata>
+		<Name>Metadata</Name>
+		<SourceCode>
+			<Methods>
+				<Method>
+					<Name>classDeclaration</Name>
+					<Source><![CDATA[
+[Query]
+public class Metadata extends QueryRun
+{
+}
+]]></Source>
+				</Method>
+			</Methods>
+		</SourceCode>
+		<DataSources>
+			<AxQuerySimpleRootDataSource>
+				<Name>SalesTable</Name>
+				<DynamicFields>Yes</DynamicFields>
+				<Table>SalesTable</Table>
+				<DataSources />
+				<DerivedDataSources />
+				<Fields />
+				<Ranges>
+					<AxQuerySimpleDataSourceRange>
+						<Name>SalesType</Name>
+						<Field>SalesType</Field>
+						<Value>Sales</Value>
+					</AxQuerySimpleDataSourceRange>
+				</Ranges>
+				<GroupBy />
+				<Having />
+				<OrderBy />
+			</AxQuerySimpleRootDataSource>
+		</DataSources>
+	</ViewMetadata>
+</AxDataEntityView>

@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <BuildTasksDirectory Condition=" '$(BuildTasksDirectory)' == ''">$(MSBuildProgramFiles32)\MSBuild\Microsoft\Dynamics\AX</BuildTasksDirectory>
+    <Model>AAXDataEntityPerfTest</Model>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <OutputPath>bin</OutputPath>
+    <SchemaVersion>2.0</SchemaVersion>
+    <GenerateCrossReferences>True</GenerateCrossReferences>
+    <ProjectGuid>{7739b07e-49de-4511-bf3d-8305edd077dd}</ProjectGuid>
+    <Name>AAXDataEntityPerfTest</Name>
+    <RootNamespace>AAXDataEntityPerfTest</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Configuration>Debug</Configuration>
+    <DBSyncInBuild>False</DBSyncInBuild>
+    <GenerateFormAdaptors>False</GenerateFormAdaptors>
+    <Company>
+    </Company>
+    <Partition>initial</Partition>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DataEntityExpandParentChildRelations>False</DataEntityExpandParentChildRelations>
+    <DataEntityUseLabelTextAsFieldName>False</DataEntityUseLabelTextAsFieldName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Data Entities\" />
+    <Folder Include="Maps\" />
+    <Folder Include="Security Privileges\" />
+    <Folder Include="Tables\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AxDataEntityView\AAXSalesOrderHeaderV2EntityDSReadOnly">
+      <SubType>Content</SubType>
+      <Name>AAXSalesOrderHeaderV2EntityDSReadOnly</Name>
+      <Link>Data Entities\AAXSalesOrderHeaderV2EntityDSReadOnly</Link>
+    </Content>
+    <Content Include="AxDataEntityView\AAXSalesOrderHeaderV2EntityNoGlobalization">
+      <SubType>Content</SubType>
+      <Name>AAXSalesOrderHeaderV2EntityNoGlobalization</Name>
+      <Link>Data Entities\AAXSalesOrderHeaderV2EntityNoGlobalization</Link>
+    </Content>
+    <Content Include="AxDataEntityView\AAXSalesOrderHeaderV2EntityOnlySalesTable">
+      <SubType>Content</SubType>
+      <Name>AAXSalesOrderHeaderV2EntityOnlySalesTable</Name>
+      <Link>Data Entities\AAXSalesOrderHeaderV2EntityOnlySalesTable</Link>
+    </Content>
+    <Content Include="AxDataEntityView\AAXSalesOrderHeaderV2EntityReadOnly">
+      <SubType>Content</SubType>
+      <Name>AAXSalesOrderHeaderV2EntityReadOnly</Name>
+      <Link>Data Entities\AAXSalesOrderHeaderV2EntityReadOnly</Link>
+    </Content>
+    <Content Include="AxDataEntityView\AAXSalesTableEntity">
+      <SubType>Content</SubType>
+      <Name>AAXSalesTableEntity</Name>
+      <Link>Data Entities\AAXSalesTableEntity</Link>
+    </Content>
+    <Content Include="AxDataEntityView\AAXSalesTableEntityReadOnly">
+      <SubType>Content</SubType>
+      <Name>AAXSalesTableEntityReadOnly</Name>
+      <Link>Data Entities\AAXSalesTableEntityReadOnly</Link>
+    </Content>
+    <Content Include="AxMap\AAXCustVendReportingCurrencyFixedExchangeRate">
+      <SubType>Content</SubType>
+      <Name>AAXCustVendReportingCurrencyFixedExchangeRate</Name>
+      <Link>Maps\AAXCustVendReportingCurrencyFixedExchangeRate</Link>
+    </Content>
+    <Content Include="AxSecurityPrivilege\AAXSalesOrderHeaderV2EntityDSReadOnlyView">
+      <SubType>Content</SubType>
+      <Name>AAXSalesOrderHeaderV2EntityDSReadOnlyView</Name>
+      <Link>Security Privileges\AAXSalesOrderHeaderV2EntityDSReadOnlyView</Link>
+    </Content>
+    <Content Include="AxSecurityPrivilege\AAXSalesOrderHeaderV2EntityNoGlobalizationView">
+      <SubType>Content</SubType>
+      <Name>AAXSalesOrderHeaderV2EntityNoGlobalizationView</Name>
+      <Link>Security Privileges\AAXSalesOrderHeaderV2EntityNoGlobalizationView</Link>
+    </Content>
+    <Content Include="AxSecurityPrivilege\AAXSalesOrderHeaderV2EntityOnlySalesTableView">
+      <SubType>Content</SubType>
+      <Name>AAXSalesOrderHeaderV2EntityOnlySalesTableView</Name>
+      <Link>Security Privileges\AAXSalesOrderHeaderV2EntityOnlySalesTableView</Link>
+    </Content>
+    <Content Include="AxSecurityPrivilege\AAXSalesOrderHeaderV2EntityReadOnlyView">
+      <SubType>Content</SubType>
+      <Name>AAXSalesOrderHeaderV2EntityReadOnlyView</Name>
+      <Link>Security Privileges\AAXSalesOrderHeaderV2EntityReadOnlyView</Link>
+    </Content>
+    <Content Include="AxSecurityPrivilege\AAXSalesTableEntityMaintain">
+      <SubType>Content</SubType>
+      <Name>AAXSalesTableEntityMaintain</Name>
+      <Link>Security Privileges\AAXSalesTableEntityMaintain</Link>
+    </Content>
+    <Content Include="AxSecurityPrivilege\AAXSalesTableEntityReadOnlyMaintain">
+      <SubType>Content</SubType>
+      <Name>AAXSalesTableEntityReadOnlyMaintain</Name>
+      <Link>Security Privileges\AAXSalesTableEntityReadOnlyMaintain</Link>
+    </Content>
+    <Content Include="AxSecurityPrivilege\AAXSalesTableEntityReadOnlyView">
+      <SubType>Content</SubType>
+      <Name>AAXSalesTableEntityReadOnlyView</Name>
+      <Link>Security Privileges\AAXSalesTableEntityReadOnlyView</Link>
+    </Content>
+    <Content Include="AxSecurityPrivilege\AAXSalesTableEntityView">
+      <SubType>Content</SubType>
+      <Name>AAXSalesTableEntityView</Name>
+      <Link>Security Privileges\AAXSalesTableEntityView</Link>
+    </Content>
+    <Content Include="AxTable\AAXSalesOrderHeaderV2EntityDSReadOnlyStaging">
+      <SubType>Content</SubType>
+      <Name>AAXSalesOrderHeaderV2EntityDSReadOnlyStaging</Name>
+      <Link>Tables\AAXSalesOrderHeaderV2EntityDSReadOnlyStaging</Link>
+    </Content>
+    <Content Include="AxTable\AAXSalesOrderHeaderV2EntityNoGlobalizationStaging">
+      <SubType>Content</SubType>
+      <Name>AAXSalesOrderHeaderV2EntityNoGlobalizationStaging</Name>
+      <Link>Tables\AAXSalesOrderHeaderV2EntityNoGlobalizationStaging</Link>
+    </Content>
+    <Content Include="AxTable\AAXSalesOrderHeaderV2EntityOnlySalesTableStaging">
+      <SubType>Content</SubType>
+      <Name>AAXSalesOrderHeaderV2EntityOnlySalesTableStaging</Name>
+      <Link>Tables\AAXSalesOrderHeaderV2EntityOnlySalesTableStaging</Link>
+    </Content>
+    <Content Include="AxTable\AAXSalesOrderHeaderV2EntityReadOnlyStaging">
+      <SubType>Content</SubType>
+      <Name>AAXSalesOrderHeaderV2EntityReadOnlyStaging</Name>
+      <Link>Tables\AAXSalesOrderHeaderV2EntityReadOnlyStaging</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.targets" />
+</Project>

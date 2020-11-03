@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxMap xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Name>AAXCustVendReportingCurrencyFixedExchangeRate</Name>
+	<SourceCode>
+		<Declaration><![CDATA[
+/// <summary>
+///     The <c>CustVendReportingCurrencyFixedExchangeRate</c> map contains logic related to setting the reporting currency fixed exchange rate.
+/// </summary>
+internal class AAXCustVendReportingCurrencyFixedExchangeRate extends common
+{
+}
+]]></Declaration>
+		<Methods>
+			<Method>
+				<Name>canEditReportingCurrencyFixedExchangeRate</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///     Determines if the reporting currency fixed exchange rate can be edited.
+    /// </summary>
+    /// <returns>
+    ///     true if the reporting currency fixed exchange rate can be edited; otherwise, false.
+    /// </returns>
+    /// <remarks>
+    ///     Requires that the caller has the <c>getCurrencyCode</c> method defined on the mapped table.
+    /// </remarks>
+    internal boolean canEditReportingCurrencyFixedExchangeRate()
+    {
+        return Ledger::isReportingCurrencyDefined()
+            && !Ledger::isReportingCurrencySameAsAccountingCurrency()
+            && Ledger::reportingCurrency() != this.getCurrencyCode();
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>editReportingCurrencyFixedExchangeRate</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///     Contains the logic for editing the reporting currency exchange rate.
+    /// </summary>
+    /// <param name = "_set">
+    ///     A boolean whether to set the reporting currency exchange rate.
+    /// </param>
+    /// <param name = "_exchRate">
+    ///     The new reporting currency exchange rate value.
+    /// </param>
+    /// <returns>
+    ///     The reporting currency exchange rate.
+    /// </returns>
+    /// <remarks>
+    ///     Requires that the caller has both the <c>getCurrencyCode</c> method and the
+    ///     <c>getReportingCurrencyExchangeRateField</c> method defined on the mapped table.
+    /// </remarks>
+    internal ExchRate editReportingCurrencyFixedExchangeRate(boolean _set, ExchRate _exchRate)
+    {
+        ExchangeRateHelper exchangeRateHelper = ExchangeRateHelper::newCurrency(Ledger::primaryLedger(CompanyInfo::findDataArea(curext()).RecId), this.getCurrencyCode());
+
+        exchangeRateHelper.parmToCurrency(Ledger::reportingCurrency());
+        exchangeRateHelper.parmExchangeRateTypeRecId(Ledger::reportingCurrencyExchangeRateType());
+
+        if (_set)
+        {
+            this.ReportingCurrencyExchangeRate = exchangeRateHelper.prepareExchangeRateForStorage(_exchRate);
+            this.modifiedField(this.getReportingCurrencyExchangeRateField());
+        }
+        else
+        {
+            _exchRate = exchangeRateHelper.displayStoredExchangeRate(this.ReportingCurrencyExchangeRate);
+        }
+
+        return _exchRate;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>getReportingCurrencyExchangeRateField</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///     Gets the field ID of the reporting currency exchange rate field on the table.
+    /// </summary>
+    /// <returns>
+    ///     The reporting currency exchange rate field ID.
+    /// </returns>
+    /// <remarks>
+    ///     When using the <c>editReportingCurrencyFixedExchangeRate</c> method,
+    ///     this method must be overridden in the mapped table to provide the correct field ID
+    ///     for calling the <c>modifiedField</c> method on the mapped table.
+    /// </remarks>
+    internal FieldId getReportingCurrencyExchangeRateField()
+    {
+        throw error(Error::wrongUseOfFunction(funcName()));
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>getCurrencyCode</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///     Gets the currency code of the document on the mapped table.
+    /// </summary>
+    /// <returns>
+    ///     The currency code of the document.
+    /// </returns>
+    /// <remarks>
+    ///     When using either of the methods <c>canEditReportingCurrencyFixedExchangeRate</c>
+    ///     or <c>editReportingCurrencyFixedExchangeRate</c>, this method must be overridden
+    ///     in the mapped table to provide the correct currency for calculating exchange rates.
+    /// </remarks>
+    internal CurrencyCode getCurrencyCode()
+    {
+        throw error(Error::wrongUseOfFunction(funcName()));
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>setReportingCurrencyFixedExchangeRate</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///     Sets the reporting currency exchange rate.
+    /// </summary>
+    /// <param name = "_shouldReset">
+    ///     A boolean whether to reset the reporting currency exchange rate.
+    /// </param>
+    /// <remarks>
+    ///     The <paramref name="_shouldReset> parameter should only be set to true when calling from a data entity.
+    /// </remarks>
+    internal void setReportingCurrencyFixedExchangeRate(boolean _shouldReset = false)
+    {
+        this.AAXCustVendReportingCurrencyFixedExchangeRate::copyReportingCurrencyExchangeRateFromExchangeRate();
+
+        if (_shouldReset)
+        {
+            this.AAXCustVendReportingCurrencyFixedExchangeRate::resetReportingCurrencyFixedExchangeRate();
+        }
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>copyReportingCurrencyExchangeRateFromExchangeRate</Name>
+				<Source><![CDATA[
+    private void copyReportingCurrencyExchangeRateFromExchangeRate()
+    {
+        if (this.ReportingCurrencyExchangeRate != this.ExchangeRate
+            && Ledger::isReportingCurrencySameAsAccountingCurrency())
+        {
+            this.ReportingCurrencyExchangeRate = this.ExchangeRate;
+        }
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>resetReportingCurrencyFixedExchangeRate</Name>
+				<Source><![CDATA[
+    private void resetReportingCurrencyFixedExchangeRate()
+    {
+        if (this.ReportingCurrencyExchangeRate != 0.0
+            && !Ledger::isReportingCurrencyDefined())
+        {
+            this.ReportingCurrencyExchangeRate = 0.0;
+        }
+    }
+
+]]></Source>
+			</Method>
+		</Methods>
+	</SourceCode>
+	<SubscriberAccessLevel>
+		<Read>Allow</Read>
+	</SubscriberAccessLevel>
+	<FieldGroups>
+		<AxTableFieldGroup>
+			<Name>ExchangeRates</Name>
+			<Fields>
+				<AxTableFieldGroupField>
+					<DataField>ExchangeRate</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>ReportingCurrencyExchangeRate</DataField>
+				</AxTableFieldGroupField>
+			</Fields>
+		</AxTableFieldGroup>
+	</FieldGroups>
+	<Fields>
+		<AxMapBaseField xmlns=""
+			i:type="AxMapFieldReal">
+			<Name>ExchangeRate</Name>
+			<ExtendedDataType>ExchRate</ExtendedDataType>
+		</AxMapBaseField>
+		<AxMapBaseField xmlns=""
+			i:type="AxMapFieldReal">
+			<Name>ReportingCurrencyExchangeRate</Name>
+			<ExtendedDataType>ExchRate</ExtendedDataType>
+		</AxMapBaseField>
+	</Fields>
+	<Mappings />
+</AxMap>
