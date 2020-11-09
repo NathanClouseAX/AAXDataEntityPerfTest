@@ -1915,6 +1915,7 @@
     <Compile Include="SalesOrderHeaderV2Tester.cs" />
     <Compile Include="SalesOrderLineV2Tester.cs" />
     <Compile Include="SalesOrderTester.cs" />
+    <Compile Include="SalesValues.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

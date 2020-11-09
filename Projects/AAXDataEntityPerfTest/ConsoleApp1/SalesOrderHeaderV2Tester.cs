@@ -38,6 +38,24 @@ namespace ConsoleApp1
 
         }
 
- 
+        public static void runReads(Resources context, string filePath, TestType testType, TestWorkload testWorkload, string DataAreaId, string customerAccount , int count)
+        {
+            Stopwatch sw = new Stopwatch();
+
+            sw.Start();
+
+            context.SalesOrderHeadersV2.Where(x => x.dataAreaId == DataAreaId && x.OrderingCustomerAccountNumber == customerAccount).Take(count).ToList();
+
+            sw.Stop();
+
+            StreamWriter stream = File.AppendText(filePath);
+
+            stream.WriteLine("SalesOrderHeaderV2," + testType + "," + testWorkload + "," + sw.Elapsed.TotalMilliseconds.ToString());
+            stream.Flush();
+            stream.Close();
+
+        }
+
+
     }
 }
