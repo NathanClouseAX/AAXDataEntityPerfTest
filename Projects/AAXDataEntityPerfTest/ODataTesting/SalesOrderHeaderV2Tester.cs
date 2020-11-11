@@ -14,11 +14,13 @@ using System.IO;
 
 using System.Diagnostics;
 
+
 namespace ODataTesting
 {
     public class SalesOrderHeaderV2Tester : SalesOrderTester
     {
-        public static string logTemplate = "";
+        public static string logTemplate = "{Entity},{testType},{testWorkload},{sw.Elapsed.TotalMilliseconds.ToString()}";
+        public static string Entity = "SalesOrderHeaderV2";
 
         public static void runOneRead(Resources context, string filePath, TestType testType, TestWorkload testWorkload, string SalesOrderNumber, string DataAreaId)
         {
@@ -32,7 +34,7 @@ namespace ODataTesting
 
             StreamWriter stream = File.AppendText(filePath);
 
-            stream.WriteLine("SalesOrderHeaderV2," + testType + "," + testWorkload + "," + sw.Elapsed.TotalMilliseconds.ToString());
+            stream.WriteLine(Entity + "," + testType + "," + testWorkload + "," + sw.Elapsed.TotalMilliseconds.ToString());
             stream.Flush();
             stream.Close();
 
@@ -48,11 +50,9 @@ namespace ODataTesting
 
             sw.Stop();
 
-            
-
             StreamWriter stream = File.AppendText(filePath);
-
-            stream.WriteLine("SalesOrderHeaderV2," + testType + "," + testWorkload + "," + sw.Elapsed.TotalMilliseconds.ToString());
+            stream.WriteLine(Entity +"," + testType + "," + testWorkload + "," + sw.Elapsed.TotalMilliseconds.ToString());
+            
             stream.Flush();
             stream.Close();
 

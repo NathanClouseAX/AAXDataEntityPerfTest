@@ -57,11 +57,12 @@ namespace Part3
             stream.Flush();
             stream.Close();
 
-            Console.WriteLine("Start.");
+            Console.WriteLine("Starting...");
 
             SalesValues values;
 
             #region SalesOrderHeaderV2 Tests
+            Console.WriteLine("Starting SalesOrderHeaderV2 Tests");
             //random read
             for (int i = 0; i < 100; i++)
             {
@@ -79,63 +80,82 @@ namespace Part3
             //random 10 reads
             for (int i = 0; i < 100; i++)
             {
-                values = SalesOrderHeaderV2Tester.getRandomCombination();
+                values = SalesOrderHeaderV2Tester.getCustomerAccountsWithMoreThan10Orders();
                 SalesOrderHeaderV2Tester.runReads(context, filePath, SalesOrderTester.TestType.Random, SalesOrderTester.TestWorkload.Read10, values.DataAreaId, values.CustAccount, 10);
             }
 
-            //fixed read
-            values = SalesOrderHeaderV2Tester.getRandomCombination();
+            //fixed 10 read
+            values = SalesOrderHeaderV2Tester.getCustomerAccountsWithMoreThan10Orders();
             for (int i = 0; i < 100; i++)
             {
                 SalesOrderHeaderV2Tester.runReads(context, filePath, SalesOrderTester.TestType.Random, SalesOrderTester.TestWorkload.Read10, values.DataAreaId, values.CustAccount, 10);
             }
             #endregion
 
-
-            for (int i = 0; i < 100; i++)
-            {
-
-                values = SalesOrderHeaderV2EntityReadOnlyTester.getRandomCombination();
-                SalesOrderHeaderV2EntityReadOnlyTester.runOneRead(context, filePath, SalesOrderTester.TestType.Random, SalesOrderTester.TestWorkload.Read, values.SalesId, values.DataAreaId);
-            }
-
-            values = SalesOrderHeaderV2EntityReadOnlyTester.getRandomCombination();
-            for (int i = 0; i < 100; i++)
-            {
-                SalesOrderHeaderV2EntityReadOnlyTester.runOneRead(context, filePath, SalesOrderTester.TestType.Repetitive, SalesOrderTester.TestWorkload.Read, values.SalesId, values.DataAreaId);
-            }
-
-            //random
+            #region SalesOrderheaderV2ReadOnly Tests
+            Console.WriteLine("Starting SalesOrderheaderV2ReadOnly Tests");
+            //random read
             for (int i = 0; i < 100; i++)
             {
                 values = SalesOrderHeaderV2EntityReadOnlyTester.getRandomCombination();
                 SalesOrderHeaderV2EntityReadOnlyTester.runOneRead(context, filePath, SalesOrderTester.TestType.Random, SalesOrderTester.TestWorkload.Read, values.SalesId, values.DataAreaId);
             }
 
-            //repetitive
+            //fixed read
             values = SalesOrderHeaderV2EntityReadOnlyTester.getRandomCombination();
             for (int i = 0; i < 100; i++)
             {
                 SalesOrderHeaderV2EntityReadOnlyTester.runOneRead(context, filePath, SalesOrderTester.TestType.Repetitive, SalesOrderTester.TestWorkload.Read, values.SalesId, values.DataAreaId);
             }
 
-            //done
+            //random 10 reads
+            for (int i = 0; i < 100; i++)
+            {
+                values = SalesOrderHeaderV2EntityReadOnlyTester.getCustomerAccountsWithMoreThan10Orders();
+                SalesOrderHeaderV2EntityReadOnlyTester.runReads(context, filePath, SalesOrderTester.TestType.Random, SalesOrderTester.TestWorkload.Read10, values.DataAreaId, values.CustAccount, 10);
+            }
+
+            //fixed 10 read
+            values = SalesOrderHeaderV2EntityReadOnlyTester.getCustomerAccountsWithMoreThan10Orders();
+            for (int i = 0; i < 100; i++)
+            {
+                SalesOrderHeaderV2EntityReadOnlyTester.runReads(context, filePath, SalesOrderTester.TestType.Random, SalesOrderTester.TestWorkload.Read10, values.DataAreaId, values.CustAccount, 10);
+            }
+            #endregion
+
+            #region SalesOrderHeaderV2EntityReadOnlyNoGlobalization Tests
+            Console.WriteLine("Starting SalesOrderHeaderV2EntityReadOnlyNoGlobalization Tests");
+            //random read
             for (int i = 0; i < 100; i++)
             {
                 values = SalesOrderHeaderV2EntityReadOnlyNoGlobalizationTester.getRandomCombination();
                 SalesOrderHeaderV2EntityReadOnlyNoGlobalizationTester.runOneRead(context, filePath, SalesOrderTester.TestType.Random, SalesOrderTester.TestWorkload.Read, values.SalesId, values.DataAreaId);
-                //stream.WriteLine("SalesOrderHeaderV2EntityReadOnlyNoGlobalization," + sw.Elapsed.TotalMilliseconds.ToString());
             }
 
-            //repetitive
+            //repetitive read
             values = SalesOrderHeaderV2EntityReadOnlyNoGlobalizationTester.getRandomCombination();
             for (int i = 0; i < 100; i++)
             {
                 SalesOrderHeaderV2EntityReadOnlyNoGlobalizationTester.runOneRead(context, filePath, SalesOrderTester.TestType.Repetitive, SalesOrderTester.TestWorkload.Read, values.SalesId, values.DataAreaId);
             }
 
+            //random 10 reads
+            for (int i = 0; i < 100; i++)
+            {
+                values = SalesOrderHeaderV2EntityReadOnlyNoGlobalizationTester.getCustomerAccountsWithMoreThan10Orders();
+                SalesOrderHeaderV2EntityReadOnlyNoGlobalizationTester.runReads(context, filePath, SalesOrderTester.TestType.Random, SalesOrderTester.TestWorkload.Read10, values.DataAreaId, values.CustAccount, 10);
+            }
 
+            //fixed 10 read
+            values = SalesOrderHeaderV2EntityReadOnlyNoGlobalizationTester.getCustomerAccountsWithMoreThan10Orders();
+            for (int i = 0; i < 100; i++)
+            {
+                SalesOrderHeaderV2EntityReadOnlyNoGlobalizationTester.runReads(context, filePath, SalesOrderTester.TestType.Random, SalesOrderTester.TestWorkload.Read10, values.DataAreaId, values.CustAccount, 10);
+            }
+            #endregion
 
+            #region SalesOrderHeaderV2EntityOnlySalesTable Tests
+            Console.WriteLine("Starting SalesOrderHeaderV2EntityOnlySalesTable Tests");
             //random
             for (int i = 0; i < 100; i++)
             {
@@ -150,7 +170,23 @@ namespace Part3
                 SalesOrderHeaderV2EntityOnlySalesTableTester.runOneRead(context, filePath, SalesOrderTester.TestType.Repetitive, SalesOrderTester.TestWorkload.Read, values.SalesId, values.DataAreaId);
             }
 
+            //random 10 reads
+            for (int i = 0; i < 100; i++)
+            {
+                values = SalesOrderHeaderV2EntityOnlySalesTableTester.getCustomerAccountsWithMoreThan10Orders();
+                SalesOrderHeaderV2EntityOnlySalesTableTester.runReads(context, filePath, SalesOrderTester.TestType.Random, SalesOrderTester.TestWorkload.Read10, values.DataAreaId, values.CustAccount, 10);
+            }
 
+            //fixed 10 read
+            values = SalesOrderHeaderV2EntityOnlySalesTableTester.getCustomerAccountsWithMoreThan10Orders();
+            for (int i = 0; i < 100; i++)
+            {
+                SalesOrderHeaderV2EntityOnlySalesTableTester.runReads(context, filePath, SalesOrderTester.TestType.Random, SalesOrderTester.TestWorkload.Read10, values.DataAreaId, values.CustAccount, 10);
+            }
+            #endregion
+
+            #region SalesOrderHeaderV2EntityDSReadOnly Tests
+            Console.WriteLine("Starting SalesOrderHeaderV2EntityDSReadOnly Tests");
             //random
             for (int i = 0; i < 100; i++)
             {
@@ -165,6 +201,23 @@ namespace Part3
                 SalesOrderHeaderV2EntityDSReadOnlyTester.runOneRead(context, filePath, SalesOrderTester.TestType.Repetitive, SalesOrderTester.TestWorkload.Read, values.SalesId, values.DataAreaId);
             }
 
+            //random 10 reads
+            for (int i = 0; i < 100; i++)
+            {
+                values = SalesOrderHeaderV2EntityDSReadOnlyTester.getCustomerAccountsWithMoreThan10Orders();
+                SalesOrderHeaderV2EntityDSReadOnlyTester.runReads(context, filePath, SalesOrderTester.TestType.Random, SalesOrderTester.TestWorkload.Read10, values.DataAreaId, values.CustAccount, 10);
+            }
+
+            //fixed 10 read
+            values = SalesOrderHeaderV2EntityDSReadOnlyTester.getCustomerAccountsWithMoreThan10Orders();
+            for (int i = 0; i < 100; i++)
+            {
+                SalesOrderHeaderV2EntityDSReadOnlyTester.runReads(context, filePath, SalesOrderTester.TestType.Random, SalesOrderTester.TestWorkload.Read10, values.DataAreaId, values.CustAccount, 10);
+            }
+            #endregion
+
+            #region AAXSalesTable Tests
+            Console.WriteLine("Starting AAXSalesTable Tests");
             //random
             for (int i = 0; i < 100; i++)
             {
@@ -178,7 +231,23 @@ namespace Part3
             {
                 AAXSalesTableEntityTester.runOneRead(context, filePath, SalesOrderTester.TestType.Repetitive, SalesOrderTester.TestWorkload.Read, values.SalesId, values.DataAreaId);
             }
+            //random 10 reads
+            for (int i = 0; i < 100; i++)
+            {
+                values = AAXSalesTableEntityTester.getCustomerAccountsWithMoreThan10Orders();
+                AAXSalesTableEntityTester.runReads(context, filePath, SalesOrderTester.TestType.Random, SalesOrderTester.TestWorkload.Read10, values.DataAreaId, values.CustAccount, 10);
+            }
 
+            //fixed 10 read
+            values = AAXSalesTableEntityTester.getCustomerAccountsWithMoreThan10Orders();
+            for (int i = 0; i < 100; i++)
+            {
+                AAXSalesTableEntityTester.runReads(context, filePath, SalesOrderTester.TestType.Random, SalesOrderTester.TestWorkload.Read10, values.DataAreaId, values.CustAccount, 10);
+            }
+            #endregion
+
+            #region AAXSalesTableEntityReadOnly Tests
+            Console.WriteLine("Starting AAXSalesTableEntityReadOnly Tests");
             //random
             for (int i = 0; i < 100; i++)
             {
@@ -192,6 +261,21 @@ namespace Part3
             {
                 AAXSalesTableEntityReadOnlyTester.runOneRead(context, filePath, SalesOrderTester.TestType.Repetitive, SalesOrderTester.TestWorkload.Read, values.SalesId, values.DataAreaId);
             }
+            //random 10 reads
+            for (int i = 0; i < 100; i++)
+            {
+                values = AAXSalesTableEntityReadOnlyTester.getCustomerAccountsWithMoreThan10Orders();
+                AAXSalesTableEntityReadOnlyTester.runReads(context, filePath, SalesOrderTester.TestType.Random, SalesOrderTester.TestWorkload.Read10, values.DataAreaId, values.CustAccount, 10);
+            }
+
+            //fixed 10 read
+            values = AAXSalesTableEntityReadOnlyTester.getCustomerAccountsWithMoreThan10Orders();
+            for (int i = 0; i < 100; i++)
+            {
+                AAXSalesTableEntityReadOnlyTester.runReads(context, filePath, SalesOrderTester.TestType.Random, SalesOrderTester.TestWorkload.Read10, values.DataAreaId, values.CustAccount, 10);
+            }
+            #endregion
+
             Console.WriteLine("Complete. Press enter.");
             Console.ReadLine();
 

@@ -28,6 +28,118 @@ namespace ODataTesting
             return (values);
         }
 
+        public static SalesValues getCustomerAccountsWithMoreThan10Orders()
+        {
+
+            //based on demo data, PK pairs for lookups preloaded here so an oData call isn't requird to get anything
+            /*
+            select  '{  "' + CUSTACCOUNT  +'", "' + DATAAREAid + '" },'
+            from SALESTABLE
+            group by CUSTACCOUNT, DATAAREAID
+            having count(custaccount) >= 10
+            */
+
+            string[,] potentionValues = new string[,] {
+            {  "US-021", "uspi" },
+{  "US-023", "usmf" },
+{  "INMF-000001", "inmf" },
+{  "3004", "usrt" },
+{  "DE-013", "demf" },
+{  "RUMF-000005", "rumf" },
+{  "US-009", "uspi" },
+{  "DE-010", "demf" },
+{  "1001", "usrt" },
+{  "2004", "usrt" },
+{  "US-010", "uspi" },
+{  "2001", "frrt" },
+{  "RUMF-000003", "rumf" },
+{  "2002", "frrt" },
+{  "2003", "usrt" },
+{  "3005", "usrt" },
+{  "RUMF-000004", "rumf" },
+{  "3001", "usrt" },
+{  "RUMF-000001", "rumf" },
+{  "US-012", "usmf" },
+{  "US-008", "usmf" },
+{  "US-015", "usmf" },
+{  "100002", "usrt" },
+{  "1003", "frrt" },
+{  "3002", "usrt" },
+{  "US-016", "uspi" },
+{  "US-026", "usmf" },
+{  "US-004", "uspi" },
+{  "US-006", "usmf" },
+{  "2004", "frrt" },
+{  "2001", "usrt" },
+{  "DE-011", "demf" },
+{  "100001", "usrt" },
+{  "2005", "usrt" },
+{  "US-017", "usmf" },
+{  "DE-014", "demf" },
+{  "US-011", "usmf" },
+{  "2002", "usrt" },
+{  "US-020", "usmf" },
+{  "US-020", "usp2" },
+{  "US-026", "uspi" },
+{  "US-028", "usmf" },
+{  "BRMF-000001", "brmf" },
+{  "US-024", "uspi" },
+{  "BRMF-000002", "brmf" },
+{  "US-013", "usmf" },
+{  "1004", "usrt" },
+{  "US-014", "usmf" },
+{  "US-007", "usmf" },
+{  "US-017", "uspi" },
+{  "CNMF-000003", "cnmf" },
+{  "DE-001", "usmf" },
+{  "1001", "frrt" },
+{  "3007", "usrt" },
+{  "US-002", "usmf" },
+{  "US-027", "usmf" },
+{  "US-002", "usp2" },
+{  "US-027", "usp2" },
+{  "3006", "usrt" },
+{  "US-022", "usmf" },
+{  "US-025", "usmf" },
+{  "US-005", "usmf" },
+{  "US-019", "usmf" },
+{  "1003", "usrt" },
+{  "DE-016", "demf" },
+{  "US-001", "usmf" },
+{  "CNMF-000002", "cnmf" },
+{  "3008", "usrt" },
+{  "US-027", "uspi" },
+{  "US-024", "usmf" },
+{  "US-016", "usmf" },
+{  "US-007", "uspi" },
+{  "US-004", "usmf" },
+{  "US-014", "uspi" },
+{  "2003", "frrt" },
+{  "1002", "frrt" },
+{  "RUMF-000002", "rumf" },
+{  "US-021", "usmf" },
+{  "US-025", "uspi" },
+{  "US-009", "usmf" },
+{  "US-019", "uspi" },
+{  "DE-012", "demf" },
+{  "DE-015", "demf" },
+{  "US-010", "usmf" },
+{  "INMF-000004", "inmf" },
+{  "1004", "frrt" },
+{  "3003", "usrt" },
+{  "100001", "frrt" },
+{  "US-003", "usmf" },
+{  "US-013", "uspi" },
+{  "1002", "usrt" },
+{  "US-018", "usmf" },
+{  "US-032", "usp2" } };
+
+            int value = new Random().Next(0, potentionValues.GetLength(0) - 1);
+
+            return new SalesValues() { CustAccount = potentionValues[value, 0], DataAreaId = potentionValues[value, 1] };
+        }
+
+
         public static SalesValues getRandomCombination()
         {
             Random rand = new Random();
