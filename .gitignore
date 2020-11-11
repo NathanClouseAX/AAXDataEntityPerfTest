@@ -257,5 +257,4 @@ CompileLabels.xml
 *.$usr
 /BuildModelResult.err.xml
 
-
-Projects\AAXDataEntityPerfTest\AuthenticationUtility\ClientConfiguration.cs
+/Projects/AAXDataEntityPerfTest/AuthenticationUtility/ClientConfiguration.cs
