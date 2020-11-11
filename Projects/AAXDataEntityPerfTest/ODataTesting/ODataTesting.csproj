@@ -61,6 +61,7 @@
     <Compile Include="SalesOrderHeaderV2EntityOnlySalesTableV2Tester.cs" />
     <Compile Include="SalesOrderHeaderV2EntityReadOnlyNoGlobalizationV2Tester.cs" />
     <Compile Include="SalesOrderHeaderV2EntityReadOnlyV2Tester.cs" />
+    <Compile Include="SalesOrderHeaderV2ExistAddrReadOnlyTester.cs" />
     <Compile Include="SalesOrderHeaderV2Tester.cs" />
     <Compile Include="SalesOrderLineV2Tester.cs" />
     <Compile Include="SalesOrderTester.cs" />
