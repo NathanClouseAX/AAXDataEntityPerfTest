@@ -10,6 +10,7 @@ namespace ODataTesting
     {
         public enum TestType { Repetitive, Random }
         public enum TestWorkload {  Read, Read10, Read100, Read1000,
+                                    ReadWithSelect, Read10WithSelect, Read100WithSelect, Read1000WithSelect,
                                     Create, 
                                     Update, 
                                     Delete }
