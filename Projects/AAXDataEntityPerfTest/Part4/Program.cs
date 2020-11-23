@@ -22,7 +22,7 @@ namespace Part4
     {
         public static string ODataEntityPath = ClientConfiguration.Default.UriString + "data";
 
-        public static string filePath = @"c:\temp\part4.txt";
+        public static string filePath = @"c:\temp\part4-withNetwork.txt";
 
         static void Main(string[] args)
         {
@@ -55,6 +55,8 @@ namespace Part4
             stream.WriteLine("Entity,TestType, Workload, Duration");
             stream.Flush();
             stream.Close();
+
+            Console.WriteLine("Connected To " + ClientConfiguration.Default.UriString);
 
             Console.WriteLine("Warming....");
             context.SalesOrderHeadersV2.FirstOrDefault();
