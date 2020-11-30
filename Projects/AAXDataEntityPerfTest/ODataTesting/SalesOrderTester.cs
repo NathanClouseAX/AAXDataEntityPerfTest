@@ -14,6 +14,9 @@ namespace ODataTesting
                                     ReadCustIdx, ReadStatusCustAccidx, ReadSalesTypeIdx, ReadCustCreatedDateIdx, ReadGarbage,
                                     Read10InventSite, Read10InventLocation, Read10SalesName, Read10Email,
                                     ReadWithSelect, Read10WithSelect, Read100WithSelect, Read1000WithSelect,
+                                    Read10WithOrderByAscOnIndex, Ready10WithOrderByDescOnIndex, Read10WithOrderByAscNotOnIndex, Read10WithOrderByDescNotOnIndex,
+                                    Read10WithOrderByAscOnCalculatedField, Read10WithOrderByDescOnCalculatedField,
+                                    ReadThread,
                                     Create, 
                                     Update, 
                                     Delete }

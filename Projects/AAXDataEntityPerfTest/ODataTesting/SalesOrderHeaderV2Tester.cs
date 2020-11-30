@@ -40,6 +40,20 @@ namespace ODataTesting
 
         }
 
+        public static string runOneReadThread(Resources context, int threadCount,  string filePath, TestType testType, TestWorkload testWorkload, string SalesOrderNumber, string DataAreaId)
+        {
+            Stopwatch sw = new Stopwatch();
+
+            sw.Start();
+
+            SalesOrderHeaderV2 SalesOrderHeaderV2 = context.SalesOrderHeadersV2.Where(x => x.SalesOrderNumber == SalesOrderNumber && x.dataAreaId == DataAreaId).First();
+
+            sw.Stop();
+
+            return(Entity + "," + threadCount  + "," + testType + "," + testWorkload + "," + sw.Elapsed.TotalMilliseconds.ToString());
+
+        }
+
         public static void runOneCustIdxRead(Resources context, string filePath, TestType testType, TestWorkload testWorkload, String CustAccount, string SalesOrderNumber, String PurchOrderFormNum, string DataAreaId)
         {
             Stopwatch sw = new Stopwatch();
@@ -332,6 +346,116 @@ namespace ODataTesting
             stream.Close();
 
         }
+
+        public static void runReadsWithOrderByAsc(Resources context, string filePath, TestType testType, TestWorkload testWorkload, string DataAreaId, int count)
+        {
+            Stopwatch sw = new Stopwatch();
+
+            sw.Start();
+
+            context.SalesOrderHeadersV2.Where(x => x.dataAreaId == DataAreaId).OrderBy(x => x.SalesOrderNumber).Take(count).ToList();
+
+            sw.Stop();
+
+            StreamWriter stream = File.AppendText(filePath);
+            stream.WriteLine(Entity + "," + testType + "," + testWorkload + "," + sw.Elapsed.TotalMilliseconds.ToString());
+
+            stream.Flush();
+            stream.Close();
+
+        }
+
+
+        public static void runReadsWithOrderByDesc(Resources context, string filePath, TestType testType, TestWorkload testWorkload, string DataAreaId, int count)
+        {
+            Stopwatch sw = new Stopwatch();
+
+            sw.Start();
+
+            context.SalesOrderHeadersV2.Where(x => x.dataAreaId == DataAreaId).OrderByDescending(x => x.SalesOrderNumber).Take(count).ToList();
+
+            sw.Stop();
+
+            StreamWriter stream = File.AppendText(filePath);
+            stream.WriteLine(Entity + "," + testType + "," + testWorkload + "," + sw.Elapsed.TotalMilliseconds.ToString());
+
+            stream.Flush();
+            stream.Close();
+
+        }
+
+        public static void runReadsWithOrderByAscOnRequestedShippingDate(Resources context, string filePath, TestType testType, TestWorkload testWorkload, string DataAreaId, int count)
+        {
+            Stopwatch sw = new Stopwatch();
+
+            sw.Start();
+
+            context.SalesOrderHeadersV2.Where(x => x.dataAreaId == DataAreaId).OrderBy(x => x.RequestedShippingDate).Take(count).ToList();
+
+            sw.Stop();
+
+            StreamWriter stream = File.AppendText(filePath);
+            stream.WriteLine(Entity + "," + testType + "," + testWorkload + "," + sw.Elapsed.TotalMilliseconds.ToString());
+
+            stream.Flush();
+            stream.Close();
+
+        }
+
+        public static void runReadsWithOrderByDescOnRequestedShippingDate(Resources context, string filePath, TestType testType, TestWorkload testWorkload, string DataAreaId, int count)
+        {
+            Stopwatch sw = new Stopwatch();
+
+            sw.Start();
+
+            context.SalesOrderHeadersV2.Where(x => x.dataAreaId == DataAreaId).OrderByDescending(x => x.RequestedShippingDate).Take(count).ToList();
+
+            sw.Stop();
+
+            StreamWriter stream = File.AppendText(filePath);
+            stream.WriteLine(Entity + "," + testType + "," + testWorkload + "," + sw.Elapsed.TotalMilliseconds.ToString());
+
+            stream.Flush();
+            stream.Close();
+
+        }
+
+        public static void runReadsWithOrderByAscOnSalesOrderProcessingStatus(Resources context, string filePath, TestType testType, TestWorkload testWorkload, string DataAreaId, int count)
+        {
+            Stopwatch sw = new Stopwatch();
+
+            sw.Start();
+
+            context.SalesOrderHeadersV2.Where(x => x.dataAreaId == DataAreaId).OrderBy(x => x.SalesOrderProcessingStatus).Take(count).ToList();
+
+            sw.Stop();
+
+            StreamWriter stream = File.AppendText(filePath);
+            stream.WriteLine(Entity + "," + testType + "," + testWorkload + "," + sw.Elapsed.TotalMilliseconds.ToString());
+
+            stream.Flush();
+            stream.Close();
+
+        }
+
+        public static void runReadsWithOrderByDescOnSalesOrderProcessingStatus(Resources context, string filePath, TestType testType, TestWorkload testWorkload, string DataAreaId, int count)
+        {
+            Stopwatch sw = new Stopwatch();
+
+            sw.Start();
+
+            context.SalesOrderHeadersV2.Where(x => x.dataAreaId == DataAreaId).OrderByDescending(x => x.SalesOrderProcessingStatus).Take(count).ToList();
+
+            sw.Stop();
+
+            StreamWriter stream = File.AppendText(filePath);
+            stream.WriteLine(Entity + "," + testType + "," + testWorkload + "," + sw.Elapsed.TotalMilliseconds.ToString());
+
+            stream.Flush();
+            stream.Close();
+
+        }
+
 
         public static void runReadWithSelect(Resources context, string filePath, TestType testType, TestWorkload testWorkload, string SalesOrderNumber, string DataAreaId)
         {
