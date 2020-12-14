@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 11/8/2020 8:07:52 PM
+// Generation date: 12/8/2020 7:45:22 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,10 +35,10 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for VendorGroups in the schema.
+        /// There are no comments for FreeTextInvoiceLineTaxGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendorGroup> VendorGroups
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceLine> FreeTextInvoiceLineTaxGroup
         {
             get
             {
@@ -46,78 +46,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._VendorGroups == null))
+                if ((this._FreeTextInvoiceLineTaxGroup == null))
                 {
-                    this._VendorGroups = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.VendorGroup>(GetPath("VendorGroups"));
+                    this._FreeTextInvoiceLineTaxGroup = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceLine>(GetPath("FreeTextInvoiceLineTaxGroup"));
                 }
-                return this._VendorGroups;
+                return this._FreeTextInvoiceLineTaxGroup;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendorGroup> _VendorGroups;
-        /// <summary>
-        /// There are no comments for OperationalSiteCurrentPostalAddresses in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InventOperationalSiteCurrentPostalAddress> OperationalSiteCurrentPostalAddresses
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._OperationalSiteCurrentPostalAddresses == null))
-                {
-                    this._OperationalSiteCurrentPostalAddresses = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.InventOperationalSiteCurrentPostalAddress>(GetPath("OperationalSiteCurrentPostalAddresses"));
-                }
-                return this._OperationalSiteCurrentPostalAddresses;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InventOperationalSiteCurrentPostalAddress> _OperationalSiteCurrentPostalAddresses;
-        /// <summary>
-        /// There are no comments for PurchaseOrderLineCharges in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseOrderLineCharge> PurchaseOrderLineCharges
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._PurchaseOrderLineCharges == null))
-                {
-                    this._PurchaseOrderLineCharges = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PurchaseOrderLineCharge>(GetPath("PurchaseOrderLineCharges"));
-                }
-                return this._PurchaseOrderLineCharges;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseOrderLineCharge> _PurchaseOrderLineCharges;
-        /// <summary>
-        /// There are no comments for CustomerPaymentJournalLineTaxGroupEntity in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalLine> CustomerPaymentJournalLineTaxGroupEntity
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._CustomerPaymentJournalLineTaxGroupEntity == null))
-                {
-                    this._CustomerPaymentJournalLineTaxGroupEntity = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalLine>(GetPath("CustomerPaymentJournalLineTaxGroupEntity"));
-                }
-                return this._CustomerPaymentJournalLineTaxGroupEntity;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalLine> _CustomerPaymentJournalLineTaxGroupEntity;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceLine> _FreeTextInvoiceLineTaxGroup;
         /// <summary>
         /// There are no comments for CDSFreeTextInvoiceLines in the schema.
         /// </summary>
@@ -140,27 +77,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CDSFreeTextInvoiceLine> _CDSFreeTextInvoiceLines;
         /// <summary>
-        /// There are no comments for CustomerPaymentJournalFee in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalFee> CustomerPaymentJournalFee
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._CustomerPaymentJournalFee == null))
-                {
-                    this._CustomerPaymentJournalFee = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalFee>(GetPath("CustomerPaymentJournalFee"));
-                }
-                return this._CustomerPaymentJournalFee;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalFee> _CustomerPaymentJournalFee;
-        /// <summary>
         /// There are no comments for Prospects in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -181,69 +97,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Prospect> _Prospects;
-        /// <summary>
-        /// There are no comments for LedgerJournalLineCDSSalesTaxGroup in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerJournalCDSLine> LedgerJournalLineCDSSalesTaxGroup
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._LedgerJournalLineCDSSalesTaxGroup == null))
-                {
-                    this._LedgerJournalLineCDSSalesTaxGroup = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerJournalCDSLine>(GetPath("LedgerJournalLineCDSSalesTaxGroup"));
-                }
-                return this._LedgerJournalLineCDSSalesTaxGroup;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerJournalCDSLine> _LedgerJournalLineCDSSalesTaxGroup;
-        /// <summary>
-        /// There are no comments for FreeTextInvoiceLineTaxGroup in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceLine> FreeTextInvoiceLineTaxGroup
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._FreeTextInvoiceLineTaxGroup == null))
-                {
-                    this._FreeTextInvoiceLineTaxGroup = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceLine>(GetPath("FreeTextInvoiceLineTaxGroup"));
-                }
-                return this._FreeTextInvoiceLineTaxGroup;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceLine> _FreeTextInvoiceLineTaxGroup;
-        /// <summary>
-        /// There are no comments for LedgerJournalLineSalesTaxGroup in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerJournalLine> LedgerJournalLineSalesTaxGroup
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._LedgerJournalLineSalesTaxGroup == null))
-                {
-                    this._LedgerJournalLineSalesTaxGroup = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerJournalLine>(GetPath("LedgerJournalLineSalesTaxGroup"));
-                }
-                return this._LedgerJournalLineSalesTaxGroup;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerJournalLine> _LedgerJournalLineSalesTaxGroup;
         /// <summary>
         /// There are no comments for PurchaseOrderHeaderCharges in the schema.
         /// </summary>
@@ -266,6 +119,48 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseOrderHeaderCharge> _PurchaseOrderHeaderCharges;
         /// <summary>
+        /// There are no comments for CustomerPaymentJournalFee in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalFee> CustomerPaymentJournalFee
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._CustomerPaymentJournalFee == null))
+                {
+                    this._CustomerPaymentJournalFee = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalFee>(GetPath("CustomerPaymentJournalFee"));
+                }
+                return this._CustomerPaymentJournalFee;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalFee> _CustomerPaymentJournalFee;
+        /// <summary>
+        /// There are no comments for CustomerPaymentJournalLineTaxGroupEntity in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalLine> CustomerPaymentJournalLineTaxGroupEntity
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._CustomerPaymentJournalLineTaxGroupEntity == null))
+                {
+                    this._CustomerPaymentJournalLineTaxGroupEntity = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalLine>(GetPath("CustomerPaymentJournalLineTaxGroupEntity"));
+                }
+                return this._CustomerPaymentJournalLineTaxGroupEntity;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalLine> _CustomerPaymentJournalLineTaxGroupEntity;
+        /// <summary>
         /// There are no comments for VendorPaymentJournalFee in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -286,6 +181,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendorPaymentJournalFee> _VendorPaymentJournalFee;
+        /// <summary>
+        /// There are no comments for VendorGroups in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendorGroup> VendorGroups
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._VendorGroups == null))
+                {
+                    this._VendorGroups = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.VendorGroup>(GetPath("VendorGroups"));
+                }
+                return this._VendorGroups;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendorGroup> _VendorGroups;
         /// <summary>
         /// There are no comments for GroupRetailTaxFilter in the schema.
         /// </summary>
@@ -308,6 +224,69 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.GroupRetailTaxFilter> _GroupRetailTaxFilter;
         /// <summary>
+        /// There are no comments for OperationalSiteCurrentPostalAddresses in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InventOperationalSiteCurrentPostalAddress> OperationalSiteCurrentPostalAddresses
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._OperationalSiteCurrentPostalAddresses == null))
+                {
+                    this._OperationalSiteCurrentPostalAddresses = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.InventOperationalSiteCurrentPostalAddress>(GetPath("OperationalSiteCurrentPostalAddresses"));
+                }
+                return this._OperationalSiteCurrentPostalAddresses;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InventOperationalSiteCurrentPostalAddress> _OperationalSiteCurrentPostalAddresses;
+        /// <summary>
+        /// There are no comments for LedgerJournalLineCDSSalesTaxGroup in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerJournalCDSLine> LedgerJournalLineCDSSalesTaxGroup
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._LedgerJournalLineCDSSalesTaxGroup == null))
+                {
+                    this._LedgerJournalLineCDSSalesTaxGroup = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerJournalCDSLine>(GetPath("LedgerJournalLineCDSSalesTaxGroup"));
+                }
+                return this._LedgerJournalLineCDSSalesTaxGroup;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerJournalCDSLine> _LedgerJournalLineCDSSalesTaxGroup;
+        /// <summary>
+        /// There are no comments for LedgerJournalLineSalesTaxGroup in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerJournalLine> LedgerJournalLineSalesTaxGroup
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._LedgerJournalLineSalesTaxGroup == null))
+                {
+                    this._LedgerJournalLineSalesTaxGroup = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerJournalLine>(GetPath("LedgerJournalLineSalesTaxGroup"));
+                }
+                return this._LedgerJournalLineSalesTaxGroup;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerJournalLine> _LedgerJournalLineSalesTaxGroup;
+        /// <summary>
         /// There are no comments for TaxGroupData in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -328,6 +307,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TaxGroupData> _TaxGroupData;
+        /// <summary>
+        /// There are no comments for PurchaseOrderLineCharges in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseOrderLineCharge> PurchaseOrderLineCharges
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._PurchaseOrderLineCharges == null))
+                {
+                    this._PurchaseOrderLineCharges = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PurchaseOrderLineCharge>(GetPath("PurchaseOrderLineCharges"));
+                }
+                return this._PurchaseOrderLineCharges;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseOrderLineCharge> _PurchaseOrderLineCharges;
     }
         /// <summary>
         /// There are no comments for TaxGroup in the schema.
@@ -684,93 +684,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnRoundingByChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TaxGroupRounding> value);
         partial void OnRoundingByChanged();
         /// <summary>
-        /// There are no comments for Property VendorGroups in the schema.
+        /// There are no comments for Property FreeTextInvoiceLineTaxGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorGroup> VendorGroups
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceLine> FreeTextInvoiceLineTaxGroup
         {
             get
             {
-                return this._VendorGroups;
+                return this._FreeTextInvoiceLineTaxGroup;
             }
             set
             {
-                this.OnVendorGroupsChanging(value);
-                this._VendorGroups = value;
-                this.OnVendorGroupsChanged();
-                this.OnPropertyChanged("VendorGroups");
+                this.OnFreeTextInvoiceLineTaxGroupChanging(value);
+                this._FreeTextInvoiceLineTaxGroup = value;
+                this.OnFreeTextInvoiceLineTaxGroupChanged();
+                this.OnPropertyChanged("FreeTextInvoiceLineTaxGroup");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorGroup> _VendorGroups = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorGroup>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnVendorGroupsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorGroup> value);
-        partial void OnVendorGroupsChanged();
-        /// <summary>
-        /// There are no comments for Property OperationalSiteCurrentPostalAddresses in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventOperationalSiteCurrentPostalAddress> OperationalSiteCurrentPostalAddresses
-        {
-            get
-            {
-                return this._OperationalSiteCurrentPostalAddresses;
-            }
-            set
-            {
-                this.OnOperationalSiteCurrentPostalAddressesChanging(value);
-                this._OperationalSiteCurrentPostalAddresses = value;
-                this.OnOperationalSiteCurrentPostalAddressesChanged();
-                this.OnPropertyChanged("OperationalSiteCurrentPostalAddresses");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventOperationalSiteCurrentPostalAddress> _OperationalSiteCurrentPostalAddresses = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventOperationalSiteCurrentPostalAddress>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnOperationalSiteCurrentPostalAddressesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventOperationalSiteCurrentPostalAddress> value);
-        partial void OnOperationalSiteCurrentPostalAddressesChanged();
-        /// <summary>
-        /// There are no comments for Property PurchaseOrderLineCharges in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseOrderLineCharge> PurchaseOrderLineCharges
-        {
-            get
-            {
-                return this._PurchaseOrderLineCharges;
-            }
-            set
-            {
-                this.OnPurchaseOrderLineChargesChanging(value);
-                this._PurchaseOrderLineCharges = value;
-                this.OnPurchaseOrderLineChargesChanged();
-                this.OnPropertyChanged("PurchaseOrderLineCharges");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseOrderLineCharge> _PurchaseOrderLineCharges = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseOrderLineCharge>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPurchaseOrderLineChargesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseOrderLineCharge> value);
-        partial void OnPurchaseOrderLineChargesChanged();
-        /// <summary>
-        /// There are no comments for Property CustomerPaymentJournalLineTaxGroupEntity in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalLine> CustomerPaymentJournalLineTaxGroupEntity
-        {
-            get
-            {
-                return this._CustomerPaymentJournalLineTaxGroupEntity;
-            }
-            set
-            {
-                this.OnCustomerPaymentJournalLineTaxGroupEntityChanging(value);
-                this._CustomerPaymentJournalLineTaxGroupEntity = value;
-                this.OnCustomerPaymentJournalLineTaxGroupEntityChanged();
-                this.OnPropertyChanged("CustomerPaymentJournalLineTaxGroupEntity");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalLine> _CustomerPaymentJournalLineTaxGroupEntity = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnCustomerPaymentJournalLineTaxGroupEntityChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalLine> value);
-        partial void OnCustomerPaymentJournalLineTaxGroupEntityChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceLine> _FreeTextInvoiceLineTaxGroup = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnFreeTextInvoiceLineTaxGroupChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceLine> value);
+        partial void OnFreeTextInvoiceLineTaxGroupChanged();
         /// <summary>
         /// There are no comments for Property CDSFreeTextInvoiceLines in the schema.
         /// </summary>
@@ -794,28 +728,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnCDSFreeTextInvoiceLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CDSFreeTextInvoiceLine> value);
         partial void OnCDSFreeTextInvoiceLinesChanged();
         /// <summary>
-        /// There are no comments for Property CustomerPaymentJournalFee in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalFee> CustomerPaymentJournalFee
-        {
-            get
-            {
-                return this._CustomerPaymentJournalFee;
-            }
-            set
-            {
-                this.OnCustomerPaymentJournalFeeChanging(value);
-                this._CustomerPaymentJournalFee = value;
-                this.OnCustomerPaymentJournalFeeChanged();
-                this.OnPropertyChanged("CustomerPaymentJournalFee");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalFee> _CustomerPaymentJournalFee = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalFee>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnCustomerPaymentJournalFeeChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalFee> value);
-        partial void OnCustomerPaymentJournalFeeChanged();
-        /// <summary>
         /// There are no comments for Property Prospects in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -837,72 +749,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Prospect> _Prospects = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Prospect>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnProspectsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Prospect> value);
         partial void OnProspectsChanged();
-        /// <summary>
-        /// There are no comments for Property LedgerJournalLineCDSSalesTaxGroup in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerJournalCDSLine> LedgerJournalLineCDSSalesTaxGroup
-        {
-            get
-            {
-                return this._LedgerJournalLineCDSSalesTaxGroup;
-            }
-            set
-            {
-                this.OnLedgerJournalLineCDSSalesTaxGroupChanging(value);
-                this._LedgerJournalLineCDSSalesTaxGroup = value;
-                this.OnLedgerJournalLineCDSSalesTaxGroupChanged();
-                this.OnPropertyChanged("LedgerJournalLineCDSSalesTaxGroup");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerJournalCDSLine> _LedgerJournalLineCDSSalesTaxGroup = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerJournalCDSLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnLedgerJournalLineCDSSalesTaxGroupChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerJournalCDSLine> value);
-        partial void OnLedgerJournalLineCDSSalesTaxGroupChanged();
-        /// <summary>
-        /// There are no comments for Property FreeTextInvoiceLineTaxGroup in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceLine> FreeTextInvoiceLineTaxGroup
-        {
-            get
-            {
-                return this._FreeTextInvoiceLineTaxGroup;
-            }
-            set
-            {
-                this.OnFreeTextInvoiceLineTaxGroupChanging(value);
-                this._FreeTextInvoiceLineTaxGroup = value;
-                this.OnFreeTextInvoiceLineTaxGroupChanged();
-                this.OnPropertyChanged("FreeTextInvoiceLineTaxGroup");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceLine> _FreeTextInvoiceLineTaxGroup = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnFreeTextInvoiceLineTaxGroupChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceLine> value);
-        partial void OnFreeTextInvoiceLineTaxGroupChanged();
-        /// <summary>
-        /// There are no comments for Property LedgerJournalLineSalesTaxGroup in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerJournalLine> LedgerJournalLineSalesTaxGroup
-        {
-            get
-            {
-                return this._LedgerJournalLineSalesTaxGroup;
-            }
-            set
-            {
-                this.OnLedgerJournalLineSalesTaxGroupChanging(value);
-                this._LedgerJournalLineSalesTaxGroup = value;
-                this.OnLedgerJournalLineSalesTaxGroupChanged();
-                this.OnPropertyChanged("LedgerJournalLineSalesTaxGroup");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerJournalLine> _LedgerJournalLineSalesTaxGroup = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerJournalLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnLedgerJournalLineSalesTaxGroupChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerJournalLine> value);
-        partial void OnLedgerJournalLineSalesTaxGroupChanged();
         /// <summary>
         /// There are no comments for Property PurchaseOrderHeaderCharges in the schema.
         /// </summary>
@@ -926,6 +772,50 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnPurchaseOrderHeaderChargesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseOrderHeaderCharge> value);
         partial void OnPurchaseOrderHeaderChargesChanged();
         /// <summary>
+        /// There are no comments for Property CustomerPaymentJournalFee in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalFee> CustomerPaymentJournalFee
+        {
+            get
+            {
+                return this._CustomerPaymentJournalFee;
+            }
+            set
+            {
+                this.OnCustomerPaymentJournalFeeChanging(value);
+                this._CustomerPaymentJournalFee = value;
+                this.OnCustomerPaymentJournalFeeChanged();
+                this.OnPropertyChanged("CustomerPaymentJournalFee");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalFee> _CustomerPaymentJournalFee = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalFee>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnCustomerPaymentJournalFeeChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalFee> value);
+        partial void OnCustomerPaymentJournalFeeChanged();
+        /// <summary>
+        /// There are no comments for Property CustomerPaymentJournalLineTaxGroupEntity in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalLine> CustomerPaymentJournalLineTaxGroupEntity
+        {
+            get
+            {
+                return this._CustomerPaymentJournalLineTaxGroupEntity;
+            }
+            set
+            {
+                this.OnCustomerPaymentJournalLineTaxGroupEntityChanging(value);
+                this._CustomerPaymentJournalLineTaxGroupEntity = value;
+                this.OnCustomerPaymentJournalLineTaxGroupEntityChanged();
+                this.OnPropertyChanged("CustomerPaymentJournalLineTaxGroupEntity");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalLine> _CustomerPaymentJournalLineTaxGroupEntity = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnCustomerPaymentJournalLineTaxGroupEntityChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalLine> value);
+        partial void OnCustomerPaymentJournalLineTaxGroupEntityChanged();
+        /// <summary>
         /// There are no comments for Property VendorPaymentJournalFee in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -947,6 +837,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorPaymentJournalFee> _VendorPaymentJournalFee = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorPaymentJournalFee>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnVendorPaymentJournalFeeChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorPaymentJournalFee> value);
         partial void OnVendorPaymentJournalFeeChanged();
+        /// <summary>
+        /// There are no comments for Property VendorGroups in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorGroup> VendorGroups
+        {
+            get
+            {
+                return this._VendorGroups;
+            }
+            set
+            {
+                this.OnVendorGroupsChanging(value);
+                this._VendorGroups = value;
+                this.OnVendorGroupsChanged();
+                this.OnPropertyChanged("VendorGroups");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorGroup> _VendorGroups = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorGroup>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnVendorGroupsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorGroup> value);
+        partial void OnVendorGroupsChanged();
         /// <summary>
         /// There are no comments for Property GroupRetailTaxFilter in the schema.
         /// </summary>
@@ -970,6 +882,72 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnGroupRetailTaxFilterChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.GroupRetailTaxFilter> value);
         partial void OnGroupRetailTaxFilterChanged();
         /// <summary>
+        /// There are no comments for Property OperationalSiteCurrentPostalAddresses in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventOperationalSiteCurrentPostalAddress> OperationalSiteCurrentPostalAddresses
+        {
+            get
+            {
+                return this._OperationalSiteCurrentPostalAddresses;
+            }
+            set
+            {
+                this.OnOperationalSiteCurrentPostalAddressesChanging(value);
+                this._OperationalSiteCurrentPostalAddresses = value;
+                this.OnOperationalSiteCurrentPostalAddressesChanged();
+                this.OnPropertyChanged("OperationalSiteCurrentPostalAddresses");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventOperationalSiteCurrentPostalAddress> _OperationalSiteCurrentPostalAddresses = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventOperationalSiteCurrentPostalAddress>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnOperationalSiteCurrentPostalAddressesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventOperationalSiteCurrentPostalAddress> value);
+        partial void OnOperationalSiteCurrentPostalAddressesChanged();
+        /// <summary>
+        /// There are no comments for Property LedgerJournalLineCDSSalesTaxGroup in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerJournalCDSLine> LedgerJournalLineCDSSalesTaxGroup
+        {
+            get
+            {
+                return this._LedgerJournalLineCDSSalesTaxGroup;
+            }
+            set
+            {
+                this.OnLedgerJournalLineCDSSalesTaxGroupChanging(value);
+                this._LedgerJournalLineCDSSalesTaxGroup = value;
+                this.OnLedgerJournalLineCDSSalesTaxGroupChanged();
+                this.OnPropertyChanged("LedgerJournalLineCDSSalesTaxGroup");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerJournalCDSLine> _LedgerJournalLineCDSSalesTaxGroup = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerJournalCDSLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnLedgerJournalLineCDSSalesTaxGroupChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerJournalCDSLine> value);
+        partial void OnLedgerJournalLineCDSSalesTaxGroupChanged();
+        /// <summary>
+        /// There are no comments for Property LedgerJournalLineSalesTaxGroup in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerJournalLine> LedgerJournalLineSalesTaxGroup
+        {
+            get
+            {
+                return this._LedgerJournalLineSalesTaxGroup;
+            }
+            set
+            {
+                this.OnLedgerJournalLineSalesTaxGroupChanging(value);
+                this._LedgerJournalLineSalesTaxGroup = value;
+                this.OnLedgerJournalLineSalesTaxGroupChanged();
+                this.OnPropertyChanged("LedgerJournalLineSalesTaxGroup");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerJournalLine> _LedgerJournalLineSalesTaxGroup = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerJournalLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnLedgerJournalLineSalesTaxGroupChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerJournalLine> value);
+        partial void OnLedgerJournalLineSalesTaxGroupChanged();
+        /// <summary>
         /// There are no comments for Property TaxGroupData in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -991,6 +969,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxGroupData> _TaxGroupData = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxGroupData>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnTaxGroupDataChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxGroupData> value);
         partial void OnTaxGroupDataChanged();
+        /// <summary>
+        /// There are no comments for Property PurchaseOrderLineCharges in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseOrderLineCharge> PurchaseOrderLineCharges
+        {
+            get
+            {
+                return this._PurchaseOrderLineCharges;
+            }
+            set
+            {
+                this.OnPurchaseOrderLineChargesChanging(value);
+                this._PurchaseOrderLineCharges = value;
+                this.OnPurchaseOrderLineChargesChanged();
+                this.OnPropertyChanged("PurchaseOrderLineCharges");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseOrderLineCharge> _PurchaseOrderLineCharges = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseOrderLineCharge>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPurchaseOrderLineChargesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseOrderLineCharge> value);
+        partial void OnPurchaseOrderLineChargesChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

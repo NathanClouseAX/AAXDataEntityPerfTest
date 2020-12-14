@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 11/8/2020 8:07:52 PM
+// Generation date: 12/8/2020 7:45:22 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public CompensationPayPerformanceAllocationSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<CompensationPayPerformanceAllocation> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for CompensationPayPerformanceAllocationLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocationLine> CompensationPayPerformanceAllocationLine
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._CompensationPayPerformanceAllocationLine == null))
-                {
-                    this._CompensationPayPerformanceAllocationLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocationLine>(GetPath("CompensationPayPerformanceAllocationLine"));
-                }
-                return this._CompensationPayPerformanceAllocationLine;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocationLine> _CompensationPayPerformanceAllocationLine;
         /// <summary>
         /// There are no comments for CompensationPerformancePlan in the schema.
         /// </summary>
@@ -118,6 +97,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.OperatingUnitSingle _OperatingUnit;
+        /// <summary>
+        /// There are no comments for CompensationPayPerformanceAllocationLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocationLine> CompensationPayPerformanceAllocationLine
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._CompensationPayPerformanceAllocationLine == null))
+                {
+                    this._CompensationPayPerformanceAllocationLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocationLine>(GetPath("CompensationPayPerformanceAllocationLine"));
+                }
+                return this._CompensationPayPerformanceAllocationLine;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocationLine> _CompensationPayPerformanceAllocationLine;
     }
         /// <summary>
         /// There are no comments for CompensationPayPerformanceAllocation in the schema.
@@ -316,28 +316,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnEffectiveChanging(global::System.DateTimeOffset value);
         partial void OnEffectiveChanged();
         /// <summary>
-        /// There are no comments for Property CompensationPayPerformanceAllocationLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocationLine> CompensationPayPerformanceAllocationLine
-        {
-            get
-            {
-                return this._CompensationPayPerformanceAllocationLine;
-            }
-            set
-            {
-                this.OnCompensationPayPerformanceAllocationLineChanging(value);
-                this._CompensationPayPerformanceAllocationLine = value;
-                this.OnCompensationPayPerformanceAllocationLineChanged();
-                this.OnPropertyChanged("CompensationPayPerformanceAllocationLine");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocationLine> _CompensationPayPerformanceAllocationLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocationLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnCompensationPayPerformanceAllocationLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocationLine> value);
-        partial void OnCompensationPayPerformanceAllocationLineChanged();
-        /// <summary>
         /// There are no comments for Property CompensationPerformancePlan in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -403,6 +381,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.OperatingUnit _OperatingUnit;
         partial void OnOperatingUnitChanging(global::Microsoft.Dynamics.DataEntities.OperatingUnit value);
         partial void OnOperatingUnitChanged();
+        /// <summary>
+        /// There are no comments for Property CompensationPayPerformanceAllocationLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocationLine> CompensationPayPerformanceAllocationLine
+        {
+            get
+            {
+                return this._CompensationPayPerformanceAllocationLine;
+            }
+            set
+            {
+                this.OnCompensationPayPerformanceAllocationLineChanging(value);
+                this._CompensationPayPerformanceAllocationLine = value;
+                this.OnCompensationPayPerformanceAllocationLineChanged();
+                this.OnPropertyChanged("CompensationPayPerformanceAllocationLine");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocationLine> _CompensationPayPerformanceAllocationLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocationLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnCompensationPayPerformanceAllocationLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocationLine> value);
+        partial void OnCompensationPayPerformanceAllocationLineChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

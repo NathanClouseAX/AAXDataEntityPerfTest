@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 11/8/2020 8:07:52 PM
+// Generation date: 12/8/2020 7:45:22 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for AssetMaintenanceAssetTypeFaultType in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetTypeFaultType> AssetMaintenanceAssetTypeFaultType
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._AssetMaintenanceAssetTypeFaultType == null))
-                {
-                    this._AssetMaintenanceAssetTypeFaultType = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetTypeFaultType>(GetPath("AssetMaintenanceAssetTypeFaultType"));
-                }
-                return this._AssetMaintenanceAssetTypeFaultType;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetTypeFaultType> _AssetMaintenanceAssetTypeFaultType;
-        /// <summary>
         /// There are no comments for AssetMaintenanceAssetTypeFaultArea in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,6 +55,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetTypeFaultArea> _AssetMaintenanceAssetTypeFaultArea;
+        /// <summary>
+        /// There are no comments for AssetMaintenanceAssetTypeFaultType in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetTypeFaultType> AssetMaintenanceAssetTypeFaultType
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._AssetMaintenanceAssetTypeFaultType == null))
+                {
+                    this._AssetMaintenanceAssetTypeFaultType = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetTypeFaultType>(GetPath("AssetMaintenanceAssetTypeFaultType"));
+                }
+                return this._AssetMaintenanceAssetTypeFaultType;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetTypeFaultType> _AssetMaintenanceAssetTypeFaultType;
     }
         /// <summary>
         /// There are no comments for AssetMaintenanceFaultArea in the schema.
@@ -192,28 +192,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDescriptionChanging(string value);
         partial void OnDescriptionChanged();
         /// <summary>
-        /// There are no comments for Property AssetMaintenanceAssetTypeFaultType in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetTypeFaultType> AssetMaintenanceAssetTypeFaultType
-        {
-            get
-            {
-                return this._AssetMaintenanceAssetTypeFaultType;
-            }
-            set
-            {
-                this.OnAssetMaintenanceAssetTypeFaultTypeChanging(value);
-                this._AssetMaintenanceAssetTypeFaultType = value;
-                this.OnAssetMaintenanceAssetTypeFaultTypeChanged();
-                this.OnPropertyChanged("AssetMaintenanceAssetTypeFaultType");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetTypeFaultType> _AssetMaintenanceAssetTypeFaultType = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetTypeFaultType>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAssetMaintenanceAssetTypeFaultTypeChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetTypeFaultType> value);
-        partial void OnAssetMaintenanceAssetTypeFaultTypeChanged();
-        /// <summary>
         /// There are no comments for Property AssetMaintenanceAssetTypeFaultArea in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -235,6 +213,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetTypeFaultArea> _AssetMaintenanceAssetTypeFaultArea = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetTypeFaultArea>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnAssetMaintenanceAssetTypeFaultAreaChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetTypeFaultArea> value);
         partial void OnAssetMaintenanceAssetTypeFaultAreaChanged();
+        /// <summary>
+        /// There are no comments for Property AssetMaintenanceAssetTypeFaultType in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetTypeFaultType> AssetMaintenanceAssetTypeFaultType
+        {
+            get
+            {
+                return this._AssetMaintenanceAssetTypeFaultType;
+            }
+            set
+            {
+                this.OnAssetMaintenanceAssetTypeFaultTypeChanging(value);
+                this._AssetMaintenanceAssetTypeFaultType = value;
+                this.OnAssetMaintenanceAssetTypeFaultTypeChanged();
+                this.OnPropertyChanged("AssetMaintenanceAssetTypeFaultType");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetTypeFaultType> _AssetMaintenanceAssetTypeFaultType = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetTypeFaultType>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnAssetMaintenanceAssetTypeFaultTypeChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetTypeFaultType> value);
+        partial void OnAssetMaintenanceAssetTypeFaultTypeChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

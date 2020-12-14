@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 11/8/2020 8:07:52 PM
+// Generation date: 12/8/2020 7:45:22 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,10 +35,10 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for PositionDetails in the schema.
+        /// There are no comments for RecruitingProjects in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PositionDetail> PositionDetails
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RecruitingProject> RecruitingProjects
         {
             get
             {
@@ -46,15 +46,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._PositionDetails == null))
+                if ((this._RecruitingProjects == null))
                 {
-                    this._PositionDetails = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PositionDetail>(GetPath("PositionDetails"));
+                    this._RecruitingProjects = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RecruitingProject>(GetPath("RecruitingProjects"));
                 }
-                return this._PositionDetails;
+                return this._RecruitingProjects;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PositionDetail> _PositionDetails;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RecruitingProject> _RecruitingProjects;
         /// <summary>
         /// There are no comments for CompensationEligibilityRules in the schema.
         /// </summary>
@@ -77,31 +77,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule> _CompensationEligibilityRules;
         /// <summary>
-        /// There are no comments for RecruitingProjects in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RecruitingProject> RecruitingProjects
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._RecruitingProjects == null))
-                {
-                    this._RecruitingProjects = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RecruitingProject>(GetPath("RecruitingProjects"));
-                }
-                return this._RecruitingProjects;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RecruitingProject> _RecruitingProjects;
-        /// <summary>
         /// There are no comments for Positions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PositionV2> Positions
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Position> Positions
         {
             get
             {
@@ -111,34 +90,13 @@ namespace Microsoft.Dynamics.DataEntities
                 }
                 if ((this._Positions == null))
                 {
-                    this._Positions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PositionV2>(GetPath("Positions"));
+                    this._Positions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.Position>(GetPath("Positions"));
                 }
                 return this._Positions;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PositionV2> _Positions;
-        /// <summary>
-        /// There are no comments for Applications in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Application> Applications
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._Applications == null))
-                {
-                    this._Applications = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.Application>(GetPath("Applications"));
-                }
-                return this._Applications;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Application> _Applications;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Position> _Positions;
         /// <summary>
         /// There are no comments for CompensationPayPerformanceAllocations in the schema.
         /// </summary>
@@ -181,6 +139,48 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationFixedIncreaseBudget> _CompensationFixedIncreaseBudgets;
+        /// <summary>
+        /// There are no comments for Applications in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Application> Applications
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Applications == null))
+                {
+                    this._Applications = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.Application>(GetPath("Applications"));
+                }
+                return this._Applications;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Application> _Applications;
+        /// <summary>
+        /// There are no comments for PositionDetails in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PositionDetail> PositionDetails
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._PositionDetails == null))
+                {
+                    this._PositionDetails = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PositionDetail>(GetPath("PositionDetails"));
+                }
+                return this._PositionDetails;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PositionDetail> _PositionDetails;
     }
         /// <summary>
         /// There are no comments for Department in the schema.
@@ -1352,27 +1352,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnPrimaryContactLinkedInPurposeChanging(string value);
         partial void OnPrimaryContactLinkedInPurposeChanged();
         /// <summary>
-        /// There are no comments for Property PositionDetails in the schema.
+        /// There are no comments for Property RecruitingProjects in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PositionDetail> PositionDetails
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RecruitingProject> RecruitingProjects
         {
             get
             {
-                return this._PositionDetails;
+                return this._RecruitingProjects;
             }
             set
             {
-                this.OnPositionDetailsChanging(value);
-                this._PositionDetails = value;
-                this.OnPositionDetailsChanged();
-                this.OnPropertyChanged("PositionDetails");
+                this.OnRecruitingProjectsChanging(value);
+                this._RecruitingProjects = value;
+                this.OnRecruitingProjectsChanged();
+                this.OnPropertyChanged("RecruitingProjects");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PositionDetail> _PositionDetails = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PositionDetail>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPositionDetailsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PositionDetail> value);
-        partial void OnPositionDetailsChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RecruitingProject> _RecruitingProjects = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RecruitingProject>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRecruitingProjectsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RecruitingProject> value);
+        partial void OnRecruitingProjectsChanged();
         /// <summary>
         /// There are no comments for Property CompensationEligibilityRules in the schema.
         /// </summary>
@@ -1396,32 +1396,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnCompensationEligibilityRulesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule> value);
         partial void OnCompensationEligibilityRulesChanged();
         /// <summary>
-        /// There are no comments for Property RecruitingProjects in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RecruitingProject> RecruitingProjects
-        {
-            get
-            {
-                return this._RecruitingProjects;
-            }
-            set
-            {
-                this.OnRecruitingProjectsChanging(value);
-                this._RecruitingProjects = value;
-                this.OnRecruitingProjectsChanged();
-                this.OnPropertyChanged("RecruitingProjects");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RecruitingProject> _RecruitingProjects = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RecruitingProject>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRecruitingProjectsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RecruitingProject> value);
-        partial void OnRecruitingProjectsChanged();
-        /// <summary>
         /// There are no comments for Property Positions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PositionV2> Positions
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Position> Positions
         {
             get
             {
@@ -1436,31 +1414,9 @@ namespace Microsoft.Dynamics.DataEntities
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PositionV2> _Positions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PositionV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPositionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PositionV2> value);
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Position> _Positions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Position>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPositionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Position> value);
         partial void OnPositionsChanged();
-        /// <summary>
-        /// There are no comments for Property Applications in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Application> Applications
-        {
-            get
-            {
-                return this._Applications;
-            }
-            set
-            {
-                this.OnApplicationsChanging(value);
-                this._Applications = value;
-                this.OnApplicationsChanged();
-                this.OnPropertyChanged("Applications");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Application> _Applications = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Application>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnApplicationsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Application> value);
-        partial void OnApplicationsChanged();
         /// <summary>
         /// There are no comments for Property CompensationPayPerformanceAllocations in the schema.
         /// </summary>
@@ -1505,6 +1461,50 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationFixedIncreaseBudget> _CompensationFixedIncreaseBudgets = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationFixedIncreaseBudget>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnCompensationFixedIncreaseBudgetsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationFixedIncreaseBudget> value);
         partial void OnCompensationFixedIncreaseBudgetsChanged();
+        /// <summary>
+        /// There are no comments for Property Applications in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Application> Applications
+        {
+            get
+            {
+                return this._Applications;
+            }
+            set
+            {
+                this.OnApplicationsChanging(value);
+                this._Applications = value;
+                this.OnApplicationsChanged();
+                this.OnPropertyChanged("Applications");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Application> _Applications = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Application>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnApplicationsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Application> value);
+        partial void OnApplicationsChanged();
+        /// <summary>
+        /// There are no comments for Property PositionDetails in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PositionDetail> PositionDetails
+        {
+            get
+            {
+                return this._PositionDetails;
+            }
+            set
+            {
+                this.OnPositionDetailsChanging(value);
+                this._PositionDetails = value;
+                this.OnPositionDetailsChanged();
+                this.OnPropertyChanged("PositionDetails");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PositionDetail> _PositionDetails = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PositionDetail>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPositionDetailsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PositionDetail> value);
+        partial void OnPositionDetailsChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

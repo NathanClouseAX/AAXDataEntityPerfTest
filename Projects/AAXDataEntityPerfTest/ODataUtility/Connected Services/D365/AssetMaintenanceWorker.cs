@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 11/8/2020 8:07:52 PM
+// Generation date: 12/8/2020 7:45:22 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for AssetMaintenanceFunctionalLocationWorker in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationWorker> AssetMaintenanceFunctionalLocationWorker
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._AssetMaintenanceFunctionalLocationWorker == null))
-                {
-                    this._AssetMaintenanceFunctionalLocationWorker = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationWorker>(GetPath("AssetMaintenanceFunctionalLocationWorker"));
-                }
-                return this._AssetMaintenanceFunctionalLocationWorker;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationWorker> _AssetMaintenanceFunctionalLocationWorker;
-        /// <summary>
         /// There are no comments for AssetMaintenanceAssetCalendar in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,6 +55,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetCalendar> _AssetMaintenanceAssetCalendar;
+        /// <summary>
+        /// There are no comments for AssetMaintenanceFunctionalLocationWorker in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationWorker> AssetMaintenanceFunctionalLocationWorker
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._AssetMaintenanceFunctionalLocationWorker == null))
+                {
+                    this._AssetMaintenanceFunctionalLocationWorker = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationWorker>(GetPath("AssetMaintenanceFunctionalLocationWorker"));
+                }
+                return this._AssetMaintenanceFunctionalLocationWorker;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationWorker> _AssetMaintenanceFunctionalLocationWorker;
         /// <summary>
         /// There are no comments for AssetMaintenanceWorkerResponsible in the schema.
         /// </summary>
@@ -189,28 +189,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnWorkerActiveChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> value);
         partial void OnWorkerActiveChanged();
         /// <summary>
-        /// There are no comments for Property AssetMaintenanceFunctionalLocationWorker in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationWorker> AssetMaintenanceFunctionalLocationWorker
-        {
-            get
-            {
-                return this._AssetMaintenanceFunctionalLocationWorker;
-            }
-            set
-            {
-                this.OnAssetMaintenanceFunctionalLocationWorkerChanging(value);
-                this._AssetMaintenanceFunctionalLocationWorker = value;
-                this.OnAssetMaintenanceFunctionalLocationWorkerChanged();
-                this.OnPropertyChanged("AssetMaintenanceFunctionalLocationWorker");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationWorker> _AssetMaintenanceFunctionalLocationWorker = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationWorker>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAssetMaintenanceFunctionalLocationWorkerChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationWorker> value);
-        partial void OnAssetMaintenanceFunctionalLocationWorkerChanged();
-        /// <summary>
         /// There are no comments for Property AssetMaintenanceAssetCalendar in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -232,6 +210,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetCalendar> _AssetMaintenanceAssetCalendar = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetCalendar>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnAssetMaintenanceAssetCalendarChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetCalendar> value);
         partial void OnAssetMaintenanceAssetCalendarChanged();
+        /// <summary>
+        /// There are no comments for Property AssetMaintenanceFunctionalLocationWorker in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationWorker> AssetMaintenanceFunctionalLocationWorker
+        {
+            get
+            {
+                return this._AssetMaintenanceFunctionalLocationWorker;
+            }
+            set
+            {
+                this.OnAssetMaintenanceFunctionalLocationWorkerChanging(value);
+                this._AssetMaintenanceFunctionalLocationWorker = value;
+                this.OnAssetMaintenanceFunctionalLocationWorkerChanged();
+                this.OnPropertyChanged("AssetMaintenanceFunctionalLocationWorker");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationWorker> _AssetMaintenanceFunctionalLocationWorker = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationWorker>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnAssetMaintenanceFunctionalLocationWorkerChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationWorker> value);
+        partial void OnAssetMaintenanceFunctionalLocationWorkerChanged();
         /// <summary>
         /// There are no comments for Property AssetMaintenanceWorkerResponsible in the schema.
         /// </summary>

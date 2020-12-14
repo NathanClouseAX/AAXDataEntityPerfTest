@@ -63,19 +63,6 @@ namespace Part6
             Console.Write("Warming.");
             context.SalesOrderHeadersV2.FirstOrDefault();
             Console.Write(".");
-            context.SalesOrderHeadersV2EntityDSReadOnly.FirstOrDefault();
-            Console.Write(".");
-            context.SalesOrderHeadersV2EntityOnlySalesTable.FirstOrDefault();
-            Console.Write(".");
-            context.SalesOrderHeadersV2EntityReadOnly.FirstOrDefault();
-            Console.Write(".");
-            context.SalesOrderHeadersV2EntityReadOnlyNoGlobalization.FirstOrDefault();
-            Console.Write(".");
-            context.SalesOrderHeaderV2ExistAddrReadOnlys.FirstOrDefault();
-            Console.Write(".");
-            context.AAXSalesTables.FirstOrDefault();
-            Console.Write(".");
-            context.AAXSalesTablesReadOnly.FirstOrDefault();
             Console.WriteLine(".");
 
 

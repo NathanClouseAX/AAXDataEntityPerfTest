@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 11/8/2020 8:07:52 PM
+// Generation date: 12/8/2020 7:45:22 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -38,7 +38,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for ProdutionOrderBOMLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BatchOrderCoProduct> ProdutionOrderBOMLines
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BatchOrderByProduct> ProdutionOrderBOMLines
         {
             get
             {
@@ -48,76 +48,13 @@ namespace Microsoft.Dynamics.DataEntities
                 }
                 if ((this._ProdutionOrderBOMLines == null))
                 {
-                    this._ProdutionOrderBOMLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BatchOrderCoProduct>(GetPath("ProdutionOrderBOMLines"));
+                    this._ProdutionOrderBOMLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BatchOrderByProduct>(GetPath("ProdutionOrderBOMLines"));
                 }
                 return this._ProdutionOrderBOMLines;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BatchOrderCoProduct> _ProdutionOrderBOMLines;
-        /// <summary>
-        /// There are no comments for QualityOrderHeaders in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> QualityOrderHeaders
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._QualityOrderHeaders == null))
-                {
-                    this._QualityOrderHeaders = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader>(GetPath("QualityOrderHeaders"));
-                }
-                return this._QualityOrderHeaders;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> _QualityOrderHeaders;
-        /// <summary>
-        /// There are no comments for ProdutionOrderRouteOperations in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductionOrderRouteOperation> ProdutionOrderRouteOperations
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ProdutionOrderRouteOperations == null))
-                {
-                    this._ProdutionOrderRouteOperations = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductionOrderRouteOperation>(GetPath("ProdutionOrderRouteOperations"));
-                }
-                return this._ProdutionOrderRouteOperations;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductionOrderRouteOperation> _ProdutionOrderRouteOperations;
-        /// <summary>
-        /// There are no comments for JobCardProductionJournalEntries in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobCardProductionJournalEntry> JobCardProductionJournalEntries
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._JobCardProductionJournalEntries == null))
-                {
-                    this._JobCardProductionJournalEntries = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.JobCardProductionJournalEntry>(GetPath("JobCardProductionJournalEntries"));
-                }
-                return this._JobCardProductionJournalEntries;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobCardProductionJournalEntry> _JobCardProductionJournalEntries;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BatchOrderByProduct> _ProdutionOrderBOMLines;
         /// <summary>
         /// There are no comments for ReportAsFinishedProductionJournalEntries in the schema.
         /// </summary>
@@ -140,10 +77,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReportAsFinishedProductionJournalEntry> _ReportAsFinishedProductionJournalEntries;
         /// <summary>
-        /// There are no comments for ProductionPickingListJournalEntries in the schema.
+        /// There are no comments for ProdutionOrderRouteOperations in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductionPickingListJournalEntry> ProductionPickingListJournalEntries
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductionOrderRouteOperation> ProdutionOrderRouteOperations
         {
             get
             {
@@ -151,15 +88,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._ProductionPickingListJournalEntries == null))
+                if ((this._ProdutionOrderRouteOperations == null))
                 {
-                    this._ProductionPickingListJournalEntries = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductionPickingListJournalEntry>(GetPath("ProductionPickingListJournalEntries"));
+                    this._ProdutionOrderRouteOperations = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductionOrderRouteOperation>(GetPath("ProdutionOrderRouteOperations"));
                 }
-                return this._ProductionPickingListJournalEntries;
+                return this._ProdutionOrderRouteOperations;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductionPickingListJournalEntry> _ProductionPickingListJournalEntries;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductionOrderRouteOperation> _ProdutionOrderRouteOperations;
         /// <summary>
         /// There are no comments for DimensionSet in the schema.
         /// </summary>
@@ -182,6 +119,48 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionSetSingle _DimensionSet;
         /// <summary>
+        /// There are no comments for JobCardProductionJournalEntries in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobCardProductionJournalEntry> JobCardProductionJournalEntries
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._JobCardProductionJournalEntries == null))
+                {
+                    this._JobCardProductionJournalEntries = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.JobCardProductionJournalEntry>(GetPath("JobCardProductionJournalEntries"));
+                }
+                return this._JobCardProductionJournalEntries;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobCardProductionJournalEntry> _JobCardProductionJournalEntries;
+        /// <summary>
+        /// There are no comments for QualityOrderHeaders in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> QualityOrderHeaders
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._QualityOrderHeaders == null))
+                {
+                    this._QualityOrderHeaders = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader>(GetPath("QualityOrderHeaders"));
+                }
+                return this._QualityOrderHeaders;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> _QualityOrderHeaders;
+        /// <summary>
         /// There are no comments for RouteCardProductionJournalEntries in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -202,6 +181,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RouteCardProductionJournalEntry> _RouteCardProductionJournalEntries;
+        /// <summary>
+        /// There are no comments for ProductionPickingListJournalEntries in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductionPickingListJournalEntry> ProductionPickingListJournalEntries
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ProductionPickingListJournalEntries == null))
+                {
+                    this._ProductionPickingListJournalEntries = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductionPickingListJournalEntry>(GetPath("ProductionPickingListJournalEntries"));
+                }
+                return this._ProductionPickingListJournalEntries;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductionPickingListJournalEntry> _ProductionPickingListJournalEntries;
     }
         /// <summary>
         /// There are no comments for ProductionOrderHeader in the schema.
@@ -2026,7 +2026,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProdutionOrderBOMLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BatchOrderCoProduct> ProdutionOrderBOMLines
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BatchOrderByProduct> ProdutionOrderBOMLines
         {
             get
             {
@@ -2041,75 +2041,9 @@ namespace Microsoft.Dynamics.DataEntities
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BatchOrderCoProduct> _ProdutionOrderBOMLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BatchOrderCoProduct>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnProdutionOrderBOMLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BatchOrderCoProduct> value);
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BatchOrderByProduct> _ProdutionOrderBOMLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BatchOrderByProduct>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnProdutionOrderBOMLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BatchOrderByProduct> value);
         partial void OnProdutionOrderBOMLinesChanged();
-        /// <summary>
-        /// There are no comments for Property QualityOrderHeaders in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> QualityOrderHeaders
-        {
-            get
-            {
-                return this._QualityOrderHeaders;
-            }
-            set
-            {
-                this.OnQualityOrderHeadersChanging(value);
-                this._QualityOrderHeaders = value;
-                this.OnQualityOrderHeadersChanged();
-                this.OnPropertyChanged("QualityOrderHeaders");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> _QualityOrderHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnQualityOrderHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> value);
-        partial void OnQualityOrderHeadersChanged();
-        /// <summary>
-        /// There are no comments for Property ProdutionOrderRouteOperations in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductionOrderRouteOperation> ProdutionOrderRouteOperations
-        {
-            get
-            {
-                return this._ProdutionOrderRouteOperations;
-            }
-            set
-            {
-                this.OnProdutionOrderRouteOperationsChanging(value);
-                this._ProdutionOrderRouteOperations = value;
-                this.OnProdutionOrderRouteOperationsChanged();
-                this.OnPropertyChanged("ProdutionOrderRouteOperations");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductionOrderRouteOperation> _ProdutionOrderRouteOperations = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductionOrderRouteOperation>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnProdutionOrderRouteOperationsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductionOrderRouteOperation> value);
-        partial void OnProdutionOrderRouteOperationsChanged();
-        /// <summary>
-        /// There are no comments for Property JobCardProductionJournalEntries in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobCardProductionJournalEntry> JobCardProductionJournalEntries
-        {
-            get
-            {
-                return this._JobCardProductionJournalEntries;
-            }
-            set
-            {
-                this.OnJobCardProductionJournalEntriesChanging(value);
-                this._JobCardProductionJournalEntries = value;
-                this.OnJobCardProductionJournalEntriesChanged();
-                this.OnPropertyChanged("JobCardProductionJournalEntries");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobCardProductionJournalEntry> _JobCardProductionJournalEntries = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobCardProductionJournalEntry>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnJobCardProductionJournalEntriesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobCardProductionJournalEntry> value);
-        partial void OnJobCardProductionJournalEntriesChanged();
         /// <summary>
         /// There are no comments for Property ReportAsFinishedProductionJournalEntries in the schema.
         /// </summary>
@@ -2133,27 +2067,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnReportAsFinishedProductionJournalEntriesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReportAsFinishedProductionJournalEntry> value);
         partial void OnReportAsFinishedProductionJournalEntriesChanged();
         /// <summary>
-        /// There are no comments for Property ProductionPickingListJournalEntries in the schema.
+        /// There are no comments for Property ProdutionOrderRouteOperations in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductionPickingListJournalEntry> ProductionPickingListJournalEntries
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductionOrderRouteOperation> ProdutionOrderRouteOperations
         {
             get
             {
-                return this._ProductionPickingListJournalEntries;
+                return this._ProdutionOrderRouteOperations;
             }
             set
             {
-                this.OnProductionPickingListJournalEntriesChanging(value);
-                this._ProductionPickingListJournalEntries = value;
-                this.OnProductionPickingListJournalEntriesChanged();
-                this.OnPropertyChanged("ProductionPickingListJournalEntries");
+                this.OnProdutionOrderRouteOperationsChanging(value);
+                this._ProdutionOrderRouteOperations = value;
+                this.OnProdutionOrderRouteOperationsChanged();
+                this.OnPropertyChanged("ProdutionOrderRouteOperations");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductionPickingListJournalEntry> _ProductionPickingListJournalEntries = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductionPickingListJournalEntry>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnProductionPickingListJournalEntriesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductionPickingListJournalEntry> value);
-        partial void OnProductionPickingListJournalEntriesChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductionOrderRouteOperation> _ProdutionOrderRouteOperations = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductionOrderRouteOperation>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnProdutionOrderRouteOperationsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductionOrderRouteOperation> value);
+        partial void OnProdutionOrderRouteOperationsChanged();
         /// <summary>
         /// There are no comments for Property DimensionSet in the schema.
         /// </summary>
@@ -2177,6 +2111,50 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDimensionSetChanging(global::Microsoft.Dynamics.DataEntities.DimensionSet value);
         partial void OnDimensionSetChanged();
         /// <summary>
+        /// There are no comments for Property JobCardProductionJournalEntries in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobCardProductionJournalEntry> JobCardProductionJournalEntries
+        {
+            get
+            {
+                return this._JobCardProductionJournalEntries;
+            }
+            set
+            {
+                this.OnJobCardProductionJournalEntriesChanging(value);
+                this._JobCardProductionJournalEntries = value;
+                this.OnJobCardProductionJournalEntriesChanged();
+                this.OnPropertyChanged("JobCardProductionJournalEntries");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobCardProductionJournalEntry> _JobCardProductionJournalEntries = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobCardProductionJournalEntry>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnJobCardProductionJournalEntriesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobCardProductionJournalEntry> value);
+        partial void OnJobCardProductionJournalEntriesChanged();
+        /// <summary>
+        /// There are no comments for Property QualityOrderHeaders in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> QualityOrderHeaders
+        {
+            get
+            {
+                return this._QualityOrderHeaders;
+            }
+            set
+            {
+                this.OnQualityOrderHeadersChanging(value);
+                this._QualityOrderHeaders = value;
+                this.OnQualityOrderHeadersChanged();
+                this.OnPropertyChanged("QualityOrderHeaders");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> _QualityOrderHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnQualityOrderHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> value);
+        partial void OnQualityOrderHeadersChanged();
+        /// <summary>
         /// There are no comments for Property RouteCardProductionJournalEntries in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -2198,6 +2176,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RouteCardProductionJournalEntry> _RouteCardProductionJournalEntries = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RouteCardProductionJournalEntry>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnRouteCardProductionJournalEntriesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RouteCardProductionJournalEntry> value);
         partial void OnRouteCardProductionJournalEntriesChanged();
+        /// <summary>
+        /// There are no comments for Property ProductionPickingListJournalEntries in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductionPickingListJournalEntry> ProductionPickingListJournalEntries
+        {
+            get
+            {
+                return this._ProductionPickingListJournalEntries;
+            }
+            set
+            {
+                this.OnProductionPickingListJournalEntriesChanging(value);
+                this._ProductionPickingListJournalEntries = value;
+                this.OnProductionPickingListJournalEntriesChanged();
+                this.OnPropertyChanged("ProductionPickingListJournalEntries");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductionPickingListJournalEntry> _ProductionPickingListJournalEntries = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductionPickingListJournalEntry>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnProductionPickingListJournalEntriesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductionPickingListJournalEntry> value);
+        partial void OnProductionPickingListJournalEntriesChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

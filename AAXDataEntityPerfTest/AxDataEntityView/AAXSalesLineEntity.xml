@@ -1,0 +1,1230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxDataEntityView xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Name>AAXSalesLineEntity</Name>
+	<SourceCode>
+		<Declaration><![CDATA[
+public class AAXSalesLineEntity extends common
+{
+}
+]]></Declaration>
+		<Methods />
+	</SourceCode>
+	<ConfigurationKey>LogisticsBasic</ConfigurationKey>
+	<Label>@SYS508</Label>
+	<SubscriberAccessLevel>
+		<Read>Allow</Read>
+	</SubscriberAccessLevel>
+	<IsPublic>Yes</IsPublic>
+	<PrimaryCompanyContext>DataAreaId</PrimaryCompanyContext>
+	<PrimaryKey>EntityKey</PrimaryKey>
+	<PublicCollectionName>AAXSalesLines</PublicCollectionName>
+	<PublicEntityName>AAXSalesLine</PublicEntityName>
+	<DeleteActions />
+	<FieldGroups>
+		<AxTableFieldGroup>
+			<Name>AutoReport</Name>
+			<Fields />
+		</AxTableFieldGroup>
+		<AxTableFieldGroup>
+			<Name>AutoLookup</Name>
+			<Fields />
+		</AxTableFieldGroup>
+		<AxTableFieldGroup>
+			<Name>AutoIdentification</Name>
+			<AutoPopulate>Yes</AutoPopulate>
+			<Fields />
+		</AxTableFieldGroup>
+		<AxTableFieldGroup>
+			<Name>AutoSummary</Name>
+			<Fields />
+		</AxTableFieldGroup>
+		<AxTableFieldGroup>
+			<Name>AutoBrowse</Name>
+			<Fields />
+		</AxTableFieldGroup>
+	</FieldGroups>
+	<Fields>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>AccountingDistributionTemplate</Name>
+			<DataField>AccountingDistributionTemplate</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ActivityNumber</Name>
+			<DataField>ActivityNumber</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>AddressRefRecId</Name>
+			<DataField>AddressRefRecId</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>AddressRefTableId</Name>
+			<DataField>AddressRefTableId</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>AgreementSkipAutoLink</Name>
+			<DataField>AgreementSkipAutoLink</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>AssetId_RU</Name>
+			<DataField>AssetId_RU</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>AutoCreateInterCompanyOrders</Name>
+			<DataField>AutoCreateInterCompanyOrders</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>BarCode</Name>
+			<DataField>BarCode</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>BarCodeType</Name>
+			<DataField>BarCodeType</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>Blocked</Name>
+			<DataField>Blocked</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CaseTagging</Name>
+			<DataField>CaseTagging</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>Complete</Name>
+			<DataField>Complete</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ConfirmedDlv</Name>
+			<DataField>ConfirmedDlv</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>Consignment_MX</Name>
+			<DataField>Consignment_MX</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CostPrice</Name>
+			<DataField>CostPrice</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CountryRegionName_RU</Name>
+			<DataField>CountryRegionName_RU</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CountyOrigDest</Name>
+			<DataField>CountyOrigDest</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CreatedBy1</Name>
+			<DataField>CreatedBy</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CreatedByParmId_IT</Name>
+			<DataField>CreatedByParmId_IT</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CreatedDateTime1</Name>
+			<DataField>CreatedDateTime</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CreditNoteInternalRef_PL</Name>
+			<DataField>CreditNoteInternalRef_PL</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CreditNoteReasonCode</Name>
+			<DataField>CreditNoteReasonCode</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CurrencyCode</Name>
+			<DataField>CurrencyCode</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CustAccount</Name>
+			<DataField>CustAccount</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CustGroup</Name>
+			<DataField>CustGroup</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CustomerLineNum</Name>
+			<DataField>CustomerLineNum</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CustomerRef</Name>
+			<DataField>CustomerRef</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CustomsDocDate_MX</Name>
+			<DataField>CustomsDocDate_MX</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CustomsDocNumber_MX</Name>
+			<DataField>CustomsDocNumber_MX</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CustomsName_MX</Name>
+			<DataField>CustomsName_MX</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DataAreaId1</Name>
+			<DataField>DataAreaId</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DefaultDimension</Name>
+			<AccessModifier>Private</AccessModifier>
+			<DataField>DefaultDimension</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DeliveryDateControlType</Name>
+			<DataField>DeliveryDateControlType</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DeliveryName</Name>
+			<DataField>DeliveryName</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DeliveryPostalAddress</Name>
+			<DataField>DeliveryPostalAddress</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DeliveryTaxGroup_BR</Name>
+			<DataField>DeliveryTaxGroup_BR</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DeliveryTaxItemGroup_BR</Name>
+			<DataField>DeliveryTaxItemGroup_BR</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DeliveryType</Name>
+			<DataField>DeliveryType</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DlvMode</Name>
+			<DataField>DlvMode</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DlvTerm</Name>
+			<DataField>DlvTerm</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>EInvoiceAccountCode</Name>
+			<DataField>EInvoiceAccountCode</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ExpectedRetQty</Name>
+			<DataField>ExpectedRetQty</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ExternalItemId</Name>
+			<DataField>ExternalItemId</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>GoodsForFree_IT</Name>
+			<DataField>GoodsForFree_IT</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InterCompanyInventTransId</Name>
+			<DataField>InterCompanyInventTransId</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InterCompanyOrigin</Name>
+			<DataField>InterCompanyOrigin</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>IntrastatCommodity</Name>
+			<DataField>IntrastatCommodity</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>IntrastatFulfillmentDate_HU</Name>
+			<DataField>IntrastatFulfillmentDate_HU</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InventDeliverNow</Name>
+			<DataField>InventDeliverNow</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InventDimId</Name>
+			<DataField>InventDimId</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InventRefId</Name>
+			<DataField>InventRefId</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InventRefTransId</Name>
+			<DataField>InventRefTransId</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InventRefType</Name>
+			<DataField>InventRefType</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InventTransId</Name>
+			<DataField>InventTransId</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InventTransIdReturn</Name>
+			<DataField>InventTransIdReturn</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InvoiceGTDId_RU</Name>
+			<DataField>InvoiceGTDId_RU</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ItemBOMId</Name>
+			<DataField>ItemBOMId</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ItemId</Name>
+			<DataField>ItemId</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ItemReplaced</Name>
+			<DataField>ItemReplaced</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ItemRouteId</Name>
+			<DataField>ItemRouteId</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ItemTagging</Name>
+			<DataField>ItemTagging</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>LedgerDimension</Name>
+			<AccessModifier>Private</AccessModifier>
+			<DataField>LedgerDimension</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>LineAmount</Name>
+			<DataField>LineAmount</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>LineCreationSequenceNumber</Name>
+			<DataField>LineCreationSequenceNumber</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>LineDeliveryType</Name>
+			<DataField>LineDeliveryType</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>LineDisc</Name>
+			<DataField>LineDisc</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>LineHeader</Name>
+			<DataField>LineHeader</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>LineNum</Name>
+			<DataField>LineNum</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>LinePercent</Name>
+			<DataField>LinePercent</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ManualEntryChangepolicy</Name>
+			<DataField>ManualEntryChangepolicy</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>MatchingAgreementLine</Name>
+			<DataField>MatchingAgreementLine</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>McrMarginPercent</Name>
+			<DataField>McrMarginPercent</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>McrMarginUpdated</Name>
+			<DataField>McrMarginUpdated</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>MCROrderLine2PriceHistoryRef</Name>
+			<DataField>MCROrderLine2PriceHistoryRef</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ModifiedBy1</Name>
+			<DataField>ModifiedBy</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ModifiedDateTime1</Name>
+			<DataField>ModifiedDateTime</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>MultiLnDisc</Name>
+			<DataField>MultiLnDisc</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>MultiLnPercent</Name>
+			<DataField>MultiLnPercent</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>Name</Name>
+			<DataField>Name</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>OrderLineReference_NO</Name>
+			<DataField>OrderLineReference_NO</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>OrigCountryRegionId</Name>
+			<DataField>OrigCountryRegionId</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>OrigStateId</Name>
+			<DataField>OrigStateId</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>OverDeliveryPct</Name>
+			<DataField>OverDeliveryPct</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PackedExtensions</Name>
+			<DataField>PackedExtensions</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PackingUnit</Name>
+			<DataField>PackingUnit</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PackingUnitQty</Name>
+			<DataField>PackingUnitQty</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PalletTagging</Name>
+			<DataField>PalletTagging</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>Partition1</Name>
+			<DataField>Partition</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PdsBatchAttribAutoRes</Name>
+			<DataField>PdsBatchAttribAutoRes</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PdsCWExpectedRetQty</Name>
+			<DataField>PdsCWExpectedRetQty</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PdsCWInventDeliverNow</Name>
+			<DataField>PdsCWInventDeliverNow</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PdsCWQty</Name>
+			<DataField>PdsCWQty</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PdsCWRemainInventFinancial</Name>
+			<DataField>PdsCWRemainInventFinancial</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PdsCWRemainInventPhysical</Name>
+			<DataField>PdsCWRemainInventPhysical</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PdsExcludeFromRebate</Name>
+			<DataField>PdsExcludeFromRebate</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PdsItemRebateGroupId</Name>
+			<DataField>PdsItemRebateGroupId</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PdsSameLot</Name>
+			<DataField>PdsSameLot</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PdsSameLotOverride</Name>
+			<DataField>PdsSameLotOverride</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>Port</Name>
+			<DataField>Port</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PostingProfile_RU</Name>
+			<DataField>PostingProfile_RU</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PrepaymentRecId_IT</Name>
+			<DataField>PrepaymentRecId_IT</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PriceAgreementDate_RU</Name>
+			<DataField>PriceAgreementDate_RU</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PriceUnit</Name>
+			<DataField>PriceUnit</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ProjCategoryId</Name>
+			<DataField>ProjCategoryId</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ProjFundingSource</Name>
+			<DataField>ProjFundingSource</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ProjId</Name>
+			<DataField>ProjId</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ProjLinePropertyId</Name>
+			<DataField>ProjLinePropertyId</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ProjTransId</Name>
+			<DataField>ProjTransId</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PropertyNumber_MX</Name>
+			<DataField>PropertyNumber_MX</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PSAContractLineNum</Name>
+			<DataField>PSAContractLineNum</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PSAProjProposalInventQty</Name>
+			<DataField>PSAProjProposalInventQty</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PSAProjProposalQty</Name>
+			<DataField>PSAProjProposalQty</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PurchorderFormNum</Name>
+			<DataField>PurchorderFormNum</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>QtyOrdered</Name>
+			<DataField>QtyOrdered</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>QuantityErrorCorrectionMethods</Name>
+			<DataField>QuantityErrorCorrectionMethods</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ReceiptDateConfirmed</Name>
+			<DataField>ReceiptDateConfirmed</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ReceiptDateRequested</Name>
+			<DataField>ReceiptDateRequested</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>RecId1</Name>
+			<DataField>RecId</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>RecVersion1</Name>
+			<DataField>RecVersion</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>RefReturnInvoiceTrans_W</Name>
+			<DataField>RefReturnInvoiceTrans_W</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>RemainInventFinancial</Name>
+			<DataField>RemainInventFinancial</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>RemainInventPhysical</Name>
+			<DataField>RemainInventPhysical</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>RemainSalesFinancial</Name>
+			<DataField>RemainSalesFinancial</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>RemainSalesPhysical</Name>
+			<DataField>RemainSalesPhysical</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>Reservation</Name>
+			<DataField>Reservation</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>RetailBlockQty</Name>
+			<DataField>RetailBlockQty</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>RetailVariantId</Name>
+			<DataField>RetailVariantId</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ReturnAllowReservation</Name>
+			<DataField>ReturnAllowReservation</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ReturnArrivalDate</Name>
+			<DataField>ReturnArrivalDate</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ReturnClosedDate</Name>
+			<DataField>ReturnClosedDate</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ReturnDeadline</Name>
+			<DataField>ReturnDeadline</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ReturnDispositionCodeId</Name>
+			<DataField>ReturnDispositionCodeId</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ReturnStatus</Name>
+			<DataField>ReturnStatus</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SalesCategory</Name>
+			<DataField>SalesCategory</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SalesDeliverNow</Name>
+			<DataField>SalesDeliverNow</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SalesGroup</Name>
+			<DataField>SalesGroup</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SalesId</Name>
+			<DataField>SalesId</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SalesMarkup</Name>
+			<DataField>SalesMarkup</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SalesPrice</Name>
+			<DataField>SalesPrice</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SalesQty</Name>
+			<DataField>SalesQty</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SalesSalesOrderCreationMethod</Name>
+			<DataField>SalesSalesOrderCreationMethod</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SalesStatus</Name>
+			<DataField>SalesStatus</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SalesType</Name>
+			<DataField>SalesType</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SalesUnit</Name>
+			<DataField>SalesUnit</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>Samples_MX</Name>
+			<DataField>Samples_MX</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SATCustomsQty_MX</Name>
+			<DataField>SATCustomsQty_MX</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SATCustomUnitOfMeasure_MX</Name>
+			<DataField>SATCustomUnitOfMeasure_MX</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SATProductCode_MX</Name>
+			<DataField>SATProductCode_MX</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SATTariffFraction_MX</Name>
+			<DataField>SATTariffFraction_MX</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SATUnitCode_MX</Name>
+			<DataField>SATUnitCode_MX</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>Scrap</Name>
+			<DataField>Scrap</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ServiceLineType_IT</Name>
+			<DataField>ServiceLineType_IT</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ServiceOrderId</Name>
+			<DataField>ServiceOrderId</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ShipCarrierAccount</Name>
+			<DataField>ShipCarrierAccount</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ShipCarrierAccountCode</Name>
+			<DataField>ShipCarrierAccountCode</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ShipCarrierDlvType</Name>
+			<DataField>ShipCarrierDlvType</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ShipCarrierId</Name>
+			<DataField>ShipCarrierId</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ShipCarrierName</Name>
+			<DataField>ShipCarrierName</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ShipCarrierPostalAddress</Name>
+			<DataField>ShipCarrierPostalAddress</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ShippingDateConfirmed</Name>
+			<DataField>ShippingDateConfirmed</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ShippingDateRequested</Name>
+			<DataField>ShippingDateRequested</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SkipAssignInventTransId</Name>
+			<DataField>SkipAssignInventTransId</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SkipCreateMarkup</Name>
+			<DataField>SkipCreateMarkup</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SkipDefaultingSourcingVendor</Name>
+			<DataField>SkipDefaultingSourcingVendor</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SkipDeliveryScheduleUpdate</Name>
+			<DataField>SkipDeliveryScheduleUpdate</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SkipIntercompanyPurchOrderAccountingDistribution</Name>
+			<DataField>SkipIntercompanyPurchOrderAccountingDistribution</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SkipPriceDiscCalc</Name>
+			<DataField>SkipPriceDiscCalc</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SkipUpdate</Name>
+			<DataField>SkipUpdate</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SourceDocumentLine</Name>
+			<DataField>SourceDocumentLine</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SourcingCompanyId</Name>
+			<DataField>SourcingCompanyId</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SourcingInventLocationId</Name>
+			<DataField>SourcingInventLocationId</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SourcingInventSiteId</Name>
+			<DataField>SourcingInventSiteId</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SourcingOrigin</Name>
+			<DataField>SourcingOrigin</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SourcingVendAccount</Name>
+			<DataField>SourcingVendAccount</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>StatisticValue_LT</Name>
+			<DataField>StatisticValue_LT</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>StatProcId</Name>
+			<DataField>StatProcId</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>StatTriangularDeal</Name>
+			<DataField>StatTriangularDeal</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>StockedProduct</Name>
+			<DataField>StockedProduct</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SyncIntercompanyPurchLine</Name>
+			<DataField>SyncIntercompanyPurchLine</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SyncPurchLine</Name>
+			<DataField>SyncPurchLine</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SystemEntryChangePolicy</Name>
+			<DataField>SystemEntryChangePolicy</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SystemEntrySource</Name>
+			<DataField>SystemEntrySource</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>TaxAutogenerated</Name>
+			<DataField>TaxAutogenerated</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>TaxGroup</Name>
+			<DataField>TaxGroup</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>TaxItemGroup</Name>
+			<DataField>TaxItemGroup</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>TaxWithholdGroup</Name>
+			<DataField>TaxWithholdGroup</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>TaxWithholdItemGroupHeading_TH</Name>
+			<DataField>TaxWithholdItemGroupHeading_TH</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>TransactionCode</Name>
+			<DataField>TransactionCode</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>Transport</Name>
+			<DataField>Transport</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>UnderDeliveryPct</Name>
+			<DataField>UnderDeliveryPct</DataField>
+			<DataSource>SalesLine</DataSource>
+		</AxDataEntityViewField>
+	</Fields>
+	<Keys>
+		<AxDataEntityViewKey>
+			<Name>EntityKey</Name>
+			<Fields />
+		</AxDataEntityViewKey>
+	</Keys>
+	<Mappings />
+	<Ranges />
+	<Relations />
+	<StateMachines />
+	<ViewMetadata>
+		<Name>Metadata</Name>
+		<SourceCode>
+			<Methods>
+				<Method>
+					<Name>classDeclaration</Name>
+					<Source><![CDATA[
+[Query]
+public class Metadata extends QueryRun
+{
+}
+]]></Source>
+				</Method>
+			</Methods>
+		</SourceCode>
+		<DataSources>
+			<AxQuerySimpleRootDataSource>
+				<Name>SalesLine</Name>
+				<DynamicFields>Yes</DynamicFields>
+				<Table>SalesLine</Table>
+				<DataSources />
+				<DerivedDataSources />
+				<Fields />
+				<Ranges />
+				<GroupBy />
+				<Having />
+				<OrderBy />
+			</AxQuerySimpleRootDataSource>
+		</DataSources>
+	</ViewMetadata>
+</AxDataEntityView>

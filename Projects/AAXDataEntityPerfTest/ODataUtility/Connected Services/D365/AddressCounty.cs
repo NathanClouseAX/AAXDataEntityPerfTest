@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 11/8/2020 8:07:52 PM
+// Generation date: 12/8/2020 7:45:22 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,10 +35,10 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for Cities in the schema.
+        /// There are no comments for Prospects in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AddressCity> Cities
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Prospect> Prospects
         {
             get
             {
@@ -46,15 +46,36 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._Cities == null))
+                if ((this._Prospects == null))
                 {
-                    this._Cities = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AddressCity>(GetPath("Cities"));
+                    this._Prospects = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.Prospect>(GetPath("Prospects"));
                 }
-                return this._Cities;
+                return this._Prospects;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AddressCity> _Cities;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Prospect> _Prospects;
+        /// <summary>
+        /// There are no comments for OperationalSiteCurrentPostalAddresses in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InventOperationalSiteCurrentPostalAddress> OperationalSiteCurrentPostalAddresses
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._OperationalSiteCurrentPostalAddresses == null))
+                {
+                    this._OperationalSiteCurrentPostalAddresses = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.InventOperationalSiteCurrentPostalAddress>(GetPath("OperationalSiteCurrentPostalAddresses"));
+                }
+                return this._OperationalSiteCurrentPostalAddresses;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InventOperationalSiteCurrentPostalAddress> _OperationalSiteCurrentPostalAddresses;
         /// <summary>
         /// There are no comments for Districts in the schema.
         /// </summary>
@@ -76,6 +97,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AddressDistrict> _Districts;
+        /// <summary>
+        /// There are no comments for Cities in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AddressCity> Cities
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Cities == null))
+                {
+                    this._Cities = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AddressCity>(GetPath("Cities"));
+                }
+                return this._Cities;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AddressCity> _Cities;
         /// <summary>
         /// There are no comments for AddressState in the schema.
         /// </summary>
@@ -118,48 +160,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.AddressCountryRegionSingle _AddressCountryRegion;
-        /// <summary>
-        /// There are no comments for OperationalSiteCurrentPostalAddresses in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InventOperationalSiteCurrentPostalAddress> OperationalSiteCurrentPostalAddresses
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._OperationalSiteCurrentPostalAddresses == null))
-                {
-                    this._OperationalSiteCurrentPostalAddresses = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.InventOperationalSiteCurrentPostalAddress>(GetPath("OperationalSiteCurrentPostalAddresses"));
-                }
-                return this._OperationalSiteCurrentPostalAddresses;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InventOperationalSiteCurrentPostalAddress> _OperationalSiteCurrentPostalAddresses;
-        /// <summary>
-        /// There are no comments for Prospects in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Prospect> Prospects
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._Prospects == null))
-                {
-                    this._Prospects = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.Prospect>(GetPath("Prospects"));
-                }
-                return this._Prospects;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Prospect> _Prospects;
         /// <summary>
         /// There are no comments for AssetLocation in the schema.
         /// </summary>
@@ -348,27 +348,49 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnITCountyCodeChanging(string value);
         partial void OnITCountyCodeChanged();
         /// <summary>
-        /// There are no comments for Property Cities in the schema.
+        /// There are no comments for Property Prospects in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AddressCity> Cities
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Prospect> Prospects
         {
             get
             {
-                return this._Cities;
+                return this._Prospects;
             }
             set
             {
-                this.OnCitiesChanging(value);
-                this._Cities = value;
-                this.OnCitiesChanged();
-                this.OnPropertyChanged("Cities");
+                this.OnProspectsChanging(value);
+                this._Prospects = value;
+                this.OnProspectsChanged();
+                this.OnPropertyChanged("Prospects");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AddressCity> _Cities = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AddressCity>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnCitiesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AddressCity> value);
-        partial void OnCitiesChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Prospect> _Prospects = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Prospect>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnProspectsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Prospect> value);
+        partial void OnProspectsChanged();
+        /// <summary>
+        /// There are no comments for Property OperationalSiteCurrentPostalAddresses in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventOperationalSiteCurrentPostalAddress> OperationalSiteCurrentPostalAddresses
+        {
+            get
+            {
+                return this._OperationalSiteCurrentPostalAddresses;
+            }
+            set
+            {
+                this.OnOperationalSiteCurrentPostalAddressesChanging(value);
+                this._OperationalSiteCurrentPostalAddresses = value;
+                this.OnOperationalSiteCurrentPostalAddressesChanged();
+                this.OnPropertyChanged("OperationalSiteCurrentPostalAddresses");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventOperationalSiteCurrentPostalAddress> _OperationalSiteCurrentPostalAddresses = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventOperationalSiteCurrentPostalAddress>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnOperationalSiteCurrentPostalAddressesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventOperationalSiteCurrentPostalAddress> value);
+        partial void OnOperationalSiteCurrentPostalAddressesChanged();
         /// <summary>
         /// There are no comments for Property Districts in the schema.
         /// </summary>
@@ -391,6 +413,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AddressDistrict> _Districts = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AddressDistrict>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnDistrictsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AddressDistrict> value);
         partial void OnDistrictsChanged();
+        /// <summary>
+        /// There are no comments for Property Cities in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AddressCity> Cities
+        {
+            get
+            {
+                return this._Cities;
+            }
+            set
+            {
+                this.OnCitiesChanging(value);
+                this._Cities = value;
+                this.OnCitiesChanged();
+                this.OnPropertyChanged("Cities");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AddressCity> _Cities = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AddressCity>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnCitiesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AddressCity> value);
+        partial void OnCitiesChanged();
         /// <summary>
         /// There are no comments for Property AddressState in the schema.
         /// </summary>
@@ -435,50 +479,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.AddressCountryRegion _AddressCountryRegion;
         partial void OnAddressCountryRegionChanging(global::Microsoft.Dynamics.DataEntities.AddressCountryRegion value);
         partial void OnAddressCountryRegionChanged();
-        /// <summary>
-        /// There are no comments for Property OperationalSiteCurrentPostalAddresses in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventOperationalSiteCurrentPostalAddress> OperationalSiteCurrentPostalAddresses
-        {
-            get
-            {
-                return this._OperationalSiteCurrentPostalAddresses;
-            }
-            set
-            {
-                this.OnOperationalSiteCurrentPostalAddressesChanging(value);
-                this._OperationalSiteCurrentPostalAddresses = value;
-                this.OnOperationalSiteCurrentPostalAddressesChanged();
-                this.OnPropertyChanged("OperationalSiteCurrentPostalAddresses");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventOperationalSiteCurrentPostalAddress> _OperationalSiteCurrentPostalAddresses = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventOperationalSiteCurrentPostalAddress>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnOperationalSiteCurrentPostalAddressesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventOperationalSiteCurrentPostalAddress> value);
-        partial void OnOperationalSiteCurrentPostalAddressesChanged();
-        /// <summary>
-        /// There are no comments for Property Prospects in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Prospect> Prospects
-        {
-            get
-            {
-                return this._Prospects;
-            }
-            set
-            {
-                this.OnProspectsChanging(value);
-                this._Prospects = value;
-                this.OnProspectsChanged();
-                this.OnPropertyChanged("Prospects");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Prospect> _Prospects = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Prospect>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnProspectsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Prospect> value);
-        partial void OnProspectsChanged();
         /// <summary>
         /// There are no comments for Property AssetLocation in the schema.
         /// </summary>

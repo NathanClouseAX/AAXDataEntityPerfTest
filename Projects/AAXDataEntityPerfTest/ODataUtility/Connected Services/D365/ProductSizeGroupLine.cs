@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 11/8/2020 8:07:52 PM
+// Generation date: 12/8/2020 7:45:22 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public ProductSizeGroupLineSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ProductSizeGroupLine> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for ProductSizeGroupLineTranslations in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductSizeGroupLineTranslation> ProductSizeGroupLineTranslations
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ProductSizeGroupLineTranslations == null))
-                {
-                    this._ProductSizeGroupLineTranslations = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductSizeGroupLineTranslation>(GetPath("ProductSizeGroupLineTranslations"));
-                }
-                return this._ProductSizeGroupLineTranslations;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductSizeGroupLineTranslation> _ProductSizeGroupLineTranslations;
         /// <summary>
         /// There are no comments for ProductSize in the schema.
         /// </summary>
@@ -97,6 +76,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ProductSizeGroupSingle _ProductSizeGroup;
+        /// <summary>
+        /// There are no comments for ProductSizeGroupLineTranslations in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductSizeGroupLineTranslation> ProductSizeGroupLineTranslations
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ProductSizeGroupLineTranslations == null))
+                {
+                    this._ProductSizeGroupLineTranslations = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductSizeGroupLineTranslation>(GetPath("ProductSizeGroupLineTranslations"));
+                }
+                return this._ProductSizeGroupLineTranslations;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductSizeGroupLineTranslation> _ProductSizeGroupLineTranslations;
     }
         /// <summary>
         /// There are no comments for ProductSizeGroupLine in the schema.
@@ -298,28 +298,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnBarcodeNumberChanging(string value);
         partial void OnBarcodeNumberChanged();
         /// <summary>
-        /// There are no comments for Property ProductSizeGroupLineTranslations in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductSizeGroupLineTranslation> ProductSizeGroupLineTranslations
-        {
-            get
-            {
-                return this._ProductSizeGroupLineTranslations;
-            }
-            set
-            {
-                this.OnProductSizeGroupLineTranslationsChanging(value);
-                this._ProductSizeGroupLineTranslations = value;
-                this.OnProductSizeGroupLineTranslationsChanged();
-                this.OnPropertyChanged("ProductSizeGroupLineTranslations");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductSizeGroupLineTranslation> _ProductSizeGroupLineTranslations = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductSizeGroupLineTranslation>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnProductSizeGroupLineTranslationsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductSizeGroupLineTranslation> value);
-        partial void OnProductSizeGroupLineTranslationsChanged();
-        /// <summary>
         /// There are no comments for Property ProductSize in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -363,6 +341,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.ProductSizeGroup _ProductSizeGroup;
         partial void OnProductSizeGroupChanging(global::Microsoft.Dynamics.DataEntities.ProductSizeGroup value);
         partial void OnProductSizeGroupChanged();
+        /// <summary>
+        /// There are no comments for Property ProductSizeGroupLineTranslations in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductSizeGroupLineTranslation> ProductSizeGroupLineTranslations
+        {
+            get
+            {
+                return this._ProductSizeGroupLineTranslations;
+            }
+            set
+            {
+                this.OnProductSizeGroupLineTranslationsChanging(value);
+                this._ProductSizeGroupLineTranslations = value;
+                this.OnProductSizeGroupLineTranslationsChanged();
+                this.OnPropertyChanged("ProductSizeGroupLineTranslations");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductSizeGroupLineTranslation> _ProductSizeGroupLineTranslations = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductSizeGroupLineTranslation>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnProductSizeGroupLineTranslationsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductSizeGroupLineTranslation> value);
+        partial void OnProductSizeGroupLineTranslationsChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

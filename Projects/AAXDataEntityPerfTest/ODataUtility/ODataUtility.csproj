@@ -81,6 +81,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connected Services\D365\AAXSalesLine.cs" />
     <Compile Include="Connected Services\D365\AAXSalesTable.cs" />
     <Compile Include="Connected Services\D365\AAXSalesTableReadOnly.cs" />
     <Compile Include="Connected Services\D365\ABC.cs" />
@@ -1708,6 +1709,9 @@
     <Compile Include="Connected Services\D365\SalesQuotationHeaderV2.cs" />
     <Compile Include="Connected Services\D365\SalesQuotationLine.cs" />
     <Compile Include="Connected Services\D365\SalesQuotationStatus.cs" />
+    <Compile Include="Connected Services\D365\SalesSalesOrderCreationMethod.cs" />
+    <Compile Include="Connected Services\D365\SalesServiceLineType_IT.cs" />
+    <Compile Include="Connected Services\D365\SalesSourcingOrigin.cs" />
     <Compile Include="Connected Services\D365\SalesStatus.cs" />
     <Compile Include="Connected Services\D365\SalesType.cs" />
     <Compile Include="Connected Services\D365\ScaleIndicator_BR.cs" />

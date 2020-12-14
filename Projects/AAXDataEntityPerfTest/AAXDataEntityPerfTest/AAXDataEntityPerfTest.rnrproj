@@ -35,6 +35,11 @@
     <Folder Include="Tables\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AxDataEntityView\AAXSalesLineEntity">
+      <SubType>Content</SubType>
+      <Name>AAXSalesLineEntity</Name>
+      <Link>Data Entities\AAXSalesLineEntity</Link>
+    </Content>
     <Content Include="AxDataEntityView\AAXSalesOrderHeaderV2EntityDSReadOnly">
       <SubType>Content</SubType>
       <Name>AAXSalesOrderHeaderV2EntityDSReadOnly</Name>
@@ -69,6 +74,16 @@
       <SubType>Content</SubType>
       <Name>AAXCustVendReportingCurrencyFixedExchangeRate</Name>
       <Link>Maps\AAXCustVendReportingCurrencyFixedExchangeRate</Link>
+    </Content>
+    <Content Include="AxSecurityPrivilege\AAXSalesLineEntityMaintain">
+      <SubType>Content</SubType>
+      <Name>AAXSalesLineEntityMaintain</Name>
+      <Link>Security Privileges\AAXSalesLineEntityMaintain</Link>
+    </Content>
+    <Content Include="AxSecurityPrivilege\AAXSalesLineEntityView">
+      <SubType>Content</SubType>
+      <Name>AAXSalesLineEntityView</Name>
+      <Link>Security Privileges\AAXSalesLineEntityView</Link>
     </Content>
     <Content Include="AxSecurityPrivilege\AAXSalesOrderHeaderV2EntityDSReadOnlyView">
       <SubType>Content</SubType>

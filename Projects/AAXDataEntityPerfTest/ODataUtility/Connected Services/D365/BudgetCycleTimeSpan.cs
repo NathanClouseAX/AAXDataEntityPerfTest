@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 11/8/2020 8:07:52 PM
+// Generation date: 12/8/2020 7:45:22 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -56,27 +56,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlGroup> _BudgetControlGroupBudgetCycleTimeSpan;
         /// <summary>
-        /// There are no comments for BudgetCycleTimeSpan in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlConfiguration> BudgetCycleTimeSpan
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._BudgetCycleTimeSpan == null))
-                {
-                    this._BudgetCycleTimeSpan = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlConfiguration>(GetPath("BudgetCycleTimeSpan"));
-                }
-                return this._BudgetCycleTimeSpan;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlConfiguration> _BudgetCycleTimeSpan;
-        /// <summary>
         /// There are no comments for BudgetControlRuleBudgetCycleTimeSpan in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -97,6 +76,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlRule> _BudgetControlRuleBudgetCycleTimeSpan;
+        /// <summary>
+        /// There are no comments for BudgetCycleTimeSpan in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlConfiguration> BudgetCycleTimeSpan
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._BudgetCycleTimeSpan == null))
+                {
+                    this._BudgetCycleTimeSpan = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlConfiguration>(GetPath("BudgetCycleTimeSpan"));
+                }
+                return this._BudgetCycleTimeSpan;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlConfiguration> _BudgetCycleTimeSpan;
     }
         /// <summary>
         /// There are no comments for BudgetCycleTimeSpan in the schema.
@@ -235,6 +235,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnBudgetControlGroupBudgetCycleTimeSpanChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlGroup> value);
         partial void OnBudgetControlGroupBudgetCycleTimeSpanChanged();
         /// <summary>
+        /// There are no comments for Property BudgetControlRuleBudgetCycleTimeSpan in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRule> BudgetControlRuleBudgetCycleTimeSpan
+        {
+            get
+            {
+                return this._BudgetControlRuleBudgetCycleTimeSpan;
+            }
+            set
+            {
+                this.OnBudgetControlRuleBudgetCycleTimeSpanChanging(value);
+                this._BudgetControlRuleBudgetCycleTimeSpan = value;
+                this.OnBudgetControlRuleBudgetCycleTimeSpanChanged();
+                this.OnPropertyChanged("BudgetControlRuleBudgetCycleTimeSpan");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRule> _BudgetControlRuleBudgetCycleTimeSpan = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRule>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnBudgetControlRuleBudgetCycleTimeSpanChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRule> value);
+        partial void OnBudgetControlRuleBudgetCycleTimeSpanChanged();
+        /// <summary>
         /// There are no comments for Property BudgetCycleTimeSpan1 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -257,28 +279,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlConfiguration> _BudgetCycleTimeSpan1 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlConfiguration>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnBudgetCycleTimeSpan1Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlConfiguration> value);
         partial void OnBudgetCycleTimeSpan1Changed();
-        /// <summary>
-        /// There are no comments for Property BudgetControlRuleBudgetCycleTimeSpan in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRule> BudgetControlRuleBudgetCycleTimeSpan
-        {
-            get
-            {
-                return this._BudgetControlRuleBudgetCycleTimeSpan;
-            }
-            set
-            {
-                this.OnBudgetControlRuleBudgetCycleTimeSpanChanging(value);
-                this._BudgetControlRuleBudgetCycleTimeSpan = value;
-                this.OnBudgetControlRuleBudgetCycleTimeSpanChanged();
-                this.OnPropertyChanged("BudgetControlRuleBudgetCycleTimeSpan");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRule> _BudgetControlRuleBudgetCycleTimeSpan = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRule>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnBudgetControlRuleBudgetCycleTimeSpanChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRule> value);
-        partial void OnBudgetControlRuleBudgetCycleTimeSpanChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 11/8/2020 8:07:52 PM
+// Generation date: 12/8/2020 7:45:22 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public TimeAndAttendanceTimeActivityRegistrationCalculationSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<TimeAndAttendanceTimeActivityRegistrationCalculation> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for Worker in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.WorkerSingle Worker
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._Worker == null))
-                {
-                    this._Worker = new global::Microsoft.Dynamics.DataEntities.WorkerSingle(this.Context, GetPath("Worker"));
-                }
-                return this._Worker;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.WorkerSingle _Worker;
         /// <summary>
         /// There are no comments for DimensionSet in the schema.
         /// </summary>
@@ -123,7 +102,6 @@ namespace Microsoft.Dynamics.DataEntities
         /// <param name="workEndDate">Initial value of WorkEndDate.</param>
         /// <param name="totalPayOverTimeSeconds">Initial value of TotalPayOverTimeSeconds.</param>
         /// <param name="totalPaySeconds">Initial value of TotalPaySeconds.</param>
-        /// <param name="worker">Initial value of Worker.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public static TimeAndAttendanceTimeActivityRegistrationCalculation CreateTimeAndAttendanceTimeActivityRegistrationCalculation(string dataAreaId, 
                     string workerPersonnelNumber, 
@@ -155,8 +133,7 @@ namespace Microsoft.Dynamics.DataEntities
                     int totalPayFlexTimeBalanceSeconds, 
                     global::System.DateTimeOffset workEndDate, 
                     int totalPayOverTimeSeconds, 
-                    int totalPaySeconds, 
-                    global::Microsoft.Dynamics.DataEntities.Worker worker)
+                    int totalPaySeconds)
         {
             TimeAndAttendanceTimeActivityRegistrationCalculation timeAndAttendanceTimeActivityRegistrationCalculation = new TimeAndAttendanceTimeActivityRegistrationCalculation();
             timeAndAttendanceTimeActivityRegistrationCalculation.dataAreaId = dataAreaId;
@@ -190,11 +167,6 @@ namespace Microsoft.Dynamics.DataEntities
             timeAndAttendanceTimeActivityRegistrationCalculation.WorkEndDate = workEndDate;
             timeAndAttendanceTimeActivityRegistrationCalculation.TotalPayOverTimeSeconds = totalPayOverTimeSeconds;
             timeAndAttendanceTimeActivityRegistrationCalculation.TotalPaySeconds = totalPaySeconds;
-            if ((worker == null))
-            {
-                throw new global::System.ArgumentNullException("worker");
-            }
-            timeAndAttendanceTimeActivityRegistrationCalculation.Worker = worker;
             return timeAndAttendanceTimeActivityRegistrationCalculation;
         }
         /// <summary>
@@ -1275,28 +1247,6 @@ namespace Microsoft.Dynamics.DataEntities
         private string _CalculatorPersonnelNumber;
         partial void OnCalculatorPersonnelNumberChanging(string value);
         partial void OnCalculatorPersonnelNumberChanged();
-        /// <summary>
-        /// There are no comments for Property Worker in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.Worker Worker
-        {
-            get
-            {
-                return this._Worker;
-            }
-            set
-            {
-                this.OnWorkerChanging(value);
-                this._Worker = value;
-                this.OnWorkerChanged();
-                this.OnPropertyChanged("Worker");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.Worker _Worker;
-        partial void OnWorkerChanging(global::Microsoft.Dynamics.DataEntities.Worker value);
-        partial void OnWorkerChanged();
         /// <summary>
         /// There are no comments for Property DimensionSet in the schema.
         /// </summary>

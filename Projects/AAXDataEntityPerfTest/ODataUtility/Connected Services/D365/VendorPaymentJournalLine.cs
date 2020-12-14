@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 11/8/2020 8:07:52 PM
+// Generation date: 12/8/2020 7:45:22 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public VendorPaymentJournalLineSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<VendorPaymentJournalLine> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for VendorPaymentJournalLineEntityRole in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendorPaymentJournalLineSettledInvoice> VendorPaymentJournalLineEntityRole
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._VendorPaymentJournalLineEntityRole == null))
-                {
-                    this._VendorPaymentJournalLineEntityRole = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.VendorPaymentJournalLineSettledInvoice>(GetPath("VendorPaymentJournalLineEntityRole"));
-                }
-                return this._VendorPaymentJournalLineEntityRole;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendorPaymentJournalLineSettledInvoice> _VendorPaymentJournalLineEntityRole;
         /// <summary>
         /// There are no comments for VendorPaymentJournalLineOffsetAccountCombination in the schema.
         /// </summary>
@@ -244,6 +223,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _VendorPaymentJournalLineAccountCombination;
+        /// <summary>
+        /// There are no comments for VendorPaymentJournalLineEntityRole in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendorPaymentJournalLineSettledInvoice> VendorPaymentJournalLineEntityRole
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._VendorPaymentJournalLineEntityRole == null))
+                {
+                    this._VendorPaymentJournalLineEntityRole = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.VendorPaymentJournalLineSettledInvoice>(GetPath("VendorPaymentJournalLineEntityRole"));
+                }
+                return this._VendorPaymentJournalLineEntityRole;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendorPaymentJournalLineSettledInvoice> _VendorPaymentJournalLineEntityRole;
         /// <summary>
         /// There are no comments for VendorPaymentJournalFee in the schema.
         /// </summary>
@@ -2410,28 +2410,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnSettleVoucherChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.SettlementType> value);
         partial void OnSettleVoucherChanged();
         /// <summary>
-        /// There are no comments for Property VendorPaymentJournalLineEntityRole in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorPaymentJournalLineSettledInvoice> VendorPaymentJournalLineEntityRole
-        {
-            get
-            {
-                return this._VendorPaymentJournalLineEntityRole;
-            }
-            set
-            {
-                this.OnVendorPaymentJournalLineEntityRoleChanging(value);
-                this._VendorPaymentJournalLineEntityRole = value;
-                this.OnVendorPaymentJournalLineEntityRoleChanged();
-                this.OnPropertyChanged("VendorPaymentJournalLineEntityRole");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorPaymentJournalLineSettledInvoice> _VendorPaymentJournalLineEntityRole = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorPaymentJournalLineSettledInvoice>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnVendorPaymentJournalLineEntityRoleChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorPaymentJournalLineSettledInvoice> value);
-        partial void OnVendorPaymentJournalLineEntityRoleChanged();
-        /// <summary>
         /// There are no comments for Property VendorPaymentJournalLineOffsetAccountCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -2629,6 +2607,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.DimensionCombination _VendorPaymentJournalLineAccountCombination;
         partial void OnVendorPaymentJournalLineAccountCombinationChanging(global::Microsoft.Dynamics.DataEntities.DimensionCombination value);
         partial void OnVendorPaymentJournalLineAccountCombinationChanged();
+        /// <summary>
+        /// There are no comments for Property VendorPaymentJournalLineEntityRole in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorPaymentJournalLineSettledInvoice> VendorPaymentJournalLineEntityRole
+        {
+            get
+            {
+                return this._VendorPaymentJournalLineEntityRole;
+            }
+            set
+            {
+                this.OnVendorPaymentJournalLineEntityRoleChanging(value);
+                this._VendorPaymentJournalLineEntityRole = value;
+                this.OnVendorPaymentJournalLineEntityRoleChanged();
+                this.OnPropertyChanged("VendorPaymentJournalLineEntityRole");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorPaymentJournalLineSettledInvoice> _VendorPaymentJournalLineEntityRole = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorPaymentJournalLineSettledInvoice>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnVendorPaymentJournalLineEntityRoleChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorPaymentJournalLineSettledInvoice> value);
+        partial void OnVendorPaymentJournalLineEntityRoleChanged();
         /// <summary>
         /// There are no comments for Property VendorPaymentJournalFee in the schema.
         /// </summary>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 11/8/2020 8:07:52 PM
+// Generation date: 12/8/2020 7:45:22 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public TotalCompStatementSectionHeaderSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<TotalCompStatementSectionHeader> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for TotalCompStatementSectionTax in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TotalCompStatementSectionTax> TotalCompStatementSectionTax
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._TotalCompStatementSectionTax == null))
-                {
-                    this._TotalCompStatementSectionTax = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TotalCompStatementSectionTax>(GetPath("TotalCompStatementSectionTax"));
-                }
-                return this._TotalCompStatementSectionTax;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TotalCompStatementSectionTax> _TotalCompStatementSectionTax;
         /// <summary>
         /// There are no comments for TotalCompStatementSectionEarning in the schema.
         /// </summary>
@@ -97,6 +76,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TotalCompStatementSectionBenefit> _TotalCompStatementSectionBenefit;
+        /// <summary>
+        /// There are no comments for TotalCompStatementSectionTax in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TotalCompStatementSectionTax> TotalCompStatementSectionTax
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._TotalCompStatementSectionTax == null))
+                {
+                    this._TotalCompStatementSectionTax = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TotalCompStatementSectionTax>(GetPath("TotalCompStatementSectionTax"));
+                }
+                return this._TotalCompStatementSectionTax;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TotalCompStatementSectionTax> _TotalCompStatementSectionTax;
     }
         /// <summary>
         /// There are no comments for TotalCompStatementSectionHeader in the schema.
@@ -164,28 +164,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnStatementSectionNameChanging(string value);
         partial void OnStatementSectionNameChanged();
         /// <summary>
-        /// There are no comments for Property TotalCompStatementSectionTax in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TotalCompStatementSectionTax> TotalCompStatementSectionTax
-        {
-            get
-            {
-                return this._TotalCompStatementSectionTax;
-            }
-            set
-            {
-                this.OnTotalCompStatementSectionTaxChanging(value);
-                this._TotalCompStatementSectionTax = value;
-                this.OnTotalCompStatementSectionTaxChanged();
-                this.OnPropertyChanged("TotalCompStatementSectionTax");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TotalCompStatementSectionTax> _TotalCompStatementSectionTax = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TotalCompStatementSectionTax>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnTotalCompStatementSectionTaxChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TotalCompStatementSectionTax> value);
-        partial void OnTotalCompStatementSectionTaxChanged();
-        /// <summary>
         /// There are no comments for Property TotalCompStatementSectionEarning in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -229,6 +207,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TotalCompStatementSectionBenefit> _TotalCompStatementSectionBenefit = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TotalCompStatementSectionBenefit>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnTotalCompStatementSectionBenefitChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TotalCompStatementSectionBenefit> value);
         partial void OnTotalCompStatementSectionBenefitChanged();
+        /// <summary>
+        /// There are no comments for Property TotalCompStatementSectionTax in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TotalCompStatementSectionTax> TotalCompStatementSectionTax
+        {
+            get
+            {
+                return this._TotalCompStatementSectionTax;
+            }
+            set
+            {
+                this.OnTotalCompStatementSectionTaxChanging(value);
+                this._TotalCompStatementSectionTax = value;
+                this.OnTotalCompStatementSectionTaxChanged();
+                this.OnPropertyChanged("TotalCompStatementSectionTax");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TotalCompStatementSectionTax> _TotalCompStatementSectionTax = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TotalCompStatementSectionTax>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnTotalCompStatementSectionTaxChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TotalCompStatementSectionTax> value);
+        partial void OnTotalCompStatementSectionTaxChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

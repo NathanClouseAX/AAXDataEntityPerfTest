@@ -1105,6 +1105,20 @@ public class AAXSalesTableEntity extends common
 				</AxDataEntityViewRelationConstraint>
 			</Constraints>
 		</AxDataEntityViewRelation>
+		<AxDataEntityViewRelation>
+			<Name>AAXSalesLineEntity</Name>
+			<Cardinality>ZeroMore</Cardinality>
+			<RelatedDataEntity>AAXSalesLineEntity</RelatedDataEntity>
+			<RelatedDataEntityCardinality>ZeroOne</RelatedDataEntityCardinality>
+			<Constraints>
+				<AxDataEntityViewRelationConstraint xmlns=""
+					i:type="AxDataEntityViewRelationConstraintField">
+					<Name>RelationConstraintField1</Name>
+					<Field>SalesId</Field>
+					<RelatedField>SalesId</RelatedField>
+				</AxDataEntityViewRelationConstraint>
+			</Constraints>
+		</AxDataEntityViewRelation>
 	</Relations>
 	<StateMachines />
 	<ViewMetadata>

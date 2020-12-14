@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 11/8/2020 8:07:52 PM
+// Generation date: 12/8/2020 7:45:22 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -119,27 +119,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.EthnicOriginSingle _EthnicOrigin;
         /// <summary>
-        /// There are no comments for Worker in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.WorkerSingle Worker
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._Worker == null))
-                {
-                    this._Worker = new global::Microsoft.Dynamics.DataEntities.WorkerSingle(this.Context, GetPath("Worker"));
-                }
-                return this._Worker;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.WorkerSingle _Worker;
-        /// <summary>
         /// There are no comments for NativeLanguage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -214,7 +193,6 @@ namespace Microsoft.Dynamics.DataEntities
         /// <param name="addressValidTo">Initial value of AddressValidTo.</param>
         /// <param name="employeeDetailsExpiration">Initial value of EmployeeDetailsExpiration.</param>
         /// <param name="person">Initial value of Person.</param>
-        /// <param name="worker">Initial value of Worker.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public static Employee CreateEmployee(string personnelNumber, 
                     string employmentLegalEntityId, 
@@ -252,8 +230,7 @@ namespace Microsoft.Dynamics.DataEntities
                     global::System.DateTimeOffset summaryValidTo, 
                     global::System.DateTimeOffset addressValidTo, 
                     global::System.DateTimeOffset employeeDetailsExpiration, 
-                    global::Microsoft.Dynamics.DataEntities.Person person, 
-                    global::Microsoft.Dynamics.DataEntities.Worker worker)
+                    global::Microsoft.Dynamics.DataEntities.Person person)
         {
             Employee employee = new Employee();
             employee.PersonnelNumber = personnelNumber;
@@ -297,11 +274,6 @@ namespace Microsoft.Dynamics.DataEntities
                 throw new global::System.ArgumentNullException("person");
             }
             employee.Person = person;
-            if ((worker == null))
-            {
-                throw new global::System.ArgumentNullException("worker");
-            }
-            employee.Worker = worker;
             return employee;
         }
         /// <summary>
@@ -3164,28 +3136,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.EthnicOrigin _EthnicOrigin;
         partial void OnEthnicOriginChanging(global::Microsoft.Dynamics.DataEntities.EthnicOrigin value);
         partial void OnEthnicOriginChanged();
-        /// <summary>
-        /// There are no comments for Property Worker in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.Worker Worker
-        {
-            get
-            {
-                return this._Worker;
-            }
-            set
-            {
-                this.OnWorkerChanging(value);
-                this._Worker = value;
-                this.OnWorkerChanged();
-                this.OnPropertyChanged("Worker");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.Worker _Worker;
-        partial void OnWorkerChanging(global::Microsoft.Dynamics.DataEntities.Worker value);
-        partial void OnWorkerChanged();
         /// <summary>
         /// There are no comments for Property NativeLanguage in the schema.
         /// </summary>

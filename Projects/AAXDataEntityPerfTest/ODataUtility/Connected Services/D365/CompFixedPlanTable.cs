@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 11/8/2020 8:07:52 PM
+// Generation date: 12/8/2020 7:45:22 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public CompFixedPlanTableSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<CompFixedPlanTable> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for CompensationEligibilityRule in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule> CompensationEligibilityRule
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._CompensationEligibilityRule == null))
-                {
-                    this._CompensationEligibilityRule = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule>(GetPath("CompensationEligibilityRule"));
-                }
-                return this._CompensationEligibilityRule;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule> _CompensationEligibilityRule;
         /// <summary>
         /// There are no comments for CompensationCurrency in the schema.
         /// </summary>
@@ -118,6 +97,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.PayRateConversionSingle _PayRateConversion;
+        /// <summary>
+        /// There are no comments for CompensationEligibilityRule in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule> CompensationEligibilityRule
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._CompensationEligibilityRule == null))
+                {
+                    this._CompensationEligibilityRule = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule>(GetPath("CompensationEligibilityRule"));
+                }
+                return this._CompensationEligibilityRule;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule> _CompensationEligibilityRule;
     }
         /// <summary>
         /// There are no comments for CompFixedPlanTable in the schema.
@@ -462,28 +462,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnEffectiveDateChanging(global::System.DateTimeOffset value);
         partial void OnEffectiveDateChanged();
         /// <summary>
-        /// There are no comments for Property CompensationEligibilityRule in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule> CompensationEligibilityRule
-        {
-            get
-            {
-                return this._CompensationEligibilityRule;
-            }
-            set
-            {
-                this.OnCompensationEligibilityRuleChanging(value);
-                this._CompensationEligibilityRule = value;
-                this.OnCompensationEligibilityRuleChanged();
-                this.OnPropertyChanged("CompensationEligibilityRule");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule> _CompensationEligibilityRule = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnCompensationEligibilityRuleChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule> value);
-        partial void OnCompensationEligibilityRuleChanged();
-        /// <summary>
         /// There are no comments for Property CompensationCurrency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -549,6 +527,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.PayRateConversion _PayRateConversion;
         partial void OnPayRateConversionChanging(global::Microsoft.Dynamics.DataEntities.PayRateConversion value);
         partial void OnPayRateConversionChanged();
+        /// <summary>
+        /// There are no comments for Property CompensationEligibilityRule in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule> CompensationEligibilityRule
+        {
+            get
+            {
+                return this._CompensationEligibilityRule;
+            }
+            set
+            {
+                this.OnCompensationEligibilityRuleChanging(value);
+                this._CompensationEligibilityRule = value;
+                this.OnCompensationEligibilityRuleChanged();
+                this.OnPropertyChanged("CompensationEligibilityRule");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule> _CompensationEligibilityRule = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnCompensationEligibilityRuleChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule> value);
+        partial void OnCompensationEligibilityRuleChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

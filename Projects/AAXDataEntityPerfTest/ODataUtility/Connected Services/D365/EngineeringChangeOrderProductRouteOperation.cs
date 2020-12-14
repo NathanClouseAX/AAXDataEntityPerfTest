@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 11/8/2020 8:07:52 PM
+// Generation date: 12/8/2020 7:45:22 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for EngineeringChangeOrderProductRouteHeader in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeaderSingle EngineeringChangeOrderProductRouteHeader
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._EngineeringChangeOrderProductRouteHeader == null))
-                {
-                    this._EngineeringChangeOrderProductRouteHeader = new global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeaderSingle(this.Context, GetPath("EngineeringChangeOrderProductRouteHeader"));
-                }
-                return this._EngineeringChangeOrderProductRouteHeader;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeaderSingle _EngineeringChangeOrderProductRouteHeader;
-        /// <summary>
         /// There are no comments for EngineeringChangeOrderProductRouteOperationProperties in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,6 +55,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteOperationProperties> _EngineeringChangeOrderProductRouteOperationProperties;
+        /// <summary>
+        /// There are no comments for EngineeringChangeOrderProductRouteHeader in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeaderSingle EngineeringChangeOrderProductRouteHeader
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._EngineeringChangeOrderProductRouteHeader == null))
+                {
+                    this._EngineeringChangeOrderProductRouteHeader = new global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeaderSingle(this.Context, GetPath("EngineeringChangeOrderProductRouteHeader"));
+                }
+                return this._EngineeringChangeOrderProductRouteHeader;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeaderSingle _EngineeringChangeOrderProductRouteHeader;
     }
         /// <summary>
         /// There are no comments for EngineeringChangeOrderProductRouteOperation in the schema.
@@ -447,28 +447,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnEngineeringChangeOrderProductRouteProductionSiteIdChanging(string value);
         partial void OnEngineeringChangeOrderProductRouteProductionSiteIdChanged();
         /// <summary>
-        /// There are no comments for Property EngineeringChangeOrderProductRouteHeader in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeader EngineeringChangeOrderProductRouteHeader
-        {
-            get
-            {
-                return this._EngineeringChangeOrderProductRouteHeader;
-            }
-            set
-            {
-                this.OnEngineeringChangeOrderProductRouteHeaderChanging(value);
-                this._EngineeringChangeOrderProductRouteHeader = value;
-                this.OnEngineeringChangeOrderProductRouteHeaderChanged();
-                this.OnPropertyChanged("EngineeringChangeOrderProductRouteHeader");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeader _EngineeringChangeOrderProductRouteHeader;
-        partial void OnEngineeringChangeOrderProductRouteHeaderChanging(global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeader value);
-        partial void OnEngineeringChangeOrderProductRouteHeaderChanged();
-        /// <summary>
         /// There are no comments for Property EngineeringChangeOrderProductRouteOperationProperties in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -490,6 +468,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteOperationProperties> _EngineeringChangeOrderProductRouteOperationProperties = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteOperationProperties>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnEngineeringChangeOrderProductRouteOperationPropertiesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteOperationProperties> value);
         partial void OnEngineeringChangeOrderProductRouteOperationPropertiesChanged();
+        /// <summary>
+        /// There are no comments for Property EngineeringChangeOrderProductRouteHeader in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeader EngineeringChangeOrderProductRouteHeader
+        {
+            get
+            {
+                return this._EngineeringChangeOrderProductRouteHeader;
+            }
+            set
+            {
+                this.OnEngineeringChangeOrderProductRouteHeaderChanging(value);
+                this._EngineeringChangeOrderProductRouteHeader = value;
+                this.OnEngineeringChangeOrderProductRouteHeaderChanged();
+                this.OnPropertyChanged("EngineeringChangeOrderProductRouteHeader");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeader _EngineeringChangeOrderProductRouteHeader;
+        partial void OnEngineeringChangeOrderProductRouteHeaderChanging(global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeader value);
+        partial void OnEngineeringChangeOrderProductRouteHeaderChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

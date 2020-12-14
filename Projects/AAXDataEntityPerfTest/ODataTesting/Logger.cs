@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.Concurrent;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,7 +25,7 @@ namespace ODataTesting
     {
         // Queue import: 
         // using System.Collections
-        public Queue logs = new Queue();
+        public ConcurrentQueue<string> logs = new ConcurrentQueue<string>();
         public string path = "debug.log";
 
         private static ReaderWriterLockSlim _readWriteLock = new ReaderWriterLockSlim();
@@ -37,7 +38,7 @@ namespace ODataTesting
         public void add(string t)
         {
             this.logs.Enqueue(t);
-            Console.WriteLine(t);
+            //Console.WriteLine(t);
         }
 
         public void addList(List<string> t)
@@ -46,7 +47,7 @@ namespace ODataTesting
             {
                 this.logs.Enqueue(log);
 
-                Console.WriteLine(log);
+                //Console.WriteLine(log);
             }
         }
 
@@ -55,7 +56,9 @@ namespace ODataTesting
             while(this.logs.Count > 0) 
             {
                 // Get from queue
-                string err = (string)this.logs.Dequeue();
+                //string err = (string)this.logs.Dequeue();
+                string err;
+                this.logs.TryDequeue(out err);
                 // Save to logs
                 saveToFile(err, this.path);
             }

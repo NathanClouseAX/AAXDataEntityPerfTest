@@ -22,7 +22,7 @@ namespace Part5
     {
         public static string ODataEntityPath = ClientConfiguration.Default.UriString + "data";
 
-        public static string filePath = @"c:\temp\part5.txt";
+        public static string filePath = @"c:\temp\part5-UAT.txt";
 
         static void Main(string[] args)
         {
@@ -62,19 +62,6 @@ namespace Part5
 
             context.SalesOrderHeadersV2.FirstOrDefault();
             Console.Write(".");
-            context.SalesOrderHeadersV2EntityDSReadOnly.FirstOrDefault();
-            Console.Write(".");
-            context.SalesOrderHeadersV2EntityOnlySalesTable.FirstOrDefault();
-            Console.Write(".");
-            context.SalesOrderHeadersV2EntityReadOnly.FirstOrDefault();
-            Console.Write(".");
-            context.SalesOrderHeadersV2EntityReadOnlyNoGlobalization.FirstOrDefault();
-            Console.Write(".");
-            context.SalesOrderHeaderV2ExistAddrReadOnlys.FirstOrDefault();
-            Console.Write(".");
-            context.AAXSalesTables.FirstOrDefault();
-            Console.Write(".");
-            context.AAXSalesTablesReadOnly.FirstOrDefault();
             Console.WriteLine(".");
 
 

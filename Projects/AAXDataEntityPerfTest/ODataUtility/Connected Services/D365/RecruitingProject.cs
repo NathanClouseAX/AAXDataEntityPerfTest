@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 11/8/2020 8:07:52 PM
+// Generation date: 12/8/2020 7:45:22 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public RecruitingProjectSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<RecruitingProject> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for RecruitingMedia in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RecruitingMedia> RecruitingMedia
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._RecruitingMedia == null))
-                {
-                    this._RecruitingMedia = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RecruitingMedia>(GetPath("RecruitingMedia"));
-                }
-                return this._RecruitingMedia;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RecruitingMedia> _RecruitingMedia;
         /// <summary>
         /// There are no comments for HiringManagrWorker in the schema.
         /// </summary>
@@ -118,6 +97,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.OperatingUnitSingle _OMOperatingUnit;
+        /// <summary>
+        /// There are no comments for RecruitingMedia in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RecruitingMedia> RecruitingMedia
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RecruitingMedia == null))
+                {
+                    this._RecruitingMedia = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RecruitingMedia>(GetPath("RecruitingMedia"));
+                }
+                return this._RecruitingMedia;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RecruitingMedia> _RecruitingMedia;
     }
         /// <summary>
         /// There are no comments for RecruitingProject in the schema.
@@ -537,28 +537,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnOpenDateChanging(global::System.DateTimeOffset value);
         partial void OnOpenDateChanged();
         /// <summary>
-        /// There are no comments for Property RecruitingMedia in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RecruitingMedia> RecruitingMedia
-        {
-            get
-            {
-                return this._RecruitingMedia;
-            }
-            set
-            {
-                this.OnRecruitingMediaChanging(value);
-                this._RecruitingMedia = value;
-                this.OnRecruitingMediaChanged();
-                this.OnPropertyChanged("RecruitingMedia");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RecruitingMedia> _RecruitingMedia = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RecruitingMedia>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRecruitingMediaChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RecruitingMedia> value);
-        partial void OnRecruitingMediaChanged();
-        /// <summary>
         /// There are no comments for Property HiringManagrWorker in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -624,6 +602,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.OperatingUnit _OMOperatingUnit;
         partial void OnOMOperatingUnitChanging(global::Microsoft.Dynamics.DataEntities.OperatingUnit value);
         partial void OnOMOperatingUnitChanged();
+        /// <summary>
+        /// There are no comments for Property RecruitingMedia in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RecruitingMedia> RecruitingMedia
+        {
+            get
+            {
+                return this._RecruitingMedia;
+            }
+            set
+            {
+                this.OnRecruitingMediaChanging(value);
+                this._RecruitingMedia = value;
+                this.OnRecruitingMediaChanged();
+                this.OnPropertyChanged("RecruitingMedia");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RecruitingMedia> _RecruitingMedia = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RecruitingMedia>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRecruitingMediaChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RecruitingMedia> value);
+        partial void OnRecruitingMediaChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

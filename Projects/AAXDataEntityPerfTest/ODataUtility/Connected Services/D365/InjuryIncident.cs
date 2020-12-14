@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 11/8/2020 8:07:52 PM
+// Generation date: 12/8/2020 7:45:22 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -55,6 +55,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.InjuryIncidentFilingAgencySingle _InjuryIncidentFilingAgency;
+        /// <summary>
+        /// There are no comments for InjuryIncidentTreatment in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.InjuryIncidentTreatmentSingle InjuryIncidentTreatment
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._InjuryIncidentTreatment == null))
+                {
+                    this._InjuryIncidentTreatment = new global::Microsoft.Dynamics.DataEntities.InjuryIncidentTreatmentSingle(this.Context, GetPath("InjuryIncidentTreatment"));
+                }
+                return this._InjuryIncidentTreatment;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.InjuryIncidentTreatmentSingle _InjuryIncidentTreatment;
         /// <summary>
         /// There are no comments for InjuryIncidentCostType in the schema.
         /// </summary>
@@ -202,27 +223,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.InjuryBodyPartSingle _BodyPart;
-        /// <summary>
-        /// There are no comments for InjuryIncidentTreatment in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.InjuryIncidentTreatmentSingle InjuryIncidentTreatment
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._InjuryIncidentTreatment == null))
-                {
-                    this._InjuryIncidentTreatment = new global::Microsoft.Dynamics.DataEntities.InjuryIncidentTreatmentSingle(this.Context, GetPath("InjuryIncidentTreatment"));
-                }
-                return this._InjuryIncidentTreatment;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.InjuryIncidentTreatmentSingle _InjuryIncidentTreatment;
     }
         /// <summary>
         /// There are no comments for InjuryIncident in the schema.
@@ -992,6 +992,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnInjuryIncidentFilingAgencyChanging(global::Microsoft.Dynamics.DataEntities.InjuryIncidentFilingAgency value);
         partial void OnInjuryIncidentFilingAgencyChanged();
         /// <summary>
+        /// There are no comments for Property InjuryIncidentTreatment in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.InjuryIncidentTreatment InjuryIncidentTreatment
+        {
+            get
+            {
+                return this._InjuryIncidentTreatment;
+            }
+            set
+            {
+                this.OnInjuryIncidentTreatmentChanging(value);
+                this._InjuryIncidentTreatment = value;
+                this.OnInjuryIncidentTreatmentChanged();
+                this.OnPropertyChanged("InjuryIncidentTreatment");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.InjuryIncidentTreatment _InjuryIncidentTreatment;
+        partial void OnInjuryIncidentTreatmentChanging(global::Microsoft.Dynamics.DataEntities.InjuryIncidentTreatment value);
+        partial void OnInjuryIncidentTreatmentChanged();
+        /// <summary>
         /// There are no comments for Property InjuryIncidentCostType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -1145,28 +1167,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.InjuryBodyPart _BodyPart;
         partial void OnBodyPartChanging(global::Microsoft.Dynamics.DataEntities.InjuryBodyPart value);
         partial void OnBodyPartChanged();
-        /// <summary>
-        /// There are no comments for Property InjuryIncidentTreatment in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.InjuryIncidentTreatment InjuryIncidentTreatment
-        {
-            get
-            {
-                return this._InjuryIncidentTreatment;
-            }
-            set
-            {
-                this.OnInjuryIncidentTreatmentChanging(value);
-                this._InjuryIncidentTreatment = value;
-                this.OnInjuryIncidentTreatmentChanged();
-                this.OnPropertyChanged("InjuryIncidentTreatment");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.InjuryIncidentTreatment _InjuryIncidentTreatment;
-        partial void OnInjuryIncidentTreatmentChanging(global::Microsoft.Dynamics.DataEntities.InjuryIncidentTreatment value);
-        partial void OnInjuryIncidentTreatmentChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

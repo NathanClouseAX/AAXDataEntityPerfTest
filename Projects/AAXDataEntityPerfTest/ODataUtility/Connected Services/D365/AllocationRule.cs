@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 11/8/2020 8:07:52 PM
+// Generation date: 12/8/2020 7:45:22 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -56,6 +56,27 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AllocationRuleDestination> _AllocationRuleDestination;
         /// <summary>
+        /// There are no comments for AllocationRuleSource in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AllocationRuleSource> AllocationRuleSource
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._AllocationRuleSource == null))
+                {
+                    this._AllocationRuleSource = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AllocationRuleSource>(GetPath("AllocationRuleSource"));
+                }
+                return this._AllocationRuleSource;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AllocationRuleSource> _AllocationRuleSource;
+        /// <summary>
         /// There are no comments for DimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -97,27 +118,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionSetSingle _DimensionSet;
-        /// <summary>
-        /// There are no comments for AllocationRuleSource in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AllocationRuleSource> AllocationRuleSource
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._AllocationRuleSource == null))
-                {
-                    this._AllocationRuleSource = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AllocationRuleSource>(GetPath("AllocationRuleSource"));
-                }
-                return this._AllocationRuleSource;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AllocationRuleSource> _AllocationRuleSource;
     }
         /// <summary>
         /// There are no comments for AllocationRule in the schema.
@@ -644,6 +644,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnAllocationRuleDestinationChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AllocationRuleDestination> value);
         partial void OnAllocationRuleDestinationChanged();
         /// <summary>
+        /// There are no comments for Property AllocationRuleSource in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AllocationRuleSource> AllocationRuleSource
+        {
+            get
+            {
+                return this._AllocationRuleSource;
+            }
+            set
+            {
+                this.OnAllocationRuleSourceChanging(value);
+                this._AllocationRuleSource = value;
+                this.OnAllocationRuleSourceChanged();
+                this.OnPropertyChanged("AllocationRuleSource");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AllocationRuleSource> _AllocationRuleSource = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AllocationRuleSource>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnAllocationRuleSourceChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AllocationRuleSource> value);
+        partial void OnAllocationRuleSourceChanged();
+        /// <summary>
         /// There are no comments for Property DimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -687,28 +709,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.DimensionSet _DimensionSet;
         partial void OnDimensionSetChanging(global::Microsoft.Dynamics.DataEntities.DimensionSet value);
         partial void OnDimensionSetChanged();
-        /// <summary>
-        /// There are no comments for Property AllocationRuleSource in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AllocationRuleSource> AllocationRuleSource
-        {
-            get
-            {
-                return this._AllocationRuleSource;
-            }
-            set
-            {
-                this.OnAllocationRuleSourceChanging(value);
-                this._AllocationRuleSource = value;
-                this.OnAllocationRuleSourceChanged();
-                this.OnPropertyChanged("AllocationRuleSource");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AllocationRuleSource> _AllocationRuleSource = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AllocationRuleSource>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAllocationRuleSourceChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AllocationRuleSource> value);
-        partial void OnAllocationRuleSourceChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 11/8/2020 8:07:52 PM
+// Generation date: 12/8/2020 7:45:22 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for ReleasedProductsV2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ReleasedProductV2Single ReleasedProductsV2
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ReleasedProductsV2 == null))
-                {
-                    this._ReleasedProductsV2 = new global::Microsoft.Dynamics.DataEntities.ReleasedProductV2Single(this.Context, GetPath("ReleasedProductsV2"));
-                }
-                return this._ReleasedProductsV2;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ReleasedProductV2Single _ReleasedProductsV2;
-        /// <summary>
         /// There are no comments for CostFlowAssumptionPolicy in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,6 +55,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.CostFlowAssumptionPolicySingle _CostFlowAssumptionPolicy;
+        /// <summary>
+        /// There are no comments for ReleasedProductsV2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.ReleasedProductV2Single ReleasedProductsV2
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ReleasedProductsV2 == null))
+                {
+                    this._ReleasedProductsV2 = new global::Microsoft.Dynamics.DataEntities.ReleasedProductV2Single(this.Context, GetPath("ReleasedProductsV2"));
+                }
+                return this._ReleasedProductsV2;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.ReleasedProductV2Single _ReleasedProductsV2;
     }
         /// <summary>
         /// There are no comments for InventoryPolicy in the schema.
@@ -526,28 +526,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnFEFODateControlledInventoryReservationCriteriaChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PdsPickCriteria> value);
         partial void OnFEFODateControlledInventoryReservationCriteriaChanged();
         /// <summary>
-        /// There are no comments for Property ReleasedProductsV2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ReleasedProductV2 ReleasedProductsV2
-        {
-            get
-            {
-                return this._ReleasedProductsV2;
-            }
-            set
-            {
-                this.OnReleasedProductsV2Changing(value);
-                this._ReleasedProductsV2 = value;
-                this.OnReleasedProductsV2Changed();
-                this.OnPropertyChanged("ReleasedProductsV2");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ReleasedProductV2 _ReleasedProductsV2;
-        partial void OnReleasedProductsV2Changing(global::Microsoft.Dynamics.DataEntities.ReleasedProductV2 value);
-        partial void OnReleasedProductsV2Changed();
-        /// <summary>
         /// There are no comments for Property CostFlowAssumptionPolicy in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -569,6 +547,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.CostFlowAssumptionPolicy _CostFlowAssumptionPolicy;
         partial void OnCostFlowAssumptionPolicyChanging(global::Microsoft.Dynamics.DataEntities.CostFlowAssumptionPolicy value);
         partial void OnCostFlowAssumptionPolicyChanged();
+        /// <summary>
+        /// There are no comments for Property ReleasedProductsV2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.ReleasedProductV2 ReleasedProductsV2
+        {
+            get
+            {
+                return this._ReleasedProductsV2;
+            }
+            set
+            {
+                this.OnReleasedProductsV2Changing(value);
+                this._ReleasedProductsV2 = value;
+                this.OnReleasedProductsV2Changed();
+                this.OnPropertyChanged("ReleasedProductsV2");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.ReleasedProductV2 _ReleasedProductsV2;
+        partial void OnReleasedProductsV2Changing(global::Microsoft.Dynamics.DataEntities.ReleasedProductV2 value);
+        partial void OnReleasedProductsV2Changed();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 11/8/2020 8:07:52 PM
+// Generation date: 12/8/2020 7:45:22 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,6 +35,27 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
+        /// There are no comments for RetailStoreAddressBook in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailStoreAddressBook> RetailStoreAddressBook
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RetailStoreAddressBook == null))
+                {
+                    this._RetailStoreAddressBook = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailStoreAddressBook>(GetPath("RetailStoreAddressBook"));
+                }
+                return this._RetailStoreAddressBook;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailStoreAddressBook> _RetailStoreAddressBook;
+        /// <summary>
         /// There are no comments for DimensionSet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -56,10 +77,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionSetSingle _DimensionSet;
         /// <summary>
-        /// There are no comments for RetailStoreAddressBook in the schema.
+        /// There are no comments for ChannelCategoryAttribute in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailStoreAddressBook> RetailStoreAddressBook
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ChannelCategoryAttribute> ChannelCategoryAttribute
         {
             get
             {
@@ -67,15 +88,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._RetailStoreAddressBook == null))
+                if ((this._ChannelCategoryAttribute == null))
                 {
-                    this._RetailStoreAddressBook = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailStoreAddressBook>(GetPath("RetailStoreAddressBook"));
+                    this._ChannelCategoryAttribute = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ChannelCategoryAttribute>(GetPath("ChannelCategoryAttribute"));
                 }
-                return this._RetailStoreAddressBook;
+                return this._ChannelCategoryAttribute;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailStoreAddressBook> _RetailStoreAddressBook;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ChannelCategoryAttribute> _ChannelCategoryAttribute;
         /// <summary>
         /// There are no comments for ReplenishmentRuleLinesV2 in the schema.
         /// </summary>
@@ -118,27 +139,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailReplenishmentRuleLine> _RetailReplenishmentRuleLine;
-        /// <summary>
-        /// There are no comments for ChannelCategoryAttribute in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ChannelCategoryAttribute> ChannelCategoryAttribute
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ChannelCategoryAttribute == null))
-                {
-                    this._ChannelCategoryAttribute = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ChannelCategoryAttribute>(GetPath("ChannelCategoryAttribute"));
-                }
-                return this._ChannelCategoryAttribute;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ChannelCategoryAttribute> _ChannelCategoryAttribute;
         /// <summary>
         /// There are no comments for RetailChannelPriceGroup in the schema.
         /// </summary>
@@ -2055,6 +2055,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDisplayTaxPerTaxComponentChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> value);
         partial void OnDisplayTaxPerTaxComponentChanged();
         /// <summary>
+        /// There are no comments for Property RetailStoreAddressBook in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStoreAddressBook> RetailStoreAddressBook
+        {
+            get
+            {
+                return this._RetailStoreAddressBook;
+            }
+            set
+            {
+                this.OnRetailStoreAddressBookChanging(value);
+                this._RetailStoreAddressBook = value;
+                this.OnRetailStoreAddressBookChanged();
+                this.OnPropertyChanged("RetailStoreAddressBook");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStoreAddressBook> _RetailStoreAddressBook = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStoreAddressBook>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRetailStoreAddressBookChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStoreAddressBook> value);
+        partial void OnRetailStoreAddressBookChanged();
+        /// <summary>
         /// There are no comments for Property DimensionSet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -2077,27 +2099,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDimensionSetChanging(global::Microsoft.Dynamics.DataEntities.DimensionSet value);
         partial void OnDimensionSetChanged();
         /// <summary>
-        /// There are no comments for Property RetailStoreAddressBook in the schema.
+        /// There are no comments for Property ChannelCategoryAttribute in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStoreAddressBook> RetailStoreAddressBook
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ChannelCategoryAttribute> ChannelCategoryAttribute
         {
             get
             {
-                return this._RetailStoreAddressBook;
+                return this._ChannelCategoryAttribute;
             }
             set
             {
-                this.OnRetailStoreAddressBookChanging(value);
-                this._RetailStoreAddressBook = value;
-                this.OnRetailStoreAddressBookChanged();
-                this.OnPropertyChanged("RetailStoreAddressBook");
+                this.OnChannelCategoryAttributeChanging(value);
+                this._ChannelCategoryAttribute = value;
+                this.OnChannelCategoryAttributeChanged();
+                this.OnPropertyChanged("ChannelCategoryAttribute");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStoreAddressBook> _RetailStoreAddressBook = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStoreAddressBook>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRetailStoreAddressBookChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStoreAddressBook> value);
-        partial void OnRetailStoreAddressBookChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ChannelCategoryAttribute> _ChannelCategoryAttribute = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ChannelCategoryAttribute>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnChannelCategoryAttributeChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ChannelCategoryAttribute> value);
+        partial void OnChannelCategoryAttributeChanged();
         /// <summary>
         /// There are no comments for Property ReplenishmentRuleLinesV2 in the schema.
         /// </summary>
@@ -2142,28 +2164,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailReplenishmentRuleLine> _RetailReplenishmentRuleLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailReplenishmentRuleLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnRetailReplenishmentRuleLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailReplenishmentRuleLine> value);
         partial void OnRetailReplenishmentRuleLineChanged();
-        /// <summary>
-        /// There are no comments for Property ChannelCategoryAttribute in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ChannelCategoryAttribute> ChannelCategoryAttribute
-        {
-            get
-            {
-                return this._ChannelCategoryAttribute;
-            }
-            set
-            {
-                this.OnChannelCategoryAttributeChanging(value);
-                this._ChannelCategoryAttribute = value;
-                this.OnChannelCategoryAttributeChanged();
-                this.OnPropertyChanged("ChannelCategoryAttribute");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ChannelCategoryAttribute> _ChannelCategoryAttribute = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ChannelCategoryAttribute>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnChannelCategoryAttributeChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ChannelCategoryAttribute> value);
-        partial void OnChannelCategoryAttributeChanged();
         /// <summary>
         /// There are no comments for Property RetailChannelPriceGroup in the schema.
         /// </summary>

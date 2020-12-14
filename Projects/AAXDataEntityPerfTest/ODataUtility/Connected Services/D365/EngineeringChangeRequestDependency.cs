@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 11/8/2020 8:07:52 PM
+// Generation date: 12/8/2020 7:45:22 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,6 +34,27 @@ namespace Microsoft.Dynamics.DataEntities
         public EngineeringChangeRequestDependencySingle(global::Microsoft.OData.Client.DataServiceQuerySingle<EngineeringChangeRequestDependency> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for EngineeringChangeRequestDependencyActions in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestDependencyAction> EngineeringChangeRequestDependencyActions
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._EngineeringChangeRequestDependencyActions == null))
+                {
+                    this._EngineeringChangeRequestDependencyActions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestDependencyAction>(GetPath("EngineeringChangeRequestDependencyActions"));
+                }
+                return this._EngineeringChangeRequestDependencyActions;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestDependencyAction> _EngineeringChangeRequestDependencyActions;
         /// <summary>
         /// There are no comments for DependentProduct in the schema.
         /// </summary>
@@ -76,27 +97,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestHeaderSingle _EngineeringChangeRequestHeader;
-        /// <summary>
-        /// There are no comments for EngineeringChangeRequestDependencyActions in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestDependencyAction> EngineeringChangeRequestDependencyActions
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._EngineeringChangeRequestDependencyActions == null))
-                {
-                    this._EngineeringChangeRequestDependencyActions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestDependencyAction>(GetPath("EngineeringChangeRequestDependencyActions"));
-                }
-                return this._EngineeringChangeRequestDependencyActions;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestDependencyAction> _EngineeringChangeRequestDependencyActions;
     }
         /// <summary>
         /// There are no comments for EngineeringChangeRequestDependency in the schema.
@@ -234,6 +234,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnEngineeringChangeRequestNumberChanging(string value);
         partial void OnEngineeringChangeRequestNumberChanged();
         /// <summary>
+        /// There are no comments for Property EngineeringChangeRequestDependencyActions in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestDependencyAction> EngineeringChangeRequestDependencyActions
+        {
+            get
+            {
+                return this._EngineeringChangeRequestDependencyActions;
+            }
+            set
+            {
+                this.OnEngineeringChangeRequestDependencyActionsChanging(value);
+                this._EngineeringChangeRequestDependencyActions = value;
+                this.OnEngineeringChangeRequestDependencyActionsChanged();
+                this.OnPropertyChanged("EngineeringChangeRequestDependencyActions");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestDependencyAction> _EngineeringChangeRequestDependencyActions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestDependencyAction>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnEngineeringChangeRequestDependencyActionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestDependencyAction> value);
+        partial void OnEngineeringChangeRequestDependencyActionsChanged();
+        /// <summary>
         /// There are no comments for Property DependentProduct in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -277,28 +299,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestHeader _EngineeringChangeRequestHeader;
         partial void OnEngineeringChangeRequestHeaderChanging(global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestHeader value);
         partial void OnEngineeringChangeRequestHeaderChanged();
-        /// <summary>
-        /// There are no comments for Property EngineeringChangeRequestDependencyActions in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestDependencyAction> EngineeringChangeRequestDependencyActions
-        {
-            get
-            {
-                return this._EngineeringChangeRequestDependencyActions;
-            }
-            set
-            {
-                this.OnEngineeringChangeRequestDependencyActionsChanging(value);
-                this._EngineeringChangeRequestDependencyActions = value;
-                this.OnEngineeringChangeRequestDependencyActionsChanged();
-                this.OnPropertyChanged("EngineeringChangeRequestDependencyActions");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestDependencyAction> _EngineeringChangeRequestDependencyActions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestDependencyAction>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnEngineeringChangeRequestDependencyActionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestDependencyAction> value);
-        partial void OnEngineeringChangeRequestDependencyActionsChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 11/8/2020 8:07:52 PM
+// Generation date: 12/8/2020 7:45:22 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,6 +34,27 @@ namespace Microsoft.Dynamics.DataEntities
         public IdentificationTypeSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<IdentificationType> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for PersonIdentificationNumbers in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonIdentificationNumber> PersonIdentificationNumbers
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._PersonIdentificationNumbers == null))
+                {
+                    this._PersonIdentificationNumbers = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PersonIdentificationNumber>(GetPath("PersonIdentificationNumbers"));
+                }
+                return this._PersonIdentificationNumbers;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonIdentificationNumber> _PersonIdentificationNumbers;
         /// <summary>
         /// There are no comments for PersonalIdentificationParameter in the schema.
         /// </summary>
@@ -118,27 +139,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.HumanResourcesSharedParameters> _NationalIdentificationParameter;
-        /// <summary>
-        /// There are no comments for PersonIdentificationNumbers in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonIdentificationNumber> PersonIdentificationNumbers
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._PersonIdentificationNumbers == null))
-                {
-                    this._PersonIdentificationNumbers = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PersonIdentificationNumber>(GetPath("PersonIdentificationNumbers"));
-                }
-                return this._PersonIdentificationNumbers;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonIdentificationNumber> _PersonIdentificationNumbers;
         /// <summary>
         /// There are no comments for i9DocumentTypes in the schema.
         /// </summary>
@@ -317,6 +317,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnAllowedValuesChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HcmIdentificationNumberAllowedValues> value);
         partial void OnAllowedValuesChanged();
         /// <summary>
+        /// There are no comments for Property PersonIdentificationNumbers in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonIdentificationNumber> PersonIdentificationNumbers
+        {
+            get
+            {
+                return this._PersonIdentificationNumbers;
+            }
+            set
+            {
+                this.OnPersonIdentificationNumbersChanging(value);
+                this._PersonIdentificationNumbers = value;
+                this.OnPersonIdentificationNumbersChanged();
+                this.OnPropertyChanged("PersonIdentificationNumbers");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonIdentificationNumber> _PersonIdentificationNumbers = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonIdentificationNumber>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPersonIdentificationNumbersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonIdentificationNumber> value);
+        partial void OnPersonIdentificationNumbersChanged();
+        /// <summary>
         /// There are no comments for Property PersonalIdentificationParameter in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -404,28 +426,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.HumanResourcesSharedParameters> _NationalIdentificationParameter = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.HumanResourcesSharedParameters>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnNationalIdentificationParameterChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.HumanResourcesSharedParameters> value);
         partial void OnNationalIdentificationParameterChanged();
-        /// <summary>
-        /// There are no comments for Property PersonIdentificationNumbers in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonIdentificationNumber> PersonIdentificationNumbers
-        {
-            get
-            {
-                return this._PersonIdentificationNumbers;
-            }
-            set
-            {
-                this.OnPersonIdentificationNumbersChanging(value);
-                this._PersonIdentificationNumbers = value;
-                this.OnPersonIdentificationNumbersChanged();
-                this.OnPropertyChanged("PersonIdentificationNumbers");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonIdentificationNumber> _PersonIdentificationNumbers = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonIdentificationNumber>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPersonIdentificationNumbersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonIdentificationNumber> value);
-        partial void OnPersonIdentificationNumbersChanged();
         /// <summary>
         /// There are no comments for Property i9DocumentTypes in the schema.
         /// </summary>

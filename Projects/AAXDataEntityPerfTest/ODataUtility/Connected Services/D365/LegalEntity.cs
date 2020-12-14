@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 11/8/2020 8:07:52 PM
+// Generation date: 12/8/2020 7:45:22 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,10 +35,10 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for LedgerReportingCurrencyAdjustmentJournalHeader in the schema.
+        /// There are no comments for LedgerJournalHeader in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalHeaderSingle LedgerReportingCurrencyAdjustmentJournalHeader
+        public virtual global::Microsoft.Dynamics.DataEntities.LedgerJournalHeaderSingle LedgerJournalHeader
         {
             get
             {
@@ -46,162 +46,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._LedgerReportingCurrencyAdjustmentJournalHeader == null))
+                if ((this._LedgerJournalHeader == null))
                 {
-                    this._LedgerReportingCurrencyAdjustmentJournalHeader = new global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalHeaderSingle(this.Context, GetPath("LedgerReportingCurrencyAdjustmentJournalHeader"));
+                    this._LedgerJournalHeader = new global::Microsoft.Dynamics.DataEntities.LedgerJournalHeaderSingle(this.Context, GetPath("LedgerJournalHeader"));
                 }
-                return this._LedgerReportingCurrencyAdjustmentJournalHeader;
+                return this._LedgerJournalHeader;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalHeaderSingle _LedgerReportingCurrencyAdjustmentJournalHeader;
-        /// <summary>
-        /// There are no comments for LedgerEliminationRule in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.LedgerEliminationRuleSingle LedgerEliminationRule
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._LedgerEliminationRule == null))
-                {
-                    this._LedgerEliminationRule = new global::Microsoft.Dynamics.DataEntities.LedgerEliminationRuleSingle(this.Context, GetPath("LedgerEliminationRule"));
-                }
-                return this._LedgerEliminationRule;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.LedgerEliminationRuleSingle _LedgerEliminationRule;
-        /// <summary>
-        /// There are no comments for LedgerAccountAlias in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.LedgerAccountAliasSingle LedgerAccountAlias
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._LedgerAccountAlias == null))
-                {
-                    this._LedgerAccountAlias = new global::Microsoft.Dynamics.DataEntities.LedgerAccountAliasSingle(this.Context, GetPath("LedgerAccountAlias"));
-                }
-                return this._LedgerAccountAlias;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.LedgerAccountAliasSingle _LedgerAccountAlias;
-        /// <summary>
-        /// There are no comments for MainAccountCompany in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.MainAccountCompanySingle MainAccountCompany
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._MainAccountCompany == null))
-                {
-                    this._MainAccountCompany = new global::Microsoft.Dynamics.DataEntities.MainAccountCompanySingle(this.Context, GetPath("MainAccountCompany"));
-                }
-                return this._MainAccountCompany;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.MainAccountCompanySingle _MainAccountCompany;
-        /// <summary>
-        /// There are no comments for LedgerJournalHeaderCDS in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.LedgerJournalHeaderCDSSingle LedgerJournalHeaderCDS
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._LedgerJournalHeaderCDS == null))
-                {
-                    this._LedgerJournalHeaderCDS = new global::Microsoft.Dynamics.DataEntities.LedgerJournalHeaderCDSSingle(this.Context, GetPath("LedgerJournalHeaderCDS"));
-                }
-                return this._LedgerJournalHeaderCDS;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.LedgerJournalHeaderCDSSingle _LedgerJournalHeaderCDS;
-        /// <summary>
-        /// There are no comments for AssetJournalLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.AssetJournalLineSingle AssetJournalLine
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._AssetJournalLine == null))
-                {
-                    this._AssetJournalLine = new global::Microsoft.Dynamics.DataEntities.AssetJournalLineSingle(this.Context, GetPath("AssetJournalLine"));
-                }
-                return this._AssetJournalLine;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.AssetJournalLineSingle _AssetJournalLine;
-        /// <summary>
-        /// There are no comments for RAssetJournalHeader in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.RAssetJournalHeaderSingle RAssetJournalHeader
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._RAssetJournalHeader == null))
-                {
-                    this._RAssetJournalHeader = new global::Microsoft.Dynamics.DataEntities.RAssetJournalHeaderSingle(this.Context, GetPath("RAssetJournalHeader"));
-                }
-                return this._RAssetJournalHeader;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.RAssetJournalHeaderSingle _RAssetJournalHeader;
-        /// <summary>
-        /// There are no comments for ProjectExpenseForecast in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ProjectExpenseForecastSingle ProjectExpenseForecast
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ProjectExpenseForecast == null))
-                {
-                    this._ProjectExpenseForecast = new global::Microsoft.Dynamics.DataEntities.ProjectExpenseForecastSingle(this.Context, GetPath("ProjectExpenseForecast"));
-                }
-                return this._ProjectExpenseForecast;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ProjectExpenseForecastSingle _ProjectExpenseForecast;
+        private global::Microsoft.Dynamics.DataEntities.LedgerJournalHeaderSingle _LedgerJournalHeader;
         /// <summary>
         /// There are no comments for AllocationRuleDestination in the schema.
         /// </summary>
@@ -224,6 +77,69 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.AllocationRuleDestinationSingle _AllocationRuleDestination;
         /// <summary>
+        /// There are no comments for LegalEntityContacts in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LegalEntityContact> LegalEntityContacts
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._LegalEntityContacts == null))
+                {
+                    this._LegalEntityContacts = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LegalEntityContact>(GetPath("LegalEntityContacts"));
+                }
+                return this._LegalEntityContacts;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LegalEntityContact> _LegalEntityContacts;
+        /// <summary>
+        /// There are no comments for LedgerEliminationRule in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.LedgerEliminationRuleSingle LedgerEliminationRule
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._LedgerEliminationRule == null))
+                {
+                    this._LedgerEliminationRule = new global::Microsoft.Dynamics.DataEntities.LedgerEliminationRuleSingle(this.Context, GetPath("LedgerEliminationRule"));
+                }
+                return this._LedgerEliminationRule;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.LedgerEliminationRuleSingle _LedgerEliminationRule;
+        /// <summary>
+        /// There are no comments for RAssetJournalHeader in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.RAssetJournalHeaderSingle RAssetJournalHeader
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RAssetJournalHeader == null))
+                {
+                    this._RAssetJournalHeader = new global::Microsoft.Dynamics.DataEntities.RAssetJournalHeaderSingle(this.Context, GetPath("RAssetJournalHeader"));
+                }
+                return this._RAssetJournalHeader;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.RAssetJournalHeaderSingle _RAssetJournalHeader;
+        /// <summary>
         /// There are no comments for ProjectEmplForecast in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -245,10 +161,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ProjectEmplForecastSingle _ProjectEmplForecast;
         /// <summary>
-        /// There are no comments for ProjectFeeForecast in the schema.
+        /// There are no comments for LedgerReportingCurrencyAdjustmentJournalLineCompany in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ProjectFeeForecastSingle ProjectFeeForecast
+        public virtual global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLineSingle LedgerReportingCurrencyAdjustmentJournalLineCompany
         {
             get
             {
@@ -256,15 +172,36 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._ProjectFeeForecast == null))
+                if ((this._LedgerReportingCurrencyAdjustmentJournalLineCompany == null))
                 {
-                    this._ProjectFeeForecast = new global::Microsoft.Dynamics.DataEntities.ProjectFeeForecastSingle(this.Context, GetPath("ProjectFeeForecast"));
+                    this._LedgerReportingCurrencyAdjustmentJournalLineCompany = new global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLineSingle(this.Context, GetPath("LedgerReportingCurrencyAdjustmentJournalLineCompany"));
                 }
-                return this._ProjectFeeForecast;
+                return this._LedgerReportingCurrencyAdjustmentJournalLineCompany;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ProjectFeeForecastSingle _ProjectFeeForecast;
+        private global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLineSingle _LedgerReportingCurrencyAdjustmentJournalLineCompany;
+        /// <summary>
+        /// There are no comments for LedgerReportingCurrencyAdjustmentJournalLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLineSingle LedgerReportingCurrencyAdjustmentJournalLine
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._LedgerReportingCurrencyAdjustmentJournalLine == null))
+                {
+                    this._LedgerReportingCurrencyAdjustmentJournalLine = new global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLineSingle(this.Context, GetPath("LedgerReportingCurrencyAdjustmentJournalLine"));
+                }
+                return this._LedgerReportingCurrencyAdjustmentJournalLine;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLineSingle _LedgerReportingCurrencyAdjustmentJournalLine;
         /// <summary>
         /// There are no comments for RAssetJournalLine in the schema.
         /// </summary>
@@ -287,10 +224,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.RAssetJournalLineSingle _RAssetJournalLine;
         /// <summary>
-        /// There are no comments for LedgerJournalHeader in the schema.
+        /// There are no comments for AssetJournalHeader in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.LedgerJournalHeaderSingle LedgerJournalHeader
+        public virtual global::Microsoft.Dynamics.DataEntities.AssetJournalHeaderSingle AssetJournalHeader
         {
             get
             {
@@ -298,15 +235,183 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._LedgerJournalHeader == null))
+                if ((this._AssetJournalHeader == null))
                 {
-                    this._LedgerJournalHeader = new global::Microsoft.Dynamics.DataEntities.LedgerJournalHeaderSingle(this.Context, GetPath("LedgerJournalHeader"));
+                    this._AssetJournalHeader = new global::Microsoft.Dynamics.DataEntities.AssetJournalHeaderSingle(this.Context, GetPath("AssetJournalHeader"));
                 }
-                return this._LedgerJournalHeader;
+                return this._AssetJournalHeader;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.LedgerJournalHeaderSingle _LedgerJournalHeader;
+        private global::Microsoft.Dynamics.DataEntities.AssetJournalHeaderSingle _AssetJournalHeader;
+        /// <summary>
+        /// There are no comments for EstablishmentDetails in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RegulatoryEstablishmentDetail> EstablishmentDetails
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._EstablishmentDetails == null))
+                {
+                    this._EstablishmentDetails = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RegulatoryEstablishmentDetail>(GetPath("EstablishmentDetails"));
+                }
+                return this._EstablishmentDetails;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RegulatoryEstablishmentDetail> _EstablishmentDetails;
+        /// <summary>
+        /// There are no comments for LedgerJournalHeaderCDS in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.LedgerJournalHeaderCDSSingle LedgerJournalHeaderCDS
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._LedgerJournalHeaderCDS == null))
+                {
+                    this._LedgerJournalHeaderCDS = new global::Microsoft.Dynamics.DataEntities.LedgerJournalHeaderCDSSingle(this.Context, GetPath("LedgerJournalHeaderCDS"));
+                }
+                return this._LedgerJournalHeaderCDS;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.LedgerJournalHeaderCDSSingle _LedgerJournalHeaderCDS;
+        /// <summary>
+        /// There are no comments for MainAccountCompany in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.MainAccountCompanySingle MainAccountCompany
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._MainAccountCompany == null))
+                {
+                    this._MainAccountCompany = new global::Microsoft.Dynamics.DataEntities.MainAccountCompanySingle(this.Context, GetPath("MainAccountCompany"));
+                }
+                return this._MainAccountCompany;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.MainAccountCompanySingle _MainAccountCompany;
+        /// <summary>
+        /// There are no comments for ProjectExpenseForecast in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.ProjectExpenseForecastSingle ProjectExpenseForecast
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ProjectExpenseForecast == null))
+                {
+                    this._ProjectExpenseForecast = new global::Microsoft.Dynamics.DataEntities.ProjectExpenseForecastSingle(this.Context, GetPath("ProjectExpenseForecast"));
+                }
+                return this._ProjectExpenseForecast;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.ProjectExpenseForecastSingle _ProjectExpenseForecast;
+        /// <summary>
+        /// There are no comments for LedgerAccountAlias in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.LedgerAccountAliasSingle LedgerAccountAlias
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._LedgerAccountAlias == null))
+                {
+                    this._LedgerAccountAlias = new global::Microsoft.Dynamics.DataEntities.LedgerAccountAliasSingle(this.Context, GetPath("LedgerAccountAlias"));
+                }
+                return this._LedgerAccountAlias;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.LedgerAccountAliasSingle _LedgerAccountAlias;
+        /// <summary>
+        /// There are no comments for TaxVATNumsForImportVATNum in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.VATNumTableSingle TaxVATNumsForImportVATNum
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._TaxVATNumsForImportVATNum == null))
+                {
+                    this._TaxVATNumsForImportVATNum = new global::Microsoft.Dynamics.DataEntities.VATNumTableSingle(this.Context, GetPath("TaxVATNumsForImportVATNum"));
+                }
+                return this._TaxVATNumsForImportVATNum;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.VATNumTableSingle _TaxVATNumsForImportVATNum;
+        /// <summary>
+        /// There are no comments for TaxVATNumsForVATNum in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.VATNumTableSingle TaxVATNumsForVATNum
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._TaxVATNumsForVATNum == null))
+                {
+                    this._TaxVATNumsForVATNum = new global::Microsoft.Dynamics.DataEntities.VATNumTableSingle(this.Context, GetPath("TaxVATNumsForVATNum"));
+                }
+                return this._TaxVATNumsForVATNum;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.VATNumTableSingle _TaxVATNumsForVATNum;
+        /// <summary>
+        /// There are no comments for ProjectFeeForecast in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.ProjectFeeForecastSingle ProjectFeeForecast
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ProjectFeeForecast == null))
+                {
+                    this._ProjectFeeForecast = new global::Microsoft.Dynamics.DataEntities.ProjectFeeForecastSingle(this.Context, GetPath("ProjectFeeForecast"));
+                }
+                return this._ProjectFeeForecast;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.ProjectFeeForecastSingle _ProjectFeeForecast;
         /// <summary>
         /// There are no comments for LedgerJournalLineCDSOffsetCompany in the schema.
         /// </summary>
@@ -371,153 +476,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.LedgerJournalCDSLineSingle _LedgerJournalCDSLine;
         /// <summary>
-        /// There are no comments for JournalTrans in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.JournalTransSingle JournalTrans
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._JournalTrans == null))
-                {
-                    this._JournalTrans = new global::Microsoft.Dynamics.DataEntities.JournalTransSingle(this.Context, GetPath("JournalTrans"));
-                }
-                return this._JournalTrans;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.JournalTransSingle _JournalTrans;
-        /// <summary>
-        /// There are no comments for EstablishmentDetails in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RegulatoryEstablishmentDetail> EstablishmentDetails
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._EstablishmentDetails == null))
-                {
-                    this._EstablishmentDetails = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RegulatoryEstablishmentDetail>(GetPath("EstablishmentDetails"));
-                }
-                return this._EstablishmentDetails;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RegulatoryEstablishmentDetail> _EstablishmentDetails;
-        /// <summary>
-        /// There are no comments for TaxVATNumsForImportVATNum in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.VATNumTableSingle TaxVATNumsForImportVATNum
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._TaxVATNumsForImportVATNum == null))
-                {
-                    this._TaxVATNumsForImportVATNum = new global::Microsoft.Dynamics.DataEntities.VATNumTableSingle(this.Context, GetPath("TaxVATNumsForImportVATNum"));
-                }
-                return this._TaxVATNumsForImportVATNum;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.VATNumTableSingle _TaxVATNumsForImportVATNum;
-        /// <summary>
-        /// There are no comments for TaxVATNumsForVATNum in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.VATNumTableSingle TaxVATNumsForVATNum
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._TaxVATNumsForVATNum == null))
-                {
-                    this._TaxVATNumsForVATNum = new global::Microsoft.Dynamics.DataEntities.VATNumTableSingle(this.Context, GetPath("TaxVATNumsForVATNum"));
-                }
-                return this._TaxVATNumsForVATNum;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.VATNumTableSingle _TaxVATNumsForVATNum;
-        /// <summary>
-        /// There are no comments for LedgerReportingCurrencyAdjustmentJournalLineCompany in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLineSingle LedgerReportingCurrencyAdjustmentJournalLineCompany
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._LedgerReportingCurrencyAdjustmentJournalLineCompany == null))
-                {
-                    this._LedgerReportingCurrencyAdjustmentJournalLineCompany = new global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLineSingle(this.Context, GetPath("LedgerReportingCurrencyAdjustmentJournalLineCompany"));
-                }
-                return this._LedgerReportingCurrencyAdjustmentJournalLineCompany;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLineSingle _LedgerReportingCurrencyAdjustmentJournalLineCompany;
-        /// <summary>
-        /// There are no comments for LedgerReportingCurrencyAdjustmentJournalLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLineSingle LedgerReportingCurrencyAdjustmentJournalLine
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._LedgerReportingCurrencyAdjustmentJournalLine == null))
-                {
-                    this._LedgerReportingCurrencyAdjustmentJournalLine = new global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLineSingle(this.Context, GetPath("LedgerReportingCurrencyAdjustmentJournalLine"));
-                }
-                return this._LedgerReportingCurrencyAdjustmentJournalLine;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLineSingle _LedgerReportingCurrencyAdjustmentJournalLine;
-        /// <summary>
-        /// There are no comments for ExpenseJournalLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ExpenseJournalLineSingle ExpenseJournalLine
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ExpenseJournalLine == null))
-                {
-                    this._ExpenseJournalLine = new global::Microsoft.Dynamics.DataEntities.ExpenseJournalLineSingle(this.Context, GetPath("ExpenseJournalLine"));
-                }
-                return this._ExpenseJournalLine;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ExpenseJournalLineSingle _ExpenseJournalLine;
-        /// <summary>
         /// There are no comments for LedgerJournalLineOffsetCompany in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -581,10 +539,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.LedgerJournalLineSingle _LedgerJournalLine;
         /// <summary>
-        /// There are no comments for LegalEntityContacts in the schema.
+        /// There are no comments for AssetJournalLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LegalEntityContact> LegalEntityContacts
+        public virtual global::Microsoft.Dynamics.DataEntities.AssetJournalLineSingle AssetJournalLine
         {
             get
             {
@@ -592,20 +550,20 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._LegalEntityContacts == null))
+                if ((this._AssetJournalLine == null))
                 {
-                    this._LegalEntityContacts = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LegalEntityContact>(GetPath("LegalEntityContacts"));
+                    this._AssetJournalLine = new global::Microsoft.Dynamics.DataEntities.AssetJournalLineSingle(this.Context, GetPath("AssetJournalLine"));
                 }
-                return this._LegalEntityContacts;
+                return this._AssetJournalLine;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LegalEntityContact> _LegalEntityContacts;
+        private global::Microsoft.Dynamics.DataEntities.AssetJournalLineSingle _AssetJournalLine;
         /// <summary>
-        /// There are no comments for AssetJournalHeader in the schema.
+        /// There are no comments for ExpenseJournalLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.AssetJournalHeaderSingle AssetJournalHeader
+        public virtual global::Microsoft.Dynamics.DataEntities.ExpenseJournalLineSingle ExpenseJournalLine
         {
             get
             {
@@ -613,15 +571,57 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._AssetJournalHeader == null))
+                if ((this._ExpenseJournalLine == null))
                 {
-                    this._AssetJournalHeader = new global::Microsoft.Dynamics.DataEntities.AssetJournalHeaderSingle(this.Context, GetPath("AssetJournalHeader"));
+                    this._ExpenseJournalLine = new global::Microsoft.Dynamics.DataEntities.ExpenseJournalLineSingle(this.Context, GetPath("ExpenseJournalLine"));
                 }
-                return this._AssetJournalHeader;
+                return this._ExpenseJournalLine;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.AssetJournalHeaderSingle _AssetJournalHeader;
+        private global::Microsoft.Dynamics.DataEntities.ExpenseJournalLineSingle _ExpenseJournalLine;
+        /// <summary>
+        /// There are no comments for JournalTrans in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.JournalTransSingle JournalTrans
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._JournalTrans == null))
+                {
+                    this._JournalTrans = new global::Microsoft.Dynamics.DataEntities.JournalTransSingle(this.Context, GetPath("JournalTrans"));
+                }
+                return this._JournalTrans;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.JournalTransSingle _JournalTrans;
+        /// <summary>
+        /// There are no comments for LedgerReportingCurrencyAdjustmentJournalHeader in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalHeaderSingle LedgerReportingCurrencyAdjustmentJournalHeader
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._LedgerReportingCurrencyAdjustmentJournalHeader == null))
+                {
+                    this._LedgerReportingCurrencyAdjustmentJournalHeader = new global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalHeaderSingle(this.Context, GetPath("LedgerReportingCurrencyAdjustmentJournalHeader"));
+                }
+                return this._LedgerReportingCurrencyAdjustmentJournalHeader;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalHeaderSingle _LedgerReportingCurrencyAdjustmentJournalHeader;
     }
         /// <summary>
         /// There are no comments for LegalEntity in the schema.
@@ -644,30 +644,30 @@ namespace Microsoft.Dynamics.DataEntities
         /// <param name="addressLatitude">Initial value of AddressLatitude.</param>
         /// <param name="startDateOfBusiness">Initial value of StartDateOfBusiness.</param>
         /// <param name="addressValidTo">Initial value of AddressValidTo.</param>
-        /// <param name="ledgerReportingCurrencyAdjustmentJournalHeader">Initial value of LedgerReportingCurrencyAdjustmentJournalHeader.</param>
-        /// <param name="ledgerEliminationRule">Initial value of LedgerEliminationRule.</param>
-        /// <param name="ledgerAccountAlias">Initial value of LedgerAccountAlias.</param>
-        /// <param name="mainAccountCompany">Initial value of MainAccountCompany.</param>
-        /// <param name="ledgerJournalHeaderCDS">Initial value of LedgerJournalHeaderCDS.</param>
-        /// <param name="assetJournalLine">Initial value of AssetJournalLine.</param>
-        /// <param name="rAssetJournalHeader">Initial value of RAssetJournalHeader.</param>
-        /// <param name="projectExpenseForecast">Initial value of ProjectExpenseForecast.</param>
-        /// <param name="allocationRuleDestination">Initial value of AllocationRuleDestination.</param>
-        /// <param name="projectEmplForecast">Initial value of ProjectEmplForecast.</param>
-        /// <param name="projectFeeForecast">Initial value of ProjectFeeForecast.</param>
-        /// <param name="rAssetJournalLine">Initial value of RAssetJournalLine.</param>
         /// <param name="ledgerJournalHeader">Initial value of LedgerJournalHeader.</param>
+        /// <param name="allocationRuleDestination">Initial value of AllocationRuleDestination.</param>
+        /// <param name="ledgerEliminationRule">Initial value of LedgerEliminationRule.</param>
+        /// <param name="rAssetJournalHeader">Initial value of RAssetJournalHeader.</param>
+        /// <param name="projectEmplForecast">Initial value of ProjectEmplForecast.</param>
+        /// <param name="ledgerReportingCurrencyAdjustmentJournalLineCompany">Initial value of LedgerReportingCurrencyAdjustmentJournalLineCompany.</param>
+        /// <param name="ledgerReportingCurrencyAdjustmentJournalLine">Initial value of LedgerReportingCurrencyAdjustmentJournalLine.</param>
+        /// <param name="rAssetJournalLine">Initial value of RAssetJournalLine.</param>
+        /// <param name="assetJournalHeader">Initial value of AssetJournalHeader.</param>
+        /// <param name="ledgerJournalHeaderCDS">Initial value of LedgerJournalHeaderCDS.</param>
+        /// <param name="mainAccountCompany">Initial value of MainAccountCompany.</param>
+        /// <param name="projectExpenseForecast">Initial value of ProjectExpenseForecast.</param>
+        /// <param name="ledgerAccountAlias">Initial value of LedgerAccountAlias.</param>
+        /// <param name="projectFeeForecast">Initial value of ProjectFeeForecast.</param>
         /// <param name="ledgerJournalLineCDSOffsetCompany">Initial value of LedgerJournalLineCDSOffsetCompany.</param>
         /// <param name="ledgerJournalLineCDSCompany">Initial value of LedgerJournalLineCDSCompany.</param>
         /// <param name="ledgerJournalCDSLine">Initial value of LedgerJournalCDSLine.</param>
-        /// <param name="journalTrans">Initial value of JournalTrans.</param>
-        /// <param name="ledgerReportingCurrencyAdjustmentJournalLineCompany">Initial value of LedgerReportingCurrencyAdjustmentJournalLineCompany.</param>
-        /// <param name="ledgerReportingCurrencyAdjustmentJournalLine">Initial value of LedgerReportingCurrencyAdjustmentJournalLine.</param>
-        /// <param name="expenseJournalLine">Initial value of ExpenseJournalLine.</param>
         /// <param name="ledgerJournalLineOffsetCompany">Initial value of LedgerJournalLineOffsetCompany.</param>
         /// <param name="ledgerJournalLineCompany">Initial value of LedgerJournalLineCompany.</param>
         /// <param name="ledgerJournalLine">Initial value of LedgerJournalLine.</param>
-        /// <param name="assetJournalHeader">Initial value of AssetJournalHeader.</param>
+        /// <param name="assetJournalLine">Initial value of AssetJournalLine.</param>
+        /// <param name="expenseJournalLine">Initial value of ExpenseJournalLine.</param>
+        /// <param name="journalTrans">Initial value of JournalTrans.</param>
+        /// <param name="ledgerReportingCurrencyAdjustmentJournalHeader">Initial value of LedgerReportingCurrencyAdjustmentJournalHeader.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public static LegalEntity CreateLegalEntity(string legalEntityId, 
                     decimal addressLongitude, 
@@ -677,30 +677,30 @@ namespace Microsoft.Dynamics.DataEntities
                     decimal addressLatitude, 
                     global::System.DateTimeOffset startDateOfBusiness, 
                     global::System.DateTimeOffset addressValidTo, 
-                    global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalHeader ledgerReportingCurrencyAdjustmentJournalHeader, 
-                    global::Microsoft.Dynamics.DataEntities.LedgerEliminationRule ledgerEliminationRule, 
-                    global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias ledgerAccountAlias, 
-                    global::Microsoft.Dynamics.DataEntities.MainAccountCompany mainAccountCompany, 
-                    global::Microsoft.Dynamics.DataEntities.LedgerJournalHeaderCDS ledgerJournalHeaderCDS, 
-                    global::Microsoft.Dynamics.DataEntities.AssetJournalLine assetJournalLine, 
-                    global::Microsoft.Dynamics.DataEntities.RAssetJournalHeader rAssetJournalHeader, 
-                    global::Microsoft.Dynamics.DataEntities.ProjectExpenseForecast projectExpenseForecast, 
-                    global::Microsoft.Dynamics.DataEntities.AllocationRuleDestination allocationRuleDestination, 
-                    global::Microsoft.Dynamics.DataEntities.ProjectEmplForecast projectEmplForecast, 
-                    global::Microsoft.Dynamics.DataEntities.ProjectFeeForecast projectFeeForecast, 
-                    global::Microsoft.Dynamics.DataEntities.RAssetJournalLine rAssetJournalLine, 
                     global::Microsoft.Dynamics.DataEntities.LedgerJournalHeader ledgerJournalHeader, 
+                    global::Microsoft.Dynamics.DataEntities.AllocationRuleDestination allocationRuleDestination, 
+                    global::Microsoft.Dynamics.DataEntities.LedgerEliminationRule ledgerEliminationRule, 
+                    global::Microsoft.Dynamics.DataEntities.RAssetJournalHeader rAssetJournalHeader, 
+                    global::Microsoft.Dynamics.DataEntities.ProjectEmplForecast projectEmplForecast, 
+                    global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLine ledgerReportingCurrencyAdjustmentJournalLineCompany, 
+                    global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLine ledgerReportingCurrencyAdjustmentJournalLine, 
+                    global::Microsoft.Dynamics.DataEntities.RAssetJournalLine rAssetJournalLine, 
+                    global::Microsoft.Dynamics.DataEntities.AssetJournalHeader assetJournalHeader, 
+                    global::Microsoft.Dynamics.DataEntities.LedgerJournalHeaderCDS ledgerJournalHeaderCDS, 
+                    global::Microsoft.Dynamics.DataEntities.MainAccountCompany mainAccountCompany, 
+                    global::Microsoft.Dynamics.DataEntities.ProjectExpenseForecast projectExpenseForecast, 
+                    global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias ledgerAccountAlias, 
+                    global::Microsoft.Dynamics.DataEntities.ProjectFeeForecast projectFeeForecast, 
                     global::Microsoft.Dynamics.DataEntities.LedgerJournalCDSLine ledgerJournalLineCDSOffsetCompany, 
                     global::Microsoft.Dynamics.DataEntities.LedgerJournalCDSLine ledgerJournalLineCDSCompany, 
                     global::Microsoft.Dynamics.DataEntities.LedgerJournalCDSLine ledgerJournalCDSLine, 
-                    global::Microsoft.Dynamics.DataEntities.JournalTrans journalTrans, 
-                    global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLine ledgerReportingCurrencyAdjustmentJournalLineCompany, 
-                    global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLine ledgerReportingCurrencyAdjustmentJournalLine, 
-                    global::Microsoft.Dynamics.DataEntities.ExpenseJournalLine expenseJournalLine, 
                     global::Microsoft.Dynamics.DataEntities.LedgerJournalLine ledgerJournalLineOffsetCompany, 
                     global::Microsoft.Dynamics.DataEntities.LedgerJournalLine ledgerJournalLineCompany, 
                     global::Microsoft.Dynamics.DataEntities.LedgerJournalLine ledgerJournalLine, 
-                    global::Microsoft.Dynamics.DataEntities.AssetJournalHeader assetJournalHeader)
+                    global::Microsoft.Dynamics.DataEntities.AssetJournalLine assetJournalLine, 
+                    global::Microsoft.Dynamics.DataEntities.ExpenseJournalLine expenseJournalLine, 
+                    global::Microsoft.Dynamics.DataEntities.JournalTrans journalTrans, 
+                    global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalHeader ledgerReportingCurrencyAdjustmentJournalHeader)
         {
             LegalEntity legalEntity = new LegalEntity();
             legalEntity.LegalEntityId = legalEntityId;
@@ -711,71 +711,76 @@ namespace Microsoft.Dynamics.DataEntities
             legalEntity.AddressLatitude = addressLatitude;
             legalEntity.StartDateOfBusiness = startDateOfBusiness;
             legalEntity.AddressValidTo = addressValidTo;
-            if ((ledgerReportingCurrencyAdjustmentJournalHeader == null))
-            {
-                throw new global::System.ArgumentNullException("ledgerReportingCurrencyAdjustmentJournalHeader");
-            }
-            legalEntity.LedgerReportingCurrencyAdjustmentJournalHeader = ledgerReportingCurrencyAdjustmentJournalHeader;
-            if ((ledgerEliminationRule == null))
-            {
-                throw new global::System.ArgumentNullException("ledgerEliminationRule");
-            }
-            legalEntity.LedgerEliminationRule = ledgerEliminationRule;
-            if ((ledgerAccountAlias == null))
-            {
-                throw new global::System.ArgumentNullException("ledgerAccountAlias");
-            }
-            legalEntity.LedgerAccountAlias = ledgerAccountAlias;
-            if ((mainAccountCompany == null))
-            {
-                throw new global::System.ArgumentNullException("mainAccountCompany");
-            }
-            legalEntity.MainAccountCompany = mainAccountCompany;
-            if ((ledgerJournalHeaderCDS == null))
-            {
-                throw new global::System.ArgumentNullException("ledgerJournalHeaderCDS");
-            }
-            legalEntity.LedgerJournalHeaderCDS = ledgerJournalHeaderCDS;
-            if ((assetJournalLine == null))
-            {
-                throw new global::System.ArgumentNullException("assetJournalLine");
-            }
-            legalEntity.AssetJournalLine = assetJournalLine;
-            if ((rAssetJournalHeader == null))
-            {
-                throw new global::System.ArgumentNullException("rAssetJournalHeader");
-            }
-            legalEntity.RAssetJournalHeader = rAssetJournalHeader;
-            if ((projectExpenseForecast == null))
-            {
-                throw new global::System.ArgumentNullException("projectExpenseForecast");
-            }
-            legalEntity.ProjectExpenseForecast = projectExpenseForecast;
-            if ((allocationRuleDestination == null))
-            {
-                throw new global::System.ArgumentNullException("allocationRuleDestination");
-            }
-            legalEntity.AllocationRuleDestination = allocationRuleDestination;
-            if ((projectEmplForecast == null))
-            {
-                throw new global::System.ArgumentNullException("projectEmplForecast");
-            }
-            legalEntity.ProjectEmplForecast = projectEmplForecast;
-            if ((projectFeeForecast == null))
-            {
-                throw new global::System.ArgumentNullException("projectFeeForecast");
-            }
-            legalEntity.ProjectFeeForecast = projectFeeForecast;
-            if ((rAssetJournalLine == null))
-            {
-                throw new global::System.ArgumentNullException("rAssetJournalLine");
-            }
-            legalEntity.RAssetJournalLine = rAssetJournalLine;
             if ((ledgerJournalHeader == null))
             {
                 throw new global::System.ArgumentNullException("ledgerJournalHeader");
             }
             legalEntity.LedgerJournalHeader = ledgerJournalHeader;
+            if ((allocationRuleDestination == null))
+            {
+                throw new global::System.ArgumentNullException("allocationRuleDestination");
+            }
+            legalEntity.AllocationRuleDestination = allocationRuleDestination;
+            if ((ledgerEliminationRule == null))
+            {
+                throw new global::System.ArgumentNullException("ledgerEliminationRule");
+            }
+            legalEntity.LedgerEliminationRule = ledgerEliminationRule;
+            if ((rAssetJournalHeader == null))
+            {
+                throw new global::System.ArgumentNullException("rAssetJournalHeader");
+            }
+            legalEntity.RAssetJournalHeader = rAssetJournalHeader;
+            if ((projectEmplForecast == null))
+            {
+                throw new global::System.ArgumentNullException("projectEmplForecast");
+            }
+            legalEntity.ProjectEmplForecast = projectEmplForecast;
+            if ((ledgerReportingCurrencyAdjustmentJournalLineCompany == null))
+            {
+                throw new global::System.ArgumentNullException("ledgerReportingCurrencyAdjustmentJournalLineCompany");
+            }
+            legalEntity.LedgerReportingCurrencyAdjustmentJournalLineCompany = ledgerReportingCurrencyAdjustmentJournalLineCompany;
+            if ((ledgerReportingCurrencyAdjustmentJournalLine == null))
+            {
+                throw new global::System.ArgumentNullException("ledgerReportingCurrencyAdjustmentJournalLine");
+            }
+            legalEntity.LedgerReportingCurrencyAdjustmentJournalLine = ledgerReportingCurrencyAdjustmentJournalLine;
+            if ((rAssetJournalLine == null))
+            {
+                throw new global::System.ArgumentNullException("rAssetJournalLine");
+            }
+            legalEntity.RAssetJournalLine = rAssetJournalLine;
+            if ((assetJournalHeader == null))
+            {
+                throw new global::System.ArgumentNullException("assetJournalHeader");
+            }
+            legalEntity.AssetJournalHeader = assetJournalHeader;
+            if ((ledgerJournalHeaderCDS == null))
+            {
+                throw new global::System.ArgumentNullException("ledgerJournalHeaderCDS");
+            }
+            legalEntity.LedgerJournalHeaderCDS = ledgerJournalHeaderCDS;
+            if ((mainAccountCompany == null))
+            {
+                throw new global::System.ArgumentNullException("mainAccountCompany");
+            }
+            legalEntity.MainAccountCompany = mainAccountCompany;
+            if ((projectExpenseForecast == null))
+            {
+                throw new global::System.ArgumentNullException("projectExpenseForecast");
+            }
+            legalEntity.ProjectExpenseForecast = projectExpenseForecast;
+            if ((ledgerAccountAlias == null))
+            {
+                throw new global::System.ArgumentNullException("ledgerAccountAlias");
+            }
+            legalEntity.LedgerAccountAlias = ledgerAccountAlias;
+            if ((projectFeeForecast == null))
+            {
+                throw new global::System.ArgumentNullException("projectFeeForecast");
+            }
+            legalEntity.ProjectFeeForecast = projectFeeForecast;
             if ((ledgerJournalLineCDSOffsetCompany == null))
             {
                 throw new global::System.ArgumentNullException("ledgerJournalLineCDSOffsetCompany");
@@ -791,26 +796,6 @@ namespace Microsoft.Dynamics.DataEntities
                 throw new global::System.ArgumentNullException("ledgerJournalCDSLine");
             }
             legalEntity.LedgerJournalCDSLine = ledgerJournalCDSLine;
-            if ((journalTrans == null))
-            {
-                throw new global::System.ArgumentNullException("journalTrans");
-            }
-            legalEntity.JournalTrans = journalTrans;
-            if ((ledgerReportingCurrencyAdjustmentJournalLineCompany == null))
-            {
-                throw new global::System.ArgumentNullException("ledgerReportingCurrencyAdjustmentJournalLineCompany");
-            }
-            legalEntity.LedgerReportingCurrencyAdjustmentJournalLineCompany = ledgerReportingCurrencyAdjustmentJournalLineCompany;
-            if ((ledgerReportingCurrencyAdjustmentJournalLine == null))
-            {
-                throw new global::System.ArgumentNullException("ledgerReportingCurrencyAdjustmentJournalLine");
-            }
-            legalEntity.LedgerReportingCurrencyAdjustmentJournalLine = ledgerReportingCurrencyAdjustmentJournalLine;
-            if ((expenseJournalLine == null))
-            {
-                throw new global::System.ArgumentNullException("expenseJournalLine");
-            }
-            legalEntity.ExpenseJournalLine = expenseJournalLine;
             if ((ledgerJournalLineOffsetCompany == null))
             {
                 throw new global::System.ArgumentNullException("ledgerJournalLineOffsetCompany");
@@ -826,11 +811,26 @@ namespace Microsoft.Dynamics.DataEntities
                 throw new global::System.ArgumentNullException("ledgerJournalLine");
             }
             legalEntity.LedgerJournalLine = ledgerJournalLine;
-            if ((assetJournalHeader == null))
+            if ((assetJournalLine == null))
             {
-                throw new global::System.ArgumentNullException("assetJournalHeader");
+                throw new global::System.ArgumentNullException("assetJournalLine");
             }
-            legalEntity.AssetJournalHeader = assetJournalHeader;
+            legalEntity.AssetJournalLine = assetJournalLine;
+            if ((expenseJournalLine == null))
+            {
+                throw new global::System.ArgumentNullException("expenseJournalLine");
+            }
+            legalEntity.ExpenseJournalLine = expenseJournalLine;
+            if ((journalTrans == null))
+            {
+                throw new global::System.ArgumentNullException("journalTrans");
+            }
+            legalEntity.JournalTrans = journalTrans;
+            if ((ledgerReportingCurrencyAdjustmentJournalHeader == null))
+            {
+                throw new global::System.ArgumentNullException("ledgerReportingCurrencyAdjustmentJournalHeader");
+            }
+            legalEntity.LedgerReportingCurrencyAdjustmentJournalHeader = ledgerReportingCurrencyAdjustmentJournalHeader;
             return legalEntity;
         }
         /// <summary>
@@ -3034,181 +3034,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnImportVATNumChanging(string value);
         partial void OnImportVATNumChanged();
         /// <summary>
-        /// There are no comments for Property LedgerReportingCurrencyAdjustmentJournalHeader in the schema.
+        /// There are no comments for Property LedgerJournalHeader in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalHeader LedgerReportingCurrencyAdjustmentJournalHeader
+        public virtual global::Microsoft.Dynamics.DataEntities.LedgerJournalHeader LedgerJournalHeader
         {
             get
             {
-                return this._LedgerReportingCurrencyAdjustmentJournalHeader;
+                return this._LedgerJournalHeader;
             }
             set
             {
-                this.OnLedgerReportingCurrencyAdjustmentJournalHeaderChanging(value);
-                this._LedgerReportingCurrencyAdjustmentJournalHeader = value;
-                this.OnLedgerReportingCurrencyAdjustmentJournalHeaderChanged();
-                this.OnPropertyChanged("LedgerReportingCurrencyAdjustmentJournalHeader");
+                this.OnLedgerJournalHeaderChanging(value);
+                this._LedgerJournalHeader = value;
+                this.OnLedgerJournalHeaderChanged();
+                this.OnPropertyChanged("LedgerJournalHeader");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalHeader _LedgerReportingCurrencyAdjustmentJournalHeader;
-        partial void OnLedgerReportingCurrencyAdjustmentJournalHeaderChanging(global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalHeader value);
-        partial void OnLedgerReportingCurrencyAdjustmentJournalHeaderChanged();
-        /// <summary>
-        /// There are no comments for Property LedgerEliminationRule in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.LedgerEliminationRule LedgerEliminationRule
-        {
-            get
-            {
-                return this._LedgerEliminationRule;
-            }
-            set
-            {
-                this.OnLedgerEliminationRuleChanging(value);
-                this._LedgerEliminationRule = value;
-                this.OnLedgerEliminationRuleChanged();
-                this.OnPropertyChanged("LedgerEliminationRule");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.LedgerEliminationRule _LedgerEliminationRule;
-        partial void OnLedgerEliminationRuleChanging(global::Microsoft.Dynamics.DataEntities.LedgerEliminationRule value);
-        partial void OnLedgerEliminationRuleChanged();
-        /// <summary>
-        /// There are no comments for Property LedgerAccountAlias in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias LedgerAccountAlias
-        {
-            get
-            {
-                return this._LedgerAccountAlias;
-            }
-            set
-            {
-                this.OnLedgerAccountAliasChanging(value);
-                this._LedgerAccountAlias = value;
-                this.OnLedgerAccountAliasChanged();
-                this.OnPropertyChanged("LedgerAccountAlias");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias _LedgerAccountAlias;
-        partial void OnLedgerAccountAliasChanging(global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias value);
-        partial void OnLedgerAccountAliasChanged();
-        /// <summary>
-        /// There are no comments for Property MainAccountCompany in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.MainAccountCompany MainAccountCompany
-        {
-            get
-            {
-                return this._MainAccountCompany;
-            }
-            set
-            {
-                this.OnMainAccountCompanyChanging(value);
-                this._MainAccountCompany = value;
-                this.OnMainAccountCompanyChanged();
-                this.OnPropertyChanged("MainAccountCompany");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.MainAccountCompany _MainAccountCompany;
-        partial void OnMainAccountCompanyChanging(global::Microsoft.Dynamics.DataEntities.MainAccountCompany value);
-        partial void OnMainAccountCompanyChanged();
-        /// <summary>
-        /// There are no comments for Property LedgerJournalHeaderCDS in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.LedgerJournalHeaderCDS LedgerJournalHeaderCDS
-        {
-            get
-            {
-                return this._LedgerJournalHeaderCDS;
-            }
-            set
-            {
-                this.OnLedgerJournalHeaderCDSChanging(value);
-                this._LedgerJournalHeaderCDS = value;
-                this.OnLedgerJournalHeaderCDSChanged();
-                this.OnPropertyChanged("LedgerJournalHeaderCDS");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.LedgerJournalHeaderCDS _LedgerJournalHeaderCDS;
-        partial void OnLedgerJournalHeaderCDSChanging(global::Microsoft.Dynamics.DataEntities.LedgerJournalHeaderCDS value);
-        partial void OnLedgerJournalHeaderCDSChanged();
-        /// <summary>
-        /// There are no comments for Property AssetJournalLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.AssetJournalLine AssetJournalLine
-        {
-            get
-            {
-                return this._AssetJournalLine;
-            }
-            set
-            {
-                this.OnAssetJournalLineChanging(value);
-                this._AssetJournalLine = value;
-                this.OnAssetJournalLineChanged();
-                this.OnPropertyChanged("AssetJournalLine");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.AssetJournalLine _AssetJournalLine;
-        partial void OnAssetJournalLineChanging(global::Microsoft.Dynamics.DataEntities.AssetJournalLine value);
-        partial void OnAssetJournalLineChanged();
-        /// <summary>
-        /// There are no comments for Property RAssetJournalHeader in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.RAssetJournalHeader RAssetJournalHeader
-        {
-            get
-            {
-                return this._RAssetJournalHeader;
-            }
-            set
-            {
-                this.OnRAssetJournalHeaderChanging(value);
-                this._RAssetJournalHeader = value;
-                this.OnRAssetJournalHeaderChanged();
-                this.OnPropertyChanged("RAssetJournalHeader");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.RAssetJournalHeader _RAssetJournalHeader;
-        partial void OnRAssetJournalHeaderChanging(global::Microsoft.Dynamics.DataEntities.RAssetJournalHeader value);
-        partial void OnRAssetJournalHeaderChanged();
-        /// <summary>
-        /// There are no comments for Property ProjectExpenseForecast in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ProjectExpenseForecast ProjectExpenseForecast
-        {
-            get
-            {
-                return this._ProjectExpenseForecast;
-            }
-            set
-            {
-                this.OnProjectExpenseForecastChanging(value);
-                this._ProjectExpenseForecast = value;
-                this.OnProjectExpenseForecastChanged();
-                this.OnPropertyChanged("ProjectExpenseForecast");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ProjectExpenseForecast _ProjectExpenseForecast;
-        partial void OnProjectExpenseForecastChanging(global::Microsoft.Dynamics.DataEntities.ProjectExpenseForecast value);
-        partial void OnProjectExpenseForecastChanged();
+        private global::Microsoft.Dynamics.DataEntities.LedgerJournalHeader _LedgerJournalHeader;
+        partial void OnLedgerJournalHeaderChanging(global::Microsoft.Dynamics.DataEntities.LedgerJournalHeader value);
+        partial void OnLedgerJournalHeaderChanged();
         /// <summary>
         /// There are no comments for Property AllocationRuleDestination in the schema.
         /// </summary>
@@ -3232,6 +3078,72 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnAllocationRuleDestinationChanging(global::Microsoft.Dynamics.DataEntities.AllocationRuleDestination value);
         partial void OnAllocationRuleDestinationChanged();
         /// <summary>
+        /// There are no comments for Property LegalEntityContacts in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LegalEntityContact> LegalEntityContacts
+        {
+            get
+            {
+                return this._LegalEntityContacts;
+            }
+            set
+            {
+                this.OnLegalEntityContactsChanging(value);
+                this._LegalEntityContacts = value;
+                this.OnLegalEntityContactsChanged();
+                this.OnPropertyChanged("LegalEntityContacts");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LegalEntityContact> _LegalEntityContacts = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LegalEntityContact>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnLegalEntityContactsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LegalEntityContact> value);
+        partial void OnLegalEntityContactsChanged();
+        /// <summary>
+        /// There are no comments for Property LedgerEliminationRule in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.LedgerEliminationRule LedgerEliminationRule
+        {
+            get
+            {
+                return this._LedgerEliminationRule;
+            }
+            set
+            {
+                this.OnLedgerEliminationRuleChanging(value);
+                this._LedgerEliminationRule = value;
+                this.OnLedgerEliminationRuleChanged();
+                this.OnPropertyChanged("LedgerEliminationRule");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.LedgerEliminationRule _LedgerEliminationRule;
+        partial void OnLedgerEliminationRuleChanging(global::Microsoft.Dynamics.DataEntities.LedgerEliminationRule value);
+        partial void OnLedgerEliminationRuleChanged();
+        /// <summary>
+        /// There are no comments for Property RAssetJournalHeader in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.RAssetJournalHeader RAssetJournalHeader
+        {
+            get
+            {
+                return this._RAssetJournalHeader;
+            }
+            set
+            {
+                this.OnRAssetJournalHeaderChanging(value);
+                this._RAssetJournalHeader = value;
+                this.OnRAssetJournalHeaderChanged();
+                this.OnPropertyChanged("RAssetJournalHeader");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.RAssetJournalHeader _RAssetJournalHeader;
+        partial void OnRAssetJournalHeaderChanging(global::Microsoft.Dynamics.DataEntities.RAssetJournalHeader value);
+        partial void OnRAssetJournalHeaderChanged();
+        /// <summary>
         /// There are no comments for Property ProjectEmplForecast in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -3254,27 +3166,49 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnProjectEmplForecastChanging(global::Microsoft.Dynamics.DataEntities.ProjectEmplForecast value);
         partial void OnProjectEmplForecastChanged();
         /// <summary>
-        /// There are no comments for Property ProjectFeeForecast in the schema.
+        /// There are no comments for Property LedgerReportingCurrencyAdjustmentJournalLineCompany in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ProjectFeeForecast ProjectFeeForecast
+        public virtual global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLine LedgerReportingCurrencyAdjustmentJournalLineCompany
         {
             get
             {
-                return this._ProjectFeeForecast;
+                return this._LedgerReportingCurrencyAdjustmentJournalLineCompany;
             }
             set
             {
-                this.OnProjectFeeForecastChanging(value);
-                this._ProjectFeeForecast = value;
-                this.OnProjectFeeForecastChanged();
-                this.OnPropertyChanged("ProjectFeeForecast");
+                this.OnLedgerReportingCurrencyAdjustmentJournalLineCompanyChanging(value);
+                this._LedgerReportingCurrencyAdjustmentJournalLineCompany = value;
+                this.OnLedgerReportingCurrencyAdjustmentJournalLineCompanyChanged();
+                this.OnPropertyChanged("LedgerReportingCurrencyAdjustmentJournalLineCompany");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ProjectFeeForecast _ProjectFeeForecast;
-        partial void OnProjectFeeForecastChanging(global::Microsoft.Dynamics.DataEntities.ProjectFeeForecast value);
-        partial void OnProjectFeeForecastChanged();
+        private global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLine _LedgerReportingCurrencyAdjustmentJournalLineCompany;
+        partial void OnLedgerReportingCurrencyAdjustmentJournalLineCompanyChanging(global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLine value);
+        partial void OnLedgerReportingCurrencyAdjustmentJournalLineCompanyChanged();
+        /// <summary>
+        /// There are no comments for Property LedgerReportingCurrencyAdjustmentJournalLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLine LedgerReportingCurrencyAdjustmentJournalLine
+        {
+            get
+            {
+                return this._LedgerReportingCurrencyAdjustmentJournalLine;
+            }
+            set
+            {
+                this.OnLedgerReportingCurrencyAdjustmentJournalLineChanging(value);
+                this._LedgerReportingCurrencyAdjustmentJournalLine = value;
+                this.OnLedgerReportingCurrencyAdjustmentJournalLineChanged();
+                this.OnPropertyChanged("LedgerReportingCurrencyAdjustmentJournalLine");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLine _LedgerReportingCurrencyAdjustmentJournalLine;
+        partial void OnLedgerReportingCurrencyAdjustmentJournalLineChanging(global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLine value);
+        partial void OnLedgerReportingCurrencyAdjustmentJournalLineChanged();
         /// <summary>
         /// There are no comments for Property RAssetJournalLine in the schema.
         /// </summary>
@@ -3298,27 +3232,203 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnRAssetJournalLineChanging(global::Microsoft.Dynamics.DataEntities.RAssetJournalLine value);
         partial void OnRAssetJournalLineChanged();
         /// <summary>
-        /// There are no comments for Property LedgerJournalHeader in the schema.
+        /// There are no comments for Property AssetJournalHeader in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.LedgerJournalHeader LedgerJournalHeader
+        public virtual global::Microsoft.Dynamics.DataEntities.AssetJournalHeader AssetJournalHeader
         {
             get
             {
-                return this._LedgerJournalHeader;
+                return this._AssetJournalHeader;
             }
             set
             {
-                this.OnLedgerJournalHeaderChanging(value);
-                this._LedgerJournalHeader = value;
-                this.OnLedgerJournalHeaderChanged();
-                this.OnPropertyChanged("LedgerJournalHeader");
+                this.OnAssetJournalHeaderChanging(value);
+                this._AssetJournalHeader = value;
+                this.OnAssetJournalHeaderChanged();
+                this.OnPropertyChanged("AssetJournalHeader");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.LedgerJournalHeader _LedgerJournalHeader;
-        partial void OnLedgerJournalHeaderChanging(global::Microsoft.Dynamics.DataEntities.LedgerJournalHeader value);
-        partial void OnLedgerJournalHeaderChanged();
+        private global::Microsoft.Dynamics.DataEntities.AssetJournalHeader _AssetJournalHeader;
+        partial void OnAssetJournalHeaderChanging(global::Microsoft.Dynamics.DataEntities.AssetJournalHeader value);
+        partial void OnAssetJournalHeaderChanged();
+        /// <summary>
+        /// There are no comments for Property EstablishmentDetails in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RegulatoryEstablishmentDetail> EstablishmentDetails
+        {
+            get
+            {
+                return this._EstablishmentDetails;
+            }
+            set
+            {
+                this.OnEstablishmentDetailsChanging(value);
+                this._EstablishmentDetails = value;
+                this.OnEstablishmentDetailsChanged();
+                this.OnPropertyChanged("EstablishmentDetails");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RegulatoryEstablishmentDetail> _EstablishmentDetails = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RegulatoryEstablishmentDetail>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnEstablishmentDetailsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RegulatoryEstablishmentDetail> value);
+        partial void OnEstablishmentDetailsChanged();
+        /// <summary>
+        /// There are no comments for Property LedgerJournalHeaderCDS in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.LedgerJournalHeaderCDS LedgerJournalHeaderCDS
+        {
+            get
+            {
+                return this._LedgerJournalHeaderCDS;
+            }
+            set
+            {
+                this.OnLedgerJournalHeaderCDSChanging(value);
+                this._LedgerJournalHeaderCDS = value;
+                this.OnLedgerJournalHeaderCDSChanged();
+                this.OnPropertyChanged("LedgerJournalHeaderCDS");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.LedgerJournalHeaderCDS _LedgerJournalHeaderCDS;
+        partial void OnLedgerJournalHeaderCDSChanging(global::Microsoft.Dynamics.DataEntities.LedgerJournalHeaderCDS value);
+        partial void OnLedgerJournalHeaderCDSChanged();
+        /// <summary>
+        /// There are no comments for Property MainAccountCompany in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.MainAccountCompany MainAccountCompany
+        {
+            get
+            {
+                return this._MainAccountCompany;
+            }
+            set
+            {
+                this.OnMainAccountCompanyChanging(value);
+                this._MainAccountCompany = value;
+                this.OnMainAccountCompanyChanged();
+                this.OnPropertyChanged("MainAccountCompany");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.MainAccountCompany _MainAccountCompany;
+        partial void OnMainAccountCompanyChanging(global::Microsoft.Dynamics.DataEntities.MainAccountCompany value);
+        partial void OnMainAccountCompanyChanged();
+        /// <summary>
+        /// There are no comments for Property ProjectExpenseForecast in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.ProjectExpenseForecast ProjectExpenseForecast
+        {
+            get
+            {
+                return this._ProjectExpenseForecast;
+            }
+            set
+            {
+                this.OnProjectExpenseForecastChanging(value);
+                this._ProjectExpenseForecast = value;
+                this.OnProjectExpenseForecastChanged();
+                this.OnPropertyChanged("ProjectExpenseForecast");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.ProjectExpenseForecast _ProjectExpenseForecast;
+        partial void OnProjectExpenseForecastChanging(global::Microsoft.Dynamics.DataEntities.ProjectExpenseForecast value);
+        partial void OnProjectExpenseForecastChanged();
+        /// <summary>
+        /// There are no comments for Property LedgerAccountAlias in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias LedgerAccountAlias
+        {
+            get
+            {
+                return this._LedgerAccountAlias;
+            }
+            set
+            {
+                this.OnLedgerAccountAliasChanging(value);
+                this._LedgerAccountAlias = value;
+                this.OnLedgerAccountAliasChanged();
+                this.OnPropertyChanged("LedgerAccountAlias");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias _LedgerAccountAlias;
+        partial void OnLedgerAccountAliasChanging(global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias value);
+        partial void OnLedgerAccountAliasChanged();
+        /// <summary>
+        /// There are no comments for Property TaxVATNumsForImportVATNum in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.VATNumTable TaxVATNumsForImportVATNum
+        {
+            get
+            {
+                return this._TaxVATNumsForImportVATNum;
+            }
+            set
+            {
+                this.OnTaxVATNumsForImportVATNumChanging(value);
+                this._TaxVATNumsForImportVATNum = value;
+                this.OnTaxVATNumsForImportVATNumChanged();
+                this.OnPropertyChanged("TaxVATNumsForImportVATNum");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.VATNumTable _TaxVATNumsForImportVATNum;
+        partial void OnTaxVATNumsForImportVATNumChanging(global::Microsoft.Dynamics.DataEntities.VATNumTable value);
+        partial void OnTaxVATNumsForImportVATNumChanged();
+        /// <summary>
+        /// There are no comments for Property TaxVATNumsForVATNum in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.VATNumTable TaxVATNumsForVATNum
+        {
+            get
+            {
+                return this._TaxVATNumsForVATNum;
+            }
+            set
+            {
+                this.OnTaxVATNumsForVATNumChanging(value);
+                this._TaxVATNumsForVATNum = value;
+                this.OnTaxVATNumsForVATNumChanged();
+                this.OnPropertyChanged("TaxVATNumsForVATNum");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.VATNumTable _TaxVATNumsForVATNum;
+        partial void OnTaxVATNumsForVATNumChanging(global::Microsoft.Dynamics.DataEntities.VATNumTable value);
+        partial void OnTaxVATNumsForVATNumChanged();
+        /// <summary>
+        /// There are no comments for Property ProjectFeeForecast in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.ProjectFeeForecast ProjectFeeForecast
+        {
+            get
+            {
+                return this._ProjectFeeForecast;
+            }
+            set
+            {
+                this.OnProjectFeeForecastChanging(value);
+                this._ProjectFeeForecast = value;
+                this.OnProjectFeeForecastChanged();
+                this.OnPropertyChanged("ProjectFeeForecast");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.ProjectFeeForecast _ProjectFeeForecast;
+        partial void OnProjectFeeForecastChanging(global::Microsoft.Dynamics.DataEntities.ProjectFeeForecast value);
+        partial void OnProjectFeeForecastChanged();
         /// <summary>
         /// There are no comments for Property LedgerJournalLineCDSOffsetCompany in the schema.
         /// </summary>
@@ -3386,160 +3496,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnLedgerJournalCDSLineChanging(global::Microsoft.Dynamics.DataEntities.LedgerJournalCDSLine value);
         partial void OnLedgerJournalCDSLineChanged();
         /// <summary>
-        /// There are no comments for Property JournalTrans in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.JournalTrans JournalTrans
-        {
-            get
-            {
-                return this._JournalTrans;
-            }
-            set
-            {
-                this.OnJournalTransChanging(value);
-                this._JournalTrans = value;
-                this.OnJournalTransChanged();
-                this.OnPropertyChanged("JournalTrans");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.JournalTrans _JournalTrans;
-        partial void OnJournalTransChanging(global::Microsoft.Dynamics.DataEntities.JournalTrans value);
-        partial void OnJournalTransChanged();
-        /// <summary>
-        /// There are no comments for Property EstablishmentDetails in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RegulatoryEstablishmentDetail> EstablishmentDetails
-        {
-            get
-            {
-                return this._EstablishmentDetails;
-            }
-            set
-            {
-                this.OnEstablishmentDetailsChanging(value);
-                this._EstablishmentDetails = value;
-                this.OnEstablishmentDetailsChanged();
-                this.OnPropertyChanged("EstablishmentDetails");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RegulatoryEstablishmentDetail> _EstablishmentDetails = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RegulatoryEstablishmentDetail>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnEstablishmentDetailsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RegulatoryEstablishmentDetail> value);
-        partial void OnEstablishmentDetailsChanged();
-        /// <summary>
-        /// There are no comments for Property TaxVATNumsForImportVATNum in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.VATNumTable TaxVATNumsForImportVATNum
-        {
-            get
-            {
-                return this._TaxVATNumsForImportVATNum;
-            }
-            set
-            {
-                this.OnTaxVATNumsForImportVATNumChanging(value);
-                this._TaxVATNumsForImportVATNum = value;
-                this.OnTaxVATNumsForImportVATNumChanged();
-                this.OnPropertyChanged("TaxVATNumsForImportVATNum");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.VATNumTable _TaxVATNumsForImportVATNum;
-        partial void OnTaxVATNumsForImportVATNumChanging(global::Microsoft.Dynamics.DataEntities.VATNumTable value);
-        partial void OnTaxVATNumsForImportVATNumChanged();
-        /// <summary>
-        /// There are no comments for Property TaxVATNumsForVATNum in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.VATNumTable TaxVATNumsForVATNum
-        {
-            get
-            {
-                return this._TaxVATNumsForVATNum;
-            }
-            set
-            {
-                this.OnTaxVATNumsForVATNumChanging(value);
-                this._TaxVATNumsForVATNum = value;
-                this.OnTaxVATNumsForVATNumChanged();
-                this.OnPropertyChanged("TaxVATNumsForVATNum");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.VATNumTable _TaxVATNumsForVATNum;
-        partial void OnTaxVATNumsForVATNumChanging(global::Microsoft.Dynamics.DataEntities.VATNumTable value);
-        partial void OnTaxVATNumsForVATNumChanged();
-        /// <summary>
-        /// There are no comments for Property LedgerReportingCurrencyAdjustmentJournalLineCompany in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLine LedgerReportingCurrencyAdjustmentJournalLineCompany
-        {
-            get
-            {
-                return this._LedgerReportingCurrencyAdjustmentJournalLineCompany;
-            }
-            set
-            {
-                this.OnLedgerReportingCurrencyAdjustmentJournalLineCompanyChanging(value);
-                this._LedgerReportingCurrencyAdjustmentJournalLineCompany = value;
-                this.OnLedgerReportingCurrencyAdjustmentJournalLineCompanyChanged();
-                this.OnPropertyChanged("LedgerReportingCurrencyAdjustmentJournalLineCompany");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLine _LedgerReportingCurrencyAdjustmentJournalLineCompany;
-        partial void OnLedgerReportingCurrencyAdjustmentJournalLineCompanyChanging(global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLine value);
-        partial void OnLedgerReportingCurrencyAdjustmentJournalLineCompanyChanged();
-        /// <summary>
-        /// There are no comments for Property LedgerReportingCurrencyAdjustmentJournalLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLine LedgerReportingCurrencyAdjustmentJournalLine
-        {
-            get
-            {
-                return this._LedgerReportingCurrencyAdjustmentJournalLine;
-            }
-            set
-            {
-                this.OnLedgerReportingCurrencyAdjustmentJournalLineChanging(value);
-                this._LedgerReportingCurrencyAdjustmentJournalLine = value;
-                this.OnLedgerReportingCurrencyAdjustmentJournalLineChanged();
-                this.OnPropertyChanged("LedgerReportingCurrencyAdjustmentJournalLine");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLine _LedgerReportingCurrencyAdjustmentJournalLine;
-        partial void OnLedgerReportingCurrencyAdjustmentJournalLineChanging(global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLine value);
-        partial void OnLedgerReportingCurrencyAdjustmentJournalLineChanged();
-        /// <summary>
-        /// There are no comments for Property ExpenseJournalLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ExpenseJournalLine ExpenseJournalLine
-        {
-            get
-            {
-                return this._ExpenseJournalLine;
-            }
-            set
-            {
-                this.OnExpenseJournalLineChanging(value);
-                this._ExpenseJournalLine = value;
-                this.OnExpenseJournalLineChanged();
-                this.OnPropertyChanged("ExpenseJournalLine");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ExpenseJournalLine _ExpenseJournalLine;
-        partial void OnExpenseJournalLineChanging(global::Microsoft.Dynamics.DataEntities.ExpenseJournalLine value);
-        partial void OnExpenseJournalLineChanged();
-        /// <summary>
         /// There are no comments for Property LedgerJournalLineOffsetCompany in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -3606,49 +3562,93 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnLedgerJournalLineChanging(global::Microsoft.Dynamics.DataEntities.LedgerJournalLine value);
         partial void OnLedgerJournalLineChanged();
         /// <summary>
-        /// There are no comments for Property LegalEntityContacts in the schema.
+        /// There are no comments for Property AssetJournalLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LegalEntityContact> LegalEntityContacts
+        public virtual global::Microsoft.Dynamics.DataEntities.AssetJournalLine AssetJournalLine
         {
             get
             {
-                return this._LegalEntityContacts;
+                return this._AssetJournalLine;
             }
             set
             {
-                this.OnLegalEntityContactsChanging(value);
-                this._LegalEntityContacts = value;
-                this.OnLegalEntityContactsChanged();
-                this.OnPropertyChanged("LegalEntityContacts");
+                this.OnAssetJournalLineChanging(value);
+                this._AssetJournalLine = value;
+                this.OnAssetJournalLineChanged();
+                this.OnPropertyChanged("AssetJournalLine");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LegalEntityContact> _LegalEntityContacts = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LegalEntityContact>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnLegalEntityContactsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LegalEntityContact> value);
-        partial void OnLegalEntityContactsChanged();
+        private global::Microsoft.Dynamics.DataEntities.AssetJournalLine _AssetJournalLine;
+        partial void OnAssetJournalLineChanging(global::Microsoft.Dynamics.DataEntities.AssetJournalLine value);
+        partial void OnAssetJournalLineChanged();
         /// <summary>
-        /// There are no comments for Property AssetJournalHeader in the schema.
+        /// There are no comments for Property ExpenseJournalLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.AssetJournalHeader AssetJournalHeader
+        public virtual global::Microsoft.Dynamics.DataEntities.ExpenseJournalLine ExpenseJournalLine
         {
             get
             {
-                return this._AssetJournalHeader;
+                return this._ExpenseJournalLine;
             }
             set
             {
-                this.OnAssetJournalHeaderChanging(value);
-                this._AssetJournalHeader = value;
-                this.OnAssetJournalHeaderChanged();
-                this.OnPropertyChanged("AssetJournalHeader");
+                this.OnExpenseJournalLineChanging(value);
+                this._ExpenseJournalLine = value;
+                this.OnExpenseJournalLineChanged();
+                this.OnPropertyChanged("ExpenseJournalLine");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.AssetJournalHeader _AssetJournalHeader;
-        partial void OnAssetJournalHeaderChanging(global::Microsoft.Dynamics.DataEntities.AssetJournalHeader value);
-        partial void OnAssetJournalHeaderChanged();
+        private global::Microsoft.Dynamics.DataEntities.ExpenseJournalLine _ExpenseJournalLine;
+        partial void OnExpenseJournalLineChanging(global::Microsoft.Dynamics.DataEntities.ExpenseJournalLine value);
+        partial void OnExpenseJournalLineChanged();
+        /// <summary>
+        /// There are no comments for Property JournalTrans in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.JournalTrans JournalTrans
+        {
+            get
+            {
+                return this._JournalTrans;
+            }
+            set
+            {
+                this.OnJournalTransChanging(value);
+                this._JournalTrans = value;
+                this.OnJournalTransChanged();
+                this.OnPropertyChanged("JournalTrans");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.JournalTrans _JournalTrans;
+        partial void OnJournalTransChanging(global::Microsoft.Dynamics.DataEntities.JournalTrans value);
+        partial void OnJournalTransChanged();
+        /// <summary>
+        /// There are no comments for Property LedgerReportingCurrencyAdjustmentJournalHeader in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalHeader LedgerReportingCurrencyAdjustmentJournalHeader
+        {
+            get
+            {
+                return this._LedgerReportingCurrencyAdjustmentJournalHeader;
+            }
+            set
+            {
+                this.OnLedgerReportingCurrencyAdjustmentJournalHeaderChanging(value);
+                this._LedgerReportingCurrencyAdjustmentJournalHeader = value;
+                this.OnLedgerReportingCurrencyAdjustmentJournalHeaderChanged();
+                this.OnPropertyChanged("LedgerReportingCurrencyAdjustmentJournalHeader");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalHeader _LedgerReportingCurrencyAdjustmentJournalHeader;
+        partial void OnLedgerReportingCurrencyAdjustmentJournalHeaderChanging(global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalHeader value);
+        partial void OnLedgerReportingCurrencyAdjustmentJournalHeaderChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

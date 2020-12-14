@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 11/8/2020 8:07:52 PM
+// Generation date: 12/8/2020 7:45:22 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for AssetMaintenanceJobTypeDefault in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceJobTypeDefault> AssetMaintenanceJobTypeDefault
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._AssetMaintenanceJobTypeDefault == null))
-                {
-                    this._AssetMaintenanceJobTypeDefault = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceJobTypeDefault>(GetPath("AssetMaintenanceJobTypeDefault"));
-                }
-                return this._AssetMaintenanceJobTypeDefault;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceJobTypeDefault> _AssetMaintenanceJobTypeDefault;
-        /// <summary>
         /// There are no comments for AssetMaintenanceAssetRound in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,6 +55,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetRound> _AssetMaintenanceAssetRound;
+        /// <summary>
+        /// There are no comments for AssetMaintenanceJobTypeDefault in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceJobTypeDefault> AssetMaintenanceJobTypeDefault
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._AssetMaintenanceJobTypeDefault == null))
+                {
+                    this._AssetMaintenanceJobTypeDefault = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceJobTypeDefault>(GetPath("AssetMaintenanceJobTypeDefault"));
+                }
+                return this._AssetMaintenanceJobTypeDefault;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceJobTypeDefault> _AssetMaintenanceJobTypeDefault;
         /// <summary>
         /// There are no comments for AssetMaintenanceWorkOrderLine in the schema.
         /// </summary>
@@ -118,48 +118,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetCalendar> _AssetMaintenanceAssetCalendar;
-        /// <summary>
-        /// There are no comments for AssetMaintenanceScheduledExecution in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceScheduledExecution> AssetMaintenanceScheduledExecution
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._AssetMaintenanceScheduledExecution == null))
-                {
-                    this._AssetMaintenanceScheduledExecution = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceScheduledExecution>(GetPath("AssetMaintenanceScheduledExecution"));
-                }
-                return this._AssetMaintenanceScheduledExecution;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceScheduledExecution> _AssetMaintenanceScheduledExecution;
-        /// <summary>
-        /// There are no comments for AssetMaintenanceFunctionalLocationRound in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationRound> AssetMaintenanceFunctionalLocationRound
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._AssetMaintenanceFunctionalLocationRound == null))
-                {
-                    this._AssetMaintenanceFunctionalLocationRound = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationRound>(GetPath("AssetMaintenanceFunctionalLocationRound"));
-                }
-                return this._AssetMaintenanceFunctionalLocationRound;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationRound> _AssetMaintenanceFunctionalLocationRound;
         /// <summary>
         /// There are no comments for AssetMaintenanceJobTypeSucceedJobType in the schema.
         /// </summary>
@@ -223,6 +181,48 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetCriticality> _AssetMaintenanceAssetCriticality;
+        /// <summary>
+        /// There are no comments for AssetMaintenanceScheduledExecution in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceScheduledExecution> AssetMaintenanceScheduledExecution
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._AssetMaintenanceScheduledExecution == null))
+                {
+                    this._AssetMaintenanceScheduledExecution = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceScheduledExecution>(GetPath("AssetMaintenanceScheduledExecution"));
+                }
+                return this._AssetMaintenanceScheduledExecution;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceScheduledExecution> _AssetMaintenanceScheduledExecution;
+        /// <summary>
+        /// There are no comments for AssetMaintenanceFunctionalLocationRound in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationRound> AssetMaintenanceFunctionalLocationRound
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._AssetMaintenanceFunctionalLocationRound == null))
+                {
+                    this._AssetMaintenanceFunctionalLocationRound = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationRound>(GetPath("AssetMaintenanceFunctionalLocationRound"));
+                }
+                return this._AssetMaintenanceFunctionalLocationRound;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationRound> _AssetMaintenanceFunctionalLocationRound;
     }
         /// <summary>
         /// There are no comments for AssetMaintenanceJobTrade in the schema.
@@ -315,28 +315,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDescriptionChanging(string value);
         partial void OnDescriptionChanged();
         /// <summary>
-        /// There are no comments for Property AssetMaintenanceJobTypeDefault in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceJobTypeDefault> AssetMaintenanceJobTypeDefault
-        {
-            get
-            {
-                return this._AssetMaintenanceJobTypeDefault;
-            }
-            set
-            {
-                this.OnAssetMaintenanceJobTypeDefaultChanging(value);
-                this._AssetMaintenanceJobTypeDefault = value;
-                this.OnAssetMaintenanceJobTypeDefaultChanged();
-                this.OnPropertyChanged("AssetMaintenanceJobTypeDefault");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceJobTypeDefault> _AssetMaintenanceJobTypeDefault = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceJobTypeDefault>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAssetMaintenanceJobTypeDefaultChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceJobTypeDefault> value);
-        partial void OnAssetMaintenanceJobTypeDefaultChanged();
-        /// <summary>
         /// There are no comments for Property AssetMaintenanceAssetRound in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -358,6 +336,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetRound> _AssetMaintenanceAssetRound = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetRound>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnAssetMaintenanceAssetRoundChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetRound> value);
         partial void OnAssetMaintenanceAssetRoundChanged();
+        /// <summary>
+        /// There are no comments for Property AssetMaintenanceJobTypeDefault in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceJobTypeDefault> AssetMaintenanceJobTypeDefault
+        {
+            get
+            {
+                return this._AssetMaintenanceJobTypeDefault;
+            }
+            set
+            {
+                this.OnAssetMaintenanceJobTypeDefaultChanging(value);
+                this._AssetMaintenanceJobTypeDefault = value;
+                this.OnAssetMaintenanceJobTypeDefaultChanged();
+                this.OnPropertyChanged("AssetMaintenanceJobTypeDefault");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceJobTypeDefault> _AssetMaintenanceJobTypeDefault = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceJobTypeDefault>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnAssetMaintenanceJobTypeDefaultChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceJobTypeDefault> value);
+        partial void OnAssetMaintenanceJobTypeDefaultChanged();
         /// <summary>
         /// There are no comments for Property AssetMaintenanceWorkOrderLine in the schema.
         /// </summary>
@@ -402,50 +402,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetCalendar> _AssetMaintenanceAssetCalendar = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetCalendar>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnAssetMaintenanceAssetCalendarChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetCalendar> value);
         partial void OnAssetMaintenanceAssetCalendarChanged();
-        /// <summary>
-        /// There are no comments for Property AssetMaintenanceScheduledExecution in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceScheduledExecution> AssetMaintenanceScheduledExecution
-        {
-            get
-            {
-                return this._AssetMaintenanceScheduledExecution;
-            }
-            set
-            {
-                this.OnAssetMaintenanceScheduledExecutionChanging(value);
-                this._AssetMaintenanceScheduledExecution = value;
-                this.OnAssetMaintenanceScheduledExecutionChanged();
-                this.OnPropertyChanged("AssetMaintenanceScheduledExecution");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceScheduledExecution> _AssetMaintenanceScheduledExecution = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceScheduledExecution>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAssetMaintenanceScheduledExecutionChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceScheduledExecution> value);
-        partial void OnAssetMaintenanceScheduledExecutionChanged();
-        /// <summary>
-        /// There are no comments for Property AssetMaintenanceFunctionalLocationRound in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationRound> AssetMaintenanceFunctionalLocationRound
-        {
-            get
-            {
-                return this._AssetMaintenanceFunctionalLocationRound;
-            }
-            set
-            {
-                this.OnAssetMaintenanceFunctionalLocationRoundChanging(value);
-                this._AssetMaintenanceFunctionalLocationRound = value;
-                this.OnAssetMaintenanceFunctionalLocationRoundChanged();
-                this.OnPropertyChanged("AssetMaintenanceFunctionalLocationRound");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationRound> _AssetMaintenanceFunctionalLocationRound = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationRound>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAssetMaintenanceFunctionalLocationRoundChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationRound> value);
-        partial void OnAssetMaintenanceFunctionalLocationRoundChanged();
         /// <summary>
         /// There are no comments for Property AssetMaintenanceJobTypeSucceedJobType in the schema.
         /// </summary>
@@ -512,6 +468,50 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetCriticality> _AssetMaintenanceAssetCriticality = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetCriticality>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnAssetMaintenanceAssetCriticalityChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetCriticality> value);
         partial void OnAssetMaintenanceAssetCriticalityChanged();
+        /// <summary>
+        /// There are no comments for Property AssetMaintenanceScheduledExecution in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceScheduledExecution> AssetMaintenanceScheduledExecution
+        {
+            get
+            {
+                return this._AssetMaintenanceScheduledExecution;
+            }
+            set
+            {
+                this.OnAssetMaintenanceScheduledExecutionChanging(value);
+                this._AssetMaintenanceScheduledExecution = value;
+                this.OnAssetMaintenanceScheduledExecutionChanged();
+                this.OnPropertyChanged("AssetMaintenanceScheduledExecution");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceScheduledExecution> _AssetMaintenanceScheduledExecution = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceScheduledExecution>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnAssetMaintenanceScheduledExecutionChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceScheduledExecution> value);
+        partial void OnAssetMaintenanceScheduledExecutionChanged();
+        /// <summary>
+        /// There are no comments for Property AssetMaintenanceFunctionalLocationRound in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationRound> AssetMaintenanceFunctionalLocationRound
+        {
+            get
+            {
+                return this._AssetMaintenanceFunctionalLocationRound;
+            }
+            set
+            {
+                this.OnAssetMaintenanceFunctionalLocationRoundChanging(value);
+                this._AssetMaintenanceFunctionalLocationRound = value;
+                this.OnAssetMaintenanceFunctionalLocationRoundChanged();
+                this.OnPropertyChanged("AssetMaintenanceFunctionalLocationRound");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationRound> _AssetMaintenanceFunctionalLocationRound = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationRound>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnAssetMaintenanceFunctionalLocationRoundChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationRound> value);
+        partial void OnAssetMaintenanceFunctionalLocationRoundChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

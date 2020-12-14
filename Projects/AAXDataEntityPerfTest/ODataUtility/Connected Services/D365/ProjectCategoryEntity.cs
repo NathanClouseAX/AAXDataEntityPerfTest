@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 11/8/2020 8:07:52 PM
+// Generation date: 12/8/2020 7:45:22 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,6 +34,27 @@ namespace Microsoft.Dynamics.DataEntities
         public ProjectCategoryEntitySingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ProjectCategoryEntity> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for ProjectQuotationWbsTask in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProjectQuotationWbsTask> ProjectQuotationWbsTask
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ProjectQuotationWbsTask == null))
+                {
+                    this._ProjectQuotationWbsTask = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProjectQuotationWbsTask>(GetPath("ProjectQuotationWbsTask"));
+                }
+                return this._ProjectQuotationWbsTask;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProjectQuotationWbsTask> _ProjectQuotationWbsTask;
         /// <summary>
         /// There are no comments for ReleasedProductsV2 in the schema.
         /// </summary>
@@ -98,27 +119,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProjWBSActivityEstimate> _ProjWBSActivityEstimate;
         /// <summary>
-        /// There are no comments for ProjWBSTemplateTask in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProjWBSTemplateTask> ProjWBSTemplateTask
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ProjWBSTemplateTask == null))
-                {
-                    this._ProjWBSTemplateTask = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProjWBSTemplateTask>(GetPath("ProjWBSTemplateTask"));
-                }
-                return this._ProjWBSTemplateTask;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProjWBSTemplateTask> _ProjWBSTemplateTask;
-        /// <summary>
         /// There are no comments for JournalTrans in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -140,10 +140,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.JournalTransSingle _JournalTrans;
         /// <summary>
-        /// There are no comments for ProjectQuotationWbsTask in the schema.
+        /// There are no comments for ProjWBSTemplateTask in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProjectQuotationWbsTask> ProjectQuotationWbsTask
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProjWBSTemplateTask> ProjWBSTemplateTask
         {
             get
             {
@@ -151,15 +151,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._ProjectQuotationWbsTask == null))
+                if ((this._ProjWBSTemplateTask == null))
                 {
-                    this._ProjectQuotationWbsTask = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProjectQuotationWbsTask>(GetPath("ProjectQuotationWbsTask"));
+                    this._ProjWBSTemplateTask = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProjWBSTemplateTask>(GetPath("ProjWBSTemplateTask"));
                 }
-                return this._ProjectQuotationWbsTask;
+                return this._ProjWBSTemplateTask;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProjectQuotationWbsTask> _ProjectQuotationWbsTask;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProjWBSTemplateTask> _ProjWBSTemplateTask;
     }
         /// <summary>
         /// There are no comments for ProjectCategoryEntity in the schema.
@@ -544,6 +544,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnWorkerChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ProjCategoryEmplOption> value);
         partial void OnWorkerChanged();
         /// <summary>
+        /// There are no comments for Property ProjectQuotationWbsTask in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProjectQuotationWbsTask> ProjectQuotationWbsTask
+        {
+            get
+            {
+                return this._ProjectQuotationWbsTask;
+            }
+            set
+            {
+                this.OnProjectQuotationWbsTaskChanging(value);
+                this._ProjectQuotationWbsTask = value;
+                this.OnProjectQuotationWbsTaskChanged();
+                this.OnPropertyChanged("ProjectQuotationWbsTask");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProjectQuotationWbsTask> _ProjectQuotationWbsTask = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProjectQuotationWbsTask>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnProjectQuotationWbsTaskChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProjectQuotationWbsTask> value);
+        partial void OnProjectQuotationWbsTaskChanged();
+        /// <summary>
         /// There are no comments for Property ReleasedProductsV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -610,28 +632,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnProjWBSActivityEstimateChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProjWBSActivityEstimate> value);
         partial void OnProjWBSActivityEstimateChanged();
         /// <summary>
-        /// There are no comments for Property ProjWBSTemplateTask in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProjWBSTemplateTask> ProjWBSTemplateTask
-        {
-            get
-            {
-                return this._ProjWBSTemplateTask;
-            }
-            set
-            {
-                this.OnProjWBSTemplateTaskChanging(value);
-                this._ProjWBSTemplateTask = value;
-                this.OnProjWBSTemplateTaskChanged();
-                this.OnPropertyChanged("ProjWBSTemplateTask");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProjWBSTemplateTask> _ProjWBSTemplateTask = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProjWBSTemplateTask>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnProjWBSTemplateTaskChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProjWBSTemplateTask> value);
-        partial void OnProjWBSTemplateTaskChanged();
-        /// <summary>
         /// There are no comments for Property JournalTrans in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -654,27 +654,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnJournalTransChanging(global::Microsoft.Dynamics.DataEntities.JournalTrans value);
         partial void OnJournalTransChanged();
         /// <summary>
-        /// There are no comments for Property ProjectQuotationWbsTask in the schema.
+        /// There are no comments for Property ProjWBSTemplateTask in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProjectQuotationWbsTask> ProjectQuotationWbsTask
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProjWBSTemplateTask> ProjWBSTemplateTask
         {
             get
             {
-                return this._ProjectQuotationWbsTask;
+                return this._ProjWBSTemplateTask;
             }
             set
             {
-                this.OnProjectQuotationWbsTaskChanging(value);
-                this._ProjectQuotationWbsTask = value;
-                this.OnProjectQuotationWbsTaskChanged();
-                this.OnPropertyChanged("ProjectQuotationWbsTask");
+                this.OnProjWBSTemplateTaskChanging(value);
+                this._ProjWBSTemplateTask = value;
+                this.OnProjWBSTemplateTaskChanged();
+                this.OnPropertyChanged("ProjWBSTemplateTask");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProjectQuotationWbsTask> _ProjectQuotationWbsTask = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProjectQuotationWbsTask>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnProjectQuotationWbsTaskChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProjectQuotationWbsTask> value);
-        partial void OnProjectQuotationWbsTaskChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProjWBSTemplateTask> _ProjWBSTemplateTask = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProjWBSTemplateTask>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnProjWBSTemplateTaskChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProjWBSTemplateTask> value);
+        partial void OnProjWBSTemplateTaskChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 11/8/2020 8:07:52 PM
+// Generation date: 12/8/2020 7:45:22 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for CompensationGrid in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationGrid> CompensationGrid
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._CompensationGrid == null))
-                {
-                    this._CompensationGrid = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CompensationGrid>(GetPath("CompensationGrid"));
-                }
-                return this._CompensationGrid;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationGrid> _CompensationGrid;
-        /// <summary>
         /// There are no comments for CompensationReferencePointSetupLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,6 +55,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationReferencePointSetupLine> _CompensationReferencePointSetupLine;
+        /// <summary>
+        /// There are no comments for CompensationGrid in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationGrid> CompensationGrid
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._CompensationGrid == null))
+                {
+                    this._CompensationGrid = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CompensationGrid>(GetPath("CompensationGrid"));
+                }
+                return this._CompensationGrid;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationGrid> _CompensationGrid;
     }
         /// <summary>
         /// There are no comments for CompensationReferencePoint in the schema.
@@ -190,28 +190,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnTypeChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HcmCompensationType> value);
         partial void OnTypeChanged();
         /// <summary>
-        /// There are no comments for Property CompensationGrid in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationGrid> CompensationGrid
-        {
-            get
-            {
-                return this._CompensationGrid;
-            }
-            set
-            {
-                this.OnCompensationGridChanging(value);
-                this._CompensationGrid = value;
-                this.OnCompensationGridChanged();
-                this.OnPropertyChanged("CompensationGrid");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationGrid> _CompensationGrid = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationGrid>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnCompensationGridChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationGrid> value);
-        partial void OnCompensationGridChanged();
-        /// <summary>
         /// There are no comments for Property CompensationReferencePointSetupLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -233,6 +211,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationReferencePointSetupLine> _CompensationReferencePointSetupLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationReferencePointSetupLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnCompensationReferencePointSetupLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationReferencePointSetupLine> value);
         partial void OnCompensationReferencePointSetupLineChanged();
+        /// <summary>
+        /// There are no comments for Property CompensationGrid in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationGrid> CompensationGrid
+        {
+            get
+            {
+                return this._CompensationGrid;
+            }
+            set
+            {
+                this.OnCompensationGridChanging(value);
+                this._CompensationGrid = value;
+                this.OnCompensationGridChanged();
+                this.OnPropertyChanged("CompensationGrid");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationGrid> _CompensationGrid = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationGrid>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnCompensationGridChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationGrid> value);
+        partial void OnCompensationGridChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

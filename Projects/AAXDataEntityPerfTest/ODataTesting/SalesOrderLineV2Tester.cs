@@ -17,12 +17,31 @@ using System.Diagnostics;
 
 namespace ODataTesting
 {
-    class SalesOrderLineV2Tester : SalesOrderTester
+    public class SalesOrderLineV2Tester : SalesOrderTester
     {
-        public enum TestType { Repetitive, Random }
-        public enum TestWorkload { Read, Create, Update, Delete }
-
         public static string logTemplate = "";
+        public static string Entity = "SalesOrderLineV2";
+
+        public static void runOneExpandedRead(Resources context, string filePath, TestType testType, TestWorkload testWorkload, string SalesOrderNumber, string DataAreaId)
+        {
+            Stopwatch sw = new Stopwatch();
+
+            Entity = "SalesOrderLineV2 (W/ Expand)";
+
+            sw.Start();
+
+            SalesOrderLine SalesOrderLine = context.SalesOrderLines.Expand(x => x.SalesOrderHeaderV2).Where(x => x.SalesOrderNumber == SalesOrderNumber && x.dataAreaId == DataAreaId).First();
+
+            sw.Stop();
+
+            StreamWriter stream = File.AppendText(filePath);
+
+
+            stream.WriteLine(Entity + "," + testType + "," + testWorkload + "," + sw.Elapsed.TotalMilliseconds.ToString());
+            stream.Flush();
+            stream.Close();
+
+        }
 
         public static void runOneRead(Resources context, string filePath, TestType testType, TestWorkload testWorkload, string SalesOrderNumber, string DataAreaId)
         {
@@ -30,17 +49,39 @@ namespace ODataTesting
 
             sw.Start();
 
-            SalesOrderLine SalesOrderLine = context.SalesOrderLines.Expand("SalesOrderHeader").Where(x => x.SalesOrderNumber == SalesOrderNumber && x.dataAreaId == DataAreaId).First();
-            
+            SalesOrderLine SalesOrderLine = context.SalesOrderLines.Where(x => x.SalesOrderNumber == SalesOrderNumber && x.dataAreaId == DataAreaId).First();
 
             sw.Stop();
 
             StreamWriter stream = File.AppendText(filePath);
 
-            stream.WriteLine("SalesOrderLine-Fetch," + testType + "," + testWorkload + "," + sw.Elapsed.TotalMilliseconds.ToString());
+            stream.WriteLine(Entity + "," + testType + "," + testWorkload + "," + sw.Elapsed.TotalMilliseconds.ToString());
             stream.Flush();
             stream.Close();
 
         }
+
+        public static void runOneCombinedRead(Resources context, string filePath, TestType testType, TestWorkload testWorkload, string SalesOrderNumber, string DataAreaId)
+        {
+            Stopwatch sw = new Stopwatch();
+
+            Entity = "SalesOrderLineV2+SalesOrderHeaderV2";
+
+            sw.Start();
+
+            SalesOrderLine SalesOrderLine = context.SalesOrderLines.Where(x => x.SalesOrderNumber == SalesOrderNumber && x.dataAreaId == DataAreaId).First();
+            SalesOrderHeaderV2 SalesOrderHeaderV2 = context.SalesOrderHeadersV2.Where(x => x.SalesOrderNumber == SalesOrderNumber && x.dataAreaId == DataAreaId).First();
+
+            sw.Stop();
+
+            StreamWriter stream = File.AppendText(filePath);
+
+            stream.WriteLine(Entity + "," + testType + "," + testWorkload + "," + sw.Elapsed.TotalMilliseconds.ToString());
+            stream.Flush();
+            stream.Close();
+
+        }
+
+
     }
 }

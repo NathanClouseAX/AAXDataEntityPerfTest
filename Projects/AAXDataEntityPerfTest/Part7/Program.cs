@@ -24,7 +24,7 @@ namespace Part7
     {
         public static string ODataEntityPath = ClientConfiguration.Default.UriString + "data";
 
-        public static string filePath = @"c:\temp\part7.txt";
+        public static string filePath = @"c:\temp\part7-UAT.txt";
 
         static void CallChildThread(Resources context, ref Logger logger, int threadCount)
         {
@@ -73,9 +73,9 @@ namespace Part7
 
             Logger logger = new Logger(filePath);
 
-            Console.WriteLine("Connected To " + ClientConfiguration.Default.UriString);
+            //Console.WriteLine("Connected To " + ClientConfiguration.Default.UriString);
 
-            Console.WriteLine("Starting SalesOrderHeaderV2 Tests");
+            Console.WriteLine("Starting SalesOrderHeaderV2 Tests for Thread Count " + threadCount.ToString() + " at " + DateTime.Now.ToString());
 
             List<Thread> Threads = new List<Thread>();
 
@@ -124,14 +124,14 @@ namespace Part7
             stream.Close();
 
             runTest(1);
-
             runTest(10);
-
             runTest(25);
-
             runTest(50);
             runTest(100);
-            
+            runTest(250);
+            runTest(500);
+            runTest(1000);
+
         }
     }
 }

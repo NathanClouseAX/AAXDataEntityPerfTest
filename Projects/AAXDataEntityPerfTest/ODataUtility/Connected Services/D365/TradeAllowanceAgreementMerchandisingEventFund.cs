@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 11/8/2020 8:07:52 PM
+// Generation date: 12/8/2020 7:45:22 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -55,27 +55,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventSingle _TradeAllowanceAgreementMerchandisingEvent;
-        /// <summary>
-        /// There are no comments for TradeAllowanceAgreementHeader in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeaderSingle TradeAllowanceAgreementHeader
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._TradeAllowanceAgreementHeader == null))
-                {
-                    this._TradeAllowanceAgreementHeader = new global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeaderSingle(this.Context, GetPath("TradeAllowanceAgreementHeader"));
-                }
-                return this._TradeAllowanceAgreementHeader;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeaderSingle _TradeAllowanceAgreementHeader;
     }
         /// <summary>
         /// There are no comments for TradeAllowanceAgreementMerchandisingEventFund in the schema.
@@ -278,28 +257,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEvent _TradeAllowanceAgreementMerchandisingEvent;
         partial void OnTradeAllowanceAgreementMerchandisingEventChanging(global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEvent value);
         partial void OnTradeAllowanceAgreementMerchandisingEventChanged();
-        /// <summary>
-        /// There are no comments for Property TradeAllowanceAgreementHeader in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeader TradeAllowanceAgreementHeader
-        {
-            get
-            {
-                return this._TradeAllowanceAgreementHeader;
-            }
-            set
-            {
-                this.OnTradeAllowanceAgreementHeaderChanging(value);
-                this._TradeAllowanceAgreementHeader = value;
-                this.OnTradeAllowanceAgreementHeaderChanged();
-                this.OnPropertyChanged("TradeAllowanceAgreementHeader");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeader _TradeAllowanceAgreementHeader;
-        partial void OnTradeAllowanceAgreementHeaderChanging(global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeader value);
-        partial void OnTradeAllowanceAgreementHeaderChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

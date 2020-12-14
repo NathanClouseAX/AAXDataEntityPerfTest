@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 11/8/2020 8:07:52 PM
+// Generation date: 12/8/2020 7:45:22 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,6 +34,27 @@ namespace Microsoft.Dynamics.DataEntities
         public FiscalPeriodSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<FiscalPeriod> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for BudgetTrackingWorkspaceParametersFiscalPeriod in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> BudgetTrackingWorkspaceParametersFiscalPeriod
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._BudgetTrackingWorkspaceParametersFiscalPeriod == null))
+                {
+                    this._BudgetTrackingWorkspaceParametersFiscalPeriod = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters>(GetPath("BudgetTrackingWorkspaceParametersFiscalPeriod"));
+                }
+                return this._BudgetTrackingWorkspaceParametersFiscalPeriod;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> _BudgetTrackingWorkspaceParametersFiscalPeriod;
         /// <summary>
         /// There are no comments for FiscalCalendarPeriod in the schema.
         /// </summary>
@@ -76,27 +97,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.FiscalCalendarYearEntitySingle _FiscalCalendarYear;
-        /// <summary>
-        /// There are no comments for BudgetTrackingWorkspaceParametersFiscalPeriod in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> BudgetTrackingWorkspaceParametersFiscalPeriod
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._BudgetTrackingWorkspaceParametersFiscalPeriod == null))
-                {
-                    this._BudgetTrackingWorkspaceParametersFiscalPeriod = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters>(GetPath("BudgetTrackingWorkspaceParametersFiscalPeriod"));
-                }
-                return this._BudgetTrackingWorkspaceParametersFiscalPeriod;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> _BudgetTrackingWorkspaceParametersFiscalPeriod;
     }
         /// <summary>
         /// There are no comments for FiscalPeriod in the schema.
@@ -417,6 +417,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnTypeChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.FiscalPeriodType> value);
         partial void OnTypeChanged();
         /// <summary>
+        /// There are no comments for Property BudgetTrackingWorkspaceParametersFiscalPeriod in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> BudgetTrackingWorkspaceParametersFiscalPeriod
+        {
+            get
+            {
+                return this._BudgetTrackingWorkspaceParametersFiscalPeriod;
+            }
+            set
+            {
+                this.OnBudgetTrackingWorkspaceParametersFiscalPeriodChanging(value);
+                this._BudgetTrackingWorkspaceParametersFiscalPeriod = value;
+                this.OnBudgetTrackingWorkspaceParametersFiscalPeriodChanged();
+                this.OnPropertyChanged("BudgetTrackingWorkspaceParametersFiscalPeriod");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> _BudgetTrackingWorkspaceParametersFiscalPeriod = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnBudgetTrackingWorkspaceParametersFiscalPeriodChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> value);
+        partial void OnBudgetTrackingWorkspaceParametersFiscalPeriodChanged();
+        /// <summary>
         /// There are no comments for Property FiscalCalendarPeriod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -460,28 +482,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.FiscalCalendarYearEntity _FiscalCalendarYear;
         partial void OnFiscalCalendarYearChanging(global::Microsoft.Dynamics.DataEntities.FiscalCalendarYearEntity value);
         partial void OnFiscalCalendarYearChanged();
-        /// <summary>
-        /// There are no comments for Property BudgetTrackingWorkspaceParametersFiscalPeriod in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> BudgetTrackingWorkspaceParametersFiscalPeriod
-        {
-            get
-            {
-                return this._BudgetTrackingWorkspaceParametersFiscalPeriod;
-            }
-            set
-            {
-                this.OnBudgetTrackingWorkspaceParametersFiscalPeriodChanging(value);
-                this._BudgetTrackingWorkspaceParametersFiscalPeriod = value;
-                this.OnBudgetTrackingWorkspaceParametersFiscalPeriodChanged();
-                this.OnPropertyChanged("BudgetTrackingWorkspaceParametersFiscalPeriod");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> _BudgetTrackingWorkspaceParametersFiscalPeriod = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnBudgetTrackingWorkspaceParametersFiscalPeriodChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> value);
-        partial void OnBudgetTrackingWorkspaceParametersFiscalPeriodChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

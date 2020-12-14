@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 11/8/2020 8:07:52 PM
+// Generation date: 12/8/2020 7:45:22 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for SalesOrderHeaderDocumentAttachments in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesOrderHeaderDocumentAttachment> SalesOrderHeaderDocumentAttachments
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._SalesOrderHeaderDocumentAttachments == null))
-                {
-                    this._SalesOrderHeaderDocumentAttachments = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.SalesOrderHeaderDocumentAttachment>(GetPath("SalesOrderHeaderDocumentAttachments"));
-                }
-                return this._SalesOrderHeaderDocumentAttachments;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesOrderHeaderDocumentAttachment> _SalesOrderHeaderDocumentAttachments;
-        /// <summary>
         /// There are no comments for CDSSalesQuotationHeader in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -77,27 +56,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.CDSSalesQuotationHeaderSingle _CDSSalesQuotationHeader;
         /// <summary>
-        /// There are no comments for Project in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ProjectSingle Project
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._Project == null))
-                {
-                    this._Project = new global::Microsoft.Dynamics.DataEntities.ProjectSingle(this.Context, GetPath("Project"));
-                }
-                return this._Project;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ProjectSingle _Project;
-        /// <summary>
         /// There are no comments for CDSSalesOrderLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -118,6 +76,48 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CDSSalesOrderLine> _CDSSalesOrderLines;
+        /// <summary>
+        /// There are no comments for SalesOrderHeaderDocumentAttachments in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesOrderHeaderDocumentAttachment> SalesOrderHeaderDocumentAttachments
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._SalesOrderHeaderDocumentAttachments == null))
+                {
+                    this._SalesOrderHeaderDocumentAttachments = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.SalesOrderHeaderDocumentAttachment>(GetPath("SalesOrderHeaderDocumentAttachments"));
+                }
+                return this._SalesOrderHeaderDocumentAttachments;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesOrderHeaderDocumentAttachment> _SalesOrderHeaderDocumentAttachments;
+        /// <summary>
+        /// There are no comments for Project in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.ProjectSingle Project
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Project == null))
+                {
+                    this._Project = new global::Microsoft.Dynamics.DataEntities.ProjectSingle(this.Context, GetPath("Project"));
+                }
+                return this._Project;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.ProjectSingle _Project;
     }
         /// <summary>
         /// There are no comments for CDSSalesOrderHeader in the schema.
@@ -2216,28 +2216,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnInvoiceAddressLongitudeChanging(decimal value);
         partial void OnInvoiceAddressLongitudeChanged();
         /// <summary>
-        /// There are no comments for Property SalesOrderHeaderDocumentAttachments in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesOrderHeaderDocumentAttachment> SalesOrderHeaderDocumentAttachments
-        {
-            get
-            {
-                return this._SalesOrderHeaderDocumentAttachments;
-            }
-            set
-            {
-                this.OnSalesOrderHeaderDocumentAttachmentsChanging(value);
-                this._SalesOrderHeaderDocumentAttachments = value;
-                this.OnSalesOrderHeaderDocumentAttachmentsChanged();
-                this.OnPropertyChanged("SalesOrderHeaderDocumentAttachments");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesOrderHeaderDocumentAttachment> _SalesOrderHeaderDocumentAttachments = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesOrderHeaderDocumentAttachment>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnSalesOrderHeaderDocumentAttachmentsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesOrderHeaderDocumentAttachment> value);
-        partial void OnSalesOrderHeaderDocumentAttachmentsChanged();
-        /// <summary>
         /// There are no comments for Property CDSSalesQuotationHeader in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -2260,28 +2238,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnCDSSalesQuotationHeaderChanging(global::Microsoft.Dynamics.DataEntities.CDSSalesQuotationHeader value);
         partial void OnCDSSalesQuotationHeaderChanged();
         /// <summary>
-        /// There are no comments for Property Project in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.Project Project
-        {
-            get
-            {
-                return this._Project;
-            }
-            set
-            {
-                this.OnProjectChanging(value);
-                this._Project = value;
-                this.OnProjectChanged();
-                this.OnPropertyChanged("Project");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.Project _Project;
-        partial void OnProjectChanging(global::Microsoft.Dynamics.DataEntities.Project value);
-        partial void OnProjectChanged();
-        /// <summary>
         /// There are no comments for Property CDSSalesOrderLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -2303,6 +2259,50 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CDSSalesOrderLine> _CDSSalesOrderLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CDSSalesOrderLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnCDSSalesOrderLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CDSSalesOrderLine> value);
         partial void OnCDSSalesOrderLinesChanged();
+        /// <summary>
+        /// There are no comments for Property SalesOrderHeaderDocumentAttachments in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesOrderHeaderDocumentAttachment> SalesOrderHeaderDocumentAttachments
+        {
+            get
+            {
+                return this._SalesOrderHeaderDocumentAttachments;
+            }
+            set
+            {
+                this.OnSalesOrderHeaderDocumentAttachmentsChanging(value);
+                this._SalesOrderHeaderDocumentAttachments = value;
+                this.OnSalesOrderHeaderDocumentAttachmentsChanged();
+                this.OnPropertyChanged("SalesOrderHeaderDocumentAttachments");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesOrderHeaderDocumentAttachment> _SalesOrderHeaderDocumentAttachments = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesOrderHeaderDocumentAttachment>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnSalesOrderHeaderDocumentAttachmentsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesOrderHeaderDocumentAttachment> value);
+        partial void OnSalesOrderHeaderDocumentAttachmentsChanged();
+        /// <summary>
+        /// There are no comments for Property Project in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.Project Project
+        {
+            get
+            {
+                return this._Project;
+            }
+            set
+            {
+                this.OnProjectChanging(value);
+                this._Project = value;
+                this.OnProjectChanged();
+                this.OnPropertyChanged("Project");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.Project _Project;
+        partial void OnProjectChanging(global::Microsoft.Dynamics.DataEntities.Project value);
+        partial void OnProjectChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 11/8/2020 8:07:52 PM
+// Generation date: 12/8/2020 7:45:22 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,69 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public ConsolidateAccountGroupSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ConsolidateAccountGroup> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for LedgerChartOfAccountsEntityRole2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ChartOfAccountsSingle LedgerChartOfAccountsEntityRole2
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._LedgerChartOfAccountsEntityRole2 == null))
-                {
-                    this._LedgerChartOfAccountsEntityRole2 = new global::Microsoft.Dynamics.DataEntities.ChartOfAccountsSingle(this.Context, GetPath("LedgerChartOfAccountsEntityRole2"));
-                }
-                return this._LedgerChartOfAccountsEntityRole2;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ChartOfAccountsSingle _LedgerChartOfAccountsEntityRole2;
-        /// <summary>
-        /// There are no comments for ConsolidationMainAccountEntityRole2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.MainAccountSingle ConsolidationMainAccountEntityRole2
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ConsolidationMainAccountEntityRole2 == null))
-                {
-                    this._ConsolidationMainAccountEntityRole2 = new global::Microsoft.Dynamics.DataEntities.MainAccountSingle(this.Context, GetPath("ConsolidationMainAccountEntityRole2"));
-                }
-                return this._ConsolidationMainAccountEntityRole2;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.MainAccountSingle _ConsolidationMainAccountEntityRole2;
-        /// <summary>
-        /// There are no comments for MainAccountEntityRole2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.MainAccountSingle MainAccountEntityRole2
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._MainAccountEntityRole2 == null))
-                {
-                    this._MainAccountEntityRole2 = new global::Microsoft.Dynamics.DataEntities.MainAccountSingle(this.Context, GetPath("MainAccountEntityRole2"));
-                }
-                return this._MainAccountEntityRole2;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.MainAccountSingle _MainAccountEntityRole2;
     }
         /// <summary>
         /// There are no comments for ConsolidateAccountGroup in the schema.
@@ -117,38 +54,14 @@ namespace Microsoft.Dynamics.DataEntities
         /// <param name="chartOfAccounts">Initial value of ChartOfAccounts.</param>
         /// <param name="mainAccount">Initial value of MainAccount.</param>
         /// <param name="sATLevel">Initial value of SATLevel.</param>
-        /// <param name="ledgerChartOfAccountsEntityRole2">Initial value of LedgerChartOfAccountsEntityRole2.</param>
-        /// <param name="consolidationMainAccountEntityRole2">Initial value of ConsolidationMainAccountEntityRole2.</param>
-        /// <param name="mainAccountEntityRole2">Initial value of MainAccountEntityRole2.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public static ConsolidateAccountGroup CreateConsolidateAccountGroup(string consolidationAccountGroup, 
-                    string chartOfAccounts, 
-                    string mainAccount, 
-                    int sATLevel, 
-                    global::Microsoft.Dynamics.DataEntities.ChartOfAccounts ledgerChartOfAccountsEntityRole2, 
-                    global::Microsoft.Dynamics.DataEntities.MainAccount consolidationMainAccountEntityRole2, 
-                    global::Microsoft.Dynamics.DataEntities.MainAccount mainAccountEntityRole2)
+        public static ConsolidateAccountGroup CreateConsolidateAccountGroup(string consolidationAccountGroup, string chartOfAccounts, string mainAccount, int sATLevel)
         {
             ConsolidateAccountGroup consolidateAccountGroup = new ConsolidateAccountGroup();
             consolidateAccountGroup.ConsolidationAccountGroup = consolidationAccountGroup;
             consolidateAccountGroup.ChartOfAccounts = chartOfAccounts;
             consolidateAccountGroup.MainAccount = mainAccount;
             consolidateAccountGroup.SATLevel = sATLevel;
-            if ((ledgerChartOfAccountsEntityRole2 == null))
-            {
-                throw new global::System.ArgumentNullException("ledgerChartOfAccountsEntityRole2");
-            }
-            consolidateAccountGroup.LedgerChartOfAccountsEntityRole2 = ledgerChartOfAccountsEntityRole2;
-            if ((consolidationMainAccountEntityRole2 == null))
-            {
-                throw new global::System.ArgumentNullException("consolidationMainAccountEntityRole2");
-            }
-            consolidateAccountGroup.ConsolidationMainAccountEntityRole2 = consolidationMainAccountEntityRole2;
-            if ((mainAccountEntityRole2 == null))
-            {
-                throw new global::System.ArgumentNullException("mainAccountEntityRole2");
-            }
-            consolidateAccountGroup.MainAccountEntityRole2 = mainAccountEntityRole2;
             return consolidateAccountGroup;
         }
         /// <summary>
@@ -327,72 +240,6 @@ namespace Microsoft.Dynamics.DataEntities
         private string _ConsolidationAccountName;
         partial void OnConsolidationAccountNameChanging(string value);
         partial void OnConsolidationAccountNameChanged();
-        /// <summary>
-        /// There are no comments for Property LedgerChartOfAccountsEntityRole2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ChartOfAccounts LedgerChartOfAccountsEntityRole2
-        {
-            get
-            {
-                return this._LedgerChartOfAccountsEntityRole2;
-            }
-            set
-            {
-                this.OnLedgerChartOfAccountsEntityRole2Changing(value);
-                this._LedgerChartOfAccountsEntityRole2 = value;
-                this.OnLedgerChartOfAccountsEntityRole2Changed();
-                this.OnPropertyChanged("LedgerChartOfAccountsEntityRole2");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ChartOfAccounts _LedgerChartOfAccountsEntityRole2;
-        partial void OnLedgerChartOfAccountsEntityRole2Changing(global::Microsoft.Dynamics.DataEntities.ChartOfAccounts value);
-        partial void OnLedgerChartOfAccountsEntityRole2Changed();
-        /// <summary>
-        /// There are no comments for Property ConsolidationMainAccountEntityRole2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.MainAccount ConsolidationMainAccountEntityRole2
-        {
-            get
-            {
-                return this._ConsolidationMainAccountEntityRole2;
-            }
-            set
-            {
-                this.OnConsolidationMainAccountEntityRole2Changing(value);
-                this._ConsolidationMainAccountEntityRole2 = value;
-                this.OnConsolidationMainAccountEntityRole2Changed();
-                this.OnPropertyChanged("ConsolidationMainAccountEntityRole2");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.MainAccount _ConsolidationMainAccountEntityRole2;
-        partial void OnConsolidationMainAccountEntityRole2Changing(global::Microsoft.Dynamics.DataEntities.MainAccount value);
-        partial void OnConsolidationMainAccountEntityRole2Changed();
-        /// <summary>
-        /// There are no comments for Property MainAccountEntityRole2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.MainAccount MainAccountEntityRole2
-        {
-            get
-            {
-                return this._MainAccountEntityRole2;
-            }
-            set
-            {
-                this.OnMainAccountEntityRole2Changing(value);
-                this._MainAccountEntityRole2 = value;
-                this.OnMainAccountEntityRole2Changed();
-                this.OnPropertyChanged("MainAccountEntityRole2");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.MainAccount _MainAccountEntityRole2;
-        partial void OnMainAccountEntityRole2Changing(global::Microsoft.Dynamics.DataEntities.MainAccount value);
-        partial void OnMainAccountEntityRole2Changed();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
