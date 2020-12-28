@@ -18,15 +18,13 @@ using ODataTesting;
 
 using System.Threading;
 
-namespace Part8
+namespace Part9
 {
     class Program
     {
         public static string ODataEntityPath = ClientConfiguration.Default.UriString + "data";
 
-        public static string filePath = @"c:\temp\part8.txt";
-
-        
+        public static string filePath = @"c:\temp\part9-UAT.txt";
 
         static void Main(string[] args)
         {
@@ -61,38 +59,19 @@ namespace Part8
 
             Console.WriteLine("Connected To " + ClientConfiguration.Default.UriString);
 
-            SalesValues values;
-
-            int loopCount = 100;
-
             Stopwatch sw = new Stopwatch();
 
             context.SalesOrderHeadersV2.FirstOrDefault();
             context.SalesOrderLines.FirstOrDefault();
 
-            sw.Start();
-            
-            for (int i = 0; i < loopCount; i++)
-            {
-                values = SalesOrderHeaderV2Tester.getRandomCombinationWithAtLeast1Line();
-                SalesOrderLineV2Tester.runOneRead(context, filePath, SalesOrderTester.TestType.Random, SalesOrderTester.TestWorkload.Read, values.SalesId, values.DataAreaId);
-            }
+            SalesOrderLineV2Tester.runGetAllPagesSkipTake(context, filePath, SalesOrderTester.TestType.Random, SalesOrderTester.TestWorkload.ReadAllPagesSkipTake);
 
-            for (int i = 0; i < loopCount; i++)
-            {
-                values = SalesOrderHeaderV2Tester.getRandomCombinationWithAtLeast1Line();
-                SalesOrderLineV2Tester.runOneExpandedRead(context, filePath, SalesOrderTester.TestType.Random, SalesOrderTester.TestWorkload.ReadExpanded, values.SalesId, values.DataAreaId);
-            }
+            SalesOrderLineV2Tester.runGetAllPages(context, filePath, SalesOrderTester.TestType.Random, SalesOrderTester.TestWorkload.ReadAllPagesQuery);
 
-            for (int i = 0; i < loopCount; i++)
-            {
-                values = SalesOrderHeaderV2Tester.getRandomCombinationWithAtLeast1Line();
-                SalesOrderLineV2Tester.runOneCombinedRead(context, filePath, SalesOrderTester.TestType.Random, SalesOrderTester.TestWorkload.ReadCombined, values.SalesId, values.DataAreaId);
-            }
 
             Console.WriteLine("Complete. Press enter.");
             Console.ReadLine();
-
         }
+
     }
 }

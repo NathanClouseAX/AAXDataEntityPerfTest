@@ -18,6 +18,7 @@ namespace ODataTesting
                                     Read10WithOrderByAscOnCalculatedField, Read10WithOrderByDescOnCalculatedField,
                                     ReadThread,
                                     ReadExpanded, ReadCombined,
+                                    ReadAllPagesQuery, ReadAllPagesSkipTake,
                                     Create, 
                                     Update, 
                                     Delete }
