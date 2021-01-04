@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 12/8/2020 7:45:22 PM
+// Generation date: 1/3/2021 8:21:45 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -879,23 +879,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<ReleasedEngineeringProductVersionAttributeValue> _ReleasedEngineeringProductVersionAttributeValues;
         /// <summary>
-        /// There are no comments for EngineeringChangeOrderHeaders in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<EngineeringChangeOrderHeader> EngineeringChangeOrderHeaders
-        {
-            get
-            {
-                if ((this._EngineeringChangeOrderHeaders == null))
-                {
-                    this._EngineeringChangeOrderHeaders = base.CreateQuery<EngineeringChangeOrderHeader>("EngineeringChangeOrderHeaders");
-                }
-                return this._EngineeringChangeOrderHeaders;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<EngineeringChangeOrderHeader> _EngineeringChangeOrderHeaders;
-        /// <summary>
         /// There are no comments for AllocationRuleDestinations in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -912,6 +895,23 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<AllocationRuleDestination> _AllocationRuleDestinations;
+        /// <summary>
+        /// There are no comments for EngineeringChangeOrderHeaders in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<EngineeringChangeOrderHeader> EngineeringChangeOrderHeaders
+        {
+            get
+            {
+                if ((this._EngineeringChangeOrderHeaders == null))
+                {
+                    this._EngineeringChangeOrderHeaders = base.CreateQuery<EngineeringChangeOrderHeader>("EngineeringChangeOrderHeaders");
+                }
+                return this._EngineeringChangeOrderHeaders;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<EngineeringChangeOrderHeader> _EngineeringChangeOrderHeaders;
         /// <summary>
         /// There are no comments for PayrollParameters in the schema.
         /// </summary>
@@ -3956,23 +3956,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<CodaDefinition> _CodaDefinitions;
         /// <summary>
-        /// There are no comments for EngineeringChangeRequestDependencyActions in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<EngineeringChangeRequestDependencyAction> EngineeringChangeRequestDependencyActions
-        {
-            get
-            {
-                if ((this._EngineeringChangeRequestDependencyActions == null))
-                {
-                    this._EngineeringChangeRequestDependencyActions = base.CreateQuery<EngineeringChangeRequestDependencyAction>("EngineeringChangeRequestDependencyActions");
-                }
-                return this._EngineeringChangeRequestDependencyActions;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<EngineeringChangeRequestDependencyAction> _EngineeringChangeRequestDependencyActions;
-        /// <summary>
         /// There are no comments for ProductDocumentAttachments in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -3989,6 +3972,23 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<ProductDocumentAttachment> _ProductDocumentAttachments;
+        /// <summary>
+        /// There are no comments for EngineeringChangeRequestDependencyActions in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<EngineeringChangeRequestDependencyAction> EngineeringChangeRequestDependencyActions
+        {
+            get
+            {
+                if ((this._EngineeringChangeRequestDependencyActions == null))
+                {
+                    this._EngineeringChangeRequestDependencyActions = base.CreateQuery<EngineeringChangeRequestDependencyAction>("EngineeringChangeRequestDependencyActions");
+                }
+                return this._EngineeringChangeRequestDependencyActions;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<EngineeringChangeRequestDependencyAction> _EngineeringChangeRequestDependencyActions;
         /// <summary>
         /// There are no comments for ServiceOrderLines in the schema.
         /// </summary>
@@ -8274,23 +8274,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<ServiceAgreementLine> _ServiceAgreementLines;
         /// <summary>
-        /// There are no comments for CoveredDependentRelationships in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<CoveredDependentRelationship> CoveredDependentRelationships
-        {
-            get
-            {
-                if ((this._CoveredDependentRelationships == null))
-                {
-                    this._CoveredDependentRelationships = base.CreateQuery<CoveredDependentRelationship>("CoveredDependentRelationships");
-                }
-                return this._CoveredDependentRelationships;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<CoveredDependentRelationship> _CoveredDependentRelationships;
-        /// <summary>
         /// There are no comments for RoutePendingRouteCostCategoryUnitCosts in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -8307,6 +8290,23 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<RoutePendingRouteCostCategoryUnitCost> _RoutePendingRouteCostCategoryUnitCosts;
+        /// <summary>
+        /// There are no comments for CoveredDependentRelationships in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<CoveredDependentRelationship> CoveredDependentRelationships
+        {
+            get
+            {
+                if ((this._CoveredDependentRelationships == null))
+                {
+                    this._CoveredDependentRelationships = base.CreateQuery<CoveredDependentRelationship>("CoveredDependentRelationships");
+                }
+                return this._CoveredDependentRelationships;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<CoveredDependentRelationship> _CoveredDependentRelationships;
         /// <summary>
         /// There are no comments for PurchaseOrderLines in the schema.
         /// </summary>
@@ -9651,23 +9651,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<AssetMaintenanceAssetDocument> _AssetMaintenanceAssetDocuments;
         /// <summary>
-        /// There are no comments for ProductReleasePolicyLegalEntityRules in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<ProductReleasePolicyLegalEntityRule> ProductReleasePolicyLegalEntityRules
-        {
-            get
-            {
-                if ((this._ProductReleasePolicyLegalEntityRules == null))
-                {
-                    this._ProductReleasePolicyLegalEntityRules = base.CreateQuery<ProductReleasePolicyLegalEntityRule>("ProductReleasePolicyLegalEntityRules");
-                }
-                return this._ProductReleasePolicyLegalEntityRules;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<ProductReleasePolicyLegalEntityRule> _ProductReleasePolicyLegalEntityRules;
-        /// <summary>
         /// There are no comments for CDSInventoryOnHandRequests in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -9684,6 +9667,23 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<CDSInventoryOnHandRequest> _CDSInventoryOnHandRequests;
+        /// <summary>
+        /// There are no comments for ProductReleasePolicyLegalEntityRules in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<ProductReleasePolicyLegalEntityRule> ProductReleasePolicyLegalEntityRules
+        {
+            get
+            {
+                if ((this._ProductReleasePolicyLegalEntityRules == null))
+                {
+                    this._ProductReleasePolicyLegalEntityRules = base.CreateQuery<ProductReleasePolicyLegalEntityRule>("ProductReleasePolicyLegalEntityRules");
+                }
+                return this._ProductReleasePolicyLegalEntityRules;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<ProductReleasePolicyLegalEntityRule> _ProductReleasePolicyLegalEntityRules;
         /// <summary>
         /// There are no comments for SlipJournalTables in the schema.
         /// </summary>
@@ -10790,23 +10790,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<ProductSpecificUnitOfMeasureConversion> _ProductSpecificUnitOfMeasureConversions;
         /// <summary>
-        /// There are no comments for ProductOwners in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<ProductOwner> ProductOwners
-        {
-            get
-            {
-                if ((this._ProductOwners == null))
-                {
-                    this._ProductOwners = base.CreateQuery<ProductOwner>("ProductOwners");
-                }
-                return this._ProductOwners;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<ProductOwner> _ProductOwners;
-        /// <summary>
         /// There are no comments for ProductSizeGroupLineTranslations in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -10823,6 +10806,23 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<ProductSizeGroupLineTranslation> _ProductSizeGroupLineTranslations;
+        /// <summary>
+        /// There are no comments for ProductOwners in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<ProductOwner> ProductOwners
+        {
+            get
+            {
+                if ((this._ProductOwners == null))
+                {
+                    this._ProductOwners = base.CreateQuery<ProductOwner>("ProductOwners");
+                }
+                return this._ProductOwners;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<ProductOwner> _ProductOwners;
         /// <summary>
         /// There are no comments for TaxItemGroups in the schema.
         /// </summary>
@@ -11180,7 +11180,23 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<BankTransactionGroup> _BankTransactionGroups;
-        
+        /// <summary>
+        /// There are no comments for SystemNotification in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<SystemNotification> SystemNotification
+        {
+            get
+            {
+                if ((this._SystemNotification == null))
+                {
+                    this._SystemNotification = base.CreateQuery<SystemNotification>("SystemNotification");
+                }
+                return this._SystemNotification;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<SystemNotification> _SystemNotification;
         /// <summary>
         /// There are no comments for PersonUsers in the schema.
         /// </summary>
@@ -11641,23 +11657,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<PaymentScheduleLine> _PaymentScheduleLines;
         /// <summary>
-        /// There are no comments for JobTasks in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<JobTask> JobTasks
-        {
-            get
-            {
-                if ((this._JobTasks == null))
-                {
-                    this._JobTasks = base.CreateQuery<JobTask>("JobTasks");
-                }
-                return this._JobTasks;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<JobTask> _JobTasks;
-        /// <summary>
         /// There are no comments for RetailStaffs in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -11674,6 +11673,23 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<RetailStaff> _RetailStaffs;
+        /// <summary>
+        /// There are no comments for JobTasks in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<JobTask> JobTasks
+        {
+            get
+            {
+                if ((this._JobTasks == null))
+                {
+                    this._JobTasks = base.CreateQuery<JobTask>("JobTasks");
+                }
+                return this._JobTasks;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<JobTask> _JobTasks;
         /// <summary>
         /// There are no comments for VeteranStatuses in the schema.
         /// </summary>
@@ -12270,23 +12286,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<CatchWeightTag> _CatchWeightTags;
         /// <summary>
-        /// There are no comments for OperatingUnits in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<OperatingUnit> OperatingUnits
-        {
-            get
-            {
-                if ((this._OperatingUnits == null))
-                {
-                    this._OperatingUnits = base.CreateQuery<OperatingUnit>("OperatingUnits");
-                }
-                return this._OperatingUnits;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<OperatingUnit> _OperatingUnits;
-        /// <summary>
         /// There are no comments for ProjectContractLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -12303,6 +12302,23 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<ProjectContractLine> _ProjectContractLines;
+        /// <summary>
+        /// There are no comments for OperatingUnits in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<OperatingUnit> OperatingUnits
+        {
+            get
+            {
+                if ((this._OperatingUnits == null))
+                {
+                    this._OperatingUnits = base.CreateQuery<OperatingUnit>("OperatingUnits");
+                }
+                return this._OperatingUnits;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<OperatingUnit> _OperatingUnits;
         /// <summary>
         /// There are no comments for RetailTransactionAuditableSalesLines in the schema.
         /// </summary>
@@ -12474,23 +12490,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<CompensationPayPerformanceAllocationLine> _CompensationPayPerformanceAllocationLines;
         /// <summary>
-        /// There are no comments for AssetMaintenanceFunctionalLocationTypePermittedSubTypes in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<AssetMaintenanceFunctionalLocationTypePermittedSubType> AssetMaintenanceFunctionalLocationTypePermittedSubTypes
-        {
-            get
-            {
-                if ((this._AssetMaintenanceFunctionalLocationTypePermittedSubTypes == null))
-                {
-                    this._AssetMaintenanceFunctionalLocationTypePermittedSubTypes = base.CreateQuery<AssetMaintenanceFunctionalLocationTypePermittedSubType>("AssetMaintenanceFunctionalLocationTypePermittedSubTypes");
-                }
-                return this._AssetMaintenanceFunctionalLocationTypePermittedSubTypes;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<AssetMaintenanceFunctionalLocationTypePermittedSubType> _AssetMaintenanceFunctionalLocationTypePermittedSubTypes;
-        /// <summary>
         /// There are no comments for BudgetPlans in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -12507,6 +12506,23 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<BudgetPlan> _BudgetPlans;
+        /// <summary>
+        /// There are no comments for AssetMaintenanceFunctionalLocationTypePermittedSubTypes in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<AssetMaintenanceFunctionalLocationTypePermittedSubType> AssetMaintenanceFunctionalLocationTypePermittedSubTypes
+        {
+            get
+            {
+                if ((this._AssetMaintenanceFunctionalLocationTypePermittedSubTypes == null))
+                {
+                    this._AssetMaintenanceFunctionalLocationTypePermittedSubTypes = base.CreateQuery<AssetMaintenanceFunctionalLocationTypePermittedSubType>("AssetMaintenanceFunctionalLocationTypePermittedSubTypes");
+                }
+                return this._AssetMaintenanceFunctionalLocationTypePermittedSubTypes;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<AssetMaintenanceFunctionalLocationTypePermittedSubType> _AssetMaintenanceFunctionalLocationTypePermittedSubTypes;
         /// <summary>
         /// There are no comments for OperatingUnitContacts in the schema.
         /// </summary>
@@ -12899,23 +12915,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<PayStatementHeader> _PayStatementHeaders;
         /// <summary>
-        /// There are no comments for TeamMembershipCriterions in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<TeamMembershipCriterion> TeamMembershipCriterions
-        {
-            get
-            {
-                if ((this._TeamMembershipCriterions == null))
-                {
-                    this._TeamMembershipCriterions = base.CreateQuery<TeamMembershipCriterion>("TeamMembershipCriterions");
-                }
-                return this._TeamMembershipCriterions;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<TeamMembershipCriterion> _TeamMembershipCriterions;
-        /// <summary>
         /// There are no comments for GeneralLedgerCustInvoiceJournalHeaders in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -12932,6 +12931,23 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<GeneralLedgerCustInvoiceJournalHeader> _GeneralLedgerCustInvoiceJournalHeaders;
+        /// <summary>
+        /// There are no comments for TeamMembershipCriterions in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<TeamMembershipCriterion> TeamMembershipCriterions
+        {
+            get
+            {
+                if ((this._TeamMembershipCriterions == null))
+                {
+                    this._TeamMembershipCriterions = base.CreateQuery<TeamMembershipCriterion>("TeamMembershipCriterions");
+                }
+                return this._TeamMembershipCriterions;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<TeamMembershipCriterion> _TeamMembershipCriterions;
         /// <summary>
         /// There are no comments for AssetMaintenanceStops in the schema.
         /// </summary>
@@ -14140,23 +14156,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<RetailCatalogProductCategory> _RetailCatalogProductCategories;
         /// <summary>
-        /// There are no comments for EngineeringProductCategoryDetails in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<EngineeringProductCategoryDetails> EngineeringProductCategoryDetails
-        {
-            get
-            {
-                if ((this._EngineeringProductCategoryDetails == null))
-                {
-                    this._EngineeringProductCategoryDetails = base.CreateQuery<EngineeringProductCategoryDetails>("EngineeringProductCategoryDetails");
-                }
-                return this._EngineeringProductCategoryDetails;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<EngineeringProductCategoryDetails> _EngineeringProductCategoryDetails;
-        /// <summary>
         /// There are no comments for AllocationForMainAccounts in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -14173,6 +14172,23 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<AllocationForMainAccount> _AllocationForMainAccounts;
+        /// <summary>
+        /// There are no comments for EngineeringProductCategoryDetails in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<EngineeringProductCategoryDetails> EngineeringProductCategoryDetails
+        {
+            get
+            {
+                if ((this._EngineeringProductCategoryDetails == null))
+                {
+                    this._EngineeringProductCategoryDetails = base.CreateQuery<EngineeringProductCategoryDetails>("EngineeringProductCategoryDetails");
+                }
+                return this._EngineeringProductCategoryDetails;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<EngineeringProductCategoryDetails> _EngineeringProductCategoryDetails;
         /// <summary>
         /// There are no comments for Workers in the schema.
         /// </summary>
@@ -15635,7 +15651,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<TaxCodeValueV2> _TaxCodeValuesV2;
-        
         /// <summary>
         /// There are no comments for RDeferralsBooks in the schema.
         /// </summary>
@@ -15653,6 +15668,23 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<RDeferralsBook> _RDeferralsBooks;
+        /// <summary>
+        /// There are no comments for SystemNotificationUser in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<SystemNotificationUser> SystemNotificationUser
+        {
+            get
+            {
+                if ((this._SystemNotificationUser == null))
+                {
+                    this._SystemNotificationUser = base.CreateQuery<SystemNotificationUser>("SystemNotificationUser");
+                }
+                return this._SystemNotificationUser;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<SystemNotificationUser> _SystemNotificationUser;
         /// <summary>
         /// There are no comments for BankParameters in the schema.
         /// </summary>
@@ -16130,23 +16162,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<ItemShipTxtTranslation> _ItemShipTxtTranslations;
         /// <summary>
-        /// There are no comments for ChgSentProductReleaseLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<ChgSentProductReleaseLine> ChgSentProductReleaseLines
-        {
-            get
-            {
-                if ((this._ChgSentProductReleaseLines == null))
-                {
-                    this._ChgSentProductReleaseLines = base.CreateQuery<ChgSentProductReleaseLine>("ChgSentProductReleaseLines");
-                }
-                return this._ChgSentProductReleaseLines;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<ChgSentProductReleaseLine> _ChgSentProductReleaseLines;
-        /// <summary>
         /// There are no comments for ExpenseJournalLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -16163,6 +16178,23 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<ExpenseJournalLine> _ExpenseJournalLines;
+        /// <summary>
+        /// There are no comments for ChgSentProductReleaseLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<ChgSentProductReleaseLine> ChgSentProductReleaseLines
+        {
+            get
+            {
+                if ((this._ChgSentProductReleaseLines == null))
+                {
+                    this._ChgSentProductReleaseLines = base.CreateQuery<ChgSentProductReleaseLine>("ChgSentProductReleaseLines");
+                }
+                return this._ChgSentProductReleaseLines;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<ChgSentProductReleaseLine> _ChgSentProductReleaseLines;
         /// <summary>
         /// There are no comments for PurchaseAgreements in the schema.
         /// </summary>
@@ -17303,23 +17335,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<CycleCountingWarehouseWorkLine> _CycleCountingWarehouseWorkLines;
         /// <summary>
-        /// There are no comments for ExchangeRates in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<ExchangeRate> ExchangeRates
-        {
-            get
-            {
-                if ((this._ExchangeRates == null))
-                {
-                    this._ExchangeRates = base.CreateQuery<ExchangeRate>("ExchangeRates");
-                }
-                return this._ExchangeRates;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<ExchangeRate> _ExchangeRates;
-        /// <summary>
         /// There are no comments for DimensionSets in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -17336,6 +17351,23 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<DimensionSet> _DimensionSets;
+        /// <summary>
+        /// There are no comments for ExchangeRates in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<ExchangeRate> ExchangeRates
+        {
+            get
+            {
+                if ((this._ExchangeRates == null))
+                {
+                    this._ExchangeRates = base.CreateQuery<ExchangeRate>("ExchangeRates");
+                }
+                return this._ExchangeRates;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<ExchangeRate> _ExchangeRates;
         /// <summary>
         /// There are no comments for MainAccountTotalAccountIntervals in the schema.
         /// </summary>
@@ -18655,20 +18687,20 @@ namespace Microsoft.Dynamics.DataEntities
             base.AddObject("ReleasedEngineeringProductVersionAttributeValues", releasedEngineeringProductVersionAttributeValue);
         }
         /// <summary>
-        /// There are no comments for EngineeringChangeOrderHeaders in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual void AddToEngineeringChangeOrderHeaders(EngineeringChangeOrderHeader engineeringChangeOrderHeader)
-        {
-            base.AddObject("EngineeringChangeOrderHeaders", engineeringChangeOrderHeader);
-        }
-        /// <summary>
         /// There are no comments for AllocationRuleDestinations in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public virtual void AddToAllocationRuleDestinations(AllocationRuleDestination allocationRuleDestination)
         {
             base.AddObject("AllocationRuleDestinations", allocationRuleDestination);
+        }
+        /// <summary>
+        /// There are no comments for EngineeringChangeOrderHeaders in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual void AddToEngineeringChangeOrderHeaders(EngineeringChangeOrderHeader engineeringChangeOrderHeader)
+        {
+            base.AddObject("EngineeringChangeOrderHeaders", engineeringChangeOrderHeader);
         }
         /// <summary>
         /// There are no comments for PayrollParameters in the schema.
@@ -20103,20 +20135,20 @@ namespace Microsoft.Dynamics.DataEntities
             base.AddObject("CodaDefinitions", codaDefinition);
         }
         /// <summary>
-        /// There are no comments for EngineeringChangeRequestDependencyActions in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual void AddToEngineeringChangeRequestDependencyActions(EngineeringChangeRequestDependencyAction engineeringChangeRequestDependencyAction)
-        {
-            base.AddObject("EngineeringChangeRequestDependencyActions", engineeringChangeRequestDependencyAction);
-        }
-        /// <summary>
         /// There are no comments for ProductDocumentAttachments in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public virtual void AddToProductDocumentAttachments(ProductDocumentAttachment productDocumentAttachment)
         {
             base.AddObject("ProductDocumentAttachments", productDocumentAttachment);
+        }
+        /// <summary>
+        /// There are no comments for EngineeringChangeRequestDependencyActions in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual void AddToEngineeringChangeRequestDependencyActions(EngineeringChangeRequestDependencyAction engineeringChangeRequestDependencyAction)
+        {
+            base.AddObject("EngineeringChangeRequestDependencyActions", engineeringChangeRequestDependencyAction);
         }
         /// <summary>
         /// There are no comments for ServiceOrderLines in the schema.
@@ -22135,20 +22167,20 @@ namespace Microsoft.Dynamics.DataEntities
             base.AddObject("ServiceAgreementLines", serviceAgreementLine);
         }
         /// <summary>
-        /// There are no comments for CoveredDependentRelationships in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual void AddToCoveredDependentRelationships(CoveredDependentRelationship coveredDependentRelationship)
-        {
-            base.AddObject("CoveredDependentRelationships", coveredDependentRelationship);
-        }
-        /// <summary>
         /// There are no comments for RoutePendingRouteCostCategoryUnitCosts in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public virtual void AddToRoutePendingRouteCostCategoryUnitCosts(RoutePendingRouteCostCategoryUnitCost routePendingRouteCostCategoryUnitCost)
         {
             base.AddObject("RoutePendingRouteCostCategoryUnitCosts", routePendingRouteCostCategoryUnitCost);
+        }
+        /// <summary>
+        /// There are no comments for CoveredDependentRelationships in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual void AddToCoveredDependentRelationships(CoveredDependentRelationship coveredDependentRelationship)
+        {
+            base.AddObject("CoveredDependentRelationships", coveredDependentRelationship);
         }
         /// <summary>
         /// There are no comments for PurchaseOrderLines in the schema.
@@ -22783,20 +22815,20 @@ namespace Microsoft.Dynamics.DataEntities
             base.AddObject("AssetMaintenanceAssetDocuments", assetMaintenanceAssetDocument);
         }
         /// <summary>
-        /// There are no comments for ProductReleasePolicyLegalEntityRules in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual void AddToProductReleasePolicyLegalEntityRules(ProductReleasePolicyLegalEntityRule productReleasePolicyLegalEntityRule)
-        {
-            base.AddObject("ProductReleasePolicyLegalEntityRules", productReleasePolicyLegalEntityRule);
-        }
-        /// <summary>
         /// There are no comments for CDSInventoryOnHandRequests in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public virtual void AddToCDSInventoryOnHandRequests(CDSInventoryOnHandRequest cDSInventoryOnHandRequest)
         {
             base.AddObject("CDSInventoryOnHandRequests", cDSInventoryOnHandRequest);
+        }
+        /// <summary>
+        /// There are no comments for ProductReleasePolicyLegalEntityRules in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual void AddToProductReleasePolicyLegalEntityRules(ProductReleasePolicyLegalEntityRule productReleasePolicyLegalEntityRule)
+        {
+            base.AddObject("ProductReleasePolicyLegalEntityRules", productReleasePolicyLegalEntityRule);
         }
         /// <summary>
         /// There are no comments for SlipJournalTables in the schema.
@@ -23319,20 +23351,20 @@ namespace Microsoft.Dynamics.DataEntities
             base.AddObject("ProductSpecificUnitOfMeasureConversions", productSpecificUnitOfMeasureConversion);
         }
         /// <summary>
-        /// There are no comments for ProductOwners in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual void AddToProductOwners(ProductOwner productOwner)
-        {
-            base.AddObject("ProductOwners", productOwner);
-        }
-        /// <summary>
         /// There are no comments for ProductSizeGroupLineTranslations in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public virtual void AddToProductSizeGroupLineTranslations(ProductSizeGroupLineTranslation productSizeGroupLineTranslation)
         {
             base.AddObject("ProductSizeGroupLineTranslations", productSizeGroupLineTranslation);
+        }
+        /// <summary>
+        /// There are no comments for ProductOwners in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual void AddToProductOwners(ProductOwner productOwner)
+        {
+            base.AddObject("ProductOwners", productOwner);
         }
         /// <summary>
         /// There are no comments for TaxItemGroups in the schema.
@@ -23502,7 +23534,14 @@ namespace Microsoft.Dynamics.DataEntities
         {
             base.AddObject("BankTransactionGroups", bankTransactionGroup);
         }
-        
+        /// <summary>
+        /// There are no comments for SystemNotification in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual void AddToSystemNotification(SystemNotification systemNotification)
+        {
+            base.AddObject("SystemNotification", systemNotification);
+        }
         /// <summary>
         /// There are no comments for PersonUsers in the schema.
         /// </summary>
@@ -23720,20 +23759,20 @@ namespace Microsoft.Dynamics.DataEntities
             base.AddObject("PaymentScheduleLines", paymentScheduleLine);
         }
         /// <summary>
-        /// There are no comments for JobTasks in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual void AddToJobTasks(JobTask jobTask)
-        {
-            base.AddObject("JobTasks", jobTask);
-        }
-        /// <summary>
         /// There are no comments for RetailStaffs in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public virtual void AddToRetailStaffs(RetailStaff retailStaff)
         {
             base.AddObject("RetailStaffs", retailStaff);
+        }
+        /// <summary>
+        /// There are no comments for JobTasks in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual void AddToJobTasks(JobTask jobTask)
+        {
+            base.AddObject("JobTasks", jobTask);
         }
         /// <summary>
         /// There are no comments for VeteranStatuses in the schema.
@@ -24016,20 +24055,20 @@ namespace Microsoft.Dynamics.DataEntities
             base.AddObject("CatchWeightTags", catchWeightTag);
         }
         /// <summary>
-        /// There are no comments for OperatingUnits in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual void AddToOperatingUnits(OperatingUnit operatingUnit)
-        {
-            base.AddObject("OperatingUnits", operatingUnit);
-        }
-        /// <summary>
         /// There are no comments for ProjectContractLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public virtual void AddToProjectContractLines(ProjectContractLine projectContractLine)
         {
             base.AddObject("ProjectContractLines", projectContractLine);
+        }
+        /// <summary>
+        /// There are no comments for OperatingUnits in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual void AddToOperatingUnits(OperatingUnit operatingUnit)
+        {
+            base.AddObject("OperatingUnits", operatingUnit);
         }
         /// <summary>
         /// There are no comments for RetailTransactionAuditableSalesLines in the schema.
@@ -24112,20 +24151,20 @@ namespace Microsoft.Dynamics.DataEntities
             base.AddObject("CompensationPayPerformanceAllocationLines", compensationPayPerformanceAllocationLine);
         }
         /// <summary>
-        /// There are no comments for AssetMaintenanceFunctionalLocationTypePermittedSubTypes in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual void AddToAssetMaintenanceFunctionalLocationTypePermittedSubTypes(AssetMaintenanceFunctionalLocationTypePermittedSubType assetMaintenanceFunctionalLocationTypePermittedSubType)
-        {
-            base.AddObject("AssetMaintenanceFunctionalLocationTypePermittedSubTypes", assetMaintenanceFunctionalLocationTypePermittedSubType);
-        }
-        /// <summary>
         /// There are no comments for BudgetPlans in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public virtual void AddToBudgetPlans(BudgetPlan budgetPlan)
         {
             base.AddObject("BudgetPlans", budgetPlan);
+        }
+        /// <summary>
+        /// There are no comments for AssetMaintenanceFunctionalLocationTypePermittedSubTypes in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual void AddToAssetMaintenanceFunctionalLocationTypePermittedSubTypes(AssetMaintenanceFunctionalLocationTypePermittedSubType assetMaintenanceFunctionalLocationTypePermittedSubType)
+        {
+            base.AddObject("AssetMaintenanceFunctionalLocationTypePermittedSubTypes", assetMaintenanceFunctionalLocationTypePermittedSubType);
         }
         /// <summary>
         /// There are no comments for OperatingUnitContacts in the schema.
@@ -24312,20 +24351,20 @@ namespace Microsoft.Dynamics.DataEntities
             base.AddObject("PayStatementHeaders", payStatementHeader);
         }
         /// <summary>
-        /// There are no comments for TeamMembershipCriterions in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual void AddToTeamMembershipCriterions(TeamMembershipCriterion teamMembershipCriterion)
-        {
-            base.AddObject("TeamMembershipCriterions", teamMembershipCriterion);
-        }
-        /// <summary>
         /// There are no comments for GeneralLedgerCustInvoiceJournalHeaders in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public virtual void AddToGeneralLedgerCustInvoiceJournalHeaders(GeneralLedgerCustInvoiceJournalHeader generalLedgerCustInvoiceJournalHeader)
         {
             base.AddObject("GeneralLedgerCustInvoiceJournalHeaders", generalLedgerCustInvoiceJournalHeader);
+        }
+        /// <summary>
+        /// There are no comments for TeamMembershipCriterions in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual void AddToTeamMembershipCriterions(TeamMembershipCriterion teamMembershipCriterion)
+        {
+            base.AddObject("TeamMembershipCriterions", teamMembershipCriterion);
         }
         /// <summary>
         /// There are no comments for AssetMaintenanceStops in the schema.
@@ -24896,20 +24935,20 @@ namespace Microsoft.Dynamics.DataEntities
             base.AddObject("RetailCatalogProductCategories", retailCatalogProductCategory);
         }
         /// <summary>
-        /// There are no comments for EngineeringProductCategoryDetails in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual void AddToEngineeringProductCategoryDetails(EngineeringProductCategoryDetails engineeringProductCategoryDetails)
-        {
-            base.AddObject("EngineeringProductCategoryDetails", engineeringProductCategoryDetails);
-        }
-        /// <summary>
         /// There are no comments for AllocationForMainAccounts in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public virtual void AddToAllocationForMainAccounts(AllocationForMainAccount allocationForMainAccount)
         {
             base.AddObject("AllocationForMainAccounts", allocationForMainAccount);
+        }
+        /// <summary>
+        /// There are no comments for EngineeringProductCategoryDetails in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual void AddToEngineeringProductCategoryDetails(EngineeringProductCategoryDetails engineeringProductCategoryDetails)
+        {
+            base.AddObject("EngineeringProductCategoryDetails", engineeringProductCategoryDetails);
         }
         /// <summary>
         /// There are no comments for Workers in the schema.
@@ -25599,7 +25638,6 @@ namespace Microsoft.Dynamics.DataEntities
         {
             base.AddObject("TaxCodeValuesV2", taxCodeValueV2);
         }
-        
         /// <summary>
         /// There are no comments for RDeferralsBooks in the schema.
         /// </summary>
@@ -25607,6 +25645,14 @@ namespace Microsoft.Dynamics.DataEntities
         public virtual void AddToRDeferralsBooks(RDeferralsBook rDeferralsBook)
         {
             base.AddObject("RDeferralsBooks", rDeferralsBook);
+        }
+        /// <summary>
+        /// There are no comments for SystemNotificationUser in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual void AddToSystemNotificationUser(SystemNotificationUser systemNotificationUser)
+        {
+            base.AddObject("SystemNotificationUser", systemNotificationUser);
         }
         /// <summary>
         /// There are no comments for BankParameters in the schema.
@@ -25833,20 +25879,20 @@ namespace Microsoft.Dynamics.DataEntities
             base.AddObject("ItemShipTxtTranslations", itemShipTxtTranslation);
         }
         /// <summary>
-        /// There are no comments for ChgSentProductReleaseLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual void AddToChgSentProductReleaseLines(ChgSentProductReleaseLine chgSentProductReleaseLine)
-        {
-            base.AddObject("ChgSentProductReleaseLines", chgSentProductReleaseLine);
-        }
-        /// <summary>
         /// There are no comments for ExpenseJournalLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public virtual void AddToExpenseJournalLines(ExpenseJournalLine expenseJournalLine)
         {
             base.AddObject("ExpenseJournalLines", expenseJournalLine);
+        }
+        /// <summary>
+        /// There are no comments for ChgSentProductReleaseLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual void AddToChgSentProductReleaseLines(ChgSentProductReleaseLine chgSentProductReleaseLine)
+        {
+            base.AddObject("ChgSentProductReleaseLines", chgSentProductReleaseLine);
         }
         /// <summary>
         /// There are no comments for PurchaseAgreements in the schema.
@@ -26385,20 +26431,20 @@ namespace Microsoft.Dynamics.DataEntities
             base.AddObject("CycleCountingWarehouseWorkLines", cycleCountingWarehouseWorkLine);
         }
         /// <summary>
-        /// There are no comments for ExchangeRates in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual void AddToExchangeRates(ExchangeRate exchangeRate)
-        {
-            base.AddObject("ExchangeRates", exchangeRate);
-        }
-        /// <summary>
         /// There are no comments for DimensionSets in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public virtual void AddToDimensionSets(DimensionSet dimensionSet)
         {
             base.AddObject("DimensionSets", dimensionSet);
+        }
+        /// <summary>
+        /// There are no comments for ExchangeRates in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual void AddToExchangeRates(ExchangeRate exchangeRate)
+        {
+            base.AddObject("ExchangeRates", exchangeRate);
         }
         /// <summary>
         /// There are no comments for MainAccountTotalAccountIntervals in the schema.

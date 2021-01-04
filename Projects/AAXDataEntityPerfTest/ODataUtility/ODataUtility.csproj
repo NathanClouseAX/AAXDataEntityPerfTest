@@ -1754,9 +1754,11 @@
     <Compile Include="Connected Services\D365\SysLocalizationCountryRegionCode.cs" />
     <Compile Include="Connected Services\D365\SysPolicyTypeEnum.cs" />
     <Compile Include="Connected Services\D365\SysSqmEnabledClient.cs" />
+    <Compile Include="Connected Services\D365\SystemNotification.cs" />
     <Compile Include="Connected Services\D365\SystemNotificationSeverity.cs" />
     <Compile Include="Connected Services\D365\SystemNotificationState.cs" />
     <Compile Include="Connected Services\D365\SystemNotificationType.cs" />
+    <Compile Include="Connected Services\D365\SystemNotificationUser.cs" />
     <Compile Include="Connected Services\D365\SystemParameters.cs" />
     <Compile Include="Connected Services\D365\SystemUser.cs" />
     <Compile Include="Connected Services\D365\SysUserInfoDensity.cs" />
