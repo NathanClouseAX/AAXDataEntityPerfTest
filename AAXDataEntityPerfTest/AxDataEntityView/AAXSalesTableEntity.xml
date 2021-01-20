@@ -7,13 +7,92 @@ public class AAXSalesTableEntity extends common
 {
 }
 ]]></Declaration>
-		<Methods />
+		<Methods>
+			<Method>
+				<Name>initValue</Name>
+				<Source><![CDATA[
+    public void initValue()
+    {
+        if (!this.skipNumberSequenceCheck())
+        {
+            NumberSeqRecordFieldHandler::enableNumberSequenceControlForField(
+                this, fieldNum(AAXSalesTableEntity, SalesId), SalesParameters::numRefSalesId());
+        }
+
+        super();
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>insertEntityDataSource</Name>
+				<Source><![CDATA[
+    public boolean insertEntityDataSource(DataEntityRuntimeContext _entityCtx, DataEntityDataSourceRuntimeContext _dataSourceCtx)
+    {
+        switch (_dataSourceCtx.name())
+        {
+            case dataEntityDataSourceStr(AAXSalesTableEntity, SalesTable):
+                this.validateWriteSalesTableDataSource(_dataSourceCtx);
+                break;
+        }
+
+        boolean ret = super(_entityCtx, _dataSourceCtx);
+
+        return ret;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>validateWriteSalesTableDataSource</Name>
+				<Source><![CDATA[
+    private void validateWriteSalesTableDataSource(DataEntityDataSourceRuntimeContext _dataSourceCtx)
+    {
+        SalesTable salesTable = _dataSourceCtx.getBuffer() as SalesTable;
+        SalesTableType salesTableType = salesTable.type();
+
+        boolean isValid = true;
+
+        if (this.isFieldModified(fieldNum(AAXSalesTableEntity, CustAccount)) && !salesTableType.editCustAccount())
+        {
+            isValid = this.allowEditCheckFailed(fieldPName(AAXSalesTableEntity, CustAccount));
+        }
+
+        if (this.isFieldModified(fieldNum(AAXSalesTableEntity, InvoiceAccount)) && !salesTableType.editInvoiceAccount())
+        {
+            isValid = this.allowEditCheckFailed(fieldPName(AAXSalesTableEntity, InvoiceAccount));
+        }
+
+
+        if (this.isFieldModified(fieldNum(AAXSalesTableEntity, CurrencyCode)) && !salesTableType.editCurrencyCode())
+        {
+            isValid = this.allowEditCheckFailed(fieldPName(AAXSalesTableEntity, CurrencyCode));
+        }
+
+        if (!isValid)
+        {
+            _dataSourceCtx.throwValidateWriteFailed();
+        }
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>allowEditCheckFailed</Name>
+				<Source><![CDATA[
+    private boolean allowEditCheckFailed(FieldLabel _fieldLabel)
+    {
+        return checkFailed(strFmt("@ApplicationFoundation:DataEntitiesNoAllowEdit", _fieldLabel));
+    }
+
+]]></Source>
+			</Method>
+		</Methods>
 	</SourceCode>
 	<ConfigurationKey>LogisticsBasic</ConfigurationKey>
+	<FormRef>SalesTable</FormRef>
 	<Label>AAX Sales Table</Label>
-	<SubscriberAccessLevel>
-		<Read>Allow</Read>
-	</SubscriberAccessLevel>
+	<EntityCategory>Document</EntityCategory>
 	<IsPublic>Yes</IsPublic>
 	<PrimaryCompanyContext>DataAreaId</PrimaryCompanyContext>
 	<PrimaryKey>EntityKey</PrimaryKey>
@@ -1102,20 +1181,6 @@ public class AAXSalesTableEntity extends common
 					<Name>DefaultDimension</Name>
 					<Field>DefaultDimension</Field>
 					<RelatedField>RecId</RelatedField>
-				</AxDataEntityViewRelationConstraint>
-			</Constraints>
-		</AxDataEntityViewRelation>
-		<AxDataEntityViewRelation>
-			<Name>AAXSalesLineEntity</Name>
-			<Cardinality>ZeroMore</Cardinality>
-			<RelatedDataEntity>AAXSalesLineEntity</RelatedDataEntity>
-			<RelatedDataEntityCardinality>ZeroOne</RelatedDataEntityCardinality>
-			<Constraints>
-				<AxDataEntityViewRelationConstraint xmlns=""
-					i:type="AxDataEntityViewRelationConstraintField">
-					<Name>RelationConstraintField1</Name>
-					<Field>SalesId</Field>
-					<RelatedField>SalesId</RelatedField>
 				</AxDataEntityViewRelationConstraint>
 			</Constraints>
 		</AxDataEntityViewRelation>

@@ -348,7 +348,7 @@ public class AAXSalesOrderHeaderV2EntityOnlySalesTable extends common
             case dataEntityDataSourceStr(AAXSalesOrderHeaderV2EntityOnlySalesTable, SalesTable):
                 SalesTable salesTable = _dataSourceCtx.getBuffer();
 
-                this.TradeEntitySpecificDeliveryAddress::mapSavedPostalAddressToEntity(_entityCtx,  salesTable.DeliveryPostalAddress);
+                //this.TradeEntitySpecificDeliveryAddress::mapSavedPostalAddressToEntity(_entityCtx,  salesTable.DeliveryPostalAddress);
 
                 TMSSalesTable tmsSalesTable = TMSSalesTable::find(this.SalesOrderNumber);
                 break;
@@ -500,9 +500,9 @@ public class AAXSalesOrderHeaderV2EntityOnlySalesTable extends common
 				<Source><![CDATA[
     public void insert()
     {
-        SrsReportDataProviderPreProcess::disableLockEscalation(tableNum(SalesOrderHeaderV2Staging));
+        //SrsReportDataProviderPreProcess::disableLockEscalation(tableNum(SalesOrderHeaderV2Staging));
 
-        this.setReportingCurrencyFixedExchangeRate(this.FixedExchangeRate);
+        //this.setReportingCurrencyFixedExchangeRate(this.FixedExchangeRate);
 
         super();
     }
@@ -514,7 +514,7 @@ public class AAXSalesOrderHeaderV2EntityOnlySalesTable extends common
 				<Source><![CDATA[
     public void update()
     {
-        this.setReportingCurrencyFixedExchangeRate(this.FixedExchangeRate);
+        //this.setReportingCurrencyFixedExchangeRate(this.FixedExchangeRate);
 
         super();
     }
@@ -1303,9 +1303,11 @@ public class AAXSalesOrderHeaderV2EntityOnlySalesTable extends common
 			<Connections>
 				<AxTableMappingConnection>
 					<MapField>ExchangeRate</MapField>
+					<MapFieldTo>FixedExchangeRate</MapFieldTo>
 				</AxTableMappingConnection>
 				<AxTableMappingConnection>
 					<MapField>ReportingCurrencyExchangeRate</MapField>
+					<MapFieldTo>ReportingCurrencyFixedExchangeRate</MapFieldTo>
 				</AxTableMappingConnection>
 			</Connections>
 		</AxTableMapping>
