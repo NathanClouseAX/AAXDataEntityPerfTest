@@ -888,5 +888,145 @@ namespace ODataTesting
 
             }
         }
+
+        public static void createAndDeleteWithSimpleEntity(Resources context,
+                                                           string filePath,
+                                                           TestType testType,
+                                                           TestWorkload testWorkload,
+                                                           string DataAreaId,
+                                                           string customerAccount)
+        {
+            Stopwatch sw = new Stopwatch();
+            string SalesOrderNumber;
+
+            DataServiceCollection<SalesOrderHeaderV2EntityOnlySalesTable> SalesOrderCollection = new DataServiceCollection<SalesOrderHeaderV2EntityOnlySalesTable>(context);
+
+            SalesOrderHeaderV2EntityOnlySalesTable SalesOrderHeaderV2EntityOnlySalesTable = new SalesOrderHeaderV2EntityOnlySalesTable();
+
+            SalesOrderCollection.Add(SalesOrderHeaderV2EntityOnlySalesTable);
+
+            //Required Fields
+            SalesOrderHeaderV2EntityOnlySalesTable.OrderingCustomerAccountNumber = customerAccount;
+            SalesOrderHeaderV2EntityOnlySalesTable.InvoiceCustomerAccountNumber = customerAccount;
+            SalesOrderHeaderV2EntityOnlySalesTable.dataAreaId = DataAreaId;
+            SalesOrderHeaderV2EntityOnlySalesTable.CurrencyCode = "USD";
+            SalesOrderHeaderV2EntityOnlySalesTable.LanguageId = "en-us";
+
+            context.SaveChanges(SaveChangesOptions.PostOnlySetProperties | SaveChangesOptions.BatchWithSingleChangeset);
+            SalesOrderNumber = SalesOrderHeaderV2EntityOnlySalesTable.SalesOrderNumber;
+            SalesOrderHeaderV2EntityOnlySalesTable = null;
+
+            sw.Start();
+            
+            var SalesOrderHeadersV2EntityOnlySalesTable = context.SalesOrderHeadersV2EntityOnlySalesTable.Where(x => x.SalesOrderNumber == SalesOrderNumber && x.dataAreaId == DataAreaId).First();
+
+
+            context.DeleteObject(SalesOrderHeadersV2EntityOnlySalesTable);
+            context.SaveChanges(SaveChangesOptions.PostOnlySetProperties | SaveChangesOptions.BatchWithSingleChangeset);
+
+            sw.Stop();
+
+            Console.WriteLine("Created and Deleted Sales Order " + SalesOrderNumber);
+
+            StreamWriter stream = File.AppendText(filePath);
+            stream.WriteLine(Entity + "," + testType + "," + testWorkload + "," + sw.Elapsed.TotalMilliseconds.ToString());
+
+            stream.Flush();
+            stream.Close();
+        }
+
+        public static void createAndDeleteWithCompoundEntity(Resources context,
+                                                           string filePath,
+                                                           TestType testType,
+                                                           TestWorkload testWorkload,
+                                                           string DataAreaId,
+                                                           string customerAccount)
+        {
+            Stopwatch sw = new Stopwatch();
+            string SalesOrderNumber;
+
+            DataServiceCollection<SalesOrderHeaderV2> SalesOrderCollection = new DataServiceCollection<SalesOrderHeaderV2>(context);
+            SalesOrderHeaderV2 salesOrderHeaderV2 = new SalesOrderHeaderV2();
+
+            SalesOrderCollection.Add(salesOrderHeaderV2);
+
+            // Required Fields
+            salesOrderHeaderV2.OrderingCustomerAccountNumber = customerAccount;
+            salesOrderHeaderV2.InvoiceCustomerAccountNumber = customerAccount;
+            salesOrderHeaderV2.dataAreaId = DataAreaId;
+            salesOrderHeaderV2.CurrencyCode = "USD";
+            salesOrderHeaderV2.LanguageId = "en-us";
+
+            context.SaveChanges(SaveChangesOptions.PostOnlySetProperties | SaveChangesOptions.BatchWithSingleChangeset);
+            SalesOrderNumber = salesOrderHeaderV2.SalesOrderNumber;
+
+            salesOrderHeaderV2 = null;
+            sw.Start();
+
+            salesOrderHeaderV2 = context.SalesOrderHeadersV2.Where(x => x.SalesOrderNumber == SalesOrderNumber && x.dataAreaId == DataAreaId).First();
+
+
+            context.DeleteObject(salesOrderHeaderV2);
+            context.SaveChanges(SaveChangesOptions.PostOnlySetProperties | SaveChangesOptions.BatchWithSingleChangeset);
+
+            sw.Stop();
+
+            Console.WriteLine("Created and Deleted Sales Order " + SalesOrderNumber);
+
+            StreamWriter stream = File.AppendText(filePath);
+            stream.WriteLine(Entity + "," + testType + "," + testWorkload + "," + sw.Elapsed.TotalMilliseconds.ToString());
+
+            stream.Flush();
+            stream.Close();
+        }
+
+        public static void createAndDeleteWithSingleEntity(Resources context,
+                                                           string filePath,
+                                                           TestType testType,
+                                                           TestWorkload testWorkload,
+                                                           string DataAreaId,
+                                                           string customerAccount)
+        {
+            Stopwatch sw = new Stopwatch();
+            string SalesOrderNumber;
+
+            DataServiceCollection<SalesOrderHeaderV2EntityOnlySalesTable> SalesOrderCollection = new DataServiceCollection<SalesOrderHeaderV2EntityOnlySalesTable>(context);
+
+            SalesOrderHeaderV2EntityOnlySalesTable SalesOrderHeaderV2EntityOnlySalesTable = new SalesOrderHeaderV2EntityOnlySalesTable();
+
+            SalesOrderCollection.Add(SalesOrderHeaderV2EntityOnlySalesTable);
+
+            //Required Fields
+            SalesOrderHeaderV2EntityOnlySalesTable.OrderingCustomerAccountNumber = customerAccount;
+            SalesOrderHeaderV2EntityOnlySalesTable.InvoiceCustomerAccountNumber = customerAccount;
+            SalesOrderHeaderV2EntityOnlySalesTable.dataAreaId = DataAreaId;
+            SalesOrderHeaderV2EntityOnlySalesTable.CurrencyCode = "USD";
+            SalesOrderHeaderV2EntityOnlySalesTable.LanguageId = "en-us";
+
+            context.SaveChanges(SaveChangesOptions.PostOnlySetProperties | SaveChangesOptions.BatchWithSingleChangeset);
+            SalesOrderNumber = SalesOrderHeaderV2EntityOnlySalesTable.SalesOrderNumber;
+            SalesOrderHeaderV2EntityOnlySalesTable = null;
+
+            
+
+            
+            sw.Start();
+
+            var AAXSalesOrderHeaderV2EntityOnlySalesOrderNumbers = context.AAXSalesOrderHeaderV2EntityOnlySalesOrderNumbers.Where(x => x.SalesOrderNumber == SalesOrderNumber && x.dataAreaId == DataAreaId).First();
+
+
+            context.DeleteObject(AAXSalesOrderHeaderV2EntityOnlySalesOrderNumbers);
+            context.SaveChanges(SaveChangesOptions.PostOnlySetProperties | SaveChangesOptions.BatchWithSingleChangeset);
+
+            sw.Stop();
+
+            Console.WriteLine("Created and Deleted Sales Order " + SalesOrderNumber);
+
+            StreamWriter stream = File.AppendText(filePath);
+            stream.WriteLine(Entity + "," + testType + "," + testWorkload + "," + sw.Elapsed.TotalMilliseconds.ToString());
+
+            stream.Flush();
+            stream.Close();
+        }
     }
 }

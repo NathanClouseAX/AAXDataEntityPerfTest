@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/3/2021 8:21:45 PM
+// Generation date: 1/20/2021 5:35:39 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -301,6 +301,6 @@ namespace Microsoft.Dynamics.DataEntities
                 this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
             }
         }
-
+        
     }
 }

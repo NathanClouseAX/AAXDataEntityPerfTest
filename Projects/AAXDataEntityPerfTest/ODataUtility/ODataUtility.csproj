@@ -82,6 +82,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connected Services\D365\AAXSalesLine.cs" />
+    <Compile Include="Connected Services\D365\AAXSalesOrderHeaderV2EntityOnlySalesOrderNumber.cs" />
     <Compile Include="Connected Services\D365\AAXSalesTable.cs" />
     <Compile Include="Connected Services\D365\AAXSalesTableReadOnly.cs" />
     <Compile Include="Connected Services\D365\ABC.cs" />

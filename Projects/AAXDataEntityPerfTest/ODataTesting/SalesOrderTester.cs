@@ -21,7 +21,7 @@ namespace ODataTesting
                                     ReadAllPagesQuery, ReadAllPagesSkipTake,
                                     CreateCompoundMinimum, CreateCompoundMaximum, CreateSimpleMinimum, CreateSimpleMaximum, 
                                     UpdateCompoundMinimum, UpdateCompoundMaximum, UpdateSimpleMinimum, UpdateSimpleMaximum, 
-                                    Delete }
+                                    DeleteCompound, DeleteSimple, DeleteSingle }
 
         public static string logTemplate = "";
 

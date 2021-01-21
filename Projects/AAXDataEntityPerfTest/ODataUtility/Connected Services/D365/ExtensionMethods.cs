@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/3/2021 8:21:45 PM
+// Generation date: 1/20/2021 5:35:39 PM
 namespace Microsoft.Dynamics.DataEntities
 {
     /// <summary>
@@ -14172,41 +14172,6 @@ namespace Microsoft.Dynamics.DataEntities
             return new global::Microsoft.Dynamics.DataEntities.ServiceAgreementLineSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
         }
         /// <summary>
-        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.RoutePendingRouteCostCategoryUnitCost as global::Microsoft.Dynamics.DataEntities.RoutePendingRouteCostCategoryUnitCostSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="_source">source entity set</param>
-        /// <param name="_keys">dictionary with the names and values of keys</param>
-        public static global::Microsoft.Dynamics.DataEntities.RoutePendingRouteCostCategoryUnitCostSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RoutePendingRouteCostCategoryUnitCost> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
-        {
-            return new global::Microsoft.Dynamics.DataEntities.RoutePendingRouteCostCategoryUnitCostSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
-        }
-        /// <summary>
-        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.RoutePendingRouteCostCategoryUnitCost as global::Microsoft.Dynamics.DataEntities.RoutePendingRouteCostCategoryUnitCostSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="_source">source entity set</param>
-        /// <param name="dataAreaId">The value of dataAreaId</param>
-        /// <param name="routeCostCategoryId">The value of routeCostCategoryId</param>
-        /// <param name="costingVersionId">The value of costingVersionId</param>
-        /// <param name="productionSiteId">The value of productionSiteId</param>
-        /// <param name="effectiveDate">The value of effectiveDate</param>
-        public static global::Microsoft.Dynamics.DataEntities.RoutePendingRouteCostCategoryUnitCostSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RoutePendingRouteCostCategoryUnitCost> _source,
-            string dataAreaId, 
-            string routeCostCategoryId, 
-            string costingVersionId, 
-            string productionSiteId, 
-            global::System.DateTimeOffset effectiveDate)
-        {
-            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
-            {
-                { "dataAreaId", dataAreaId }, 
-                { "RouteCostCategoryId", routeCostCategoryId }, 
-                { "CostingVersionId", costingVersionId }, 
-                { "ProductionSiteId", productionSiteId }, 
-                { "EffectiveDate", effectiveDate }
-            };
-            return new global::Microsoft.Dynamics.DataEntities.RoutePendingRouteCostCategoryUnitCostSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
-        }
-        /// <summary>
         /// Get an entity of type global::Microsoft.Dynamics.DataEntities.CoveredDependentRelationship as global::Microsoft.Dynamics.DataEntities.CoveredDependentRelationshipSingle specified by key from an entity set
         /// </summary>
         /// <param name="_source">source entity set</param>
@@ -14258,6 +14223,41 @@ namespace Microsoft.Dynamics.DataEntities
                 { "ValidTo", validTo }
             };
             return new global::Microsoft.Dynamics.DataEntities.CoveredDependentRelationshipSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.RoutePendingRouteCostCategoryUnitCost as global::Microsoft.Dynamics.DataEntities.RoutePendingRouteCostCategoryUnitCostSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Microsoft.Dynamics.DataEntities.RoutePendingRouteCostCategoryUnitCostSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RoutePendingRouteCostCategoryUnitCost> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Microsoft.Dynamics.DataEntities.RoutePendingRouteCostCategoryUnitCostSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.RoutePendingRouteCostCategoryUnitCost as global::Microsoft.Dynamics.DataEntities.RoutePendingRouteCostCategoryUnitCostSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="dataAreaId">The value of dataAreaId</param>
+        /// <param name="routeCostCategoryId">The value of routeCostCategoryId</param>
+        /// <param name="costingVersionId">The value of costingVersionId</param>
+        /// <param name="productionSiteId">The value of productionSiteId</param>
+        /// <param name="effectiveDate">The value of effectiveDate</param>
+        public static global::Microsoft.Dynamics.DataEntities.RoutePendingRouteCostCategoryUnitCostSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RoutePendingRouteCostCategoryUnitCost> _source,
+            string dataAreaId, 
+            string routeCostCategoryId, 
+            string costingVersionId, 
+            string productionSiteId, 
+            global::System.DateTimeOffset effectiveDate)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "dataAreaId", dataAreaId }, 
+                { "RouteCostCategoryId", routeCostCategoryId }, 
+                { "CostingVersionId", costingVersionId }, 
+                { "ProductionSiteId", productionSiteId }, 
+                { "EffectiveDate", effectiveDate }
+            };
+            return new global::Microsoft.Dynamics.DataEntities.RoutePendingRouteCostCategoryUnitCostSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
         }
         /// <summary>
         /// Get an entity of type global::Microsoft.Dynamics.DataEntities.PurchaseOrderLine as global::Microsoft.Dynamics.DataEntities.PurchaseOrderLineSingle specified by key from an entity set
@@ -17015,6 +17015,32 @@ namespace Microsoft.Dynamics.DataEntities
                 { "SalesOrderNumber", salesOrderNumber }
             };
             return new global::Microsoft.Dynamics.DataEntities.SalesOrderHeaderV2EntityOnlySalesTableSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.AAXSalesOrderHeaderV2EntityOnlySalesOrderNumber as global::Microsoft.Dynamics.DataEntities.AAXSalesOrderHeaderV2EntityOnlySalesOrderNumberSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Microsoft.Dynamics.DataEntities.AAXSalesOrderHeaderV2EntityOnlySalesOrderNumberSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AAXSalesOrderHeaderV2EntityOnlySalesOrderNumber> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Microsoft.Dynamics.DataEntities.AAXSalesOrderHeaderV2EntityOnlySalesOrderNumberSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.AAXSalesOrderHeaderV2EntityOnlySalesOrderNumber as global::Microsoft.Dynamics.DataEntities.AAXSalesOrderHeaderV2EntityOnlySalesOrderNumberSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="dataAreaId">The value of dataAreaId</param>
+        /// <param name="salesOrderNumber">The value of salesOrderNumber</param>
+        public static global::Microsoft.Dynamics.DataEntities.AAXSalesOrderHeaderV2EntityOnlySalesOrderNumberSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AAXSalesOrderHeaderV2EntityOnlySalesOrderNumber> _source,
+            string dataAreaId, 
+            string salesOrderNumber)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "dataAreaId", dataAreaId }, 
+                { "SalesOrderNumber", salesOrderNumber }
+            };
+            return new global::Microsoft.Dynamics.DataEntities.AAXSalesOrderHeaderV2EntityOnlySalesOrderNumberSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
         }
         /// <summary>
         /// Get an entity of type global::Microsoft.Dynamics.DataEntities.WorkerBankAccount as global::Microsoft.Dynamics.DataEntities.WorkerBankAccountSingle specified by key from an entity set
@@ -20013,29 +20039,6 @@ namespace Microsoft.Dynamics.DataEntities
             return new global::Microsoft.Dynamics.DataEntities.PaymentScheduleLineSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
         }
         /// <summary>
-        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.RetailStaff as global::Microsoft.Dynamics.DataEntities.RetailStaffSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="_source">source entity set</param>
-        /// <param name="_keys">dictionary with the names and values of keys</param>
-        public static global::Microsoft.Dynamics.DataEntities.RetailStaffSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailStaff> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
-        {
-            return new global::Microsoft.Dynamics.DataEntities.RetailStaffSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
-        }
-        /// <summary>
-        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.RetailStaff as global::Microsoft.Dynamics.DataEntities.RetailStaffSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="_source">source entity set</param>
-        /// <param name="personnelNumber">The value of personnelNumber</param>
-        public static global::Microsoft.Dynamics.DataEntities.RetailStaffSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailStaff> _source,
-            string personnelNumber)
-        {
-            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
-            {
-                { "PersonnelNumber", personnelNumber }
-            };
-            return new global::Microsoft.Dynamics.DataEntities.RetailStaffSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
-        }
-        /// <summary>
         /// Get an entity of type global::Microsoft.Dynamics.DataEntities.JobTask as global::Microsoft.Dynamics.DataEntities.JobTaskSingle specified by key from an entity set
         /// </summary>
         /// <param name="_source">source entity set</param>
@@ -20057,6 +20060,29 @@ namespace Microsoft.Dynamics.DataEntities
                 { "JobTaskId", jobTaskId }
             };
             return new global::Microsoft.Dynamics.DataEntities.JobTaskSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.RetailStaff as global::Microsoft.Dynamics.DataEntities.RetailStaffSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Microsoft.Dynamics.DataEntities.RetailStaffSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailStaff> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Microsoft.Dynamics.DataEntities.RetailStaffSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.RetailStaff as global::Microsoft.Dynamics.DataEntities.RetailStaffSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="personnelNumber">The value of personnelNumber</param>
+        public static global::Microsoft.Dynamics.DataEntities.RetailStaffSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailStaff> _source,
+            string personnelNumber)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "PersonnelNumber", personnelNumber }
+            };
+            return new global::Microsoft.Dynamics.DataEntities.RetailStaffSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
         }
         /// <summary>
         /// Get an entity of type global::Microsoft.Dynamics.DataEntities.VeteranStatus as global::Microsoft.Dynamics.DataEntities.VeteranStatusSingle specified by key from an entity set
@@ -29780,29 +29806,6 @@ namespace Microsoft.Dynamics.DataEntities
             return new global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLineSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
         }
         /// <summary>
-        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.DimensionSet as global::Microsoft.Dynamics.DataEntities.DimensionSetSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="_source">source entity set</param>
-        /// <param name="_keys">dictionary with the names and values of keys</param>
-        public static global::Microsoft.Dynamics.DataEntities.DimensionSetSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.DimensionSet> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
-        {
-            return new global::Microsoft.Dynamics.DataEntities.DimensionSetSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
-        }
-        /// <summary>
-        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.DimensionSet as global::Microsoft.Dynamics.DataEntities.DimensionSetSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="_source">source entity set</param>
-        /// <param name="recordId">The value of recordId</param>
-        public static global::Microsoft.Dynamics.DataEntities.DimensionSetSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.DimensionSet> _source,
-            long recordId)
-        {
-            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
-            {
-                { "RecordId", recordId }
-            };
-            return new global::Microsoft.Dynamics.DataEntities.DimensionSetSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
-        }
-        /// <summary>
         /// Get an entity of type global::Microsoft.Dynamics.DataEntities.ExchangeRate as global::Microsoft.Dynamics.DataEntities.ExchangeRateSingle specified by key from an entity set
         /// </summary>
         /// <param name="_source">source entity set</param>
@@ -29833,6 +29836,29 @@ namespace Microsoft.Dynamics.DataEntities
                 { "StartDate", startDate }
             };
             return new global::Microsoft.Dynamics.DataEntities.ExchangeRateSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.DimensionSet as global::Microsoft.Dynamics.DataEntities.DimensionSetSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Microsoft.Dynamics.DataEntities.DimensionSetSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.DimensionSet> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Microsoft.Dynamics.DataEntities.DimensionSetSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.DimensionSet as global::Microsoft.Dynamics.DataEntities.DimensionSetSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="recordId">The value of recordId</param>
+        public static global::Microsoft.Dynamics.DataEntities.DimensionSetSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.DimensionSet> _source,
+            long recordId)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "RecordId", recordId }
+            };
+            return new global::Microsoft.Dynamics.DataEntities.DimensionSetSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
         }
         /// <summary>
         /// Get an entity of type global::Microsoft.Dynamics.DataEntities.MainAccountTotalAccountInterval as global::Microsoft.Dynamics.DataEntities.MainAccountTotalAccountIntervalSingle specified by key from an entity set

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/3/2021 8:21:45 PM
+// Generation date: 1/20/2021 5:35:39 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -8274,23 +8274,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<ServiceAgreementLine> _ServiceAgreementLines;
         /// <summary>
-        /// There are no comments for RoutePendingRouteCostCategoryUnitCosts in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<RoutePendingRouteCostCategoryUnitCost> RoutePendingRouteCostCategoryUnitCosts
-        {
-            get
-            {
-                if ((this._RoutePendingRouteCostCategoryUnitCosts == null))
-                {
-                    this._RoutePendingRouteCostCategoryUnitCosts = base.CreateQuery<RoutePendingRouteCostCategoryUnitCost>("RoutePendingRouteCostCategoryUnitCosts");
-                }
-                return this._RoutePendingRouteCostCategoryUnitCosts;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<RoutePendingRouteCostCategoryUnitCost> _RoutePendingRouteCostCategoryUnitCosts;
-        /// <summary>
         /// There are no comments for CoveredDependentRelationships in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -8307,6 +8290,23 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<CoveredDependentRelationship> _CoveredDependentRelationships;
+        /// <summary>
+        /// There are no comments for RoutePendingRouteCostCategoryUnitCosts in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<RoutePendingRouteCostCategoryUnitCost> RoutePendingRouteCostCategoryUnitCosts
+        {
+            get
+            {
+                if ((this._RoutePendingRouteCostCategoryUnitCosts == null))
+                {
+                    this._RoutePendingRouteCostCategoryUnitCosts = base.CreateQuery<RoutePendingRouteCostCategoryUnitCost>("RoutePendingRouteCostCategoryUnitCosts");
+                }
+                return this._RoutePendingRouteCostCategoryUnitCosts;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<RoutePendingRouteCostCategoryUnitCost> _RoutePendingRouteCostCategoryUnitCosts;
         /// <summary>
         /// There are no comments for PurchaseOrderLines in the schema.
         /// </summary>
@@ -9888,6 +9888,23 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<SalesOrderHeaderV2EntityOnlySalesTable> _SalesOrderHeadersV2EntityOnlySalesTable;
+        /// <summary>
+        /// There are no comments for AAXSalesOrderHeaderV2EntityOnlySalesOrderNumbers in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<AAXSalesOrderHeaderV2EntityOnlySalesOrderNumber> AAXSalesOrderHeaderV2EntityOnlySalesOrderNumbers
+        {
+            get
+            {
+                if ((this._AAXSalesOrderHeaderV2EntityOnlySalesOrderNumbers == null))
+                {
+                    this._AAXSalesOrderHeaderV2EntityOnlySalesOrderNumbers = base.CreateQuery<AAXSalesOrderHeaderV2EntityOnlySalesOrderNumber>("AAXSalesOrderHeaderV2EntityOnlySalesOrderNumbers");
+                }
+                return this._AAXSalesOrderHeaderV2EntityOnlySalesOrderNumbers;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<AAXSalesOrderHeaderV2EntityOnlySalesOrderNumber> _AAXSalesOrderHeaderV2EntityOnlySalesOrderNumbers;
         /// <summary>
         /// There are no comments for WorkerBankAccounts in the schema.
         /// </summary>
@@ -11657,23 +11674,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<PaymentScheduleLine> _PaymentScheduleLines;
         /// <summary>
-        /// There are no comments for RetailStaffs in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<RetailStaff> RetailStaffs
-        {
-            get
-            {
-                if ((this._RetailStaffs == null))
-                {
-                    this._RetailStaffs = base.CreateQuery<RetailStaff>("RetailStaffs");
-                }
-                return this._RetailStaffs;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<RetailStaff> _RetailStaffs;
-        /// <summary>
         /// There are no comments for JobTasks in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -11690,6 +11690,23 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<JobTask> _JobTasks;
+        /// <summary>
+        /// There are no comments for RetailStaffs in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<RetailStaff> RetailStaffs
+        {
+            get
+            {
+                if ((this._RetailStaffs == null))
+                {
+                    this._RetailStaffs = base.CreateQuery<RetailStaff>("RetailStaffs");
+                }
+                return this._RetailStaffs;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<RetailStaff> _RetailStaffs;
         /// <summary>
         /// There are no comments for VeteranStatuses in the schema.
         /// </summary>
@@ -17335,23 +17352,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<CycleCountingWarehouseWorkLine> _CycleCountingWarehouseWorkLines;
         /// <summary>
-        /// There are no comments for DimensionSets in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<DimensionSet> DimensionSets
-        {
-            get
-            {
-                if ((this._DimensionSets == null))
-                {
-                    this._DimensionSets = base.CreateQuery<DimensionSet>("DimensionSets");
-                }
-                return this._DimensionSets;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<DimensionSet> _DimensionSets;
-        /// <summary>
         /// There are no comments for ExchangeRates in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -17368,6 +17368,23 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<ExchangeRate> _ExchangeRates;
+        /// <summary>
+        /// There are no comments for DimensionSets in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<DimensionSet> DimensionSets
+        {
+            get
+            {
+                if ((this._DimensionSets == null))
+                {
+                    this._DimensionSets = base.CreateQuery<DimensionSet>("DimensionSets");
+                }
+                return this._DimensionSets;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<DimensionSet> _DimensionSets;
         /// <summary>
         /// There are no comments for MainAccountTotalAccountIntervals in the schema.
         /// </summary>
@@ -22167,20 +22184,20 @@ namespace Microsoft.Dynamics.DataEntities
             base.AddObject("ServiceAgreementLines", serviceAgreementLine);
         }
         /// <summary>
-        /// There are no comments for RoutePendingRouteCostCategoryUnitCosts in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual void AddToRoutePendingRouteCostCategoryUnitCosts(RoutePendingRouteCostCategoryUnitCost routePendingRouteCostCategoryUnitCost)
-        {
-            base.AddObject("RoutePendingRouteCostCategoryUnitCosts", routePendingRouteCostCategoryUnitCost);
-        }
-        /// <summary>
         /// There are no comments for CoveredDependentRelationships in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public virtual void AddToCoveredDependentRelationships(CoveredDependentRelationship coveredDependentRelationship)
         {
             base.AddObject("CoveredDependentRelationships", coveredDependentRelationship);
+        }
+        /// <summary>
+        /// There are no comments for RoutePendingRouteCostCategoryUnitCosts in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual void AddToRoutePendingRouteCostCategoryUnitCosts(RoutePendingRouteCostCategoryUnitCost routePendingRouteCostCategoryUnitCost)
+        {
+            base.AddObject("RoutePendingRouteCostCategoryUnitCosts", routePendingRouteCostCategoryUnitCost);
         }
         /// <summary>
         /// There are no comments for PurchaseOrderLines in the schema.
@@ -22925,6 +22942,14 @@ namespace Microsoft.Dynamics.DataEntities
         public virtual void AddToSalesOrderHeadersV2EntityOnlySalesTable(SalesOrderHeaderV2EntityOnlySalesTable salesOrderHeaderV2EntityOnlySalesTable)
         {
             base.AddObject("SalesOrderHeadersV2EntityOnlySalesTable", salesOrderHeaderV2EntityOnlySalesTable);
+        }
+        /// <summary>
+        /// There are no comments for AAXSalesOrderHeaderV2EntityOnlySalesOrderNumbers in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual void AddToAAXSalesOrderHeaderV2EntityOnlySalesOrderNumbers(AAXSalesOrderHeaderV2EntityOnlySalesOrderNumber aAXSalesOrderHeaderV2EntityOnlySalesOrderNumber)
+        {
+            base.AddObject("AAXSalesOrderHeaderV2EntityOnlySalesOrderNumbers", aAXSalesOrderHeaderV2EntityOnlySalesOrderNumber);
         }
         /// <summary>
         /// There are no comments for WorkerBankAccounts in the schema.
@@ -23759,20 +23784,20 @@ namespace Microsoft.Dynamics.DataEntities
             base.AddObject("PaymentScheduleLines", paymentScheduleLine);
         }
         /// <summary>
-        /// There are no comments for RetailStaffs in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual void AddToRetailStaffs(RetailStaff retailStaff)
-        {
-            base.AddObject("RetailStaffs", retailStaff);
-        }
-        /// <summary>
         /// There are no comments for JobTasks in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public virtual void AddToJobTasks(JobTask jobTask)
         {
             base.AddObject("JobTasks", jobTask);
+        }
+        /// <summary>
+        /// There are no comments for RetailStaffs in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual void AddToRetailStaffs(RetailStaff retailStaff)
+        {
+            base.AddObject("RetailStaffs", retailStaff);
         }
         /// <summary>
         /// There are no comments for VeteranStatuses in the schema.
@@ -26431,20 +26456,20 @@ namespace Microsoft.Dynamics.DataEntities
             base.AddObject("CycleCountingWarehouseWorkLines", cycleCountingWarehouseWorkLine);
         }
         /// <summary>
-        /// There are no comments for DimensionSets in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual void AddToDimensionSets(DimensionSet dimensionSet)
-        {
-            base.AddObject("DimensionSets", dimensionSet);
-        }
-        /// <summary>
         /// There are no comments for ExchangeRates in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public virtual void AddToExchangeRates(ExchangeRate exchangeRate)
         {
             base.AddObject("ExchangeRates", exchangeRate);
+        }
+        /// <summary>
+        /// There are no comments for DimensionSets in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual void AddToDimensionSets(DimensionSet dimensionSet)
+        {
+            base.AddObject("DimensionSets", dimensionSet);
         }
         /// <summary>
         /// There are no comments for MainAccountTotalAccountIntervals in the schema.

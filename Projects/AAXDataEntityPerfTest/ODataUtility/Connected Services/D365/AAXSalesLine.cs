@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/3/2021 8:21:45 PM
+// Generation date: 1/20/2021 5:35:39 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public AAXSalesLineSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AAXSalesLine> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for AAXSalesTable in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AAXSalesTable> AAXSalesTable
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._AAXSalesTable == null))
-                {
-                    this._AAXSalesTable = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AAXSalesTable>(GetPath("AAXSalesTable"));
-                }
-                return this._AAXSalesTable;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AAXSalesTable> _AAXSalesTable;
     }
         /// <summary>
         /// There are no comments for AAXSalesLine in the schema.
@@ -4446,28 +4425,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::System.Nullable<global::Microsoft.Dynamics.DataEntities.SalesStatus> _SalesStatus;
         partial void OnSalesStatusChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.SalesStatus> value);
         partial void OnSalesStatusChanged();
-        /// <summary>
-        /// There are no comments for Property AAXSalesTable in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AAXSalesTable> AAXSalesTable
-        {
-            get
-            {
-                return this._AAXSalesTable;
-            }
-            set
-            {
-                this.OnAAXSalesTableChanging(value);
-                this._AAXSalesTable = value;
-                this.OnAAXSalesTableChanged();
-                this.OnPropertyChanged("AAXSalesTable");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AAXSalesTable> _AAXSalesTable = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AAXSalesTable>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAAXSalesTableChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AAXSalesTable> value);
-        partial void OnAAXSalesTableChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
