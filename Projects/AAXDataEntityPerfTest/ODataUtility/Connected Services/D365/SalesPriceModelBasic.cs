@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 12/8/2020 7:45:22 PM
+// Generation date: 1/20/2021 5:35:39 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>

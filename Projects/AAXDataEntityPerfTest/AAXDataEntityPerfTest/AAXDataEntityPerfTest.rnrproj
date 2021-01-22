@@ -32,6 +32,7 @@
     <Folder Include="Data Entities\" />
     <Folder Include="Maps\" />
     <Folder Include="Security Privileges\" />
+    <Folder Include="Table Extensions\" />
     <Folder Include="Tables\" />
   </ItemGroup>
   <ItemGroup>
@@ -49,6 +50,11 @@
       <SubType>Content</SubType>
       <Name>AAXSalesOrderHeaderV2EntityNoGlobalization</Name>
       <Link>Data Entities\AAXSalesOrderHeaderV2EntityNoGlobalization</Link>
+    </Content>
+    <Content Include="AxDataEntityView\AAXSalesOrderHeaderV2EntityOnlySalesOrderNumber">
+      <SubType>Content</SubType>
+      <Name>AAXSalesOrderHeaderV2EntityOnlySalesOrderNumber</Name>
+      <Link>Data Entities\AAXSalesOrderHeaderV2EntityOnlySalesOrderNumber</Link>
     </Content>
     <Content Include="AxDataEntityView\AAXSalesOrderHeaderV2EntityOnlySalesTable">
       <SubType>Content</SubType>
@@ -95,6 +101,11 @@
       <Name>AAXSalesOrderHeaderV2EntityNoGlobalizationView</Name>
       <Link>Security Privileges\AAXSalesOrderHeaderV2EntityNoGlobalizationView</Link>
     </Content>
+    <Content Include="AxSecurityPrivilege\AAXSalesOrderHeaderV2EntityOnlySalesOrderNumberView">
+      <SubType>Content</SubType>
+      <Name>AAXSalesOrderHeaderV2EntityOnlySalesOrderNumberView</Name>
+      <Link>Security Privileges\AAXSalesOrderHeaderV2EntityOnlySalesOrderNumberView</Link>
+    </Content>
     <Content Include="AxSecurityPrivilege\AAXSalesOrderHeaderV2EntityOnlySalesTableView">
       <SubType>Content</SubType>
       <Name>AAXSalesOrderHeaderV2EntityOnlySalesTableView</Name>
@@ -125,6 +136,11 @@
       <Name>AAXSalesTableEntityView</Name>
       <Link>Security Privileges\AAXSalesTableEntityView</Link>
     </Content>
+    <Content Include="AxTableExtension\SalesTable.AAXDataEntityPerfTest">
+      <SubType>Content</SubType>
+      <Name>SalesTable.AAXDataEntityPerfTest</Name>
+      <Link>Table Extensions\SalesTable.AAXDataEntityPerfTest</Link>
+    </Content>
     <Content Include="AxTable\AAXSalesOrderHeaderV2EntityDSReadOnlyStaging">
       <SubType>Content</SubType>
       <Name>AAXSalesOrderHeaderV2EntityDSReadOnlyStaging</Name>
@@ -134,6 +150,11 @@
       <SubType>Content</SubType>
       <Name>AAXSalesOrderHeaderV2EntityNoGlobalizationStaging</Name>
       <Link>Tables\AAXSalesOrderHeaderV2EntityNoGlobalizationStaging</Link>
+    </Content>
+    <Content Include="AxTable\AAXSalesOrderHeaderV2EntityOnlySalesOrderNumberStaging">
+      <SubType>Content</SubType>
+      <Name>AAXSalesOrderHeaderV2EntityOnlySalesOrderNumberStaging</Name>
+      <Link>Tables\AAXSalesOrderHeaderV2EntityOnlySalesOrderNumberStaging</Link>
     </Content>
     <Content Include="AxTable\AAXSalesOrderHeaderV2EntityOnlySalesTableStaging">
       <SubType>Content</SubType>

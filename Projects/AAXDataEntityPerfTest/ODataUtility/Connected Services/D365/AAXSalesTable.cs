@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 12/8/2020 7:45:22 PM
+// Generation date: 1/20/2021 5:35:39 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public AAXSalesTableSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AAXSalesTable> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for AAXSalesLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.AAXSalesLineSingle AAXSalesLine
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._AAXSalesLine == null))
-                {
-                    this._AAXSalesLine = new global::Microsoft.Dynamics.DataEntities.AAXSalesLineSingle(this.Context, GetPath("AAXSalesLine"));
-                }
-                return this._AAXSalesLine;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.AAXSalesLineSingle _AAXSalesLine;
         /// <summary>
         /// There are no comments for DimensionSet in the schema.
         /// </summary>
@@ -3531,28 +3510,6 @@ namespace Microsoft.Dynamics.DataEntities
         private string _ProjId;
         partial void OnProjIdChanging(string value);
         partial void OnProjIdChanged();
-        /// <summary>
-        /// There are no comments for Property AAXSalesLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.AAXSalesLine AAXSalesLine
-        {
-            get
-            {
-                return this._AAXSalesLine;
-            }
-            set
-            {
-                this.OnAAXSalesLineChanging(value);
-                this._AAXSalesLine = value;
-                this.OnAAXSalesLineChanged();
-                this.OnPropertyChanged("AAXSalesLine");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.AAXSalesLine _AAXSalesLine;
-        partial void OnAAXSalesLineChanging(global::Microsoft.Dynamics.DataEntities.AAXSalesLine value);
-        partial void OnAAXSalesLineChanged();
         /// <summary>
         /// There are no comments for Property DimensionSet in the schema.
         /// </summary>

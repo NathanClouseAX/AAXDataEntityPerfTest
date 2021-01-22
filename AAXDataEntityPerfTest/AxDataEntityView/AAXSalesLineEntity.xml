@@ -1190,7 +1190,11 @@ public class AAXSalesLineEntity extends common
 	<Keys>
 		<AxDataEntityViewKey>
 			<Name>EntityKey</Name>
-			<Fields />
+			<Fields>
+				<AxDataEntityViewKeyField>
+					<DataField>InventTransId</DataField>
+				</AxDataEntityViewKeyField>
+			</Fields>
 		</AxDataEntityViewKey>
 	</Keys>
 	<Mappings />

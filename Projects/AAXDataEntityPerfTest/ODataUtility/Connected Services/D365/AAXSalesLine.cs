@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 12/8/2020 7:45:22 PM
+// Generation date: 1/20/2021 5:35:39 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,38 +34,23 @@ namespace Microsoft.Dynamics.DataEntities
         public AAXSalesLineSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AAXSalesLine> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for AAXSalesTable in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AAXSalesTable> AAXSalesTable
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._AAXSalesTable == null))
-                {
-                    this._AAXSalesTable = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AAXSalesTable>(GetPath("AAXSalesTable"));
-                }
-                return this._AAXSalesTable;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AAXSalesTable> _AAXSalesTable;
     }
         /// <summary>
         /// There are no comments for AAXSalesLine in the schema.
         /// </summary>
-    [global::Microsoft.OData.Client.EntityType()]
+    /// <KeyProperties>
+    /// dataAreaId
+    /// InventTransId
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("dataAreaId", "InventTransId")]
     [global::Microsoft.OData.Client.EntitySet("AAXSalesLines")]
     public partial class AAXSalesLine : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
     {
         /// <summary>
         /// Create a new AAXSalesLine object.
         /// </summary>
+        /// <param name="dataAreaId">Initial value of dataAreaId.</param>
+        /// <param name="inventTransId">Initial value of InventTransId.</param>
         /// <param name="priceUnit">Initial value of PriceUnit.</param>
         /// <param name="lineNum">Initial value of LineNum.</param>
         /// <param name="salesMarkup">Initial value of SalesMarkup.</param>
@@ -136,7 +121,9 @@ namespace Microsoft.Dynamics.DataEntities
         /// <param name="pSAProjProposalInventQty">Initial value of PSAProjProposalInventQty.</param>
         /// <param name="inventDeliverNow">Initial value of InventDeliverNow.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public static AAXSalesLine CreateAAXSalesLine(decimal priceUnit, 
+        public static AAXSalesLine CreateAAXSalesLine(string dataAreaId, 
+                    string inventTransId, 
+                    decimal priceUnit, 
                     decimal lineNum, 
                     decimal salesMarkup, 
                     decimal retailBlockQty, 
@@ -207,6 +194,8 @@ namespace Microsoft.Dynamics.DataEntities
                     decimal inventDeliverNow)
         {
             AAXSalesLine aAXSalesLine = new AAXSalesLine();
+            aAXSalesLine.dataAreaId = dataAreaId;
+            aAXSalesLine.InventTransId = inventTransId;
             aAXSalesLine.PriceUnit = priceUnit;
             aAXSalesLine.LineNum = lineNum;
             aAXSalesLine.SalesMarkup = salesMarkup;
@@ -278,6 +267,50 @@ namespace Microsoft.Dynamics.DataEntities
             aAXSalesLine.InventDeliverNow = inventDeliverNow;
             return aAXSalesLine;
         }
+        /// <summary>
+        /// There are no comments for Property dataAreaId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual string dataAreaId
+        {
+            get
+            {
+                return this._dataAreaId;
+            }
+            set
+            {
+                this.OndataAreaIdChanging(value);
+                this._dataAreaId = value;
+                this.OndataAreaIdChanged();
+                this.OnPropertyChanged("dataAreaId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _dataAreaId;
+        partial void OndataAreaIdChanging(string value);
+        partial void OndataAreaIdChanged();
+        /// <summary>
+        /// There are no comments for Property InventTransId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual string InventTransId
+        {
+            get
+            {
+                return this._InventTransId;
+            }
+            set
+            {
+                this.OnInventTransIdChanging(value);
+                this._InventTransId = value;
+                this.OnInventTransIdChanged();
+                this.OnPropertyChanged("InventTransId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _InventTransId;
+        partial void OnInventTransIdChanging(string value);
+        partial void OnInventTransIdChanged();
         /// <summary>
         /// There are no comments for Property DeliveryType in the schema.
         /// </summary>
@@ -1687,28 +1720,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnSalesDeliverNowChanging(decimal value);
         partial void OnSalesDeliverNowChanged();
         /// <summary>
-        /// There are no comments for Property InventTransId in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual string InventTransId
-        {
-            get
-            {
-                return this._InventTransId;
-            }
-            set
-            {
-                this.OnInventTransIdChanging(value);
-                this._InventTransId = value;
-                this.OnInventTransIdChanged();
-                this.OnPropertyChanged("InventTransId");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private string _InventTransId;
-        partial void OnInventTransIdChanging(string value);
-        partial void OnInventTransIdChanged();
-        /// <summary>
         /// There are no comments for Property InventDimId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -1884,28 +1895,6 @@ namespace Microsoft.Dynamics.DataEntities
         private long _ManualEntryChangepolicy;
         partial void OnManualEntryChangepolicyChanging(long value);
         partial void OnManualEntryChangepolicyChanged();
-        /// <summary>
-        /// There are no comments for Property dataAreaId in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual string dataAreaId
-        {
-            get
-            {
-                return this._dataAreaId;
-            }
-            set
-            {
-                this.OndataAreaIdChanging(value);
-                this._dataAreaId = value;
-                this.OndataAreaIdChanged();
-                this.OnPropertyChanged("dataAreaId");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private string _dataAreaId;
-        partial void OndataAreaIdChanging(string value);
-        partial void OndataAreaIdChanged();
         /// <summary>
         /// There are no comments for Property DataAreaId1 in the schema.
         /// </summary>
@@ -4436,28 +4425,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::System.Nullable<global::Microsoft.Dynamics.DataEntities.SalesStatus> _SalesStatus;
         partial void OnSalesStatusChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.SalesStatus> value);
         partial void OnSalesStatusChanged();
-        /// <summary>
-        /// There are no comments for Property AAXSalesTable in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AAXSalesTable> AAXSalesTable
-        {
-            get
-            {
-                return this._AAXSalesTable;
-            }
-            set
-            {
-                this.OnAAXSalesTableChanging(value);
-                this._AAXSalesTable = value;
-                this.OnAAXSalesTableChanged();
-                this.OnPropertyChanged("AAXSalesTable");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AAXSalesTable> _AAXSalesTable = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AAXSalesTable>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAAXSalesTableChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AAXSalesTable> value);
-        partial void OnAAXSalesTableChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

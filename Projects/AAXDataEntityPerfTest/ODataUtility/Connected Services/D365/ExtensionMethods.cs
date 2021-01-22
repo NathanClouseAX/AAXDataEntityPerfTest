@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 12/8/2020 7:45:22 PM
+// Generation date: 1/20/2021 5:35:39 PM
 namespace Microsoft.Dynamics.DataEntities
 {
     /// <summary>
@@ -1428,32 +1428,6 @@ namespace Microsoft.Dynamics.DataEntities
             return new global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersionAttributeValueSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
         }
         /// <summary>
-        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderHeader as global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderHeaderSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="_source">source entity set</param>
-        /// <param name="_keys">dictionary with the names and values of keys</param>
-        public static global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderHeaderSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderHeader> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
-        {
-            return new global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderHeaderSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
-        }
-        /// <summary>
-        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderHeader as global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderHeaderSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="_source">source entity set</param>
-        /// <param name="dataAreaId">The value of dataAreaId</param>
-        /// <param name="orderNumber">The value of orderNumber</param>
-        public static global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderHeaderSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderHeader> _source,
-            string dataAreaId, 
-            string orderNumber)
-        {
-            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
-            {
-                { "dataAreaId", dataAreaId }, 
-                { "OrderNumber", orderNumber }
-            };
-            return new global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderHeaderSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
-        }
-        /// <summary>
         /// Get an entity of type global::Microsoft.Dynamics.DataEntities.AllocationRuleDestination as global::Microsoft.Dynamics.DataEntities.AllocationRuleDestinationSingle specified by key from an entity set
         /// </summary>
         /// <param name="_source">source entity set</param>
@@ -1481,6 +1455,32 @@ namespace Microsoft.Dynamics.DataEntities
                 { "LineNumber", lineNumber }
             };
             return new global::Microsoft.Dynamics.DataEntities.AllocationRuleDestinationSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderHeader as global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderHeaderSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderHeaderSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderHeader> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderHeaderSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderHeader as global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderHeaderSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="dataAreaId">The value of dataAreaId</param>
+        /// <param name="orderNumber">The value of orderNumber</param>
+        public static global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderHeaderSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderHeader> _source,
+            string dataAreaId, 
+            string orderNumber)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "dataAreaId", dataAreaId }, 
+                { "OrderNumber", orderNumber }
+            };
+            return new global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderHeaderSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
         }
         /// <summary>
         /// Get an entity of type global::Microsoft.Dynamics.DataEntities.PayrollParameter as global::Microsoft.Dynamics.DataEntities.PayrollParameterSingle specified by key from an entity set
@@ -6704,6 +6704,38 @@ namespace Microsoft.Dynamics.DataEntities
             return new global::Microsoft.Dynamics.DataEntities.CodaDefinitionSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
         }
         /// <summary>
+        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.ProductDocumentAttachment as global::Microsoft.Dynamics.DataEntities.ProductDocumentAttachmentSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Microsoft.Dynamics.DataEntities.ProductDocumentAttachmentSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductDocumentAttachment> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Microsoft.Dynamics.DataEntities.ProductDocumentAttachmentSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.ProductDocumentAttachment as global::Microsoft.Dynamics.DataEntities.ProductDocumentAttachmentSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="productNumber">The value of productNumber</param>
+        /// <param name="documentAttachmentTypeCode">The value of documentAttachmentTypeCode</param>
+        /// <param name="attachmentDescription">The value of attachmentDescription</param>
+        /// <param name="attachedDateTime">The value of attachedDateTime</param>
+        public static global::Microsoft.Dynamics.DataEntities.ProductDocumentAttachmentSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductDocumentAttachment> _source,
+            string productNumber, 
+            string documentAttachmentTypeCode, 
+            string attachmentDescription, 
+            global::System.DateTimeOffset attachedDateTime)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "ProductNumber", productNumber }, 
+                { "DocumentAttachmentTypeCode", documentAttachmentTypeCode }, 
+                { "AttachmentDescription", attachmentDescription }, 
+                { "AttachedDateTime", attachedDateTime }
+            };
+            return new global::Microsoft.Dynamics.DataEntities.ProductDocumentAttachmentSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
         /// Get an entity of type global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestDependencyAction as global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestDependencyActionSingle specified by key from an entity set
         /// </summary>
         /// <param name="_source">source entity set</param>
@@ -6737,38 +6769,6 @@ namespace Microsoft.Dynamics.DataEntities
                 { "EngineeringChangeRequestNumber", engineeringChangeRequestNumber }
             };
             return new global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestDependencyActionSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
-        }
-        /// <summary>
-        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.ProductDocumentAttachment as global::Microsoft.Dynamics.DataEntities.ProductDocumentAttachmentSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="_source">source entity set</param>
-        /// <param name="_keys">dictionary with the names and values of keys</param>
-        public static global::Microsoft.Dynamics.DataEntities.ProductDocumentAttachmentSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductDocumentAttachment> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
-        {
-            return new global::Microsoft.Dynamics.DataEntities.ProductDocumentAttachmentSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
-        }
-        /// <summary>
-        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.ProductDocumentAttachment as global::Microsoft.Dynamics.DataEntities.ProductDocumentAttachmentSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="_source">source entity set</param>
-        /// <param name="productNumber">The value of productNumber</param>
-        /// <param name="documentAttachmentTypeCode">The value of documentAttachmentTypeCode</param>
-        /// <param name="attachmentDescription">The value of attachmentDescription</param>
-        /// <param name="attachedDateTime">The value of attachedDateTime</param>
-        public static global::Microsoft.Dynamics.DataEntities.ProductDocumentAttachmentSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductDocumentAttachment> _source,
-            string productNumber, 
-            string documentAttachmentTypeCode, 
-            string attachmentDescription, 
-            global::System.DateTimeOffset attachedDateTime)
-        {
-            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
-            {
-                { "ProductNumber", productNumber }, 
-                { "DocumentAttachmentTypeCode", documentAttachmentTypeCode }, 
-                { "AttachmentDescription", attachmentDescription }, 
-                { "AttachedDateTime", attachedDateTime }
-            };
-            return new global::Microsoft.Dynamics.DataEntities.ProductDocumentAttachmentSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
         }
         /// <summary>
         /// Get an entity of type global::Microsoft.Dynamics.DataEntities.ServiceOrderLine as global::Microsoft.Dynamics.DataEntities.ServiceOrderLineSingle specified by key from an entity set
@@ -16617,32 +16617,6 @@ namespace Microsoft.Dynamics.DataEntities
             return new global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetDocumentSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
         }
         /// <summary>
-        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.ProductReleasePolicyLegalEntityRule as global::Microsoft.Dynamics.DataEntities.ProductReleasePolicyLegalEntityRuleSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="_source">source entity set</param>
-        /// <param name="_keys">dictionary with the names and values of keys</param>
-        public static global::Microsoft.Dynamics.DataEntities.ProductReleasePolicyLegalEntityRuleSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductReleasePolicyLegalEntityRule> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
-        {
-            return new global::Microsoft.Dynamics.DataEntities.ProductReleasePolicyLegalEntityRuleSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
-        }
-        /// <summary>
-        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.ProductReleasePolicyLegalEntityRule as global::Microsoft.Dynamics.DataEntities.ProductReleasePolicyLegalEntityRuleSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="_source">source entity set</param>
-        /// <param name="legalEntityId">The value of legalEntityId</param>
-        /// <param name="productReleasePolicyName">The value of productReleasePolicyName</param>
-        public static global::Microsoft.Dynamics.DataEntities.ProductReleasePolicyLegalEntityRuleSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductReleasePolicyLegalEntityRule> _source,
-            string legalEntityId, 
-            string productReleasePolicyName)
-        {
-            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
-            {
-                { "LegalEntityId", legalEntityId }, 
-                { "ProductReleasePolicyName", productReleasePolicyName }
-            };
-            return new global::Microsoft.Dynamics.DataEntities.ProductReleasePolicyLegalEntityRuleSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
-        }
-        /// <summary>
         /// Get an entity of type global::Microsoft.Dynamics.DataEntities.CDSInventoryOnHandRequest as global::Microsoft.Dynamics.DataEntities.CDSInventoryOnHandRequestSingle specified by key from an entity set
         /// </summary>
         /// <param name="_source">source entity set</param>
@@ -16667,6 +16641,32 @@ namespace Microsoft.Dynamics.DataEntities
                 { "RequestId", requestId }
             };
             return new global::Microsoft.Dynamics.DataEntities.CDSInventoryOnHandRequestSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.ProductReleasePolicyLegalEntityRule as global::Microsoft.Dynamics.DataEntities.ProductReleasePolicyLegalEntityRuleSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Microsoft.Dynamics.DataEntities.ProductReleasePolicyLegalEntityRuleSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductReleasePolicyLegalEntityRule> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Microsoft.Dynamics.DataEntities.ProductReleasePolicyLegalEntityRuleSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.ProductReleasePolicyLegalEntityRule as global::Microsoft.Dynamics.DataEntities.ProductReleasePolicyLegalEntityRuleSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="legalEntityId">The value of legalEntityId</param>
+        /// <param name="productReleasePolicyName">The value of productReleasePolicyName</param>
+        public static global::Microsoft.Dynamics.DataEntities.ProductReleasePolicyLegalEntityRuleSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductReleasePolicyLegalEntityRule> _source,
+            string legalEntityId, 
+            string productReleasePolicyName)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "LegalEntityId", legalEntityId }, 
+                { "ProductReleasePolicyName", productReleasePolicyName }
+            };
+            return new global::Microsoft.Dynamics.DataEntities.ProductReleasePolicyLegalEntityRuleSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
         }
         /// <summary>
         /// Get an entity of type global::Microsoft.Dynamics.DataEntities.SlipJournalTable as global::Microsoft.Dynamics.DataEntities.SlipJournalTableSingle specified by key from an entity set
@@ -17015,6 +17015,32 @@ namespace Microsoft.Dynamics.DataEntities
                 { "SalesOrderNumber", salesOrderNumber }
             };
             return new global::Microsoft.Dynamics.DataEntities.SalesOrderHeaderV2EntityOnlySalesTableSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.AAXSalesOrderHeaderV2EntityOnlySalesOrderNumber as global::Microsoft.Dynamics.DataEntities.AAXSalesOrderHeaderV2EntityOnlySalesOrderNumberSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Microsoft.Dynamics.DataEntities.AAXSalesOrderHeaderV2EntityOnlySalesOrderNumberSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AAXSalesOrderHeaderV2EntityOnlySalesOrderNumber> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Microsoft.Dynamics.DataEntities.AAXSalesOrderHeaderV2EntityOnlySalesOrderNumberSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.AAXSalesOrderHeaderV2EntityOnlySalesOrderNumber as global::Microsoft.Dynamics.DataEntities.AAXSalesOrderHeaderV2EntityOnlySalesOrderNumberSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="dataAreaId">The value of dataAreaId</param>
+        /// <param name="salesOrderNumber">The value of salesOrderNumber</param>
+        public static global::Microsoft.Dynamics.DataEntities.AAXSalesOrderHeaderV2EntityOnlySalesOrderNumberSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AAXSalesOrderHeaderV2EntityOnlySalesOrderNumber> _source,
+            string dataAreaId, 
+            string salesOrderNumber)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "dataAreaId", dataAreaId }, 
+                { "SalesOrderNumber", salesOrderNumber }
+            };
+            return new global::Microsoft.Dynamics.DataEntities.AAXSalesOrderHeaderV2EntityOnlySalesOrderNumberSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
         }
         /// <summary>
         /// Get an entity of type global::Microsoft.Dynamics.DataEntities.WorkerBankAccount as global::Microsoft.Dynamics.DataEntities.WorkerBankAccountSingle specified by key from an entity set
@@ -18504,29 +18530,6 @@ namespace Microsoft.Dynamics.DataEntities
             return new global::Microsoft.Dynamics.DataEntities.ProductSpecificUnitOfMeasureConversionSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
         }
         /// <summary>
-        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.ProductOwner as global::Microsoft.Dynamics.DataEntities.ProductOwnerSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="_source">source entity set</param>
-        /// <param name="_keys">dictionary with the names and values of keys</param>
-        public static global::Microsoft.Dynamics.DataEntities.ProductOwnerSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductOwner> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
-        {
-            return new global::Microsoft.Dynamics.DataEntities.ProductOwnerSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
-        }
-        /// <summary>
-        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.ProductOwner as global::Microsoft.Dynamics.DataEntities.ProductOwnerSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="_source">source entity set</param>
-        /// <param name="productOwnerId">The value of productOwnerId</param>
-        public static global::Microsoft.Dynamics.DataEntities.ProductOwnerSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductOwner> _source,
-            string productOwnerId)
-        {
-            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
-            {
-                { "ProductOwnerId", productOwnerId }
-            };
-            return new global::Microsoft.Dynamics.DataEntities.ProductOwnerSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
-        }
-        /// <summary>
         /// Get an entity of type global::Microsoft.Dynamics.DataEntities.ProductSizeGroupLineTranslation as global::Microsoft.Dynamics.DataEntities.ProductSizeGroupLineTranslationSingle specified by key from an entity set
         /// </summary>
         /// <param name="_source">source entity set</param>
@@ -18554,6 +18557,29 @@ namespace Microsoft.Dynamics.DataEntities
                 { "LanguageId", languageId }
             };
             return new global::Microsoft.Dynamics.DataEntities.ProductSizeGroupLineTranslationSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.ProductOwner as global::Microsoft.Dynamics.DataEntities.ProductOwnerSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Microsoft.Dynamics.DataEntities.ProductOwnerSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductOwner> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Microsoft.Dynamics.DataEntities.ProductOwnerSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.ProductOwner as global::Microsoft.Dynamics.DataEntities.ProductOwnerSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="productOwnerId">The value of productOwnerId</param>
+        public static global::Microsoft.Dynamics.DataEntities.ProductOwnerSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductOwner> _source,
+            string productOwnerId)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "ProductOwnerId", productOwnerId }
+            };
+            return new global::Microsoft.Dynamics.DataEntities.ProductOwnerSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
         }
         /// <summary>
         /// Get an entity of type global::Microsoft.Dynamics.DataEntities.TaxItemGroup as global::Microsoft.Dynamics.DataEntities.TaxItemGroupSingle specified by key from an entity set
@@ -19146,7 +19172,29 @@ namespace Microsoft.Dynamics.DataEntities
             };
             return new global::Microsoft.Dynamics.DataEntities.BankTransactionGroupSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
         }
-        
+        /// <summary>
+        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.SystemNotification as global::Microsoft.Dynamics.DataEntities.SystemNotificationSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Microsoft.Dynamics.DataEntities.SystemNotificationSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SystemNotification> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Microsoft.Dynamics.DataEntities.SystemNotificationSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.SystemNotification as global::Microsoft.Dynamics.DataEntities.SystemNotificationSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="ruleId">The value of ruleId</param>
+        public static global::Microsoft.Dynamics.DataEntities.SystemNotificationSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SystemNotification> _source,
+            string ruleId)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "RuleId", ruleId }
+            };
+            return new global::Microsoft.Dynamics.DataEntities.SystemNotificationSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
         /// <summary>
         /// Get an entity of type global::Microsoft.Dynamics.DataEntities.PersonUser as global::Microsoft.Dynamics.DataEntities.PersonUserSingle specified by key from an entity set
         /// </summary>
@@ -20792,6 +20840,32 @@ namespace Microsoft.Dynamics.DataEntities
             return new global::Microsoft.Dynamics.DataEntities.PayrollPositionDetailSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
         }
         /// <summary>
+        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.AAXSalesLine as global::Microsoft.Dynamics.DataEntities.AAXSalesLineSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Microsoft.Dynamics.DataEntities.AAXSalesLineSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AAXSalesLine> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Microsoft.Dynamics.DataEntities.AAXSalesLineSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.AAXSalesLine as global::Microsoft.Dynamics.DataEntities.AAXSalesLineSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="dataAreaId">The value of dataAreaId</param>
+        /// <param name="inventTransId">The value of inventTransId</param>
+        public static global::Microsoft.Dynamics.DataEntities.AAXSalesLineSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AAXSalesLine> _source,
+            string dataAreaId, 
+            string inventTransId)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "dataAreaId", dataAreaId }, 
+                { "InventTransId", inventTransId }
+            };
+            return new global::Microsoft.Dynamics.DataEntities.AAXSalesLineSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
         /// Get an entity of type global::Microsoft.Dynamics.DataEntities.PostingProfileLine as global::Microsoft.Dynamics.DataEntities.PostingProfileLineSingle specified by key from an entity set
         /// </summary>
         /// <param name="_source">source entity set</param>
@@ -21050,29 +21124,6 @@ namespace Microsoft.Dynamics.DataEntities
             return new global::Microsoft.Dynamics.DataEntities.CatchWeightTagSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
         }
         /// <summary>
-        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.OperatingUnit as global::Microsoft.Dynamics.DataEntities.OperatingUnitSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="_source">source entity set</param>
-        /// <param name="_keys">dictionary with the names and values of keys</param>
-        public static global::Microsoft.Dynamics.DataEntities.OperatingUnitSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.OperatingUnit> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
-        {
-            return new global::Microsoft.Dynamics.DataEntities.OperatingUnitSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
-        }
-        /// <summary>
-        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.OperatingUnit as global::Microsoft.Dynamics.DataEntities.OperatingUnitSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="_source">source entity set</param>
-        /// <param name="operatingUnitNumber">The value of operatingUnitNumber</param>
-        public static global::Microsoft.Dynamics.DataEntities.OperatingUnitSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.OperatingUnit> _source,
-            string operatingUnitNumber)
-        {
-            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
-            {
-                { "OperatingUnitNumber", operatingUnitNumber }
-            };
-            return new global::Microsoft.Dynamics.DataEntities.OperatingUnitSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
-        }
-        /// <summary>
         /// Get an entity of type global::Microsoft.Dynamics.DataEntities.ProjectContractLine as global::Microsoft.Dynamics.DataEntities.ProjectContractLineSingle specified by key from an entity set
         /// </summary>
         /// <param name="_source">source entity set</param>
@@ -21100,6 +21151,29 @@ namespace Microsoft.Dynamics.DataEntities
                 { "LineSequenceNumber", lineSequenceNumber }
             };
             return new global::Microsoft.Dynamics.DataEntities.ProjectContractLineSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.OperatingUnit as global::Microsoft.Dynamics.DataEntities.OperatingUnitSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Microsoft.Dynamics.DataEntities.OperatingUnitSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.OperatingUnit> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Microsoft.Dynamics.DataEntities.OperatingUnitSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.OperatingUnit as global::Microsoft.Dynamics.DataEntities.OperatingUnitSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="operatingUnitNumber">The value of operatingUnitNumber</param>
+        public static global::Microsoft.Dynamics.DataEntities.OperatingUnitSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.OperatingUnit> _source,
+            string operatingUnitNumber)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "OperatingUnitNumber", operatingUnitNumber }
+            };
+            return new global::Microsoft.Dynamics.DataEntities.OperatingUnitSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
         }
         /// <summary>
         /// Get an entity of type global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableSalesLine as global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableSalesLineSingle specified by key from an entity set
@@ -21410,35 +21484,6 @@ namespace Microsoft.Dynamics.DataEntities
             return new global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocationLineSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
         }
         /// <summary>
-        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationTypePermittedSubType as global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationTypePermittedSubTypeSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="_source">source entity set</param>
-        /// <param name="_keys">dictionary with the names and values of keys</param>
-        public static global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationTypePermittedSubTypeSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationTypePermittedSubType> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
-        {
-            return new global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationTypePermittedSubTypeSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
-        }
-        /// <summary>
-        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationTypePermittedSubType as global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationTypePermittedSubTypeSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="_source">source entity set</param>
-        /// <param name="dataAreaId">The value of dataAreaId</param>
-        /// <param name="functionalLocationTypeId">The value of functionalLocationTypeId</param>
-        /// <param name="permittedFunctionalLocationTypeId">The value of permittedFunctionalLocationTypeId</param>
-        public static global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationTypePermittedSubTypeSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationTypePermittedSubType> _source,
-            string dataAreaId, 
-            string functionalLocationTypeId, 
-            string permittedFunctionalLocationTypeId)
-        {
-            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
-            {
-                { "dataAreaId", dataAreaId }, 
-                { "FunctionalLocationTypeId", functionalLocationTypeId }, 
-                { "PermittedFunctionalLocationTypeId", permittedFunctionalLocationTypeId }
-            };
-            return new global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationTypePermittedSubTypeSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
-        }
-        /// <summary>
         /// Get an entity of type global::Microsoft.Dynamics.DataEntities.BudgetPlan as global::Microsoft.Dynamics.DataEntities.BudgetPlanSingle specified by key from an entity set
         /// </summary>
         /// <param name="_source">source entity set</param>
@@ -21466,6 +21511,35 @@ namespace Microsoft.Dynamics.DataEntities
                 { "LineReferenceId", lineReferenceId }
             };
             return new global::Microsoft.Dynamics.DataEntities.BudgetPlanSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationTypePermittedSubType as global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationTypePermittedSubTypeSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationTypePermittedSubTypeSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationTypePermittedSubType> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationTypePermittedSubTypeSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationTypePermittedSubType as global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationTypePermittedSubTypeSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="dataAreaId">The value of dataAreaId</param>
+        /// <param name="functionalLocationTypeId">The value of functionalLocationTypeId</param>
+        /// <param name="permittedFunctionalLocationTypeId">The value of permittedFunctionalLocationTypeId</param>
+        public static global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationTypePermittedSubTypeSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationTypePermittedSubType> _source,
+            string dataAreaId, 
+            string functionalLocationTypeId, 
+            string permittedFunctionalLocationTypeId)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "dataAreaId", dataAreaId }, 
+                { "FunctionalLocationTypeId", functionalLocationTypeId }, 
+                { "PermittedFunctionalLocationTypeId", permittedFunctionalLocationTypeId }
+            };
+            return new global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationTypePermittedSubTypeSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
         }
         /// <summary>
         /// Get an entity of type global::Microsoft.Dynamics.DataEntities.OperatingUnitContact as global::Microsoft.Dynamics.DataEntities.OperatingUnitContactSingle specified by key from an entity set
@@ -22108,29 +22182,6 @@ namespace Microsoft.Dynamics.DataEntities
             return new global::Microsoft.Dynamics.DataEntities.PayStatementHeaderSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
         }
         /// <summary>
-        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.TeamMembershipCriterion as global::Microsoft.Dynamics.DataEntities.TeamMembershipCriterionSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="_source">source entity set</param>
-        /// <param name="_keys">dictionary with the names and values of keys</param>
-        public static global::Microsoft.Dynamics.DataEntities.TeamMembershipCriterionSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TeamMembershipCriterion> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
-        {
-            return new global::Microsoft.Dynamics.DataEntities.TeamMembershipCriterionSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
-        }
-        /// <summary>
-        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.TeamMembershipCriterion as global::Microsoft.Dynamics.DataEntities.TeamMembershipCriterionSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="_source">source entity set</param>
-        /// <param name="name">The value of name</param>
-        public static global::Microsoft.Dynamics.DataEntities.TeamMembershipCriterionSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TeamMembershipCriterion> _source,
-            string name)
-        {
-            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
-            {
-                { "Name", name }
-            };
-            return new global::Microsoft.Dynamics.DataEntities.TeamMembershipCriterionSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
-        }
-        /// <summary>
         /// Get an entity of type global::Microsoft.Dynamics.DataEntities.GeneralLedgerCustInvoiceJournalHeader as global::Microsoft.Dynamics.DataEntities.GeneralLedgerCustInvoiceJournalHeaderSingle specified by key from an entity set
         /// </summary>
         /// <param name="_source">source entity set</param>
@@ -22155,6 +22206,29 @@ namespace Microsoft.Dynamics.DataEntities
                 { "JournalBatchNumber", journalBatchNumber }
             };
             return new global::Microsoft.Dynamics.DataEntities.GeneralLedgerCustInvoiceJournalHeaderSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.TeamMembershipCriterion as global::Microsoft.Dynamics.DataEntities.TeamMembershipCriterionSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Microsoft.Dynamics.DataEntities.TeamMembershipCriterionSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TeamMembershipCriterion> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Microsoft.Dynamics.DataEntities.TeamMembershipCriterionSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.TeamMembershipCriterion as global::Microsoft.Dynamics.DataEntities.TeamMembershipCriterionSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="name">The value of name</param>
+        public static global::Microsoft.Dynamics.DataEntities.TeamMembershipCriterionSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TeamMembershipCriterion> _source,
+            string name)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Name", name }
+            };
+            return new global::Microsoft.Dynamics.DataEntities.TeamMembershipCriterionSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
         }
         /// <summary>
         /// Get an entity of type global::Microsoft.Dynamics.DataEntities.AssetMaintenanceStop as global::Microsoft.Dynamics.DataEntities.AssetMaintenanceStopSingle specified by key from an entity set
@@ -24195,29 +24269,6 @@ namespace Microsoft.Dynamics.DataEntities
             return new global::Microsoft.Dynamics.DataEntities.RetailCatalogProductCategorySingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
         }
         /// <summary>
-        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetails as global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetailsSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="_source">source entity set</param>
-        /// <param name="_keys">dictionary with the names and values of keys</param>
-        public static global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetailsSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetails> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
-        {
-            return new global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetailsSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
-        }
-        /// <summary>
-        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetails as global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetailsSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="_source">source entity set</param>
-        /// <param name="engineeringProductCategoryName">The value of engineeringProductCategoryName</param>
-        public static global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetailsSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetails> _source,
-            string engineeringProductCategoryName)
-        {
-            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
-            {
-                { "EngineeringProductCategoryName", engineeringProductCategoryName }
-            };
-            return new global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetailsSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
-        }
-        /// <summary>
         /// Get an entity of type global::Microsoft.Dynamics.DataEntities.AllocationForMainAccount as global::Microsoft.Dynamics.DataEntities.AllocationForMainAccountSingle specified by key from an entity set
         /// </summary>
         /// <param name="_source">source entity set</param>
@@ -24245,6 +24296,29 @@ namespace Microsoft.Dynamics.DataEntities
                 { "LineNumber", lineNumber }
             };
             return new global::Microsoft.Dynamics.DataEntities.AllocationForMainAccountSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetails as global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetailsSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetailsSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetails> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetailsSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetails as global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetailsSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="engineeringProductCategoryName">The value of engineeringProductCategoryName</param>
+        public static global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetailsSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetails> _source,
+            string engineeringProductCategoryName)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "EngineeringProductCategoryName", engineeringProductCategoryName }
+            };
+            return new global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetailsSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
         }
         /// <summary>
         /// Get an entity of type global::Microsoft.Dynamics.DataEntities.Worker as global::Microsoft.Dynamics.DataEntities.WorkerSingle specified by key from an entity set
@@ -26725,7 +26799,6 @@ namespace Microsoft.Dynamics.DataEntities
             };
             return new global::Microsoft.Dynamics.DataEntities.TaxCodeValueV2Single(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
         }
-        
         /// <summary>
         /// Get an entity of type global::Microsoft.Dynamics.DataEntities.RDeferralsBook as global::Microsoft.Dynamics.DataEntities.RDeferralsBookSingle specified by key from an entity set
         /// </summary>
@@ -26754,6 +26827,29 @@ namespace Microsoft.Dynamics.DataEntities
                 { "ModelNumber", modelNumber }
             };
             return new global::Microsoft.Dynamics.DataEntities.RDeferralsBookSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.SystemNotificationUser as global::Microsoft.Dynamics.DataEntities.SystemNotificationUserSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Microsoft.Dynamics.DataEntities.SystemNotificationUserSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SystemNotificationUser> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Microsoft.Dynamics.DataEntities.SystemNotificationUserSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.SystemNotificationUser as global::Microsoft.Dynamics.DataEntities.SystemNotificationUserSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="userId">The value of userId</param>
+        public static global::Microsoft.Dynamics.DataEntities.SystemNotificationUserSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SystemNotificationUser> _source,
+            string userId)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "UserId", userId }
+            };
+            return new global::Microsoft.Dynamics.DataEntities.SystemNotificationUserSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
         }
         /// <summary>
         /// Get an entity of type global::Microsoft.Dynamics.DataEntities.BankParameter as global::Microsoft.Dynamics.DataEntities.BankParameterSingle specified by key from an entity set
@@ -27580,6 +27676,35 @@ namespace Microsoft.Dynamics.DataEntities
             return new global::Microsoft.Dynamics.DataEntities.ItemShipTxtTranslationSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
         }
         /// <summary>
+        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.ExpenseJournalLine as global::Microsoft.Dynamics.DataEntities.ExpenseJournalLineSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Microsoft.Dynamics.DataEntities.ExpenseJournalLineSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ExpenseJournalLine> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Microsoft.Dynamics.DataEntities.ExpenseJournalLineSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.ExpenseJournalLine as global::Microsoft.Dynamics.DataEntities.ExpenseJournalLineSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="dataAreaId">The value of dataAreaId</param>
+        /// <param name="journalBatchNumber">The value of journalBatchNumber</param>
+        /// <param name="lineNumber">The value of lineNumber</param>
+        public static global::Microsoft.Dynamics.DataEntities.ExpenseJournalLineSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ExpenseJournalLine> _source,
+            string dataAreaId, 
+            string journalBatchNumber, 
+            decimal lineNumber)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "dataAreaId", dataAreaId }, 
+                { "JournalBatchNumber", journalBatchNumber }, 
+                { "LineNumber", lineNumber }
+            };
+            return new global::Microsoft.Dynamics.DataEntities.ExpenseJournalLineSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
         /// Get an entity of type global::Microsoft.Dynamics.DataEntities.ChgSentProductReleaseLine as global::Microsoft.Dynamics.DataEntities.ChgSentProductReleaseLineSingle specified by key from an entity set
         /// </summary>
         /// <param name="_source">source entity set</param>
@@ -27616,35 +27741,6 @@ namespace Microsoft.Dynamics.DataEntities
                 { "ReleaseStatus", releaseStatus }
             };
             return new global::Microsoft.Dynamics.DataEntities.ChgSentProductReleaseLineSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
-        }
-        /// <summary>
-        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.ExpenseJournalLine as global::Microsoft.Dynamics.DataEntities.ExpenseJournalLineSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="_source">source entity set</param>
-        /// <param name="_keys">dictionary with the names and values of keys</param>
-        public static global::Microsoft.Dynamics.DataEntities.ExpenseJournalLineSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ExpenseJournalLine> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
-        {
-            return new global::Microsoft.Dynamics.DataEntities.ExpenseJournalLineSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
-        }
-        /// <summary>
-        /// Get an entity of type global::Microsoft.Dynamics.DataEntities.ExpenseJournalLine as global::Microsoft.Dynamics.DataEntities.ExpenseJournalLineSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="_source">source entity set</param>
-        /// <param name="dataAreaId">The value of dataAreaId</param>
-        /// <param name="journalBatchNumber">The value of journalBatchNumber</param>
-        /// <param name="lineNumber">The value of lineNumber</param>
-        public static global::Microsoft.Dynamics.DataEntities.ExpenseJournalLineSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ExpenseJournalLine> _source,
-            string dataAreaId, 
-            string journalBatchNumber, 
-            decimal lineNumber)
-        {
-            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
-            {
-                { "dataAreaId", dataAreaId }, 
-                { "JournalBatchNumber", journalBatchNumber }, 
-                { "LineNumber", lineNumber }
-            };
-            return new global::Microsoft.Dynamics.DataEntities.ExpenseJournalLineSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
         }
         /// <summary>
         /// Get an entity of type global::Microsoft.Dynamics.DataEntities.PurchaseAgreement as global::Microsoft.Dynamics.DataEntities.PurchaseAgreementSingle specified by key from an entity set
@@ -32632,7 +32728,18 @@ namespace Microsoft.Dynamics.DataEntities
 
             return new global::Microsoft.OData.Client.DataServiceActionQuery<string>(_source.Context, _source.AppendRequestUri("Microsoft.Dynamics.DataEntities.getBusinessEventsCategoriesWithIdV2"));
         }
-        
+        /// <summary>
+        /// There are no comments for SystemNotification in the schema.
+        /// </summary>
+        public static global::Microsoft.OData.Client.DataServiceActionQuerySingle<string> SystemNotification(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::Microsoft.Dynamics.DataEntities.SystemNotification> _source)
+        {
+            if (!_source.IsComposable)
+            {
+                throw new global::System.NotSupportedException("The previous function is not composable.");
+            }
+
+            return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<string>(_source.Context, _source.AppendRequestUri("Microsoft.Dynamics.DataEntities.SystemNotification"));
+        }
         /// <summary>
         /// There are no comments for ProjProjectTransferPriceV2EntityCategoryIdFieldCustomLookup in the schema.
         /// </summary>
@@ -32873,7 +32980,18 @@ namespace Microsoft.Dynamics.DataEntities
 
             return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<string>(_source.Context, _source.AppendRequestUri("Microsoft.Dynamics.DataEntities.DimensionIntegrationFormatEntityDimensionFormatTypeCustomLookup"), new global::Microsoft.OData.Client.BodyOperationParameter("_fields", _fields));
         }
-       
+        /// <summary>
+        /// There are no comments for SystemNotificationUser in the schema.
+        /// </summary>
+        public static global::Microsoft.OData.Client.DataServiceActionQuerySingle<string> SystemNotificationUser(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::Microsoft.Dynamics.DataEntities.SystemNotificationUser> _source)
+        {
+            if (!_source.IsComposable)
+            {
+                throw new global::System.NotSupportedException("The previous function is not composable.");
+            }
+
+            return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<string>(_source.Context, _source.AppendRequestUri("Microsoft.Dynamics.DataEntities.SystemNotificationUser"));
+        }
         /// <summary>
         /// There are no comments for Ship in the schema.
         /// </summary>
