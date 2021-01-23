@@ -26,8 +26,6 @@ namespace Part14
 
         public static string filePath = @"c:\temp\part14.txt";
 
-
-
         static void Main(string[] args)
         {
             Uri oDataUri = new Uri(ODataEntityPath, UriKind.Absolute);

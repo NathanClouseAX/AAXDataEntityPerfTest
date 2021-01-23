@@ -69,13 +69,13 @@ namespace Part11
 
             for (int i = 0; i < loopCount; i++)
             {
-                SalesOrderHeaderV2Tester.createWithSimpleEntityMinimum(context, filePath, SalesOrderTester.TestType.Repetitive, SalesOrderTester.TestWorkload.CreateCompoundMinimum, "USMF", "US-010");
+                SalesOrderHeaderV2Tester.createWithSimpleEntityMinimum(context, filePath, SalesOrderTester.TestType.Repetitive, SalesOrderTester.TestWorkload.CreateSimpleMinimum, "USMF", "US-010");
             }
 
 
             for (int i = 0; i < loopCount; i++)
             {
-                SalesOrderHeaderV2Tester.createWithSimpleEntityMaximum(context, filePath, SalesOrderTester.TestType.Repetitive, SalesOrderTester.TestWorkload.CreateCompoundMaximum, "USMF", "US-010");
+                SalesOrderHeaderV2Tester.createWithSimpleEntityMaximum(context, filePath, SalesOrderTester.TestType.Repetitive, SalesOrderTester.TestWorkload.CreateSimpleMaximum, "USMF", "US-010");
             }
 
 
