@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,69 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public ProductCategoryHierarchySingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ProductCategoryHierarchy> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for ProductCategoryHierarchyRoles in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductCategoryHierarchyRole> ProductCategoryHierarchyRoles
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ProductCategoryHierarchyRoles == null))
-                {
-                    this._ProductCategoryHierarchyRoles = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductCategoryHierarchyRole>(GetPath("ProductCategoryHierarchyRoles"));
-                }
-                return this._ProductCategoryHierarchyRoles;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductCategoryHierarchyRole> _ProductCategoryHierarchyRoles;
-        /// <summary>
-        /// There are no comments for RetailCatalogProductAttributeValue in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductAttributeValue> RetailCatalogProductAttributeValue
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._RetailCatalogProductAttributeValue == null))
-                {
-                    this._RetailCatalogProductAttributeValue = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductAttributeValue>(GetPath("RetailCatalogProductAttributeValue"));
-                }
-                return this._RetailCatalogProductAttributeValue;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductAttributeValue> _RetailCatalogProductAttributeValue;
-        /// <summary>
-        /// There are no comments for RetailStore in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailStore> RetailStore
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._RetailStore == null))
-                {
-                    this._RetailStore = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailStore>(GetPath("RetailStore"));
-                }
-                return this._RetailStore;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailStore> _RetailStore;
         /// <summary>
         /// There are no comments for RetailCallCenter in the schema.
         /// </summary>
@@ -160,6 +97,69 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductCategory> _ProductCategories;
+        /// <summary>
+        /// There are no comments for ProductCategoryHierarchyRoles in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductCategoryHierarchyRole> ProductCategoryHierarchyRoles
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ProductCategoryHierarchyRoles == null))
+                {
+                    this._ProductCategoryHierarchyRoles = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductCategoryHierarchyRole>(GetPath("ProductCategoryHierarchyRoles"));
+                }
+                return this._ProductCategoryHierarchyRoles;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductCategoryHierarchyRole> _ProductCategoryHierarchyRoles;
+        /// <summary>
+        /// There are no comments for RetailCatalogProductAttributeValue in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductAttributeValue> RetailCatalogProductAttributeValue
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RetailCatalogProductAttributeValue == null))
+                {
+                    this._RetailCatalogProductAttributeValue = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductAttributeValue>(GetPath("RetailCatalogProductAttributeValue"));
+                }
+                return this._RetailCatalogProductAttributeValue;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductAttributeValue> _RetailCatalogProductAttributeValue;
+        /// <summary>
+        /// There are no comments for RetailStore in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailStore> RetailStore
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RetailStore == null))
+                {
+                    this._RetailStore = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailStore>(GetPath("RetailStore"));
+                }
+                return this._RetailStore;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailStore> _RetailStore;
     }
         /// <summary>
         /// There are no comments for ProductCategoryHierarchy in the schema.
@@ -227,72 +227,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnHierarchyDescriptionChanging(string value);
         partial void OnHierarchyDescriptionChanged();
         /// <summary>
-        /// There are no comments for Property ProductCategoryHierarchyRoles in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductCategoryHierarchyRole> ProductCategoryHierarchyRoles
-        {
-            get
-            {
-                return this._ProductCategoryHierarchyRoles;
-            }
-            set
-            {
-                this.OnProductCategoryHierarchyRolesChanging(value);
-                this._ProductCategoryHierarchyRoles = value;
-                this.OnProductCategoryHierarchyRolesChanged();
-                this.OnPropertyChanged("ProductCategoryHierarchyRoles");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductCategoryHierarchyRole> _ProductCategoryHierarchyRoles = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductCategoryHierarchyRole>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnProductCategoryHierarchyRolesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductCategoryHierarchyRole> value);
-        partial void OnProductCategoryHierarchyRolesChanged();
-        /// <summary>
-        /// There are no comments for Property RetailCatalogProductAttributeValue in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductAttributeValue> RetailCatalogProductAttributeValue
-        {
-            get
-            {
-                return this._RetailCatalogProductAttributeValue;
-            }
-            set
-            {
-                this.OnRetailCatalogProductAttributeValueChanging(value);
-                this._RetailCatalogProductAttributeValue = value;
-                this.OnRetailCatalogProductAttributeValueChanged();
-                this.OnPropertyChanged("RetailCatalogProductAttributeValue");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductAttributeValue> _RetailCatalogProductAttributeValue = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductAttributeValue>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRetailCatalogProductAttributeValueChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductAttributeValue> value);
-        partial void OnRetailCatalogProductAttributeValueChanged();
-        /// <summary>
-        /// There are no comments for Property RetailStore in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStore> RetailStore
-        {
-            get
-            {
-                return this._RetailStore;
-            }
-            set
-            {
-                this.OnRetailStoreChanging(value);
-                this._RetailStore = value;
-                this.OnRetailStoreChanged();
-                this.OnPropertyChanged("RetailStore");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStore> _RetailStore = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStore>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRetailStoreChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStore> value);
-        partial void OnRetailStoreChanged();
-        /// <summary>
         /// There are no comments for Property RetailCallCenter in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -358,6 +292,72 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductCategory> _ProductCategories = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductCategory>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnProductCategoriesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductCategory> value);
         partial void OnProductCategoriesChanged();
+        /// <summary>
+        /// There are no comments for Property ProductCategoryHierarchyRoles in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductCategoryHierarchyRole> ProductCategoryHierarchyRoles
+        {
+            get
+            {
+                return this._ProductCategoryHierarchyRoles;
+            }
+            set
+            {
+                this.OnProductCategoryHierarchyRolesChanging(value);
+                this._ProductCategoryHierarchyRoles = value;
+                this.OnProductCategoryHierarchyRolesChanged();
+                this.OnPropertyChanged("ProductCategoryHierarchyRoles");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductCategoryHierarchyRole> _ProductCategoryHierarchyRoles = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductCategoryHierarchyRole>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnProductCategoryHierarchyRolesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductCategoryHierarchyRole> value);
+        partial void OnProductCategoryHierarchyRolesChanged();
+        /// <summary>
+        /// There are no comments for Property RetailCatalogProductAttributeValue in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductAttributeValue> RetailCatalogProductAttributeValue
+        {
+            get
+            {
+                return this._RetailCatalogProductAttributeValue;
+            }
+            set
+            {
+                this.OnRetailCatalogProductAttributeValueChanging(value);
+                this._RetailCatalogProductAttributeValue = value;
+                this.OnRetailCatalogProductAttributeValueChanged();
+                this.OnPropertyChanged("RetailCatalogProductAttributeValue");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductAttributeValue> _RetailCatalogProductAttributeValue = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductAttributeValue>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRetailCatalogProductAttributeValueChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductAttributeValue> value);
+        partial void OnRetailCatalogProductAttributeValueChanged();
+        /// <summary>
+        /// There are no comments for Property RetailStore in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStore> RetailStore
+        {
+            get
+            {
+                return this._RetailStore;
+            }
+            set
+            {
+                this.OnRetailStoreChanging(value);
+                this._RetailStore = value;
+                this.OnRetailStoreChanged();
+                this.OnPropertyChanged("RetailStore");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStore> _RetailStore = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStore>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRetailStoreChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStore> value);
+        partial void OnRetailStoreChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

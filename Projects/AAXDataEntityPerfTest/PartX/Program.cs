@@ -135,18 +135,20 @@ namespace PartX
 
             logger.saveNow();
         }
-
+        */
         static void Main(string[] args)
         {
+            /*
             StreamWriter stream = File.CreateText(filePath);
             stream.WriteLine("Entity,ThreadCount, TestType, Workload, Duration");
             stream.Flush();
             stream.Close();
 
             runProjectTest(100);
+            */
 
         }
-        */
+        
     }
         
 }

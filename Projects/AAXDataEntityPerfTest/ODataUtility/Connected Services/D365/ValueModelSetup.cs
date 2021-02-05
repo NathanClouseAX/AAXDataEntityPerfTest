@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,10 +35,10 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for ValueModels in the schema.
+        /// There are no comments for ValueModelAssetPostingProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.AssetParameterSingle ValueModels
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfile> ValueModelAssetPostingProfile
         {
             get
             {
@@ -46,20 +46,20 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._ValueModels == null))
+                if ((this._ValueModelAssetPostingProfile == null))
                 {
-                    this._ValueModels = new global::Microsoft.Dynamics.DataEntities.AssetParameterSingle(this.Context, GetPath("ValueModels"));
+                    this._ValueModelAssetPostingProfile = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfile>(GetPath("ValueModelAssetPostingProfile"));
                 }
-                return this._ValueModels;
+                return this._ValueModelAssetPostingProfile;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.AssetParameterSingle _ValueModels;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfile> _ValueModelAssetPostingProfile;
         /// <summary>
-        /// There are no comments for ValueModelAssetGroupValueModel in the schema.
+        /// There are no comments for ValueModelAssetGroupSetupBonus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupValueModelSetup> ValueModelAssetGroupValueModel
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupBookSpecialDepreciationAllowance> ValueModelAssetGroupSetupBonus
         {
             get
             {
@@ -67,15 +67,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._ValueModelAssetGroupValueModel == null))
+                if ((this._ValueModelAssetGroupSetupBonus == null))
                 {
-                    this._ValueModelAssetGroupValueModel = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupValueModelSetup>(GetPath("ValueModelAssetGroupValueModel"));
+                    this._ValueModelAssetGroupSetupBonus = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupBookSpecialDepreciationAllowance>(GetPath("ValueModelAssetGroupSetupBonus"));
                 }
-                return this._ValueModelAssetGroupValueModel;
+                return this._ValueModelAssetGroupSetupBonus;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupValueModelSetup> _ValueModelAssetGroupValueModel;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupBookSpecialDepreciationAllowance> _ValueModelAssetGroupSetupBonus;
         /// <summary>
         /// There are no comments for ValueModelAssetPostingProfileDisposal in the schema.
         /// </summary>
@@ -98,10 +98,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfileDisposal> _ValueModelAssetPostingProfileDisposal;
         /// <summary>
-        /// There are no comments for ValueModelSetupId in the schema.
+        /// There are no comments for ValueModelAssetGroupValueModel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> ValueModelSetupId
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupValueModelSetup> ValueModelAssetGroupValueModel
         {
             get
             {
@@ -109,15 +109,99 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._ValueModelSetupId == null))
+                if ((this._ValueModelAssetGroupValueModel == null))
                 {
-                    this._ValueModelSetupId = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel>(GetPath("ValueModelSetupId"));
+                    this._ValueModelAssetGroupValueModel = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupValueModelSetup>(GetPath("ValueModelAssetGroupValueModel"));
                 }
-                return this._ValueModelSetupId;
+                return this._ValueModelAssetGroupValueModel;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> _ValueModelSetupId;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupValueModelSetup> _ValueModelAssetGroupValueModel;
+        /// <summary>
+        /// There are no comments for DerivedValueModelDerivedValueModelSetup in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModelSetupDerivedValueModel> DerivedValueModelDerivedValueModelSetup
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._DerivedValueModelDerivedValueModelSetup == null))
+                {
+                    this._DerivedValueModelDerivedValueModelSetup = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModelSetupDerivedValueModel>(GetPath("DerivedValueModelDerivedValueModelSetup"));
+                }
+                return this._DerivedValueModelDerivedValueModelSetup;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModelSetupDerivedValueModel> _DerivedValueModelDerivedValueModelSetup;
+        /// <summary>
+        /// There are no comments for ValueModelDerivedValueModelSetup in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModelSetupDerivedValueModel> ValueModelDerivedValueModelSetup
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ValueModelDerivedValueModelSetup == null))
+                {
+                    this._ValueModelDerivedValueModelSetup = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModelSetupDerivedValueModel>(GetPath("ValueModelDerivedValueModelSetup"));
+                }
+                return this._ValueModelDerivedValueModelSetup;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModelSetupDerivedValueModel> _ValueModelDerivedValueModelSetup;
+        /// <summary>
+        /// There are no comments for ValueModelAssetJournalLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetJournalLine> ValueModelAssetJournalLine
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ValueModelAssetJournalLine == null))
+                {
+                    this._ValueModelAssetJournalLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AssetJournalLine>(GetPath("ValueModelAssetJournalLine"));
+                }
+                return this._ValueModelAssetJournalLine;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetJournalLine> _ValueModelAssetJournalLine;
+        /// <summary>
+        /// There are no comments for AssetBookV2SetupId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> AssetBookV2SetupId
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._AssetBookV2SetupId == null))
+                {
+                    this._AssetBookV2SetupId = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2>(GetPath("AssetBookV2SetupId"));
+                }
+                return this._AssetBookV2SetupId;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> _AssetBookV2SetupId;
         /// <summary>
         /// There are no comments for AssetDepreciationProfile in the schema.
         /// </summary>
@@ -203,10 +287,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DepreciationProfileSingle _AssetAcceleratedDepreciationProfile;
         /// <summary>
-        /// There are no comments for AssetBookV2SetupId in the schema.
+        /// There are no comments for ValueModelSetupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> AssetBookV2SetupId
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> ValueModelSetupId
         {
             get
             {
@@ -214,20 +298,20 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._AssetBookV2SetupId == null))
+                if ((this._ValueModelSetupId == null))
                 {
-                    this._AssetBookV2SetupId = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2>(GetPath("AssetBookV2SetupId"));
+                    this._ValueModelSetupId = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel>(GetPath("ValueModelSetupId"));
                 }
-                return this._AssetBookV2SetupId;
+                return this._ValueModelSetupId;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> _AssetBookV2SetupId;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> _ValueModelSetupId;
         /// <summary>
-        /// There are no comments for DerivedValueModelDerivedValueModelSetup in the schema.
+        /// There are no comments for ValueModels in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModelSetupDerivedValueModel> DerivedValueModelDerivedValueModelSetup
+        public virtual global::Microsoft.Dynamics.DataEntities.AssetParameterSingle ValueModels
         {
             get
             {
@@ -235,99 +319,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._DerivedValueModelDerivedValueModelSetup == null))
+                if ((this._ValueModels == null))
                 {
-                    this._DerivedValueModelDerivedValueModelSetup = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModelSetupDerivedValueModel>(GetPath("DerivedValueModelDerivedValueModelSetup"));
+                    this._ValueModels = new global::Microsoft.Dynamics.DataEntities.AssetParameterSingle(this.Context, GetPath("ValueModels"));
                 }
-                return this._DerivedValueModelDerivedValueModelSetup;
+                return this._ValueModels;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModelSetupDerivedValueModel> _DerivedValueModelDerivedValueModelSetup;
-        /// <summary>
-        /// There are no comments for ValueModelDerivedValueModelSetup in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModelSetupDerivedValueModel> ValueModelDerivedValueModelSetup
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ValueModelDerivedValueModelSetup == null))
-                {
-                    this._ValueModelDerivedValueModelSetup = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModelSetupDerivedValueModel>(GetPath("ValueModelDerivedValueModelSetup"));
-                }
-                return this._ValueModelDerivedValueModelSetup;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModelSetupDerivedValueModel> _ValueModelDerivedValueModelSetup;
-        /// <summary>
-        /// There are no comments for ValueModelAssetGroupSetupBonus in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupBookSpecialDepreciationAllowance> ValueModelAssetGroupSetupBonus
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ValueModelAssetGroupSetupBonus == null))
-                {
-                    this._ValueModelAssetGroupSetupBonus = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupBookSpecialDepreciationAllowance>(GetPath("ValueModelAssetGroupSetupBonus"));
-                }
-                return this._ValueModelAssetGroupSetupBonus;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupBookSpecialDepreciationAllowance> _ValueModelAssetGroupSetupBonus;
-        /// <summary>
-        /// There are no comments for ValueModelAssetJournalLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetJournalLine> ValueModelAssetJournalLine
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ValueModelAssetJournalLine == null))
-                {
-                    this._ValueModelAssetJournalLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AssetJournalLine>(GetPath("ValueModelAssetJournalLine"));
-                }
-                return this._ValueModelAssetJournalLine;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetJournalLine> _ValueModelAssetJournalLine;
-        /// <summary>
-        /// There are no comments for ValueModelAssetPostingProfile in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfile> ValueModelAssetPostingProfile
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ValueModelAssetPostingProfile == null))
-                {
-                    this._ValueModelAssetPostingProfile = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfile>(GetPath("ValueModelAssetPostingProfile"));
-                }
-                return this._ValueModelAssetPostingProfile;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfile> _ValueModelAssetPostingProfile;
+        private global::Microsoft.Dynamics.DataEntities.AssetParameterSingle _ValueModels;
     }
         /// <summary>
         /// There are no comments for ValueModelSetup in the schema.
@@ -920,49 +920,49 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnPostingLayerChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.CurrentOperationsTax> value);
         partial void OnPostingLayerChanged();
         /// <summary>
-        /// There are no comments for Property ValueModels in the schema.
+        /// There are no comments for Property ValueModelAssetPostingProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.AssetParameter ValueModels
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfile> ValueModelAssetPostingProfile
         {
             get
             {
-                return this._ValueModels;
+                return this._ValueModelAssetPostingProfile;
             }
             set
             {
-                this.OnValueModelsChanging(value);
-                this._ValueModels = value;
-                this.OnValueModelsChanged();
-                this.OnPropertyChanged("ValueModels");
+                this.OnValueModelAssetPostingProfileChanging(value);
+                this._ValueModelAssetPostingProfile = value;
+                this.OnValueModelAssetPostingProfileChanged();
+                this.OnPropertyChanged("ValueModelAssetPostingProfile");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.AssetParameter _ValueModels;
-        partial void OnValueModelsChanging(global::Microsoft.Dynamics.DataEntities.AssetParameter value);
-        partial void OnValueModelsChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfile> _ValueModelAssetPostingProfile = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfile>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnValueModelAssetPostingProfileChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfile> value);
+        partial void OnValueModelAssetPostingProfileChanged();
         /// <summary>
-        /// There are no comments for Property ValueModelAssetGroupValueModel in the schema.
+        /// There are no comments for Property ValueModelAssetGroupSetupBonus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupValueModelSetup> ValueModelAssetGroupValueModel
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupBookSpecialDepreciationAllowance> ValueModelAssetGroupSetupBonus
         {
             get
             {
-                return this._ValueModelAssetGroupValueModel;
+                return this._ValueModelAssetGroupSetupBonus;
             }
             set
             {
-                this.OnValueModelAssetGroupValueModelChanging(value);
-                this._ValueModelAssetGroupValueModel = value;
-                this.OnValueModelAssetGroupValueModelChanged();
-                this.OnPropertyChanged("ValueModelAssetGroupValueModel");
+                this.OnValueModelAssetGroupSetupBonusChanging(value);
+                this._ValueModelAssetGroupSetupBonus = value;
+                this.OnValueModelAssetGroupSetupBonusChanged();
+                this.OnPropertyChanged("ValueModelAssetGroupSetupBonus");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupValueModelSetup> _ValueModelAssetGroupValueModel = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupValueModelSetup>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnValueModelAssetGroupValueModelChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupValueModelSetup> value);
-        partial void OnValueModelAssetGroupValueModelChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupBookSpecialDepreciationAllowance> _ValueModelAssetGroupSetupBonus = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupBookSpecialDepreciationAllowance>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnValueModelAssetGroupSetupBonusChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupBookSpecialDepreciationAllowance> value);
+        partial void OnValueModelAssetGroupSetupBonusChanged();
         /// <summary>
         /// There are no comments for Property ValueModelAssetPostingProfileDisposal in the schema.
         /// </summary>
@@ -986,27 +986,115 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnValueModelAssetPostingProfileDisposalChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfileDisposal> value);
         partial void OnValueModelAssetPostingProfileDisposalChanged();
         /// <summary>
-        /// There are no comments for Property ValueModelSetupId in the schema.
+        /// There are no comments for Property ValueModelAssetGroupValueModel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> ValueModelSetupId
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupValueModelSetup> ValueModelAssetGroupValueModel
         {
             get
             {
-                return this._ValueModelSetupId;
+                return this._ValueModelAssetGroupValueModel;
             }
             set
             {
-                this.OnValueModelSetupIdChanging(value);
-                this._ValueModelSetupId = value;
-                this.OnValueModelSetupIdChanged();
-                this.OnPropertyChanged("ValueModelSetupId");
+                this.OnValueModelAssetGroupValueModelChanging(value);
+                this._ValueModelAssetGroupValueModel = value;
+                this.OnValueModelAssetGroupValueModelChanged();
+                this.OnPropertyChanged("ValueModelAssetGroupValueModel");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> _ValueModelSetupId = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnValueModelSetupIdChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> value);
-        partial void OnValueModelSetupIdChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupValueModelSetup> _ValueModelAssetGroupValueModel = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupValueModelSetup>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnValueModelAssetGroupValueModelChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupValueModelSetup> value);
+        partial void OnValueModelAssetGroupValueModelChanged();
+        /// <summary>
+        /// There are no comments for Property DerivedValueModelDerivedValueModelSetup in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModelSetupDerivedValueModel> DerivedValueModelDerivedValueModelSetup
+        {
+            get
+            {
+                return this._DerivedValueModelDerivedValueModelSetup;
+            }
+            set
+            {
+                this.OnDerivedValueModelDerivedValueModelSetupChanging(value);
+                this._DerivedValueModelDerivedValueModelSetup = value;
+                this.OnDerivedValueModelDerivedValueModelSetupChanged();
+                this.OnPropertyChanged("DerivedValueModelDerivedValueModelSetup");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModelSetupDerivedValueModel> _DerivedValueModelDerivedValueModelSetup = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModelSetupDerivedValueModel>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnDerivedValueModelDerivedValueModelSetupChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModelSetupDerivedValueModel> value);
+        partial void OnDerivedValueModelDerivedValueModelSetupChanged();
+        /// <summary>
+        /// There are no comments for Property ValueModelDerivedValueModelSetup in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModelSetupDerivedValueModel> ValueModelDerivedValueModelSetup
+        {
+            get
+            {
+                return this._ValueModelDerivedValueModelSetup;
+            }
+            set
+            {
+                this.OnValueModelDerivedValueModelSetupChanging(value);
+                this._ValueModelDerivedValueModelSetup = value;
+                this.OnValueModelDerivedValueModelSetupChanged();
+                this.OnPropertyChanged("ValueModelDerivedValueModelSetup");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModelSetupDerivedValueModel> _ValueModelDerivedValueModelSetup = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModelSetupDerivedValueModel>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnValueModelDerivedValueModelSetupChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModelSetupDerivedValueModel> value);
+        partial void OnValueModelDerivedValueModelSetupChanged();
+        /// <summary>
+        /// There are no comments for Property ValueModelAssetJournalLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetJournalLine> ValueModelAssetJournalLine
+        {
+            get
+            {
+                return this._ValueModelAssetJournalLine;
+            }
+            set
+            {
+                this.OnValueModelAssetJournalLineChanging(value);
+                this._ValueModelAssetJournalLine = value;
+                this.OnValueModelAssetJournalLineChanged();
+                this.OnPropertyChanged("ValueModelAssetJournalLine");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetJournalLine> _ValueModelAssetJournalLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetJournalLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnValueModelAssetJournalLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetJournalLine> value);
+        partial void OnValueModelAssetJournalLineChanged();
+        /// <summary>
+        /// There are no comments for Property AssetBookV2SetupId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> AssetBookV2SetupId
+        {
+            get
+            {
+                return this._AssetBookV2SetupId;
+            }
+            set
+            {
+                this.OnAssetBookV2SetupIdChanging(value);
+                this._AssetBookV2SetupId = value;
+                this.OnAssetBookV2SetupIdChanged();
+                this.OnPropertyChanged("AssetBookV2SetupId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> _AssetBookV2SetupId = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnAssetBookV2SetupIdChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> value);
+        partial void OnAssetBookV2SetupIdChanged();
         /// <summary>
         /// There are no comments for Property AssetDepreciationProfile in the schema.
         /// </summary>
@@ -1096,137 +1184,49 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnAssetAcceleratedDepreciationProfileChanging(global::Microsoft.Dynamics.DataEntities.DepreciationProfile value);
         partial void OnAssetAcceleratedDepreciationProfileChanged();
         /// <summary>
-        /// There are no comments for Property AssetBookV2SetupId in the schema.
+        /// There are no comments for Property ValueModelSetupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> AssetBookV2SetupId
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> ValueModelSetupId
         {
             get
             {
-                return this._AssetBookV2SetupId;
+                return this._ValueModelSetupId;
             }
             set
             {
-                this.OnAssetBookV2SetupIdChanging(value);
-                this._AssetBookV2SetupId = value;
-                this.OnAssetBookV2SetupIdChanged();
-                this.OnPropertyChanged("AssetBookV2SetupId");
+                this.OnValueModelSetupIdChanging(value);
+                this._ValueModelSetupId = value;
+                this.OnValueModelSetupIdChanged();
+                this.OnPropertyChanged("ValueModelSetupId");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> _AssetBookV2SetupId = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAssetBookV2SetupIdChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> value);
-        partial void OnAssetBookV2SetupIdChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> _ValueModelSetupId = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnValueModelSetupIdChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> value);
+        partial void OnValueModelSetupIdChanged();
         /// <summary>
-        /// There are no comments for Property DerivedValueModelDerivedValueModelSetup in the schema.
+        /// There are no comments for Property ValueModels in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModelSetupDerivedValueModel> DerivedValueModelDerivedValueModelSetup
+        public virtual global::Microsoft.Dynamics.DataEntities.AssetParameter ValueModels
         {
             get
             {
-                return this._DerivedValueModelDerivedValueModelSetup;
+                return this._ValueModels;
             }
             set
             {
-                this.OnDerivedValueModelDerivedValueModelSetupChanging(value);
-                this._DerivedValueModelDerivedValueModelSetup = value;
-                this.OnDerivedValueModelDerivedValueModelSetupChanged();
-                this.OnPropertyChanged("DerivedValueModelDerivedValueModelSetup");
+                this.OnValueModelsChanging(value);
+                this._ValueModels = value;
+                this.OnValueModelsChanged();
+                this.OnPropertyChanged("ValueModels");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModelSetupDerivedValueModel> _DerivedValueModelDerivedValueModelSetup = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModelSetupDerivedValueModel>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnDerivedValueModelDerivedValueModelSetupChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModelSetupDerivedValueModel> value);
-        partial void OnDerivedValueModelDerivedValueModelSetupChanged();
-        /// <summary>
-        /// There are no comments for Property ValueModelDerivedValueModelSetup in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModelSetupDerivedValueModel> ValueModelDerivedValueModelSetup
-        {
-            get
-            {
-                return this._ValueModelDerivedValueModelSetup;
-            }
-            set
-            {
-                this.OnValueModelDerivedValueModelSetupChanging(value);
-                this._ValueModelDerivedValueModelSetup = value;
-                this.OnValueModelDerivedValueModelSetupChanged();
-                this.OnPropertyChanged("ValueModelDerivedValueModelSetup");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModelSetupDerivedValueModel> _ValueModelDerivedValueModelSetup = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModelSetupDerivedValueModel>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnValueModelDerivedValueModelSetupChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModelSetupDerivedValueModel> value);
-        partial void OnValueModelDerivedValueModelSetupChanged();
-        /// <summary>
-        /// There are no comments for Property ValueModelAssetGroupSetupBonus in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupBookSpecialDepreciationAllowance> ValueModelAssetGroupSetupBonus
-        {
-            get
-            {
-                return this._ValueModelAssetGroupSetupBonus;
-            }
-            set
-            {
-                this.OnValueModelAssetGroupSetupBonusChanging(value);
-                this._ValueModelAssetGroupSetupBonus = value;
-                this.OnValueModelAssetGroupSetupBonusChanged();
-                this.OnPropertyChanged("ValueModelAssetGroupSetupBonus");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupBookSpecialDepreciationAllowance> _ValueModelAssetGroupSetupBonus = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupBookSpecialDepreciationAllowance>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnValueModelAssetGroupSetupBonusChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupBookSpecialDepreciationAllowance> value);
-        partial void OnValueModelAssetGroupSetupBonusChanged();
-        /// <summary>
-        /// There are no comments for Property ValueModelAssetJournalLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetJournalLine> ValueModelAssetJournalLine
-        {
-            get
-            {
-                return this._ValueModelAssetJournalLine;
-            }
-            set
-            {
-                this.OnValueModelAssetJournalLineChanging(value);
-                this._ValueModelAssetJournalLine = value;
-                this.OnValueModelAssetJournalLineChanged();
-                this.OnPropertyChanged("ValueModelAssetJournalLine");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetJournalLine> _ValueModelAssetJournalLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetJournalLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnValueModelAssetJournalLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetJournalLine> value);
-        partial void OnValueModelAssetJournalLineChanged();
-        /// <summary>
-        /// There are no comments for Property ValueModelAssetPostingProfile in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfile> ValueModelAssetPostingProfile
-        {
-            get
-            {
-                return this._ValueModelAssetPostingProfile;
-            }
-            set
-            {
-                this.OnValueModelAssetPostingProfileChanging(value);
-                this._ValueModelAssetPostingProfile = value;
-                this.OnValueModelAssetPostingProfileChanged();
-                this.OnPropertyChanged("ValueModelAssetPostingProfile");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfile> _ValueModelAssetPostingProfile = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfile>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnValueModelAssetPostingProfileChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfile> value);
-        partial void OnValueModelAssetPostingProfileChanged();
+        private global::Microsoft.Dynamics.DataEntities.AssetParameter _ValueModels;
+        partial void OnValueModelsChanging(global::Microsoft.Dynamics.DataEntities.AssetParameter value);
+        partial void OnValueModelsChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,6 +34,27 @@ namespace Microsoft.Dynamics.DataEntities
         public PayCycleSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<PayCycle> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for PayStatement in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayStatementHeader> PayStatement
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._PayStatement == null))
+                {
+                    this._PayStatement = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PayStatementHeader>(GetPath("PayStatement"));
+                }
+                return this._PayStatement;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayStatementHeader> _PayStatement;
         /// <summary>
         /// There are no comments for PayPeriod in the schema.
         /// </summary>
@@ -76,27 +97,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.PayrollPositionDetailSingle _PayrollPositionDetail;
-        /// <summary>
-        /// There are no comments for PayStatement in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayStatementHeader> PayStatement
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._PayStatement == null))
-                {
-                    this._PayStatement = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PayStatementHeader>(GetPath("PayStatement"));
-                }
-                return this._PayStatement;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayStatementHeader> _PayStatement;
     }
         /// <summary>
         /// There are no comments for PayCycle in the schema.
@@ -186,6 +186,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnPayCycleFrequencyChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PayrollTimePeriod> value);
         partial void OnPayCycleFrequencyChanged();
         /// <summary>
+        /// There are no comments for Property PayStatement in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementHeader> PayStatement
+        {
+            get
+            {
+                return this._PayStatement;
+            }
+            set
+            {
+                this.OnPayStatementChanging(value);
+                this._PayStatement = value;
+                this.OnPayStatementChanged();
+                this.OnPropertyChanged("PayStatement");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementHeader> _PayStatement = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementHeader>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPayStatementChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementHeader> value);
+        partial void OnPayStatementChanged();
+        /// <summary>
         /// There are no comments for Property PayPeriod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -229,28 +251,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.PayrollPositionDetail _PayrollPositionDetail;
         partial void OnPayrollPositionDetailChanging(global::Microsoft.Dynamics.DataEntities.PayrollPositionDetail value);
         partial void OnPayrollPositionDetailChanged();
-        /// <summary>
-        /// There are no comments for Property PayStatement in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementHeader> PayStatement
-        {
-            get
-            {
-                return this._PayStatement;
-            }
-            set
-            {
-                this.OnPayStatementChanging(value);
-                this._PayStatement = value;
-                this.OnPayStatementChanged();
-                this.OnPropertyChanged("PayStatement");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementHeader> _PayStatement = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementHeader>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPayStatementChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementHeader> value);
-        partial void OnPayStatementChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

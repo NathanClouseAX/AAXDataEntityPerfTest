@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,10 +35,10 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for BudgetControlGroupBudgetManager in the schema.
+        /// There are no comments for PersonUserSystemUserEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlGroup> BudgetControlGroupBudgetManager
+        public virtual global::Microsoft.Dynamics.DataEntities.PersonUserSingle PersonUserSystemUserEntity
         {
             get
             {
@@ -46,15 +46,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._BudgetControlGroupBudgetManager == null))
+                if ((this._PersonUserSystemUserEntity == null))
                 {
-                    this._BudgetControlGroupBudgetManager = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlGroup>(GetPath("BudgetControlGroupBudgetManager"));
+                    this._PersonUserSystemUserEntity = new global::Microsoft.Dynamics.DataEntities.PersonUserSingle(this.Context, GetPath("PersonUserSystemUserEntity"));
                 }
-                return this._BudgetControlGroupBudgetManager;
+                return this._PersonUserSystemUserEntity;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlGroup> _BudgetControlGroupBudgetManager;
+        private global::Microsoft.Dynamics.DataEntities.PersonUserSingle _PersonUserSystemUserEntity;
         /// <summary>
         /// There are no comments for UserGroupUserList in the schema.
         /// </summary>
@@ -77,10 +77,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.UserGroupUserList> _UserGroupUserList;
         /// <summary>
-        /// There are no comments for ItemArrivalJournalHeadersV2 in the schema.
+        /// There are no comments for LedgerAccountAlias in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ItemArrivalJournalHeaderV2> ItemArrivalJournalHeadersV2
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias> LedgerAccountAlias
         {
             get
             {
@@ -88,20 +88,20 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._ItemArrivalJournalHeadersV2 == null))
+                if ((this._LedgerAccountAlias == null))
                 {
-                    this._ItemArrivalJournalHeadersV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ItemArrivalJournalHeaderV2>(GetPath("ItemArrivalJournalHeadersV2"));
+                    this._LedgerAccountAlias = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias>(GetPath("LedgerAccountAlias"));
                 }
-                return this._ItemArrivalJournalHeadersV2;
+                return this._LedgerAccountAlias;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ItemArrivalJournalHeaderV2> _ItemArrivalJournalHeadersV2;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias> _LedgerAccountAlias;
         /// <summary>
-        /// There are no comments for BudgetTrackingWorkspaceParametersSystemUser in the schema.
+        /// There are no comments for BudgetControlGroupBudgetManager in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> BudgetTrackingWorkspaceParametersSystemUser
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlGroup> BudgetControlGroupBudgetManager
         {
             get
             {
@@ -109,36 +109,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._BudgetTrackingWorkspaceParametersSystemUser == null))
+                if ((this._BudgetControlGroupBudgetManager == null))
                 {
-                    this._BudgetTrackingWorkspaceParametersSystemUser = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters>(GetPath("BudgetTrackingWorkspaceParametersSystemUser"));
+                    this._BudgetControlGroupBudgetManager = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlGroup>(GetPath("BudgetControlGroupBudgetManager"));
                 }
-                return this._BudgetTrackingWorkspaceParametersSystemUser;
+                return this._BudgetControlGroupBudgetManager;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> _BudgetTrackingWorkspaceParametersSystemUser;
-        /// <summary>
-        /// There are no comments for BudgetControlRuleBudgetManager in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlRule> BudgetControlRuleBudgetManager
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._BudgetControlRuleBudgetManager == null))
-                {
-                    this._BudgetControlRuleBudgetManager = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlRule>(GetPath("BudgetControlRuleBudgetManager"));
-                }
-                return this._BudgetControlRuleBudgetManager;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlRule> _BudgetControlRuleBudgetManager;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlGroup> _BudgetControlGroupBudgetManager;
         /// <summary>
         /// There are no comments for DefaultBudgetManager in the schema.
         /// </summary>
@@ -161,10 +140,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlConfiguration> _DefaultBudgetManager;
         /// <summary>
-        /// There are no comments for LedgerAccountAlias in the schema.
+        /// There are no comments for BudgetTrackingWorkspaceParametersSystemUser in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias> LedgerAccountAlias
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> BudgetTrackingWorkspaceParametersSystemUser
         {
             get
             {
@@ -172,20 +151,20 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._LedgerAccountAlias == null))
+                if ((this._BudgetTrackingWorkspaceParametersSystemUser == null))
                 {
-                    this._LedgerAccountAlias = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias>(GetPath("LedgerAccountAlias"));
+                    this._BudgetTrackingWorkspaceParametersSystemUser = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters>(GetPath("BudgetTrackingWorkspaceParametersSystemUser"));
                 }
-                return this._LedgerAccountAlias;
+                return this._BudgetTrackingWorkspaceParametersSystemUser;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias> _LedgerAccountAlias;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> _BudgetTrackingWorkspaceParametersSystemUser;
         /// <summary>
-        /// There are no comments for PersonUserSystemUserEntity in the schema.
+        /// There are no comments for ItemArrivalJournalHeadersV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.PersonUserSingle PersonUserSystemUserEntity
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ItemArrivalJournalHeaderV2> ItemArrivalJournalHeadersV2
         {
             get
             {
@@ -193,15 +172,36 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._PersonUserSystemUserEntity == null))
+                if ((this._ItemArrivalJournalHeadersV2 == null))
                 {
-                    this._PersonUserSystemUserEntity = new global::Microsoft.Dynamics.DataEntities.PersonUserSingle(this.Context, GetPath("PersonUserSystemUserEntity"));
+                    this._ItemArrivalJournalHeadersV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ItemArrivalJournalHeaderV2>(GetPath("ItemArrivalJournalHeadersV2"));
                 }
-                return this._PersonUserSystemUserEntity;
+                return this._ItemArrivalJournalHeadersV2;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.PersonUserSingle _PersonUserSystemUserEntity;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ItemArrivalJournalHeaderV2> _ItemArrivalJournalHeadersV2;
+        /// <summary>
+        /// There are no comments for BudgetControlRuleBudgetManager in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlRule> BudgetControlRuleBudgetManager
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._BudgetControlRuleBudgetManager == null))
+                {
+                    this._BudgetControlRuleBudgetManager = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlRule>(GetPath("BudgetControlRuleBudgetManager"));
+                }
+                return this._BudgetControlRuleBudgetManager;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlRule> _BudgetControlRuleBudgetManager;
     }
         /// <summary>
         /// There are no comments for SystemUser in the schema.
@@ -1183,27 +1183,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnAutomaticUrlUpdateChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> value);
         partial void OnAutomaticUrlUpdateChanged();
         /// <summary>
-        /// There are no comments for Property BudgetControlGroupBudgetManager in the schema.
+        /// There are no comments for Property PersonUserSystemUserEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlGroup> BudgetControlGroupBudgetManager
+        public virtual global::Microsoft.Dynamics.DataEntities.PersonUser PersonUserSystemUserEntity
         {
             get
             {
-                return this._BudgetControlGroupBudgetManager;
+                return this._PersonUserSystemUserEntity;
             }
             set
             {
-                this.OnBudgetControlGroupBudgetManagerChanging(value);
-                this._BudgetControlGroupBudgetManager = value;
-                this.OnBudgetControlGroupBudgetManagerChanged();
-                this.OnPropertyChanged("BudgetControlGroupBudgetManager");
+                this.OnPersonUserSystemUserEntityChanging(value);
+                this._PersonUserSystemUserEntity = value;
+                this.OnPersonUserSystemUserEntityChanged();
+                this.OnPropertyChanged("PersonUserSystemUserEntity");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlGroup> _BudgetControlGroupBudgetManager = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlGroup>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnBudgetControlGroupBudgetManagerChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlGroup> value);
-        partial void OnBudgetControlGroupBudgetManagerChanged();
+        private global::Microsoft.Dynamics.DataEntities.PersonUser _PersonUserSystemUserEntity;
+        partial void OnPersonUserSystemUserEntityChanging(global::Microsoft.Dynamics.DataEntities.PersonUser value);
+        partial void OnPersonUserSystemUserEntityChanged();
         /// <summary>
         /// There are no comments for Property UserGroupUserList in the schema.
         /// </summary>
@@ -1227,71 +1227,49 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnUserGroupUserListChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.UserGroupUserList> value);
         partial void OnUserGroupUserListChanged();
         /// <summary>
-        /// There are no comments for Property ItemArrivalJournalHeadersV2 in the schema.
+        /// There are no comments for Property LedgerAccountAlias in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemArrivalJournalHeaderV2> ItemArrivalJournalHeadersV2
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias> LedgerAccountAlias
         {
             get
             {
-                return this._ItemArrivalJournalHeadersV2;
+                return this._LedgerAccountAlias;
             }
             set
             {
-                this.OnItemArrivalJournalHeadersV2Changing(value);
-                this._ItemArrivalJournalHeadersV2 = value;
-                this.OnItemArrivalJournalHeadersV2Changed();
-                this.OnPropertyChanged("ItemArrivalJournalHeadersV2");
+                this.OnLedgerAccountAliasChanging(value);
+                this._LedgerAccountAlias = value;
+                this.OnLedgerAccountAliasChanged();
+                this.OnPropertyChanged("LedgerAccountAlias");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemArrivalJournalHeaderV2> _ItemArrivalJournalHeadersV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemArrivalJournalHeaderV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnItemArrivalJournalHeadersV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemArrivalJournalHeaderV2> value);
-        partial void OnItemArrivalJournalHeadersV2Changed();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias> _LedgerAccountAlias = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnLedgerAccountAliasChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias> value);
+        partial void OnLedgerAccountAliasChanged();
         /// <summary>
-        /// There are no comments for Property BudgetTrackingWorkspaceParametersSystemUser in the schema.
+        /// There are no comments for Property BudgetControlGroupBudgetManager in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> BudgetTrackingWorkspaceParametersSystemUser
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlGroup> BudgetControlGroupBudgetManager
         {
             get
             {
-                return this._BudgetTrackingWorkspaceParametersSystemUser;
+                return this._BudgetControlGroupBudgetManager;
             }
             set
             {
-                this.OnBudgetTrackingWorkspaceParametersSystemUserChanging(value);
-                this._BudgetTrackingWorkspaceParametersSystemUser = value;
-                this.OnBudgetTrackingWorkspaceParametersSystemUserChanged();
-                this.OnPropertyChanged("BudgetTrackingWorkspaceParametersSystemUser");
+                this.OnBudgetControlGroupBudgetManagerChanging(value);
+                this._BudgetControlGroupBudgetManager = value;
+                this.OnBudgetControlGroupBudgetManagerChanged();
+                this.OnPropertyChanged("BudgetControlGroupBudgetManager");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> _BudgetTrackingWorkspaceParametersSystemUser = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnBudgetTrackingWorkspaceParametersSystemUserChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> value);
-        partial void OnBudgetTrackingWorkspaceParametersSystemUserChanged();
-        /// <summary>
-        /// There are no comments for Property BudgetControlRuleBudgetManager in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRule> BudgetControlRuleBudgetManager
-        {
-            get
-            {
-                return this._BudgetControlRuleBudgetManager;
-            }
-            set
-            {
-                this.OnBudgetControlRuleBudgetManagerChanging(value);
-                this._BudgetControlRuleBudgetManager = value;
-                this.OnBudgetControlRuleBudgetManagerChanged();
-                this.OnPropertyChanged("BudgetControlRuleBudgetManager");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRule> _BudgetControlRuleBudgetManager = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRule>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnBudgetControlRuleBudgetManagerChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRule> value);
-        partial void OnBudgetControlRuleBudgetManagerChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlGroup> _BudgetControlGroupBudgetManager = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlGroup>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnBudgetControlGroupBudgetManagerChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlGroup> value);
+        partial void OnBudgetControlGroupBudgetManagerChanged();
         /// <summary>
         /// There are no comments for Property DefaultBudgetManager in the schema.
         /// </summary>
@@ -1315,49 +1293,71 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDefaultBudgetManagerChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlConfiguration> value);
         partial void OnDefaultBudgetManagerChanged();
         /// <summary>
-        /// There are no comments for Property LedgerAccountAlias in the schema.
+        /// There are no comments for Property BudgetTrackingWorkspaceParametersSystemUser in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias> LedgerAccountAlias
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> BudgetTrackingWorkspaceParametersSystemUser
         {
             get
             {
-                return this._LedgerAccountAlias;
+                return this._BudgetTrackingWorkspaceParametersSystemUser;
             }
             set
             {
-                this.OnLedgerAccountAliasChanging(value);
-                this._LedgerAccountAlias = value;
-                this.OnLedgerAccountAliasChanged();
-                this.OnPropertyChanged("LedgerAccountAlias");
+                this.OnBudgetTrackingWorkspaceParametersSystemUserChanging(value);
+                this._BudgetTrackingWorkspaceParametersSystemUser = value;
+                this.OnBudgetTrackingWorkspaceParametersSystemUserChanged();
+                this.OnPropertyChanged("BudgetTrackingWorkspaceParametersSystemUser");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias> _LedgerAccountAlias = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnLedgerAccountAliasChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias> value);
-        partial void OnLedgerAccountAliasChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> _BudgetTrackingWorkspaceParametersSystemUser = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnBudgetTrackingWorkspaceParametersSystemUserChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> value);
+        partial void OnBudgetTrackingWorkspaceParametersSystemUserChanged();
         /// <summary>
-        /// There are no comments for Property PersonUserSystemUserEntity in the schema.
+        /// There are no comments for Property ItemArrivalJournalHeadersV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.PersonUser PersonUserSystemUserEntity
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemArrivalJournalHeaderV2> ItemArrivalJournalHeadersV2
         {
             get
             {
-                return this._PersonUserSystemUserEntity;
+                return this._ItemArrivalJournalHeadersV2;
             }
             set
             {
-                this.OnPersonUserSystemUserEntityChanging(value);
-                this._PersonUserSystemUserEntity = value;
-                this.OnPersonUserSystemUserEntityChanged();
-                this.OnPropertyChanged("PersonUserSystemUserEntity");
+                this.OnItemArrivalJournalHeadersV2Changing(value);
+                this._ItemArrivalJournalHeadersV2 = value;
+                this.OnItemArrivalJournalHeadersV2Changed();
+                this.OnPropertyChanged("ItemArrivalJournalHeadersV2");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.PersonUser _PersonUserSystemUserEntity;
-        partial void OnPersonUserSystemUserEntityChanging(global::Microsoft.Dynamics.DataEntities.PersonUser value);
-        partial void OnPersonUserSystemUserEntityChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemArrivalJournalHeaderV2> _ItemArrivalJournalHeadersV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemArrivalJournalHeaderV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnItemArrivalJournalHeadersV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemArrivalJournalHeaderV2> value);
+        partial void OnItemArrivalJournalHeadersV2Changed();
+        /// <summary>
+        /// There are no comments for Property BudgetControlRuleBudgetManager in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRule> BudgetControlRuleBudgetManager
+        {
+            get
+            {
+                return this._BudgetControlRuleBudgetManager;
+            }
+            set
+            {
+                this.OnBudgetControlRuleBudgetManagerChanging(value);
+                this._BudgetControlRuleBudgetManager = value;
+                this.OnBudgetControlRuleBudgetManagerChanged();
+                this.OnPropertyChanged("BudgetControlRuleBudgetManager");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRule> _BudgetControlRuleBudgetManager = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRule>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnBudgetControlRuleBudgetManagerChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRule> value);
+        partial void OnBudgetControlRuleBudgetManagerChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

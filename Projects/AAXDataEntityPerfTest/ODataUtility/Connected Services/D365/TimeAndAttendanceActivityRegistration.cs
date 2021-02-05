@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public TimeAndAttendanceActivityRegistrationSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<TimeAndAttendanceActivityRegistration> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for Worker in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.WorkerSingle Worker
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._Worker == null))
-                {
-                    this._Worker = new global::Microsoft.Dynamics.DataEntities.WorkerSingle(this.Context, GetPath("Worker"));
-                }
-                return this._Worker;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.WorkerSingle _Worker;
         /// <summary>
         /// There are no comments for DimensionSet in the schema.
         /// </summary>
@@ -118,7 +97,6 @@ namespace Microsoft.Dynamics.DataEntities
         /// <param name="calculatedTimeBeforeAllocationSeconds">Initial value of CalculatedTimeBeforeAllocationSeconds.</param>
         /// <param name="startTime">Initial value of StartTime.</param>
         /// <param name="startedCatchWeightQuantity">Initial value of StartedCatchWeightQuantity.</param>
-        /// <param name="worker">Initial value of Worker.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public static TimeAndAttendanceActivityRegistration CreateTimeAndAttendanceActivityRegistration(string dataAreaId, 
                     string workerPersonnelNumber, 
@@ -144,8 +122,7 @@ namespace Microsoft.Dynamics.DataEntities
                     decimal reportedErrorCatchWeightQuantity, 
                     int calculatedTimeBeforeAllocationSeconds, 
                     int startTime, 
-                    decimal startedCatchWeightQuantity, 
-                    global::Microsoft.Dynamics.DataEntities.Worker worker)
+                    decimal startedCatchWeightQuantity)
         {
             TimeAndAttendanceActivityRegistration timeAndAttendanceActivityRegistration = new TimeAndAttendanceActivityRegistration();
             timeAndAttendanceActivityRegistration.dataAreaId = dataAreaId;
@@ -173,11 +150,6 @@ namespace Microsoft.Dynamics.DataEntities
             timeAndAttendanceActivityRegistration.CalculatedTimeBeforeAllocationSeconds = calculatedTimeBeforeAllocationSeconds;
             timeAndAttendanceActivityRegistration.StartTime = startTime;
             timeAndAttendanceActivityRegistration.StartedCatchWeightQuantity = startedCatchWeightQuantity;
-            if ((worker == null))
-            {
-                throw new global::System.ArgumentNullException("worker");
-            }
-            timeAndAttendanceActivityRegistration.Worker = worker;
             return timeAndAttendanceActivityRegistration;
         }
         /// <summary>
@@ -1346,28 +1318,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ProdErrorCause> _ErrorCause;
         partial void OnErrorCauseChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ProdErrorCause> value);
         partial void OnErrorCauseChanged();
-        /// <summary>
-        /// There are no comments for Property Worker in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.Worker Worker
-        {
-            get
-            {
-                return this._Worker;
-            }
-            set
-            {
-                this.OnWorkerChanging(value);
-                this._Worker = value;
-                this.OnWorkerChanged();
-                this.OnPropertyChanged("Worker");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.Worker _Worker;
-        partial void OnWorkerChanging(global::Microsoft.Dynamics.DataEntities.Worker value);
-        partial void OnWorkerChanged();
         /// <summary>
         /// There are no comments for Property DimensionSet in the schema.
         /// </summary>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public FreeTextInvoiceHeaderSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<FreeTextInvoiceHeader> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for CustFreeTextInvoiceHeader in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceLine> CustFreeTextInvoiceHeader
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._CustFreeTextInvoiceHeader == null))
-                {
-                    this._CustFreeTextInvoiceHeader = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceLine>(GetPath("CustFreeTextInvoiceHeader"));
-                }
-                return this._CustFreeTextInvoiceHeader;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceLine> _CustFreeTextInvoiceHeader;
         /// <summary>
         /// There are no comments for FreeTextInvoiceHeaderEntityCustAccount in the schema.
         /// </summary>
@@ -223,6 +202,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.PaymentTermSingle _FreeTextInvoiceHeaderEntityPaymentTerm;
+        /// <summary>
+        /// There are no comments for CustFreeTextInvoiceHeader in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceLine> CustFreeTextInvoiceHeader
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._CustFreeTextInvoiceHeader == null))
+                {
+                    this._CustFreeTextInvoiceHeader = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceLine>(GetPath("CustFreeTextInvoiceHeader"));
+                }
+                return this._CustFreeTextInvoiceHeader;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceLine> _CustFreeTextInvoiceHeader;
     }
         /// <summary>
         /// There are no comments for FreeTextInvoiceHeader in the schema.
@@ -1925,28 +1925,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnCorrectedFactureDateChanging(global::System.DateTimeOffset value);
         partial void OnCorrectedFactureDateChanged();
         /// <summary>
-        /// There are no comments for Property CustFreeTextInvoiceHeader in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceLine> CustFreeTextInvoiceHeader
-        {
-            get
-            {
-                return this._CustFreeTextInvoiceHeader;
-            }
-            set
-            {
-                this.OnCustFreeTextInvoiceHeaderChanging(value);
-                this._CustFreeTextInvoiceHeader = value;
-                this.OnCustFreeTextInvoiceHeaderChanged();
-                this.OnPropertyChanged("CustFreeTextInvoiceHeader");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceLine> _CustFreeTextInvoiceHeader = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnCustFreeTextInvoiceHeaderChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceLine> value);
-        partial void OnCustFreeTextInvoiceHeaderChanged();
-        /// <summary>
         /// There are no comments for Property FreeTextInvoiceHeaderEntityCustAccount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -2122,6 +2100,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.PaymentTerm _FreeTextInvoiceHeaderEntityPaymentTerm;
         partial void OnFreeTextInvoiceHeaderEntityPaymentTermChanging(global::Microsoft.Dynamics.DataEntities.PaymentTerm value);
         partial void OnFreeTextInvoiceHeaderEntityPaymentTermChanged();
+        /// <summary>
+        /// There are no comments for Property CustFreeTextInvoiceHeader in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceLine> CustFreeTextInvoiceHeader
+        {
+            get
+            {
+                return this._CustFreeTextInvoiceHeader;
+            }
+            set
+            {
+                this.OnCustFreeTextInvoiceHeaderChanging(value);
+                this._CustFreeTextInvoiceHeader = value;
+                this.OnCustFreeTextInvoiceHeaderChanged();
+                this.OnPropertyChanged("CustFreeTextInvoiceHeader");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceLine> _CustFreeTextInvoiceHeader = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnCustFreeTextInvoiceHeaderChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceLine> value);
+        partial void OnCustFreeTextInvoiceHeaderChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

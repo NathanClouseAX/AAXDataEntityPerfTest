@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -55,27 +55,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PaymentJournalLineSettledInvoice> _CustomerPaymentJournalLineRole;
-        /// <summary>
-        /// There are no comments for CustomerPaymentJournalFee in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalFee> CustomerPaymentJournalFee
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._CustomerPaymentJournalFee == null))
-                {
-                    this._CustomerPaymentJournalFee = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalFee>(GetPath("CustomerPaymentJournalFee"));
-                }
-                return this._CustomerPaymentJournalFee;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalFee> _CustomerPaymentJournalFee;
         /// <summary>
         /// There are no comments for CustomerPaymentJournalLineOffsetAccountCombination in the schema.
         /// </summary>
@@ -307,6 +286,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _CustomerPaymentJournalLineAccountCombination;
+        /// <summary>
+        /// There are no comments for CustomerPaymentJournalFee in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalFee> CustomerPaymentJournalFee
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._CustomerPaymentJournalFee == null))
+                {
+                    this._CustomerPaymentJournalFee = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalFee>(GetPath("CustomerPaymentJournalFee"));
+                }
+                return this._CustomerPaymentJournalFee;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalFee> _CustomerPaymentJournalFee;
     }
         /// <summary>
         /// There are no comments for CustomerPaymentJournalLine in the schema.
@@ -1856,28 +1856,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnCustomerPaymentJournalLineRoleChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PaymentJournalLineSettledInvoice> value);
         partial void OnCustomerPaymentJournalLineRoleChanged();
         /// <summary>
-        /// There are no comments for Property CustomerPaymentJournalFee in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalFee> CustomerPaymentJournalFee
-        {
-            get
-            {
-                return this._CustomerPaymentJournalFee;
-            }
-            set
-            {
-                this.OnCustomerPaymentJournalFeeChanging(value);
-                this._CustomerPaymentJournalFee = value;
-                this.OnCustomerPaymentJournalFeeChanged();
-                this.OnPropertyChanged("CustomerPaymentJournalFee");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalFee> _CustomerPaymentJournalFee = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalFee>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnCustomerPaymentJournalFeeChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalFee> value);
-        partial void OnCustomerPaymentJournalFeeChanged();
-        /// <summary>
         /// There are no comments for Property CustomerPaymentJournalLineOffsetAccountCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -2119,6 +2097,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.DimensionCombination _CustomerPaymentJournalLineAccountCombination;
         partial void OnCustomerPaymentJournalLineAccountCombinationChanging(global::Microsoft.Dynamics.DataEntities.DimensionCombination value);
         partial void OnCustomerPaymentJournalLineAccountCombinationChanged();
+        /// <summary>
+        /// There are no comments for Property CustomerPaymentJournalFee in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalFee> CustomerPaymentJournalFee
+        {
+            get
+            {
+                return this._CustomerPaymentJournalFee;
+            }
+            set
+            {
+                this.OnCustomerPaymentJournalFeeChanging(value);
+                this._CustomerPaymentJournalFee = value;
+                this.OnCustomerPaymentJournalFeeChanged();
+                this.OnPropertyChanged("CustomerPaymentJournalFee");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalFee> _CustomerPaymentJournalFee = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalFee>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnCustomerPaymentJournalFeeChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerPaymentJournalFee> value);
+        partial void OnCustomerPaymentJournalFeeChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

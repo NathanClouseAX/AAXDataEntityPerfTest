@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,10 +35,10 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for AssetGroupAssetPostingProfileDisposal in the schema.
+        /// There are no comments for AssetGroupAssetPostingProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfileDisposal> AssetGroupAssetPostingProfileDisposal
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfile> AssetGroupAssetPostingProfile
         {
             get
             {
@@ -46,15 +46,36 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._AssetGroupAssetPostingProfileDisposal == null))
+                if ((this._AssetGroupAssetPostingProfile == null))
                 {
-                    this._AssetGroupAssetPostingProfileDisposal = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfileDisposal>(GetPath("AssetGroupAssetPostingProfileDisposal"));
+                    this._AssetGroupAssetPostingProfile = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfile>(GetPath("AssetGroupAssetPostingProfile"));
                 }
-                return this._AssetGroupAssetPostingProfileDisposal;
+                return this._AssetGroupAssetPostingProfile;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfileDisposal> _AssetGroupAssetPostingProfileDisposal;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfile> _AssetGroupAssetPostingProfile;
+        /// <summary>
+        /// There are no comments for AssetGroupAssetGroupSetupBonus in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupBookSpecialDepreciationAllowance> AssetGroupAssetGroupSetupBonus
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._AssetGroupAssetGroupSetupBonus == null))
+                {
+                    this._AssetGroupAssetGroupSetupBonus = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupBookSpecialDepreciationAllowance>(GetPath("AssetGroupAssetGroupSetupBonus"));
+                }
+                return this._AssetGroupAssetGroupSetupBonus;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupBookSpecialDepreciationAllowance> _AssetGroupAssetGroupSetupBonus;
         /// <summary>
         /// There are no comments for AssetFixedAssetV2GroupAsset in the schema.
         /// </summary>
@@ -77,10 +98,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetV2Entity> _AssetFixedAssetV2GroupAsset;
         /// <summary>
-        /// There are no comments for AssetGroupValueModel in the schema.
+        /// There are no comments for AssetGroupAssetPostingProfileDisposal in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> AssetGroupValueModel
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfileDisposal> AssetGroupAssetPostingProfileDisposal
         {
             get
             {
@@ -88,15 +109,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._AssetGroupValueModel == null))
+                if ((this._AssetGroupAssetPostingProfileDisposal == null))
                 {
-                    this._AssetGroupValueModel = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel>(GetPath("AssetGroupValueModel"));
+                    this._AssetGroupAssetPostingProfileDisposal = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfileDisposal>(GetPath("AssetGroupAssetPostingProfileDisposal"));
                 }
-                return this._AssetGroupValueModel;
+                return this._AssetGroupAssetPostingProfileDisposal;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> _AssetGroupValueModel;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfileDisposal> _AssetGroupAssetPostingProfileDisposal;
         /// <summary>
         /// There are no comments for AssetBookV2GroupAsset in the schema.
         /// </summary>
@@ -203,10 +224,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.AssetMajorTypeSingle _AssetMajorType;
         /// <summary>
-        /// There are no comments for AssetGroupAssetGroupSetupBonus in the schema.
+        /// There are no comments for AssetStatementRow in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupBookSpecialDepreciationAllowance> AssetGroupAssetGroupSetupBonus
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetStatementRow> AssetStatementRow
         {
             get
             {
@@ -214,15 +235,36 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._AssetGroupAssetGroupSetupBonus == null))
+                if ((this._AssetStatementRow == null))
                 {
-                    this._AssetGroupAssetGroupSetupBonus = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupBookSpecialDepreciationAllowance>(GetPath("AssetGroupAssetGroupSetupBonus"));
+                    this._AssetStatementRow = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AssetStatementRow>(GetPath("AssetStatementRow"));
                 }
-                return this._AssetGroupAssetGroupSetupBonus;
+                return this._AssetStatementRow;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupBookSpecialDepreciationAllowance> _AssetGroupAssetGroupSetupBonus;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetStatementRow> _AssetStatementRow;
+        /// <summary>
+        /// There are no comments for AssetGroupValueModel in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> AssetGroupValueModel
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._AssetGroupValueModel == null))
+                {
+                    this._AssetGroupValueModel = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel>(GetPath("AssetGroupValueModel"));
+                }
+                return this._AssetGroupValueModel;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> _AssetGroupValueModel;
         /// <summary>
         /// There are no comments for AssetGroupAsset in the schema.
         /// </summary>
@@ -244,48 +286,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAsset> _AssetGroupAsset;
-        /// <summary>
-        /// There are no comments for AssetGroupAssetPostingProfile in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfile> AssetGroupAssetPostingProfile
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._AssetGroupAssetPostingProfile == null))
-                {
-                    this._AssetGroupAssetPostingProfile = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfile>(GetPath("AssetGroupAssetPostingProfile"));
-                }
-                return this._AssetGroupAssetPostingProfile;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfile> _AssetGroupAssetPostingProfile;
-        /// <summary>
-        /// There are no comments for AssetStatementRow in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetStatementRow> AssetStatementRow
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._AssetStatementRow == null))
-                {
-                    this._AssetStatementRow = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AssetStatementRow>(GetPath("AssetStatementRow"));
-                }
-                return this._AssetStatementRow;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetStatementRow> _AssetStatementRow;
     }
         /// <summary>
         /// There are no comments for FixedAssetGroup in the schema.
@@ -900,27 +900,49 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnAssetClassificationChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetClassification_JP> value);
         partial void OnAssetClassificationChanged();
         /// <summary>
-        /// There are no comments for Property AssetGroupAssetPostingProfileDisposal in the schema.
+        /// There are no comments for Property AssetGroupAssetPostingProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfileDisposal> AssetGroupAssetPostingProfileDisposal
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfile> AssetGroupAssetPostingProfile
         {
             get
             {
-                return this._AssetGroupAssetPostingProfileDisposal;
+                return this._AssetGroupAssetPostingProfile;
             }
             set
             {
-                this.OnAssetGroupAssetPostingProfileDisposalChanging(value);
-                this._AssetGroupAssetPostingProfileDisposal = value;
-                this.OnAssetGroupAssetPostingProfileDisposalChanged();
-                this.OnPropertyChanged("AssetGroupAssetPostingProfileDisposal");
+                this.OnAssetGroupAssetPostingProfileChanging(value);
+                this._AssetGroupAssetPostingProfile = value;
+                this.OnAssetGroupAssetPostingProfileChanged();
+                this.OnPropertyChanged("AssetGroupAssetPostingProfile");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfileDisposal> _AssetGroupAssetPostingProfileDisposal = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfileDisposal>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAssetGroupAssetPostingProfileDisposalChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfileDisposal> value);
-        partial void OnAssetGroupAssetPostingProfileDisposalChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfile> _AssetGroupAssetPostingProfile = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfile>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnAssetGroupAssetPostingProfileChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfile> value);
+        partial void OnAssetGroupAssetPostingProfileChanged();
+        /// <summary>
+        /// There are no comments for Property AssetGroupAssetGroupSetupBonus in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupBookSpecialDepreciationAllowance> AssetGroupAssetGroupSetupBonus
+        {
+            get
+            {
+                return this._AssetGroupAssetGroupSetupBonus;
+            }
+            set
+            {
+                this.OnAssetGroupAssetGroupSetupBonusChanging(value);
+                this._AssetGroupAssetGroupSetupBonus = value;
+                this.OnAssetGroupAssetGroupSetupBonusChanged();
+                this.OnPropertyChanged("AssetGroupAssetGroupSetupBonus");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupBookSpecialDepreciationAllowance> _AssetGroupAssetGroupSetupBonus = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupBookSpecialDepreciationAllowance>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnAssetGroupAssetGroupSetupBonusChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupBookSpecialDepreciationAllowance> value);
+        partial void OnAssetGroupAssetGroupSetupBonusChanged();
         /// <summary>
         /// There are no comments for Property AssetFixedAssetV2GroupAsset in the schema.
         /// </summary>
@@ -944,27 +966,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnAssetFixedAssetV2GroupAssetChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetV2Entity> value);
         partial void OnAssetFixedAssetV2GroupAssetChanged();
         /// <summary>
-        /// There are no comments for Property AssetGroupValueModel in the schema.
+        /// There are no comments for Property AssetGroupAssetPostingProfileDisposal in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> AssetGroupValueModel
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfileDisposal> AssetGroupAssetPostingProfileDisposal
         {
             get
             {
-                return this._AssetGroupValueModel;
+                return this._AssetGroupAssetPostingProfileDisposal;
             }
             set
             {
-                this.OnAssetGroupValueModelChanging(value);
-                this._AssetGroupValueModel = value;
-                this.OnAssetGroupValueModelChanged();
-                this.OnPropertyChanged("AssetGroupValueModel");
+                this.OnAssetGroupAssetPostingProfileDisposalChanging(value);
+                this._AssetGroupAssetPostingProfileDisposal = value;
+                this.OnAssetGroupAssetPostingProfileDisposalChanged();
+                this.OnPropertyChanged("AssetGroupAssetPostingProfileDisposal");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> _AssetGroupValueModel = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAssetGroupValueModelChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> value);
-        partial void OnAssetGroupValueModelChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfileDisposal> _AssetGroupAssetPostingProfileDisposal = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfileDisposal>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnAssetGroupAssetPostingProfileDisposalChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfileDisposal> value);
+        partial void OnAssetGroupAssetPostingProfileDisposalChanged();
         /// <summary>
         /// There are no comments for Property AssetBookV2GroupAsset in the schema.
         /// </summary>
@@ -1076,27 +1098,49 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnAssetMajorTypeChanging(global::Microsoft.Dynamics.DataEntities.AssetMajorType value);
         partial void OnAssetMajorTypeChanged();
         /// <summary>
-        /// There are no comments for Property AssetGroupAssetGroupSetupBonus in the schema.
+        /// There are no comments for Property AssetStatementRow in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupBookSpecialDepreciationAllowance> AssetGroupAssetGroupSetupBonus
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetStatementRow> AssetStatementRow
         {
             get
             {
-                return this._AssetGroupAssetGroupSetupBonus;
+                return this._AssetStatementRow;
             }
             set
             {
-                this.OnAssetGroupAssetGroupSetupBonusChanging(value);
-                this._AssetGroupAssetGroupSetupBonus = value;
-                this.OnAssetGroupAssetGroupSetupBonusChanged();
-                this.OnPropertyChanged("AssetGroupAssetGroupSetupBonus");
+                this.OnAssetStatementRowChanging(value);
+                this._AssetStatementRow = value;
+                this.OnAssetStatementRowChanged();
+                this.OnPropertyChanged("AssetStatementRow");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupBookSpecialDepreciationAllowance> _AssetGroupAssetGroupSetupBonus = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupBookSpecialDepreciationAllowance>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAssetGroupAssetGroupSetupBonusChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupBookSpecialDepreciationAllowance> value);
-        partial void OnAssetGroupAssetGroupSetupBonusChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetStatementRow> _AssetStatementRow = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetStatementRow>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnAssetStatementRowChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetStatementRow> value);
+        partial void OnAssetStatementRowChanged();
+        /// <summary>
+        /// There are no comments for Property AssetGroupValueModel in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> AssetGroupValueModel
+        {
+            get
+            {
+                return this._AssetGroupValueModel;
+            }
+            set
+            {
+                this.OnAssetGroupValueModelChanging(value);
+                this._AssetGroupValueModel = value;
+                this.OnAssetGroupValueModelChanged();
+                this.OnPropertyChanged("AssetGroupValueModel");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> _AssetGroupValueModel = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnAssetGroupValueModelChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> value);
+        partial void OnAssetGroupValueModelChanged();
         /// <summary>
         /// There are no comments for Property AssetGroupAsset in the schema.
         /// </summary>
@@ -1119,50 +1163,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAsset> _AssetGroupAsset = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAsset>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnAssetGroupAssetChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAsset> value);
         partial void OnAssetGroupAssetChanged();
-        /// <summary>
-        /// There are no comments for Property AssetGroupAssetPostingProfile in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfile> AssetGroupAssetPostingProfile
-        {
-            get
-            {
-                return this._AssetGroupAssetPostingProfile;
-            }
-            set
-            {
-                this.OnAssetGroupAssetPostingProfileChanging(value);
-                this._AssetGroupAssetPostingProfile = value;
-                this.OnAssetGroupAssetPostingProfileChanged();
-                this.OnPropertyChanged("AssetGroupAssetPostingProfile");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfile> _AssetGroupAssetPostingProfile = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfile>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAssetGroupAssetPostingProfileChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfile> value);
-        partial void OnAssetGroupAssetPostingProfileChanged();
-        /// <summary>
-        /// There are no comments for Property AssetStatementRow in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetStatementRow> AssetStatementRow
-        {
-            get
-            {
-                return this._AssetStatementRow;
-            }
-            set
-            {
-                this.OnAssetStatementRowChanging(value);
-                this._AssetStatementRow = value;
-                this.OnAssetStatementRowChanged();
-                this.OnPropertyChanged("AssetStatementRow");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetStatementRow> _AssetStatementRow = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetStatementRow>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAssetStatementRowChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetStatementRow> value);
-        partial void OnAssetStatementRowChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,10 +35,10 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for BudgetTrackingWorkspaceParametersBudgetModel in the schema.
+        /// There are no comments for BudgetRegisterEntryHeaderBudgetModel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> BudgetTrackingWorkspaceParametersBudgetModel
+        public virtual global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeaderSingle BudgetRegisterEntryHeaderBudgetModel
         {
             get
             {
@@ -46,15 +46,36 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._BudgetTrackingWorkspaceParametersBudgetModel == null))
+                if ((this._BudgetRegisterEntryHeaderBudgetModel == null))
                 {
-                    this._BudgetTrackingWorkspaceParametersBudgetModel = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters>(GetPath("BudgetTrackingWorkspaceParametersBudgetModel"));
+                    this._BudgetRegisterEntryHeaderBudgetModel = new global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeaderSingle(this.Context, GetPath("BudgetRegisterEntryHeaderBudgetModel"));
                 }
-                return this._BudgetTrackingWorkspaceParametersBudgetModel;
+                return this._BudgetRegisterEntryHeaderBudgetModel;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> _BudgetTrackingWorkspaceParametersBudgetModel;
+        private global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeaderSingle _BudgetRegisterEntryHeaderBudgetModel;
+        /// <summary>
+        /// There are no comments for BudgetRegisterEntryBudgetModel in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntrySingle BudgetRegisterEntryBudgetModel
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._BudgetRegisterEntryBudgetModel == null))
+                {
+                    this._BudgetRegisterEntryBudgetModel = new global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntrySingle(this.Context, GetPath("BudgetRegisterEntryBudgetModel"));
+                }
+                return this._BudgetRegisterEntryBudgetModel;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntrySingle _BudgetRegisterEntryBudgetModel;
         /// <summary>
         /// There are no comments for BudgetSubmodelBudgetModel in the schema.
         /// </summary>
@@ -98,10 +119,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetSubModel> _BudgetSubmodel;
         /// <summary>
-        /// There are no comments for BudgetRegisterEntryBudgetModel in the schema.
+        /// There are no comments for BudgetTrackingWorkspaceParametersBudgetModel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntrySingle BudgetRegisterEntryBudgetModel
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> BudgetTrackingWorkspaceParametersBudgetModel
         {
             get
             {
@@ -109,36 +130,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._BudgetRegisterEntryBudgetModel == null))
+                if ((this._BudgetTrackingWorkspaceParametersBudgetModel == null))
                 {
-                    this._BudgetRegisterEntryBudgetModel = new global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntrySingle(this.Context, GetPath("BudgetRegisterEntryBudgetModel"));
+                    this._BudgetTrackingWorkspaceParametersBudgetModel = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters>(GetPath("BudgetTrackingWorkspaceParametersBudgetModel"));
                 }
-                return this._BudgetRegisterEntryBudgetModel;
+                return this._BudgetTrackingWorkspaceParametersBudgetModel;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntrySingle _BudgetRegisterEntryBudgetModel;
-        /// <summary>
-        /// There are no comments for BudgetRegisterEntryHeaderBudgetModel in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeaderSingle BudgetRegisterEntryHeaderBudgetModel
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._BudgetRegisterEntryHeaderBudgetModel == null))
-                {
-                    this._BudgetRegisterEntryHeaderBudgetModel = new global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeaderSingle(this.Context, GetPath("BudgetRegisterEntryHeaderBudgetModel"));
-                }
-                return this._BudgetRegisterEntryHeaderBudgetModel;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeaderSingle _BudgetRegisterEntryHeaderBudgetModel;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> _BudgetTrackingWorkspaceParametersBudgetModel;
     }
         /// <summary>
         /// There are no comments for BudgetModel in the schema.
@@ -156,24 +156,24 @@ namespace Microsoft.Dynamics.DataEntities
         /// </summary>
         /// <param name="dataAreaId">Initial value of dataAreaId.</param>
         /// <param name="budgetModel1">Initial value of BudgetModel1.</param>
-        /// <param name="budgetRegisterEntryBudgetModel">Initial value of BudgetRegisterEntryBudgetModel.</param>
         /// <param name="budgetRegisterEntryHeaderBudgetModel">Initial value of BudgetRegisterEntryHeaderBudgetModel.</param>
+        /// <param name="budgetRegisterEntryBudgetModel">Initial value of BudgetRegisterEntryBudgetModel.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public static BudgetModel CreateBudgetModel(string dataAreaId, string budgetModel1, global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntry budgetRegisterEntryBudgetModel, global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeader budgetRegisterEntryHeaderBudgetModel)
+        public static BudgetModel CreateBudgetModel(string dataAreaId, string budgetModel1, global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeader budgetRegisterEntryHeaderBudgetModel, global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntry budgetRegisterEntryBudgetModel)
         {
             BudgetModel budgetModel = new BudgetModel();
             budgetModel.dataAreaId = dataAreaId;
             budgetModel.BudgetModel1 = budgetModel1;
-            if ((budgetRegisterEntryBudgetModel == null))
-            {
-                throw new global::System.ArgumentNullException("budgetRegisterEntryBudgetModel");
-            }
-            budgetModel.BudgetRegisterEntryBudgetModel = budgetRegisterEntryBudgetModel;
             if ((budgetRegisterEntryHeaderBudgetModel == null))
             {
                 throw new global::System.ArgumentNullException("budgetRegisterEntryHeaderBudgetModel");
             }
             budgetModel.BudgetRegisterEntryHeaderBudgetModel = budgetRegisterEntryHeaderBudgetModel;
+            if ((budgetRegisterEntryBudgetModel == null))
+            {
+                throw new global::System.ArgumentNullException("budgetRegisterEntryBudgetModel");
+            }
+            budgetModel.BudgetRegisterEntryBudgetModel = budgetRegisterEntryBudgetModel;
             return budgetModel;
         }
         /// <summary>
@@ -288,27 +288,49 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnCashFlowForecastsChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> value);
         partial void OnCashFlowForecastsChanged();
         /// <summary>
-        /// There are no comments for Property BudgetTrackingWorkspaceParametersBudgetModel in the schema.
+        /// There are no comments for Property BudgetRegisterEntryHeaderBudgetModel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> BudgetTrackingWorkspaceParametersBudgetModel
+        public virtual global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeader BudgetRegisterEntryHeaderBudgetModel
         {
             get
             {
-                return this._BudgetTrackingWorkspaceParametersBudgetModel;
+                return this._BudgetRegisterEntryHeaderBudgetModel;
             }
             set
             {
-                this.OnBudgetTrackingWorkspaceParametersBudgetModelChanging(value);
-                this._BudgetTrackingWorkspaceParametersBudgetModel = value;
-                this.OnBudgetTrackingWorkspaceParametersBudgetModelChanged();
-                this.OnPropertyChanged("BudgetTrackingWorkspaceParametersBudgetModel");
+                this.OnBudgetRegisterEntryHeaderBudgetModelChanging(value);
+                this._BudgetRegisterEntryHeaderBudgetModel = value;
+                this.OnBudgetRegisterEntryHeaderBudgetModelChanged();
+                this.OnPropertyChanged("BudgetRegisterEntryHeaderBudgetModel");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> _BudgetTrackingWorkspaceParametersBudgetModel = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnBudgetTrackingWorkspaceParametersBudgetModelChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> value);
-        partial void OnBudgetTrackingWorkspaceParametersBudgetModelChanged();
+        private global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeader _BudgetRegisterEntryHeaderBudgetModel;
+        partial void OnBudgetRegisterEntryHeaderBudgetModelChanging(global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeader value);
+        partial void OnBudgetRegisterEntryHeaderBudgetModelChanged();
+        /// <summary>
+        /// There are no comments for Property BudgetRegisterEntryBudgetModel in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntry BudgetRegisterEntryBudgetModel
+        {
+            get
+            {
+                return this._BudgetRegisterEntryBudgetModel;
+            }
+            set
+            {
+                this.OnBudgetRegisterEntryBudgetModelChanging(value);
+                this._BudgetRegisterEntryBudgetModel = value;
+                this.OnBudgetRegisterEntryBudgetModelChanged();
+                this.OnPropertyChanged("BudgetRegisterEntryBudgetModel");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntry _BudgetRegisterEntryBudgetModel;
+        partial void OnBudgetRegisterEntryBudgetModelChanging(global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntry value);
+        partial void OnBudgetRegisterEntryBudgetModelChanged();
         /// <summary>
         /// There are no comments for Property BudgetSubmodelBudgetModel in the schema.
         /// </summary>
@@ -354,49 +376,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnBudgetSubmodelChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetSubModel> value);
         partial void OnBudgetSubmodelChanged();
         /// <summary>
-        /// There are no comments for Property BudgetRegisterEntryBudgetModel in the schema.
+        /// There are no comments for Property BudgetTrackingWorkspaceParametersBudgetModel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntry BudgetRegisterEntryBudgetModel
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> BudgetTrackingWorkspaceParametersBudgetModel
         {
             get
             {
-                return this._BudgetRegisterEntryBudgetModel;
+                return this._BudgetTrackingWorkspaceParametersBudgetModel;
             }
             set
             {
-                this.OnBudgetRegisterEntryBudgetModelChanging(value);
-                this._BudgetRegisterEntryBudgetModel = value;
-                this.OnBudgetRegisterEntryBudgetModelChanged();
-                this.OnPropertyChanged("BudgetRegisterEntryBudgetModel");
+                this.OnBudgetTrackingWorkspaceParametersBudgetModelChanging(value);
+                this._BudgetTrackingWorkspaceParametersBudgetModel = value;
+                this.OnBudgetTrackingWorkspaceParametersBudgetModelChanged();
+                this.OnPropertyChanged("BudgetTrackingWorkspaceParametersBudgetModel");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntry _BudgetRegisterEntryBudgetModel;
-        partial void OnBudgetRegisterEntryBudgetModelChanging(global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntry value);
-        partial void OnBudgetRegisterEntryBudgetModelChanged();
-        /// <summary>
-        /// There are no comments for Property BudgetRegisterEntryHeaderBudgetModel in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeader BudgetRegisterEntryHeaderBudgetModel
-        {
-            get
-            {
-                return this._BudgetRegisterEntryHeaderBudgetModel;
-            }
-            set
-            {
-                this.OnBudgetRegisterEntryHeaderBudgetModelChanging(value);
-                this._BudgetRegisterEntryHeaderBudgetModel = value;
-                this.OnBudgetRegisterEntryHeaderBudgetModelChanged();
-                this.OnPropertyChanged("BudgetRegisterEntryHeaderBudgetModel");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeader _BudgetRegisterEntryHeaderBudgetModel;
-        partial void OnBudgetRegisterEntryHeaderBudgetModelChanging(global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeader value);
-        partial void OnBudgetRegisterEntryHeaderBudgetModelChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> _BudgetTrackingWorkspaceParametersBudgetModel = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnBudgetTrackingWorkspaceParametersBudgetModelChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> value);
+        partial void OnBudgetTrackingWorkspaceParametersBudgetModelChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

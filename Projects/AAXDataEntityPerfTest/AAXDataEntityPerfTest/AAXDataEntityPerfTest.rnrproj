@@ -12,6 +12,8 @@
     <ProjectGuid>{7739b07e-49de-4511-bf3d-8305edd077dd}</ProjectGuid>
     <Name>AAXDataEntityPerfTest</Name>
     <RootNamespace>AAXDataEntityPerfTest</RootNamespace>
+    <StartupObject>RunnableClass1</StartupObject>
+    <StartupType>Class</StartupType>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <Configuration>Debug</Configuration>
@@ -29,13 +31,30 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="Classes\" />
     <Folder Include="Data Entities\" />
+    <Folder Include="Data Entity Extensions\" />
     <Folder Include="Maps\" />
     <Folder Include="Security Privileges\" />
     <Folder Include="Table Extensions\" />
     <Folder Include="Tables\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AxClass\RunnableClass1">
+      <SubType>Content</SubType>
+      <Name>RunnableClass1</Name>
+      <Link>Classes\RunnableClass1</Link>
+    </Content>
+    <Content Include="AxClass\SalesOrderHeaderV2Entity_Extension">
+      <SubType>Content</SubType>
+      <Name>SalesOrderHeaderV2Entity_Extension</Name>
+      <Link>Classes\SalesOrderHeaderV2Entity_Extension</Link>
+    </Content>
+    <Content Include="AxDataEntityViewExtension\SalesOrderHeaderV2Entity.AAXDataEntityPerfTest">
+      <SubType>Content</SubType>
+      <Name>SalesOrderHeaderV2Entity.AAXDataEntityPerfTest</Name>
+      <Link>Data Entity Extensions\SalesOrderHeaderV2Entity.AAXDataEntityPerfTest</Link>
+    </Content>
     <Content Include="AxDataEntityView\AAXSalesLineEntity">
       <SubType>Content</SubType>
       <Name>AAXSalesLineEntity</Name>
@@ -60,6 +79,16 @@
       <SubType>Content</SubType>
       <Name>AAXSalesOrderHeaderV2EntityOnlySalesTable</Name>
       <Link>Data Entities\AAXSalesOrderHeaderV2EntityOnlySalesTable</Link>
+    </Content>
+    <Content Include="AxDataEntityView\AAXSalesOrderHeaderV2EntityOnlySalesTablePostLoad">
+      <SubType>Content</SubType>
+      <Name>AAXSalesOrderHeaderV2EntityOnlySalesTablePostLoad</Name>
+      <Link>Data Entities\AAXSalesOrderHeaderV2EntityOnlySalesTablePostLoad</Link>
+    </Content>
+    <Content Include="AxDataEntityView\AAXSalesOrderHeaderV2EntityOnlySalesTablePostLoadExtended">
+      <SubType>Content</SubType>
+      <Name>AAXSalesOrderHeaderV2EntityOnlySalesTablePostLoadExtended</Name>
+      <Link>Data Entities\AAXSalesOrderHeaderV2EntityOnlySalesTablePostLoadExtended</Link>
     </Content>
     <Content Include="AxDataEntityView\AAXSalesOrderHeaderV2EntityReadOnly">
       <SubType>Content</SubType>

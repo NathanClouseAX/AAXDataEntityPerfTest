@@ -567,8 +567,6 @@ namespace ODataTesting
             salesOrderHeaderV2.CustomerPaymentMethodName = "Check";
             salesOrderHeaderV2.Email = "Contoso.Retail.San.Diego@customer60.consolidatedmessenger.com";
             salesOrderHeaderV2.CustomerPostingProfileId = "GEN";
-            //salesOrderHeaderV2.PriceCustomerGroupCode = "03";
-            //salesOrderHeaderV2.CommissionSalesRepresentativeGroupId = "01";
             salesOrderHeaderV2.SalesOrderName = "Test Sales Order Id";
             salesOrderHeaderV2.SalesOrderOriginCode = "PHONE";
             salesOrderHeaderV2.SalesOrderPoolId = "03";
@@ -577,7 +575,6 @@ namespace ODataTesting
             salesOrderHeaderV2.OrderResponsiblePersonnelNumber = "000002";
             salesOrderHeaderV2.OrderTakerPersonnelNumber = "000002";
             salesOrderHeaderV2.DefaultLedgerDimensionDisplayValue = "001--";
-
             salesOrderHeaderV2.DeliveryAddressCity = "Detroit";
             salesOrderHeaderV2.DeliveryAddressCountryRegionISOCode = "USA";
             salesOrderHeaderV2.DeliveryAddressDescription = "Delivery";
@@ -610,6 +607,10 @@ namespace ODataTesting
         {
             Stopwatch sw = new Stopwatch();
 
+            Entity = "SalesOrderHeaderV2EntityOnlySalesTable";
+
+            context.SalesOrderHeadersV2EntityOnlySalesTable.FirstOrDefault();
+
             sw.Start();
 
             DataServiceCollection<SalesOrderHeaderV2EntityOnlySalesTable> SalesOrderCollection = new DataServiceCollection<SalesOrderHeaderV2EntityOnlySalesTable>(context);
@@ -624,14 +625,6 @@ namespace ODataTesting
             SalesOrderHeaderV2EntityOnlySalesTable.dataAreaId = DataAreaId;
             SalesOrderHeaderV2EntityOnlySalesTable.CurrencyCode = "USD";
             SalesOrderHeaderV2EntityOnlySalesTable.LanguageId = "en-us";
-
-            //SalesOrderHeaderV2EntityOnlySalesTable.CustGroup = "30";
-            //SalesOrderHeaderV2EntityOnlySalesTable.ShippingDateRequested = DateTime.UtcNow;
-            //SalesOrderHeaderV2EntityOnlySalesTable.ReceiptDateRequested = DateTime.UtcNow;
-
-            //SalesOrderHeaderV2EntityOnlySalesTable.salesordert = SalesType.Sales;
-            //SalesOrderHeaderV2EntityOnlySalesTable.SalesName = "test";
-
 
             context.SaveChanges(SaveChangesOptions.PostOnlySetProperties | SaveChangesOptions.BatchWithSingleChangeset);
 
@@ -681,24 +674,12 @@ namespace ODataTesting
             SalesOrderHeaderV2EntityOnlySalesTable.CustomerPaymentMethodName = "Check";
             SalesOrderHeaderV2EntityOnlySalesTable.Email = "Contoso.Retail.San.Diego@customer60.consolidatedmessenger.com";
             SalesOrderHeaderV2EntityOnlySalesTable.CustomerPostingProfileId = "GEN";
-            //SalesOrderHeaderV2EntityOnlySalesTable.PriceCustomerGroupCode = "03";
-            //SalesOrderHeaderV2EntityOnlySalesTable.CommissionSalesRepresentativeGroupId = "01";
             SalesOrderHeaderV2EntityOnlySalesTable.SalesOrderName = "Test Sales Order Id";
             SalesOrderHeaderV2EntityOnlySalesTable.SalesOrderOriginCode = "PHONE";
             SalesOrderHeaderV2EntityOnlySalesTable.SalesOrderPoolId = "03";
             SalesOrderHeaderV2EntityOnlySalesTable.SalesTaxGroupCode = "CA";
             SalesOrderHeaderV2EntityOnlySalesTable.TaxExemptNumber = "35-12345";
-            //SalesOrderHeaderV2EntityOnlySalesTable.OrderResponsiblePersonnelNumber = "000002";
-            //SalesOrderHeaderV2EntityOnlySalesTable.OrderTakerPersonnelNumber = "000002";
-            //SalesOrderHeaderV2EntityOnlySalesTable.DefaultLedgerDimensionDisplayValue = "001--";
 
-            //SalesOrderHeaderV2EntityOnlySalesTable.DeliveryAddressCity = "Detroit";
-            //SalesOrderHeaderV2EntityOnlySalesTable.DeliveryAddressCountryRegionISOCode = "USA";
-            //SalesOrderHeaderV2EntityOnlySalesTable.DeliveryAddressDescription = "Delivery";
-            //SalesOrderHeaderV2EntityOnlySalesTable.DeliveryAddressName = "Delivery";
-            //SalesOrderHeaderV2EntityOnlySalesTable.DeliveryAddressStateId = "MI";
-            //SalesOrderHeaderV2EntityOnlySalesTable.DeliveryAddressStreet = "123 Main St";
-            //SalesOrderHeaderV2EntityOnlySalesTable.DeliveryAddressZipCode = "01234";
 
             context.SaveChanges(SaveChangesOptions.PostOnlySetProperties | SaveChangesOptions.BatchWithSingleChangeset);
 
@@ -724,6 +705,8 @@ namespace ODataTesting
         {
 
             Stopwatch sw = new Stopwatch();
+
+            context.SalesOrderHeadersV2.FirstOrDefault();
 
             var SalesOrderHeaderV2 = context.SalesOrderHeadersV2.Where(x => x.SalesOrderNumber == SalesOrderNumber && x.dataAreaId == DataAreaId).First();
             if (SalesOrderHeaderV2.SalesOrderNumber != null)
@@ -761,6 +744,8 @@ namespace ODataTesting
                                                            string SalesOrderNumber)
         {
             Stopwatch sw = new Stopwatch();
+
+            context.SalesOrderHeadersV2.FirstOrDefault();
 
             var SalesOrderHeaderV2 = context.SalesOrderHeadersV2.Where(x => x.SalesOrderNumber == SalesOrderNumber && x.dataAreaId == DataAreaId).First();
             if (SalesOrderHeaderV2.SalesOrderNumber != null)
@@ -812,6 +797,10 @@ namespace ODataTesting
         {
             Stopwatch sw = new Stopwatch();
 
+            Entity = "SalesOrderHeadersV2EntityOnlySalesTable";
+
+            context.SalesOrderHeadersV2EntityOnlySalesTable.FirstOrDefault();
+
             var SalesOrderHeadersV2EntityOnlySalesTable = context.SalesOrderHeadersV2EntityOnlySalesTable.Where(x => x.SalesOrderNumber == SalesOrderNumber && x.dataAreaId == DataAreaId).First();
             if (SalesOrderHeadersV2EntityOnlySalesTable.SalesOrderNumber != null)
             {
@@ -848,6 +837,10 @@ namespace ODataTesting
                                                            string SalesOrderNumber)
         {
             Stopwatch sw = new Stopwatch();
+
+            Entity = "SalesOrderHeadersV2EntityOnlySalesTable";
+
+            context.SalesOrderHeadersV2EntityOnlySalesTable.FirstOrDefault();
 
             var SalesOrderHeadersV2EntityOnlySalesTable = context.SalesOrderHeadersV2EntityOnlySalesTable.Where(x => x.SalesOrderNumber == SalesOrderNumber && x.dataAreaId == DataAreaId).First();
             if (SalesOrderHeadersV2EntityOnlySalesTable.SalesOrderNumber != null)
@@ -899,6 +892,8 @@ namespace ODataTesting
             Stopwatch sw = new Stopwatch();
             string SalesOrderNumber;
 
+            Entity = "SalesOrderHeadersV2EntityOnlySalesTable";
+
             DataServiceCollection<SalesOrderHeaderV2EntityOnlySalesTable> SalesOrderCollection = new DataServiceCollection<SalesOrderHeaderV2EntityOnlySalesTable>(context);
 
             SalesOrderHeaderV2EntityOnlySalesTable SalesOrderHeaderV2EntityOnlySalesTable = new SalesOrderHeaderV2EntityOnlySalesTable();
@@ -915,6 +910,8 @@ namespace ODataTesting
             context.SaveChanges(SaveChangesOptions.PostOnlySetProperties | SaveChangesOptions.BatchWithSingleChangeset);
             SalesOrderNumber = SalesOrderHeaderV2EntityOnlySalesTable.SalesOrderNumber;
             SalesOrderHeaderV2EntityOnlySalesTable = null;
+
+            context.SalesOrderHeadersV2EntityOnlySalesTable.FirstOrDefault();
 
             sw.Start();
             
@@ -945,6 +942,8 @@ namespace ODataTesting
             Stopwatch sw = new Stopwatch();
             string SalesOrderNumber;
 
+            Entity = "salesOrderHeaderV2";
+
             DataServiceCollection<SalesOrderHeaderV2> SalesOrderCollection = new DataServiceCollection<SalesOrderHeaderV2>(context);
             SalesOrderHeaderV2 salesOrderHeaderV2 = new SalesOrderHeaderV2();
 
@@ -959,6 +958,7 @@ namespace ODataTesting
 
             context.SaveChanges(SaveChangesOptions.PostOnlySetProperties | SaveChangesOptions.BatchWithSingleChangeset);
             SalesOrderNumber = salesOrderHeaderV2.SalesOrderNumber;
+            context.SalesOrderHeadersV2.FirstOrDefault();
 
             salesOrderHeaderV2 = null;
             sw.Start();
@@ -990,6 +990,8 @@ namespace ODataTesting
             Stopwatch sw = new Stopwatch();
             string SalesOrderNumber;
 
+            Entity = "AAXSalesOrderHeaderV2EntityOnlySalesOrderNumber";
+
             DataServiceCollection<SalesOrderHeaderV2EntityOnlySalesTable> SalesOrderCollection = new DataServiceCollection<SalesOrderHeaderV2EntityOnlySalesTable>(context);
 
             SalesOrderHeaderV2EntityOnlySalesTable SalesOrderHeaderV2EntityOnlySalesTable = new SalesOrderHeaderV2EntityOnlySalesTable();
@@ -1007,13 +1009,11 @@ namespace ODataTesting
             SalesOrderNumber = SalesOrderHeaderV2EntityOnlySalesTable.SalesOrderNumber;
             SalesOrderHeaderV2EntityOnlySalesTable = null;
 
-            
+            context.AAXSalesOrderHeaderV2EntityOnlySalesOrderNumbers.FirstOrDefault();
 
-            
             sw.Start();
 
             var AAXSalesOrderHeaderV2EntityOnlySalesOrderNumbers = context.AAXSalesOrderHeaderV2EntityOnlySalesOrderNumbers.Where(x => x.SalesOrderNumber == SalesOrderNumber && x.dataAreaId == DataAreaId).First();
-
 
             context.DeleteObject(AAXSalesOrderHeaderV2EntityOnlySalesOrderNumbers);
             context.SaveChanges(SaveChangesOptions.PostOnlySetProperties | SaveChangesOptions.BatchWithSingleChangeset);

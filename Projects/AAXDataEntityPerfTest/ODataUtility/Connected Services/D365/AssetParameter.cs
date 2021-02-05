@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,6 +34,27 @@ namespace Microsoft.Dynamics.DataEntities
         public AssetParameterSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AssetParameter> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for AssetParameterProposalJournalNameParameters in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> AssetParameterProposalJournalNameParameters
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._AssetParameterProposalJournalNameParameters == null))
+                {
+                    this._AssetParameterProposalJournalNameParameters = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName>(GetPath("AssetParameterProposalJournalNameParameters"));
+                }
+                return this._AssetParameterProposalJournalNameParameters;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> _AssetParameterProposalJournalNameParameters;
         /// <summary>
         /// There are no comments for AssetParmeterDefaultValueModel in the schema.
         /// </summary>
@@ -97,27 +118,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _DimensionCombination;
-        /// <summary>
-        /// There are no comments for AssetParameterProposalJournalNameParameters in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> AssetParameterProposalJournalNameParameters
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._AssetParameterProposalJournalNameParameters == null))
-                {
-                    this._AssetParameterProposalJournalNameParameters = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName>(GetPath("AssetParameterProposalJournalNameParameters"));
-                }
-                return this._AssetParameterProposalJournalNameParameters;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> _AssetParameterProposalJournalNameParameters;
     }
         /// <summary>
         /// There are no comments for AssetParameter in the schema.
@@ -1453,6 +1453,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDerogatoryIncreaseChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> value);
         partial void OnDerogatoryIncreaseChanged();
         /// <summary>
+        /// There are no comments for Property AssetParameterProposalJournalNameParameters in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> AssetParameterProposalJournalNameParameters
+        {
+            get
+            {
+                return this._AssetParameterProposalJournalNameParameters;
+            }
+            set
+            {
+                this.OnAssetParameterProposalJournalNameParametersChanging(value);
+                this._AssetParameterProposalJournalNameParameters = value;
+                this.OnAssetParameterProposalJournalNameParametersChanged();
+                this.OnPropertyChanged("AssetParameterProposalJournalNameParameters");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> _AssetParameterProposalJournalNameParameters = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnAssetParameterProposalJournalNameParametersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> value);
+        partial void OnAssetParameterProposalJournalNameParametersChanged();
+        /// <summary>
         /// There are no comments for Property AssetParmeterDefaultValueModel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -1518,28 +1540,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.DimensionCombination _DimensionCombination;
         partial void OnDimensionCombinationChanging(global::Microsoft.Dynamics.DataEntities.DimensionCombination value);
         partial void OnDimensionCombinationChanged();
-        /// <summary>
-        /// There are no comments for Property AssetParameterProposalJournalNameParameters in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> AssetParameterProposalJournalNameParameters
-        {
-            get
-            {
-                return this._AssetParameterProposalJournalNameParameters;
-            }
-            set
-            {
-                this.OnAssetParameterProposalJournalNameParametersChanging(value);
-                this._AssetParameterProposalJournalNameParameters = value;
-                this.OnAssetParameterProposalJournalNameParametersChanged();
-                this.OnPropertyChanged("AssetParameterProposalJournalNameParameters");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> _AssetParameterProposalJournalNameParameters = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAssetParameterProposalJournalNameParametersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> value);
-        partial void OnAssetParameterProposalJournalNameParametersChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

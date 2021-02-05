@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public DisposableIncomeSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<DisposableIncome> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for DisposableIncomeBenefits in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.DisposableIncomeBenefit> DisposableIncomeBenefits
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._DisposableIncomeBenefits == null))
-                {
-                    this._DisposableIncomeBenefits = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.DisposableIncomeBenefit>(GetPath("DisposableIncomeBenefits"));
-                }
-                return this._DisposableIncomeBenefits;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.DisposableIncomeBenefit> _DisposableIncomeBenefits;
         /// <summary>
         /// There are no comments for DisposableIncomeEarnings in the schema.
         /// </summary>
@@ -97,6 +76,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WorkerGarnishmentRule> _GarnishmentTaxLevyRules;
+        /// <summary>
+        /// There are no comments for DisposableIncomeBenefits in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.DisposableIncomeBenefit> DisposableIncomeBenefits
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._DisposableIncomeBenefits == null))
+                {
+                    this._DisposableIncomeBenefits = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.DisposableIncomeBenefit>(GetPath("DisposableIncomeBenefits"));
+                }
+                return this._DisposableIncomeBenefits;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.DisposableIncomeBenefit> _DisposableIncomeBenefits;
     }
         /// <summary>
         /// There are no comments for DisposableIncome in the schema.
@@ -164,28 +164,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDescriptionChanging(string value);
         partial void OnDescriptionChanged();
         /// <summary>
-        /// There are no comments for Property DisposableIncomeBenefits in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DisposableIncomeBenefit> DisposableIncomeBenefits
-        {
-            get
-            {
-                return this._DisposableIncomeBenefits;
-            }
-            set
-            {
-                this.OnDisposableIncomeBenefitsChanging(value);
-                this._DisposableIncomeBenefits = value;
-                this.OnDisposableIncomeBenefitsChanged();
-                this.OnPropertyChanged("DisposableIncomeBenefits");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DisposableIncomeBenefit> _DisposableIncomeBenefits = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DisposableIncomeBenefit>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnDisposableIncomeBenefitsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DisposableIncomeBenefit> value);
-        partial void OnDisposableIncomeBenefitsChanged();
-        /// <summary>
         /// There are no comments for Property DisposableIncomeEarnings in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -229,6 +207,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerGarnishmentRule> _GarnishmentTaxLevyRules = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerGarnishmentRule>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnGarnishmentTaxLevyRulesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerGarnishmentRule> value);
         partial void OnGarnishmentTaxLevyRulesChanged();
+        /// <summary>
+        /// There are no comments for Property DisposableIncomeBenefits in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DisposableIncomeBenefit> DisposableIncomeBenefits
+        {
+            get
+            {
+                return this._DisposableIncomeBenefits;
+            }
+            set
+            {
+                this.OnDisposableIncomeBenefitsChanging(value);
+                this._DisposableIncomeBenefits = value;
+                this.OnDisposableIncomeBenefitsChanged();
+                this.OnPropertyChanged("DisposableIncomeBenefits");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DisposableIncomeBenefit> _DisposableIncomeBenefits = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DisposableIncomeBenefit>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnDisposableIncomeBenefitsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DisposableIncomeBenefit> value);
+        partial void OnDisposableIncomeBenefitsChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

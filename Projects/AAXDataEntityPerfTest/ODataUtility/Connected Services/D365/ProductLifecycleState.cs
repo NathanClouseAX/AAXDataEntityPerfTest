@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,48 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for ReleasedEngineeringProductVersions in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersion> ReleasedEngineeringProductVersions
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ReleasedEngineeringProductVersions == null))
-                {
-                    this._ReleasedEngineeringProductVersions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersion>(GetPath("ReleasedEngineeringProductVersions"));
-                }
-                return this._ReleasedEngineeringProductVersions;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersion> _ReleasedEngineeringProductVersions;
-        /// <summary>
-        /// There are no comments for EngineeringChangeOrderProducts in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProduct> EngineeringChangeOrderProducts
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._EngineeringChangeOrderProducts == null))
-                {
-                    this._EngineeringChangeOrderProducts = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProduct>(GetPath("EngineeringChangeOrderProducts"));
-                }
-                return this._EngineeringChangeOrderProducts;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProduct> _EngineeringChangeOrderProducts;
-        /// <summary>
         /// There are no comments for ReleasedProductsV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -97,27 +55,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductV2> _ReleasedProductsV2;
-        /// <summary>
-        /// There are no comments for ReleasedProductVariantsV2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariantV2> ReleasedProductVariantsV2
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ReleasedProductVariantsV2 == null))
-                {
-                    this._ReleasedProductVariantsV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariantV2>(GetPath("ReleasedProductVariantsV2"));
-                }
-                return this._ReleasedProductVariantsV2;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariantV2> _ReleasedProductVariantsV2;
         /// <summary>
         /// There are no comments for EngineeringProductCategoryDetails in the schema.
         /// </summary>
@@ -140,10 +77,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetails> _EngineeringProductCategoryDetails;
         /// <summary>
-        /// There are no comments for ProductLifecycleStateProcesses in the schema.
+        /// There are no comments for ReleasedEngineeringProductVersions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductLifecycleStateProcess> ProductLifecycleStateProcesses
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersion> ReleasedEngineeringProductVersions
         {
             get
             {
@@ -151,15 +88,57 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._ProductLifecycleStateProcesses == null))
+                if ((this._ReleasedEngineeringProductVersions == null))
                 {
-                    this._ProductLifecycleStateProcesses = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductLifecycleStateProcess>(GetPath("ProductLifecycleStateProcesses"));
+                    this._ReleasedEngineeringProductVersions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersion>(GetPath("ReleasedEngineeringProductVersions"));
                 }
-                return this._ProductLifecycleStateProcesses;
+                return this._ReleasedEngineeringProductVersions;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductLifecycleStateProcess> _ProductLifecycleStateProcesses;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersion> _ReleasedEngineeringProductVersions;
+        /// <summary>
+        /// There are no comments for ReleasedProductVariantsV2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariantV2> ReleasedProductVariantsV2
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ReleasedProductVariantsV2 == null))
+                {
+                    this._ReleasedProductVariantsV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariantV2>(GetPath("ReleasedProductVariantsV2"));
+                }
+                return this._ReleasedProductVariantsV2;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariantV2> _ReleasedProductVariantsV2;
+        /// <summary>
+        /// There are no comments for EngineeringChangeOrderProducts in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProduct> EngineeringChangeOrderProducts
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._EngineeringChangeOrderProducts == null))
+                {
+                    this._EngineeringChangeOrderProducts = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProduct>(GetPath("EngineeringChangeOrderProducts"));
+                }
+                return this._EngineeringChangeOrderProducts;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProduct> _EngineeringChangeOrderProducts;
         /// <summary>
         /// There are no comments for ReleasedProductVariants in the schema.
         /// </summary>
@@ -181,6 +160,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariant> _ReleasedProductVariants;
+        /// <summary>
+        /// There are no comments for ProductLifecycleStateProcesses in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductLifecycleStateProcess> ProductLifecycleStateProcesses
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ProductLifecycleStateProcesses == null))
+                {
+                    this._ProductLifecycleStateProcesses = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductLifecycleStateProcess>(GetPath("ProductLifecycleStateProcesses"));
+                }
+                return this._ProductLifecycleStateProcesses;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductLifecycleStateProcess> _ProductLifecycleStateProcesses;
     }
         /// <summary>
         /// There are no comments for ProductLifecycleState in the schema.
@@ -292,50 +292,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnIsActiveForPlanningChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> value);
         partial void OnIsActiveForPlanningChanged();
         /// <summary>
-        /// There are no comments for Property ReleasedEngineeringProductVersions in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersion> ReleasedEngineeringProductVersions
-        {
-            get
-            {
-                return this._ReleasedEngineeringProductVersions;
-            }
-            set
-            {
-                this.OnReleasedEngineeringProductVersionsChanging(value);
-                this._ReleasedEngineeringProductVersions = value;
-                this.OnReleasedEngineeringProductVersionsChanged();
-                this.OnPropertyChanged("ReleasedEngineeringProductVersions");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersion> _ReleasedEngineeringProductVersions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersion>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnReleasedEngineeringProductVersionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersion> value);
-        partial void OnReleasedEngineeringProductVersionsChanged();
-        /// <summary>
-        /// There are no comments for Property EngineeringChangeOrderProducts in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProduct> EngineeringChangeOrderProducts
-        {
-            get
-            {
-                return this._EngineeringChangeOrderProducts;
-            }
-            set
-            {
-                this.OnEngineeringChangeOrderProductsChanging(value);
-                this._EngineeringChangeOrderProducts = value;
-                this.OnEngineeringChangeOrderProductsChanged();
-                this.OnPropertyChanged("EngineeringChangeOrderProducts");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProduct> _EngineeringChangeOrderProducts = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProduct>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnEngineeringChangeOrderProductsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProduct> value);
-        partial void OnEngineeringChangeOrderProductsChanged();
-        /// <summary>
         /// There are no comments for Property ReleasedProductsV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -357,28 +313,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductV2> _ReleasedProductsV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnReleasedProductsV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductV2> value);
         partial void OnReleasedProductsV2Changed();
-        /// <summary>
-        /// There are no comments for Property ReleasedProductVariantsV2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariantV2> ReleasedProductVariantsV2
-        {
-            get
-            {
-                return this._ReleasedProductVariantsV2;
-            }
-            set
-            {
-                this.OnReleasedProductVariantsV2Changing(value);
-                this._ReleasedProductVariantsV2 = value;
-                this.OnReleasedProductVariantsV2Changed();
-                this.OnPropertyChanged("ReleasedProductVariantsV2");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariantV2> _ReleasedProductVariantsV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariantV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnReleasedProductVariantsV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariantV2> value);
-        partial void OnReleasedProductVariantsV2Changed();
         /// <summary>
         /// There are no comments for Property EngineeringProductCategoryDetails in the schema.
         /// </summary>
@@ -402,27 +336,71 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnEngineeringProductCategoryDetailsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetails> value);
         partial void OnEngineeringProductCategoryDetailsChanged();
         /// <summary>
-        /// There are no comments for Property ProductLifecycleStateProcesses in the schema.
+        /// There are no comments for Property ReleasedEngineeringProductVersions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductLifecycleStateProcess> ProductLifecycleStateProcesses
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersion> ReleasedEngineeringProductVersions
         {
             get
             {
-                return this._ProductLifecycleStateProcesses;
+                return this._ReleasedEngineeringProductVersions;
             }
             set
             {
-                this.OnProductLifecycleStateProcessesChanging(value);
-                this._ProductLifecycleStateProcesses = value;
-                this.OnProductLifecycleStateProcessesChanged();
-                this.OnPropertyChanged("ProductLifecycleStateProcesses");
+                this.OnReleasedEngineeringProductVersionsChanging(value);
+                this._ReleasedEngineeringProductVersions = value;
+                this.OnReleasedEngineeringProductVersionsChanged();
+                this.OnPropertyChanged("ReleasedEngineeringProductVersions");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductLifecycleStateProcess> _ProductLifecycleStateProcesses = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductLifecycleStateProcess>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnProductLifecycleStateProcessesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductLifecycleStateProcess> value);
-        partial void OnProductLifecycleStateProcessesChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersion> _ReleasedEngineeringProductVersions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersion>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnReleasedEngineeringProductVersionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersion> value);
+        partial void OnReleasedEngineeringProductVersionsChanged();
+        /// <summary>
+        /// There are no comments for Property ReleasedProductVariantsV2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariantV2> ReleasedProductVariantsV2
+        {
+            get
+            {
+                return this._ReleasedProductVariantsV2;
+            }
+            set
+            {
+                this.OnReleasedProductVariantsV2Changing(value);
+                this._ReleasedProductVariantsV2 = value;
+                this.OnReleasedProductVariantsV2Changed();
+                this.OnPropertyChanged("ReleasedProductVariantsV2");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariantV2> _ReleasedProductVariantsV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariantV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnReleasedProductVariantsV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariantV2> value);
+        partial void OnReleasedProductVariantsV2Changed();
+        /// <summary>
+        /// There are no comments for Property EngineeringChangeOrderProducts in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProduct> EngineeringChangeOrderProducts
+        {
+            get
+            {
+                return this._EngineeringChangeOrderProducts;
+            }
+            set
+            {
+                this.OnEngineeringChangeOrderProductsChanging(value);
+                this._EngineeringChangeOrderProducts = value;
+                this.OnEngineeringChangeOrderProductsChanged();
+                this.OnPropertyChanged("EngineeringChangeOrderProducts");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProduct> _EngineeringChangeOrderProducts = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProduct>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnEngineeringChangeOrderProductsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProduct> value);
+        partial void OnEngineeringChangeOrderProductsChanged();
         /// <summary>
         /// There are no comments for Property ReleasedProductVariants in the schema.
         /// </summary>
@@ -445,6 +423,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariant> _ReleasedProductVariants = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariant>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnReleasedProductVariantsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariant> value);
         partial void OnReleasedProductVariantsChanged();
+        /// <summary>
+        /// There are no comments for Property ProductLifecycleStateProcesses in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductLifecycleStateProcess> ProductLifecycleStateProcesses
+        {
+            get
+            {
+                return this._ProductLifecycleStateProcesses;
+            }
+            set
+            {
+                this.OnProductLifecycleStateProcessesChanging(value);
+                this._ProductLifecycleStateProcesses = value;
+                this.OnProductLifecycleStateProcessesChanged();
+                this.OnPropertyChanged("ProductLifecycleStateProcesses");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductLifecycleStateProcess> _ProductLifecycleStateProcesses = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductLifecycleStateProcess>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnProductLifecycleStateProcessesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductLifecycleStateProcess> value);
+        partial void OnProductLifecycleStateProcessesChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public AddressCitySingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AddressCity> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for Districts in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AddressDistrict> Districts
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._Districts == null))
-                {
-                    this._Districts = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AddressDistrict>(GetPath("Districts"));
-                }
-                return this._Districts;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AddressDistrict> _Districts;
         /// <summary>
         /// There are no comments for State in the schema.
         /// </summary>
@@ -118,6 +97,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.AddressCountryRegionSingle _CountryRegion;
+        /// <summary>
+        /// There are no comments for Districts in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AddressDistrict> Districts
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Districts == null))
+                {
+                    this._Districts = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AddressDistrict>(GetPath("Districts"));
+                }
+                return this._Districts;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AddressDistrict> _Districts;
         /// <summary>
         /// There are no comments for AssetLocation in the schema.
         /// </summary>
@@ -350,28 +350,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnBrazilCityCodeChanging(string value);
         partial void OnBrazilCityCodeChanged();
         /// <summary>
-        /// There are no comments for Property Districts in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AddressDistrict> Districts
-        {
-            get
-            {
-                return this._Districts;
-            }
-            set
-            {
-                this.OnDistrictsChanging(value);
-                this._Districts = value;
-                this.OnDistrictsChanged();
-                this.OnPropertyChanged("Districts");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AddressDistrict> _Districts = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AddressDistrict>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnDistrictsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AddressDistrict> value);
-        partial void OnDistrictsChanged();
-        /// <summary>
         /// There are no comments for Property State in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -437,6 +415,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.AddressCountryRegion _CountryRegion;
         partial void OnCountryRegionChanging(global::Microsoft.Dynamics.DataEntities.AddressCountryRegion value);
         partial void OnCountryRegionChanged();
+        /// <summary>
+        /// There are no comments for Property Districts in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AddressDistrict> Districts
+        {
+            get
+            {
+                return this._Districts;
+            }
+            set
+            {
+                this.OnDistrictsChanging(value);
+                this._Districts = value;
+                this.OnDistrictsChanged();
+                this.OnPropertyChanged("Districts");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AddressDistrict> _Districts = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AddressDistrict>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnDistrictsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AddressDistrict> value);
+        partial void OnDistrictsChanged();
         /// <summary>
         /// There are no comments for Property AssetLocation in the schema.
         /// </summary>

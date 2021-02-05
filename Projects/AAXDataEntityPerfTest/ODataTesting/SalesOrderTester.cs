@@ -16,7 +16,7 @@ namespace ODataTesting
                                     ReadWithSelect, Read10WithSelect, Read100WithSelect, Read1000WithSelect,
                                     Read10WithOrderByAscOnIndex, Ready10WithOrderByDescOnIndex, Read10WithOrderByAscNotOnIndex, Read10WithOrderByDescNotOnIndex,
                                     Read10WithOrderByAscOnCalculatedField, Read10WithOrderByDescOnCalculatedField,
-                                    ReadThread,
+                                    ReadThread, ReadPostLoad, ReadPostLoadExtended,
                                     ReadExpanded, ReadCombined,
                                     ReadAllPagesQuery, ReadAllPagesSkipTake,
                                     CreateCompoundMinimum, CreateCompoundMaximum, CreateSimpleMinimum, CreateSimpleMaximum, 

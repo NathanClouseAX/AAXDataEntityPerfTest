@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -538,45 +538,6 @@ namespace Microsoft.Dynamics.DataEntities
             {
                 this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
             }
-        }
-        /// <summary>
-        /// There are no comments for RemoveApproval in the schema.
-        /// </summary>
-        public virtual global::Microsoft.OData.Client.DataServiceActionQuery RemoveApproval()
-        {
-            global::Microsoft.OData.Client.EntityDescriptor resource = Context.EntityTracker.TryGetEntityDescriptor(this);
-            if (resource == null)
-            {
-                throw new global::System.Exception("cannot find entity");
-            }
-
-            return new global::Microsoft.OData.Client.DataServiceActionQuery(this.Context, resource.EditLink.OriginalString.Trim('/') + "/Microsoft.Dynamics.DataEntities.RemoveApproval");
-        }
-        /// <summary>
-        /// There are no comments for Activate in the schema.
-        /// </summary>
-        public virtual global::Microsoft.OData.Client.DataServiceActionQuery Activate()
-        {
-            global::Microsoft.OData.Client.EntityDescriptor resource = Context.EntityTracker.TryGetEntityDescriptor(this);
-            if (resource == null)
-            {
-                throw new global::System.Exception("cannot find entity");
-            }
-
-            return new global::Microsoft.OData.Client.DataServiceActionQuery(this.Context, resource.EditLink.OriginalString.Trim('/') + "/Microsoft.Dynamics.DataEntities.Activate");
-        }
-        /// <summary>
-        /// There are no comments for Approve in the schema.
-        /// </summary>
-        public virtual global::Microsoft.OData.Client.DataServiceActionQuery Approve(string _approverPersonnelNumber)
-        {
-            global::Microsoft.OData.Client.EntityDescriptor resource = Context.EntityTracker.TryGetEntityDescriptor(this);
-            if (resource == null)
-            {
-                throw new global::System.Exception("cannot find entity");
-            }
-
-            return new global::Microsoft.OData.Client.DataServiceActionQuery(this.Context, resource.EditLink.OriginalString.Trim('/') + "/Microsoft.Dynamics.DataEntities.Approve", new global::Microsoft.OData.Client.BodyOperationParameter("_approverPersonnelNumber", _approverPersonnelNumber));
         }
     }
 }

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for WarehouseLocations in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WarehouseLocation> WarehouseLocations
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._WarehouseLocations == null))
-                {
-                    this._WarehouseLocations = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.WarehouseLocation>(GetPath("WarehouseLocations"));
-                }
-                return this._WarehouseLocations;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WarehouseLocation> _WarehouseLocations;
-        /// <summary>
         /// There are no comments for Warehouse in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,6 +55,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.WarehouseSingle _Warehouse;
+        /// <summary>
+        /// There are no comments for WarehouseLocations in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WarehouseLocation> WarehouseLocations
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._WarehouseLocations == null))
+                {
+                    this._WarehouseLocations = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.WarehouseLocation>(GetPath("WarehouseLocations"));
+                }
+                return this._WarehouseLocations;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WarehouseLocation> _WarehouseLocations;
     }
         /// <summary>
         /// There are no comments for WarehouseAisle in the schema.
@@ -274,28 +274,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnAisleNumberChanging(int value);
         partial void OnAisleNumberChanged();
         /// <summary>
-        /// There are no comments for Property WarehouseLocations in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseLocation> WarehouseLocations
-        {
-            get
-            {
-                return this._WarehouseLocations;
-            }
-            set
-            {
-                this.OnWarehouseLocationsChanging(value);
-                this._WarehouseLocations = value;
-                this.OnWarehouseLocationsChanged();
-                this.OnPropertyChanged("WarehouseLocations");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseLocation> _WarehouseLocations = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseLocation>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnWarehouseLocationsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseLocation> value);
-        partial void OnWarehouseLocationsChanged();
-        /// <summary>
         /// There are no comments for Property Warehouse in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -317,6 +295,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.Warehouse _Warehouse;
         partial void OnWarehouseChanging(global::Microsoft.Dynamics.DataEntities.Warehouse value);
         partial void OnWarehouseChanged();
+        /// <summary>
+        /// There are no comments for Property WarehouseLocations in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseLocation> WarehouseLocations
+        {
+            get
+            {
+                return this._WarehouseLocations;
+            }
+            set
+            {
+                this.OnWarehouseLocationsChanging(value);
+                this._WarehouseLocations = value;
+                this.OnWarehouseLocationsChanged();
+                this.OnPropertyChanged("WarehouseLocations");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseLocation> _WarehouseLocations = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseLocation>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnWarehouseLocationsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseLocation> value);
+        partial void OnWarehouseLocationsChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

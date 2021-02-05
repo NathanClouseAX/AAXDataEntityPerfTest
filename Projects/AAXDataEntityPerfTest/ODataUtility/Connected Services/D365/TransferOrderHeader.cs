@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -1914,32 +1914,6 @@ namespace Microsoft.Dynamics.DataEntities
             {
                 this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
             }
-        }
-        /// <summary>
-        /// There are no comments for Ship in the schema.
-        /// </summary>
-        public virtual global::Microsoft.OData.Client.DataServiceActionQuery Ship()
-        {
-            global::Microsoft.OData.Client.EntityDescriptor resource = Context.EntityTracker.TryGetEntityDescriptor(this);
-            if (resource == null)
-            {
-                throw new global::System.Exception("cannot find entity");
-            }
-
-            return new global::Microsoft.OData.Client.DataServiceActionQuery(this.Context, resource.EditLink.OriginalString.Trim('/') + "/Microsoft.Dynamics.DataEntities.Ship");
-        }
-        /// <summary>
-        /// There are no comments for Receive in the schema.
-        /// </summary>
-        public virtual global::Microsoft.OData.Client.DataServiceActionQuery Receive()
-        {
-            global::Microsoft.OData.Client.EntityDescriptor resource = Context.EntityTracker.TryGetEntityDescriptor(this);
-            if (resource == null)
-            {
-                throw new global::System.Exception("cannot find entity");
-            }
-
-            return new global::Microsoft.OData.Client.DataServiceActionQuery(this.Context, resource.EditLink.OriginalString.Trim('/') + "/Microsoft.Dynamics.DataEntities.Receive");
         }
     }
 }

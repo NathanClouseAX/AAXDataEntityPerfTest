@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -77,27 +77,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetCalendar> _AssetMaintenanceAssetCalendar;
         /// <summary>
-        /// There are no comments for AssetMaintenanceWorkOrderType in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.AssetMaintenanceWorkOrderTypeSingle AssetMaintenanceWorkOrderType
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._AssetMaintenanceWorkOrderType == null))
-                {
-                    this._AssetMaintenanceWorkOrderType = new global::Microsoft.Dynamics.DataEntities.AssetMaintenanceWorkOrderTypeSingle(this.Context, GetPath("AssetMaintenanceWorkOrderType"));
-                }
-                return this._AssetMaintenanceWorkOrderType;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.AssetMaintenanceWorkOrderTypeSingle _AssetMaintenanceWorkOrderType;
-        /// <summary>
         /// There are no comments for AssetMaintenanceFunctionalLocationRound in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -118,6 +97,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationRound> _AssetMaintenanceFunctionalLocationRound;
+        /// <summary>
+        /// There are no comments for AssetMaintenanceWorkOrderType in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.AssetMaintenanceWorkOrderTypeSingle AssetMaintenanceWorkOrderType
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._AssetMaintenanceWorkOrderType == null))
+                {
+                    this._AssetMaintenanceWorkOrderType = new global::Microsoft.Dynamics.DataEntities.AssetMaintenanceWorkOrderTypeSingle(this.Context, GetPath("AssetMaintenanceWorkOrderType"));
+                }
+                return this._AssetMaintenanceWorkOrderType;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.AssetMaintenanceWorkOrderTypeSingle _AssetMaintenanceWorkOrderType;
     }
         /// <summary>
         /// There are no comments for AssetMaintenanceRound in the schema.
@@ -399,28 +399,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnAssetMaintenanceAssetCalendarChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetCalendar> value);
         partial void OnAssetMaintenanceAssetCalendarChanged();
         /// <summary>
-        /// There are no comments for Property AssetMaintenanceWorkOrderType in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.AssetMaintenanceWorkOrderType AssetMaintenanceWorkOrderType
-        {
-            get
-            {
-                return this._AssetMaintenanceWorkOrderType;
-            }
-            set
-            {
-                this.OnAssetMaintenanceWorkOrderTypeChanging(value);
-                this._AssetMaintenanceWorkOrderType = value;
-                this.OnAssetMaintenanceWorkOrderTypeChanged();
-                this.OnPropertyChanged("AssetMaintenanceWorkOrderType");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.AssetMaintenanceWorkOrderType _AssetMaintenanceWorkOrderType;
-        partial void OnAssetMaintenanceWorkOrderTypeChanging(global::Microsoft.Dynamics.DataEntities.AssetMaintenanceWorkOrderType value);
-        partial void OnAssetMaintenanceWorkOrderTypeChanged();
-        /// <summary>
         /// There are no comments for Property AssetMaintenanceFunctionalLocationRound in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -442,6 +420,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationRound> _AssetMaintenanceFunctionalLocationRound = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationRound>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnAssetMaintenanceFunctionalLocationRoundChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationRound> value);
         partial void OnAssetMaintenanceFunctionalLocationRoundChanged();
+        /// <summary>
+        /// There are no comments for Property AssetMaintenanceWorkOrderType in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.AssetMaintenanceWorkOrderType AssetMaintenanceWorkOrderType
+        {
+            get
+            {
+                return this._AssetMaintenanceWorkOrderType;
+            }
+            set
+            {
+                this.OnAssetMaintenanceWorkOrderTypeChanging(value);
+                this._AssetMaintenanceWorkOrderType = value;
+                this.OnAssetMaintenanceWorkOrderTypeChanged();
+                this.OnPropertyChanged("AssetMaintenanceWorkOrderType");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.AssetMaintenanceWorkOrderType _AssetMaintenanceWorkOrderType;
+        partial void OnAssetMaintenanceWorkOrderTypeChanging(global::Microsoft.Dynamics.DataEntities.AssetMaintenanceWorkOrderType value);
+        partial void OnAssetMaintenanceWorkOrderTypeChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

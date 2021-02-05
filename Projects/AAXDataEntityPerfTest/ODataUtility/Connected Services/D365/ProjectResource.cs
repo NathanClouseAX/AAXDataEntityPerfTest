@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for ProjectEmplForecast in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ProjectEmplForecastSingle ProjectEmplForecast
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ProjectEmplForecast == null))
-                {
-                    this._ProjectEmplForecast = new global::Microsoft.Dynamics.DataEntities.ProjectEmplForecastSingle(this.Context, GetPath("ProjectEmplForecast"));
-                }
-                return this._ProjectEmplForecast;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ProjectEmplForecastSingle _ProjectEmplForecast;
-        /// <summary>
         /// There are no comments for ProjectExpenseForecast in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -77,10 +56,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ProjectExpenseForecastSingle _ProjectExpenseForecast;
         /// <summary>
-        /// There are no comments for TransferPriceForResource in the schema.
+        /// There are no comments for ProjectEmplForecast in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TransferPrice> TransferPriceForResource
+        public virtual global::Microsoft.Dynamics.DataEntities.ProjectEmplForecastSingle ProjectEmplForecast
         {
             get
             {
@@ -88,15 +67,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._TransferPriceForResource == null))
+                if ((this._ProjectEmplForecast == null))
                 {
-                    this._TransferPriceForResource = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TransferPrice>(GetPath("TransferPriceForResource"));
+                    this._ProjectEmplForecast = new global::Microsoft.Dynamics.DataEntities.ProjectEmplForecastSingle(this.Context, GetPath("ProjectEmplForecast"));
                 }
-                return this._TransferPriceForResource;
+                return this._ProjectEmplForecast;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TransferPrice> _TransferPriceForResource;
+        private global::Microsoft.Dynamics.DataEntities.ProjectEmplForecastSingle _ProjectEmplForecast;
         /// <summary>
         /// There are no comments for ProjectFeeForecast in the schema.
         /// </summary>
@@ -119,27 +98,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ProjectFeeForecastSingle _ProjectFeeForecast;
         /// <summary>
-        /// There are no comments for ProjectRevenueSalesPrice in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProjectRevenueSalesPrice> ProjectRevenueSalesPrice
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ProjectRevenueSalesPrice == null))
-                {
-                    this._ProjectRevenueSalesPrice = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProjectRevenueSalesPrice>(GetPath("ProjectRevenueSalesPrice"));
-                }
-                return this._ProjectRevenueSalesPrice;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProjectRevenueSalesPrice> _ProjectRevenueSalesPrice;
-        /// <summary>
         /// There are no comments for JournalTrans in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -160,6 +118,48 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.JournalTransSingle _JournalTrans;
+        /// <summary>
+        /// There are no comments for TransferPriceForResource in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TransferPrice> TransferPriceForResource
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._TransferPriceForResource == null))
+                {
+                    this._TransferPriceForResource = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TransferPrice>(GetPath("TransferPriceForResource"));
+                }
+                return this._TransferPriceForResource;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TransferPrice> _TransferPriceForResource;
+        /// <summary>
+        /// There are no comments for ProjectRevenueSalesPrice in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProjectRevenueSalesPrice> ProjectRevenueSalesPrice
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ProjectRevenueSalesPrice == null))
+                {
+                    this._ProjectRevenueSalesPrice = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProjectRevenueSalesPrice>(GetPath("ProjectRevenueSalesPrice"));
+                }
+                return this._ProjectRevenueSalesPrice;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProjectRevenueSalesPrice> _ProjectRevenueSalesPrice;
     }
         /// <summary>
         /// There are no comments for ProjectResource in the schema.
@@ -177,31 +177,31 @@ namespace Microsoft.Dynamics.DataEntities
         /// </summary>
         /// <param name="resourceId">Initial value of ResourceId.</param>
         /// <param name="resourceCompanyId">Initial value of ResourceCompanyId.</param>
-        /// <param name="projectEmplForecast">Initial value of ProjectEmplForecast.</param>
         /// <param name="projectExpenseForecast">Initial value of ProjectExpenseForecast.</param>
+        /// <param name="projectEmplForecast">Initial value of ProjectEmplForecast.</param>
         /// <param name="projectFeeForecast">Initial value of ProjectFeeForecast.</param>
         /// <param name="journalTrans">Initial value of JournalTrans.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public static ProjectResource CreateProjectResource(string resourceId, 
                     string resourceCompanyId, 
-                    global::Microsoft.Dynamics.DataEntities.ProjectEmplForecast projectEmplForecast, 
                     global::Microsoft.Dynamics.DataEntities.ProjectExpenseForecast projectExpenseForecast, 
+                    global::Microsoft.Dynamics.DataEntities.ProjectEmplForecast projectEmplForecast, 
                     global::Microsoft.Dynamics.DataEntities.ProjectFeeForecast projectFeeForecast, 
                     global::Microsoft.Dynamics.DataEntities.JournalTrans journalTrans)
         {
             ProjectResource projectResource = new ProjectResource();
             projectResource.ResourceId = resourceId;
             projectResource.ResourceCompanyId = resourceCompanyId;
-            if ((projectEmplForecast == null))
-            {
-                throw new global::System.ArgumentNullException("projectEmplForecast");
-            }
-            projectResource.ProjectEmplForecast = projectEmplForecast;
             if ((projectExpenseForecast == null))
             {
                 throw new global::System.ArgumentNullException("projectExpenseForecast");
             }
             projectResource.ProjectExpenseForecast = projectExpenseForecast;
+            if ((projectEmplForecast == null))
+            {
+                throw new global::System.ArgumentNullException("projectEmplForecast");
+            }
+            projectResource.ProjectEmplForecast = projectEmplForecast;
             if ((projectFeeForecast == null))
             {
                 throw new global::System.ArgumentNullException("projectFeeForecast");
@@ -347,28 +347,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnTypeChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.WrkCtrType> value);
         partial void OnTypeChanged();
         /// <summary>
-        /// There are no comments for Property ProjectEmplForecast in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ProjectEmplForecast ProjectEmplForecast
-        {
-            get
-            {
-                return this._ProjectEmplForecast;
-            }
-            set
-            {
-                this.OnProjectEmplForecastChanging(value);
-                this._ProjectEmplForecast = value;
-                this.OnProjectEmplForecastChanged();
-                this.OnPropertyChanged("ProjectEmplForecast");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ProjectEmplForecast _ProjectEmplForecast;
-        partial void OnProjectEmplForecastChanging(global::Microsoft.Dynamics.DataEntities.ProjectEmplForecast value);
-        partial void OnProjectEmplForecastChanged();
-        /// <summary>
         /// There are no comments for Property ProjectExpenseForecast in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -391,27 +369,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnProjectExpenseForecastChanging(global::Microsoft.Dynamics.DataEntities.ProjectExpenseForecast value);
         partial void OnProjectExpenseForecastChanged();
         /// <summary>
-        /// There are no comments for Property TransferPriceForResource in the schema.
+        /// There are no comments for Property ProjectEmplForecast in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TransferPrice> TransferPriceForResource
+        public virtual global::Microsoft.Dynamics.DataEntities.ProjectEmplForecast ProjectEmplForecast
         {
             get
             {
-                return this._TransferPriceForResource;
+                return this._ProjectEmplForecast;
             }
             set
             {
-                this.OnTransferPriceForResourceChanging(value);
-                this._TransferPriceForResource = value;
-                this.OnTransferPriceForResourceChanged();
-                this.OnPropertyChanged("TransferPriceForResource");
+                this.OnProjectEmplForecastChanging(value);
+                this._ProjectEmplForecast = value;
+                this.OnProjectEmplForecastChanged();
+                this.OnPropertyChanged("ProjectEmplForecast");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TransferPrice> _TransferPriceForResource = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TransferPrice>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnTransferPriceForResourceChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TransferPrice> value);
-        partial void OnTransferPriceForResourceChanged();
+        private global::Microsoft.Dynamics.DataEntities.ProjectEmplForecast _ProjectEmplForecast;
+        partial void OnProjectEmplForecastChanging(global::Microsoft.Dynamics.DataEntities.ProjectEmplForecast value);
+        partial void OnProjectEmplForecastChanged();
         /// <summary>
         /// There are no comments for Property ProjectFeeForecast in the schema.
         /// </summary>
@@ -435,28 +413,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnProjectFeeForecastChanging(global::Microsoft.Dynamics.DataEntities.ProjectFeeForecast value);
         partial void OnProjectFeeForecastChanged();
         /// <summary>
-        /// There are no comments for Property ProjectRevenueSalesPrice in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProjectRevenueSalesPrice> ProjectRevenueSalesPrice
-        {
-            get
-            {
-                return this._ProjectRevenueSalesPrice;
-            }
-            set
-            {
-                this.OnProjectRevenueSalesPriceChanging(value);
-                this._ProjectRevenueSalesPrice = value;
-                this.OnProjectRevenueSalesPriceChanged();
-                this.OnPropertyChanged("ProjectRevenueSalesPrice");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProjectRevenueSalesPrice> _ProjectRevenueSalesPrice = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProjectRevenueSalesPrice>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnProjectRevenueSalesPriceChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProjectRevenueSalesPrice> value);
-        partial void OnProjectRevenueSalesPriceChanged();
-        /// <summary>
         /// There are no comments for Property JournalTrans in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -478,6 +434,50 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.JournalTrans _JournalTrans;
         partial void OnJournalTransChanging(global::Microsoft.Dynamics.DataEntities.JournalTrans value);
         partial void OnJournalTransChanged();
+        /// <summary>
+        /// There are no comments for Property TransferPriceForResource in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TransferPrice> TransferPriceForResource
+        {
+            get
+            {
+                return this._TransferPriceForResource;
+            }
+            set
+            {
+                this.OnTransferPriceForResourceChanging(value);
+                this._TransferPriceForResource = value;
+                this.OnTransferPriceForResourceChanged();
+                this.OnPropertyChanged("TransferPriceForResource");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TransferPrice> _TransferPriceForResource = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TransferPrice>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnTransferPriceForResourceChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TransferPrice> value);
+        partial void OnTransferPriceForResourceChanged();
+        /// <summary>
+        /// There are no comments for Property ProjectRevenueSalesPrice in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProjectRevenueSalesPrice> ProjectRevenueSalesPrice
+        {
+            get
+            {
+                return this._ProjectRevenueSalesPrice;
+            }
+            set
+            {
+                this.OnProjectRevenueSalesPriceChanging(value);
+                this._ProjectRevenueSalesPrice = value;
+                this.OnProjectRevenueSalesPriceChanged();
+                this.OnPropertyChanged("ProjectRevenueSalesPrice");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProjectRevenueSalesPrice> _ProjectRevenueSalesPrice = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProjectRevenueSalesPrice>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnProjectRevenueSalesPriceChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProjectRevenueSalesPrice> value);
+        partial void OnProjectRevenueSalesPriceChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for SADDocumentInvoiceLineLedgerJournal in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SADDocumentInvoiceLineLedgerJournal> SADDocumentInvoiceLineLedgerJournal
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._SADDocumentInvoiceLineLedgerJournal == null))
-                {
-                    this._SADDocumentInvoiceLineLedgerJournal = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.SADDocumentInvoiceLineLedgerJournal>(GetPath("SADDocumentInvoiceLineLedgerJournal"));
-                }
-                return this._SADDocumentInvoiceLineLedgerJournal;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SADDocumentInvoiceLineLedgerJournal> _SADDocumentInvoiceLineLedgerJournal;
-        /// <summary>
         /// There are no comments for SADDocumentLedgerJournal in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,6 +55,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.SADDocumentLedgerJournalSingle _SADDocumentLedgerJournal;
+        /// <summary>
+        /// There are no comments for SADDocumentInvoiceLineLedgerJournal in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SADDocumentInvoiceLineLedgerJournal> SADDocumentInvoiceLineLedgerJournal
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._SADDocumentInvoiceLineLedgerJournal == null))
+                {
+                    this._SADDocumentInvoiceLineLedgerJournal = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.SADDocumentInvoiceLineLedgerJournal>(GetPath("SADDocumentInvoiceLineLedgerJournal"));
+                }
+                return this._SADDocumentInvoiceLineLedgerJournal;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SADDocumentInvoiceLineLedgerJournal> _SADDocumentInvoiceLineLedgerJournal;
     }
         /// <summary>
         /// There are no comments for SADDocumentLineLedgerJournal in the schema.
@@ -321,28 +321,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnSalesTaxAmountChanging(decimal value);
         partial void OnSalesTaxAmountChanged();
         /// <summary>
-        /// There are no comments for Property SADDocumentInvoiceLineLedgerJournal in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SADDocumentInvoiceLineLedgerJournal> SADDocumentInvoiceLineLedgerJournal
-        {
-            get
-            {
-                return this._SADDocumentInvoiceLineLedgerJournal;
-            }
-            set
-            {
-                this.OnSADDocumentInvoiceLineLedgerJournalChanging(value);
-                this._SADDocumentInvoiceLineLedgerJournal = value;
-                this.OnSADDocumentInvoiceLineLedgerJournalChanged();
-                this.OnPropertyChanged("SADDocumentInvoiceLineLedgerJournal");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SADDocumentInvoiceLineLedgerJournal> _SADDocumentInvoiceLineLedgerJournal = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SADDocumentInvoiceLineLedgerJournal>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnSADDocumentInvoiceLineLedgerJournalChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SADDocumentInvoiceLineLedgerJournal> value);
-        partial void OnSADDocumentInvoiceLineLedgerJournalChanged();
-        /// <summary>
         /// There are no comments for Property SADDocumentLedgerJournal in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -364,6 +342,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.SADDocumentLedgerJournal _SADDocumentLedgerJournal;
         partial void OnSADDocumentLedgerJournalChanging(global::Microsoft.Dynamics.DataEntities.SADDocumentLedgerJournal value);
         partial void OnSADDocumentLedgerJournalChanged();
+        /// <summary>
+        /// There are no comments for Property SADDocumentInvoiceLineLedgerJournal in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SADDocumentInvoiceLineLedgerJournal> SADDocumentInvoiceLineLedgerJournal
+        {
+            get
+            {
+                return this._SADDocumentInvoiceLineLedgerJournal;
+            }
+            set
+            {
+                this.OnSADDocumentInvoiceLineLedgerJournalChanging(value);
+                this._SADDocumentInvoiceLineLedgerJournal = value;
+                this.OnSADDocumentInvoiceLineLedgerJournalChanged();
+                this.OnPropertyChanged("SADDocumentInvoiceLineLedgerJournal");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SADDocumentInvoiceLineLedgerJournal> _SADDocumentInvoiceLineLedgerJournal = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SADDocumentInvoiceLineLedgerJournal>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnSADDocumentInvoiceLineLedgerJournalChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SADDocumentInvoiceLineLedgerJournal> value);
+        partial void OnSADDocumentInvoiceLineLedgerJournalChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

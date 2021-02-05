@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for ExchangeRateExchangeRateType in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ExchangeRateTypeSingle ExchangeRateExchangeRateType
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ExchangeRateExchangeRateType == null))
-                {
-                    this._ExchangeRateExchangeRateType = new global::Microsoft.Dynamics.DataEntities.ExchangeRateTypeSingle(this.Context, GetPath("ExchangeRateExchangeRateType"));
-                }
-                return this._ExchangeRateExchangeRateType;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ExchangeRateTypeSingle _ExchangeRateExchangeRateType;
-        /// <summary>
         /// There are no comments for Currency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,27 +55,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.CurrencySingle _Currency;
-        /// <summary>
-        /// There are no comments for FromCurrencies in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.CurrencySingle FromCurrencies
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._FromCurrencies == null))
-                {
-                    this._FromCurrencies = new global::Microsoft.Dynamics.DataEntities.CurrencySingle(this.Context, GetPath("FromCurrencies"));
-                }
-                return this._FromCurrencies;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.CurrencySingle _FromCurrencies;
     }
         /// <summary>
         /// There are no comments for ExchangeRateCDSEntity in the schema.
@@ -120,15 +78,13 @@ namespace Microsoft.Dynamics.DataEntities
         /// <param name="validFrom">Initial value of ValidFrom.</param>
         /// <param name="rate">Initial value of Rate.</param>
         /// <param name="validTo">Initial value of ValidTo.</param>
-        /// <param name="exchangeRateExchangeRateType">Initial value of ExchangeRateExchangeRateType.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public static ExchangeRateCDSEntity CreateExchangeRateCDSEntity(string exchangeRateTypeName, 
                     string fromCurrencyCode, 
                     string toCurrencyCode, 
                     global::System.DateTimeOffset validFrom, 
                     decimal rate, 
-                    global::System.DateTimeOffset validTo, 
-                    global::Microsoft.Dynamics.DataEntities.ExchangeRateType exchangeRateExchangeRateType)
+                    global::System.DateTimeOffset validTo)
         {
             ExchangeRateCDSEntity exchangeRateCDSEntity = new ExchangeRateCDSEntity();
             exchangeRateCDSEntity.ExchangeRateTypeName = exchangeRateTypeName;
@@ -137,11 +93,6 @@ namespace Microsoft.Dynamics.DataEntities
             exchangeRateCDSEntity.ValidFrom = validFrom;
             exchangeRateCDSEntity.Rate = rate;
             exchangeRateCDSEntity.ValidTo = validTo;
-            if ((exchangeRateExchangeRateType == null))
-            {
-                throw new global::System.ArgumentNullException("exchangeRateExchangeRateType");
-            }
-            exchangeRateCDSEntity.ExchangeRateExchangeRateType = exchangeRateExchangeRateType;
             return exchangeRateCDSEntity;
         }
         /// <summary>
@@ -277,28 +228,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnValidToChanging(global::System.DateTimeOffset value);
         partial void OnValidToChanged();
         /// <summary>
-        /// There are no comments for Property ExchangeRateExchangeRateType in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ExchangeRateType ExchangeRateExchangeRateType
-        {
-            get
-            {
-                return this._ExchangeRateExchangeRateType;
-            }
-            set
-            {
-                this.OnExchangeRateExchangeRateTypeChanging(value);
-                this._ExchangeRateExchangeRateType = value;
-                this.OnExchangeRateExchangeRateTypeChanged();
-                this.OnPropertyChanged("ExchangeRateExchangeRateType");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ExchangeRateType _ExchangeRateExchangeRateType;
-        partial void OnExchangeRateExchangeRateTypeChanging(global::Microsoft.Dynamics.DataEntities.ExchangeRateType value);
-        partial void OnExchangeRateExchangeRateTypeChanged();
-        /// <summary>
         /// There are no comments for Property Currency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -320,28 +249,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.Currency _Currency;
         partial void OnCurrencyChanging(global::Microsoft.Dynamics.DataEntities.Currency value);
         partial void OnCurrencyChanged();
-        /// <summary>
-        /// There are no comments for Property FromCurrencies in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.Currency FromCurrencies
-        {
-            get
-            {
-                return this._FromCurrencies;
-            }
-            set
-            {
-                this.OnFromCurrenciesChanging(value);
-                this._FromCurrencies = value;
-                this.OnFromCurrenciesChanged();
-                this.OnPropertyChanged("FromCurrencies");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.Currency _FromCurrencies;
-        partial void OnFromCurrenciesChanging(global::Microsoft.Dynamics.DataEntities.Currency value);
-        partial void OnFromCurrenciesChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

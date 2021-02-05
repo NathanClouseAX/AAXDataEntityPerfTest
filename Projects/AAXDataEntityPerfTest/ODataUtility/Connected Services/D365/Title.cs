@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,31 +35,10 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for Contractors in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Contractor> Contractors
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._Contractors == null))
-                {
-                    this._Contractors = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.Contractor>(GetPath("Contractors"));
-                }
-                return this._Contractors;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Contractor> _Contractors;
-        /// <summary>
         /// There are no comments for Positions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Position> Positions
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PositionDetail> Positions
         {
             get
             {
@@ -69,18 +48,18 @@ namespace Microsoft.Dynamics.DataEntities
                 }
                 if ((this._Positions == null))
                 {
-                    this._Positions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.Position>(GetPath("Positions"));
+                    this._Positions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PositionDetail>(GetPath("Positions"));
                 }
                 return this._Positions;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Position> _Positions;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PositionDetail> _Positions;
         /// <summary>
-        /// There are no comments for WorkerTitles in the schema.
+        /// There are no comments for Employees in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WorkerSummary> WorkerTitles
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Employee> Employees
         {
             get
             {
@@ -88,15 +67,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._WorkerTitles == null))
+                if ((this._Employees == null))
                 {
-                    this._WorkerTitles = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.WorkerSummary>(GetPath("WorkerTitles"));
+                    this._Employees = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.Employee>(GetPath("Employees"));
                 }
-                return this._WorkerTitles;
+                return this._Employees;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WorkerSummary> _WorkerTitles;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Employee> _Employees;
         /// <summary>
         /// There are no comments for Workers in the schema.
         /// </summary>
@@ -119,10 +98,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Worker> _Workers;
         /// <summary>
-        /// There are no comments for Employees in the schema.
+        /// There are no comments for WorkerTitles in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Employee> Employees
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WorkerSummary> WorkerTitles
         {
             get
             {
@@ -130,15 +109,36 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._Employees == null))
+                if ((this._WorkerTitles == null))
                 {
-                    this._Employees = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.Employee>(GetPath("Employees"));
+                    this._WorkerTitles = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.WorkerSummary>(GetPath("WorkerTitles"));
                 }
-                return this._Employees;
+                return this._WorkerTitles;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Employee> _Employees;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WorkerSummary> _WorkerTitles;
+        /// <summary>
+        /// There are no comments for Contractors in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Contractor> Contractors
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Contractors == null))
+                {
+                    this._Contractors = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.Contractor>(GetPath("Contractors"));
+                }
+                return this._Contractors;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Contractor> _Contractors;
         /// <summary>
         /// There are no comments for Jobs in the schema.
         /// </summary>
@@ -205,32 +205,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnTitleIdChanging(string value);
         partial void OnTitleIdChanged();
         /// <summary>
-        /// There are no comments for Property Contractors in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Contractor> Contractors
-        {
-            get
-            {
-                return this._Contractors;
-            }
-            set
-            {
-                this.OnContractorsChanging(value);
-                this._Contractors = value;
-                this.OnContractorsChanged();
-                this.OnPropertyChanged("Contractors");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Contractor> _Contractors = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Contractor>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnContractorsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Contractor> value);
-        partial void OnContractorsChanged();
-        /// <summary>
         /// There are no comments for Property Positions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Position> Positions
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PositionDetail> Positions
         {
             get
             {
@@ -245,31 +223,31 @@ namespace Microsoft.Dynamics.DataEntities
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Position> _Positions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Position>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPositionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Position> value);
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PositionDetail> _Positions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PositionDetail>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPositionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PositionDetail> value);
         partial void OnPositionsChanged();
         /// <summary>
-        /// There are no comments for Property WorkerTitles in the schema.
+        /// There are no comments for Property Employees in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerSummary> WorkerTitles
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Employee> Employees
         {
             get
             {
-                return this._WorkerTitles;
+                return this._Employees;
             }
             set
             {
-                this.OnWorkerTitlesChanging(value);
-                this._WorkerTitles = value;
-                this.OnWorkerTitlesChanged();
-                this.OnPropertyChanged("WorkerTitles");
+                this.OnEmployeesChanging(value);
+                this._Employees = value;
+                this.OnEmployeesChanged();
+                this.OnPropertyChanged("Employees");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerSummary> _WorkerTitles = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerSummary>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnWorkerTitlesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerSummary> value);
-        partial void OnWorkerTitlesChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Employee> _Employees = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Employee>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnEmployeesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Employee> value);
+        partial void OnEmployeesChanged();
         /// <summary>
         /// There are no comments for Property Workers in the schema.
         /// </summary>
@@ -293,27 +271,49 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnWorkersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Worker> value);
         partial void OnWorkersChanged();
         /// <summary>
-        /// There are no comments for Property Employees in the schema.
+        /// There are no comments for Property WorkerTitles in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Employee> Employees
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerSummary> WorkerTitles
         {
             get
             {
-                return this._Employees;
+                return this._WorkerTitles;
             }
             set
             {
-                this.OnEmployeesChanging(value);
-                this._Employees = value;
-                this.OnEmployeesChanged();
-                this.OnPropertyChanged("Employees");
+                this.OnWorkerTitlesChanging(value);
+                this._WorkerTitles = value;
+                this.OnWorkerTitlesChanged();
+                this.OnPropertyChanged("WorkerTitles");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Employee> _Employees = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Employee>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnEmployeesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Employee> value);
-        partial void OnEmployeesChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerSummary> _WorkerTitles = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerSummary>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnWorkerTitlesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerSummary> value);
+        partial void OnWorkerTitlesChanged();
+        /// <summary>
+        /// There are no comments for Property Contractors in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Contractor> Contractors
+        {
+            get
+            {
+                return this._Contractors;
+            }
+            set
+            {
+                this.OnContractorsChanging(value);
+                this._Contractors = value;
+                this.OnContractorsChanged();
+                this.OnPropertyChanged("Contractors");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Contractor> _Contractors = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Contractor>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnContractorsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Contractor> value);
+        partial void OnContractorsChanged();
         /// <summary>
         /// There are no comments for Property Jobs in the schema.
         /// </summary>

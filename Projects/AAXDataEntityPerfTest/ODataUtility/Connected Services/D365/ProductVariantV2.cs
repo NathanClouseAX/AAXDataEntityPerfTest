@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for ProductMaster in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ProductMasterSingle ProductMaster
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ProductMaster == null))
-                {
-                    this._ProductMaster = new global::Microsoft.Dynamics.DataEntities.ProductMasterSingle(this.Context, GetPath("ProductMaster"));
-                }
-                return this._ProductMaster;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ProductMasterSingle _ProductMaster;
-        /// <summary>
         /// There are no comments for ReleasedProductVariantV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,6 +55,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariantV2> _ReleasedProductVariantV2;
+        /// <summary>
+        /// There are no comments for ProductMaster in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.ProductMasterSingle ProductMaster
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ProductMaster == null))
+                {
+                    this._ProductMaster = new global::Microsoft.Dynamics.DataEntities.ProductMasterSingle(this.Context, GetPath("ProductMaster"));
+                }
+                return this._ProductMaster;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.ProductMasterSingle _ProductMaster;
     }
         /// <summary>
         /// There are no comments for ProductVariantV2 in the schema.
@@ -346,28 +346,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnProductNameChanging(string value);
         partial void OnProductNameChanged();
         /// <summary>
-        /// There are no comments for Property ProductMaster in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ProductMaster ProductMaster
-        {
-            get
-            {
-                return this._ProductMaster;
-            }
-            set
-            {
-                this.OnProductMasterChanging(value);
-                this._ProductMaster = value;
-                this.OnProductMasterChanged();
-                this.OnPropertyChanged("ProductMaster");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ProductMaster _ProductMaster;
-        partial void OnProductMasterChanging(global::Microsoft.Dynamics.DataEntities.ProductMaster value);
-        partial void OnProductMasterChanged();
-        /// <summary>
         /// There are no comments for Property ReleasedProductVariantV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -389,6 +367,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariantV2> _ReleasedProductVariantV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariantV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnReleasedProductVariantV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariantV2> value);
         partial void OnReleasedProductVariantV2Changed();
+        /// <summary>
+        /// There are no comments for Property ProductMaster in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.ProductMaster ProductMaster
+        {
+            get
+            {
+                return this._ProductMaster;
+            }
+            set
+            {
+                this.OnProductMasterChanging(value);
+                this._ProductMaster = value;
+                this.OnProductMasterChanged();
+                this.OnPropertyChanged("ProductMaster");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.ProductMaster _ProductMaster;
+        partial void OnProductMasterChanging(global::Microsoft.Dynamics.DataEntities.ProductMaster value);
+        partial void OnProductMasterChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for DimensionCombination in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle DimensionCombination
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._DimensionCombination == null))
-                {
-                    this._DimensionCombination = new global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle(this.Context, GetPath("DimensionCombination"));
-                }
-                return this._DimensionCombination;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _DimensionCombination;
-        /// <summary>
         /// There are no comments for TaxCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,6 +55,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TaxCode> _TaxCode;
+        /// <summary>
+        /// There are no comments for DimensionCombination in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle DimensionCombination
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._DimensionCombination == null))
+                {
+                    this._DimensionCombination = new global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle(this.Context, GetPath("DimensionCombination"));
+                }
+                return this._DimensionCombination;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _DimensionCombination;
     }
         /// <summary>
         /// There are no comments for TaxPostingGroup in the schema.
@@ -520,28 +520,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnTaxIncomingDiffOffsetMainAccountIdDisplayValueChanging(string value);
         partial void OnTaxIncomingDiffOffsetMainAccountIdDisplayValueChanged();
         /// <summary>
-        /// There are no comments for Property DimensionCombination in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination DimensionCombination
-        {
-            get
-            {
-                return this._DimensionCombination;
-            }
-            set
-            {
-                this.OnDimensionCombinationChanging(value);
-                this._DimensionCombination = value;
-                this.OnDimensionCombinationChanged();
-                this.OnPropertyChanged("DimensionCombination");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.DimensionCombination _DimensionCombination;
-        partial void OnDimensionCombinationChanging(global::Microsoft.Dynamics.DataEntities.DimensionCombination value);
-        partial void OnDimensionCombinationChanged();
-        /// <summary>
         /// There are no comments for Property TaxCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -563,6 +541,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCode> _TaxCode = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCode>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnTaxCodeChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCode> value);
         partial void OnTaxCodeChanged();
+        /// <summary>
+        /// There are no comments for Property DimensionCombination in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination DimensionCombination
+        {
+            get
+            {
+                return this._DimensionCombination;
+            }
+            set
+            {
+                this.OnDimensionCombinationChanging(value);
+                this._DimensionCombination = value;
+                this.OnDimensionCombinationChanged();
+                this.OnPropertyChanged("DimensionCombination");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.DimensionCombination _DimensionCombination;
+        partial void OnDimensionCombinationChanging(global::Microsoft.Dynamics.DataEntities.DimensionCombination value);
+        partial void OnDimensionCombinationChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

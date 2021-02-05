@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,10 +35,10 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for AssetParameterProposalJournalName in the schema.
+        /// There are no comments for BankAccount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> AssetParameterProposalJournalName
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BankAccount> BankAccount
         {
             get
             {
@@ -46,15 +46,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._AssetParameterProposalJournalName == null))
+                if ((this._BankAccount == null))
                 {
-                    this._AssetParameterProposalJournalName = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName>(GetPath("AssetParameterProposalJournalName"));
+                    this._BankAccount = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BankAccount>(GetPath("BankAccount"));
                 }
-                return this._AssetParameterProposalJournalName;
+                return this._BankAccount;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> _AssetParameterProposalJournalName;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BankAccount> _BankAccount;
         /// <summary>
         /// There are no comments for VendorPaymentMethod in the schema.
         /// </summary>
@@ -77,10 +77,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendorPaymentMethod> _VendorPaymentMethod;
         /// <summary>
-        /// There are no comments for BudgetJournalName in the schema.
+        /// There are no comments for LedgerIntercompanyJournalName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetParameters> BudgetJournalName
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerInterCompanyAccount> LedgerIntercompanyJournalName
         {
             get
             {
@@ -88,15 +88,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._BudgetJournalName == null))
+                if ((this._LedgerIntercompanyJournalName == null))
                 {
-                    this._BudgetJournalName = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetParameters>(GetPath("BudgetJournalName"));
+                    this._LedgerIntercompanyJournalName = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerInterCompanyAccount>(GetPath("LedgerIntercompanyJournalName"));
                 }
-                return this._BudgetJournalName;
+                return this._LedgerIntercompanyJournalName;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetParameters> _BudgetJournalName;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerInterCompanyAccount> _LedgerIntercompanyJournalName;
         /// <summary>
         /// There are no comments for CustomerPaymentMethod in the schema.
         /// </summary>
@@ -118,48 +118,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CustomerPaymentMethod> _CustomerPaymentMethod;
-        /// <summary>
-        /// There are no comments for BankAccount in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BankAccount> BankAccount
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._BankAccount == null))
-                {
-                    this._BankAccount = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BankAccount>(GetPath("BankAccount"));
-                }
-                return this._BankAccount;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BankAccount> _BankAccount;
-        /// <summary>
-        /// There are no comments for LedgerIntercompanyJournalName in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerInterCompanyAccount> LedgerIntercompanyJournalName
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._LedgerIntercompanyJournalName == null))
-                {
-                    this._LedgerIntercompanyJournalName = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerInterCompanyAccount>(GetPath("LedgerIntercompanyJournalName"));
-                }
-                return this._LedgerIntercompanyJournalName;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerInterCompanyAccount> _LedgerIntercompanyJournalName;
         /// <summary>
         /// There are no comments for DimensionCombination in the schema.
         /// </summary>
@@ -202,6 +160,48 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionSetSingle _DimensionSet;
+        /// <summary>
+        /// There are no comments for AssetParameterProposalJournalName in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> AssetParameterProposalJournalName
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._AssetParameterProposalJournalName == null))
+                {
+                    this._AssetParameterProposalJournalName = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName>(GetPath("AssetParameterProposalJournalName"));
+                }
+                return this._AssetParameterProposalJournalName;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> _AssetParameterProposalJournalName;
+        /// <summary>
+        /// There are no comments for BudgetJournalName in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetParameters> BudgetJournalName
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._BudgetJournalName == null))
+                {
+                    this._BudgetJournalName = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetParameters>(GetPath("BudgetJournalName"));
+                }
+                return this._BudgetJournalName;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetParameters> _BudgetJournalName;
     }
         /// <summary>
         /// There are no comments for JournalName in the schema.
@@ -1000,27 +1000,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnRequiresSimulationValidation_ITChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> value);
         partial void OnRequiresSimulationValidation_ITChanged();
         /// <summary>
-        /// There are no comments for Property AssetParameterProposalJournalName in the schema.
+        /// There are no comments for Property BankAccount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> AssetParameterProposalJournalName
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BankAccount> BankAccount
         {
             get
             {
-                return this._AssetParameterProposalJournalName;
+                return this._BankAccount;
             }
             set
             {
-                this.OnAssetParameterProposalJournalNameChanging(value);
-                this._AssetParameterProposalJournalName = value;
-                this.OnAssetParameterProposalJournalNameChanged();
-                this.OnPropertyChanged("AssetParameterProposalJournalName");
+                this.OnBankAccountChanging(value);
+                this._BankAccount = value;
+                this.OnBankAccountChanged();
+                this.OnPropertyChanged("BankAccount");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> _AssetParameterProposalJournalName = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAssetParameterProposalJournalNameChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> value);
-        partial void OnAssetParameterProposalJournalNameChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BankAccount> _BankAccount = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BankAccount>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnBankAccountChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BankAccount> value);
+        partial void OnBankAccountChanged();
         /// <summary>
         /// There are no comments for Property VendorPaymentMethod in the schema.
         /// </summary>
@@ -1044,27 +1044,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnVendorPaymentMethodChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorPaymentMethod> value);
         partial void OnVendorPaymentMethodChanged();
         /// <summary>
-        /// There are no comments for Property BudgetJournalName in the schema.
+        /// There are no comments for Property LedgerIntercompanyJournalName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetParameters> BudgetJournalName
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerInterCompanyAccount> LedgerIntercompanyJournalName
         {
             get
             {
-                return this._BudgetJournalName;
+                return this._LedgerIntercompanyJournalName;
             }
             set
             {
-                this.OnBudgetJournalNameChanging(value);
-                this._BudgetJournalName = value;
-                this.OnBudgetJournalNameChanged();
-                this.OnPropertyChanged("BudgetJournalName");
+                this.OnLedgerIntercompanyJournalNameChanging(value);
+                this._LedgerIntercompanyJournalName = value;
+                this.OnLedgerIntercompanyJournalNameChanged();
+                this.OnPropertyChanged("LedgerIntercompanyJournalName");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetParameters> _BudgetJournalName = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetParameters>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnBudgetJournalNameChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetParameters> value);
-        partial void OnBudgetJournalNameChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerInterCompanyAccount> _LedgerIntercompanyJournalName = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerInterCompanyAccount>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnLedgerIntercompanyJournalNameChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerInterCompanyAccount> value);
+        partial void OnLedgerIntercompanyJournalNameChanged();
         /// <summary>
         /// There are no comments for Property CustomerPaymentMethod in the schema.
         /// </summary>
@@ -1087,50 +1087,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerPaymentMethod> _CustomerPaymentMethod = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerPaymentMethod>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnCustomerPaymentMethodChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerPaymentMethod> value);
         partial void OnCustomerPaymentMethodChanged();
-        /// <summary>
-        /// There are no comments for Property BankAccount in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BankAccount> BankAccount
-        {
-            get
-            {
-                return this._BankAccount;
-            }
-            set
-            {
-                this.OnBankAccountChanging(value);
-                this._BankAccount = value;
-                this.OnBankAccountChanged();
-                this.OnPropertyChanged("BankAccount");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BankAccount> _BankAccount = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BankAccount>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnBankAccountChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BankAccount> value);
-        partial void OnBankAccountChanged();
-        /// <summary>
-        /// There are no comments for Property LedgerIntercompanyJournalName in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerInterCompanyAccount> LedgerIntercompanyJournalName
-        {
-            get
-            {
-                return this._LedgerIntercompanyJournalName;
-            }
-            set
-            {
-                this.OnLedgerIntercompanyJournalNameChanging(value);
-                this._LedgerIntercompanyJournalName = value;
-                this.OnLedgerIntercompanyJournalNameChanged();
-                this.OnPropertyChanged("LedgerIntercompanyJournalName");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerInterCompanyAccount> _LedgerIntercompanyJournalName = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerInterCompanyAccount>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnLedgerIntercompanyJournalNameChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerInterCompanyAccount> value);
-        partial void OnLedgerIntercompanyJournalNameChanged();
         /// <summary>
         /// There are no comments for Property DimensionCombination in the schema.
         /// </summary>
@@ -1175,6 +1131,50 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.DimensionSet _DimensionSet;
         partial void OnDimensionSetChanging(global::Microsoft.Dynamics.DataEntities.DimensionSet value);
         partial void OnDimensionSetChanged();
+        /// <summary>
+        /// There are no comments for Property AssetParameterProposalJournalName in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> AssetParameterProposalJournalName
+        {
+            get
+            {
+                return this._AssetParameterProposalJournalName;
+            }
+            set
+            {
+                this.OnAssetParameterProposalJournalNameChanging(value);
+                this._AssetParameterProposalJournalName = value;
+                this.OnAssetParameterProposalJournalNameChanged();
+                this.OnPropertyChanged("AssetParameterProposalJournalName");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> _AssetParameterProposalJournalName = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnAssetParameterProposalJournalNameChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> value);
+        partial void OnAssetParameterProposalJournalNameChanged();
+        /// <summary>
+        /// There are no comments for Property BudgetJournalName in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetParameters> BudgetJournalName
+        {
+            get
+            {
+                return this._BudgetJournalName;
+            }
+            set
+            {
+                this.OnBudgetJournalNameChanging(value);
+                this._BudgetJournalName = value;
+                this.OnBudgetJournalNameChanged();
+                this.OnPropertyChanged("BudgetJournalName");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetParameters> _BudgetJournalName = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetParameters>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnBudgetJournalNameChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetParameters> value);
+        partial void OnBudgetJournalNameChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

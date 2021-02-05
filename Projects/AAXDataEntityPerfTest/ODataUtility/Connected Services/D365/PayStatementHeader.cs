@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,69 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for PayrollUSTaxTransactionSummary in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayrollUSTaxTransactionSummary> PayrollUSTaxTransactionSummary
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._PayrollUSTaxTransactionSummary == null))
-                {
-                    this._PayrollUSTaxTransactionSummary = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PayrollUSTaxTransactionSummary>(GetPath("PayrollUSTaxTransactionSummary"));
-                }
-                return this._PayrollUSTaxTransactionSummary;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayrollUSTaxTransactionSummary> _PayrollUSTaxTransactionSummary;
-        /// <summary>
-        /// There are no comments for PayStatementEarningLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLine> PayStatementEarningLine
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._PayStatementEarningLine == null))
-                {
-                    this._PayStatementEarningLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLine>(GetPath("PayStatementEarningLine"));
-                }
-                return this._PayStatementEarningLine;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLine> _PayStatementEarningLine;
-        /// <summary>
-        /// There are no comments for PayStatementTaxLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayStatementTaxLine> PayStatementTaxLine
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._PayStatementTaxLine == null))
-                {
-                    this._PayStatementTaxLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PayStatementTaxLine>(GetPath("PayStatementTaxLine"));
-                }
-                return this._PayStatementTaxLine;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayStatementTaxLine> _PayStatementTaxLine;
-        /// <summary>
         /// There are no comments for PayStatementBenefitLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -119,10 +56,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayStatementBenefitLine> _PayStatementBenefitLine;
         /// <summary>
-        /// There are no comments for PayStatementEarningLines in the schema.
+        /// There are no comments for PayrollUSTaxTransactionSummary in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLineInquiry> PayStatementEarningLines
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayrollUSTaxTransactionSummary> PayrollUSTaxTransactionSummary
         {
             get
             {
@@ -130,57 +67,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._PayStatementEarningLines == null))
+                if ((this._PayrollUSTaxTransactionSummary == null))
                 {
-                    this._PayStatementEarningLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLineInquiry>(GetPath("PayStatementEarningLines"));
+                    this._PayrollUSTaxTransactionSummary = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PayrollUSTaxTransactionSummary>(GetPath("PayrollUSTaxTransactionSummary"));
                 }
-                return this._PayStatementEarningLines;
+                return this._PayrollUSTaxTransactionSummary;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLineInquiry> _PayStatementEarningLines;
-        /// <summary>
-        /// There are no comments for DeductionArrear in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.DeductionArrear> DeductionArrear
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._DeductionArrear == null))
-                {
-                    this._DeductionArrear = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.DeductionArrear>(GetPath("DeductionArrear"));
-                }
-                return this._DeductionArrear;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.DeductionArrear> _DeductionArrear;
-        /// <summary>
-        /// There are no comments for USTaxTransactionHistoryDetail in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.USTaxTransactionHistoryDetail> USTaxTransactionHistoryDetail
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._USTaxTransactionHistoryDetail == null))
-                {
-                    this._USTaxTransactionHistoryDetail = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.USTaxTransactionHistoryDetail>(GetPath("USTaxTransactionHistoryDetail"));
-                }
-                return this._USTaxTransactionHistoryDetail;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.USTaxTransactionHistoryDetail> _USTaxTransactionHistoryDetail;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayrollUSTaxTransactionSummary> _PayrollUSTaxTransactionSummary;
         /// <summary>
         /// There are no comments for DeductionArrearRecovery in the schema.
         /// </summary>
@@ -203,10 +98,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.DeductionArrearRecovery> _DeductionArrearRecovery;
         /// <summary>
-        /// There are no comments for TaxTransactions in the schema.
+        /// There are no comments for PayStatementEarningLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.USTaxTransactionHistory> TaxTransactions
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLineInquiry> PayStatementEarningLines
         {
             get
             {
@@ -214,15 +109,57 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._TaxTransactions == null))
+                if ((this._PayStatementEarningLines == null))
                 {
-                    this._TaxTransactions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.USTaxTransactionHistory>(GetPath("TaxTransactions"));
+                    this._PayStatementEarningLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLineInquiry>(GetPath("PayStatementEarningLines"));
                 }
-                return this._TaxTransactions;
+                return this._PayStatementEarningLines;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.USTaxTransactionHistory> _TaxTransactions;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLineInquiry> _PayStatementEarningLines;
+        /// <summary>
+        /// There are no comments for PayStatementAccrualBalance in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayStatementAccrualBalance> PayStatementAccrualBalance
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._PayStatementAccrualBalance == null))
+                {
+                    this._PayStatementAccrualBalance = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PayStatementAccrualBalance>(GetPath("PayStatementAccrualBalance"));
+                }
+                return this._PayStatementAccrualBalance;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayStatementAccrualBalance> _PayStatementAccrualBalance;
+        /// <summary>
+        /// There are no comments for USTaxTransactionHistoryDetail in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.USTaxTransactionHistoryDetail> USTaxTransactionHistoryDetail
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._USTaxTransactionHistoryDetail == null))
+                {
+                    this._USTaxTransactionHistoryDetail = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.USTaxTransactionHistoryDetail>(GetPath("USTaxTransactionHistoryDetail"));
+                }
+                return this._USTaxTransactionHistoryDetail;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.USTaxTransactionHistoryDetail> _USTaxTransactionHistoryDetail;
         /// <summary>
         /// There are no comments for Worker in the schema.
         /// </summary>
@@ -266,6 +203,69 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.PayCycleSingle _PayCycle;
         /// <summary>
+        /// There are no comments for TaxTransactions in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.USTaxTransactionHistory> TaxTransactions
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._TaxTransactions == null))
+                {
+                    this._TaxTransactions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.USTaxTransactionHistory>(GetPath("TaxTransactions"));
+                }
+                return this._TaxTransactions;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.USTaxTransactionHistory> _TaxTransactions;
+        /// <summary>
+        /// There are no comments for DeductionArrear in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.DeductionArrear> DeductionArrear
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._DeductionArrear == null))
+                {
+                    this._DeductionArrear = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.DeductionArrear>(GetPath("DeductionArrear"));
+                }
+                return this._DeductionArrear;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.DeductionArrear> _DeductionArrear;
+        /// <summary>
+        /// There are no comments for PayStatementTaxLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayStatementTaxLine> PayStatementTaxLine
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._PayStatementTaxLine == null))
+                {
+                    this._PayStatementTaxLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PayStatementTaxLine>(GetPath("PayStatementTaxLine"));
+                }
+                return this._PayStatementTaxLine;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayStatementTaxLine> _PayStatementTaxLine;
+        /// <summary>
         /// There are no comments for PayStatementBenefitLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -287,10 +287,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayStatementBenefitLineInquiry> _PayStatementBenefitLines;
         /// <summary>
-        /// There are no comments for PayStatementAccrualBalance in the schema.
+        /// There are no comments for PayStatementEarningLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayStatementAccrualBalance> PayStatementAccrualBalance
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLine> PayStatementEarningLine
         {
             get
             {
@@ -298,15 +298,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._PayStatementAccrualBalance == null))
+                if ((this._PayStatementEarningLine == null))
                 {
-                    this._PayStatementAccrualBalance = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PayStatementAccrualBalance>(GetPath("PayStatementAccrualBalance"));
+                    this._PayStatementEarningLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLine>(GetPath("PayStatementEarningLine"));
                 }
-                return this._PayStatementAccrualBalance;
+                return this._PayStatementEarningLine;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayStatementAccrualBalance> _PayStatementAccrualBalance;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLine> _PayStatementEarningLine;
     }
         /// <summary>
         /// There are no comments for PayStatementHeader in the schema.
@@ -777,72 +777,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnPeriodEndDateChanging(global::System.DateTimeOffset value);
         partial void OnPeriodEndDateChanged();
         /// <summary>
-        /// There are no comments for Property PayrollUSTaxTransactionSummary in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayrollUSTaxTransactionSummary> PayrollUSTaxTransactionSummary
-        {
-            get
-            {
-                return this._PayrollUSTaxTransactionSummary;
-            }
-            set
-            {
-                this.OnPayrollUSTaxTransactionSummaryChanging(value);
-                this._PayrollUSTaxTransactionSummary = value;
-                this.OnPayrollUSTaxTransactionSummaryChanged();
-                this.OnPropertyChanged("PayrollUSTaxTransactionSummary");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayrollUSTaxTransactionSummary> _PayrollUSTaxTransactionSummary = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayrollUSTaxTransactionSummary>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPayrollUSTaxTransactionSummaryChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayrollUSTaxTransactionSummary> value);
-        partial void OnPayrollUSTaxTransactionSummaryChanged();
-        /// <summary>
-        /// There are no comments for Property PayStatementEarningLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLine> PayStatementEarningLine
-        {
-            get
-            {
-                return this._PayStatementEarningLine;
-            }
-            set
-            {
-                this.OnPayStatementEarningLineChanging(value);
-                this._PayStatementEarningLine = value;
-                this.OnPayStatementEarningLineChanged();
-                this.OnPropertyChanged("PayStatementEarningLine");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLine> _PayStatementEarningLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPayStatementEarningLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLine> value);
-        partial void OnPayStatementEarningLineChanged();
-        /// <summary>
-        /// There are no comments for Property PayStatementTaxLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementTaxLine> PayStatementTaxLine
-        {
-            get
-            {
-                return this._PayStatementTaxLine;
-            }
-            set
-            {
-                this.OnPayStatementTaxLineChanging(value);
-                this._PayStatementTaxLine = value;
-                this.OnPayStatementTaxLineChanged();
-                this.OnPropertyChanged("PayStatementTaxLine");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementTaxLine> _PayStatementTaxLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementTaxLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPayStatementTaxLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementTaxLine> value);
-        partial void OnPayStatementTaxLineChanged();
-        /// <summary>
         /// There are no comments for Property PayStatementBenefitLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -865,71 +799,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnPayStatementBenefitLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementBenefitLine> value);
         partial void OnPayStatementBenefitLineChanged();
         /// <summary>
-        /// There are no comments for Property PayStatementEarningLines in the schema.
+        /// There are no comments for Property PayrollUSTaxTransactionSummary in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLineInquiry> PayStatementEarningLines
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayrollUSTaxTransactionSummary> PayrollUSTaxTransactionSummary
         {
             get
             {
-                return this._PayStatementEarningLines;
+                return this._PayrollUSTaxTransactionSummary;
             }
             set
             {
-                this.OnPayStatementEarningLinesChanging(value);
-                this._PayStatementEarningLines = value;
-                this.OnPayStatementEarningLinesChanged();
-                this.OnPropertyChanged("PayStatementEarningLines");
+                this.OnPayrollUSTaxTransactionSummaryChanging(value);
+                this._PayrollUSTaxTransactionSummary = value;
+                this.OnPayrollUSTaxTransactionSummaryChanged();
+                this.OnPropertyChanged("PayrollUSTaxTransactionSummary");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLineInquiry> _PayStatementEarningLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLineInquiry>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPayStatementEarningLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLineInquiry> value);
-        partial void OnPayStatementEarningLinesChanged();
-        /// <summary>
-        /// There are no comments for Property DeductionArrear in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DeductionArrear> DeductionArrear
-        {
-            get
-            {
-                return this._DeductionArrear;
-            }
-            set
-            {
-                this.OnDeductionArrearChanging(value);
-                this._DeductionArrear = value;
-                this.OnDeductionArrearChanged();
-                this.OnPropertyChanged("DeductionArrear");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DeductionArrear> _DeductionArrear = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DeductionArrear>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnDeductionArrearChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DeductionArrear> value);
-        partial void OnDeductionArrearChanged();
-        /// <summary>
-        /// There are no comments for Property USTaxTransactionHistoryDetail in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.USTaxTransactionHistoryDetail> USTaxTransactionHistoryDetail
-        {
-            get
-            {
-                return this._USTaxTransactionHistoryDetail;
-            }
-            set
-            {
-                this.OnUSTaxTransactionHistoryDetailChanging(value);
-                this._USTaxTransactionHistoryDetail = value;
-                this.OnUSTaxTransactionHistoryDetailChanged();
-                this.OnPropertyChanged("USTaxTransactionHistoryDetail");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.USTaxTransactionHistoryDetail> _USTaxTransactionHistoryDetail = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.USTaxTransactionHistoryDetail>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnUSTaxTransactionHistoryDetailChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.USTaxTransactionHistoryDetail> value);
-        partial void OnUSTaxTransactionHistoryDetailChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayrollUSTaxTransactionSummary> _PayrollUSTaxTransactionSummary = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayrollUSTaxTransactionSummary>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPayrollUSTaxTransactionSummaryChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayrollUSTaxTransactionSummary> value);
+        partial void OnPayrollUSTaxTransactionSummaryChanged();
         /// <summary>
         /// There are no comments for Property DeductionArrearRecovery in the schema.
         /// </summary>
@@ -953,27 +843,71 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDeductionArrearRecoveryChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DeductionArrearRecovery> value);
         partial void OnDeductionArrearRecoveryChanged();
         /// <summary>
-        /// There are no comments for Property TaxTransactions in the schema.
+        /// There are no comments for Property PayStatementEarningLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.USTaxTransactionHistory> TaxTransactions
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLineInquiry> PayStatementEarningLines
         {
             get
             {
-                return this._TaxTransactions;
+                return this._PayStatementEarningLines;
             }
             set
             {
-                this.OnTaxTransactionsChanging(value);
-                this._TaxTransactions = value;
-                this.OnTaxTransactionsChanged();
-                this.OnPropertyChanged("TaxTransactions");
+                this.OnPayStatementEarningLinesChanging(value);
+                this._PayStatementEarningLines = value;
+                this.OnPayStatementEarningLinesChanged();
+                this.OnPropertyChanged("PayStatementEarningLines");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.USTaxTransactionHistory> _TaxTransactions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.USTaxTransactionHistory>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnTaxTransactionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.USTaxTransactionHistory> value);
-        partial void OnTaxTransactionsChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLineInquiry> _PayStatementEarningLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLineInquiry>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPayStatementEarningLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLineInquiry> value);
+        partial void OnPayStatementEarningLinesChanged();
+        /// <summary>
+        /// There are no comments for Property PayStatementAccrualBalance in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementAccrualBalance> PayStatementAccrualBalance
+        {
+            get
+            {
+                return this._PayStatementAccrualBalance;
+            }
+            set
+            {
+                this.OnPayStatementAccrualBalanceChanging(value);
+                this._PayStatementAccrualBalance = value;
+                this.OnPayStatementAccrualBalanceChanged();
+                this.OnPropertyChanged("PayStatementAccrualBalance");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementAccrualBalance> _PayStatementAccrualBalance = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementAccrualBalance>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPayStatementAccrualBalanceChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementAccrualBalance> value);
+        partial void OnPayStatementAccrualBalanceChanged();
+        /// <summary>
+        /// There are no comments for Property USTaxTransactionHistoryDetail in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.USTaxTransactionHistoryDetail> USTaxTransactionHistoryDetail
+        {
+            get
+            {
+                return this._USTaxTransactionHistoryDetail;
+            }
+            set
+            {
+                this.OnUSTaxTransactionHistoryDetailChanging(value);
+                this._USTaxTransactionHistoryDetail = value;
+                this.OnUSTaxTransactionHistoryDetailChanged();
+                this.OnPropertyChanged("USTaxTransactionHistoryDetail");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.USTaxTransactionHistoryDetail> _USTaxTransactionHistoryDetail = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.USTaxTransactionHistoryDetail>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnUSTaxTransactionHistoryDetailChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.USTaxTransactionHistoryDetail> value);
+        partial void OnUSTaxTransactionHistoryDetailChanged();
         /// <summary>
         /// There are no comments for Property Worker in the schema.
         /// </summary>
@@ -1019,6 +953,72 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnPayCycleChanging(global::Microsoft.Dynamics.DataEntities.PayCycle value);
         partial void OnPayCycleChanged();
         /// <summary>
+        /// There are no comments for Property TaxTransactions in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.USTaxTransactionHistory> TaxTransactions
+        {
+            get
+            {
+                return this._TaxTransactions;
+            }
+            set
+            {
+                this.OnTaxTransactionsChanging(value);
+                this._TaxTransactions = value;
+                this.OnTaxTransactionsChanged();
+                this.OnPropertyChanged("TaxTransactions");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.USTaxTransactionHistory> _TaxTransactions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.USTaxTransactionHistory>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnTaxTransactionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.USTaxTransactionHistory> value);
+        partial void OnTaxTransactionsChanged();
+        /// <summary>
+        /// There are no comments for Property DeductionArrear in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DeductionArrear> DeductionArrear
+        {
+            get
+            {
+                return this._DeductionArrear;
+            }
+            set
+            {
+                this.OnDeductionArrearChanging(value);
+                this._DeductionArrear = value;
+                this.OnDeductionArrearChanged();
+                this.OnPropertyChanged("DeductionArrear");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DeductionArrear> _DeductionArrear = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DeductionArrear>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnDeductionArrearChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DeductionArrear> value);
+        partial void OnDeductionArrearChanged();
+        /// <summary>
+        /// There are no comments for Property PayStatementTaxLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementTaxLine> PayStatementTaxLine
+        {
+            get
+            {
+                return this._PayStatementTaxLine;
+            }
+            set
+            {
+                this.OnPayStatementTaxLineChanging(value);
+                this._PayStatementTaxLine = value;
+                this.OnPayStatementTaxLineChanged();
+                this.OnPropertyChanged("PayStatementTaxLine");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementTaxLine> _PayStatementTaxLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementTaxLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPayStatementTaxLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementTaxLine> value);
+        partial void OnPayStatementTaxLineChanged();
+        /// <summary>
         /// There are no comments for Property PayStatementBenefitLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -1041,27 +1041,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnPayStatementBenefitLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementBenefitLineInquiry> value);
         partial void OnPayStatementBenefitLinesChanged();
         /// <summary>
-        /// There are no comments for Property PayStatementAccrualBalance in the schema.
+        /// There are no comments for Property PayStatementEarningLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementAccrualBalance> PayStatementAccrualBalance
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLine> PayStatementEarningLine
         {
             get
             {
-                return this._PayStatementAccrualBalance;
+                return this._PayStatementEarningLine;
             }
             set
             {
-                this.OnPayStatementAccrualBalanceChanging(value);
-                this._PayStatementAccrualBalance = value;
-                this.OnPayStatementAccrualBalanceChanged();
-                this.OnPropertyChanged("PayStatementAccrualBalance");
+                this.OnPayStatementEarningLineChanging(value);
+                this._PayStatementEarningLine = value;
+                this.OnPayStatementEarningLineChanged();
+                this.OnPropertyChanged("PayStatementEarningLine");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementAccrualBalance> _PayStatementAccrualBalance = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementAccrualBalance>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPayStatementAccrualBalanceChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementAccrualBalance> value);
-        partial void OnPayStatementAccrualBalanceChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLine> _PayStatementEarningLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPayStatementEarningLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLine> value);
+        partial void OnPayStatementEarningLineChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

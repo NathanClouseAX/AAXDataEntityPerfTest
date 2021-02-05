@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,6 +34,27 @@ namespace Microsoft.Dynamics.DataEntities
         public PositionDetailSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<PositionDetail> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for Title in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.TitleSingle Title
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Title == null))
+                {
+                    this._Title = new global::Microsoft.Dynamics.DataEntities.TitleSingle(this.Context, GetPath("Title"));
+                }
+                return this._Title;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.TitleSingle _Title;
         /// <summary>
         /// There are no comments for CompensationRegion in the schema.
         /// </summary>
@@ -77,6 +98,27 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.PositionV2Single _Position;
         /// <summary>
+        /// There are no comments for Job in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.JobSingle Job
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Job == null))
+                {
+                    this._Job = new global::Microsoft.Dynamics.DataEntities.JobSingle(this.Context, GetPath("Job"));
+                }
+                return this._Job;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.JobSingle _Job;
+        /// <summary>
         /// There are no comments for Department in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -97,6 +139,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DepartmentSingle _Department;
+        /// <summary>
+        /// There are no comments for PositionType in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.PositionTypeSingle PositionType
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._PositionType == null))
+                {
+                    this._PositionType = new global::Microsoft.Dynamics.DataEntities.PositionTypeSingle(this.Context, GetPath("PositionType"));
+                }
+                return this._PositionType;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.PositionTypeSingle _PositionType;
     }
         /// <summary>
         /// There are no comments for PositionDetail in the schema.
@@ -383,6 +446,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnCompensationRegionIdChanging(string value);
         partial void OnCompensationRegionIdChanged();
         /// <summary>
+        /// There are no comments for Property Title in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.Title Title
+        {
+            get
+            {
+                return this._Title;
+            }
+            set
+            {
+                this.OnTitleChanging(value);
+                this._Title = value;
+                this.OnTitleChanged();
+                this.OnPropertyChanged("Title");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.Title _Title;
+        partial void OnTitleChanging(global::Microsoft.Dynamics.DataEntities.Title value);
+        partial void OnTitleChanged();
+        /// <summary>
         /// There are no comments for Property CompensationRegion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -427,6 +512,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnPositionChanging(global::Microsoft.Dynamics.DataEntities.PositionV2 value);
         partial void OnPositionChanged();
         /// <summary>
+        /// There are no comments for Property Job in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.Job Job
+        {
+            get
+            {
+                return this._Job;
+            }
+            set
+            {
+                this.OnJobChanging(value);
+                this._Job = value;
+                this.OnJobChanged();
+                this.OnPropertyChanged("Job");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.Job _Job;
+        partial void OnJobChanging(global::Microsoft.Dynamics.DataEntities.Job value);
+        partial void OnJobChanged();
+        /// <summary>
         /// There are no comments for Property Department in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -448,6 +555,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.Department _Department;
         partial void OnDepartmentChanging(global::Microsoft.Dynamics.DataEntities.Department value);
         partial void OnDepartmentChanged();
+        /// <summary>
+        /// There are no comments for Property PositionType in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.PositionType PositionType
+        {
+            get
+            {
+                return this._PositionType;
+            }
+            set
+            {
+                this.OnPositionTypeChanging(value);
+                this._PositionType = value;
+                this.OnPositionTypeChanged();
+                this.OnPropertyChanged("PositionType");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.PositionType _PositionType;
+        partial void OnPositionTypeChanging(global::Microsoft.Dynamics.DataEntities.PositionType value);
+        partial void OnPositionTypeChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

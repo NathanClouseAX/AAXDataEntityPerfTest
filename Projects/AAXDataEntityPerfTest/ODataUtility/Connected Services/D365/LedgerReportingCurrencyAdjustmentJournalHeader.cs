@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for LedgerReportingCurrencyAdjustmentJournalLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLine> LedgerReportingCurrencyAdjustmentJournalLine
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._LedgerReportingCurrencyAdjustmentJournalLine == null))
-                {
-                    this._LedgerReportingCurrencyAdjustmentJournalLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLine>(GetPath("LedgerReportingCurrencyAdjustmentJournalLine"));
-                }
-                return this._LedgerReportingCurrencyAdjustmentJournalLine;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLine> _LedgerReportingCurrencyAdjustmentJournalLine;
-        /// <summary>
         /// There are no comments for LegalEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,6 +55,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.LegalEntitySingle _LegalEntity;
+        /// <summary>
+        /// There are no comments for LedgerReportingCurrencyAdjustmentJournalLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLine> LedgerReportingCurrencyAdjustmentJournalLine
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._LedgerReportingCurrencyAdjustmentJournalLine == null))
+                {
+                    this._LedgerReportingCurrencyAdjustmentJournalLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLine>(GetPath("LedgerReportingCurrencyAdjustmentJournalLine"));
+                }
+                return this._LedgerReportingCurrencyAdjustmentJournalLine;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLine> _LedgerReportingCurrencyAdjustmentJournalLine;
     }
         /// <summary>
         /// There are no comments for LedgerReportingCurrencyAdjustmentJournalHeader in the schema.
@@ -304,28 +304,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnJournalTotalCreditReportingCurrencyChanging(decimal value);
         partial void OnJournalTotalCreditReportingCurrencyChanged();
         /// <summary>
-        /// There are no comments for Property LedgerReportingCurrencyAdjustmentJournalLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLine> LedgerReportingCurrencyAdjustmentJournalLine
-        {
-            get
-            {
-                return this._LedgerReportingCurrencyAdjustmentJournalLine;
-            }
-            set
-            {
-                this.OnLedgerReportingCurrencyAdjustmentJournalLineChanging(value);
-                this._LedgerReportingCurrencyAdjustmentJournalLine = value;
-                this.OnLedgerReportingCurrencyAdjustmentJournalLineChanged();
-                this.OnPropertyChanged("LedgerReportingCurrencyAdjustmentJournalLine");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLine> _LedgerReportingCurrencyAdjustmentJournalLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnLedgerReportingCurrencyAdjustmentJournalLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLine> value);
-        partial void OnLedgerReportingCurrencyAdjustmentJournalLineChanged();
-        /// <summary>
         /// There are no comments for Property LegalEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -347,6 +325,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.LegalEntity _LegalEntity;
         partial void OnLegalEntityChanging(global::Microsoft.Dynamics.DataEntities.LegalEntity value);
         partial void OnLegalEntityChanged();
+        /// <summary>
+        /// There are no comments for Property LedgerReportingCurrencyAdjustmentJournalLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLine> LedgerReportingCurrencyAdjustmentJournalLine
+        {
+            get
+            {
+                return this._LedgerReportingCurrencyAdjustmentJournalLine;
+            }
+            set
+            {
+                this.OnLedgerReportingCurrencyAdjustmentJournalLineChanging(value);
+                this._LedgerReportingCurrencyAdjustmentJournalLine = value;
+                this.OnLedgerReportingCurrencyAdjustmentJournalLineChanged();
+                this.OnPropertyChanged("LedgerReportingCurrencyAdjustmentJournalLine");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLine> _LedgerReportingCurrencyAdjustmentJournalLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnLedgerReportingCurrencyAdjustmentJournalLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLine> value);
+        partial void OnLedgerReportingCurrencyAdjustmentJournalLineChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

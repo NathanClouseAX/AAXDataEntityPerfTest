@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxClass xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Name>SalesOrderHeaderV2Entity_Extension</Name>
+	<SourceCode>
+		<Declaration><![CDATA[
+[ExtensionOf(tableStr(SalesOrderHeaderV2Entity))]
+public final class SalesOrderHeaderV2Entity_Extension
+{
+}
+]]></Declaration>
+		<Methods />
+	</SourceCode>
+</AxClass>

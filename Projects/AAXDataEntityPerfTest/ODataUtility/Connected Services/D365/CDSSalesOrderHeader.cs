@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,48 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for CDSSalesQuotationHeader in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.CDSSalesQuotationHeaderSingle CDSSalesQuotationHeader
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._CDSSalesQuotationHeader == null))
-                {
-                    this._CDSSalesQuotationHeader = new global::Microsoft.Dynamics.DataEntities.CDSSalesQuotationHeaderSingle(this.Context, GetPath("CDSSalesQuotationHeader"));
-                }
-                return this._CDSSalesQuotationHeader;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.CDSSalesQuotationHeaderSingle _CDSSalesQuotationHeader;
-        /// <summary>
-        /// There are no comments for CDSSalesOrderLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CDSSalesOrderLine> CDSSalesOrderLines
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._CDSSalesOrderLines == null))
-                {
-                    this._CDSSalesOrderLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CDSSalesOrderLine>(GetPath("CDSSalesOrderLines"));
-                }
-                return this._CDSSalesOrderLines;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CDSSalesOrderLine> _CDSSalesOrderLines;
-        /// <summary>
         /// There are no comments for SalesOrderHeaderDocumentAttachments in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -98,6 +56,27 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesOrderHeaderDocumentAttachment> _SalesOrderHeaderDocumentAttachments;
         /// <summary>
+        /// There are no comments for CDSSalesQuotationHeader in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.CDSSalesQuotationHeaderSingle CDSSalesQuotationHeader
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._CDSSalesQuotationHeader == null))
+                {
+                    this._CDSSalesQuotationHeader = new global::Microsoft.Dynamics.DataEntities.CDSSalesQuotationHeaderSingle(this.Context, GetPath("CDSSalesQuotationHeader"));
+                }
+                return this._CDSSalesQuotationHeader;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.CDSSalesQuotationHeaderSingle _CDSSalesQuotationHeader;
+        /// <summary>
         /// There are no comments for Project in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -118,6 +97,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ProjectSingle _Project;
+        /// <summary>
+        /// There are no comments for CDSSalesOrderLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CDSSalesOrderLine> CDSSalesOrderLines
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._CDSSalesOrderLines == null))
+                {
+                    this._CDSSalesOrderLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CDSSalesOrderLine>(GetPath("CDSSalesOrderLines"));
+                }
+                return this._CDSSalesOrderLines;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CDSSalesOrderLine> _CDSSalesOrderLines;
     }
         /// <summary>
         /// There are no comments for CDSSalesOrderHeader in the schema.
@@ -2216,50 +2216,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnInvoiceAddressLongitudeChanging(decimal value);
         partial void OnInvoiceAddressLongitudeChanged();
         /// <summary>
-        /// There are no comments for Property CDSSalesQuotationHeader in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.CDSSalesQuotationHeader CDSSalesQuotationHeader
-        {
-            get
-            {
-                return this._CDSSalesQuotationHeader;
-            }
-            set
-            {
-                this.OnCDSSalesQuotationHeaderChanging(value);
-                this._CDSSalesQuotationHeader = value;
-                this.OnCDSSalesQuotationHeaderChanged();
-                this.OnPropertyChanged("CDSSalesQuotationHeader");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.CDSSalesQuotationHeader _CDSSalesQuotationHeader;
-        partial void OnCDSSalesQuotationHeaderChanging(global::Microsoft.Dynamics.DataEntities.CDSSalesQuotationHeader value);
-        partial void OnCDSSalesQuotationHeaderChanged();
-        /// <summary>
-        /// There are no comments for Property CDSSalesOrderLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CDSSalesOrderLine> CDSSalesOrderLines
-        {
-            get
-            {
-                return this._CDSSalesOrderLines;
-            }
-            set
-            {
-                this.OnCDSSalesOrderLinesChanging(value);
-                this._CDSSalesOrderLines = value;
-                this.OnCDSSalesOrderLinesChanged();
-                this.OnPropertyChanged("CDSSalesOrderLines");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CDSSalesOrderLine> _CDSSalesOrderLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CDSSalesOrderLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnCDSSalesOrderLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CDSSalesOrderLine> value);
-        partial void OnCDSSalesOrderLinesChanged();
-        /// <summary>
         /// There are no comments for Property SalesOrderHeaderDocumentAttachments in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -2282,6 +2238,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnSalesOrderHeaderDocumentAttachmentsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesOrderHeaderDocumentAttachment> value);
         partial void OnSalesOrderHeaderDocumentAttachmentsChanged();
         /// <summary>
+        /// There are no comments for Property CDSSalesQuotationHeader in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.CDSSalesQuotationHeader CDSSalesQuotationHeader
+        {
+            get
+            {
+                return this._CDSSalesQuotationHeader;
+            }
+            set
+            {
+                this.OnCDSSalesQuotationHeaderChanging(value);
+                this._CDSSalesQuotationHeader = value;
+                this.OnCDSSalesQuotationHeaderChanged();
+                this.OnPropertyChanged("CDSSalesQuotationHeader");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.CDSSalesQuotationHeader _CDSSalesQuotationHeader;
+        partial void OnCDSSalesQuotationHeaderChanging(global::Microsoft.Dynamics.DataEntities.CDSSalesQuotationHeader value);
+        partial void OnCDSSalesQuotationHeaderChanged();
+        /// <summary>
         /// There are no comments for Property Project in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -2303,6 +2281,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.Project _Project;
         partial void OnProjectChanging(global::Microsoft.Dynamics.DataEntities.Project value);
         partial void OnProjectChanged();
+        /// <summary>
+        /// There are no comments for Property CDSSalesOrderLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CDSSalesOrderLine> CDSSalesOrderLines
+        {
+            get
+            {
+                return this._CDSSalesOrderLines;
+            }
+            set
+            {
+                this.OnCDSSalesOrderLinesChanging(value);
+                this._CDSSalesOrderLines = value;
+                this.OnCDSSalesOrderLinesChanged();
+                this.OnPropertyChanged("CDSSalesOrderLines");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CDSSalesOrderLine> _CDSSalesOrderLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CDSSalesOrderLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnCDSSalesOrderLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CDSSalesOrderLine> value);
+        partial void OnCDSSalesOrderLinesChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

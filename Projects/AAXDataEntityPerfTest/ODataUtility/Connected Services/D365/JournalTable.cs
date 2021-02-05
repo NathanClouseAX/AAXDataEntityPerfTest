@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -38,7 +38,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for JournalLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BeginningBalanceFeeTransaction> JournalLines
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BeginningBalanceCostSaleTransaction> JournalLines
         {
             get
             {
@@ -48,13 +48,13 @@ namespace Microsoft.Dynamics.DataEntities
                 }
                 if ((this._JournalLines == null))
                 {
-                    this._JournalLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BeginningBalanceFeeTransaction>(GetPath("JournalLines"));
+                    this._JournalLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BeginningBalanceCostSaleTransaction>(GetPath("JournalLines"));
                 }
                 return this._JournalLines;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BeginningBalanceFeeTransaction> _JournalLines;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BeginningBalanceCostSaleTransaction> _JournalLines;
         /// <summary>
         /// There are no comments for JournalTrans in the schema.
         /// </summary>
@@ -591,7 +591,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JournalLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BeginningBalanceFeeTransaction> JournalLines
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BeginningBalanceCostSaleTransaction> JournalLines
         {
             get
             {
@@ -606,8 +606,8 @@ namespace Microsoft.Dynamics.DataEntities
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BeginningBalanceFeeTransaction> _JournalLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BeginningBalanceFeeTransaction>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnJournalLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BeginningBalanceFeeTransaction> value);
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BeginningBalanceCostSaleTransaction> _JournalLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BeginningBalanceCostSaleTransaction>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnJournalLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BeginningBalanceCostSaleTransaction> value);
         partial void OnJournalLinesChanged();
         /// <summary>
         /// There are no comments for Property JournalTrans in the schema.

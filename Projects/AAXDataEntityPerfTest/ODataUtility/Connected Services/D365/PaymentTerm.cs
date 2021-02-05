@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public PaymentTermSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<PaymentTerm> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for CDSFreeTextInvoiceHeaders in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CDSFreeTextInvoiceHeader> CDSFreeTextInvoiceHeaders
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._CDSFreeTextInvoiceHeaders == null))
-                {
-                    this._CDSFreeTextInvoiceHeaders = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CDSFreeTextInvoiceHeader>(GetPath("CDSFreeTextInvoiceHeaders"));
-                }
-                return this._CDSFreeTextInvoiceHeaders;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CDSFreeTextInvoiceHeader> _CDSFreeTextInvoiceHeaders;
         /// <summary>
         /// There are no comments for PaymentSchedule in the schema.
         /// </summary>
@@ -119,10 +98,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.PaymentDaySingle _PaymentDay;
         /// <summary>
-        /// There are no comments for FreeTextInvoiceHeaderPaymentTerm in the schema.
+        /// There are no comments for PurchaseAgreementHeaders in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceHeader> FreeTextInvoiceHeaderPaymentTerm
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreement> PurchaseAgreementHeaders
         {
             get
             {
@@ -130,36 +109,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._FreeTextInvoiceHeaderPaymentTerm == null))
+                if ((this._PurchaseAgreementHeaders == null))
                 {
-                    this._FreeTextInvoiceHeaderPaymentTerm = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceHeader>(GetPath("FreeTextInvoiceHeaderPaymentTerm"));
+                    this._PurchaseAgreementHeaders = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreement>(GetPath("PurchaseAgreementHeaders"));
                 }
-                return this._FreeTextInvoiceHeaderPaymentTerm;
+                return this._PurchaseAgreementHeaders;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceHeader> _FreeTextInvoiceHeaderPaymentTerm;
-        /// <summary>
-        /// There are no comments for RetailStore in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailStore> RetailStore
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._RetailStore == null))
-                {
-                    this._RetailStore = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailStore>(GetPath("RetailStore"));
-                }
-                return this._RetailStore;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailStore> _RetailStore;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreement> _PurchaseAgreementHeaders;
         /// <summary>
         /// There are no comments for ClearingPeriodAssignedVendorGroups in the schema.
         /// </summary>
@@ -203,10 +161,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendorGroup> _DefaultAssignedVendorGroups;
         /// <summary>
-        /// There are no comments for PurchaseAgreementHeaders in the schema.
+        /// There are no comments for FreeTextInvoiceHeaderPaymentTerm in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmation> PurchaseAgreementHeaders
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceHeader> FreeTextInvoiceHeaderPaymentTerm
         {
             get
             {
@@ -214,15 +172,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._PurchaseAgreementHeaders == null))
+                if ((this._FreeTextInvoiceHeaderPaymentTerm == null))
                 {
-                    this._PurchaseAgreementHeaders = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmation>(GetPath("PurchaseAgreementHeaders"));
+                    this._FreeTextInvoiceHeaderPaymentTerm = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceHeader>(GetPath("FreeTextInvoiceHeaderPaymentTerm"));
                 }
-                return this._PurchaseAgreementHeaders;
+                return this._FreeTextInvoiceHeaderPaymentTerm;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmation> _PurchaseAgreementHeaders;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceHeader> _FreeTextInvoiceHeaderPaymentTerm;
         /// <summary>
         /// There are no comments for OnlineChannel in the schema.
         /// </summary>
@@ -244,6 +202,48 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.OnlineChannel> _OnlineChannel;
+        /// <summary>
+        /// There are no comments for RetailStore in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailStore> RetailStore
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RetailStore == null))
+                {
+                    this._RetailStore = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailStore>(GetPath("RetailStore"));
+                }
+                return this._RetailStore;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailStore> _RetailStore;
+        /// <summary>
+        /// There are no comments for CDSFreeTextInvoiceHeaders in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CDSFreeTextInvoiceHeader> CDSFreeTextInvoiceHeaders
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._CDSFreeTextInvoiceHeaders == null))
+                {
+                    this._CDSFreeTextInvoiceHeaders = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CDSFreeTextInvoiceHeader>(GetPath("CDSFreeTextInvoiceHeaders"));
+                }
+                return this._CDSFreeTextInvoiceHeaders;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CDSFreeTextInvoiceHeader> _CDSFreeTextInvoiceHeaders;
     }
         /// <summary>
         /// There are no comments for PaymentTerm in the schema.
@@ -701,28 +701,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnAdditionalMonthsForCutoffDateChanging(int value);
         partial void OnAdditionalMonthsForCutoffDateChanged();
         /// <summary>
-        /// There are no comments for Property CDSFreeTextInvoiceHeaders in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CDSFreeTextInvoiceHeader> CDSFreeTextInvoiceHeaders
-        {
-            get
-            {
-                return this._CDSFreeTextInvoiceHeaders;
-            }
-            set
-            {
-                this.OnCDSFreeTextInvoiceHeadersChanging(value);
-                this._CDSFreeTextInvoiceHeaders = value;
-                this.OnCDSFreeTextInvoiceHeadersChanged();
-                this.OnPropertyChanged("CDSFreeTextInvoiceHeaders");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CDSFreeTextInvoiceHeader> _CDSFreeTextInvoiceHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CDSFreeTextInvoiceHeader>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnCDSFreeTextInvoiceHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CDSFreeTextInvoiceHeader> value);
-        partial void OnCDSFreeTextInvoiceHeadersChanged();
-        /// <summary>
         /// There are no comments for Property PaymentSchedule in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -789,49 +767,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnPaymentDayChanging(global::Microsoft.Dynamics.DataEntities.PaymentDay value);
         partial void OnPaymentDayChanged();
         /// <summary>
-        /// There are no comments for Property FreeTextInvoiceHeaderPaymentTerm in the schema.
+        /// There are no comments for Property PurchaseAgreementHeaders in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceHeader> FreeTextInvoiceHeaderPaymentTerm
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreement> PurchaseAgreementHeaders
         {
             get
             {
-                return this._FreeTextInvoiceHeaderPaymentTerm;
+                return this._PurchaseAgreementHeaders;
             }
             set
             {
-                this.OnFreeTextInvoiceHeaderPaymentTermChanging(value);
-                this._FreeTextInvoiceHeaderPaymentTerm = value;
-                this.OnFreeTextInvoiceHeaderPaymentTermChanged();
-                this.OnPropertyChanged("FreeTextInvoiceHeaderPaymentTerm");
+                this.OnPurchaseAgreementHeadersChanging(value);
+                this._PurchaseAgreementHeaders = value;
+                this.OnPurchaseAgreementHeadersChanged();
+                this.OnPropertyChanged("PurchaseAgreementHeaders");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceHeader> _FreeTextInvoiceHeaderPaymentTerm = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceHeader>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnFreeTextInvoiceHeaderPaymentTermChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceHeader> value);
-        partial void OnFreeTextInvoiceHeaderPaymentTermChanged();
-        /// <summary>
-        /// There are no comments for Property RetailStore in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStore> RetailStore
-        {
-            get
-            {
-                return this._RetailStore;
-            }
-            set
-            {
-                this.OnRetailStoreChanging(value);
-                this._RetailStore = value;
-                this.OnRetailStoreChanged();
-                this.OnPropertyChanged("RetailStore");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStore> _RetailStore = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStore>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRetailStoreChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStore> value);
-        partial void OnRetailStoreChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreement> _PurchaseAgreementHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreement>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPurchaseAgreementHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreement> value);
+        partial void OnPurchaseAgreementHeadersChanged();
         /// <summary>
         /// There are no comments for Property ClearingPeriodAssignedVendorGroups in the schema.
         /// </summary>
@@ -877,27 +833,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDefaultAssignedVendorGroupsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorGroup> value);
         partial void OnDefaultAssignedVendorGroupsChanged();
         /// <summary>
-        /// There are no comments for Property PurchaseAgreementHeaders in the schema.
+        /// There are no comments for Property FreeTextInvoiceHeaderPaymentTerm in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmation> PurchaseAgreementHeaders
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceHeader> FreeTextInvoiceHeaderPaymentTerm
         {
             get
             {
-                return this._PurchaseAgreementHeaders;
+                return this._FreeTextInvoiceHeaderPaymentTerm;
             }
             set
             {
-                this.OnPurchaseAgreementHeadersChanging(value);
-                this._PurchaseAgreementHeaders = value;
-                this.OnPurchaseAgreementHeadersChanged();
-                this.OnPropertyChanged("PurchaseAgreementHeaders");
+                this.OnFreeTextInvoiceHeaderPaymentTermChanging(value);
+                this._FreeTextInvoiceHeaderPaymentTerm = value;
+                this.OnFreeTextInvoiceHeaderPaymentTermChanged();
+                this.OnPropertyChanged("FreeTextInvoiceHeaderPaymentTerm");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmation> _PurchaseAgreementHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmation>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPurchaseAgreementHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmation> value);
-        partial void OnPurchaseAgreementHeadersChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceHeader> _FreeTextInvoiceHeaderPaymentTerm = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceHeader>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnFreeTextInvoiceHeaderPaymentTermChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FreeTextInvoiceHeader> value);
+        partial void OnFreeTextInvoiceHeaderPaymentTermChanged();
         /// <summary>
         /// There are no comments for Property OnlineChannel in the schema.
         /// </summary>
@@ -920,6 +876,50 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.OnlineChannel> _OnlineChannel = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.OnlineChannel>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnOnlineChannelChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.OnlineChannel> value);
         partial void OnOnlineChannelChanged();
+        /// <summary>
+        /// There are no comments for Property RetailStore in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStore> RetailStore
+        {
+            get
+            {
+                return this._RetailStore;
+            }
+            set
+            {
+                this.OnRetailStoreChanging(value);
+                this._RetailStore = value;
+                this.OnRetailStoreChanged();
+                this.OnPropertyChanged("RetailStore");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStore> _RetailStore = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStore>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRetailStoreChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStore> value);
+        partial void OnRetailStoreChanged();
+        /// <summary>
+        /// There are no comments for Property CDSFreeTextInvoiceHeaders in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CDSFreeTextInvoiceHeader> CDSFreeTextInvoiceHeaders
+        {
+            get
+            {
+                return this._CDSFreeTextInvoiceHeaders;
+            }
+            set
+            {
+                this.OnCDSFreeTextInvoiceHeadersChanging(value);
+                this._CDSFreeTextInvoiceHeaders = value;
+                this.OnCDSFreeTextInvoiceHeadersChanged();
+                this.OnPropertyChanged("CDSFreeTextInvoiceHeaders");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CDSFreeTextInvoiceHeader> _CDSFreeTextInvoiceHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CDSFreeTextInvoiceHeader>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnCDSFreeTextInvoiceHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CDSFreeTextInvoiceHeader> value);
+        partial void OnCDSFreeTextInvoiceHeadersChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

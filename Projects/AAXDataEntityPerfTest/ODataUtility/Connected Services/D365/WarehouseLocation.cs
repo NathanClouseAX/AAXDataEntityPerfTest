@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -55,6 +55,111 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ItemArrivalJournalLineV2> _ItemArrivalJournalLinesV2;
+        /// <summary>
+        /// There are no comments for CycleCountingWarehouseWorkLinesV2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLineV2> CycleCountingWarehouseWorkLinesV2
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._CycleCountingWarehouseWorkLinesV2 == null))
+                {
+                    this._CycleCountingWarehouseWorkLinesV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLineV2>(GetPath("CycleCountingWarehouseWorkLinesV2"));
+                }
+                return this._CycleCountingWarehouseWorkLinesV2;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLineV2> _CycleCountingWarehouseWorkLinesV2;
+        /// <summary>
+        /// There are no comments for CycleCountingWarehouseWorkLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLine> CycleCountingWarehouseWorkLines
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._CycleCountingWarehouseWorkLines == null))
+                {
+                    this._CycleCountingWarehouseWorkLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLine>(GetPath("CycleCountingWarehouseWorkLines"));
+                }
+                return this._CycleCountingWarehouseWorkLines;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLine> _CycleCountingWarehouseWorkLines;
+        /// <summary>
+        /// There are no comments for QualityOrderHeaders in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> QualityOrderHeaders
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._QualityOrderHeaders == null))
+                {
+                    this._QualityOrderHeaders = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader>(GetPath("QualityOrderHeaders"));
+                }
+                return this._QualityOrderHeaders;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> _QualityOrderHeaders;
+        /// <summary>
+        /// There are no comments for WarehouseWorkPolicyLocations in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyLocation> WarehouseWorkPolicyLocations
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._WarehouseWorkPolicyLocations == null))
+                {
+                    this._WarehouseWorkPolicyLocations = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyLocation>(GetPath("WarehouseWorkPolicyLocations"));
+                }
+                return this._WarehouseWorkPolicyLocations;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyLocation> _WarehouseWorkPolicyLocations;
+        /// <summary>
+        /// There are no comments for ItemCoverageSettings in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ItemCoverageSettings> ItemCoverageSettings
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ItemCoverageSettings == null))
+                {
+                    this._ItemCoverageSettings = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ItemCoverageSettings>(GetPath("ItemCoverageSettings"));
+                }
+                return this._ItemCoverageSettings;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ItemCoverageSettings> _ItemCoverageSettings;
         /// <summary>
         /// There are no comments for ItemArrivalJournalHeadersV2 in the schema.
         /// </summary>
@@ -244,111 +349,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.WarehouseZoneSingle _WarehouseZone;
-        /// <summary>
-        /// There are no comments for CycleCountingWarehouseWorkLinesV2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLineV2> CycleCountingWarehouseWorkLinesV2
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._CycleCountingWarehouseWorkLinesV2 == null))
-                {
-                    this._CycleCountingWarehouseWorkLinesV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLineV2>(GetPath("CycleCountingWarehouseWorkLinesV2"));
-                }
-                return this._CycleCountingWarehouseWorkLinesV2;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLineV2> _CycleCountingWarehouseWorkLinesV2;
-        /// <summary>
-        /// There are no comments for ItemCoverageSettings in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ItemCoverageSettings> ItemCoverageSettings
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ItemCoverageSettings == null))
-                {
-                    this._ItemCoverageSettings = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ItemCoverageSettings>(GetPath("ItemCoverageSettings"));
-                }
-                return this._ItemCoverageSettings;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ItemCoverageSettings> _ItemCoverageSettings;
-        /// <summary>
-        /// There are no comments for QualityOrderHeaders in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> QualityOrderHeaders
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._QualityOrderHeaders == null))
-                {
-                    this._QualityOrderHeaders = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader>(GetPath("QualityOrderHeaders"));
-                }
-                return this._QualityOrderHeaders;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> _QualityOrderHeaders;
-        /// <summary>
-        /// There are no comments for CycleCountingWarehouseWorkLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLine> CycleCountingWarehouseWorkLines
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._CycleCountingWarehouseWorkLines == null))
-                {
-                    this._CycleCountingWarehouseWorkLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLine>(GetPath("CycleCountingWarehouseWorkLines"));
-                }
-                return this._CycleCountingWarehouseWorkLines;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLine> _CycleCountingWarehouseWorkLines;
-        /// <summary>
-        /// There are no comments for WarehouseWorkPolicyLocations in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyLocation> WarehouseWorkPolicyLocations
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._WarehouseWorkPolicyLocations == null))
-                {
-                    this._WarehouseWorkPolicyLocations = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyLocation>(GetPath("WarehouseWorkPolicyLocations"));
-                }
-                return this._WarehouseWorkPolicyLocations;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyLocation> _WarehouseWorkPolicyLocations;
     }
         /// <summary>
         /// There are no comments for WarehouseLocation in the schema.
@@ -1496,6 +1496,116 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnItemArrivalJournalLinesV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemArrivalJournalLineV2> value);
         partial void OnItemArrivalJournalLinesV2Changed();
         /// <summary>
+        /// There are no comments for Property CycleCountingWarehouseWorkLinesV2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLineV2> CycleCountingWarehouseWorkLinesV2
+        {
+            get
+            {
+                return this._CycleCountingWarehouseWorkLinesV2;
+            }
+            set
+            {
+                this.OnCycleCountingWarehouseWorkLinesV2Changing(value);
+                this._CycleCountingWarehouseWorkLinesV2 = value;
+                this.OnCycleCountingWarehouseWorkLinesV2Changed();
+                this.OnPropertyChanged("CycleCountingWarehouseWorkLinesV2");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLineV2> _CycleCountingWarehouseWorkLinesV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLineV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnCycleCountingWarehouseWorkLinesV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLineV2> value);
+        partial void OnCycleCountingWarehouseWorkLinesV2Changed();
+        /// <summary>
+        /// There are no comments for Property CycleCountingWarehouseWorkLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLine> CycleCountingWarehouseWorkLines
+        {
+            get
+            {
+                return this._CycleCountingWarehouseWorkLines;
+            }
+            set
+            {
+                this.OnCycleCountingWarehouseWorkLinesChanging(value);
+                this._CycleCountingWarehouseWorkLines = value;
+                this.OnCycleCountingWarehouseWorkLinesChanged();
+                this.OnPropertyChanged("CycleCountingWarehouseWorkLines");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLine> _CycleCountingWarehouseWorkLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnCycleCountingWarehouseWorkLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLine> value);
+        partial void OnCycleCountingWarehouseWorkLinesChanged();
+        /// <summary>
+        /// There are no comments for Property QualityOrderHeaders in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> QualityOrderHeaders
+        {
+            get
+            {
+                return this._QualityOrderHeaders;
+            }
+            set
+            {
+                this.OnQualityOrderHeadersChanging(value);
+                this._QualityOrderHeaders = value;
+                this.OnQualityOrderHeadersChanged();
+                this.OnPropertyChanged("QualityOrderHeaders");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> _QualityOrderHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnQualityOrderHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> value);
+        partial void OnQualityOrderHeadersChanged();
+        /// <summary>
+        /// There are no comments for Property WarehouseWorkPolicyLocations in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyLocation> WarehouseWorkPolicyLocations
+        {
+            get
+            {
+                return this._WarehouseWorkPolicyLocations;
+            }
+            set
+            {
+                this.OnWarehouseWorkPolicyLocationsChanging(value);
+                this._WarehouseWorkPolicyLocations = value;
+                this.OnWarehouseWorkPolicyLocationsChanged();
+                this.OnPropertyChanged("WarehouseWorkPolicyLocations");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyLocation> _WarehouseWorkPolicyLocations = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyLocation>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnWarehouseWorkPolicyLocationsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyLocation> value);
+        partial void OnWarehouseWorkPolicyLocationsChanged();
+        /// <summary>
+        /// There are no comments for Property ItemCoverageSettings in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemCoverageSettings> ItemCoverageSettings
+        {
+            get
+            {
+                return this._ItemCoverageSettings;
+            }
+            set
+            {
+                this.OnItemCoverageSettingsChanging(value);
+                this._ItemCoverageSettings = value;
+                this.OnItemCoverageSettingsChanged();
+                this.OnPropertyChanged("ItemCoverageSettings");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemCoverageSettings> _ItemCoverageSettings = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemCoverageSettings>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnItemCoverageSettingsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemCoverageSettings> value);
+        partial void OnItemCoverageSettingsChanged();
+        /// <summary>
         /// There are no comments for Property ItemArrivalJournalHeadersV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -1693,116 +1803,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.WarehouseZone _WarehouseZone;
         partial void OnWarehouseZoneChanging(global::Microsoft.Dynamics.DataEntities.WarehouseZone value);
         partial void OnWarehouseZoneChanged();
-        /// <summary>
-        /// There are no comments for Property CycleCountingWarehouseWorkLinesV2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLineV2> CycleCountingWarehouseWorkLinesV2
-        {
-            get
-            {
-                return this._CycleCountingWarehouseWorkLinesV2;
-            }
-            set
-            {
-                this.OnCycleCountingWarehouseWorkLinesV2Changing(value);
-                this._CycleCountingWarehouseWorkLinesV2 = value;
-                this.OnCycleCountingWarehouseWorkLinesV2Changed();
-                this.OnPropertyChanged("CycleCountingWarehouseWorkLinesV2");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLineV2> _CycleCountingWarehouseWorkLinesV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLineV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnCycleCountingWarehouseWorkLinesV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLineV2> value);
-        partial void OnCycleCountingWarehouseWorkLinesV2Changed();
-        /// <summary>
-        /// There are no comments for Property ItemCoverageSettings in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemCoverageSettings> ItemCoverageSettings
-        {
-            get
-            {
-                return this._ItemCoverageSettings;
-            }
-            set
-            {
-                this.OnItemCoverageSettingsChanging(value);
-                this._ItemCoverageSettings = value;
-                this.OnItemCoverageSettingsChanged();
-                this.OnPropertyChanged("ItemCoverageSettings");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemCoverageSettings> _ItemCoverageSettings = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemCoverageSettings>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnItemCoverageSettingsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemCoverageSettings> value);
-        partial void OnItemCoverageSettingsChanged();
-        /// <summary>
-        /// There are no comments for Property QualityOrderHeaders in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> QualityOrderHeaders
-        {
-            get
-            {
-                return this._QualityOrderHeaders;
-            }
-            set
-            {
-                this.OnQualityOrderHeadersChanging(value);
-                this._QualityOrderHeaders = value;
-                this.OnQualityOrderHeadersChanged();
-                this.OnPropertyChanged("QualityOrderHeaders");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> _QualityOrderHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnQualityOrderHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> value);
-        partial void OnQualityOrderHeadersChanged();
-        /// <summary>
-        /// There are no comments for Property CycleCountingWarehouseWorkLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLine> CycleCountingWarehouseWorkLines
-        {
-            get
-            {
-                return this._CycleCountingWarehouseWorkLines;
-            }
-            set
-            {
-                this.OnCycleCountingWarehouseWorkLinesChanging(value);
-                this._CycleCountingWarehouseWorkLines = value;
-                this.OnCycleCountingWarehouseWorkLinesChanged();
-                this.OnPropertyChanged("CycleCountingWarehouseWorkLines");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLine> _CycleCountingWarehouseWorkLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnCycleCountingWarehouseWorkLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLine> value);
-        partial void OnCycleCountingWarehouseWorkLinesChanged();
-        /// <summary>
-        /// There are no comments for Property WarehouseWorkPolicyLocations in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyLocation> WarehouseWorkPolicyLocations
-        {
-            get
-            {
-                return this._WarehouseWorkPolicyLocations;
-            }
-            set
-            {
-                this.OnWarehouseWorkPolicyLocationsChanging(value);
-                this._WarehouseWorkPolicyLocations = value;
-                this.OnWarehouseWorkPolicyLocationsChanged();
-                this.OnPropertyChanged("WarehouseWorkPolicyLocations");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyLocation> _WarehouseWorkPolicyLocations = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyLocation>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnWarehouseWorkPolicyLocationsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyLocation> value);
-        partial void OnWarehouseWorkPolicyLocationsChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

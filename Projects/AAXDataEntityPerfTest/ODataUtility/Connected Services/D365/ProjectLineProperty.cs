@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -56,48 +56,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ProjectItemForecastSingle _ProjectItemForecast;
         /// <summary>
-        /// There are no comments for ProjectEmplForecast in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ProjectEmplForecastSingle ProjectEmplForecast
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ProjectEmplForecast == null))
-                {
-                    this._ProjectEmplForecast = new global::Microsoft.Dynamics.DataEntities.ProjectEmplForecastSingle(this.Context, GetPath("ProjectEmplForecast"));
-                }
-                return this._ProjectEmplForecast;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ProjectEmplForecastSingle _ProjectEmplForecast;
-        /// <summary>
-        /// There are no comments for ProjectItemJournalTrans in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ProjectItemJournalTransSingle ProjectItemJournalTrans
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ProjectItemJournalTrans == null))
-                {
-                    this._ProjectItemJournalTrans = new global::Microsoft.Dynamics.DataEntities.ProjectItemJournalTransSingle(this.Context, GetPath("ProjectItemJournalTrans"));
-                }
-                return this._ProjectItemJournalTrans;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ProjectItemJournalTransSingle _ProjectItemJournalTrans;
-        /// <summary>
         /// There are no comments for ProjectExpenseForecast in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -118,6 +76,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ProjectExpenseForecastSingle _ProjectExpenseForecast;
+        /// <summary>
+        /// There are no comments for ProjectEmplForecast in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.ProjectEmplForecastSingle ProjectEmplForecast
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ProjectEmplForecast == null))
+                {
+                    this._ProjectEmplForecast = new global::Microsoft.Dynamics.DataEntities.ProjectEmplForecastSingle(this.Context, GetPath("ProjectEmplForecast"));
+                }
+                return this._ProjectEmplForecast;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.ProjectEmplForecastSingle _ProjectEmplForecast;
         /// <summary>
         /// There are no comments for ProjectFeeForecast in the schema.
         /// </summary>
@@ -140,10 +119,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ProjectFeeForecastSingle _ProjectFeeForecast;
         /// <summary>
-        /// There are no comments for ProjExpenseJournalLineProperty in the schema.
+        /// There are no comments for ProjectItemJournalTrans in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ExpenseJournalLine> ProjExpenseJournalLineProperty
+        public virtual global::Microsoft.Dynamics.DataEntities.ProjectItemJournalTransSingle ProjectItemJournalTrans
         {
             get
             {
@@ -151,15 +130,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._ProjExpenseJournalLineProperty == null))
+                if ((this._ProjectItemJournalTrans == null))
                 {
-                    this._ProjExpenseJournalLineProperty = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ExpenseJournalLine>(GetPath("ProjExpenseJournalLineProperty"));
+                    this._ProjectItemJournalTrans = new global::Microsoft.Dynamics.DataEntities.ProjectItemJournalTransSingle(this.Context, GetPath("ProjectItemJournalTrans"));
                 }
-                return this._ProjExpenseJournalLineProperty;
+                return this._ProjectItemJournalTrans;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ExpenseJournalLine> _ProjExpenseJournalLineProperty;
+        private global::Microsoft.Dynamics.DataEntities.ProjectItemJournalTransSingle _ProjectItemJournalTrans;
         /// <summary>
         /// There are no comments for JournalTrans in the schema.
         /// </summary>
@@ -181,6 +160,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.JournalTransSingle _JournalTrans;
+        /// <summary>
+        /// There are no comments for ProjExpenseJournalLineProperty in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ExpenseJournalLine> ProjExpenseJournalLineProperty
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ProjExpenseJournalLineProperty == null))
+                {
+                    this._ProjExpenseJournalLineProperty = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ExpenseJournalLine>(GetPath("ProjExpenseJournalLineProperty"));
+                }
+                return this._ProjExpenseJournalLineProperty;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ExpenseJournalLine> _ProjExpenseJournalLineProperty;
     }
         /// <summary>
         /// There are no comments for ProjectLineProperty in the schema.
@@ -203,10 +203,10 @@ namespace Microsoft.Dynamics.DataEntities
         /// <param name="enableAccrueRevenue">Initial value of EnableAccrueRevenue.</param>
         /// <param name="salesPercentage">Initial value of SalesPercentage.</param>
         /// <param name="projectItemForecast">Initial value of ProjectItemForecast.</param>
-        /// <param name="projectEmplForecast">Initial value of ProjectEmplForecast.</param>
-        /// <param name="projectItemJournalTrans">Initial value of ProjectItemJournalTrans.</param>
         /// <param name="projectExpenseForecast">Initial value of ProjectExpenseForecast.</param>
+        /// <param name="projectEmplForecast">Initial value of ProjectEmplForecast.</param>
         /// <param name="projectFeeForecast">Initial value of ProjectFeeForecast.</param>
+        /// <param name="projectItemJournalTrans">Initial value of ProjectItemJournalTrans.</param>
         /// <param name="journalTrans">Initial value of JournalTrans.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public static ProjectLineProperty CreateProjectLineProperty(string dataAreaId, 
@@ -216,10 +216,10 @@ namespace Microsoft.Dynamics.DataEntities
                     bool enableAccrueRevenue, 
                     decimal salesPercentage, 
                     global::Microsoft.Dynamics.DataEntities.ProjectItemForecast projectItemForecast, 
-                    global::Microsoft.Dynamics.DataEntities.ProjectEmplForecast projectEmplForecast, 
-                    global::Microsoft.Dynamics.DataEntities.ProjectItemJournalTrans projectItemJournalTrans, 
                     global::Microsoft.Dynamics.DataEntities.ProjectExpenseForecast projectExpenseForecast, 
+                    global::Microsoft.Dynamics.DataEntities.ProjectEmplForecast projectEmplForecast, 
                     global::Microsoft.Dynamics.DataEntities.ProjectFeeForecast projectFeeForecast, 
+                    global::Microsoft.Dynamics.DataEntities.ProjectItemJournalTrans projectItemJournalTrans, 
                     global::Microsoft.Dynamics.DataEntities.JournalTrans journalTrans)
         {
             ProjectLineProperty projectLineProperty = new ProjectLineProperty();
@@ -234,26 +234,26 @@ namespace Microsoft.Dynamics.DataEntities
                 throw new global::System.ArgumentNullException("projectItemForecast");
             }
             projectLineProperty.ProjectItemForecast = projectItemForecast;
-            if ((projectEmplForecast == null))
-            {
-                throw new global::System.ArgumentNullException("projectEmplForecast");
-            }
-            projectLineProperty.ProjectEmplForecast = projectEmplForecast;
-            if ((projectItemJournalTrans == null))
-            {
-                throw new global::System.ArgumentNullException("projectItemJournalTrans");
-            }
-            projectLineProperty.ProjectItemJournalTrans = projectItemJournalTrans;
             if ((projectExpenseForecast == null))
             {
                 throw new global::System.ArgumentNullException("projectExpenseForecast");
             }
             projectLineProperty.ProjectExpenseForecast = projectExpenseForecast;
+            if ((projectEmplForecast == null))
+            {
+                throw new global::System.ArgumentNullException("projectEmplForecast");
+            }
+            projectLineProperty.ProjectEmplForecast = projectEmplForecast;
             if ((projectFeeForecast == null))
             {
                 throw new global::System.ArgumentNullException("projectFeeForecast");
             }
             projectLineProperty.ProjectFeeForecast = projectFeeForecast;
+            if ((projectItemJournalTrans == null))
+            {
+                throw new global::System.ArgumentNullException("projectItemJournalTrans");
+            }
+            projectLineProperty.ProjectItemJournalTrans = projectItemJournalTrans;
             if ((journalTrans == null))
             {
                 throw new global::System.ArgumentNullException("journalTrans");
@@ -570,50 +570,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnProjectItemForecastChanging(global::Microsoft.Dynamics.DataEntities.ProjectItemForecast value);
         partial void OnProjectItemForecastChanged();
         /// <summary>
-        /// There are no comments for Property ProjectEmplForecast in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ProjectEmplForecast ProjectEmplForecast
-        {
-            get
-            {
-                return this._ProjectEmplForecast;
-            }
-            set
-            {
-                this.OnProjectEmplForecastChanging(value);
-                this._ProjectEmplForecast = value;
-                this.OnProjectEmplForecastChanged();
-                this.OnPropertyChanged("ProjectEmplForecast");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ProjectEmplForecast _ProjectEmplForecast;
-        partial void OnProjectEmplForecastChanging(global::Microsoft.Dynamics.DataEntities.ProjectEmplForecast value);
-        partial void OnProjectEmplForecastChanged();
-        /// <summary>
-        /// There are no comments for Property ProjectItemJournalTrans in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ProjectItemJournalTrans ProjectItemJournalTrans
-        {
-            get
-            {
-                return this._ProjectItemJournalTrans;
-            }
-            set
-            {
-                this.OnProjectItemJournalTransChanging(value);
-                this._ProjectItemJournalTrans = value;
-                this.OnProjectItemJournalTransChanged();
-                this.OnPropertyChanged("ProjectItemJournalTrans");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ProjectItemJournalTrans _ProjectItemJournalTrans;
-        partial void OnProjectItemJournalTransChanging(global::Microsoft.Dynamics.DataEntities.ProjectItemJournalTrans value);
-        partial void OnProjectItemJournalTransChanged();
-        /// <summary>
         /// There are no comments for Property ProjectExpenseForecast in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -635,6 +591,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.ProjectExpenseForecast _ProjectExpenseForecast;
         partial void OnProjectExpenseForecastChanging(global::Microsoft.Dynamics.DataEntities.ProjectExpenseForecast value);
         partial void OnProjectExpenseForecastChanged();
+        /// <summary>
+        /// There are no comments for Property ProjectEmplForecast in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.ProjectEmplForecast ProjectEmplForecast
+        {
+            get
+            {
+                return this._ProjectEmplForecast;
+            }
+            set
+            {
+                this.OnProjectEmplForecastChanging(value);
+                this._ProjectEmplForecast = value;
+                this.OnProjectEmplForecastChanged();
+                this.OnPropertyChanged("ProjectEmplForecast");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.ProjectEmplForecast _ProjectEmplForecast;
+        partial void OnProjectEmplForecastChanging(global::Microsoft.Dynamics.DataEntities.ProjectEmplForecast value);
+        partial void OnProjectEmplForecastChanged();
         /// <summary>
         /// There are no comments for Property ProjectFeeForecast in the schema.
         /// </summary>
@@ -658,27 +636,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnProjectFeeForecastChanging(global::Microsoft.Dynamics.DataEntities.ProjectFeeForecast value);
         partial void OnProjectFeeForecastChanged();
         /// <summary>
-        /// There are no comments for Property ProjExpenseJournalLineProperty in the schema.
+        /// There are no comments for Property ProjectItemJournalTrans in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ExpenseJournalLine> ProjExpenseJournalLineProperty
+        public virtual global::Microsoft.Dynamics.DataEntities.ProjectItemJournalTrans ProjectItemJournalTrans
         {
             get
             {
-                return this._ProjExpenseJournalLineProperty;
+                return this._ProjectItemJournalTrans;
             }
             set
             {
-                this.OnProjExpenseJournalLinePropertyChanging(value);
-                this._ProjExpenseJournalLineProperty = value;
-                this.OnProjExpenseJournalLinePropertyChanged();
-                this.OnPropertyChanged("ProjExpenseJournalLineProperty");
+                this.OnProjectItemJournalTransChanging(value);
+                this._ProjectItemJournalTrans = value;
+                this.OnProjectItemJournalTransChanged();
+                this.OnPropertyChanged("ProjectItemJournalTrans");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ExpenseJournalLine> _ProjExpenseJournalLineProperty = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ExpenseJournalLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnProjExpenseJournalLinePropertyChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ExpenseJournalLine> value);
-        partial void OnProjExpenseJournalLinePropertyChanged();
+        private global::Microsoft.Dynamics.DataEntities.ProjectItemJournalTrans _ProjectItemJournalTrans;
+        partial void OnProjectItemJournalTransChanging(global::Microsoft.Dynamics.DataEntities.ProjectItemJournalTrans value);
+        partial void OnProjectItemJournalTransChanged();
         /// <summary>
         /// There are no comments for Property JournalTrans in the schema.
         /// </summary>
@@ -701,6 +679,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.JournalTrans _JournalTrans;
         partial void OnJournalTransChanging(global::Microsoft.Dynamics.DataEntities.JournalTrans value);
         partial void OnJournalTransChanged();
+        /// <summary>
+        /// There are no comments for Property ProjExpenseJournalLineProperty in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ExpenseJournalLine> ProjExpenseJournalLineProperty
+        {
+            get
+            {
+                return this._ProjExpenseJournalLineProperty;
+            }
+            set
+            {
+                this.OnProjExpenseJournalLinePropertyChanging(value);
+                this._ProjExpenseJournalLineProperty = value;
+                this.OnProjExpenseJournalLinePropertyChanged();
+                this.OnPropertyChanged("ProjExpenseJournalLineProperty");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ExpenseJournalLine> _ProjExpenseJournalLineProperty = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ExpenseJournalLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnProjExpenseJournalLinePropertyChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ExpenseJournalLine> value);
+        partial void OnProjExpenseJournalLinePropertyChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

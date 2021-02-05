@@ -59,6 +59,8 @@
     <Compile Include="Logger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SalesOrderHeaderV2EntityDSReadOnlyV2Tester.cs" />
+    <Compile Include="SalesOrderHeaderV2EntityOnlySalesTablePostLoadExtendedTester.cs" />
+    <Compile Include="SalesOrderHeaderV2EntityOnlySalesTablePostLoadTester.cs" />
     <Compile Include="SalesOrderHeaderV2EntityOnlySalesTableV2Tester.cs" />
     <Compile Include="SalesOrderHeaderV2EntityReadOnlyNoGlobalizationV2Tester.cs" />
     <Compile Include="SalesOrderHeaderV2EntityReadOnlyV2Tester.cs" />

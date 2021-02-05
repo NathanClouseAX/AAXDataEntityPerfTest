@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public BatchOrderByProductSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<BatchOrderByProduct> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for ProductionOrderHeader in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ProductionOrderHeaderSingle ProductionOrderHeader
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ProductionOrderHeader == null))
-                {
-                    this._ProductionOrderHeader = new global::Microsoft.Dynamics.DataEntities.ProductionOrderHeaderSingle(this.Context, GetPath("ProductionOrderHeader"));
-                }
-                return this._ProductionOrderHeader;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ProductionOrderHeaderSingle _ProductionOrderHeader;
         /// <summary>
         /// There are no comments for DimensionSet in the schema.
         /// </summary>
@@ -1185,28 +1164,6 @@ namespace Microsoft.Dynamics.DataEntities
         private string _InventoryOwnerId;
         partial void OnInventoryOwnerIdChanging(string value);
         partial void OnInventoryOwnerIdChanged();
-        /// <summary>
-        /// There are no comments for Property ProductionOrderHeader in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ProductionOrderHeader ProductionOrderHeader
-        {
-            get
-            {
-                return this._ProductionOrderHeader;
-            }
-            set
-            {
-                this.OnProductionOrderHeaderChanging(value);
-                this._ProductionOrderHeader = value;
-                this.OnProductionOrderHeaderChanged();
-                this.OnPropertyChanged("ProductionOrderHeader");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ProductionOrderHeader _ProductionOrderHeader;
-        partial void OnProductionOrderHeaderChanging(global::Microsoft.Dynamics.DataEntities.ProductionOrderHeader value);
-        partial void OnProductionOrderHeaderChanged();
         /// <summary>
         /// There are no comments for Property DimensionSet in the schema.
         /// </summary>

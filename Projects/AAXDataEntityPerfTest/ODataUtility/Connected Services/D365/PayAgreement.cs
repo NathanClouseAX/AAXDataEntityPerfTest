@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for PayAgreementLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayAgreementLine> PayAgreementLines
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._PayAgreementLines == null))
-                {
-                    this._PayAgreementLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PayAgreementLine>(GetPath("PayAgreementLines"));
-                }
-                return this._PayAgreementLines;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayAgreementLine> _PayAgreementLines;
-        /// <summary>
         /// There are no comments for TimeAndAttendanceTimeProfiles in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,6 +55,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TimeAndAttendanceTimeProfile> _TimeAndAttendanceTimeProfiles;
+        /// <summary>
+        /// There are no comments for PayAgreementLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayAgreementLine> PayAgreementLines
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._PayAgreementLines == null))
+                {
+                    this._PayAgreementLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PayAgreementLine>(GetPath("PayAgreementLines"));
+                }
+                return this._PayAgreementLines;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayAgreementLine> _PayAgreementLines;
     }
         /// <summary>
         /// There are no comments for PayAgreement in the schema.
@@ -282,28 +282,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnToDateChanging(global::System.DateTimeOffset value);
         partial void OnToDateChanged();
         /// <summary>
-        /// There are no comments for Property PayAgreementLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayAgreementLine> PayAgreementLines
-        {
-            get
-            {
-                return this._PayAgreementLines;
-            }
-            set
-            {
-                this.OnPayAgreementLinesChanging(value);
-                this._PayAgreementLines = value;
-                this.OnPayAgreementLinesChanged();
-                this.OnPropertyChanged("PayAgreementLines");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayAgreementLine> _PayAgreementLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayAgreementLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPayAgreementLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayAgreementLine> value);
-        partial void OnPayAgreementLinesChanged();
-        /// <summary>
         /// There are no comments for Property TimeAndAttendanceTimeProfiles in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -325,6 +303,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TimeAndAttendanceTimeProfile> _TimeAndAttendanceTimeProfiles = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TimeAndAttendanceTimeProfile>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnTimeAndAttendanceTimeProfilesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TimeAndAttendanceTimeProfile> value);
         partial void OnTimeAndAttendanceTimeProfilesChanged();
+        /// <summary>
+        /// There are no comments for Property PayAgreementLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayAgreementLine> PayAgreementLines
+        {
+            get
+            {
+                return this._PayAgreementLines;
+            }
+            set
+            {
+                this.OnPayAgreementLinesChanging(value);
+                this._PayAgreementLines = value;
+                this.OnPayAgreementLinesChanged();
+                this.OnPropertyChanged("PayAgreementLines");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayAgreementLine> _PayAgreementLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayAgreementLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPayAgreementLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayAgreementLine> value);
+        partial void OnPayAgreementLinesChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

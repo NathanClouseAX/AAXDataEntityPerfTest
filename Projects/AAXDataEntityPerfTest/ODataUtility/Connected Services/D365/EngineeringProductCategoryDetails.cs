@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public EngineeringProductCategoryDetailsSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<EngineeringProductCategoryDetails> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for EngineeringChangeOrderProducts in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProduct> EngineeringChangeOrderProducts
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._EngineeringChangeOrderProducts == null))
-                {
-                    this._EngineeringChangeOrderProducts = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProduct>(GetPath("EngineeringChangeOrderProducts"));
-                }
-                return this._EngineeringChangeOrderProducts;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProduct> _EngineeringChangeOrderProducts;
         /// <summary>
         /// There are no comments for ProductReadinessPolicy in the schema.
         /// </summary>
@@ -181,6 +160,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.CategorySingle _Category;
+        /// <summary>
+        /// There are no comments for EngineeringChangeOrderProducts in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProduct> EngineeringChangeOrderProducts
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._EngineeringChangeOrderProducts == null))
+                {
+                    this._EngineeringChangeOrderProducts = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProduct>(GetPath("EngineeringChangeOrderProducts"));
+                }
+                return this._EngineeringChangeOrderProducts;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProduct> _EngineeringChangeOrderProducts;
     }
         /// <summary>
         /// There are no comments for EngineeringProductCategoryDetails in the schema.
@@ -470,28 +470,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnVariantConfigurationTechnologyChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EcoResVariantConfigurationTechnologyType> value);
         partial void OnVariantConfigurationTechnologyChanged();
         /// <summary>
-        /// There are no comments for Property EngineeringChangeOrderProducts in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProduct> EngineeringChangeOrderProducts
-        {
-            get
-            {
-                return this._EngineeringChangeOrderProducts;
-            }
-            set
-            {
-                this.OnEngineeringChangeOrderProductsChanging(value);
-                this._EngineeringChangeOrderProducts = value;
-                this.OnEngineeringChangeOrderProductsChanged();
-                this.OnPropertyChanged("EngineeringChangeOrderProducts");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProduct> _EngineeringChangeOrderProducts = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProduct>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnEngineeringChangeOrderProductsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProduct> value);
-        partial void OnEngineeringChangeOrderProductsChanged();
-        /// <summary>
         /// There are no comments for Property ProductReadinessPolicy in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -623,6 +601,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.Category _Category;
         partial void OnCategoryChanging(global::Microsoft.Dynamics.DataEntities.Category value);
         partial void OnCategoryChanged();
+        /// <summary>
+        /// There are no comments for Property EngineeringChangeOrderProducts in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProduct> EngineeringChangeOrderProducts
+        {
+            get
+            {
+                return this._EngineeringChangeOrderProducts;
+            }
+            set
+            {
+                this.OnEngineeringChangeOrderProductsChanging(value);
+                this._EngineeringChangeOrderProducts = value;
+                this.OnEngineeringChangeOrderProductsChanged();
+                this.OnPropertyChanged("EngineeringChangeOrderProducts");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProduct> _EngineeringChangeOrderProducts = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProduct>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnEngineeringChangeOrderProductsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProduct> value);
+        partial void OnEngineeringChangeOrderProductsChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

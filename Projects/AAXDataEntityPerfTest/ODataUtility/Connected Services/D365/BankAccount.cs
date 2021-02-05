@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/20/2021 5:35:39 PM
+// Generation date: 2/4/2021 7:24:30 AM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public BankAccountSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<BankAccount> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for BankCheckLayout in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.BankCheckLayoutSingle BankCheckLayout
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._BankCheckLayout == null))
-                {
-                    this._BankCheckLayout = new global::Microsoft.Dynamics.DataEntities.BankCheckLayoutSingle(this.Context, GetPath("BankCheckLayout"));
-                }
-                return this._BankCheckLayout;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.BankCheckLayoutSingle _BankCheckLayout;
         /// <summary>
         /// There are no comments for JournalName in the schema.
         /// </summary>
@@ -181,6 +160,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionSetSingle _DimensionSet;
+        /// <summary>
+        /// There are no comments for BankCheckLayout in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.BankCheckLayoutSingle BankCheckLayout
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._BankCheckLayout == null))
+                {
+                    this._BankCheckLayout = new global::Microsoft.Dynamics.DataEntities.BankCheckLayoutSingle(this.Context, GetPath("BankCheckLayout"));
+                }
+                return this._BankCheckLayout;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.BankCheckLayoutSingle _BankCheckLayout;
         /// <summary>
         /// There are no comments for BankBillOfExchangeLayout in the schema.
         /// </summary>
@@ -2214,28 +2214,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnQRIBANChanging(string value);
         partial void OnQRIBANChanged();
         /// <summary>
-        /// There are no comments for Property BankCheckLayout in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.BankCheckLayout BankCheckLayout
-        {
-            get
-            {
-                return this._BankCheckLayout;
-            }
-            set
-            {
-                this.OnBankCheckLayoutChanging(value);
-                this._BankCheckLayout = value;
-                this.OnBankCheckLayoutChanged();
-                this.OnPropertyChanged("BankCheckLayout");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.BankCheckLayout _BankCheckLayout;
-        partial void OnBankCheckLayoutChanging(global::Microsoft.Dynamics.DataEntities.BankCheckLayout value);
-        partial void OnBankCheckLayoutChanged();
-        /// <summary>
         /// There are no comments for Property JournalName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -2367,6 +2345,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.DimensionSet _DimensionSet;
         partial void OnDimensionSetChanging(global::Microsoft.Dynamics.DataEntities.DimensionSet value);
         partial void OnDimensionSetChanged();
+        /// <summary>
+        /// There are no comments for Property BankCheckLayout in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.BankCheckLayout BankCheckLayout
+        {
+            get
+            {
+                return this._BankCheckLayout;
+            }
+            set
+            {
+                this.OnBankCheckLayoutChanging(value);
+                this._BankCheckLayout = value;
+                this.OnBankCheckLayoutChanged();
+                this.OnPropertyChanged("BankCheckLayout");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.BankCheckLayout _BankCheckLayout;
+        partial void OnBankCheckLayoutChanging(global::Microsoft.Dynamics.DataEntities.BankCheckLayout value);
+        partial void OnBankCheckLayoutChanged();
         /// <summary>
         /// There are no comments for Property BankBillOfExchangeLayout in the schema.
         /// </summary>

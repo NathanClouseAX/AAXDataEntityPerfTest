@@ -1694,6 +1694,8 @@
     <Compile Include="Connected Services\D365\SalesOrderHeaderV2.cs" />
     <Compile Include="Connected Services\D365\SalesOrderHeaderV2EntityDSReadOnly.cs" />
     <Compile Include="Connected Services\D365\SalesOrderHeaderV2EntityOnlySalesTable.cs" />
+    <Compile Include="Connected Services\D365\SalesOrderHeaderV2EntityOnlySalesTablePostLoad.cs" />
+    <Compile Include="Connected Services\D365\SalesOrderHeaderV2EntityOnlySalesTablePostLoadExtended.cs" />
     <Compile Include="Connected Services\D365\SalesOrderHeaderV2EntityReadOnly.cs" />
     <Compile Include="Connected Services\D365\SalesOrderHeaderV2EntityReadOnlyNoGlobalization.cs" />
     <Compile Include="Connected Services\D365\SalesOrderHeaderV2ExistAddrReadOnly.cs" />
