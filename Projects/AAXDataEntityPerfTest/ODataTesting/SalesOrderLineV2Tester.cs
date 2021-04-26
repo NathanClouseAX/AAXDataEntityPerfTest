@@ -89,7 +89,6 @@ namespace ODataTesting
         {
             Stopwatch sw = new Stopwatch();
             StreamWriter stream = File.AppendText(filePath);
-
             // DataServiceQueryContinuation<T> contains the next link
             DataServiceQueryContinuation<SalesOrderLine> nextLink = null;
 
@@ -117,20 +116,13 @@ namespace ODataTesting
                 //forced loop to enumerate each item in the response
                 foreach (SalesOrderLine salesLine in response)
                 {
-
-                    //Console.WriteLine("Sales Id, DataAreaId: " + salesLine.SalesOrderNumber + ", " + salesLine.dataAreaId);
                 }
-
-
             }
             // Loop if there is a next link
             while ((nextLink = response.GetContinuation()) != null);
 
-
-
             stream.Flush();
             stream.Close();
-
         }
 
         public static void runGetAllPagesSkipTake(Resources context, string filePath, TestType testType, TestWorkload testWorkload)
@@ -149,7 +141,7 @@ namespace ODataTesting
             for (skip = 0; skip <= numberOfRecords; skip += take)
             {
                 sw.Start();
-                context.SalesOrderLines.Skip(0).Take(take).ToList();
+                context.SalesOrderLines.Skip(skip).Take(take).ToList();
 
                 sw.Stop();
 

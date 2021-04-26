@@ -653,7 +653,6 @@ namespace ODataTesting
             DataServiceCollection<SalesOrderHeaderV2EntityOnlySalesTable> SalesOrderCollection = new DataServiceCollection<SalesOrderHeaderV2EntityOnlySalesTable>(context);
             SalesOrderHeaderV2EntityOnlySalesTable SalesOrderHeaderV2EntityOnlySalesTable = new SalesOrderHeaderV2EntityOnlySalesTable();
 
-
             SalesOrderCollection.Add(SalesOrderHeaderV2EntityOnlySalesTable);
 
             // Required Fields
@@ -662,10 +661,7 @@ namespace ODataTesting
             SalesOrderHeaderV2EntityOnlySalesTable.dataAreaId = DataAreaId;
             SalesOrderHeaderV2EntityOnlySalesTable.CurrencyCode = "USD";
             SalesOrderHeaderV2EntityOnlySalesTable.LanguageId = "en-us";
-
-            //SalesOrderHeaderV2EntityOnlySalesTable.CustGroup = "30";
-            //SalesOrderHeaderV2EntityOnlySalesTable.ShippingDateRequested = DateTime.UtcNow;
-
+            
             // Optional Fields
             SalesOrderHeaderV2EntityOnlySalesTable.SalesOrderPromisingMethod = SalesDeliveryDateControlType.CTP;
             SalesOrderHeaderV2EntityOnlySalesTable.DeliveryModeCode = "10";

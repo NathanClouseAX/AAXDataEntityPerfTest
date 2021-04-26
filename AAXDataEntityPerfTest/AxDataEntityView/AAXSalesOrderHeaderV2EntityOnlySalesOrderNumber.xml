@@ -54,9 +54,6 @@ public class AAXSalesOrderHeaderV2EntityOnlySalesOrderNumber extends common
 					<DataField>SalesOrderStatus</DataField>
 				</AxTableFieldGroupField>
 				<AxTableFieldGroupField>
-					<DataField>OrderingCustomerAccountNumber</DataField>
-				</AxTableFieldGroupField>
-				<AxTableFieldGroupField>
 					<DataField>InvoiceCustomerAccountNumber</DataField>
 				</AxTableFieldGroupField>
 				<AxTableFieldGroupField>
@@ -91,9 +88,6 @@ public class AAXSalesOrderHeaderV2EntityOnlySalesOrderNumber extends common
 				</AxTableFieldGroupField>
 				<AxTableFieldGroupField>
 					<DataField>DeliveryModeCode</DataField>
-				</AxTableFieldGroupField>
-				<AxTableFieldGroupField>
-					<DataField>DeliveryReasonCode</DataField>
 				</AxTableFieldGroupField>
 				<AxTableFieldGroupField>
 					<DataField>DeliveryTermsCode</DataField>
@@ -135,19 +129,10 @@ public class AAXSalesOrderHeaderV2EntityOnlySalesOrderNumber extends common
 					<DataField>ChargeCustomerGroupId</DataField>
 				</AxTableFieldGroupField>
 				<AxTableFieldGroupField>
-					<DataField>IsSalesProcessingStopped</DataField>
-				</AxTableFieldGroupField>
-				<AxTableFieldGroupField>
 					<DataField>MultilineDiscountCustomerGroupCode</DataField>
 				</AxTableFieldGroupField>
 				<AxTableFieldGroupField>
 					<DataField>NumberSequenceGroupId</DataField>
-				</AxTableFieldGroupField>
-				<AxTableFieldGroupField>
-					<DataField>IsOneTimeCustomer</DataField>
-				</AxTableFieldGroupField>
-				<AxTableFieldGroupField>
-					<DataField>PaymentTermsName</DataField>
 				</AxTableFieldGroupField>
 				<AxTableFieldGroupField>
 					<DataField>PaymentScheduleName</DataField>
@@ -183,9 +168,6 @@ public class AAXSalesOrderHeaderV2EntityOnlySalesOrderNumber extends common
 					<DataField>QuotationNumber</DataField>
 				</AxTableFieldGroupField>
 				<AxTableFieldGroupField>
-					<DataField>ConfirmedReceiptDate</DataField>
-				</AxTableFieldGroupField>
-				<AxTableFieldGroupField>
 					<DataField>RequestedReceiptDate</DataField>
 				</AxTableFieldGroupField>
 				<AxTableFieldGroupField>
@@ -207,9 +189,6 @@ public class AAXSalesOrderHeaderV2EntityOnlySalesOrderNumber extends common
 					<DataField>SalesUnitId</DataField>
 				</AxTableFieldGroupField>
 				<AxTableFieldGroupField>
-					<DataField>CustomerTransactionSettlementType</DataField>
-				</AxTableFieldGroupField>
-				<AxTableFieldGroupField>
 					<DataField>ConfirmedShippingDate</DataField>
 				</AxTableFieldGroupField>
 				<AxTableFieldGroupField>
@@ -228,22 +207,13 @@ public class AAXSalesOrderHeaderV2EntityOnlySalesOrderNumber extends common
 					<DataField>IntrastatTransactionCode</DataField>
 				</AxTableFieldGroupField>
 				<AxTableFieldGroupField>
-					<DataField>IntrastatTransportModeCode</DataField>
-				</AxTableFieldGroupField>
-				<AxTableFieldGroupField>
 					<DataField>URL</DataField>
-				</AxTableFieldGroupField>
-				<AxTableFieldGroupField>
-					<DataField>TaxExemptNumber</DataField>
 				</AxTableFieldGroupField>
 				<AxTableFieldGroupField>
 					<DataField>ShippingCarrierServiceGroupId</DataField>
 				</AxTableFieldGroupField>
 				<AxTableFieldGroupField>
 					<DataField>IsDeliveryAddressOrderSpecific</DataField>
-				</AxTableFieldGroupField>
-				<AxTableFieldGroupField>
-					<DataField>IsConsolidatedInvoiceTarget</DataField>
 				</AxTableFieldGroupField>
 				<AxTableFieldGroupField>
 					<DataField>EInvoiceDimensionAccountCode</DataField>
@@ -253,12 +223,6 @@ public class AAXSalesOrderHeaderV2EntityOnlySalesOrderNumber extends common
 				</AxTableFieldGroupField>
 				<AxTableFieldGroupField>
 					<DataField>CreditNoteReasonCode</DataField>
-				</AxTableFieldGroupField>
-				<AxTableFieldGroupField>
-					<DataField>OrderCreationDateTime</DataField>
-				</AxTableFieldGroupField>
-				<AxTableFieldGroupField>
-					<DataField>OrderTotalChargesAmount</DataField>
 				</AxTableFieldGroupField>
 				<AxTableFieldGroupField>
 					<DataField>TotalDiscountAmount</DataField>
