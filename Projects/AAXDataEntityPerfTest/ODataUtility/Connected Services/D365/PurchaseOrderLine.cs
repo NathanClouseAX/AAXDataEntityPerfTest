@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -55,27 +55,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.PurchaseOrderHeaderV2Single _PurchaseOrderHeaderV2;
-        /// <summary>
-        /// There are no comments for Project in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ProjectSingle Project
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._Project == null))
-                {
-                    this._Project = new global::Microsoft.Dynamics.DataEntities.ProjectSingle(this.Context, GetPath("Project"));
-                }
-                return this._Project;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ProjectSingle _Project;
         /// <summary>
         /// There are no comments for PurchaseOrderHeader in the schema.
         /// </summary>
@@ -3086,28 +3065,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.PurchaseOrderHeaderV2 _PurchaseOrderHeaderV2;
         partial void OnPurchaseOrderHeaderV2Changing(global::Microsoft.Dynamics.DataEntities.PurchaseOrderHeaderV2 value);
         partial void OnPurchaseOrderHeaderV2Changed();
-        /// <summary>
-        /// There are no comments for Property Project in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.Project Project
-        {
-            get
-            {
-                return this._Project;
-            }
-            set
-            {
-                this.OnProjectChanging(value);
-                this._Project = value;
-                this.OnProjectChanged();
-                this.OnPropertyChanged("Project");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.Project _Project;
-        partial void OnProjectChanging(global::Microsoft.Dynamics.DataEntities.Project value);
-        partial void OnProjectChanged();
         /// <summary>
         /// There are no comments for Property PurchaseOrderHeader in the schema.
         /// </summary>

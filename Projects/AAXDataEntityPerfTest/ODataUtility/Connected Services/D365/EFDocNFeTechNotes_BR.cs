@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -21,6 +21,8 @@ namespace Microsoft.Dynamics.DataEntities
         NFe402019001v100 = 2,
         NFe402019001v110 = 3,
         NFe402019001v120 = 4,
-        NFe402019001v140 = 5
+        NFe402019001v140 = 5,
+        NFe402019001v151 = 6,
+        NFe402020006v100 = 7
     }
 }

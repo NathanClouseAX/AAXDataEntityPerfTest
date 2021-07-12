@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,10 +35,10 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for TradeAllowanceAgreementMerchandisingEventProductsV2 in the schema.
+        /// There are no comments for TradeAllowanceAgreementProductsV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2> TradeAllowanceAgreementMerchandisingEventProductsV2
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2> TradeAllowanceAgreementProductsV2
         {
             get
             {
@@ -46,15 +46,36 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._TradeAllowanceAgreementMerchandisingEventProductsV2 == null))
+                if ((this._TradeAllowanceAgreementProductsV2 == null))
                 {
-                    this._TradeAllowanceAgreementMerchandisingEventProductsV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2>(GetPath("TradeAllowanceAgreementMerchandisingEventProductsV2"));
+                    this._TradeAllowanceAgreementProductsV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2>(GetPath("TradeAllowanceAgreementProductsV2"));
                 }
-                return this._TradeAllowanceAgreementMerchandisingEventProductsV2;
+                return this._TradeAllowanceAgreementProductsV2;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2> _TradeAllowanceAgreementMerchandisingEventProductsV2;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2> _TradeAllowanceAgreementProductsV2;
+        /// <summary>
+        /// There are no comments for TradeAllowanceAgreementMerchandisingEventFunds in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventBillBackLine> TradeAllowanceAgreementMerchandisingEventFunds
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._TradeAllowanceAgreementMerchandisingEventFunds == null))
+                {
+                    this._TradeAllowanceAgreementMerchandisingEventFunds = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventBillBackLine>(GetPath("TradeAllowanceAgreementMerchandisingEventFunds"));
+                }
+                return this._TradeAllowanceAgreementMerchandisingEventFunds;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventBillBackLine> _TradeAllowanceAgreementMerchandisingEventFunds;
         /// <summary>
         /// There are no comments for TradeAllowanceAgreementMerchandisingEventBillBacks in the schema.
         /// </summary>
@@ -77,10 +98,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventBillBack> _TradeAllowanceAgreementMerchandisingEventBillBacks;
         /// <summary>
-        /// There are no comments for TradeAllowanceAgreementMerchandisingEventFunds in the schema.
+        /// There are no comments for TradeAllowanceAgreementMerchandisingEvents in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventFund> TradeAllowanceAgreementMerchandisingEventFunds
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEvent> TradeAllowanceAgreementMerchandisingEvents
         {
             get
             {
@@ -88,15 +109,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._TradeAllowanceAgreementMerchandisingEventFunds == null))
+                if ((this._TradeAllowanceAgreementMerchandisingEvents == null))
                 {
-                    this._TradeAllowanceAgreementMerchandisingEventFunds = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventFund>(GetPath("TradeAllowanceAgreementMerchandisingEventFunds"));
+                    this._TradeAllowanceAgreementMerchandisingEvents = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEvent>(GetPath("TradeAllowanceAgreementMerchandisingEvents"));
                 }
-                return this._TradeAllowanceAgreementMerchandisingEventFunds;
+                return this._TradeAllowanceAgreementMerchandisingEvents;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventFund> _TradeAllowanceAgreementMerchandisingEventFunds;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEvent> _TradeAllowanceAgreementMerchandisingEvents;
         /// <summary>
         /// There are no comments for TradeAllowanceAgreementMerchandisingEventLumpSums in the schema.
         /// </summary>
@@ -140,27 +161,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementFund> _TradeAllowanceAgreementFunds;
         /// <summary>
-        /// There are no comments for TradeAllowanceAgreementMerchandisingEvents in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEvent> TradeAllowanceAgreementMerchandisingEvents
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._TradeAllowanceAgreementMerchandisingEvents == null))
-                {
-                    this._TradeAllowanceAgreementMerchandisingEvents = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEvent>(GetPath("TradeAllowanceAgreementMerchandisingEvents"));
-                }
-                return this._TradeAllowanceAgreementMerchandisingEvents;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEvent> _TradeAllowanceAgreementMerchandisingEvents;
-        /// <summary>
         /// There are no comments for TradeAllowanceAgreementProducts in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -181,27 +181,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProduct> _TradeAllowanceAgreementProducts;
-        /// <summary>
-        /// There are no comments for TradeAllowanceAgreementProductsV2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2> TradeAllowanceAgreementProductsV2
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._TradeAllowanceAgreementProductsV2 == null))
-                {
-                    this._TradeAllowanceAgreementProductsV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2>(GetPath("TradeAllowanceAgreementProductsV2"));
-                }
-                return this._TradeAllowanceAgreementProductsV2;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2> _TradeAllowanceAgreementProductsV2;
         /// <summary>
         /// There are no comments for UnitOfMeasure in the schema.
         /// </summary>
@@ -286,6 +265,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.CustomerV3Single _Customer;
+        /// <summary>
+        /// There are no comments for TradeAllowanceAgreementMerchandisingEventProductsV2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2> TradeAllowanceAgreementMerchandisingEventProductsV2
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._TradeAllowanceAgreementMerchandisingEventProductsV2 == null))
+                {
+                    this._TradeAllowanceAgreementMerchandisingEventProductsV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2>(GetPath("TradeAllowanceAgreementMerchandisingEventProductsV2"));
+                }
+                return this._TradeAllowanceAgreementMerchandisingEventProductsV2;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2> _TradeAllowanceAgreementMerchandisingEventProductsV2;
     }
         /// <summary>
         /// There are no comments for TradeAllowanceAgreementHeader in the schema.
@@ -917,27 +917,49 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnExpectedPromotionalQuantityChanging(decimal value);
         partial void OnExpectedPromotionalQuantityChanged();
         /// <summary>
-        /// There are no comments for Property TradeAllowanceAgreementMerchandisingEventProductsV2 in the schema.
+        /// There are no comments for Property TradeAllowanceAgreementProductsV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2> TradeAllowanceAgreementMerchandisingEventProductsV2
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2> TradeAllowanceAgreementProductsV2
         {
             get
             {
-                return this._TradeAllowanceAgreementMerchandisingEventProductsV2;
+                return this._TradeAllowanceAgreementProductsV2;
             }
             set
             {
-                this.OnTradeAllowanceAgreementMerchandisingEventProductsV2Changing(value);
-                this._TradeAllowanceAgreementMerchandisingEventProductsV2 = value;
-                this.OnTradeAllowanceAgreementMerchandisingEventProductsV2Changed();
-                this.OnPropertyChanged("TradeAllowanceAgreementMerchandisingEventProductsV2");
+                this.OnTradeAllowanceAgreementProductsV2Changing(value);
+                this._TradeAllowanceAgreementProductsV2 = value;
+                this.OnTradeAllowanceAgreementProductsV2Changed();
+                this.OnPropertyChanged("TradeAllowanceAgreementProductsV2");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2> _TradeAllowanceAgreementMerchandisingEventProductsV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnTradeAllowanceAgreementMerchandisingEventProductsV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2> value);
-        partial void OnTradeAllowanceAgreementMerchandisingEventProductsV2Changed();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2> _TradeAllowanceAgreementProductsV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnTradeAllowanceAgreementProductsV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2> value);
+        partial void OnTradeAllowanceAgreementProductsV2Changed();
+        /// <summary>
+        /// There are no comments for Property TradeAllowanceAgreementMerchandisingEventFunds in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventBillBackLine> TradeAllowanceAgreementMerchandisingEventFunds
+        {
+            get
+            {
+                return this._TradeAllowanceAgreementMerchandisingEventFunds;
+            }
+            set
+            {
+                this.OnTradeAllowanceAgreementMerchandisingEventFundsChanging(value);
+                this._TradeAllowanceAgreementMerchandisingEventFunds = value;
+                this.OnTradeAllowanceAgreementMerchandisingEventFundsChanged();
+                this.OnPropertyChanged("TradeAllowanceAgreementMerchandisingEventFunds");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventBillBackLine> _TradeAllowanceAgreementMerchandisingEventFunds = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventBillBackLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnTradeAllowanceAgreementMerchandisingEventFundsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventBillBackLine> value);
+        partial void OnTradeAllowanceAgreementMerchandisingEventFundsChanged();
         /// <summary>
         /// There are no comments for Property TradeAllowanceAgreementMerchandisingEventBillBacks in the schema.
         /// </summary>
@@ -961,27 +983,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnTradeAllowanceAgreementMerchandisingEventBillBacksChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventBillBack> value);
         partial void OnTradeAllowanceAgreementMerchandisingEventBillBacksChanged();
         /// <summary>
-        /// There are no comments for Property TradeAllowanceAgreementMerchandisingEventFunds in the schema.
+        /// There are no comments for Property TradeAllowanceAgreementMerchandisingEvents in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventFund> TradeAllowanceAgreementMerchandisingEventFunds
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEvent> TradeAllowanceAgreementMerchandisingEvents
         {
             get
             {
-                return this._TradeAllowanceAgreementMerchandisingEventFunds;
+                return this._TradeAllowanceAgreementMerchandisingEvents;
             }
             set
             {
-                this.OnTradeAllowanceAgreementMerchandisingEventFundsChanging(value);
-                this._TradeAllowanceAgreementMerchandisingEventFunds = value;
-                this.OnTradeAllowanceAgreementMerchandisingEventFundsChanged();
-                this.OnPropertyChanged("TradeAllowanceAgreementMerchandisingEventFunds");
+                this.OnTradeAllowanceAgreementMerchandisingEventsChanging(value);
+                this._TradeAllowanceAgreementMerchandisingEvents = value;
+                this.OnTradeAllowanceAgreementMerchandisingEventsChanged();
+                this.OnPropertyChanged("TradeAllowanceAgreementMerchandisingEvents");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventFund> _TradeAllowanceAgreementMerchandisingEventFunds = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventFund>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnTradeAllowanceAgreementMerchandisingEventFundsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventFund> value);
-        partial void OnTradeAllowanceAgreementMerchandisingEventFundsChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEvent> _TradeAllowanceAgreementMerchandisingEvents = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEvent>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnTradeAllowanceAgreementMerchandisingEventsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEvent> value);
+        partial void OnTradeAllowanceAgreementMerchandisingEventsChanged();
         /// <summary>
         /// There are no comments for Property TradeAllowanceAgreementMerchandisingEventLumpSums in the schema.
         /// </summary>
@@ -1027,28 +1049,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnTradeAllowanceAgreementFundsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementFund> value);
         partial void OnTradeAllowanceAgreementFundsChanged();
         /// <summary>
-        /// There are no comments for Property TradeAllowanceAgreementMerchandisingEvents in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEvent> TradeAllowanceAgreementMerchandisingEvents
-        {
-            get
-            {
-                return this._TradeAllowanceAgreementMerchandisingEvents;
-            }
-            set
-            {
-                this.OnTradeAllowanceAgreementMerchandisingEventsChanging(value);
-                this._TradeAllowanceAgreementMerchandisingEvents = value;
-                this.OnTradeAllowanceAgreementMerchandisingEventsChanged();
-                this.OnPropertyChanged("TradeAllowanceAgreementMerchandisingEvents");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEvent> _TradeAllowanceAgreementMerchandisingEvents = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEvent>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnTradeAllowanceAgreementMerchandisingEventsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEvent> value);
-        partial void OnTradeAllowanceAgreementMerchandisingEventsChanged();
-        /// <summary>
         /// There are no comments for Property TradeAllowanceAgreementProducts in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -1070,28 +1070,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProduct> _TradeAllowanceAgreementProducts = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProduct>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnTradeAllowanceAgreementProductsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProduct> value);
         partial void OnTradeAllowanceAgreementProductsChanged();
-        /// <summary>
-        /// There are no comments for Property TradeAllowanceAgreementProductsV2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2> TradeAllowanceAgreementProductsV2
-        {
-            get
-            {
-                return this._TradeAllowanceAgreementProductsV2;
-            }
-            set
-            {
-                this.OnTradeAllowanceAgreementProductsV2Changing(value);
-                this._TradeAllowanceAgreementProductsV2 = value;
-                this.OnTradeAllowanceAgreementProductsV2Changed();
-                this.OnPropertyChanged("TradeAllowanceAgreementProductsV2");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2> _TradeAllowanceAgreementProductsV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnTradeAllowanceAgreementProductsV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2> value);
-        partial void OnTradeAllowanceAgreementProductsV2Changed();
         /// <summary>
         /// There are no comments for Property UnitOfMeasure in the schema.
         /// </summary>
@@ -1180,6 +1158,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.CustomerV3 _Customer;
         partial void OnCustomerChanging(global::Microsoft.Dynamics.DataEntities.CustomerV3 value);
         partial void OnCustomerChanged();
+        /// <summary>
+        /// There are no comments for Property TradeAllowanceAgreementMerchandisingEventProductsV2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2> TradeAllowanceAgreementMerchandisingEventProductsV2
+        {
+            get
+            {
+                return this._TradeAllowanceAgreementMerchandisingEventProductsV2;
+            }
+            set
+            {
+                this.OnTradeAllowanceAgreementMerchandisingEventProductsV2Changing(value);
+                this._TradeAllowanceAgreementMerchandisingEventProductsV2 = value;
+                this.OnTradeAllowanceAgreementMerchandisingEventProductsV2Changed();
+                this.OnPropertyChanged("TradeAllowanceAgreementMerchandisingEventProductsV2");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2> _TradeAllowanceAgreementMerchandisingEventProductsV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnTradeAllowanceAgreementMerchandisingEventProductsV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2> value);
+        partial void OnTradeAllowanceAgreementMerchandisingEventProductsV2Changed();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for OrderVendor in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.VendorV2Single OrderVendor
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._OrderVendor == null))
-                {
-                    this._OrderVendor = new global::Microsoft.Dynamics.DataEntities.VendorV2Single(this.Context, GetPath("OrderVendor"));
-                }
-                return this._OrderVendor;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.VendorV2Single _OrderVendor;
-        /// <summary>
         /// There are no comments for PurchaseOrderResponseLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,6 +55,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseOrderResponseLine> _PurchaseOrderResponseLines;
+        /// <summary>
+        /// There are no comments for OrderVendor in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.VendorV2Single OrderVendor
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._OrderVendor == null))
+                {
+                    this._OrderVendor = new global::Microsoft.Dynamics.DataEntities.VendorV2Single(this.Context, GetPath("OrderVendor"));
+                }
+                return this._OrderVendor;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.VendorV2Single _OrderVendor;
     }
         /// <summary>
         /// There are no comments for PurchaseOrderResponseHeader in the schema.
@@ -1081,28 +1081,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDeliveryAddressDunsNumberChanging(string value);
         partial void OnDeliveryAddressDunsNumberChanged();
         /// <summary>
-        /// There are no comments for Property OrderVendor in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.VendorV2 OrderVendor
-        {
-            get
-            {
-                return this._OrderVendor;
-            }
-            set
-            {
-                this.OnOrderVendorChanging(value);
-                this._OrderVendor = value;
-                this.OnOrderVendorChanged();
-                this.OnPropertyChanged("OrderVendor");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.VendorV2 _OrderVendor;
-        partial void OnOrderVendorChanging(global::Microsoft.Dynamics.DataEntities.VendorV2 value);
-        partial void OnOrderVendorChanged();
-        /// <summary>
         /// There are no comments for Property PurchaseOrderResponseLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -1124,6 +1102,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseOrderResponseLine> _PurchaseOrderResponseLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseOrderResponseLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnPurchaseOrderResponseLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseOrderResponseLine> value);
         partial void OnPurchaseOrderResponseLinesChanged();
+        /// <summary>
+        /// There are no comments for Property OrderVendor in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.VendorV2 OrderVendor
+        {
+            get
+            {
+                return this._OrderVendor;
+            }
+            set
+            {
+                this.OnOrderVendorChanging(value);
+                this._OrderVendor = value;
+                this.OnOrderVendorChanged();
+                this.OnPropertyChanged("OrderVendor");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.VendorV2 _OrderVendor;
+        partial void OnOrderVendorChanging(global::Microsoft.Dynamics.DataEntities.VendorV2 value);
+        partial void OnOrderVendorChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

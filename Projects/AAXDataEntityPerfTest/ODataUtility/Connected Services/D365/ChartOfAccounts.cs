@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,10 +35,31 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
+        /// There are no comments for LedgerChartOfAccountsEntityRole in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AccountTranslation> LedgerChartOfAccountsEntityRole
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._LedgerChartOfAccountsEntityRole == null))
+                {
+                    this._LedgerChartOfAccountsEntityRole = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AccountTranslation>(GetPath("LedgerChartOfAccountsEntityRole"));
+                }
+                return this._LedgerChartOfAccountsEntityRole;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AccountTranslation> _LedgerChartOfAccountsEntityRole;
+        /// <summary>
         /// There are no comments for LedgerChartOfAccountsEntityRole2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ConsolidateAccountGroup> LedgerChartOfAccountsEntityRole2
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ConsolidateAccount> LedgerChartOfAccountsEntityRole2
         {
             get
             {
@@ -48,13 +69,13 @@ namespace Microsoft.Dynamics.DataEntities
                 }
                 if ((this._LedgerChartOfAccountsEntityRole2 == null))
                 {
-                    this._LedgerChartOfAccountsEntityRole2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ConsolidateAccountGroup>(GetPath("LedgerChartOfAccountsEntityRole2"));
+                    this._LedgerChartOfAccountsEntityRole2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ConsolidateAccount>(GetPath("LedgerChartOfAccountsEntityRole2"));
                 }
                 return this._LedgerChartOfAccountsEntityRole2;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ConsolidateAccountGroup> _LedgerChartOfAccountsEntityRole2;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ConsolidateAccount> _LedgerChartOfAccountsEntityRole2;
         /// <summary>
         /// There are no comments for TotalAccountLedgerChartOfAccountsEntityRole in the schema.
         /// </summary>
@@ -76,27 +97,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.MainAccountTotalAccountInterval> _TotalAccountLedgerChartOfAccountsEntityRole;
-        /// <summary>
-        /// There are no comments for LedgerChartOfAccountsEntityRole in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AccountTranslation> LedgerChartOfAccountsEntityRole
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._LedgerChartOfAccountsEntityRole == null))
-                {
-                    this._LedgerChartOfAccountsEntityRole = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AccountTranslation>(GetPath("LedgerChartOfAccountsEntityRole"));
-                }
-                return this._LedgerChartOfAccountsEntityRole;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AccountTranslation> _LedgerChartOfAccountsEntityRole;
     }
         /// <summary>
         /// There are no comments for ChartOfAccounts in the schema.
@@ -211,10 +211,32 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDescriptionChanging(string value);
         partial void OnDescriptionChanged();
         /// <summary>
+        /// There are no comments for Property LedgerChartOfAccountsEntityRole in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AccountTranslation> LedgerChartOfAccountsEntityRole
+        {
+            get
+            {
+                return this._LedgerChartOfAccountsEntityRole;
+            }
+            set
+            {
+                this.OnLedgerChartOfAccountsEntityRoleChanging(value);
+                this._LedgerChartOfAccountsEntityRole = value;
+                this.OnLedgerChartOfAccountsEntityRoleChanged();
+                this.OnPropertyChanged("LedgerChartOfAccountsEntityRole");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AccountTranslation> _LedgerChartOfAccountsEntityRole = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AccountTranslation>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnLedgerChartOfAccountsEntityRoleChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AccountTranslation> value);
+        partial void OnLedgerChartOfAccountsEntityRoleChanged();
+        /// <summary>
         /// There are no comments for Property LedgerChartOfAccountsEntityRole2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ConsolidateAccountGroup> LedgerChartOfAccountsEntityRole2
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ConsolidateAccount> LedgerChartOfAccountsEntityRole2
         {
             get
             {
@@ -229,8 +251,8 @@ namespace Microsoft.Dynamics.DataEntities
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ConsolidateAccountGroup> _LedgerChartOfAccountsEntityRole2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ConsolidateAccountGroup>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnLedgerChartOfAccountsEntityRole2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ConsolidateAccountGroup> value);
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ConsolidateAccount> _LedgerChartOfAccountsEntityRole2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ConsolidateAccount>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnLedgerChartOfAccountsEntityRole2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ConsolidateAccount> value);
         partial void OnLedgerChartOfAccountsEntityRole2Changed();
         /// <summary>
         /// There are no comments for Property TotalAccountLedgerChartOfAccountsEntityRole in the schema.
@@ -254,28 +276,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.MainAccountTotalAccountInterval> _TotalAccountLedgerChartOfAccountsEntityRole = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.MainAccountTotalAccountInterval>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnTotalAccountLedgerChartOfAccountsEntityRoleChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.MainAccountTotalAccountInterval> value);
         partial void OnTotalAccountLedgerChartOfAccountsEntityRoleChanged();
-        /// <summary>
-        /// There are no comments for Property LedgerChartOfAccountsEntityRole in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AccountTranslation> LedgerChartOfAccountsEntityRole
-        {
-            get
-            {
-                return this._LedgerChartOfAccountsEntityRole;
-            }
-            set
-            {
-                this.OnLedgerChartOfAccountsEntityRoleChanging(value);
-                this._LedgerChartOfAccountsEntityRole = value;
-                this.OnLedgerChartOfAccountsEntityRoleChanged();
-                this.OnPropertyChanged("LedgerChartOfAccountsEntityRole");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AccountTranslation> _LedgerChartOfAccountsEntityRole = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AccountTranslation>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnLedgerChartOfAccountsEntityRoleChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AccountTranslation> value);
-        partial void OnLedgerChartOfAccountsEntityRoleChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -55,6 +55,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InventoryCountingJournalLine> _InventoryCountingJournalLines;
+        /// <summary>
+        /// There are no comments for InventoryTagCountingJournalLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InventoryTagCountingJournalLine> InventoryTagCountingJournalLines
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._InventoryTagCountingJournalLines == null))
+                {
+                    this._InventoryTagCountingJournalLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.InventoryTagCountingJournalLine>(GetPath("InventoryTagCountingJournalLines"));
+                }
+                return this._InventoryTagCountingJournalLines;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InventoryTagCountingJournalLine> _InventoryTagCountingJournalLines;
     }
         /// <summary>
         /// There are no comments for InventoryOwner in the schema.
@@ -168,6 +189,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventoryCountingJournalLine> _InventoryCountingJournalLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventoryCountingJournalLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnInventoryCountingJournalLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventoryCountingJournalLine> value);
         partial void OnInventoryCountingJournalLinesChanged();
+        /// <summary>
+        /// There are no comments for Property InventoryTagCountingJournalLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventoryTagCountingJournalLine> InventoryTagCountingJournalLines
+        {
+            get
+            {
+                return this._InventoryTagCountingJournalLines;
+            }
+            set
+            {
+                this.OnInventoryTagCountingJournalLinesChanging(value);
+                this._InventoryTagCountingJournalLines = value;
+                this.OnInventoryTagCountingJournalLinesChanged();
+                this.OnPropertyChanged("InventoryTagCountingJournalLines");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventoryTagCountingJournalLine> _InventoryTagCountingJournalLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventoryTagCountingJournalLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnInventoryTagCountingJournalLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventoryTagCountingJournalLine> value);
+        partial void OnInventoryTagCountingJournalLinesChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

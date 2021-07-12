@@ -40,6 +40,11 @@
     <Folder Include="Tables\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AxClass\AAXActivityLogger">
+      <SubType>Content</SubType>
+      <Name>AAXActivityLogger</Name>
+      <Link>Classes\AAXActivityLogger</Link>
+    </Content>
     <Content Include="AxClass\RunnableClass1">
       <SubType>Content</SubType>
       <Name>RunnableClass1</Name>
@@ -105,6 +110,11 @@
       <Name>AAXSalesTableEntityReadOnly</Name>
       <Link>Data Entities\AAXSalesTableEntityReadOnly</Link>
     </Content>
+    <Content Include="AxDataEntityView\AAXTableEntity">
+      <SubType>Content</SubType>
+      <Name>AAXTableEntity</Name>
+      <Link>Data Entities\AAXTableEntity</Link>
+    </Content>
     <Content Include="AxMap\AAXCustVendReportingCurrencyFixedExchangeRate">
       <SubType>Content</SubType>
       <Name>AAXCustVendReportingCurrencyFixedExchangeRate</Name>
@@ -165,6 +175,16 @@
       <Name>AAXSalesTableEntityView</Name>
       <Link>Security Privileges\AAXSalesTableEntityView</Link>
     </Content>
+    <Content Include="AxSecurityPrivilege\AAXTableEntityMaintain">
+      <SubType>Content</SubType>
+      <Name>AAXTableEntityMaintain</Name>
+      <Link>Security Privileges\AAXTableEntityMaintain</Link>
+    </Content>
+    <Content Include="AxSecurityPrivilege\AAXTableEntityView">
+      <SubType>Content</SubType>
+      <Name>AAXTableEntityView</Name>
+      <Link>Security Privileges\AAXTableEntityView</Link>
+    </Content>
     <Content Include="AxTableExtension\SalesTable.AAXDataEntityPerfTest">
       <SubType>Content</SubType>
       <Name>SalesTable.AAXDataEntityPerfTest</Name>
@@ -194,6 +214,16 @@
       <SubType>Content</SubType>
       <Name>AAXSalesOrderHeaderV2EntityReadOnlyStaging</Name>
       <Link>Tables\AAXSalesOrderHeaderV2EntityReadOnlyStaging</Link>
+    </Content>
+    <Content Include="AxTable\AAXTable">
+      <SubType>Content</SubType>
+      <Name>AAXTable</Name>
+      <Link>Tables\AAXTable</Link>
+    </Content>
+    <Content Include="AxTable\AAXTableStaging">
+      <SubType>Content</SubType>
+      <Name>AAXTableStaging</Name>
+      <Link>Tables\AAXTableStaging</Link>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />

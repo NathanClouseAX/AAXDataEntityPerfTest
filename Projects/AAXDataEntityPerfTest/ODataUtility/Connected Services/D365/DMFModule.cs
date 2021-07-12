@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -78,6 +78,7 @@ namespace Microsoft.Dynamics.DataEntities
         WebActivity = 65,
         CommerceMiscellaneous = 66,
         CashManagement = 67,
+        AssetLease = 54,
         CostAccountingService = 51,
         CredMan = 52,
         EngineeringChangeManagement = 53,

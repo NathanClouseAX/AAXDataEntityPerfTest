@@ -8,6 +8,8 @@ using AuthenticationUtility;
 using Microsoft.OData.Client;
 using Microsoft.Dynamics.DataEntities;
 
+using System.Threading;
+
 using System.Web;
 using System.Data;
 using System.IO;
@@ -25,7 +27,7 @@ namespace Part3
 
         public static string filePath = @"c:\temp\part3.txt";
 
-        static void Main(string[] args)
+            static void Main(string[] args)
         {
             Uri oDataUri = new Uri(ODataEntityPath, UriKind.Absolute);
             var context = new Resources(oDataUri);
@@ -50,7 +52,6 @@ namespace Part3
                 var authenticationHeader = OAuthHelper.GetAuthenticationHeader(useWebAppAuthentication: true);
                 e.RequestMessage.SetHeader(OAuthHelper.OAuthHeader, authenticationHeader);
             });
-
 
             StreamWriter stream = File.CreateText(filePath);
             stream.WriteLine("Entity,TestType, Workload, Duration");

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,6 +34,27 @@ namespace Microsoft.Dynamics.DataEntities
         public WorkerTaxRegionSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<WorkerTaxRegion> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for PayStatementEarningLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLine> PayStatementEarningLine
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._PayStatementEarningLine == null))
+                {
+                    this._PayStatementEarningLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLine>(GetPath("PayStatementEarningLine"));
+                }
+                return this._PayStatementEarningLine;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLine> _PayStatementEarningLine;
         /// <summary>
         /// There are no comments for Worker in the schema.
         /// </summary>
@@ -76,27 +97,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.TaxRegionSingle _TaxRegion;
-        /// <summary>
-        /// There are no comments for PayStatementEarningLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLine> PayStatementEarningLine
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._PayStatementEarningLine == null))
-                {
-                    this._PayStatementEarningLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLine>(GetPath("PayStatementEarningLine"));
-                }
-                return this._PayStatementEarningLine;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLine> _PayStatementEarningLine;
     }
         /// <summary>
         /// There are no comments for WorkerTaxRegion in the schema.
@@ -267,6 +267,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnSchoolDistrictIdChanging(string value);
         partial void OnSchoolDistrictIdChanged();
         /// <summary>
+        /// There are no comments for Property PayStatementEarningLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLine> PayStatementEarningLine
+        {
+            get
+            {
+                return this._PayStatementEarningLine;
+            }
+            set
+            {
+                this.OnPayStatementEarningLineChanging(value);
+                this._PayStatementEarningLine = value;
+                this.OnPayStatementEarningLineChanged();
+                this.OnPropertyChanged("PayStatementEarningLine");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLine> _PayStatementEarningLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPayStatementEarningLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLine> value);
+        partial void OnPayStatementEarningLineChanged();
+        /// <summary>
         /// There are no comments for Property Worker in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -310,28 +332,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.TaxRegion _TaxRegion;
         partial void OnTaxRegionChanging(global::Microsoft.Dynamics.DataEntities.TaxRegion value);
         partial void OnTaxRegionChanged();
-        /// <summary>
-        /// There are no comments for Property PayStatementEarningLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLine> PayStatementEarningLine
-        {
-            get
-            {
-                return this._PayStatementEarningLine;
-            }
-            set
-            {
-                this.OnPayStatementEarningLineChanging(value);
-                this._PayStatementEarningLine = value;
-                this.OnPayStatementEarningLineChanged();
-                this.OnPropertyChanged("PayStatementEarningLine");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLine> _PayStatementEarningLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPayStatementEarningLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayStatementEarningLine> value);
-        partial void OnPayStatementEarningLineChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

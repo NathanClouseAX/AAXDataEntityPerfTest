@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 9/11/2020 3:24:26 PM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-    /// <summary>
-    /// There are no comments for CDSContactPersonV2Single in the schema.
-    /// </summary>
+        /// <summary>
+        /// There are no comments for CDSContactPersonV2Single in the schema.
+        /// </summary>
     public partial class CDSContactPersonV2Single : global::Microsoft.OData.Client.DataServiceQuerySingle<CDSContactPersonV2>
     {
         /// <summary>
@@ -34,10 +34,31 @@ namespace Microsoft.Dynamics.DataEntities
         public CDSContactPersonV2Single(global::Microsoft.OData.Client.DataServiceQuerySingle<CDSContactPersonV2> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for Party in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.CDSPartySingle Party
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Party == null))
+                {
+                    this._Party = new global::Microsoft.Dynamics.DataEntities.CDSPartySingle(this.Context, GetPath("Party"));
+                }
+                return this._Party;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.CDSPartySingle _Party;
     }
-    /// <summary>
-    /// There are no comments for CDSContactPersonV2 in the schema.
-    /// </summary>
+        /// <summary>
+        /// There are no comments for CDSContactPersonV2 in the schema.
+        /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// ContactPersonPartyNumber
@@ -56,8 +77,14 @@ namespace Microsoft.Dynamics.DataEntities
         /// <param name="associatedContactNumber">Initial value of AssociatedContactNumber.</param>
         /// <param name="birthDay">Initial value of BirthDay.</param>
         /// <param name="birthYear">Initial value of BirthYear.</param>
+        /// <param name="party">Initial value of Party.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public static CDSContactPersonV2 CreateCDSContactPersonV2(string dataAreaId, string contactPersonPartyNumber, string associatedContactNumber, int birthDay, int birthYear)
+        public static CDSContactPersonV2 CreateCDSContactPersonV2(string dataAreaId, 
+                    string contactPersonPartyNumber, 
+                    string associatedContactNumber, 
+                    int birthDay, 
+                    int birthYear, 
+                    global::Microsoft.Dynamics.DataEntities.CDSParty party)
         {
             CDSContactPersonV2 cDSContactPersonV2 = new CDSContactPersonV2();
             cDSContactPersonV2.dataAreaId = dataAreaId;
@@ -65,6 +92,11 @@ namespace Microsoft.Dynamics.DataEntities
             cDSContactPersonV2.AssociatedContactNumber = associatedContactNumber;
             cDSContactPersonV2.BirthDay = birthDay;
             cDSContactPersonV2.BirthYear = birthYear;
+            if ((party == null))
+            {
+                throw new global::System.ArgumentNullException("party");
+            }
+            cDSContactPersonV2.Party = party;
             return cDSContactPersonV2;
         }
         /// <summary>
@@ -969,6 +1001,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::System.Nullable<global::Microsoft.Dynamics.DataEntities.MonthsOfYear> _BirthMonth;
         partial void OnBirthMonthChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.MonthsOfYear> value);
         partial void OnBirthMonthChanged();
+        /// <summary>
+        /// There are no comments for Property Party in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.CDSParty Party
+        {
+            get
+            {
+                return this._Party;
+            }
+            set
+            {
+                this.OnPartyChanging(value);
+                this._Party = value;
+                this.OnPartyChanged();
+                this.OnPropertyChanged("Party");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.CDSParty _Party;
+        partial void OnPartyChanging(global::Microsoft.Dynamics.DataEntities.CDSParty value);
+        partial void OnPartyChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

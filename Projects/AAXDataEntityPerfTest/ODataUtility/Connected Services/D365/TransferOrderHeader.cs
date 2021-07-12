@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -1128,6 +1128,28 @@ namespace Microsoft.Dynamics.DataEntities
         private string _ShippingAddressStreetNumber;
         partial void OnShippingAddressStreetNumberChanging(string value);
         partial void OnShippingAddressStreetNumberChanged();
+        /// <summary>
+        /// There are no comments for Property CreateCFDIPackingSlip in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> CreateCFDIPackingSlip
+        {
+            get
+            {
+                return this._CreateCFDIPackingSlip;
+            }
+            set
+            {
+                this.OnCreateCFDIPackingSlipChanging(value);
+                this._CreateCFDIPackingSlip = value;
+                this.OnCreateCFDIPackingSlipChanged();
+                this.OnPropertyChanged("CreateCFDIPackingSlip");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> _CreateCFDIPackingSlip;
+        partial void OnCreateCFDIPackingSlipChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> value);
+        partial void OnCreateCFDIPackingSlipChanged();
         /// <summary>
         /// There are no comments for Property TransportationModeId in the schema.
         /// </summary>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,6 +34,27 @@ namespace Microsoft.Dynamics.DataEntities
         public PurchaseAgreementConfirmationLineSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<PurchaseAgreementConfirmationLine> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for AgreementVendor in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.VendorV2Single AgreementVendor
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._AgreementVendor == null))
+                {
+                    this._AgreementVendor = new global::Microsoft.Dynamics.DataEntities.VendorV2Single(this.Context, GetPath("AgreementVendor"));
+                }
+                return this._AgreementVendor;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.VendorV2Single _AgreementVendor;
         /// <summary>
         /// There are no comments for ReceivingSite in the schema.
         /// </summary>
@@ -235,6 +256,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// <param name="committedCatchWeightQuantity">Initial value of CommittedCatchWeightQuantity.</param>
         /// <param name="committedAmount">Initial value of CommittedAmount.</param>
         /// <param name="lineDiscountAmount">Initial value of LineDiscountAmount.</param>
+        /// <param name="agreementVendor">Initial value of AgreementVendor.</param>
         /// <param name="purchaseAgreementHeader">Initial value of PurchaseAgreementHeader.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public static PurchaseAgreementConfirmationLine CreatePurchaseAgreementConfirmationLine(string dataAreaId, 
@@ -253,6 +275,7 @@ namespace Microsoft.Dynamics.DataEntities
                     decimal committedCatchWeightQuantity, 
                     decimal committedAmount, 
                     decimal lineDiscountAmount, 
+                    global::Microsoft.Dynamics.DataEntities.VendorV2 agreementVendor, 
                     global::Microsoft.Dynamics.DataEntities.PurchaseAgreement purchaseAgreementHeader)
         {
             PurchaseAgreementConfirmationLine purchaseAgreementConfirmationLine = new PurchaseAgreementConfirmationLine();
@@ -272,6 +295,11 @@ namespace Microsoft.Dynamics.DataEntities
             purchaseAgreementConfirmationLine.CommittedCatchWeightQuantity = committedCatchWeightQuantity;
             purchaseAgreementConfirmationLine.CommittedAmount = committedAmount;
             purchaseAgreementConfirmationLine.LineDiscountAmount = lineDiscountAmount;
+            if ((agreementVendor == null))
+            {
+                throw new global::System.ArgumentNullException("agreementVendor");
+            }
+            purchaseAgreementConfirmationLine.AgreementVendor = agreementVendor;
             if ((purchaseAgreementHeader == null))
             {
                 throw new global::System.ArgumentNullException("purchaseAgreementHeader");
@@ -1115,6 +1143,28 @@ namespace Microsoft.Dynamics.DataEntities
         private string _ProductStyleId;
         partial void OnProductStyleIdChanging(string value);
         partial void OnProductStyleIdChanged();
+        /// <summary>
+        /// There are no comments for Property AgreementVendor in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.VendorV2 AgreementVendor
+        {
+            get
+            {
+                return this._AgreementVendor;
+            }
+            set
+            {
+                this.OnAgreementVendorChanging(value);
+                this._AgreementVendor = value;
+                this.OnAgreementVendorChanged();
+                this.OnPropertyChanged("AgreementVendor");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.VendorV2 _AgreementVendor;
+        partial void OnAgreementVendorChanging(global::Microsoft.Dynamics.DataEntities.VendorV2 value);
+        partial void OnAgreementVendorChanged();
         /// <summary>
         /// There are no comments for Property ReceivingSite in the schema.
         /// </summary>

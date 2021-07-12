@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -79,11 +79,9 @@ namespace Microsoft.Dynamics.DataEntities
         /// <param name="engineeringProductAttributeName">Initial value of EngineeringProductAttributeName.</param>
         /// <param name="engineeringProductAttributeTypeName">Initial value of EngineeringProductAttributeTypeName.</param>
         /// <param name="integerValue">Initial value of IntegerValue.</param>
-        /// <param name="integerUnitOfMeasure">Initial value of IntegerUnitOfMeasure.</param>
         /// <param name="dateTimeValue">Initial value of DateTimeValue.</param>
         /// <param name="decimalValue">Initial value of DecimalValue.</param>
         /// <param name="currencyValue">Initial value of CurrencyValue.</param>
-        /// <param name="decimalUnitOfMeasure">Initial value of DecimalUnitOfMeasure.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public static ReleasedEngineeringProductVersionAttributeValue CreateReleasedEngineeringProductVersionAttributeValue(string dataAreaId, 
                     string engineeringProductNumber, 
@@ -91,11 +89,9 @@ namespace Microsoft.Dynamics.DataEntities
                     string engineeringProductAttributeName, 
                     string engineeringProductAttributeTypeName, 
                     int integerValue, 
-                    long integerUnitOfMeasure, 
                     global::System.DateTimeOffset dateTimeValue, 
                     decimal decimalValue, 
-                    decimal currencyValue, 
-                    long decimalUnitOfMeasure)
+                    decimal currencyValue)
         {
             ReleasedEngineeringProductVersionAttributeValue releasedEngineeringProductVersionAttributeValue = new ReleasedEngineeringProductVersionAttributeValue();
             releasedEngineeringProductVersionAttributeValue.dataAreaId = dataAreaId;
@@ -104,11 +100,9 @@ namespace Microsoft.Dynamics.DataEntities
             releasedEngineeringProductVersionAttributeValue.EngineeringProductAttributeName = engineeringProductAttributeName;
             releasedEngineeringProductVersionAttributeValue.EngineeringProductAttributeTypeName = engineeringProductAttributeTypeName;
             releasedEngineeringProductVersionAttributeValue.IntegerValue = integerValue;
-            releasedEngineeringProductVersionAttributeValue.IntegerUnitOfMeasure = integerUnitOfMeasure;
             releasedEngineeringProductVersionAttributeValue.DateTimeValue = dateTimeValue;
             releasedEngineeringProductVersionAttributeValue.DecimalValue = decimalValue;
             releasedEngineeringProductVersionAttributeValue.CurrencyValue = currencyValue;
-            releasedEngineeringProductVersionAttributeValue.DecimalUnitOfMeasure = decimalUnitOfMeasure;
             return releasedEngineeringProductVersionAttributeValue;
         }
         /// <summary>
@@ -244,28 +238,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnIntegerValueChanging(int value);
         partial void OnIntegerValueChanged();
         /// <summary>
-        /// There are no comments for Property IntegerUnitOfMeasure in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual long IntegerUnitOfMeasure
-        {
-            get
-            {
-                return this._IntegerUnitOfMeasure;
-            }
-            set
-            {
-                this.OnIntegerUnitOfMeasureChanging(value);
-                this._IntegerUnitOfMeasure = value;
-                this.OnIntegerUnitOfMeasureChanged();
-                this.OnPropertyChanged("IntegerUnitOfMeasure");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private long _IntegerUnitOfMeasure;
-        partial void OnIntegerUnitOfMeasureChanging(long value);
-        partial void OnIntegerUnitOfMeasureChanged();
-        /// <summary>
         /// There are no comments for Property CurrencyCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -287,6 +259,28 @@ namespace Microsoft.Dynamics.DataEntities
         private string _CurrencyCode;
         partial void OnCurrencyCodeChanging(string value);
         partial void OnCurrencyCodeChanged();
+        /// <summary>
+        /// There are no comments for Property UnitOfMeasure in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual string UnitOfMeasure
+        {
+            get
+            {
+                return this._UnitOfMeasure;
+            }
+            set
+            {
+                this.OnUnitOfMeasureChanging(value);
+                this._UnitOfMeasure = value;
+                this.OnUnitOfMeasureChanged();
+                this.OnPropertyChanged("UnitOfMeasure");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _UnitOfMeasure;
+        partial void OnUnitOfMeasureChanging(string value);
+        partial void OnUnitOfMeasureChanged();
         /// <summary>
         /// There are no comments for Property DateTimeValue in the schema.
         /// </summary>
@@ -375,28 +369,6 @@ namespace Microsoft.Dynamics.DataEntities
         private decimal _CurrencyValue;
         partial void OnCurrencyValueChanging(decimal value);
         partial void OnCurrencyValueChanged();
-        /// <summary>
-        /// There are no comments for Property DecimalUnitOfMeasure in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual long DecimalUnitOfMeasure
-        {
-            get
-            {
-                return this._DecimalUnitOfMeasure;
-            }
-            set
-            {
-                this.OnDecimalUnitOfMeasureChanging(value);
-                this._DecimalUnitOfMeasure = value;
-                this.OnDecimalUnitOfMeasureChanged();
-                this.OnPropertyChanged("DecimalUnitOfMeasure");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private long _DecimalUnitOfMeasure;
-        partial void OnDecimalUnitOfMeasureChanging(long value);
-        partial void OnDecimalUnitOfMeasureChanged();
         /// <summary>
         /// There are no comments for Property TextValue in the schema.
         /// </summary>

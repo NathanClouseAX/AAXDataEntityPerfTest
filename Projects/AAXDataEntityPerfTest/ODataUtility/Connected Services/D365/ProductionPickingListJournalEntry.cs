@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,6 +34,27 @@ namespace Microsoft.Dynamics.DataEntities
         public ProductionPickingListJournalEntrySingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ProductionPickingListJournalEntry> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for WarehouseLocation in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.WarehouseLocationSingle WarehouseLocation
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._WarehouseLocation == null))
+                {
+                    this._WarehouseLocation = new global::Microsoft.Dynamics.DataEntities.WarehouseLocationSingle(this.Context, GetPath("WarehouseLocation"));
+                }
+                return this._WarehouseLocation;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.WarehouseLocationSingle _WarehouseLocation;
         /// <summary>
         /// There are no comments for ProductionOrderHeader in the schema.
         /// </summary>
@@ -181,6 +202,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ProductSizeSingle _ProductSize;
+        /// <summary>
+        /// There are no comments for DimensionSet in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.DimensionSetSingle DimensionSet
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._DimensionSet == null))
+                {
+                    this._DimensionSet = new global::Microsoft.Dynamics.DataEntities.DimensionSetSingle(this.Context, GetPath("DimensionSet"));
+                }
+                return this._DimensionSet;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.DimensionSetSingle _DimensionSet;
         /// <summary>
         /// There are no comments for ItemBatch in the schema.
         /// </summary>
@@ -470,6 +512,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnConsumptionInventoryQuantityChanging(decimal value);
         partial void OnConsumptionInventoryQuantityChanged();
         /// <summary>
+        /// There are no comments for Property WarehouseLocationId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual string WarehouseLocationId
+        {
+            get
+            {
+                return this._WarehouseLocationId;
+            }
+            set
+            {
+                this.OnWarehouseLocationIdChanging(value);
+                this._WarehouseLocationId = value;
+                this.OnWarehouseLocationIdChanged();
+                this.OnPropertyChanged("WarehouseLocationId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _WarehouseLocationId;
+        partial void OnWarehouseLocationIdChanging(string value);
+        partial void OnWarehouseLocationIdChanged();
+        /// <summary>
         /// There are no comments for Property ProjectVoucherNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -601,6 +665,28 @@ namespace Microsoft.Dynamics.DataEntities
         private string _ProductionSiteId;
         partial void OnProductionSiteIdChanging(string value);
         partial void OnProductionSiteIdChanged();
+        /// <summary>
+        /// There are no comments for Property DefaultDimensionDisplayValue in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual string DefaultDimensionDisplayValue
+        {
+            get
+            {
+                return this._DefaultDimensionDisplayValue;
+            }
+            set
+            {
+                this.OnDefaultDimensionDisplayValueChanging(value);
+                this._DefaultDimensionDisplayValue = value;
+                this.OnDefaultDimensionDisplayValueChanged();
+                this.OnPropertyChanged("DefaultDimensionDisplayValue");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _DefaultDimensionDisplayValue;
+        partial void OnDefaultDimensionDisplayValueChanging(string value);
+        partial void OnDefaultDimensionDisplayValueChanged();
         /// <summary>
         /// There are no comments for Property PostedUserId in the schema.
         /// </summary>
@@ -1306,6 +1392,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnErrorCauseChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ProdErrorCause> value);
         partial void OnErrorCauseChanged();
         /// <summary>
+        /// There are no comments for Property WarehouseLocation in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.WarehouseLocation WarehouseLocation
+        {
+            get
+            {
+                return this._WarehouseLocation;
+            }
+            set
+            {
+                this.OnWarehouseLocationChanging(value);
+                this._WarehouseLocation = value;
+                this.OnWarehouseLocationChanged();
+                this.OnPropertyChanged("WarehouseLocation");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.WarehouseLocation _WarehouseLocation;
+        partial void OnWarehouseLocationChanging(global::Microsoft.Dynamics.DataEntities.WarehouseLocation value);
+        partial void OnWarehouseLocationChanged();
+        /// <summary>
         /// There are no comments for Property ProductionOrderHeader in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -1459,6 +1567,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.ProductSize _ProductSize;
         partial void OnProductSizeChanging(global::Microsoft.Dynamics.DataEntities.ProductSize value);
         partial void OnProductSizeChanged();
+        /// <summary>
+        /// There are no comments for Property DimensionSet in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.DimensionSet DimensionSet
+        {
+            get
+            {
+                return this._DimensionSet;
+            }
+            set
+            {
+                this.OnDimensionSetChanging(value);
+                this._DimensionSet = value;
+                this.OnDimensionSetChanged();
+                this.OnPropertyChanged("DimensionSet");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.DimensionSet _DimensionSet;
+        partial void OnDimensionSetChanging(global::Microsoft.Dynamics.DataEntities.DimensionSet value);
+        partial void OnDimensionSetChanged();
         /// <summary>
         /// There are no comments for Property ItemBatch in the schema.
         /// </summary>

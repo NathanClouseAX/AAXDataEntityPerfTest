@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -56,27 +56,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule> _CompensationEligibilityRules;
         /// <summary>
-        /// There are no comments for PersonLaborUnions in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonLaborUnion> PersonLaborUnions
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._PersonLaborUnions == null))
-                {
-                    this._PersonLaborUnions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PersonLaborUnion>(GetPath("PersonLaborUnions"));
-                }
-                return this._PersonLaborUnions;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonLaborUnion> _PersonLaborUnions;
-        /// <summary>
         /// There are no comments for LaborUnionAgreements in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -118,6 +97,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationFixedIncreaseBudget> _CompensationFixedIncreaseBudgets;
+        /// <summary>
+        /// There are no comments for PersonLaborUnions in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonLaborUnion> PersonLaborUnions
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._PersonLaborUnions == null))
+                {
+                    this._PersonLaborUnions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PersonLaborUnion>(GetPath("PersonLaborUnions"));
+                }
+                return this._PersonLaborUnions;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonLaborUnion> _PersonLaborUnions;
     }
         /// <summary>
         /// There are no comments for Unions in the schema.
@@ -229,28 +229,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnCompensationEligibilityRulesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule> value);
         partial void OnCompensationEligibilityRulesChanged();
         /// <summary>
-        /// There are no comments for Property PersonLaborUnions in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonLaborUnion> PersonLaborUnions
-        {
-            get
-            {
-                return this._PersonLaborUnions;
-            }
-            set
-            {
-                this.OnPersonLaborUnionsChanging(value);
-                this._PersonLaborUnions = value;
-                this.OnPersonLaborUnionsChanged();
-                this.OnPropertyChanged("PersonLaborUnions");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonLaborUnion> _PersonLaborUnions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonLaborUnion>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPersonLaborUnionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonLaborUnion> value);
-        partial void OnPersonLaborUnionsChanged();
-        /// <summary>
         /// There are no comments for Property LaborUnionAgreements in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -294,6 +272,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationFixedIncreaseBudget> _CompensationFixedIncreaseBudgets = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationFixedIncreaseBudget>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnCompensationFixedIncreaseBudgetsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationFixedIncreaseBudget> value);
         partial void OnCompensationFixedIncreaseBudgetsChanged();
+        /// <summary>
+        /// There are no comments for Property PersonLaborUnions in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonLaborUnion> PersonLaborUnions
+        {
+            get
+            {
+                return this._PersonLaborUnions;
+            }
+            set
+            {
+                this.OnPersonLaborUnionsChanging(value);
+                this._PersonLaborUnions = value;
+                this.OnPersonLaborUnionsChanged();
+                this.OnPropertyChanged("PersonLaborUnions");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonLaborUnion> _PersonLaborUnions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonLaborUnion>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPersonLaborUnionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonLaborUnion> value);
+        partial void OnPersonLaborUnionsChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

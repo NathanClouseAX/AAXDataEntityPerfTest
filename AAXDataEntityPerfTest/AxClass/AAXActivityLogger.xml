@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxClass xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Name>AAXActivityLogger</Name>
+	<SourceCode>
+		<Declaration><![CDATA[
+class AAXActivityLogger
+{
+}
+]]></Declaration>
+		<Methods>
+			<Method>
+				<Name>writeToFile</Name>
+				<Source><![CDATA[
+    //https://docs.microsoft.com/en-us/dynamicsax-2012/developer/performing-file-io-with-the-textio-class
+    public static void writeToFile(str method)
+    {
+        #File
+
+
+        TextIo txIoWrite;
+        str output = strFmt("%1,%2,%3", xSession::systemSessionId() ,DateTimeUtil::utcNow(),method);
+
+        txIoWrite = new TextIo( @"C:\Temp\test.txt" ,#io_append);
+
+        txIoWrite.write(output);
+
+        txIoWrite = null;
+
+
+    }
+
+]]></Source>
+			</Method>
+		</Methods>
+	</SourceCode>
+</AxClass>

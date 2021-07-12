@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,10 +35,10 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for InvoiceSubLine in the schema.
+        /// There are no comments for InvoiceSubLineV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InvoiceSubLine> InvoiceSubLine
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InvoiceSubLineV2> InvoiceSubLineV2
         {
             get
             {
@@ -46,15 +46,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._InvoiceSubLine == null))
+                if ((this._InvoiceSubLineV2 == null))
                 {
-                    this._InvoiceSubLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.InvoiceSubLine>(GetPath("InvoiceSubLine"));
+                    this._InvoiceSubLineV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.InvoiceSubLineV2>(GetPath("InvoiceSubLineV2"));
                 }
-                return this._InvoiceSubLine;
+                return this._InvoiceSubLineV2;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InvoiceSubLine> _InvoiceSubLine;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InvoiceSubLineV2> _InvoiceSubLineV2;
         /// <summary>
         /// There are no comments for DimensionCombination in the schema.
         /// </summary>
@@ -119,10 +119,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionSetSingle _DimensionSet;
         /// <summary>
-        /// There are no comments for InvoiceSubLineV2 in the schema.
+        /// There are no comments for InvoiceSubLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InvoiceSubLineV2> InvoiceSubLineV2
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InvoiceSubLine> InvoiceSubLine
         {
             get
             {
@@ -130,15 +130,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._InvoiceSubLineV2 == null))
+                if ((this._InvoiceSubLine == null))
                 {
-                    this._InvoiceSubLineV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.InvoiceSubLineV2>(GetPath("InvoiceSubLineV2"));
+                    this._InvoiceSubLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.InvoiceSubLine>(GetPath("InvoiceSubLine"));
                 }
-                return this._InvoiceSubLineV2;
+                return this._InvoiceSubLine;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InvoiceSubLineV2> _InvoiceSubLineV2;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InvoiceSubLine> _InvoiceSubLine;
     }
         /// <summary>
         /// There are no comments for VendorInvoiceLine in the schema.
@@ -159,6 +159,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// <param name="headerReference">Initial value of HeaderReference.</param>
         /// <param name="invoiceLineNumber">Initial value of InvoiceLineNumber.</param>
         /// <param name="priceUnit">Initial value of PriceUnit.</param>
+        /// <param name="tax1099GTaxYear">Initial value of Tax1099GTaxYear.</param>
         /// <param name="multilineDiscountPercentage">Initial value of MultilineDiscountPercentage.</param>
         /// <param name="inventNow">Initial value of InventNow.</param>
         /// <param name="remainAfterInvent">Initial value of RemainAfterInvent.</param>
@@ -166,7 +167,9 @@ namespace Microsoft.Dynamics.DataEntities
         /// <param name="adjustedUnitPrice">Initial value of AdjustedUnitPrice.</param>
         /// <param name="multilineDiscount">Initial value of MultilineDiscount.</param>
         /// <param name="totalRetainedAmount">Initial value of TotalRetainedAmount.</param>
+        /// <param name="tax1099SBuyerPartOfRealEstateTaxAmount">Initial value of Tax1099SBuyerPartOfRealEstateTaxAmount.</param>
         /// <param name="originalDeliverRemainder">Initial value of OriginalDeliverRemainder.</param>
+        /// <param name="tax1099SClosingDate">Initial value of Tax1099SClosingDate.</param>
         /// <param name="receiveNow">Initial value of ReceiveNow.</param>
         /// <param name="budgetReservationLineNumber">Initial value of BudgetReservationLineNumber.</param>
         /// <param name="amount">Initial value of Amount.</param>
@@ -176,6 +179,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// <param name="percentage">Initial value of Percentage.</param>
         /// <param name="netAmount">Initial value of NetAmount.</param>
         /// <param name="cWUpdate">Initial value of CWUpdate.</param>
+        /// <param name="tax1099GStateTaxWithheldAmount">Initial value of Tax1099GStateTaxWithheldAmount.</param>
         /// <param name="retainPercentage">Initial value of RetainPercentage.</param>
         /// <param name="remainBeforeInvent">Initial value of RemainBeforeInvent.</param>
         /// <param name="cWDeliveryRemainder">Initial value of CWDeliveryRemainder.</param>
@@ -193,6 +197,7 @@ namespace Microsoft.Dynamics.DataEntities
                     string headerReference, 
                     decimal invoiceLineNumber, 
                     decimal priceUnit, 
+                    int tax1099GTaxYear, 
                     decimal multilineDiscountPercentage, 
                     decimal inventNow, 
                     decimal remainAfterInvent, 
@@ -200,7 +205,9 @@ namespace Microsoft.Dynamics.DataEntities
                     decimal adjustedUnitPrice, 
                     decimal multilineDiscount, 
                     decimal totalRetainedAmount, 
+                    decimal tax1099SBuyerPartOfRealEstateTaxAmount, 
                     decimal originalDeliverRemainder, 
+                    global::System.DateTimeOffset tax1099SClosingDate, 
                     decimal receiveNow, 
                     int budgetReservationLineNumber, 
                     decimal amount, 
@@ -210,6 +217,7 @@ namespace Microsoft.Dynamics.DataEntities
                     decimal percentage, 
                     decimal netAmount, 
                     decimal cWUpdate, 
+                    decimal tax1099GStateTaxWithheldAmount, 
                     decimal retainPercentage, 
                     decimal remainBeforeInvent, 
                     decimal cWDeliveryRemainder, 
@@ -228,6 +236,7 @@ namespace Microsoft.Dynamics.DataEntities
             vendorInvoiceLine.HeaderReference = headerReference;
             vendorInvoiceLine.InvoiceLineNumber = invoiceLineNumber;
             vendorInvoiceLine.PriceUnit = priceUnit;
+            vendorInvoiceLine.Tax1099GTaxYear = tax1099GTaxYear;
             vendorInvoiceLine.MultilineDiscountPercentage = multilineDiscountPercentage;
             vendorInvoiceLine.InventNow = inventNow;
             vendorInvoiceLine.RemainAfterInvent = remainAfterInvent;
@@ -235,7 +244,9 @@ namespace Microsoft.Dynamics.DataEntities
             vendorInvoiceLine.AdjustedUnitPrice = adjustedUnitPrice;
             vendorInvoiceLine.MultilineDiscount = multilineDiscount;
             vendorInvoiceLine.TotalRetainedAmount = totalRetainedAmount;
+            vendorInvoiceLine.Tax1099SBuyerPartOfRealEstateTaxAmount = tax1099SBuyerPartOfRealEstateTaxAmount;
             vendorInvoiceLine.OriginalDeliverRemainder = originalDeliverRemainder;
+            vendorInvoiceLine.Tax1099SClosingDate = tax1099SClosingDate;
             vendorInvoiceLine.ReceiveNow = receiveNow;
             vendorInvoiceLine.BudgetReservationLineNumber = budgetReservationLineNumber;
             vendorInvoiceLine.Amount = amount;
@@ -245,6 +256,7 @@ namespace Microsoft.Dynamics.DataEntities
             vendorInvoiceLine.Percentage = percentage;
             vendorInvoiceLine.NetAmount = netAmount;
             vendorInvoiceLine.CWUpdate = cWUpdate;
+            vendorInvoiceLine.Tax1099GStateTaxWithheldAmount = tax1099GStateTaxWithheldAmount;
             vendorInvoiceLine.RetainPercentage = retainPercentage;
             vendorInvoiceLine.RemainBeforeInvent = remainBeforeInvent;
             vendorInvoiceLine.CWDeliveryRemainder = cWDeliveryRemainder;
@@ -352,6 +364,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnProcurementCategoryHierarchyNameChanging(string value);
         partial void OnProcurementCategoryHierarchyNameChanged();
         /// <summary>
+        /// There are no comments for Property Tax1099SAddressOrLegalDescription in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual string Tax1099SAddressOrLegalDescription
+        {
+            get
+            {
+                return this._Tax1099SAddressOrLegalDescription;
+            }
+            set
+            {
+                this.OnTax1099SAddressOrLegalDescriptionChanging(value);
+                this._Tax1099SAddressOrLegalDescription = value;
+                this.OnTax1099SAddressOrLegalDescriptionChanged();
+                this.OnPropertyChanged("Tax1099SAddressOrLegalDescription");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Tax1099SAddressOrLegalDescription;
+        partial void OnTax1099SAddressOrLegalDescriptionChanging(string value);
+        partial void OnTax1099SAddressOrLegalDescriptionChanged();
+        /// <summary>
         /// There are no comments for Property PriceUnit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -373,6 +407,28 @@ namespace Microsoft.Dynamics.DataEntities
         private decimal _PriceUnit;
         partial void OnPriceUnitChanging(decimal value);
         partial void OnPriceUnitChanged();
+        /// <summary>
+        /// There are no comments for Property Tax1099GTaxYear in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual int Tax1099GTaxYear
+        {
+            get
+            {
+                return this._Tax1099GTaxYear;
+            }
+            set
+            {
+                this.OnTax1099GTaxYearChanging(value);
+                this._Tax1099GTaxYear = value;
+                this.OnTax1099GTaxYearChanged();
+                this.OnPropertyChanged("Tax1099GTaxYear");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private int _Tax1099GTaxYear;
+        partial void OnTax1099GTaxYearChanging(int value);
+        partial void OnTax1099GTaxYearChanged();
         /// <summary>
         /// There are no comments for Property InvoiceAccount in the schema.
         /// </summary>
@@ -594,6 +650,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnProcurementCategoryNameChanging(string value);
         partial void OnProcurementCategoryNameChanged();
         /// <summary>
+        /// There are no comments for Property IsTax1099SPropertyOrServices in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsTax1099SPropertyOrServices
+        {
+            get
+            {
+                return this._IsTax1099SPropertyOrServices;
+            }
+            set
+            {
+                this.OnIsTax1099SPropertyOrServicesChanging(value);
+                this._IsTax1099SPropertyOrServices = value;
+                this.OnIsTax1099SPropertyOrServicesChanged();
+                this.OnPropertyChanged("IsTax1099SPropertyOrServices");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> _IsTax1099SPropertyOrServices;
+        partial void OnIsTax1099SPropertyOrServicesChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> value);
+        partial void OnIsTax1099SPropertyOrServicesChanged();
+        /// <summary>
         /// There are no comments for Property ProductStyleId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -703,6 +781,28 @@ namespace Microsoft.Dynamics.DataEntities
         private string _PartyID;
         partial void OnPartyIDChanging(string value);
         partial void OnPartyIDChanged();
+        /// <summary>
+        /// There are no comments for Property Tax1099GVendorStateId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual string Tax1099GVendorStateId
+        {
+            get
+            {
+                return this._Tax1099GVendorStateId;
+            }
+            set
+            {
+                this.OnTax1099GVendorStateIdChanging(value);
+                this._Tax1099GVendorStateId = value;
+                this.OnTax1099GVendorStateIdChanged();
+                this.OnPropertyChanged("Tax1099GVendorStateId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Tax1099GVendorStateId;
+        partial void OnTax1099GVendorStateIdChanging(string value);
+        partial void OnTax1099GVendorStateIdChanged();
         /// <summary>
         /// There are no comments for Property DiscountPercent in the schema.
         /// </summary>
@@ -880,6 +980,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnTransactionCodeChanging(string value);
         partial void OnTransactionCodeChanged();
         /// <summary>
+        /// There are no comments for Property IsTax1099GTradeOrBusinessIncome in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsTax1099GTradeOrBusinessIncome
+        {
+            get
+            {
+                return this._IsTax1099GTradeOrBusinessIncome;
+            }
+            set
+            {
+                this.OnIsTax1099GTradeOrBusinessIncomeChanging(value);
+                this._IsTax1099GTradeOrBusinessIncome = value;
+                this.OnIsTax1099GTradeOrBusinessIncomeChanged();
+                this.OnPropertyChanged("IsTax1099GTradeOrBusinessIncome");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> _IsTax1099GTradeOrBusinessIncome;
+        partial void OnIsTax1099GTradeOrBusinessIncomeChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> value);
+        partial void OnIsTax1099GTradeOrBusinessIncomeChanged();
+        /// <summary>
         /// There are no comments for Property InventoryWarehouseId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -923,6 +1045,28 @@ namespace Microsoft.Dynamics.DataEntities
         private decimal _TotalRetainedAmount;
         partial void OnTotalRetainedAmountChanging(decimal value);
         partial void OnTotalRetainedAmountChanged();
+        /// <summary>
+        /// There are no comments for Property Tax1099SBuyerPartOfRealEstateTaxAmount in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual decimal Tax1099SBuyerPartOfRealEstateTaxAmount
+        {
+            get
+            {
+                return this._Tax1099SBuyerPartOfRealEstateTaxAmount;
+            }
+            set
+            {
+                this.OnTax1099SBuyerPartOfRealEstateTaxAmountChanging(value);
+                this._Tax1099SBuyerPartOfRealEstateTaxAmount = value;
+                this.OnTax1099SBuyerPartOfRealEstateTaxAmountChanged();
+                this.OnPropertyChanged("Tax1099SBuyerPartOfRealEstateTaxAmount");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private decimal _Tax1099SBuyerPartOfRealEstateTaxAmount;
+        partial void OnTax1099SBuyerPartOfRealEstateTaxAmountChanging(decimal value);
+        partial void OnTax1099SBuyerPartOfRealEstateTaxAmountChanged();
         /// <summary>
         /// There are no comments for Property DimensionDisplayValue in the schema.
         /// </summary>
@@ -989,6 +1133,28 @@ namespace Microsoft.Dynamics.DataEntities
         private decimal _OriginalDeliverRemainder;
         partial void OnOriginalDeliverRemainderChanging(decimal value);
         partial void OnOriginalDeliverRemainderChanged();
+        /// <summary>
+        /// There are no comments for Property Tax1099SClosingDate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::System.DateTimeOffset Tax1099SClosingDate
+        {
+            get
+            {
+                return this._Tax1099SClosingDate;
+            }
+            set
+            {
+                this.OnTax1099SClosingDateChanging(value);
+                this._Tax1099SClosingDate = value;
+                this.OnTax1099SClosingDateChanged();
+                this.OnPropertyChanged("Tax1099SClosingDate");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.DateTimeOffset _Tax1099SClosingDate;
+        partial void OnTax1099SClosingDateChanging(global::System.DateTimeOffset value);
+        partial void OnTax1099SClosingDateChanged();
         /// <summary>
         /// There are no comments for Property Unit in the schema.
         /// </summary>
@@ -1451,6 +1617,28 @@ namespace Microsoft.Dynamics.DataEntities
         private string _ProductVersionId;
         partial void OnProductVersionIdChanging(string value);
         partial void OnProductVersionIdChanged();
+        /// <summary>
+        /// There are no comments for Property Tax1099GStateTaxWithheldAmount in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual decimal Tax1099GStateTaxWithheldAmount
+        {
+            get
+            {
+                return this._Tax1099GStateTaxWithheldAmount;
+            }
+            set
+            {
+                this.OnTax1099GStateTaxWithheldAmountChanging(value);
+                this._Tax1099GStateTaxWithheldAmount = value;
+                this.OnTax1099GStateTaxWithheldAmountChanged();
+                this.OnPropertyChanged("Tax1099GStateTaxWithheldAmount");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private decimal _Tax1099GStateTaxWithheldAmount;
+        partial void OnTax1099GStateTaxWithheldAmountChanging(decimal value);
+        partial void OnTax1099GStateTaxWithheldAmountChanged();
         /// <summary>
         /// There are no comments for Property OrigCountryRegionId in the schema.
         /// </summary>
@@ -2046,6 +2234,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnPDSCalculationIdChanging(string value);
         partial void OnPDSCalculationIdChanged();
         /// <summary>
+        /// There are no comments for Property Tax1099GVendorStateTaxId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual string Tax1099GVendorStateTaxId
+        {
+            get
+            {
+                return this._Tax1099GVendorStateTaxId;
+            }
+            set
+            {
+                this.OnTax1099GVendorStateTaxIdChanging(value);
+                this._Tax1099GVendorStateTaxId = value;
+                this.OnTax1099GVendorStateTaxIdChanged();
+                this.OnPropertyChanged("Tax1099GVendorStateTaxId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Tax1099GVendorStateTaxId;
+        partial void OnTax1099GVendorStateTaxIdChanging(string value);
+        partial void OnTax1099GVendorStateTaxIdChanged();
+        /// <summary>
         /// There are no comments for Property Discount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -2156,27 +2366,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDiotOperationTypeChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.VendorOperationType_MX> value);
         partial void OnDiotOperationTypeChanged();
         /// <summary>
-        /// There are no comments for Property InvoiceSubLine in the schema.
+        /// There are no comments for Property InvoiceSubLineV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InvoiceSubLine> InvoiceSubLine
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InvoiceSubLineV2> InvoiceSubLineV2
         {
             get
             {
-                return this._InvoiceSubLine;
+                return this._InvoiceSubLineV2;
             }
             set
             {
-                this.OnInvoiceSubLineChanging(value);
-                this._InvoiceSubLine = value;
-                this.OnInvoiceSubLineChanged();
-                this.OnPropertyChanged("InvoiceSubLine");
+                this.OnInvoiceSubLineV2Changing(value);
+                this._InvoiceSubLineV2 = value;
+                this.OnInvoiceSubLineV2Changed();
+                this.OnPropertyChanged("InvoiceSubLineV2");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InvoiceSubLine> _InvoiceSubLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InvoiceSubLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnInvoiceSubLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InvoiceSubLine> value);
-        partial void OnInvoiceSubLineChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InvoiceSubLineV2> _InvoiceSubLineV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InvoiceSubLineV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnInvoiceSubLineV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InvoiceSubLineV2> value);
+        partial void OnInvoiceSubLineV2Changed();
         /// <summary>
         /// There are no comments for Property DimensionCombination in the schema.
         /// </summary>
@@ -2244,27 +2454,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDimensionSetChanging(global::Microsoft.Dynamics.DataEntities.DimensionSet value);
         partial void OnDimensionSetChanged();
         /// <summary>
-        /// There are no comments for Property InvoiceSubLineV2 in the schema.
+        /// There are no comments for Property InvoiceSubLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InvoiceSubLineV2> InvoiceSubLineV2
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InvoiceSubLine> InvoiceSubLine
         {
             get
             {
-                return this._InvoiceSubLineV2;
+                return this._InvoiceSubLine;
             }
             set
             {
-                this.OnInvoiceSubLineV2Changing(value);
-                this._InvoiceSubLineV2 = value;
-                this.OnInvoiceSubLineV2Changed();
-                this.OnPropertyChanged("InvoiceSubLineV2");
+                this.OnInvoiceSubLineChanging(value);
+                this._InvoiceSubLine = value;
+                this.OnInvoiceSubLineChanged();
+                this.OnPropertyChanged("InvoiceSubLine");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InvoiceSubLineV2> _InvoiceSubLineV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InvoiceSubLineV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnInvoiceSubLineV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InvoiceSubLineV2> value);
-        partial void OnInvoiceSubLineV2Changed();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InvoiceSubLine> _InvoiceSubLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InvoiceSubLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnInvoiceSubLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InvoiceSubLine> value);
+        partial void OnInvoiceSubLineChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

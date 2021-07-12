@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,48 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for SalesOrderOrigin in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.SalesOrderOriginCodeSingle SalesOrderOrigin
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._SalesOrderOrigin == null))
-                {
-                    this._SalesOrderOrigin = new global::Microsoft.Dynamics.DataEntities.SalesOrderOriginCodeSingle(this.Context, GetPath("SalesOrderOrigin"));
-                }
-                return this._SalesOrderOrigin;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.SalesOrderOriginCodeSingle _SalesOrderOrigin;
-        /// <summary>
-        /// There are no comments for Project in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ProjectSingle Project
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._Project == null))
-                {
-                    this._Project = new global::Microsoft.Dynamics.DataEntities.ProjectSingle(this.Context, GetPath("Project"));
-                }
-                return this._Project;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ProjectSingle _Project;
-        /// <summary>
         /// There are no comments for DimensionSet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -98,27 +56,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionSetSingle _DimensionSet;
         /// <summary>
-        /// There are no comments for SalesOrderLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesOrderLine> SalesOrderLines
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._SalesOrderLines == null))
-                {
-                    this._SalesOrderLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.SalesOrderLine>(GetPath("SalesOrderLines"));
-                }
-                return this._SalesOrderLines;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesOrderLine> _SalesOrderLines;
-        /// <summary>
         /// There are no comments for QualityOrderHeaders in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -139,6 +76,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> _QualityOrderHeaders;
+        /// <summary>
+        /// There are no comments for SalesOrderLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesOrderLine> SalesOrderLines
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._SalesOrderLines == null))
+                {
+                    this._SalesOrderLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.SalesOrderLine>(GetPath("SalesOrderLines"));
+                }
+                return this._SalesOrderLines;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesOrderLine> _SalesOrderLines;
     }
         /// <summary>
         /// There are no comments for SalesOrderHeaderV2 in the schema.
@@ -1123,6 +1081,28 @@ namespace Microsoft.Dynamics.DataEntities
         private string _SalesRebateCustomerGroupId;
         partial void OnSalesRebateCustomerGroupIdChanging(string value);
         partial void OnSalesRebateCustomerGroupIdChanged();
+        /// <summary>
+        /// There are no comments for Property ThirdPartySalesDigitalPlatformCNPJ in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual string ThirdPartySalesDigitalPlatformCNPJ
+        {
+            get
+            {
+                return this._ThirdPartySalesDigitalPlatformCNPJ;
+            }
+            set
+            {
+                this.OnThirdPartySalesDigitalPlatformCNPJChanging(value);
+                this._ThirdPartySalesDigitalPlatformCNPJ = value;
+                this.OnThirdPartySalesDigitalPlatformCNPJChanged();
+                this.OnPropertyChanged("ThirdPartySalesDigitalPlatformCNPJ");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _ThirdPartySalesDigitalPlatformCNPJ;
+        partial void OnThirdPartySalesDigitalPlatformCNPJChanging(string value);
+        partial void OnThirdPartySalesDigitalPlatformCNPJChanged();
         /// <summary>
         /// There are no comments for Property SalesOrderPromisingMethod in the schema.
         /// </summary>
@@ -2752,6 +2732,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnInvoiceAddressDistrictNameChanging(string value);
         partial void OnInvoiceAddressDistrictNameChanged();
         /// <summary>
+        /// There are no comments for Property ThirdPartySalesDigitalPlatform in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ThirdPartySalesDigitalPlatform
+        {
+            get
+            {
+                return this._ThirdPartySalesDigitalPlatform;
+            }
+            set
+            {
+                this.OnThirdPartySalesDigitalPlatformChanging(value);
+                this._ThirdPartySalesDigitalPlatform = value;
+                this.OnThirdPartySalesDigitalPlatformChanged();
+                this.OnPropertyChanged("ThirdPartySalesDigitalPlatform");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> _ThirdPartySalesDigitalPlatform;
+        partial void OnThirdPartySalesDigitalPlatformChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> value);
+        partial void OnThirdPartySalesDigitalPlatformChanged();
+        /// <summary>
         /// There are no comments for Property PaymentTermsName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -3808,50 +3810,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnRevRecContractStartDateChanging(global::System.DateTimeOffset value);
         partial void OnRevRecContractStartDateChanged();
         /// <summary>
-        /// There are no comments for Property SalesOrderOrigin in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.SalesOrderOriginCode SalesOrderOrigin
-        {
-            get
-            {
-                return this._SalesOrderOrigin;
-            }
-            set
-            {
-                this.OnSalesOrderOriginChanging(value);
-                this._SalesOrderOrigin = value;
-                this.OnSalesOrderOriginChanged();
-                this.OnPropertyChanged("SalesOrderOrigin");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.SalesOrderOriginCode _SalesOrderOrigin;
-        partial void OnSalesOrderOriginChanging(global::Microsoft.Dynamics.DataEntities.SalesOrderOriginCode value);
-        partial void OnSalesOrderOriginChanged();
-        /// <summary>
-        /// There are no comments for Property Project in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.Project Project
-        {
-            get
-            {
-                return this._Project;
-            }
-            set
-            {
-                this.OnProjectChanging(value);
-                this._Project = value;
-                this.OnProjectChanged();
-                this.OnPropertyChanged("Project");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.Project _Project;
-        partial void OnProjectChanging(global::Microsoft.Dynamics.DataEntities.Project value);
-        partial void OnProjectChanged();
-        /// <summary>
         /// There are no comments for Property DimensionSet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -3874,28 +3832,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDimensionSetChanging(global::Microsoft.Dynamics.DataEntities.DimensionSet value);
         partial void OnDimensionSetChanged();
         /// <summary>
-        /// There are no comments for Property SalesOrderLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesOrderLine> SalesOrderLines
-        {
-            get
-            {
-                return this._SalesOrderLines;
-            }
-            set
-            {
-                this.OnSalesOrderLinesChanging(value);
-                this._SalesOrderLines = value;
-                this.OnSalesOrderLinesChanged();
-                this.OnPropertyChanged("SalesOrderLines");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesOrderLine> _SalesOrderLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesOrderLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnSalesOrderLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesOrderLine> value);
-        partial void OnSalesOrderLinesChanged();
-        /// <summary>
         /// There are no comments for Property QualityOrderHeaders in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -3917,6 +3853,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> _QualityOrderHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnQualityOrderHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> value);
         partial void OnQualityOrderHeadersChanged();
+        /// <summary>
+        /// There are no comments for Property SalesOrderLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesOrderLine> SalesOrderLines
+        {
+            get
+            {
+                return this._SalesOrderLines;
+            }
+            set
+            {
+                this.OnSalesOrderLinesChanging(value);
+                this._SalesOrderLines = value;
+                this.OnSalesOrderLinesChanged();
+                this.OnPropertyChanged("SalesOrderLines");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesOrderLine> _SalesOrderLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesOrderLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnSalesOrderLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesOrderLine> value);
+        partial void OnSalesOrderLinesChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

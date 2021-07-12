@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,6 +34,48 @@ namespace Microsoft.Dynamics.DataEntities
         public BillOfMaterialsVersionODataV2Single(global::Microsoft.OData.Client.DataServiceQuerySingle<BillOfMaterialsVersionODataV2> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for ApprovingWorker in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.WorkerSingle ApprovingWorker
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ApprovingWorker == null))
+                {
+                    this._ApprovingWorker = new global::Microsoft.Dynamics.DataEntities.WorkerSingle(this.Context, GetPath("ApprovingWorker"));
+                }
+                return this._ApprovingWorker;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.WorkerSingle _ApprovingWorker;
+        /// <summary>
+        /// There are no comments for BillOfMaterialsHeader in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.BillOfMaterialsHeaderSingle BillOfMaterialsHeader
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._BillOfMaterialsHeader == null))
+                {
+                    this._BillOfMaterialsHeader = new global::Microsoft.Dynamics.DataEntities.BillOfMaterialsHeaderSingle(this.Context, GetPath("BillOfMaterialsHeader"));
+                }
+                return this._BillOfMaterialsHeader;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.BillOfMaterialsHeaderSingle _BillOfMaterialsHeader;
     }
         /// <summary>
         /// There are no comments for BillOfMaterialsVersionODataV2 in the schema.
@@ -75,6 +117,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// <param name="approverId">Initial value of ApproverId.</param>
         /// <param name="fromCatchWeightQuantity">Initial value of FromCatchWeightQuantity.</param>
         /// <param name="validToDate">Initial value of ValidToDate.</param>
+        /// <param name="billOfMaterialsHeader">Initial value of BillOfMaterialsHeader.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public static BillOfMaterialsVersionODataV2 CreateBillOfMaterialsVersionODataV2(string dataAreaId, 
                     string manufacturedItemNumber, 
@@ -91,7 +134,8 @@ namespace Microsoft.Dynamics.DataEntities
                     decimal catchWeightSize, 
                     long approverId, 
                     decimal fromCatchWeightQuantity, 
-                    global::System.DateTimeOffset validToDate)
+                    global::System.DateTimeOffset validToDate, 
+                    global::Microsoft.Dynamics.DataEntities.BillOfMaterialsHeader billOfMaterialsHeader)
         {
             BillOfMaterialsVersionODataV2 billOfMaterialsVersionODataV2 = new BillOfMaterialsVersionODataV2();
             billOfMaterialsVersionODataV2.dataAreaId = dataAreaId;
@@ -110,6 +154,11 @@ namespace Microsoft.Dynamics.DataEntities
             billOfMaterialsVersionODataV2.ApproverId = approverId;
             billOfMaterialsVersionODataV2.FromCatchWeightQuantity = fromCatchWeightQuantity;
             billOfMaterialsVersionODataV2.ValidToDate = validToDate;
+            if ((billOfMaterialsHeader == null))
+            {
+                throw new global::System.ArgumentNullException("billOfMaterialsHeader");
+            }
+            billOfMaterialsVersionODataV2.BillOfMaterialsHeader = billOfMaterialsHeader;
             return billOfMaterialsVersionODataV2;
         }
         /// <summary>
@@ -552,6 +601,50 @@ namespace Microsoft.Dynamics.DataEntities
         private global::System.DateTimeOffset _ValidToDate;
         partial void OnValidToDateChanging(global::System.DateTimeOffset value);
         partial void OnValidToDateChanged();
+        /// <summary>
+        /// There are no comments for Property ApprovingWorker in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.Worker ApprovingWorker
+        {
+            get
+            {
+                return this._ApprovingWorker;
+            }
+            set
+            {
+                this.OnApprovingWorkerChanging(value);
+                this._ApprovingWorker = value;
+                this.OnApprovingWorkerChanged();
+                this.OnPropertyChanged("ApprovingWorker");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.Worker _ApprovingWorker;
+        partial void OnApprovingWorkerChanging(global::Microsoft.Dynamics.DataEntities.Worker value);
+        partial void OnApprovingWorkerChanged();
+        /// <summary>
+        /// There are no comments for Property BillOfMaterialsHeader in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.BillOfMaterialsHeader BillOfMaterialsHeader
+        {
+            get
+            {
+                return this._BillOfMaterialsHeader;
+            }
+            set
+            {
+                this.OnBillOfMaterialsHeaderChanging(value);
+                this._BillOfMaterialsHeader = value;
+                this.OnBillOfMaterialsHeaderChanged();
+                this.OnPropertyChanged("BillOfMaterialsHeader");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.BillOfMaterialsHeader _BillOfMaterialsHeader;
+        partial void OnBillOfMaterialsHeaderChanging(global::Microsoft.Dynamics.DataEntities.BillOfMaterialsHeader value);
+        partial void OnBillOfMaterialsHeaderChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

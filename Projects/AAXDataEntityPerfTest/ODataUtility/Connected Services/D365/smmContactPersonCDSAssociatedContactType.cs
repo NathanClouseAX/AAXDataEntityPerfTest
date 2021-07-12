@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 9/11/2020 3:24:26 PM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-    /// <summary>
-    /// There are no comments for smmContactPersonCDSAssociatedContactType in the schema.
-    /// </summary>
+        /// <summary>
+        /// There are no comments for smmContactPersonCDSAssociatedContactType in the schema.
+        /// </summary>
     public enum smmContactPersonCDSAssociatedContactType
     {
         Customer = 0,

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -95,6 +95,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// <param name="headerReference">Initial value of HeaderReference.</param>
         /// <param name="invoiceRoundOff">Initial value of InvoiceRoundOff.</param>
         /// <param name="cashDiscountDate">Initial value of CashDiscountDate.</param>
+        /// <param name="businessDocumentSubmissionId_W">Initial value of BusinessDocumentSubmissionId_W.</param>
         /// <param name="invoicePaymentReleaseDate">Initial value of InvoicePaymentReleaseDate.</param>
         /// <param name="endDateTime">Initial value of EndDateTime.</param>
         /// <param name="importedAmount">Initial value of ImportedAmount.</param>
@@ -119,6 +120,7 @@ namespace Microsoft.Dynamics.DataEntities
                     string headerReference, 
                     decimal invoiceRoundOff, 
                     global::System.DateTimeOffset cashDiscountDate, 
+                    global::System.Guid businessDocumentSubmissionId_W, 
                     global::System.DateTimeOffset invoicePaymentReleaseDate, 
                     global::System.DateTimeOffset endDateTime, 
                     decimal importedAmount, 
@@ -144,6 +146,7 @@ namespace Microsoft.Dynamics.DataEntities
             vendorInvoiceHeader.HeaderReference = headerReference;
             vendorInvoiceHeader.InvoiceRoundOff = invoiceRoundOff;
             vendorInvoiceHeader.CashDiscountDate = cashDiscountDate;
+            vendorInvoiceHeader.BusinessDocumentSubmissionId_W = businessDocumentSubmissionId_W;
             vendorInvoiceHeader.InvoicePaymentReleaseDate = invoicePaymentReleaseDate;
             vendorInvoiceHeader.EndDateTime = endDateTime;
             vendorInvoiceHeader.ImportedAmount = importedAmount;
@@ -363,6 +366,28 @@ namespace Microsoft.Dynamics.DataEntities
         private string _TermsOfPayment;
         partial void OnTermsOfPaymentChanging(string value);
         partial void OnTermsOfPaymentChanged();
+        /// <summary>
+        /// There are no comments for Property BusinessDocumentSubmissionId_W in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::System.Guid BusinessDocumentSubmissionId_W
+        {
+            get
+            {
+                return this._BusinessDocumentSubmissionId_W;
+            }
+            set
+            {
+                this.OnBusinessDocumentSubmissionId_WChanging(value);
+                this._BusinessDocumentSubmissionId_W = value;
+                this.OnBusinessDocumentSubmissionId_WChanged();
+                this.OnPropertyChanged("BusinessDocumentSubmissionId_W");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Guid _BusinessDocumentSubmissionId_W;
+        partial void OnBusinessDocumentSubmissionId_WChanging(global::System.Guid value);
+        partial void OnBusinessDocumentSubmissionId_WChanged();
         /// <summary>
         /// There are no comments for Property InvoicePaymentReleaseDate in the schema.
         /// </summary>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,6 +34,27 @@ namespace Microsoft.Dynamics.DataEntities
         public OrganizationHierarchyTypeSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<OrganizationHierarchyType> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for BudgetTrackingWorkspaceParametersOrganizationHierarchyType in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> BudgetTrackingWorkspaceParametersOrganizationHierarchyType
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._BudgetTrackingWorkspaceParametersOrganizationHierarchyType == null))
+                {
+                    this._BudgetTrackingWorkspaceParametersOrganizationHierarchyType = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters>(GetPath("BudgetTrackingWorkspaceParametersOrganizationHierarchyType"));
+                }
+                return this._BudgetTrackingWorkspaceParametersOrganizationHierarchyType;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> _BudgetTrackingWorkspaceParametersOrganizationHierarchyType;
         /// <summary>
         /// There are no comments for ReplenishmentRuleLinesV2 in the schema.
         /// </summary>
@@ -76,27 +97,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailReplenishmentRuleLine> _RetailReplenishmentRuleLine;
-        /// <summary>
-        /// There are no comments for BudgetTrackingWorkspaceParametersOrganizationHierarchyType in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> BudgetTrackingWorkspaceParametersOrganizationHierarchyType
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._BudgetTrackingWorkspaceParametersOrganizationHierarchyType == null))
-                {
-                    this._BudgetTrackingWorkspaceParametersOrganizationHierarchyType = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters>(GetPath("BudgetTrackingWorkspaceParametersOrganizationHierarchyType"));
-                }
-                return this._BudgetTrackingWorkspaceParametersOrganizationHierarchyType;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> _BudgetTrackingWorkspaceParametersOrganizationHierarchyType;
     }
         /// <summary>
         /// There are no comments for OrganizationHierarchyType in the schema.
@@ -164,6 +164,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnRelationshipTypeIDChanging(string value);
         partial void OnRelationshipTypeIDChanged();
         /// <summary>
+        /// There are no comments for Property BudgetTrackingWorkspaceParametersOrganizationHierarchyType in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> BudgetTrackingWorkspaceParametersOrganizationHierarchyType
+        {
+            get
+            {
+                return this._BudgetTrackingWorkspaceParametersOrganizationHierarchyType;
+            }
+            set
+            {
+                this.OnBudgetTrackingWorkspaceParametersOrganizationHierarchyTypeChanging(value);
+                this._BudgetTrackingWorkspaceParametersOrganizationHierarchyType = value;
+                this.OnBudgetTrackingWorkspaceParametersOrganizationHierarchyTypeChanged();
+                this.OnPropertyChanged("BudgetTrackingWorkspaceParametersOrganizationHierarchyType");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> _BudgetTrackingWorkspaceParametersOrganizationHierarchyType = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnBudgetTrackingWorkspaceParametersOrganizationHierarchyTypeChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> value);
+        partial void OnBudgetTrackingWorkspaceParametersOrganizationHierarchyTypeChanged();
+        /// <summary>
         /// There are no comments for Property ReplenishmentRuleLinesV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -207,28 +229,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailReplenishmentRuleLine> _RetailReplenishmentRuleLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailReplenishmentRuleLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnRetailReplenishmentRuleLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailReplenishmentRuleLine> value);
         partial void OnRetailReplenishmentRuleLineChanged();
-        /// <summary>
-        /// There are no comments for Property BudgetTrackingWorkspaceParametersOrganizationHierarchyType in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> BudgetTrackingWorkspaceParametersOrganizationHierarchyType
-        {
-            get
-            {
-                return this._BudgetTrackingWorkspaceParametersOrganizationHierarchyType;
-            }
-            set
-            {
-                this.OnBudgetTrackingWorkspaceParametersOrganizationHierarchyTypeChanging(value);
-                this._BudgetTrackingWorkspaceParametersOrganizationHierarchyType = value;
-                this.OnBudgetTrackingWorkspaceParametersOrganizationHierarchyTypeChanged();
-                this.OnPropertyChanged("BudgetTrackingWorkspaceParametersOrganizationHierarchyType");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> _BudgetTrackingWorkspaceParametersOrganizationHierarchyType = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnBudgetTrackingWorkspaceParametersOrganizationHierarchyTypeChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> value);
-        partial void OnBudgetTrackingWorkspaceParametersOrganizationHierarchyTypeChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

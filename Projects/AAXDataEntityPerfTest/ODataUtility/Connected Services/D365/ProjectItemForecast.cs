@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -137,6 +137,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// <param name="costPrice">Initial value of CostPrice.</param>
         /// <param name="discountPercent">Initial value of DiscountPercent.</param>
         /// <param name="salesQuantity">Initial value of SalesQuantity.</param>
+        /// <param name="kittingLineNum">Initial value of KittingLineNum.</param>
         /// <param name="project">Initial value of Project.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public static ProjectItemForecast CreateProjectItemForecast(string dataAreaId, 
@@ -159,6 +160,7 @@ namespace Microsoft.Dynamics.DataEntities
                     decimal costPrice, 
                     decimal discountPercent, 
                     decimal salesQuantity, 
+                    decimal kittingLineNum, 
                     global::Microsoft.Dynamics.DataEntities.Project project)
         {
             ProjectItemForecast projectItemForecast = new ProjectItemForecast();
@@ -182,6 +184,7 @@ namespace Microsoft.Dynamics.DataEntities
             projectItemForecast.CostPrice = costPrice;
             projectItemForecast.DiscountPercent = discountPercent;
             projectItemForecast.SalesQuantity = salesQuantity;
+            projectItemForecast.KittingLineNum = kittingLineNum;
             if ((project == null))
             {
                 throw new global::System.ArgumentNullException("project");
@@ -1399,6 +1402,50 @@ namespace Microsoft.Dynamics.DataEntities
         private decimal _SalesQuantity;
         partial void OnSalesQuantityChanging(decimal value);
         partial void OnSalesQuantityChanged();
+        /// <summary>
+        /// There are no comments for Property KittingLineNum in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual decimal KittingLineNum
+        {
+            get
+            {
+                return this._KittingLineNum;
+            }
+            set
+            {
+                this.OnKittingLineNumChanging(value);
+                this._KittingLineNum = value;
+                this.OnKittingLineNumChanged();
+                this.OnPropertyChanged("KittingLineNum");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private decimal _KittingLineNum;
+        partial void OnKittingLineNumChanging(decimal value);
+        partial void OnKittingLineNumChanged();
+        /// <summary>
+        /// There are no comments for Property KittingInventTransId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual string KittingInventTransId
+        {
+            get
+            {
+                return this._KittingInventTransId;
+            }
+            set
+            {
+                this.OnKittingInventTransIdChanging(value);
+                this._KittingInventTransId = value;
+                this.OnKittingInventTransIdChanged();
+                this.OnPropertyChanged("KittingInventTransId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _KittingInventTransId;
+        partial void OnKittingInventTransIdChanging(string value);
+        partial void OnKittingInventTransIdChanged();
         /// <summary>
         /// There are no comments for Property ProjectLineProperty in the schema.
         /// </summary>

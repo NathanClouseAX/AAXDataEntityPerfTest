@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,6 +34,27 @@ namespace Microsoft.Dynamics.DataEntities
         public ADARequirementReportSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ADARequirementReport> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for Job in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.JobSingle Job
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Job == null))
+                {
+                    this._Job = new global::Microsoft.Dynamics.DataEntities.JobSingle(this.Context, GetPath("Job"));
+                }
+                return this._Job;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.JobSingle _Job;
     }
         /// <summary>
         /// There are no comments for ADARequirementReport in the schema.
@@ -51,12 +72,18 @@ namespace Microsoft.Dynamics.DataEntities
         /// </summary>
         /// <param name="jobId">Initial value of JobId.</param>
         /// <param name="jobTemplateId">Initial value of JobTemplateId.</param>
+        /// <param name="job">Initial value of Job.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public static ADARequirementReport CreateADARequirementReport(string jobId, string jobTemplateId)
+        public static ADARequirementReport CreateADARequirementReport(string jobId, string jobTemplateId, global::Microsoft.Dynamics.DataEntities.Job job)
         {
             ADARequirementReport aDARequirementReport = new ADARequirementReport();
             aDARequirementReport.JobId = jobId;
             aDARequirementReport.JobTemplateId = jobTemplateId;
+            if ((job == null))
+            {
+                throw new global::System.ArgumentNullException("job");
+            }
+            aDARequirementReport.Job = job;
             return aDARequirementReport;
         }
         /// <summary>
@@ -1819,6 +1846,28 @@ namespace Microsoft.Dynamics.DataEntities
         private string _HazardsDescription;
         partial void OnHazardsDescriptionChanging(string value);
         partial void OnHazardsDescriptionChanged();
+        /// <summary>
+        /// There are no comments for Property Job in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.Job Job
+        {
+            get
+            {
+                return this._Job;
+            }
+            set
+            {
+                this.OnJobChanging(value);
+                this._Job = value;
+                this.OnJobChanged();
+                this.OnPropertyChanged("Job");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.Job _Job;
+        partial void OnJobChanging(global::Microsoft.Dynamics.DataEntities.Job value);
+        partial void OnJobChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

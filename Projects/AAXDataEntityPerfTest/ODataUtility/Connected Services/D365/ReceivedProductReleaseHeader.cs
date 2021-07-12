@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public ReceivedProductReleaseHeaderSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ReceivedProductReleaseHeader> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for ReceivedProductReleaseLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReceivedProductReleaseLine> ReceivedProductReleaseLines
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ReceivedProductReleaseLines == null))
-                {
-                    this._ReceivedProductReleaseLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ReceivedProductReleaseLine>(GetPath("ReceivedProductReleaseLines"));
-                }
-                return this._ReceivedProductReleaseLines;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReceivedProductReleaseLine> _ReceivedProductReleaseLines;
         /// <summary>
         /// There are no comments for CancellorWorker in the schema.
         /// </summary>
@@ -160,6 +139,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.WorkerSingle _ProcessorWorker;
+        /// <summary>
+        /// There are no comments for ReceivedProductReleaseLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReceivedProductReleaseLine> ReceivedProductReleaseLines
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ReceivedProductReleaseLines == null))
+                {
+                    this._ReceivedProductReleaseLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ReceivedProductReleaseLine>(GetPath("ReceivedProductReleaseLines"));
+                }
+                return this._ReceivedProductReleaseLines;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReceivedProductReleaseLine> _ReceivedProductReleaseLines;
     }
         /// <summary>
         /// There are no comments for ReceivedProductReleaseHeader in the schema.
@@ -170,8 +170,9 @@ namespace Microsoft.Dynamics.DataEntities
     /// ReleasingLegalEntityId
     /// ReleaseStatus
     /// ProductVersionId
+    /// ReleaseHeaderCreatedDateTime
     /// </KeyProperties>
-    [global::Microsoft.OData.Client.Key("dataAreaId", "ProductNumber", "ReleasingLegalEntityId", "ReleaseStatus", "ProductVersionId")]
+    [global::Microsoft.OData.Client.Key("dataAreaId", "ProductNumber", "ReleasingLegalEntityId", "ReleaseStatus", "ProductVersionId", "ReleaseHeaderCreatedDateTime")]
     [global::Microsoft.OData.Client.EntitySet("ReceivedProductReleaseHeaders")]
     public partial class ReceivedProductReleaseHeader : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
     {
@@ -182,6 +183,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// <param name="productNumber">Initial value of ProductNumber.</param>
         /// <param name="releasingLegalEntityId">Initial value of ReleasingLegalEntityId.</param>
         /// <param name="productVersionId">Initial value of ProductVersionId.</param>
+        /// <param name="releaseHeaderCreatedDateTime">Initial value of ReleaseHeaderCreatedDateTime.</param>
         /// <param name="cancelledDateTime">Initial value of CancelledDateTime.</param>
         /// <param name="processedDateTime">Initial value of ProcessedDateTime.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -189,6 +191,7 @@ namespace Microsoft.Dynamics.DataEntities
                     string productNumber, 
                     string releasingLegalEntityId, 
                     string productVersionId, 
+                    global::System.DateTimeOffset releaseHeaderCreatedDateTime, 
                     global::System.DateTimeOffset cancelledDateTime, 
                     global::System.DateTimeOffset processedDateTime)
         {
@@ -197,6 +200,7 @@ namespace Microsoft.Dynamics.DataEntities
             receivedProductReleaseHeader.ProductNumber = productNumber;
             receivedProductReleaseHeader.ReleasingLegalEntityId = releasingLegalEntityId;
             receivedProductReleaseHeader.ProductVersionId = productVersionId;
+            receivedProductReleaseHeader.ReleaseHeaderCreatedDateTime = releaseHeaderCreatedDateTime;
             receivedProductReleaseHeader.CancelledDateTime = cancelledDateTime;
             receivedProductReleaseHeader.ProcessedDateTime = processedDateTime;
             return receivedProductReleaseHeader;
@@ -311,6 +315,28 @@ namespace Microsoft.Dynamics.DataEntities
         private string _ProductVersionId;
         partial void OnProductVersionIdChanging(string value);
         partial void OnProductVersionIdChanged();
+        /// <summary>
+        /// There are no comments for Property ReleaseHeaderCreatedDateTime in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::System.DateTimeOffset ReleaseHeaderCreatedDateTime
+        {
+            get
+            {
+                return this._ReleaseHeaderCreatedDateTime;
+            }
+            set
+            {
+                this.OnReleaseHeaderCreatedDateTimeChanging(value);
+                this._ReleaseHeaderCreatedDateTime = value;
+                this.OnReleaseHeaderCreatedDateTimeChanged();
+                this.OnPropertyChanged("ReleaseHeaderCreatedDateTime");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.DateTimeOffset _ReleaseHeaderCreatedDateTime;
+        partial void OnReleaseHeaderCreatedDateTimeChanging(global::System.DateTimeOffset value);
+        partial void OnReleaseHeaderCreatedDateTimeChanged();
         /// <summary>
         /// There are no comments for Property ReleaseNotes in the schema.
         /// </summary>
@@ -510,28 +536,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnCancellorPersonnelNumberChanging(string value);
         partial void OnCancellorPersonnelNumberChanged();
         /// <summary>
-        /// There are no comments for Property ReceivedProductReleaseLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReceivedProductReleaseLine> ReceivedProductReleaseLines
-        {
-            get
-            {
-                return this._ReceivedProductReleaseLines;
-            }
-            set
-            {
-                this.OnReceivedProductReleaseLinesChanging(value);
-                this._ReceivedProductReleaseLines = value;
-                this.OnReceivedProductReleaseLinesChanged();
-                this.OnPropertyChanged("ReceivedProductReleaseLines");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReceivedProductReleaseLine> _ReceivedProductReleaseLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReceivedProductReleaseLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnReceivedProductReleaseLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReceivedProductReleaseLine> value);
-        partial void OnReceivedProductReleaseLinesChanged();
-        /// <summary>
         /// There are no comments for Property CancellorWorker in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -641,6 +645,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.Worker _ProcessorWorker;
         partial void OnProcessorWorkerChanging(global::Microsoft.Dynamics.DataEntities.Worker value);
         partial void OnProcessorWorkerChanged();
+        /// <summary>
+        /// There are no comments for Property ReceivedProductReleaseLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReceivedProductReleaseLine> ReceivedProductReleaseLines
+        {
+            get
+            {
+                return this._ReceivedProductReleaseLines;
+            }
+            set
+            {
+                this.OnReceivedProductReleaseLinesChanging(value);
+                this._ReceivedProductReleaseLines = value;
+                this.OnReceivedProductReleaseLinesChanged();
+                this.OnPropertyChanged("ReceivedProductReleaseLines");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReceivedProductReleaseLine> _ReceivedProductReleaseLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReceivedProductReleaseLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnReceivedProductReleaseLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReceivedProductReleaseLine> value);
+        partial void OnReceivedProductReleaseLinesChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

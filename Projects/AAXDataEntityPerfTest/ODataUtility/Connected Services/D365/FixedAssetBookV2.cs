@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public FixedAssetBookV2Single(global::Microsoft.OData.Client.DataServiceQuerySingle<FixedAssetBookV2> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for VendInvoiceJournalLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.VendInvoiceJournalLineSingle VendInvoiceJournalLine
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._VendInvoiceJournalLine == null))
-                {
-                    this._VendInvoiceJournalLine = new global::Microsoft.Dynamics.DataEntities.VendInvoiceJournalLineSingle(this.Context, GetPath("VendInvoiceJournalLine"));
-                }
-                return this._VendInvoiceJournalLine;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.VendInvoiceJournalLineSingle _VendInvoiceJournalLine;
         /// <summary>
         /// There are no comments for FixedAssetBookSpecialDepreciationAllowance in the schema.
         /// </summary>
@@ -433,6 +412,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ConsumptionFactorSingle _AssetBookV2ConsumptionFactor;
+        /// <summary>
+        /// There are no comments for VendInvoiceJournalLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.VendInvoiceJournalLineSingle VendInvoiceJournalLine
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._VendInvoiceJournalLine == null))
+                {
+                    this._VendInvoiceJournalLine = new global::Microsoft.Dynamics.DataEntities.VendInvoiceJournalLineSingle(this.Context, GetPath("VendInvoiceJournalLine"));
+                }
+                return this._VendInvoiceJournalLine;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.VendInvoiceJournalLineSingle _VendInvoiceJournalLine;
     }
         /// <summary>
         /// There are no comments for FixedAssetBookV2 in the schema.
@@ -2220,28 +2220,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnConsumptionFactorIdChanging(string value);
         partial void OnConsumptionFactorIdChanged();
         /// <summary>
-        /// There are no comments for Property VendInvoiceJournalLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.VendInvoiceJournalLine VendInvoiceJournalLine
-        {
-            get
-            {
-                return this._VendInvoiceJournalLine;
-            }
-            set
-            {
-                this.OnVendInvoiceJournalLineChanging(value);
-                this._VendInvoiceJournalLine = value;
-                this.OnVendInvoiceJournalLineChanged();
-                this.OnPropertyChanged("VendInvoiceJournalLine");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.VendInvoiceJournalLine _VendInvoiceJournalLine;
-        partial void OnVendInvoiceJournalLineChanging(global::Microsoft.Dynamics.DataEntities.VendInvoiceJournalLine value);
-        partial void OnVendInvoiceJournalLineChanged();
-        /// <summary>
         /// There are no comments for Property FixedAssetBookSpecialDepreciationAllowance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -2637,6 +2615,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.ConsumptionFactor _AssetBookV2ConsumptionFactor;
         partial void OnAssetBookV2ConsumptionFactorChanging(global::Microsoft.Dynamics.DataEntities.ConsumptionFactor value);
         partial void OnAssetBookV2ConsumptionFactorChanged();
+        /// <summary>
+        /// There are no comments for Property VendInvoiceJournalLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.VendInvoiceJournalLine VendInvoiceJournalLine
+        {
+            get
+            {
+                return this._VendInvoiceJournalLine;
+            }
+            set
+            {
+                this.OnVendInvoiceJournalLineChanging(value);
+                this._VendInvoiceJournalLine = value;
+                this.OnVendInvoiceJournalLineChanged();
+                this.OnPropertyChanged("VendInvoiceJournalLine");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.VendInvoiceJournalLine _VendInvoiceJournalLine;
+        partial void OnVendInvoiceJournalLineChanging(global::Microsoft.Dynamics.DataEntities.VendInvoiceJournalLine value);
+        partial void OnVendInvoiceJournalLineChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for CDSSalesOrderHeader in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.CDSSalesOrderHeaderSingle CDSSalesOrderHeader
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._CDSSalesOrderHeader == null))
-                {
-                    this._CDSSalesOrderHeader = new global::Microsoft.Dynamics.DataEntities.CDSSalesOrderHeaderSingle(this.Context, GetPath("CDSSalesOrderHeader"));
-                }
-                return this._CDSSalesOrderHeader;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.CDSSalesOrderHeaderSingle _CDSSalesOrderHeader;
-        /// <summary>
         /// There are no comments for CDSSalesQuotationLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,6 +55,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CDSSalesQuotationLine> _CDSSalesQuotationLines;
+        /// <summary>
+        /// There are no comments for CDSSalesOrderHeader in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.CDSSalesOrderHeaderSingle CDSSalesOrderHeader
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._CDSSalesOrderHeader == null))
+                {
+                    this._CDSSalesOrderHeader = new global::Microsoft.Dynamics.DataEntities.CDSSalesOrderHeaderSingle(this.Context, GetPath("CDSSalesOrderHeader"));
+                }
+                return this._CDSSalesOrderHeader;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.CDSSalesOrderHeaderSingle _CDSSalesOrderHeader;
     }
         /// <summary>
         /// There are no comments for CDSSalesQuotationHeader in the schema.
@@ -835,6 +835,28 @@ namespace Microsoft.Dynamics.DataEntities
         private string _RequestingCustomerAccountNumber;
         partial void OnRequestingCustomerAccountNumberChanging(string value);
         partial void OnRequestingCustomerAccountNumberChanged();
+        /// <summary>
+        /// There are no comments for Property OperatingUnitPartyNumber in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual string OperatingUnitPartyNumber
+        {
+            get
+            {
+                return this._OperatingUnitPartyNumber;
+            }
+            set
+            {
+                this.OnOperatingUnitPartyNumberChanging(value);
+                this._OperatingUnitPartyNumber = value;
+                this.OnOperatingUnitPartyNumberChanged();
+                this.OnPropertyChanged("OperatingUnitPartyNumber");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _OperatingUnitPartyNumber;
+        partial void OnOperatingUnitPartyNumberChanging(string value);
+        partial void OnOperatingUnitPartyNumberChanged();
         /// <summary>
         /// There are no comments for Property PriceCustomerGroupCode in the schema.
         /// </summary>
@@ -1892,28 +1914,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnSalesQuotationExpiryDateChanging(global::System.DateTimeOffset value);
         partial void OnSalesQuotationExpiryDateChanged();
         /// <summary>
-        /// There are no comments for Property CDSSalesOrderHeader in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.CDSSalesOrderHeader CDSSalesOrderHeader
-        {
-            get
-            {
-                return this._CDSSalesOrderHeader;
-            }
-            set
-            {
-                this.OnCDSSalesOrderHeaderChanging(value);
-                this._CDSSalesOrderHeader = value;
-                this.OnCDSSalesOrderHeaderChanged();
-                this.OnPropertyChanged("CDSSalesOrderHeader");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.CDSSalesOrderHeader _CDSSalesOrderHeader;
-        partial void OnCDSSalesOrderHeaderChanging(global::Microsoft.Dynamics.DataEntities.CDSSalesOrderHeader value);
-        partial void OnCDSSalesOrderHeaderChanged();
-        /// <summary>
         /// There are no comments for Property CDSSalesQuotationLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -1935,6 +1935,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CDSSalesQuotationLine> _CDSSalesQuotationLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CDSSalesQuotationLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnCDSSalesQuotationLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CDSSalesQuotationLine> value);
         partial void OnCDSSalesQuotationLinesChanged();
+        /// <summary>
+        /// There are no comments for Property CDSSalesOrderHeader in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.CDSSalesOrderHeader CDSSalesOrderHeader
+        {
+            get
+            {
+                return this._CDSSalesOrderHeader;
+            }
+            set
+            {
+                this.OnCDSSalesOrderHeaderChanging(value);
+                this._CDSSalesOrderHeader = value;
+                this.OnCDSSalesOrderHeaderChanged();
+                this.OnPropertyChanged("CDSSalesOrderHeader");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.CDSSalesOrderHeader _CDSSalesOrderHeader;
+        partial void OnCDSSalesOrderHeaderChanging(global::Microsoft.Dynamics.DataEntities.CDSSalesOrderHeader value);
+        partial void OnCDSSalesOrderHeaderChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

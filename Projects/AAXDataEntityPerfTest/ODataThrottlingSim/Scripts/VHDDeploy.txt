@@ -1,0 +1,9 @@
+﻿/* Original work by Brad Bateman (https://twitter.com/BradBateTech)
+ * https://batetech.wordpress.com/2021/05/28/d365-odata-and-custom-service-429-throttling-simulation-dev-vm-setups/
+ */
+
+iisreset /stop
+
+Copy-Item -Path "C:\AOSService\PackagesLocalDirectory\AAXDataEntityPerfTest\Projects\AAXDataEntityPerfTest\ODataThrottlingSim\bin\Debug\ODataThrottlingSim.*" -Destination "C:\AosService\WebRoot\bin\"
+
+iisreset /start 

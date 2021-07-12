@@ -49,11 +49,31 @@ namespace ODataTesting
 
         public static void runReads(Resources context, string filePath, TestType testType, TestWorkload testWorkload, string DataAreaId, string customerAccount, int count)
         {
+            int tryCount = 0;
             Stopwatch sw = new Stopwatch();
 
             sw.Start();
 
-            context.SalesOrderHeadersV2EntityReadOnly.Where(x => x.dataAreaId == DataAreaId && x.OrderingCustomerAccountNumber == customerAccount).Take(count).ToList();
+            while (true)
+            {
+                try
+                {
+                    tryCount++;
+                    context.SalesOrderHeadersV2EntityReadOnly.Where(x => x.dataAreaId == DataAreaId && x.OrderingCustomerAccountNumber == customerAccount).Take(count).ToList();
+
+                    break;
+
+                }
+                catch (Exception e)
+                {
+                    if (tryCount >= 3)
+                    {
+                        throw (e);
+                    }
+                    sw.Reset();
+                    sw.Start();
+                }
+            }
 
             sw.Stop();
 

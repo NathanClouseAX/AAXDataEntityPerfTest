@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -20,6 +20,7 @@ namespace Microsoft.Dynamics.DataEntities
         Card = 1,
         Check = 2,
         Customer = 3,
-        TenderRemoveFloat = 4
+        TenderRemoveFloat = 4,
+        Wallet = 5
     }
 }

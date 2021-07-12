@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -189,6 +189,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::System.Nullable<global::Microsoft.Dynamics.DataEntities.DispositionAction> _DispositionAction;
         partial void OnDispositionActionChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.DispositionAction> value);
         partial void OnDispositionActionChanged();
+        /// <summary>
+        /// There are no comments for Property KittingDispositionCodeId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual string KittingDispositionCodeId
+        {
+            get
+            {
+                return this._KittingDispositionCodeId;
+            }
+            set
+            {
+                this.OnKittingDispositionCodeIdChanging(value);
+                this._KittingDispositionCodeId = value;
+                this.OnKittingDispositionCodeIdChanged();
+                this.OnPropertyChanged("KittingDispositionCodeId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _KittingDispositionCodeId;
+        partial void OnKittingDispositionCodeIdChanging(string value);
+        partial void OnKittingDispositionCodeIdChanged();
         /// <summary>
         /// There are no comments for Property ItemArrivalJournalLinesV2 in the schema.
         /// </summary>

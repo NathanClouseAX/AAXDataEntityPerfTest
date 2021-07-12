@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -242,6 +242,12 @@ namespace Microsoft.Dynamics.DataEntities
         ReportingCurrencyAdjustment = 144,
         SalesCreditNote_IT = 145,
         SalesForFree_IT = 153,
+        ITMGIT = 154,
+        ITMCostAccrual = 155,
+        ITMCostClearing = 156,
+        ITMCostChargeAccrual = 157,
+        ITMCostCharge = 158,
+        ITMCostVariance = 179,
         RevRecDeferredRevenue = 172,
         RevRecDeferredCostOfGoodsSold = 173,
         RevRecPartialRevenue = 174,

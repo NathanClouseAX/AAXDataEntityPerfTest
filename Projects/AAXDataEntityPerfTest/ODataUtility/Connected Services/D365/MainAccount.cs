@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,48 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public MainAccountSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<MainAccount> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for ConsolidationMainAccountEntityRole2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ConsolidateAccountGroup> ConsolidationMainAccountEntityRole2
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ConsolidationMainAccountEntityRole2 == null))
-                {
-                    this._ConsolidationMainAccountEntityRole2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ConsolidateAccountGroup>(GetPath("ConsolidationMainAccountEntityRole2"));
-                }
-                return this._ConsolidationMainAccountEntityRole2;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ConsolidateAccountGroup> _ConsolidationMainAccountEntityRole2;
-        /// <summary>
-        /// There are no comments for MainAccountEntityRole2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ConsolidateAccountGroup> MainAccountEntityRole2
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._MainAccountEntityRole2 == null))
-                {
-                    this._MainAccountEntityRole2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ConsolidateAccountGroup>(GetPath("MainAccountEntityRole2"));
-                }
-                return this._MainAccountEntityRole2;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ConsolidateAccountGroup> _MainAccountEntityRole2;
         /// <summary>
         /// There are no comments for MainAccountExchangeAdjustmentRateType in the schema.
         /// </summary>
@@ -119,6 +77,27 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.CurrencySingle _Currency;
         /// <summary>
+        /// There are no comments for MainAccountEntityRole in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AccountTranslation> MainAccountEntityRole
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._MainAccountEntityRole == null))
+                {
+                    this._MainAccountEntityRole = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AccountTranslation>(GetPath("MainAccountEntityRole"));
+                }
+                return this._MainAccountEntityRole;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AccountTranslation> _MainAccountEntityRole;
+        /// <summary>
         /// There are no comments for LedgerTransSettlementAccountsMainAccountEntityRole in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -139,6 +118,48 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerTransSettlementAccount> _LedgerTransSettlementAccountsMainAccountEntityRole;
+        /// <summary>
+        /// There are no comments for ConsolidationMainAccountEntityRole2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ConsolidateAccount> ConsolidationMainAccountEntityRole2
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ConsolidationMainAccountEntityRole2 == null))
+                {
+                    this._ConsolidationMainAccountEntityRole2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ConsolidateAccount>(GetPath("ConsolidationMainAccountEntityRole2"));
+                }
+                return this._ConsolidationMainAccountEntityRole2;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ConsolidateAccount> _ConsolidationMainAccountEntityRole2;
+        /// <summary>
+        /// There are no comments for MainAccountEntityRole2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ConsolidateAccount> MainAccountEntityRole2
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._MainAccountEntityRole2 == null))
+                {
+                    this._MainAccountEntityRole2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ConsolidateAccount>(GetPath("MainAccountEntityRole2"));
+                }
+                return this._MainAccountEntityRole2;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ConsolidateAccount> _MainAccountEntityRole2;
         /// <summary>
         /// There are no comments for LedgerBalanceControlMainAccountRole in the schema.
         /// </summary>
@@ -181,27 +202,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.MainAccountTotalAccountInterval> _TotalAccountMainAccountEntityRole;
-        /// <summary>
-        /// There are no comments for MainAccountEntityRole in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AccountTranslation> MainAccountEntityRole
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._MainAccountEntityRole == null))
-                {
-                    this._MainAccountEntityRole = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AccountTranslation>(GetPath("MainAccountEntityRole"));
-                }
-                return this._MainAccountEntityRole;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AccountTranslation> _MainAccountEntityRole;
     }
         /// <summary>
         /// There are no comments for MainAccount in the schema.
@@ -1077,50 +1077,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnActiveFromChanging(global::System.DateTimeOffset value);
         partial void OnActiveFromChanged();
         /// <summary>
-        /// There are no comments for Property ConsolidationMainAccountEntityRole2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ConsolidateAccountGroup> ConsolidationMainAccountEntityRole2
-        {
-            get
-            {
-                return this._ConsolidationMainAccountEntityRole2;
-            }
-            set
-            {
-                this.OnConsolidationMainAccountEntityRole2Changing(value);
-                this._ConsolidationMainAccountEntityRole2 = value;
-                this.OnConsolidationMainAccountEntityRole2Changed();
-                this.OnPropertyChanged("ConsolidationMainAccountEntityRole2");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ConsolidateAccountGroup> _ConsolidationMainAccountEntityRole2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ConsolidateAccountGroup>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnConsolidationMainAccountEntityRole2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ConsolidateAccountGroup> value);
-        partial void OnConsolidationMainAccountEntityRole2Changed();
-        /// <summary>
-        /// There are no comments for Property MainAccountEntityRole2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ConsolidateAccountGroup> MainAccountEntityRole2
-        {
-            get
-            {
-                return this._MainAccountEntityRole2;
-            }
-            set
-            {
-                this.OnMainAccountEntityRole2Changing(value);
-                this._MainAccountEntityRole2 = value;
-                this.OnMainAccountEntityRole2Changed();
-                this.OnPropertyChanged("MainAccountEntityRole2");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ConsolidateAccountGroup> _MainAccountEntityRole2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ConsolidateAccountGroup>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnMainAccountEntityRole2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ConsolidateAccountGroup> value);
-        partial void OnMainAccountEntityRole2Changed();
-        /// <summary>
         /// There are no comments for Property MainAccountExchangeAdjustmentRateType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -1165,6 +1121,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnCurrencyChanging(global::Microsoft.Dynamics.DataEntities.Currency value);
         partial void OnCurrencyChanged();
         /// <summary>
+        /// There are no comments for Property MainAccountEntityRole in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AccountTranslation> MainAccountEntityRole
+        {
+            get
+            {
+                return this._MainAccountEntityRole;
+            }
+            set
+            {
+                this.OnMainAccountEntityRoleChanging(value);
+                this._MainAccountEntityRole = value;
+                this.OnMainAccountEntityRoleChanged();
+                this.OnPropertyChanged("MainAccountEntityRole");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AccountTranslation> _MainAccountEntityRole = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AccountTranslation>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnMainAccountEntityRoleChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AccountTranslation> value);
+        partial void OnMainAccountEntityRoleChanged();
+        /// <summary>
         /// There are no comments for Property LedgerTransSettlementAccountsMainAccountEntityRole in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -1186,6 +1164,50 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerTransSettlementAccount> _LedgerTransSettlementAccountsMainAccountEntityRole = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerTransSettlementAccount>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnLedgerTransSettlementAccountsMainAccountEntityRoleChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerTransSettlementAccount> value);
         partial void OnLedgerTransSettlementAccountsMainAccountEntityRoleChanged();
+        /// <summary>
+        /// There are no comments for Property ConsolidationMainAccountEntityRole2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ConsolidateAccount> ConsolidationMainAccountEntityRole2
+        {
+            get
+            {
+                return this._ConsolidationMainAccountEntityRole2;
+            }
+            set
+            {
+                this.OnConsolidationMainAccountEntityRole2Changing(value);
+                this._ConsolidationMainAccountEntityRole2 = value;
+                this.OnConsolidationMainAccountEntityRole2Changed();
+                this.OnPropertyChanged("ConsolidationMainAccountEntityRole2");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ConsolidateAccount> _ConsolidationMainAccountEntityRole2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ConsolidateAccount>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnConsolidationMainAccountEntityRole2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ConsolidateAccount> value);
+        partial void OnConsolidationMainAccountEntityRole2Changed();
+        /// <summary>
+        /// There are no comments for Property MainAccountEntityRole2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ConsolidateAccount> MainAccountEntityRole2
+        {
+            get
+            {
+                return this._MainAccountEntityRole2;
+            }
+            set
+            {
+                this.OnMainAccountEntityRole2Changing(value);
+                this._MainAccountEntityRole2 = value;
+                this.OnMainAccountEntityRole2Changed();
+                this.OnPropertyChanged("MainAccountEntityRole2");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ConsolidateAccount> _MainAccountEntityRole2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ConsolidateAccount>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnMainAccountEntityRole2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ConsolidateAccount> value);
+        partial void OnMainAccountEntityRole2Changed();
         /// <summary>
         /// There are no comments for Property LedgerBalanceControlMainAccountRole in the schema.
         /// </summary>
@@ -1230,28 +1252,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.MainAccountTotalAccountInterval> _TotalAccountMainAccountEntityRole = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.MainAccountTotalAccountInterval>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnTotalAccountMainAccountEntityRoleChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.MainAccountTotalAccountInterval> value);
         partial void OnTotalAccountMainAccountEntityRoleChanged();
-        /// <summary>
-        /// There are no comments for Property MainAccountEntityRole in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AccountTranslation> MainAccountEntityRole
-        {
-            get
-            {
-                return this._MainAccountEntityRole;
-            }
-            set
-            {
-                this.OnMainAccountEntityRoleChanging(value);
-                this._MainAccountEntityRole = value;
-                this.OnMainAccountEntityRoleChanged();
-                this.OnPropertyChanged("MainAccountEntityRole");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AccountTranslation> _MainAccountEntityRole = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AccountTranslation>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnMainAccountEntityRoleChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AccountTranslation> value);
-        partial void OnMainAccountEntityRoleChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

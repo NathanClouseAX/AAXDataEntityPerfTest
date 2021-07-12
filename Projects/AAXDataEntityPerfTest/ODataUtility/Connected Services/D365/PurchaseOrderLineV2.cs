@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,10 +35,10 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for PurchaseOrderLineCharges in the schema.
+        /// There are no comments for Project in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseOrderLineCharge> PurchaseOrderLineCharges
+        public virtual global::Microsoft.Dynamics.DataEntities.ProjectSingle Project
         {
             get
             {
@@ -46,15 +46,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._PurchaseOrderLineCharges == null))
+                if ((this._Project == null))
                 {
-                    this._PurchaseOrderLineCharges = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PurchaseOrderLineCharge>(GetPath("PurchaseOrderLineCharges"));
+                    this._Project = new global::Microsoft.Dynamics.DataEntities.ProjectSingle(this.Context, GetPath("Project"));
                 }
-                return this._PurchaseOrderLineCharges;
+                return this._Project;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseOrderLineCharge> _PurchaseOrderLineCharges;
+        private global::Microsoft.Dynamics.DataEntities.ProjectSingle _Project;
         /// <summary>
         /// There are no comments for PurchaseOrderHeader in the schema.
         /// </summary>
@@ -118,6 +118,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _LedgerDimensionCombination;
+        /// <summary>
+        /// There are no comments for PurchaseOrderLineCharges in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseOrderLineCharge> PurchaseOrderLineCharges
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._PurchaseOrderLineCharges == null))
+                {
+                    this._PurchaseOrderLineCharges = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PurchaseOrderLineCharge>(GetPath("PurchaseOrderLineCharges"));
+                }
+                return this._PurchaseOrderLineCharges;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseOrderLineCharge> _PurchaseOrderLineCharges;
     }
         /// <summary>
         /// There are no comments for PurchaseOrderLineV2 in the schema.
@@ -595,6 +616,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnMultilineDiscountPercentageChanging(decimal value);
         partial void OnMultilineDiscountPercentageChanged();
         /// <summary>
+        /// There are no comments for Property PurchaseRequisitionId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual string PurchaseRequisitionId
+        {
+            get
+            {
+                return this._PurchaseRequisitionId;
+            }
+            set
+            {
+                this.OnPurchaseRequisitionIdChanging(value);
+                this._PurchaseRequisitionId = value;
+                this.OnPurchaseRequisitionIdChanged();
+                this.OnPropertyChanged("PurchaseRequisitionId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _PurchaseRequisitionId;
+        partial void OnPurchaseRequisitionIdChanging(string value);
+        partial void OnPurchaseRequisitionIdChanged();
+        /// <summary>
         /// There are no comments for Property DeliveryCityInKana in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -858,6 +901,28 @@ namespace Microsoft.Dynamics.DataEntities
         private string _Tax1099GVendorStateId;
         partial void OnTax1099GVendorStateIdChanging(string value);
         partial void OnTax1099GVendorStateIdChanged();
+        /// <summary>
+        /// There are no comments for Property WorkflowState in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TradeWorkflowState> WorkflowState
+        {
+            get
+            {
+                return this._WorkflowState;
+            }
+            set
+            {
+                this.OnWorkflowStateChanging(value);
+                this._WorkflowState = value;
+                this.OnWorkflowStateChanged();
+                this.OnPropertyChanged("WorkflowState");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TradeWorkflowState> _WorkflowState;
+        partial void OnWorkflowStateChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TradeWorkflowState> value);
+        partial void OnWorkflowStateChanged();
         /// <summary>
         /// There are no comments for Property IsIntrastatTriangularDeal in the schema.
         /// </summary>
@@ -1452,6 +1517,28 @@ namespace Microsoft.Dynamics.DataEntities
         private string _DeliveryAddressDunsNumber;
         partial void OnDeliveryAddressDunsNumberChanging(string value);
         partial void OnDeliveryAddressDunsNumberChanged();
+        /// <summary>
+        /// There are no comments for Property IsAddedByChannel in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsAddedByChannel
+        {
+            get
+            {
+                return this._IsAddedByChannel;
+            }
+            set
+            {
+                this.OnIsAddedByChannelChanging(value);
+                this._IsAddedByChannel = value;
+                this.OnIsAddedByChannelChanged();
+                this.OnPropertyChanged("IsAddedByChannel");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> _IsAddedByChannel;
+        partial void OnIsAddedByChannelChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> value);
+        partial void OnIsAddedByChannelChanged();
         /// <summary>
         /// There are no comments for Property PurchasePriceQuantity in the schema.
         /// </summary>
@@ -3147,27 +3234,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnIsLineStoppedChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> value);
         partial void OnIsLineStoppedChanged();
         /// <summary>
-        /// There are no comments for Property PurchaseOrderLineCharges in the schema.
+        /// There are no comments for Property Project in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseOrderLineCharge> PurchaseOrderLineCharges
+        public virtual global::Microsoft.Dynamics.DataEntities.Project Project
         {
             get
             {
-                return this._PurchaseOrderLineCharges;
+                return this._Project;
             }
             set
             {
-                this.OnPurchaseOrderLineChargesChanging(value);
-                this._PurchaseOrderLineCharges = value;
-                this.OnPurchaseOrderLineChargesChanged();
-                this.OnPropertyChanged("PurchaseOrderLineCharges");
+                this.OnProjectChanging(value);
+                this._Project = value;
+                this.OnProjectChanged();
+                this.OnPropertyChanged("Project");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseOrderLineCharge> _PurchaseOrderLineCharges = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseOrderLineCharge>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPurchaseOrderLineChargesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseOrderLineCharge> value);
-        partial void OnPurchaseOrderLineChargesChanged();
+        private global::Microsoft.Dynamics.DataEntities.Project _Project;
+        partial void OnProjectChanging(global::Microsoft.Dynamics.DataEntities.Project value);
+        partial void OnProjectChanged();
         /// <summary>
         /// There are no comments for Property PurchaseOrderHeader in the schema.
         /// </summary>
@@ -3234,6 +3321,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.DimensionCombination _LedgerDimensionCombination;
         partial void OnLedgerDimensionCombinationChanging(global::Microsoft.Dynamics.DataEntities.DimensionCombination value);
         partial void OnLedgerDimensionCombinationChanged();
+        /// <summary>
+        /// There are no comments for Property PurchaseOrderLineCharges in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseOrderLineCharge> PurchaseOrderLineCharges
+        {
+            get
+            {
+                return this._PurchaseOrderLineCharges;
+            }
+            set
+            {
+                this.OnPurchaseOrderLineChargesChanging(value);
+                this._PurchaseOrderLineCharges = value;
+                this.OnPurchaseOrderLineChargesChanged();
+                this.OnPropertyChanged("PurchaseOrderLineCharges");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseOrderLineCharge> _PurchaseOrderLineCharges = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseOrderLineCharge>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPurchaseOrderLineChargesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseOrderLineCharge> value);
+        partial void OnPurchaseOrderLineChargesChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

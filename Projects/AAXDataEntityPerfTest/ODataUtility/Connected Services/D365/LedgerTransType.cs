@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -64,6 +64,30 @@ namespace Microsoft.Dynamics.DataEntities
         GeneralJournal = 36,
         MCRUnderpayWriteOff = 250,
         ReportingCurrencyAdjustment = 37,
+        AssetLeaseLeaseIR = 39,
+        AssetLeaseLeaseInterest = 40,
+        AssetLeaseLeasePayment = 41,
+        AssetLeaseLeaseAdjustment = 42,
+        AssetLeaseLeaseIRReversal = 43,
+        AssetLeaseLeaseInterestReversal = 44,
+        AssetLeaseLeasePaymentReversal = 45,
+        AssetLeaseLeaseROUDepreciation = 46,
+        AssetLeaseLeaseROUDepreciationReversal = 47,
+        AssetLeaseLeaseAdjustmentIncrease = 48,
+        AssetLeaseLeaseAdjustmentDecrease = 49,
+        AssetLeaseReversePriorLeaseClassification = 50,
+        AssetLeaseRecordNewLeaseClassification = 51,
+        AssetLeaseLeaseAdjustmentReversal = 52,
+        AssetLeaseLeaseAdjustmentIncreaseReversal = 53,
+        AssetLeaseLeaseAdjustmentDecreaseReversal = 54,
+        AssetLeaseReversePriorLeaseClassificationReversal = 55,
+        AssetLeaseRecordNewLeaseClassificationReversal = 56,
+        AssetLeaseLeaseExpense = 57,
+        AssetLeaseLeaseExpenseReversal = 58,
+        AssetLeaseLeaseLiabilityShortTermReclass = 59,
+        AssetLeaseLeaseLiabilityShortTermReclassReversal = 60,
+        AssetLeaseAssetImpairment = 61,
+        AssetLeaseLeaseAssetImpairmentReversal = 62,
         RevRecSalesOrderRevenueAdjustment = 38
     }
 }

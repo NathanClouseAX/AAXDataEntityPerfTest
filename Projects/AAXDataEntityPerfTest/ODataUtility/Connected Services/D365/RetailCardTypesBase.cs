@@ -8,19 +8,24 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 9/11/2020 3:24:26 PM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-    /// <summary>
-    /// There are no comments for RetailCardTypesBase in the schema.
-    /// </summary>
+        /// <summary>
+        /// There are no comments for RetailCardTypesBase in the schema.
+        /// </summary>
     public enum RetailCardTypesBase
     {
         InternationalKreditcard = 0,
         InternationalDebitcard = 1,
         LoyaltyCard = 2,
         CorporateCard = 3,
+        CustomerCard = 4,
+        EmployeeCard = 5,
+        SalespersonCard = 6,
         GiftCard = 7,
+        Check = 8,
+        Wallet = 9,
         FoodCard = 21,
         MealCard = 22,
         FuelCard = 23

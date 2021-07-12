@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,6 +34,69 @@ namespace Microsoft.Dynamics.DataEntities
         public TaxCodeSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<TaxCode> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for TaxCodeValue in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TaxCodeValue> TaxCodeValue
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._TaxCodeValue == null))
+                {
+                    this._TaxCodeValue = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TaxCodeValue>(GetPath("TaxCodeValue"));
+                }
+                return this._TaxCodeValue;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TaxCodeValue> _TaxCodeValue;
+        /// <summary>
+        /// There are no comments for TaxCodeLimit in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TaxCodeLimit> TaxCodeLimit
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._TaxCodeLimit == null))
+                {
+                    this._TaxCodeLimit = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TaxCodeLimit>(GetPath("TaxCodeLimit"));
+                }
+                return this._TaxCodeLimit;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TaxCodeLimit> _TaxCodeLimit;
+        /// <summary>
+        /// There are no comments for TaxItemGroup in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TaxItemGroup> TaxItemGroup
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._TaxItemGroup == null))
+                {
+                    this._TaxItemGroup = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TaxItemGroup>(GetPath("TaxItemGroup"));
+                }
+                return this._TaxItemGroup;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TaxItemGroup> _TaxItemGroup;
         /// <summary>
         /// There are no comments for TaxReportingCodeEntity in the schema.
         /// </summary>
@@ -98,27 +161,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.TaxPeriodSingle _TaxPeriod;
         /// <summary>
-        /// There are no comments for TaxCodeLimit in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TaxCodeLimit> TaxCodeLimit
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._TaxCodeLimit == null))
-                {
-                    this._TaxCodeLimit = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TaxCodeLimit>(GetPath("TaxCodeLimit"));
-                }
-                return this._TaxCodeLimit;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TaxCodeLimit> _TaxCodeLimit;
-        /// <summary>
         /// There are no comments for TaxCodeValueV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -160,48 +202,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TaxGroupData> _TaxGroupData;
-        /// <summary>
-        /// There are no comments for TaxCodeValue in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TaxCodeValue> TaxCodeValue
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._TaxCodeValue == null))
-                {
-                    this._TaxCodeValue = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TaxCodeValue>(GetPath("TaxCodeValue"));
-                }
-                return this._TaxCodeValue;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TaxCodeValue> _TaxCodeValue;
-        /// <summary>
-        /// There are no comments for TaxItemGroup in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TaxItemGroup> TaxItemGroup
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._TaxItemGroup == null))
-                {
-                    this._TaxItemGroup = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TaxItemGroup>(GetPath("TaxItemGroup"));
-                }
-                return this._TaxItemGroup;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TaxItemGroup> _TaxItemGroup;
     }
         /// <summary>
         /// There are no comments for TaxCode in the schema.
@@ -1829,6 +1829,72 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDescriptionQRBillChanging(string value);
         partial void OnDescriptionQRBillChanged();
         /// <summary>
+        /// There are no comments for Property TaxCodeValue in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCodeValue> TaxCodeValue
+        {
+            get
+            {
+                return this._TaxCodeValue;
+            }
+            set
+            {
+                this.OnTaxCodeValueChanging(value);
+                this._TaxCodeValue = value;
+                this.OnTaxCodeValueChanged();
+                this.OnPropertyChanged("TaxCodeValue");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCodeValue> _TaxCodeValue = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCodeValue>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnTaxCodeValueChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCodeValue> value);
+        partial void OnTaxCodeValueChanged();
+        /// <summary>
+        /// There are no comments for Property TaxCodeLimit in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCodeLimit> TaxCodeLimit
+        {
+            get
+            {
+                return this._TaxCodeLimit;
+            }
+            set
+            {
+                this.OnTaxCodeLimitChanging(value);
+                this._TaxCodeLimit = value;
+                this.OnTaxCodeLimitChanged();
+                this.OnPropertyChanged("TaxCodeLimit");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCodeLimit> _TaxCodeLimit = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCodeLimit>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnTaxCodeLimitChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCodeLimit> value);
+        partial void OnTaxCodeLimitChanged();
+        /// <summary>
+        /// There are no comments for Property TaxItemGroup in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxItemGroup> TaxItemGroup
+        {
+            get
+            {
+                return this._TaxItemGroup;
+            }
+            set
+            {
+                this.OnTaxItemGroupChanging(value);
+                this._TaxItemGroup = value;
+                this.OnTaxItemGroupChanged();
+                this.OnPropertyChanged("TaxItemGroup");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxItemGroup> _TaxItemGroup = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxItemGroup>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnTaxItemGroupChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxItemGroup> value);
+        partial void OnTaxItemGroupChanged();
+        /// <summary>
         /// There are no comments for Property TaxReportingCodeEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -1895,28 +1961,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnTaxPeriodChanging(global::Microsoft.Dynamics.DataEntities.TaxPeriod value);
         partial void OnTaxPeriodChanged();
         /// <summary>
-        /// There are no comments for Property TaxCodeLimit in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCodeLimit> TaxCodeLimit
-        {
-            get
-            {
-                return this._TaxCodeLimit;
-            }
-            set
-            {
-                this.OnTaxCodeLimitChanging(value);
-                this._TaxCodeLimit = value;
-                this.OnTaxCodeLimitChanged();
-                this.OnPropertyChanged("TaxCodeLimit");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCodeLimit> _TaxCodeLimit = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCodeLimit>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnTaxCodeLimitChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCodeLimit> value);
-        partial void OnTaxCodeLimitChanged();
-        /// <summary>
         /// There are no comments for Property TaxCodeValueV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -1960,50 +2004,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxGroupData> _TaxGroupData = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxGroupData>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnTaxGroupDataChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxGroupData> value);
         partial void OnTaxGroupDataChanged();
-        /// <summary>
-        /// There are no comments for Property TaxCodeValue in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCodeValue> TaxCodeValue
-        {
-            get
-            {
-                return this._TaxCodeValue;
-            }
-            set
-            {
-                this.OnTaxCodeValueChanging(value);
-                this._TaxCodeValue = value;
-                this.OnTaxCodeValueChanged();
-                this.OnPropertyChanged("TaxCodeValue");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCodeValue> _TaxCodeValue = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCodeValue>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnTaxCodeValueChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCodeValue> value);
-        partial void OnTaxCodeValueChanged();
-        /// <summary>
-        /// There are no comments for Property TaxItemGroup in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxItemGroup> TaxItemGroup
-        {
-            get
-            {
-                return this._TaxItemGroup;
-            }
-            set
-            {
-                this.OnTaxItemGroupChanging(value);
-                this._TaxItemGroup = value;
-                this.OnTaxItemGroupChanged();
-                this.OnPropertyChanged("TaxItemGroup");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxItemGroup> _TaxItemGroup = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxItemGroup>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnTaxItemGroupChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxItemGroup> value);
-        partial void OnTaxItemGroupChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public ProductMasterVersionSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ProductMasterVersion> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for ProductMasterVersionTranslations in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductMasterVersionTranslation> ProductMasterVersionTranslations
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ProductMasterVersionTranslations == null))
-                {
-                    this._ProductMasterVersionTranslations = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductMasterVersionTranslation>(GetPath("ProductMasterVersionTranslations"));
-                }
-                return this._ProductMasterVersionTranslations;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductMasterVersionTranslation> _ProductMasterVersionTranslations;
         /// <summary>
         /// There are no comments for ProductVersion in the schema.
         /// </summary>
@@ -97,6 +76,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ProductMasterSingle _ProductMaster;
+        /// <summary>
+        /// There are no comments for ProductMasterVersionTranslations in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductMasterVersionTranslation> ProductMasterVersionTranslations
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ProductMasterVersionTranslations == null))
+                {
+                    this._ProductMasterVersionTranslations = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductMasterVersionTranslation>(GetPath("ProductMasterVersionTranslations"));
+                }
+                return this._ProductMasterVersionTranslations;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductMasterVersionTranslation> _ProductMasterVersionTranslations;
     }
         /// <summary>
         /// There are no comments for ProductMasterVersion in the schema.
@@ -232,28 +232,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnReplenishmentWeightChanging(int value);
         partial void OnReplenishmentWeightChanged();
         /// <summary>
-        /// There are no comments for Property ProductMasterVersionTranslations in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductMasterVersionTranslation> ProductMasterVersionTranslations
-        {
-            get
-            {
-                return this._ProductMasterVersionTranslations;
-            }
-            set
-            {
-                this.OnProductMasterVersionTranslationsChanging(value);
-                this._ProductMasterVersionTranslations = value;
-                this.OnProductMasterVersionTranslationsChanged();
-                this.OnPropertyChanged("ProductMasterVersionTranslations");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductMasterVersionTranslation> _ProductMasterVersionTranslations = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductMasterVersionTranslation>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnProductMasterVersionTranslationsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductMasterVersionTranslation> value);
-        partial void OnProductMasterVersionTranslationsChanged();
-        /// <summary>
         /// There are no comments for Property ProductVersion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -297,6 +275,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.ProductMaster _ProductMaster;
         partial void OnProductMasterChanging(global::Microsoft.Dynamics.DataEntities.ProductMaster value);
         partial void OnProductMasterChanged();
+        /// <summary>
+        /// There are no comments for Property ProductMasterVersionTranslations in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductMasterVersionTranslation> ProductMasterVersionTranslations
+        {
+            get
+            {
+                return this._ProductMasterVersionTranslations;
+            }
+            set
+            {
+                this.OnProductMasterVersionTranslationsChanging(value);
+                this._ProductMasterVersionTranslations = value;
+                this.OnProductMasterVersionTranslationsChanged();
+                this.OnPropertyChanged("ProductMasterVersionTranslations");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductMasterVersionTranslation> _ProductMasterVersionTranslations = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductMasterVersionTranslation>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnProductMasterVersionTranslationsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductMasterVersionTranslation> value);
+        partial void OnProductMasterVersionTranslationsChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

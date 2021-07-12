@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -412,6 +412,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.WorkerSingle _ValidatingWorker;
+        /// <summary>
+        /// There are no comments for ItemBatchAttributeValues in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ItemBatchAttributeValue> ItemBatchAttributeValues
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ItemBatchAttributeValues == null))
+                {
+                    this._ItemBatchAttributeValues = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ItemBatchAttributeValue>(GetPath("ItemBatchAttributeValues"));
+                }
+                return this._ItemBatchAttributeValues;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ItemBatchAttributeValue> _ItemBatchAttributeValues;
     }
         /// <summary>
         /// There are no comments for QualityOrderHeader in the schema.
@@ -1890,6 +1911,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.Worker _ValidatingWorker;
         partial void OnValidatingWorkerChanging(global::Microsoft.Dynamics.DataEntities.Worker value);
         partial void OnValidatingWorkerChanged();
+        /// <summary>
+        /// There are no comments for Property ItemBatchAttributeValues in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemBatchAttributeValue> ItemBatchAttributeValues
+        {
+            get
+            {
+                return this._ItemBatchAttributeValues;
+            }
+            set
+            {
+                this.OnItemBatchAttributeValuesChanging(value);
+                this._ItemBatchAttributeValues = value;
+                this.OnItemBatchAttributeValuesChanged();
+                this.OnPropertyChanged("ItemBatchAttributeValues");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemBatchAttributeValue> _ItemBatchAttributeValues = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemBatchAttributeValue>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnItemBatchAttributeValuesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemBatchAttributeValue> value);
+        partial void OnItemBatchAttributeValuesChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

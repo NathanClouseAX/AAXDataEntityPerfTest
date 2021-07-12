@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -787,6 +787,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnRemittanceAddressValidToChanging(global::System.DateTimeOffset value);
         partial void OnRemittanceAddressValidToChanged();
         /// <summary>
+        /// There are no comments for Property PaymId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual string PaymId
+        {
+            get
+            {
+                return this._PaymId;
+            }
+            set
+            {
+                this.OnPaymIdChanging(value);
+                this._PaymId = value;
+                this.OnPaymIdChanged();
+                this.OnPropertyChanged("PaymId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _PaymId;
+        partial void OnPaymIdChanging(string value);
+        partial void OnPaymIdChanged();
+        /// <summary>
         /// There are no comments for Property AccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -1292,6 +1314,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> _IsWithholdingTaxCalculate;
         partial void OnIsWithholdingTaxCalculateChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> value);
         partial void OnIsWithholdingTaxCalculateChanged();
+        /// <summary>
+        /// There are no comments for Property CustVendBankAccountId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual string CustVendBankAccountId
+        {
+            get
+            {
+                return this._CustVendBankAccountId;
+            }
+            set
+            {
+                this.OnCustVendBankAccountIdChanging(value);
+                this._CustVendBankAccountId = value;
+                this.OnCustVendBankAccountIdChanged();
+                this.OnPropertyChanged("CustVendBankAccountId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _CustVendBankAccountId;
+        partial void OnCustVendBankAccountIdChanging(string value);
+        partial void OnCustVendBankAccountIdChanged();
         /// <summary>
         /// There are no comments for Property OffsetCompany in the schema.
         /// </summary>

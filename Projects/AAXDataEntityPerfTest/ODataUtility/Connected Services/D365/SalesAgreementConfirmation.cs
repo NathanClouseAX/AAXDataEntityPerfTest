@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,6 +34,27 @@ namespace Microsoft.Dynamics.DataEntities
         public SalesAgreementConfirmationSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<SalesAgreementConfirmation> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for SalesAgreementConfirmationLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine> SalesAgreementConfirmationLines
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._SalesAgreementConfirmationLines == null))
+                {
+                    this._SalesAgreementConfirmationLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine>(GetPath("SalesAgreementConfirmationLines"));
+                }
+                return this._SalesAgreementConfirmationLines;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine> _SalesAgreementConfirmationLines;
         /// <summary>
         /// There are no comments for ContactPerson in the schema.
         /// </summary>
@@ -244,27 +265,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.SalesOrderPoolSingle _SalesOrderPool;
-        /// <summary>
-        /// There are no comments for SalesAgreementConfirmationLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine> SalesAgreementConfirmationLines
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._SalesAgreementConfirmationLines == null))
-                {
-                    this._SalesAgreementConfirmationLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine>(GetPath("SalesAgreementConfirmationLines"));
-                }
-                return this._SalesAgreementConfirmationLines;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine> _SalesAgreementConfirmationLines;
     }
         /// <summary>
         /// There are no comments for SalesAgreementConfirmation in the schema.
@@ -1695,6 +1695,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnExternalDocumentReferenceChanging(string value);
         partial void OnExternalDocumentReferenceChanged();
         /// <summary>
+        /// There are no comments for Property SalesAgreementConfirmationLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine> SalesAgreementConfirmationLines
+        {
+            get
+            {
+                return this._SalesAgreementConfirmationLines;
+            }
+            set
+            {
+                this.OnSalesAgreementConfirmationLinesChanging(value);
+                this._SalesAgreementConfirmationLines = value;
+                this.OnSalesAgreementConfirmationLinesChanged();
+                this.OnPropertyChanged("SalesAgreementConfirmationLines");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine> _SalesAgreementConfirmationLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnSalesAgreementConfirmationLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine> value);
+        partial void OnSalesAgreementConfirmationLinesChanged();
+        /// <summary>
         /// There are no comments for Property ContactPerson in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -1914,28 +1936,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.SalesOrderPool _SalesOrderPool;
         partial void OnSalesOrderPoolChanging(global::Microsoft.Dynamics.DataEntities.SalesOrderPool value);
         partial void OnSalesOrderPoolChanged();
-        /// <summary>
-        /// There are no comments for Property SalesAgreementConfirmationLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine> SalesAgreementConfirmationLines
-        {
-            get
-            {
-                return this._SalesAgreementConfirmationLines;
-            }
-            set
-            {
-                this.OnSalesAgreementConfirmationLinesChanging(value);
-                this._SalesAgreementConfirmationLines = value;
-                this.OnSalesAgreementConfirmationLinesChanged();
-                this.OnPropertyChanged("SalesAgreementConfirmationLines");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine> _SalesAgreementConfirmationLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnSalesAgreementConfirmationLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine> value);
-        partial void OnSalesAgreementConfirmationLinesChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

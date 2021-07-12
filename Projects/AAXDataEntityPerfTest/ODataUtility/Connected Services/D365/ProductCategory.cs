@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,6 +34,111 @@ namespace Microsoft.Dynamics.DataEntities
         public ProductCategorySingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ProductCategory> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for ProductCategoryAssignments in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductCategoryAssignment> ProductCategoryAssignments
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ProductCategoryAssignments == null))
+                {
+                    this._ProductCategoryAssignments = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductCategoryAssignment>(GetPath("ProductCategoryAssignments"));
+                }
+                return this._ProductCategoryAssignments;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductCategoryAssignment> _ProductCategoryAssignments;
+        /// <summary>
+        /// There are no comments for ChannelCategoryAttribute in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ChannelCategoryAttribute> ChannelCategoryAttribute
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ChannelCategoryAttribute == null))
+                {
+                    this._ChannelCategoryAttribute = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ChannelCategoryAttribute>(GetPath("ChannelCategoryAttribute"));
+                }
+                return this._ChannelCategoryAttribute;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ChannelCategoryAttribute> _ChannelCategoryAttribute;
+        /// <summary>
+        /// There are no comments for RetailCatalogProductAttributeValue in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductAttributeValue> RetailCatalogProductAttributeValue
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RetailCatalogProductAttributeValue == null))
+                {
+                    this._RetailCatalogProductAttributeValue = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductAttributeValue>(GetPath("RetailCatalogProductAttributeValue"));
+                }
+                return this._RetailCatalogProductAttributeValue;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductAttributeValue> _RetailCatalogProductAttributeValue;
+        /// <summary>
+        /// There are no comments for RetailCatalogProductCategory in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductCategory> RetailCatalogProductCategory
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RetailCatalogProductCategory == null))
+                {
+                    this._RetailCatalogProductCategory = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductCategory>(GetPath("RetailCatalogProductCategory"));
+                }
+                return this._RetailCatalogProductCategory;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductCategory> _RetailCatalogProductCategory;
+        /// <summary>
+        /// There are no comments for SpecialCategoryMember in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SpecialCategoryMember> SpecialCategoryMember
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._SpecialCategoryMember == null))
+                {
+                    this._SpecialCategoryMember = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.SpecialCategoryMember>(GetPath("SpecialCategoryMember"));
+                }
+                return this._SpecialCategoryMember;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SpecialCategoryMember> _SpecialCategoryMember;
         /// <summary>
         /// There are no comments for ProductCategoryHierarchy in the schema.
         /// </summary>
@@ -97,111 +202,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductCategory> _ChildProductCategories;
-        /// <summary>
-        /// There are no comments for RetailCatalogProductAttributeValue in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductAttributeValue> RetailCatalogProductAttributeValue
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._RetailCatalogProductAttributeValue == null))
-                {
-                    this._RetailCatalogProductAttributeValue = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductAttributeValue>(GetPath("RetailCatalogProductAttributeValue"));
-                }
-                return this._RetailCatalogProductAttributeValue;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductAttributeValue> _RetailCatalogProductAttributeValue;
-        /// <summary>
-        /// There are no comments for ProductCategoryAssignments in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductCategoryAssignment> ProductCategoryAssignments
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ProductCategoryAssignments == null))
-                {
-                    this._ProductCategoryAssignments = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductCategoryAssignment>(GetPath("ProductCategoryAssignments"));
-                }
-                return this._ProductCategoryAssignments;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductCategoryAssignment> _ProductCategoryAssignments;
-        /// <summary>
-        /// There are no comments for ChannelCategoryAttribute in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ChannelCategoryAttribute> ChannelCategoryAttribute
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ChannelCategoryAttribute == null))
-                {
-                    this._ChannelCategoryAttribute = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ChannelCategoryAttribute>(GetPath("ChannelCategoryAttribute"));
-                }
-                return this._ChannelCategoryAttribute;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ChannelCategoryAttribute> _ChannelCategoryAttribute;
-        /// <summary>
-        /// There are no comments for RetailCatalogProductCategory in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductCategory> RetailCatalogProductCategory
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._RetailCatalogProductCategory == null))
-                {
-                    this._RetailCatalogProductCategory = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductCategory>(GetPath("RetailCatalogProductCategory"));
-                }
-                return this._RetailCatalogProductCategory;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductCategory> _RetailCatalogProductCategory;
-        /// <summary>
-        /// There are no comments for SpecialCategoryMember in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SpecialCategoryMember> SpecialCategoryMember
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._SpecialCategoryMember == null))
-                {
-                    this._SpecialCategoryMember = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.SpecialCategoryMember>(GetPath("SpecialCategoryMember"));
-                }
-                return this._SpecialCategoryMember;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SpecialCategoryMember> _SpecialCategoryMember;
     }
         /// <summary>
         /// There are no comments for ProductCategory in the schema.
@@ -542,6 +542,116 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnIsCategoryInheritingParentCategoryAttributesChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> value);
         partial void OnIsCategoryInheritingParentCategoryAttributesChanged();
         /// <summary>
+        /// There are no comments for Property ProductCategoryAssignments in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductCategoryAssignment> ProductCategoryAssignments
+        {
+            get
+            {
+                return this._ProductCategoryAssignments;
+            }
+            set
+            {
+                this.OnProductCategoryAssignmentsChanging(value);
+                this._ProductCategoryAssignments = value;
+                this.OnProductCategoryAssignmentsChanged();
+                this.OnPropertyChanged("ProductCategoryAssignments");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductCategoryAssignment> _ProductCategoryAssignments = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductCategoryAssignment>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnProductCategoryAssignmentsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductCategoryAssignment> value);
+        partial void OnProductCategoryAssignmentsChanged();
+        /// <summary>
+        /// There are no comments for Property ChannelCategoryAttribute in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ChannelCategoryAttribute> ChannelCategoryAttribute
+        {
+            get
+            {
+                return this._ChannelCategoryAttribute;
+            }
+            set
+            {
+                this.OnChannelCategoryAttributeChanging(value);
+                this._ChannelCategoryAttribute = value;
+                this.OnChannelCategoryAttributeChanged();
+                this.OnPropertyChanged("ChannelCategoryAttribute");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ChannelCategoryAttribute> _ChannelCategoryAttribute = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ChannelCategoryAttribute>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnChannelCategoryAttributeChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ChannelCategoryAttribute> value);
+        partial void OnChannelCategoryAttributeChanged();
+        /// <summary>
+        /// There are no comments for Property RetailCatalogProductAttributeValue in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductAttributeValue> RetailCatalogProductAttributeValue
+        {
+            get
+            {
+                return this._RetailCatalogProductAttributeValue;
+            }
+            set
+            {
+                this.OnRetailCatalogProductAttributeValueChanging(value);
+                this._RetailCatalogProductAttributeValue = value;
+                this.OnRetailCatalogProductAttributeValueChanged();
+                this.OnPropertyChanged("RetailCatalogProductAttributeValue");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductAttributeValue> _RetailCatalogProductAttributeValue = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductAttributeValue>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRetailCatalogProductAttributeValueChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductAttributeValue> value);
+        partial void OnRetailCatalogProductAttributeValueChanged();
+        /// <summary>
+        /// There are no comments for Property RetailCatalogProductCategory in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductCategory> RetailCatalogProductCategory
+        {
+            get
+            {
+                return this._RetailCatalogProductCategory;
+            }
+            set
+            {
+                this.OnRetailCatalogProductCategoryChanging(value);
+                this._RetailCatalogProductCategory = value;
+                this.OnRetailCatalogProductCategoryChanged();
+                this.OnPropertyChanged("RetailCatalogProductCategory");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductCategory> _RetailCatalogProductCategory = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductCategory>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRetailCatalogProductCategoryChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductCategory> value);
+        partial void OnRetailCatalogProductCategoryChanged();
+        /// <summary>
+        /// There are no comments for Property SpecialCategoryMember in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SpecialCategoryMember> SpecialCategoryMember
+        {
+            get
+            {
+                return this._SpecialCategoryMember;
+            }
+            set
+            {
+                this.OnSpecialCategoryMemberChanging(value);
+                this._SpecialCategoryMember = value;
+                this.OnSpecialCategoryMemberChanged();
+                this.OnPropertyChanged("SpecialCategoryMember");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SpecialCategoryMember> _SpecialCategoryMember = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SpecialCategoryMember>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnSpecialCategoryMemberChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SpecialCategoryMember> value);
+        partial void OnSpecialCategoryMemberChanged();
+        /// <summary>
         /// There are no comments for Property ProductCategoryHierarchy in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -607,116 +717,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductCategory> _ChildProductCategories = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductCategory>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnChildProductCategoriesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductCategory> value);
         partial void OnChildProductCategoriesChanged();
-        /// <summary>
-        /// There are no comments for Property RetailCatalogProductAttributeValue in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductAttributeValue> RetailCatalogProductAttributeValue
-        {
-            get
-            {
-                return this._RetailCatalogProductAttributeValue;
-            }
-            set
-            {
-                this.OnRetailCatalogProductAttributeValueChanging(value);
-                this._RetailCatalogProductAttributeValue = value;
-                this.OnRetailCatalogProductAttributeValueChanged();
-                this.OnPropertyChanged("RetailCatalogProductAttributeValue");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductAttributeValue> _RetailCatalogProductAttributeValue = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductAttributeValue>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRetailCatalogProductAttributeValueChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductAttributeValue> value);
-        partial void OnRetailCatalogProductAttributeValueChanged();
-        /// <summary>
-        /// There are no comments for Property ProductCategoryAssignments in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductCategoryAssignment> ProductCategoryAssignments
-        {
-            get
-            {
-                return this._ProductCategoryAssignments;
-            }
-            set
-            {
-                this.OnProductCategoryAssignmentsChanging(value);
-                this._ProductCategoryAssignments = value;
-                this.OnProductCategoryAssignmentsChanged();
-                this.OnPropertyChanged("ProductCategoryAssignments");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductCategoryAssignment> _ProductCategoryAssignments = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductCategoryAssignment>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnProductCategoryAssignmentsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductCategoryAssignment> value);
-        partial void OnProductCategoryAssignmentsChanged();
-        /// <summary>
-        /// There are no comments for Property ChannelCategoryAttribute in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ChannelCategoryAttribute> ChannelCategoryAttribute
-        {
-            get
-            {
-                return this._ChannelCategoryAttribute;
-            }
-            set
-            {
-                this.OnChannelCategoryAttributeChanging(value);
-                this._ChannelCategoryAttribute = value;
-                this.OnChannelCategoryAttributeChanged();
-                this.OnPropertyChanged("ChannelCategoryAttribute");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ChannelCategoryAttribute> _ChannelCategoryAttribute = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ChannelCategoryAttribute>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnChannelCategoryAttributeChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ChannelCategoryAttribute> value);
-        partial void OnChannelCategoryAttributeChanged();
-        /// <summary>
-        /// There are no comments for Property RetailCatalogProductCategory in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductCategory> RetailCatalogProductCategory
-        {
-            get
-            {
-                return this._RetailCatalogProductCategory;
-            }
-            set
-            {
-                this.OnRetailCatalogProductCategoryChanging(value);
-                this._RetailCatalogProductCategory = value;
-                this.OnRetailCatalogProductCategoryChanged();
-                this.OnPropertyChanged("RetailCatalogProductCategory");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductCategory> _RetailCatalogProductCategory = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductCategory>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRetailCatalogProductCategoryChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogProductCategory> value);
-        partial void OnRetailCatalogProductCategoryChanged();
-        /// <summary>
-        /// There are no comments for Property SpecialCategoryMember in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SpecialCategoryMember> SpecialCategoryMember
-        {
-            get
-            {
-                return this._SpecialCategoryMember;
-            }
-            set
-            {
-                this.OnSpecialCategoryMemberChanging(value);
-                this._SpecialCategoryMember = value;
-                this.OnSpecialCategoryMemberChanged();
-                this.OnPropertyChanged("SpecialCategoryMember");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SpecialCategoryMember> _SpecialCategoryMember = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SpecialCategoryMember>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnSpecialCategoryMemberChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SpecialCategoryMember> value);
-        partial void OnSpecialCategoryMemberChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

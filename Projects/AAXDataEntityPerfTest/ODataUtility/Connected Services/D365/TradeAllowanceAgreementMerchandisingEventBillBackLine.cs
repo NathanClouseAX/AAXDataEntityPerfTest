@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -97,6 +97,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.CurrencySingle _BillBackAmountCurrency;
+        /// <summary>
+        /// There are no comments for TradeAllowanceAgreementHeader in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeaderSingle TradeAllowanceAgreementHeader
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._TradeAllowanceAgreementHeader == null))
+                {
+                    this._TradeAllowanceAgreementHeader = new global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeaderSingle(this.Context, GetPath("TradeAllowanceAgreementHeader"));
+                }
+                return this._TradeAllowanceAgreementHeader;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeaderSingle _TradeAllowanceAgreementHeader;
     }
         /// <summary>
         /// There are no comments for TradeAllowanceAgreementMerchandisingEventBillBackLine in the schema.
@@ -499,6 +520,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.Currency _BillBackAmountCurrency;
         partial void OnBillBackAmountCurrencyChanging(global::Microsoft.Dynamics.DataEntities.Currency value);
         partial void OnBillBackAmountCurrencyChanged();
+        /// <summary>
+        /// There are no comments for Property TradeAllowanceAgreementHeader in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeader TradeAllowanceAgreementHeader
+        {
+            get
+            {
+                return this._TradeAllowanceAgreementHeader;
+            }
+            set
+            {
+                this.OnTradeAllowanceAgreementHeaderChanging(value);
+                this._TradeAllowanceAgreementHeader = value;
+                this.OnTradeAllowanceAgreementHeaderChanged();
+                this.OnPropertyChanged("TradeAllowanceAgreementHeader");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeader _TradeAllowanceAgreementHeader;
+        partial void OnTradeAllowanceAgreementHeaderChanging(global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeader value);
+        partial void OnTradeAllowanceAgreementHeaderChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

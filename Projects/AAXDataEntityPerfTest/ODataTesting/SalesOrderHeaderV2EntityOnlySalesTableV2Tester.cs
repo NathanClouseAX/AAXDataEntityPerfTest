@@ -24,11 +24,32 @@ namespace ODataTesting
 
         public static void runOneRead(Resources context, string filePath, TestType testType, TestWorkload testWorkload, string SalesOrderNumber, string DataAreaId)
         {
+            int tryCount = 0;
             Stopwatch sw = new Stopwatch();
 
             sw.Start();
 
-            SalesOrderHeaderV2EntityOnlySalesTable SalesOrderHeaderV2EntityOnlySalesTable = context.SalesOrderHeadersV2EntityOnlySalesTable.Where(x => x.SalesOrderNumber == SalesOrderNumber && x.dataAreaId == DataAreaId).First();
+            while (true)
+            {
+                try
+                {
+                    tryCount++;
+                    SalesOrderHeaderV2EntityOnlySalesTable SalesOrderHeaderV2EntityOnlySalesTable = context.SalesOrderHeadersV2EntityOnlySalesTable.Where(x => x.SalesOrderNumber == SalesOrderNumber && x.dataAreaId == DataAreaId).First();
+
+
+                    break;
+
+                }
+                catch (Exception e)
+                {
+                    if (tryCount >= 3)
+                    {
+                        throw (e);
+                    }
+                    sw.Reset();
+                    sw.Start();
+                }
+            }
 
             sw.Stop();
 
@@ -42,11 +63,31 @@ namespace ODataTesting
 
         public static void runReads(Resources context, string filePath, TestType testType, TestWorkload testWorkload, string DataAreaId, string customerAccount, int count)
         {
+            int tryCount = 0;
             Stopwatch sw = new Stopwatch();
 
             sw.Start();
 
-            context.SalesOrderHeadersV2EntityOnlySalesTable.Where(x => x.dataAreaId == DataAreaId && x.OrderingCustomerAccountNumber == customerAccount).Take(count).ToList();
+            while (true)
+            {
+                try
+                {
+                    tryCount++;
+                    context.SalesOrderHeadersV2EntityOnlySalesTable.Where(x => x.dataAreaId == DataAreaId && x.OrderingCustomerAccountNumber == customerAccount).Take(count).ToList();
+
+                    break;
+
+                }
+                catch (Exception e)
+                {
+                    if (tryCount >= 3)
+                    {
+                        throw (e);
+                    }
+                    sw.Reset();
+                    sw.Start();
+                }
+            }
 
             sw.Stop();
 

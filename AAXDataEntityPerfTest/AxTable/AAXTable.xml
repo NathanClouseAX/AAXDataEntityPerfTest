@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxTable xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Name>AAXTable</Name>
+	<SourceCode>
+		<Declaration><![CDATA[
+public class AAXTable extends common
+{
+    
+    
+
+}
+]]></Declaration>
+		<Methods>
+			<Method>
+				<Name>postLoad</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///
+    /// </summary>
+    public void postLoad()
+    {
+
+        AAXActivityLogger::writeToFile(funcName());
+
+        this.NameId = this.name + this.id;
+
+        super();
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>aosValidateDelete</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///
+    /// </summary>
+    /// <returns></returns>
+    public boolean aosValidateDelete()
+    {
+        boolean ret;
+    
+        AAXActivityLogger::writeToFile(funcName());
+
+        ret = super();
+    
+        return ret;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>aosValidateInsert</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///
+    /// </summary>
+    /// <returns></returns>
+    public boolean aosValidateInsert()
+    {
+        boolean ret;
+
+        AAXActivityLogger::writeToFile(funcName());
+
+        ret = super();
+    
+        return ret;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>aosValidateRead</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///
+    /// </summary>
+    /// <returns></returns>
+    public boolean aosValidateRead()
+    {
+        boolean ret;
+    
+        AAXActivityLogger::writeToFile(funcName());
+
+        ret = super();
+    
+        return ret;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>aosValidateUpdate</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///
+    /// </summary>
+    /// <returns></returns>
+    public boolean aosValidateUpdate()
+    {
+        boolean ret;
+    
+        AAXActivityLogger::writeToFile(funcName());
+
+        ret = super();
+    
+        return ret;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>clear</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///
+    /// </summary>
+    public void clear()
+    {
+        AAXActivityLogger::writeToFile(funcName());
+
+        super();
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>defaultField</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///
+    /// </summary>
+    /// <param name = "_fieldId"></param>
+    public void defaultField(FieldId _fieldId)
+    {
+        AAXActivityLogger::writeToFile(funcName());
+
+        super(_fieldId);
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>defaultRow</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///
+    /// </summary>
+    public void defaultRow()
+    {
+        AAXActivityLogger::writeToFile(funcName());
+
+        super();
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>delete</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///
+    /// </summary>
+    public void delete()
+    {
+        AAXActivityLogger::writeToFile(funcName());
+
+        super();
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>deleteEntityDataSource</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///
+    /// </summary>
+    /// <param name = "_entityCtx"></param>
+    /// <param name = "_dataSourceCtx"></param>
+    /// <returns></returns>
+    public boolean deleteEntityDataSource(DataEntityRuntimeContext _entityCtx, DataEntityDataSourceRuntimeContext _dataSourceCtx)
+    {
+        boolean ret;
+
+        AAXActivityLogger::writeToFile(funcName());
+    
+        ret = super(_entityCtx, _dataSourceCtx);
+    
+        return ret;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>doDelete</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///
+    /// </summary>
+    public void doDelete()
+    {
+        AAXActivityLogger::writeToFile(funcName());
+
+        super();
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>doInsert</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///
+    /// </summary>
+    public void doInsert()
+    {
+        AAXActivityLogger::writeToFile(funcName());
+
+        super();
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>doUpdate</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///
+    /// </summary>
+    public void doUpdate()
+    {
+        AAXActivityLogger::writeToFile(funcName());
+
+        super();
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>findEntityDataSource</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///
+    /// </summary>
+    /// <param name = "_entityCtx"></param>
+    /// <param name = "_dataSourceCtx"></param>
+    /// <returns></returns>
+    public Common findEntityDataSource(DataEntityRuntimeContext _entityCtx, DataEntityDataSourceRuntimeContext _dataSourceCtx)
+    {
+        Common ret;
+    
+        AAXActivityLogger::writeToFile(funcName());
+
+        ret = super(_entityCtx, _dataSourceCtx);
+    
+        return ret;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>initializeEntityDataSource</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///
+    /// </summary>
+    /// <param name = "_entityCtx"></param>
+    /// <param name = "_dataSourceCtx"></param>
+    public void initializeEntityDataSource(DataEntityRuntimeContext _entityCtx, DataEntityDataSourceRuntimeContext _dataSourceCtx)
+    {
+        AAXActivityLogger::writeToFile(funcName());
+
+        super(_entityCtx, _dataSourceCtx);
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>initValue</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///
+    /// </summary>
+    public void initValue()
+    {
+        AAXActivityLogger::writeToFile(funcName());
+
+        super();
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>insert</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///
+    /// </summary>
+    public void insert()
+    {
+        AAXActivityLogger::writeToFile(funcName());
+
+        super();
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>insertEntityDataSource</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///
+    /// </summary>
+    /// <param name = "_entityCtx"></param>
+    /// <param name = "_dataSourceCtx"></param>
+    /// <returns></returns>
+    public boolean insertEntityDataSource(DataEntityRuntimeContext _entityCtx, DataEntityDataSourceRuntimeContext _dataSourceCtx)
+    {
+        boolean ret;
+
+        AAXActivityLogger::writeToFile(funcName());
+    
+        ret = super(_entityCtx, _dataSourceCtx);
+    
+        return ret;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>mapDataSourceToEntity</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///
+    /// </summary>
+    /// <param name = "_entityCtx"></param>
+    /// <param name = "_dataSourceCtx"></param>
+    public void mapDataSourceToEntity(DataEntityRuntimeContext _entityCtx, DataEntityDataSourceRuntimeContext _dataSourceCtx)
+    {
+        AAXActivityLogger::writeToFile(funcName());
+
+        super(_entityCtx, _dataSourceCtx);
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>mapEntityToDataSource</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///
+    /// </summary>
+    /// <param name = "_entityCtx"></param>
+    /// <param name = "_dataSourceCtx"></param>
+    public void mapEntityToDataSource(DataEntityRuntimeContext _entityCtx, DataEntityDataSourceRuntimeContext _dataSourceCtx)
+    {
+        AAXActivityLogger::writeToFile(funcName());
+
+        super(_entityCtx, _dataSourceCtx);
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>modifiedField</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///
+    /// </summary>
+    /// <param name = "_fieldId"></param>
+    public void modifiedField(FieldId _fieldId)
+    {
+        AAXActivityLogger::writeToFile(funcName());
+
+        super(_fieldId);
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>modifiedFieldValue</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///
+    /// </summary>
+    /// <param name = "_fieldName"></param>
+    /// <param name = "_arrayIndex"></param>
+    public void modifiedFieldValue(FieldName _fieldName, int _arrayIndex = 1)
+    {
+        AAXActivityLogger::writeToFile(funcName());
+
+        super(_fieldName, _arrayIndex);
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>persistEntity</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///
+    /// </summary>
+    /// <param name = "_entityCtx"></param>
+    public void persistEntity(DataEntityRuntimeContext _entityCtx)
+    {
+        AAXActivityLogger::writeToFile(funcName());
+
+        super(_entityCtx);
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>postCacheLoad</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///
+    /// </summary>
+    public void postCacheLoad()
+    {
+        AAXActivityLogger::writeToFile(funcName());
+
+        super();
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>reread</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///
+    /// </summary>
+    public void reread()
+    {
+        AAXActivityLogger::writeToFile(funcName());
+
+        super();
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>update</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///
+    /// </summary>
+    public void update()
+    {
+        AAXActivityLogger::writeToFile(funcName());
+
+
+        super();
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>updateEntityDataSource</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///
+    /// </summary>
+    /// <param name = "_entityCtx"></param>
+    /// <param name = "_dataSourceCtx"></param>
+    /// <returns></returns>
+    public boolean updateEntityDataSource(DataEntityRuntimeContext _entityCtx, DataEntityDataSourceRuntimeContext _dataSourceCtx)
+    {
+        boolean ret;
+
+        AAXActivityLogger::writeToFile(funcName());
+    
+        ret = super(_entityCtx, _dataSourceCtx);
+    
+        return ret;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>validateDelete</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///
+    /// </summary>
+    /// <returns></returns>
+    public boolean validateDelete()
+    {
+        boolean ret;
+
+        AAXActivityLogger::writeToFile(funcName());
+    
+        ret = super();
+    
+        return ret;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>validateField</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///
+    /// </summary>
+    /// <param name = "_fieldIdToCheck"></param>
+    /// <returns></returns>
+    public boolean validateField(FieldId _fieldIdToCheck)
+    {
+        boolean ret;
+
+        AAXActivityLogger::writeToFile(funcName());
+    
+        ret = super(_fieldIdToCheck);
+    
+        return ret;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>validateFieldValue</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///
+    /// </summary>
+    /// <param name = "_fieldName"></param>
+    /// <param name = "_arrayIndex"></param>
+    /// <returns></returns>
+    public boolean validateFieldValue(FieldName _fieldName, int _arrayIndex = 1)
+    {
+        boolean ret;
+
+        AAXActivityLogger::writeToFile(funcName());
+    
+        ret = super(_fieldName, _arrayIndex);
+    
+        return ret;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>validateWrite</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///
+    /// </summary>
+    /// <returns></returns>
+    public boolean validateWrite()
+    {
+        boolean ret;
+
+        AAXActivityLogger::writeToFile(funcName());
+    
+        ret = super();
+    
+        return ret;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>write</Name>
+				<Source><![CDATA[
+    /// <summary>
+    ///
+    /// </summary>
+    public void write()
+    {
+        AAXActivityLogger::writeToFile(funcName());
+
+        super();
+    }
+
+]]></Source>
+			</Method>
+		</Methods>
+	</SourceCode>
+	<SubscriberAccessLevel>
+		<Read>Allow</Read>
+	</SubscriberAccessLevel>
+	<TitleField1>id</TitleField1>
+	<PrimaryIndex>IdIdx</PrimaryIndex>
+	<DeleteActions />
+	<FieldGroups>
+		<AxTableFieldGroup>
+			<Name>AutoReport</Name>
+			<Fields />
+		</AxTableFieldGroup>
+		<AxTableFieldGroup>
+			<Name>AutoLookup</Name>
+			<Fields />
+		</AxTableFieldGroup>
+		<AxTableFieldGroup>
+			<Name>AutoIdentification</Name>
+			<AutoPopulate>Yes</AutoPopulate>
+			<Fields />
+		</AxTableFieldGroup>
+		<AxTableFieldGroup>
+			<Name>AutoSummary</Name>
+			<Fields />
+		</AxTableFieldGroup>
+		<AxTableFieldGroup>
+			<Name>AutoBrowse</Name>
+			<Fields />
+		</AxTableFieldGroup>
+	</FieldGroups>
+	<Fields>
+		<AxTableField xmlns=""
+			i:type="AxTableFieldString">
+			<Name>id</Name>
+			<ExtendedDataType>String20</ExtendedDataType>
+		</AxTableField>
+		<AxTableField xmlns=""
+			i:type="AxTableFieldString">
+			<Name>name</Name>
+			<ExtendedDataType>Name</ExtendedDataType>
+		</AxTableField>
+		<AxTableField xmlns=""
+			i:type="AxTableFieldString">
+			<Name>NameId</Name>
+			<ExtendedDataType>String255</ExtendedDataType>
+		</AxTableField>
+	</Fields>
+	<FullTextIndexes />
+	<Indexes>
+		<AxTableIndex>
+			<Name>IdIdx</Name>
+			<Fields>
+				<AxTableIndexField>
+					<DataField>id</DataField>
+				</AxTableIndexField>
+			</Fields>
+		</AxTableIndex>
+	</Indexes>
+	<Mappings />
+	<Relations />
+	<StateMachines />
+</AxTable>

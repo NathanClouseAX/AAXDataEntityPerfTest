@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -55,6 +55,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.CustomerV3Single _Customer;
+        /// <summary>
+        /// There are no comments for ContactPerson in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.CDSContactPersonV2Single ContactPerson
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ContactPerson == null))
+                {
+                    this._ContactPerson = new global::Microsoft.Dynamics.DataEntities.CDSContactPersonV2Single(this.Context, GetPath("ContactPerson"));
+                }
+                return this._ContactPerson;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.CDSContactPersonV2Single _ContactPerson;
     }
         /// <summary>
         /// There are no comments for CDSParty in the schema.
@@ -76,6 +97,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// <param name="personBirthYear">Initial value of PersonBirthYear.</param>
         /// <param name="organizationNumOfEmployees">Initial value of OrganizationNumOfEmployees.</param>
         /// <param name="customer">Initial value of Customer.</param>
+        /// <param name="contactPerson">Initial value of ContactPerson.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public static CDSParty CreateCDSParty(string partyNumber, 
                     int personBirthDay, 
@@ -83,7 +105,8 @@ namespace Microsoft.Dynamics.DataEntities
                     int personAnniversaryDay, 
                     int personBirthYear, 
                     int organizationNumOfEmployees, 
-                    global::Microsoft.Dynamics.DataEntities.CustomerV3 customer)
+                    global::Microsoft.Dynamics.DataEntities.CustomerV3 customer, 
+                    global::Microsoft.Dynamics.DataEntities.CDSContactPersonV2 contactPerson)
         {
             CDSParty cDSParty = new CDSParty();
             cDSParty.PartyNumber = partyNumber;
@@ -97,6 +120,11 @@ namespace Microsoft.Dynamics.DataEntities
                 throw new global::System.ArgumentNullException("customer");
             }
             cDSParty.Customer = customer;
+            if ((contactPerson == null))
+            {
+                throw new global::System.ArgumentNullException("contactPerson");
+            }
+            cDSParty.ContactPerson = contactPerson;
             return cDSParty;
         }
         /// <summary>
@@ -847,6 +875,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.CustomerV3 _Customer;
         partial void OnCustomerChanging(global::Microsoft.Dynamics.DataEntities.CustomerV3 value);
         partial void OnCustomerChanged();
+        /// <summary>
+        /// There are no comments for Property ContactPerson in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.CDSContactPersonV2 ContactPerson
+        {
+            get
+            {
+                return this._ContactPerson;
+            }
+            set
+            {
+                this.OnContactPersonChanging(value);
+                this._ContactPerson = value;
+                this.OnContactPersonChanged();
+                this.OnPropertyChanged("ContactPerson");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.CDSContactPersonV2 _ContactPerson;
+        partial void OnContactPersonChanging(global::Microsoft.Dynamics.DataEntities.CDSContactPersonV2 value);
+        partial void OnContactPersonChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

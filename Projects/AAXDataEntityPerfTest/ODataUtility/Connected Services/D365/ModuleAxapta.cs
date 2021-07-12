@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -68,9 +68,9 @@ namespace Microsoft.Dynamics.DataEntities
         ProductionControl = 56,
         GAB = 57,
         Currency = 58,
-        FinancialDimensions = 59,
         IoTIntelligence = 60,
         EMPAShared = 61,
+        FinancialDimensions = 59,
         AccountingFoundation = 62,
         FinancialReporting = 63,
         Retail = 54,
@@ -107,9 +107,11 @@ namespace Microsoft.Dynamics.DataEntities
         RTax25 = 81,
         ServiceManagement = 82,
         Transportation = 83,
+        AssetLease = 86,
         CostAccountingService = 84,
         CredMan = 44,
         EngineeringChangeManagement = 85,
-        AssetManagement = 45
+        AssetManagement = 45,
+        TAMRebate = 100
     }
 }

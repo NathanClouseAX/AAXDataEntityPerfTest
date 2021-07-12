@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -1136,6 +1136,50 @@ namespace Microsoft.Dynamics.DataEntities
         private string _ProductStyleId;
         partial void OnProductStyleIdChanging(string value);
         partial void OnProductStyleIdChanged();
+        /// <summary>
+        /// There are no comments for Property KittingBOMId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual string KittingBOMId
+        {
+            get
+            {
+                return this._KittingBOMId;
+            }
+            set
+            {
+                this.OnKittingBOMIdChanging(value);
+                this._KittingBOMId = value;
+                this.OnKittingBOMIdChanged();
+                this.OnPropertyChanged("KittingBOMId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _KittingBOMId;
+        partial void OnKittingBOMIdChanging(string value);
+        partial void OnKittingBOMIdChanged();
+        /// <summary>
+        /// There are no comments for Property KittingInventTransId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual string KittingInventTransId
+        {
+            get
+            {
+                return this._KittingInventTransId;
+            }
+            set
+            {
+                this.OnKittingInventTransIdChanging(value);
+                this._KittingInventTransId = value;
+                this.OnKittingInventTransIdChanged();
+                this.OnPropertyChanged("KittingInventTransId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _KittingInventTransId;
+        partial void OnKittingInventTransIdChanging(string value);
+        partial void OnKittingInventTransIdChanged();
         /// <summary>
         /// There are no comments for Property ShippingWarehouse in the schema.
         /// </summary>

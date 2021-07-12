@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -2614,6 +2614,28 @@ namespace Microsoft.Dynamics.DataEntities
         private string _PrePaymentLedgerJournalName;
         partial void OnPrePaymentLedgerJournalNameChanging(string value);
         partial void OnPrePaymentLedgerJournalNameChanged();
+        /// <summary>
+        /// There are no comments for Property InheritPriceIncludesTaxFromOrderOriginAtPickup in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> InheritPriceIncludesTaxFromOrderOriginAtPickup
+        {
+            get
+            {
+                return this._InheritPriceIncludesTaxFromOrderOriginAtPickup;
+            }
+            set
+            {
+                this.OnInheritPriceIncludesTaxFromOrderOriginAtPickupChanging(value);
+                this._InheritPriceIncludesTaxFromOrderOriginAtPickup = value;
+                this.OnInheritPriceIncludesTaxFromOrderOriginAtPickupChanged();
+                this.OnPropertyChanged("InheritPriceIncludesTaxFromOrderOriginAtPickup");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> _InheritPriceIncludesTaxFromOrderOriginAtPickup;
+        partial void OnInheritPriceIncludesTaxFromOrderOriginAtPickupChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> value);
+        partial void OnInheritPriceIncludesTaxFromOrderOriginAtPickupChanged();
         /// <summary>
         /// There are no comments for Property AutoSettle in the schema.
         /// </summary>

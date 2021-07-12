@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -48,6 +48,7 @@ namespace Microsoft.Dynamics.DataEntities
         DeliverySlipProject_BR = 222,
         Note = 24,
         ProjectPickingList = 25,
+        ITMGoodsInTransitReceive = 26,
         RevRecRevenueCancelation = 22,
         RevRecDeferredRevenueInvoice = 23
     }

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for ProductColorGroupLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductColorGroupLine> ProductColorGroupLines
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ProductColorGroupLines == null))
-                {
-                    this._ProductColorGroupLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductColorGroupLine>(GetPath("ProductColorGroupLines"));
-                }
-                return this._ProductColorGroupLines;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductColorGroupLine> _ProductColorGroupLines;
-        /// <summary>
         /// There are no comments for Products in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,6 +55,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductV2> _Products;
+        /// <summary>
+        /// There are no comments for ProductColorGroupLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductColorGroupLine> ProductColorGroupLines
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ProductColorGroupLines == null))
+                {
+                    this._ProductColorGroupLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductColorGroupLine>(GetPath("ProductColorGroupLines"));
+                }
+                return this._ProductColorGroupLines;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductColorGroupLine> _ProductColorGroupLines;
     }
         /// <summary>
         /// There are no comments for ProductColorGroup in the schema.
@@ -143,28 +143,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnGroupDescriptionChanging(string value);
         partial void OnGroupDescriptionChanged();
         /// <summary>
-        /// There are no comments for Property ProductColorGroupLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductColorGroupLine> ProductColorGroupLines
-        {
-            get
-            {
-                return this._ProductColorGroupLines;
-            }
-            set
-            {
-                this.OnProductColorGroupLinesChanging(value);
-                this._ProductColorGroupLines = value;
-                this.OnProductColorGroupLinesChanged();
-                this.OnPropertyChanged("ProductColorGroupLines");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductColorGroupLine> _ProductColorGroupLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductColorGroupLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnProductColorGroupLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductColorGroupLine> value);
-        partial void OnProductColorGroupLinesChanged();
-        /// <summary>
         /// There are no comments for Property Products in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -186,6 +164,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductV2> _Products = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnProductsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductV2> value);
         partial void OnProductsChanged();
+        /// <summary>
+        /// There are no comments for Property ProductColorGroupLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductColorGroupLine> ProductColorGroupLines
+        {
+            get
+            {
+                return this._ProductColorGroupLines;
+            }
+            set
+            {
+                this.OnProductColorGroupLinesChanging(value);
+                this._ProductColorGroupLines = value;
+                this.OnProductColorGroupLinesChanged();
+                this.OnPropertyChanged("ProductColorGroupLines");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductColorGroupLine> _ProductColorGroupLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductColorGroupLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnProductColorGroupLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductColorGroupLine> value);
+        partial void OnProductColorGroupLinesChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

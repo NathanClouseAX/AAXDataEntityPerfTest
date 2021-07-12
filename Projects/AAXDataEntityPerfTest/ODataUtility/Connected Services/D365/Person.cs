@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,10 +35,10 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for ApprovedReleasedProductReadinessChecks in the schema.
+        /// There are no comments for PersonCertificate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> ApprovedReleasedProductReadinessChecks
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonCertificate> PersonCertificate
         {
             get
             {
@@ -46,20 +46,20 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._ApprovedReleasedProductReadinessChecks == null))
+                if ((this._PersonCertificate == null))
                 {
-                    this._ApprovedReleasedProductReadinessChecks = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck>(GetPath("ApprovedReleasedProductReadinessChecks"));
+                    this._PersonCertificate = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PersonCertificate>(GetPath("PersonCertificate"));
                 }
-                return this._ApprovedReleasedProductReadinessChecks;
+                return this._PersonCertificate;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> _ApprovedReleasedProductReadinessChecks;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonCertificate> _PersonCertificate;
         /// <summary>
-        /// There are no comments for OwnedReleasedProductReadinessChecks in the schema.
+        /// There are no comments for RetailCatalog in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> OwnedReleasedProductReadinessChecks
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalog> RetailCatalog
         {
             get
             {
@@ -67,162 +67,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._OwnedReleasedProductReadinessChecks == null))
+                if ((this._RetailCatalog == null))
                 {
-                    this._OwnedReleasedProductReadinessChecks = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck>(GetPath("OwnedReleasedProductReadinessChecks"));
+                    this._RetailCatalog = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalog>(GetPath("RetailCatalog"));
                 }
-                return this._OwnedReleasedProductReadinessChecks;
+                return this._RetailCatalog;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> _OwnedReleasedProductReadinessChecks;
-        /// <summary>
-        /// There are no comments for BaseWorker in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.BaseWorkerSingle BaseWorker
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._BaseWorker == null))
-                {
-                    this._BaseWorker = new global::Microsoft.Dynamics.DataEntities.BaseWorkerSingle(this.Context, GetPath("BaseWorker"));
-                }
-                return this._BaseWorker;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.BaseWorkerSingle _BaseWorker;
-        /// <summary>
-        /// There are no comments for PersonExam in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonExam> PersonExam
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._PersonExam == null))
-                {
-                    this._PersonExam = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PersonExam>(GetPath("PersonExam"));
-                }
-                return this._PersonExam;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonExam> _PersonExam;
-        /// <summary>
-        /// There are no comments for LoanedEquipments in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LoanedEquipment> LoanedEquipments
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._LoanedEquipments == null))
-                {
-                    this._LoanedEquipments = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LoanedEquipment>(GetPath("LoanedEquipments"));
-                }
-                return this._LoanedEquipments;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LoanedEquipment> _LoanedEquipments;
-        /// <summary>
-        /// There are no comments for CourseParticipants in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CourseParticipant> CourseParticipants
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._CourseParticipants == null))
-                {
-                    this._CourseParticipants = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CourseParticipant>(GetPath("CourseParticipants"));
-                }
-                return this._CourseParticipants;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CourseParticipant> _CourseParticipants;
-        /// <summary>
-        /// There are no comments for Employee in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.EmployeeSingle Employee
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._Employee == null))
-                {
-                    this._Employee = new global::Microsoft.Dynamics.DataEntities.EmployeeSingle(this.Context, GetPath("Employee"));
-                }
-                return this._Employee;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.EmployeeSingle _Employee;
-        /// <summary>
-        /// There are no comments for Worker in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.WorkerSingle Worker
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._Worker == null))
-                {
-                    this._Worker = new global::Microsoft.Dynamics.DataEntities.WorkerSingle(this.Context, GetPath("Worker"));
-                }
-                return this._Worker;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.WorkerSingle _Worker;
-        /// <summary>
-        /// There are no comments for Person in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TeamMember> Person
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._Person == null))
-                {
-                    this._Person = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TeamMember>(GetPath("Person"));
-                }
-                return this._Person;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TeamMember> _Person;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalog> _RetailCatalog;
         /// <summary>
         /// There are no comments for PersonProjectRole in the schema.
         /// </summary>
@@ -266,27 +119,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonCourse> _PersonCourse;
         /// <summary>
-        /// There are no comments for PersonDetails in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonDetails> PersonDetails
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._PersonDetails == null))
-                {
-                    this._PersonDetails = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PersonDetails>(GetPath("PersonDetails"));
-                }
-                return this._PersonDetails;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonDetails> _PersonDetails;
-        /// <summary>
         /// There are no comments for ProductReadinessPolicyChecks in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -329,10 +161,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ContractorSingle _Contractor;
         /// <summary>
-        /// There are no comments for PersonLaborUnions in the schema.
+        /// There are no comments for CourseParticipants in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonLaborUnion> PersonLaborUnions
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CourseParticipant> CourseParticipants
         {
             get
             {
@@ -340,20 +172,20 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._PersonLaborUnions == null))
+                if ((this._CourseParticipants == null))
                 {
-                    this._PersonLaborUnions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PersonLaborUnion>(GetPath("PersonLaborUnions"));
+                    this._CourseParticipants = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CourseParticipant>(GetPath("CourseParticipants"));
                 }
-                return this._PersonLaborUnions;
+                return this._CourseParticipants;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonLaborUnion> _PersonLaborUnions;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CourseParticipant> _CourseParticipants;
         /// <summary>
-        /// There are no comments for IdentificationNumbers in the schema.
+        /// There are no comments for PersonSkill in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonIdentificationNumber> IdentificationNumbers
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonSkill> PersonSkill
         {
             get
             {
@@ -361,20 +193,20 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._IdentificationNumbers == null))
+                if ((this._PersonSkill == null))
                 {
-                    this._IdentificationNumbers = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PersonIdentificationNumber>(GetPath("IdentificationNumbers"));
+                    this._PersonSkill = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PersonSkill>(GetPath("PersonSkill"));
                 }
-                return this._IdentificationNumbers;
+                return this._PersonSkill;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonIdentificationNumber> _IdentificationNumbers;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonSkill> _PersonSkill;
         /// <summary>
-        /// There are no comments for PersonCertificate in the schema.
+        /// There are no comments for PersonDetails in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonCertificate> PersonCertificate
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonDetails> PersonDetails
         {
             get
             {
@@ -382,15 +214,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._PersonCertificate == null))
+                if ((this._PersonDetails == null))
                 {
-                    this._PersonCertificate = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PersonCertificate>(GetPath("PersonCertificate"));
+                    this._PersonDetails = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PersonDetails>(GetPath("PersonDetails"));
                 }
-                return this._PersonCertificate;
+                return this._PersonDetails;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonCertificate> _PersonCertificate;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonDetails> _PersonDetails;
         /// <summary>
         /// There are no comments for CourseInstructor in the schema.
         /// </summary>
@@ -413,10 +245,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.CourseInstructorSingle _CourseInstructor;
         /// <summary>
-        /// There are no comments for RetailCatalog in the schema.
+        /// There are no comments for IdentificationNumbers in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalog> RetailCatalog
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonIdentificationNumber> IdentificationNumbers
         {
             get
             {
@@ -424,20 +256,20 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._RetailCatalog == null))
+                if ((this._IdentificationNumbers == null))
                 {
-                    this._RetailCatalog = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalog>(GetPath("RetailCatalog"));
+                    this._IdentificationNumbers = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PersonIdentificationNumber>(GetPath("IdentificationNumbers"));
                 }
-                return this._RetailCatalog;
+                return this._IdentificationNumbers;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalog> _RetailCatalog;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonIdentificationNumber> _IdentificationNumbers;
         /// <summary>
-        /// There are no comments for PersonSkill in the schema.
+        /// There are no comments for PersonExam in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonSkill> PersonSkill
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonExam> PersonExam
         {
             get
             {
@@ -445,15 +277,183 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._PersonSkill == null))
+                if ((this._PersonExam == null))
                 {
-                    this._PersonSkill = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PersonSkill>(GetPath("PersonSkill"));
+                    this._PersonExam = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PersonExam>(GetPath("PersonExam"));
                 }
-                return this._PersonSkill;
+                return this._PersonExam;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonSkill> _PersonSkill;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonExam> _PersonExam;
+        /// <summary>
+        /// There are no comments for Person in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TeamMemberV2> Person
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Person == null))
+                {
+                    this._Person = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TeamMemberV2>(GetPath("Person"));
+                }
+                return this._Person;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TeamMemberV2> _Person;
+        /// <summary>
+        /// There are no comments for Worker in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.WorkerSingle Worker
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Worker == null))
+                {
+                    this._Worker = new global::Microsoft.Dynamics.DataEntities.WorkerSingle(this.Context, GetPath("Worker"));
+                }
+                return this._Worker;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.WorkerSingle _Worker;
+        /// <summary>
+        /// There are no comments for Employee in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.EmployeeSingle Employee
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Employee == null))
+                {
+                    this._Employee = new global::Microsoft.Dynamics.DataEntities.EmployeeSingle(this.Context, GetPath("Employee"));
+                }
+                return this._Employee;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.EmployeeSingle _Employee;
+        /// <summary>
+        /// There are no comments for PersonLaborUnions in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonLaborUnion> PersonLaborUnions
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._PersonLaborUnions == null))
+                {
+                    this._PersonLaborUnions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PersonLaborUnion>(GetPath("PersonLaborUnions"));
+                }
+                return this._PersonLaborUnions;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonLaborUnion> _PersonLaborUnions;
+        /// <summary>
+        /// There are no comments for LoanedEquipments in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LoanedEquipment> LoanedEquipments
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._LoanedEquipments == null))
+                {
+                    this._LoanedEquipments = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LoanedEquipment>(GetPath("LoanedEquipments"));
+                }
+                return this._LoanedEquipments;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LoanedEquipment> _LoanedEquipments;
+        /// <summary>
+        /// There are no comments for BaseWorker in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.BaseWorkerSingle BaseWorker
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._BaseWorker == null))
+                {
+                    this._BaseWorker = new global::Microsoft.Dynamics.DataEntities.BaseWorkerSingle(this.Context, GetPath("BaseWorker"));
+                }
+                return this._BaseWorker;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.BaseWorkerSingle _BaseWorker;
+        /// <summary>
+        /// There are no comments for ApprovedReleasedProductReadinessChecks in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> ApprovedReleasedProductReadinessChecks
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ApprovedReleasedProductReadinessChecks == null))
+                {
+                    this._ApprovedReleasedProductReadinessChecks = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck>(GetPath("ApprovedReleasedProductReadinessChecks"));
+                }
+                return this._ApprovedReleasedProductReadinessChecks;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> _ApprovedReleasedProductReadinessChecks;
+        /// <summary>
+        /// There are no comments for OwnedReleasedProductReadinessChecks in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> OwnedReleasedProductReadinessChecks
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._OwnedReleasedProductReadinessChecks == null))
+                {
+                    this._OwnedReleasedProductReadinessChecks = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck>(GetPath("OwnedReleasedProductReadinessChecks"));
+                }
+                return this._OwnedReleasedProductReadinessChecks;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> _OwnedReleasedProductReadinessChecks;
     }
         /// <summary>
         /// There are no comments for Person in the schema.
@@ -477,10 +477,10 @@ namespace Microsoft.Dynamics.DataEntities
         /// <param name="anniversaryYear">Initial value of AnniversaryYear.</param>
         /// <param name="anniversaryDay">Initial value of AnniversaryDay.</param>
         /// <param name="addressValidTo">Initial value of AddressValidTo.</param>
-        /// <param name="baseWorker">Initial value of BaseWorker.</param>
-        /// <param name="employee">Initial value of Employee.</param>
-        /// <param name="worker">Initial value of Worker.</param>
         /// <param name="contractor">Initial value of Contractor.</param>
+        /// <param name="worker">Initial value of Worker.</param>
+        /// <param name="employee">Initial value of Employee.</param>
+        /// <param name="baseWorker">Initial value of BaseWorker.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public static Person CreatePerson(string partyNumber, 
                     int birthDay, 
@@ -491,10 +491,10 @@ namespace Microsoft.Dynamics.DataEntities
                     int anniversaryYear, 
                     int anniversaryDay, 
                     global::System.DateTimeOffset addressValidTo, 
-                    global::Microsoft.Dynamics.DataEntities.BaseWorker baseWorker, 
-                    global::Microsoft.Dynamics.DataEntities.Employee employee, 
+                    global::Microsoft.Dynamics.DataEntities.Contractor contractor, 
                     global::Microsoft.Dynamics.DataEntities.Worker worker, 
-                    global::Microsoft.Dynamics.DataEntities.Contractor contractor)
+                    global::Microsoft.Dynamics.DataEntities.Employee employee, 
+                    global::Microsoft.Dynamics.DataEntities.BaseWorker baseWorker)
         {
             Person person = new Person();
             person.PartyNumber = partyNumber;
@@ -506,26 +506,26 @@ namespace Microsoft.Dynamics.DataEntities
             person.AnniversaryYear = anniversaryYear;
             person.AnniversaryDay = anniversaryDay;
             person.AddressValidTo = addressValidTo;
-            if ((baseWorker == null))
-            {
-                throw new global::System.ArgumentNullException("baseWorker");
-            }
-            person.BaseWorker = baseWorker;
-            if ((employee == null))
-            {
-                throw new global::System.ArgumentNullException("employee");
-            }
-            person.Employee = employee;
-            if ((worker == null))
-            {
-                throw new global::System.ArgumentNullException("worker");
-            }
-            person.Worker = worker;
             if ((contractor == null))
             {
                 throw new global::System.ArgumentNullException("contractor");
             }
             person.Contractor = contractor;
+            if ((worker == null))
+            {
+                throw new global::System.ArgumentNullException("worker");
+            }
+            person.Worker = worker;
+            if ((employee == null))
+            {
+                throw new global::System.ArgumentNullException("employee");
+            }
+            person.Employee = employee;
+            if ((baseWorker == null))
+            {
+                throw new global::System.ArgumentNullException("baseWorker");
+            }
+            person.BaseWorker = baseWorker;
             return person;
         }
         /// <summary>
@@ -2289,204 +2289,49 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnAddressValidToChanging(global::System.DateTimeOffset value);
         partial void OnAddressValidToChanged();
         /// <summary>
-        /// There are no comments for Property ApprovedReleasedProductReadinessChecks in the schema.
+        /// There are no comments for Property PersonCertificate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> ApprovedReleasedProductReadinessChecks
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonCertificate> PersonCertificate
         {
             get
             {
-                return this._ApprovedReleasedProductReadinessChecks;
+                return this._PersonCertificate;
             }
             set
             {
-                this.OnApprovedReleasedProductReadinessChecksChanging(value);
-                this._ApprovedReleasedProductReadinessChecks = value;
-                this.OnApprovedReleasedProductReadinessChecksChanged();
-                this.OnPropertyChanged("ApprovedReleasedProductReadinessChecks");
+                this.OnPersonCertificateChanging(value);
+                this._PersonCertificate = value;
+                this.OnPersonCertificateChanged();
+                this.OnPropertyChanged("PersonCertificate");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> _ApprovedReleasedProductReadinessChecks = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnApprovedReleasedProductReadinessChecksChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> value);
-        partial void OnApprovedReleasedProductReadinessChecksChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonCertificate> _PersonCertificate = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonCertificate>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPersonCertificateChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonCertificate> value);
+        partial void OnPersonCertificateChanged();
         /// <summary>
-        /// There are no comments for Property OwnedReleasedProductReadinessChecks in the schema.
+        /// There are no comments for Property RetailCatalog in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> OwnedReleasedProductReadinessChecks
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalog> RetailCatalog
         {
             get
             {
-                return this._OwnedReleasedProductReadinessChecks;
+                return this._RetailCatalog;
             }
             set
             {
-                this.OnOwnedReleasedProductReadinessChecksChanging(value);
-                this._OwnedReleasedProductReadinessChecks = value;
-                this.OnOwnedReleasedProductReadinessChecksChanged();
-                this.OnPropertyChanged("OwnedReleasedProductReadinessChecks");
+                this.OnRetailCatalogChanging(value);
+                this._RetailCatalog = value;
+                this.OnRetailCatalogChanged();
+                this.OnPropertyChanged("RetailCatalog");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> _OwnedReleasedProductReadinessChecks = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnOwnedReleasedProductReadinessChecksChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> value);
-        partial void OnOwnedReleasedProductReadinessChecksChanged();
-        /// <summary>
-        /// There are no comments for Property BaseWorker in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.BaseWorker BaseWorker
-        {
-            get
-            {
-                return this._BaseWorker;
-            }
-            set
-            {
-                this.OnBaseWorkerChanging(value);
-                this._BaseWorker = value;
-                this.OnBaseWorkerChanged();
-                this.OnPropertyChanged("BaseWorker");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.BaseWorker _BaseWorker;
-        partial void OnBaseWorkerChanging(global::Microsoft.Dynamics.DataEntities.BaseWorker value);
-        partial void OnBaseWorkerChanged();
-        /// <summary>
-        /// There are no comments for Property PersonExam in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonExam> PersonExam
-        {
-            get
-            {
-                return this._PersonExam;
-            }
-            set
-            {
-                this.OnPersonExamChanging(value);
-                this._PersonExam = value;
-                this.OnPersonExamChanged();
-                this.OnPropertyChanged("PersonExam");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonExam> _PersonExam = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonExam>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPersonExamChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonExam> value);
-        partial void OnPersonExamChanged();
-        /// <summary>
-        /// There are no comments for Property LoanedEquipments in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LoanedEquipment> LoanedEquipments
-        {
-            get
-            {
-                return this._LoanedEquipments;
-            }
-            set
-            {
-                this.OnLoanedEquipmentsChanging(value);
-                this._LoanedEquipments = value;
-                this.OnLoanedEquipmentsChanged();
-                this.OnPropertyChanged("LoanedEquipments");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LoanedEquipment> _LoanedEquipments = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LoanedEquipment>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnLoanedEquipmentsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LoanedEquipment> value);
-        partial void OnLoanedEquipmentsChanged();
-        /// <summary>
-        /// There are no comments for Property CourseParticipants in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CourseParticipant> CourseParticipants
-        {
-            get
-            {
-                return this._CourseParticipants;
-            }
-            set
-            {
-                this.OnCourseParticipantsChanging(value);
-                this._CourseParticipants = value;
-                this.OnCourseParticipantsChanged();
-                this.OnPropertyChanged("CourseParticipants");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CourseParticipant> _CourseParticipants = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CourseParticipant>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnCourseParticipantsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CourseParticipant> value);
-        partial void OnCourseParticipantsChanged();
-        /// <summary>
-        /// There are no comments for Property Employee in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.Employee Employee
-        {
-            get
-            {
-                return this._Employee;
-            }
-            set
-            {
-                this.OnEmployeeChanging(value);
-                this._Employee = value;
-                this.OnEmployeeChanged();
-                this.OnPropertyChanged("Employee");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.Employee _Employee;
-        partial void OnEmployeeChanging(global::Microsoft.Dynamics.DataEntities.Employee value);
-        partial void OnEmployeeChanged();
-        /// <summary>
-        /// There are no comments for Property Worker in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.Worker Worker
-        {
-            get
-            {
-                return this._Worker;
-            }
-            set
-            {
-                this.OnWorkerChanging(value);
-                this._Worker = value;
-                this.OnWorkerChanged();
-                this.OnPropertyChanged("Worker");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.Worker _Worker;
-        partial void OnWorkerChanging(global::Microsoft.Dynamics.DataEntities.Worker value);
-        partial void OnWorkerChanged();
-        /// <summary>
-        /// There are no comments for Property Person1 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Person")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TeamMember> Person1
-        {
-            get
-            {
-                return this._Person1;
-            }
-            set
-            {
-                this.OnPerson1Changing(value);
-                this._Person1 = value;
-                this.OnPerson1Changed();
-                this.OnPropertyChanged("Person");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TeamMember> _Person1 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TeamMember>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPerson1Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TeamMember> value);
-        partial void OnPerson1Changed();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalog> _RetailCatalog = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalog>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRetailCatalogChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalog> value);
+        partial void OnRetailCatalogChanged();
         /// <summary>
         /// There are no comments for Property PersonProjectRole in the schema.
         /// </summary>
@@ -2532,28 +2377,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnPersonCourseChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonCourse> value);
         partial void OnPersonCourseChanged();
         /// <summary>
-        /// There are no comments for Property PersonDetails in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonDetails> PersonDetails
-        {
-            get
-            {
-                return this._PersonDetails;
-            }
-            set
-            {
-                this.OnPersonDetailsChanging(value);
-                this._PersonDetails = value;
-                this.OnPersonDetailsChanged();
-                this.OnPropertyChanged("PersonDetails");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonDetails> _PersonDetails = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonDetails>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPersonDetailsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonDetails> value);
-        partial void OnPersonDetailsChanged();
-        /// <summary>
         /// There are no comments for Property ProductReadinessPolicyChecks in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -2598,71 +2421,71 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnContractorChanging(global::Microsoft.Dynamics.DataEntities.Contractor value);
         partial void OnContractorChanged();
         /// <summary>
-        /// There are no comments for Property PersonLaborUnions in the schema.
+        /// There are no comments for Property CourseParticipants in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonLaborUnion> PersonLaborUnions
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CourseParticipant> CourseParticipants
         {
             get
             {
-                return this._PersonLaborUnions;
+                return this._CourseParticipants;
             }
             set
             {
-                this.OnPersonLaborUnionsChanging(value);
-                this._PersonLaborUnions = value;
-                this.OnPersonLaborUnionsChanged();
-                this.OnPropertyChanged("PersonLaborUnions");
+                this.OnCourseParticipantsChanging(value);
+                this._CourseParticipants = value;
+                this.OnCourseParticipantsChanged();
+                this.OnPropertyChanged("CourseParticipants");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonLaborUnion> _PersonLaborUnions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonLaborUnion>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPersonLaborUnionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonLaborUnion> value);
-        partial void OnPersonLaborUnionsChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CourseParticipant> _CourseParticipants = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CourseParticipant>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnCourseParticipantsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CourseParticipant> value);
+        partial void OnCourseParticipantsChanged();
         /// <summary>
-        /// There are no comments for Property IdentificationNumbers in the schema.
+        /// There are no comments for Property PersonSkill in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonIdentificationNumber> IdentificationNumbers
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonSkill> PersonSkill
         {
             get
             {
-                return this._IdentificationNumbers;
+                return this._PersonSkill;
             }
             set
             {
-                this.OnIdentificationNumbersChanging(value);
-                this._IdentificationNumbers = value;
-                this.OnIdentificationNumbersChanged();
-                this.OnPropertyChanged("IdentificationNumbers");
+                this.OnPersonSkillChanging(value);
+                this._PersonSkill = value;
+                this.OnPersonSkillChanged();
+                this.OnPropertyChanged("PersonSkill");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonIdentificationNumber> _IdentificationNumbers = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonIdentificationNumber>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnIdentificationNumbersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonIdentificationNumber> value);
-        partial void OnIdentificationNumbersChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonSkill> _PersonSkill = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonSkill>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPersonSkillChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonSkill> value);
+        partial void OnPersonSkillChanged();
         /// <summary>
-        /// There are no comments for Property PersonCertificate in the schema.
+        /// There are no comments for Property PersonDetails in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonCertificate> PersonCertificate
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonDetails> PersonDetails
         {
             get
             {
-                return this._PersonCertificate;
+                return this._PersonDetails;
             }
             set
             {
-                this.OnPersonCertificateChanging(value);
-                this._PersonCertificate = value;
-                this.OnPersonCertificateChanged();
-                this.OnPropertyChanged("PersonCertificate");
+                this.OnPersonDetailsChanging(value);
+                this._PersonDetails = value;
+                this.OnPersonDetailsChanged();
+                this.OnPropertyChanged("PersonDetails");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonCertificate> _PersonCertificate = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonCertificate>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPersonCertificateChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonCertificate> value);
-        partial void OnPersonCertificateChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonDetails> _PersonDetails = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonDetails>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPersonDetailsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonDetails> value);
+        partial void OnPersonDetailsChanged();
         /// <summary>
         /// There are no comments for Property CourseInstructor in the schema.
         /// </summary>
@@ -2686,49 +2509,226 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnCourseInstructorChanging(global::Microsoft.Dynamics.DataEntities.CourseInstructor value);
         partial void OnCourseInstructorChanged();
         /// <summary>
-        /// There are no comments for Property RetailCatalog in the schema.
+        /// There are no comments for Property IdentificationNumbers in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalog> RetailCatalog
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonIdentificationNumber> IdentificationNumbers
         {
             get
             {
-                return this._RetailCatalog;
+                return this._IdentificationNumbers;
             }
             set
             {
-                this.OnRetailCatalogChanging(value);
-                this._RetailCatalog = value;
-                this.OnRetailCatalogChanged();
-                this.OnPropertyChanged("RetailCatalog");
+                this.OnIdentificationNumbersChanging(value);
+                this._IdentificationNumbers = value;
+                this.OnIdentificationNumbersChanged();
+                this.OnPropertyChanged("IdentificationNumbers");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalog> _RetailCatalog = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalog>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRetailCatalogChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalog> value);
-        partial void OnRetailCatalogChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonIdentificationNumber> _IdentificationNumbers = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonIdentificationNumber>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnIdentificationNumbersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonIdentificationNumber> value);
+        partial void OnIdentificationNumbersChanged();
         /// <summary>
-        /// There are no comments for Property PersonSkill in the schema.
+        /// There are no comments for Property PersonExam in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonSkill> PersonSkill
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonExam> PersonExam
         {
             get
             {
-                return this._PersonSkill;
+                return this._PersonExam;
             }
             set
             {
-                this.OnPersonSkillChanging(value);
-                this._PersonSkill = value;
-                this.OnPersonSkillChanged();
-                this.OnPropertyChanged("PersonSkill");
+                this.OnPersonExamChanging(value);
+                this._PersonExam = value;
+                this.OnPersonExamChanged();
+                this.OnPropertyChanged("PersonExam");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonSkill> _PersonSkill = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonSkill>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPersonSkillChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonSkill> value);
-        partial void OnPersonSkillChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonExam> _PersonExam = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonExam>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPersonExamChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonExam> value);
+        partial void OnPersonExamChanged();
+        /// <summary>
+        /// There are no comments for Property Person1 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Person")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TeamMemberV2> Person1
+        {
+            get
+            {
+                return this._Person1;
+            }
+            set
+            {
+                this.OnPerson1Changing(value);
+                this._Person1 = value;
+                this.OnPerson1Changed();
+                this.OnPropertyChanged("Person");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TeamMemberV2> _Person1 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TeamMemberV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPerson1Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TeamMemberV2> value);
+        partial void OnPerson1Changed();
+        /// <summary>
+        /// There are no comments for Property Worker in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.Worker Worker
+        {
+            get
+            {
+                return this._Worker;
+            }
+            set
+            {
+                this.OnWorkerChanging(value);
+                this._Worker = value;
+                this.OnWorkerChanged();
+                this.OnPropertyChanged("Worker");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.Worker _Worker;
+        partial void OnWorkerChanging(global::Microsoft.Dynamics.DataEntities.Worker value);
+        partial void OnWorkerChanged();
+        /// <summary>
+        /// There are no comments for Property Employee in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.Employee Employee
+        {
+            get
+            {
+                return this._Employee;
+            }
+            set
+            {
+                this.OnEmployeeChanging(value);
+                this._Employee = value;
+                this.OnEmployeeChanged();
+                this.OnPropertyChanged("Employee");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.Employee _Employee;
+        partial void OnEmployeeChanging(global::Microsoft.Dynamics.DataEntities.Employee value);
+        partial void OnEmployeeChanged();
+        /// <summary>
+        /// There are no comments for Property PersonLaborUnions in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonLaborUnion> PersonLaborUnions
+        {
+            get
+            {
+                return this._PersonLaborUnions;
+            }
+            set
+            {
+                this.OnPersonLaborUnionsChanging(value);
+                this._PersonLaborUnions = value;
+                this.OnPersonLaborUnionsChanged();
+                this.OnPropertyChanged("PersonLaborUnions");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonLaborUnion> _PersonLaborUnions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonLaborUnion>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPersonLaborUnionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonLaborUnion> value);
+        partial void OnPersonLaborUnionsChanged();
+        /// <summary>
+        /// There are no comments for Property LoanedEquipments in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LoanedEquipment> LoanedEquipments
+        {
+            get
+            {
+                return this._LoanedEquipments;
+            }
+            set
+            {
+                this.OnLoanedEquipmentsChanging(value);
+                this._LoanedEquipments = value;
+                this.OnLoanedEquipmentsChanged();
+                this.OnPropertyChanged("LoanedEquipments");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LoanedEquipment> _LoanedEquipments = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LoanedEquipment>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnLoanedEquipmentsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LoanedEquipment> value);
+        partial void OnLoanedEquipmentsChanged();
+        /// <summary>
+        /// There are no comments for Property BaseWorker in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.BaseWorker BaseWorker
+        {
+            get
+            {
+                return this._BaseWorker;
+            }
+            set
+            {
+                this.OnBaseWorkerChanging(value);
+                this._BaseWorker = value;
+                this.OnBaseWorkerChanged();
+                this.OnPropertyChanged("BaseWorker");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.BaseWorker _BaseWorker;
+        partial void OnBaseWorkerChanging(global::Microsoft.Dynamics.DataEntities.BaseWorker value);
+        partial void OnBaseWorkerChanged();
+        /// <summary>
+        /// There are no comments for Property ApprovedReleasedProductReadinessChecks in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> ApprovedReleasedProductReadinessChecks
+        {
+            get
+            {
+                return this._ApprovedReleasedProductReadinessChecks;
+            }
+            set
+            {
+                this.OnApprovedReleasedProductReadinessChecksChanging(value);
+                this._ApprovedReleasedProductReadinessChecks = value;
+                this.OnApprovedReleasedProductReadinessChecksChanged();
+                this.OnPropertyChanged("ApprovedReleasedProductReadinessChecks");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> _ApprovedReleasedProductReadinessChecks = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnApprovedReleasedProductReadinessChecksChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> value);
+        partial void OnApprovedReleasedProductReadinessChecksChanged();
+        /// <summary>
+        /// There are no comments for Property OwnedReleasedProductReadinessChecks in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> OwnedReleasedProductReadinessChecks
+        {
+            get
+            {
+                return this._OwnedReleasedProductReadinessChecks;
+            }
+            set
+            {
+                this.OnOwnedReleasedProductReadinessChecksChanging(value);
+                this._OwnedReleasedProductReadinessChecks = value;
+                this.OnOwnedReleasedProductReadinessChecksChanged();
+                this.OnPropertyChanged("OwnedReleasedProductReadinessChecks");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> _OwnedReleasedProductReadinessChecks = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnOwnedReleasedProductReadinessChecksChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> value);
+        partial void OnOwnedReleasedProductReadinessChecksChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

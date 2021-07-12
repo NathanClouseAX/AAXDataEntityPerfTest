@@ -24,7 +24,32 @@ class RunnableClass1
 
         select * from buffer where buffer.SalesOrderNumber == "009963";
 
-        Info(strFmt("%1", buffer.NumberOfSalesOrderLines));
+        //Info(strFmt("%1", buffer.NumberOfSalesOrderLines));
+
+        AAXTable table;
+
+        AAXTableEntity AAXTableEntity;
+
+        AAXActivityLogger::writeToFile("---insert---");
+
+        ttsbegin;
+        AAXTableEntity.id = "1";
+        AAXTableEntity.name = "asdf";
+        AAXTableEntity.insert();
+        ttscommit;
+
+        AAXTableEntity = null;
+
+        AAXActivityLogger::writeToFile("---select---");
+        select forupdate * from AAXTableEntity where AAXTableEntity.id == "1";
+
+        AAXActivityLogger::writeToFile("---update---");
+        AAXTableEntity.name = "qwer";
+        AAXTableEntity.update();
+
+        AAXActivityLogger::writeToFile("---delete---");
+        delete_from AAXTableEntity where AAXTableEntity.id == "1";
+
 
 
     }

@@ -23,10 +23,33 @@ namespace ODataTesting
 
         public static void runOneRead(Resources context, string filePath, TestType testType, TestWorkload testWorkload, string SalesOrderNumber, string DataAreaId)
         {
+            int tryCount = 0;
             Stopwatch sw = new Stopwatch();
 
             sw.Start();
-            SalesOrderHeaderV2EntityDSReadOnly SalesOrderHeaderV2EntityDSReadOnly = context.SalesOrderHeadersV2EntityDSReadOnly.Where(x => x.SalesOrderNumber == SalesOrderNumber && x.dataAreaId == DataAreaId).First();
+
+            while (true)
+            {
+                try
+                {
+                    tryCount++;
+                    SalesOrderHeaderV2EntityDSReadOnly SalesOrderHeaderV2EntityDSReadOnly = context.SalesOrderHeadersV2EntityDSReadOnly.Where(x => x.SalesOrderNumber == SalesOrderNumber && x.dataAreaId == DataAreaId).First();
+
+
+                    break;
+
+                }
+                catch (Exception e)
+                {
+                    if (tryCount >= 3)
+                    {
+                        throw (e);
+                    }
+                    sw.Reset();
+                    sw.Start();
+                }
+            }
+
             sw.Stop();
 
             StreamWriter stream = File.AppendText(filePath);
@@ -39,11 +62,31 @@ namespace ODataTesting
 
         public static void runReads(Resources context, string filePath, TestType testType, TestWorkload testWorkload, string DataAreaId, string customerAccount, int count)
         {
+            int tryCount = 0;
             Stopwatch sw = new Stopwatch();
 
             sw.Start();
 
-            context.SalesOrderHeadersV2EntityDSReadOnly.Where(x => x.dataAreaId == DataAreaId && x.OrderingCustomerAccountNumber == customerAccount).Take(count).ToList();
+            while (true)
+            {
+                try
+                {
+                    tryCount++;
+                    context.SalesOrderHeadersV2EntityDSReadOnly.Where(x => x.dataAreaId == DataAreaId && x.OrderingCustomerAccountNumber == customerAccount).Take(count).ToList();
+
+                    break;
+
+                }
+                catch (Exception e)
+                {
+                    if (tryCount >= 3)
+                    {
+                        throw (e);
+                    }
+                    sw.Reset();
+                    sw.Start();
+                }
+            }
 
             sw.Stop();
 

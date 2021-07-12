@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -56,10 +56,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailStoreLocatorGroupOwner> _RetailStoreLocatorGroupOwner;
         /// <summary>
-        /// There are no comments for StoreShelf in the schema.
+        /// There are no comments for RetailStoreHardwareStation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.StoreShelfSingle StoreShelf
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailStoreHardwareStation> RetailStoreHardwareStation
         {
             get
             {
@@ -67,36 +67,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._StoreShelf == null))
+                if ((this._RetailStoreHardwareStation == null))
                 {
-                    this._StoreShelf = new global::Microsoft.Dynamics.DataEntities.StoreShelfSingle(this.Context, GetPath("StoreShelf"));
+                    this._RetailStoreHardwareStation = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailStoreHardwareStation>(GetPath("RetailStoreHardwareStation"));
                 }
-                return this._StoreShelf;
+                return this._RetailStoreHardwareStation;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.StoreShelfSingle _StoreShelf;
-        /// <summary>
-        /// There are no comments for RetailTerminal in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTerminal> RetailTerminal
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._RetailTerminal == null))
-                {
-                    this._RetailTerminal = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailTerminal>(GetPath("RetailTerminal"));
-                }
-                return this._RetailTerminal;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTerminal> _RetailTerminal;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailStoreHardwareStation> _RetailStoreHardwareStation;
         /// <summary>
         /// There are no comments for RetailTillLayout in the schema.
         /// </summary>
@@ -371,10 +350,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailStoreTenderType> _RetailStoreTenderType;
         /// <summary>
-        /// There are no comments for RetailStoreHardwareStation in the schema.
+        /// There are no comments for StoreShelf in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailStoreHardwareStation> RetailStoreHardwareStation
+        public virtual global::Microsoft.Dynamics.DataEntities.StoreShelfSingle StoreShelf
         {
             get
             {
@@ -382,15 +361,36 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._RetailStoreHardwareStation == null))
+                if ((this._StoreShelf == null))
                 {
-                    this._RetailStoreHardwareStation = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailStoreHardwareStation>(GetPath("RetailStoreHardwareStation"));
+                    this._StoreShelf = new global::Microsoft.Dynamics.DataEntities.StoreShelfSingle(this.Context, GetPath("StoreShelf"));
                 }
-                return this._RetailStoreHardwareStation;
+                return this._StoreShelf;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailStoreHardwareStation> _RetailStoreHardwareStation;
+        private global::Microsoft.Dynamics.DataEntities.StoreShelfSingle _StoreShelf;
+        /// <summary>
+        /// There are no comments for RetailTerminal in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTerminal> RetailTerminal
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RetailTerminal == null))
+                {
+                    this._RetailTerminal = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailTerminal>(GetPath("RetailTerminal"));
+                }
+                return this._RetailTerminal;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTerminal> _RetailTerminal;
         /// <summary>
         /// There are no comments for RetailChannelPriceGroup in the schema.
         /// </summary>
@@ -2061,49 +2061,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnRetailStoreLocatorGroupOwnerChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStoreLocatorGroupOwner> value);
         partial void OnRetailStoreLocatorGroupOwnerChanged();
         /// <summary>
-        /// There are no comments for Property StoreShelf in the schema.
+        /// There are no comments for Property RetailStoreHardwareStation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.StoreShelf StoreShelf
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStoreHardwareStation> RetailStoreHardwareStation
         {
             get
             {
-                return this._StoreShelf;
+                return this._RetailStoreHardwareStation;
             }
             set
             {
-                this.OnStoreShelfChanging(value);
-                this._StoreShelf = value;
-                this.OnStoreShelfChanged();
-                this.OnPropertyChanged("StoreShelf");
+                this.OnRetailStoreHardwareStationChanging(value);
+                this._RetailStoreHardwareStation = value;
+                this.OnRetailStoreHardwareStationChanged();
+                this.OnPropertyChanged("RetailStoreHardwareStation");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.StoreShelf _StoreShelf;
-        partial void OnStoreShelfChanging(global::Microsoft.Dynamics.DataEntities.StoreShelf value);
-        partial void OnStoreShelfChanged();
-        /// <summary>
-        /// There are no comments for Property RetailTerminal in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTerminal> RetailTerminal
-        {
-            get
-            {
-                return this._RetailTerminal;
-            }
-            set
-            {
-                this.OnRetailTerminalChanging(value);
-                this._RetailTerminal = value;
-                this.OnRetailTerminalChanged();
-                this.OnPropertyChanged("RetailTerminal");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTerminal> _RetailTerminal = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTerminal>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRetailTerminalChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTerminal> value);
-        partial void OnRetailTerminalChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStoreHardwareStation> _RetailStoreHardwareStation = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStoreHardwareStation>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRetailStoreHardwareStationChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStoreHardwareStation> value);
+        partial void OnRetailStoreHardwareStationChanged();
         /// <summary>
         /// There are no comments for Property RetailTillLayout in the schema.
         /// </summary>
@@ -2391,27 +2369,49 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnRetailStoreTenderTypeChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStoreTenderType> value);
         partial void OnRetailStoreTenderTypeChanged();
         /// <summary>
-        /// There are no comments for Property RetailStoreHardwareStation in the schema.
+        /// There are no comments for Property StoreShelf in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStoreHardwareStation> RetailStoreHardwareStation
+        public virtual global::Microsoft.Dynamics.DataEntities.StoreShelf StoreShelf
         {
             get
             {
-                return this._RetailStoreHardwareStation;
+                return this._StoreShelf;
             }
             set
             {
-                this.OnRetailStoreHardwareStationChanging(value);
-                this._RetailStoreHardwareStation = value;
-                this.OnRetailStoreHardwareStationChanged();
-                this.OnPropertyChanged("RetailStoreHardwareStation");
+                this.OnStoreShelfChanging(value);
+                this._StoreShelf = value;
+                this.OnStoreShelfChanged();
+                this.OnPropertyChanged("StoreShelf");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStoreHardwareStation> _RetailStoreHardwareStation = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStoreHardwareStation>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRetailStoreHardwareStationChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStoreHardwareStation> value);
-        partial void OnRetailStoreHardwareStationChanged();
+        private global::Microsoft.Dynamics.DataEntities.StoreShelf _StoreShelf;
+        partial void OnStoreShelfChanging(global::Microsoft.Dynamics.DataEntities.StoreShelf value);
+        partial void OnStoreShelfChanged();
+        /// <summary>
+        /// There are no comments for Property RetailTerminal in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTerminal> RetailTerminal
+        {
+            get
+            {
+                return this._RetailTerminal;
+            }
+            set
+            {
+                this.OnRetailTerminalChanging(value);
+                this._RetailTerminal = value;
+                this.OnRetailTerminalChanged();
+                this.OnPropertyChanged("RetailTerminal");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTerminal> _RetailTerminal = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTerminal>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRetailTerminalChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTerminal> value);
+        partial void OnRetailTerminalChanged();
         /// <summary>
         /// There are no comments for Property RetailChannelPriceGroup in the schema.
         /// </summary>

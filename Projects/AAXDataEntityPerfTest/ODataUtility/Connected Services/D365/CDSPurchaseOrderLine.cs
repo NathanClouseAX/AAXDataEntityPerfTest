@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public CDSPurchaseOrderLineSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<CDSPurchaseOrderLine> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for PurchaseOrderHeaderV2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.PurchaseOrderHeaderV2Single PurchaseOrderHeaderV2
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._PurchaseOrderHeaderV2 == null))
-                {
-                    this._PurchaseOrderHeaderV2 = new global::Microsoft.Dynamics.DataEntities.PurchaseOrderHeaderV2Single(this.Context, GetPath("PurchaseOrderHeaderV2"));
-                }
-                return this._PurchaseOrderHeaderV2;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.PurchaseOrderHeaderV2Single _PurchaseOrderHeaderV2;
     }
         /// <summary>
         /// There are no comments for CDSPurchaseOrderLine in the schema.
@@ -85,7 +64,6 @@ namespace Microsoft.Dynamics.DataEntities
         /// <param name="confirmedDeliveryDate">Initial value of ConfirmedDeliveryDate.</param>
         /// <param name="lineDiscountAmount">Initial value of LineDiscountAmount.</param>
         /// <param name="purchasePrice">Initial value of PurchasePrice.</param>
-        /// <param name="purchaseOrderHeaderV2">Initial value of PurchaseOrderHeaderV2.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public static CDSPurchaseOrderLine CreateCDSPurchaseOrderLine(string dataAreaId, 
                     string purchaseOrderNumber, 
@@ -100,8 +78,7 @@ namespace Microsoft.Dynamics.DataEntities
                     global::System.DateTimeOffset confirmedShippingDate, 
                     global::System.DateTimeOffset confirmedDeliveryDate, 
                     decimal lineDiscountAmount, 
-                    decimal purchasePrice, 
-                    global::Microsoft.Dynamics.DataEntities.PurchaseOrderHeaderV2 purchaseOrderHeaderV2)
+                    decimal purchasePrice)
         {
             CDSPurchaseOrderLine cDSPurchaseOrderLine = new CDSPurchaseOrderLine();
             cDSPurchaseOrderLine.dataAreaId = dataAreaId;
@@ -118,11 +95,6 @@ namespace Microsoft.Dynamics.DataEntities
             cDSPurchaseOrderLine.ConfirmedDeliveryDate = confirmedDeliveryDate;
             cDSPurchaseOrderLine.LineDiscountAmount = lineDiscountAmount;
             cDSPurchaseOrderLine.PurchasePrice = purchasePrice;
-            if ((purchaseOrderHeaderV2 == null))
-            {
-                throw new global::System.ArgumentNullException("purchaseOrderHeaderV2");
-            }
-            cDSPurchaseOrderLine.PurchaseOrderHeaderV2 = purchaseOrderHeaderV2;
             return cDSPurchaseOrderLine;
         }
         /// <summary>
@@ -213,6 +185,28 @@ namespace Microsoft.Dynamics.DataEntities
         private string _CustomerReference;
         partial void OnCustomerReferenceChanging(string value);
         partial void OnCustomerReferenceChanged();
+        /// <summary>
+        /// There are no comments for Property WorkflowState in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TradeWorkflowState> WorkflowState
+        {
+            get
+            {
+                return this._WorkflowState;
+            }
+            set
+            {
+                this.OnWorkflowStateChanging(value);
+                this._WorkflowState = value;
+                this.OnWorkflowStateChanged();
+                this.OnPropertyChanged("WorkflowState");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TradeWorkflowState> _WorkflowState;
+        partial void OnWorkflowStateChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TradeWorkflowState> value);
+        partial void OnWorkflowStateChanged();
         /// <summary>
         /// There are no comments for Property ProductConfigurationId in the schema.
         /// </summary>
@@ -1203,28 +1197,6 @@ namespace Microsoft.Dynamics.DataEntities
         private string _ProductStyleId;
         partial void OnProductStyleIdChanging(string value);
         partial void OnProductStyleIdChanged();
-        /// <summary>
-        /// There are no comments for Property PurchaseOrderHeaderV2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.PurchaseOrderHeaderV2 PurchaseOrderHeaderV2
-        {
-            get
-            {
-                return this._PurchaseOrderHeaderV2;
-            }
-            set
-            {
-                this.OnPurchaseOrderHeaderV2Changing(value);
-                this._PurchaseOrderHeaderV2 = value;
-                this.OnPurchaseOrderHeaderV2Changed();
-                this.OnPropertyChanged("PurchaseOrderHeaderV2");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.PurchaseOrderHeaderV2 _PurchaseOrderHeaderV2;
-        partial void OnPurchaseOrderHeaderV2Changing(global::Microsoft.Dynamics.DataEntities.PurchaseOrderHeaderV2 value);
-        partial void OnPurchaseOrderHeaderV2Changed();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

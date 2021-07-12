@@ -50,7 +50,7 @@ namespace ConsoleApp1
                 var authenticationHeader = OAuthHelper.GetAuthenticationHeader(useWebAppAuthentication: true);
                 e.RequestMessage.SetHeader(OAuthHelper.OAuthHeader, authenticationHeader);
             });
-            /*
+            
             if (File.Exists(filePath))
             {
                 // delete file and init a file to write to.
@@ -196,7 +196,7 @@ namespace ConsoleApp1
             {
                 AAXSalesTableEntityReadOnlyTester.runOneRead(context, filePath, SalesOrderTester.TestType.Repetitive, SalesOrderTester.TestWorkload.Read, values.SalesId, values.DataAreaId);
             }
-            */
+            
             Console.WriteLine("Complete. Press enter.");
             Console.ReadLine();
         }

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -1512,6 +1512,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::System.Nullable<global::Microsoft.Dynamics.DataEntities.BOMConsumpType> _ConsumptionType;
         partial void OnConsumptionTypeChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.BOMConsumpType> value);
         partial void OnConsumptionTypeChanged();
+        /// <summary>
+        /// There are no comments for Property ConsumptionWarehouseLocationId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual string ConsumptionWarehouseLocationId
+        {
+            get
+            {
+                return this._ConsumptionWarehouseLocationId;
+            }
+            set
+            {
+                this.OnConsumptionWarehouseLocationIdChanging(value);
+                this._ConsumptionWarehouseLocationId = value;
+                this.OnConsumptionWarehouseLocationIdChanged();
+                this.OnPropertyChanged("ConsumptionWarehouseLocationId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _ConsumptionWarehouseLocationId;
+        partial void OnConsumptionWarehouseLocationIdChanging(string value);
+        partial void OnConsumptionWarehouseLocationIdChanged();
         /// <summary>
         /// There are no comments for Property ConsumptionCalculationMethod in the schema.
         /// </summary>

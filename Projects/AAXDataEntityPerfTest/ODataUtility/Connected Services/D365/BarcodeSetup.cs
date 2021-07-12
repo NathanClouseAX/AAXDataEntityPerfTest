@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,6 +35,48 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
+        /// There are no comments for ProductBarcodes in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductBarcode> ProductBarcodes
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ProductBarcodes == null))
+                {
+                    this._ProductBarcodes = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductBarcode>(GetPath("ProductBarcodes"));
+                }
+                return this._ProductBarcodes;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductBarcode> _ProductBarcodes;
+        /// <summary>
+        /// There are no comments for ProductBarcodesV2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductBarcodeAssociation> ProductBarcodesV2
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ProductBarcodesV2 == null))
+                {
+                    this._ProductBarcodesV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductBarcodeAssociation>(GetPath("ProductBarcodesV2"));
+                }
+                return this._ProductBarcodesV2;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductBarcodeAssociation> _ProductBarcodesV2;
+        /// <summary>
         /// There are no comments for ReleasedProductsV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -56,10 +98,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductV2> _ReleasedProductsV2;
         /// <summary>
-        /// There are no comments for ProductBarcodesV2 in the schema.
+        /// There are no comments for ProductBarcodesV3 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV2> ProductBarcodesV2
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV3> ProductBarcodesV3
         {
             get
             {
@@ -67,36 +109,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._ProductBarcodesV2 == null))
+                if ((this._ProductBarcodesV3 == null))
                 {
-                    this._ProductBarcodesV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV2>(GetPath("ProductBarcodesV2"));
+                    this._ProductBarcodesV3 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV3>(GetPath("ProductBarcodesV3"));
                 }
-                return this._ProductBarcodesV2;
+                return this._ProductBarcodesV3;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV2> _ProductBarcodesV2;
-        /// <summary>
-        /// There are no comments for ProductBarcodes in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductBarcode> ProductBarcodes
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ProductBarcodes == null))
-                {
-                    this._ProductBarcodes = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductBarcode>(GetPath("ProductBarcodes"));
-                }
-                return this._ProductBarcodes;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductBarcode> _ProductBarcodes;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV3> _ProductBarcodesV3;
     }
         /// <summary>
         /// There are no comments for BarcodeSetup in the schema.
@@ -327,6 +348,50 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnFontNameChanging(string value);
         partial void OnFontNameChanged();
         /// <summary>
+        /// There are no comments for Property ProductBarcodes in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcode> ProductBarcodes
+        {
+            get
+            {
+                return this._ProductBarcodes;
+            }
+            set
+            {
+                this.OnProductBarcodesChanging(value);
+                this._ProductBarcodes = value;
+                this.OnProductBarcodesChanged();
+                this.OnPropertyChanged("ProductBarcodes");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcode> _ProductBarcodes = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcode>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnProductBarcodesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcode> value);
+        partial void OnProductBarcodesChanged();
+        /// <summary>
+        /// There are no comments for Property ProductBarcodesV2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcodeAssociation> ProductBarcodesV2
+        {
+            get
+            {
+                return this._ProductBarcodesV2;
+            }
+            set
+            {
+                this.OnProductBarcodesV2Changing(value);
+                this._ProductBarcodesV2 = value;
+                this.OnProductBarcodesV2Changed();
+                this.OnPropertyChanged("ProductBarcodesV2");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcodeAssociation> _ProductBarcodesV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcodeAssociation>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnProductBarcodesV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcodeAssociation> value);
+        partial void OnProductBarcodesV2Changed();
+        /// <summary>
         /// There are no comments for Property ReleasedProductsV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -349,49 +414,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnReleasedProductsV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductV2> value);
         partial void OnReleasedProductsV2Changed();
         /// <summary>
-        /// There are no comments for Property ProductBarcodesV2 in the schema.
+        /// There are no comments for Property ProductBarcodesV3 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV2> ProductBarcodesV2
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV3> ProductBarcodesV3
         {
             get
             {
-                return this._ProductBarcodesV2;
+                return this._ProductBarcodesV3;
             }
             set
             {
-                this.OnProductBarcodesV2Changing(value);
-                this._ProductBarcodesV2 = value;
-                this.OnProductBarcodesV2Changed();
-                this.OnPropertyChanged("ProductBarcodesV2");
+                this.OnProductBarcodesV3Changing(value);
+                this._ProductBarcodesV3 = value;
+                this.OnProductBarcodesV3Changed();
+                this.OnPropertyChanged("ProductBarcodesV3");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV2> _ProductBarcodesV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnProductBarcodesV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV2> value);
-        partial void OnProductBarcodesV2Changed();
-        /// <summary>
-        /// There are no comments for Property ProductBarcodes in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcode> ProductBarcodes
-        {
-            get
-            {
-                return this._ProductBarcodes;
-            }
-            set
-            {
-                this.OnProductBarcodesChanging(value);
-                this._ProductBarcodes = value;
-                this.OnProductBarcodesChanged();
-                this.OnPropertyChanged("ProductBarcodes");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcode> _ProductBarcodes = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcode>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnProductBarcodesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcode> value);
-        partial void OnProductBarcodesChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV3> _ProductBarcodesV3 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV3>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnProductBarcodesV3Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV3> value);
+        partial void OnProductBarcodesV3Changed();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

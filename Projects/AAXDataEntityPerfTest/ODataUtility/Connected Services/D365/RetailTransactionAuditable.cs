@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for RetailTransactionAuditablePaymentLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditablePaymentLine> RetailTransactionAuditablePaymentLine
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._RetailTransactionAuditablePaymentLine == null))
-                {
-                    this._RetailTransactionAuditablePaymentLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditablePaymentLine>(GetPath("RetailTransactionAuditablePaymentLine"));
-                }
-                return this._RetailTransactionAuditablePaymentLine;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditablePaymentLine> _RetailTransactionAuditablePaymentLine;
-        /// <summary>
         /// There are no comments for DimensionSet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -77,10 +56,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionSetSingle _DimensionSet;
         /// <summary>
-        /// There are no comments for RetailTransactionAuditableTaxLine in the schema.
+        /// There are no comments for RetailTransactionAuditableDiscountLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableTaxLine> RetailTransactionAuditableTaxLine
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableDiscountLine> RetailTransactionAuditableDiscountLine
         {
             get
             {
@@ -88,57 +67,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._RetailTransactionAuditableTaxLine == null))
+                if ((this._RetailTransactionAuditableDiscountLine == null))
                 {
-                    this._RetailTransactionAuditableTaxLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableTaxLine>(GetPath("RetailTransactionAuditableTaxLine"));
+                    this._RetailTransactionAuditableDiscountLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableDiscountLine>(GetPath("RetailTransactionAuditableDiscountLine"));
                 }
-                return this._RetailTransactionAuditableTaxLine;
+                return this._RetailTransactionAuditableDiscountLine;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableTaxLine> _RetailTransactionAuditableTaxLine;
-        /// <summary>
-        /// There are no comments for RetailTransactionAuditableChargeLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableChargeLine> RetailTransactionAuditableChargeLine
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._RetailTransactionAuditableChargeLine == null))
-                {
-                    this._RetailTransactionAuditableChargeLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableChargeLine>(GetPath("RetailTransactionAuditableChargeLine"));
-                }
-                return this._RetailTransactionAuditableChargeLine;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableChargeLine> _RetailTransactionAuditableChargeLine;
-        /// <summary>
-        /// There are no comments for RetailTransactionAuditableSalesLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableSalesLine> RetailTransactionAuditableSalesLine
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._RetailTransactionAuditableSalesLine == null))
-                {
-                    this._RetailTransactionAuditableSalesLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableSalesLine>(GetPath("RetailTransactionAuditableSalesLine"));
-                }
-                return this._RetailTransactionAuditableSalesLine;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableSalesLine> _RetailTransactionAuditableSalesLine;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableDiscountLine> _RetailTransactionAuditableDiscountLine;
         /// <summary>
         /// There are no comments for RetailTransactionAuditableAddressLine in the schema.
         /// </summary>
@@ -161,10 +98,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableAddressLine> _RetailTransactionAuditableAddressLine;
         /// <summary>
-        /// There are no comments for RetailTransactionAuditableDiscountLine in the schema.
+        /// There are no comments for RetailTransactionAuditablePaymentLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableDiscountLine> RetailTransactionAuditableDiscountLine
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditablePaymentLine> RetailTransactionAuditablePaymentLine
         {
             get
             {
@@ -172,15 +109,78 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._RetailTransactionAuditableDiscountLine == null))
+                if ((this._RetailTransactionAuditablePaymentLine == null))
                 {
-                    this._RetailTransactionAuditableDiscountLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableDiscountLine>(GetPath("RetailTransactionAuditableDiscountLine"));
+                    this._RetailTransactionAuditablePaymentLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditablePaymentLine>(GetPath("RetailTransactionAuditablePaymentLine"));
                 }
-                return this._RetailTransactionAuditableDiscountLine;
+                return this._RetailTransactionAuditablePaymentLine;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableDiscountLine> _RetailTransactionAuditableDiscountLine;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditablePaymentLine> _RetailTransactionAuditablePaymentLine;
+        /// <summary>
+        /// There are no comments for RetailTransactionAuditableSalesLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableSalesLine> RetailTransactionAuditableSalesLine
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RetailTransactionAuditableSalesLine == null))
+                {
+                    this._RetailTransactionAuditableSalesLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableSalesLine>(GetPath("RetailTransactionAuditableSalesLine"));
+                }
+                return this._RetailTransactionAuditableSalesLine;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableSalesLine> _RetailTransactionAuditableSalesLine;
+        /// <summary>
+        /// There are no comments for RetailTransactionAuditableChargeLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableChargeLine> RetailTransactionAuditableChargeLine
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RetailTransactionAuditableChargeLine == null))
+                {
+                    this._RetailTransactionAuditableChargeLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableChargeLine>(GetPath("RetailTransactionAuditableChargeLine"));
+                }
+                return this._RetailTransactionAuditableChargeLine;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableChargeLine> _RetailTransactionAuditableChargeLine;
+        /// <summary>
+        /// There are no comments for RetailTransactionAuditableTaxLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableTaxLine> RetailTransactionAuditableTaxLine
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RetailTransactionAuditableTaxLine == null))
+                {
+                    this._RetailTransactionAuditableTaxLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableTaxLine>(GetPath("RetailTransactionAuditableTaxLine"));
+                }
+                return this._RetailTransactionAuditableTaxLine;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableTaxLine> _RetailTransactionAuditableTaxLine;
     }
         /// <summary>
         /// There are no comments for RetailTransactionAuditable in the schema.
@@ -1985,28 +1985,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDiscountAmountExcludingTaxChanging(decimal value);
         partial void OnDiscountAmountExcludingTaxChanged();
         /// <summary>
-        /// There are no comments for Property RetailTransactionAuditablePaymentLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditablePaymentLine> RetailTransactionAuditablePaymentLine
-        {
-            get
-            {
-                return this._RetailTransactionAuditablePaymentLine;
-            }
-            set
-            {
-                this.OnRetailTransactionAuditablePaymentLineChanging(value);
-                this._RetailTransactionAuditablePaymentLine = value;
-                this.OnRetailTransactionAuditablePaymentLineChanged();
-                this.OnPropertyChanged("RetailTransactionAuditablePaymentLine");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditablePaymentLine> _RetailTransactionAuditablePaymentLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditablePaymentLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRetailTransactionAuditablePaymentLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditablePaymentLine> value);
-        partial void OnRetailTransactionAuditablePaymentLineChanged();
-        /// <summary>
         /// There are no comments for Property DimensionSet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -2029,71 +2007,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDimensionSetChanging(global::Microsoft.Dynamics.DataEntities.DimensionSet value);
         partial void OnDimensionSetChanged();
         /// <summary>
-        /// There are no comments for Property RetailTransactionAuditableTaxLine in the schema.
+        /// There are no comments for Property RetailTransactionAuditableDiscountLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableTaxLine> RetailTransactionAuditableTaxLine
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableDiscountLine> RetailTransactionAuditableDiscountLine
         {
             get
             {
-                return this._RetailTransactionAuditableTaxLine;
+                return this._RetailTransactionAuditableDiscountLine;
             }
             set
             {
-                this.OnRetailTransactionAuditableTaxLineChanging(value);
-                this._RetailTransactionAuditableTaxLine = value;
-                this.OnRetailTransactionAuditableTaxLineChanged();
-                this.OnPropertyChanged("RetailTransactionAuditableTaxLine");
+                this.OnRetailTransactionAuditableDiscountLineChanging(value);
+                this._RetailTransactionAuditableDiscountLine = value;
+                this.OnRetailTransactionAuditableDiscountLineChanged();
+                this.OnPropertyChanged("RetailTransactionAuditableDiscountLine");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableTaxLine> _RetailTransactionAuditableTaxLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableTaxLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRetailTransactionAuditableTaxLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableTaxLine> value);
-        partial void OnRetailTransactionAuditableTaxLineChanged();
-        /// <summary>
-        /// There are no comments for Property RetailTransactionAuditableChargeLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableChargeLine> RetailTransactionAuditableChargeLine
-        {
-            get
-            {
-                return this._RetailTransactionAuditableChargeLine;
-            }
-            set
-            {
-                this.OnRetailTransactionAuditableChargeLineChanging(value);
-                this._RetailTransactionAuditableChargeLine = value;
-                this.OnRetailTransactionAuditableChargeLineChanged();
-                this.OnPropertyChanged("RetailTransactionAuditableChargeLine");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableChargeLine> _RetailTransactionAuditableChargeLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableChargeLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRetailTransactionAuditableChargeLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableChargeLine> value);
-        partial void OnRetailTransactionAuditableChargeLineChanged();
-        /// <summary>
-        /// There are no comments for Property RetailTransactionAuditableSalesLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableSalesLine> RetailTransactionAuditableSalesLine
-        {
-            get
-            {
-                return this._RetailTransactionAuditableSalesLine;
-            }
-            set
-            {
-                this.OnRetailTransactionAuditableSalesLineChanging(value);
-                this._RetailTransactionAuditableSalesLine = value;
-                this.OnRetailTransactionAuditableSalesLineChanged();
-                this.OnPropertyChanged("RetailTransactionAuditableSalesLine");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableSalesLine> _RetailTransactionAuditableSalesLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableSalesLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRetailTransactionAuditableSalesLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableSalesLine> value);
-        partial void OnRetailTransactionAuditableSalesLineChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableDiscountLine> _RetailTransactionAuditableDiscountLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableDiscountLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRetailTransactionAuditableDiscountLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableDiscountLine> value);
+        partial void OnRetailTransactionAuditableDiscountLineChanged();
         /// <summary>
         /// There are no comments for Property RetailTransactionAuditableAddressLine in the schema.
         /// </summary>
@@ -2117,27 +2051,93 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnRetailTransactionAuditableAddressLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableAddressLine> value);
         partial void OnRetailTransactionAuditableAddressLineChanged();
         /// <summary>
-        /// There are no comments for Property RetailTransactionAuditableDiscountLine in the schema.
+        /// There are no comments for Property RetailTransactionAuditablePaymentLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableDiscountLine> RetailTransactionAuditableDiscountLine
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditablePaymentLine> RetailTransactionAuditablePaymentLine
         {
             get
             {
-                return this._RetailTransactionAuditableDiscountLine;
+                return this._RetailTransactionAuditablePaymentLine;
             }
             set
             {
-                this.OnRetailTransactionAuditableDiscountLineChanging(value);
-                this._RetailTransactionAuditableDiscountLine = value;
-                this.OnRetailTransactionAuditableDiscountLineChanged();
-                this.OnPropertyChanged("RetailTransactionAuditableDiscountLine");
+                this.OnRetailTransactionAuditablePaymentLineChanging(value);
+                this._RetailTransactionAuditablePaymentLine = value;
+                this.OnRetailTransactionAuditablePaymentLineChanged();
+                this.OnPropertyChanged("RetailTransactionAuditablePaymentLine");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableDiscountLine> _RetailTransactionAuditableDiscountLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableDiscountLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRetailTransactionAuditableDiscountLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableDiscountLine> value);
-        partial void OnRetailTransactionAuditableDiscountLineChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditablePaymentLine> _RetailTransactionAuditablePaymentLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditablePaymentLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRetailTransactionAuditablePaymentLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditablePaymentLine> value);
+        partial void OnRetailTransactionAuditablePaymentLineChanged();
+        /// <summary>
+        /// There are no comments for Property RetailTransactionAuditableSalesLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableSalesLine> RetailTransactionAuditableSalesLine
+        {
+            get
+            {
+                return this._RetailTransactionAuditableSalesLine;
+            }
+            set
+            {
+                this.OnRetailTransactionAuditableSalesLineChanging(value);
+                this._RetailTransactionAuditableSalesLine = value;
+                this.OnRetailTransactionAuditableSalesLineChanged();
+                this.OnPropertyChanged("RetailTransactionAuditableSalesLine");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableSalesLine> _RetailTransactionAuditableSalesLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableSalesLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRetailTransactionAuditableSalesLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableSalesLine> value);
+        partial void OnRetailTransactionAuditableSalesLineChanged();
+        /// <summary>
+        /// There are no comments for Property RetailTransactionAuditableChargeLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableChargeLine> RetailTransactionAuditableChargeLine
+        {
+            get
+            {
+                return this._RetailTransactionAuditableChargeLine;
+            }
+            set
+            {
+                this.OnRetailTransactionAuditableChargeLineChanging(value);
+                this._RetailTransactionAuditableChargeLine = value;
+                this.OnRetailTransactionAuditableChargeLineChanged();
+                this.OnPropertyChanged("RetailTransactionAuditableChargeLine");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableChargeLine> _RetailTransactionAuditableChargeLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableChargeLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRetailTransactionAuditableChargeLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableChargeLine> value);
+        partial void OnRetailTransactionAuditableChargeLineChanged();
+        /// <summary>
+        /// There are no comments for Property RetailTransactionAuditableTaxLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableTaxLine> RetailTransactionAuditableTaxLine
+        {
+            get
+            {
+                return this._RetailTransactionAuditableTaxLine;
+            }
+            set
+            {
+                this.OnRetailTransactionAuditableTaxLineChanging(value);
+                this._RetailTransactionAuditableTaxLine = value;
+                this.OnRetailTransactionAuditableTaxLineChanged();
+                this.OnPropertyChanged("RetailTransactionAuditableTaxLine");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableTaxLine> _RetailTransactionAuditableTaxLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableTaxLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRetailTransactionAuditableTaxLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableTaxLine> value);
+        partial void OnRetailTransactionAuditableTaxLineChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for ProductTranslation in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductTranslation> ProductTranslation
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ProductTranslation == null))
-                {
-                    this._ProductTranslation = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductTranslation>(GetPath("ProductTranslation"));
-                }
-                return this._ProductTranslation;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductTranslation> _ProductTranslation;
-        /// <summary>
         /// There are no comments for DistinctProduct in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,6 +55,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DistinctProductSingle _DistinctProduct;
+        /// <summary>
+        /// There are no comments for ProductTranslation in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductTranslation> ProductTranslation
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ProductTranslation == null))
+                {
+                    this._ProductTranslation = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductTranslation>(GetPath("ProductTranslation"));
+                }
+                return this._ProductTranslation;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductTranslation> _ProductTranslation;
     }
         /// <summary>
         /// There are no comments for ReleasedDistinctProduct in the schema.
@@ -4391,28 +4391,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnInventoryUnitSymbolChanging(string value);
         partial void OnInventoryUnitSymbolChanged();
         /// <summary>
-        /// There are no comments for Property ProductTranslation in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductTranslation> ProductTranslation
-        {
-            get
-            {
-                return this._ProductTranslation;
-            }
-            set
-            {
-                this.OnProductTranslationChanging(value);
-                this._ProductTranslation = value;
-                this.OnProductTranslationChanged();
-                this.OnPropertyChanged("ProductTranslation");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductTranslation> _ProductTranslation = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductTranslation>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnProductTranslationChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductTranslation> value);
-        partial void OnProductTranslationChanged();
-        /// <summary>
         /// There are no comments for Property DistinctProduct in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -4434,6 +4412,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.DistinctProduct _DistinctProduct;
         partial void OnDistinctProductChanging(global::Microsoft.Dynamics.DataEntities.DistinctProduct value);
         partial void OnDistinctProductChanged();
+        /// <summary>
+        /// There are no comments for Property ProductTranslation in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductTranslation> ProductTranslation
+        {
+            get
+            {
+                return this._ProductTranslation;
+            }
+            set
+            {
+                this.OnProductTranslationChanging(value);
+                this._ProductTranslation = value;
+                this.OnProductTranslationChanged();
+                this.OnPropertyChanged("ProductTranslation");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductTranslation> _ProductTranslation = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductTranslation>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnProductTranslationChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductTranslation> value);
+        partial void OnProductTranslationChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,6 +35,27 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
+        /// There are no comments for RetailOnlineChannelLanguage in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailOnlineChannelLanguage> RetailOnlineChannelLanguage
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RetailOnlineChannelLanguage == null))
+                {
+                    this._RetailOnlineChannelLanguage = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailOnlineChannelLanguage>(GetPath("RetailOnlineChannelLanguage"));
+                }
+                return this._RetailOnlineChannelLanguage;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailOnlineChannelLanguage> _RetailOnlineChannelLanguage;
+        /// <summary>
         /// There are no comments for RetailStoreLocatorGroupOwner in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -56,10 +77,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailStoreLocatorGroupOwner> _RetailStoreLocatorGroupOwner;
         /// <summary>
-        /// There are no comments for RetailOnlineChannelLanguage in the schema.
+        /// There are no comments for RetailStoreTenderType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailOnlineChannelLanguage> RetailOnlineChannelLanguage
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailStoreTenderType> RetailStoreTenderType
         {
             get
             {
@@ -67,15 +88,36 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._RetailOnlineChannelLanguage == null))
+                if ((this._RetailStoreTenderType == null))
                 {
-                    this._RetailOnlineChannelLanguage = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailOnlineChannelLanguage>(GetPath("RetailOnlineChannelLanguage"));
+                    this._RetailStoreTenderType = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailStoreTenderType>(GetPath("RetailStoreTenderType"));
                 }
-                return this._RetailOnlineChannelLanguage;
+                return this._RetailStoreTenderType;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailOnlineChannelLanguage> _RetailOnlineChannelLanguage;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailStoreTenderType> _RetailStoreTenderType;
+        /// <summary>
+        /// There are no comments for RetailChannelAttributeGroup in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailChannelAttributeGroup> RetailChannelAttributeGroup
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RetailChannelAttributeGroup == null))
+                {
+                    this._RetailChannelAttributeGroup = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailChannelAttributeGroup>(GetPath("RetailChannelAttributeGroup"));
+                }
+                return this._RetailChannelAttributeGroup;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailChannelAttributeGroup> _RetailChannelAttributeGroup;
         /// <summary>
         /// There are no comments for RetailChannelPaymentConnectorLine in the schema.
         /// </summary>
@@ -223,48 +265,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionSetSingle _DimensionSet;
-        /// <summary>
-        /// There are no comments for RetailStoreTenderType in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailStoreTenderType> RetailStoreTenderType
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._RetailStoreTenderType == null))
-                {
-                    this._RetailStoreTenderType = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailStoreTenderType>(GetPath("RetailStoreTenderType"));
-                }
-                return this._RetailStoreTenderType;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailStoreTenderType> _RetailStoreTenderType;
-        /// <summary>
-        /// There are no comments for RetailChannelAttributeGroup in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailChannelAttributeGroup> RetailChannelAttributeGroup
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._RetailChannelAttributeGroup == null))
-                {
-                    this._RetailChannelAttributeGroup = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailChannelAttributeGroup>(GetPath("RetailChannelAttributeGroup"));
-                }
-                return this._RetailChannelAttributeGroup;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailChannelAttributeGroup> _RetailChannelAttributeGroup;
         /// <summary>
         /// There are no comments for RetailChannelPriceGroup in the schema.
         /// </summary>
@@ -697,6 +697,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnOperatingUnitPartyNumberChanging(string value);
         partial void OnOperatingUnitPartyNumberChanged();
         /// <summary>
+        /// There are no comments for Property CustomerType in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.OnlineStoreCustomerType> CustomerType
+        {
+            get
+            {
+                return this._CustomerType;
+            }
+            set
+            {
+                this.OnCustomerTypeChanging(value);
+                this._CustomerType = value;
+                this.OnCustomerTypeChanged();
+                this.OnPropertyChanged("CustomerType");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<global::Microsoft.Dynamics.DataEntities.OnlineStoreCustomerType> _CustomerType;
+        partial void OnCustomerTypeChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.OnlineStoreCustomerType> value);
+        partial void OnCustomerTypeChanged();
+        /// <summary>
         /// There are no comments for Property TimeZoneIdentifier in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -807,6 +829,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDefaultDimensionDisplayValueChanging(string value);
         partial void OnDefaultDimensionDisplayValueChanged();
         /// <summary>
+        /// There are no comments for Property RetailOnlineChannelLanguage in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailOnlineChannelLanguage> RetailOnlineChannelLanguage
+        {
+            get
+            {
+                return this._RetailOnlineChannelLanguage;
+            }
+            set
+            {
+                this.OnRetailOnlineChannelLanguageChanging(value);
+                this._RetailOnlineChannelLanguage = value;
+                this.OnRetailOnlineChannelLanguageChanged();
+                this.OnPropertyChanged("RetailOnlineChannelLanguage");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailOnlineChannelLanguage> _RetailOnlineChannelLanguage = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailOnlineChannelLanguage>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRetailOnlineChannelLanguageChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailOnlineChannelLanguage> value);
+        partial void OnRetailOnlineChannelLanguageChanged();
+        /// <summary>
         /// There are no comments for Property RetailStoreLocatorGroupOwner in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -829,27 +873,49 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnRetailStoreLocatorGroupOwnerChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStoreLocatorGroupOwner> value);
         partial void OnRetailStoreLocatorGroupOwnerChanged();
         /// <summary>
-        /// There are no comments for Property RetailOnlineChannelLanguage in the schema.
+        /// There are no comments for Property RetailStoreTenderType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailOnlineChannelLanguage> RetailOnlineChannelLanguage
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStoreTenderType> RetailStoreTenderType
         {
             get
             {
-                return this._RetailOnlineChannelLanguage;
+                return this._RetailStoreTenderType;
             }
             set
             {
-                this.OnRetailOnlineChannelLanguageChanging(value);
-                this._RetailOnlineChannelLanguage = value;
-                this.OnRetailOnlineChannelLanguageChanged();
-                this.OnPropertyChanged("RetailOnlineChannelLanguage");
+                this.OnRetailStoreTenderTypeChanging(value);
+                this._RetailStoreTenderType = value;
+                this.OnRetailStoreTenderTypeChanged();
+                this.OnPropertyChanged("RetailStoreTenderType");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailOnlineChannelLanguage> _RetailOnlineChannelLanguage = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailOnlineChannelLanguage>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRetailOnlineChannelLanguageChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailOnlineChannelLanguage> value);
-        partial void OnRetailOnlineChannelLanguageChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStoreTenderType> _RetailStoreTenderType = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStoreTenderType>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRetailStoreTenderTypeChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStoreTenderType> value);
+        partial void OnRetailStoreTenderTypeChanged();
+        /// <summary>
+        /// There are no comments for Property RetailChannelAttributeGroup in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailChannelAttributeGroup> RetailChannelAttributeGroup
+        {
+            get
+            {
+                return this._RetailChannelAttributeGroup;
+            }
+            set
+            {
+                this.OnRetailChannelAttributeGroupChanging(value);
+                this._RetailChannelAttributeGroup = value;
+                this.OnRetailChannelAttributeGroupChanged();
+                this.OnPropertyChanged("RetailChannelAttributeGroup");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailChannelAttributeGroup> _RetailChannelAttributeGroup = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailChannelAttributeGroup>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRetailChannelAttributeGroupChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailChannelAttributeGroup> value);
+        partial void OnRetailChannelAttributeGroupChanged();
         /// <summary>
         /// There are no comments for Property RetailChannelPaymentConnectorLine in the schema.
         /// </summary>
@@ -1004,50 +1070,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.DimensionSet _DimensionSet;
         partial void OnDimensionSetChanging(global::Microsoft.Dynamics.DataEntities.DimensionSet value);
         partial void OnDimensionSetChanged();
-        /// <summary>
-        /// There are no comments for Property RetailStoreTenderType in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStoreTenderType> RetailStoreTenderType
-        {
-            get
-            {
-                return this._RetailStoreTenderType;
-            }
-            set
-            {
-                this.OnRetailStoreTenderTypeChanging(value);
-                this._RetailStoreTenderType = value;
-                this.OnRetailStoreTenderTypeChanged();
-                this.OnPropertyChanged("RetailStoreTenderType");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStoreTenderType> _RetailStoreTenderType = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStoreTenderType>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRetailStoreTenderTypeChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStoreTenderType> value);
-        partial void OnRetailStoreTenderTypeChanged();
-        /// <summary>
-        /// There are no comments for Property RetailChannelAttributeGroup in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailChannelAttributeGroup> RetailChannelAttributeGroup
-        {
-            get
-            {
-                return this._RetailChannelAttributeGroup;
-            }
-            set
-            {
-                this.OnRetailChannelAttributeGroupChanging(value);
-                this._RetailChannelAttributeGroup = value;
-                this.OnRetailChannelAttributeGroupChanged();
-                this.OnPropertyChanged("RetailChannelAttributeGroup");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailChannelAttributeGroup> _RetailChannelAttributeGroup = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailChannelAttributeGroup>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRetailChannelAttributeGroupChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailChannelAttributeGroup> value);
-        partial void OnRetailChannelAttributeGroupChanged();
         /// <summary>
         /// There are no comments for Property RetailChannelPriceGroup in the schema.
         /// </summary>

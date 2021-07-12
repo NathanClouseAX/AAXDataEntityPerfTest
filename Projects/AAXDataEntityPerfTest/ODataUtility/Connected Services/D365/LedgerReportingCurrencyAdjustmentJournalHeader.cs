@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for LegalEntity in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.LegalEntitySingle LegalEntity
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._LegalEntity == null))
-                {
-                    this._LegalEntity = new global::Microsoft.Dynamics.DataEntities.LegalEntitySingle(this.Context, GetPath("LegalEntity"));
-                }
-                return this._LegalEntity;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.LegalEntitySingle _LegalEntity;
-        /// <summary>
         /// There are no comments for LedgerReportingCurrencyAdjustmentJournalLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,6 +55,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLine> _LedgerReportingCurrencyAdjustmentJournalLine;
+        /// <summary>
+        /// There are no comments for LegalEntity in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.LegalEntitySingle LegalEntity
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._LegalEntity == null))
+                {
+                    this._LegalEntity = new global::Microsoft.Dynamics.DataEntities.LegalEntitySingle(this.Context, GetPath("LegalEntity"));
+                }
+                return this._LegalEntity;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.LegalEntitySingle _LegalEntity;
     }
         /// <summary>
         /// There are no comments for LedgerReportingCurrencyAdjustmentJournalHeader in the schema.
@@ -304,28 +304,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnJournalTotalCreditReportingCurrencyChanging(decimal value);
         partial void OnJournalTotalCreditReportingCurrencyChanged();
         /// <summary>
-        /// There are no comments for Property LegalEntity in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.LegalEntity LegalEntity
-        {
-            get
-            {
-                return this._LegalEntity;
-            }
-            set
-            {
-                this.OnLegalEntityChanging(value);
-                this._LegalEntity = value;
-                this.OnLegalEntityChanged();
-                this.OnPropertyChanged("LegalEntity");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.LegalEntity _LegalEntity;
-        partial void OnLegalEntityChanging(global::Microsoft.Dynamics.DataEntities.LegalEntity value);
-        partial void OnLegalEntityChanged();
-        /// <summary>
         /// There are no comments for Property LedgerReportingCurrencyAdjustmentJournalLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -347,6 +325,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLine> _LedgerReportingCurrencyAdjustmentJournalLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnLedgerReportingCurrencyAdjustmentJournalLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerReportingCurrencyAdjustmentJournalLine> value);
         partial void OnLedgerReportingCurrencyAdjustmentJournalLineChanged();
+        /// <summary>
+        /// There are no comments for Property LegalEntity in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.LegalEntity LegalEntity
+        {
+            get
+            {
+                return this._LegalEntity;
+            }
+            set
+            {
+                this.OnLegalEntityChanging(value);
+                this._LegalEntity = value;
+                this.OnLegalEntityChanged();
+                this.OnPropertyChanged("LegalEntity");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.LegalEntity _LegalEntity;
+        partial void OnLegalEntityChanging(global::Microsoft.Dynamics.DataEntities.LegalEntity value);
+        partial void OnLegalEntityChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

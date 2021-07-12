@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,10 +35,10 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for WarehouseWorkPolicyLocations in the schema.
+        /// There are no comments for WarehouseWorkPolicyProducts in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyLocation> WarehouseWorkPolicyLocations
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyProduct> WarehouseWorkPolicyProducts
         {
             get
             {
@@ -46,36 +46,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._WarehouseWorkPolicyLocations == null))
+                if ((this._WarehouseWorkPolicyProducts == null))
                 {
-                    this._WarehouseWorkPolicyLocations = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyLocation>(GetPath("WarehouseWorkPolicyLocations"));
+                    this._WarehouseWorkPolicyProducts = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyProduct>(GetPath("WarehouseWorkPolicyProducts"));
                 }
-                return this._WarehouseWorkPolicyLocations;
+                return this._WarehouseWorkPolicyProducts;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyLocation> _WarehouseWorkPolicyLocations;
-        /// <summary>
-        /// There are no comments for WarehouseWorkCreationRules in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WarehouseWorkCreationRule> WarehouseWorkCreationRules
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._WarehouseWorkCreationRules == null))
-                {
-                    this._WarehouseWorkCreationRules = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.WarehouseWorkCreationRule>(GetPath("WarehouseWorkCreationRules"));
-                }
-                return this._WarehouseWorkCreationRules;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WarehouseWorkCreationRule> _WarehouseWorkCreationRules;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyProduct> _WarehouseWorkPolicyProducts;
         /// <summary>
         /// There are no comments for WarehouseWorkCreationRulesV2 in the schema.
         /// </summary>
@@ -98,10 +77,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WarehouseWorkCreationRuleV2> _WarehouseWorkCreationRulesV2;
         /// <summary>
-        /// There are no comments for WarehouseWorkPolicyProducts in the schema.
+        /// There are no comments for WarehouseWorkCreationRules in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyProduct> WarehouseWorkPolicyProducts
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WarehouseWorkCreationRule> WarehouseWorkCreationRules
         {
             get
             {
@@ -109,15 +88,36 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._WarehouseWorkPolicyProducts == null))
+                if ((this._WarehouseWorkCreationRules == null))
                 {
-                    this._WarehouseWorkPolicyProducts = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyProduct>(GetPath("WarehouseWorkPolicyProducts"));
+                    this._WarehouseWorkCreationRules = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.WarehouseWorkCreationRule>(GetPath("WarehouseWorkCreationRules"));
                 }
-                return this._WarehouseWorkPolicyProducts;
+                return this._WarehouseWorkCreationRules;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyProduct> _WarehouseWorkPolicyProducts;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WarehouseWorkCreationRule> _WarehouseWorkCreationRules;
+        /// <summary>
+        /// There are no comments for WarehouseWorkPolicyLocations in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyLocation> WarehouseWorkPolicyLocations
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._WarehouseWorkPolicyLocations == null))
+                {
+                    this._WarehouseWorkPolicyLocations = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyLocation>(GetPath("WarehouseWorkPolicyLocations"));
+                }
+                return this._WarehouseWorkPolicyLocations;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyLocation> _WarehouseWorkPolicyLocations;
     }
         /// <summary>
         /// There are no comments for WarehouseWorkPolicy in the schema.
@@ -188,49 +188,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnNameChanging(string value);
         partial void OnNameChanged();
         /// <summary>
-        /// There are no comments for Property WarehouseWorkPolicyLocations in the schema.
+        /// There are no comments for Property WarehouseWorkPolicyProducts in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyLocation> WarehouseWorkPolicyLocations
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyProduct> WarehouseWorkPolicyProducts
         {
             get
             {
-                return this._WarehouseWorkPolicyLocations;
+                return this._WarehouseWorkPolicyProducts;
             }
             set
             {
-                this.OnWarehouseWorkPolicyLocationsChanging(value);
-                this._WarehouseWorkPolicyLocations = value;
-                this.OnWarehouseWorkPolicyLocationsChanged();
-                this.OnPropertyChanged("WarehouseWorkPolicyLocations");
+                this.OnWarehouseWorkPolicyProductsChanging(value);
+                this._WarehouseWorkPolicyProducts = value;
+                this.OnWarehouseWorkPolicyProductsChanged();
+                this.OnPropertyChanged("WarehouseWorkPolicyProducts");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyLocation> _WarehouseWorkPolicyLocations = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyLocation>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnWarehouseWorkPolicyLocationsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyLocation> value);
-        partial void OnWarehouseWorkPolicyLocationsChanged();
-        /// <summary>
-        /// There are no comments for Property WarehouseWorkCreationRules in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkCreationRule> WarehouseWorkCreationRules
-        {
-            get
-            {
-                return this._WarehouseWorkCreationRules;
-            }
-            set
-            {
-                this.OnWarehouseWorkCreationRulesChanging(value);
-                this._WarehouseWorkCreationRules = value;
-                this.OnWarehouseWorkCreationRulesChanged();
-                this.OnPropertyChanged("WarehouseWorkCreationRules");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkCreationRule> _WarehouseWorkCreationRules = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkCreationRule>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnWarehouseWorkCreationRulesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkCreationRule> value);
-        partial void OnWarehouseWorkCreationRulesChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyProduct> _WarehouseWorkPolicyProducts = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyProduct>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnWarehouseWorkPolicyProductsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyProduct> value);
+        partial void OnWarehouseWorkPolicyProductsChanged();
         /// <summary>
         /// There are no comments for Property WarehouseWorkCreationRulesV2 in the schema.
         /// </summary>
@@ -254,27 +232,49 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnWarehouseWorkCreationRulesV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkCreationRuleV2> value);
         partial void OnWarehouseWorkCreationRulesV2Changed();
         /// <summary>
-        /// There are no comments for Property WarehouseWorkPolicyProducts in the schema.
+        /// There are no comments for Property WarehouseWorkCreationRules in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyProduct> WarehouseWorkPolicyProducts
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkCreationRule> WarehouseWorkCreationRules
         {
             get
             {
-                return this._WarehouseWorkPolicyProducts;
+                return this._WarehouseWorkCreationRules;
             }
             set
             {
-                this.OnWarehouseWorkPolicyProductsChanging(value);
-                this._WarehouseWorkPolicyProducts = value;
-                this.OnWarehouseWorkPolicyProductsChanged();
-                this.OnPropertyChanged("WarehouseWorkPolicyProducts");
+                this.OnWarehouseWorkCreationRulesChanging(value);
+                this._WarehouseWorkCreationRules = value;
+                this.OnWarehouseWorkCreationRulesChanged();
+                this.OnPropertyChanged("WarehouseWorkCreationRules");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyProduct> _WarehouseWorkPolicyProducts = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyProduct>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnWarehouseWorkPolicyProductsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyProduct> value);
-        partial void OnWarehouseWorkPolicyProductsChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkCreationRule> _WarehouseWorkCreationRules = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkCreationRule>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnWarehouseWorkCreationRulesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkCreationRule> value);
+        partial void OnWarehouseWorkCreationRulesChanged();
+        /// <summary>
+        /// There are no comments for Property WarehouseWorkPolicyLocations in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyLocation> WarehouseWorkPolicyLocations
+        {
+            get
+            {
+                return this._WarehouseWorkPolicyLocations;
+            }
+            set
+            {
+                this.OnWarehouseWorkPolicyLocationsChanging(value);
+                this._WarehouseWorkPolicyLocations = value;
+                this.OnWarehouseWorkPolicyLocationsChanged();
+                this.OnPropertyChanged("WarehouseWorkPolicyLocations");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyLocation> _WarehouseWorkPolicyLocations = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyLocation>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnWarehouseWorkPolicyLocationsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyLocation> value);
+        partial void OnWarehouseWorkPolicyLocationsChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

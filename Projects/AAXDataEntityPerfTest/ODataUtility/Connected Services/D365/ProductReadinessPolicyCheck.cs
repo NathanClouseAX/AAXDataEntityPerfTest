@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public ProductReadinessPolicyCheckSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ProductReadinessPolicyCheck> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for ReleasedProductReadinessChecks in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> ReleasedProductReadinessChecks
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ReleasedProductReadinessChecks == null))
-                {
-                    this._ReleasedProductReadinessChecks = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck>(GetPath("ReleasedProductReadinessChecks"));
-                }
-                return this._ReleasedProductReadinessChecks;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> _ReleasedProductReadinessChecks;
         /// <summary>
         /// There are no comments for ProductReadinessPolicy in the schema.
         /// </summary>
@@ -118,6 +97,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.TeamV2Single _OwningTeamV2;
+        /// <summary>
+        /// There are no comments for ReleasedProductReadinessChecks in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> ReleasedProductReadinessChecks
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ReleasedProductReadinessChecks == null))
+                {
+                    this._ReleasedProductReadinessChecks = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck>(GetPath("ReleasedProductReadinessChecks"));
+                }
+                return this._ReleasedProductReadinessChecks;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> _ReleasedProductReadinessChecks;
     }
         /// <summary>
         /// There are no comments for ProductReadinessPolicyCheck in the schema.
@@ -487,28 +487,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnOwningPersonPartyNumberChanging(string value);
         partial void OnOwningPersonPartyNumberChanged();
         /// <summary>
-        /// There are no comments for Property ReleasedProductReadinessChecks in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> ReleasedProductReadinessChecks
-        {
-            get
-            {
-                return this._ReleasedProductReadinessChecks;
-            }
-            set
-            {
-                this.OnReleasedProductReadinessChecksChanging(value);
-                this._ReleasedProductReadinessChecks = value;
-                this.OnReleasedProductReadinessChecksChanged();
-                this.OnPropertyChanged("ReleasedProductReadinessChecks");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> _ReleasedProductReadinessChecks = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnReleasedProductReadinessChecksChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> value);
-        partial void OnReleasedProductReadinessChecksChanged();
-        /// <summary>
         /// There are no comments for Property ProductReadinessPolicy in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -574,6 +552,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.TeamV2 _OwningTeamV2;
         partial void OnOwningTeamV2Changing(global::Microsoft.Dynamics.DataEntities.TeamV2 value);
         partial void OnOwningTeamV2Changed();
+        /// <summary>
+        /// There are no comments for Property ReleasedProductReadinessChecks in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> ReleasedProductReadinessChecks
+        {
+            get
+            {
+                return this._ReleasedProductReadinessChecks;
+            }
+            set
+            {
+                this.OnReleasedProductReadinessChecksChanging(value);
+                this._ReleasedProductReadinessChecks = value;
+                this.OnReleasedProductReadinessChecksChanged();
+                this.OnPropertyChanged("ReleasedProductReadinessChecks");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> _ReleasedProductReadinessChecks = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnReleasedProductReadinessChecksChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> value);
+        partial void OnReleasedProductReadinessChecksChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

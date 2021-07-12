@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,48 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public RatingLevelSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<RatingLevel> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for CompPerfAllocationLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocationLine> CompPerfAllocationLine
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._CompPerfAllocationLine == null))
-                {
-                    this._CompPerfAllocationLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocationLine>(GetPath("CompPerfAllocationLine"));
-                }
-                return this._CompPerfAllocationLine;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocationLine> _CompPerfAllocationLine;
-        /// <summary>
-        /// There are no comments for RatingModel in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.RatingModelSingle RatingModel
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._RatingModel == null))
-                {
-                    this._RatingModel = new global::Microsoft.Dynamics.DataEntities.RatingModelSingle(this.Context, GetPath("RatingModel"));
-                }
-                return this._RatingModel;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.RatingModelSingle _RatingModel;
         /// <summary>
         /// There are no comments for JobPreferredSkills in the schema.
         /// </summary>
@@ -119,10 +77,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CourseTypeSkillProfile> _CourseTypeSkillProfile;
         /// <summary>
-        /// There are no comments for JobTemplateSkills in the schema.
+        /// There are no comments for RatingModel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobTemplateSkill> JobTemplateSkills
+        public virtual global::Microsoft.Dynamics.DataEntities.RatingModelSingle RatingModel
         {
             get
             {
@@ -130,36 +88,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._JobTemplateSkills == null))
+                if ((this._RatingModel == null))
                 {
-                    this._JobTemplateSkills = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.JobTemplateSkill>(GetPath("JobTemplateSkills"));
+                    this._RatingModel = new global::Microsoft.Dynamics.DataEntities.RatingModelSingle(this.Context, GetPath("RatingModel"));
                 }
-                return this._JobTemplateSkills;
+                return this._RatingModel;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobTemplateSkill> _JobTemplateSkills;
-        /// <summary>
-        /// There are no comments for Discussion in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Discussion> Discussion
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._Discussion == null))
-                {
-                    this._Discussion = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.Discussion>(GetPath("Discussion"));
-                }
-                return this._Discussion;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Discussion> _Discussion;
+        private global::Microsoft.Dynamics.DataEntities.RatingModelSingle _RatingModel;
         /// <summary>
         /// There are no comments for PersonSkill in the schema.
         /// </summary>
@@ -181,6 +118,69 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonSkill> _PersonSkill;
+        /// <summary>
+        /// There are no comments for JobTemplateSkills in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobTemplateSkill> JobTemplateSkills
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._JobTemplateSkills == null))
+                {
+                    this._JobTemplateSkills = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.JobTemplateSkill>(GetPath("JobTemplateSkills"));
+                }
+                return this._JobTemplateSkills;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobTemplateSkill> _JobTemplateSkills;
+        /// <summary>
+        /// There are no comments for CompPerfAllocationLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocationLine> CompPerfAllocationLine
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._CompPerfAllocationLine == null))
+                {
+                    this._CompPerfAllocationLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocationLine>(GetPath("CompPerfAllocationLine"));
+                }
+                return this._CompPerfAllocationLine;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocationLine> _CompPerfAllocationLine;
+        /// <summary>
+        /// There are no comments for Discussion in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Discussion> Discussion
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Discussion == null))
+                {
+                    this._Discussion = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.Discussion>(GetPath("Discussion"));
+                }
+                return this._Discussion;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Discussion> _Discussion;
     }
         /// <summary>
         /// There are no comments for RatingLevel in the schema.
@@ -325,50 +325,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnNoteChanging(string value);
         partial void OnNoteChanged();
         /// <summary>
-        /// There are no comments for Property CompPerfAllocationLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocationLine> CompPerfAllocationLine
-        {
-            get
-            {
-                return this._CompPerfAllocationLine;
-            }
-            set
-            {
-                this.OnCompPerfAllocationLineChanging(value);
-                this._CompPerfAllocationLine = value;
-                this.OnCompPerfAllocationLineChanged();
-                this.OnPropertyChanged("CompPerfAllocationLine");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocationLine> _CompPerfAllocationLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocationLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnCompPerfAllocationLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocationLine> value);
-        partial void OnCompPerfAllocationLineChanged();
-        /// <summary>
-        /// There are no comments for Property RatingModel in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.RatingModel RatingModel
-        {
-            get
-            {
-                return this._RatingModel;
-            }
-            set
-            {
-                this.OnRatingModelChanging(value);
-                this._RatingModel = value;
-                this.OnRatingModelChanged();
-                this.OnPropertyChanged("RatingModel");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.RatingModel _RatingModel;
-        partial void OnRatingModelChanging(global::Microsoft.Dynamics.DataEntities.RatingModel value);
-        partial void OnRatingModelChanged();
-        /// <summary>
         /// There are no comments for Property JobPreferredSkills in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -413,49 +369,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnCourseTypeSkillProfileChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CourseTypeSkillProfile> value);
         partial void OnCourseTypeSkillProfileChanged();
         /// <summary>
-        /// There are no comments for Property JobTemplateSkills in the schema.
+        /// There are no comments for Property RatingModel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateSkill> JobTemplateSkills
+        public virtual global::Microsoft.Dynamics.DataEntities.RatingModel RatingModel
         {
             get
             {
-                return this._JobTemplateSkills;
+                return this._RatingModel;
             }
             set
             {
-                this.OnJobTemplateSkillsChanging(value);
-                this._JobTemplateSkills = value;
-                this.OnJobTemplateSkillsChanged();
-                this.OnPropertyChanged("JobTemplateSkills");
+                this.OnRatingModelChanging(value);
+                this._RatingModel = value;
+                this.OnRatingModelChanged();
+                this.OnPropertyChanged("RatingModel");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateSkill> _JobTemplateSkills = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateSkill>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnJobTemplateSkillsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateSkill> value);
-        partial void OnJobTemplateSkillsChanged();
-        /// <summary>
-        /// There are no comments for Property Discussion in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Discussion> Discussion
-        {
-            get
-            {
-                return this._Discussion;
-            }
-            set
-            {
-                this.OnDiscussionChanging(value);
-                this._Discussion = value;
-                this.OnDiscussionChanged();
-                this.OnPropertyChanged("Discussion");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Discussion> _Discussion = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Discussion>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnDiscussionChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Discussion> value);
-        partial void OnDiscussionChanged();
+        private global::Microsoft.Dynamics.DataEntities.RatingModel _RatingModel;
+        partial void OnRatingModelChanging(global::Microsoft.Dynamics.DataEntities.RatingModel value);
+        partial void OnRatingModelChanged();
         /// <summary>
         /// There are no comments for Property PersonSkill in the schema.
         /// </summary>
@@ -478,6 +412,72 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonSkill> _PersonSkill = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonSkill>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnPersonSkillChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonSkill> value);
         partial void OnPersonSkillChanged();
+        /// <summary>
+        /// There are no comments for Property JobTemplateSkills in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateSkill> JobTemplateSkills
+        {
+            get
+            {
+                return this._JobTemplateSkills;
+            }
+            set
+            {
+                this.OnJobTemplateSkillsChanging(value);
+                this._JobTemplateSkills = value;
+                this.OnJobTemplateSkillsChanged();
+                this.OnPropertyChanged("JobTemplateSkills");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateSkill> _JobTemplateSkills = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateSkill>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnJobTemplateSkillsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateSkill> value);
+        partial void OnJobTemplateSkillsChanged();
+        /// <summary>
+        /// There are no comments for Property CompPerfAllocationLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocationLine> CompPerfAllocationLine
+        {
+            get
+            {
+                return this._CompPerfAllocationLine;
+            }
+            set
+            {
+                this.OnCompPerfAllocationLineChanging(value);
+                this._CompPerfAllocationLine = value;
+                this.OnCompPerfAllocationLineChanged();
+                this.OnPropertyChanged("CompPerfAllocationLine");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocationLine> _CompPerfAllocationLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocationLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnCompPerfAllocationLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocationLine> value);
+        partial void OnCompPerfAllocationLineChanged();
+        /// <summary>
+        /// There are no comments for Property Discussion in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Discussion> Discussion
+        {
+            get
+            {
+                return this._Discussion;
+            }
+            set
+            {
+                this.OnDiscussionChanging(value);
+                this._Discussion = value;
+                this.OnDiscussionChanged();
+                this.OnPropertyChanged("Discussion");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Discussion> _Discussion = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Discussion>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnDiscussionChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Discussion> value);
+        partial void OnDiscussionChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

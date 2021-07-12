@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -1648,6 +1648,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OndaysTransactionsExistsChanging(int value);
         partial void OndaysTransactionsExistsChanged();
         /// <summary>
+        /// There are no comments for Property UseQuickPayShortcuts in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> UseQuickPayShortcuts
+        {
+            get
+            {
+                return this._UseQuickPayShortcuts;
+            }
+            set
+            {
+                this.OnUseQuickPayShortcutsChanging(value);
+                this._UseQuickPayShortcuts = value;
+                this.OnUseQuickPayShortcutsChanged();
+                this.OnPropertyChanged("UseQuickPayShortcuts");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> _UseQuickPayShortcuts;
+        partial void OnUseQuickPayShortcutsChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> value);
+        partial void OnUseQuickPayShortcutsChanged();
+        /// <summary>
         /// There are no comments for Property priceRoundingTo in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -1801,6 +1823,28 @@ namespace Microsoft.Dynamics.DataEntities
         private decimal _maximumQuantity;
         partial void OnmaximumQuantityChanging(decimal value);
         partial void OnmaximumQuantityChanged();
+        /// <summary>
+        /// There are no comments for Property ChangeDueBehavior in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailChangeDueBehavior> ChangeDueBehavior
+        {
+            get
+            {
+                return this._ChangeDueBehavior;
+            }
+            set
+            {
+                this.OnChangeDueBehaviorChanging(value);
+                this._ChangeDueBehavior = value;
+                this.OnChangeDueBehaviorChanged();
+                this.OnPropertyChanged("ChangeDueBehavior");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailChangeDueBehavior> _ChangeDueBehavior;
+        partial void OnChangeDueBehaviorChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailChangeDueBehavior> value);
+        partial void OnChangeDueBehaviorChanged();
         /// <summary>
         /// There are no comments for Property ProhibitMixingSalesAndReturns in the schema.
         /// </summary>
@@ -2263,6 +2307,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> _StaffCardLogonRequiresPassword;
         partial void OnStaffCardLogonRequiresPasswordChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> value);
         partial void OnStaffCardLogonRequiresPasswordChanged();
+        /// <summary>
+        /// There are no comments for Property DisableEditingOfPartiallyFulfilledOrders in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DisableEditingOfPartiallyFulfilledOrders
+        {
+            get
+            {
+                return this._DisableEditingOfPartiallyFulfilledOrders;
+            }
+            set
+            {
+                this.OnDisableEditingOfPartiallyFulfilledOrdersChanging(value);
+                this._DisableEditingOfPartiallyFulfilledOrders = value;
+                this.OnDisableEditingOfPartiallyFulfilledOrdersChanged();
+                this.OnPropertyChanged("DisableEditingOfPartiallyFulfilledOrders");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> _DisableEditingOfPartiallyFulfilledOrders;
+        partial void OnDisableEditingOfPartiallyFulfilledOrdersChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> value);
+        partial void OnDisableEditingOfPartiallyFulfilledOrdersChanged();
         /// <summary>
         /// There are no comments for Property GenerateLoyaltyCardNumber in the schema.
         /// </summary>

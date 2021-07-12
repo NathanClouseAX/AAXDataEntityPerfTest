@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -1873,28 +1873,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> _IsAutomaticSettlement;
         partial void OnIsAutomaticSettlementChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> value);
         partial void OnIsAutomaticSettlementChanged();
-        /// <summary>
-        /// There are no comments for Property AutomationProductReceiptMatchingQuantityReq in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AutomationProductReceiptMatchingQuantityReq
-        {
-            get
-            {
-                return this._AutomationProductReceiptMatchingQuantityReq;
-            }
-            set
-            {
-                this.OnAutomationProductReceiptMatchingQuantityReqChanging(value);
-                this._AutomationProductReceiptMatchingQuantityReq = value;
-                this.OnAutomationProductReceiptMatchingQuantityReqChanged();
-                this.OnPropertyChanged("AutomationProductReceiptMatchingQuantityReq");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> _AutomationProductReceiptMatchingQuantityReq;
-        partial void OnAutomationProductReceiptMatchingQuantityReqChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> value);
-        partial void OnAutomationProductReceiptMatchingQuantityReqChanged();
         /// <summary>
         /// There are no comments for Property ValidateInvoicesInTheJournal in the schema.
         /// </summary>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for EngineeringProductCategoryDetails in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetails> EngineeringProductCategoryDetails
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._EngineeringProductCategoryDetails == null))
-                {
-                    this._EngineeringProductCategoryDetails = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetails>(GetPath("EngineeringProductCategoryDetails"));
-                }
-                return this._EngineeringProductCategoryDetails;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetails> _EngineeringProductCategoryDetails;
-        /// <summary>
         /// There are no comments for ProductReadinessPolicyChecks in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,6 +55,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductReadinessPolicyCheck> _ProductReadinessPolicyChecks;
+        /// <summary>
+        /// There are no comments for EngineeringProductCategoryDetails in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetails> EngineeringProductCategoryDetails
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._EngineeringProductCategoryDetails == null))
+                {
+                    this._EngineeringProductCategoryDetails = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetails>(GetPath("EngineeringProductCategoryDetails"));
+                }
+                return this._EngineeringProductCategoryDetails;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetails> _EngineeringProductCategoryDetails;
     }
         /// <summary>
         /// There are no comments for ProductReadinessPolicy in the schema.
@@ -187,28 +187,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnPolicyDescriptionChanging(string value);
         partial void OnPolicyDescriptionChanged();
         /// <summary>
-        /// There are no comments for Property EngineeringProductCategoryDetails in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetails> EngineeringProductCategoryDetails
-        {
-            get
-            {
-                return this._EngineeringProductCategoryDetails;
-            }
-            set
-            {
-                this.OnEngineeringProductCategoryDetailsChanging(value);
-                this._EngineeringProductCategoryDetails = value;
-                this.OnEngineeringProductCategoryDetailsChanged();
-                this.OnPropertyChanged("EngineeringProductCategoryDetails");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetails> _EngineeringProductCategoryDetails = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetails>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnEngineeringProductCategoryDetailsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetails> value);
-        partial void OnEngineeringProductCategoryDetailsChanged();
-        /// <summary>
         /// There are no comments for Property ProductReadinessPolicyChecks in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -230,6 +208,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductReadinessPolicyCheck> _ProductReadinessPolicyChecks = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductReadinessPolicyCheck>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnProductReadinessPolicyChecksChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductReadinessPolicyCheck> value);
         partial void OnProductReadinessPolicyChecksChanged();
+        /// <summary>
+        /// There are no comments for Property EngineeringProductCategoryDetails in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetails> EngineeringProductCategoryDetails
+        {
+            get
+            {
+                return this._EngineeringProductCategoryDetails;
+            }
+            set
+            {
+                this.OnEngineeringProductCategoryDetailsChanging(value);
+                this._EngineeringProductCategoryDetails = value;
+                this.OnEngineeringProductCategoryDetailsChanged();
+                this.OnPropertyChanged("EngineeringProductCategoryDetails");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetails> _EngineeringProductCategoryDetails = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetails>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnEngineeringProductCategoryDetailsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetails> value);
+        partial void OnEngineeringProductCategoryDetailsChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

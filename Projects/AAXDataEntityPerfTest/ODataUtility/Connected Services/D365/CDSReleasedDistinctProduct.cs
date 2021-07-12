@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for CDSInventoryOnHandRequests in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.CDSInventoryOnHandRequestSingle CDSInventoryOnHandRequests
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._CDSInventoryOnHandRequests == null))
-                {
-                    this._CDSInventoryOnHandRequests = new global::Microsoft.Dynamics.DataEntities.CDSInventoryOnHandRequestSingle(this.Context, GetPath("CDSInventoryOnHandRequests"));
-                }
-                return this._CDSInventoryOnHandRequests;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.CDSInventoryOnHandRequestSingle _CDSInventoryOnHandRequests;
-        /// <summary>
         /// There are no comments for ReleasedProductV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,6 +55,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ReleasedProductV2Single _ReleasedProductV2;
+        /// <summary>
+        /// There are no comments for CDSInventoryOnHandRequests in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.CDSInventoryOnHandRequestSingle CDSInventoryOnHandRequests
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._CDSInventoryOnHandRequests == null))
+                {
+                    this._CDSInventoryOnHandRequests = new global::Microsoft.Dynamics.DataEntities.CDSInventoryOnHandRequestSingle(this.Context, GetPath("CDSInventoryOnHandRequests"));
+                }
+                return this._CDSInventoryOnHandRequests;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.CDSInventoryOnHandRequestSingle _CDSInventoryOnHandRequests;
     }
         /// <summary>
         /// There are no comments for CDSReleasedDistinctProduct in the schema.
@@ -725,28 +725,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnIsStockedProductChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> value);
         partial void OnIsStockedProductChanged();
         /// <summary>
-        /// There are no comments for Property CDSInventoryOnHandRequests in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.CDSInventoryOnHandRequest CDSInventoryOnHandRequests
-        {
-            get
-            {
-                return this._CDSInventoryOnHandRequests;
-            }
-            set
-            {
-                this.OnCDSInventoryOnHandRequestsChanging(value);
-                this._CDSInventoryOnHandRequests = value;
-                this.OnCDSInventoryOnHandRequestsChanged();
-                this.OnPropertyChanged("CDSInventoryOnHandRequests");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.CDSInventoryOnHandRequest _CDSInventoryOnHandRequests;
-        partial void OnCDSInventoryOnHandRequestsChanging(global::Microsoft.Dynamics.DataEntities.CDSInventoryOnHandRequest value);
-        partial void OnCDSInventoryOnHandRequestsChanged();
-        /// <summary>
         /// There are no comments for Property ReleasedProductV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -768,6 +746,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.ReleasedProductV2 _ReleasedProductV2;
         partial void OnReleasedProductV2Changing(global::Microsoft.Dynamics.DataEntities.ReleasedProductV2 value);
         partial void OnReleasedProductV2Changed();
+        /// <summary>
+        /// There are no comments for Property CDSInventoryOnHandRequests in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.CDSInventoryOnHandRequest CDSInventoryOnHandRequests
+        {
+            get
+            {
+                return this._CDSInventoryOnHandRequests;
+            }
+            set
+            {
+                this.OnCDSInventoryOnHandRequestsChanging(value);
+                this._CDSInventoryOnHandRequests = value;
+                this.OnCDSInventoryOnHandRequestsChanged();
+                this.OnPropertyChanged("CDSInventoryOnHandRequests");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.CDSInventoryOnHandRequest _CDSInventoryOnHandRequests;
+        partial void OnCDSInventoryOnHandRequestsChanging(global::Microsoft.Dynamics.DataEntities.CDSInventoryOnHandRequest value);
+        partial void OnCDSInventoryOnHandRequestsChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

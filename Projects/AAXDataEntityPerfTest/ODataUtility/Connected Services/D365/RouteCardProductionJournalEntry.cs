@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -223,6 +223,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ItemBatchSingle _ItemBatch;
+        /// <summary>
+        /// There are no comments for DimensionSet in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.DimensionSetSingle DimensionSet
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._DimensionSet == null))
+                {
+                    this._DimensionSet = new global::Microsoft.Dynamics.DataEntities.DimensionSetSingle(this.Context, GetPath("DimensionSet"));
+                }
+                return this._DimensionSet;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.DimensionSetSingle _DimensionSet;
     }
         /// <summary>
         /// There are no comments for RouteCardProductionJournalEntry in the schema.
@@ -712,28 +733,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnRouteOperationPriorityChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RouteOprPriority> value);
         partial void OnRouteOperationPriorityChanged();
         /// <summary>
-        /// There are no comments for Property VoucherNumber in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual string VoucherNumber
-        {
-            get
-            {
-                return this._VoucherNumber;
-            }
-            set
-            {
-                this.OnVoucherNumberChanging(value);
-                this._VoucherNumber = value;
-                this.OnVoucherNumberChanged();
-                this.OnPropertyChanged("VoucherNumber");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private string _VoucherNumber;
-        partial void OnVoucherNumberChanging(string value);
-        partial void OnVoucherNumberChanged();
-        /// <summary>
         /// There are no comments for Property JournalName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -755,6 +754,28 @@ namespace Microsoft.Dynamics.DataEntities
         private string _JournalName;
         partial void OnJournalNameChanging(string value);
         partial void OnJournalNameChanged();
+        /// <summary>
+        /// There are no comments for Property VoucherNumber in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual string VoucherNumber
+        {
+            get
+            {
+                return this._VoucherNumber;
+            }
+            set
+            {
+                this.OnVoucherNumberChanging(value);
+                this._VoucherNumber = value;
+                this.OnVoucherNumberChanged();
+                this.OnPropertyChanged("VoucherNumber");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _VoucherNumber;
+        partial void OnVoucherNumberChanging(string value);
+        partial void OnVoucherNumberChanged();
         /// <summary>
         /// There are no comments for Property ReportedGoodCatchWeightQuantity in the schema.
         /// </summary>
@@ -1240,6 +1261,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnLicensePlateNumberChanging(string value);
         partial void OnLicensePlateNumberChanged();
         /// <summary>
+        /// There are no comments for Property DefaultDimensionDisplayValue in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual string DefaultDimensionDisplayValue
+        {
+            get
+            {
+                return this._DefaultDimensionDisplayValue;
+            }
+            set
+            {
+                this.OnDefaultDimensionDisplayValueChanging(value);
+                this._DefaultDimensionDisplayValue = value;
+                this.OnDefaultDimensionDisplayValueChanged();
+                this.OnPropertyChanged("DefaultDimensionDisplayValue");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _DefaultDimensionDisplayValue;
+        partial void OnDefaultDimensionDisplayValueChanging(string value);
+        partial void OnDefaultDimensionDisplayValueChanged();
+        /// <summary>
         /// There are no comments for Property PostedUserId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -1481,6 +1524,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.ItemBatch _ItemBatch;
         partial void OnItemBatchChanging(global::Microsoft.Dynamics.DataEntities.ItemBatch value);
         partial void OnItemBatchChanged();
+        /// <summary>
+        /// There are no comments for Property DimensionSet in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.DimensionSet DimensionSet
+        {
+            get
+            {
+                return this._DimensionSet;
+            }
+            set
+            {
+                this.OnDimensionSetChanging(value);
+                this._DimensionSet = value;
+                this.OnDimensionSetChanged();
+                this.OnPropertyChanged("DimensionSet");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.DimensionSet _DimensionSet;
+        partial void OnDimensionSetChanging(global::Microsoft.Dynamics.DataEntities.DimensionSet value);
+        partial void OnDimensionSetChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

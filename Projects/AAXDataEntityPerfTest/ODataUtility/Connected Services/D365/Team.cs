@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/4/2021 7:24:30 AM
+// Generation date: 6/6/2021 9:11:38 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for TeamMembers in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TeamMember> TeamMembers
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._TeamMembers == null))
-                {
-                    this._TeamMembers = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TeamMember>(GetPath("TeamMembers"));
-                }
-                return this._TeamMembers;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TeamMember> _TeamMembers;
-        /// <summary>
         /// There are no comments for TeamMembershipCriterion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,6 +55,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.TeamMembershipCriterionSingle _TeamMembershipCriterion;
+        /// <summary>
+        /// There are no comments for TeamMembers in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TeamMember> TeamMembers
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._TeamMembers == null))
+                {
+                    this._TeamMembers = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TeamMember>(GetPath("TeamMembers"));
+                }
+                return this._TeamMembers;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TeamMember> _TeamMembers;
     }
         /// <summary>
         /// There are no comments for Team in the schema.
@@ -237,28 +237,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnAdministratorChanging(string value);
         partial void OnAdministratorChanged();
         /// <summary>
-        /// There are no comments for Property TeamMembers in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TeamMember> TeamMembers
-        {
-            get
-            {
-                return this._TeamMembers;
-            }
-            set
-            {
-                this.OnTeamMembersChanging(value);
-                this._TeamMembers = value;
-                this.OnTeamMembersChanged();
-                this.OnPropertyChanged("TeamMembers");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TeamMember> _TeamMembers = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TeamMember>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnTeamMembersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TeamMember> value);
-        partial void OnTeamMembersChanged();
-        /// <summary>
         /// There are no comments for Property TeamMembershipCriterion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -280,6 +258,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.TeamMembershipCriterion _TeamMembershipCriterion;
         partial void OnTeamMembershipCriterionChanging(global::Microsoft.Dynamics.DataEntities.TeamMembershipCriterion value);
         partial void OnTeamMembershipCriterionChanged();
+        /// <summary>
+        /// There are no comments for Property TeamMembers in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TeamMember> TeamMembers
+        {
+            get
+            {
+                return this._TeamMembers;
+            }
+            set
+            {
+                this.OnTeamMembersChanging(value);
+                this._TeamMembers = value;
+                this.OnTeamMembersChanged();
+                this.OnPropertyChanged("TeamMembers");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TeamMember> _TeamMembers = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TeamMember>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnTeamMembersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TeamMember> value);
+        partial void OnTeamMembersChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
