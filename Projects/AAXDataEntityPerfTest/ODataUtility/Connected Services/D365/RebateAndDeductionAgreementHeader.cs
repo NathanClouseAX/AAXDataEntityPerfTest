@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,6 +34,27 @@ namespace Microsoft.Dynamics.DataEntities
         public RebateAndDeductionAgreementHeaderSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<RebateAndDeductionAgreementHeader> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for RebateAndDeductionsDateSetups in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDateSetup> RebateAndDeductionsDateSetups
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RebateAndDeductionsDateSetups == null))
+                {
+                    this._RebateAndDeductionsDateSetups = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDateSetup>(GetPath("RebateAndDeductionsDateSetups"));
+                }
+                return this._RebateAndDeductionsDateSetups;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDateSetup> _RebateAndDeductionsDateSetups;
         /// <summary>
         /// There are no comments for ProductSize in the schema.
         /// </summary>
@@ -433,27 +454,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsPostingProfileSingle _GuaranteeRebateAndDeductionsPostingProfile;
-        /// <summary>
-        /// There are no comments for RebateAndDeductionsDateSetups in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDateSetup> RebateAndDeductionsDateSetups
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._RebateAndDeductionsDateSetups == null))
-                {
-                    this._RebateAndDeductionsDateSetups = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDateSetup>(GetPath("RebateAndDeductionsDateSetups"));
-                }
-                return this._RebateAndDeductionsDateSetups;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDateSetup> _RebateAndDeductionsDateSetups;
     }
         /// <summary>
         /// There are no comments for RebateAndDeductionAgreementHeader in the schema.
@@ -1433,6 +1433,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnProductStyleIdChanging(string value);
         partial void OnProductStyleIdChanged();
         /// <summary>
+        /// There are no comments for Property RebateAndDeductionsDateSetups in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDateSetup> RebateAndDeductionsDateSetups
+        {
+            get
+            {
+                return this._RebateAndDeductionsDateSetups;
+            }
+            set
+            {
+                this.OnRebateAndDeductionsDateSetupsChanging(value);
+                this._RebateAndDeductionsDateSetups = value;
+                this.OnRebateAndDeductionsDateSetupsChanged();
+                this.OnPropertyChanged("RebateAndDeductionsDateSetups");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDateSetup> _RebateAndDeductionsDateSetups = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDateSetup>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRebateAndDeductionsDateSetupsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDateSetup> value);
+        partial void OnRebateAndDeductionsDateSetupsChanged();
+        /// <summary>
         /// There are no comments for Property ProductSize in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -1850,28 +1872,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsPostingProfile _GuaranteeRebateAndDeductionsPostingProfile;
         partial void OnGuaranteeRebateAndDeductionsPostingProfileChanging(global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsPostingProfile value);
         partial void OnGuaranteeRebateAndDeductionsPostingProfileChanged();
-        /// <summary>
-        /// There are no comments for Property RebateAndDeductionsDateSetups in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDateSetup> RebateAndDeductionsDateSetups
-        {
-            get
-            {
-                return this._RebateAndDeductionsDateSetups;
-            }
-            set
-            {
-                this.OnRebateAndDeductionsDateSetupsChanging(value);
-                this._RebateAndDeductionsDateSetups = value;
-                this.OnRebateAndDeductionsDateSetupsChanged();
-                this.OnPropertyChanged("RebateAndDeductionsDateSetups");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDateSetup> _RebateAndDeductionsDateSetups = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDateSetup>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRebateAndDeductionsDateSetupsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDateSetup> value);
-        partial void OnRebateAndDeductionsDateSetupsChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

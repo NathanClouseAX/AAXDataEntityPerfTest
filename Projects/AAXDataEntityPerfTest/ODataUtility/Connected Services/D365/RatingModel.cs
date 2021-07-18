@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,48 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for JobPreferredSkill in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredSkill> JobPreferredSkill
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._JobPreferredSkill == null))
-                {
-                    this._JobPreferredSkill = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredSkill>(GetPath("JobPreferredSkill"));
-                }
-                return this._JobPreferredSkill;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredSkill> _JobPreferredSkill;
-        /// <summary>
-        /// There are no comments for CourseTypeSkillProfiles in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CourseTypeSkillProfile> CourseTypeSkillProfiles
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._CourseTypeSkillProfiles == null))
-                {
-                    this._CourseTypeSkillProfiles = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CourseTypeSkillProfile>(GetPath("CourseTypeSkillProfiles"));
-                }
-                return this._CourseTypeSkillProfiles;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CourseTypeSkillProfile> _CourseTypeSkillProfiles;
-        /// <summary>
         /// There are no comments for RatingLevels in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -98,6 +56,27 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RatingLevel> _RatingLevels;
         /// <summary>
+        /// There are no comments for JobPreferredSkill in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredSkill> JobPreferredSkill
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._JobPreferredSkill == null))
+                {
+                    this._JobPreferredSkill = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredSkill>(GetPath("JobPreferredSkill"));
+                }
+                return this._JobPreferredSkill;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredSkill> _JobPreferredSkill;
+        /// <summary>
         /// There are no comments for HcmRatingModel_HcmSkill in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -118,6 +97,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Skill> _HcmRatingModel_HcmSkill;
+        /// <summary>
+        /// There are no comments for CourseTypeSkillProfiles in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CourseTypeSkillProfile> CourseTypeSkillProfiles
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._CourseTypeSkillProfiles == null))
+                {
+                    this._CourseTypeSkillProfiles = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CourseTypeSkillProfile>(GetPath("CourseTypeSkillProfiles"));
+                }
+                return this._CourseTypeSkillProfiles;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CourseTypeSkillProfile> _CourseTypeSkillProfiles;
     }
         /// <summary>
         /// There are no comments for RatingModel in the schema.
@@ -185,50 +185,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDescriptionChanging(string value);
         partial void OnDescriptionChanged();
         /// <summary>
-        /// There are no comments for Property JobPreferredSkill in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredSkill> JobPreferredSkill
-        {
-            get
-            {
-                return this._JobPreferredSkill;
-            }
-            set
-            {
-                this.OnJobPreferredSkillChanging(value);
-                this._JobPreferredSkill = value;
-                this.OnJobPreferredSkillChanged();
-                this.OnPropertyChanged("JobPreferredSkill");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredSkill> _JobPreferredSkill = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredSkill>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnJobPreferredSkillChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredSkill> value);
-        partial void OnJobPreferredSkillChanged();
-        /// <summary>
-        /// There are no comments for Property CourseTypeSkillProfiles in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CourseTypeSkillProfile> CourseTypeSkillProfiles
-        {
-            get
-            {
-                return this._CourseTypeSkillProfiles;
-            }
-            set
-            {
-                this.OnCourseTypeSkillProfilesChanging(value);
-                this._CourseTypeSkillProfiles = value;
-                this.OnCourseTypeSkillProfilesChanged();
-                this.OnPropertyChanged("CourseTypeSkillProfiles");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CourseTypeSkillProfile> _CourseTypeSkillProfiles = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CourseTypeSkillProfile>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnCourseTypeSkillProfilesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CourseTypeSkillProfile> value);
-        partial void OnCourseTypeSkillProfilesChanged();
-        /// <summary>
         /// There are no comments for Property RatingLevels in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -251,6 +207,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnRatingLevelsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RatingLevel> value);
         partial void OnRatingLevelsChanged();
         /// <summary>
+        /// There are no comments for Property JobPreferredSkill in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredSkill> JobPreferredSkill
+        {
+            get
+            {
+                return this._JobPreferredSkill;
+            }
+            set
+            {
+                this.OnJobPreferredSkillChanging(value);
+                this._JobPreferredSkill = value;
+                this.OnJobPreferredSkillChanged();
+                this.OnPropertyChanged("JobPreferredSkill");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredSkill> _JobPreferredSkill = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredSkill>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnJobPreferredSkillChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredSkill> value);
+        partial void OnJobPreferredSkillChanged();
+        /// <summary>
         /// There are no comments for Property HcmRatingModel_HcmSkill in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -272,6 +250,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Skill> _HcmRatingModel_HcmSkill = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Skill>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnHcmRatingModel_HcmSkillChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Skill> value);
         partial void OnHcmRatingModel_HcmSkillChanged();
+        /// <summary>
+        /// There are no comments for Property CourseTypeSkillProfiles in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CourseTypeSkillProfile> CourseTypeSkillProfiles
+        {
+            get
+            {
+                return this._CourseTypeSkillProfiles;
+            }
+            set
+            {
+                this.OnCourseTypeSkillProfilesChanging(value);
+                this._CourseTypeSkillProfiles = value;
+                this.OnCourseTypeSkillProfilesChanged();
+                this.OnPropertyChanged("CourseTypeSkillProfiles");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CourseTypeSkillProfile> _CourseTypeSkillProfiles = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CourseTypeSkillProfile>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnCourseTypeSkillProfilesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CourseTypeSkillProfile> value);
+        partial void OnCourseTypeSkillProfilesChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

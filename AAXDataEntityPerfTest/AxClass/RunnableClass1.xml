@@ -17,6 +17,7 @@ class RunnableClass1
     /// <param name = "_args">The specified arguments.</param>
     public static void main(Args _args)
     {
+        /*
         AAXSalesOrderHeaderV2EntityOnlySalesTablePostLoadExtended buffer;
 
         //009963
@@ -49,6 +50,16 @@ class RunnableClass1
 
         AAXActivityLogger::writeToFile("---delete---");
         delete_from AAXTableEntity where AAXTableEntity.id == "1";
+        */
+
+
+        ttsbegin;
+        CustTable CustTable = CustTable::find("US-001", true);
+        CustTable.skipDatabaseLog(true);
+        CustTable.IdentificationNumber = int2Str(new Random().nextInt());
+        CustTable.update();
+        ttscommit;
+
 
 
 

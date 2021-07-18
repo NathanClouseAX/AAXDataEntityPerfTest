@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,6 +34,27 @@ namespace Microsoft.Dynamics.DataEntities
         public EngineeringChangeOrderDependencySingle(global::Microsoft.OData.Client.DataServiceQuerySingle<EngineeringChangeOrderDependency> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for EngineeringChangeOrderDependencyActions in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderDependencyAction> EngineeringChangeOrderDependencyActions
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._EngineeringChangeOrderDependencyActions == null))
+                {
+                    this._EngineeringChangeOrderDependencyActions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderDependencyAction>(GetPath("EngineeringChangeOrderDependencyActions"));
+                }
+                return this._EngineeringChangeOrderDependencyActions;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderDependencyAction> _EngineeringChangeOrderDependencyActions;
         /// <summary>
         /// There are no comments for DependentProduct in the schema.
         /// </summary>
@@ -76,27 +97,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderHeaderSingle _EngineeringChangeOrderHeader;
-        /// <summary>
-        /// There are no comments for EngineeringChangeOrderDependencyActions in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderDependencyAction> EngineeringChangeOrderDependencyActions
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._EngineeringChangeOrderDependencyActions == null))
-                {
-                    this._EngineeringChangeOrderDependencyActions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderDependencyAction>(GetPath("EngineeringChangeOrderDependencyActions"));
-                }
-                return this._EngineeringChangeOrderDependencyActions;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderDependencyAction> _EngineeringChangeOrderDependencyActions;
     }
         /// <summary>
         /// There are no comments for EngineeringChangeOrderDependency in the schema.
@@ -234,6 +234,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnEngineeringChangeOrderNumberChanging(string value);
         partial void OnEngineeringChangeOrderNumberChanged();
         /// <summary>
+        /// There are no comments for Property EngineeringChangeOrderDependencyActions in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderDependencyAction> EngineeringChangeOrderDependencyActions
+        {
+            get
+            {
+                return this._EngineeringChangeOrderDependencyActions;
+            }
+            set
+            {
+                this.OnEngineeringChangeOrderDependencyActionsChanging(value);
+                this._EngineeringChangeOrderDependencyActions = value;
+                this.OnEngineeringChangeOrderDependencyActionsChanged();
+                this.OnPropertyChanged("EngineeringChangeOrderDependencyActions");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderDependencyAction> _EngineeringChangeOrderDependencyActions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderDependencyAction>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnEngineeringChangeOrderDependencyActionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderDependencyAction> value);
+        partial void OnEngineeringChangeOrderDependencyActionsChanged();
+        /// <summary>
         /// There are no comments for Property DependentProduct in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -277,28 +299,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderHeader _EngineeringChangeOrderHeader;
         partial void OnEngineeringChangeOrderHeaderChanging(global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderHeader value);
         partial void OnEngineeringChangeOrderHeaderChanged();
-        /// <summary>
-        /// There are no comments for Property EngineeringChangeOrderDependencyActions in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderDependencyAction> EngineeringChangeOrderDependencyActions
-        {
-            get
-            {
-                return this._EngineeringChangeOrderDependencyActions;
-            }
-            set
-            {
-                this.OnEngineeringChangeOrderDependencyActionsChanging(value);
-                this._EngineeringChangeOrderDependencyActions = value;
-                this.OnEngineeringChangeOrderDependencyActionsChanged();
-                this.OnPropertyChanged("EngineeringChangeOrderDependencyActions");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderDependencyAction> _EngineeringChangeOrderDependencyActions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderDependencyAction>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnEngineeringChangeOrderDependencyActionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderDependencyAction> value);
-        partial void OnEngineeringChangeOrderDependencyActionsChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public PriceCustomerGroupSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<PriceCustomerGroup> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for OpenSalesPriceJournalLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.OpenSalesPriceJournalLine> OpenSalesPriceJournalLine
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._OpenSalesPriceJournalLine == null))
-                {
-                    this._OpenSalesPriceJournalLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.OpenSalesPriceJournalLine>(GetPath("OpenSalesPriceJournalLine"));
-                }
-                return this._OpenSalesPriceJournalLine;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.OpenSalesPriceJournalLine> _OpenSalesPriceJournalLine;
         /// <summary>
         /// There are no comments for RetailLoyaltyPriceGroup in the schema.
         /// </summary>
@@ -97,6 +76,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailAffiliationPriceGroup> _RetailAffiliationPriceGroup;
+        /// <summary>
+        /// There are no comments for OpenSalesPriceJournalLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.OpenSalesPriceJournalLine> OpenSalesPriceJournalLine
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._OpenSalesPriceJournalLine == null))
+                {
+                    this._OpenSalesPriceJournalLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.OpenSalesPriceJournalLine>(GetPath("OpenSalesPriceJournalLine"));
+                }
+                return this._OpenSalesPriceJournalLine;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.OpenSalesPriceJournalLine> _OpenSalesPriceJournalLine;
     }
         /// <summary>
         /// There are no comments for PriceCustomerGroup in the schema.
@@ -213,28 +213,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnGroupNameChanging(string value);
         partial void OnGroupNameChanged();
         /// <summary>
-        /// There are no comments for Property OpenSalesPriceJournalLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.OpenSalesPriceJournalLine> OpenSalesPriceJournalLine
-        {
-            get
-            {
-                return this._OpenSalesPriceJournalLine;
-            }
-            set
-            {
-                this.OnOpenSalesPriceJournalLineChanging(value);
-                this._OpenSalesPriceJournalLine = value;
-                this.OnOpenSalesPriceJournalLineChanged();
-                this.OnPropertyChanged("OpenSalesPriceJournalLine");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.OpenSalesPriceJournalLine> _OpenSalesPriceJournalLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.OpenSalesPriceJournalLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnOpenSalesPriceJournalLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.OpenSalesPriceJournalLine> value);
-        partial void OnOpenSalesPriceJournalLineChanged();
-        /// <summary>
         /// There are no comments for Property RetailLoyaltyPriceGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -278,6 +256,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailAffiliationPriceGroup> _RetailAffiliationPriceGroup = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailAffiliationPriceGroup>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnRetailAffiliationPriceGroupChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailAffiliationPriceGroup> value);
         partial void OnRetailAffiliationPriceGroupChanged();
+        /// <summary>
+        /// There are no comments for Property OpenSalesPriceJournalLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.OpenSalesPriceJournalLine> OpenSalesPriceJournalLine
+        {
+            get
+            {
+                return this._OpenSalesPriceJournalLine;
+            }
+            set
+            {
+                this.OnOpenSalesPriceJournalLineChanging(value);
+                this._OpenSalesPriceJournalLine = value;
+                this.OnOpenSalesPriceJournalLineChanged();
+                this.OnPropertyChanged("OpenSalesPriceJournalLine");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.OpenSalesPriceJournalLine> _OpenSalesPriceJournalLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.OpenSalesPriceJournalLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnOpenSalesPriceJournalLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.OpenSalesPriceJournalLine> value);
+        partial void OnOpenSalesPriceJournalLineChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -119,27 +119,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ServiceOrderLine> _ServiceOrderLines;
         /// <summary>
-        /// There are no comments for ServiceAgreementLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ServiceAgreementLine> ServiceAgreementLines
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ServiceAgreementLines == null))
-                {
-                    this._ServiceAgreementLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ServiceAgreementLine>(GetPath("ServiceAgreementLines"));
-                }
-                return this._ServiceAgreementLines;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ServiceAgreementLine> _ServiceAgreementLines;
-        /// <summary>
         /// There are no comments for ServiceOrderHeaders in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -160,6 +139,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ServiceOrderHeader> _ServiceOrderHeaders;
+        /// <summary>
+        /// There are no comments for ServiceAgreementLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ServiceAgreementLine> ServiceAgreementLines
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ServiceAgreementLines == null))
+                {
+                    this._ServiceAgreementLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ServiceAgreementLine>(GetPath("ServiceAgreementLines"));
+                }
+                return this._ServiceAgreementLines;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ServiceAgreementLine> _ServiceAgreementLines;
     }
         /// <summary>
         /// There are no comments for ServiceAgreementHeader in the schema.
@@ -630,28 +630,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnServiceOrderLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ServiceOrderLine> value);
         partial void OnServiceOrderLinesChanged();
         /// <summary>
-        /// There are no comments for Property ServiceAgreementLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ServiceAgreementLine> ServiceAgreementLines
-        {
-            get
-            {
-                return this._ServiceAgreementLines;
-            }
-            set
-            {
-                this.OnServiceAgreementLinesChanging(value);
-                this._ServiceAgreementLines = value;
-                this.OnServiceAgreementLinesChanged();
-                this.OnPropertyChanged("ServiceAgreementLines");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ServiceAgreementLine> _ServiceAgreementLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ServiceAgreementLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnServiceAgreementLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ServiceAgreementLine> value);
-        partial void OnServiceAgreementLinesChanged();
-        /// <summary>
         /// There are no comments for Property ServiceOrderHeaders in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -673,6 +651,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ServiceOrderHeader> _ServiceOrderHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ServiceOrderHeader>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnServiceOrderHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ServiceOrderHeader> value);
         partial void OnServiceOrderHeadersChanged();
+        /// <summary>
+        /// There are no comments for Property ServiceAgreementLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ServiceAgreementLine> ServiceAgreementLines
+        {
+            get
+            {
+                return this._ServiceAgreementLines;
+            }
+            set
+            {
+                this.OnServiceAgreementLinesChanging(value);
+                this._ServiceAgreementLines = value;
+                this.OnServiceAgreementLinesChanged();
+                this.OnPropertyChanged("ServiceAgreementLines");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ServiceAgreementLine> _ServiceAgreementLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ServiceAgreementLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnServiceAgreementLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ServiceAgreementLine> value);
+        partial void OnServiceAgreementLinesChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

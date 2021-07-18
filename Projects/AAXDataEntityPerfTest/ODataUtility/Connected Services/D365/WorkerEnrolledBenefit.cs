@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public WorkerEnrolledBenefitSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<WorkerEnrolledBenefit> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for WorkerEnrolledBenefitDetails in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledBenefitDetails> WorkerEnrolledBenefitDetails
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._WorkerEnrolledBenefitDetails == null))
-                {
-                    this._WorkerEnrolledBenefitDetails = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledBenefitDetails>(GetPath("WorkerEnrolledBenefitDetails"));
-                }
-                return this._WorkerEnrolledBenefitDetails;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledBenefitDetails> _WorkerEnrolledBenefitDetails;
         /// <summary>
         /// There are no comments for Worker in the schema.
         /// </summary>
@@ -98,10 +77,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.BenefitSingle _Benefit;
         /// <summary>
-        /// There are no comments for WorkerGarnishmentDetail in the schema.
+        /// There are no comments for WorkerEnrolledBenefitDetails in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.WorkerGarnishmentDetailSingle WorkerGarnishmentDetail
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledBenefitDetails> WorkerEnrolledBenefitDetails
         {
             get
             {
@@ -109,36 +88,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._WorkerGarnishmentDetail == null))
+                if ((this._WorkerEnrolledBenefitDetails == null))
                 {
-                    this._WorkerGarnishmentDetail = new global::Microsoft.Dynamics.DataEntities.WorkerGarnishmentDetailSingle(this.Context, GetPath("WorkerGarnishmentDetail"));
+                    this._WorkerEnrolledBenefitDetails = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledBenefitDetails>(GetPath("WorkerEnrolledBenefitDetails"));
                 }
-                return this._WorkerGarnishmentDetail;
+                return this._WorkerEnrolledBenefitDetails;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.WorkerGarnishmentDetailSingle _WorkerGarnishmentDetail;
-        /// <summary>
-        /// There are no comments for CoveredDependentRelationship in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.CoveredDependentRelationshipSingle CoveredDependentRelationship
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._CoveredDependentRelationship == null))
-                {
-                    this._CoveredDependentRelationship = new global::Microsoft.Dynamics.DataEntities.CoveredDependentRelationshipSingle(this.Context, GetPath("CoveredDependentRelationship"));
-                }
-                return this._CoveredDependentRelationship;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.CoveredDependentRelationshipSingle _CoveredDependentRelationship;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledBenefitDetails> _WorkerEnrolledBenefitDetails;
         /// <summary>
         /// There are no comments for CoveredBeneficiaryRelationship in the schema.
         /// </summary>
@@ -161,6 +119,27 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.CoveredBeneficiaryRelationshipSingle _CoveredBeneficiaryRelationship;
         /// <summary>
+        /// There are no comments for WorkerGarnishmentDetail in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.WorkerGarnishmentDetailSingle WorkerGarnishmentDetail
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._WorkerGarnishmentDetail == null))
+                {
+                    this._WorkerGarnishmentDetail = new global::Microsoft.Dynamics.DataEntities.WorkerGarnishmentDetailSingle(this.Context, GetPath("WorkerGarnishmentDetail"));
+                }
+                return this._WorkerGarnishmentDetail;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.WorkerGarnishmentDetailSingle _WorkerGarnishmentDetail;
+        /// <summary>
         /// There are no comments for WorkerEnrolledBenefitLimit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -181,6 +160,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.WorkerEnrolledBenefitLimitSingle _WorkerEnrolledBenefitLimit;
+        /// <summary>
+        /// There are no comments for CoveredDependentRelationship in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.CoveredDependentRelationshipSingle CoveredDependentRelationship
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._CoveredDependentRelationship == null))
+                {
+                    this._CoveredDependentRelationship = new global::Microsoft.Dynamics.DataEntities.CoveredDependentRelationshipSingle(this.Context, GetPath("CoveredDependentRelationship"));
+                }
+                return this._CoveredDependentRelationship;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.CoveredDependentRelationshipSingle _CoveredDependentRelationship;
     }
         /// <summary>
         /// There are no comments for WorkerEnrolledBenefit in the schema.
@@ -366,28 +366,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnBenefitIdChanging(string value);
         partial void OnBenefitIdChanged();
         /// <summary>
-        /// There are no comments for Property WorkerEnrolledBenefitDetails in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledBenefitDetails> WorkerEnrolledBenefitDetails
-        {
-            get
-            {
-                return this._WorkerEnrolledBenefitDetails;
-            }
-            set
-            {
-                this.OnWorkerEnrolledBenefitDetailsChanging(value);
-                this._WorkerEnrolledBenefitDetails = value;
-                this.OnWorkerEnrolledBenefitDetailsChanged();
-                this.OnPropertyChanged("WorkerEnrolledBenefitDetails");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledBenefitDetails> _WorkerEnrolledBenefitDetails = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledBenefitDetails>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnWorkerEnrolledBenefitDetailsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledBenefitDetails> value);
-        partial void OnWorkerEnrolledBenefitDetailsChanged();
-        /// <summary>
         /// There are no comments for Property Worker in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -432,49 +410,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnBenefitChanging(global::Microsoft.Dynamics.DataEntities.Benefit value);
         partial void OnBenefitChanged();
         /// <summary>
-        /// There are no comments for Property WorkerGarnishmentDetail in the schema.
+        /// There are no comments for Property WorkerEnrolledBenefitDetails in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.WorkerGarnishmentDetail WorkerGarnishmentDetail
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledBenefitDetails> WorkerEnrolledBenefitDetails
         {
             get
             {
-                return this._WorkerGarnishmentDetail;
+                return this._WorkerEnrolledBenefitDetails;
             }
             set
             {
-                this.OnWorkerGarnishmentDetailChanging(value);
-                this._WorkerGarnishmentDetail = value;
-                this.OnWorkerGarnishmentDetailChanged();
-                this.OnPropertyChanged("WorkerGarnishmentDetail");
+                this.OnWorkerEnrolledBenefitDetailsChanging(value);
+                this._WorkerEnrolledBenefitDetails = value;
+                this.OnWorkerEnrolledBenefitDetailsChanged();
+                this.OnPropertyChanged("WorkerEnrolledBenefitDetails");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.WorkerGarnishmentDetail _WorkerGarnishmentDetail;
-        partial void OnWorkerGarnishmentDetailChanging(global::Microsoft.Dynamics.DataEntities.WorkerGarnishmentDetail value);
-        partial void OnWorkerGarnishmentDetailChanged();
-        /// <summary>
-        /// There are no comments for Property CoveredDependentRelationship in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.CoveredDependentRelationship CoveredDependentRelationship
-        {
-            get
-            {
-                return this._CoveredDependentRelationship;
-            }
-            set
-            {
-                this.OnCoveredDependentRelationshipChanging(value);
-                this._CoveredDependentRelationship = value;
-                this.OnCoveredDependentRelationshipChanged();
-                this.OnPropertyChanged("CoveredDependentRelationship");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.CoveredDependentRelationship _CoveredDependentRelationship;
-        partial void OnCoveredDependentRelationshipChanging(global::Microsoft.Dynamics.DataEntities.CoveredDependentRelationship value);
-        partial void OnCoveredDependentRelationshipChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledBenefitDetails> _WorkerEnrolledBenefitDetails = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledBenefitDetails>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnWorkerEnrolledBenefitDetailsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledBenefitDetails> value);
+        partial void OnWorkerEnrolledBenefitDetailsChanged();
         /// <summary>
         /// There are no comments for Property CoveredBeneficiaryRelationship in the schema.
         /// </summary>
@@ -498,6 +454,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnCoveredBeneficiaryRelationshipChanging(global::Microsoft.Dynamics.DataEntities.CoveredBeneficiaryRelationship value);
         partial void OnCoveredBeneficiaryRelationshipChanged();
         /// <summary>
+        /// There are no comments for Property WorkerGarnishmentDetail in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.WorkerGarnishmentDetail WorkerGarnishmentDetail
+        {
+            get
+            {
+                return this._WorkerGarnishmentDetail;
+            }
+            set
+            {
+                this.OnWorkerGarnishmentDetailChanging(value);
+                this._WorkerGarnishmentDetail = value;
+                this.OnWorkerGarnishmentDetailChanged();
+                this.OnPropertyChanged("WorkerGarnishmentDetail");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.WorkerGarnishmentDetail _WorkerGarnishmentDetail;
+        partial void OnWorkerGarnishmentDetailChanging(global::Microsoft.Dynamics.DataEntities.WorkerGarnishmentDetail value);
+        partial void OnWorkerGarnishmentDetailChanged();
+        /// <summary>
         /// There are no comments for Property WorkerEnrolledBenefitLimit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -519,6 +497,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.WorkerEnrolledBenefitLimit _WorkerEnrolledBenefitLimit;
         partial void OnWorkerEnrolledBenefitLimitChanging(global::Microsoft.Dynamics.DataEntities.WorkerEnrolledBenefitLimit value);
         partial void OnWorkerEnrolledBenefitLimitChanged();
+        /// <summary>
+        /// There are no comments for Property CoveredDependentRelationship in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.CoveredDependentRelationship CoveredDependentRelationship
+        {
+            get
+            {
+                return this._CoveredDependentRelationship;
+            }
+            set
+            {
+                this.OnCoveredDependentRelationshipChanging(value);
+                this._CoveredDependentRelationship = value;
+                this.OnCoveredDependentRelationshipChanged();
+                this.OnPropertyChanged("CoveredDependentRelationship");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.CoveredDependentRelationship _CoveredDependentRelationship;
+        partial void OnCoveredDependentRelationshipChanging(global::Microsoft.Dynamics.DataEntities.CoveredDependentRelationship value);
+        partial void OnCoveredDependentRelationshipChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

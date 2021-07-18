@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public EngineeringChangeRequestHeaderSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<EngineeringChangeRequestHeader> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for EngineeringChangeRequestProducts in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestProduct> EngineeringChangeRequestProducts
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._EngineeringChangeRequestProducts == null))
-                {
-                    this._EngineeringChangeRequestProducts = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestProduct>(GetPath("EngineeringChangeRequestProducts"));
-                }
-                return this._EngineeringChangeRequestProducts;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestProduct> _EngineeringChangeRequestProducts;
         /// <summary>
         /// There are no comments for EngineeringChangeRequestDependencies in the schema.
         /// </summary>
@@ -139,6 +118,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.EngineeringChangePrioritySingle _EngineeringChangePriority;
+        /// <summary>
+        /// There are no comments for EngineeringChangeRequestProducts in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestProduct> EngineeringChangeRequestProducts
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._EngineeringChangeRequestProducts == null))
+                {
+                    this._EngineeringChangeRequestProducts = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestProduct>(GetPath("EngineeringChangeRequestProducts"));
+                }
+                return this._EngineeringChangeRequestProducts;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestProduct> _EngineeringChangeRequestProducts;
     }
         /// <summary>
         /// There are no comments for EngineeringChangeRequestHeader in the schema.
@@ -284,28 +284,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnRequestTitleChanging(string value);
         partial void OnRequestTitleChanged();
         /// <summary>
-        /// There are no comments for Property EngineeringChangeRequestProducts in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestProduct> EngineeringChangeRequestProducts
-        {
-            get
-            {
-                return this._EngineeringChangeRequestProducts;
-            }
-            set
-            {
-                this.OnEngineeringChangeRequestProductsChanging(value);
-                this._EngineeringChangeRequestProducts = value;
-                this.OnEngineeringChangeRequestProductsChanged();
-                this.OnPropertyChanged("EngineeringChangeRequestProducts");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestProduct> _EngineeringChangeRequestProducts = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestProduct>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnEngineeringChangeRequestProductsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestProduct> value);
-        partial void OnEngineeringChangeRequestProductsChanged();
-        /// <summary>
         /// There are no comments for Property EngineeringChangeRequestDependencies in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -393,6 +371,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.EngineeringChangePriority _EngineeringChangePriority;
         partial void OnEngineeringChangePriorityChanging(global::Microsoft.Dynamics.DataEntities.EngineeringChangePriority value);
         partial void OnEngineeringChangePriorityChanged();
+        /// <summary>
+        /// There are no comments for Property EngineeringChangeRequestProducts in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestProduct> EngineeringChangeRequestProducts
+        {
+            get
+            {
+                return this._EngineeringChangeRequestProducts;
+            }
+            set
+            {
+                this.OnEngineeringChangeRequestProductsChanging(value);
+                this._EngineeringChangeRequestProducts = value;
+                this.OnEngineeringChangeRequestProductsChanged();
+                this.OnPropertyChanged("EngineeringChangeRequestProducts");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestProduct> _EngineeringChangeRequestProducts = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestProduct>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnEngineeringChangeRequestProductsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestProduct> value);
+        partial void OnEngineeringChangeRequestProductsChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -56,10 +56,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.UserGroupUserList> _UserGroupUserList;
         /// <summary>
-        /// There are no comments for BudgetControlGroupOverBudgetPermissionsSystemUserGroup in the schema.
+        /// There are no comments for LedgerAccountAlias in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlGroupOverBudgetPermission> BudgetControlGroupOverBudgetPermissionsSystemUserGroup
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias> LedgerAccountAlias
         {
             get
             {
@@ -67,15 +67,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._BudgetControlGroupOverBudgetPermissionsSystemUserGroup == null))
+                if ((this._LedgerAccountAlias == null))
                 {
-                    this._BudgetControlGroupOverBudgetPermissionsSystemUserGroup = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlGroupOverBudgetPermission>(GetPath("BudgetControlGroupOverBudgetPermissionsSystemUserGroup"));
+                    this._LedgerAccountAlias = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias>(GetPath("LedgerAccountAlias"));
                 }
-                return this._BudgetControlGroupOverBudgetPermissionsSystemUserGroup;
+                return this._LedgerAccountAlias;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlGroupOverBudgetPermission> _BudgetControlGroupOverBudgetPermissionsSystemUserGroup;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias> _LedgerAccountAlias;
         /// <summary>
         /// There are no comments for BudgetControlOverBudgetPermissionsSystemUserGroup in the schema.
         /// </summary>
@@ -98,10 +98,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlOverBudgetPermission> _BudgetControlOverBudgetPermissionsSystemUserGroup;
         /// <summary>
-        /// There are no comments for LedgerAccountAlias in the schema.
+        /// There are no comments for BudgetControlGroupOverBudgetPermissionsSystemUserGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias> LedgerAccountAlias
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlGroupOverBudgetPermission> BudgetControlGroupOverBudgetPermissionsSystemUserGroup
         {
             get
             {
@@ -109,36 +109,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._LedgerAccountAlias == null))
+                if ((this._BudgetControlGroupOverBudgetPermissionsSystemUserGroup == null))
                 {
-                    this._LedgerAccountAlias = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias>(GetPath("LedgerAccountAlias"));
+                    this._BudgetControlGroupOverBudgetPermissionsSystemUserGroup = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlGroupOverBudgetPermission>(GetPath("BudgetControlGroupOverBudgetPermissionsSystemUserGroup"));
                 }
-                return this._LedgerAccountAlias;
+                return this._BudgetControlGroupOverBudgetPermissionsSystemUserGroup;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias> _LedgerAccountAlias;
-        /// <summary>
-        /// There are no comments for BudgetControlRuleOverBudgetPermisionsSystemUserGroup in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleOverBudgetPermission> BudgetControlRuleOverBudgetPermisionsSystemUserGroup
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._BudgetControlRuleOverBudgetPermisionsSystemUserGroup == null))
-                {
-                    this._BudgetControlRuleOverBudgetPermisionsSystemUserGroup = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleOverBudgetPermission>(GetPath("BudgetControlRuleOverBudgetPermisionsSystemUserGroup"));
-                }
-                return this._BudgetControlRuleOverBudgetPermisionsSystemUserGroup;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleOverBudgetPermission> _BudgetControlRuleOverBudgetPermisionsSystemUserGroup;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlGroupOverBudgetPermission> _BudgetControlGroupOverBudgetPermissionsSystemUserGroup;
         /// <summary>
         /// There are no comments for BudgetControlMessageLevelEntity_Role_SystemUserGroupEntity in the schema.
         /// </summary>
@@ -160,6 +139,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlMessageLevel> _BudgetControlMessageLevelEntity_Role_SystemUserGroupEntity;
+        /// <summary>
+        /// There are no comments for BudgetControlRuleOverBudgetPermisionsSystemUserGroup in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleOverBudgetPermission> BudgetControlRuleOverBudgetPermisionsSystemUserGroup
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._BudgetControlRuleOverBudgetPermisionsSystemUserGroup == null))
+                {
+                    this._BudgetControlRuleOverBudgetPermisionsSystemUserGroup = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleOverBudgetPermission>(GetPath("BudgetControlRuleOverBudgetPermisionsSystemUserGroup"));
+                }
+                return this._BudgetControlRuleOverBudgetPermisionsSystemUserGroup;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleOverBudgetPermission> _BudgetControlRuleOverBudgetPermisionsSystemUserGroup;
     }
         /// <summary>
         /// There are no comments for UserGroup in the schema.
@@ -249,27 +249,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnUserGroupUserListChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.UserGroupUserList> value);
         partial void OnUserGroupUserListChanged();
         /// <summary>
-        /// There are no comments for Property BudgetControlGroupOverBudgetPermissionsSystemUserGroup in the schema.
+        /// There are no comments for Property LedgerAccountAlias in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlGroupOverBudgetPermission> BudgetControlGroupOverBudgetPermissionsSystemUserGroup
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias> LedgerAccountAlias
         {
             get
             {
-                return this._BudgetControlGroupOverBudgetPermissionsSystemUserGroup;
+                return this._LedgerAccountAlias;
             }
             set
             {
-                this.OnBudgetControlGroupOverBudgetPermissionsSystemUserGroupChanging(value);
-                this._BudgetControlGroupOverBudgetPermissionsSystemUserGroup = value;
-                this.OnBudgetControlGroupOverBudgetPermissionsSystemUserGroupChanged();
-                this.OnPropertyChanged("BudgetControlGroupOverBudgetPermissionsSystemUserGroup");
+                this.OnLedgerAccountAliasChanging(value);
+                this._LedgerAccountAlias = value;
+                this.OnLedgerAccountAliasChanged();
+                this.OnPropertyChanged("LedgerAccountAlias");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlGroupOverBudgetPermission> _BudgetControlGroupOverBudgetPermissionsSystemUserGroup = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlGroupOverBudgetPermission>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnBudgetControlGroupOverBudgetPermissionsSystemUserGroupChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlGroupOverBudgetPermission> value);
-        partial void OnBudgetControlGroupOverBudgetPermissionsSystemUserGroupChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias> _LedgerAccountAlias = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnLedgerAccountAliasChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias> value);
+        partial void OnLedgerAccountAliasChanged();
         /// <summary>
         /// There are no comments for Property BudgetControlOverBudgetPermissionsSystemUserGroup in the schema.
         /// </summary>
@@ -293,49 +293,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnBudgetControlOverBudgetPermissionsSystemUserGroupChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlOverBudgetPermission> value);
         partial void OnBudgetControlOverBudgetPermissionsSystemUserGroupChanged();
         /// <summary>
-        /// There are no comments for Property LedgerAccountAlias in the schema.
+        /// There are no comments for Property BudgetControlGroupOverBudgetPermissionsSystemUserGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias> LedgerAccountAlias
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlGroupOverBudgetPermission> BudgetControlGroupOverBudgetPermissionsSystemUserGroup
         {
             get
             {
-                return this._LedgerAccountAlias;
+                return this._BudgetControlGroupOverBudgetPermissionsSystemUserGroup;
             }
             set
             {
-                this.OnLedgerAccountAliasChanging(value);
-                this._LedgerAccountAlias = value;
-                this.OnLedgerAccountAliasChanged();
-                this.OnPropertyChanged("LedgerAccountAlias");
+                this.OnBudgetControlGroupOverBudgetPermissionsSystemUserGroupChanging(value);
+                this._BudgetControlGroupOverBudgetPermissionsSystemUserGroup = value;
+                this.OnBudgetControlGroupOverBudgetPermissionsSystemUserGroupChanged();
+                this.OnPropertyChanged("BudgetControlGroupOverBudgetPermissionsSystemUserGroup");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias> _LedgerAccountAlias = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnLedgerAccountAliasChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias> value);
-        partial void OnLedgerAccountAliasChanged();
-        /// <summary>
-        /// There are no comments for Property BudgetControlRuleOverBudgetPermisionsSystemUserGroup in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleOverBudgetPermission> BudgetControlRuleOverBudgetPermisionsSystemUserGroup
-        {
-            get
-            {
-                return this._BudgetControlRuleOverBudgetPermisionsSystemUserGroup;
-            }
-            set
-            {
-                this.OnBudgetControlRuleOverBudgetPermisionsSystemUserGroupChanging(value);
-                this._BudgetControlRuleOverBudgetPermisionsSystemUserGroup = value;
-                this.OnBudgetControlRuleOverBudgetPermisionsSystemUserGroupChanged();
-                this.OnPropertyChanged("BudgetControlRuleOverBudgetPermisionsSystemUserGroup");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleOverBudgetPermission> _BudgetControlRuleOverBudgetPermisionsSystemUserGroup = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleOverBudgetPermission>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnBudgetControlRuleOverBudgetPermisionsSystemUserGroupChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleOverBudgetPermission> value);
-        partial void OnBudgetControlRuleOverBudgetPermisionsSystemUserGroupChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlGroupOverBudgetPermission> _BudgetControlGroupOverBudgetPermissionsSystemUserGroup = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlGroupOverBudgetPermission>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnBudgetControlGroupOverBudgetPermissionsSystemUserGroupChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlGroupOverBudgetPermission> value);
+        partial void OnBudgetControlGroupOverBudgetPermissionsSystemUserGroupChanged();
         /// <summary>
         /// There are no comments for Property BudgetControlMessageLevelEntity_Role_SystemUserGroupEntity in the schema.
         /// </summary>
@@ -358,6 +336,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlMessageLevel> _BudgetControlMessageLevelEntity_Role_SystemUserGroupEntity = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlMessageLevel>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnBudgetControlMessageLevelEntity_Role_SystemUserGroupEntityChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlMessageLevel> value);
         partial void OnBudgetControlMessageLevelEntity_Role_SystemUserGroupEntityChanged();
+        /// <summary>
+        /// There are no comments for Property BudgetControlRuleOverBudgetPermisionsSystemUserGroup in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleOverBudgetPermission> BudgetControlRuleOverBudgetPermisionsSystemUserGroup
+        {
+            get
+            {
+                return this._BudgetControlRuleOverBudgetPermisionsSystemUserGroup;
+            }
+            set
+            {
+                this.OnBudgetControlRuleOverBudgetPermisionsSystemUserGroupChanging(value);
+                this._BudgetControlRuleOverBudgetPermisionsSystemUserGroup = value;
+                this.OnBudgetControlRuleOverBudgetPermisionsSystemUserGroupChanged();
+                this.OnPropertyChanged("BudgetControlRuleOverBudgetPermisionsSystemUserGroup");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleOverBudgetPermission> _BudgetControlRuleOverBudgetPermisionsSystemUserGroup = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleOverBudgetPermission>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnBudgetControlRuleOverBudgetPermisionsSystemUserGroupChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleOverBudgetPermission> value);
+        partial void OnBudgetControlRuleOverBudgetPermisionsSystemUserGroupChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

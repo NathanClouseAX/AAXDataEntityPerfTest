@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for FixedAssetBookSpecialDepreciationAllowance in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookSpecialDepreciationAllowance> FixedAssetBookSpecialDepreciationAllowance
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._FixedAssetBookSpecialDepreciationAllowance == null))
-                {
-                    this._FixedAssetBookSpecialDepreciationAllowance = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookSpecialDepreciationAllowance>(GetPath("FixedAssetBookSpecialDepreciationAllowance"));
-                }
-                return this._FixedAssetBookSpecialDepreciationAllowance;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookSpecialDepreciationAllowance> _FixedAssetBookSpecialDepreciationAllowance;
-        /// <summary>
         /// There are no comments for FixedAssetGroupBookSpecialDepreciationAllowance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,6 +55,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupBookSpecialDepreciationAllowance> _FixedAssetGroupBookSpecialDepreciationAllowance;
+        /// <summary>
+        /// There are no comments for FixedAssetBookSpecialDepreciationAllowance in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookSpecialDepreciationAllowance> FixedAssetBookSpecialDepreciationAllowance
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._FixedAssetBookSpecialDepreciationAllowance == null))
+                {
+                    this._FixedAssetBookSpecialDepreciationAllowance = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookSpecialDepreciationAllowance>(GetPath("FixedAssetBookSpecialDepreciationAllowance"));
+                }
+                return this._FixedAssetBookSpecialDepreciationAllowance;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookSpecialDepreciationAllowance> _FixedAssetBookSpecialDepreciationAllowance;
     }
         /// <summary>
         /// There are no comments for AssetSpecialDepreciationAllowance in the schema.
@@ -216,28 +216,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDescriptionChanging(string value);
         partial void OnDescriptionChanged();
         /// <summary>
-        /// There are no comments for Property FixedAssetBookSpecialDepreciationAllowance in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookSpecialDepreciationAllowance> FixedAssetBookSpecialDepreciationAllowance
-        {
-            get
-            {
-                return this._FixedAssetBookSpecialDepreciationAllowance;
-            }
-            set
-            {
-                this.OnFixedAssetBookSpecialDepreciationAllowanceChanging(value);
-                this._FixedAssetBookSpecialDepreciationAllowance = value;
-                this.OnFixedAssetBookSpecialDepreciationAllowanceChanged();
-                this.OnPropertyChanged("FixedAssetBookSpecialDepreciationAllowance");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookSpecialDepreciationAllowance> _FixedAssetBookSpecialDepreciationAllowance = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookSpecialDepreciationAllowance>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnFixedAssetBookSpecialDepreciationAllowanceChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookSpecialDepreciationAllowance> value);
-        partial void OnFixedAssetBookSpecialDepreciationAllowanceChanged();
-        /// <summary>
         /// There are no comments for Property FixedAssetGroupBookSpecialDepreciationAllowance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -259,6 +237,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupBookSpecialDepreciationAllowance> _FixedAssetGroupBookSpecialDepreciationAllowance = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupBookSpecialDepreciationAllowance>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnFixedAssetGroupBookSpecialDepreciationAllowanceChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupBookSpecialDepreciationAllowance> value);
         partial void OnFixedAssetGroupBookSpecialDepreciationAllowanceChanged();
+        /// <summary>
+        /// There are no comments for Property FixedAssetBookSpecialDepreciationAllowance in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookSpecialDepreciationAllowance> FixedAssetBookSpecialDepreciationAllowance
+        {
+            get
+            {
+                return this._FixedAssetBookSpecialDepreciationAllowance;
+            }
+            set
+            {
+                this.OnFixedAssetBookSpecialDepreciationAllowanceChanging(value);
+                this._FixedAssetBookSpecialDepreciationAllowance = value;
+                this.OnFixedAssetBookSpecialDepreciationAllowanceChanged();
+                this.OnPropertyChanged("FixedAssetBookSpecialDepreciationAllowance");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookSpecialDepreciationAllowance> _FixedAssetBookSpecialDepreciationAllowance = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookSpecialDepreciationAllowance>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnFixedAssetBookSpecialDepreciationAllowanceChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookSpecialDepreciationAllowance> value);
+        partial void OnFixedAssetBookSpecialDepreciationAllowanceChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

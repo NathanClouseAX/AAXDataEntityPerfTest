@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for EarningStatementLineInquiry in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EarningStatementLineInquiry> EarningStatementLineInquiry
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._EarningStatementLineInquiry == null))
-                {
-                    this._EarningStatementLineInquiry = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.EarningStatementLineInquiry>(GetPath("EarningStatementLineInquiry"));
-                }
-                return this._EarningStatementLineInquiry;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EarningStatementLineInquiry> _EarningStatementLineInquiry;
-        /// <summary>
         /// There are no comments for CalculationFrequency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,6 +55,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.PayrollCalculationFrequencySingle _CalculationFrequency;
+        /// <summary>
+        /// There are no comments for EarningStatementLineInquiry in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EarningStatementLineInquiry> EarningStatementLineInquiry
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._EarningStatementLineInquiry == null))
+                {
+                    this._EarningStatementLineInquiry = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.EarningStatementLineInquiry>(GetPath("EarningStatementLineInquiry"));
+                }
+                return this._EarningStatementLineInquiry;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EarningStatementLineInquiry> _EarningStatementLineInquiry;
     }
         /// <summary>
         /// There are no comments for PremiumEarningCode in the schema.
@@ -260,28 +260,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnPolicyTypeIdChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.SysPolicyTypeEnum> value);
         partial void OnPolicyTypeIdChanged();
         /// <summary>
-        /// There are no comments for Property EarningStatementLineInquiry in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EarningStatementLineInquiry> EarningStatementLineInquiry
-        {
-            get
-            {
-                return this._EarningStatementLineInquiry;
-            }
-            set
-            {
-                this.OnEarningStatementLineInquiryChanging(value);
-                this._EarningStatementLineInquiry = value;
-                this.OnEarningStatementLineInquiryChanged();
-                this.OnPropertyChanged("EarningStatementLineInquiry");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EarningStatementLineInquiry> _EarningStatementLineInquiry = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EarningStatementLineInquiry>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnEarningStatementLineInquiryChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EarningStatementLineInquiry> value);
-        partial void OnEarningStatementLineInquiryChanged();
-        /// <summary>
         /// There are no comments for Property CalculationFrequency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -303,6 +281,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.PayrollCalculationFrequency _CalculationFrequency;
         partial void OnCalculationFrequencyChanging(global::Microsoft.Dynamics.DataEntities.PayrollCalculationFrequency value);
         partial void OnCalculationFrequencyChanged();
+        /// <summary>
+        /// There are no comments for Property EarningStatementLineInquiry in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EarningStatementLineInquiry> EarningStatementLineInquiry
+        {
+            get
+            {
+                return this._EarningStatementLineInquiry;
+            }
+            set
+            {
+                this.OnEarningStatementLineInquiryChanging(value);
+                this._EarningStatementLineInquiry = value;
+                this.OnEarningStatementLineInquiryChanged();
+                this.OnPropertyChanged("EarningStatementLineInquiry");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EarningStatementLineInquiry> _EarningStatementLineInquiry = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EarningStatementLineInquiry>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnEarningStatementLineInquiryChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EarningStatementLineInquiry> value);
+        partial void OnEarningStatementLineInquiryChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

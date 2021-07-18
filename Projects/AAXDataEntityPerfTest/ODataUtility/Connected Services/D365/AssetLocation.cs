@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -55,48 +55,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetV2Entity> _AssetFixedAssetV2LocationAsset;
-        /// <summary>
-        /// There are no comments for AssetLocationAssetGroup in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetGroup> AssetLocationAssetGroup
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._AssetLocationAssetGroup == null))
-                {
-                    this._AssetLocationAssetGroup = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetGroup>(GetPath("AssetLocationAssetGroup"));
-                }
-                return this._AssetLocationAssetGroup;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetGroup> _AssetLocationAssetGroup;
-        /// <summary>
-        /// There are no comments for LocationFixedAsset in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAsset> LocationFixedAsset
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._LocationFixedAsset == null))
-                {
-                    this._LocationFixedAsset = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAsset>(GetPath("LocationFixedAsset"));
-                }
-                return this._LocationFixedAsset;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAsset> _LocationFixedAsset;
         /// <summary>
         /// There are no comments for Cities in the schema.
         /// </summary>
@@ -202,6 +160,48 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.AddressCountySingle _Counties;
+        /// <summary>
+        /// There are no comments for AssetLocationAssetGroup in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetGroup> AssetLocationAssetGroup
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._AssetLocationAssetGroup == null))
+                {
+                    this._AssetLocationAssetGroup = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetGroup>(GetPath("AssetLocationAssetGroup"));
+                }
+                return this._AssetLocationAssetGroup;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetGroup> _AssetLocationAssetGroup;
+        /// <summary>
+        /// There are no comments for LocationFixedAsset in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAsset> LocationFixedAsset
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._LocationFixedAsset == null))
+                {
+                    this._LocationFixedAsset = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAsset>(GetPath("LocationFixedAsset"));
+                }
+                return this._LocationFixedAsset;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAsset> _LocationFixedAsset;
     }
         /// <summary>
         /// There are no comments for AssetLocation in the schema.
@@ -562,50 +562,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnAssetFixedAssetV2LocationAssetChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetV2Entity> value);
         partial void OnAssetFixedAssetV2LocationAssetChanged();
         /// <summary>
-        /// There are no comments for Property AssetLocationAssetGroup in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroup> AssetLocationAssetGroup
-        {
-            get
-            {
-                return this._AssetLocationAssetGroup;
-            }
-            set
-            {
-                this.OnAssetLocationAssetGroupChanging(value);
-                this._AssetLocationAssetGroup = value;
-                this.OnAssetLocationAssetGroupChanged();
-                this.OnPropertyChanged("AssetLocationAssetGroup");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroup> _AssetLocationAssetGroup = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroup>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAssetLocationAssetGroupChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroup> value);
-        partial void OnAssetLocationAssetGroupChanged();
-        /// <summary>
-        /// There are no comments for Property LocationFixedAsset in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAsset> LocationFixedAsset
-        {
-            get
-            {
-                return this._LocationFixedAsset;
-            }
-            set
-            {
-                this.OnLocationFixedAssetChanging(value);
-                this._LocationFixedAsset = value;
-                this.OnLocationFixedAssetChanged();
-                this.OnPropertyChanged("LocationFixedAsset");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAsset> _LocationFixedAsset = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAsset>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnLocationFixedAssetChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAsset> value);
-        partial void OnLocationFixedAssetChanged();
-        /// <summary>
         /// There are no comments for Property Cities in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -715,6 +671,50 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.AddressCounty _Counties;
         partial void OnCountiesChanging(global::Microsoft.Dynamics.DataEntities.AddressCounty value);
         partial void OnCountiesChanged();
+        /// <summary>
+        /// There are no comments for Property AssetLocationAssetGroup in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroup> AssetLocationAssetGroup
+        {
+            get
+            {
+                return this._AssetLocationAssetGroup;
+            }
+            set
+            {
+                this.OnAssetLocationAssetGroupChanging(value);
+                this._AssetLocationAssetGroup = value;
+                this.OnAssetLocationAssetGroupChanged();
+                this.OnPropertyChanged("AssetLocationAssetGroup");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroup> _AssetLocationAssetGroup = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroup>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnAssetLocationAssetGroupChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroup> value);
+        partial void OnAssetLocationAssetGroupChanged();
+        /// <summary>
+        /// There are no comments for Property LocationFixedAsset in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAsset> LocationFixedAsset
+        {
+            get
+            {
+                return this._LocationFixedAsset;
+            }
+            set
+            {
+                this.OnLocationFixedAssetChanging(value);
+                this._LocationFixedAsset = value;
+                this.OnLocationFixedAssetChanged();
+                this.OnPropertyChanged("LocationFixedAsset");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAsset> _LocationFixedAsset = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAsset>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnLocationFixedAssetChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAsset> value);
+        partial void OnLocationFixedAssetChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

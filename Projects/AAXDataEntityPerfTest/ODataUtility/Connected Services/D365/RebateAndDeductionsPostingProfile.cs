@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,90 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public RebateAndDeductionsPostingProfileSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<RebateAndDeductionsPostingProfile> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for RebateAndDeductionsAgreementHeaders in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> RebateAndDeductionsAgreementHeaders
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._RebateAndDeductionsAgreementHeaders == null))
-                {
-                    this._RebateAndDeductionsAgreementHeaders = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader>(GetPath("RebateAndDeductionsAgreementHeaders"));
-                }
-                return this._RebateAndDeductionsAgreementHeaders;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> _RebateAndDeductionsAgreementHeaders;
-        /// <summary>
-        /// There are no comments for GuaranteeAssignedRebateAndDeductionsAgreementHeaders in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> GuaranteeAssignedRebateAndDeductionsAgreementHeaders
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._GuaranteeAssignedRebateAndDeductionsAgreementHeaders == null))
-                {
-                    this._GuaranteeAssignedRebateAndDeductionsAgreementHeaders = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader>(GetPath("GuaranteeAssignedRebateAndDeductionsAgreementHeaders"));
-                }
-                return this._GuaranteeAssignedRebateAndDeductionsAgreementHeaders;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> _GuaranteeAssignedRebateAndDeductionsAgreementHeaders;
-        /// <summary>
-        /// There are no comments for DealAssignedRebateAndDeductionsAgreementDeals in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDeal> DealAssignedRebateAndDeductionsAgreementDeals
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._DealAssignedRebateAndDeductionsAgreementDeals == null))
-                {
-                    this._DealAssignedRebateAndDeductionsAgreementDeals = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDeal>(GetPath("DealAssignedRebateAndDeductionsAgreementDeals"));
-                }
-                return this._DealAssignedRebateAndDeductionsAgreementDeals;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDeal> _DealAssignedRebateAndDeductionsAgreementDeals;
-        /// <summary>
-        /// There are no comments for DealGuaranteeAssignedRebateAndDeductionsAgreementDeals in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDeal> DealGuaranteeAssignedRebateAndDeductionsAgreementDeals
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._DealGuaranteeAssignedRebateAndDeductionsAgreementDeals == null))
-                {
-                    this._DealGuaranteeAssignedRebateAndDeductionsAgreementDeals = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDeal>(GetPath("DealGuaranteeAssignedRebateAndDeductionsAgreementDeals"));
-                }
-                return this._DealGuaranteeAssignedRebateAndDeductionsAgreementDeals;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDeal> _DealGuaranteeAssignedRebateAndDeductionsAgreementDeals;
         /// <summary>
         /// There are no comments for ProvisionLedgerJournalName in the schema.
         /// </summary>
@@ -265,6 +181,90 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _RebateLedgerDimensionCombination;
+        /// <summary>
+        /// There are no comments for DealAssignedRebateAndDeductionsAgreementDeals in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDeal> DealAssignedRebateAndDeductionsAgreementDeals
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._DealAssignedRebateAndDeductionsAgreementDeals == null))
+                {
+                    this._DealAssignedRebateAndDeductionsAgreementDeals = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDeal>(GetPath("DealAssignedRebateAndDeductionsAgreementDeals"));
+                }
+                return this._DealAssignedRebateAndDeductionsAgreementDeals;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDeal> _DealAssignedRebateAndDeductionsAgreementDeals;
+        /// <summary>
+        /// There are no comments for DealGuaranteeAssignedRebateAndDeductionsAgreementDeals in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDeal> DealGuaranteeAssignedRebateAndDeductionsAgreementDeals
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._DealGuaranteeAssignedRebateAndDeductionsAgreementDeals == null))
+                {
+                    this._DealGuaranteeAssignedRebateAndDeductionsAgreementDeals = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDeal>(GetPath("DealGuaranteeAssignedRebateAndDeductionsAgreementDeals"));
+                }
+                return this._DealGuaranteeAssignedRebateAndDeductionsAgreementDeals;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDeal> _DealGuaranteeAssignedRebateAndDeductionsAgreementDeals;
+        /// <summary>
+        /// There are no comments for RebateAndDeductionsAgreementHeaders in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> RebateAndDeductionsAgreementHeaders
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RebateAndDeductionsAgreementHeaders == null))
+                {
+                    this._RebateAndDeductionsAgreementHeaders = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader>(GetPath("RebateAndDeductionsAgreementHeaders"));
+                }
+                return this._RebateAndDeductionsAgreementHeaders;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> _RebateAndDeductionsAgreementHeaders;
+        /// <summary>
+        /// There are no comments for GuaranteeAssignedRebateAndDeductionsAgreementHeaders in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> GuaranteeAssignedRebateAndDeductionsAgreementHeaders
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._GuaranteeAssignedRebateAndDeductionsAgreementHeaders == null))
+                {
+                    this._GuaranteeAssignedRebateAndDeductionsAgreementHeaders = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader>(GetPath("GuaranteeAssignedRebateAndDeductionsAgreementHeaders"));
+                }
+                return this._GuaranteeAssignedRebateAndDeductionsAgreementHeaders;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> _GuaranteeAssignedRebateAndDeductionsAgreementHeaders;
     }
         /// <summary>
         /// There are no comments for RebateAndDeductionsPostingProfile in the schema.
@@ -735,94 +735,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnWriteOffLedgerJournalNameIdChanging(string value);
         partial void OnWriteOffLedgerJournalNameIdChanged();
         /// <summary>
-        /// There are no comments for Property RebateAndDeductionsAgreementHeaders in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> RebateAndDeductionsAgreementHeaders
-        {
-            get
-            {
-                return this._RebateAndDeductionsAgreementHeaders;
-            }
-            set
-            {
-                this.OnRebateAndDeductionsAgreementHeadersChanging(value);
-                this._RebateAndDeductionsAgreementHeaders = value;
-                this.OnRebateAndDeductionsAgreementHeadersChanged();
-                this.OnPropertyChanged("RebateAndDeductionsAgreementHeaders");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> _RebateAndDeductionsAgreementHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRebateAndDeductionsAgreementHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> value);
-        partial void OnRebateAndDeductionsAgreementHeadersChanged();
-        /// <summary>
-        /// There are no comments for Property GuaranteeAssignedRebateAndDeductionsAgreementHeaders in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> GuaranteeAssignedRebateAndDeductionsAgreementHeaders
-        {
-            get
-            {
-                return this._GuaranteeAssignedRebateAndDeductionsAgreementHeaders;
-            }
-            set
-            {
-                this.OnGuaranteeAssignedRebateAndDeductionsAgreementHeadersChanging(value);
-                this._GuaranteeAssignedRebateAndDeductionsAgreementHeaders = value;
-                this.OnGuaranteeAssignedRebateAndDeductionsAgreementHeadersChanged();
-                this.OnPropertyChanged("GuaranteeAssignedRebateAndDeductionsAgreementHeaders");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> _GuaranteeAssignedRebateAndDeductionsAgreementHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnGuaranteeAssignedRebateAndDeductionsAgreementHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> value);
-        partial void OnGuaranteeAssignedRebateAndDeductionsAgreementHeadersChanged();
-        /// <summary>
-        /// There are no comments for Property DealAssignedRebateAndDeductionsAgreementDeals in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDeal> DealAssignedRebateAndDeductionsAgreementDeals
-        {
-            get
-            {
-                return this._DealAssignedRebateAndDeductionsAgreementDeals;
-            }
-            set
-            {
-                this.OnDealAssignedRebateAndDeductionsAgreementDealsChanging(value);
-                this._DealAssignedRebateAndDeductionsAgreementDeals = value;
-                this.OnDealAssignedRebateAndDeductionsAgreementDealsChanged();
-                this.OnPropertyChanged("DealAssignedRebateAndDeductionsAgreementDeals");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDeal> _DealAssignedRebateAndDeductionsAgreementDeals = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDeal>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnDealAssignedRebateAndDeductionsAgreementDealsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDeal> value);
-        partial void OnDealAssignedRebateAndDeductionsAgreementDealsChanged();
-        /// <summary>
-        /// There are no comments for Property DealGuaranteeAssignedRebateAndDeductionsAgreementDeals in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDeal> DealGuaranteeAssignedRebateAndDeductionsAgreementDeals
-        {
-            get
-            {
-                return this._DealGuaranteeAssignedRebateAndDeductionsAgreementDeals;
-            }
-            set
-            {
-                this.OnDealGuaranteeAssignedRebateAndDeductionsAgreementDealsChanging(value);
-                this._DealGuaranteeAssignedRebateAndDeductionsAgreementDeals = value;
-                this.OnDealGuaranteeAssignedRebateAndDeductionsAgreementDealsChanged();
-                this.OnPropertyChanged("DealGuaranteeAssignedRebateAndDeductionsAgreementDeals");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDeal> _DealGuaranteeAssignedRebateAndDeductionsAgreementDeals = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDeal>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnDealGuaranteeAssignedRebateAndDeductionsAgreementDealsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDeal> value);
-        partial void OnDealGuaranteeAssignedRebateAndDeductionsAgreementDealsChanged();
-        /// <summary>
         /// There are no comments for Property ProvisionLedgerJournalName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -976,6 +888,94 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.DimensionCombination _RebateLedgerDimensionCombination;
         partial void OnRebateLedgerDimensionCombinationChanging(global::Microsoft.Dynamics.DataEntities.DimensionCombination value);
         partial void OnRebateLedgerDimensionCombinationChanged();
+        /// <summary>
+        /// There are no comments for Property DealAssignedRebateAndDeductionsAgreementDeals in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDeal> DealAssignedRebateAndDeductionsAgreementDeals
+        {
+            get
+            {
+                return this._DealAssignedRebateAndDeductionsAgreementDeals;
+            }
+            set
+            {
+                this.OnDealAssignedRebateAndDeductionsAgreementDealsChanging(value);
+                this._DealAssignedRebateAndDeductionsAgreementDeals = value;
+                this.OnDealAssignedRebateAndDeductionsAgreementDealsChanged();
+                this.OnPropertyChanged("DealAssignedRebateAndDeductionsAgreementDeals");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDeal> _DealAssignedRebateAndDeductionsAgreementDeals = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDeal>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnDealAssignedRebateAndDeductionsAgreementDealsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDeal> value);
+        partial void OnDealAssignedRebateAndDeductionsAgreementDealsChanged();
+        /// <summary>
+        /// There are no comments for Property DealGuaranteeAssignedRebateAndDeductionsAgreementDeals in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDeal> DealGuaranteeAssignedRebateAndDeductionsAgreementDeals
+        {
+            get
+            {
+                return this._DealGuaranteeAssignedRebateAndDeductionsAgreementDeals;
+            }
+            set
+            {
+                this.OnDealGuaranteeAssignedRebateAndDeductionsAgreementDealsChanging(value);
+                this._DealGuaranteeAssignedRebateAndDeductionsAgreementDeals = value;
+                this.OnDealGuaranteeAssignedRebateAndDeductionsAgreementDealsChanged();
+                this.OnPropertyChanged("DealGuaranteeAssignedRebateAndDeductionsAgreementDeals");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDeal> _DealGuaranteeAssignedRebateAndDeductionsAgreementDeals = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDeal>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnDealGuaranteeAssignedRebateAndDeductionsAgreementDealsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDeal> value);
+        partial void OnDealGuaranteeAssignedRebateAndDeductionsAgreementDealsChanged();
+        /// <summary>
+        /// There are no comments for Property RebateAndDeductionsAgreementHeaders in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> RebateAndDeductionsAgreementHeaders
+        {
+            get
+            {
+                return this._RebateAndDeductionsAgreementHeaders;
+            }
+            set
+            {
+                this.OnRebateAndDeductionsAgreementHeadersChanging(value);
+                this._RebateAndDeductionsAgreementHeaders = value;
+                this.OnRebateAndDeductionsAgreementHeadersChanged();
+                this.OnPropertyChanged("RebateAndDeductionsAgreementHeaders");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> _RebateAndDeductionsAgreementHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRebateAndDeductionsAgreementHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> value);
+        partial void OnRebateAndDeductionsAgreementHeadersChanged();
+        /// <summary>
+        /// There are no comments for Property GuaranteeAssignedRebateAndDeductionsAgreementHeaders in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> GuaranteeAssignedRebateAndDeductionsAgreementHeaders
+        {
+            get
+            {
+                return this._GuaranteeAssignedRebateAndDeductionsAgreementHeaders;
+            }
+            set
+            {
+                this.OnGuaranteeAssignedRebateAndDeductionsAgreementHeadersChanging(value);
+                this._GuaranteeAssignedRebateAndDeductionsAgreementHeaders = value;
+                this.OnGuaranteeAssignedRebateAndDeductionsAgreementHeadersChanged();
+                this.OnPropertyChanged("GuaranteeAssignedRebateAndDeductionsAgreementHeaders");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> _GuaranteeAssignedRebateAndDeductionsAgreementHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnGuaranteeAssignedRebateAndDeductionsAgreementHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> value);
+        partial void OnGuaranteeAssignedRebateAndDeductionsAgreementHeadersChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

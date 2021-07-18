@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,6 +34,27 @@ namespace Microsoft.Dynamics.DataEntities
         public ProductNumberIdentifiedReleasedProductVariantSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ProductNumberIdentifiedReleasedProductVariant> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for ProductNumberIdentifiedReleasedProductVariantExternalCodes in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductNumberIdentifiedReleasedProductVariantExternalCode> ProductNumberIdentifiedReleasedProductVariantExternalCodes
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ProductNumberIdentifiedReleasedProductVariantExternalCodes == null))
+                {
+                    this._ProductNumberIdentifiedReleasedProductVariantExternalCodes = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductNumberIdentifiedReleasedProductVariantExternalCode>(GetPath("ProductNumberIdentifiedReleasedProductVariantExternalCodes"));
+                }
+                return this._ProductNumberIdentifiedReleasedProductVariantExternalCodes;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductNumberIdentifiedReleasedProductVariantExternalCode> _ProductNumberIdentifiedReleasedProductVariantExternalCodes;
         /// <summary>
         /// There are no comments for ReleasedProductMaster in the schema.
         /// </summary>
@@ -97,27 +118,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ProductNumberIdentifiedProductVariantSingle _ProductVariant;
-        /// <summary>
-        /// There are no comments for ProductNumberIdentifiedReleasedProductVariantExternalCodes in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductNumberIdentifiedReleasedProductVariantExternalCode> ProductNumberIdentifiedReleasedProductVariantExternalCodes
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ProductNumberIdentifiedReleasedProductVariantExternalCodes == null))
-                {
-                    this._ProductNumberIdentifiedReleasedProductVariantExternalCodes = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductNumberIdentifiedReleasedProductVariantExternalCode>(GetPath("ProductNumberIdentifiedReleasedProductVariantExternalCodes"));
-                }
-                return this._ProductNumberIdentifiedReleasedProductVariantExternalCodes;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductNumberIdentifiedReleasedProductVariantExternalCode> _ProductNumberIdentifiedReleasedProductVariantExternalCodes;
     }
         /// <summary>
         /// There are no comments for ProductNumberIdentifiedReleasedProductVariant in the schema.
@@ -382,6 +382,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnProductSizeIdChanging(string value);
         partial void OnProductSizeIdChanged();
         /// <summary>
+        /// There are no comments for Property ProductNumberIdentifiedReleasedProductVariantExternalCodes in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductNumberIdentifiedReleasedProductVariantExternalCode> ProductNumberIdentifiedReleasedProductVariantExternalCodes
+        {
+            get
+            {
+                return this._ProductNumberIdentifiedReleasedProductVariantExternalCodes;
+            }
+            set
+            {
+                this.OnProductNumberIdentifiedReleasedProductVariantExternalCodesChanging(value);
+                this._ProductNumberIdentifiedReleasedProductVariantExternalCodes = value;
+                this.OnProductNumberIdentifiedReleasedProductVariantExternalCodesChanged();
+                this.OnPropertyChanged("ProductNumberIdentifiedReleasedProductVariantExternalCodes");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductNumberIdentifiedReleasedProductVariantExternalCode> _ProductNumberIdentifiedReleasedProductVariantExternalCodes = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductNumberIdentifiedReleasedProductVariantExternalCode>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnProductNumberIdentifiedReleasedProductVariantExternalCodesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductNumberIdentifiedReleasedProductVariantExternalCode> value);
+        partial void OnProductNumberIdentifiedReleasedProductVariantExternalCodesChanged();
+        /// <summary>
         /// There are no comments for Property ReleasedProductMaster in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -447,28 +469,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.ProductNumberIdentifiedProductVariant _ProductVariant;
         partial void OnProductVariantChanging(global::Microsoft.Dynamics.DataEntities.ProductNumberIdentifiedProductVariant value);
         partial void OnProductVariantChanged();
-        /// <summary>
-        /// There are no comments for Property ProductNumberIdentifiedReleasedProductVariantExternalCodes in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductNumberIdentifiedReleasedProductVariantExternalCode> ProductNumberIdentifiedReleasedProductVariantExternalCodes
-        {
-            get
-            {
-                return this._ProductNumberIdentifiedReleasedProductVariantExternalCodes;
-            }
-            set
-            {
-                this.OnProductNumberIdentifiedReleasedProductVariantExternalCodesChanging(value);
-                this._ProductNumberIdentifiedReleasedProductVariantExternalCodes = value;
-                this.OnProductNumberIdentifiedReleasedProductVariantExternalCodesChanged();
-                this.OnPropertyChanged("ProductNumberIdentifiedReleasedProductVariantExternalCodes");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductNumberIdentifiedReleasedProductVariantExternalCode> _ProductNumberIdentifiedReleasedProductVariantExternalCodes = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductNumberIdentifiedReleasedProductVariantExternalCode>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnProductNumberIdentifiedReleasedProductVariantExternalCodesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductNumberIdentifiedReleasedProductVariantExternalCode> value);
-        partial void OnProductNumberIdentifiedReleasedProductVariantExternalCodesChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

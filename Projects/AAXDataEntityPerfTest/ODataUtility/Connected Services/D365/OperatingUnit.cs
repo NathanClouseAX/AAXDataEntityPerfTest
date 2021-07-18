@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for RecruitingProjects in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RecruitingProject> RecruitingProjects
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._RecruitingProjects == null))
-                {
-                    this._RecruitingProjects = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RecruitingProject>(GetPath("RecruitingProjects"));
-                }
-                return this._RecruitingProjects;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RecruitingProject> _RecruitingProjects;
-        /// <summary>
         /// There are no comments for LoyaltyCardRewardPointNonTransactionalActivity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,69 +55,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LoyaltyCardRewardPointNonTransactionalActivity> _LoyaltyCardRewardPointNonTransactionalActivity;
-        /// <summary>
-        /// There are no comments for CompensationEligibilityRules in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule> CompensationEligibilityRules
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._CompensationEligibilityRules == null))
-                {
-                    this._CompensationEligibilityRules = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule>(GetPath("CompensationEligibilityRules"));
-                }
-                return this._CompensationEligibilityRules;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule> _CompensationEligibilityRules;
-        /// <summary>
-        /// There are no comments for CompensationPayPerformanceAllocations in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocation> CompensationPayPerformanceAllocations
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._CompensationPayPerformanceAllocations == null))
-                {
-                    this._CompensationPayPerformanceAllocations = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocation>(GetPath("CompensationPayPerformanceAllocations"));
-                }
-                return this._CompensationPayPerformanceAllocations;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocation> _CompensationPayPerformanceAllocations;
-        /// <summary>
-        /// There are no comments for RetailStore in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.RetailStoreSingle RetailStore
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._RetailStore == null))
-                {
-                    this._RetailStore = new global::Microsoft.Dynamics.DataEntities.RetailStoreSingle(this.Context, GetPath("RetailStore"));
-                }
-                return this._RetailStore;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.RetailStoreSingle _RetailStore;
         /// <summary>
         /// There are no comments for RetailCallCenter in the schema.
         /// </summary>
@@ -161,6 +77,27 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.RetailCallCenterSingle _RetailCallCenter;
         /// <summary>
+        /// There are no comments for CompensationEligibilityRules in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule> CompensationEligibilityRules
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._CompensationEligibilityRules == null))
+                {
+                    this._CompensationEligibilityRules = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule>(GetPath("CompensationEligibilityRules"));
+                }
+                return this._CompensationEligibilityRules;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule> _CompensationEligibilityRules;
+        /// <summary>
         /// There are no comments for Worker in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -181,6 +118,48 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.WorkerSingle _Worker;
+        /// <summary>
+        /// There are no comments for RecruitingProjects in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RecruitingProject> RecruitingProjects
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RecruitingProjects == null))
+                {
+                    this._RecruitingProjects = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RecruitingProject>(GetPath("RecruitingProjects"));
+                }
+                return this._RecruitingProjects;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RecruitingProject> _RecruitingProjects;
+        /// <summary>
+        /// There are no comments for RetailStore in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.RetailStoreSingle RetailStore
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RetailStore == null))
+                {
+                    this._RetailStore = new global::Microsoft.Dynamics.DataEntities.RetailStoreSingle(this.Context, GetPath("RetailStore"));
+                }
+                return this._RetailStore;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.RetailStoreSingle _RetailStore;
         /// <summary>
         /// There are no comments for OperatingUnitContacts in the schema.
         /// </summary>
@@ -203,27 +182,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.OperatingUnitContact> _OperatingUnitContacts;
         /// <summary>
-        /// There are no comments for CompensationFixedIncreaseBudgets in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationFixedIncreaseBudget> CompensationFixedIncreaseBudgets
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._CompensationFixedIncreaseBudgets == null))
-                {
-                    this._CompensationFixedIncreaseBudgets = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CompensationFixedIncreaseBudget>(GetPath("CompensationFixedIncreaseBudgets"));
-                }
-                return this._CompensationFixedIncreaseBudgets;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationFixedIncreaseBudget> _CompensationFixedIncreaseBudgets;
-        /// <summary>
         /// There are no comments for LoyaltyCardRewardPointNonTransactionalActivityV2Entity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -244,6 +202,48 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LoyaltyCardRewardPointNonTransactionalActivityV2Entity> _LoyaltyCardRewardPointNonTransactionalActivityV2Entity;
+        /// <summary>
+        /// There are no comments for CompensationPayPerformanceAllocations in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocation> CompensationPayPerformanceAllocations
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._CompensationPayPerformanceAllocations == null))
+                {
+                    this._CompensationPayPerformanceAllocations = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocation>(GetPath("CompensationPayPerformanceAllocations"));
+                }
+                return this._CompensationPayPerformanceAllocations;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocation> _CompensationPayPerformanceAllocations;
+        /// <summary>
+        /// There are no comments for CompensationFixedIncreaseBudgets in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationFixedIncreaseBudget> CompensationFixedIncreaseBudgets
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._CompensationFixedIncreaseBudgets == null))
+                {
+                    this._CompensationFixedIncreaseBudgets = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CompensationFixedIncreaseBudget>(GetPath("CompensationFixedIncreaseBudgets"));
+                }
+                return this._CompensationFixedIncreaseBudgets;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationFixedIncreaseBudget> _CompensationFixedIncreaseBudgets;
     }
         /// <summary>
         /// There are no comments for OperatingUnit in the schema.
@@ -1595,28 +1595,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnManagerNameChanging(string value);
         partial void OnManagerNameChanged();
         /// <summary>
-        /// There are no comments for Property RecruitingProjects in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RecruitingProject> RecruitingProjects
-        {
-            get
-            {
-                return this._RecruitingProjects;
-            }
-            set
-            {
-                this.OnRecruitingProjectsChanging(value);
-                this._RecruitingProjects = value;
-                this.OnRecruitingProjectsChanged();
-                this.OnPropertyChanged("RecruitingProjects");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RecruitingProject> _RecruitingProjects = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RecruitingProject>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRecruitingProjectsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RecruitingProject> value);
-        partial void OnRecruitingProjectsChanged();
-        /// <summary>
         /// There are no comments for Property LoyaltyCardRewardPointNonTransactionalActivity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -1638,72 +1616,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LoyaltyCardRewardPointNonTransactionalActivity> _LoyaltyCardRewardPointNonTransactionalActivity = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LoyaltyCardRewardPointNonTransactionalActivity>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnLoyaltyCardRewardPointNonTransactionalActivityChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LoyaltyCardRewardPointNonTransactionalActivity> value);
         partial void OnLoyaltyCardRewardPointNonTransactionalActivityChanged();
-        /// <summary>
-        /// There are no comments for Property CompensationEligibilityRules in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule> CompensationEligibilityRules
-        {
-            get
-            {
-                return this._CompensationEligibilityRules;
-            }
-            set
-            {
-                this.OnCompensationEligibilityRulesChanging(value);
-                this._CompensationEligibilityRules = value;
-                this.OnCompensationEligibilityRulesChanged();
-                this.OnPropertyChanged("CompensationEligibilityRules");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule> _CompensationEligibilityRules = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnCompensationEligibilityRulesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule> value);
-        partial void OnCompensationEligibilityRulesChanged();
-        /// <summary>
-        /// There are no comments for Property CompensationPayPerformanceAllocations in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocation> CompensationPayPerformanceAllocations
-        {
-            get
-            {
-                return this._CompensationPayPerformanceAllocations;
-            }
-            set
-            {
-                this.OnCompensationPayPerformanceAllocationsChanging(value);
-                this._CompensationPayPerformanceAllocations = value;
-                this.OnCompensationPayPerformanceAllocationsChanged();
-                this.OnPropertyChanged("CompensationPayPerformanceAllocations");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocation> _CompensationPayPerformanceAllocations = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocation>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnCompensationPayPerformanceAllocationsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocation> value);
-        partial void OnCompensationPayPerformanceAllocationsChanged();
-        /// <summary>
-        /// There are no comments for Property RetailStore in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.RetailStore RetailStore
-        {
-            get
-            {
-                return this._RetailStore;
-            }
-            set
-            {
-                this.OnRetailStoreChanging(value);
-                this._RetailStore = value;
-                this.OnRetailStoreChanged();
-                this.OnPropertyChanged("RetailStore");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.RetailStore _RetailStore;
-        partial void OnRetailStoreChanging(global::Microsoft.Dynamics.DataEntities.RetailStore value);
-        partial void OnRetailStoreChanged();
         /// <summary>
         /// There are no comments for Property RetailCallCenter in the schema.
         /// </summary>
@@ -1727,6 +1639,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnRetailCallCenterChanging(global::Microsoft.Dynamics.DataEntities.RetailCallCenter value);
         partial void OnRetailCallCenterChanged();
         /// <summary>
+        /// There are no comments for Property CompensationEligibilityRules in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule> CompensationEligibilityRules
+        {
+            get
+            {
+                return this._CompensationEligibilityRules;
+            }
+            set
+            {
+                this.OnCompensationEligibilityRulesChanging(value);
+                this._CompensationEligibilityRules = value;
+                this.OnCompensationEligibilityRulesChanged();
+                this.OnPropertyChanged("CompensationEligibilityRules");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule> _CompensationEligibilityRules = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnCompensationEligibilityRulesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule> value);
+        partial void OnCompensationEligibilityRulesChanged();
+        /// <summary>
         /// There are no comments for Property Worker in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -1748,6 +1682,50 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.Worker _Worker;
         partial void OnWorkerChanging(global::Microsoft.Dynamics.DataEntities.Worker value);
         partial void OnWorkerChanged();
+        /// <summary>
+        /// There are no comments for Property RecruitingProjects in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RecruitingProject> RecruitingProjects
+        {
+            get
+            {
+                return this._RecruitingProjects;
+            }
+            set
+            {
+                this.OnRecruitingProjectsChanging(value);
+                this._RecruitingProjects = value;
+                this.OnRecruitingProjectsChanged();
+                this.OnPropertyChanged("RecruitingProjects");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RecruitingProject> _RecruitingProjects = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RecruitingProject>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRecruitingProjectsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RecruitingProject> value);
+        partial void OnRecruitingProjectsChanged();
+        /// <summary>
+        /// There are no comments for Property RetailStore in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.RetailStore RetailStore
+        {
+            get
+            {
+                return this._RetailStore;
+            }
+            set
+            {
+                this.OnRetailStoreChanging(value);
+                this._RetailStore = value;
+                this.OnRetailStoreChanged();
+                this.OnPropertyChanged("RetailStore");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.RetailStore _RetailStore;
+        partial void OnRetailStoreChanging(global::Microsoft.Dynamics.DataEntities.RetailStore value);
+        partial void OnRetailStoreChanged();
         /// <summary>
         /// There are no comments for Property OperatingUnitContacts in the schema.
         /// </summary>
@@ -1771,28 +1749,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnOperatingUnitContactsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.OperatingUnitContact> value);
         partial void OnOperatingUnitContactsChanged();
         /// <summary>
-        /// There are no comments for Property CompensationFixedIncreaseBudgets in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationFixedIncreaseBudget> CompensationFixedIncreaseBudgets
-        {
-            get
-            {
-                return this._CompensationFixedIncreaseBudgets;
-            }
-            set
-            {
-                this.OnCompensationFixedIncreaseBudgetsChanging(value);
-                this._CompensationFixedIncreaseBudgets = value;
-                this.OnCompensationFixedIncreaseBudgetsChanged();
-                this.OnPropertyChanged("CompensationFixedIncreaseBudgets");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationFixedIncreaseBudget> _CompensationFixedIncreaseBudgets = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationFixedIncreaseBudget>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnCompensationFixedIncreaseBudgetsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationFixedIncreaseBudget> value);
-        partial void OnCompensationFixedIncreaseBudgetsChanged();
-        /// <summary>
         /// There are no comments for Property LoyaltyCardRewardPointNonTransactionalActivityV2Entity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -1814,6 +1770,50 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LoyaltyCardRewardPointNonTransactionalActivityV2Entity> _LoyaltyCardRewardPointNonTransactionalActivityV2Entity = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LoyaltyCardRewardPointNonTransactionalActivityV2Entity>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnLoyaltyCardRewardPointNonTransactionalActivityV2EntityChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LoyaltyCardRewardPointNonTransactionalActivityV2Entity> value);
         partial void OnLoyaltyCardRewardPointNonTransactionalActivityV2EntityChanged();
+        /// <summary>
+        /// There are no comments for Property CompensationPayPerformanceAllocations in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocation> CompensationPayPerformanceAllocations
+        {
+            get
+            {
+                return this._CompensationPayPerformanceAllocations;
+            }
+            set
+            {
+                this.OnCompensationPayPerformanceAllocationsChanging(value);
+                this._CompensationPayPerformanceAllocations = value;
+                this.OnCompensationPayPerformanceAllocationsChanged();
+                this.OnPropertyChanged("CompensationPayPerformanceAllocations");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocation> _CompensationPayPerformanceAllocations = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocation>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnCompensationPayPerformanceAllocationsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocation> value);
+        partial void OnCompensationPayPerformanceAllocationsChanged();
+        /// <summary>
+        /// There are no comments for Property CompensationFixedIncreaseBudgets in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationFixedIncreaseBudget> CompensationFixedIncreaseBudgets
+        {
+            get
+            {
+                return this._CompensationFixedIncreaseBudgets;
+            }
+            set
+            {
+                this.OnCompensationFixedIncreaseBudgetsChanging(value);
+                this._CompensationFixedIncreaseBudgets = value;
+                this.OnCompensationFixedIncreaseBudgetsChanged();
+                this.OnPropertyChanged("CompensationFixedIncreaseBudgets");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationFixedIncreaseBudget> _CompensationFixedIncreaseBudgets = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationFixedIncreaseBudget>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnCompensationFixedIncreaseBudgetsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationFixedIncreaseBudget> value);
+        partial void OnCompensationFixedIncreaseBudgetsChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

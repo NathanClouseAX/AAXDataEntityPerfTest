@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,10 +35,10 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for BudgetRegisterEntryBudgetRegisterEntryHeader in the schema.
+        /// There are no comments for BudgetRegisterEntryLineEntryHeader in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntrySingle BudgetRegisterEntryBudgetRegisterEntryHeader
+        public virtual global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryLineSingle BudgetRegisterEntryLineEntryHeader
         {
             get
             {
@@ -46,15 +46,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._BudgetRegisterEntryBudgetRegisterEntryHeader == null))
+                if ((this._BudgetRegisterEntryLineEntryHeader == null))
                 {
-                    this._BudgetRegisterEntryBudgetRegisterEntryHeader = new global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntrySingle(this.Context, GetPath("BudgetRegisterEntryBudgetRegisterEntryHeader"));
+                    this._BudgetRegisterEntryLineEntryHeader = new global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryLineSingle(this.Context, GetPath("BudgetRegisterEntryLineEntryHeader"));
                 }
-                return this._BudgetRegisterEntryBudgetRegisterEntryHeader;
+                return this._BudgetRegisterEntryLineEntryHeader;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntrySingle _BudgetRegisterEntryBudgetRegisterEntryHeader;
+        private global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryLineSingle _BudgetRegisterEntryLineEntryHeader;
         /// <summary>
         /// There are no comments for BudgetModels in the schema.
         /// </summary>
@@ -119,10 +119,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.BudgetCodeSingle _BudgetCodes;
         /// <summary>
-        /// There are no comments for BudgetRegisterEntryLineEntryHeader in the schema.
+        /// There are no comments for BudgetRegisterEntryBudgetRegisterEntryHeader in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryLineSingle BudgetRegisterEntryLineEntryHeader
+        public virtual global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntrySingle BudgetRegisterEntryBudgetRegisterEntryHeader
         {
             get
             {
@@ -130,15 +130,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._BudgetRegisterEntryLineEntryHeader == null))
+                if ((this._BudgetRegisterEntryBudgetRegisterEntryHeader == null))
                 {
-                    this._BudgetRegisterEntryLineEntryHeader = new global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryLineSingle(this.Context, GetPath("BudgetRegisterEntryLineEntryHeader"));
+                    this._BudgetRegisterEntryBudgetRegisterEntryHeader = new global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntrySingle(this.Context, GetPath("BudgetRegisterEntryBudgetRegisterEntryHeader"));
                 }
-                return this._BudgetRegisterEntryLineEntryHeader;
+                return this._BudgetRegisterEntryBudgetRegisterEntryHeader;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryLineSingle _BudgetRegisterEntryLineEntryHeader;
+        private global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntrySingle _BudgetRegisterEntryBudgetRegisterEntryHeader;
     }
         /// <summary>
         /// There are no comments for BudgetRegisterEntryHeader in the schema.
@@ -161,8 +161,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// <param name="revenueBudgetTotal">Initial value of RevenueBudgetTotal.</param>
         /// <param name="expenseBudgetTotal">Initial value of ExpenseBudgetTotal.</param>
         /// <param name="defaultDate">Initial value of DefaultDate.</param>
-        /// <param name="budgetRegisterEntryBudgetRegisterEntryHeader">Initial value of BudgetRegisterEntryBudgetRegisterEntryHeader.</param>
         /// <param name="budgetRegisterEntryLineEntryHeader">Initial value of BudgetRegisterEntryLineEntryHeader.</param>
+        /// <param name="budgetRegisterEntryBudgetRegisterEntryHeader">Initial value of BudgetRegisterEntryBudgetRegisterEntryHeader.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public static BudgetRegisterEntryHeader CreateBudgetRegisterEntryHeader(string dataAreaId, 
                     string legalEntityId, 
@@ -170,8 +170,8 @@ namespace Microsoft.Dynamics.DataEntities
                     decimal revenueBudgetTotal, 
                     decimal expenseBudgetTotal, 
                     global::System.DateTimeOffset defaultDate, 
-                    global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntry budgetRegisterEntryBudgetRegisterEntryHeader, 
-                    global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryLine budgetRegisterEntryLineEntryHeader)
+                    global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryLine budgetRegisterEntryLineEntryHeader, 
+                    global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntry budgetRegisterEntryBudgetRegisterEntryHeader)
         {
             BudgetRegisterEntryHeader budgetRegisterEntryHeader = new BudgetRegisterEntryHeader();
             budgetRegisterEntryHeader.dataAreaId = dataAreaId;
@@ -180,16 +180,16 @@ namespace Microsoft.Dynamics.DataEntities
             budgetRegisterEntryHeader.RevenueBudgetTotal = revenueBudgetTotal;
             budgetRegisterEntryHeader.ExpenseBudgetTotal = expenseBudgetTotal;
             budgetRegisterEntryHeader.DefaultDate = defaultDate;
-            if ((budgetRegisterEntryBudgetRegisterEntryHeader == null))
-            {
-                throw new global::System.ArgumentNullException("budgetRegisterEntryBudgetRegisterEntryHeader");
-            }
-            budgetRegisterEntryHeader.BudgetRegisterEntryBudgetRegisterEntryHeader = budgetRegisterEntryBudgetRegisterEntryHeader;
             if ((budgetRegisterEntryLineEntryHeader == null))
             {
                 throw new global::System.ArgumentNullException("budgetRegisterEntryLineEntryHeader");
             }
             budgetRegisterEntryHeader.BudgetRegisterEntryLineEntryHeader = budgetRegisterEntryLineEntryHeader;
+            if ((budgetRegisterEntryBudgetRegisterEntryHeader == null))
+            {
+                throw new global::System.ArgumentNullException("budgetRegisterEntryBudgetRegisterEntryHeader");
+            }
+            budgetRegisterEntryHeader.BudgetRegisterEntryBudgetRegisterEntryHeader = budgetRegisterEntryBudgetRegisterEntryHeader;
             return budgetRegisterEntryHeader;
         }
         /// <summary>
@@ -523,27 +523,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnBudgetCodeChanging(string value);
         partial void OnBudgetCodeChanged();
         /// <summary>
-        /// There are no comments for Property BudgetRegisterEntryBudgetRegisterEntryHeader in the schema.
+        /// There are no comments for Property BudgetRegisterEntryLineEntryHeader in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntry BudgetRegisterEntryBudgetRegisterEntryHeader
+        public virtual global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryLine BudgetRegisterEntryLineEntryHeader
         {
             get
             {
-                return this._BudgetRegisterEntryBudgetRegisterEntryHeader;
+                return this._BudgetRegisterEntryLineEntryHeader;
             }
             set
             {
-                this.OnBudgetRegisterEntryBudgetRegisterEntryHeaderChanging(value);
-                this._BudgetRegisterEntryBudgetRegisterEntryHeader = value;
-                this.OnBudgetRegisterEntryBudgetRegisterEntryHeaderChanged();
-                this.OnPropertyChanged("BudgetRegisterEntryBudgetRegisterEntryHeader");
+                this.OnBudgetRegisterEntryLineEntryHeaderChanging(value);
+                this._BudgetRegisterEntryLineEntryHeader = value;
+                this.OnBudgetRegisterEntryLineEntryHeaderChanged();
+                this.OnPropertyChanged("BudgetRegisterEntryLineEntryHeader");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntry _BudgetRegisterEntryBudgetRegisterEntryHeader;
-        partial void OnBudgetRegisterEntryBudgetRegisterEntryHeaderChanging(global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntry value);
-        partial void OnBudgetRegisterEntryBudgetRegisterEntryHeaderChanged();
+        private global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryLine _BudgetRegisterEntryLineEntryHeader;
+        partial void OnBudgetRegisterEntryLineEntryHeaderChanging(global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryLine value);
+        partial void OnBudgetRegisterEntryLineEntryHeaderChanged();
         /// <summary>
         /// There are no comments for Property BudgetModels in the schema.
         /// </summary>
@@ -611,27 +611,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnBudgetCodesChanging(global::Microsoft.Dynamics.DataEntities.BudgetCode value);
         partial void OnBudgetCodesChanged();
         /// <summary>
-        /// There are no comments for Property BudgetRegisterEntryLineEntryHeader in the schema.
+        /// There are no comments for Property BudgetRegisterEntryBudgetRegisterEntryHeader in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryLine BudgetRegisterEntryLineEntryHeader
+        public virtual global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntry BudgetRegisterEntryBudgetRegisterEntryHeader
         {
             get
             {
-                return this._BudgetRegisterEntryLineEntryHeader;
+                return this._BudgetRegisterEntryBudgetRegisterEntryHeader;
             }
             set
             {
-                this.OnBudgetRegisterEntryLineEntryHeaderChanging(value);
-                this._BudgetRegisterEntryLineEntryHeader = value;
-                this.OnBudgetRegisterEntryLineEntryHeaderChanged();
-                this.OnPropertyChanged("BudgetRegisterEntryLineEntryHeader");
+                this.OnBudgetRegisterEntryBudgetRegisterEntryHeaderChanging(value);
+                this._BudgetRegisterEntryBudgetRegisterEntryHeader = value;
+                this.OnBudgetRegisterEntryBudgetRegisterEntryHeaderChanged();
+                this.OnPropertyChanged("BudgetRegisterEntryBudgetRegisterEntryHeader");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryLine _BudgetRegisterEntryLineEntryHeader;
-        partial void OnBudgetRegisterEntryLineEntryHeaderChanging(global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryLine value);
-        partial void OnBudgetRegisterEntryLineEntryHeaderChanged();
+        private global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntry _BudgetRegisterEntryBudgetRegisterEntryHeader;
+        partial void OnBudgetRegisterEntryBudgetRegisterEntryHeaderChanging(global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntry value);
+        partial void OnBudgetRegisterEntryBudgetRegisterEntryHeaderChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

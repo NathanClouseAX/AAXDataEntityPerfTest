@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,489 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for LedgerAdvancedRuleStructureEntity_Role_SegmentName10 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName10
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._LedgerAdvancedRuleStructureEntity_Role_SegmentName10 == null))
-                {
-                    this._LedgerAdvancedRuleStructureEntity_Role_SegmentName10 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(GetPath("LedgerAdvancedRuleStructureEntity_Role_SegmentName10"));
-                }
-                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName10;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName10;
-        /// <summary>
-        /// There are no comments for LedgerAdvancedRuleStructureEntity_Role_SegmentName11 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName11
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._LedgerAdvancedRuleStructureEntity_Role_SegmentName11 == null))
-                {
-                    this._LedgerAdvancedRuleStructureEntity_Role_SegmentName11 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(GetPath("LedgerAdvancedRuleStructureEntity_Role_SegmentName11"));
-                }
-                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName11;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName11;
-        /// <summary>
-        /// There are no comments for LedgerAdvancedRuleStructureEntity_Role_SegmentName04 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName04
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._LedgerAdvancedRuleStructureEntity_Role_SegmentName04 == null))
-                {
-                    this._LedgerAdvancedRuleStructureEntity_Role_SegmentName04 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(GetPath("LedgerAdvancedRuleStructureEntity_Role_SegmentName04"));
-                }
-                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName04;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName04;
-        /// <summary>
-        /// There are no comments for LedgerAdvancedRuleStructureEntity_Role_SegmentName05 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName05
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._LedgerAdvancedRuleStructureEntity_Role_SegmentName05 == null))
-                {
-                    this._LedgerAdvancedRuleStructureEntity_Role_SegmentName05 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(GetPath("LedgerAdvancedRuleStructureEntity_Role_SegmentName05"));
-                }
-                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName05;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName05;
-        /// <summary>
-        /// There are no comments for LedgerAdvancedRuleStructureEntity_Role_SegmentName06 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName06
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._LedgerAdvancedRuleStructureEntity_Role_SegmentName06 == null))
-                {
-                    this._LedgerAdvancedRuleStructureEntity_Role_SegmentName06 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(GetPath("LedgerAdvancedRuleStructureEntity_Role_SegmentName06"));
-                }
-                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName06;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName06;
-        /// <summary>
-        /// There are no comments for LedgerAdvancedRuleStructureEntity_Role_SegmentName07 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName07
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._LedgerAdvancedRuleStructureEntity_Role_SegmentName07 == null))
-                {
-                    this._LedgerAdvancedRuleStructureEntity_Role_SegmentName07 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(GetPath("LedgerAdvancedRuleStructureEntity_Role_SegmentName07"));
-                }
-                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName07;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName07;
-        /// <summary>
-        /// There are no comments for LedgerAdvancedRuleStructureEntity_Role_SegmentName01 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName01
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._LedgerAdvancedRuleStructureEntity_Role_SegmentName01 == null))
-                {
-                    this._LedgerAdvancedRuleStructureEntity_Role_SegmentName01 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(GetPath("LedgerAdvancedRuleStructureEntity_Role_SegmentName01"));
-                }
-                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName01;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName01;
-        /// <summary>
-        /// There are no comments for LedgerAdvancedRuleStructureEntity_Role_SegmentName02 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName02
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._LedgerAdvancedRuleStructureEntity_Role_SegmentName02 == null))
-                {
-                    this._LedgerAdvancedRuleStructureEntity_Role_SegmentName02 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(GetPath("LedgerAdvancedRuleStructureEntity_Role_SegmentName02"));
-                }
-                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName02;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName02;
-        /// <summary>
-        /// There are no comments for LedgerAdvancedRuleStructureEntity_Role_SegmentName03 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName03
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._LedgerAdvancedRuleStructureEntity_Role_SegmentName03 == null))
-                {
-                    this._LedgerAdvancedRuleStructureEntity_Role_SegmentName03 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(GetPath("LedgerAdvancedRuleStructureEntity_Role_SegmentName03"));
-                }
-                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName03;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName03;
-        /// <summary>
-        /// There are no comments for LedgerAdvancedRuleStructureEntity_Role_SegmentName08 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName08
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._LedgerAdvancedRuleStructureEntity_Role_SegmentName08 == null))
-                {
-                    this._LedgerAdvancedRuleStructureEntity_Role_SegmentName08 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(GetPath("LedgerAdvancedRuleStructureEntity_Role_SegmentName08"));
-                }
-                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName08;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName08;
-        /// <summary>
-        /// There are no comments for LedgerAdvancedRuleStructureEntity_Role_SegmentName09 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName09
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._LedgerAdvancedRuleStructureEntity_Role_SegmentName09 == null))
-                {
-                    this._LedgerAdvancedRuleStructureEntity_Role_SegmentName09 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(GetPath("LedgerAdvancedRuleStructureEntity_Role_SegmentName09"));
-                }
-                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName09;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName09;
-        /// <summary>
-        /// There are no comments for FinancialDimensionSetEntity_Role_SegmentName09 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName09
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._FinancialDimensionSetEntity_Role_SegmentName09 == null))
-                {
-                    this._FinancialDimensionSetEntity_Role_SegmentName09 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(GetPath("FinancialDimensionSetEntity_Role_SegmentName09"));
-                }
-                return this._FinancialDimensionSetEntity_Role_SegmentName09;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName09;
-        /// <summary>
-        /// There are no comments for FinancialDimensionSetEntity_Role_SegmentName11 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName11
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._FinancialDimensionSetEntity_Role_SegmentName11 == null))
-                {
-                    this._FinancialDimensionSetEntity_Role_SegmentName11 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(GetPath("FinancialDimensionSetEntity_Role_SegmentName11"));
-                }
-                return this._FinancialDimensionSetEntity_Role_SegmentName11;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName11;
-        /// <summary>
-        /// There are no comments for FinancialDimensionSetEntity_Role_SegmentName01 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName01
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._FinancialDimensionSetEntity_Role_SegmentName01 == null))
-                {
-                    this._FinancialDimensionSetEntity_Role_SegmentName01 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(GetPath("FinancialDimensionSetEntity_Role_SegmentName01"));
-                }
-                return this._FinancialDimensionSetEntity_Role_SegmentName01;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName01;
-        /// <summary>
-        /// There are no comments for FinancialDimensionSetEntity_Role_SegmentName05 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName05
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._FinancialDimensionSetEntity_Role_SegmentName05 == null))
-                {
-                    this._FinancialDimensionSetEntity_Role_SegmentName05 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(GetPath("FinancialDimensionSetEntity_Role_SegmentName05"));
-                }
-                return this._FinancialDimensionSetEntity_Role_SegmentName05;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName05;
-        /// <summary>
-        /// There are no comments for FinancialDimensionSetEntity_Role_SegmentName02 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName02
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._FinancialDimensionSetEntity_Role_SegmentName02 == null))
-                {
-                    this._FinancialDimensionSetEntity_Role_SegmentName02 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(GetPath("FinancialDimensionSetEntity_Role_SegmentName02"));
-                }
-                return this._FinancialDimensionSetEntity_Role_SegmentName02;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName02;
-        /// <summary>
-        /// There are no comments for FinancialDimensionSetEntity_Role_SegmentName06 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName06
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._FinancialDimensionSetEntity_Role_SegmentName06 == null))
-                {
-                    this._FinancialDimensionSetEntity_Role_SegmentName06 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(GetPath("FinancialDimensionSetEntity_Role_SegmentName06"));
-                }
-                return this._FinancialDimensionSetEntity_Role_SegmentName06;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName06;
-        /// <summary>
-        /// There are no comments for FinancialDimensionSetEntity_Role_SegmentName03 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName03
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._FinancialDimensionSetEntity_Role_SegmentName03 == null))
-                {
-                    this._FinancialDimensionSetEntity_Role_SegmentName03 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(GetPath("FinancialDimensionSetEntity_Role_SegmentName03"));
-                }
-                return this._FinancialDimensionSetEntity_Role_SegmentName03;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName03;
-        /// <summary>
-        /// There are no comments for FinancialDimensionSetEntity_Role_SegmentName07 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName07
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._FinancialDimensionSetEntity_Role_SegmentName07 == null))
-                {
-                    this._FinancialDimensionSetEntity_Role_SegmentName07 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(GetPath("FinancialDimensionSetEntity_Role_SegmentName07"));
-                }
-                return this._FinancialDimensionSetEntity_Role_SegmentName07;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName07;
-        /// <summary>
-        /// There are no comments for FinancialDimensionSetEntity_Role_SegmentName08 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName08
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._FinancialDimensionSetEntity_Role_SegmentName08 == null))
-                {
-                    this._FinancialDimensionSetEntity_Role_SegmentName08 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(GetPath("FinancialDimensionSetEntity_Role_SegmentName08"));
-                }
-                return this._FinancialDimensionSetEntity_Role_SegmentName08;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName08;
-        /// <summary>
-        /// There are no comments for FinancialDimensionSetEntity_Role_SegmentName10 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName10
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._FinancialDimensionSetEntity_Role_SegmentName10 == null))
-                {
-                    this._FinancialDimensionSetEntity_Role_SegmentName10 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(GetPath("FinancialDimensionSetEntity_Role_SegmentName10"));
-                }
-                return this._FinancialDimensionSetEntity_Role_SegmentName10;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName10;
-        /// <summary>
-        /// There are no comments for FinancialDimensionSetEntity_Role_SegmentName04 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName04
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._FinancialDimensionSetEntity_Role_SegmentName04 == null))
-                {
-                    this._FinancialDimensionSetEntity_Role_SegmentName04 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(GetPath("FinancialDimensionSetEntity_Role_SegmentName04"));
-                }
-                return this._FinancialDimensionSetEntity_Role_SegmentName04;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName04;
-        /// <summary>
-        /// There are no comments for FinancialDimensionValueEntity_Role_FinancialDimension in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionValue> FinancialDimensionValueEntity_Role_FinancialDimension
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._FinancialDimensionValueEntity_Role_FinancialDimension == null))
-                {
-                    this._FinancialDimensionValueEntity_Role_FinancialDimension = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionValue>(GetPath("FinancialDimensionValueEntity_Role_FinancialDimension"));
-                }
-                return this._FinancialDimensionValueEntity_Role_FinancialDimension;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionValue> _FinancialDimensionValueEntity_Role_FinancialDimension;
-        /// <summary>
         /// There are no comments for FinancialDimensionValueTotalAccountIntervalEntity_Role_DimensionAttributeEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -538,27 +55,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionValueTotalAccountInterval> _FinancialDimensionValueTotalAccountIntervalEntity_Role_DimensionAttributeEntity;
-        /// <summary>
-        /// There are no comments for LedgerAdvancedRuleCriterionEntity_Role_DimensionAttributeEntity in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AdvancedRuleCriterion> LedgerAdvancedRuleCriterionEntity_Role_DimensionAttributeEntity
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._LedgerAdvancedRuleCriterionEntity_Role_DimensionAttributeEntity == null))
-                {
-                    this._LedgerAdvancedRuleCriterionEntity_Role_DimensionAttributeEntity = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AdvancedRuleCriterion>(GetPath("LedgerAdvancedRuleCriterionEntity_Role_DimensionAttributeEntity"));
-                }
-                return this._LedgerAdvancedRuleCriterionEntity_Role_DimensionAttributeEntity;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AdvancedRuleCriterion> _LedgerAdvancedRuleCriterionEntity_Role_DimensionAttributeEntity;
         /// <summary>
         /// There are no comments for FinancialDimensionValueTranslationEntity_Role_DimensionAttributeEntity in the schema.
         /// </summary>
@@ -581,27 +77,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionValueTranslation> _FinancialDimensionValueTranslationEntity_Role_DimensionAttributeEntity;
         /// <summary>
-        /// There are no comments for DimensionAttributeBudgetPrimaryLedger in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetDimension> DimensionAttributeBudgetPrimaryLedger
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._DimensionAttributeBudgetPrimaryLedger == null))
-                {
-                    this._DimensionAttributeBudgetPrimaryLedger = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetDimension>(GetPath("DimensionAttributeBudgetPrimaryLedger"));
-                }
-                return this._DimensionAttributeBudgetPrimaryLedger;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetDimension> _DimensionAttributeBudgetPrimaryLedger;
-        /// <summary>
         /// There are no comments for LedgerAccountAlias in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -623,10 +98,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias> _LedgerAccountAlias;
         /// <summary>
-        /// There are no comments for DerivedDimension_Role_DrivingDimension in the schema.
+        /// There are no comments for DimensionAttributeBudgetPrimaryLedger in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DrivingDimension
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetDimension> DimensionAttributeBudgetPrimaryLedger
         {
             get
             {
@@ -634,246 +109,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._DerivedDimension_Role_DrivingDimension == null))
+                if ((this._DimensionAttributeBudgetPrimaryLedger == null))
                 {
-                    this._DerivedDimension_Role_DrivingDimension = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(GetPath("DerivedDimension_Role_DrivingDimension"));
+                    this._DimensionAttributeBudgetPrimaryLedger = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetDimension>(GetPath("DimensionAttributeBudgetPrimaryLedger"));
                 }
-                return this._DerivedDimension_Role_DrivingDimension;
+                return this._DimensionAttributeBudgetPrimaryLedger;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DrivingDimension;
-        /// <summary>
-        /// There are no comments for DerivedDimension_Role_DerivedDimension10 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension10
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._DerivedDimension_Role_DerivedDimension10 == null))
-                {
-                    this._DerivedDimension_Role_DerivedDimension10 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(GetPath("DerivedDimension_Role_DerivedDimension10"));
-                }
-                return this._DerivedDimension_Role_DerivedDimension10;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension10;
-        /// <summary>
-        /// There are no comments for DerivedDimension_Role_DerivedDimension1 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension1
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._DerivedDimension_Role_DerivedDimension1 == null))
-                {
-                    this._DerivedDimension_Role_DerivedDimension1 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(GetPath("DerivedDimension_Role_DerivedDimension1"));
-                }
-                return this._DerivedDimension_Role_DerivedDimension1;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension1;
-        /// <summary>
-        /// There are no comments for DerivedDimension_Role_DerivedDimension3 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension3
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._DerivedDimension_Role_DerivedDimension3 == null))
-                {
-                    this._DerivedDimension_Role_DerivedDimension3 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(GetPath("DerivedDimension_Role_DerivedDimension3"));
-                }
-                return this._DerivedDimension_Role_DerivedDimension3;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension3;
-        /// <summary>
-        /// There are no comments for DerivedDimension_Role_DerivedDimension2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension2
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._DerivedDimension_Role_DerivedDimension2 == null))
-                {
-                    this._DerivedDimension_Role_DerivedDimension2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(GetPath("DerivedDimension_Role_DerivedDimension2"));
-                }
-                return this._DerivedDimension_Role_DerivedDimension2;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension2;
-        /// <summary>
-        /// There are no comments for DerivedDimension_Role_DerivedDimension5 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension5
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._DerivedDimension_Role_DerivedDimension5 == null))
-                {
-                    this._DerivedDimension_Role_DerivedDimension5 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(GetPath("DerivedDimension_Role_DerivedDimension5"));
-                }
-                return this._DerivedDimension_Role_DerivedDimension5;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension5;
-        /// <summary>
-        /// There are no comments for DerivedDimension_Role_DerivedDimension4 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension4
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._DerivedDimension_Role_DerivedDimension4 == null))
-                {
-                    this._DerivedDimension_Role_DerivedDimension4 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(GetPath("DerivedDimension_Role_DerivedDimension4"));
-                }
-                return this._DerivedDimension_Role_DerivedDimension4;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension4;
-        /// <summary>
-        /// There are no comments for DerivedDimension_Role_DerivedDimension7 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension7
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._DerivedDimension_Role_DerivedDimension7 == null))
-                {
-                    this._DerivedDimension_Role_DerivedDimension7 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(GetPath("DerivedDimension_Role_DerivedDimension7"));
-                }
-                return this._DerivedDimension_Role_DerivedDimension7;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension7;
-        /// <summary>
-        /// There are no comments for DerivedDimension_Role_DerivedDimension6 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension6
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._DerivedDimension_Role_DerivedDimension6 == null))
-                {
-                    this._DerivedDimension_Role_DerivedDimension6 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(GetPath("DerivedDimension_Role_DerivedDimension6"));
-                }
-                return this._DerivedDimension_Role_DerivedDimension6;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension6;
-        /// <summary>
-        /// There are no comments for DerivedDimension_Role_DerivedDimension9 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension9
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._DerivedDimension_Role_DerivedDimension9 == null))
-                {
-                    this._DerivedDimension_Role_DerivedDimension9 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(GetPath("DerivedDimension_Role_DerivedDimension9"));
-                }
-                return this._DerivedDimension_Role_DerivedDimension9;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension9;
-        /// <summary>
-        /// There are no comments for DerivedDimension_Role_DerivedDimension8 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension8
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._DerivedDimension_Role_DerivedDimension8 == null))
-                {
-                    this._DerivedDimension_Role_DerivedDimension8 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(GetPath("DerivedDimension_Role_DerivedDimension8"));
-                }
-                return this._DerivedDimension_Role_DerivedDimension8;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension8;
-        /// <summary>
-        /// There are no comments for DimensionAttributeTranslationEntity_DimensionAttributeEntity_Role in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.DimensionAttributeTranslation> DimensionAttributeTranslationEntity_DimensionAttributeEntity_Role
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._DimensionAttributeTranslationEntity_DimensionAttributeEntity_Role == null))
-                {
-                    this._DimensionAttributeTranslationEntity_DimensionAttributeEntity_Role = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.DimensionAttributeTranslation>(GetPath("DimensionAttributeTranslationEntity_DimensionAttributeEntity_Role"));
-                }
-                return this._DimensionAttributeTranslationEntity_DimensionAttributeEntity_Role;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.DimensionAttributeTranslation> _DimensionAttributeTranslationEntity_DimensionAttributeEntity_Role;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetDimension> _DimensionAttributeBudgetPrimaryLedger;
         /// <summary>
         /// There are no comments for LedgerAccountStructureEntity_Role_SegmentName10 in the schema.
         /// </summary>
@@ -1106,6 +350,699 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AccountStructure> _LedgerAccountStructureEntity_Role_SegmentName09;
         /// <summary>
+        /// There are no comments for DerivedDimension_Role_DrivingDimension in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DrivingDimension
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._DerivedDimension_Role_DrivingDimension == null))
+                {
+                    this._DerivedDimension_Role_DrivingDimension = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(GetPath("DerivedDimension_Role_DrivingDimension"));
+                }
+                return this._DerivedDimension_Role_DrivingDimension;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DrivingDimension;
+        /// <summary>
+        /// There are no comments for DerivedDimension_Role_DerivedDimension10 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension10
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._DerivedDimension_Role_DerivedDimension10 == null))
+                {
+                    this._DerivedDimension_Role_DerivedDimension10 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(GetPath("DerivedDimension_Role_DerivedDimension10"));
+                }
+                return this._DerivedDimension_Role_DerivedDimension10;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension10;
+        /// <summary>
+        /// There are no comments for DerivedDimension_Role_DerivedDimension1 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension1
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._DerivedDimension_Role_DerivedDimension1 == null))
+                {
+                    this._DerivedDimension_Role_DerivedDimension1 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(GetPath("DerivedDimension_Role_DerivedDimension1"));
+                }
+                return this._DerivedDimension_Role_DerivedDimension1;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension1;
+        /// <summary>
+        /// There are no comments for DerivedDimension_Role_DerivedDimension3 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension3
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._DerivedDimension_Role_DerivedDimension3 == null))
+                {
+                    this._DerivedDimension_Role_DerivedDimension3 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(GetPath("DerivedDimension_Role_DerivedDimension3"));
+                }
+                return this._DerivedDimension_Role_DerivedDimension3;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension3;
+        /// <summary>
+        /// There are no comments for DerivedDimension_Role_DerivedDimension2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension2
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._DerivedDimension_Role_DerivedDimension2 == null))
+                {
+                    this._DerivedDimension_Role_DerivedDimension2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(GetPath("DerivedDimension_Role_DerivedDimension2"));
+                }
+                return this._DerivedDimension_Role_DerivedDimension2;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension2;
+        /// <summary>
+        /// There are no comments for DerivedDimension_Role_DerivedDimension5 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension5
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._DerivedDimension_Role_DerivedDimension5 == null))
+                {
+                    this._DerivedDimension_Role_DerivedDimension5 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(GetPath("DerivedDimension_Role_DerivedDimension5"));
+                }
+                return this._DerivedDimension_Role_DerivedDimension5;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension5;
+        /// <summary>
+        /// There are no comments for DerivedDimension_Role_DerivedDimension4 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension4
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._DerivedDimension_Role_DerivedDimension4 == null))
+                {
+                    this._DerivedDimension_Role_DerivedDimension4 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(GetPath("DerivedDimension_Role_DerivedDimension4"));
+                }
+                return this._DerivedDimension_Role_DerivedDimension4;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension4;
+        /// <summary>
+        /// There are no comments for DerivedDimension_Role_DerivedDimension7 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension7
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._DerivedDimension_Role_DerivedDimension7 == null))
+                {
+                    this._DerivedDimension_Role_DerivedDimension7 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(GetPath("DerivedDimension_Role_DerivedDimension7"));
+                }
+                return this._DerivedDimension_Role_DerivedDimension7;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension7;
+        /// <summary>
+        /// There are no comments for DerivedDimension_Role_DerivedDimension6 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension6
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._DerivedDimension_Role_DerivedDimension6 == null))
+                {
+                    this._DerivedDimension_Role_DerivedDimension6 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(GetPath("DerivedDimension_Role_DerivedDimension6"));
+                }
+                return this._DerivedDimension_Role_DerivedDimension6;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension6;
+        /// <summary>
+        /// There are no comments for DerivedDimension_Role_DerivedDimension9 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension9
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._DerivedDimension_Role_DerivedDimension9 == null))
+                {
+                    this._DerivedDimension_Role_DerivedDimension9 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(GetPath("DerivedDimension_Role_DerivedDimension9"));
+                }
+                return this._DerivedDimension_Role_DerivedDimension9;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension9;
+        /// <summary>
+        /// There are no comments for DerivedDimension_Role_DerivedDimension8 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension8
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._DerivedDimension_Role_DerivedDimension8 == null))
+                {
+                    this._DerivedDimension_Role_DerivedDimension8 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(GetPath("DerivedDimension_Role_DerivedDimension8"));
+                }
+                return this._DerivedDimension_Role_DerivedDimension8;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension8;
+        /// <summary>
+        /// There are no comments for FinancialDimensionSetEntity_Role_SegmentName09 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName09
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._FinancialDimensionSetEntity_Role_SegmentName09 == null))
+                {
+                    this._FinancialDimensionSetEntity_Role_SegmentName09 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(GetPath("FinancialDimensionSetEntity_Role_SegmentName09"));
+                }
+                return this._FinancialDimensionSetEntity_Role_SegmentName09;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName09;
+        /// <summary>
+        /// There are no comments for FinancialDimensionSetEntity_Role_SegmentName11 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName11
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._FinancialDimensionSetEntity_Role_SegmentName11 == null))
+                {
+                    this._FinancialDimensionSetEntity_Role_SegmentName11 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(GetPath("FinancialDimensionSetEntity_Role_SegmentName11"));
+                }
+                return this._FinancialDimensionSetEntity_Role_SegmentName11;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName11;
+        /// <summary>
+        /// There are no comments for FinancialDimensionSetEntity_Role_SegmentName01 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName01
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._FinancialDimensionSetEntity_Role_SegmentName01 == null))
+                {
+                    this._FinancialDimensionSetEntity_Role_SegmentName01 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(GetPath("FinancialDimensionSetEntity_Role_SegmentName01"));
+                }
+                return this._FinancialDimensionSetEntity_Role_SegmentName01;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName01;
+        /// <summary>
+        /// There are no comments for FinancialDimensionSetEntity_Role_SegmentName05 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName05
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._FinancialDimensionSetEntity_Role_SegmentName05 == null))
+                {
+                    this._FinancialDimensionSetEntity_Role_SegmentName05 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(GetPath("FinancialDimensionSetEntity_Role_SegmentName05"));
+                }
+                return this._FinancialDimensionSetEntity_Role_SegmentName05;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName05;
+        /// <summary>
+        /// There are no comments for FinancialDimensionSetEntity_Role_SegmentName02 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName02
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._FinancialDimensionSetEntity_Role_SegmentName02 == null))
+                {
+                    this._FinancialDimensionSetEntity_Role_SegmentName02 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(GetPath("FinancialDimensionSetEntity_Role_SegmentName02"));
+                }
+                return this._FinancialDimensionSetEntity_Role_SegmentName02;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName02;
+        /// <summary>
+        /// There are no comments for FinancialDimensionSetEntity_Role_SegmentName06 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName06
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._FinancialDimensionSetEntity_Role_SegmentName06 == null))
+                {
+                    this._FinancialDimensionSetEntity_Role_SegmentName06 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(GetPath("FinancialDimensionSetEntity_Role_SegmentName06"));
+                }
+                return this._FinancialDimensionSetEntity_Role_SegmentName06;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName06;
+        /// <summary>
+        /// There are no comments for FinancialDimensionSetEntity_Role_SegmentName03 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName03
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._FinancialDimensionSetEntity_Role_SegmentName03 == null))
+                {
+                    this._FinancialDimensionSetEntity_Role_SegmentName03 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(GetPath("FinancialDimensionSetEntity_Role_SegmentName03"));
+                }
+                return this._FinancialDimensionSetEntity_Role_SegmentName03;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName03;
+        /// <summary>
+        /// There are no comments for FinancialDimensionSetEntity_Role_SegmentName07 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName07
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._FinancialDimensionSetEntity_Role_SegmentName07 == null))
+                {
+                    this._FinancialDimensionSetEntity_Role_SegmentName07 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(GetPath("FinancialDimensionSetEntity_Role_SegmentName07"));
+                }
+                return this._FinancialDimensionSetEntity_Role_SegmentName07;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName07;
+        /// <summary>
+        /// There are no comments for FinancialDimensionSetEntity_Role_SegmentName08 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName08
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._FinancialDimensionSetEntity_Role_SegmentName08 == null))
+                {
+                    this._FinancialDimensionSetEntity_Role_SegmentName08 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(GetPath("FinancialDimensionSetEntity_Role_SegmentName08"));
+                }
+                return this._FinancialDimensionSetEntity_Role_SegmentName08;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName08;
+        /// <summary>
+        /// There are no comments for FinancialDimensionSetEntity_Role_SegmentName10 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName10
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._FinancialDimensionSetEntity_Role_SegmentName10 == null))
+                {
+                    this._FinancialDimensionSetEntity_Role_SegmentName10 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(GetPath("FinancialDimensionSetEntity_Role_SegmentName10"));
+                }
+                return this._FinancialDimensionSetEntity_Role_SegmentName10;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName10;
+        /// <summary>
+        /// There are no comments for FinancialDimensionSetEntity_Role_SegmentName04 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName04
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._FinancialDimensionSetEntity_Role_SegmentName04 == null))
+                {
+                    this._FinancialDimensionSetEntity_Role_SegmentName04 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(GetPath("FinancialDimensionSetEntity_Role_SegmentName04"));
+                }
+                return this._FinancialDimensionSetEntity_Role_SegmentName04;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName04;
+        /// <summary>
+        /// There are no comments for LedgerAdvancedRuleStructureEntity_Role_SegmentName10 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName10
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._LedgerAdvancedRuleStructureEntity_Role_SegmentName10 == null))
+                {
+                    this._LedgerAdvancedRuleStructureEntity_Role_SegmentName10 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(GetPath("LedgerAdvancedRuleStructureEntity_Role_SegmentName10"));
+                }
+                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName10;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName10;
+        /// <summary>
+        /// There are no comments for LedgerAdvancedRuleStructureEntity_Role_SegmentName11 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName11
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._LedgerAdvancedRuleStructureEntity_Role_SegmentName11 == null))
+                {
+                    this._LedgerAdvancedRuleStructureEntity_Role_SegmentName11 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(GetPath("LedgerAdvancedRuleStructureEntity_Role_SegmentName11"));
+                }
+                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName11;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName11;
+        /// <summary>
+        /// There are no comments for LedgerAdvancedRuleStructureEntity_Role_SegmentName04 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName04
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._LedgerAdvancedRuleStructureEntity_Role_SegmentName04 == null))
+                {
+                    this._LedgerAdvancedRuleStructureEntity_Role_SegmentName04 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(GetPath("LedgerAdvancedRuleStructureEntity_Role_SegmentName04"));
+                }
+                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName04;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName04;
+        /// <summary>
+        /// There are no comments for LedgerAdvancedRuleStructureEntity_Role_SegmentName05 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName05
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._LedgerAdvancedRuleStructureEntity_Role_SegmentName05 == null))
+                {
+                    this._LedgerAdvancedRuleStructureEntity_Role_SegmentName05 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(GetPath("LedgerAdvancedRuleStructureEntity_Role_SegmentName05"));
+                }
+                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName05;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName05;
+        /// <summary>
+        /// There are no comments for LedgerAdvancedRuleStructureEntity_Role_SegmentName06 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName06
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._LedgerAdvancedRuleStructureEntity_Role_SegmentName06 == null))
+                {
+                    this._LedgerAdvancedRuleStructureEntity_Role_SegmentName06 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(GetPath("LedgerAdvancedRuleStructureEntity_Role_SegmentName06"));
+                }
+                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName06;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName06;
+        /// <summary>
+        /// There are no comments for LedgerAdvancedRuleStructureEntity_Role_SegmentName07 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName07
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._LedgerAdvancedRuleStructureEntity_Role_SegmentName07 == null))
+                {
+                    this._LedgerAdvancedRuleStructureEntity_Role_SegmentName07 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(GetPath("LedgerAdvancedRuleStructureEntity_Role_SegmentName07"));
+                }
+                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName07;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName07;
+        /// <summary>
+        /// There are no comments for LedgerAdvancedRuleStructureEntity_Role_SegmentName01 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName01
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._LedgerAdvancedRuleStructureEntity_Role_SegmentName01 == null))
+                {
+                    this._LedgerAdvancedRuleStructureEntity_Role_SegmentName01 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(GetPath("LedgerAdvancedRuleStructureEntity_Role_SegmentName01"));
+                }
+                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName01;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName01;
+        /// <summary>
+        /// There are no comments for LedgerAdvancedRuleStructureEntity_Role_SegmentName02 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName02
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._LedgerAdvancedRuleStructureEntity_Role_SegmentName02 == null))
+                {
+                    this._LedgerAdvancedRuleStructureEntity_Role_SegmentName02 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(GetPath("LedgerAdvancedRuleStructureEntity_Role_SegmentName02"));
+                }
+                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName02;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName02;
+        /// <summary>
+        /// There are no comments for LedgerAdvancedRuleStructureEntity_Role_SegmentName03 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName03
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._LedgerAdvancedRuleStructureEntity_Role_SegmentName03 == null))
+                {
+                    this._LedgerAdvancedRuleStructureEntity_Role_SegmentName03 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(GetPath("LedgerAdvancedRuleStructureEntity_Role_SegmentName03"));
+                }
+                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName03;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName03;
+        /// <summary>
+        /// There are no comments for LedgerAdvancedRuleStructureEntity_Role_SegmentName08 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName08
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._LedgerAdvancedRuleStructureEntity_Role_SegmentName08 == null))
+                {
+                    this._LedgerAdvancedRuleStructureEntity_Role_SegmentName08 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(GetPath("LedgerAdvancedRuleStructureEntity_Role_SegmentName08"));
+                }
+                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName08;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName08;
+        /// <summary>
+        /// There are no comments for LedgerAdvancedRuleStructureEntity_Role_SegmentName09 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName09
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._LedgerAdvancedRuleStructureEntity_Role_SegmentName09 == null))
+                {
+                    this._LedgerAdvancedRuleStructureEntity_Role_SegmentName09 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(GetPath("LedgerAdvancedRuleStructureEntity_Role_SegmentName09"));
+                }
+                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName09;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName09;
+        /// <summary>
         /// There are no comments for FinancialDimensionValueLegalEntityOverrideEntity_Role_FinancialDimension in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -1126,6 +1063,69 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionValueLegalEntityOverride> _FinancialDimensionValueLegalEntityOverrideEntity_Role_FinancialDimension;
+        /// <summary>
+        /// There are no comments for FinancialDimensionValueEntity_Role_FinancialDimension in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionValue> FinancialDimensionValueEntity_Role_FinancialDimension
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._FinancialDimensionValueEntity_Role_FinancialDimension == null))
+                {
+                    this._FinancialDimensionValueEntity_Role_FinancialDimension = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionValue>(GetPath("FinancialDimensionValueEntity_Role_FinancialDimension"));
+                }
+                return this._FinancialDimensionValueEntity_Role_FinancialDimension;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FinancialDimensionValue> _FinancialDimensionValueEntity_Role_FinancialDimension;
+        /// <summary>
+        /// There are no comments for LedgerAdvancedRuleCriterionEntity_Role_DimensionAttributeEntity in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AdvancedRuleCriterion> LedgerAdvancedRuleCriterionEntity_Role_DimensionAttributeEntity
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._LedgerAdvancedRuleCriterionEntity_Role_DimensionAttributeEntity == null))
+                {
+                    this._LedgerAdvancedRuleCriterionEntity_Role_DimensionAttributeEntity = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AdvancedRuleCriterion>(GetPath("LedgerAdvancedRuleCriterionEntity_Role_DimensionAttributeEntity"));
+                }
+                return this._LedgerAdvancedRuleCriterionEntity_Role_DimensionAttributeEntity;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AdvancedRuleCriterion> _LedgerAdvancedRuleCriterionEntity_Role_DimensionAttributeEntity;
+        /// <summary>
+        /// There are no comments for DimensionAttributeTranslationEntity_DimensionAttributeEntity_Role in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.DimensionAttributeTranslation> DimensionAttributeTranslationEntity_DimensionAttributeEntity_Role
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._DimensionAttributeTranslationEntity_DimensionAttributeEntity_Role == null))
+                {
+                    this._DimensionAttributeTranslationEntity_DimensionAttributeEntity_Role = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.DimensionAttributeTranslation>(GetPath("DimensionAttributeTranslationEntity_DimensionAttributeEntity_Role"));
+                }
+                return this._DimensionAttributeTranslationEntity_DimensionAttributeEntity_Role;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.DimensionAttributeTranslation> _DimensionAttributeTranslationEntity_DimensionAttributeEntity_Role;
     }
         /// <summary>
         /// There are no comments for DimensionAttribute in the schema.
@@ -1327,512 +1327,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnIsBalancing_PSNChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> value);
         partial void OnIsBalancing_PSNChanged();
         /// <summary>
-        /// There are no comments for Property LedgerAdvancedRuleStructureEntity_Role_SegmentName10 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName10
-        {
-            get
-            {
-                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName10;
-            }
-            set
-            {
-                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName10Changing(value);
-                this._LedgerAdvancedRuleStructureEntity_Role_SegmentName10 = value;
-                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName10Changed();
-                this.OnPropertyChanged("LedgerAdvancedRuleStructureEntity_Role_SegmentName10");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName10 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName10Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> value);
-        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName10Changed();
-        /// <summary>
-        /// There are no comments for Property LedgerAdvancedRuleStructureEntity_Role_SegmentName11 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName11
-        {
-            get
-            {
-                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName11;
-            }
-            set
-            {
-                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName11Changing(value);
-                this._LedgerAdvancedRuleStructureEntity_Role_SegmentName11 = value;
-                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName11Changed();
-                this.OnPropertyChanged("LedgerAdvancedRuleStructureEntity_Role_SegmentName11");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName11 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName11Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> value);
-        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName11Changed();
-        /// <summary>
-        /// There are no comments for Property LedgerAdvancedRuleStructureEntity_Role_SegmentName04 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName04
-        {
-            get
-            {
-                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName04;
-            }
-            set
-            {
-                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName04Changing(value);
-                this._LedgerAdvancedRuleStructureEntity_Role_SegmentName04 = value;
-                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName04Changed();
-                this.OnPropertyChanged("LedgerAdvancedRuleStructureEntity_Role_SegmentName04");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName04 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName04Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> value);
-        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName04Changed();
-        /// <summary>
-        /// There are no comments for Property LedgerAdvancedRuleStructureEntity_Role_SegmentName05 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName05
-        {
-            get
-            {
-                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName05;
-            }
-            set
-            {
-                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName05Changing(value);
-                this._LedgerAdvancedRuleStructureEntity_Role_SegmentName05 = value;
-                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName05Changed();
-                this.OnPropertyChanged("LedgerAdvancedRuleStructureEntity_Role_SegmentName05");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName05 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName05Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> value);
-        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName05Changed();
-        /// <summary>
-        /// There are no comments for Property LedgerAdvancedRuleStructureEntity_Role_SegmentName06 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName06
-        {
-            get
-            {
-                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName06;
-            }
-            set
-            {
-                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName06Changing(value);
-                this._LedgerAdvancedRuleStructureEntity_Role_SegmentName06 = value;
-                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName06Changed();
-                this.OnPropertyChanged("LedgerAdvancedRuleStructureEntity_Role_SegmentName06");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName06 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName06Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> value);
-        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName06Changed();
-        /// <summary>
-        /// There are no comments for Property LedgerAdvancedRuleStructureEntity_Role_SegmentName07 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName07
-        {
-            get
-            {
-                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName07;
-            }
-            set
-            {
-                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName07Changing(value);
-                this._LedgerAdvancedRuleStructureEntity_Role_SegmentName07 = value;
-                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName07Changed();
-                this.OnPropertyChanged("LedgerAdvancedRuleStructureEntity_Role_SegmentName07");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName07 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName07Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> value);
-        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName07Changed();
-        /// <summary>
-        /// There are no comments for Property LedgerAdvancedRuleStructureEntity_Role_SegmentName01 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName01
-        {
-            get
-            {
-                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName01;
-            }
-            set
-            {
-                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName01Changing(value);
-                this._LedgerAdvancedRuleStructureEntity_Role_SegmentName01 = value;
-                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName01Changed();
-                this.OnPropertyChanged("LedgerAdvancedRuleStructureEntity_Role_SegmentName01");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName01 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName01Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> value);
-        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName01Changed();
-        /// <summary>
-        /// There are no comments for Property LedgerAdvancedRuleStructureEntity_Role_SegmentName02 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName02
-        {
-            get
-            {
-                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName02;
-            }
-            set
-            {
-                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName02Changing(value);
-                this._LedgerAdvancedRuleStructureEntity_Role_SegmentName02 = value;
-                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName02Changed();
-                this.OnPropertyChanged("LedgerAdvancedRuleStructureEntity_Role_SegmentName02");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName02 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName02Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> value);
-        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName02Changed();
-        /// <summary>
-        /// There are no comments for Property LedgerAdvancedRuleStructureEntity_Role_SegmentName03 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName03
-        {
-            get
-            {
-                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName03;
-            }
-            set
-            {
-                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName03Changing(value);
-                this._LedgerAdvancedRuleStructureEntity_Role_SegmentName03 = value;
-                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName03Changed();
-                this.OnPropertyChanged("LedgerAdvancedRuleStructureEntity_Role_SegmentName03");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName03 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName03Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> value);
-        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName03Changed();
-        /// <summary>
-        /// There are no comments for Property LedgerAdvancedRuleStructureEntity_Role_SegmentName08 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName08
-        {
-            get
-            {
-                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName08;
-            }
-            set
-            {
-                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName08Changing(value);
-                this._LedgerAdvancedRuleStructureEntity_Role_SegmentName08 = value;
-                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName08Changed();
-                this.OnPropertyChanged("LedgerAdvancedRuleStructureEntity_Role_SegmentName08");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName08 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName08Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> value);
-        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName08Changed();
-        /// <summary>
-        /// There are no comments for Property LedgerAdvancedRuleStructureEntity_Role_SegmentName09 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName09
-        {
-            get
-            {
-                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName09;
-            }
-            set
-            {
-                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName09Changing(value);
-                this._LedgerAdvancedRuleStructureEntity_Role_SegmentName09 = value;
-                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName09Changed();
-                this.OnPropertyChanged("LedgerAdvancedRuleStructureEntity_Role_SegmentName09");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName09 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName09Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> value);
-        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName09Changed();
-        /// <summary>
-        /// There are no comments for Property FinancialDimensionSetEntity_Role_SegmentName09 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName09
-        {
-            get
-            {
-                return this._FinancialDimensionSetEntity_Role_SegmentName09;
-            }
-            set
-            {
-                this.OnFinancialDimensionSetEntity_Role_SegmentName09Changing(value);
-                this._FinancialDimensionSetEntity_Role_SegmentName09 = value;
-                this.OnFinancialDimensionSetEntity_Role_SegmentName09Changed();
-                this.OnPropertyChanged("FinancialDimensionSetEntity_Role_SegmentName09");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName09 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnFinancialDimensionSetEntity_Role_SegmentName09Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> value);
-        partial void OnFinancialDimensionSetEntity_Role_SegmentName09Changed();
-        /// <summary>
-        /// There are no comments for Property FinancialDimensionSetEntity_Role_SegmentName11 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName11
-        {
-            get
-            {
-                return this._FinancialDimensionSetEntity_Role_SegmentName11;
-            }
-            set
-            {
-                this.OnFinancialDimensionSetEntity_Role_SegmentName11Changing(value);
-                this._FinancialDimensionSetEntity_Role_SegmentName11 = value;
-                this.OnFinancialDimensionSetEntity_Role_SegmentName11Changed();
-                this.OnPropertyChanged("FinancialDimensionSetEntity_Role_SegmentName11");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName11 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnFinancialDimensionSetEntity_Role_SegmentName11Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> value);
-        partial void OnFinancialDimensionSetEntity_Role_SegmentName11Changed();
-        /// <summary>
-        /// There are no comments for Property FinancialDimensionSetEntity_Role_SegmentName01 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName01
-        {
-            get
-            {
-                return this._FinancialDimensionSetEntity_Role_SegmentName01;
-            }
-            set
-            {
-                this.OnFinancialDimensionSetEntity_Role_SegmentName01Changing(value);
-                this._FinancialDimensionSetEntity_Role_SegmentName01 = value;
-                this.OnFinancialDimensionSetEntity_Role_SegmentName01Changed();
-                this.OnPropertyChanged("FinancialDimensionSetEntity_Role_SegmentName01");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName01 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnFinancialDimensionSetEntity_Role_SegmentName01Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> value);
-        partial void OnFinancialDimensionSetEntity_Role_SegmentName01Changed();
-        /// <summary>
-        /// There are no comments for Property FinancialDimensionSetEntity_Role_SegmentName05 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName05
-        {
-            get
-            {
-                return this._FinancialDimensionSetEntity_Role_SegmentName05;
-            }
-            set
-            {
-                this.OnFinancialDimensionSetEntity_Role_SegmentName05Changing(value);
-                this._FinancialDimensionSetEntity_Role_SegmentName05 = value;
-                this.OnFinancialDimensionSetEntity_Role_SegmentName05Changed();
-                this.OnPropertyChanged("FinancialDimensionSetEntity_Role_SegmentName05");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName05 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnFinancialDimensionSetEntity_Role_SegmentName05Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> value);
-        partial void OnFinancialDimensionSetEntity_Role_SegmentName05Changed();
-        /// <summary>
-        /// There are no comments for Property FinancialDimensionSetEntity_Role_SegmentName02 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName02
-        {
-            get
-            {
-                return this._FinancialDimensionSetEntity_Role_SegmentName02;
-            }
-            set
-            {
-                this.OnFinancialDimensionSetEntity_Role_SegmentName02Changing(value);
-                this._FinancialDimensionSetEntity_Role_SegmentName02 = value;
-                this.OnFinancialDimensionSetEntity_Role_SegmentName02Changed();
-                this.OnPropertyChanged("FinancialDimensionSetEntity_Role_SegmentName02");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName02 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnFinancialDimensionSetEntity_Role_SegmentName02Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> value);
-        partial void OnFinancialDimensionSetEntity_Role_SegmentName02Changed();
-        /// <summary>
-        /// There are no comments for Property FinancialDimensionSetEntity_Role_SegmentName06 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName06
-        {
-            get
-            {
-                return this._FinancialDimensionSetEntity_Role_SegmentName06;
-            }
-            set
-            {
-                this.OnFinancialDimensionSetEntity_Role_SegmentName06Changing(value);
-                this._FinancialDimensionSetEntity_Role_SegmentName06 = value;
-                this.OnFinancialDimensionSetEntity_Role_SegmentName06Changed();
-                this.OnPropertyChanged("FinancialDimensionSetEntity_Role_SegmentName06");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName06 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnFinancialDimensionSetEntity_Role_SegmentName06Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> value);
-        partial void OnFinancialDimensionSetEntity_Role_SegmentName06Changed();
-        /// <summary>
-        /// There are no comments for Property FinancialDimensionSetEntity_Role_SegmentName03 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName03
-        {
-            get
-            {
-                return this._FinancialDimensionSetEntity_Role_SegmentName03;
-            }
-            set
-            {
-                this.OnFinancialDimensionSetEntity_Role_SegmentName03Changing(value);
-                this._FinancialDimensionSetEntity_Role_SegmentName03 = value;
-                this.OnFinancialDimensionSetEntity_Role_SegmentName03Changed();
-                this.OnPropertyChanged("FinancialDimensionSetEntity_Role_SegmentName03");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName03 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnFinancialDimensionSetEntity_Role_SegmentName03Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> value);
-        partial void OnFinancialDimensionSetEntity_Role_SegmentName03Changed();
-        /// <summary>
-        /// There are no comments for Property FinancialDimensionSetEntity_Role_SegmentName07 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName07
-        {
-            get
-            {
-                return this._FinancialDimensionSetEntity_Role_SegmentName07;
-            }
-            set
-            {
-                this.OnFinancialDimensionSetEntity_Role_SegmentName07Changing(value);
-                this._FinancialDimensionSetEntity_Role_SegmentName07 = value;
-                this.OnFinancialDimensionSetEntity_Role_SegmentName07Changed();
-                this.OnPropertyChanged("FinancialDimensionSetEntity_Role_SegmentName07");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName07 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnFinancialDimensionSetEntity_Role_SegmentName07Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> value);
-        partial void OnFinancialDimensionSetEntity_Role_SegmentName07Changed();
-        /// <summary>
-        /// There are no comments for Property FinancialDimensionSetEntity_Role_SegmentName08 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName08
-        {
-            get
-            {
-                return this._FinancialDimensionSetEntity_Role_SegmentName08;
-            }
-            set
-            {
-                this.OnFinancialDimensionSetEntity_Role_SegmentName08Changing(value);
-                this._FinancialDimensionSetEntity_Role_SegmentName08 = value;
-                this.OnFinancialDimensionSetEntity_Role_SegmentName08Changed();
-                this.OnPropertyChanged("FinancialDimensionSetEntity_Role_SegmentName08");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName08 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnFinancialDimensionSetEntity_Role_SegmentName08Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> value);
-        partial void OnFinancialDimensionSetEntity_Role_SegmentName08Changed();
-        /// <summary>
-        /// There are no comments for Property FinancialDimensionSetEntity_Role_SegmentName10 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName10
-        {
-            get
-            {
-                return this._FinancialDimensionSetEntity_Role_SegmentName10;
-            }
-            set
-            {
-                this.OnFinancialDimensionSetEntity_Role_SegmentName10Changing(value);
-                this._FinancialDimensionSetEntity_Role_SegmentName10 = value;
-                this.OnFinancialDimensionSetEntity_Role_SegmentName10Changed();
-                this.OnPropertyChanged("FinancialDimensionSetEntity_Role_SegmentName10");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName10 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnFinancialDimensionSetEntity_Role_SegmentName10Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> value);
-        partial void OnFinancialDimensionSetEntity_Role_SegmentName10Changed();
-        /// <summary>
-        /// There are no comments for Property FinancialDimensionSetEntity_Role_SegmentName04 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName04
-        {
-            get
-            {
-                return this._FinancialDimensionSetEntity_Role_SegmentName04;
-            }
-            set
-            {
-                this.OnFinancialDimensionSetEntity_Role_SegmentName04Changing(value);
-                this._FinancialDimensionSetEntity_Role_SegmentName04 = value;
-                this.OnFinancialDimensionSetEntity_Role_SegmentName04Changed();
-                this.OnPropertyChanged("FinancialDimensionSetEntity_Role_SegmentName04");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName04 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnFinancialDimensionSetEntity_Role_SegmentName04Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> value);
-        partial void OnFinancialDimensionSetEntity_Role_SegmentName04Changed();
-        /// <summary>
-        /// There are no comments for Property FinancialDimensionValueEntity_Role_FinancialDimension in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionValue> FinancialDimensionValueEntity_Role_FinancialDimension
-        {
-            get
-            {
-                return this._FinancialDimensionValueEntity_Role_FinancialDimension;
-            }
-            set
-            {
-                this.OnFinancialDimensionValueEntity_Role_FinancialDimensionChanging(value);
-                this._FinancialDimensionValueEntity_Role_FinancialDimension = value;
-                this.OnFinancialDimensionValueEntity_Role_FinancialDimensionChanged();
-                this.OnPropertyChanged("FinancialDimensionValueEntity_Role_FinancialDimension");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionValue> _FinancialDimensionValueEntity_Role_FinancialDimension = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionValue>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnFinancialDimensionValueEntity_Role_FinancialDimensionChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionValue> value);
-        partial void OnFinancialDimensionValueEntity_Role_FinancialDimensionChanged();
-        /// <summary>
         /// There are no comments for Property FinancialDimensionValueTotalAccountIntervalEntity_Role_DimensionAttributeEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -1854,28 +1348,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionValueTotalAccountInterval> _FinancialDimensionValueTotalAccountIntervalEntity_Role_DimensionAttributeEntity = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionValueTotalAccountInterval>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnFinancialDimensionValueTotalAccountIntervalEntity_Role_DimensionAttributeEntityChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionValueTotalAccountInterval> value);
         partial void OnFinancialDimensionValueTotalAccountIntervalEntity_Role_DimensionAttributeEntityChanged();
-        /// <summary>
-        /// There are no comments for Property LedgerAdvancedRuleCriterionEntity_Role_DimensionAttributeEntity in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AdvancedRuleCriterion> LedgerAdvancedRuleCriterionEntity_Role_DimensionAttributeEntity
-        {
-            get
-            {
-                return this._LedgerAdvancedRuleCriterionEntity_Role_DimensionAttributeEntity;
-            }
-            set
-            {
-                this.OnLedgerAdvancedRuleCriterionEntity_Role_DimensionAttributeEntityChanging(value);
-                this._LedgerAdvancedRuleCriterionEntity_Role_DimensionAttributeEntity = value;
-                this.OnLedgerAdvancedRuleCriterionEntity_Role_DimensionAttributeEntityChanged();
-                this.OnPropertyChanged("LedgerAdvancedRuleCriterionEntity_Role_DimensionAttributeEntity");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AdvancedRuleCriterion> _LedgerAdvancedRuleCriterionEntity_Role_DimensionAttributeEntity = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AdvancedRuleCriterion>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnLedgerAdvancedRuleCriterionEntity_Role_DimensionAttributeEntityChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AdvancedRuleCriterion> value);
-        partial void OnLedgerAdvancedRuleCriterionEntity_Role_DimensionAttributeEntityChanged();
         /// <summary>
         /// There are no comments for Property FinancialDimensionValueTranslationEntity_Role_DimensionAttributeEntity in the schema.
         /// </summary>
@@ -1899,28 +1371,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnFinancialDimensionValueTranslationEntity_Role_DimensionAttributeEntityChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionValueTranslation> value);
         partial void OnFinancialDimensionValueTranslationEntity_Role_DimensionAttributeEntityChanged();
         /// <summary>
-        /// There are no comments for Property DimensionAttributeBudgetPrimaryLedger in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetDimension> DimensionAttributeBudgetPrimaryLedger
-        {
-            get
-            {
-                return this._DimensionAttributeBudgetPrimaryLedger;
-            }
-            set
-            {
-                this.OnDimensionAttributeBudgetPrimaryLedgerChanging(value);
-                this._DimensionAttributeBudgetPrimaryLedger = value;
-                this.OnDimensionAttributeBudgetPrimaryLedgerChanged();
-                this.OnPropertyChanged("DimensionAttributeBudgetPrimaryLedger");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetDimension> _DimensionAttributeBudgetPrimaryLedger = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetDimension>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnDimensionAttributeBudgetPrimaryLedgerChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetDimension> value);
-        partial void OnDimensionAttributeBudgetPrimaryLedgerChanged();
-        /// <summary>
         /// There are no comments for Property LedgerAccountAlias in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -1943,269 +1393,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnLedgerAccountAliasChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias> value);
         partial void OnLedgerAccountAliasChanged();
         /// <summary>
-        /// There are no comments for Property DerivedDimension_Role_DrivingDimension in the schema.
+        /// There are no comments for Property DimensionAttributeBudgetPrimaryLedger in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DrivingDimension
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetDimension> DimensionAttributeBudgetPrimaryLedger
         {
             get
             {
-                return this._DerivedDimension_Role_DrivingDimension;
+                return this._DimensionAttributeBudgetPrimaryLedger;
             }
             set
             {
-                this.OnDerivedDimension_Role_DrivingDimensionChanging(value);
-                this._DerivedDimension_Role_DrivingDimension = value;
-                this.OnDerivedDimension_Role_DrivingDimensionChanged();
-                this.OnPropertyChanged("DerivedDimension_Role_DrivingDimension");
+                this.OnDimensionAttributeBudgetPrimaryLedgerChanging(value);
+                this._DimensionAttributeBudgetPrimaryLedger = value;
+                this.OnDimensionAttributeBudgetPrimaryLedgerChanged();
+                this.OnPropertyChanged("DimensionAttributeBudgetPrimaryLedger");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DrivingDimension = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnDerivedDimension_Role_DrivingDimensionChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> value);
-        partial void OnDerivedDimension_Role_DrivingDimensionChanged();
-        /// <summary>
-        /// There are no comments for Property DerivedDimension_Role_DerivedDimension10 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension10
-        {
-            get
-            {
-                return this._DerivedDimension_Role_DerivedDimension10;
-            }
-            set
-            {
-                this.OnDerivedDimension_Role_DerivedDimension10Changing(value);
-                this._DerivedDimension_Role_DerivedDimension10 = value;
-                this.OnDerivedDimension_Role_DerivedDimension10Changed();
-                this.OnPropertyChanged("DerivedDimension_Role_DerivedDimension10");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension10 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnDerivedDimension_Role_DerivedDimension10Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> value);
-        partial void OnDerivedDimension_Role_DerivedDimension10Changed();
-        /// <summary>
-        /// There are no comments for Property DerivedDimension_Role_DerivedDimension1 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension1
-        {
-            get
-            {
-                return this._DerivedDimension_Role_DerivedDimension1;
-            }
-            set
-            {
-                this.OnDerivedDimension_Role_DerivedDimension1Changing(value);
-                this._DerivedDimension_Role_DerivedDimension1 = value;
-                this.OnDerivedDimension_Role_DerivedDimension1Changed();
-                this.OnPropertyChanged("DerivedDimension_Role_DerivedDimension1");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension1 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnDerivedDimension_Role_DerivedDimension1Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> value);
-        partial void OnDerivedDimension_Role_DerivedDimension1Changed();
-        /// <summary>
-        /// There are no comments for Property DerivedDimension_Role_DerivedDimension3 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension3
-        {
-            get
-            {
-                return this._DerivedDimension_Role_DerivedDimension3;
-            }
-            set
-            {
-                this.OnDerivedDimension_Role_DerivedDimension3Changing(value);
-                this._DerivedDimension_Role_DerivedDimension3 = value;
-                this.OnDerivedDimension_Role_DerivedDimension3Changed();
-                this.OnPropertyChanged("DerivedDimension_Role_DerivedDimension3");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension3 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnDerivedDimension_Role_DerivedDimension3Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> value);
-        partial void OnDerivedDimension_Role_DerivedDimension3Changed();
-        /// <summary>
-        /// There are no comments for Property DerivedDimension_Role_DerivedDimension2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension2
-        {
-            get
-            {
-                return this._DerivedDimension_Role_DerivedDimension2;
-            }
-            set
-            {
-                this.OnDerivedDimension_Role_DerivedDimension2Changing(value);
-                this._DerivedDimension_Role_DerivedDimension2 = value;
-                this.OnDerivedDimension_Role_DerivedDimension2Changed();
-                this.OnPropertyChanged("DerivedDimension_Role_DerivedDimension2");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnDerivedDimension_Role_DerivedDimension2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> value);
-        partial void OnDerivedDimension_Role_DerivedDimension2Changed();
-        /// <summary>
-        /// There are no comments for Property DerivedDimension_Role_DerivedDimension5 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension5
-        {
-            get
-            {
-                return this._DerivedDimension_Role_DerivedDimension5;
-            }
-            set
-            {
-                this.OnDerivedDimension_Role_DerivedDimension5Changing(value);
-                this._DerivedDimension_Role_DerivedDimension5 = value;
-                this.OnDerivedDimension_Role_DerivedDimension5Changed();
-                this.OnPropertyChanged("DerivedDimension_Role_DerivedDimension5");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension5 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnDerivedDimension_Role_DerivedDimension5Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> value);
-        partial void OnDerivedDimension_Role_DerivedDimension5Changed();
-        /// <summary>
-        /// There are no comments for Property DerivedDimension_Role_DerivedDimension4 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension4
-        {
-            get
-            {
-                return this._DerivedDimension_Role_DerivedDimension4;
-            }
-            set
-            {
-                this.OnDerivedDimension_Role_DerivedDimension4Changing(value);
-                this._DerivedDimension_Role_DerivedDimension4 = value;
-                this.OnDerivedDimension_Role_DerivedDimension4Changed();
-                this.OnPropertyChanged("DerivedDimension_Role_DerivedDimension4");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension4 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnDerivedDimension_Role_DerivedDimension4Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> value);
-        partial void OnDerivedDimension_Role_DerivedDimension4Changed();
-        /// <summary>
-        /// There are no comments for Property DerivedDimension_Role_DerivedDimension7 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension7
-        {
-            get
-            {
-                return this._DerivedDimension_Role_DerivedDimension7;
-            }
-            set
-            {
-                this.OnDerivedDimension_Role_DerivedDimension7Changing(value);
-                this._DerivedDimension_Role_DerivedDimension7 = value;
-                this.OnDerivedDimension_Role_DerivedDimension7Changed();
-                this.OnPropertyChanged("DerivedDimension_Role_DerivedDimension7");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension7 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnDerivedDimension_Role_DerivedDimension7Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> value);
-        partial void OnDerivedDimension_Role_DerivedDimension7Changed();
-        /// <summary>
-        /// There are no comments for Property DerivedDimension_Role_DerivedDimension6 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension6
-        {
-            get
-            {
-                return this._DerivedDimension_Role_DerivedDimension6;
-            }
-            set
-            {
-                this.OnDerivedDimension_Role_DerivedDimension6Changing(value);
-                this._DerivedDimension_Role_DerivedDimension6 = value;
-                this.OnDerivedDimension_Role_DerivedDimension6Changed();
-                this.OnPropertyChanged("DerivedDimension_Role_DerivedDimension6");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension6 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnDerivedDimension_Role_DerivedDimension6Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> value);
-        partial void OnDerivedDimension_Role_DerivedDimension6Changed();
-        /// <summary>
-        /// There are no comments for Property DerivedDimension_Role_DerivedDimension9 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension9
-        {
-            get
-            {
-                return this._DerivedDimension_Role_DerivedDimension9;
-            }
-            set
-            {
-                this.OnDerivedDimension_Role_DerivedDimension9Changing(value);
-                this._DerivedDimension_Role_DerivedDimension9 = value;
-                this.OnDerivedDimension_Role_DerivedDimension9Changed();
-                this.OnPropertyChanged("DerivedDimension_Role_DerivedDimension9");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension9 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnDerivedDimension_Role_DerivedDimension9Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> value);
-        partial void OnDerivedDimension_Role_DerivedDimension9Changed();
-        /// <summary>
-        /// There are no comments for Property DerivedDimension_Role_DerivedDimension8 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension8
-        {
-            get
-            {
-                return this._DerivedDimension_Role_DerivedDimension8;
-            }
-            set
-            {
-                this.OnDerivedDimension_Role_DerivedDimension8Changing(value);
-                this._DerivedDimension_Role_DerivedDimension8 = value;
-                this.OnDerivedDimension_Role_DerivedDimension8Changed();
-                this.OnPropertyChanged("DerivedDimension_Role_DerivedDimension8");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension8 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnDerivedDimension_Role_DerivedDimension8Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> value);
-        partial void OnDerivedDimension_Role_DerivedDimension8Changed();
-        /// <summary>
-        /// There are no comments for Property DimensionAttributeTranslationEntity_DimensionAttributeEntity_Role in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DimensionAttributeTranslation> DimensionAttributeTranslationEntity_DimensionAttributeEntity_Role
-        {
-            get
-            {
-                return this._DimensionAttributeTranslationEntity_DimensionAttributeEntity_Role;
-            }
-            set
-            {
-                this.OnDimensionAttributeTranslationEntity_DimensionAttributeEntity_RoleChanging(value);
-                this._DimensionAttributeTranslationEntity_DimensionAttributeEntity_Role = value;
-                this.OnDimensionAttributeTranslationEntity_DimensionAttributeEntity_RoleChanged();
-                this.OnPropertyChanged("DimensionAttributeTranslationEntity_DimensionAttributeEntity_Role");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DimensionAttributeTranslation> _DimensionAttributeTranslationEntity_DimensionAttributeEntity_Role = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DimensionAttributeTranslation>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnDimensionAttributeTranslationEntity_DimensionAttributeEntity_RoleChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DimensionAttributeTranslation> value);
-        partial void OnDimensionAttributeTranslationEntity_DimensionAttributeEntity_RoleChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetDimension> _DimensionAttributeBudgetPrimaryLedger = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetDimension>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnDimensionAttributeBudgetPrimaryLedgerChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetDimension> value);
+        partial void OnDimensionAttributeBudgetPrimaryLedgerChanged();
         /// <summary>
         /// There are no comments for Property LedgerAccountStructureEntity_Role_SegmentName10 in the schema.
         /// </summary>
@@ -2449,6 +1657,732 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnLedgerAccountStructureEntity_Role_SegmentName09Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AccountStructure> value);
         partial void OnLedgerAccountStructureEntity_Role_SegmentName09Changed();
         /// <summary>
+        /// There are no comments for Property DerivedDimension_Role_DrivingDimension in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DrivingDimension
+        {
+            get
+            {
+                return this._DerivedDimension_Role_DrivingDimension;
+            }
+            set
+            {
+                this.OnDerivedDimension_Role_DrivingDimensionChanging(value);
+                this._DerivedDimension_Role_DrivingDimension = value;
+                this.OnDerivedDimension_Role_DrivingDimensionChanged();
+                this.OnPropertyChanged("DerivedDimension_Role_DrivingDimension");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DrivingDimension = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnDerivedDimension_Role_DrivingDimensionChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> value);
+        partial void OnDerivedDimension_Role_DrivingDimensionChanged();
+        /// <summary>
+        /// There are no comments for Property DerivedDimension_Role_DerivedDimension10 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension10
+        {
+            get
+            {
+                return this._DerivedDimension_Role_DerivedDimension10;
+            }
+            set
+            {
+                this.OnDerivedDimension_Role_DerivedDimension10Changing(value);
+                this._DerivedDimension_Role_DerivedDimension10 = value;
+                this.OnDerivedDimension_Role_DerivedDimension10Changed();
+                this.OnPropertyChanged("DerivedDimension_Role_DerivedDimension10");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension10 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnDerivedDimension_Role_DerivedDimension10Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> value);
+        partial void OnDerivedDimension_Role_DerivedDimension10Changed();
+        /// <summary>
+        /// There are no comments for Property DerivedDimension_Role_DerivedDimension1 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension1
+        {
+            get
+            {
+                return this._DerivedDimension_Role_DerivedDimension1;
+            }
+            set
+            {
+                this.OnDerivedDimension_Role_DerivedDimension1Changing(value);
+                this._DerivedDimension_Role_DerivedDimension1 = value;
+                this.OnDerivedDimension_Role_DerivedDimension1Changed();
+                this.OnPropertyChanged("DerivedDimension_Role_DerivedDimension1");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension1 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnDerivedDimension_Role_DerivedDimension1Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> value);
+        partial void OnDerivedDimension_Role_DerivedDimension1Changed();
+        /// <summary>
+        /// There are no comments for Property DerivedDimension_Role_DerivedDimension3 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension3
+        {
+            get
+            {
+                return this._DerivedDimension_Role_DerivedDimension3;
+            }
+            set
+            {
+                this.OnDerivedDimension_Role_DerivedDimension3Changing(value);
+                this._DerivedDimension_Role_DerivedDimension3 = value;
+                this.OnDerivedDimension_Role_DerivedDimension3Changed();
+                this.OnPropertyChanged("DerivedDimension_Role_DerivedDimension3");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension3 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnDerivedDimension_Role_DerivedDimension3Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> value);
+        partial void OnDerivedDimension_Role_DerivedDimension3Changed();
+        /// <summary>
+        /// There are no comments for Property DerivedDimension_Role_DerivedDimension2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension2
+        {
+            get
+            {
+                return this._DerivedDimension_Role_DerivedDimension2;
+            }
+            set
+            {
+                this.OnDerivedDimension_Role_DerivedDimension2Changing(value);
+                this._DerivedDimension_Role_DerivedDimension2 = value;
+                this.OnDerivedDimension_Role_DerivedDimension2Changed();
+                this.OnPropertyChanged("DerivedDimension_Role_DerivedDimension2");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnDerivedDimension_Role_DerivedDimension2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> value);
+        partial void OnDerivedDimension_Role_DerivedDimension2Changed();
+        /// <summary>
+        /// There are no comments for Property DerivedDimension_Role_DerivedDimension5 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension5
+        {
+            get
+            {
+                return this._DerivedDimension_Role_DerivedDimension5;
+            }
+            set
+            {
+                this.OnDerivedDimension_Role_DerivedDimension5Changing(value);
+                this._DerivedDimension_Role_DerivedDimension5 = value;
+                this.OnDerivedDimension_Role_DerivedDimension5Changed();
+                this.OnPropertyChanged("DerivedDimension_Role_DerivedDimension5");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension5 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnDerivedDimension_Role_DerivedDimension5Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> value);
+        partial void OnDerivedDimension_Role_DerivedDimension5Changed();
+        /// <summary>
+        /// There are no comments for Property DerivedDimension_Role_DerivedDimension4 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension4
+        {
+            get
+            {
+                return this._DerivedDimension_Role_DerivedDimension4;
+            }
+            set
+            {
+                this.OnDerivedDimension_Role_DerivedDimension4Changing(value);
+                this._DerivedDimension_Role_DerivedDimension4 = value;
+                this.OnDerivedDimension_Role_DerivedDimension4Changed();
+                this.OnPropertyChanged("DerivedDimension_Role_DerivedDimension4");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension4 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnDerivedDimension_Role_DerivedDimension4Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> value);
+        partial void OnDerivedDimension_Role_DerivedDimension4Changed();
+        /// <summary>
+        /// There are no comments for Property DerivedDimension_Role_DerivedDimension7 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension7
+        {
+            get
+            {
+                return this._DerivedDimension_Role_DerivedDimension7;
+            }
+            set
+            {
+                this.OnDerivedDimension_Role_DerivedDimension7Changing(value);
+                this._DerivedDimension_Role_DerivedDimension7 = value;
+                this.OnDerivedDimension_Role_DerivedDimension7Changed();
+                this.OnPropertyChanged("DerivedDimension_Role_DerivedDimension7");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension7 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnDerivedDimension_Role_DerivedDimension7Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> value);
+        partial void OnDerivedDimension_Role_DerivedDimension7Changed();
+        /// <summary>
+        /// There are no comments for Property DerivedDimension_Role_DerivedDimension6 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension6
+        {
+            get
+            {
+                return this._DerivedDimension_Role_DerivedDimension6;
+            }
+            set
+            {
+                this.OnDerivedDimension_Role_DerivedDimension6Changing(value);
+                this._DerivedDimension_Role_DerivedDimension6 = value;
+                this.OnDerivedDimension_Role_DerivedDimension6Changed();
+                this.OnPropertyChanged("DerivedDimension_Role_DerivedDimension6");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension6 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnDerivedDimension_Role_DerivedDimension6Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> value);
+        partial void OnDerivedDimension_Role_DerivedDimension6Changed();
+        /// <summary>
+        /// There are no comments for Property DerivedDimension_Role_DerivedDimension9 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension9
+        {
+            get
+            {
+                return this._DerivedDimension_Role_DerivedDimension9;
+            }
+            set
+            {
+                this.OnDerivedDimension_Role_DerivedDimension9Changing(value);
+                this._DerivedDimension_Role_DerivedDimension9 = value;
+                this.OnDerivedDimension_Role_DerivedDimension9Changed();
+                this.OnPropertyChanged("DerivedDimension_Role_DerivedDimension9");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension9 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnDerivedDimension_Role_DerivedDimension9Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> value);
+        partial void OnDerivedDimension_Role_DerivedDimension9Changed();
+        /// <summary>
+        /// There are no comments for Property DerivedDimension_Role_DerivedDimension8 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> DerivedDimension_Role_DerivedDimension8
+        {
+            get
+            {
+                return this._DerivedDimension_Role_DerivedDimension8;
+            }
+            set
+            {
+                this.OnDerivedDimension_Role_DerivedDimension8Changing(value);
+                this._DerivedDimension_Role_DerivedDimension8 = value;
+                this.OnDerivedDimension_Role_DerivedDimension8Changed();
+                this.OnPropertyChanged("DerivedDimension_Role_DerivedDimension8");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> _DerivedDimension_Role_DerivedDimension8 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnDerivedDimension_Role_DerivedDimension8Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeValueDerivedDimensions> value);
+        partial void OnDerivedDimension_Role_DerivedDimension8Changed();
+        /// <summary>
+        /// There are no comments for Property FinancialDimensionSetEntity_Role_SegmentName09 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName09
+        {
+            get
+            {
+                return this._FinancialDimensionSetEntity_Role_SegmentName09;
+            }
+            set
+            {
+                this.OnFinancialDimensionSetEntity_Role_SegmentName09Changing(value);
+                this._FinancialDimensionSetEntity_Role_SegmentName09 = value;
+                this.OnFinancialDimensionSetEntity_Role_SegmentName09Changed();
+                this.OnPropertyChanged("FinancialDimensionSetEntity_Role_SegmentName09");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName09 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnFinancialDimensionSetEntity_Role_SegmentName09Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> value);
+        partial void OnFinancialDimensionSetEntity_Role_SegmentName09Changed();
+        /// <summary>
+        /// There are no comments for Property FinancialDimensionSetEntity_Role_SegmentName11 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName11
+        {
+            get
+            {
+                return this._FinancialDimensionSetEntity_Role_SegmentName11;
+            }
+            set
+            {
+                this.OnFinancialDimensionSetEntity_Role_SegmentName11Changing(value);
+                this._FinancialDimensionSetEntity_Role_SegmentName11 = value;
+                this.OnFinancialDimensionSetEntity_Role_SegmentName11Changed();
+                this.OnPropertyChanged("FinancialDimensionSetEntity_Role_SegmentName11");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName11 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnFinancialDimensionSetEntity_Role_SegmentName11Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> value);
+        partial void OnFinancialDimensionSetEntity_Role_SegmentName11Changed();
+        /// <summary>
+        /// There are no comments for Property FinancialDimensionSetEntity_Role_SegmentName01 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName01
+        {
+            get
+            {
+                return this._FinancialDimensionSetEntity_Role_SegmentName01;
+            }
+            set
+            {
+                this.OnFinancialDimensionSetEntity_Role_SegmentName01Changing(value);
+                this._FinancialDimensionSetEntity_Role_SegmentName01 = value;
+                this.OnFinancialDimensionSetEntity_Role_SegmentName01Changed();
+                this.OnPropertyChanged("FinancialDimensionSetEntity_Role_SegmentName01");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName01 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnFinancialDimensionSetEntity_Role_SegmentName01Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> value);
+        partial void OnFinancialDimensionSetEntity_Role_SegmentName01Changed();
+        /// <summary>
+        /// There are no comments for Property FinancialDimensionSetEntity_Role_SegmentName05 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName05
+        {
+            get
+            {
+                return this._FinancialDimensionSetEntity_Role_SegmentName05;
+            }
+            set
+            {
+                this.OnFinancialDimensionSetEntity_Role_SegmentName05Changing(value);
+                this._FinancialDimensionSetEntity_Role_SegmentName05 = value;
+                this.OnFinancialDimensionSetEntity_Role_SegmentName05Changed();
+                this.OnPropertyChanged("FinancialDimensionSetEntity_Role_SegmentName05");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName05 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnFinancialDimensionSetEntity_Role_SegmentName05Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> value);
+        partial void OnFinancialDimensionSetEntity_Role_SegmentName05Changed();
+        /// <summary>
+        /// There are no comments for Property FinancialDimensionSetEntity_Role_SegmentName02 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName02
+        {
+            get
+            {
+                return this._FinancialDimensionSetEntity_Role_SegmentName02;
+            }
+            set
+            {
+                this.OnFinancialDimensionSetEntity_Role_SegmentName02Changing(value);
+                this._FinancialDimensionSetEntity_Role_SegmentName02 = value;
+                this.OnFinancialDimensionSetEntity_Role_SegmentName02Changed();
+                this.OnPropertyChanged("FinancialDimensionSetEntity_Role_SegmentName02");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName02 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnFinancialDimensionSetEntity_Role_SegmentName02Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> value);
+        partial void OnFinancialDimensionSetEntity_Role_SegmentName02Changed();
+        /// <summary>
+        /// There are no comments for Property FinancialDimensionSetEntity_Role_SegmentName06 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName06
+        {
+            get
+            {
+                return this._FinancialDimensionSetEntity_Role_SegmentName06;
+            }
+            set
+            {
+                this.OnFinancialDimensionSetEntity_Role_SegmentName06Changing(value);
+                this._FinancialDimensionSetEntity_Role_SegmentName06 = value;
+                this.OnFinancialDimensionSetEntity_Role_SegmentName06Changed();
+                this.OnPropertyChanged("FinancialDimensionSetEntity_Role_SegmentName06");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName06 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnFinancialDimensionSetEntity_Role_SegmentName06Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> value);
+        partial void OnFinancialDimensionSetEntity_Role_SegmentName06Changed();
+        /// <summary>
+        /// There are no comments for Property FinancialDimensionSetEntity_Role_SegmentName03 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName03
+        {
+            get
+            {
+                return this._FinancialDimensionSetEntity_Role_SegmentName03;
+            }
+            set
+            {
+                this.OnFinancialDimensionSetEntity_Role_SegmentName03Changing(value);
+                this._FinancialDimensionSetEntity_Role_SegmentName03 = value;
+                this.OnFinancialDimensionSetEntity_Role_SegmentName03Changed();
+                this.OnPropertyChanged("FinancialDimensionSetEntity_Role_SegmentName03");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName03 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnFinancialDimensionSetEntity_Role_SegmentName03Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> value);
+        partial void OnFinancialDimensionSetEntity_Role_SegmentName03Changed();
+        /// <summary>
+        /// There are no comments for Property FinancialDimensionSetEntity_Role_SegmentName07 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName07
+        {
+            get
+            {
+                return this._FinancialDimensionSetEntity_Role_SegmentName07;
+            }
+            set
+            {
+                this.OnFinancialDimensionSetEntity_Role_SegmentName07Changing(value);
+                this._FinancialDimensionSetEntity_Role_SegmentName07 = value;
+                this.OnFinancialDimensionSetEntity_Role_SegmentName07Changed();
+                this.OnPropertyChanged("FinancialDimensionSetEntity_Role_SegmentName07");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName07 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnFinancialDimensionSetEntity_Role_SegmentName07Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> value);
+        partial void OnFinancialDimensionSetEntity_Role_SegmentName07Changed();
+        /// <summary>
+        /// There are no comments for Property FinancialDimensionSetEntity_Role_SegmentName08 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName08
+        {
+            get
+            {
+                return this._FinancialDimensionSetEntity_Role_SegmentName08;
+            }
+            set
+            {
+                this.OnFinancialDimensionSetEntity_Role_SegmentName08Changing(value);
+                this._FinancialDimensionSetEntity_Role_SegmentName08 = value;
+                this.OnFinancialDimensionSetEntity_Role_SegmentName08Changed();
+                this.OnPropertyChanged("FinancialDimensionSetEntity_Role_SegmentName08");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName08 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnFinancialDimensionSetEntity_Role_SegmentName08Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> value);
+        partial void OnFinancialDimensionSetEntity_Role_SegmentName08Changed();
+        /// <summary>
+        /// There are no comments for Property FinancialDimensionSetEntity_Role_SegmentName10 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName10
+        {
+            get
+            {
+                return this._FinancialDimensionSetEntity_Role_SegmentName10;
+            }
+            set
+            {
+                this.OnFinancialDimensionSetEntity_Role_SegmentName10Changing(value);
+                this._FinancialDimensionSetEntity_Role_SegmentName10 = value;
+                this.OnFinancialDimensionSetEntity_Role_SegmentName10Changed();
+                this.OnPropertyChanged("FinancialDimensionSetEntity_Role_SegmentName10");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName10 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnFinancialDimensionSetEntity_Role_SegmentName10Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> value);
+        partial void OnFinancialDimensionSetEntity_Role_SegmentName10Changed();
+        /// <summary>
+        /// There are no comments for Property FinancialDimensionSetEntity_Role_SegmentName04 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> FinancialDimensionSetEntity_Role_SegmentName04
+        {
+            get
+            {
+                return this._FinancialDimensionSetEntity_Role_SegmentName04;
+            }
+            set
+            {
+                this.OnFinancialDimensionSetEntity_Role_SegmentName04Changing(value);
+                this._FinancialDimensionSetEntity_Role_SegmentName04 = value;
+                this.OnFinancialDimensionSetEntity_Role_SegmentName04Changed();
+                this.OnPropertyChanged("FinancialDimensionSetEntity_Role_SegmentName04");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> _FinancialDimensionSetEntity_Role_SegmentName04 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnFinancialDimensionSetEntity_Role_SegmentName04Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet> value);
+        partial void OnFinancialDimensionSetEntity_Role_SegmentName04Changed();
+        /// <summary>
+        /// There are no comments for Property LedgerAdvancedRuleStructureEntity_Role_SegmentName10 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName10
+        {
+            get
+            {
+                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName10;
+            }
+            set
+            {
+                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName10Changing(value);
+                this._LedgerAdvancedRuleStructureEntity_Role_SegmentName10 = value;
+                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName10Changed();
+                this.OnPropertyChanged("LedgerAdvancedRuleStructureEntity_Role_SegmentName10");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName10 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName10Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> value);
+        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName10Changed();
+        /// <summary>
+        /// There are no comments for Property LedgerAdvancedRuleStructureEntity_Role_SegmentName11 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName11
+        {
+            get
+            {
+                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName11;
+            }
+            set
+            {
+                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName11Changing(value);
+                this._LedgerAdvancedRuleStructureEntity_Role_SegmentName11 = value;
+                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName11Changed();
+                this.OnPropertyChanged("LedgerAdvancedRuleStructureEntity_Role_SegmentName11");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName11 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName11Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> value);
+        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName11Changed();
+        /// <summary>
+        /// There are no comments for Property LedgerAdvancedRuleStructureEntity_Role_SegmentName04 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName04
+        {
+            get
+            {
+                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName04;
+            }
+            set
+            {
+                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName04Changing(value);
+                this._LedgerAdvancedRuleStructureEntity_Role_SegmentName04 = value;
+                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName04Changed();
+                this.OnPropertyChanged("LedgerAdvancedRuleStructureEntity_Role_SegmentName04");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName04 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName04Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> value);
+        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName04Changed();
+        /// <summary>
+        /// There are no comments for Property LedgerAdvancedRuleStructureEntity_Role_SegmentName05 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName05
+        {
+            get
+            {
+                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName05;
+            }
+            set
+            {
+                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName05Changing(value);
+                this._LedgerAdvancedRuleStructureEntity_Role_SegmentName05 = value;
+                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName05Changed();
+                this.OnPropertyChanged("LedgerAdvancedRuleStructureEntity_Role_SegmentName05");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName05 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName05Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> value);
+        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName05Changed();
+        /// <summary>
+        /// There are no comments for Property LedgerAdvancedRuleStructureEntity_Role_SegmentName06 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName06
+        {
+            get
+            {
+                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName06;
+            }
+            set
+            {
+                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName06Changing(value);
+                this._LedgerAdvancedRuleStructureEntity_Role_SegmentName06 = value;
+                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName06Changed();
+                this.OnPropertyChanged("LedgerAdvancedRuleStructureEntity_Role_SegmentName06");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName06 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName06Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> value);
+        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName06Changed();
+        /// <summary>
+        /// There are no comments for Property LedgerAdvancedRuleStructureEntity_Role_SegmentName07 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName07
+        {
+            get
+            {
+                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName07;
+            }
+            set
+            {
+                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName07Changing(value);
+                this._LedgerAdvancedRuleStructureEntity_Role_SegmentName07 = value;
+                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName07Changed();
+                this.OnPropertyChanged("LedgerAdvancedRuleStructureEntity_Role_SegmentName07");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName07 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName07Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> value);
+        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName07Changed();
+        /// <summary>
+        /// There are no comments for Property LedgerAdvancedRuleStructureEntity_Role_SegmentName01 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName01
+        {
+            get
+            {
+                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName01;
+            }
+            set
+            {
+                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName01Changing(value);
+                this._LedgerAdvancedRuleStructureEntity_Role_SegmentName01 = value;
+                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName01Changed();
+                this.OnPropertyChanged("LedgerAdvancedRuleStructureEntity_Role_SegmentName01");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName01 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName01Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> value);
+        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName01Changed();
+        /// <summary>
+        /// There are no comments for Property LedgerAdvancedRuleStructureEntity_Role_SegmentName02 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName02
+        {
+            get
+            {
+                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName02;
+            }
+            set
+            {
+                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName02Changing(value);
+                this._LedgerAdvancedRuleStructureEntity_Role_SegmentName02 = value;
+                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName02Changed();
+                this.OnPropertyChanged("LedgerAdvancedRuleStructureEntity_Role_SegmentName02");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName02 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName02Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> value);
+        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName02Changed();
+        /// <summary>
+        /// There are no comments for Property LedgerAdvancedRuleStructureEntity_Role_SegmentName03 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName03
+        {
+            get
+            {
+                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName03;
+            }
+            set
+            {
+                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName03Changing(value);
+                this._LedgerAdvancedRuleStructureEntity_Role_SegmentName03 = value;
+                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName03Changed();
+                this.OnPropertyChanged("LedgerAdvancedRuleStructureEntity_Role_SegmentName03");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName03 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName03Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> value);
+        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName03Changed();
+        /// <summary>
+        /// There are no comments for Property LedgerAdvancedRuleStructureEntity_Role_SegmentName08 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName08
+        {
+            get
+            {
+                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName08;
+            }
+            set
+            {
+                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName08Changing(value);
+                this._LedgerAdvancedRuleStructureEntity_Role_SegmentName08 = value;
+                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName08Changed();
+                this.OnPropertyChanged("LedgerAdvancedRuleStructureEntity_Role_SegmentName08");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName08 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName08Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> value);
+        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName08Changed();
+        /// <summary>
+        /// There are no comments for Property LedgerAdvancedRuleStructureEntity_Role_SegmentName09 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> LedgerAdvancedRuleStructureEntity_Role_SegmentName09
+        {
+            get
+            {
+                return this._LedgerAdvancedRuleStructureEntity_Role_SegmentName09;
+            }
+            set
+            {
+                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName09Changing(value);
+                this._LedgerAdvancedRuleStructureEntity_Role_SegmentName09 = value;
+                this.OnLedgerAdvancedRuleStructureEntity_Role_SegmentName09Changed();
+                this.OnPropertyChanged("LedgerAdvancedRuleStructureEntity_Role_SegmentName09");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> _LedgerAdvancedRuleStructureEntity_Role_SegmentName09 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName09Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure> value);
+        partial void OnLedgerAdvancedRuleStructureEntity_Role_SegmentName09Changed();
+        /// <summary>
         /// There are no comments for Property FinancialDimensionValueLegalEntityOverrideEntity_Role_FinancialDimension in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -2470,6 +2404,72 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionValueLegalEntityOverride> _FinancialDimensionValueLegalEntityOverrideEntity_Role_FinancialDimension = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionValueLegalEntityOverride>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnFinancialDimensionValueLegalEntityOverrideEntity_Role_FinancialDimensionChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionValueLegalEntityOverride> value);
         partial void OnFinancialDimensionValueLegalEntityOverrideEntity_Role_FinancialDimensionChanged();
+        /// <summary>
+        /// There are no comments for Property FinancialDimensionValueEntity_Role_FinancialDimension in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionValue> FinancialDimensionValueEntity_Role_FinancialDimension
+        {
+            get
+            {
+                return this._FinancialDimensionValueEntity_Role_FinancialDimension;
+            }
+            set
+            {
+                this.OnFinancialDimensionValueEntity_Role_FinancialDimensionChanging(value);
+                this._FinancialDimensionValueEntity_Role_FinancialDimension = value;
+                this.OnFinancialDimensionValueEntity_Role_FinancialDimensionChanged();
+                this.OnPropertyChanged("FinancialDimensionValueEntity_Role_FinancialDimension");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionValue> _FinancialDimensionValueEntity_Role_FinancialDimension = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionValue>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnFinancialDimensionValueEntity_Role_FinancialDimensionChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FinancialDimensionValue> value);
+        partial void OnFinancialDimensionValueEntity_Role_FinancialDimensionChanged();
+        /// <summary>
+        /// There are no comments for Property LedgerAdvancedRuleCriterionEntity_Role_DimensionAttributeEntity in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AdvancedRuleCriterion> LedgerAdvancedRuleCriterionEntity_Role_DimensionAttributeEntity
+        {
+            get
+            {
+                return this._LedgerAdvancedRuleCriterionEntity_Role_DimensionAttributeEntity;
+            }
+            set
+            {
+                this.OnLedgerAdvancedRuleCriterionEntity_Role_DimensionAttributeEntityChanging(value);
+                this._LedgerAdvancedRuleCriterionEntity_Role_DimensionAttributeEntity = value;
+                this.OnLedgerAdvancedRuleCriterionEntity_Role_DimensionAttributeEntityChanged();
+                this.OnPropertyChanged("LedgerAdvancedRuleCriterionEntity_Role_DimensionAttributeEntity");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AdvancedRuleCriterion> _LedgerAdvancedRuleCriterionEntity_Role_DimensionAttributeEntity = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AdvancedRuleCriterion>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnLedgerAdvancedRuleCriterionEntity_Role_DimensionAttributeEntityChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AdvancedRuleCriterion> value);
+        partial void OnLedgerAdvancedRuleCriterionEntity_Role_DimensionAttributeEntityChanged();
+        /// <summary>
+        /// There are no comments for Property DimensionAttributeTranslationEntity_DimensionAttributeEntity_Role in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DimensionAttributeTranslation> DimensionAttributeTranslationEntity_DimensionAttributeEntity_Role
+        {
+            get
+            {
+                return this._DimensionAttributeTranslationEntity_DimensionAttributeEntity_Role;
+            }
+            set
+            {
+                this.OnDimensionAttributeTranslationEntity_DimensionAttributeEntity_RoleChanging(value);
+                this._DimensionAttributeTranslationEntity_DimensionAttributeEntity_Role = value;
+                this.OnDimensionAttributeTranslationEntity_DimensionAttributeEntity_RoleChanged();
+                this.OnPropertyChanged("DimensionAttributeTranslationEntity_DimensionAttributeEntity_Role");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DimensionAttributeTranslation> _DimensionAttributeTranslationEntity_DimensionAttributeEntity_Role = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DimensionAttributeTranslation>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnDimensionAttributeTranslationEntity_DimensionAttributeEntity_RoleChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DimensionAttributeTranslation> value);
+        partial void OnDimensionAttributeTranslationEntity_DimensionAttributeEntity_RoleChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

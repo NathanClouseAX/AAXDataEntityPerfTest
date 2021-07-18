@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for DimensionSet in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.DimensionSetSingle DimensionSet
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._DimensionSet == null))
-                {
-                    this._DimensionSet = new global::Microsoft.Dynamics.DataEntities.DimensionSetSingle(this.Context, GetPath("DimensionSet"));
-                }
-                return this._DimensionSet;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.DimensionSetSingle _DimensionSet;
-        /// <summary>
         /// There are no comments for SalesOrderLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,6 +55,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesOrderLine> _SalesOrderLine;
+        /// <summary>
+        /// There are no comments for DimensionSet in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.DimensionSetSingle DimensionSet
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._DimensionSet == null))
+                {
+                    this._DimensionSet = new global::Microsoft.Dynamics.DataEntities.DimensionSetSingle(this.Context, GetPath("DimensionSet"));
+                }
+                return this._DimensionSet;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.DimensionSetSingle _DimensionSet;
     }
         /// <summary>
         /// There are no comments for SalesOrderHeader in the schema.
@@ -3215,28 +3215,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnFixedExchangeRateChanging(decimal value);
         partial void OnFixedExchangeRateChanged();
         /// <summary>
-        /// There are no comments for Property DimensionSet in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.DimensionSet DimensionSet
-        {
-            get
-            {
-                return this._DimensionSet;
-            }
-            set
-            {
-                this.OnDimensionSetChanging(value);
-                this._DimensionSet = value;
-                this.OnDimensionSetChanged();
-                this.OnPropertyChanged("DimensionSet");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.DimensionSet _DimensionSet;
-        partial void OnDimensionSetChanging(global::Microsoft.Dynamics.DataEntities.DimensionSet value);
-        partial void OnDimensionSetChanged();
-        /// <summary>
         /// There are no comments for Property SalesOrderLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -3258,6 +3236,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesOrderLine> _SalesOrderLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesOrderLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnSalesOrderLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesOrderLine> value);
         partial void OnSalesOrderLineChanged();
+        /// <summary>
+        /// There are no comments for Property DimensionSet in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.DimensionSet DimensionSet
+        {
+            get
+            {
+                return this._DimensionSet;
+            }
+            set
+            {
+                this.OnDimensionSetChanging(value);
+                this._DimensionSet = value;
+                this.OnDimensionSetChanged();
+                this.OnPropertyChanged("DimensionSet");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.DimensionSet _DimensionSet;
+        partial void OnDimensionSetChanging(global::Microsoft.Dynamics.DataEntities.DimensionSet value);
+        partial void OnDimensionSetChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

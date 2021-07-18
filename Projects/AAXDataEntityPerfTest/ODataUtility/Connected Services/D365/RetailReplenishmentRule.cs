@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for ReplenishmentRuleLinesV2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ReplenishmentRuleLinesV2Single ReplenishmentRuleLinesV2
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ReplenishmentRuleLinesV2 == null))
-                {
-                    this._ReplenishmentRuleLinesV2 = new global::Microsoft.Dynamics.DataEntities.ReplenishmentRuleLinesV2Single(this.Context, GetPath("ReplenishmentRuleLinesV2"));
-                }
-                return this._ReplenishmentRuleLinesV2;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ReplenishmentRuleLinesV2Single _ReplenishmentRuleLinesV2;
-        /// <summary>
         /// There are no comments for RetailServiceCategory in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,6 +55,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailServiceCategory> _RetailServiceCategory;
+        /// <summary>
+        /// There are no comments for ReplenishmentRuleLinesV2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.ReplenishmentRuleLinesV2Single ReplenishmentRuleLinesV2
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ReplenishmentRuleLinesV2 == null))
+                {
+                    this._ReplenishmentRuleLinesV2 = new global::Microsoft.Dynamics.DataEntities.ReplenishmentRuleLinesV2Single(this.Context, GetPath("ReplenishmentRuleLinesV2"));
+                }
+                return this._ReplenishmentRuleLinesV2;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.ReplenishmentRuleLinesV2Single _ReplenishmentRuleLinesV2;
     }
         /// <summary>
         /// There are no comments for RetailReplenishmentRule in the schema.
@@ -174,28 +174,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDescriptionChanging(string value);
         partial void OnDescriptionChanged();
         /// <summary>
-        /// There are no comments for Property ReplenishmentRuleLinesV2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ReplenishmentRuleLinesV2 ReplenishmentRuleLinesV2
-        {
-            get
-            {
-                return this._ReplenishmentRuleLinesV2;
-            }
-            set
-            {
-                this.OnReplenishmentRuleLinesV2Changing(value);
-                this._ReplenishmentRuleLinesV2 = value;
-                this.OnReplenishmentRuleLinesV2Changed();
-                this.OnPropertyChanged("ReplenishmentRuleLinesV2");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ReplenishmentRuleLinesV2 _ReplenishmentRuleLinesV2;
-        partial void OnReplenishmentRuleLinesV2Changing(global::Microsoft.Dynamics.DataEntities.ReplenishmentRuleLinesV2 value);
-        partial void OnReplenishmentRuleLinesV2Changed();
-        /// <summary>
         /// There are no comments for Property RetailServiceCategory in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -217,6 +195,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailServiceCategory> _RetailServiceCategory = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailServiceCategory>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnRetailServiceCategoryChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailServiceCategory> value);
         partial void OnRetailServiceCategoryChanged();
+        /// <summary>
+        /// There are no comments for Property ReplenishmentRuleLinesV2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.ReplenishmentRuleLinesV2 ReplenishmentRuleLinesV2
+        {
+            get
+            {
+                return this._ReplenishmentRuleLinesV2;
+            }
+            set
+            {
+                this.OnReplenishmentRuleLinesV2Changing(value);
+                this._ReplenishmentRuleLinesV2 = value;
+                this.OnReplenishmentRuleLinesV2Changed();
+                this.OnPropertyChanged("ReplenishmentRuleLinesV2");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.ReplenishmentRuleLinesV2 _ReplenishmentRuleLinesV2;
+        partial void OnReplenishmentRuleLinesV2Changing(global::Microsoft.Dynamics.DataEntities.ReplenishmentRuleLinesV2 value);
+        partial void OnReplenishmentRuleLinesV2Changed();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

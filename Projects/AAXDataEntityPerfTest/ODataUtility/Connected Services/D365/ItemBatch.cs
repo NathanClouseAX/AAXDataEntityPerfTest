@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,69 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public ItemBatchSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ItemBatch> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for RebateAndDeductionsAgreementHeaders in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> RebateAndDeductionsAgreementHeaders
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._RebateAndDeductionsAgreementHeaders == null))
-                {
-                    this._RebateAndDeductionsAgreementHeaders = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader>(GetPath("RebateAndDeductionsAgreementHeaders"));
-                }
-                return this._RebateAndDeductionsAgreementHeaders;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> _RebateAndDeductionsAgreementHeaders;
-        /// <summary>
-        /// There are no comments for ReportAsFinishedProductionJournalEntries in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReportAsFinishedProductionJournalEntry> ReportAsFinishedProductionJournalEntries
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ReportAsFinishedProductionJournalEntries == null))
-                {
-                    this._ReportAsFinishedProductionJournalEntries = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ReportAsFinishedProductionJournalEntry>(GetPath("ReportAsFinishedProductionJournalEntries"));
-                }
-                return this._ReportAsFinishedProductionJournalEntries;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReportAsFinishedProductionJournalEntry> _ReportAsFinishedProductionJournalEntries;
-        /// <summary>
-        /// There are no comments for JobCardProductionJournalEntries in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobCardProductionJournalEntry> JobCardProductionJournalEntries
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._JobCardProductionJournalEntries == null))
-                {
-                    this._JobCardProductionJournalEntries = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.JobCardProductionJournalEntry>(GetPath("JobCardProductionJournalEntries"));
-                }
-                return this._JobCardProductionJournalEntries;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobCardProductionJournalEntry> _JobCardProductionJournalEntries;
         /// <summary>
         /// There are no comments for ReleasedProductV2 in the schema.
         /// </summary>
@@ -140,6 +77,27 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.AddressCountryRegionSingle _PrimaryVendorOriginCountryRegion;
         /// <summary>
+        /// There are no comments for CatchWeightTags in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CatchWeightTag> CatchWeightTags
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._CatchWeightTags == null))
+                {
+                    this._CatchWeightTags = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CatchWeightTag>(GetPath("CatchWeightTags"));
+                }
+                return this._CatchWeightTags;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CatchWeightTag> _CatchWeightTags;
+        /// <summary>
         /// There are no comments for QualityOrderHeaders in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -161,10 +119,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> _QualityOrderHeaders;
         /// <summary>
-        /// There are no comments for RouteCardProductionJournalEntries in the schema.
+        /// There are no comments for RebateAndDeductionsAgreementHeaders in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RouteCardProductionJournalEntry> RouteCardProductionJournalEntries
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> RebateAndDeductionsAgreementHeaders
         {
             get
             {
@@ -172,36 +130,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._RouteCardProductionJournalEntries == null))
+                if ((this._RebateAndDeductionsAgreementHeaders == null))
                 {
-                    this._RouteCardProductionJournalEntries = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RouteCardProductionJournalEntry>(GetPath("RouteCardProductionJournalEntries"));
+                    this._RebateAndDeductionsAgreementHeaders = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader>(GetPath("RebateAndDeductionsAgreementHeaders"));
                 }
-                return this._RouteCardProductionJournalEntries;
+                return this._RebateAndDeductionsAgreementHeaders;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RouteCardProductionJournalEntry> _RouteCardProductionJournalEntries;
-        /// <summary>
-        /// There are no comments for CatchWeightTags in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CatchWeightTag> CatchWeightTags
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._CatchWeightTags == null))
-                {
-                    this._CatchWeightTags = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CatchWeightTag>(GetPath("CatchWeightTags"));
-                }
-                return this._CatchWeightTags;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CatchWeightTag> _CatchWeightTags;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> _RebateAndDeductionsAgreementHeaders;
         /// <summary>
         /// There are no comments for ItemBatchAttributeValues in the schema.
         /// </summary>
@@ -224,6 +161,48 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ItemBatchAttributeValue> _ItemBatchAttributeValues;
         /// <summary>
+        /// There are no comments for JobCardProductionJournalEntries in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobCardProductionJournalEntry> JobCardProductionJournalEntries
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._JobCardProductionJournalEntries == null))
+                {
+                    this._JobCardProductionJournalEntries = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.JobCardProductionJournalEntry>(GetPath("JobCardProductionJournalEntries"));
+                }
+                return this._JobCardProductionJournalEntries;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobCardProductionJournalEntry> _JobCardProductionJournalEntries;
+        /// <summary>
+        /// There are no comments for ReportAsFinishedProductionJournalEntries in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReportAsFinishedProductionJournalEntry> ReportAsFinishedProductionJournalEntries
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ReportAsFinishedProductionJournalEntries == null))
+                {
+                    this._ReportAsFinishedProductionJournalEntries = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ReportAsFinishedProductionJournalEntry>(GetPath("ReportAsFinishedProductionJournalEntries"));
+                }
+                return this._ReportAsFinishedProductionJournalEntries;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReportAsFinishedProductionJournalEntry> _ReportAsFinishedProductionJournalEntries;
+        /// <summary>
         /// There are no comments for ProductionPickingListJournalEntries in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -244,6 +223,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductionPickingListJournalEntry> _ProductionPickingListJournalEntries;
+        /// <summary>
+        /// There are no comments for RouteCardProductionJournalEntries in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RouteCardProductionJournalEntry> RouteCardProductionJournalEntries
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RouteCardProductionJournalEntries == null))
+                {
+                    this._RouteCardProductionJournalEntries = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RouteCardProductionJournalEntry>(GetPath("RouteCardProductionJournalEntries"));
+                }
+                return this._RouteCardProductionJournalEntries;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RouteCardProductionJournalEntry> _RouteCardProductionJournalEntries;
     }
         /// <summary>
         /// There are no comments for ItemBatch in the schema.
@@ -743,72 +743,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnVendorExpirationDateChanging(global::System.DateTimeOffset value);
         partial void OnVendorExpirationDateChanged();
         /// <summary>
-        /// There are no comments for Property RebateAndDeductionsAgreementHeaders in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> RebateAndDeductionsAgreementHeaders
-        {
-            get
-            {
-                return this._RebateAndDeductionsAgreementHeaders;
-            }
-            set
-            {
-                this.OnRebateAndDeductionsAgreementHeadersChanging(value);
-                this._RebateAndDeductionsAgreementHeaders = value;
-                this.OnRebateAndDeductionsAgreementHeadersChanged();
-                this.OnPropertyChanged("RebateAndDeductionsAgreementHeaders");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> _RebateAndDeductionsAgreementHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRebateAndDeductionsAgreementHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> value);
-        partial void OnRebateAndDeductionsAgreementHeadersChanged();
-        /// <summary>
-        /// There are no comments for Property ReportAsFinishedProductionJournalEntries in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReportAsFinishedProductionJournalEntry> ReportAsFinishedProductionJournalEntries
-        {
-            get
-            {
-                return this._ReportAsFinishedProductionJournalEntries;
-            }
-            set
-            {
-                this.OnReportAsFinishedProductionJournalEntriesChanging(value);
-                this._ReportAsFinishedProductionJournalEntries = value;
-                this.OnReportAsFinishedProductionJournalEntriesChanged();
-                this.OnPropertyChanged("ReportAsFinishedProductionJournalEntries");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReportAsFinishedProductionJournalEntry> _ReportAsFinishedProductionJournalEntries = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReportAsFinishedProductionJournalEntry>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnReportAsFinishedProductionJournalEntriesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReportAsFinishedProductionJournalEntry> value);
-        partial void OnReportAsFinishedProductionJournalEntriesChanged();
-        /// <summary>
-        /// There are no comments for Property JobCardProductionJournalEntries in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobCardProductionJournalEntry> JobCardProductionJournalEntries
-        {
-            get
-            {
-                return this._JobCardProductionJournalEntries;
-            }
-            set
-            {
-                this.OnJobCardProductionJournalEntriesChanging(value);
-                this._JobCardProductionJournalEntries = value;
-                this.OnJobCardProductionJournalEntriesChanged();
-                this.OnPropertyChanged("JobCardProductionJournalEntries");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobCardProductionJournalEntry> _JobCardProductionJournalEntries = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobCardProductionJournalEntry>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnJobCardProductionJournalEntriesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobCardProductionJournalEntry> value);
-        partial void OnJobCardProductionJournalEntriesChanged();
-        /// <summary>
         /// There are no comments for Property ReleasedProductV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -853,6 +787,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnPrimaryVendorOriginCountryRegionChanging(global::Microsoft.Dynamics.DataEntities.AddressCountryRegion value);
         partial void OnPrimaryVendorOriginCountryRegionChanged();
         /// <summary>
+        /// There are no comments for Property CatchWeightTags in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CatchWeightTag> CatchWeightTags
+        {
+            get
+            {
+                return this._CatchWeightTags;
+            }
+            set
+            {
+                this.OnCatchWeightTagsChanging(value);
+                this._CatchWeightTags = value;
+                this.OnCatchWeightTagsChanged();
+                this.OnPropertyChanged("CatchWeightTags");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CatchWeightTag> _CatchWeightTags = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CatchWeightTag>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnCatchWeightTagsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CatchWeightTag> value);
+        partial void OnCatchWeightTagsChanged();
+        /// <summary>
         /// There are no comments for Property QualityOrderHeaders in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -875,49 +831,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnQualityOrderHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> value);
         partial void OnQualityOrderHeadersChanged();
         /// <summary>
-        /// There are no comments for Property RouteCardProductionJournalEntries in the schema.
+        /// There are no comments for Property RebateAndDeductionsAgreementHeaders in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RouteCardProductionJournalEntry> RouteCardProductionJournalEntries
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> RebateAndDeductionsAgreementHeaders
         {
             get
             {
-                return this._RouteCardProductionJournalEntries;
+                return this._RebateAndDeductionsAgreementHeaders;
             }
             set
             {
-                this.OnRouteCardProductionJournalEntriesChanging(value);
-                this._RouteCardProductionJournalEntries = value;
-                this.OnRouteCardProductionJournalEntriesChanged();
-                this.OnPropertyChanged("RouteCardProductionJournalEntries");
+                this.OnRebateAndDeductionsAgreementHeadersChanging(value);
+                this._RebateAndDeductionsAgreementHeaders = value;
+                this.OnRebateAndDeductionsAgreementHeadersChanged();
+                this.OnPropertyChanged("RebateAndDeductionsAgreementHeaders");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RouteCardProductionJournalEntry> _RouteCardProductionJournalEntries = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RouteCardProductionJournalEntry>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRouteCardProductionJournalEntriesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RouteCardProductionJournalEntry> value);
-        partial void OnRouteCardProductionJournalEntriesChanged();
-        /// <summary>
-        /// There are no comments for Property CatchWeightTags in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CatchWeightTag> CatchWeightTags
-        {
-            get
-            {
-                return this._CatchWeightTags;
-            }
-            set
-            {
-                this.OnCatchWeightTagsChanging(value);
-                this._CatchWeightTags = value;
-                this.OnCatchWeightTagsChanged();
-                this.OnPropertyChanged("CatchWeightTags");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CatchWeightTag> _CatchWeightTags = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CatchWeightTag>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnCatchWeightTagsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CatchWeightTag> value);
-        partial void OnCatchWeightTagsChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> _RebateAndDeductionsAgreementHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRebateAndDeductionsAgreementHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> value);
+        partial void OnRebateAndDeductionsAgreementHeadersChanged();
         /// <summary>
         /// There are no comments for Property ItemBatchAttributeValues in the schema.
         /// </summary>
@@ -941,6 +875,50 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnItemBatchAttributeValuesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemBatchAttributeValue> value);
         partial void OnItemBatchAttributeValuesChanged();
         /// <summary>
+        /// There are no comments for Property JobCardProductionJournalEntries in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobCardProductionJournalEntry> JobCardProductionJournalEntries
+        {
+            get
+            {
+                return this._JobCardProductionJournalEntries;
+            }
+            set
+            {
+                this.OnJobCardProductionJournalEntriesChanging(value);
+                this._JobCardProductionJournalEntries = value;
+                this.OnJobCardProductionJournalEntriesChanged();
+                this.OnPropertyChanged("JobCardProductionJournalEntries");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobCardProductionJournalEntry> _JobCardProductionJournalEntries = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobCardProductionJournalEntry>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnJobCardProductionJournalEntriesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobCardProductionJournalEntry> value);
+        partial void OnJobCardProductionJournalEntriesChanged();
+        /// <summary>
+        /// There are no comments for Property ReportAsFinishedProductionJournalEntries in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReportAsFinishedProductionJournalEntry> ReportAsFinishedProductionJournalEntries
+        {
+            get
+            {
+                return this._ReportAsFinishedProductionJournalEntries;
+            }
+            set
+            {
+                this.OnReportAsFinishedProductionJournalEntriesChanging(value);
+                this._ReportAsFinishedProductionJournalEntries = value;
+                this.OnReportAsFinishedProductionJournalEntriesChanged();
+                this.OnPropertyChanged("ReportAsFinishedProductionJournalEntries");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReportAsFinishedProductionJournalEntry> _ReportAsFinishedProductionJournalEntries = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReportAsFinishedProductionJournalEntry>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnReportAsFinishedProductionJournalEntriesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReportAsFinishedProductionJournalEntry> value);
+        partial void OnReportAsFinishedProductionJournalEntriesChanged();
+        /// <summary>
         /// There are no comments for Property ProductionPickingListJournalEntries in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -962,6 +940,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductionPickingListJournalEntry> _ProductionPickingListJournalEntries = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductionPickingListJournalEntry>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnProductionPickingListJournalEntriesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductionPickingListJournalEntry> value);
         partial void OnProductionPickingListJournalEntriesChanged();
+        /// <summary>
+        /// There are no comments for Property RouteCardProductionJournalEntries in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RouteCardProductionJournalEntry> RouteCardProductionJournalEntries
+        {
+            get
+            {
+                return this._RouteCardProductionJournalEntries;
+            }
+            set
+            {
+                this.OnRouteCardProductionJournalEntriesChanging(value);
+                this._RouteCardProductionJournalEntries = value;
+                this.OnRouteCardProductionJournalEntriesChanged();
+                this.OnPropertyChanged("RouteCardProductionJournalEntries");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RouteCardProductionJournalEntry> _RouteCardProductionJournalEntries = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RouteCardProductionJournalEntry>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRouteCardProductionJournalEntriesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RouteCardProductionJournalEntry> value);
+        partial void OnRouteCardProductionJournalEntriesChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

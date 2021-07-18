@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,6 +34,48 @@ namespace Microsoft.Dynamics.DataEntities
         public AssetMaintenanceJobTypeDefaultSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AssetMaintenanceJobTypeDefault> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for AssetMaintenanceChecklistTemplate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceChecklistTemplate> AssetMaintenanceChecklistTemplate
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._AssetMaintenanceChecklistTemplate == null))
+                {
+                    this._AssetMaintenanceChecklistTemplate = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceChecklistTemplate>(GetPath("AssetMaintenanceChecklistTemplate"));
+                }
+                return this._AssetMaintenanceChecklistTemplate;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceChecklistTemplate> _AssetMaintenanceChecklistTemplate;
+        /// <summary>
+        /// There are no comments for AssetMaintenanceJobTypeDefaultDescription in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceJobTypeDefaultDescription> AssetMaintenanceJobTypeDefaultDescription
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._AssetMaintenanceJobTypeDefaultDescription == null))
+                {
+                    this._AssetMaintenanceJobTypeDefaultDescription = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceJobTypeDefaultDescription>(GetPath("AssetMaintenanceJobTypeDefaultDescription"));
+                }
+                return this._AssetMaintenanceJobTypeDefaultDescription;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceJobTypeDefaultDescription> _AssetMaintenanceJobTypeDefaultDescription;
         /// <summary>
         /// There are no comments for AssetMaintenanceAsset in the schema.
         /// </summary>
@@ -202,48 +244,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.AssetMaintenanceJobTypeSingle _AssetMaintenanceJobType;
-        /// <summary>
-        /// There are no comments for AssetMaintenanceJobTypeDefaultDescription in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceJobTypeDefaultDescription> AssetMaintenanceJobTypeDefaultDescription
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._AssetMaintenanceJobTypeDefaultDescription == null))
-                {
-                    this._AssetMaintenanceJobTypeDefaultDescription = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceJobTypeDefaultDescription>(GetPath("AssetMaintenanceJobTypeDefaultDescription"));
-                }
-                return this._AssetMaintenanceJobTypeDefaultDescription;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceJobTypeDefaultDescription> _AssetMaintenanceJobTypeDefaultDescription;
-        /// <summary>
-        /// There are no comments for AssetMaintenanceChecklistTemplate in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceChecklistTemplate> AssetMaintenanceChecklistTemplate
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._AssetMaintenanceChecklistTemplate == null))
-                {
-                    this._AssetMaintenanceChecklistTemplate = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceChecklistTemplate>(GetPath("AssetMaintenanceChecklistTemplate"));
-                }
-                return this._AssetMaintenanceChecklistTemplate;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceChecklistTemplate> _AssetMaintenanceChecklistTemplate;
     }
         /// <summary>
         /// There are no comments for AssetMaintenanceJobTypeDefault in the schema.
@@ -577,6 +577,50 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnForecastHourQtyChanging(decimal value);
         partial void OnForecastHourQtyChanged();
         /// <summary>
+        /// There are no comments for Property AssetMaintenanceChecklistTemplate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceChecklistTemplate> AssetMaintenanceChecklistTemplate
+        {
+            get
+            {
+                return this._AssetMaintenanceChecklistTemplate;
+            }
+            set
+            {
+                this.OnAssetMaintenanceChecklistTemplateChanging(value);
+                this._AssetMaintenanceChecklistTemplate = value;
+                this.OnAssetMaintenanceChecklistTemplateChanged();
+                this.OnPropertyChanged("AssetMaintenanceChecklistTemplate");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceChecklistTemplate> _AssetMaintenanceChecklistTemplate = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceChecklistTemplate>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnAssetMaintenanceChecklistTemplateChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceChecklistTemplate> value);
+        partial void OnAssetMaintenanceChecklistTemplateChanged();
+        /// <summary>
+        /// There are no comments for Property AssetMaintenanceJobTypeDefaultDescription in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceJobTypeDefaultDescription> AssetMaintenanceJobTypeDefaultDescription
+        {
+            get
+            {
+                return this._AssetMaintenanceJobTypeDefaultDescription;
+            }
+            set
+            {
+                this.OnAssetMaintenanceJobTypeDefaultDescriptionChanging(value);
+                this._AssetMaintenanceJobTypeDefaultDescription = value;
+                this.OnAssetMaintenanceJobTypeDefaultDescriptionChanged();
+                this.OnPropertyChanged("AssetMaintenanceJobTypeDefaultDescription");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceJobTypeDefaultDescription> _AssetMaintenanceJobTypeDefaultDescription = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceJobTypeDefaultDescription>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnAssetMaintenanceJobTypeDefaultDescriptionChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceJobTypeDefaultDescription> value);
+        partial void OnAssetMaintenanceJobTypeDefaultDescriptionChanged();
+        /// <summary>
         /// There are no comments for Property AssetMaintenanceAsset in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -752,50 +796,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.AssetMaintenanceJobType _AssetMaintenanceJobType;
         partial void OnAssetMaintenanceJobTypeChanging(global::Microsoft.Dynamics.DataEntities.AssetMaintenanceJobType value);
         partial void OnAssetMaintenanceJobTypeChanged();
-        /// <summary>
-        /// There are no comments for Property AssetMaintenanceJobTypeDefaultDescription in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceJobTypeDefaultDescription> AssetMaintenanceJobTypeDefaultDescription
-        {
-            get
-            {
-                return this._AssetMaintenanceJobTypeDefaultDescription;
-            }
-            set
-            {
-                this.OnAssetMaintenanceJobTypeDefaultDescriptionChanging(value);
-                this._AssetMaintenanceJobTypeDefaultDescription = value;
-                this.OnAssetMaintenanceJobTypeDefaultDescriptionChanged();
-                this.OnPropertyChanged("AssetMaintenanceJobTypeDefaultDescription");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceJobTypeDefaultDescription> _AssetMaintenanceJobTypeDefaultDescription = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceJobTypeDefaultDescription>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAssetMaintenanceJobTypeDefaultDescriptionChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceJobTypeDefaultDescription> value);
-        partial void OnAssetMaintenanceJobTypeDefaultDescriptionChanged();
-        /// <summary>
-        /// There are no comments for Property AssetMaintenanceChecklistTemplate in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceChecklistTemplate> AssetMaintenanceChecklistTemplate
-        {
-            get
-            {
-                return this._AssetMaintenanceChecklistTemplate;
-            }
-            set
-            {
-                this.OnAssetMaintenanceChecklistTemplateChanging(value);
-                this._AssetMaintenanceChecklistTemplate = value;
-                this.OnAssetMaintenanceChecklistTemplateChanged();
-                this.OnPropertyChanged("AssetMaintenanceChecklistTemplate");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceChecklistTemplate> _AssetMaintenanceChecklistTemplate = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceChecklistTemplate>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAssetMaintenanceChecklistTemplateChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceChecklistTemplate> value);
-        partial void OnAssetMaintenanceChecklistTemplateChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

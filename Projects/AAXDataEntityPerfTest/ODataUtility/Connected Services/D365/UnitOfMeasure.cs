@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,10 +35,10 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for SalesAgreementConfirmationLines in the schema.
+        /// There are no comments for FromUnitOfMeasureConversions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine> SalesAgreementConfirmationLines
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.UnitOfMeasureConversion> FromUnitOfMeasureConversions
         {
             get
             {
@@ -46,20 +46,20 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._SalesAgreementConfirmationLines == null))
+                if ((this._FromUnitOfMeasureConversions == null))
                 {
-                    this._SalesAgreementConfirmationLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine>(GetPath("SalesAgreementConfirmationLines"));
+                    this._FromUnitOfMeasureConversions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.UnitOfMeasureConversion>(GetPath("FromUnitOfMeasureConversions"));
                 }
-                return this._SalesAgreementConfirmationLines;
+                return this._FromUnitOfMeasureConversions;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine> _SalesAgreementConfirmationLines;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.UnitOfMeasureConversion> _FromUnitOfMeasureConversions;
         /// <summary>
-        /// There are no comments for RebateAndDeductionsAgreementHeaders in the schema.
+        /// There are no comments for ToUnitOfMeasureConversions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> RebateAndDeductionsAgreementHeaders
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.UnitOfMeasureConversion> ToUnitOfMeasureConversions
         {
             get
             {
@@ -67,20 +67,20 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._RebateAndDeductionsAgreementHeaders == null))
+                if ((this._ToUnitOfMeasureConversions == null))
                 {
-                    this._RebateAndDeductionsAgreementHeaders = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader>(GetPath("RebateAndDeductionsAgreementHeaders"));
+                    this._ToUnitOfMeasureConversions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.UnitOfMeasureConversion>(GetPath("ToUnitOfMeasureConversions"));
                 }
-                return this._RebateAndDeductionsAgreementHeaders;
+                return this._ToUnitOfMeasureConversions;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> _RebateAndDeductionsAgreementHeaders;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.UnitOfMeasureConversion> _ToUnitOfMeasureConversions;
         /// <summary>
-        /// There are no comments for TradeAllowanceAgreementProductsV2 in the schema.
+        /// There are no comments for ReleasedProductsV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2> TradeAllowanceAgreementProductsV2
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductV2> ReleasedProductsV2
         {
             get
             {
@@ -88,15 +88,36 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._TradeAllowanceAgreementProductsV2 == null))
+                if ((this._ReleasedProductsV2 == null))
                 {
-                    this._TradeAllowanceAgreementProductsV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2>(GetPath("TradeAllowanceAgreementProductsV2"));
+                    this._ReleasedProductsV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductV2>(GetPath("ReleasedProductsV2"));
                 }
-                return this._TradeAllowanceAgreementProductsV2;
+                return this._ReleasedProductsV2;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2> _TradeAllowanceAgreementProductsV2;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductV2> _ReleasedProductsV2;
+        /// <summary>
+        /// There are no comments for PurchaseAgreementLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementLine> PurchaseAgreementLine
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._PurchaseAgreementLine == null))
+                {
+                    this._PurchaseAgreementLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementLine>(GetPath("PurchaseAgreementLine"));
+                }
+                return this._PurchaseAgreementLine;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementLine> _PurchaseAgreementLine;
         /// <summary>
         /// There are no comments for RebateAndDeductionsAgreementHeaderDateSetupCriterionItems in the schema.
         /// </summary>
@@ -119,10 +140,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDateSetupCriterionItem> _RebateAndDeductionsAgreementHeaderDateSetupCriterionItems;
         /// <summary>
-        /// There are no comments for FromUnitOfMeasureConversions in the schema.
+        /// There are no comments for SalesAgreementLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductUnitOfMeasureConversion> FromUnitOfMeasureConversions
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesAgreementLine> SalesAgreementLines
         {
             get
             {
@@ -130,20 +151,20 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._FromUnitOfMeasureConversions == null))
+                if ((this._SalesAgreementLines == null))
                 {
-                    this._FromUnitOfMeasureConversions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductUnitOfMeasureConversion>(GetPath("FromUnitOfMeasureConversions"));
+                    this._SalesAgreementLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.SalesAgreementLine>(GetPath("SalesAgreementLines"));
                 }
-                return this._FromUnitOfMeasureConversions;
+                return this._SalesAgreementLines;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductUnitOfMeasureConversion> _FromUnitOfMeasureConversions;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesAgreementLine> _SalesAgreementLines;
         /// <summary>
-        /// There are no comments for ToUnitOfMeasureConversions in the schema.
+        /// There are no comments for TradeAllowanceAgreementMerchandisingEventProductsV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductUnitOfMeasureConversion> ToUnitOfMeasureConversions
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2> TradeAllowanceAgreementMerchandisingEventProductsV2
         {
             get
             {
@@ -151,15 +172,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._ToUnitOfMeasureConversions == null))
+                if ((this._TradeAllowanceAgreementMerchandisingEventProductsV2 == null))
                 {
-                    this._ToUnitOfMeasureConversions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductUnitOfMeasureConversion>(GetPath("ToUnitOfMeasureConversions"));
+                    this._TradeAllowanceAgreementMerchandisingEventProductsV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2>(GetPath("TradeAllowanceAgreementMerchandisingEventProductsV2"));
                 }
-                return this._ToUnitOfMeasureConversions;
+                return this._TradeAllowanceAgreementMerchandisingEventProductsV2;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductUnitOfMeasureConversion> _ToUnitOfMeasureConversions;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2> _TradeAllowanceAgreementMerchandisingEventProductsV2;
         /// <summary>
         /// There are no comments for TradeAllowanceAgreementMerchandisingEventBillBackLines in the schema.
         /// </summary>
@@ -203,10 +224,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WarehouseReplenishmentTemplateUnitOfMeasureRestriction> _WarehouseReplenishmentTemplateUnitOfMeasureRestrictions;
         /// <summary>
-        /// There are no comments for PurchaseAgreementLine in the schema.
+        /// There are no comments for RebateAndDeductionsAgreementHeaders in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementLine> PurchaseAgreementLine
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> RebateAndDeductionsAgreementHeaders
         {
             get
             {
@@ -214,20 +235,20 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._PurchaseAgreementLine == null))
+                if ((this._RebateAndDeductionsAgreementHeaders == null))
                 {
-                    this._PurchaseAgreementLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementLine>(GetPath("PurchaseAgreementLine"));
+                    this._RebateAndDeductionsAgreementHeaders = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader>(GetPath("RebateAndDeductionsAgreementHeaders"));
                 }
-                return this._PurchaseAgreementLine;
+                return this._RebateAndDeductionsAgreementHeaders;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementLine> _PurchaseAgreementLine;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> _RebateAndDeductionsAgreementHeaders;
         /// <summary>
-        /// There are no comments for ReleasedProductsV2 in the schema.
+        /// There are no comments for TradeAllowanceAgreementMerchandisingEventProducts in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductV2> ReleasedProductsV2
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProduct> TradeAllowanceAgreementMerchandisingEventProducts
         {
             get
             {
@@ -235,120 +256,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._ReleasedProductsV2 == null))
+                if ((this._TradeAllowanceAgreementMerchandisingEventProducts == null))
                 {
-                    this._ReleasedProductsV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductV2>(GetPath("ReleasedProductsV2"));
+                    this._TradeAllowanceAgreementMerchandisingEventProducts = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProduct>(GetPath("TradeAllowanceAgreementMerchandisingEventProducts"));
                 }
-                return this._ReleasedProductsV2;
+                return this._TradeAllowanceAgreementMerchandisingEventProducts;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductV2> _ReleasedProductsV2;
-        /// <summary>
-        /// There are no comments for SalesAgreementLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesAgreementLine> SalesAgreementLines
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._SalesAgreementLines == null))
-                {
-                    this._SalesAgreementLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.SalesAgreementLine>(GetPath("SalesAgreementLines"));
-                }
-                return this._SalesAgreementLines;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesAgreementLine> _SalesAgreementLines;
-        /// <summary>
-        /// There are no comments for ServiceAgreementLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ServiceAgreementLine> ServiceAgreementLines
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ServiceAgreementLines == null))
-                {
-                    this._ServiceAgreementLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ServiceAgreementLine>(GetPath("ServiceAgreementLines"));
-                }
-                return this._ServiceAgreementLines;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ServiceAgreementLine> _ServiceAgreementLines;
-        /// <summary>
-        /// There are no comments for RetailCatalogInternalOrganizationProductAttributeValue2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalogInternalOrganizationProductAttributeValue2> RetailCatalogInternalOrganizationProductAttributeValue2
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._RetailCatalogInternalOrganizationProductAttributeValue2 == null))
-                {
-                    this._RetailCatalogInternalOrganizationProductAttributeValue2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalogInternalOrganizationProductAttributeValue2>(GetPath("RetailCatalogInternalOrganizationProductAttributeValue2"));
-                }
-                return this._RetailCatalogInternalOrganizationProductAttributeValue2;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalogInternalOrganizationProductAttributeValue2> _RetailCatalogInternalOrganizationProductAttributeValue2;
-        /// <summary>
-        /// There are no comments for SupplyForecastEntries in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SupplyForecastEntry> SupplyForecastEntries
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._SupplyForecastEntries == null))
-                {
-                    this._SupplyForecastEntries = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.SupplyForecastEntry>(GetPath("SupplyForecastEntries"));
-                }
-                return this._SupplyForecastEntries;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SupplyForecastEntry> _SupplyForecastEntries;
-        /// <summary>
-        /// There are no comments for PurchaseAgreementLinesV2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmationLine> PurchaseAgreementLinesV2
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._PurchaseAgreementLinesV2 == null))
-                {
-                    this._PurchaseAgreementLinesV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmationLine>(GetPath("PurchaseAgreementLinesV2"));
-                }
-                return this._PurchaseAgreementLinesV2;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmationLine> _PurchaseAgreementLinesV2;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProduct> _TradeAllowanceAgreementMerchandisingEventProducts;
         /// <summary>
         /// There are no comments for PhysicalProductDimensionDetails in the schema.
         /// </summary>
@@ -434,10 +350,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PhysicalProductDimensionDetails> _LengthAssigningPhysicalProductDimensionDetails;
         /// <summary>
-        /// There are no comments for UnitOfMeasureTranslations in the schema.
+        /// There are no comments for PurchaseAgreementLinesV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.UnitOfMeasureTranslation> UnitOfMeasureTranslations
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmationLine> PurchaseAgreementLinesV2
         {
             get
             {
@@ -445,15 +361,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._UnitOfMeasureTranslations == null))
+                if ((this._PurchaseAgreementLinesV2 == null))
                 {
-                    this._UnitOfMeasureTranslations = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.UnitOfMeasureTranslation>(GetPath("UnitOfMeasureTranslations"));
+                    this._PurchaseAgreementLinesV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmationLine>(GetPath("PurchaseAgreementLinesV2"));
                 }
-                return this._UnitOfMeasureTranslations;
+                return this._PurchaseAgreementLinesV2;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.UnitOfMeasureTranslation> _UnitOfMeasureTranslations;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmationLine> _PurchaseAgreementLinesV2;
         /// <summary>
         /// There are no comments for TradeAllowanceAgreementProducts in the schema.
         /// </summary>
@@ -476,10 +392,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProduct> _TradeAllowanceAgreementProducts;
         /// <summary>
-        /// There are no comments for TradeAllowanceAgreementHeaders in the schema.
+        /// There are no comments for UnitOfMeasureTranslations in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeader> TradeAllowanceAgreementHeaders
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.UnitOfMeasureTranslation> UnitOfMeasureTranslations
         {
             get
             {
@@ -487,15 +403,99 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._TradeAllowanceAgreementHeaders == null))
+                if ((this._UnitOfMeasureTranslations == null))
                 {
-                    this._TradeAllowanceAgreementHeaders = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeader>(GetPath("TradeAllowanceAgreementHeaders"));
+                    this._UnitOfMeasureTranslations = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.UnitOfMeasureTranslation>(GetPath("UnitOfMeasureTranslations"));
                 }
-                return this._TradeAllowanceAgreementHeaders;
+                return this._UnitOfMeasureTranslations;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeader> _TradeAllowanceAgreementHeaders;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.UnitOfMeasureTranslation> _UnitOfMeasureTranslations;
+        /// <summary>
+        /// There are no comments for RetailCatalogInternalOrganizationProductAttributeValue2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalogInternalOrganizationProductAttributeValue2> RetailCatalogInternalOrganizationProductAttributeValue2
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RetailCatalogInternalOrganizationProductAttributeValue2 == null))
+                {
+                    this._RetailCatalogInternalOrganizationProductAttributeValue2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalogInternalOrganizationProductAttributeValue2>(GetPath("RetailCatalogInternalOrganizationProductAttributeValue2"));
+                }
+                return this._RetailCatalogInternalOrganizationProductAttributeValue2;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalogInternalOrganizationProductAttributeValue2> _RetailCatalogInternalOrganizationProductAttributeValue2;
+        /// <summary>
+        /// There are no comments for TradeAllowanceAgreementProductsV2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2> TradeAllowanceAgreementProductsV2
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._TradeAllowanceAgreementProductsV2 == null))
+                {
+                    this._TradeAllowanceAgreementProductsV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2>(GetPath("TradeAllowanceAgreementProductsV2"));
+                }
+                return this._TradeAllowanceAgreementProductsV2;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2> _TradeAllowanceAgreementProductsV2;
+        /// <summary>
+        /// There are no comments for ServiceAgreementLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ServiceAgreementLine> ServiceAgreementLines
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ServiceAgreementLines == null))
+                {
+                    this._ServiceAgreementLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ServiceAgreementLine>(GetPath("ServiceAgreementLines"));
+                }
+                return this._ServiceAgreementLines;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ServiceAgreementLine> _ServiceAgreementLines;
+        /// <summary>
+        /// There are no comments for SalesAgreementConfirmationLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine> SalesAgreementConfirmationLines
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._SalesAgreementConfirmationLines == null))
+                {
+                    this._SalesAgreementConfirmationLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine>(GetPath("SalesAgreementConfirmationLines"));
+                }
+                return this._SalesAgreementConfirmationLines;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine> _SalesAgreementConfirmationLines;
         /// <summary>
         /// There are no comments for RetailInternalOrganizationProductAttributeValue2 in the schema.
         /// </summary>
@@ -518,10 +518,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailInternalOrganizationProductAttributeValue2> _RetailInternalOrganizationProductAttributeValue2;
         /// <summary>
-        /// There are no comments for TradeAllowanceAgreementMerchandisingEventProducts in the schema.
+        /// There are no comments for TradeAllowanceAgreementHeaders in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProduct> TradeAllowanceAgreementMerchandisingEventProducts
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeader> TradeAllowanceAgreementHeaders
         {
             get
             {
@@ -529,20 +529,20 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._TradeAllowanceAgreementMerchandisingEventProducts == null))
+                if ((this._TradeAllowanceAgreementHeaders == null))
                 {
-                    this._TradeAllowanceAgreementMerchandisingEventProducts = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProduct>(GetPath("TradeAllowanceAgreementMerchandisingEventProducts"));
+                    this._TradeAllowanceAgreementHeaders = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeader>(GetPath("TradeAllowanceAgreementHeaders"));
                 }
-                return this._TradeAllowanceAgreementMerchandisingEventProducts;
+                return this._TradeAllowanceAgreementHeaders;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProduct> _TradeAllowanceAgreementMerchandisingEventProducts;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeader> _TradeAllowanceAgreementHeaders;
         /// <summary>
-        /// There are no comments for TradeAllowanceAgreementMerchandisingEventProductsV2 in the schema.
+        /// There are no comments for SupplyForecastEntries in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2> TradeAllowanceAgreementMerchandisingEventProductsV2
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SupplyForecastEntry> SupplyForecastEntries
         {
             get
             {
@@ -550,15 +550,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._TradeAllowanceAgreementMerchandisingEventProductsV2 == null))
+                if ((this._SupplyForecastEntries == null))
                 {
-                    this._TradeAllowanceAgreementMerchandisingEventProductsV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2>(GetPath("TradeAllowanceAgreementMerchandisingEventProductsV2"));
+                    this._SupplyForecastEntries = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.SupplyForecastEntry>(GetPath("SupplyForecastEntries"));
                 }
-                return this._TradeAllowanceAgreementMerchandisingEventProductsV2;
+                return this._SupplyForecastEntries;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2> _TradeAllowanceAgreementMerchandisingEventProductsV2;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SupplyForecastEntry> _SupplyForecastEntries;
     }
         /// <summary>
         /// There are no comments for UnitOfMeasure in the schema.
@@ -804,71 +804,93 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnNationalCodeChanging(string value);
         partial void OnNationalCodeChanged();
         /// <summary>
-        /// There are no comments for Property SalesAgreementConfirmationLines in the schema.
+        /// There are no comments for Property FromUnitOfMeasureConversions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine> SalesAgreementConfirmationLines
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.UnitOfMeasureConversion> FromUnitOfMeasureConversions
         {
             get
             {
-                return this._SalesAgreementConfirmationLines;
+                return this._FromUnitOfMeasureConversions;
             }
             set
             {
-                this.OnSalesAgreementConfirmationLinesChanging(value);
-                this._SalesAgreementConfirmationLines = value;
-                this.OnSalesAgreementConfirmationLinesChanged();
-                this.OnPropertyChanged("SalesAgreementConfirmationLines");
+                this.OnFromUnitOfMeasureConversionsChanging(value);
+                this._FromUnitOfMeasureConversions = value;
+                this.OnFromUnitOfMeasureConversionsChanged();
+                this.OnPropertyChanged("FromUnitOfMeasureConversions");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine> _SalesAgreementConfirmationLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnSalesAgreementConfirmationLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine> value);
-        partial void OnSalesAgreementConfirmationLinesChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.UnitOfMeasureConversion> _FromUnitOfMeasureConversions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.UnitOfMeasureConversion>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnFromUnitOfMeasureConversionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.UnitOfMeasureConversion> value);
+        partial void OnFromUnitOfMeasureConversionsChanged();
         /// <summary>
-        /// There are no comments for Property RebateAndDeductionsAgreementHeaders in the schema.
+        /// There are no comments for Property ToUnitOfMeasureConversions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> RebateAndDeductionsAgreementHeaders
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.UnitOfMeasureConversion> ToUnitOfMeasureConversions
         {
             get
             {
-                return this._RebateAndDeductionsAgreementHeaders;
+                return this._ToUnitOfMeasureConversions;
             }
             set
             {
-                this.OnRebateAndDeductionsAgreementHeadersChanging(value);
-                this._RebateAndDeductionsAgreementHeaders = value;
-                this.OnRebateAndDeductionsAgreementHeadersChanged();
-                this.OnPropertyChanged("RebateAndDeductionsAgreementHeaders");
+                this.OnToUnitOfMeasureConversionsChanging(value);
+                this._ToUnitOfMeasureConversions = value;
+                this.OnToUnitOfMeasureConversionsChanged();
+                this.OnPropertyChanged("ToUnitOfMeasureConversions");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> _RebateAndDeductionsAgreementHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRebateAndDeductionsAgreementHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> value);
-        partial void OnRebateAndDeductionsAgreementHeadersChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.UnitOfMeasureConversion> _ToUnitOfMeasureConversions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.UnitOfMeasureConversion>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnToUnitOfMeasureConversionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.UnitOfMeasureConversion> value);
+        partial void OnToUnitOfMeasureConversionsChanged();
         /// <summary>
-        /// There are no comments for Property TradeAllowanceAgreementProductsV2 in the schema.
+        /// There are no comments for Property ReleasedProductsV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2> TradeAllowanceAgreementProductsV2
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductV2> ReleasedProductsV2
         {
             get
             {
-                return this._TradeAllowanceAgreementProductsV2;
+                return this._ReleasedProductsV2;
             }
             set
             {
-                this.OnTradeAllowanceAgreementProductsV2Changing(value);
-                this._TradeAllowanceAgreementProductsV2 = value;
-                this.OnTradeAllowanceAgreementProductsV2Changed();
-                this.OnPropertyChanged("TradeAllowanceAgreementProductsV2");
+                this.OnReleasedProductsV2Changing(value);
+                this._ReleasedProductsV2 = value;
+                this.OnReleasedProductsV2Changed();
+                this.OnPropertyChanged("ReleasedProductsV2");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2> _TradeAllowanceAgreementProductsV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnTradeAllowanceAgreementProductsV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2> value);
-        partial void OnTradeAllowanceAgreementProductsV2Changed();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductV2> _ReleasedProductsV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnReleasedProductsV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductV2> value);
+        partial void OnReleasedProductsV2Changed();
+        /// <summary>
+        /// There are no comments for Property PurchaseAgreementLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementLine> PurchaseAgreementLine
+        {
+            get
+            {
+                return this._PurchaseAgreementLine;
+            }
+            set
+            {
+                this.OnPurchaseAgreementLineChanging(value);
+                this._PurchaseAgreementLine = value;
+                this.OnPurchaseAgreementLineChanged();
+                this.OnPropertyChanged("PurchaseAgreementLine");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementLine> _PurchaseAgreementLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPurchaseAgreementLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementLine> value);
+        partial void OnPurchaseAgreementLineChanged();
         /// <summary>
         /// There are no comments for Property RebateAndDeductionsAgreementHeaderDateSetupCriterionItems in the schema.
         /// </summary>
@@ -892,49 +914,49 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnRebateAndDeductionsAgreementHeaderDateSetupCriterionItemsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDateSetupCriterionItem> value);
         partial void OnRebateAndDeductionsAgreementHeaderDateSetupCriterionItemsChanged();
         /// <summary>
-        /// There are no comments for Property FromUnitOfMeasureConversions in the schema.
+        /// There are no comments for Property SalesAgreementLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductUnitOfMeasureConversion> FromUnitOfMeasureConversions
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementLine> SalesAgreementLines
         {
             get
             {
-                return this._FromUnitOfMeasureConversions;
+                return this._SalesAgreementLines;
             }
             set
             {
-                this.OnFromUnitOfMeasureConversionsChanging(value);
-                this._FromUnitOfMeasureConversions = value;
-                this.OnFromUnitOfMeasureConversionsChanged();
-                this.OnPropertyChanged("FromUnitOfMeasureConversions");
+                this.OnSalesAgreementLinesChanging(value);
+                this._SalesAgreementLines = value;
+                this.OnSalesAgreementLinesChanged();
+                this.OnPropertyChanged("SalesAgreementLines");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductUnitOfMeasureConversion> _FromUnitOfMeasureConversions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductUnitOfMeasureConversion>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnFromUnitOfMeasureConversionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductUnitOfMeasureConversion> value);
-        partial void OnFromUnitOfMeasureConversionsChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementLine> _SalesAgreementLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnSalesAgreementLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementLine> value);
+        partial void OnSalesAgreementLinesChanged();
         /// <summary>
-        /// There are no comments for Property ToUnitOfMeasureConversions in the schema.
+        /// There are no comments for Property TradeAllowanceAgreementMerchandisingEventProductsV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductUnitOfMeasureConversion> ToUnitOfMeasureConversions
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2> TradeAllowanceAgreementMerchandisingEventProductsV2
         {
             get
             {
-                return this._ToUnitOfMeasureConversions;
+                return this._TradeAllowanceAgreementMerchandisingEventProductsV2;
             }
             set
             {
-                this.OnToUnitOfMeasureConversionsChanging(value);
-                this._ToUnitOfMeasureConversions = value;
-                this.OnToUnitOfMeasureConversionsChanged();
-                this.OnPropertyChanged("ToUnitOfMeasureConversions");
+                this.OnTradeAllowanceAgreementMerchandisingEventProductsV2Changing(value);
+                this._TradeAllowanceAgreementMerchandisingEventProductsV2 = value;
+                this.OnTradeAllowanceAgreementMerchandisingEventProductsV2Changed();
+                this.OnPropertyChanged("TradeAllowanceAgreementMerchandisingEventProductsV2");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductUnitOfMeasureConversion> _ToUnitOfMeasureConversions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductUnitOfMeasureConversion>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnToUnitOfMeasureConversionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductUnitOfMeasureConversion> value);
-        partial void OnToUnitOfMeasureConversionsChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2> _TradeAllowanceAgreementMerchandisingEventProductsV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnTradeAllowanceAgreementMerchandisingEventProductsV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2> value);
+        partial void OnTradeAllowanceAgreementMerchandisingEventProductsV2Changed();
         /// <summary>
         /// There are no comments for Property TradeAllowanceAgreementMerchandisingEventBillBackLines in the schema.
         /// </summary>
@@ -980,159 +1002,49 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnWarehouseReplenishmentTemplateUnitOfMeasureRestrictionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseReplenishmentTemplateUnitOfMeasureRestriction> value);
         partial void OnWarehouseReplenishmentTemplateUnitOfMeasureRestrictionsChanged();
         /// <summary>
-        /// There are no comments for Property PurchaseAgreementLine in the schema.
+        /// There are no comments for Property RebateAndDeductionsAgreementHeaders in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementLine> PurchaseAgreementLine
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> RebateAndDeductionsAgreementHeaders
         {
             get
             {
-                return this._PurchaseAgreementLine;
+                return this._RebateAndDeductionsAgreementHeaders;
             }
             set
             {
-                this.OnPurchaseAgreementLineChanging(value);
-                this._PurchaseAgreementLine = value;
-                this.OnPurchaseAgreementLineChanged();
-                this.OnPropertyChanged("PurchaseAgreementLine");
+                this.OnRebateAndDeductionsAgreementHeadersChanging(value);
+                this._RebateAndDeductionsAgreementHeaders = value;
+                this.OnRebateAndDeductionsAgreementHeadersChanged();
+                this.OnPropertyChanged("RebateAndDeductionsAgreementHeaders");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementLine> _PurchaseAgreementLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPurchaseAgreementLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementLine> value);
-        partial void OnPurchaseAgreementLineChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> _RebateAndDeductionsAgreementHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRebateAndDeductionsAgreementHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> value);
+        partial void OnRebateAndDeductionsAgreementHeadersChanged();
         /// <summary>
-        /// There are no comments for Property ReleasedProductsV2 in the schema.
+        /// There are no comments for Property TradeAllowanceAgreementMerchandisingEventProducts in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductV2> ReleasedProductsV2
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProduct> TradeAllowanceAgreementMerchandisingEventProducts
         {
             get
             {
-                return this._ReleasedProductsV2;
+                return this._TradeAllowanceAgreementMerchandisingEventProducts;
             }
             set
             {
-                this.OnReleasedProductsV2Changing(value);
-                this._ReleasedProductsV2 = value;
-                this.OnReleasedProductsV2Changed();
-                this.OnPropertyChanged("ReleasedProductsV2");
+                this.OnTradeAllowanceAgreementMerchandisingEventProductsChanging(value);
+                this._TradeAllowanceAgreementMerchandisingEventProducts = value;
+                this.OnTradeAllowanceAgreementMerchandisingEventProductsChanged();
+                this.OnPropertyChanged("TradeAllowanceAgreementMerchandisingEventProducts");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductV2> _ReleasedProductsV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnReleasedProductsV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductV2> value);
-        partial void OnReleasedProductsV2Changed();
-        /// <summary>
-        /// There are no comments for Property SalesAgreementLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementLine> SalesAgreementLines
-        {
-            get
-            {
-                return this._SalesAgreementLines;
-            }
-            set
-            {
-                this.OnSalesAgreementLinesChanging(value);
-                this._SalesAgreementLines = value;
-                this.OnSalesAgreementLinesChanged();
-                this.OnPropertyChanged("SalesAgreementLines");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementLine> _SalesAgreementLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnSalesAgreementLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementLine> value);
-        partial void OnSalesAgreementLinesChanged();
-        /// <summary>
-        /// There are no comments for Property ServiceAgreementLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ServiceAgreementLine> ServiceAgreementLines
-        {
-            get
-            {
-                return this._ServiceAgreementLines;
-            }
-            set
-            {
-                this.OnServiceAgreementLinesChanging(value);
-                this._ServiceAgreementLines = value;
-                this.OnServiceAgreementLinesChanged();
-                this.OnPropertyChanged("ServiceAgreementLines");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ServiceAgreementLine> _ServiceAgreementLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ServiceAgreementLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnServiceAgreementLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ServiceAgreementLine> value);
-        partial void OnServiceAgreementLinesChanged();
-        /// <summary>
-        /// There are no comments for Property RetailCatalogInternalOrganizationProductAttributeValue2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogInternalOrganizationProductAttributeValue2> RetailCatalogInternalOrganizationProductAttributeValue2
-        {
-            get
-            {
-                return this._RetailCatalogInternalOrganizationProductAttributeValue2;
-            }
-            set
-            {
-                this.OnRetailCatalogInternalOrganizationProductAttributeValue2Changing(value);
-                this._RetailCatalogInternalOrganizationProductAttributeValue2 = value;
-                this.OnRetailCatalogInternalOrganizationProductAttributeValue2Changed();
-                this.OnPropertyChanged("RetailCatalogInternalOrganizationProductAttributeValue2");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogInternalOrganizationProductAttributeValue2> _RetailCatalogInternalOrganizationProductAttributeValue2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogInternalOrganizationProductAttributeValue2>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRetailCatalogInternalOrganizationProductAttributeValue2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogInternalOrganizationProductAttributeValue2> value);
-        partial void OnRetailCatalogInternalOrganizationProductAttributeValue2Changed();
-        /// <summary>
-        /// There are no comments for Property SupplyForecastEntries in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SupplyForecastEntry> SupplyForecastEntries
-        {
-            get
-            {
-                return this._SupplyForecastEntries;
-            }
-            set
-            {
-                this.OnSupplyForecastEntriesChanging(value);
-                this._SupplyForecastEntries = value;
-                this.OnSupplyForecastEntriesChanged();
-                this.OnPropertyChanged("SupplyForecastEntries");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SupplyForecastEntry> _SupplyForecastEntries = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SupplyForecastEntry>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnSupplyForecastEntriesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SupplyForecastEntry> value);
-        partial void OnSupplyForecastEntriesChanged();
-        /// <summary>
-        /// There are no comments for Property PurchaseAgreementLinesV2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmationLine> PurchaseAgreementLinesV2
-        {
-            get
-            {
-                return this._PurchaseAgreementLinesV2;
-            }
-            set
-            {
-                this.OnPurchaseAgreementLinesV2Changing(value);
-                this._PurchaseAgreementLinesV2 = value;
-                this.OnPurchaseAgreementLinesV2Changed();
-                this.OnPropertyChanged("PurchaseAgreementLinesV2");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmationLine> _PurchaseAgreementLinesV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmationLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPurchaseAgreementLinesV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmationLine> value);
-        partial void OnPurchaseAgreementLinesV2Changed();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProduct> _TradeAllowanceAgreementMerchandisingEventProducts = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProduct>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnTradeAllowanceAgreementMerchandisingEventProductsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProduct> value);
+        partial void OnTradeAllowanceAgreementMerchandisingEventProductsChanged();
         /// <summary>
         /// There are no comments for Property PhysicalProductDimensionDetails in the schema.
         /// </summary>
@@ -1222,27 +1134,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnLengthAssigningPhysicalProductDimensionDetailsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PhysicalProductDimensionDetails> value);
         partial void OnLengthAssigningPhysicalProductDimensionDetailsChanged();
         /// <summary>
-        /// There are no comments for Property UnitOfMeasureTranslations in the schema.
+        /// There are no comments for Property PurchaseAgreementLinesV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.UnitOfMeasureTranslation> UnitOfMeasureTranslations
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmationLine> PurchaseAgreementLinesV2
         {
             get
             {
-                return this._UnitOfMeasureTranslations;
+                return this._PurchaseAgreementLinesV2;
             }
             set
             {
-                this.OnUnitOfMeasureTranslationsChanging(value);
-                this._UnitOfMeasureTranslations = value;
-                this.OnUnitOfMeasureTranslationsChanged();
-                this.OnPropertyChanged("UnitOfMeasureTranslations");
+                this.OnPurchaseAgreementLinesV2Changing(value);
+                this._PurchaseAgreementLinesV2 = value;
+                this.OnPurchaseAgreementLinesV2Changed();
+                this.OnPropertyChanged("PurchaseAgreementLinesV2");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.UnitOfMeasureTranslation> _UnitOfMeasureTranslations = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.UnitOfMeasureTranslation>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnUnitOfMeasureTranslationsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.UnitOfMeasureTranslation> value);
-        partial void OnUnitOfMeasureTranslationsChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmationLine> _PurchaseAgreementLinesV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmationLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPurchaseAgreementLinesV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmationLine> value);
+        partial void OnPurchaseAgreementLinesV2Changed();
         /// <summary>
         /// There are no comments for Property TradeAllowanceAgreementProducts in the schema.
         /// </summary>
@@ -1266,27 +1178,115 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnTradeAllowanceAgreementProductsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProduct> value);
         partial void OnTradeAllowanceAgreementProductsChanged();
         /// <summary>
-        /// There are no comments for Property TradeAllowanceAgreementHeaders in the schema.
+        /// There are no comments for Property UnitOfMeasureTranslations in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeader> TradeAllowanceAgreementHeaders
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.UnitOfMeasureTranslation> UnitOfMeasureTranslations
         {
             get
             {
-                return this._TradeAllowanceAgreementHeaders;
+                return this._UnitOfMeasureTranslations;
             }
             set
             {
-                this.OnTradeAllowanceAgreementHeadersChanging(value);
-                this._TradeAllowanceAgreementHeaders = value;
-                this.OnTradeAllowanceAgreementHeadersChanged();
-                this.OnPropertyChanged("TradeAllowanceAgreementHeaders");
+                this.OnUnitOfMeasureTranslationsChanging(value);
+                this._UnitOfMeasureTranslations = value;
+                this.OnUnitOfMeasureTranslationsChanged();
+                this.OnPropertyChanged("UnitOfMeasureTranslations");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeader> _TradeAllowanceAgreementHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeader>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnTradeAllowanceAgreementHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeader> value);
-        partial void OnTradeAllowanceAgreementHeadersChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.UnitOfMeasureTranslation> _UnitOfMeasureTranslations = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.UnitOfMeasureTranslation>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnUnitOfMeasureTranslationsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.UnitOfMeasureTranslation> value);
+        partial void OnUnitOfMeasureTranslationsChanged();
+        /// <summary>
+        /// There are no comments for Property RetailCatalogInternalOrganizationProductAttributeValue2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogInternalOrganizationProductAttributeValue2> RetailCatalogInternalOrganizationProductAttributeValue2
+        {
+            get
+            {
+                return this._RetailCatalogInternalOrganizationProductAttributeValue2;
+            }
+            set
+            {
+                this.OnRetailCatalogInternalOrganizationProductAttributeValue2Changing(value);
+                this._RetailCatalogInternalOrganizationProductAttributeValue2 = value;
+                this.OnRetailCatalogInternalOrganizationProductAttributeValue2Changed();
+                this.OnPropertyChanged("RetailCatalogInternalOrganizationProductAttributeValue2");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogInternalOrganizationProductAttributeValue2> _RetailCatalogInternalOrganizationProductAttributeValue2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogInternalOrganizationProductAttributeValue2>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRetailCatalogInternalOrganizationProductAttributeValue2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogInternalOrganizationProductAttributeValue2> value);
+        partial void OnRetailCatalogInternalOrganizationProductAttributeValue2Changed();
+        /// <summary>
+        /// There are no comments for Property TradeAllowanceAgreementProductsV2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2> TradeAllowanceAgreementProductsV2
+        {
+            get
+            {
+                return this._TradeAllowanceAgreementProductsV2;
+            }
+            set
+            {
+                this.OnTradeAllowanceAgreementProductsV2Changing(value);
+                this._TradeAllowanceAgreementProductsV2 = value;
+                this.OnTradeAllowanceAgreementProductsV2Changed();
+                this.OnPropertyChanged("TradeAllowanceAgreementProductsV2");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2> _TradeAllowanceAgreementProductsV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnTradeAllowanceAgreementProductsV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2> value);
+        partial void OnTradeAllowanceAgreementProductsV2Changed();
+        /// <summary>
+        /// There are no comments for Property ServiceAgreementLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ServiceAgreementLine> ServiceAgreementLines
+        {
+            get
+            {
+                return this._ServiceAgreementLines;
+            }
+            set
+            {
+                this.OnServiceAgreementLinesChanging(value);
+                this._ServiceAgreementLines = value;
+                this.OnServiceAgreementLinesChanged();
+                this.OnPropertyChanged("ServiceAgreementLines");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ServiceAgreementLine> _ServiceAgreementLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ServiceAgreementLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnServiceAgreementLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ServiceAgreementLine> value);
+        partial void OnServiceAgreementLinesChanged();
+        /// <summary>
+        /// There are no comments for Property SalesAgreementConfirmationLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine> SalesAgreementConfirmationLines
+        {
+            get
+            {
+                return this._SalesAgreementConfirmationLines;
+            }
+            set
+            {
+                this.OnSalesAgreementConfirmationLinesChanging(value);
+                this._SalesAgreementConfirmationLines = value;
+                this.OnSalesAgreementConfirmationLinesChanged();
+                this.OnPropertyChanged("SalesAgreementConfirmationLines");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine> _SalesAgreementConfirmationLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnSalesAgreementConfirmationLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine> value);
+        partial void OnSalesAgreementConfirmationLinesChanged();
         /// <summary>
         /// There are no comments for Property RetailInternalOrganizationProductAttributeValue2 in the schema.
         /// </summary>
@@ -1310,49 +1310,49 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnRetailInternalOrganizationProductAttributeValue2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailInternalOrganizationProductAttributeValue2> value);
         partial void OnRetailInternalOrganizationProductAttributeValue2Changed();
         /// <summary>
-        /// There are no comments for Property TradeAllowanceAgreementMerchandisingEventProducts in the schema.
+        /// There are no comments for Property TradeAllowanceAgreementHeaders in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProduct> TradeAllowanceAgreementMerchandisingEventProducts
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeader> TradeAllowanceAgreementHeaders
         {
             get
             {
-                return this._TradeAllowanceAgreementMerchandisingEventProducts;
+                return this._TradeAllowanceAgreementHeaders;
             }
             set
             {
-                this.OnTradeAllowanceAgreementMerchandisingEventProductsChanging(value);
-                this._TradeAllowanceAgreementMerchandisingEventProducts = value;
-                this.OnTradeAllowanceAgreementMerchandisingEventProductsChanged();
-                this.OnPropertyChanged("TradeAllowanceAgreementMerchandisingEventProducts");
+                this.OnTradeAllowanceAgreementHeadersChanging(value);
+                this._TradeAllowanceAgreementHeaders = value;
+                this.OnTradeAllowanceAgreementHeadersChanged();
+                this.OnPropertyChanged("TradeAllowanceAgreementHeaders");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProduct> _TradeAllowanceAgreementMerchandisingEventProducts = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProduct>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnTradeAllowanceAgreementMerchandisingEventProductsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProduct> value);
-        partial void OnTradeAllowanceAgreementMerchandisingEventProductsChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeader> _TradeAllowanceAgreementHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeader>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnTradeAllowanceAgreementHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeader> value);
+        partial void OnTradeAllowanceAgreementHeadersChanged();
         /// <summary>
-        /// There are no comments for Property TradeAllowanceAgreementMerchandisingEventProductsV2 in the schema.
+        /// There are no comments for Property SupplyForecastEntries in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2> TradeAllowanceAgreementMerchandisingEventProductsV2
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SupplyForecastEntry> SupplyForecastEntries
         {
             get
             {
-                return this._TradeAllowanceAgreementMerchandisingEventProductsV2;
+                return this._SupplyForecastEntries;
             }
             set
             {
-                this.OnTradeAllowanceAgreementMerchandisingEventProductsV2Changing(value);
-                this._TradeAllowanceAgreementMerchandisingEventProductsV2 = value;
-                this.OnTradeAllowanceAgreementMerchandisingEventProductsV2Changed();
-                this.OnPropertyChanged("TradeAllowanceAgreementMerchandisingEventProductsV2");
+                this.OnSupplyForecastEntriesChanging(value);
+                this._SupplyForecastEntries = value;
+                this.OnSupplyForecastEntriesChanged();
+                this.OnPropertyChanged("SupplyForecastEntries");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2> _TradeAllowanceAgreementMerchandisingEventProductsV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnTradeAllowanceAgreementMerchandisingEventProductsV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2> value);
-        partial void OnTradeAllowanceAgreementMerchandisingEventProductsV2Changed();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SupplyForecastEntry> _SupplyForecastEntries = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SupplyForecastEntry>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnSupplyForecastEntriesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SupplyForecastEntry> value);
+        partial void OnSupplyForecastEntriesChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

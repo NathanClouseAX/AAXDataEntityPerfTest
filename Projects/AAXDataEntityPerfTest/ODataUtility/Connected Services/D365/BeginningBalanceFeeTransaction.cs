@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public BeginningBalanceFeeTransactionSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<BeginningBalanceFeeTransaction> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for JournalHeader in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.JournalTableSingle JournalHeader
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._JournalHeader == null))
-                {
-                    this._JournalHeader = new global::Microsoft.Dynamics.DataEntities.JournalTableSingle(this.Context, GetPath("JournalHeader"));
-                }
-                return this._JournalHeader;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.JournalTableSingle _JournalHeader;
         /// <summary>
         /// There are no comments for ProjectRole in the schema.
         /// </summary>
@@ -121,7 +100,6 @@ namespace Microsoft.Dynamics.DataEntities
         /// <param name="projectDate">Initial value of ProjectDate.</param>
         /// <param name="salesPrice">Initial value of SalesPrice.</param>
         /// <param name="voucherDate">Initial value of VoucherDate.</param>
-        /// <param name="journalHeader">Initial value of JournalHeader.</param>
         /// <param name="projectRole">Initial value of ProjectRole.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public static BeginningBalanceFeeTransaction CreateBeginningBalanceFeeTransaction(string dataAreaId, 
@@ -132,7 +110,6 @@ namespace Microsoft.Dynamics.DataEntities
                     global::System.DateTimeOffset projectDate, 
                     decimal salesPrice, 
                     global::System.DateTimeOffset voucherDate, 
-                    global::Microsoft.Dynamics.DataEntities.JournalTable journalHeader, 
                     global::Microsoft.Dynamics.DataEntities.Project projectRole)
         {
             BeginningBalanceFeeTransaction beginningBalanceFeeTransaction = new BeginningBalanceFeeTransaction();
@@ -144,11 +121,6 @@ namespace Microsoft.Dynamics.DataEntities
             beginningBalanceFeeTransaction.ProjectDate = projectDate;
             beginningBalanceFeeTransaction.SalesPrice = salesPrice;
             beginningBalanceFeeTransaction.VoucherDate = voucherDate;
-            if ((journalHeader == null))
-            {
-                throw new global::System.ArgumentNullException("journalHeader");
-            }
-            beginningBalanceFeeTransaction.JournalHeader = journalHeader;
             if ((projectRole == null))
             {
                 throw new global::System.ArgumentNullException("projectRole");
@@ -662,28 +634,6 @@ namespace Microsoft.Dynamics.DataEntities
         private string _DefaultDimensionDisplayValue;
         partial void OnDefaultDimensionDisplayValueChanging(string value);
         partial void OnDefaultDimensionDisplayValueChanged();
-        /// <summary>
-        /// There are no comments for Property JournalHeader in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.JournalTable JournalHeader
-        {
-            get
-            {
-                return this._JournalHeader;
-            }
-            set
-            {
-                this.OnJournalHeaderChanging(value);
-                this._JournalHeader = value;
-                this.OnJournalHeaderChanged();
-                this.OnPropertyChanged("JournalHeader");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.JournalTable _JournalHeader;
-        partial void OnJournalHeaderChanging(global::Microsoft.Dynamics.DataEntities.JournalTable value);
-        partial void OnJournalHeaderChanged();
         /// <summary>
         /// There are no comments for Property ProjectRole in the schema.
         /// </summary>

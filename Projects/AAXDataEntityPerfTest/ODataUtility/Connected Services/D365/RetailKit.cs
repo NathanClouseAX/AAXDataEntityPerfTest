@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for RetailKitComponent in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailKitComponent> RetailKitComponent
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._RetailKitComponent == null))
-                {
-                    this._RetailKitComponent = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailKitComponent>(GetPath("RetailKitComponent"));
-                }
-                return this._RetailKitComponent;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailKitComponent> _RetailKitComponent;
-        /// <summary>
         /// There are no comments for RetailKitOrder in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,6 +55,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailKitOrder> _RetailKitOrder;
+        /// <summary>
+        /// There are no comments for RetailKitComponent in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailKitComponent> RetailKitComponent
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RetailKitComponent == null))
+                {
+                    this._RetailKitComponent = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailKitComponent>(GetPath("RetailKitComponent"));
+                }
+                return this._RetailKitComponent;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailKitComponent> _RetailKitComponent;
     }
         /// <summary>
         /// There are no comments for RetailKit in the schema.
@@ -187,28 +187,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDiscontinueKitChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> value);
         partial void OnDiscontinueKitChanged();
         /// <summary>
-        /// There are no comments for Property RetailKitComponent in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailKitComponent> RetailKitComponent
-        {
-            get
-            {
-                return this._RetailKitComponent;
-            }
-            set
-            {
-                this.OnRetailKitComponentChanging(value);
-                this._RetailKitComponent = value;
-                this.OnRetailKitComponentChanged();
-                this.OnPropertyChanged("RetailKitComponent");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailKitComponent> _RetailKitComponent = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailKitComponent>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRetailKitComponentChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailKitComponent> value);
-        partial void OnRetailKitComponentChanged();
-        /// <summary>
         /// There are no comments for Property RetailKitOrder in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -230,6 +208,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailKitOrder> _RetailKitOrder = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailKitOrder>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnRetailKitOrderChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailKitOrder> value);
         partial void OnRetailKitOrderChanged();
+        /// <summary>
+        /// There are no comments for Property RetailKitComponent in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailKitComponent> RetailKitComponent
+        {
+            get
+            {
+                return this._RetailKitComponent;
+            }
+            set
+            {
+                this.OnRetailKitComponentChanging(value);
+                this._RetailKitComponent = value;
+                this.OnRetailKitComponentChanged();
+                this.OnPropertyChanged("RetailKitComponent");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailKitComponent> _RetailKitComponent = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailKitComponent>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRetailKitComponentChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailKitComponent> value);
+        partial void OnRetailKitComponentChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

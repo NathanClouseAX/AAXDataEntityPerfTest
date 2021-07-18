@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,48 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for MainAccountLegalEntity in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.MainAccountLegalEntity> MainAccountLegalEntity
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._MainAccountLegalEntity == null))
-                {
-                    this._MainAccountLegalEntity = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.MainAccountLegalEntity>(GetPath("MainAccountLegalEntity"));
-                }
-                return this._MainAccountLegalEntity;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.MainAccountLegalEntity> _MainAccountLegalEntity;
-        /// <summary>
-        /// There are no comments for ExchangeRateTypes in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ExchangeRateCDSEntity> ExchangeRateTypes
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ExchangeRateTypes == null))
-                {
-                    this._ExchangeRateTypes = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ExchangeRateCDSEntity>(GetPath("ExchangeRateTypes"));
-                }
-                return this._ExchangeRateTypes;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ExchangeRateCDSEntity> _ExchangeRateTypes;
-        /// <summary>
         /// There are no comments for MainAccount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -97,6 +55,48 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.MainAccount> _MainAccount;
+        /// <summary>
+        /// There are no comments for ExchangeRateTypes in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ExchangeRate> ExchangeRateTypes
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ExchangeRateTypes == null))
+                {
+                    this._ExchangeRateTypes = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ExchangeRate>(GetPath("ExchangeRateTypes"));
+                }
+                return this._ExchangeRateTypes;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ExchangeRate> _ExchangeRateTypes;
+        /// <summary>
+        /// There are no comments for MainAccountLegalEntity in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.MainAccountLegalEntity> MainAccountLegalEntity
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._MainAccountLegalEntity == null))
+                {
+                    this._MainAccountLegalEntity = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.MainAccountLegalEntity>(GetPath("MainAccountLegalEntity"));
+                }
+                return this._MainAccountLegalEntity;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.MainAccountLegalEntity> _MainAccountLegalEntity;
     }
         /// <summary>
         /// There are no comments for ExchangeRateType in the schema.
@@ -164,50 +164,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDescriptionChanging(string value);
         partial void OnDescriptionChanged();
         /// <summary>
-        /// There are no comments for Property MainAccountLegalEntity in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.MainAccountLegalEntity> MainAccountLegalEntity
-        {
-            get
-            {
-                return this._MainAccountLegalEntity;
-            }
-            set
-            {
-                this.OnMainAccountLegalEntityChanging(value);
-                this._MainAccountLegalEntity = value;
-                this.OnMainAccountLegalEntityChanged();
-                this.OnPropertyChanged("MainAccountLegalEntity");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.MainAccountLegalEntity> _MainAccountLegalEntity = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.MainAccountLegalEntity>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnMainAccountLegalEntityChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.MainAccountLegalEntity> value);
-        partial void OnMainAccountLegalEntityChanged();
-        /// <summary>
-        /// There are no comments for Property ExchangeRateTypes in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ExchangeRateCDSEntity> ExchangeRateTypes
-        {
-            get
-            {
-                return this._ExchangeRateTypes;
-            }
-            set
-            {
-                this.OnExchangeRateTypesChanging(value);
-                this._ExchangeRateTypes = value;
-                this.OnExchangeRateTypesChanged();
-                this.OnPropertyChanged("ExchangeRateTypes");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ExchangeRateCDSEntity> _ExchangeRateTypes = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ExchangeRateCDSEntity>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnExchangeRateTypesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ExchangeRateCDSEntity> value);
-        partial void OnExchangeRateTypesChanged();
-        /// <summary>
         /// There are no comments for Property MainAccount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -229,6 +185,50 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.MainAccount> _MainAccount = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.MainAccount>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnMainAccountChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.MainAccount> value);
         partial void OnMainAccountChanged();
+        /// <summary>
+        /// There are no comments for Property ExchangeRateTypes in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ExchangeRate> ExchangeRateTypes
+        {
+            get
+            {
+                return this._ExchangeRateTypes;
+            }
+            set
+            {
+                this.OnExchangeRateTypesChanging(value);
+                this._ExchangeRateTypes = value;
+                this.OnExchangeRateTypesChanged();
+                this.OnPropertyChanged("ExchangeRateTypes");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ExchangeRate> _ExchangeRateTypes = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ExchangeRate>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnExchangeRateTypesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ExchangeRate> value);
+        partial void OnExchangeRateTypesChanged();
+        /// <summary>
+        /// There are no comments for Property MainAccountLegalEntity in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.MainAccountLegalEntity> MainAccountLegalEntity
+        {
+            get
+            {
+                return this._MainAccountLegalEntity;
+            }
+            set
+            {
+                this.OnMainAccountLegalEntityChanging(value);
+                this._MainAccountLegalEntity = value;
+                this.OnMainAccountLegalEntityChanged();
+                this.OnPropertyChanged("MainAccountLegalEntity");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.MainAccountLegalEntity> _MainAccountLegalEntity = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.MainAccountLegalEntity>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnMainAccountLegalEntityChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.MainAccountLegalEntity> value);
+        partial void OnMainAccountLegalEntityChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

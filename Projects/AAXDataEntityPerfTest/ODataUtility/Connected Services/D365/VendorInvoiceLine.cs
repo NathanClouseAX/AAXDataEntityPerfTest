@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,10 +35,10 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for InvoiceSubLineV2 in the schema.
+        /// There are no comments for InvoiceSubLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InvoiceSubLineV2> InvoiceSubLineV2
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InvoiceSubLine> InvoiceSubLine
         {
             get
             {
@@ -46,15 +46,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._InvoiceSubLineV2 == null))
+                if ((this._InvoiceSubLine == null))
                 {
-                    this._InvoiceSubLineV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.InvoiceSubLineV2>(GetPath("InvoiceSubLineV2"));
+                    this._InvoiceSubLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.InvoiceSubLine>(GetPath("InvoiceSubLine"));
                 }
-                return this._InvoiceSubLineV2;
+                return this._InvoiceSubLine;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InvoiceSubLineV2> _InvoiceSubLineV2;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InvoiceSubLine> _InvoiceSubLine;
         /// <summary>
         /// There are no comments for DimensionCombination in the schema.
         /// </summary>
@@ -119,10 +119,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionSetSingle _DimensionSet;
         /// <summary>
-        /// There are no comments for InvoiceSubLine in the schema.
+        /// There are no comments for InvoiceSubLineV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InvoiceSubLine> InvoiceSubLine
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InvoiceSubLineV2> InvoiceSubLineV2
         {
             get
             {
@@ -130,15 +130,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._InvoiceSubLine == null))
+                if ((this._InvoiceSubLineV2 == null))
                 {
-                    this._InvoiceSubLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.InvoiceSubLine>(GetPath("InvoiceSubLine"));
+                    this._InvoiceSubLineV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.InvoiceSubLineV2>(GetPath("InvoiceSubLineV2"));
                 }
-                return this._InvoiceSubLine;
+                return this._InvoiceSubLineV2;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InvoiceSubLine> _InvoiceSubLine;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InvoiceSubLineV2> _InvoiceSubLineV2;
     }
         /// <summary>
         /// There are no comments for VendorInvoiceLine in the schema.
@@ -2366,27 +2366,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDiotOperationTypeChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.VendorOperationType_MX> value);
         partial void OnDiotOperationTypeChanged();
         /// <summary>
-        /// There are no comments for Property InvoiceSubLineV2 in the schema.
+        /// There are no comments for Property InvoiceSubLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InvoiceSubLineV2> InvoiceSubLineV2
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InvoiceSubLine> InvoiceSubLine
         {
             get
             {
-                return this._InvoiceSubLineV2;
+                return this._InvoiceSubLine;
             }
             set
             {
-                this.OnInvoiceSubLineV2Changing(value);
-                this._InvoiceSubLineV2 = value;
-                this.OnInvoiceSubLineV2Changed();
-                this.OnPropertyChanged("InvoiceSubLineV2");
+                this.OnInvoiceSubLineChanging(value);
+                this._InvoiceSubLine = value;
+                this.OnInvoiceSubLineChanged();
+                this.OnPropertyChanged("InvoiceSubLine");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InvoiceSubLineV2> _InvoiceSubLineV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InvoiceSubLineV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnInvoiceSubLineV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InvoiceSubLineV2> value);
-        partial void OnInvoiceSubLineV2Changed();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InvoiceSubLine> _InvoiceSubLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InvoiceSubLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnInvoiceSubLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InvoiceSubLine> value);
+        partial void OnInvoiceSubLineChanged();
         /// <summary>
         /// There are no comments for Property DimensionCombination in the schema.
         /// </summary>
@@ -2454,27 +2454,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDimensionSetChanging(global::Microsoft.Dynamics.DataEntities.DimensionSet value);
         partial void OnDimensionSetChanged();
         /// <summary>
-        /// There are no comments for Property InvoiceSubLine in the schema.
+        /// There are no comments for Property InvoiceSubLineV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InvoiceSubLine> InvoiceSubLine
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InvoiceSubLineV2> InvoiceSubLineV2
         {
             get
             {
-                return this._InvoiceSubLine;
+                return this._InvoiceSubLineV2;
             }
             set
             {
-                this.OnInvoiceSubLineChanging(value);
-                this._InvoiceSubLine = value;
-                this.OnInvoiceSubLineChanged();
-                this.OnPropertyChanged("InvoiceSubLine");
+                this.OnInvoiceSubLineV2Changing(value);
+                this._InvoiceSubLineV2 = value;
+                this.OnInvoiceSubLineV2Changed();
+                this.OnPropertyChanged("InvoiceSubLineV2");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InvoiceSubLine> _InvoiceSubLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InvoiceSubLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnInvoiceSubLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InvoiceSubLine> value);
-        partial void OnInvoiceSubLineChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InvoiceSubLineV2> _InvoiceSubLineV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InvoiceSubLineV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnInvoiceSubLineV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InvoiceSubLineV2> value);
+        partial void OnInvoiceSubLineV2Changed();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

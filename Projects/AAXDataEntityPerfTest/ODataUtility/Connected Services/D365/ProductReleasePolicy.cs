@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for ProductReleasePolicyLegalEntityRules in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductReleasePolicyLegalEntityRule> ProductReleasePolicyLegalEntityRules
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ProductReleasePolicyLegalEntityRules == null))
-                {
-                    this._ProductReleasePolicyLegalEntityRules = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductReleasePolicyLegalEntityRule>(GetPath("ProductReleasePolicyLegalEntityRules"));
-                }
-                return this._ProductReleasePolicyLegalEntityRules;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductReleasePolicyLegalEntityRule> _ProductReleasePolicyLegalEntityRules;
-        /// <summary>
         /// There are no comments for EngineeringProductCategoryDetails in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,6 +55,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetails> _EngineeringProductCategoryDetails;
+        /// <summary>
+        /// There are no comments for ProductReleasePolicyLegalEntityRules in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductReleasePolicyLegalEntityRule> ProductReleasePolicyLegalEntityRules
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ProductReleasePolicyLegalEntityRules == null))
+                {
+                    this._ProductReleasePolicyLegalEntityRules = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductReleasePolicyLegalEntityRule>(GetPath("ProductReleasePolicyLegalEntityRules"));
+                }
+                return this._ProductReleasePolicyLegalEntityRules;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductReleasePolicyLegalEntityRule> _ProductReleasePolicyLegalEntityRules;
     }
         /// <summary>
         /// There are no comments for ProductReleasePolicy in the schema.
@@ -231,28 +231,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnPolicyDescriptionChanging(string value);
         partial void OnPolicyDescriptionChanged();
         /// <summary>
-        /// There are no comments for Property ProductReleasePolicyLegalEntityRules in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductReleasePolicyLegalEntityRule> ProductReleasePolicyLegalEntityRules
-        {
-            get
-            {
-                return this._ProductReleasePolicyLegalEntityRules;
-            }
-            set
-            {
-                this.OnProductReleasePolicyLegalEntityRulesChanging(value);
-                this._ProductReleasePolicyLegalEntityRules = value;
-                this.OnProductReleasePolicyLegalEntityRulesChanged();
-                this.OnPropertyChanged("ProductReleasePolicyLegalEntityRules");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductReleasePolicyLegalEntityRule> _ProductReleasePolicyLegalEntityRules = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductReleasePolicyLegalEntityRule>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnProductReleasePolicyLegalEntityRulesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductReleasePolicyLegalEntityRule> value);
-        partial void OnProductReleasePolicyLegalEntityRulesChanged();
-        /// <summary>
         /// There are no comments for Property EngineeringProductCategoryDetails in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -274,6 +252,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetails> _EngineeringProductCategoryDetails = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetails>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnEngineeringProductCategoryDetailsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetails> value);
         partial void OnEngineeringProductCategoryDetailsChanged();
+        /// <summary>
+        /// There are no comments for Property ProductReleasePolicyLegalEntityRules in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductReleasePolicyLegalEntityRule> ProductReleasePolicyLegalEntityRules
+        {
+            get
+            {
+                return this._ProductReleasePolicyLegalEntityRules;
+            }
+            set
+            {
+                this.OnProductReleasePolicyLegalEntityRulesChanging(value);
+                this._ProductReleasePolicyLegalEntityRules = value;
+                this.OnProductReleasePolicyLegalEntityRulesChanged();
+                this.OnPropertyChanged("ProductReleasePolicyLegalEntityRules");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductReleasePolicyLegalEntityRule> _ProductReleasePolicyLegalEntityRules = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductReleasePolicyLegalEntityRule>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnProductReleasePolicyLegalEntityRulesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductReleasePolicyLegalEntityRule> value);
+        partial void OnProductReleasePolicyLegalEntityRulesChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

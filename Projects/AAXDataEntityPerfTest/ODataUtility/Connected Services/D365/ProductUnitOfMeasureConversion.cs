@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,48 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public ProductUnitOfMeasureConversionSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ProductUnitOfMeasureConversion> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for FromUnitOfMeasure in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.UnitOfMeasureSingle FromUnitOfMeasure
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._FromUnitOfMeasure == null))
-                {
-                    this._FromUnitOfMeasure = new global::Microsoft.Dynamics.DataEntities.UnitOfMeasureSingle(this.Context, GetPath("FromUnitOfMeasure"));
-                }
-                return this._FromUnitOfMeasure;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.UnitOfMeasureSingle _FromUnitOfMeasure;
-        /// <summary>
-        /// There are no comments for ToUnitOfMeasure in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.UnitOfMeasureSingle ToUnitOfMeasure
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ToUnitOfMeasure == null))
-                {
-                    this._ToUnitOfMeasure = new global::Microsoft.Dynamics.DataEntities.UnitOfMeasureSingle(this.Context, GetPath("ToUnitOfMeasure"));
-                }
-                return this._ToUnitOfMeasure;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.UnitOfMeasureSingle _ToUnitOfMeasure;
         /// <summary>
         /// There are no comments for EveryProduct in the schema.
         /// </summary>
@@ -121,8 +79,6 @@ namespace Microsoft.Dynamics.DataEntities
         /// <param name="numerator">Initial value of Numerator.</param>
         /// <param name="factor">Initial value of Factor.</param>
         /// <param name="denominator">Initial value of Denominator.</param>
-        /// <param name="fromUnitOfMeasure">Initial value of FromUnitOfMeasure.</param>
-        /// <param name="toUnitOfMeasure">Initial value of ToUnitOfMeasure.</param>
         /// <param name="everyProduct">Initial value of EveryProduct.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public static ProductUnitOfMeasureConversion CreateProductUnitOfMeasureConversion(string fromUnitSymbol, 
@@ -133,8 +89,6 @@ namespace Microsoft.Dynamics.DataEntities
                     int numerator, 
                     decimal factor, 
                     int denominator, 
-                    global::Microsoft.Dynamics.DataEntities.UnitOfMeasure fromUnitOfMeasure, 
-                    global::Microsoft.Dynamics.DataEntities.UnitOfMeasure toUnitOfMeasure, 
                     global::Microsoft.Dynamics.DataEntities.EveryProduct everyProduct)
         {
             ProductUnitOfMeasureConversion productUnitOfMeasureConversion = new ProductUnitOfMeasureConversion();
@@ -146,16 +100,6 @@ namespace Microsoft.Dynamics.DataEntities
             productUnitOfMeasureConversion.Numerator = numerator;
             productUnitOfMeasureConversion.Factor = factor;
             productUnitOfMeasureConversion.Denominator = denominator;
-            if ((fromUnitOfMeasure == null))
-            {
-                throw new global::System.ArgumentNullException("fromUnitOfMeasure");
-            }
-            productUnitOfMeasureConversion.FromUnitOfMeasure = fromUnitOfMeasure;
-            if ((toUnitOfMeasure == null))
-            {
-                throw new global::System.ArgumentNullException("toUnitOfMeasure");
-            }
-            productUnitOfMeasureConversion.ToUnitOfMeasure = toUnitOfMeasure;
             if ((everyProduct == null))
             {
                 throw new global::System.ArgumentNullException("everyProduct");
@@ -361,50 +305,6 @@ namespace Microsoft.Dynamics.DataEntities
         private int _Denominator;
         partial void OnDenominatorChanging(int value);
         partial void OnDenominatorChanged();
-        /// <summary>
-        /// There are no comments for Property FromUnitOfMeasure in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.UnitOfMeasure FromUnitOfMeasure
-        {
-            get
-            {
-                return this._FromUnitOfMeasure;
-            }
-            set
-            {
-                this.OnFromUnitOfMeasureChanging(value);
-                this._FromUnitOfMeasure = value;
-                this.OnFromUnitOfMeasureChanged();
-                this.OnPropertyChanged("FromUnitOfMeasure");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.UnitOfMeasure _FromUnitOfMeasure;
-        partial void OnFromUnitOfMeasureChanging(global::Microsoft.Dynamics.DataEntities.UnitOfMeasure value);
-        partial void OnFromUnitOfMeasureChanged();
-        /// <summary>
-        /// There are no comments for Property ToUnitOfMeasure in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.UnitOfMeasure ToUnitOfMeasure
-        {
-            get
-            {
-                return this._ToUnitOfMeasure;
-            }
-            set
-            {
-                this.OnToUnitOfMeasureChanging(value);
-                this._ToUnitOfMeasure = value;
-                this.OnToUnitOfMeasureChanged();
-                this.OnPropertyChanged("ToUnitOfMeasure");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.UnitOfMeasure _ToUnitOfMeasure;
-        partial void OnToUnitOfMeasureChanging(global::Microsoft.Dynamics.DataEntities.UnitOfMeasure value);
-        partial void OnToUnitOfMeasureChanged();
         /// <summary>
         /// There are no comments for Property EveryProduct in the schema.
         /// </summary>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -56,27 +56,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductV2> _ReleasedProductsV2;
         /// <summary>
-        /// There are no comments for OpenPurchaseLineDiscountJournalLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.OpenPurchaseLineDiscountJournalLine> OpenPurchaseLineDiscountJournalLine
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._OpenPurchaseLineDiscountJournalLine == null))
-                {
-                    this._OpenPurchaseLineDiscountJournalLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.OpenPurchaseLineDiscountJournalLine>(GetPath("OpenPurchaseLineDiscountJournalLine"));
-                }
-                return this._OpenPurchaseLineDiscountJournalLine;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.OpenPurchaseLineDiscountJournalLine> _OpenPurchaseLineDiscountJournalLine;
-        /// <summary>
         /// There are no comments for OpenSalesLineDiscountJournalLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -97,6 +76,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.OpenSalesLineDiscountJournalLine> _OpenSalesLineDiscountJournalLine;
+        /// <summary>
+        /// There are no comments for OpenPurchaseLineDiscountJournalLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.OpenPurchaseLineDiscountJournalLine> OpenPurchaseLineDiscountJournalLine
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._OpenPurchaseLineDiscountJournalLine == null))
+                {
+                    this._OpenPurchaseLineDiscountJournalLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.OpenPurchaseLineDiscountJournalLine>(GetPath("OpenPurchaseLineDiscountJournalLine"));
+                }
+                return this._OpenPurchaseLineDiscountJournalLine;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.OpenPurchaseLineDiscountJournalLine> _OpenPurchaseLineDiscountJournalLine;
     }
         /// <summary>
         /// There are no comments for LineDiscountProductGroup in the schema.
@@ -211,28 +211,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnReleasedProductsV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductV2> value);
         partial void OnReleasedProductsV2Changed();
         /// <summary>
-        /// There are no comments for Property OpenPurchaseLineDiscountJournalLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.OpenPurchaseLineDiscountJournalLine> OpenPurchaseLineDiscountJournalLine
-        {
-            get
-            {
-                return this._OpenPurchaseLineDiscountJournalLine;
-            }
-            set
-            {
-                this.OnOpenPurchaseLineDiscountJournalLineChanging(value);
-                this._OpenPurchaseLineDiscountJournalLine = value;
-                this.OnOpenPurchaseLineDiscountJournalLineChanged();
-                this.OnPropertyChanged("OpenPurchaseLineDiscountJournalLine");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.OpenPurchaseLineDiscountJournalLine> _OpenPurchaseLineDiscountJournalLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.OpenPurchaseLineDiscountJournalLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnOpenPurchaseLineDiscountJournalLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.OpenPurchaseLineDiscountJournalLine> value);
-        partial void OnOpenPurchaseLineDiscountJournalLineChanged();
-        /// <summary>
         /// There are no comments for Property OpenSalesLineDiscountJournalLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -254,6 +232,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.OpenSalesLineDiscountJournalLine> _OpenSalesLineDiscountJournalLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.OpenSalesLineDiscountJournalLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnOpenSalesLineDiscountJournalLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.OpenSalesLineDiscountJournalLine> value);
         partial void OnOpenSalesLineDiscountJournalLineChanged();
+        /// <summary>
+        /// There are no comments for Property OpenPurchaseLineDiscountJournalLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.OpenPurchaseLineDiscountJournalLine> OpenPurchaseLineDiscountJournalLine
+        {
+            get
+            {
+                return this._OpenPurchaseLineDiscountJournalLine;
+            }
+            set
+            {
+                this.OnOpenPurchaseLineDiscountJournalLineChanging(value);
+                this._OpenPurchaseLineDiscountJournalLine = value;
+                this.OnOpenPurchaseLineDiscountJournalLineChanged();
+                this.OnPropertyChanged("OpenPurchaseLineDiscountJournalLine");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.OpenPurchaseLineDiscountJournalLine> _OpenPurchaseLineDiscountJournalLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.OpenPurchaseLineDiscountJournalLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnOpenPurchaseLineDiscountJournalLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.OpenPurchaseLineDiscountJournalLine> value);
+        partial void OnOpenPurchaseLineDiscountJournalLineChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

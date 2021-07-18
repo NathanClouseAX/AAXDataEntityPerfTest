@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,6 +34,27 @@ namespace Microsoft.Dynamics.DataEntities
         public CustomerPriorityClassificationGroupEntitySingle(global::Microsoft.OData.Client.DataServiceQuerySingle<CustomerPriorityClassificationGroupEntity> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for AAXCustomerV3 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AAXCustomerV3> AAXCustomerV3
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._AAXCustomerV3 == null))
+                {
+                    this._AAXCustomerV3 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AAXCustomerV3>(GetPath("AAXCustomerV3"));
+                }
+                return this._AAXCustomerV3;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AAXCustomerV3> _AAXCustomerV3;
         /// <summary>
         /// There are no comments for CustomerV3 in the schema.
         /// </summary>
@@ -146,6 +167,28 @@ namespace Microsoft.Dynamics.DataEntities
         private string _Description;
         partial void OnDescriptionChanging(string value);
         partial void OnDescriptionChanged();
+        /// <summary>
+        /// There are no comments for Property AAXCustomerV3 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AAXCustomerV3> AAXCustomerV3
+        {
+            get
+            {
+                return this._AAXCustomerV3;
+            }
+            set
+            {
+                this.OnAAXCustomerV3Changing(value);
+                this._AAXCustomerV3 = value;
+                this.OnAAXCustomerV3Changed();
+                this.OnPropertyChanged("AAXCustomerV3");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AAXCustomerV3> _AAXCustomerV3 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AAXCustomerV3>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnAAXCustomerV3Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AAXCustomerV3> value);
+        partial void OnAAXCustomerV3Changed();
         /// <summary>
         /// There are no comments for Property CustomerV3 in the schema.
         /// </summary>

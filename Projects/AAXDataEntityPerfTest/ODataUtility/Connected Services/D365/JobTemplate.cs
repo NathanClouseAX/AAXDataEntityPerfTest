@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,6 +35,27 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
+        /// There are no comments for JobTemplateResponsibilities in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobTemplateResponsibility> JobTemplateResponsibilities
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._JobTemplateResponsibilities == null))
+                {
+                    this._JobTemplateResponsibilities = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.JobTemplateResponsibility>(GetPath("JobTemplateResponsibilities"));
+                }
+                return this._JobTemplateResponsibilities;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobTemplateResponsibility> _JobTemplateResponsibilities;
+        /// <summary>
         /// There are no comments for JobTemplateScreenings in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -56,6 +77,48 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobTemplateScreening> _JobTemplateScreenings;
         /// <summary>
+        /// There are no comments for JobADARequirement in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.JobTemplateADARequirementSingle JobADARequirement
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._JobADARequirement == null))
+                {
+                    this._JobADARequirement = new global::Microsoft.Dynamics.DataEntities.JobTemplateADARequirementSingle(this.Context, GetPath("JobADARequirement"));
+                }
+                return this._JobADARequirement;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.JobTemplateADARequirementSingle _JobADARequirement;
+        /// <summary>
+        /// There are no comments for JobTemplateTasks in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobTemplateTask> JobTemplateTasks
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._JobTemplateTasks == null))
+                {
+                    this._JobTemplateTasks = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.JobTemplateTask>(GetPath("JobTemplateTasks"));
+                }
+                return this._JobTemplateTasks;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobTemplateTask> _JobTemplateTasks;
+        /// <summary>
         /// There are no comments for JobTemplateCertificates in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,27 +139,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobTemplateCertificate> _JobTemplateCertificates;
-        /// <summary>
-        /// There are no comments for JobTemplateEducationDisciplines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobTemplateEducationDiscipline> JobTemplateEducationDisciplines
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._JobTemplateEducationDisciplines == null))
-                {
-                    this._JobTemplateEducationDisciplines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.JobTemplateEducationDiscipline>(GetPath("JobTemplateEducationDisciplines"));
-                }
-                return this._JobTemplateEducationDisciplines;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobTemplateEducationDiscipline> _JobTemplateEducationDisciplines;
         /// <summary>
         /// There are no comments for JobTemplateExams in the schema.
         /// </summary>
@@ -140,10 +182,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobTemplateSkill> _JobTemplateSkills;
         /// <summary>
-        /// There are no comments for JobTemplateResponsibilities in the schema.
+        /// There are no comments for JobTemplateEducationDisciplines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobTemplateResponsibility> JobTemplateResponsibilities
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobTemplateEducationDiscipline> JobTemplateEducationDisciplines
         {
             get
             {
@@ -151,57 +193,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._JobTemplateResponsibilities == null))
+                if ((this._JobTemplateEducationDisciplines == null))
                 {
-                    this._JobTemplateResponsibilities = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.JobTemplateResponsibility>(GetPath("JobTemplateResponsibilities"));
+                    this._JobTemplateEducationDisciplines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.JobTemplateEducationDiscipline>(GetPath("JobTemplateEducationDisciplines"));
                 }
-                return this._JobTemplateResponsibilities;
+                return this._JobTemplateEducationDisciplines;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobTemplateResponsibility> _JobTemplateResponsibilities;
-        /// <summary>
-        /// There are no comments for JobTemplateTasks in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobTemplateTask> JobTemplateTasks
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._JobTemplateTasks == null))
-                {
-                    this._JobTemplateTasks = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.JobTemplateTask>(GetPath("JobTemplateTasks"));
-                }
-                return this._JobTemplateTasks;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobTemplateTask> _JobTemplateTasks;
-        /// <summary>
-        /// There are no comments for JobADARequirement in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.JobTemplateADARequirementSingle JobADARequirement
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._JobADARequirement == null))
-                {
-                    this._JobADARequirement = new global::Microsoft.Dynamics.DataEntities.JobTemplateADARequirementSingle(this.Context, GetPath("JobADARequirement"));
-                }
-                return this._JobADARequirement;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.JobTemplateADARequirementSingle _JobADARequirement;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobTemplateEducationDiscipline> _JobTemplateEducationDisciplines;
     }
         /// <summary>
         /// There are no comments for JobTemplate in the schema.
@@ -292,6 +292,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnNoteChanging(string value);
         partial void OnNoteChanged();
         /// <summary>
+        /// There are no comments for Property JobTemplateResponsibilities in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateResponsibility> JobTemplateResponsibilities
+        {
+            get
+            {
+                return this._JobTemplateResponsibilities;
+            }
+            set
+            {
+                this.OnJobTemplateResponsibilitiesChanging(value);
+                this._JobTemplateResponsibilities = value;
+                this.OnJobTemplateResponsibilitiesChanged();
+                this.OnPropertyChanged("JobTemplateResponsibilities");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateResponsibility> _JobTemplateResponsibilities = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateResponsibility>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnJobTemplateResponsibilitiesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateResponsibility> value);
+        partial void OnJobTemplateResponsibilitiesChanged();
+        /// <summary>
         /// There are no comments for Property JobTemplateScreenings in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -314,6 +336,50 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnJobTemplateScreeningsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateScreening> value);
         partial void OnJobTemplateScreeningsChanged();
         /// <summary>
+        /// There are no comments for Property JobADARequirement in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.JobTemplateADARequirement JobADARequirement
+        {
+            get
+            {
+                return this._JobADARequirement;
+            }
+            set
+            {
+                this.OnJobADARequirementChanging(value);
+                this._JobADARequirement = value;
+                this.OnJobADARequirementChanged();
+                this.OnPropertyChanged("JobADARequirement");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.JobTemplateADARequirement _JobADARequirement;
+        partial void OnJobADARequirementChanging(global::Microsoft.Dynamics.DataEntities.JobTemplateADARequirement value);
+        partial void OnJobADARequirementChanged();
+        /// <summary>
+        /// There are no comments for Property JobTemplateTasks in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateTask> JobTemplateTasks
+        {
+            get
+            {
+                return this._JobTemplateTasks;
+            }
+            set
+            {
+                this.OnJobTemplateTasksChanging(value);
+                this._JobTemplateTasks = value;
+                this.OnJobTemplateTasksChanged();
+                this.OnPropertyChanged("JobTemplateTasks");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateTask> _JobTemplateTasks = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateTask>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnJobTemplateTasksChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateTask> value);
+        partial void OnJobTemplateTasksChanged();
+        /// <summary>
         /// There are no comments for Property JobTemplateCertificates in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -335,28 +401,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateCertificate> _JobTemplateCertificates = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateCertificate>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnJobTemplateCertificatesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateCertificate> value);
         partial void OnJobTemplateCertificatesChanged();
-        /// <summary>
-        /// There are no comments for Property JobTemplateEducationDisciplines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateEducationDiscipline> JobTemplateEducationDisciplines
-        {
-            get
-            {
-                return this._JobTemplateEducationDisciplines;
-            }
-            set
-            {
-                this.OnJobTemplateEducationDisciplinesChanging(value);
-                this._JobTemplateEducationDisciplines = value;
-                this.OnJobTemplateEducationDisciplinesChanged();
-                this.OnPropertyChanged("JobTemplateEducationDisciplines");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateEducationDiscipline> _JobTemplateEducationDisciplines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateEducationDiscipline>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnJobTemplateEducationDisciplinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateEducationDiscipline> value);
-        partial void OnJobTemplateEducationDisciplinesChanged();
         /// <summary>
         /// There are no comments for Property JobTemplateExams in the schema.
         /// </summary>
@@ -402,71 +446,27 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnJobTemplateSkillsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateSkill> value);
         partial void OnJobTemplateSkillsChanged();
         /// <summary>
-        /// There are no comments for Property JobTemplateResponsibilities in the schema.
+        /// There are no comments for Property JobTemplateEducationDisciplines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateResponsibility> JobTemplateResponsibilities
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateEducationDiscipline> JobTemplateEducationDisciplines
         {
             get
             {
-                return this._JobTemplateResponsibilities;
+                return this._JobTemplateEducationDisciplines;
             }
             set
             {
-                this.OnJobTemplateResponsibilitiesChanging(value);
-                this._JobTemplateResponsibilities = value;
-                this.OnJobTemplateResponsibilitiesChanged();
-                this.OnPropertyChanged("JobTemplateResponsibilities");
+                this.OnJobTemplateEducationDisciplinesChanging(value);
+                this._JobTemplateEducationDisciplines = value;
+                this.OnJobTemplateEducationDisciplinesChanged();
+                this.OnPropertyChanged("JobTemplateEducationDisciplines");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateResponsibility> _JobTemplateResponsibilities = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateResponsibility>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnJobTemplateResponsibilitiesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateResponsibility> value);
-        partial void OnJobTemplateResponsibilitiesChanged();
-        /// <summary>
-        /// There are no comments for Property JobTemplateTasks in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateTask> JobTemplateTasks
-        {
-            get
-            {
-                return this._JobTemplateTasks;
-            }
-            set
-            {
-                this.OnJobTemplateTasksChanging(value);
-                this._JobTemplateTasks = value;
-                this.OnJobTemplateTasksChanged();
-                this.OnPropertyChanged("JobTemplateTasks");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateTask> _JobTemplateTasks = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateTask>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnJobTemplateTasksChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateTask> value);
-        partial void OnJobTemplateTasksChanged();
-        /// <summary>
-        /// There are no comments for Property JobADARequirement in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.JobTemplateADARequirement JobADARequirement
-        {
-            get
-            {
-                return this._JobADARequirement;
-            }
-            set
-            {
-                this.OnJobADARequirementChanging(value);
-                this._JobADARequirement = value;
-                this.OnJobADARequirementChanged();
-                this.OnPropertyChanged("JobADARequirement");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.JobTemplateADARequirement _JobADARequirement;
-        partial void OnJobADARequirementChanging(global::Microsoft.Dynamics.DataEntities.JobTemplateADARequirement value);
-        partial void OnJobADARequirementChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateEducationDiscipline> _JobTemplateEducationDisciplines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateEducationDiscipline>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnJobTemplateEducationDisciplinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateEducationDiscipline> value);
+        partial void OnJobTemplateEducationDisciplinesChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

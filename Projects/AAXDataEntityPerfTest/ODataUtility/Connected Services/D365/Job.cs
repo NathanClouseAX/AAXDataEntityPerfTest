@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,31 +35,10 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for JobPreferredEducationDisciplines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredEducationDiscipline> JobPreferredEducationDisciplines
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._JobPreferredEducationDisciplines == null))
-                {
-                    this._JobPreferredEducationDisciplines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredEducationDiscipline>(GetPath("JobPreferredEducationDisciplines"));
-                }
-                return this._JobPreferredEducationDisciplines;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredEducationDiscipline> _JobPreferredEducationDisciplines;
-        /// <summary>
         /// There are no comments for JobADARequirement in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ADARequirementReportSingle JobADARequirement
+        public virtual global::Microsoft.Dynamics.DataEntities.JobADARequirementSingle JobADARequirement
         {
             get
             {
@@ -69,81 +48,18 @@ namespace Microsoft.Dynamics.DataEntities
                 }
                 if ((this._JobADARequirement == null))
                 {
-                    this._JobADARequirement = new global::Microsoft.Dynamics.DataEntities.ADARequirementReportSingle(this.Context, GetPath("JobADARequirement"));
+                    this._JobADARequirement = new global::Microsoft.Dynamics.DataEntities.JobADARequirementSingle(this.Context, GetPath("JobADARequirement"));
                 }
                 return this._JobADARequirement;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ADARequirementReportSingle _JobADARequirement;
-        /// <summary>
-        /// There are no comments for JobPreferredSkills in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredSkill> JobPreferredSkills
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._JobPreferredSkills == null))
-                {
-                    this._JobPreferredSkills = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredSkill>(GetPath("JobPreferredSkills"));
-                }
-                return this._JobPreferredSkills;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredSkill> _JobPreferredSkills;
-        /// <summary>
-        /// There are no comments for JobPreferredExam in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredExam> JobPreferredExam
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._JobPreferredExam == null))
-                {
-                    this._JobPreferredExam = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredExam>(GetPath("JobPreferredExam"));
-                }
-                return this._JobPreferredExam;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredExam> _JobPreferredExam;
-        /// <summary>
-        /// There are no comments for CompensationEligibilityRules in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule> CompensationEligibilityRules
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._CompensationEligibilityRules == null))
-                {
-                    this._CompensationEligibilityRules = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule>(GetPath("CompensationEligibilityRules"));
-                }
-                return this._CompensationEligibilityRules;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule> _CompensationEligibilityRules;
+        private global::Microsoft.Dynamics.DataEntities.JobADARequirementSingle _JobADARequirement;
         /// <summary>
         /// There are no comments for Positions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Position> Positions
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PositionDetail> Positions
         {
             get
             {
@@ -153,13 +69,34 @@ namespace Microsoft.Dynamics.DataEntities
                 }
                 if ((this._Positions == null))
                 {
-                    this._Positions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.Position>(GetPath("Positions"));
+                    this._Positions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PositionDetail>(GetPath("Positions"));
                 }
                 return this._Positions;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Position> _Positions;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PositionDetail> _Positions;
+        /// <summary>
+        /// There are no comments for JobTaskAssignments in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobTaskAssignment> JobTaskAssignments
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._JobTaskAssignments == null))
+                {
+                    this._JobTaskAssignments = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.JobTaskAssignment>(GetPath("JobTaskAssignments"));
+                }
+                return this._JobTaskAssignments;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobTaskAssignment> _JobTaskAssignments;
         /// <summary>
         /// There are no comments for JobPreferredCertificates in the schema.
         /// </summary>
@@ -182,6 +119,48 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredCertificate> _JobPreferredCertificates;
         /// <summary>
+        /// There are no comments for CompensationEligibilityRules in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule> CompensationEligibilityRules
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._CompensationEligibilityRules == null))
+                {
+                    this._CompensationEligibilityRules = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule>(GetPath("CompensationEligibilityRules"));
+                }
+                return this._CompensationEligibilityRules;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule> _CompensationEligibilityRules;
+        /// <summary>
+        /// There are no comments for JobPreferredEducationDisciplines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredEducationDiscipline> JobPreferredEducationDisciplines
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._JobPreferredEducationDisciplines == null))
+                {
+                    this._JobPreferredEducationDisciplines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredEducationDiscipline>(GetPath("JobPreferredEducationDisciplines"));
+                }
+                return this._JobPreferredEducationDisciplines;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredEducationDiscipline> _JobPreferredEducationDisciplines;
+        /// <summary>
         /// There are no comments for Details in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -203,6 +182,27 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobDetail> _Details;
         /// <summary>
+        /// There are no comments for JobPreferredSkills in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredSkill> JobPreferredSkills
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._JobPreferredSkills == null))
+                {
+                    this._JobPreferredSkills = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredSkill>(GetPath("JobPreferredSkills"));
+                }
+                return this._JobPreferredSkills;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredSkill> _JobPreferredSkills;
+        /// <summary>
         /// There are no comments for JobResponsibilities in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -223,6 +223,48 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobResponsibility> _JobResponsibilities;
+        /// <summary>
+        /// There are no comments for JobPreferredScreenings in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredScreening> JobPreferredScreenings
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._JobPreferredScreenings == null))
+                {
+                    this._JobPreferredScreenings = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredScreening>(GetPath("JobPreferredScreenings"));
+                }
+                return this._JobPreferredScreenings;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredScreening> _JobPreferredScreenings;
+        /// <summary>
+        /// There are no comments for JobPreferredExam in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredExam> JobPreferredExam
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._JobPreferredExam == null))
+                {
+                    this._JobPreferredExam = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredExam>(GetPath("JobPreferredExam"));
+                }
+                return this._JobPreferredExam;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredExam> _JobPreferredExam;
         /// <summary>
         /// There are no comments for Applications in the schema.
         /// </summary>
@@ -349,48 +391,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.JobTypeSingle _JobType;
-        /// <summary>
-        /// There are no comments for JobPreferredScreenings in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredScreening> JobPreferredScreenings
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._JobPreferredScreenings == null))
-                {
-                    this._JobPreferredScreenings = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredScreening>(GetPath("JobPreferredScreenings"));
-                }
-                return this._JobPreferredScreenings;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredScreening> _JobPreferredScreenings;
-        /// <summary>
-        /// There are no comments for JobTaskAssignments in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobTaskAssignment> JobTaskAssignments
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._JobTaskAssignments == null))
-                {
-                    this._JobTaskAssignments = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.JobTaskAssignment>(GetPath("JobTaskAssignments"));
-                }
-                return this._JobTaskAssignments;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobTaskAssignment> _JobTaskAssignments;
     }
         /// <summary>
         /// There are no comments for Job in the schema.
@@ -853,32 +853,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnJobDescriptionChanging(string value);
         partial void OnJobDescriptionChanged();
         /// <summary>
-        /// There are no comments for Property JobPreferredEducationDisciplines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredEducationDiscipline> JobPreferredEducationDisciplines
-        {
-            get
-            {
-                return this._JobPreferredEducationDisciplines;
-            }
-            set
-            {
-                this.OnJobPreferredEducationDisciplinesChanging(value);
-                this._JobPreferredEducationDisciplines = value;
-                this.OnJobPreferredEducationDisciplinesChanged();
-                this.OnPropertyChanged("JobPreferredEducationDisciplines");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredEducationDiscipline> _JobPreferredEducationDisciplines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredEducationDiscipline>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnJobPreferredEducationDisciplinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredEducationDiscipline> value);
-        partial void OnJobPreferredEducationDisciplinesChanged();
-        /// <summary>
         /// There are no comments for Property JobADARequirement in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ADARequirementReport JobADARequirement
+        public virtual global::Microsoft.Dynamics.DataEntities.JobADARequirement JobADARequirement
         {
             get
             {
@@ -893,80 +871,14 @@ namespace Microsoft.Dynamics.DataEntities
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ADARequirementReport _JobADARequirement;
-        partial void OnJobADARequirementChanging(global::Microsoft.Dynamics.DataEntities.ADARequirementReport value);
+        private global::Microsoft.Dynamics.DataEntities.JobADARequirement _JobADARequirement;
+        partial void OnJobADARequirementChanging(global::Microsoft.Dynamics.DataEntities.JobADARequirement value);
         partial void OnJobADARequirementChanged();
-        /// <summary>
-        /// There are no comments for Property JobPreferredSkills in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredSkill> JobPreferredSkills
-        {
-            get
-            {
-                return this._JobPreferredSkills;
-            }
-            set
-            {
-                this.OnJobPreferredSkillsChanging(value);
-                this._JobPreferredSkills = value;
-                this.OnJobPreferredSkillsChanged();
-                this.OnPropertyChanged("JobPreferredSkills");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredSkill> _JobPreferredSkills = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredSkill>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnJobPreferredSkillsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredSkill> value);
-        partial void OnJobPreferredSkillsChanged();
-        /// <summary>
-        /// There are no comments for Property JobPreferredExam in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredExam> JobPreferredExam
-        {
-            get
-            {
-                return this._JobPreferredExam;
-            }
-            set
-            {
-                this.OnJobPreferredExamChanging(value);
-                this._JobPreferredExam = value;
-                this.OnJobPreferredExamChanged();
-                this.OnPropertyChanged("JobPreferredExam");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredExam> _JobPreferredExam = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredExam>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnJobPreferredExamChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredExam> value);
-        partial void OnJobPreferredExamChanged();
-        /// <summary>
-        /// There are no comments for Property CompensationEligibilityRules in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule> CompensationEligibilityRules
-        {
-            get
-            {
-                return this._CompensationEligibilityRules;
-            }
-            set
-            {
-                this.OnCompensationEligibilityRulesChanging(value);
-                this._CompensationEligibilityRules = value;
-                this.OnCompensationEligibilityRulesChanged();
-                this.OnPropertyChanged("CompensationEligibilityRules");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule> _CompensationEligibilityRules = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnCompensationEligibilityRulesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule> value);
-        partial void OnCompensationEligibilityRulesChanged();
         /// <summary>
         /// There are no comments for Property Positions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Position> Positions
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PositionDetail> Positions
         {
             get
             {
@@ -981,9 +893,31 @@ namespace Microsoft.Dynamics.DataEntities
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Position> _Positions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Position>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPositionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Position> value);
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PositionDetail> _Positions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PositionDetail>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPositionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PositionDetail> value);
         partial void OnPositionsChanged();
+        /// <summary>
+        /// There are no comments for Property JobTaskAssignments in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTaskAssignment> JobTaskAssignments
+        {
+            get
+            {
+                return this._JobTaskAssignments;
+            }
+            set
+            {
+                this.OnJobTaskAssignmentsChanging(value);
+                this._JobTaskAssignments = value;
+                this.OnJobTaskAssignmentsChanged();
+                this.OnPropertyChanged("JobTaskAssignments");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTaskAssignment> _JobTaskAssignments = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTaskAssignment>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnJobTaskAssignmentsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTaskAssignment> value);
+        partial void OnJobTaskAssignmentsChanged();
         /// <summary>
         /// There are no comments for Property JobPreferredCertificates in the schema.
         /// </summary>
@@ -1007,6 +941,50 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnJobPreferredCertificatesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredCertificate> value);
         partial void OnJobPreferredCertificatesChanged();
         /// <summary>
+        /// There are no comments for Property CompensationEligibilityRules in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule> CompensationEligibilityRules
+        {
+            get
+            {
+                return this._CompensationEligibilityRules;
+            }
+            set
+            {
+                this.OnCompensationEligibilityRulesChanging(value);
+                this._CompensationEligibilityRules = value;
+                this.OnCompensationEligibilityRulesChanged();
+                this.OnPropertyChanged("CompensationEligibilityRules");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule> _CompensationEligibilityRules = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnCompensationEligibilityRulesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationEligibilityRule> value);
+        partial void OnCompensationEligibilityRulesChanged();
+        /// <summary>
+        /// There are no comments for Property JobPreferredEducationDisciplines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredEducationDiscipline> JobPreferredEducationDisciplines
+        {
+            get
+            {
+                return this._JobPreferredEducationDisciplines;
+            }
+            set
+            {
+                this.OnJobPreferredEducationDisciplinesChanging(value);
+                this._JobPreferredEducationDisciplines = value;
+                this.OnJobPreferredEducationDisciplinesChanged();
+                this.OnPropertyChanged("JobPreferredEducationDisciplines");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredEducationDiscipline> _JobPreferredEducationDisciplines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredEducationDiscipline>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnJobPreferredEducationDisciplinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredEducationDiscipline> value);
+        partial void OnJobPreferredEducationDisciplinesChanged();
+        /// <summary>
         /// There are no comments for Property Details in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -1029,6 +1007,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDetailsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobDetail> value);
         partial void OnDetailsChanged();
         /// <summary>
+        /// There are no comments for Property JobPreferredSkills in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredSkill> JobPreferredSkills
+        {
+            get
+            {
+                return this._JobPreferredSkills;
+            }
+            set
+            {
+                this.OnJobPreferredSkillsChanging(value);
+                this._JobPreferredSkills = value;
+                this.OnJobPreferredSkillsChanged();
+                this.OnPropertyChanged("JobPreferredSkills");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredSkill> _JobPreferredSkills = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredSkill>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnJobPreferredSkillsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredSkill> value);
+        partial void OnJobPreferredSkillsChanged();
+        /// <summary>
         /// There are no comments for Property JobResponsibilities in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -1050,6 +1050,50 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobResponsibility> _JobResponsibilities = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobResponsibility>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnJobResponsibilitiesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobResponsibility> value);
         partial void OnJobResponsibilitiesChanged();
+        /// <summary>
+        /// There are no comments for Property JobPreferredScreenings in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredScreening> JobPreferredScreenings
+        {
+            get
+            {
+                return this._JobPreferredScreenings;
+            }
+            set
+            {
+                this.OnJobPreferredScreeningsChanging(value);
+                this._JobPreferredScreenings = value;
+                this.OnJobPreferredScreeningsChanged();
+                this.OnPropertyChanged("JobPreferredScreenings");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredScreening> _JobPreferredScreenings = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredScreening>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnJobPreferredScreeningsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredScreening> value);
+        partial void OnJobPreferredScreeningsChanged();
+        /// <summary>
+        /// There are no comments for Property JobPreferredExam in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredExam> JobPreferredExam
+        {
+            get
+            {
+                return this._JobPreferredExam;
+            }
+            set
+            {
+                this.OnJobPreferredExamChanging(value);
+                this._JobPreferredExam = value;
+                this.OnJobPreferredExamChanged();
+                this.OnPropertyChanged("JobPreferredExam");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredExam> _JobPreferredExam = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredExam>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnJobPreferredExamChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredExam> value);
+        partial void OnJobPreferredExamChanged();
         /// <summary>
         /// There are no comments for Property Applications in the schema.
         /// </summary>
@@ -1182,50 +1226,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.JobType _JobType;
         partial void OnJobTypeChanging(global::Microsoft.Dynamics.DataEntities.JobType value);
         partial void OnJobTypeChanged();
-        /// <summary>
-        /// There are no comments for Property JobPreferredScreenings in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredScreening> JobPreferredScreenings
-        {
-            get
-            {
-                return this._JobPreferredScreenings;
-            }
-            set
-            {
-                this.OnJobPreferredScreeningsChanging(value);
-                this._JobPreferredScreenings = value;
-                this.OnJobPreferredScreeningsChanged();
-                this.OnPropertyChanged("JobPreferredScreenings");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredScreening> _JobPreferredScreenings = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredScreening>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnJobPreferredScreeningsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredScreening> value);
-        partial void OnJobPreferredScreeningsChanged();
-        /// <summary>
-        /// There are no comments for Property JobTaskAssignments in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTaskAssignment> JobTaskAssignments
-        {
-            get
-            {
-                return this._JobTaskAssignments;
-            }
-            set
-            {
-                this.OnJobTaskAssignmentsChanging(value);
-                this._JobTaskAssignments = value;
-                this.OnJobTaskAssignmentsChanged();
-                this.OnPropertyChanged("JobTaskAssignments");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTaskAssignment> _JobTaskAssignments = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTaskAssignment>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnJobTaskAssignmentsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTaskAssignment> value);
-        partial void OnJobTaskAssignmentsChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

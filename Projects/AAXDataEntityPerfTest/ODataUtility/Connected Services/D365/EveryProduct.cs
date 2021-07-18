@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for ProductUnitOfMeasureConversions in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductUnitOfMeasureConversion> ProductUnitOfMeasureConversions
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ProductUnitOfMeasureConversions == null))
-                {
-                    this._ProductUnitOfMeasureConversions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductUnitOfMeasureConversion>(GetPath("ProductUnitOfMeasureConversions"));
-                }
-                return this._ProductUnitOfMeasureConversions;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductUnitOfMeasureConversion> _ProductUnitOfMeasureConversions;
-        /// <summary>
         /// There are no comments for ReleasedProductV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,6 +55,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ReleasedProductV2Single _ReleasedProductV2;
+        /// <summary>
+        /// There are no comments for ProductUnitOfMeasureConversions in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductUnitOfMeasureConversion> ProductUnitOfMeasureConversions
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ProductUnitOfMeasureConversions == null))
+                {
+                    this._ProductUnitOfMeasureConversions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductUnitOfMeasureConversion>(GetPath("ProductUnitOfMeasureConversions"));
+                }
+                return this._ProductUnitOfMeasureConversions;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductUnitOfMeasureConversion> _ProductUnitOfMeasureConversions;
         /// <summary>
         /// There are no comments for ProductSpecificUnitOfMeasureConversions in the schema.
         /// </summary>
@@ -208,28 +208,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnProductSearchNameChanging(string value);
         partial void OnProductSearchNameChanged();
         /// <summary>
-        /// There are no comments for Property ProductUnitOfMeasureConversions in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductUnitOfMeasureConversion> ProductUnitOfMeasureConversions
-        {
-            get
-            {
-                return this._ProductUnitOfMeasureConversions;
-            }
-            set
-            {
-                this.OnProductUnitOfMeasureConversionsChanging(value);
-                this._ProductUnitOfMeasureConversions = value;
-                this.OnProductUnitOfMeasureConversionsChanged();
-                this.OnPropertyChanged("ProductUnitOfMeasureConversions");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductUnitOfMeasureConversion> _ProductUnitOfMeasureConversions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductUnitOfMeasureConversion>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnProductUnitOfMeasureConversionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductUnitOfMeasureConversion> value);
-        partial void OnProductUnitOfMeasureConversionsChanged();
-        /// <summary>
         /// There are no comments for Property ReleasedProductV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -251,6 +229,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.ReleasedProductV2 _ReleasedProductV2;
         partial void OnReleasedProductV2Changing(global::Microsoft.Dynamics.DataEntities.ReleasedProductV2 value);
         partial void OnReleasedProductV2Changed();
+        /// <summary>
+        /// There are no comments for Property ProductUnitOfMeasureConversions in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductUnitOfMeasureConversion> ProductUnitOfMeasureConversions
+        {
+            get
+            {
+                return this._ProductUnitOfMeasureConversions;
+            }
+            set
+            {
+                this.OnProductUnitOfMeasureConversionsChanging(value);
+                this._ProductUnitOfMeasureConversions = value;
+                this.OnProductUnitOfMeasureConversionsChanged();
+                this.OnPropertyChanged("ProductUnitOfMeasureConversions");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductUnitOfMeasureConversion> _ProductUnitOfMeasureConversions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductUnitOfMeasureConversion>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnProductUnitOfMeasureConversionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductUnitOfMeasureConversion> value);
+        partial void OnProductUnitOfMeasureConversionsChanged();
         /// <summary>
         /// There are no comments for Property ProductSpecificUnitOfMeasureConversions in the schema.
         /// </summary>

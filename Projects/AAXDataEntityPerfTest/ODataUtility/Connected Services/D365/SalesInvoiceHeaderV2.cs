@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for SalesInvoiceLinesV2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesInvoiceV2Line> SalesInvoiceLinesV2
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._SalesInvoiceLinesV2 == null))
-                {
-                    this._SalesInvoiceLinesV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.SalesInvoiceV2Line>(GetPath("SalesInvoiceLinesV2"));
-                }
-                return this._SalesInvoiceLinesV2;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesInvoiceV2Line> _SalesInvoiceLinesV2;
-        /// <summary>
         /// There are no comments for SalesInvoiceLinesV3 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,6 +55,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesInvoiceV3Line> _SalesInvoiceLinesV3;
+        /// <summary>
+        /// There are no comments for SalesInvoiceLinesV2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesInvoiceV2Line> SalesInvoiceLinesV2
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._SalesInvoiceLinesV2 == null))
+                {
+                    this._SalesInvoiceLinesV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.SalesInvoiceV2Line>(GetPath("SalesInvoiceLinesV2"));
+                }
+                return this._SalesInvoiceLinesV2;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesInvoiceV2Line> _SalesInvoiceLinesV2;
     }
         /// <summary>
         /// There are no comments for SalesInvoiceHeaderV2 in the schema.
@@ -723,28 +723,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnSalesOrderOriginCodeChanging(string value);
         partial void OnSalesOrderOriginCodeChanged();
         /// <summary>
-        /// There are no comments for Property SalesInvoiceLinesV2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesInvoiceV2Line> SalesInvoiceLinesV2
-        {
-            get
-            {
-                return this._SalesInvoiceLinesV2;
-            }
-            set
-            {
-                this.OnSalesInvoiceLinesV2Changing(value);
-                this._SalesInvoiceLinesV2 = value;
-                this.OnSalesInvoiceLinesV2Changed();
-                this.OnPropertyChanged("SalesInvoiceLinesV2");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesInvoiceV2Line> _SalesInvoiceLinesV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesInvoiceV2Line>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnSalesInvoiceLinesV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesInvoiceV2Line> value);
-        partial void OnSalesInvoiceLinesV2Changed();
-        /// <summary>
         /// There are no comments for Property SalesInvoiceLinesV3 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -766,6 +744,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesInvoiceV3Line> _SalesInvoiceLinesV3 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesInvoiceV3Line>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnSalesInvoiceLinesV3Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesInvoiceV3Line> value);
         partial void OnSalesInvoiceLinesV3Changed();
+        /// <summary>
+        /// There are no comments for Property SalesInvoiceLinesV2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesInvoiceV2Line> SalesInvoiceLinesV2
+        {
+            get
+            {
+                return this._SalesInvoiceLinesV2;
+            }
+            set
+            {
+                this.OnSalesInvoiceLinesV2Changing(value);
+                this._SalesInvoiceLinesV2 = value;
+                this.OnSalesInvoiceLinesV2Changed();
+                this.OnPropertyChanged("SalesInvoiceLinesV2");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesInvoiceV2Line> _SalesInvoiceLinesV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesInvoiceV2Line>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnSalesInvoiceLinesV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesInvoiceV2Line> value);
+        partial void OnSalesInvoiceLinesV2Changed();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

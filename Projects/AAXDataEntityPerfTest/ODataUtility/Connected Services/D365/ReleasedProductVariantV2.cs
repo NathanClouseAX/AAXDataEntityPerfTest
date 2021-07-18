@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -34,48 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public ReleasedProductVariantV2Single(global::Microsoft.OData.Client.DataServiceQuerySingle<ReleasedProductVariantV2> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for InventoryCountingJournalLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InventoryCountingJournalLine> InventoryCountingJournalLines
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._InventoryCountingJournalLines == null))
-                {
-                    this._InventoryCountingJournalLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.InventoryCountingJournalLine>(GetPath("InventoryCountingJournalLines"));
-                }
-                return this._InventoryCountingJournalLines;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InventoryCountingJournalLine> _InventoryCountingJournalLines;
-        /// <summary>
-        /// There are no comments for ReleasedProductVariantExternalCodesV2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariantExternalCodeV2> ReleasedProductVariantExternalCodesV2
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ReleasedProductVariantExternalCodesV2 == null))
-                {
-                    this._ReleasedProductVariantExternalCodesV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariantExternalCodeV2>(GetPath("ReleasedProductVariantExternalCodesV2"));
-                }
-                return this._ReleasedProductVariantExternalCodesV2;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariantExternalCodeV2> _ReleasedProductVariantExternalCodesV2;
         /// <summary>
         /// There are no comments for ReleasedProductMaster in the schema.
         /// </summary>
@@ -181,6 +139,48 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ProductVariantV2Single _ProductVariantV2;
+        /// <summary>
+        /// There are no comments for InventoryCountingJournalLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InventoryCountingJournalLine> InventoryCountingJournalLines
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._InventoryCountingJournalLines == null))
+                {
+                    this._InventoryCountingJournalLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.InventoryCountingJournalLine>(GetPath("InventoryCountingJournalLines"));
+                }
+                return this._InventoryCountingJournalLines;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InventoryCountingJournalLine> _InventoryCountingJournalLines;
+        /// <summary>
+        /// There are no comments for ReleasedProductVariantExternalCodesV2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariantExternalCodeV2> ReleasedProductVariantExternalCodesV2
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ReleasedProductVariantExternalCodesV2 == null))
+                {
+                    this._ReleasedProductVariantExternalCodesV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariantExternalCodeV2>(GetPath("ReleasedProductVariantExternalCodesV2"));
+                }
+                return this._ReleasedProductVariantExternalCodesV2;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariantExternalCodeV2> _ReleasedProductVariantExternalCodesV2;
     }
         /// <summary>
         /// There are no comments for ReleasedProductVariantV2 in the schema.
@@ -542,50 +542,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnProductSearchNameChanging(string value);
         partial void OnProductSearchNameChanged();
         /// <summary>
-        /// There are no comments for Property InventoryCountingJournalLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventoryCountingJournalLine> InventoryCountingJournalLines
-        {
-            get
-            {
-                return this._InventoryCountingJournalLines;
-            }
-            set
-            {
-                this.OnInventoryCountingJournalLinesChanging(value);
-                this._InventoryCountingJournalLines = value;
-                this.OnInventoryCountingJournalLinesChanged();
-                this.OnPropertyChanged("InventoryCountingJournalLines");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventoryCountingJournalLine> _InventoryCountingJournalLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventoryCountingJournalLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnInventoryCountingJournalLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventoryCountingJournalLine> value);
-        partial void OnInventoryCountingJournalLinesChanged();
-        /// <summary>
-        /// There are no comments for Property ReleasedProductVariantExternalCodesV2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariantExternalCodeV2> ReleasedProductVariantExternalCodesV2
-        {
-            get
-            {
-                return this._ReleasedProductVariantExternalCodesV2;
-            }
-            set
-            {
-                this.OnReleasedProductVariantExternalCodesV2Changing(value);
-                this._ReleasedProductVariantExternalCodesV2 = value;
-                this.OnReleasedProductVariantExternalCodesV2Changed();
-                this.OnPropertyChanged("ReleasedProductVariantExternalCodesV2");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariantExternalCodeV2> _ReleasedProductVariantExternalCodesV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariantExternalCodeV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnReleasedProductVariantExternalCodesV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariantExternalCodeV2> value);
-        partial void OnReleasedProductVariantExternalCodesV2Changed();
-        /// <summary>
         /// There are no comments for Property ReleasedProductMaster in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -695,6 +651,50 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.ProductVariantV2 _ProductVariantV2;
         partial void OnProductVariantV2Changing(global::Microsoft.Dynamics.DataEntities.ProductVariantV2 value);
         partial void OnProductVariantV2Changed();
+        /// <summary>
+        /// There are no comments for Property InventoryCountingJournalLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventoryCountingJournalLine> InventoryCountingJournalLines
+        {
+            get
+            {
+                return this._InventoryCountingJournalLines;
+            }
+            set
+            {
+                this.OnInventoryCountingJournalLinesChanging(value);
+                this._InventoryCountingJournalLines = value;
+                this.OnInventoryCountingJournalLinesChanged();
+                this.OnPropertyChanged("InventoryCountingJournalLines");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventoryCountingJournalLine> _InventoryCountingJournalLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventoryCountingJournalLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnInventoryCountingJournalLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventoryCountingJournalLine> value);
+        partial void OnInventoryCountingJournalLinesChanged();
+        /// <summary>
+        /// There are no comments for Property ReleasedProductVariantExternalCodesV2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariantExternalCodeV2> ReleasedProductVariantExternalCodesV2
+        {
+            get
+            {
+                return this._ReleasedProductVariantExternalCodesV2;
+            }
+            set
+            {
+                this.OnReleasedProductVariantExternalCodesV2Changing(value);
+                this._ReleasedProductVariantExternalCodesV2 = value;
+                this.OnReleasedProductVariantExternalCodesV2Changed();
+                this.OnPropertyChanged("ReleasedProductVariantExternalCodesV2");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariantExternalCodeV2> _ReleasedProductVariantExternalCodesV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariantExternalCodeV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnReleasedProductVariantExternalCodesV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariantExternalCodeV2> value);
+        partial void OnReleasedProductVariantExternalCodesV2Changed();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 6/6/2021 9:11:38 PM
+// Generation date: 7/17/2021 8:49:18 PM
 namespace Microsoft.Dynamics.DataEntities
 {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for Customer in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.CustomerV3Single Customer
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._Customer == null))
-                {
-                    this._Customer = new global::Microsoft.Dynamics.DataEntities.CustomerV3Single(this.Context, GetPath("Customer"));
-                }
-                return this._Customer;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.CustomerV3Single _Customer;
-        /// <summary>
         /// There are no comments for ContactPerson in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,6 +55,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.CDSContactPersonV2Single _ContactPerson;
+        /// <summary>
+        /// There are no comments for Customer in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.AAXCustomerV3Single Customer
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Customer == null))
+                {
+                    this._Customer = new global::Microsoft.Dynamics.DataEntities.AAXCustomerV3Single(this.Context, GetPath("Customer"));
+                }
+                return this._Customer;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.AAXCustomerV3Single _Customer;
     }
         /// <summary>
         /// There are no comments for CDSParty in the schema.
@@ -96,8 +96,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// <param name="personAnniversaryDay">Initial value of PersonAnniversaryDay.</param>
         /// <param name="personBirthYear">Initial value of PersonBirthYear.</param>
         /// <param name="organizationNumOfEmployees">Initial value of OrganizationNumOfEmployees.</param>
-        /// <param name="customer">Initial value of Customer.</param>
         /// <param name="contactPerson">Initial value of ContactPerson.</param>
+        /// <param name="customer">Initial value of Customer.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public static CDSParty CreateCDSParty(string partyNumber, 
                     int personBirthDay, 
@@ -105,8 +105,8 @@ namespace Microsoft.Dynamics.DataEntities
                     int personAnniversaryDay, 
                     int personBirthYear, 
                     int organizationNumOfEmployees, 
-                    global::Microsoft.Dynamics.DataEntities.CustomerV3 customer, 
-                    global::Microsoft.Dynamics.DataEntities.CDSContactPersonV2 contactPerson)
+                    global::Microsoft.Dynamics.DataEntities.CDSContactPersonV2 contactPerson, 
+                    global::Microsoft.Dynamics.DataEntities.AAXCustomerV3 customer)
         {
             CDSParty cDSParty = new CDSParty();
             cDSParty.PartyNumber = partyNumber;
@@ -115,16 +115,16 @@ namespace Microsoft.Dynamics.DataEntities
             cDSParty.PersonAnniversaryDay = personAnniversaryDay;
             cDSParty.PersonBirthYear = personBirthYear;
             cDSParty.OrganizationNumOfEmployees = organizationNumOfEmployees;
-            if ((customer == null))
-            {
-                throw new global::System.ArgumentNullException("customer");
-            }
-            cDSParty.Customer = customer;
             if ((contactPerson == null))
             {
                 throw new global::System.ArgumentNullException("contactPerson");
             }
             cDSParty.ContactPerson = contactPerson;
+            if ((customer == null))
+            {
+                throw new global::System.ArgumentNullException("customer");
+            }
+            cDSParty.Customer = customer;
             return cDSParty;
         }
         /// <summary>
@@ -854,28 +854,6 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnPersonHobbiesChanging(string value);
         partial void OnPersonHobbiesChanged();
         /// <summary>
-        /// There are no comments for Property Customer in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.CustomerV3 Customer
-        {
-            get
-            {
-                return this._Customer;
-            }
-            set
-            {
-                this.OnCustomerChanging(value);
-                this._Customer = value;
-                this.OnCustomerChanged();
-                this.OnPropertyChanged("Customer");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.CustomerV3 _Customer;
-        partial void OnCustomerChanging(global::Microsoft.Dynamics.DataEntities.CustomerV3 value);
-        partial void OnCustomerChanged();
-        /// <summary>
         /// There are no comments for Property ContactPerson in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -897,6 +875,28 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.CDSContactPersonV2 _ContactPerson;
         partial void OnContactPersonChanging(global::Microsoft.Dynamics.DataEntities.CDSContactPersonV2 value);
         partial void OnContactPersonChanged();
+        /// <summary>
+        /// There are no comments for Property Customer in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.AAXCustomerV3 Customer
+        {
+            get
+            {
+                return this._Customer;
+            }
+            set
+            {
+                this.OnCustomerChanging(value);
+                this._Customer = value;
+                this.OnCustomerChanged();
+                this.OnPropertyChanged("Customer");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.AAXCustomerV3 _Customer;
+        partial void OnCustomerChanging(global::Microsoft.Dynamics.DataEntities.AAXCustomerV3 value);
+        partial void OnCustomerChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
