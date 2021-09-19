@@ -1,0 +1,3962 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxDataEntityView xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Name>AAXCustCustomerV5Entity</Name>
+	<SourceCode>
+		<Declaration><![CDATA[
+public class AAXCustCustomerV5Entity extends common
+{
+}
+]]></Declaration>
+		<Methods>
+			<Method>
+				<Name>initializeEntityDataSource</Name>
+				<Source><![CDATA[
+    public void initializeEntityDataSource(DataEntityRuntimeContext _entityCtx, DataEntityDataSourceRuntimeContext _dataSourceCtx)
+    {
+        super(_entityCtx, _dataSourceCtx);
+
+        if (_dataSourceCtx.name() == dataEntityDataSourceStr(CustCustomerV3Entity, DirPartyBaseEntity))
+        {
+            // Takes care of maintaining the reference to existing parties if this record provides a party number.
+            DirPartyBaseEntity::initializeDirPartyBaseEntityDataSource(_entityCtx, _dataSourceCtx);
+        }
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>persistEntity</Name>
+				<Source><![CDATA[
+    public void persistEntity(DataEntityRuntimeContext _entityCtx)
+    {
+        this.skipDataSourceValidateField(fieldNum(CustCustomerV3Entity, InvoiceAccount), true);
+
+        if (_entityCtx.getDatabaseOperation() == DataEntityDatabaseOperation::Insert)
+        {
+            this.DefaultDimension = DimensionDefaultResolver::checkAndCreateSelfReference(tablenum(CustTable), this.CustomerAccount, this.DefaultDimensionDisplayValue);
+        }
+
+        super(_entityCtx);
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>mapEntityToDataSource</Name>
+				<Source><![CDATA[
+    public void mapEntityToDataSource(DataEntityRuntimeContext _entityCtx, DataEntityDataSourceRuntimeContext _dataSourceCtx)
+    {
+        if (_dataSourceCtx.name() == dataEntityDataSourceStr(CustCustomerV3Entity, CustTable))
+        {
+            this.MainContactWorker = smmUtility::getEntityWorkerRecId(this.EmployeeResponsibleNumber);
+            this.processChangesForApproval(_entityCtx);
+        }
+        else if (_dataSourceCtx.name() == dataEntityDataSourceStr(CustCustomerV3Entity, DirPartyBaseEntity))
+        {
+            this.processChangesForApproval(_entityCtx);
+        }
+
+        super(_entityCtx, _dataSourceCtx);
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>insertEntityDataSource</Name>
+				<Source><![CDATA[
+    public boolean insertEntityDataSource(DataEntityRuntimeContext _entityCtx, DataEntityDataSourceRuntimeContext _dataSourceCtx)
+    {
+        boolean ret;
+
+        if (_dataSourceCtx.name() == dataEntityDataSourceStr(CustCustomerV3Entity, DirPartyBaseEntity))
+        {
+            boolean addressLocationExist = false;
+            boolean invoiceAddressLocationExist = false;
+            boolean deliveryAddressLocationExist = false;
+
+            DirPartyBaseEntityHelper partyHelper = new DirPartyBaseEntityHelper();
+            CustDefaultLocationEntityHelper custDefaultLocationHelper = new CustDefaultLocationEntityHelper();
+
+            _entityCtx
+                .getRuntimeContextByName(dataEntityDataSourceStr(CustCustomerV3Entity, InvoiceLogisticsPostalAddressBaseEntity))
+                .setDatabaseOperation(DataEntityDatabaseOperation::None);
+            _entityCtx
+                .getRuntimeContextByName(dataEntityDataSourceStr(CustCustomerV3Entity, DeliveryLogisticsPostalAddressBaseEntity))
+                .setDatabaseOperation(DataEntityDatabaseOperation::None);
+            
+            if (this.AddressLocationId == '')
+            {
+                DataEntityDataSourceRuntimeContext addressDataSourceContext;
+                addressDataSourceContext = _entityCtx.getRuntimeContextByName(dataEntityDataSourceStr(CustCustomerV3Entity, LogisticsPostalAddressBaseEntity));
+                LogisticsPostalAddressBaseEntity postalAddressEntity = addressDataSourceContext.getBuffer();
+                this.AddressLocationId  = this.resolveAddressLocationId(postalAddressEntity);
+                
+                if (this.AddressLocationId != '')
+                {
+                    addressLocationExist = true;
+                    this.doNotUpdateDataSource(_entityCtx, dataEntityDataSourceStr(CustCustomerV3Entity, LogisticsPostalAddressBaseEntity));
+                }
+            }
+            
+            // If Invoice Address has the same (non-blank) Location Id as the Primary Address, then it should be ignored
+            if ((this.InvoiceAddressLocationId == '') ||
+                (this.InvoiceAddressLocationId != this.AddressLocationId))
+            {
+                if (this.InvoiceAddressLocationId == '')
+                {
+                    DataEntityDataSourceRuntimeContext addressDataSourceContext;
+                    addressDataSourceContext = _entityCtx.getRuntimeContextByName(dataEntityDataSourceStr(CustCustomerV3Entity, InvoiceLogisticsPostalAddressBaseEntity));
+                    LogisticsPostalAddressBaseEntity postalAddressEntity = addressDataSourceContext.getBuffer();
+                    this.InvoiceAddressLocationId  = this.resolveAddressLocationId(postalAddressEntity);
+                    
+                    if (this.InvoiceAddressLocationId != '')
+                    {
+                        invoiceAddressLocationExist = true;
+                        this.doNotUpdateDataSource(_entityCtx, dataEntityDataSourceStr(CustCustomerV3Entity, InvoiceLogisticsPostalAddressBaseEntity));
+                    }
+                }
+
+                if (!invoiceAddressLocationExist)
+                {
+                    custDefaultLocationHelper.preInsertUpdate(_entityCtx, _dataSourceCtx,
+                        dataEntityDataSourceStr(CustCustomerV3Entity, InvoiceLogisticsPostalAddressBaseEntity));
+                }
+            }
+            else
+            {
+                this.doNotUpdateDataSource(_entityCtx, dataEntityDataSourceStr(CustCustomerV3Entity, InvoiceLogisticsPostalAddressBaseEntity));
+            }
+
+            // If Delivery Address has the same (non-blank) Location Id as the Invoice or Primary Address,
+            // then it should be ignored
+            if ((this.DeliveryAddressLocationId == '') ||
+                ((this.DeliveryAddressLocationId != this.AddressLocationId) &&
+                 (this.DeliveryAddressLocationId != this.InvoiceAddressLocationId)))
+            {
+                if (this.DeliveryAddressLocationId == '')
+                {
+                    DataEntityDataSourceRuntimeContext addressDataSourceContext;
+                    addressDataSourceContext = _entityCtx.getRuntimeContextByName(dataEntityDataSourceStr(CustCustomerV3Entity, DeliveryLogisticsPostalAddressBaseEntity));
+                    LogisticsPostalAddressBaseEntity postalAddressEntity = addressDataSourceContext.getBuffer();
+                    this.DeliveryAddressLocationId  = this.resolveAddressLocationId(postalAddressEntity);
+
+                    if (this.DeliveryAddressLocationId != '')
+                    {
+                        deliveryAddressLocationExist = true;
+                        this.doNotUpdateDataSource(_entityCtx, dataEntityDataSourceStr(CustCustomerV3Entity, DeliveryLogisticsPostalAddressBaseEntity));
+                    }
+                }
+
+                if (!deliveryAddressLocationExist)
+                {
+                    custDefaultLocationHelper.preInsertUpdate(_entityCtx, _dataSourceCtx,
+                        dataEntityDataSourceStr(CustCustomerV3Entity, DeliveryLogisticsPostalAddressBaseEntity));
+                }
+            }
+            else
+            {
+                this.doNotUpdateDataSource(_entityCtx, dataEntityDataSourceStr(CustCustomerV3Entity, DeliveryLogisticsPostalAddressBaseEntity));
+            }
+            
+            if (!addressLocationExist)
+            {
+                partyHelper.preInsertEntityDataSource(_entityCtx, _dataSourceCtx,
+                    dataEntityDataSourceStr(CustCustomerV3Entity, LogisticsPostalAddressBaseEntity));
+            }
+
+            ret = partyHelper.validateNameFields(_dataSourceCtx);
+
+            if (ret)
+            {
+                ret = super(_entityCtx, _dataSourceCtx);
+            }
+
+            if (ret)
+            {
+                partyHelper.postInsertEntityDataSource(_entityCtx, _dataSourceCtx,
+                    dataEntityDataSourceStr(CustCustomerV3Entity, LogisticsPostalAddressBaseEntity));
+                custDefaultLocationHelper.postInsertUpdate(_entityCtx, _dataSourceCtx,
+                    dataEntityDataSourceStr(CustCustomerV3Entity, InvoiceLogisticsPostalAddressBaseEntity), LogisticsLocationRoleType::Invoice, this.InvoiceAddressLocationId);
+                custDefaultLocationHelper.postInsertUpdate(_entityCtx, _dataSourceCtx,
+                    dataEntityDataSourceStr(CustCustomerV3Entity, DeliveryLogisticsPostalAddressBaseEntity), LogisticsLocationRoleType::Delivery, this.DeliveryAddressLocationId);
+
+            }
+        }
+        else if (_dataSourceCtx.name() == dataEntityDataSourceStr(CustCustomerV3Entity, CustTable))
+        {
+            if (!this.skipNumberSequenceCheck())
+            {
+                CustTable custTable = _dataSourceCtx.getBuffer();
+                CustGroup custGroup = CustGroup::find(this.CustomerGroupId);
+
+                if (custGroup.CustAccountNumSeq)
+                {
+                    NumberSequenceTable numberSequenceTable = NumberSequenceTable::find(custGroup.CustAccountNumSeq);
+
+                    if (numberSequenceTable.Continuous)
+                    {
+                        custTable.AccountNum = NumberSeq::newGetNumFromId(custGroup.CustAccountNumSeq).num();
+                    }
+                }
+                else if (CustParameters::numRefCustAccount())
+                {
+                    NumberSequenceTable numberSequenceTable = NumberSequenceTable::find(CustParameters::numRefCustAccount().NumberSequenceId);
+
+                    if (numberSequenceTable.Continuous)
+                    {
+                        custTable.AccountNum = NumberSeq::newGetNum(CustParameters::numRefCustAccount()).num();
+                    }
+                }
+            }
+
+            ret = this.validateCustTableDataSource(_dataSourceCtx) && super(_entityCtx, _dataSourceCtx);
+        }
+        else
+        {
+            ret = super(_entityCtx, _dataSourceCtx);
+        }
+
+        return ret;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>employeeResponsibleWorker</Name>
+				<Source><![CDATA[
+    /// <summary>
+    /// Provides the query to be used to compute the value of EmployeeResponsibleWorker field.
+    /// </summary>
+    /// <returns>A query to be used to compute the value of EmployeeResponsibleWorker field.</returns>
+    private static str employeeResponsibleWorker()
+    {
+        return smmUtility::workerPersonnelNumberQuery(
+            tablestr(CustCustomerV3Entity), dataEntityDataSourceStr(CustCustomerV3Entity, CustTable), fieldstr(CustTable, MainContactWorker));
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>invoiceIsPrimaryAndChanged</Name>
+				<Source><![CDATA[
+    protected boolean invoiceIsPrimaryAndChanged()
+    {
+        return this.InvoiceAddressLocationId == this.AddressLocationId
+                    && (this.InvoiceAddressCity != this.AddressCity
+                    || this.InvoiceAddressStreet != this.AddressStreet
+                    || this.InvoiceAddressDescription !=  this.AddressDescription
+                    || this.InvoiceAddressCountryRegionId != this.AddressCountryRegionId
+                    || this.InvoiceAddressCountryRegionISOCode != this.AddressCountryRegionISOCode
+                    || this.InvoiceAddressZipCode != this.AddressZipCode
+                    || this.InvoiceAddressTimeZone != this.AddressTimeZone
+                    || this.InvoiceAddressCounty != this.AddressCounty
+                    || this.InvoiceAddressDistrictName != this.AddressDistrictName
+                    || this.InvoiceAddressLatitude != this.AddressLatitude
+                    || this.InvoiceAddressLongitude != this.AddressLongitude
+                    || this.InvoiceAddressState != this.AddressState
+                    || this.InvoiceAddressBuildingComplement != this.AddressBuildingComplement
+                    || this.InvoiceAddressStreetNumber != this.AddressStreetNumber);
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>deliveryAddressIsPrimaryAndChanged</Name>
+				<Source><![CDATA[
+    protected boolean deliveryAddressIsPrimaryAndChanged()
+    {
+        return this.DeliveryAddressLocationId == this.AddressLocationId
+                    && (this.DeliveryAddressCity != this.AddressCity
+                    || this.DeliveryAddressStreet != this.AddressStreet
+                    || this.DeliveryAddressDescription !=  this.AddressDescription
+                    || this.DeliveryAddressCountryRegionId != this.AddressCountryRegionId
+                    || this.DeliveryAddressCountryRegionISOCode != this.AddressCountryRegionISOCode
+                    || this.DeliveryAddressZipCode != this.AddressZipCode
+                    || this.DeliveryAddressTimeZone != this.AddressTimeZone
+                    || this.DeliveryAddressCounty != this.AddressCounty
+                    || this.DeliveryAddressDistrictName != this.AddressDistrictName
+                    || this.DeliveryAddressLatitude != this.AddressLatitude
+                    || this.DeliveryAddressLongitude != this.AddressLongitude
+                    || this.DeliveryAddressState != this.AddressState
+                    || this.DeliveryAddressBuildingComplement != this.AddressBuildingComplement
+                    || this.DeliveryAddressStreetNumber != this.AddressStreetNumber);
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>primaryAddressIsNotChanged</Name>
+				<Source><![CDATA[
+    protected boolean primaryAddressIsNotChanged(LogisticsPostalAddressBaseEntity originPostalAddressEntity)
+    {
+        return originPostalAddressEntity.City == this.AddressCity
+                && originPostalAddressEntity.Street == this.AddressStreet
+                && originPostalAddressEntity.Description == this.AddressDescription
+                && originPostalAddressEntity.CountryRegionId == this.AddressCountryRegionId
+                && originPostalAddressEntity.CountryRegionISOCode == this.AddressCountryRegionISOCode
+                && originPostalAddressEntity.ZipCode == this.AddressZipCode
+                && originPostalAddressEntity.TimeZone == this.AddressTimeZone
+                && originPostalAddressEntity.County == this.AddressCounty
+                && originPostalAddressEntity.DistrictName == this.AddressDistrictName
+                && originPostalAddressEntity.Latitude == this.AddressLatitude
+                && originPostalAddressEntity.Longitude == this.AddressLongitude
+                && originPostalAddressEntity.State == this.AddressState
+                && originPostalAddressEntity.BuildingCompliment == this.AddressBuildingComplement
+                && originPostalAddressEntity.StreetNumber == this.AddressStreetNumber;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>copyInvoiceAddressToBuffer</Name>
+				<Source><![CDATA[
+    protected void copyInvoiceAddressToBuffer(LogisticsPostalAddressBaseEntity postalAddressEntity)
+    {
+        postalAddressEntity.City = this.InvoiceAddressCity;
+        postalAddressEntity.Street = this.InvoiceAddressStreet;
+        postalAddressEntity.Description = this.InvoiceAddressDescription;
+        postalAddressEntity.CountryRegionId = this.InvoiceAddressCountryRegionId;
+        postalAddressEntity.CountryRegionISOCode = this.InvoiceAddressCountryRegionISOCode;
+        postalAddressEntity.StreetNumber = this.InvoiceAddressStreetNumber;
+        postalAddressEntity.TimeZone = this.InvoiceAddressTimeZone;
+        postalAddressEntity.DistrictName = this.InvoiceAddressDistrictName;
+        postalAddressEntity.Latitude = this.InvoiceAddressLatitude;
+        postalAddressEntity.Longitude = this.InvoiceAddressLongitude;
+        postalAddressEntity.State = this.InvoiceAddressState;
+        postalAddressEntity.BuildingCompliment = this.InvoiceAddressBuildingComplement;
+        postalAddressEntity.ZipCode = this.InvoiceAddressZipCode;
+        postalAddressEntity.County = this.InvoiceAddressCounty;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>copyDeliveryAddressToBuffer</Name>
+				<Source><![CDATA[
+    protected void copyDeliveryAddressToBuffer(LogisticsPostalAddressBaseEntity postalAddressEntity)
+    {
+        postalAddressEntity.City = this.DeliveryAddressCity;
+        postalAddressEntity.Street = this.DeliveryAddressStreet;
+        postalAddressEntity.Description = this.DeliveryAddressDescription;
+        postalAddressEntity.CountryRegionId = this.DeliveryAddressCountryRegionId;
+        postalAddressEntity.CountryRegionISOCode = this.DeliveryAddressCountryRegionISOCode;
+        postalAddressEntity.StreetNumber = this.DeliveryAddressStreetNumber;
+        postalAddressEntity.TimeZone = this.DeliveryAddressTimeZone;
+        postalAddressEntity.DistrictName = this.DeliveryAddressDistrictName;
+        postalAddressEntity.Latitude = this.DeliveryAddressLatitude;
+        postalAddressEntity.Longitude = this.DeliveryAddressLongitude;
+        postalAddressEntity.State = this.DeliveryAddressState;
+        postalAddressEntity.BuildingCompliment = this.DeliveryAddressBuildingComplement;
+        postalAddressEntity.ZipCode = this.DeliveryAddressZipCode;
+        postalAddressEntity.County = this.DeliveryAddressCounty;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>updateEntityDataSource</Name>
+				<Source><![CDATA[
+    public boolean updateEntityDataSource(DataEntityRuntimeContext _entityCtx, DataEntityDataSourceRuntimeContext _dataSourceCtx)
+    {
+        boolean ret;
+
+        if (_dataSourceCtx.name() == dataEntityDataSourceStr(CustCustomerV3Entity, DirPartyBaseEntity))
+        {
+            boolean addressLocationExist = false;
+            boolean invoiceAddressLocationExist = false;
+            boolean deliveryAddressLocationExist = false;
+
+            DirPartyBaseEntityHelper partyHelper = new DirPartyBaseEntityHelper();
+            CustDefaultLocationEntityHelper custDefaultLocationHelper = new CustDefaultLocationEntityHelper();
+            
+            if (this.AddressLocationId == '')
+            {
+                DataEntityDataSourceRuntimeContext addressDataSourceContext;
+                addressDataSourceContext = _entityCtx.getRuntimeContextByName(dataEntityDataSourceStr(CustCustomerV3Entity, LogisticsPostalAddressBaseEntity));
+                LogisticsPostalAddressBaseEntity postalAddressEntity = addressDataSourceContext.getBuffer();
+                this.AddressLocationId  = this.resolveAddressLocationId(postalAddressEntity);
+
+                if (this.AddressLocationId != '')
+                {
+                    addressLocationExist = true;
+                    this.doNotUpdateDataSource(_entityCtx, dataEntityDataSourceStr(CustCustomerV3Entity, LogisticsPostalAddressBaseEntity));
+                }
+            }
+            
+            // Coordinates saving between party and address entity datasources, the last parameter will let address entity create a new address for update.
+            // If Invoice Address has the same (non-blank) Location Id as the Primary Address, then it should be ignored
+            if ((this.InvoiceAddressLocationId == '') ||
+                (this.InvoiceAddressLocationId != this.AddressLocationId))
+            {
+                if (this.InvoiceAddressLocationId == '')
+                {
+                    DataEntityDataSourceRuntimeContext addressDataSourceContext;
+                    addressDataSourceContext = _entityCtx.getRuntimeContextByName(dataEntityDataSourceStr(CustCustomerV3Entity, InvoiceLogisticsPostalAddressBaseEntity));
+                    LogisticsPostalAddressBaseEntity postalAddressEntity = addressDataSourceContext.getBuffer();
+                    this.InvoiceAddressLocationId  = this.resolveAddressLocationId(postalAddressEntity);
+
+                    if (this.InvoiceAddressLocationId != '')
+                    {
+                        invoiceAddressLocationExist = true;
+                        this.doNotUpdateDataSource(_entityCtx, dataEntityDataSourceStr(CustCustomerV3Entity, InvoiceLogisticsPostalAddressBaseEntity));
+                    }
+                }
+                 
+                if (!invoiceAddressLocationExist)
+                {
+                    custDefaultLocationHelper.preInsertUpdate(_entityCtx, _dataSourceCtx,
+                    dataEntityDataSourceStr(CustCustomerV3Entity, InvoiceLogisticsPostalAddressBaseEntity));
+                }
+            }
+            else
+            {
+                this.doNotUpdateDataSource(_entityCtx, dataEntityDataSourceStr(CustCustomerV3Entity, InvoiceLogisticsPostalAddressBaseEntity));
+            }
+            
+            // If Delivery Address has the same (non-blank) Location Id as the Primary or Invoice Address,
+            // then it should be ignored
+            if ((this.DeliveryAddressLocationId == '') ||
+                ((this.DeliveryAddressLocationId != this.AddressLocationId) &&
+                (this.DeliveryAddressLocationId != this.InvoiceAddressLocationId)))
+            {
+                if (this.DeliveryAddressLocationId == '')
+                {
+                    DataEntityDataSourceRuntimeContext addressDataSourceContext;
+                    addressDataSourceContext = _entityCtx.getRuntimeContextByName(dataEntityDataSourceStr(CustCustomerV3Entity, DeliveryLogisticsPostalAddressBaseEntity));
+                    LogisticsPostalAddressBaseEntity postalAddressEntity = addressDataSourceContext.getBuffer();
+                    this.DeliveryAddressLocationId  = this.resolveAddressLocationId(postalAddressEntity);
+
+                    if (this.DeliveryAddressLocationId != '')
+                    {
+                        deliveryAddressLocationExist = true;
+                        this.doNotUpdateDataSource(_entityCtx, dataEntityDataSourceStr(CustCustomerV3Entity, DeliveryLogisticsPostalAddressBaseEntity));
+                    }
+                }
+
+                if (!deliveryAddressLocationExist)
+                {
+                    custDefaultLocationHelper.preInsertUpdate(_entityCtx, _dataSourceCtx,
+                        dataEntityDataSourceStr(CustCustomerV3Entity, DeliveryLogisticsPostalAddressBaseEntity));
+                }
+            }
+            else
+            {
+                this.doNotUpdateDataSource(_entityCtx, dataEntityDataSourceStr(CustCustomerV3Entity, DeliveryLogisticsPostalAddressBaseEntity));
+            }
+
+            if (!addressLocationExist)
+            {
+                if (this.AddressLocationId)
+                {
+                    DataEntityDataSourceRuntimeContext addressDataSourceContext = _entityCtx.getRuntimeContextByName(dataEntityDataSourceStr(CustCustomerV3Entity, LogisticsPostalAddressBaseEntity));
+                    //Get Values from buffer, which used to note the change is made from invoice or delivery.
+                    LogisticsPostalAddressBaseEntity postalAddressEntity = addressDataSourceContext.getBuffer();
+
+                    //find origin primary address info from LogisticsPostalAddressBaseEntity.
+                    LogisticsPostalAddressBaseEntity originPostalAddressEntity;
+
+                    select firstonly originPostalAddressEntity
+                        where originPostalAddressEntity.LocationId == this.AddressLocationId;
+
+                    //if invoice is primary and invoice address or primary address has been changed.
+                    if (this.InvoiceAddressLocationId && this.invoiceIsPrimaryAndChanged())
+                    {
+                        // Check its primary address is not changed, then only chance is invoice address has been changed.
+                        // Copy the changes to primary address and update from primary address
+                        if (this.primaryAddressIsNotChanged(originPostalAddressEntity))
+                        {
+                            this.copyInvoiceAddressToBuffer(postalAddressEntity);
+                        }
+                    }
+
+                    // If Delivery is primary and Delivery address or primary address has been changed.
+                    else if (this.DeliveryAddressLocationId && this.deliveryAddressIsPrimaryAndChanged())
+                    {
+                        // Check its primary address is not changed, then only chance is Delivery address has been changed.
+                        // Copy the changes to primary address and update from primary address.
+                        if (this.primaryAddressIsNotChanged(originPostalAddressEntity))
+                        {
+                            this.copyDeliveryAddressToBuffer(postalAddressEntity);
+                        }
+                    }
+                }
+                partyHelper.preUpdateEntityDataSource(_entityCtx, _dataSourceCtx,
+                    dataEntityDataSourceStr(CustCustomerV3Entity, LogisticsPostalAddressBaseEntity));
+            }           
+            
+            ret = partyHelper.validateNameFields(_dataSourceCtx);
+
+            if (ret)
+            {
+                ret = super(_entityCtx, _dataSourceCtx);
+            }
+
+            if (ret)
+            {
+                partyHelper.postUpdateEntityDataSource(_entityCtx, _dataSourceCtx,
+                    dataEntityDataSourceStr(CustCustomerV3Entity, LogisticsPostalAddressBaseEntity));
+                custDefaultLocationHelper.postInsertUpdate(_entityCtx, _dataSourceCtx,
+                    dataEntityDataSourceStr(CustCustomerV3Entity, InvoiceLogisticsPostalAddressBaseEntity), LogisticsLocationRoleType::Invoice, this.InvoiceAddressLocationId);
+                custDefaultLocationHelper.postInsertUpdate(_entityCtx, _dataSourceCtx,
+                    dataEntityDataSourceStr(CustCustomerV3Entity, DeliveryLogisticsPostalAddressBaseEntity), LogisticsLocationRoleType::Delivery, this.DeliveryAddressLocationId);
+            }
+        }
+        else if (_dataSourceCtx.name() == dataEntityDataSourceStr(CustCustomerV3Entity, CustTable))
+        {
+            ret = this.validateCustTableDataSource(_dataSourceCtx) && super(_entityCtx, _dataSourceCtx);
+        }
+        else
+        {
+            ret = super(_entityCtx, _dataSourceCtx);
+        }
+
+        return ret;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>doNotUpdateDataSource</Name>
+				<Source><![CDATA[
+    private void doNotUpdateDataSource(DataEntityRuntimeContext _entityCtx, str _addressDataSourceName)
+    {
+        DataEntityDataSourceRuntimeContext addressDataSourceContext = _entityCtx.getRuntimeContextByName(_addressDataSourceName);
+        addressDataSourceContext.setDataSaved(true);
+        addressDataSourceContext.setDatabaseOperation(DataEntityDatabaseOperation::None);
+
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>validateCustTableDataSource</Name>
+				<Source><![CDATA[
+    private boolean validateCustTableDataSource(DataEntityDataSourceRuntimeContext _dataSourceCtx)
+    {
+        boolean ret = true;
+
+        if (strLen(this.InvoiceAccount) && this.CustomerAccount != this.InvoiceAccount)
+        {
+            ret =  _dataSourceCtx.getBuffer().validateField(fieldNum(CustTable, InvoiceAccount));
+        }
+
+        // updateEntityDataSource() failure does not prevent the datasource from being saved, unless it is an inner join
+        // In case of update operation, throwing validation error is needed to cancel the update
+        if (!ret && _dataSourceCtx.getDatabaseOperation() == DataEntityDatabaseOperation::Update)
+        {
+            _dataSourceCtx.throwValidateWriteFailed();
+        }
+
+        return ret;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>deleteEntityDataSource</Name>
+				<Source><![CDATA[
+    public boolean deleteEntityDataSource(DataEntityRuntimeContext _entityCtx, DataEntityDataSourceRuntimeContext _dataSourceCtx)
+    {
+        boolean ret;
+
+        // Do not delete the DirParty directly - it will be deleted as part of customer deletion.
+        // This will ensure that the customer is always deleted before DirParty.
+        // Do not delete address for delivery & invoice role type when customer deletion
+        // Because LogisticsPostalAddressBaseEntity will delete this record.
+        if (_dataSourceCtx.name()    == dataEntityDataSourceStr(CustCustomerV3Entity, DirPartyBaseEntity)
+            || _dataSourceCtx.name() == dataEntityDataSourceStr(CustCustomerV3Entity, DeliveryLogisticsPostalAddressBaseEntity)
+            || _dataSourceCtx.name() == dataEntityDataSourceStr(CustCustomerV3Entity, InvoiceLogisticsPostalAddressBaseEntity))
+        {
+            _dataSourceCtx.setDatabaseOperation(DataEntityDatabaseOperation::None);
+            _dataSourceCtx.setDataSaved(true);
+            ret = true;
+        }
+        else
+        {
+            ret = super(_entityCtx, _dataSourceCtx);
+        }
+
+        return ret;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>defaultRow</Name>
+				<Source><![CDATA[
+    public void defaultRow()
+    {
+		// Default the partytype only when a matching partynumber is not found.
+        if (this.PartyType == '' && !DirPartyTable::find(this.PartyNumber))
+        {
+            switch (DirAppParameters::defaultPartyType(tableNum(CustTable)))
+            {
+                case DirPartyBaseType::Organization:
+                    this.PartyType = DirUtility::PARTYTYPE_ORGANIZATION;
+                    break;
+
+                case DirPartyBaseType::Person:
+                    this.PartyType = DirUtility::PARTYTYPE_PERSON;
+                    break;
+            }
+        }
+
+        if (this.WriteOffReason)
+        {
+            this.WriteOffCompany = this.DataAreaId;
+        }
+
+        super();
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>postGetStagingData</Name>
+				<Source><![CDATA[
+    /// <summary>
+    /// Resolve conflicts in the ordering of data import such that dependent records insert after parent records.
+    /// </summary>
+    /// <param name = "_dmfDefinitionGroupExecution">The execution context for import.</param>
+    public static void postGetStagingData(DMFDefinitionGroupExecution _dmfDefinitionGroupExecution)
+    {
+        CustCustomerV3Staging::resolveImportSequence(_dmfDefinitionGroupExecution);
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>defaultCTQuery</Name>
+				<Source><![CDATA[
+    /// <summary>
+    /// A change tracking query used by DMF to determine what values have changed in the specified data sources since the last export.
+    /// </summary>
+    /// <returns>A query that represents the data sources used by the entity.</returns>
+    public static Query defaultCTQuery()
+    {
+        Query q = new Query();
+
+        QueryBuildDataSource custTableQBDS = q.addDataSource(tableNum(CustTable));
+
+        QueryBuildDataSource qbdCustCollection = custTableQBDS.addDataSource(tableNum(CustCollectionsContact));
+        qbdCustCollection.joinMode(JoinMode::OuterJoin);
+        qbdCustCollection.relations(true);
+
+        QueryBuildDataSource qbdWHSCustTable = custTableQBDS.addDataSource(tableNum(WHSCustTable));
+        qbdWHSCustTable.joinMode(JoinMode::OuterJoin);
+        qbdWHSCustTable.relations(true);
+
+        QueryBuildDataSource qbdRetail = custTableQBDS.addDataSource(tableNum(RetailCustTable));
+        qbdRetail.joinMode(JoinMode::OuterJoin);
+        qbdRetail.relations(true);
+
+        QueryBuildDataSource qbdNafCode = custTableQBDS.addDataSource(tableNum(CompanyNAFCode));
+        qbdNafCode.joinMode(JoinMode::OuterJoin);
+        qbdNafCode.relations(true);
+
+        QueryBuildDataSource qbdTaxInfo = custTableQBDS.addDataSource(tableNum(TaxInformationCustTable_IN));
+        qbdTaxInfo.joinMode(JoinMode::OuterJoin);
+        qbdTaxInfo.addLink(fieldNum(CustTable, AccountNum), fieldNum(TaxInformationCustTable_IN, CustTable));
+
+        QueryBuildDataSource qbdTaxGST = custTableQBDS.addDataSource(tableNum(TaxGSTReliefGroupHeading_MY));
+        qbdTaxGST.joinMode(JoinMode::OuterJoin);
+        qbdTaxGST.relations(true);
+
+        // Adding tables used by DimensionSetEntity data source
+        QueryBuildDataSource qbdDim = custTableQBDS.addDataSource(tableNum(DimensionAttributeValueSet));
+        qbdDim.addLink(fieldNum(CustTable, DefaultDimension), fieldNum(DimensionAttributeValueSet, RecId));
+
+        // Adding tables used by CustWriteOffFinancialReasonsSetupEntity data source
+        QueryBuildDataSource qbdCustWriteOff = custTableQBDS.addDataSource(tableNum(CustWriteOffFinancialReasonsSetup));
+        qbdCustWriteOff.addLink(fieldNum(CustTable, CustWriteOffRefRecId), fieldNum(CustWriteOffFinancialReasonsSetup, RecId));
+
+        // Adding tables used by DirPartyBaseEntity data source
+        QueryBuildDataSource qbdDirParty = DirPartyBaseEntity::addChangeTrackingDataSourcesForPartyBase(custTableQBDS, fieldNum(CustTable, Party));
+
+        // Adding tables used by DirPartyBaseEntity related datasources
+        // ---LogisticsPostalAddressBaseEntity
+        QueryBuildDataSource qbdPostalAddress = LogisticsPostalAddressBaseEntity::addChangeTrackingDataSourcesForAddressBase(qbdDirParty, fieldNum(DirPartyTable, PrimaryAddressLocation));
+
+        QueryBuildDataSource qbdLogisticsLocationEx = qbdDirParty.addDataSource(tableNum(LogisticsLocationExt));
+        qbdLogisticsLocationEx.addLink(fieldNum(DirPartyTable, RecId), fieldNum(LogisticsLocationExt, Location));
+
+        // ---DefaultDeliveryLocation
+        QueryBuildDataSource  qbdCustDefaultRoleLoc = custTableQBDS.addDataSource(tableNum(CustDefaultLocation));
+
+        qbdCustDefaultRoleLoc.addLink(fieldNum(CustTable, AccountNum), fieldNum(CustDefaultLocation, AccountNum));
+
+        QueryBuildDataSource  qbdDirPartyLocationRole = qbdCustDefaultRoleLoc.addDataSource(tableNum(DirPartyLocationRole));
+        qbdDirPartyLocationRole.addLink(fieldNum(CustDefaultLocation, PartyLocationRole), fieldNum(DirPartyLocationRole, RecId));
+
+        QueryBuildDataSource  qbdLogLocationRole = qbdDirPartyLocationRole.addDataSource(tableNum(LogisticsLocationRole));
+        qbdLogLocationRole.addLink(fieldNum(DirPartyLocationRole, LocationRole), fieldNum(LogisticsLocationRole, RecId));
+
+        QueryBuildDataSource  qbdDirPartyLocation = qbdDirPartyLocationRole.addDataSource(tableNum(DirPartyLocation));
+        qbdDirPartyLocation.addLink(fieldNum(DirPartyLocationRole, PartyLocation ), fieldNum(DirPartyLocation, RecId));
+
+        return q;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>resolveAddressLocationId</Name>
+				<Source><![CDATA[
+    private LogisticsLocationId resolveAddressLocationId(LogisticsPostalAddressBaseEntity _postalAddressEntity)
+    {
+        LogisticsLocationId locationId;
+
+        // resolveRemittanceAddressLocationId returns a duplicate address in LogisticsLocation table.
+        locationId = LogisticsPostalAddressBaseEntity::resolveRemittanceAddressLocationId(_postalAddressEntity, this.PartyNumber);
+        _postalAddressEntity.LocationId = locationId;
+
+        return locationId;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>containsControlledChanges</Name>
+				<Source><![CDATA[
+    /// <summary>
+    /// Checks whether the data entity is trying to make changes on fields which are change-controlled.
+    /// </summary>
+    /// <returns>True if such changes are being made; false otherwise.</returns>
+    protected boolean containsControlledChanges()
+    {
+        boolean result =
+           (CustTableChangeProposalFieldEnablement::isEnabledFor(CustTableChangeProposalField::Name)
+                && this.OrganizationName != this.orig().OrganizationName)
+
+        || (CustTableChangeProposalFieldEnablement::isEnabledFor(CustTableChangeProposalField::CreditMax)
+                && this.CreditLimit != this.orig().CreditLimit)
+
+        || (CustTableChangeProposalFieldEnablement::isEnabledFor(CustTableChangeProposalField::TaxGroup)
+                && this.SalesTaxGroup != this.orig().SalesTaxGroup)
+
+        || (CustTableChangeProposalFieldEnablement::isEnabledFor(CustTableChangeProposalField::CustomerGroup)
+                && this.CustomerGroupId != this.orig().CustomerGroupId)
+
+        || (CustTableChangeProposalFieldEnablement::isEnabledFor(CustTableChangeProposalField::MethodOfPayment)
+                && this.PaymentMethod != this.orig().PaymentMethod)
+
+        || (CustTableChangeProposalFieldEnablement::isEnabledFor(CustTableChangeProposalField::PaymentSpecification)
+                && this.PaymentSpecification != this.orig().PaymentSpecification)
+
+        || (CustTableChangeProposalFieldEnablement::isEnabledFor(CustTableChangeProposalField::TaxExemptNumber)
+                && this.TaxExemptNumber != this.orig().TaxExemptNumber)
+
+        || (CustTableChangeProposalFieldEnablement::isEnabledFor(CustTableChangeProposalField::BankAccount)
+                && this.PaymentBankAccount != this.orig().PaymentBankAccount)
+
+        || (CustTableChangeProposalFieldEnablement::isEnabledFor(CustTableChangeProposalField::CashDisc)
+                && this.PaymentCashDiscount != this.orig().PaymentCashDiscount)
+
+        || (CustTableChangeProposalFieldEnablement::isEnabledFor(CustTableChangeProposalField::CashDiscBaseDays)
+                && this.PaymentTermsBaseDays != this.orig().PaymentTermsBaseDays)
+
+        || (CustTableChangeProposalFieldEnablement::isEnabledFor(CustTableChangeProposalField::CreditRating)
+                && this.CreditRating != this.orig().CreditRating)
+
+        || (CustTableChangeProposalFieldEnablement::isEnabledFor(CustTableChangeProposalField::CustExcludeCollectionFees)
+                && this.IsExcludedFromCollectionFeeCalculation != this.orig().IsExcludedFromCollectionFeeCalculation)
+
+        || (CustTableChangeProposalFieldEnablement::isEnabledFor(CustTableChangeProposalField::CustExcludeInterestCharges)
+                && this.IsExcludedFromInterestChargeCalculation != this.orig().IsExcludedFromInterestChargeCalculation)
+        
+        || (CustTableChangeProposalFieldEnablement::isEnabledFor(CustTableChangeProposalField::InvoiceAccount)
+                && this.InvoiceAccount != this.orig().InvoiceAccount)
+
+        || (CustTableChangeProposalFieldEnablement::isEnabledFor(CustTableChangeProposalField::MandatoryCreditLimit)
+                && this.CreditLimitIsMandatory != this.orig().CreditLimitIsMandatory)
+
+        || (CustTableChangeProposalFieldEnablement::isEnabledFor(CustTableChangeProposalField::PaymTermId)
+                && this.PaymentTerms != this.orig().PaymentTerms);
+        
+        return result;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>processChangesForApproval</Name>
+				<Source><![CDATA[
+    /// <summary>
+    /// Validates the contents prior to writing it.
+    /// </summary>
+    /// <param name = "_entityCtx">The entity context, containing a database operation type.</param>
+    private void processChangesForApproval(DataEntityRuntimeContext _entityCtx)
+    {
+        CustTableChangeProposalDataEntityBehavior selectedBehavior = CustParameters::find().CustTableChangeProposalDataEntityBehavior;
+
+        if (selectedBehavior == CustTableChangeProposalDataEntityBehavior::AllowWithoutApproval)
+        {
+            // Bypass all validation, since we elected not to restrict.
+            // Doing this early exit for the only scenario where everything will be persisted as is
+            // also allows us to assume we can modify the DE values below for reject or approval scenarios.
+            return;
+        }
+    
+        if(_entityCtx.getDatabaseOperation() == DataEntityDatabaseOperation::Update)
+        {
+            boolean controlledChangesMade = this.containsControlledChanges();
+
+            if(!controlledChangesMade)
+            {
+                // Nothing to change, can early exit.
+                // Can also assume if we don't hit this exit that a change request will be required.
+                return;
+            }
+
+            if(selectedBehavior == CustTableChangeProposalDataEntityBehavior::RejectChanges)
+            {
+                // Making changes while settings require us to reject changes.
+                throw error("@AccountsReceivable:CustChangeProposal_CannotBeChangedFromDE");
+            }
+
+            CustTable cust = CustTable::find(this.CustomerAccount);
+            RecId custRecId = cust.RecId;
+
+            if (!custRecId)
+            {
+                // We are trying to update a record that does not exist.
+                throw error(Error::wrongUseOfFunction(funcName()));
+            }
+
+            if (!cust.canModifyChangeProposal())
+            {
+                // Changes are made to controlled fields, but the customer is not in a position to accept them
+                // due to an existing set of pending changes.
+                throw error("@AccountsReceivable:CustTableChangeProposal_ChangesNotAllowed");
+            }
+
+            // If we got this far without early exiting or throwing, then we must apply the changes.
+            CustTableChangeProposal change = CustTableChangeProposal::findOrCreateAutogenerated(custRecId, true);
+
+            this.initializeCustTableChangeProposal(change);
+
+            ttsbegin;
+            change.update();
+            ttscommit;
+        }
+
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>initializeCustTableChangeProposal</Name>
+				<Source><![CDATA[
+    /// <summary>
+    /// Initializes the <c>CustTableChangeProposal</c> table buffer.
+    /// </summary>
+    /// <param name = "_custTableChangeProposal">
+    /// <c>CustTableChangeProposal</c> table buffer.
+    /// </param>
+    protected void initializeCustTableChangeProposal(CustTableChangeProposal _custTableChangeProposal)
+    {
+        if (CustTableChangeProposalFieldEnablement::isEnabledFor(CustTableChangeProposalField::Name)
+                && this.OrganizationName != this.orig().OrganizationName)
+        {
+            _custTableChangeProposal.Name = this.OrganizationName;
+            _custTableChangeProposal.setFlagForChangedField(CustTableChangeProposalField::Name);
+            this.OrganizationName = this.orig().OrganizationName;
+        }
+
+        if (CustTableChangeProposalFieldEnablement::isEnabledFor(CustTableChangeProposalField::CreditMax)
+                && this.CreditLimit != this.orig().CreditLimit)
+        {
+            _custTableChangeProposal.CreditMax = this.CreditLimit;
+            _custTableChangeProposal.setFlagForChangedField(CustTableChangeProposalField::CreditMax);
+            this.CreditLimit = this.orig().CreditLimit;
+        }
+
+        if (CustTableChangeProposalFieldEnablement::isEnabledFor(CustTableChangeProposalField::TaxGroup)
+                && this.SalesTaxGroup != this.orig().SalesTaxGroup)
+        {
+            _custTableChangeProposal.TaxGroup = this.SalesTaxGroup;
+            _custTableChangeProposal.setFlagForChangedField(CustTableChangeProposalField::TaxGroup);
+            this.SalesTaxGroup = this.orig().SalesTaxGroup;
+        }
+
+        if (CustTableChangeProposalFieldEnablement::isEnabledFor(CustTableChangeProposalField::CustomerGroup)
+                && this.CustomerGroupId != this.orig().CustomerGroupId)
+        {
+            _custTableChangeProposal.CustGroupId = this.CustomerGroupId;
+            _custTableChangeProposal.setFlagForChangedField(CustTableChangeProposalField::CustomerGroup);
+            this.CustomerGroupId = this.orig().CustomerGroupId;
+        }
+
+        if (CustTableChangeProposalFieldEnablement::isEnabledFor(CustTableChangeProposalField::MethodOfPayment)
+                && this.PaymentMethod != this.orig().PaymentMethod)
+        {
+            _custTableChangeProposal.CustPaymMode = this.PaymentMethod;
+            _custTableChangeProposal.setFlagForChangedField(CustTableChangeProposalField::MethodOfPayment);
+            this.PaymentMethod = this.orig().PaymentMethod;
+        }
+
+        if (CustTableChangeProposalFieldEnablement::isEnabledFor(CustTableChangeProposalField::PaymentSpecification)
+                && this.PaymentSpecification != this.orig().PaymentSpecification)
+        {
+            _custTableChangeProposal.CustPaymSpec = this.PaymentSpecification;
+            _custTableChangeProposal.setFlagForChangedField(CustTableChangeProposalField::PaymentSpecification);
+            this.PaymentSpecification = this.orig().PaymentSpecification;
+        }
+
+        if (CustTableChangeProposalFieldEnablement::isEnabledFor(CustTableChangeProposalField::TaxExemptNumber)
+                && this.TaxExemptNumber != this.orig().TaxExemptNumber)
+        {
+            _custTableChangeProposal.VATNum = this.TaxExemptNumber;
+            _custTableChangeProposal.setFlagForChangedField(CustTableChangeProposalField::TaxExemptNumber);
+            this.TaxExemptNumber = this.orig().TaxExemptNumber;
+        }
+
+        if (CustTableChangeProposalFieldEnablement::isEnabledFor(CustTableChangeProposalField::BankAccount)
+                && this.PaymentBankAccount != this.orig().PaymentBankAccount)
+        {
+            _custTableChangeProposal.BankAccountId = this.PaymentBankAccount;
+            _custTableChangeProposal.setFlagForChangedField(CustTableChangeProposalField::BankAccount);
+            this.PaymentBankAccount = this.orig().PaymentBankAccount;
+        }
+
+        if (CustTableChangeProposalFieldEnablement::isEnabledFor(CustTableChangeProposalField::CashDisc)
+                && this.PaymentCashDiscount != this.orig().PaymentCashDiscount)
+        {
+            _custTableChangeProposal.CashDiscCode = this.PaymentCashDiscount;
+            _custTableChangeProposal.setFlagForChangedField(CustTableChangeProposalField::CashDisc);
+            this.PaymentCashDiscount = this.orig().PaymentCashDiscount;
+        }
+
+        if (CustTableChangeProposalFieldEnablement::isEnabledFor(CustTableChangeProposalField::CashDiscBaseDays)
+                && this.PaymentTermsBaseDays != this.orig().PaymentTermsBaseDays)
+        {
+            _custTableChangeProposal.CashDiscBaseDays = this.PaymentTermsBaseDays;
+            _custTableChangeProposal.setFlagForChangedField(CustTableChangeProposalField::CashDiscBaseDays);
+            this.PaymentTermsBaseDays = this.orig().PaymentTermsBaseDays;
+        }
+
+        if (CustTableChangeProposalFieldEnablement::isEnabledFor(CustTableChangeProposalField::CreditRating)
+                && this.CreditRating != this.orig().CreditRating)
+        {
+            _custTableChangeProposal.CreditRating = this.CreditRating;
+            _custTableChangeProposal.setFlagForChangedField(CustTableChangeProposalField::CreditRating);
+            this.CreditRating = this.orig().CreditRating;
+        }
+
+        if (CustTableChangeProposalFieldEnablement::isEnabledFor(CustTableChangeProposalField::CustExcludeCollectionFees)
+                && this.IsExcludedFromCollectionFeeCalculation != this.orig().IsExcludedFromCollectionFeeCalculation)
+        {
+            _custTableChangeProposal.CustExcludeCollectionFee = this.IsExcludedFromCollectionFeeCalculation;
+            _custTableChangeProposal.setFlagForChangedField(CustTableChangeProposalField::CustExcludeCollectionFees);
+            this.IsExcludedFromCollectionFeeCalculation = this.orig().IsExcludedFromCollectionFeeCalculation;
+        }
+
+        if (CustTableChangeProposalFieldEnablement::isEnabledFor(CustTableChangeProposalField::CustExcludeInterestCharges)
+                && this.IsExcludedFromInterestChargeCalculation != this.orig().IsExcludedFromInterestChargeCalculation)
+        {
+            _custTableChangeProposal.CustExcludeInterestCharges = this.IsExcludedFromInterestChargeCalculation;
+            _custTableChangeProposal.setFlagForChangedField(CustTableChangeProposalField::CustExcludeInterestCharges);
+            this.IsExcludedFromInterestChargeCalculation = this.orig().IsExcludedFromInterestChargeCalculation;
+        }
+
+        if (CustTableChangeProposalFieldEnablement::isEnabledFor(CustTableChangeProposalField::InvoiceAccount)
+                && this.InvoiceAccount != this.orig().InvoiceAccount)
+        {
+            _custTableChangeProposal.InvoiceAccount = this.InvoiceAccount;
+            _custTableChangeProposal.setFlagForChangedField(CustTableChangeProposalField::InvoiceAccount);
+            this.InvoiceAccount = this.orig().InvoiceAccount;
+        }
+
+        if (CustTableChangeProposalFieldEnablement::isEnabledFor(CustTableChangeProposalField::MandatoryCreditLimit)
+                && this.CreditLimitIsMandatory != this.orig().CreditLimitIsMandatory)
+        {
+            _custTableChangeProposal.MandatoryCreditLimit = this.CreditLimitIsMandatory;
+            _custTableChangeProposal.setFlagForChangedField(CustTableChangeProposalField::MandatoryCreditLimit);
+            this.CreditLimitIsMandatory = this.orig().CreditLimitIsMandatory;
+        }
+
+        if (CustTableChangeProposalFieldEnablement::isEnabledFor(CustTableChangeProposalField::PaymTermId)
+                && this.PaymentTerms != this.orig().PaymentTerms)
+        {
+            _custTableChangeProposal.CustPaymTermId = this.PaymentTerms;
+            _custTableChangeProposal.setFlagForChangedField(CustTableChangeProposalField::PaymTermId);
+            this.PaymentTerms = this.orig().PaymentTerms;
+        }
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>getEntityDataSourceToFieldMapping</Name>
+				<Source><![CDATA[
+    public static container getEntityDataSourceToFieldMapping(container mapping)
+    {
+        mapping += [[tablestr(DirPartyBaseEntity), tablenum(LogisticsPostalAddress), fieldstr(CustCustomerV3Entity, AddressRecordId)],
+                    [identifierstr(DirPartyBaseEntity), tablenum(LogisticsElectronicAddress), fieldstr(CustCustomerV3Entity, PrimaryContactURLRecordId)],
+                    [identifierstr(DirPartyBaseEntity1), tablenum(LogisticsElectronicAddress), fieldstr(CustCustomerV3Entity, PrimaryContactPhoneRecordId)],
+                    [identifierstr(DirPartyBaseEntity2), tablenum(LogisticsElectronicAddress), fieldstr(CustCustomerV3Entity, PrimaryContactEmailRecordId)],
+                    [identifierstr(DirPartyBaseEntity3), tablenum(LogisticsElectronicAddress), fieldstr(CustCustomerV3Entity, PrimaryContactFaxRecordId)],
+                    [identifierstr(DirPartyBaseEntity4), tablenum(DirPartyLocation), fieldstr(CustCustomerV3Entity, DirPartyLocationRecordId)],
+                    [identifierstr(DirPartyBaseEntity5), tablenum(LogisticsPostalAddress), fieldstr(CustCustomerV3Entity, InvoiceAddressRecordId)],
+                    [identifierstr(DirPartyBaseEntity6), tablenum(LogisticsPostalAddress), fieldstr(CustCustomerV3Entity, DeliveryAddressRecordId)],
+                    [identifierStr(DirPartyBaseEntity7), tablenum(DirPartyTable), fieldstr(CustCustomerV3Entity, PartyRecordId)]];
+        return mapping;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>dualWriteShouldSkipDataSource</Name>
+				<Source><![CDATA[
+    /// <summary>
+    /// Determines that the datasource CustDefaultLocation should not be skipped for change tracking to be able to sync customer addresses
+    /// </summary>
+    /// <param name = "_entityToAnalyze">The entity being tracked.</param>
+    /// <param name = "_datasourceName">The datasource within the entity to track.</param>
+    /// <param name = "_primaryTableId">The table ID of the datasource being tracked.</param>
+    /// <param name = "_fieldMapping">The set of field mappings related to this map.</param>
+    /// <returns>false if the datasource should not be skipped; otherwise, !atLeastOneFieldMapped.</returns>
+    public static boolean dualWriteShouldSkipDataSource(DictDataEntity _entityToAnalyze,str _datasourceName,tableid _primaryTableId,Map _fieldMapping, boolean atLeastOneFieldMapped)
+    {
+        if(_primaryTableId == tableNum(CustDefaultLocation))
+        {
+            return false;
+        }
+        
+        return !atLeastOneFieldMapped;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>initValue</Name>
+				<Source><![CDATA[
+    public void initValue()
+    {
+        super();
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>salesLastYearMST</Name>
+				<Source><![CDATA[
+    //example of a computed field
+    public static server str salesLastYearMST()
+    {
+        return strFmt('SELECT Isnull(Sum(InvoiceAmountMST), 0)   ' + 
+                      'FROM   CustInvoiceJour          ' +
+                      'WHERE  DataAreaId = \'%1\'     ' +
+                      'AND partition = %2      ' +
+                      'AND OrderAccount = \'%3\'     ' +
+                      'AND Datepart(yyyy, invoicedate) = Datepart(yyyy, Dateadd(year, -1, Getdate()))',
+                      SysComputedColumn::returnField(tableStr(AAXCustCustomerV3Entity), identifierStr(CustTable), fieldStr(CustTable, DataAreaId)),
+                      SysComputedColumn::returnField(tableStr(AAXCustCustomerV3Entity), identifierStr(CustTable), fieldStr(CustTable, Partition)),
+                      SysComputedColumn::returnField(tableStr(AAXCustCustomerV3Entity), identifierStr(CustTable), fieldStr(CustTable, InvoiceAccount)));
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>salesByYearMST</Name>
+				<Source><![CDATA[
+    public static server str salesByYearMST(YearBase _year)
+    {
+        return strFmt('SELECT Isnull(Sum(InvoiceAmountMST), 0)   ' +
+                      'FROM   CustInvoiceJour          ' +
+                      'WHERE  DataAreaId = \'%1\'     ' +
+                      'AND partition = %2      ' +
+                      'AND OrderAccount = \'%3\'     ' +
+                      'AND Datepart(yyyy, invoicedate) = \'%4\'',
+                      SysComputedColumn::returnField(tableStr(AAXCustCustomerV3Entity), identifierStr(CustTable), fieldStr(CustTable, DataAreaId)),
+                      SysComputedColumn::returnField(tableStr(AAXCustCustomerV3Entity), identifierStr(CustTable), fieldStr(CustTable, Partition)),
+                      SysComputedColumn::returnField(tableStr(AAXCustCustomerV3Entity), identifierStr(CustTable), fieldStr(CustTable, InvoiceAccount)),
+                      _year);
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>ODataSalesLastYearMST</Name>
+				<Source><![CDATA[
+    [SysODataAction("ODataSalesLastYearMST", true)]
+    public AmountMST ODataSalesLastYearMST()
+    {
+        CustInvoiceJour CustInvoiceJour;
+
+        select sum(InvoiceAmountMST)
+            from CustInvoiceJour
+            where CustInvoiceJour.OrderAccount == this.InvoiceAccount
+               && year(CustInvoiceJour.InvoiceDate) ==  year(prevYr(systemDateGet()));
+
+        return(CustInvoiceJour.InvoiceAmountMST);
+
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>ODataCustSalesLastYearMST</Name>
+				<Source><![CDATA[
+    [SysODataAction("ODataCustSalesLastYearMST", false)]
+    public AmountMST ODataCustSalesLastYearMST(CustAccount _CustAccount)
+    {
+        CustInvoiceJour CustInvoiceJour;
+
+        select sum(InvoiceAmountMST)
+            from CustInvoiceJour
+            where CustInvoiceJour.OrderAccount == _CustAccount
+               && year(CustInvoiceJour.InvoiceDate) ==  year(prevYr(systemDateGet()));
+
+        return(CustInvoiceJour.InvoiceAmountMST);
+
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>ODataSalesByYearMST</Name>
+				<Source><![CDATA[
+    [SysODataAction("countRecordsInstance", true)]
+    public int ODataSalesByYearMST(YearBase _year)
+    {
+        CustInvoiceJour CustInvoiceJour;
+
+        select sum(InvoiceAmountMST)
+            from CustInvoiceJour
+            where CustInvoiceJour.OrderAccount == this.InvoiceAccount
+               && year(CustInvoiceJour.InvoiceDate) ==  _year;
+        
+        return(CustInvoiceJour.InvoiceAmountMST);
+
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>SalesFor2021MST</Name>
+				<Source><![CDATA[
+    public static server str SalesFor2021MST()
+    {
+        return(AAXCustCustomerV4Entity::salesByYearMST(2021));
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>SalesFor2020MST</Name>
+				<Source><![CDATA[
+    public static server str SalesFor2020MST()
+    {
+        return(AAXCustCustomerV4Entity::salesByYearMST(2020));
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>SalesFor2019MST</Name>
+				<Source><![CDATA[
+    public static server str SalesFor2019MST()
+    {
+        return(AAXCustCustomerV4Entity::salesByYearMST(2019));
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>SalesFor2018MST</Name>
+				<Source><![CDATA[
+    public static server str SalesFor2018MST()
+    {
+        return(AAXCustCustomerV4Entity::salesByYearMST(2018));
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>SalesFor2017MST</Name>
+				<Source><![CDATA[
+    public static server str SalesFor2017MST()
+    {
+        return(AAXCustCustomerV4Entity::salesByYearMST(2017));
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>SalesFor2016MST</Name>
+				<Source><![CDATA[
+    public static server str SalesFor2016MST()
+    {
+        return(AAXCustCustomerV4Entity::salesByYearMST(2016));
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>SalesFor2015MST</Name>
+				<Source><![CDATA[
+    public static server str SalesFor2015MST()
+    {
+        return(AAXCustCustomerV4Entity::salesByYearMST(2015));
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>SalesFor2014MST</Name>
+				<Source><![CDATA[
+    public static server str SalesFor2014MST()
+    {
+        return(AAXCustCustomerV4Entity::salesByYearMST(2014));
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>SalesFor2013MST</Name>
+				<Source><![CDATA[
+    public static server str SalesFor2013MST()
+    {
+        return(AAXCustCustomerV4Entity::salesByYearMST(2013));
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>SalesFor2012MST</Name>
+				<Source><![CDATA[
+    public static server str SalesFor2012MST()
+    {
+        return(AAXCustCustomerV4Entity::salesByYearMST(2012));
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>SalesFor2011MST</Name>
+				<Source><![CDATA[
+    public static server str SalesFor2011MST()
+    {
+        return(AAXCustCustomerV4Entity::salesByYearMST(2011));
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>SalesFor2010MST</Name>
+				<Source><![CDATA[
+    public static server str SalesFor2010MST()
+    {
+        return(AAXCustCustomerV4Entity::salesByYearMST(2010));
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>SalesFor2009MST</Name>
+				<Source><![CDATA[
+    public static server str SalesFor2009MST()
+    {
+        return(AAXCustCustomerV4Entity::salesByYearMST(2009));
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>SalesFor2008MST</Name>
+				<Source><![CDATA[
+    public static server str SalesFor2008MST()
+    {
+        return(AAXCustCustomerV4Entity::salesByYearMST(2008));
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>SalesFor2007MST</Name>
+				<Source><![CDATA[
+    public static server str SalesFor2007MST()
+    {
+        return(AAXCustCustomerV4Entity::salesByYearMST(2007));
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>SalesFor2006MST</Name>
+				<Source><![CDATA[
+    public static server str SalesFor2006MST()
+    {
+        return(AAXCustCustomerV4Entity::salesByYearMST(2006));
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>SalesFor2005MST</Name>
+				<Source><![CDATA[
+    public static server str SalesFor2005MST()
+    {
+        return(AAXCustCustomerV4Entity::salesByYearMST(2005));
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>SalesFor2004MST</Name>
+				<Source><![CDATA[
+    public static server str SalesFor2004MST()
+    {
+        return(AAXCustCustomerV4Entity::salesByYearMST(2004));
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>SalesFor2003MST</Name>
+				<Source><![CDATA[
+    public static server str SalesFor2003MST()
+    {
+        return(AAXCustCustomerV4Entity::salesByYearMST(2003));
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>SalesFor2002MST</Name>
+				<Source><![CDATA[
+    public static server str SalesFor2002MST()
+    {
+        return(AAXCustCustomerV4Entity::salesByYearMST(2002));
+    }
+
+]]></Source>
+			</Method>
+		</Methods>
+	</SourceCode>
+	<ConfigurationKey>LedgerBasic</ConfigurationKey>
+	<DeveloperDocumentation>@AccountsReceivable:CustCustomerV3EntityDevDoc</DeveloperDocumentation>
+	<FormRef>CustTable</FormRef>
+	<Label>@AccountsReceivable:CustCustomerV3EntityLabel</Label>
+	<Tags>Customers</Tags>
+	<DataManagementEnabled>Yes</DataManagementEnabled>
+	<DataManagementStagingTable>AAXCustCustomerV3Staging</DataManagementStagingTable>
+	<IsPublic>Yes</IsPublic>
+	<Modules>AccountsReceivable</Modules>
+	<PrimaryCompanyContext>DataAreaId</PrimaryCompanyContext>
+	<PrimaryKey>EntityKey</PrimaryKey>
+	<PublicCollectionName>AAXCustomersV3</PublicCollectionName>
+	<PublicEntityName>AAXCustomerV3</PublicEntityName>
+	<DeleteActions />
+	<FieldGroups>
+		<AxTableFieldGroup>
+			<Name>AutoReport</Name>
+			<Fields>
+				<AxTableFieldGroupField>
+					<DataField>DataAreaId</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>PartyNumber</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>PartyType</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>CustomerAccount</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>OrganizationName</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>NameAlias</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>InvoiceAccount</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>CustomerGroupId</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>SalesCurrencyCode</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>AddressStreet</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>AddressStreetNumber</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>AddressCity</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>AddressCounty</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>AddressBuildingComplement</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>PartyState</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>AddressCountryRegionId</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>AddressZipCode</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>LanguageId</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>CreditLimit</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>CreditRating</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>CreditLimitIsMandatory</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>PaymentCashDiscount</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>PaymentTerms</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>PaymentMethod</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>DefaultDimensionDisplayValue</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>DeliveryTerms</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>DeliveryReason</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>DeliveryMode</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>ContactPersonId</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>PrimaryContactEmail</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>PrimaryContactFax</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>PrimaryContactPhone</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>PrimaryContactURL</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>PrimaryContactTelex</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>IsSalesTaxIncludedInPrices</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>SalesTaxGroup</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>SalesReturnTaxGroup</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>TaxExemptNumber</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>TaxRegistrationID</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>AddressTimeZone</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>ConsolidationDay</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>WithholdingTaxGroupCode</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>IsWithholdingTaxCalculated</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>ReliefGroupId</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>PanStatus</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>CalculateWithholdingTax</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>ForeignCustomer</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>TCSGroup</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>TDSGroup</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>PreferentialCustomer</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>NatureOfAssessee</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>PANNumber</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>PANReferenceNumber</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>CURPNumber</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>RFCNumber</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>StateInscription</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>PaymentFactoringAccount</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>PaymentIdType</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>GiroType</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>FiscalCode</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>IsElectronicInvoice</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>FrenchSiret</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>NAFCode</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>NationalRegistryNumber</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>ExportSale</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>BirthCountyCode</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>BirthPlace</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>ResidenceForeignCountryRegionId</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>CustomerPaymentFineCode</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>CustomerPaymentFinancialInterestCode</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>BrazilianCCM</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>BrazilianCNAE</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>BrazilianCNPJOrCPF</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>IsFinalUser</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>CustomerWithholdingContributionType</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>IsIncomingFiscalDocumentGenerated</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>IsICMSContributor</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>BrazilianIE</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>BrazilianINSSCEI</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>BrazilianNIT</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>IsServiceDeliveryAddressBased</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>IsInSuframaRegion</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>SuframaNumber</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>HasSuframaDiscountPISandCOFINS</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>ForeignerId</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>MerchantID</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>DefaultECommerceOperator</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>CustomerType</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>CollectionLetterCode</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>EInvoiceRegister</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>AuthorityOffice</DataField>
+				</AxTableFieldGroupField>
+				<AxTableFieldGroupField>
+					<DataField>EInvoiceAttachment</DataField>
+				</AxTableFieldGroupField>
+			</Fields>
+		</AxTableFieldGroup>
+		<AxTableFieldGroup>
+			<Name>AutoLookup</Name>
+			<Fields />
+		</AxTableFieldGroup>
+		<AxTableFieldGroup>
+			<Name>AutoIdentification</Name>
+			<AutoPopulate>Yes</AutoPopulate>
+			<Fields />
+		</AxTableFieldGroup>
+		<AxTableFieldGroup>
+			<Name>AutoSummary</Name>
+			<Fields />
+		</AxTableFieldGroup>
+		<AxTableFieldGroup>
+			<Name>AutoBrowse</Name>
+			<Fields />
+		</AxTableFieldGroup>
+	</FieldGroups>
+	<Fields>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CustomerAccount</Name>
+			<AllowEdit>Yes</AllowEdit>
+			<Mandatory>No</Mandatory>
+			<DataField>AccountNum</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PartyType</Name>
+			<DataField>PartyType</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>OrganizationName</Name>
+			<Label>@GlobalAddressBook:OrganizationName</Label>
+			<DataField>Name</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>NameAlias</Name>
+			<DataField>NameAlias</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>KnownAs</Name>
+			<DataField>KnownAs</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CustomerGroupId</Name>
+			<Mandatory>Yes</Mandatory>
+			<DataField>CustGroup</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>OrganizationNumber</Name>
+			<DataField>OrganizationNumber</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>OrganizationNumberOfEmployees</Name>
+			<DataField>OrganizationNumOfEmployees</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>OrganizationABCCode</Name>
+			<DataField>OrganizationABCCode</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>OrganizationPhoneticName</Name>
+			<DataField>OrganizationPhoneticName</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PersonInitials</Name>
+			<DataField>PersonInitials</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PersonFirstName</Name>
+			<DataField>PersonFirstName</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PersonMiddleName</Name>
+			<DataField>PersonMiddleName</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PersonLastNamePrefix</Name>
+			<DataField>PersonLastNamePrefix</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PersonLastName</Name>
+			<DataField>PersonLastName</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PersonProfessionalTitle</Name>
+			<DataField>PersonProfessionalTitle</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PersonProfessionalSuffix</Name>
+			<DataField>PersonProfessionalSuffix</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PersonPhoneticFirstName</Name>
+			<DataField>PersonPhoneticFirstName</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PersonPhoneticLastName</Name>
+			<DataField>PersonPhoneticLastName</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PersonPhoneticMiddleName</Name>
+			<DataField>PersonPhoneticMiddleName</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PersonGender</Name>
+			<DataField>PersonGender</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PersonMaritalStatus</Name>
+			<DataField>PersonMaritalStatus</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PersonAnniversaryDay</Name>
+			<DataField>PersonAnniversaryDay</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PersonAnniversaryMonth</Name>
+			<DataField>PersonAnniversaryMonth</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PersonAnniversaryYear</Name>
+			<DataField>PersonAnniversaryYear</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PersonChildrenNames</Name>
+			<DataField>PersonChildrenNames</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PersonHobbies</Name>
+			<DataField>PersonHobbies</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PartyNumber</Name>
+			<Mandatory>No</Mandatory>
+			<DataField>PartyNumber</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>AddressBooks</Name>
+			<DataField>AddressBooks</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>LanguageId</Name>
+			<DataField>LanguageId</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>FullPrimaryAddress</Name>
+			<DataField>Address</DataField>
+			<DataSource>LogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>AddressDescription</Name>
+			<DataField>Description</DataField>
+			<DataSource>LogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>AddressZipCode</Name>
+			<DataField>ZipCode</DataField>
+			<DataSource>LogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>AddressCity</Name>
+			<DataField>City</DataField>
+			<DataSource>LogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>AddressCountryRegionId</Name>
+			<DataField>CountryRegionId</DataField>
+			<DataSource>LogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>AddressCountryRegionISOCode</Name>
+			<DataField>CountryRegionISOCode</DataField>
+			<DataSource>LogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>AddressCounty</Name>
+			<DataField>County</DataField>
+			<DataSource>LogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>AddressDistrictName</Name>
+			<DataField>DistrictName</DataField>
+			<DataSource>LogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>AddressLatitude</Name>
+			<DataField>Latitude</DataField>
+			<DataSource>LogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>AddressLocationId</Name>
+			<AllowEdit>Yes</AllowEdit>
+			<AllowEditOnCreate>Yes</AllowEditOnCreate>
+			<Mandatory>No</Mandatory>
+			<DataField>LocationId</DataField>
+			<DataSource>LogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>AddressLocationRoles</Name>
+			<DataField>AddressLocationRoles</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>AddressLongitude</Name>
+			<DataField>Longitude</DataField>
+			<DataSource>LogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>AddressState</Name>
+			<DataField>State</DataField>
+			<DataSource>LogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>AddressStreet</Name>
+			<DataField>Street</DataField>
+			<DataSource>LogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>AddressStreetNumber</Name>
+			<DataField>StreetNumber</DataField>
+			<DataSource>LogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>AddressTimeZone</Name>
+			<DataField>TimeZone</DataField>
+			<DataSource>LogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>AddressBuildingComplement</Name>
+			<DataField>BuildingCompliment</DataField>
+			<DataSource>LogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>AddressValidFrom</Name>
+			<DataField>ValidFrom</DataField>
+			<DataSource>LogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>AddressValidTo</Name>
+			<DataField>ValidTo</DataField>
+			<DataSource>LogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>AddressBrazilianCNPJOrCPF</Name>
+			<CountryRegionCodes>BR</CountryRegionCodes>
+			<DataField>CNPJCPFNum_BR</DataField>
+			<DataSource>LogisticsLocationExt</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>AddressBrazilianIE</Name>
+			<CountryRegionCodes>BR</CountryRegionCodes>
+			<DataField>IENum_BR</DataField>
+			<DataSource>LogisticsLocationExt</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PrimaryContactEmail</Name>
+			<DataField>PrimaryContactEmail</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PrimaryContactEmailDescription</Name>
+			<DataField>PrimaryContactEmailDescription</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PrimaryContactEmailIsIM</Name>
+			<DataField>PrimaryContactEmailIsIM</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PrimaryContactEmailPurpose</Name>
+			<DataField>PrimaryContactEmailPurpose</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PrimaryContactFax</Name>
+			<DataField>PrimaryContactFax</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PrimaryContactFaxDescription</Name>
+			<DataField>PrimaryContactFaxDescription</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PrimaryContactFaxExtension</Name>
+			<DataField>PrimaryContactFaxExtension</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PrimaryContactFaxPurpose</Name>
+			<DataField>PrimaryContactFaxPurpose</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PrimaryContactPhone</Name>
+			<DataField>PrimaryContactPhone</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PrimaryContactPhoneDescription</Name>
+			<DataField>PrimaryContactPhoneDescription</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PrimaryContactPhoneExtension</Name>
+			<DataField>PrimaryContactPhoneExtension</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PrimaryContactPhoneIsMobile</Name>
+			<DataField>PrimaryContactPhoneIsMobile</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PrimaryContactPhonePurpose</Name>
+			<DataField>PrimaryContactPhonePurpose</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PrimaryContactTelex</Name>
+			<DataField>PrimaryContactTelex</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PrimaryContactTelexDescription</Name>
+			<DataField>PrimaryContactTelexDescription</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PrimaryContactTelexPurpose</Name>
+			<DataField>PrimaryContactTelexPurpose</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PrimaryContactURL</Name>
+			<DataField>PrimaryContactURL</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PrimaryContactURLDescription</Name>
+			<DataField>PrimaryContactURLDescription</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PrimaryContactURLPurpose</Name>
+			<DataField>PrimaryContactURLPurpose</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PrimaryContactFacebook</Name>
+			<DataField>PrimaryContactFacebook</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PrimaryContactFacebookDescription</Name>
+			<DataField>PrimaryContactFacebookDescription</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PrimaryContactFacebookPurpose</Name>
+			<DataField>PrimaryContactFacebookPurpose</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PrimaryContactLinkedIn</Name>
+			<DataField>PrimaryContactLinkedIn</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PrimaryContactLinkedInDescription</Name>
+			<DataField>PrimaryContactLinkedInDescription</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PrimaryContactLinkedInPurpose</Name>
+			<DataField>PrimaryContactLinkedInPurpose</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PrimaryContactTwitterDescription</Name>
+			<DataField>PrimaryContactTwitterDescription</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PrimaryContactTwitter</Name>
+			<DataField>PrimaryContactTwitter</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PrimaryContactTwitterPurpose</Name>
+			<DataField>PrimaryContactTwitterPurpose</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>IsOneTimeCustomer</Name>
+			<DataField>OneTimeCustomer</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>StatisticsGroupId</Name>
+			<DataField>StatisticsGroup</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>AccountStatement</Name>
+			<DataField>AccountStatement</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>IdentificationNumber</Name>
+			<DataField>IdentificationNumber</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PartyCountry</Name>
+			<DataField>PartyCountry</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PartyState</Name>
+			<DataField>PartyState</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>VendorAccount</Name>
+			<DataField>VendAccount</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>FederalIndicator</Name>
+			<DataField>FedNonFedIndicator</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>FederalAgencyLocationCode</Name>
+			<DataField>AgencyLocationCode</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>FederalComments</Name>
+			<DataField>FederalComments</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>IRS1099CIndicator</Name>
+			<DataField>IRS1099CIndicator</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ContactPersonId</Name>
+			<DataField>ContactPersonId</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>LineOfBusinessId</Name>
+			<DataField>LineOfBusinessId</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>MainContactWorker</Name>
+			<AccessModifier>Private</AccessModifier>
+			<DataField>MainContactWorker</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SalesSegmentId</Name>
+			<DataField>SegmentId</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SalesSubsegmentId</Name>
+			<DataField>SubsegmentId</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SalesDistrict</Name>
+			<DataField>SalesDistrictId</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CompanyChain</Name>
+			<DataField>CompanyChainId</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SalesCurrencyCode</Name>
+			<Mandatory>Yes</Mandatory>
+			<DataField>Currency</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SalesMemo</Name>
+			<DataField>Memo</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>OnHoldStatus</Name>
+			<DataField>Blocked</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CreditLimitIsMandatory</Name>
+			<DataField>MandatoryCreditLimit</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CreditRating</Name>
+			<DataField>CreditRating</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CreditLimit</Name>
+			<DataField>CreditMax</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CollectionsContactPersonId</Name>
+			<DataField>ContactPersonId</DataField>
+			<DataSource>CustCollectionsContact</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>IsExcludedFromInterestChargeCalculation</Name>
+			<DataField>CustExcludeInterestCharges</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>IsExcludedFromCollectionFeeCalculation</Name>
+			<DataField>CustExcludeCollectionFee</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ChargesGroupId</Name>
+			<DataField>MarkupGroup</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SiteId</Name>
+			<DataField>InventSiteId</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>WarehouseId</Name>
+			<DataField>InventLocation</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ItemCustomerGroupId</Name>
+			<DataField>CustItemGroupId</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CommissionCustomerGroupId</Name>
+			<DataField>CommissionGroup</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CommissionSalesGroupId</Name>
+			<DataField>SalesGroup</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SalesOrderPoolId</Name>
+			<DataField>SalesPoolId</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SalesAccountNumber</Name>
+			<DataField>OurAccountNum</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>OrderEntryDeadline</Name>
+			<DataField>OrderEntryDeadlineGroupId</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>MultiLineDiscountCode</Name>
+			<DataField>MultiLineDisc</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>TotalDiscountCode</Name>
+			<DataField>EndDisc</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DiscountPriceGroupId</Name>
+			<DataField>PriceGroup</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>LineDiscountCode</Name>
+			<DataField>LineDisc</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CustomerRebateGroupId</Name>
+			<DataField>PdsCustRebateGroupId</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CustomerTMAGroupId</Name>
+			<DataField>PdsRebateTMAGroup</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SupplementaryItemGroupId</Name>
+			<DataField>SuppItemGroupId</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PaymentTerms</Name>
+			<DataField>PaymTermId</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PaymentMethod</Name>
+			<DataField>PaymMode</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PaymentSpecification</Name>
+			<DataField>PaymSpec</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PaymentSchedule</Name>
+			<DataField>PaymSched</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PaymentDay</Name>
+			<DataField>PaymDayId</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PaymentCashDiscount</Name>
+			<DataField>CashDisc</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PaymentTermsBaseDays</Name>
+			<DataField>CashDiscBaseDays</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PaymentBankAccount</Name>
+			<AllowEdit>No</AllowEdit>
+			<AllowEditOnCreate>No</AllowEditOnCreate>
+			<DataField>BankAccount</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PaymentFactoringAccount</Name>
+			<DataField>FactoringAccount</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PaymentIdType</Name>
+			<DataField>PaymIdType</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PaymentUseCashDiscount</Name>
+			<DataField>UseCashDisc</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CentralBankPurposeCode</Name>
+			<DataField>BankCentralBankPurposeCode</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CentralBankPurposeNotes</Name>
+			<DataField>BankCentralBankPurposeText</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CreditCardAddressVerification</Name>
+			<DataField>CreditCardAddressVerification</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CreditCardAddressVerificationIsAuthorizationVoidedOnFailure</Name>
+			<DataField>CreditCardAddressVerificationVoid</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CreditCardAddressVerificationLevel</Name>
+			<DataField>CreditCardAddressVerificationLevel</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CreditCardCVC</Name>
+			<DataField>CreditCardCVC</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>WarehouseIsASNGenerated</Name>
+			<DataField>GenerateASN</DataField>
+			<DataSource>WHSCustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>WarehouseIsEntireShipmentFilled</Name>
+			<DataField>FillEntireOrder</DataField>
+			<DataSource>WHSCustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DefaultInventoryStatusId</Name>
+			<DataField>DefaultInventStatusId</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InvoiceAccount</Name>
+			<DataField>InvoiceAccount</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InvoiceAddress</Name>
+			<DataField>InvoiceAddress</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>NumberSequenceGroup</Name>
+			<DataField>numberSequenceGroup</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>GiroType</Name>
+			<DataField>GiroType</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>GiroTypeFreeTextInvoice</Name>
+			<DataField>GiroTypeFreeTextInvoice</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>GiroTypeInterestNote</Name>
+			<DataField>GiroTypeInterestNote</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>GiroTypeCollectionletter</Name>
+			<DataField>GiroTypeCollectionletter</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>GiroTypeProjInvoice</Name>
+			<DataField>GiroTypeProjInvoice</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>GiroTypeAccountStatement</Name>
+			<DataField>GiroTypeAccountStatement</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DeliveryFreightZone</Name>
+			<DataField>FreightZone</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DeliveryTerms</Name>
+			<DataField>DlvTerm</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DeliveryMode</Name>
+			<DataField>DlvMode</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DeliveryReason</Name>
+			<DataField>DlvReason</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DestinationCode</Name>
+			<DataField>DestinationCodeId</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ReceiptCalendar</Name>
+			<DataField>SalesCalendarId</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>IsFuelSurchargeApplied</Name>
+			<DataField>ShipCarrierFuelSurcharge</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SalesTaxGroup</Name>
+			<DataField>TaxGroup</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>TaxExemptNumber</Name>
+			<DataField>VATNum</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>IsSalesTaxIncludedInPrices</Name>
+			<DataField>InclTax</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PackingDutyLicense</Name>
+			<DataField>TaxLicenseNum</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>FiscalCode</Name>
+			<CountryRegionCodes>IT</CountryRegionCodes>
+			<DataField>FiscalCode</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PackingMaterialFeeLicenseNumber</Name>
+			<DataField>PackMaterialFeeLicenseNum</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>IsElectronicInvoice</Name>
+			<DataField>EInvoice</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ElectronicInvoiceEAN</Name>
+			<DataField>EinvoiceEANNum</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>IsFreightAccrued</Name>
+			<DataField>PdsFreightAccrued</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>IsExpressBillOfLadingAccepted</Name>
+			<DataField>ExpressBillOfLading</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>IsTransactionPostedAsShipment</Name>
+			<DataField>PostAsShipment</DataField>
+			<DataSource>RetailCustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>IsOrderNumberReferenceUsed</Name>
+			<DataField>useOrderNumberReference</DataField>
+			<DataSource>RetailCustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SalesReturnTaxGroup</Name>
+			<DataField>ReturnTaxGroup_W</DataField>
+			<DataSource>RetailCustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ReceiptEmail</Name>
+			<DataField>receiptEmail</DataField>
+			<DataSource>RetailCustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ReceiptOption</Name>
+			<DataField>receiptOption</DataField>
+			<DataSource>RetailCustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>IsWithholdingTaxCalculated</Name>
+			<Mandatory>No</Mandatory>
+			<DataField>TaxWithholdCalculate_TH</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>WithholdingTaxGroupCode</Name>
+			<Mandatory>No</Mandatory>
+			<DataField>TaxWithholdGroup_TH</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>FrenchSiret</Name>
+			<DataField>CompanyIdSiret</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>NAFCode</Name>
+			<AllowEdit>Yes</AllowEdit>
+			<Mandatory>No</Mandatory>
+			<DataField>CompanyIdNAF</DataField>
+			<DataSource>CompanyNAFCode</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CompanyType</Name>
+			<DataField>CompanyType_MX</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CURPNumber</Name>
+			<DataField>Curp_MX</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>RFCNumber</Name>
+			<DataField>Rfc_MX</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>StateInscription</Name>
+			<DataField>StateInscription_MX</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>TaxRegistrationId</Name>
+			<DataField>ForeignTaxRegistration_MX</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ConsolidationDay</Name>
+			<DataField>ConsDay_JP</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>NationalRegistryNumber</Name>
+			<DataField>OrgId</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ReliefGroupId</Name>
+			<AllowEdit>Yes</AllowEdit>
+			<Mandatory>No</Mandatory>
+			<DataField>ReliefGroupId</DataField>
+			<DataSource>TaxGSTReliefGroupHeading_MY</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DefaultDimension</Name>
+			<AccessModifier>Private</AccessModifier>
+			<DataField>DefaultDimension</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DefaultDimensionDisplayValue</Name>
+			<AllowEdit>Yes</AllowEdit>
+			<AllowEditOnCreate>Yes</AllowEditOnCreate>
+			<DataField>DisplayValue</DataField>
+			<DataSource>DefaultDimensionDAVS</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CalculateWithholdingTax</Name>
+			<CountryRegionCodes>IN</CountryRegionCodes>
+			<DataField>TaxWithholdCalculate_IN</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ForeignCustomer</Name>
+			<CountryRegionCodes>IN</CountryRegionCodes>
+			<DataField>IsForeign</DataField>
+			<DataSource>TaxInformationCustTable_IN</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>TCSGroup</Name>
+			<CountryRegionCodes>IN</CountryRegionCodes>
+			<DataField>TCSGroup</DataField>
+			<DataSource>TaxInformationCustTable_IN</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>TDSGroup</Name>
+			<CountryRegionCodes>IN</CountryRegionCodes>
+			<DataField>TDSGroup</DataField>
+			<DataSource>TaxInformationCustTable_IN</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PreferentialCustomer</Name>
+			<CountryRegionCodes>IN</CountryRegionCodes>
+			<DataField>IsPreferential</DataField>
+			<DataSource>TaxInformationCustTable_IN</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>NatureOfAssessee</Name>
+			<CountryRegionCodes>IN</CountryRegionCodes>
+			<DataField>NatureOfAssessee</DataField>
+			<DataSource>TaxInformationCustTable_IN</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PANNumber</Name>
+			<CountryRegionCodes>IN</CountryRegionCodes>
+			<DataField>PANNumber</DataField>
+			<DataSource>TaxInformationCustTable_IN</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PANReferenceNumber</Name>
+			<CountryRegionCodes>IN</CountryRegionCodes>
+			<DataField>PANReferenceNumber</DataField>
+			<DataSource>TaxInformationCustTable_IN</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PanStatus</Name>
+			<CountryRegionCodes>IN</CountryRegionCodes>
+			<DataField>PanStatus</DataField>
+			<DataSource>TaxInformationCustTable_IN</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ElectronicLocationId</Name>
+			<AllowEdit>Yes</AllowEdit>
+			<AllowEditOnCreate>Yes</AllowEditOnCreate>
+			<Mandatory>No</Mandatory>
+			<DataField>ElectronicLocationId</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CustomerPaymentFineCode</Name>
+			<CountryRegionCodes>BR</CountryRegionCodes>
+			<DataField>FineCode_BR</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CustomerPaymentFinancialInterestCode</Name>
+			<CountryRegionCodes>BR</CountryRegionCodes>
+			<DataField>InterestCode_BR</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>BrazilianCCM</Name>
+			<DataField>CCMNum_BR</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>BrazilianCNAE</Name>
+			<DataField>CNAE_BR</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>BrazilianCNPJOrCPF</Name>
+			<DataField>CNPJCPFNum_BR</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>IsFinalUser</Name>
+			<DataField>CustFinalUser_BR</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CustomerWithholdingContributionType</Name>
+			<DataField>CustWhtContributionType_BR</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>IsIncomingFiscalDocumentGenerated</Name>
+			<DataField>GenerateIncomingFiscalDocument_BR</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>IsICMSContributor</Name>
+			<DataField>ICMSContributor_BR</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>BrazilianIE</Name>
+			<DataField>IENum_BR</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>BrazilianINSSCEI</Name>
+			<DataField>INSSCEI_BR</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>BrazilianNIT</Name>
+			<DataField>NIT_BR</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>IsServiceDeliveryAddressBased</Name>
+			<DataField>ServiceCodeOnDlvAddress_BR</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>IsInSuframaRegion</Name>
+			<DataField>Suframa_BR</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>SuframaNumber</Name>
+			<DataField>SuframaNumber_BR</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>HasSuframaDiscountPISandCOFINS</Name>
+			<DataField>SuframaPISCOFINS_BR</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ForeignerId</Name>
+			<DataField>ForeignerId_BR</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>TransactionPresenceType</Name>
+			<DataField>PresenceType_BR</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>WriteOffCompany</Name>
+			<AccessModifier>Private</AccessModifier>
+			<DataField>Company</DataField>
+			<DataSource>CustWriteOffSetup</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>WriteoffReason</Name>
+			<Mandatory>No</Mandatory>
+			<DataField>WriteOffReason</DataField>
+			<DataSource>CustWriteOffSetup</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ExportSale</Name>
+			<DataField>ExportSales_PL</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>BirthCountyCode</Name>
+			<CountryRegionCodes>IT</CountryRegionCodes>
+			<DataField>BirthCountyCode_IT</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>BirthPlace</Name>
+			<CountryRegionCodes>IT</CountryRegionCodes>
+			<DataField>BirthPlace_IT</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ResidenceForeignCountryRegionId</Name>
+			<CountryRegionCodes>IT</CountryRegionCodes>
+			<DataField>ResidenceForeignCountryRegionId_IT</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>IsPurchRequestUsed</Name>
+			<DataField>usePurchRequest</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DeliveryAddressDescription</Name>
+			<Label>@AccountsReceivable:CustCustomerV3DeliveryAddressDescription</Label>
+			<Mandatory>No</Mandatory>
+			<DataField>Description</DataField>
+			<DataSource>DeliveryLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DeliveryAddressZipCode</Name>
+			<Label>@AccountsReceivable:CustCustomerV3DeliveryAddressZipCode</Label>
+			<DataField>ZipCode</DataField>
+			<DataSource>DeliveryLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DeliveryAddressTimeZone</Name>
+			<Label>@AccountsReceivable:CustCustomerV3DeliveryAddressTimeZone</Label>
+			<DataField>TimeZone</DataField>
+			<DataSource>DeliveryLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DeliveryAddressCity</Name>
+			<Label>@AccountsReceivable:CustCustomerV3DeliveryAddressCity</Label>
+			<DataField>City</DataField>
+			<DataSource>DeliveryLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DeliveryAddressCountryRegionId</Name>
+			<Label>@AccountsReceivable:CustCustomerV3DeliveryAddressCountryRegion</Label>
+			<Mandatory>No</Mandatory>
+			<DataField>CountryRegionId</DataField>
+			<DataSource>DeliveryLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DeliveryAddressCountryRegionISOCode</Name>
+			<Label>@AccountsReceivable:CustCustomerV3DeliveryAddressCountryRegionISO</Label>
+			<DataField>CountryRegionISOCode</DataField>
+			<DataSource>DeliveryLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DeliveryAddressCounty</Name>
+			<Label>@AccountsReceivable:CustCustomerV3DeliveryAddressCounty</Label>
+			<DataField>County</DataField>
+			<DataSource>DeliveryLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DeliveryAddressDistrictName</Name>
+			<Label>@AccountsReceivable:CustCustomerV3DeliveryAddressDistrictName</Label>
+			<DataField>DistrictName</DataField>
+			<DataSource>DeliveryLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DeliveryAddressLatitude</Name>
+			<Label>@AccountsReceivable:CustCustomerV3DeliveryAddressLatitude</Label>
+			<DataField>Latitude</DataField>
+			<DataSource>DeliveryLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DeliveryAddressLongitude</Name>
+			<Label>@AccountsReceivable:CustCustomerV3DeliveryAddressLongitude</Label>
+			<DataField>Longitude</DataField>
+			<DataSource>DeliveryLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DeliveryAddressLocationId</Name>
+			<AllowEdit>Yes</AllowEdit>
+			<AllowEditOnCreate>Yes</AllowEditOnCreate>
+			<Label>@AccountsReceivable:CustCustomerV3DeliveryAddressLocationId</Label>
+			<Mandatory>No</Mandatory>
+			<DataField>LocationId</DataField>
+			<DataSource>DeliveryLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DeliveryAddressState</Name>
+			<Label>@AccountsReceivable:CustCustomerV3DeliveryAddressState</Label>
+			<DataField>State</DataField>
+			<DataSource>DeliveryLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DeliveryAddressStreet</Name>
+			<Label>@AccountsReceivable:CustCustomerV3DeliveryAddressStreet</Label>
+			<DataField>Street</DataField>
+			<DataSource>DeliveryLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DeliveryAddressStreetNumber</Name>
+			<Label>@AccountsReceivable:CustCustomerV3DeliveryAddressStreetNumber</Label>
+			<DataField>StreetNumber</DataField>
+			<DataSource>DeliveryLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DeliveryAddressBuildingComplement</Name>
+			<Label>@AccountsReceivable:CustCustomerV3DeliveryAddressBuildingComplement</Label>
+			<DataField>BuildingCompliment</DataField>
+			<DataSource>DeliveryLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DeliveryAddressValidFrom</Name>
+			<Label>@AccountsReceivable:CustCustomerV3DeliveryAddressValidFrom</Label>
+			<DataField>ValidFrom</DataField>
+			<DataSource>DeliveryLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DeliveryAddressValidTo</Name>
+			<Label>@AccountsReceivable:CustCustomerV3DeliveryAddressValidTo</Label>
+			<DataField>ValidTo</DataField>
+			<DataSource>DeliveryLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InvoiceAddressDescription</Name>
+			<Label>@AccountsReceivable:CustCustomerV3InvoiceAddressDescription</Label>
+			<Mandatory>No</Mandatory>
+			<DataField>Description</DataField>
+			<DataSource>InvoiceLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InvoiceAddressZipCode</Name>
+			<Label>@AccountsReceivable:CustCustomerV3InvoiceAddressZipCode</Label>
+			<DataField>ZipCode</DataField>
+			<DataSource>InvoiceLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InvoiceAddressTimeZone</Name>
+			<Label>@AccountsReceivable:CustCustomerV3InvoiceAddressTimeZone</Label>
+			<DataField>TimeZone</DataField>
+			<DataSource>InvoiceLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InvoiceAddressCity</Name>
+			<Label>@AccountsReceivable:CustCustomerV3InvoiceAddressCity</Label>
+			<DataField>City</DataField>
+			<DataSource>InvoiceLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InvoiceAddressCountryRegionId</Name>
+			<Label>@AccountsReceivable:CustCustomerV3InvoiceAddressCountryRegion</Label>
+			<Mandatory>No</Mandatory>
+			<DataField>CountryRegionId</DataField>
+			<DataSource>InvoiceLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InvoiceAddressCountryRegionISOCode</Name>
+			<Label>@AccountsReceivable:CustCustomerV3InvoiceAddressCountryRegionISO</Label>
+			<DataField>CountryRegionISOCode</DataField>
+			<DataSource>InvoiceLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InvoiceAddressCounty</Name>
+			<Label>@AccountsReceivable:CustCustomerV3InvoiceAddressCounty</Label>
+			<DataField>County</DataField>
+			<DataSource>InvoiceLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InvoiceAddressDistrictName</Name>
+			<Label>@AccountsReceivable:CustCustomerV3InvoiceAddressDisctrictName</Label>
+			<DataField>DistrictName</DataField>
+			<DataSource>InvoiceLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InvoiceAddressLatitude</Name>
+			<Label>@AccountsReceivable:CustCustomerV3InvoiceAddressLatitude</Label>
+			<DataField>Latitude</DataField>
+			<DataSource>InvoiceLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InvoiceAddressLongitude</Name>
+			<Label>@AccountsReceivable:CustCustomerV3InvoiceAddressLongitude</Label>
+			<DataField>Longitude</DataField>
+			<DataSource>InvoiceLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InvoiceAddressLocationId</Name>
+			<AllowEdit>Yes</AllowEdit>
+			<AllowEditOnCreate>Yes</AllowEditOnCreate>
+			<Label>@AccountsReceivable:CustCustomerV3InvoiceAddressLocationId</Label>
+			<Mandatory>No</Mandatory>
+			<DataField>LocationId</DataField>
+			<DataSource>InvoiceLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InvoiceAddressState</Name>
+			<Label>@AccountsReceivable:CustCustomerV3InvoiceAddressState</Label>
+			<DataField>State</DataField>
+			<DataSource>InvoiceLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InvoiceAddressStreet</Name>
+			<Label>@AccountsReceivable:CustCustomerV3InvoiceAddressStreet</Label>
+			<DataField>Street</DataField>
+			<DataSource>InvoiceLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InvoiceAddressStreetNumber</Name>
+			<Label>@AccountsReceivable:CustCustomerV3InvoiceAddressStreetNumber</Label>
+			<DataField>StreetNumber</DataField>
+			<DataSource>InvoiceLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InvoiceAddressBuildingComplement</Name>
+			<Label>@AccountsReceivable:CustCustomerV3InvoiceAddressBuildingComplement</Label>
+			<DataField>BuildingCompliment</DataField>
+			<DataSource>InvoiceLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InvoiceAddressValidFrom</Name>
+			<Label>@AccountsReceivable:CustCustomerV3InvoiceAddressValidFrom</Label>
+			<DataField>ValidFrom</DataField>
+			<DataSource>InvoiceLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InvoiceAddressValidTo</Name>
+			<Label>@AccountsReceivable:CustCustomerV3InvoiceAddressValidTo</Label>
+			<DataField>ValidTo</DataField>
+			<DataSource>InvoiceLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>IsExternallyMaintained</Name>
+			<DataField>IsExternallyMaintained</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>MerchantID</Name>
+			<DataField>MerchantID</DataField>
+			<DataSource>TaxInformationCustTable_IN</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DefaultECommerceOperator</Name>
+			<DataField>DefaultECommerceOperator</DataField>
+			<DataSource>TaxInformationCustTable_IN</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CustomerType</Name>
+			<CountryRegionCodes>IN</CountryRegionCodes>
+			<DataField>CustomerType</DataField>
+			<DataSource>TaxInformationCustTable_IN</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>FulfillmentPolicyName</Name>
+			<AllowEdit>Yes</AllowEdit>
+			<AllowEditOnCreate>Yes</AllowEditOnCreate>
+			<Mandatory>No</Mandatory>
+			<DataField>Name</DataField>
+			<DataSource>FulfillmentPolicy</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>FulfillmentPolicy</Name>
+			<AccessModifier>Private</AccessModifier>
+			<DataField>FulfillmentPolicy</DataField>
+			<DataSource>WHSCustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>AddressPostbox</Name>
+			<Mandatory>No</Mandatory>
+			<DataField>PostBox</DataField>
+			<DataSource>LogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CustClassificationId</Name>
+			<Mandatory>No</Mandatory>
+			<DataField>CustClassificationId</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>IsAllowCreateIndirectOrderLines</Name>
+			<DataField>InterCompanyAllowIndirectCreation</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PrimaryContactEmailRecordId</Name>
+			<AllowEdit>No</AllowEdit>
+			<AllowEditOnCreate>No</AllowEditOnCreate>
+			<Mandatory>No</Mandatory>
+			<DataField>PrimaryContactEmailRecordId</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PrimaryContactFaxRecordId</Name>
+			<AllowEdit>No</AllowEdit>
+			<AllowEditOnCreate>No</AllowEditOnCreate>
+			<Mandatory>No</Mandatory>
+			<DataField>PrimaryContactFaxRecordId</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PrimaryContactPhoneRecordId</Name>
+			<AllowEdit>No</AllowEdit>
+			<AllowEditOnCreate>No</AllowEditOnCreate>
+			<Mandatory>No</Mandatory>
+			<DataField>PrimaryContactPhoneRecordId</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PrimaryContactURLRecordId</Name>
+			<AllowEdit>No</AllowEdit>
+			<AllowEditOnCreate>No</AllowEditOnCreate>
+			<Mandatory>No</Mandatory>
+			<DataField>PrimaryContactURLRecordId</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>AddressRecordId</Name>
+			<AllowEdit>No</AllowEdit>
+			<AllowEditOnCreate>No</AllowEditOnCreate>
+			<Mandatory>No</Mandatory>
+			<DataField>AddressRecId</DataField>
+			<DataSource>LogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>CollectionLetterCode</Name>
+			<DataField>CollectionLetterCode</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>EInvoiceRegister</Name>
+			<CountryRegionCodes>IT,ES</CountryRegionCodes>
+			<Mandatory>No</Mandatory>
+			<DataField>EInvoiceRegister_IT</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>AuthorityOffice</Name>
+			<CountryRegionCodes>IT</CountryRegionCodes>
+			<Mandatory>No</Mandatory>
+			<DataField>AuthorityOffice_IT</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>EInvoiceAttachment</Name>
+			<Mandatory>No</Mandatory>
+			<DataField>EInvoiceAttachment</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>Priority</Name>
+			<Mandatory>No</Mandatory>
+			<DataField>SOAllocPriority</DataField>
+			<DataSource>MCRCustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DeliveryAddressRecordId</Name>
+			<AccessModifier>Internal</AccessModifier>
+			<AllowEdit>No</AllowEdit>
+			<AllowEditOnCreate>No</AllowEditOnCreate>
+			<Mandatory>No</Mandatory>
+			<DataField>AddressRecId</DataField>
+			<DataSource>DeliveryLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InvoiceAddressRecordId</Name>
+			<AccessModifier>Internal</AccessModifier>
+			<AllowEdit>No</AllowEdit>
+			<AllowEditOnCreate>No</AllowEditOnCreate>
+			<Mandatory>No</Mandatory>
+			<DataField>AddressRecId</DataField>
+			<DataSource>InvoiceLogisticsPostalAddressBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>DirPartyLocationRecordId</Name>
+			<AccessModifier>Internal</AccessModifier>
+			<AllowEdit>No</AllowEdit>
+			<AllowEditOnCreate>No</AllowEditOnCreate>
+			<Mandatory>No</Mandatory>
+			<DataField>DirPartyLocationRecId</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>PartyRecordId</Name>
+			<AccessModifier>Internal</AccessModifier>
+			<AllowEdit>No</AllowEdit>
+			<AllowEditOnCreate>No</AllowEditOnCreate>
+			<Mandatory>No</Mandatory>
+			<DataField>PartyRecordId</DataField>
+			<DataSource>DirPartyBaseEntity</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InvoicePostingType</Name>
+			<Mandatory>No</Mandatory>
+			<DataField>InvoicePostingType_RU</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>ForeignResident</Name>
+			<Mandatory>No</Mandatory>
+			<DataField>ForeignResident_RU</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewMappedField">
+			<Name>InterCompanyAutoCreateOrders</Name>
+			<DataField>InterCompanyAutoCreateOrders</DataField>
+			<DataSource>CustTable</DataSource>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewUnmappedFieldString">
+			<Name>EmployeeResponsibleNumber</Name>
+			<AllowEdit>Yes</AllowEdit>
+			<AllowEditOnCreate>Yes</AllowEditOnCreate>
+			<ConfigurationKey>SmmCRM</ConfigurationKey>
+			<Label>@SYS316635</Label>
+			<ComputedFieldMethod>employeeResponsibleWorker</ComputedFieldMethod>
+			<ExtendedDataType>HcmPersonnelNumberId</ExtendedDataType>
+		</AxDataEntityViewField>
+	</Fields>
+	<Keys>
+		<AxDataEntityViewKey>
+			<Name>EntityKey</Name>
+			<Fields>
+				<AxDataEntityViewKeyField>
+					<DataField>CustomerAccount</DataField>
+				</AxDataEntityViewKeyField>
+			</Fields>
+		</AxDataEntityViewKey>
+	</Keys>
+	<Mappings>
+		<AxTableMapping>
+			<MappingTable>DirPartyEntityMap</MappingTable>
+			<Connections>
+				<AxTableMappingConnection>
+					<MapField>Name</MapField>
+					<MapFieldTo>OrganizationName</MapFieldTo>
+				</AxTableMappingConnection>
+				<AxTableMappingConnection>
+					<MapField>PartyNumber</MapField>
+					<MapFieldTo>PartyNumber</MapFieldTo>
+				</AxTableMappingConnection>
+				<AxTableMappingConnection>
+					<MapField>PartyType</MapField>
+					<MapFieldTo>PartyType</MapFieldTo>
+				</AxTableMappingConnection>
+			</Connections>
+		</AxTableMapping>
+	</Mappings>
+	<Ranges />
+	<Relations>
+		<AxDataEntityViewRelation xmlns=""
+			i:type="AxDataEntityViewRelationForeignKey">
+			<Name>DefaultDimensionDimensionSet</Name>
+			<Cardinality>ZeroMore</Cardinality>
+			<RelatedDataEntity>DimensionSetEntity</RelatedDataEntity>
+			<RelatedDataEntityCardinality>ZeroOne</RelatedDataEntityCardinality>
+			<RelationshipType>Association</RelationshipType>
+			<Constraints>
+				<AxDataEntityViewRelationConstraint xmlns=""
+					i:type="AxDataEntityViewRelationConstraintField">
+					<Name>DefaultDimension</Name>
+					<Field>DefaultDimension</Field>
+					<RelatedField>RecId</RelatedField>
+				</AxDataEntityViewRelationConstraint>
+			</Constraints>
+		</AxDataEntityViewRelation>
+		<AxDataEntityViewRelation>
+			<Name>CustWriteOffSetup</Name>
+			<Cardinality>ZeroMore</Cardinality>
+			<RelatedDataEntity>CustWriteOffFinancialReasonsSetupEntity</RelatedDataEntity>
+			<Constraints>
+				<AxDataEntityViewRelationConstraint xmlns=""
+					i:type="AxDataEntityViewRelationConstraintField">
+					<Name>RelationConstraintField1</Name>
+					<Field>WriteOffCompany</Field>
+					<RelatedField>Company</RelatedField>
+				</AxDataEntityViewRelationConstraint>
+				<AxDataEntityViewRelationConstraint xmlns=""
+					i:type="AxDataEntityViewRelationConstraintField">
+					<Name>RelationConstraintField2</Name>
+					<Field>WriteOffReason</Field>
+					<RelatedField>WriteOffReason</RelatedField>
+				</AxDataEntityViewRelationConstraint>
+			</Constraints>
+		</AxDataEntityViewRelation>
+		<AxDataEntityViewRelation xmlns=""
+			i:type="AxDataEntityViewRelationForeignKey">
+			<Name>CustClassificationGroup</Name>
+			<Cardinality>ZeroMore</Cardinality>
+			<RelatedDataEntity>CustomerPriorityClassificationGroupEntity</RelatedDataEntity>
+			<RelatedDataEntityCardinality>ZeroOne</RelatedDataEntityCardinality>
+			<RelationshipType>Association</RelationshipType>
+			<Constraints>
+				<AxDataEntityViewRelationConstraint xmlns=""
+					i:type="AxDataEntityViewRelationConstraintField">
+					<Name>CustomerPriorityClassificationGroupEnti1_CustomerPriorityClassificationGroupCode</Name>
+					<Field>CustClassificationId</Field>
+					<RelatedField>CustomerPriorityClassificationGroupCode</RelatedField>
+				</AxDataEntityViewRelationConstraint>
+			</Constraints>
+		</AxDataEntityViewRelation>
+		<AxDataEntityViewRelation>
+			<Name>CDSParty</Name>
+			<Cardinality>ExactlyOne</Cardinality>
+			<RelatedDataEntity>DirPartyCDSEntity</RelatedDataEntity>
+			<RelatedDataEntityCardinality>ExactlyOne</RelatedDataEntityCardinality>
+			<RelatedDataEntityRole>Party</RelatedDataEntityRole>
+			<Role>Customer</Role>
+			<Validate>No</Validate>
+			<Constraints>
+				<AxDataEntityViewRelationConstraint xmlns=""
+					i:type="AxDataEntityViewRelationConstraintField">
+					<Name>RelationConstraintField1</Name>
+					<Field>PartyNumber</Field>
+					<RelatedField>PartyNumber</RelatedField>
+				</AxDataEntityViewRelationConstraint>
+			</Constraints>
+		</AxDataEntityViewRelation>
+	</Relations>
+	<StateMachines />
+	<ViewMetadata>
+		<Name>Metadata</Name>
+		<SourceCode>
+			<Methods>
+				<Method>
+					<Name>classDeclaration</Name>
+					<Source><![CDATA[
+[Query]
+public class Metadata extends QueryRun
+{
+}
+]]></Source>
+				</Method>
+			</Methods>
+		</SourceCode>
+		<DataSources>
+			<AxQuerySimpleRootDataSource>
+				<Name>CustTable</Name>
+				<DynamicFields>Yes</DynamicFields>
+				<Table>CustTable</Table>
+				<DataSources>
+					<AxQuerySimpleEmbeddedDataSource>
+						<Name>CustCollectionsContact</Name>
+						<DynamicFields>Yes</DynamicFields>
+						<Table>CustCollectionsContact</Table>
+						<DataSources />
+						<DerivedDataSources />
+						<Fields />
+						<Ranges />
+						<JoinMode>OuterJoin</JoinMode>
+						<UseRelations>Yes</UseRelations>
+						<Relations>
+							<AxQuerySimpleDataSourceRelation>
+								<Name>CustTable</Name>
+								<JoinRelationName>CustTable</JoinRelationName>
+							</AxQuerySimpleDataSourceRelation>
+						</Relations>
+					</AxQuerySimpleEmbeddedDataSource>
+					<AxQuerySimpleEmbeddedDataSource>
+						<Name>WHSCustTable</Name>
+						<DynamicFields>Yes</DynamicFields>
+						<Table>WHSCustTable</Table>
+						<DataSources>
+							<AxQuerySimpleEmbeddedDataSource>
+								<Name>FulfillmentPolicy</Name>
+								<DynamicFields>Yes</DynamicFields>
+								<IsReadOnly>Yes</IsReadOnly>
+								<Table>WHSFulfillmentPolicy</Table>
+								<DataSources />
+								<DerivedDataSources />
+								<Fields />
+								<Ranges />
+								<JoinMode>OuterJoin</JoinMode>
+								<Relations>
+									<AxQuerySimpleDataSourceRelation>
+										<Name>QueryDataSourceRelation1</Name>
+										<JoinRelationName>WHSFulfillmentPolicy</JoinRelationName>
+									</AxQuerySimpleDataSourceRelation>
+								</Relations>
+							</AxQuerySimpleEmbeddedDataSource>
+						</DataSources>
+						<DerivedDataSources />
+						<Fields />
+						<Ranges />
+						<JoinMode>OuterJoin</JoinMode>
+						<UseRelations>Yes</UseRelations>
+						<Relations>
+							<AxQuerySimpleDataSourceRelation>
+								<Name>QueryDataSourceRelation1</Name>
+								<JoinRelationName>CustTable</JoinRelationName>
+							</AxQuerySimpleDataSourceRelation>
+						</Relations>
+					</AxQuerySimpleEmbeddedDataSource>
+					<AxQuerySimpleEmbeddedDataSource>
+						<Name>RetailCustTable</Name>
+						<DynamicFields>Yes</DynamicFields>
+						<Table>RetailCustTable</Table>
+						<DataSources />
+						<DerivedDataSources />
+						<Fields />
+						<Ranges />
+						<JoinMode>OuterJoin</JoinMode>
+						<UseRelations>Yes</UseRelations>
+						<Relations>
+							<AxQuerySimpleDataSourceRelation>
+								<Name>CustTable</Name>
+								<JoinRelationName>CustTable</JoinRelationName>
+							</AxQuerySimpleDataSourceRelation>
+						</Relations>
+					</AxQuerySimpleEmbeddedDataSource>
+					<AxQuerySimpleEmbeddedDataSource>
+						<Name>DirPartyBaseEntity</Name>
+						<DynamicFields>Yes</DynamicFields>
+						<Table>DirPartyBaseEntity</Table>
+						<DataSources>
+							<AxQuerySimpleEmbeddedDataSource>
+								<Name>LogisticsPostalAddressBaseEntity</Name>
+								<ApplyDateFilter>Yes</ApplyDateFilter>
+								<DynamicFields>Yes</DynamicFields>
+								<Table>LogisticsPostalAddressBaseEntity</Table>
+								<DataSources>
+									<AxQuerySimpleEmbeddedDataSource>
+										<Name>LogisticsLocationExt</Name>
+										<DynamicFields>Yes</DynamicFields>
+										<Table>LogisticsLocationExt</Table>
+										<DataSources />
+										<DerivedDataSources />
+										<Fields />
+										<Ranges>
+											<AxQuerySimpleDataSourceRange>
+												<Name>DataAreaId</Name>
+												<Field>DataAreaId</Field>
+												<Tags>currentCompany</Tags>
+												<Value>(DataAreaId == CustTable.DataAreaId)</Value>
+											</AxQuerySimpleDataSourceRange>
+										</Ranges>
+										<JoinMode>OuterJoin</JoinMode>
+										<Relations>
+											<AxQuerySimpleDataSourceRelation>
+												<Name>QueryDataSourceRelation1</Name>
+												<Field>RecId</Field>
+												<JoinDataSource>LogisticsPostalAddressBaseEntity</JoinDataSource>
+												<RelatedField>Location</RelatedField>
+											</AxQuerySimpleDataSourceRelation>
+										</Relations>
+									</AxQuerySimpleEmbeddedDataSource>
+								</DataSources>
+								<DerivedDataSources />
+								<Fields />
+								<Ranges />
+								<JoinMode>OuterJoin</JoinMode>
+								<Relations>
+									<AxQuerySimpleDataSourceRelation>
+										<Name>QueryDataSourceRelation1</Name>
+										<Field>PrimaryAddressLocation</Field>
+										<JoinDataSource>DirPartyBaseEntity</JoinDataSource>
+										<RelatedField>LocationRecId</RelatedField>
+									</AxQuerySimpleDataSourceRelation>
+								</Relations>
+							</AxQuerySimpleEmbeddedDataSource>
+							<AxQuerySimpleEmbeddedDataSource>
+								<Name>DefaultDeliveryLocation</Name>
+								<DynamicFields>Yes</DynamicFields>
+								<Table>CustDefaultRoleLocation</Table>
+								<DataSources>
+									<AxQuerySimpleEmbeddedDataSource>
+										<Name>DeliveryLogisticsPostalAddressBaseEntity</Name>
+										<ApplyDateFilter>Yes</ApplyDateFilter>
+										<DynamicFields>Yes</DynamicFields>
+										<Table>LogisticsPostalAddressBaseEntity</Table>
+										<DataSources />
+										<DerivedDataSources />
+										<Fields />
+										<Ranges />
+										<JoinMode>OuterJoin</JoinMode>
+										<Relations>
+											<AxQuerySimpleDataSourceRelation>
+												<Name>QueryDataSourceRelation1</Name>
+												<Field>LogisticsLocation</Field>
+												<JoinDataSource>DefaultDeliveryLocation</JoinDataSource>
+												<RelatedField>LocationRecId</RelatedField>
+											</AxQuerySimpleDataSourceRelation>
+										</Relations>
+									</AxQuerySimpleEmbeddedDataSource>
+								</DataSources>
+								<DerivedDataSources />
+								<Fields />
+								<Ranges>
+									<AxQuerySimpleDataSourceRange>
+										<Name>Type</Name>
+										<Field>Type</Field>
+										<Value>Delivery</Value>
+									</AxQuerySimpleDataSourceRange>
+								</Ranges>
+								<JoinMode>OuterJoin</JoinMode>
+								<Relations>
+									<AxQuerySimpleDataSourceRelation>
+										<Name>QueryDataSourceRelation1</Name>
+										<Field>AccountNum</Field>
+										<JoinDataSource>CustTable</JoinDataSource>
+										<RelatedField>AccountNum</RelatedField>
+									</AxQuerySimpleDataSourceRelation>
+									<AxQuerySimpleDataSourceRelation>
+										<Name>QueryDataSourceRelation2</Name>
+										<Field>RecId</Field>
+										<JoinDataSource>DirPartyBaseEntity</JoinDataSource>
+										<RelatedField>Party</RelatedField>
+									</AxQuerySimpleDataSourceRelation>
+								</Relations>
+							</AxQuerySimpleEmbeddedDataSource>
+							<AxQuerySimpleEmbeddedDataSource>
+								<Name>DefaultInvoiceLocation</Name>
+								<DynamicFields>Yes</DynamicFields>
+								<Table>CustDefaultRoleLocation</Table>
+								<DataSources>
+									<AxQuerySimpleEmbeddedDataSource>
+										<Name>InvoiceLogisticsPostalAddressBaseEntity</Name>
+										<ApplyDateFilter>Yes</ApplyDateFilter>
+										<DynamicFields>Yes</DynamicFields>
+										<Table>LogisticsPostalAddressBaseEntity</Table>
+										<DataSources />
+										<DerivedDataSources />
+										<Fields />
+										<Ranges />
+										<JoinMode>OuterJoin</JoinMode>
+										<Relations>
+											<AxQuerySimpleDataSourceRelation>
+												<Name>QueryDataSourceRelation1</Name>
+												<Field>LogisticsLocation</Field>
+												<JoinDataSource>DefaultInvoiceLocation</JoinDataSource>
+												<RelatedField>LocationRecId</RelatedField>
+											</AxQuerySimpleDataSourceRelation>
+										</Relations>
+									</AxQuerySimpleEmbeddedDataSource>
+								</DataSources>
+								<DerivedDataSources />
+								<Fields />
+								<Ranges>
+									<AxQuerySimpleDataSourceRange>
+										<Name>Type</Name>
+										<Field>Type</Field>
+										<Value>Invoice</Value>
+									</AxQuerySimpleDataSourceRange>
+								</Ranges>
+								<JoinMode>OuterJoin</JoinMode>
+								<Relations>
+									<AxQuerySimpleDataSourceRelation>
+										<Name>QueryDataSourceRelation1</Name>
+										<Field>AccountNum</Field>
+										<JoinDataSource>CustTable</JoinDataSource>
+										<RelatedField>AccountNum</RelatedField>
+									</AxQuerySimpleDataSourceRelation>
+									<AxQuerySimpleDataSourceRelation>
+										<Name>QueryDataSourceRelation2</Name>
+										<Field>RecId</Field>
+										<JoinDataSource>DirPartyBaseEntity</JoinDataSource>
+										<RelatedField>Party</RelatedField>
+									</AxQuerySimpleDataSourceRelation>
+								</Relations>
+							</AxQuerySimpleEmbeddedDataSource>
+						</DataSources>
+						<DerivedDataSources />
+						<Fields />
+						<Ranges />
+						<Relations>
+							<AxQuerySimpleDataSourceRelation>
+								<Name>QueryDataSourceRelation1</Name>
+								<Field>Party</Field>
+								<JoinDataSource>CustTable</JoinDataSource>
+								<RelatedField>RecId</RelatedField>
+							</AxQuerySimpleDataSourceRelation>
+						</Relations>
+					</AxQuerySimpleEmbeddedDataSource>
+					<AxQuerySimpleEmbeddedDataSource>
+						<Name>CompanyNAFCode</Name>
+						<DynamicFields>Yes</DynamicFields>
+						<IsReadOnly>Yes</IsReadOnly>
+						<Table>CompanyNAFCode</Table>
+						<DataSources />
+						<DerivedDataSources />
+						<Fields />
+						<Ranges />
+						<JoinMode>OuterJoin</JoinMode>
+						<Relations>
+							<AxQuerySimpleDataSourceRelation>
+								<Name>QueryDataSourceRelation1</Name>
+								<JoinRelationName>CompanyNAFCode</JoinRelationName>
+							</AxQuerySimpleDataSourceRelation>
+						</Relations>
+					</AxQuerySimpleEmbeddedDataSource>
+					<AxQuerySimpleEmbeddedDataSource>
+						<Name>TaxGSTReliefGroupHeading_MY</Name>
+						<DynamicFields>Yes</DynamicFields>
+						<IsReadOnly>Yes</IsReadOnly>
+						<Table>TaxGSTReliefGroupHeading_MY</Table>
+						<DataSources />
+						<DerivedDataSources />
+						<Fields />
+						<Ranges />
+						<JoinMode>OuterJoin</JoinMode>
+						<Relations>
+							<AxQuerySimpleDataSourceRelation>
+								<Name>QueryDataSourceRelation1</Name>
+								<JoinRelationName>TaxGSTReliefGroupHeading_MY</JoinRelationName>
+							</AxQuerySimpleDataSourceRelation>
+						</Relations>
+					</AxQuerySimpleEmbeddedDataSource>
+					<AxQuerySimpleEmbeddedDataSource>
+						<Name>DefaultDimensionDAVS</Name>
+						<AllowAdd>No</AllowAdd>
+						<DynamicFields>Yes</DynamicFields>
+						<IsReadOnly>Yes</IsReadOnly>
+						<Table>DimensionSetEntity</Table>
+						<DataSources />
+						<DerivedDataSources />
+						<Fields />
+						<Ranges />
+						<JoinMode>OuterJoin</JoinMode>
+						<Relations>
+							<AxQuerySimpleDataSourceRelation>
+								<Name>QueryDataSourceRelation1</Name>
+								<Field>DefaultDimension</Field>
+								<JoinDataSource>CustTable</JoinDataSource>
+								<RelatedField>RecId</RelatedField>
+							</AxQuerySimpleDataSourceRelation>
+						</Relations>
+					</AxQuerySimpleEmbeddedDataSource>
+					<AxQuerySimpleEmbeddedDataSource>
+						<Name>TaxInformationCustTable_IN</Name>
+						<DynamicFields>Yes</DynamicFields>
+						<Table>TaxInformationCustTable_IN</Table>
+						<DataSources />
+						<DerivedDataSources />
+						<Fields />
+						<Ranges />
+						<JoinMode>OuterJoin</JoinMode>
+						<Relations>
+							<AxQuerySimpleDataSourceRelation>
+								<Name>QueryDataSourceRelation1</Name>
+								<Field>AccountNum</Field>
+								<JoinDataSource>CustTable</JoinDataSource>
+								<RelatedField>CustTable</RelatedField>
+							</AxQuerySimpleDataSourceRelation>
+						</Relations>
+					</AxQuerySimpleEmbeddedDataSource>
+					<AxQuerySimpleEmbeddedDataSource>
+						<Name>CustWriteOffSetup</Name>
+						<DynamicFields>Yes</DynamicFields>
+						<IsReadOnly>Yes</IsReadOnly>
+						<Table>CustWriteOffFinancialReasonsSetupEntity</Table>
+						<DataSources />
+						<DerivedDataSources />
+						<Fields />
+						<Ranges />
+						<JoinMode>OuterJoin</JoinMode>
+						<Relations>
+							<AxQuerySimpleDataSourceRelation>
+								<Name>QueryDataSourceRelation1</Name>
+								<Field>CustWriteOffRefRecId</Field>
+								<JoinDataSource>CustTable</JoinDataSource>
+								<RelatedField>RecId</RelatedField>
+							</AxQuerySimpleDataSourceRelation>
+						</Relations>
+					</AxQuerySimpleEmbeddedDataSource>
+					<AxQuerySimpleEmbeddedDataSource>
+						<Name>MCRCustTable</Name>
+						<DynamicFields>Yes</DynamicFields>
+						<Table>MCRCustTable</Table>
+						<DataSources />
+						<DerivedDataSources />
+						<Fields />
+						<Ranges />
+						<JoinMode>OuterJoin</JoinMode>
+						<Relations>
+							<AxQuerySimpleDataSourceRelation>
+								<Name>QueryDataSourceRelation1</Name>
+								<Field>RecId</Field>
+								<JoinDataSource>CustTable</JoinDataSource>
+								<RelatedField>CustTable</RelatedField>
+							</AxQuerySimpleDataSourceRelation>
+						</Relations>
+					</AxQuerySimpleEmbeddedDataSource>
+				</DataSources>
+				<DerivedDataSources />
+				<Fields />
+				<Ranges />
+				<GroupBy />
+				<Having />
+				<OrderBy />
+			</AxQuerySimpleRootDataSource>
+		</DataSources>
+	</ViewMetadata>
+</AxDataEntityView>

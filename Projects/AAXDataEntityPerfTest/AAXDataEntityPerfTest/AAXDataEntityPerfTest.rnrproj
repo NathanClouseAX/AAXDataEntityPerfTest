@@ -65,6 +65,16 @@
       <Name>AAXCustCustomerV3Entity</Name>
       <Link>Data Entities\AAXCustCustomerV3Entity</Link>
     </Content>
+    <Content Include="AxDataEntityView\AAXCustCustomerV4Entity">
+      <SubType>Content</SubType>
+      <Name>AAXCustCustomerV4Entity</Name>
+      <Link>Data Entities\AAXCustCustomerV4Entity</Link>
+    </Content>
+    <Content Include="AxDataEntityView\AAXCustCustomerV5Entity">
+      <SubType>Content</SubType>
+      <Name>AAXCustCustomerV5Entity</Name>
+      <Link>Data Entities\AAXCustCustomerV5Entity</Link>
+    </Content>
     <Content Include="AxDataEntityView\AAXSalesLineEntity">
       <SubType>Content</SubType>
       <Name>AAXSalesLineEntity</Name>
@@ -203,7 +213,7 @@
     <Content Include="AxTable\AAXCustCustomerV3Staging">
       <SubType>Content</SubType>
       <Name>AAXCustCustomerV3Staging</Name>
-      <Link>AAXCustCustomerV3Staging</Link>
+      <Link>Tables\AAXCustCustomerV3Staging</Link>
     </Content>
     <Content Include="AxTable\AAXSalesOrderHeaderV2EntityDSReadOnlyStaging">
       <SubType>Content</SubType>
