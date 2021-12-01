@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RetailChannelPriceGroupSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailChannelPriceGroupSingle in the schema.
+    /// </summary>
     public partial class RetailChannelPriceGroupSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RetailChannelPriceGroup>
     {
         /// <summary>
@@ -119,9 +119,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.RetailStoreSingle _RetailStore;
     }
-        /// <summary>
-        /// There are no comments for RetailChannelPriceGroup in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailChannelPriceGroup in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// GroupCode
     /// RetailChannelId
@@ -176,6 +176,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property GroupCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "GroupCode is required.")]
         public virtual string GroupCode
         {
             get
@@ -198,6 +200,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailChannelId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetailChannelId is required.")]
         public virtual string RetailChannelId
         {
             get
@@ -220,6 +224,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OnlineChannel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "OnlineChannel is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.OnlineChannel OnlineChannel
         {
             get
@@ -242,6 +248,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailCallCenter in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetailCallCenter is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RetailCallCenter RetailCallCenter
         {
             get
@@ -264,6 +272,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailChannel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetailChannel is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RetailChannel RetailChannel
         {
             get
@@ -286,6 +296,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailStore in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetailStore is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RetailStore RetailStore
         {
             get

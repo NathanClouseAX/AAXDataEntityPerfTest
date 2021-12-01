@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for PayrollPositionDetailSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PayrollPositionDetailSingle in the schema.
+    /// </summary>
     public partial class PayrollPositionDetailSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PayrollPositionDetail>
     {
         /// <summary>
@@ -98,9 +98,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.BenefitSingle _Benefit;
     }
-        /// <summary>
-        /// There are no comments for PayrollPositionDetail in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PayrollPositionDetail in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// PositionId
     /// ValidFrom
@@ -151,6 +151,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PositionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PositionId is required.")]
         public virtual string PositionId
         {
             get
@@ -173,6 +175,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidFrom in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValidFrom is required.")]
         public virtual global::System.DateTimeOffset ValidFrom
         {
             get
@@ -195,6 +199,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidTo in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValidTo is required.")]
         public virtual global::System.DateTimeOffset ValidTo
         {
             get
@@ -217,6 +223,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AreEarningsGeneratedFromSchedule in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AreEarningsGeneratedFromSchedule
         {
             get
@@ -239,6 +246,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AnnualRegularHours in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AnnualRegularHours is required.")]
         public virtual decimal AnnualRegularHours
         {
             get
@@ -261,6 +270,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayCycleId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PayCycleId
         {
             get
@@ -283,6 +293,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Schedule in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Schedule
         {
             get
@@ -305,6 +316,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayPeriodOvertimeHours in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PayPeriodOvertimeHours is required.")]
         public virtual decimal PayPeriodOvertimeHours
         {
             get
@@ -327,6 +340,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PaidByLegalEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PaidByLegalEntity
         {
             get
@@ -349,6 +363,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsSalaryGenerated in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsSalaryGenerated
         {
             get
@@ -371,6 +386,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BenefitId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BenefitId
         {
             get
@@ -393,6 +409,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultEarningCodeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultEarningCodeId
         {
             get
@@ -415,6 +432,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayCycle in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PayCycle is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.PayCycle PayCycle
         {
             get
@@ -437,6 +456,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Position in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Position is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.PositionV2 Position
         {
             get
@@ -459,6 +480,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Benefit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.Benefit Benefit
         {
             get

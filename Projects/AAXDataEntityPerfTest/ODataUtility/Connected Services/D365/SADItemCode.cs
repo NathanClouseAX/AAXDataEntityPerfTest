@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for SADItemCodeSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for SADItemCodeSingle in the schema.
+    /// </summary>
     public partial class SADItemCodeSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<SADItemCode>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _DimensionCombination;
     }
-        /// <summary>
-        /// There are no comments for SADItemCode in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for SADItemCode in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// ItemCommodityCode
@@ -84,6 +84,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -106,6 +108,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemCommodityCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ItemCommodityCode is required.")]
         public virtual string ItemCommodityCode
         {
             get
@@ -128,6 +132,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MainAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MainAccountDisplayValue
         {
             get
@@ -150,6 +155,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductName
         {
             get
@@ -172,6 +178,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination DimensionCombination
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for Kitting_ReportParameterSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for Kitting_ReportParameterSingle in the schema.
+    /// </summary>
     public partial class Kitting_ReportParameterSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<Kitting_ReportParameter>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for Kitting_ReportParameter in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for Kitting_ReportParameter in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// SalesPurch
@@ -66,6 +66,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -88,6 +90,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesPurch in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.SalesPurch> SalesPurch
         {
             get
@@ -110,6 +113,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.KittingReportType> ReportType
         {
             get
@@ -132,6 +136,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidFor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TableGroupAll> ValidFor
         {
             get
@@ -154,6 +159,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemRelation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ItemRelation is required.")]
         public virtual string ItemRelation
         {
             get
@@ -176,6 +183,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrintMode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.KittingKitReportMode> PrintMode
         {
             get
@@ -198,6 +206,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property KitHeader in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> KitHeader
         {
             get

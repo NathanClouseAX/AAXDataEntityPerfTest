@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for PayrollParameterSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PayrollParameterSingle in the schema.
+    /// </summary>
     public partial class PayrollParameterSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PayrollParameter>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _DimensionCombination;
     }
-        /// <summary>
-        /// There are no comments for PayrollParameter in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PayrollParameter in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// </KeyProperties>
@@ -87,6 +87,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -109,6 +111,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccrualDateBasis in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PayrollAccrualDateBasis> AccrualDateBasis
         {
             get
@@ -131,6 +134,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ArrearThresholdOverride in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ArrearThresholdOverride is required.")]
         public virtual decimal ArrearThresholdOverride
         {
             get
@@ -153,6 +158,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Key in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Key is required.")]
         public virtual int Key
         {
             get
@@ -175,6 +182,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PaymentMode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PaymentMode
         {
             get
@@ -197,6 +205,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PaySlipContributions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PaySlipContributions
         {
             get
@@ -219,6 +228,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ApplyRetirementAnnualWageLimit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ApplyRetirementAnnualWageLimit
         {
             get
@@ -241,6 +251,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CategoryHierarchyName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CategoryHierarchyName
         {
             get
@@ -263,6 +274,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RecoverArrearInAllRunTypes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> RecoverArrearInAllRunTypes
         {
             get
@@ -285,6 +297,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalaryClearingAccountLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SalaryClearingAccountLedgerDimensionDisplayValue
         {
             get
@@ -307,6 +320,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ElectronicPaymentMode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ElectronicPaymentMode
         {
             get
@@ -329,6 +343,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PaymentTaskGroupingCount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PaymentTaskGroupingCount is required.")]
         public virtual int PaymentTaskGroupingCount
         {
             get
@@ -351,6 +367,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PaymentJournalName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PaymentJournalName
         {
             get
@@ -373,6 +390,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EarningAccountingDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PayrollEarningAccountingDate> EarningAccountingDate
         {
             get
@@ -395,6 +413,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CategoryName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CategoryName
         {
             get
@@ -417,6 +436,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VendorAccountNumber
         {
             get
@@ -439,6 +459,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination DimensionCombination
         {
             get

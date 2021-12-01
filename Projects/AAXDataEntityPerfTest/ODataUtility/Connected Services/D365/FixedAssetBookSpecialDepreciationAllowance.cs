@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for FixedAssetBookSpecialDepreciationAllowanceSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for FixedAssetBookSpecialDepreciationAllowanceSingle in the schema.
+    /// </summary>
     public partial class FixedAssetBookSpecialDepreciationAllowanceSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<FixedAssetBookSpecialDepreciationAllowance>
     {
         /// <summary>
@@ -98,9 +98,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.FixedAssetSingle _FixedAsset;
     }
-        /// <summary>
-        /// There are no comments for FixedAssetBookSpecialDepreciationAllowance in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for FixedAssetBookSpecialDepreciationAllowance in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// FixedAssetId
@@ -165,6 +165,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -187,6 +189,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FixedAssetId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FixedAssetId is required.")]
         public virtual string FixedAssetId
         {
             get
@@ -209,6 +213,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BookId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BookId is required.")]
         public virtual string BookId
         {
             get
@@ -231,6 +237,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SpecialDepreciationAllowanceId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SpecialDepreciationAllowanceId is required.")]
         public virtual string SpecialDepreciationAllowanceId
         {
             get
@@ -253,6 +261,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Percentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Percentage is required.")]
         public virtual decimal Percentage
         {
             get
@@ -275,6 +285,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Amount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Amount is required.")]
         public virtual decimal Amount
         {
             get
@@ -297,6 +309,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -319,6 +332,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Priority in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Priority is required.")]
         public virtual int Priority
         {
             get
@@ -341,6 +356,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetSpecialDepreciationAllowance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AssetSpecialDepreciationAllowance is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.AssetSpecialDepreciationAllowance AssetSpecialDepreciationAllowance
         {
             get
@@ -363,6 +380,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FixedAssetBookV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FixedAssetBookV2 is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2 FixedAssetBookV2
         {
             get
@@ -385,6 +404,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FixedAsset in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FixedAsset is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.FixedAsset FixedAsset
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for DataManagementTemplateSourceDependencySingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for DataManagementTemplateSourceDependencySingle in the schema.
+    /// </summary>
     public partial class DataManagementTemplateSourceDependencySingle : global::Microsoft.OData.Client.DataServiceQuerySingle<DataManagementTemplateSourceDependency>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DataManagementTemplateSourceSingle _TemplateSource;
     }
-        /// <summary>
-        /// There are no comments for DataManagementTemplateSourceDependency in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for DataManagementTemplateSourceDependency in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// TemplateId
     /// SourceEntity
@@ -96,6 +96,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TemplateId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TemplateId is required.")]
         public virtual string TemplateId
         {
             get
@@ -118,6 +120,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SourceEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SourceEntity is required.")]
         public virtual string SourceEntity
         {
             get
@@ -140,6 +144,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DependentOnEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DependentOnEntity is required.")]
         public virtual string DependentOnEntity
         {
             get
@@ -162,6 +168,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RelationName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RelationName is required.")]
         public virtual string RelationName
         {
             get
@@ -184,6 +192,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -206,6 +215,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidationRequired in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ValidationRequired
         {
             get
@@ -228,6 +238,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FriendlyName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FriendlyName
         {
             get
@@ -250,6 +261,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TemplateSource in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TemplateSource is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.DataManagementTemplateSource TemplateSource
         {
             get

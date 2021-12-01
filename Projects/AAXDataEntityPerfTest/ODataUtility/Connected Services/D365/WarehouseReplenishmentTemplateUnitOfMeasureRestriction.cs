@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for WarehouseReplenishmentTemplateUnitOfMeasureRestrictionSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for WarehouseReplenishmentTemplateUnitOfMeasureRestrictionSingle in the schema.
+    /// </summary>
     public partial class WarehouseReplenishmentTemplateUnitOfMeasureRestrictionSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<WarehouseReplenishmentTemplateUnitOfMeasureRestriction>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.UnitOfMeasureSingle _UnitOfMeasure;
     }
-        /// <summary>
-        /// There are no comments for WarehouseReplenishmentTemplateUnitOfMeasureRestriction in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for WarehouseReplenishmentTemplateUnitOfMeasureRestriction in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// WarehouseReplenishmentTemplateId
@@ -120,6 +120,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -142,6 +144,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WarehouseReplenishmentTemplateId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WarehouseReplenishmentTemplateId is required.")]
         public virtual string WarehouseReplenishmentTemplateId
         {
             get
@@ -164,6 +168,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RestrictionUnitSymbol in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RestrictionUnitSymbol is required.")]
         public virtual string RestrictionUnitSymbol
         {
             get
@@ -186,6 +192,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WarehouseReplenishmentTemplate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WarehouseReplenishmentTemplate is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.WarehouseReplenishmentTemplate WarehouseReplenishmentTemplate
         {
             get
@@ -208,6 +216,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnitOfMeasure in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "UnitOfMeasure is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.UnitOfMeasure UnitOfMeasure
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for PersonCourseSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PersonCourseSingle in the schema.
+    /// </summary>
     public partial class PersonCourseSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PersonCourse>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.CourseTableSingle _Course;
     }
-        /// <summary>
-        /// There are no comments for PersonCourse in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PersonCourse in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// PartyNumber
     /// Courses
@@ -116,6 +116,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PartyNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PartyNumber is required.")]
         public virtual string PartyNumber
         {
             get
@@ -138,6 +140,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Courses in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Courses is required.")]
         public virtual string Courses
         {
             get
@@ -160,6 +164,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StartDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "StartDate is required.")]
         public virtual global::System.DateTimeOffset StartDate
         {
             get
@@ -182,6 +188,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CourseId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CourseId
         {
             get
@@ -204,6 +211,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Location in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Location
         {
             get
@@ -226,6 +234,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CourseDataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CourseDataAreaId
         {
             get
@@ -248,6 +257,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EndDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EndDate is required.")]
         public virtual global::System.DateTimeOffset EndDate
         {
             get
@@ -270,6 +281,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Person in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Person is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Person Person
         {
             get
@@ -292,6 +305,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Course in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.CourseTable Course
         {
             get

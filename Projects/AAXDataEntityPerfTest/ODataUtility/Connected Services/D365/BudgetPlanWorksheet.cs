@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for BudgetPlanWorksheetSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BudgetPlanWorksheetSingle in the schema.
+    /// </summary>
     public partial class BudgetPlanWorksheetSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<BudgetPlanWorksheet>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for BudgetPlanWorksheet in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BudgetPlanWorksheet in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// DocumentNumber
     /// LineNumber
@@ -284,6 +284,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DocumentNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DocumentNumber is required.")]
         public virtual string DocumentNumber
         {
             get
@@ -306,6 +308,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LineNumber is required.")]
         public virtual decimal LineNumber
         {
             get
@@ -328,6 +332,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Layout in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Layout is required.")]
         public virtual string Layout
         {
             get
@@ -350,6 +356,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount2 is required.")]
         public virtual decimal TransactionCurrencyAmount2
         {
             get
@@ -372,6 +380,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionName3 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionName3
         {
             get
@@ -394,6 +403,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TransactionCurrencyCode
         {
             get
@@ -416,6 +426,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount33 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount33 is required.")]
         public virtual decimal TransactionCurrencyAmount33
         {
             get
@@ -438,6 +450,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount32 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount32 is required.")]
         public virtual decimal TransactionCurrencyAmount32
         {
             get
@@ -460,6 +474,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount31 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount31 is required.")]
         public virtual decimal TransactionCurrencyAmount31
         {
             get
@@ -482,6 +498,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount30 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount30 is required.")]
         public virtual decimal TransactionCurrencyAmount30
         {
             get
@@ -504,6 +522,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount36 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount36 is required.")]
         public virtual decimal TransactionCurrencyAmount36
         {
             get
@@ -526,6 +546,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount35 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount35 is required.")]
         public virtual decimal TransactionCurrencyAmount35
         {
             get
@@ -548,6 +570,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount34 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount34 is required.")]
         public virtual decimal TransactionCurrencyAmount34
         {
             get
@@ -570,6 +594,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionName9 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionName9
         {
             get
@@ -592,6 +617,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProposedAssetDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProposedAssetDescription
         {
             get
@@ -614,6 +640,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PositionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PositionId
         {
             get
@@ -636,6 +663,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity11 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity11 is required.")]
         public virtual decimal Quantity11
         {
             get
@@ -658,6 +687,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity31 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity31 is required.")]
         public virtual decimal Quantity31
         {
             get
@@ -680,6 +711,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity21 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity21 is required.")]
         public virtual decimal Quantity21
         {
             get
@@ -702,6 +735,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionName6 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionName6
         {
             get
@@ -724,6 +758,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity17 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity17 is required.")]
         public virtual decimal Quantity17
         {
             get
@@ -746,6 +782,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SourceDataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SourceDataAreaId
         {
             get
@@ -768,6 +805,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity27 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity27 is required.")]
         public virtual decimal Quantity27
         {
             get
@@ -790,6 +829,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount19 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount19 is required.")]
         public virtual decimal TransactionCurrencyAmount19
         {
             get
@@ -812,6 +853,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount18 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount18 is required.")]
         public virtual decimal TransactionCurrencyAmount18
         {
             get
@@ -834,6 +877,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionName2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionName2
         {
             get
@@ -856,6 +900,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount13 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount13 is required.")]
         public virtual decimal TransactionCurrencyAmount13
         {
             get
@@ -878,6 +924,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount12 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount12 is required.")]
         public virtual decimal TransactionCurrencyAmount12
         {
             get
@@ -900,6 +948,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount11 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount11 is required.")]
         public virtual decimal TransactionCurrencyAmount11
         {
             get
@@ -922,6 +972,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount10 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount10 is required.")]
         public virtual decimal TransactionCurrencyAmount10
         {
             get
@@ -944,6 +996,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount17 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount17 is required.")]
         public virtual decimal TransactionCurrencyAmount17
         {
             get
@@ -966,6 +1020,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AssetId
         {
             get
@@ -988,6 +1043,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount16 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount16 is required.")]
         public virtual decimal TransactionCurrencyAmount16
         {
             get
@@ -1010,6 +1067,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount15 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount15 is required.")]
         public virtual decimal TransactionCurrencyAmount15
         {
             get
@@ -1032,6 +1091,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount14 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount14 is required.")]
         public virtual decimal TransactionCurrencyAmount14
         {
             get
@@ -1054,6 +1115,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity13 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity13 is required.")]
         public virtual decimal Quantity13
         {
             get
@@ -1076,6 +1139,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity33 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity33 is required.")]
         public virtual decimal Quantity33
         {
             get
@@ -1098,6 +1163,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity23 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity23 is required.")]
         public virtual decimal Quantity23
         {
             get
@@ -1120,6 +1187,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity5 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity5 is required.")]
         public virtual decimal Quantity5
         {
             get
@@ -1142,6 +1211,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity4 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity4 is required.")]
         public virtual decimal Quantity4
         {
             get
@@ -1164,6 +1235,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity7 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity7 is required.")]
         public virtual decimal Quantity7
         {
             get
@@ -1186,6 +1259,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity6 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity6 is required.")]
         public virtual decimal Quantity6
         {
             get
@@ -1208,6 +1283,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity1 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity1 is required.")]
         public virtual decimal Quantity1
         {
             get
@@ -1230,6 +1307,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity3 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity3 is required.")]
         public virtual decimal Quantity3
         {
             get
@@ -1252,6 +1331,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity2 is required.")]
         public virtual decimal Quantity2
         {
             get
@@ -1274,6 +1355,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity9 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity9 is required.")]
         public virtual decimal Quantity9
         {
             get
@@ -1296,6 +1379,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity8 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity8 is required.")]
         public virtual decimal Quantity8
         {
             get
@@ -1318,6 +1403,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProjectId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProjectId
         {
             get
@@ -1340,6 +1426,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity16 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity16 is required.")]
         public virtual decimal Quantity16
         {
             get
@@ -1362,6 +1450,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity36 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity36 is required.")]
         public virtual decimal Quantity36
         {
             get
@@ -1384,6 +1474,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity26 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity26 is required.")]
         public virtual decimal Quantity26
         {
             get
@@ -1406,6 +1498,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionValue11 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionValue11
         {
             get
@@ -1428,6 +1521,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount7 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount7 is required.")]
         public virtual decimal TransactionCurrencyAmount7
         {
             get
@@ -1450,6 +1545,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount8 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount8 is required.")]
         public virtual decimal TransactionCurrencyAmount8
         {
             get
@@ -1472,6 +1569,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionName4 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionName4
         {
             get
@@ -1494,6 +1592,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProjectIdDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProjectIdDescription
         {
             get
@@ -1516,6 +1615,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionValue1 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionValue1
         {
             get
@@ -1538,6 +1638,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionValue3 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionValue3
         {
             get
@@ -1560,6 +1661,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionValue2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionValue2
         {
             get
@@ -1582,6 +1684,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionValue5 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionValue5
         {
             get
@@ -1604,6 +1707,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionValue4 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionValue4
         {
             get
@@ -1626,6 +1730,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionValue7 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionValue7
         {
             get
@@ -1648,6 +1753,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionValue6 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionValue6
         {
             get
@@ -1670,6 +1776,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionValue9 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionValue9
         {
             get
@@ -1692,6 +1799,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionValue8 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionValue8
         {
             get
@@ -1714,6 +1822,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity12 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity12 is required.")]
         public virtual decimal Quantity12
         {
             get
@@ -1736,6 +1846,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity32 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity32 is required.")]
         public virtual decimal Quantity32
         {
             get
@@ -1758,6 +1870,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity22 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity22 is required.")]
         public virtual decimal Quantity22
         {
             get
@@ -1780,6 +1894,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount3 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount3 is required.")]
         public virtual decimal TransactionCurrencyAmount3
         {
             get
@@ -1802,6 +1918,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity18 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity18 is required.")]
         public virtual decimal Quantity18
         {
             get
@@ -1824,6 +1942,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity28 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity28 is required.")]
         public virtual decimal Quantity28
         {
             get
@@ -1846,6 +1966,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount5 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount5 is required.")]
         public virtual decimal TransactionCurrencyAmount5
         {
             get
@@ -1868,6 +1990,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProposedProjectDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProposedProjectDescription
         {
             get
@@ -1890,6 +2013,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsNewRequest in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsNewRequest
         {
             get
@@ -1912,6 +2036,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity14 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity14 is required.")]
         public virtual decimal Quantity14
         {
             get
@@ -1934,6 +2060,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity34 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity34 is required.")]
         public virtual decimal Quantity34
         {
             get
@@ -1956,6 +2084,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity24 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity24 is required.")]
         public virtual decimal Quantity24
         {
             get
@@ -1978,6 +2108,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount1 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount1 is required.")]
         public virtual decimal TransactionCurrencyAmount1
         {
             get
@@ -2000,6 +2132,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PositionDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PositionDescription
         {
             get
@@ -2022,6 +2155,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount29 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount29 is required.")]
         public virtual decimal TransactionCurrencyAmount29
         {
             get
@@ -2044,6 +2179,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount28 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount28 is required.")]
         public virtual decimal TransactionCurrencyAmount28
         {
             get
@@ -2066,6 +2203,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetClass in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.BudgetClass> BudgetClass
         {
             get
@@ -2088,6 +2226,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount23 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount23 is required.")]
         public virtual decimal TransactionCurrencyAmount23
         {
             get
@@ -2110,6 +2250,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount22 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount22 is required.")]
         public virtual decimal TransactionCurrencyAmount22
         {
             get
@@ -2132,6 +2274,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount21 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount21 is required.")]
         public virtual decimal TransactionCurrencyAmount21
         {
             get
@@ -2154,6 +2298,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount20 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount20 is required.")]
         public virtual decimal TransactionCurrencyAmount20
         {
             get
@@ -2176,6 +2322,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount27 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount27 is required.")]
         public virtual decimal TransactionCurrencyAmount27
         {
             get
@@ -2198,6 +2346,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount26 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount26 is required.")]
         public virtual decimal TransactionCurrencyAmount26
         {
             get
@@ -2220,6 +2370,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount25 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount25 is required.")]
         public virtual decimal TransactionCurrencyAmount25
         {
             get
@@ -2242,6 +2394,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionName8 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionName8
         {
             get
@@ -2264,6 +2417,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount24 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount24 is required.")]
         public virtual decimal TransactionCurrencyAmount24
         {
             get
@@ -2286,6 +2441,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetIdDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AssetIdDescription
         {
             get
@@ -2308,6 +2464,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity10 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity10 is required.")]
         public virtual decimal Quantity10
         {
             get
@@ -2330,6 +2488,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity30 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity30 is required.")]
         public virtual decimal Quantity30
         {
             get
@@ -2352,6 +2512,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity20 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity20 is required.")]
         public virtual decimal Quantity20
         {
             get
@@ -2374,6 +2536,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount4 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount4 is required.")]
         public virtual decimal TransactionCurrencyAmount4
         {
             get
@@ -2396,6 +2560,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProposedAssetName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProposedAssetName
         {
             get
@@ -2418,6 +2583,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProposedProjectName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProposedProjectName
         {
             get
@@ -2440,6 +2606,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Comment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Comment
         {
             get
@@ -2462,6 +2629,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PositionWorkerName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PositionWorkerName
         {
             get
@@ -2484,6 +2652,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount9 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount9 is required.")]
         public virtual decimal TransactionCurrencyAmount9
         {
             get
@@ -2506,6 +2676,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionName5 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionName5
         {
             get
@@ -2528,6 +2699,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionName11 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionName11
         {
             get
@@ -2550,6 +2722,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionName10 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionName10
         {
             get
@@ -2572,6 +2745,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionName1 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionName1
         {
             get
@@ -2594,6 +2768,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity19 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity19 is required.")]
         public virtual decimal Quantity19
         {
             get
@@ -2616,6 +2792,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity29 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity29 is required.")]
         public virtual decimal Quantity29
         {
             get
@@ -2638,6 +2816,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsRecurring in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsRecurring
         {
             get
@@ -2660,6 +2839,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionValue10 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionValue10
         {
             get
@@ -2682,6 +2862,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCurrencyAmount6 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionCurrencyAmount6 is required.")]
         public virtual decimal TransactionCurrencyAmount6
         {
             get
@@ -2704,6 +2886,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionName7 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionName7
         {
             get
@@ -2726,6 +2909,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity15 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity15 is required.")]
         public virtual decimal Quantity15
         {
             get
@@ -2748,6 +2933,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity35 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity35 is required.")]
         public virtual decimal Quantity35
         {
             get
@@ -2770,6 +2957,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity25 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity25 is required.")]
         public virtual decimal Quantity25
         {
             get

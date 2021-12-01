@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for AssetJournalHeaderSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AssetJournalHeaderSingle in the schema.
+    /// </summary>
     public partial class AssetJournalHeaderSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AssetJournalHeader>
     {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public AssetJournalHeaderSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AssetJournalHeader> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for AssetJournalLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetJournalLine> AssetJournalLine
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._AssetJournalLine == null))
-                {
-                    this._AssetJournalLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AssetJournalLine>(GetPath("AssetJournalLine"));
-                }
-                return this._AssetJournalLine;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetJournalLine> _AssetJournalLine;
         /// <summary>
         /// There are no comments for RAssetJournalLine in the schema.
         /// </summary>
@@ -97,10 +76,31 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.LegalEntitySingle _LegalEntity;
-    }
         /// <summary>
-        /// There are no comments for AssetJournalHeader in the schema.
+        /// There are no comments for AssetJournalLine in the schema.
         /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetJournalLine> AssetJournalLine
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._AssetJournalLine == null))
+                {
+                    this._AssetJournalLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AssetJournalLine>(GetPath("AssetJournalLine"));
+                }
+                return this._AssetJournalLine;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetJournalLine> _AssetJournalLine;
+    }
+    /// <summary>
+    /// There are no comments for AssetJournalHeader in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// JournalBatchNumber
@@ -126,6 +126,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -148,6 +150,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JournalBatchNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "JournalBatchNumber is required.")]
         public virtual string JournalBatchNumber
         {
             get
@@ -170,6 +174,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportingCurrency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ReportingCurrency
         {
             get
@@ -192,6 +197,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountingCurrency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccountingCurrency
         {
             get
@@ -214,6 +220,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JournalNameId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string JournalNameId
         {
             get
@@ -236,6 +243,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -258,6 +266,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostingLayer in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.CurrentOperationsTax> PostingLayer
         {
             get
@@ -280,6 +289,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsPosted in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsPosted
         {
             get
@@ -299,31 +309,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnIsPostedChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> value);
         partial void OnIsPostedChanged();
         /// <summary>
-        /// There are no comments for Property AssetJournalLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetJournalLine> AssetJournalLine
-        {
-            get
-            {
-                return this._AssetJournalLine;
-            }
-            set
-            {
-                this.OnAssetJournalLineChanging(value);
-                this._AssetJournalLine = value;
-                this.OnAssetJournalLineChanged();
-                this.OnPropertyChanged("AssetJournalLine");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetJournalLine> _AssetJournalLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetJournalLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAssetJournalLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetJournalLine> value);
-        partial void OnAssetJournalLineChanged();
-        /// <summary>
         /// There are no comments for Property RAssetJournalLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RAssetJournalLine> RAssetJournalLine
         {
             get
@@ -346,6 +335,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LegalEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.LegalEntity LegalEntity
         {
             get
@@ -364,6 +354,29 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.LegalEntity _LegalEntity;
         partial void OnLegalEntityChanging(global::Microsoft.Dynamics.DataEntities.LegalEntity value);
         partial void OnLegalEntityChanged();
+        /// <summary>
+        /// There are no comments for Property AssetJournalLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetJournalLine> AssetJournalLine
+        {
+            get
+            {
+                return this._AssetJournalLine;
+            }
+            set
+            {
+                this.OnAssetJournalLineChanging(value);
+                this._AssetJournalLine = value;
+                this.OnAssetJournalLineChanged();
+                this.OnPropertyChanged("AssetJournalLine");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetJournalLine> _AssetJournalLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetJournalLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnAssetJournalLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetJournalLine> value);
+        partial void OnAssetJournalLineChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

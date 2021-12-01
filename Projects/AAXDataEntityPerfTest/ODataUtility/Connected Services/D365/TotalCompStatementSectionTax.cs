@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for TotalCompStatementSectionTaxSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TotalCompStatementSectionTaxSingle in the schema.
+    /// </summary>
     public partial class TotalCompStatementSectionTaxSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<TotalCompStatementSectionTax>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.TotalCompStatementSectionHeaderSingle _HcmTotalCompStatementSectionHeaderEntity;
     }
-        /// <summary>
-        /// There are no comments for TotalCompStatementSectionTax in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TotalCompStatementSectionTax in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// StatementSectionId
     /// CountryRegionId
@@ -96,6 +96,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StatementSectionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "StatementSectionId is required.")]
         public virtual string StatementSectionId
         {
             get
@@ -118,6 +120,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CountryRegionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CountryRegionId is required.")]
         public virtual string CountryRegionId
         {
             get
@@ -140,6 +144,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TaxGroupId is required.")]
         public virtual string TaxGroupId
         {
             get
@@ -162,6 +168,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxCodeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TaxCodeId is required.")]
         public virtual string TaxCodeId
         {
             get
@@ -184,6 +192,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxCodeGroupType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PayrollTaxCodeTaxGroupType> TaxCodeGroupType
         {
             get
@@ -206,6 +215,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HcmTotalCompStatementSectionHeaderEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "HcmTotalCompStatementSectionHeaderEntity is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.TotalCompStatementSectionHeader HcmTotalCompStatementSectionHeaderEntity
         {
             get

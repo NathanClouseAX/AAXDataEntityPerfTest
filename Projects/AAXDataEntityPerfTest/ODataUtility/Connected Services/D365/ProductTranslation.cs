@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ProductTranslationSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ProductTranslationSingle in the schema.
+    /// </summary>
     public partial class ProductTranslationSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ProductTranslation>
     {
         /// <summary>
@@ -203,9 +203,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ProductVariantSingle _ProductVariant;
     }
-        /// <summary>
-        /// There are no comments for ProductTranslation in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ProductTranslation in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// ProductNumber
     /// LanguageId
@@ -231,6 +231,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductNumber is required.")]
         public virtual string ProductNumber
         {
             get
@@ -253,6 +255,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LanguageId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LanguageId is required.")]
         public virtual string LanguageId
         {
             get
@@ -275,6 +279,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductName
         {
             get
@@ -297,6 +302,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -319,6 +325,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReleasedProductMaster in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ReleasedProductMaster ReleasedProductMaster
         {
             get
@@ -341,6 +348,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReleasedProductMasterV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ReleasedProductMasterV2 ReleasedProductMasterV2
         {
             get
@@ -363,6 +371,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReleasedDistinctProduct in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ReleasedDistinctProduct ReleasedDistinctProduct
         {
             get
@@ -385,6 +394,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductMaster in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ProductMaster ProductMaster
         {
             get
@@ -407,6 +417,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReleasedProductVariant in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ReleasedProductVariant ReleasedProductVariant
         {
             get
@@ -429,6 +440,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReleasedDistinctProductV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ReleasedDistinctProductV2 ReleasedDistinctProductV2
         {
             get
@@ -451,6 +463,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DistinctProduct in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DistinctProduct DistinctProduct
         {
             get
@@ -473,6 +486,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductVariant in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ProductVariant ProductVariant
         {
             get

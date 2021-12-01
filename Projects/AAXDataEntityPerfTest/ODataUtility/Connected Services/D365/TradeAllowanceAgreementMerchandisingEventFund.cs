@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for TradeAllowanceAgreementMerchandisingEventFundSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TradeAllowanceAgreementMerchandisingEventFundSingle in the schema.
+    /// </summary>
     public partial class TradeAllowanceAgreementMerchandisingEventFundSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<TradeAllowanceAgreementMerchandisingEventFund>
     {
         /// <summary>
@@ -55,31 +55,10 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventSingle _TradeAllowanceAgreementMerchandisingEvent;
-        /// <summary>
-        /// There are no comments for TradeAllowanceAgreementHeader in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeaderSingle TradeAllowanceAgreementHeader
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._TradeAllowanceAgreementHeader == null))
-                {
-                    this._TradeAllowanceAgreementHeader = new global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeaderSingle(this.Context, GetPath("TradeAllowanceAgreementHeader"));
-                }
-                return this._TradeAllowanceAgreementHeader;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeaderSingle _TradeAllowanceAgreementHeader;
     }
-        /// <summary>
-        /// There are no comments for TradeAllowanceAgreementMerchandisingEventFund in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TradeAllowanceAgreementMerchandisingEventFund in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// TradeAllowanceAgreementId
@@ -128,6 +107,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -150,6 +131,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TradeAllowanceAgreementId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TradeAllowanceAgreementId is required.")]
         public virtual string TradeAllowanceAgreementId
         {
             get
@@ -172,6 +155,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CustomerAccountNumber is required.")]
         public virtual string CustomerAccountNumber
         {
             get
@@ -194,6 +179,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TradeAllowanceAgreementMerchandisingEventId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TradeAllowanceAgreementMerchandisingEventId is required.")]
         public virtual string TradeAllowanceAgreementMerchandisingEventId
         {
             get
@@ -216,6 +203,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PromotionFundId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PromotionFundId is required.")]
         public virtual string PromotionFundId
         {
             get
@@ -238,6 +227,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CostAllocationPercentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CostAllocationPercentage is required.")]
         public virtual decimal CostAllocationPercentage
         {
             get
@@ -260,6 +251,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TradeAllowanceAgreementMerchandisingEvent in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TradeAllowanceAgreementMerchandisingEvent is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEvent TradeAllowanceAgreementMerchandisingEvent
         {
             get
@@ -278,28 +271,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEvent _TradeAllowanceAgreementMerchandisingEvent;
         partial void OnTradeAllowanceAgreementMerchandisingEventChanging(global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEvent value);
         partial void OnTradeAllowanceAgreementMerchandisingEventChanged();
-        /// <summary>
-        /// There are no comments for Property TradeAllowanceAgreementHeader in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeader TradeAllowanceAgreementHeader
-        {
-            get
-            {
-                return this._TradeAllowanceAgreementHeader;
-            }
-            set
-            {
-                this.OnTradeAllowanceAgreementHeaderChanging(value);
-                this._TradeAllowanceAgreementHeader = value;
-                this.OnTradeAllowanceAgreementHeaderChanged();
-                this.OnPropertyChanged("TradeAllowanceAgreementHeader");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeader _TradeAllowanceAgreementHeader;
-        partial void OnTradeAllowanceAgreementHeaderChanging(global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeader value);
-        partial void OnTradeAllowanceAgreementHeaderChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RetailReplenishmentRuleLineSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailReplenishmentRuleLineSingle in the schema.
+    /// </summary>
     public partial class RetailReplenishmentRuleLineSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RetailReplenishmentRuleLine>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.OrganizationHierarchyTypeSingle _OrganizationHierarchyType;
     }
-        /// <summary>
-        /// There are no comments for RetailReplenishmentRuleLine in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailReplenishmentRuleLine in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// ReplenishmentRule
@@ -146,6 +146,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -168,6 +170,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReplenishmentRule in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReplenishmentRule is required.")]
         public virtual string ReplenishmentRule
         {
             get
@@ -190,6 +194,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Type in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailReplenishmentRuleType> Type
         {
             get
@@ -212,6 +217,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReplenishmentHierarchyTypeName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReplenishmentHierarchyTypeName is required.")]
         public virtual string ReplenishmentHierarchyTypeName
         {
             get
@@ -234,6 +241,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReplenishmentOrganizationPartyNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReplenishmentOrganizationPartyNumber is required.")]
         public virtual string ReplenishmentOrganizationPartyNumber
         {
             get
@@ -256,6 +265,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReplenishmentHierarchyValidFrom in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReplenishmentHierarchyValidFrom is required.")]
         public virtual global::System.DateTimeOffset ReplenishmentHierarchyValidFrom
         {
             get
@@ -278,6 +289,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReplenishmentHierarchyValidTo in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReplenishmentHierarchyValidTo is required.")]
         public virtual global::System.DateTimeOffset ReplenishmentHierarchyValidTo
         {
             get
@@ -300,6 +313,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailChannelId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetailChannelId is required.")]
         public virtual string RetailChannelId
         {
             get
@@ -322,6 +337,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultWeight in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DefaultWeight is required.")]
         public virtual decimal DefaultWeight
         {
             get
@@ -344,6 +361,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Percent in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Percent is required.")]
         public virtual decimal Percent
         {
             get
@@ -366,6 +385,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Weight in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Weight is required.")]
         public virtual decimal Weight
         {
             get
@@ -388,6 +409,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -410,6 +432,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultPercent in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DefaultPercent is required.")]
         public virtual decimal DefaultPercent
         {
             get
@@ -432,6 +456,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailChannel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.RetailChannel RetailChannel
         {
             get
@@ -454,6 +479,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OrganizationHierarchyType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "OrganizationHierarchyType is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.OrganizationHierarchyType OrganizationHierarchyType
         {
             get

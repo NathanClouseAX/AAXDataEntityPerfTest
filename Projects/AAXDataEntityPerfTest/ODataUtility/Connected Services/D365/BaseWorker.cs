@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for BaseWorkerSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BaseWorkerSingle in the schema.
+    /// </summary>
     public partial class BaseWorkerSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<BaseWorker>
     {
         /// <summary>
@@ -98,9 +98,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.LanguageCodeSingle _NativeLanguage;
     }
-        /// <summary>
-        /// There are no comments for BaseWorker in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BaseWorker in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// PersonnelNumber
     /// </KeyProperties>
@@ -135,6 +135,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PersonnelNumber is required.")]
         public virtual string PersonnelNumber
         {
             get
@@ -157,6 +159,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Name
         {
             get
@@ -179,6 +182,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Gender in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HcmPersonGender> Gender
         {
             get
@@ -201,6 +205,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PartyType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PartyType
         {
             get
@@ -223,6 +228,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NameSequenceDisplayAs in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string NameSequenceDisplayAs
         {
             get
@@ -245,6 +251,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PersonalSuffix in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PersonalSuffix
         {
             get
@@ -267,6 +274,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PartyNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PartyNumber
         {
             get
@@ -289,6 +297,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LanguageId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LanguageId
         {
             get
@@ -311,6 +320,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CitizenshipCountryRegion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CitizenshipCountryRegion
         {
             get
@@ -333,6 +343,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LastName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LastName
         {
             get
@@ -355,6 +366,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProfessionalSuffix in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProfessionalSuffix
         {
             get
@@ -377,6 +389,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProfessionalTitle in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProfessionalTitle
         {
             get
@@ -399,6 +412,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EthnicOriginId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string EthnicOriginId
         {
             get
@@ -421,6 +435,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BirthDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BirthDate is required.")]
         public virtual global::System.DateTimeOffset BirthDate
         {
             get
@@ -443,6 +459,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PersonalTitle in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PersonalTitle
         {
             get
@@ -465,6 +482,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisabledVerificationDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DisabledVerificationDate is required.")]
         public virtual global::System.DateTimeOffset DisabledVerificationDate
         {
             get
@@ -487,6 +506,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MotherBirthCountryRegion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MotherBirthCountryRegion
         {
             get
@@ -509,6 +529,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllowRehire in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AllowRehire
         {
             get
@@ -531,6 +552,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PhoneticFirstName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PhoneticFirstName
         {
             get
@@ -553,6 +575,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NativeLanguageId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string NativeLanguageId
         {
             get
@@ -575,6 +598,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Education in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Education
         {
             get
@@ -597,6 +621,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LastNamePrefix in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LastNamePrefix
         {
             get
@@ -619,6 +644,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DeceasedDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DeceasedDate is required.")]
         public virtual global::System.DateTimeOffset DeceasedDate
         {
             get
@@ -641,6 +668,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property KnownAs in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string KnownAs
         {
             get
@@ -663,6 +691,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ElectronicLocationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ElectronicLocationId
         {
             get
@@ -685,6 +714,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PersonBirthCountryRegion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PersonBirthCountryRegion
         {
             get
@@ -707,6 +737,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PhoneticMiddleName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PhoneticMiddleName
         {
             get
@@ -729,6 +760,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NationalityCountryRegion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string NationalityCountryRegion
         {
             get
@@ -751,6 +783,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PersonBirthCity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PersonBirthCity
         {
             get
@@ -773,6 +806,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MiddleName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MiddleName
         {
             get
@@ -795,6 +829,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FatherBirthCountryRegion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FatherBirthCountryRegion
         {
             get
@@ -817,6 +852,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PhoneticLastName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PhoneticLastName
         {
             get
@@ -839,6 +875,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NameAlias in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string NameAlias
         {
             get
@@ -861,6 +898,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FirstName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FirstName
         {
             get
@@ -883,6 +921,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsDisabled in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsDisabled
         {
             get
@@ -905,6 +944,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsFulltimeStudent in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsFulltimeStudent
         {
             get
@@ -927,6 +967,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Person in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Person is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Person Person
         {
             get
@@ -949,6 +991,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EthnicOrigin in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.EthnicOrigin EthnicOrigin
         {
             get
@@ -971,6 +1014,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NativeLanguage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.LanguageCode NativeLanguage
         {
             get

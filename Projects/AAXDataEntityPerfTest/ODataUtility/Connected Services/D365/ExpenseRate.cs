@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ExpenseRateSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ExpenseRateSingle in the schema.
+    /// </summary>
     public partial class ExpenseRateSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ExpenseRate>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _DimensionCombination;
     }
-        /// <summary>
-        /// There are no comments for ExpenseRate in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ExpenseRate in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// Expense
@@ -107,6 +107,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -129,6 +131,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Expense in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Expense is required.")]
         public virtual string Expense
         {
             get
@@ -151,6 +155,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OverRateIsAmountsIncludeSalesTax in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> OverRateIsAmountsIncludeSalesTax
         {
             get
@@ -173,6 +178,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RateDefaultDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RateDefaultDimensionDisplayValue
         {
             get
@@ -195,6 +201,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -217,6 +224,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RateSalesTaxGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RateSalesTaxGroup
         {
             get
@@ -239,6 +247,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Currency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Currency
         {
             get
@@ -261,6 +270,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VATOperationCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VATOperationCode
         {
             get
@@ -283,6 +293,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Rate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Rate is required.")]
         public virtual decimal Rate
         {
             get
@@ -305,6 +317,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RateItemSalesTaxGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RateItemSalesTaxGroup
         {
             get
@@ -327,6 +340,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OverRateDefaultDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OverRateDefaultDimensionDisplayValue
         {
             get
@@ -349,6 +363,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OverRatePayrollRetention in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OverRatePayrollRetention
         {
             get
@@ -371,6 +386,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OverRateItemSalesTaxGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OverRateItemSalesTaxGroup
         {
             get
@@ -393,6 +409,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OverRatePayrollIsTransferToTaxBase in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> OverRatePayrollIsTransferToTaxBase
         {
             get
@@ -415,6 +432,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RateMainAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RateMainAccountDisplayValue
         {
             get
@@ -437,6 +455,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RateIAmountsIncludeSalesTax in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> RateIAmountsIncludeSalesTax
         {
             get
@@ -459,6 +478,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OverRatePayrollIncome in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OverRatePayrollIncome
         {
             get
@@ -481,6 +501,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OverRateMainAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OverRateMainAccountDisplayValue
         {
             get
@@ -503,6 +524,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OverRateSalesTaxGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OverRateSalesTaxGroup
         {
             get
@@ -525,6 +547,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionSet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionSet DimensionSet
         {
             get
@@ -547,6 +570,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination DimensionCombination
         {
             get

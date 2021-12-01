@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for AssetMaintenanceWorkOrderParentProjectSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AssetMaintenanceWorkOrderParentProjectSingle in the schema.
+    /// </summary>
     public partial class AssetMaintenanceWorkOrderParentProjectSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AssetMaintenanceWorkOrderParentProject>
     {
         /// <summary>
@@ -140,9 +140,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationSingle _AssetMaintenanceFunctionalLocation;
     }
-        /// <summary>
-        /// There are no comments for AssetMaintenanceWorkOrderParentProject in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AssetMaintenanceWorkOrderParentProject in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// WorkOrderTypeId
@@ -189,6 +189,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -211,6 +213,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkOrderTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WorkOrderTypeId is required.")]
         public virtual string WorkOrderTypeId
         {
             get
@@ -233,6 +237,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FunctionalLocationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FunctionalLocationId is required.")]
         public virtual string FunctionalLocationId
         {
             get
@@ -255,6 +261,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaintenanceAssetTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MaintenanceAssetTypeId is required.")]
         public virtual string MaintenanceAssetTypeId
         {
             get
@@ -277,6 +285,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaintenanceAssetId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MaintenanceAssetId is required.")]
         public virtual string MaintenanceAssetId
         {
             get
@@ -299,6 +309,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidFrom in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValidFrom is required.")]
         public virtual global::System.DateTimeOffset ValidFrom
         {
             get
@@ -321,6 +333,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidTo in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValidTo is required.")]
         public virtual global::System.DateTimeOffset ValidTo
         {
             get
@@ -343,6 +357,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProjId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProjId
         {
             get
@@ -365,6 +380,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetMaintenanceAsset in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAsset AssetMaintenanceAsset
         {
             get
@@ -387,6 +403,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetMaintenanceWorkOrderType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.AssetMaintenanceWorkOrderType AssetMaintenanceWorkOrderType
         {
             get
@@ -409,6 +426,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Project in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.Project Project
         {
             get
@@ -431,6 +449,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetMaintenanceAssetType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetType AssetMaintenanceAssetType
         {
             get
@@ -453,6 +472,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetMaintenanceFunctionalLocation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocation AssetMaintenanceFunctionalLocation
         {
             get

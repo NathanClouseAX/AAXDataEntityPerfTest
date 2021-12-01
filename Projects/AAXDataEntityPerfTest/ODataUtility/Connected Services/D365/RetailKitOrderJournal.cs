@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RetailKitOrderJournalSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailKitOrderJournalSingle in the schema.
+    /// </summary>
     public partial class RetailKitOrderJournalSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RetailKitOrderJournal>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.RetailKitOrderSingle _RetailKitOrder;
     }
-        /// <summary>
-        /// There are no comments for RetailKitOrderJournal in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailKitOrderJournal in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// KitProductNumber
     /// KitConfigId
@@ -102,6 +102,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property KitProductNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "KitProductNumber is required.")]
         public virtual string KitProductNumber
         {
             get
@@ -124,6 +126,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property KitConfigId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "KitConfigId is required.")]
         public virtual string KitConfigId
         {
             get
@@ -146,6 +150,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Name is required.")]
         public virtual string Name
         {
             get
@@ -168,6 +174,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JournalId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string JournalId
         {
             get
@@ -190,6 +197,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LegalEntityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LegalEntityId
         {
             get
@@ -212,6 +220,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity is required.")]
         public virtual decimal Quantity
         {
             get
@@ -234,6 +244,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property KitOrder in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "KitOrder is required.")]
         public virtual long KitOrder
         {
             get
@@ -256,6 +268,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailKitOrder in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetailKitOrder is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RetailKitOrder RetailKitOrder
         {
             get

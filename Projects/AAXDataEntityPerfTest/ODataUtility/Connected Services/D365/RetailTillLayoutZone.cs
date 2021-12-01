@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RetailTillLayoutZoneSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailTillLayoutZoneSingle in the schema.
+    /// </summary>
     public partial class RetailTillLayoutZoneSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RetailTillLayoutZone>
     {
         /// <summary>
@@ -34,48 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public RetailTillLayoutZoneSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<RetailTillLayoutZone> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for DeviceTypes in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.DeviceTypeSingle DeviceTypes
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._DeviceTypes == null))
-                {
-                    this._DeviceTypes = new global::Microsoft.Dynamics.DataEntities.DeviceTypeSingle(this.Context, GetPath("DeviceTypes"));
-                }
-                return this._DeviceTypes;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.DeviceTypeSingle _DeviceTypes;
-        /// <summary>
-        /// There are no comments for RetailTillLayoutImageZone in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutImageZone> RetailTillLayoutImageZone
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._RetailTillLayoutImageZone == null))
-                {
-                    this._RetailTillLayoutImageZone = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutImageZone>(GetPath("RetailTillLayoutImageZone"));
-                }
-                return this._RetailTillLayoutImageZone;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutImageZone> _RetailTillLayoutImageZone;
         /// <summary>
         /// There are no comments for RetailTillLayoutButtonGridZone in the schema.
         /// </summary>
@@ -98,6 +56,27 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutButtonGridZone> _RetailTillLayoutButtonGridZone;
         /// <summary>
+        /// There are no comments for RetailTillLayoutImageZone in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutImageZone> RetailTillLayoutImageZone
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RetailTillLayoutImageZone == null))
+                {
+                    this._RetailTillLayoutImageZone = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutImageZone>(GetPath("RetailTillLayoutImageZone"));
+                }
+                return this._RetailTillLayoutImageZone;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutImageZone> _RetailTillLayoutImageZone;
+        /// <summary>
         /// There are no comments for RetailTillLayoutReportZone in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -118,10 +97,31 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutReportZone> _RetailTillLayoutReportZone;
-    }
         /// <summary>
-        /// There are no comments for RetailTillLayoutZone in the schema.
+        /// There are no comments for DeviceTypes in the schema.
         /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.DeviceTypeSingle DeviceTypes
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._DeviceTypes == null))
+                {
+                    this._DeviceTypes = new global::Microsoft.Dynamics.DataEntities.DeviceTypeSingle(this.Context, GetPath("DeviceTypes"));
+                }
+                return this._DeviceTypes;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.DeviceTypeSingle _DeviceTypes;
+    }
+    /// <summary>
+    /// There are no comments for RetailTillLayoutZone in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// DeviceType
     /// ZoneType
@@ -154,6 +154,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DeviceType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DeviceType is required.")]
         public virtual int DeviceType
         {
             get
@@ -176,6 +178,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ZoneType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailZoneType> ZoneType
         {
             get
@@ -198,6 +201,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ZoneId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ZoneId is required.")]
         public virtual string ZoneId
         {
             get
@@ -220,6 +225,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ZoneName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ZoneName
         {
             get
@@ -242,6 +248,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LayoutType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailLayoutType> LayoutType
         {
             get
@@ -261,53 +268,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnLayoutTypeChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailLayoutType> value);
         partial void OnLayoutTypeChanged();
         /// <summary>
-        /// There are no comments for Property DeviceTypes in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.DeviceType DeviceTypes
-        {
-            get
-            {
-                return this._DeviceTypes;
-            }
-            set
-            {
-                this.OnDeviceTypesChanging(value);
-                this._DeviceTypes = value;
-                this.OnDeviceTypesChanged();
-                this.OnPropertyChanged("DeviceTypes");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.DeviceType _DeviceTypes;
-        partial void OnDeviceTypesChanging(global::Microsoft.Dynamics.DataEntities.DeviceType value);
-        partial void OnDeviceTypesChanged();
-        /// <summary>
-        /// There are no comments for Property RetailTillLayoutImageZone in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutImageZone> RetailTillLayoutImageZone
-        {
-            get
-            {
-                return this._RetailTillLayoutImageZone;
-            }
-            set
-            {
-                this.OnRetailTillLayoutImageZoneChanging(value);
-                this._RetailTillLayoutImageZone = value;
-                this.OnRetailTillLayoutImageZoneChanged();
-                this.OnPropertyChanged("RetailTillLayoutImageZone");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutImageZone> _RetailTillLayoutImageZone = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutImageZone>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRetailTillLayoutImageZoneChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutImageZone> value);
-        partial void OnRetailTillLayoutImageZoneChanged();
-        /// <summary>
         /// There are no comments for Property RetailTillLayoutButtonGridZone in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutButtonGridZone> RetailTillLayoutButtonGridZone
         {
             get
@@ -327,9 +291,33 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnRetailTillLayoutButtonGridZoneChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutButtonGridZone> value);
         partial void OnRetailTillLayoutButtonGridZoneChanged();
         /// <summary>
+        /// There are no comments for Property RetailTillLayoutImageZone in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutImageZone> RetailTillLayoutImageZone
+        {
+            get
+            {
+                return this._RetailTillLayoutImageZone;
+            }
+            set
+            {
+                this.OnRetailTillLayoutImageZoneChanging(value);
+                this._RetailTillLayoutImageZone = value;
+                this.OnRetailTillLayoutImageZoneChanged();
+                this.OnPropertyChanged("RetailTillLayoutImageZone");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutImageZone> _RetailTillLayoutImageZone = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutImageZone>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRetailTillLayoutImageZoneChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutImageZone> value);
+        partial void OnRetailTillLayoutImageZoneChanged();
+        /// <summary>
         /// There are no comments for Property RetailTillLayoutReportZone in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutReportZone> RetailTillLayoutReportZone
         {
             get
@@ -348,6 +336,30 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutReportZone> _RetailTillLayoutReportZone = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutReportZone>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnRetailTillLayoutReportZoneChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutReportZone> value);
         partial void OnRetailTillLayoutReportZoneChanged();
+        /// <summary>
+        /// There are no comments for Property DeviceTypes in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DeviceTypes is required.")]
+        public virtual global::Microsoft.Dynamics.DataEntities.DeviceType DeviceTypes
+        {
+            get
+            {
+                return this._DeviceTypes;
+            }
+            set
+            {
+                this.OnDeviceTypesChanging(value);
+                this._DeviceTypes = value;
+                this.OnDeviceTypesChanged();
+                this.OnPropertyChanged("DeviceTypes");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.DeviceType _DeviceTypes;
+        partial void OnDeviceTypesChanging(global::Microsoft.Dynamics.DataEntities.DeviceType value);
+        partial void OnDeviceTypesChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

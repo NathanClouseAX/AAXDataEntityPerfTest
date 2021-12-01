@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for WorkflowWorkItemSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for WorkflowWorkItemSingle in the schema.
+    /// </summary>
     public partial class WorkflowWorkItemSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<WorkflowWorkItem>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for WorkflowWorkItem in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for WorkflowWorkItem in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// Id
     /// </KeyProperties>
@@ -105,6 +105,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Id in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Id is required.")]
         public virtual global::System.Guid Id
         {
             get
@@ -127,6 +129,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsClaimed in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsClaimed
         {
             get
@@ -149,6 +152,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Subject in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Subject
         {
             get
@@ -171,6 +175,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -193,6 +198,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OriginalCorrelationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "OriginalCorrelationId is required.")]
         public virtual global::System.Guid OriginalCorrelationId
         {
             get
@@ -215,6 +222,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CorrelationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CorrelationId is required.")]
         public virtual global::System.Guid CorrelationId
         {
             get
@@ -237,6 +246,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StepId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "StepId is required.")]
         public virtual global::System.Guid StepId
         {
             get
@@ -259,6 +270,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ParentCorrelationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ParentCorrelationId is required.")]
         public virtual global::System.Guid ParentCorrelationId
         {
             get
@@ -281,6 +294,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CommentId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CommentId is required.")]
         public virtual global::System.Guid CommentId
         {
             get
@@ -303,6 +318,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ActivityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ActivityId is required.")]
         public virtual global::System.Guid ActivityId
         {
             get
@@ -325,6 +342,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SubWorkflowId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SubWorkflowId is required.")]
         public virtual global::System.Guid SubWorkflowId
         {
             get
@@ -347,6 +366,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RootCorrelationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RootCorrelationId is required.")]
         public virtual global::System.Guid RootCorrelationId
         {
             get
@@ -369,6 +390,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkflowWorkItem_Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string WorkflowWorkItem_Name
         {
             get
@@ -391,6 +413,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MenuItemName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MenuItemName
         {
             get
@@ -413,6 +436,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EscalationLevel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EscalationLevel is required.")]
         public virtual int EscalationLevel
         {
             get
@@ -435,6 +460,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DueDateTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DueDateTime is required.")]
         public virtual global::System.DateTimeOffset DueDateTime
         {
             get
@@ -457,6 +484,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ConfigurationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ConfigurationId is required.")]
         public virtual global::System.Guid ConfigurationId
         {
             get
@@ -479,6 +508,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkflowWorkItem_WorkitemType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string WorkflowWorkItem_WorkitemType
         {
             get
@@ -501,6 +531,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DocumentClassId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DocumentClassId is required.")]
         public virtual int DocumentClassId
         {
             get
@@ -523,6 +555,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CompanyId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CompanyId
         {
             get
@@ -545,6 +578,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Type in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.WorkflowWorkItemType> Type
         {
             get
@@ -567,6 +601,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DataSourceName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DataSourceName
         {
             get
@@ -589,6 +624,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Context in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Context
         {
             get
@@ -611,6 +647,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NotificationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "NotificationId is required.")]
         public virtual long NotificationId
         {
             get
@@ -633,6 +671,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Status in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.WorkflowWorkItemStatus> Status
         {
             get
@@ -655,6 +694,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ElementId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ElementId is required.")]
         public virtual global::System.Guid ElementId
         {
             get
@@ -677,6 +718,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RefTableId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RefTableId is required.")]
         public virtual int RefTableId
         {
             get
@@ -699,6 +742,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UserId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string UserId
         {
             get
@@ -721,6 +765,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsRead in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsRead
         {
             get

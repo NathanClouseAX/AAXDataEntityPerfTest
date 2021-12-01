@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for WarehouseAisleSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for WarehouseAisleSingle in the schema.
+    /// </summary>
     public partial class WarehouseAisleSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<WarehouseAisle>
     {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for Warehouse in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.WarehouseSingle Warehouse
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._Warehouse == null))
-                {
-                    this._Warehouse = new global::Microsoft.Dynamics.DataEntities.WarehouseSingle(this.Context, GetPath("Warehouse"));
-                }
-                return this._Warehouse;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.WarehouseSingle _Warehouse;
-        /// <summary>
         /// There are no comments for WarehouseLocations in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,10 +55,31 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WarehouseLocation> _WarehouseLocations;
-    }
         /// <summary>
-        /// There are no comments for WarehouseAisle in the schema.
+        /// There are no comments for Warehouse in the schema.
         /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.WarehouseSingle Warehouse
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Warehouse == null))
+                {
+                    this._Warehouse = new global::Microsoft.Dynamics.DataEntities.WarehouseSingle(this.Context, GetPath("Warehouse"));
+                }
+                return this._Warehouse;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.WarehouseSingle _Warehouse;
+    }
+    /// <summary>
+    /// There are no comments for WarehouseAisle in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// WarehouseId
@@ -123,6 +123,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -145,6 +147,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WarehouseId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WarehouseId is required.")]
         public virtual string WarehouseId
         {
             get
@@ -167,6 +171,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AisleId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AisleId is required.")]
         public virtual string AisleId
         {
             get
@@ -189,6 +195,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsSortOrderCodeAssignedDescending in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsSortOrderCodeAssignedDescending
         {
             get
@@ -211,6 +218,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ManualStartingSortOrderCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ManualStartingSortOrderCode is required.")]
         public virtual int ManualStartingSortOrderCode
         {
             get
@@ -233,6 +242,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AisleName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AisleName
         {
             get
@@ -255,6 +265,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AisleNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AisleNumber is required.")]
         public virtual int AisleNumber
         {
             get
@@ -274,31 +286,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnAisleNumberChanging(int value);
         partial void OnAisleNumberChanged();
         /// <summary>
-        /// There are no comments for Property Warehouse in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.Warehouse Warehouse
-        {
-            get
-            {
-                return this._Warehouse;
-            }
-            set
-            {
-                this.OnWarehouseChanging(value);
-                this._Warehouse = value;
-                this.OnWarehouseChanged();
-                this.OnPropertyChanged("Warehouse");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.Warehouse _Warehouse;
-        partial void OnWarehouseChanging(global::Microsoft.Dynamics.DataEntities.Warehouse value);
-        partial void OnWarehouseChanged();
-        /// <summary>
         /// There are no comments for Property WarehouseLocations in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseLocation> WarehouseLocations
         {
             get
@@ -317,6 +308,30 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseLocation> _WarehouseLocations = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseLocation>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnWarehouseLocationsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseLocation> value);
         partial void OnWarehouseLocationsChanged();
+        /// <summary>
+        /// There are no comments for Property Warehouse in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Warehouse is required.")]
+        public virtual global::Microsoft.Dynamics.DataEntities.Warehouse Warehouse
+        {
+            get
+            {
+                return this._Warehouse;
+            }
+            set
+            {
+                this.OnWarehouseChanging(value);
+                this._Warehouse = value;
+                this.OnWarehouseChanged();
+                this.OnPropertyChanged("Warehouse");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.Warehouse _Warehouse;
+        partial void OnWarehouseChanging(global::Microsoft.Dynamics.DataEntities.Warehouse value);
+        partial void OnWarehouseChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

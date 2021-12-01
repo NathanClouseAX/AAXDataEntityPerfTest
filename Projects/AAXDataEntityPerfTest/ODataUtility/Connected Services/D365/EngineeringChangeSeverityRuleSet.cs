@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for EngineeringChangeSeverityRuleSetSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for EngineeringChangeSeverityRuleSetSingle in the schema.
+    /// </summary>
     public partial class EngineeringChangeSeverityRuleSetSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<EngineeringChangeSeverityRuleSet>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeSeverityRule> _EngineeringChangeSeverityRules;
     }
-        /// <summary>
-        /// There are no comments for EngineeringChangeSeverityRuleSet in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for EngineeringChangeSeverityRuleSet in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// SeverityName
@@ -114,6 +114,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -136,6 +138,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SeverityName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SeverityName is required.")]
         public virtual string SeverityName
         {
             get
@@ -158,6 +162,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SequenceNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SequenceNumber is required.")]
         public virtual decimal SequenceNumber
         {
             get
@@ -180,6 +186,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngineeringChangeSeverity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EngineeringChangeSeverity is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.EngineeringChangeSeverity EngineeringChangeSeverity
         {
             get
@@ -202,6 +210,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngineeringChangeSeverityRules in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeSeverityRule> EngineeringChangeSeverityRules
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RetailHardwareProfileSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailHardwareProfileSingle in the schema.
+    /// </summary>
     public partial class RetailHardwareProfileSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RetailHardwareProfile>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTerminal> _RetailTerminal;
     }
-        /// <summary>
-        /// There are no comments for RetailHardwareProfile in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailHardwareProfile in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// ProfileId
     /// </KeyProperties>
@@ -132,6 +132,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProfileId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProfileId is required.")]
         public virtual string ProfileId
         {
             get
@@ -154,6 +156,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DeviceName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DeviceName
         {
             get
@@ -176,6 +179,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ElectronicFundsTransferPassword in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ElectronicFundsTransferPassword
         {
             get
@@ -198,6 +202,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Drawer2Model in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Drawer2Model
         {
             get
@@ -220,6 +225,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HardTotal in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailOposNone> HardTotal
         {
             get
@@ -242,6 +248,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Printer1Make in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Printer1Make
         {
             get
@@ -264,6 +271,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Printer1Characterset in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Printer1Characterset is required.")]
         public virtual int Printer1Characterset
         {
             get
@@ -286,6 +295,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ElectronicFundsTransferMaximumCardPayments in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ElectronicFundsTransferMaximumCardPayments is required.")]
         public virtual int ElectronicFundsTransferMaximumCardPayments
         {
             get
@@ -308,6 +319,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HardTotalDeviceName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string HardTotalDeviceName
         {
             get
@@ -330,6 +342,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Drawer1Make in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Drawer1Make
         {
             get
@@ -352,6 +365,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ScaleDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ScaleDescription
         {
             get
@@ -374,6 +388,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Printer2DeviceName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Printer2DeviceName
         {
             get
@@ -396,6 +411,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisplayClosedLine2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DisplayClosedLine2
         {
             get
@@ -418,6 +434,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ElectronicFundsTransferDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ElectronicFundsTransferDescription
         {
             get
@@ -440,6 +457,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DelayForLinkedItems in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DelayForLinkedItems is required.")]
         public virtual int DelayForLinkedItems
         {
             get
@@ -462,6 +481,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UseElectronicFundsTransferService in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> UseElectronicFundsTransferService
         {
             get
@@ -484,6 +504,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Drawer2UseCashDrawerPool in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> Drawer2UseCashDrawerPool
         {
             get
@@ -506,6 +527,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HardTotalDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string HardTotalDescription
         {
             get
@@ -528,6 +550,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProfileVersion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailProfileVersion> ProfileVersion
         {
             get
@@ -550,6 +573,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Printer1ReceiptProfileId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Printer1ReceiptProfileId
         {
             get
@@ -572,6 +596,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FiscalPrinter in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailManufacturerNone> FiscalPrinter
         {
             get
@@ -594,6 +619,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RadioFrequencyIdDeviceName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RadioFrequencyIdDeviceName
         {
             get
@@ -616,6 +642,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CaptureExtraData in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ABC> CaptureExtraData
         {
             get
@@ -638,6 +665,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Scanner1 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailOposNone> Scanner1
         {
             get
@@ -660,6 +688,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PharmacyHost in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PharmacyHost
         {
             get
@@ -682,6 +711,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DualDisplayReceiptPercentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DualDisplayReceiptPercentage is required.")]
         public virtual decimal DualDisplayReceiptPercentage
         {
             get
@@ -704,6 +735,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SignatureCaptureFormName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SignatureCaptureFormName
         {
             get
@@ -726,6 +758,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MagneticStripeReaderMake in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MagneticStripeReaderMake
         {
             get
@@ -748,6 +781,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DualDisplayImageInterval in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DualDisplayImageInterval is required.")]
         public virtual int DualDisplayImageInterval
         {
             get
@@ -770,6 +805,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Printer2ReceiptProfileId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Printer2ReceiptProfileId
         {
             get
@@ -792,6 +828,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ElectronicFundsTransferCompanyId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ElectronicFundsTransferCompanyId
         {
             get
@@ -814,6 +851,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisplayDevice in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailOposNone> DisplayDevice
         {
             get
@@ -836,6 +874,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MagneticInkCharacterRecognition in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailOposNone> MagneticInkCharacterRecognition
         {
             get
@@ -858,6 +897,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Drawer2Make in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Drawer2Make
         {
             get
@@ -880,6 +920,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Logo in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailNoneDownloadFlash> Logo
         {
             get
@@ -902,6 +943,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisplayLinkedItem in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DisplayLinkedItem
         {
             get
@@ -924,6 +966,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LogoAlignment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailLeftCenterRight> LogoAlignment
         {
             get
@@ -946,6 +989,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Pharmacy in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> Pharmacy
         {
             get
@@ -968,6 +1012,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisplayDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DisplayDescription
         {
             get
@@ -990,6 +1035,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FormYPosition in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FormYPosition is required.")]
         public virtual int FormYPosition
         {
             get
@@ -1012,6 +1059,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Drawer2Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Drawer2Description
         {
             get
@@ -1034,6 +1082,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FiscalPrinterConfigId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FiscalPrinterConfigId
         {
             get
@@ -1056,6 +1105,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ElectronicFundsTransferConfiguration in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailEFTConfiguration> ElectronicFundsTransferConfiguration
         {
             get
@@ -1078,6 +1128,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DualDisplayType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailDualDisplayTypeBase> DualDisplayType
         {
             get
@@ -1100,6 +1151,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CashChanger in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailCashChanger> CashChanger
         {
             get
@@ -1122,6 +1174,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Printer2LogoAlignment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailLeftCenterRight> Printer2LogoAlignment
         {
             get
@@ -1144,6 +1197,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Printer2Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Printer2Description
         {
             get
@@ -1166,6 +1220,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Keylock in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailOPOSLogin> Keylock
         {
             get
@@ -1188,6 +1243,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PinPadModel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PinPadModel
         {
             get
@@ -1210,6 +1266,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Drawer2DeviceName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Drawer2DeviceName
         {
             get
@@ -1232,6 +1289,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Printer2Model in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Printer2Model
         {
             get
@@ -1254,6 +1312,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ElectronicFundsTransferServerPort in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ElectronicFundsTransferServerPort
         {
             get
@@ -1276,6 +1335,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ScaleDeviceName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ScaleDeviceName
         {
             get
@@ -1298,6 +1358,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Printer1Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Printer1Description
         {
             get
@@ -1320,6 +1381,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisplayCharacterSet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DisplayCharacterSet is required.")]
         public virtual int DisplayCharacterSet
         {
             get
@@ -1342,6 +1405,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MagneticInkCharacterRecognitionDriverName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MagneticInkCharacterRecognitionDriverName
         {
             get
@@ -1364,6 +1428,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Printer2BinaryConversion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> Printer2BinaryConversion
         {
             get
@@ -1386,6 +1451,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Printer2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailPeripheralType> Printer2
         {
             get
@@ -1408,6 +1474,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Scanner2DeviceName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Scanner2DeviceName
         {
             get
@@ -1430,6 +1497,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaxInvoiceLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MaxInvoiceLines is required.")]
         public virtual int MaxInvoiceLines
         {
             get
@@ -1452,6 +1521,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property KeylockDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string KeylockDescription
         {
             get
@@ -1474,6 +1544,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ElectronicFundsTransfer in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailExternalNone> ElectronicFundsTransfer
         {
             get
@@ -1496,6 +1567,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FiscalRegisterConfigId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FiscalRegisterConfigId
         {
             get
@@ -1518,6 +1590,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Scanner2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailOposNone> Scanner2
         {
             get
@@ -1540,6 +1613,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CashChangerPortSettings in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CashChangerPortSettings
         {
             get
@@ -1562,6 +1636,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Drawer1Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Drawer1Description
         {
             get
@@ -1584,6 +1659,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SignatureCaptureModel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SignatureCaptureModel
         {
             get
@@ -1606,6 +1682,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ElectronicFundsTransferData in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ElectronicFundsTransferData
         {
             get
@@ -1628,6 +1705,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TimeoutInSec in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TimeoutInSec is required.")]
         public virtual int TimeoutInSec
         {
             get
@@ -1650,6 +1729,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisplayTerminalClosed in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DisplayTerminalClosed
         {
             get
@@ -1672,6 +1752,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Scanner1DeviceName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Scanner1DeviceName
         {
             get
@@ -1694,6 +1775,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Drawer1 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailDrawer> Drawer1
         {
             get
@@ -1716,6 +1798,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Drawer2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailDrawer> Drawer2
         {
             get
@@ -1738,6 +1821,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Printer2DocumentInsertRemovalTimeout in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Printer2DocumentInsertRemovalTimeout is required.")]
         public virtual int Printer2DocumentInsertRemovalTimeout
         {
             get
@@ -1760,6 +1845,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ClosedCaptionTelevisionPort in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ClosedCaptionTelevisionPort is required.")]
         public virtual int ClosedCaptionTelevisionPort
         {
             get
@@ -1782,6 +1869,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Scanner2Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Scanner2Description
         {
             get
@@ -1804,6 +1892,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MagneticStripeReaderDeviceName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MagneticStripeReaderDeviceName
         {
             get
@@ -1826,6 +1915,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MagneticInkCharacterRecognitionDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MagneticInkCharacterRecognitionDescription
         {
             get
@@ -1848,6 +1938,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ElectronicFundsTransferConnectorName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ElectronicFundsTransferConnectorName
         {
             get
@@ -1870,6 +1961,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Printer1Model in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Printer1Model
         {
             get
@@ -1892,6 +1984,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PinPadMake in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PinPadMake
         {
             get
@@ -1914,6 +2007,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Scanner1DecodeScanData in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> Scanner1DecodeScanData
         {
             get
@@ -1936,6 +2030,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MagneticStripeReaderDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MagneticStripeReaderDescription
         {
             get
@@ -1958,6 +2053,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Scale in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailOposNone> Scale
         {
             get
@@ -1980,6 +2076,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MagneticStripeReaderStartTrack2After in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MagneticStripeReaderStartTrack2After is required.")]
         public virtual int MagneticStripeReaderStartTrack2After
         {
             get
@@ -2002,6 +2100,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisplayTotalText in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DisplayTotalText
         {
             get
@@ -2024,6 +2123,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MagneticStripeReaderStartTrack1 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MagneticStripeReaderStartTrack1
         {
             get
@@ -2046,6 +2146,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Printer2LogoBitmap in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual byte[] Printer2LogoBitmap
         {
             get
@@ -2068,6 +2169,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Drawer1DeviceName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Drawer1DeviceName
         {
             get
@@ -2090,6 +2192,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SignatureCapture in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailOposNone> SignatureCapture
         {
             get
@@ -2112,6 +2215,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DualDisplayBrowserUrl in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DualDisplayBrowserUrl
         {
             get
@@ -2134,6 +2238,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SignatureCaptureDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SignatureCaptureDescription
         {
             get
@@ -2156,6 +2261,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FiscalPrinterDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FiscalPrinterDescription
         {
             get
@@ -2178,6 +2284,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UseExternalPaymentsDevice in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> UseExternalPaymentsDevice
         {
             get
@@ -2200,6 +2307,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SignatureCaptureDeviceName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SignatureCaptureDeviceName
         {
             get
@@ -2222,6 +2330,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MergedSelfServicePackageReference in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MergedSelfServicePackageReference is required.")]
         public virtual long MergedSelfServicePackageReference
         {
             get
@@ -2244,6 +2354,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MagneticStripeReaderEndTrack2Sentinel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MagneticStripeReaderEndTrack2Sentinel
         {
             get
@@ -2266,6 +2377,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RadioFrequencyIdScannerType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailRFIDScannerTypeBase> RadioFrequencyIdScannerType
         {
             get
@@ -2288,6 +2400,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrintBinaryConversion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PrintBinaryConversion
         {
             get
@@ -2310,6 +2423,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Drawer1Model in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Drawer1Model
         {
             get
@@ -2332,6 +2446,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ClosedCaptionTelevisionCamera in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ClosedCaptionTelevisionCamera
         {
             get
@@ -2354,6 +2469,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ImagePath in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ImagePath
         {
             get
@@ -2376,6 +2492,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Name
         {
             get
@@ -2398,6 +2515,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ElectronicFundsTransferConnectorProperties in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ElectronicFundsTransferConnectorProperties
         {
             get
@@ -2420,6 +2538,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Scanner1Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Scanner1Description
         {
             get
@@ -2442,6 +2561,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisplayBinaryConversion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DisplayBinaryConversion
         {
             get
@@ -2464,6 +2584,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisplayBalanceText in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DisplayBalanceText
         {
             get
@@ -2486,6 +2607,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Printer2Make in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Printer2Make
         {
             get
@@ -2508,6 +2630,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ElectronicFundsTransferMerchantId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ElectronicFundsTransferMerchantId
         {
             get
@@ -2530,6 +2653,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FiscalRegister in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailManufacturerNone> FiscalRegister
         {
             get
@@ -2552,6 +2676,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Printer1DocumentInsertRemovalTimeout in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Printer1DocumentInsertRemovalTimeout is required.")]
         public virtual int Printer1DocumentInsertRemovalTimeout
         {
             get
@@ -2574,6 +2700,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MagneticStripeReaderEndTrack1Sentinel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MagneticStripeReaderEndTrack1Sentinel
         {
             get
@@ -2596,6 +2723,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FiscalRegisterDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FiscalRegisterDescription
         {
             get
@@ -2618,6 +2746,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Drawer1UseCashDrawerPool in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> Drawer1UseCashDrawerPool
         {
             get
@@ -2640,6 +2769,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsManualInputAllowed in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsManualInputAllowed
         {
             get
@@ -2662,6 +2792,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisplayClosedLine1 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DisplayClosedLine1
         {
             get
@@ -2684,6 +2815,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PharmacyPort in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PharmacyPort is required.")]
         public virtual int PharmacyPort
         {
             get
@@ -2706,6 +2839,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CashChangerInitialSettings in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CashChangerInitialSettings
         {
             get
@@ -2728,6 +2862,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ClosedCaptionTelevisionHostName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ClosedCaptionTelevisionHostName
         {
             get
@@ -2750,6 +2885,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ClosedCaptionTelevision in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ClosedCaptionTelevision
         {
             get
@@ -2772,6 +2908,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SignatureCaptureMake in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SignatureCaptureMake
         {
             get
@@ -2794,6 +2931,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LogoBitmap in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual byte[] LogoBitmap
         {
             get
@@ -2816,6 +2954,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PinPad in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailPinPadType> PinPad
         {
             get
@@ -2838,6 +2977,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property KeyboardMappingId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string KeyboardMappingId
         {
             get
@@ -2860,6 +3000,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Printer2Characterset in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Printer2Characterset is required.")]
         public virtual int Printer2Characterset
         {
             get
@@ -2882,6 +3024,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ElectronicFundsTransferUserId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ElectronicFundsTransferUserId
         {
             get
@@ -2904,6 +3047,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FiscalPrinterDeviceName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FiscalPrinterDeviceName
         {
             get
@@ -2926,6 +3070,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ElectronicFundsTransferServerName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ElectronicFundsTransferServerName
         {
             get
@@ -2948,6 +3093,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DualDisplayImagePath in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DualDisplayImagePath
         {
             get
@@ -2970,6 +3116,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Scanner2DecodeScanData in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> Scanner2DecodeScanData
         {
             get
@@ -2992,6 +3139,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DeviceDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DeviceDescription
         {
             get
@@ -3014,6 +3162,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ScreenKeyboard in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ScreenKeyboard
         {
             get
@@ -3036,6 +3185,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MagneticStripeReaderModel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MagneticStripeReaderModel
         {
             get
@@ -3058,6 +3208,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property KeylockDeviceName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string KeylockDeviceName
         {
             get
@@ -3080,6 +3231,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FiscalRegisterDeviceName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FiscalRegisterDeviceName
         {
             get
@@ -3102,6 +3254,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Printer2Logo in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailNoneDownloadFlash> Printer2Logo
         {
             get
@@ -3124,6 +3277,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MagneticStripeReaderSeparator1 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MagneticStripeReaderSeparator1
         {
             get
@@ -3146,6 +3300,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RadioFrequencyIdDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RadioFrequencyIdDescription
         {
             get
@@ -3168,6 +3323,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MagneticStripeReader in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailOposNone> MagneticStripeReader
         {
             get
@@ -3190,6 +3346,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Printer1 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailPeripheralType> Printer1
         {
             get
@@ -3212,6 +3369,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DualDisplay in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DualDisplay
         {
             get
@@ -3234,6 +3392,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShowPicture in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ShowPicture
         {
             get
@@ -3256,6 +3415,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisplayDeviceName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DisplayDeviceName
         {
             get
@@ -3278,6 +3438,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FormXPosition in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FormXPosition is required.")]
         public virtual int FormXPosition
         {
             get
@@ -3300,6 +3462,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PinPadDeviceName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PinPadDeviceName
         {
             get
@@ -3322,6 +3485,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PinPadDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PinPadDescription
         {
             get
@@ -3344,6 +3508,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Printer1DeviceName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Printer1DeviceName
         {
             get
@@ -3366,6 +3531,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailTerminal in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTerminal> RetailTerminal
         {
             get

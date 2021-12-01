@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for DimAttributeMainAccountSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for DimAttributeMainAccountSingle in the schema.
+    /// </summary>
     public partial class DimAttributeMainAccountSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<DimAttributeMainAccount>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.DimensionCombination> _DimensionCombinationMainAccount;
     }
-        /// <summary>
-        /// There are no comments for DimAttributeMainAccount in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for DimAttributeMainAccount in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// Value
     /// </KeyProperties>
@@ -83,6 +83,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Value in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Value is required.")]
         public virtual string Value
         {
             get
@@ -105,6 +107,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Name
         {
             get
@@ -127,6 +130,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Type in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.DimensionLedgerAccountType> Type
         {
             get
@@ -149,6 +153,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Category in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Category is required.")]
         public virtual long Category
         {
             get
@@ -171,6 +177,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionCombinationMainAccount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DimensionCombination> DimensionCombinationMainAccount
         {
             get

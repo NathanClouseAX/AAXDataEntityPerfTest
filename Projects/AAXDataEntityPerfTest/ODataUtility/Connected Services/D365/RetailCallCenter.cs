@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RetailCallCenterSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailCallCenterSingle in the schema.
+    /// </summary>
     public partial class RetailCallCenterSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RetailCallCenter>
     {
         /// <summary>
@@ -245,9 +245,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailChannelPriceGroup> _RetailChannelPriceGroup;
     }
-        /// <summary>
-        /// There are no comments for RetailCallCenter in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailCallCenter in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// RetailChannelId
     /// </KeyProperties>
@@ -301,6 +301,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailChannelId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetailChannelId is required.")]
         public virtual string RetailChannelId
         {
             get
@@ -323,6 +325,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ChannelTimeZone in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.Timezone> ChannelTimeZone
         {
             get
@@ -345,6 +348,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ChannelType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailChannelType> ChannelType
         {
             get
@@ -367,6 +371,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ChannelTimeZoneInfoId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ChannelTimeZoneInfoId
         {
             get
@@ -389,6 +394,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StoreArea in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "StoreArea is required.")]
         public virtual decimal StoreArea
         {
             get
@@ -411,6 +418,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EventNotificationProfileId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string EventNotificationProfileId
         {
             get
@@ -433,6 +441,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Currency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Currency
         {
             get
@@ -455,6 +464,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PaymentMethodName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PaymentMethodName
         {
             get
@@ -477,6 +487,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CanOrderCompletion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> CanOrderCompletion
         {
             get
@@ -499,6 +510,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductCategoryHierarchyName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductCategoryHierarchyName
         {
             get
@@ -521,6 +533,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CanDirectSell in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> CanDirectSell
         {
             get
@@ -543,6 +556,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReasonInfoCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ReasonInfoCode
         {
             get
@@ -565,6 +579,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerCreditInfoCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CustomerCreditInfoCode
         {
             get
@@ -587,6 +602,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PriceOverrideInfoCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PriceOverrideInfoCode
         {
             get
@@ -609,6 +625,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultCustomerLegalEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultCustomerLegalEntity
         {
             get
@@ -631,6 +648,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Payment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Payment
         {
             get
@@ -653,6 +671,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionServiceProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TransactionServiceProfile
         {
             get
@@ -675,6 +694,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OperatingUnitPartyNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OperatingUnitPartyNumber
         {
             get
@@ -697,6 +717,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CanOrderPriceControl in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> CanOrderPriceControl
         {
             get
@@ -719,6 +740,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultCustomerAccount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultCustomerAccount
         {
             get
@@ -741,6 +763,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisplayTaxPerTaxComponent in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DisplayTaxPerTaxComponent
         {
             get
@@ -763,6 +786,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PriceIncludesSalesTax in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PriceIncludesSalesTax
         {
             get
@@ -785,6 +809,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WarehouseId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string WarehouseId
         {
             get
@@ -807,6 +832,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultDimensionDisplayValue
         {
             get
@@ -829,6 +855,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WarehouseLegalEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string WarehouseLegalEntity
         {
             get
@@ -851,6 +878,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OperatingUnitNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OperatingUnitNumber
         {
             get
@@ -873,6 +901,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailEventNotificationProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetailEventNotificationProfile is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RetailEventNotificationProfile RetailEventNotificationProfile
         {
             get
@@ -895,6 +925,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerPaymentMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.CustomerPaymentMethod CustomerPaymentMethod
         {
             get
@@ -917,6 +948,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductCategoryHierarchy in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ProductCategoryHierarchy ProductCategoryHierarchy
         {
             get
@@ -939,6 +971,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailTransactionServiceProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.RetailTransactionServiceProfile RetailTransactionServiceProfile
         {
             get
@@ -961,6 +994,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerV3 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CustomerV3 is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.CustomerV3 CustomerV3
         {
             get
@@ -983,6 +1018,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Warehouse in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Warehouse is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Warehouse Warehouse
         {
             get
@@ -1005,6 +1042,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionSet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionSet DimensionSet
         {
             get
@@ -1027,6 +1065,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OperatingUnit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "OperatingUnit is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.OperatingUnit OperatingUnit
         {
             get
@@ -1049,6 +1089,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailStoreTenderType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStoreTenderType> RetailStoreTenderType
         {
             get
@@ -1071,6 +1112,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailChannelPriceGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailChannelPriceGroup> RetailChannelPriceGroup
         {
             get

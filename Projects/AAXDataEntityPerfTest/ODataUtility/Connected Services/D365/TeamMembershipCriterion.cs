@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for TeamMembershipCriterionSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TeamMembershipCriterionSingle in the schema.
+    /// </summary>
     public partial class TeamMembershipCriterionSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<TeamMembershipCriterion>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Team> _Team;
     }
-        /// <summary>
-        /// There are no comments for TeamMembershipCriterion in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TeamMembershipCriterion in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// Name
     /// </KeyProperties>
@@ -102,6 +102,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Name is required.")]
         public virtual string Name
         {
             get
@@ -124,6 +126,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllowVendor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AllowVendor
         {
             get
@@ -146,6 +149,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RequiresAXUser in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> RequiresAXUser
         {
             get
@@ -168,6 +172,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllowContact in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AllowContact
         {
             get
@@ -190,6 +195,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsSystemCriterion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsSystemCriterion
         {
             get
@@ -212,6 +218,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllowContractor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AllowContractor
         {
             get
@@ -234,6 +241,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllowEmployee in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AllowEmployee
         {
             get
@@ -256,6 +264,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllowCustomer in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AllowCustomer
         {
             get
@@ -278,6 +287,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TeamV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TeamV2> TeamV2
         {
             get
@@ -300,6 +310,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Team in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Team> Team
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for BenefitHcmDetailSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BenefitHcmDetailSingle in the schema.
+    /// </summary>
     public partial class BenefitHcmDetailSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<BenefitHcmDetail>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.BenefitEligibilityPolicyRuleTypeSingle _PolicyRuleType;
     }
-        /// <summary>
-        /// There are no comments for BenefitHcmDetail in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BenefitHcmDetail in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// BenefitId
     /// Effective
@@ -119,6 +119,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BenefitId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BenefitId is required.")]
         public virtual string BenefitId
         {
             get
@@ -141,6 +143,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Effective in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Effective is required.")]
         public virtual global::System.DateTimeOffset Effective
         {
             get
@@ -163,6 +167,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Eligibility in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HcmBenefitEligibilityType> Eligibility
         {
             get
@@ -185,6 +190,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Expiration in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Expiration is required.")]
         public virtual global::System.DateTimeOffset Expiration
         {
             get
@@ -207,6 +214,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RuleName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RuleName
         {
             get
@@ -229,6 +237,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Benefit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Benefit is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Benefit Benefit
         {
             get
@@ -251,6 +261,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PolicyRuleType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PolicyRuleType is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.BenefitEligibilityPolicyRuleType PolicyRuleType
         {
             get

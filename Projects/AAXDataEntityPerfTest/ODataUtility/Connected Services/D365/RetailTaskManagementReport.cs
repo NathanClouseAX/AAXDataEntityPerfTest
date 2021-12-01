@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RetailTaskManagementReportSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailTaskManagementReportSingle in the schema.
+    /// </summary>
     public partial class RetailTaskManagementReportSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RetailTaskManagementReport>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for RetailTaskManagementReport in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailTaskManagementReport in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// Process_ProcessId
     /// TaskId
@@ -69,6 +69,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Process_ProcessId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Process_ProcessId is required.")]
         public virtual global::System.Guid Process_ProcessId
         {
             get
@@ -91,6 +93,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaskId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TaskId is required.")]
         public virtual global::System.Guid TaskId
         {
             get
@@ -113,6 +117,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Process_Worker in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Process_Worker
         {
             get
@@ -135,6 +140,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DueDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DueDate is required.")]
         public virtual global::System.DateTimeOffset DueDate
         {
             get
@@ -157,6 +164,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CompletionDateTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CompletionDateTime is required.")]
         public virtual global::System.DateTimeOffset CompletionDateTime
         {
             get
@@ -179,6 +188,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Name
         {
             get
@@ -201,6 +211,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Status in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.BusinessProcessTaskStatus> Status
         {
             get
@@ -223,6 +234,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Process_Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Process_Name
         {
             get
@@ -245,6 +257,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssignedWorker in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AssignedWorker
         {
             get
@@ -267,6 +280,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Process_TargetDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Process_TargetDate is required.")]
         public virtual global::System.DateTimeOffset Process_TargetDate
         {
             get
@@ -289,6 +304,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Notes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Notes
         {
             get
@@ -311,6 +327,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StoreNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string StoreNumber
         {
             get
@@ -333,6 +350,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ResolvedBy in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ResolvedBy
         {
             get
@@ -355,6 +373,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Process_Status in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.BusinessProcessHeaderStatus> Process_Status
         {
             get

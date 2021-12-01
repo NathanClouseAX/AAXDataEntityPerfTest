@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for PersonCertificateSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PersonCertificateSingle in the schema.
+    /// </summary>
     public partial class PersonCertificateSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PersonCertificate>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.CertificateTypeSingle _CertificateType;
     }
-        /// <summary>
-        /// There are no comments for PersonCertificate in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PersonCertificate in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// PartyNumber
     /// CertificateTypeId
@@ -127,6 +127,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PartyNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PartyNumber is required.")]
         public virtual string PartyNumber
         {
             get
@@ -149,6 +151,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CertificateTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CertificateTypeId is required.")]
         public virtual string CertificateTypeId
         {
             get
@@ -171,6 +175,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StartDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "StartDate is required.")]
         public virtual global::System.DateTimeOffset StartDate
         {
             get
@@ -193,6 +199,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EndDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EndDate is required.")]
         public virtual global::System.DateTimeOffset EndDate
         {
             get
@@ -215,6 +223,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Notes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Notes
         {
             get
@@ -237,6 +246,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Person in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Person is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Person Person
         {
             get
@@ -259,6 +270,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CertificateType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CertificateType is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.CertificateType CertificateType
         {
             get

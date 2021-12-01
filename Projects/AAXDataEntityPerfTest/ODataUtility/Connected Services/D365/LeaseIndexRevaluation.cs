@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for LeaseIndexRevaluationSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LeaseIndexRevaluationSingle in the schema.
+    /// </summary>
     public partial class LeaseIndexRevaluationSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<LeaseIndexRevaluation>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for LeaseIndexRevaluation in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LeaseIndexRevaluation in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// ProcessId
     /// </KeyProperties>
@@ -66,6 +66,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProcessId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProcessId is required.")]
         public virtual global::System.Guid ProcessId
         {
             get
@@ -88,6 +90,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VariablePayment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "VariablePayment is required.")]
         public virtual decimal VariablePayment
         {
             get
@@ -110,6 +114,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LegalEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LegalEntity
         {
             get
@@ -132,6 +137,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LeaseAdjusted in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LeaseAdjusted is required.")]
         public virtual int LeaseAdjusted
         {
             get
@@ -154,6 +161,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LiabilityAdjusted in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LiabilityAdjusted is required.")]
         public virtual decimal LiabilityAdjusted
         {
             get
@@ -176,6 +185,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RevalueProcessId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RevalueProcessId
         {
             get

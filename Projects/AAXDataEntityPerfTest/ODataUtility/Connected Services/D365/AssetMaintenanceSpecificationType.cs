@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for AssetMaintenanceSpecificationTypeSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AssetMaintenanceSpecificationTypeSingle in the schema.
+    /// </summary>
     public partial class AssetMaintenanceSpecificationTypeSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AssetMaintenanceSpecificationType>
     {
         /// <summary>
@@ -34,48 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public AssetMaintenanceSpecificationTypeSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AssetMaintenanceSpecificationType> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for AssetMaintenanceAssetTypeAttribute in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetTypeAttribute> AssetMaintenanceAssetTypeAttribute
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._AssetMaintenanceAssetTypeAttribute == null))
-                {
-                    this._AssetMaintenanceAssetTypeAttribute = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetTypeAttribute>(GetPath("AssetMaintenanceAssetTypeAttribute"));
-                }
-                return this._AssetMaintenanceAssetTypeAttribute;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetTypeAttribute> _AssetMaintenanceAssetTypeAttribute;
-        /// <summary>
-        /// There are no comments for AssetMaintenanceFunctionalLocationAttributeSpecification in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationAttributeSpecification> AssetMaintenanceFunctionalLocationAttributeSpecification
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._AssetMaintenanceFunctionalLocationAttributeSpecification == null))
-                {
-                    this._AssetMaintenanceFunctionalLocationAttributeSpecification = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationAttributeSpecification>(GetPath("AssetMaintenanceFunctionalLocationAttributeSpecification"));
-                }
-                return this._AssetMaintenanceFunctionalLocationAttributeSpecification;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationAttributeSpecification> _AssetMaintenanceFunctionalLocationAttributeSpecification;
         /// <summary>
         /// There are no comments for AssetMaintenanceAssetAttribute in the schema.
         /// </summary>
@@ -98,6 +56,27 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetAttribute> _AssetMaintenanceAssetAttribute;
         /// <summary>
+        /// There are no comments for AssetMaintenanceAssetTypeAttribute in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetTypeAttribute> AssetMaintenanceAssetTypeAttribute
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._AssetMaintenanceAssetTypeAttribute == null))
+                {
+                    this._AssetMaintenanceAssetTypeAttribute = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetTypeAttribute>(GetPath("AssetMaintenanceAssetTypeAttribute"));
+                }
+                return this._AssetMaintenanceAssetTypeAttribute;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetTypeAttribute> _AssetMaintenanceAssetTypeAttribute;
+        /// <summary>
         /// There are no comments for AssetMaintenanceFunctionalLocationAttribute in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -118,10 +97,31 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationAttribute> _AssetMaintenanceFunctionalLocationAttribute;
-    }
         /// <summary>
-        /// There are no comments for AssetMaintenanceSpecificationType in the schema.
+        /// There are no comments for AssetMaintenanceFunctionalLocationAttributeSpecification in the schema.
         /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationAttributeSpecification> AssetMaintenanceFunctionalLocationAttributeSpecification
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._AssetMaintenanceFunctionalLocationAttributeSpecification == null))
+                {
+                    this._AssetMaintenanceFunctionalLocationAttributeSpecification = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationAttributeSpecification>(GetPath("AssetMaintenanceFunctionalLocationAttributeSpecification"));
+                }
+                return this._AssetMaintenanceFunctionalLocationAttributeSpecification;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationAttributeSpecification> _AssetMaintenanceFunctionalLocationAttributeSpecification;
+    }
+    /// <summary>
+    /// There are no comments for AssetMaintenanceSpecificationType in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// AttributeTypeId
@@ -147,6 +147,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -169,6 +171,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AttributeTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AttributeTypeId is required.")]
         public virtual string AttributeTypeId
         {
             get
@@ -191,6 +195,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -213,6 +218,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DataType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EntAssetConditionType> DataType
         {
             get
@@ -235,6 +241,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnitId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string UnitId
         {
             get
@@ -254,53 +261,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnUnitIdChanging(string value);
         partial void OnUnitIdChanged();
         /// <summary>
-        /// There are no comments for Property AssetMaintenanceAssetTypeAttribute in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetTypeAttribute> AssetMaintenanceAssetTypeAttribute
-        {
-            get
-            {
-                return this._AssetMaintenanceAssetTypeAttribute;
-            }
-            set
-            {
-                this.OnAssetMaintenanceAssetTypeAttributeChanging(value);
-                this._AssetMaintenanceAssetTypeAttribute = value;
-                this.OnAssetMaintenanceAssetTypeAttributeChanged();
-                this.OnPropertyChanged("AssetMaintenanceAssetTypeAttribute");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetTypeAttribute> _AssetMaintenanceAssetTypeAttribute = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetTypeAttribute>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAssetMaintenanceAssetTypeAttributeChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetTypeAttribute> value);
-        partial void OnAssetMaintenanceAssetTypeAttributeChanged();
-        /// <summary>
-        /// There are no comments for Property AssetMaintenanceFunctionalLocationAttributeSpecification in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationAttributeSpecification> AssetMaintenanceFunctionalLocationAttributeSpecification
-        {
-            get
-            {
-                return this._AssetMaintenanceFunctionalLocationAttributeSpecification;
-            }
-            set
-            {
-                this.OnAssetMaintenanceFunctionalLocationAttributeSpecificationChanging(value);
-                this._AssetMaintenanceFunctionalLocationAttributeSpecification = value;
-                this.OnAssetMaintenanceFunctionalLocationAttributeSpecificationChanged();
-                this.OnPropertyChanged("AssetMaintenanceFunctionalLocationAttributeSpecification");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationAttributeSpecification> _AssetMaintenanceFunctionalLocationAttributeSpecification = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationAttributeSpecification>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAssetMaintenanceFunctionalLocationAttributeSpecificationChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationAttributeSpecification> value);
-        partial void OnAssetMaintenanceFunctionalLocationAttributeSpecificationChanged();
-        /// <summary>
         /// There are no comments for Property AssetMaintenanceAssetAttribute in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetAttribute> AssetMaintenanceAssetAttribute
         {
             get
@@ -320,9 +284,33 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnAssetMaintenanceAssetAttributeChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetAttribute> value);
         partial void OnAssetMaintenanceAssetAttributeChanged();
         /// <summary>
+        /// There are no comments for Property AssetMaintenanceAssetTypeAttribute in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetTypeAttribute> AssetMaintenanceAssetTypeAttribute
+        {
+            get
+            {
+                return this._AssetMaintenanceAssetTypeAttribute;
+            }
+            set
+            {
+                this.OnAssetMaintenanceAssetTypeAttributeChanging(value);
+                this._AssetMaintenanceAssetTypeAttribute = value;
+                this.OnAssetMaintenanceAssetTypeAttributeChanged();
+                this.OnPropertyChanged("AssetMaintenanceAssetTypeAttribute");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetTypeAttribute> _AssetMaintenanceAssetTypeAttribute = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetTypeAttribute>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnAssetMaintenanceAssetTypeAttributeChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetTypeAttribute> value);
+        partial void OnAssetMaintenanceAssetTypeAttributeChanged();
+        /// <summary>
         /// There are no comments for Property AssetMaintenanceFunctionalLocationAttribute in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationAttribute> AssetMaintenanceFunctionalLocationAttribute
         {
             get
@@ -341,6 +329,29 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationAttribute> _AssetMaintenanceFunctionalLocationAttribute = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationAttribute>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnAssetMaintenanceFunctionalLocationAttributeChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationAttribute> value);
         partial void OnAssetMaintenanceFunctionalLocationAttributeChanged();
+        /// <summary>
+        /// There are no comments for Property AssetMaintenanceFunctionalLocationAttributeSpecification in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationAttributeSpecification> AssetMaintenanceFunctionalLocationAttributeSpecification
+        {
+            get
+            {
+                return this._AssetMaintenanceFunctionalLocationAttributeSpecification;
+            }
+            set
+            {
+                this.OnAssetMaintenanceFunctionalLocationAttributeSpecificationChanging(value);
+                this._AssetMaintenanceFunctionalLocationAttributeSpecification = value;
+                this.OnAssetMaintenanceFunctionalLocationAttributeSpecificationChanged();
+                this.OnPropertyChanged("AssetMaintenanceFunctionalLocationAttributeSpecification");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationAttributeSpecification> _AssetMaintenanceFunctionalLocationAttributeSpecification = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationAttributeSpecification>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnAssetMaintenanceFunctionalLocationAttributeSpecificationChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationAttributeSpecification> value);
+        partial void OnAssetMaintenanceFunctionalLocationAttributeSpecificationChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

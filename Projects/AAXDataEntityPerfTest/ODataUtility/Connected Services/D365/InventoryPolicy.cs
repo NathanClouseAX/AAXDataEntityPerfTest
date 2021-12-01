@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for InventoryPolicySingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for InventoryPolicySingle in the schema.
+    /// </summary>
     public partial class InventoryPolicySingle : global::Microsoft.OData.Client.DataServiceQuerySingle<InventoryPolicy>
     {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for ReleasedProductsV2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ReleasedProductV2Single ReleasedProductsV2
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ReleasedProductsV2 == null))
-                {
-                    this._ReleasedProductsV2 = new global::Microsoft.Dynamics.DataEntities.ReleasedProductV2Single(this.Context, GetPath("ReleasedProductsV2"));
-                }
-                return this._ReleasedProductsV2;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ReleasedProductV2Single _ReleasedProductsV2;
-        /// <summary>
         /// There are no comments for CostFlowAssumptionPolicy in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,10 +55,31 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.CostFlowAssumptionPolicySingle _CostFlowAssumptionPolicy;
-    }
         /// <summary>
-        /// There are no comments for InventoryPolicy in the schema.
+        /// There are no comments for ReleasedProductsV2 in the schema.
         /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.ReleasedProductV2Single ReleasedProductsV2
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ReleasedProductsV2 == null))
+                {
+                    this._ReleasedProductsV2 = new global::Microsoft.Dynamics.DataEntities.ReleasedProductV2Single(this.Context, GetPath("ReleasedProductsV2"));
+                }
+                return this._ReleasedProductsV2;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.ReleasedProductV2Single _ReleasedProductsV2;
+    }
+    /// <summary>
+    /// There are no comments for InventoryPolicy in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// PolicyId
@@ -111,6 +111,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -133,6 +135,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PolicyId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PolicyId is required.")]
         public virtual string PolicyId
         {
             get
@@ -155,6 +159,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShouldFIFODateReserveBackwards in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ShouldFIFODateReserveBackwards
         {
             get
@@ -177,6 +182,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultSalesReservationMode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.MCRItemReservation> DefaultSalesReservationMode
         {
             get
@@ -199,6 +205,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillInventoryReservationUseFIFOReservation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillInventoryReservationUseFIFOReservation
         {
             get
@@ -221,6 +228,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ApprovedVendorCheckMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PdsVendorCheckItem> ApprovedVendorCheckMethod
         {
             get
@@ -243,6 +251,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsReceivingRequired in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsReceivingRequired
         {
             get
@@ -265,6 +274,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillInventoryReservationUseFEFOReservation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillInventoryReservationUseFEFOReservation
         {
             get
@@ -287,6 +297,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsPickingRequired in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsPickingRequired
         {
             get
@@ -309,6 +320,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsRegistrationRequired in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsRegistrationRequired
         {
             get
@@ -331,6 +343,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BatchDispositionCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BatchDispositionCode
         {
             get
@@ -353,6 +366,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AreQuarantineManagementProcessesEnabled in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AreQuarantineManagementProcessesEnabled
         {
             get
@@ -375,6 +389,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsNegativePhysicalInventoryAllowed in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsNegativePhysicalInventoryAllowed
         {
             get
@@ -397,6 +412,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillRegistrationProvideVendorBatchDetails in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillRegistrationProvideVendorBatchDetails
         {
             get
@@ -419,6 +435,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsNegativeFinancialInventoryAllowed in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsNegativeFinancialInventoryAllowed
         {
             get
@@ -441,6 +458,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsDeductionRequired in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsDeductionRequired
         {
             get
@@ -463,6 +481,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillInventoryReservationReserveSameBatch in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillInventoryReservationReserveSameBatch
         {
             get
@@ -485,6 +504,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShouldConsolidateSameBatchReservations in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ShouldConsolidateSameBatchReservations
         {
             get
@@ -507,6 +527,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FEFODateControlledInventoryReservationCriteria in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PdsPickCriteria> FEFODateControlledInventoryReservationCriteria
         {
             get
@@ -526,31 +547,11 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnFEFODateControlledInventoryReservationCriteriaChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PdsPickCriteria> value);
         partial void OnFEFODateControlledInventoryReservationCriteriaChanged();
         /// <summary>
-        /// There are no comments for Property ReleasedProductsV2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ReleasedProductV2 ReleasedProductsV2
-        {
-            get
-            {
-                return this._ReleasedProductsV2;
-            }
-            set
-            {
-                this.OnReleasedProductsV2Changing(value);
-                this._ReleasedProductsV2 = value;
-                this.OnReleasedProductsV2Changed();
-                this.OnPropertyChanged("ReleasedProductsV2");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ReleasedProductV2 _ReleasedProductsV2;
-        partial void OnReleasedProductsV2Changing(global::Microsoft.Dynamics.DataEntities.ReleasedProductV2 value);
-        partial void OnReleasedProductsV2Changed();
-        /// <summary>
         /// There are no comments for Property CostFlowAssumptionPolicy in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CostFlowAssumptionPolicy is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.CostFlowAssumptionPolicy CostFlowAssumptionPolicy
         {
             get
@@ -569,6 +570,29 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.CostFlowAssumptionPolicy _CostFlowAssumptionPolicy;
         partial void OnCostFlowAssumptionPolicyChanging(global::Microsoft.Dynamics.DataEntities.CostFlowAssumptionPolicy value);
         partial void OnCostFlowAssumptionPolicyChanged();
+        /// <summary>
+        /// There are no comments for Property ReleasedProductsV2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.Dynamics.DataEntities.ReleasedProductV2 ReleasedProductsV2
+        {
+            get
+            {
+                return this._ReleasedProductsV2;
+            }
+            set
+            {
+                this.OnReleasedProductsV2Changing(value);
+                this._ReleasedProductsV2 = value;
+                this.OnReleasedProductsV2Changed();
+                this.OnPropertyChanged("ReleasedProductsV2");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.ReleasedProductV2 _ReleasedProductsV2;
+        partial void OnReleasedProductsV2Changing(global::Microsoft.Dynamics.DataEntities.ReleasedProductV2 value);
+        partial void OnReleasedProductsV2Changed();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

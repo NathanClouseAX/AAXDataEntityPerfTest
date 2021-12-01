@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for AdjustmentParametersSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AdjustmentParametersSingle in the schema.
+    /// </summary>
     public partial class AdjustmentParametersSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AdjustmentParameters>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _DimensionCombination;
     }
-        /// <summary>
-        /// There are no comments for AdjustmentParameters in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AdjustmentParameters in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// LedgerName
     /// </KeyProperties>
@@ -81,6 +81,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LedgerName is required.")]
         public virtual string LedgerName
         {
             get
@@ -103,6 +105,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AdvanceHolderTaxDimensionExpenseCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AdvanceHolderTaxDimensionExpenseCode
         {
             get
@@ -125,6 +128,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerTaxDimensionExpenseCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CustomerTaxDimensionExpenseCode
         {
             get
@@ -147,6 +151,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AdvanceHolderAdvanceAdjustmentOffsetAccount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AdvanceHolderAdvanceAdjustmentOffsetAccount
         {
             get
@@ -169,6 +174,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorTaxDimensionRevenueCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VendorTaxDimensionRevenueCode
         {
             get
@@ -191,6 +197,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerTaxDimensionRevenueCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CustomerTaxDimensionRevenueCode
         {
             get
@@ -213,6 +220,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerRealizedLoss in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CustomerRealizedLoss
         {
             get
@@ -235,6 +243,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerVATAdjustmentRealizedLoss in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CustomerVATAdjustmentRealizedLoss
         {
             get
@@ -257,6 +266,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AdvanceHolderTaxAccountingAdvanceAdjustmentLoss in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AdvanceHolderTaxAccountingAdvanceAdjustmentLoss
         {
             get
@@ -279,6 +289,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerAdvanceAdjustmentOffsetAccount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CustomerAdvanceAdjustmentOffsetAccount
         {
             get
@@ -301,6 +312,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorRealizedGain in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VendorRealizedGain
         {
             get
@@ -323,6 +335,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AdvanceHolderTaxDimensionRevenueCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AdvanceHolderTaxDimensionRevenueCode
         {
             get
@@ -345,6 +358,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorAdvanceAdjustmentOffsetAccount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VendorAdvanceAdjustmentOffsetAccount
         {
             get
@@ -367,6 +381,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AdvanceHolderRealizedGain in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AdvanceHolderRealizedGain
         {
             get
@@ -389,6 +404,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AdvanceHolderTaxAccountingAdvanceAdjustmentProfit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AdvanceHolderTaxAccountingAdvanceAdjustmentProfit
         {
             get
@@ -411,6 +427,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerPostingMode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.CustVendAmountDiffPostingMode_RU> LedgerPostingMode
         {
             get
@@ -433,6 +450,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorTaxDimensionExpenseCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VendorTaxDimensionExpenseCode
         {
             get
@@ -455,6 +473,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerPostingCust in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.CustVendAmountDiffPostingMode_RU> LedgerPostingCust
         {
             get
@@ -477,6 +496,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VATAdjustmentCust in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> VATAdjustmentCust
         {
             get
@@ -499,6 +519,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerAdvanceAdjustmentProfit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CustomerAdvanceAdjustmentProfit
         {
             get
@@ -521,6 +542,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorTaxAccountingAdvanceAdjustmentProfit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VendorTaxAccountingAdvanceAdjustmentProfit
         {
             get
@@ -543,6 +565,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendPostingMode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.CustVendAmountDiffPostingMode_RU> VendPostingMode
         {
             get
@@ -565,6 +588,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerVATAdjustmentRealizedGain in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CustomerVATAdjustmentRealizedGain
         {
             get
@@ -587,6 +611,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerRealizedGain in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CustomerRealizedGain
         {
             get
@@ -609,6 +634,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorTaxAccountingAdvanceAdjustmentLoss in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VendorTaxAccountingAdvanceAdjustmentLoss
         {
             get
@@ -631,6 +657,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AdvanceHolderRealizedLoss in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AdvanceHolderRealizedLoss
         {
             get
@@ -653,6 +680,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorRealizedLoss in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VendorRealizedLoss
         {
             get
@@ -675,6 +703,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerAdvanceAdjustmentLoss in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CustomerAdvanceAdjustmentLoss
         {
             get
@@ -697,6 +726,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination DimensionCombination
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for WarehouseWorkPolicyProductSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for WarehouseWorkPolicyProductSingle in the schema.
+    /// </summary>
     public partial class WarehouseWorkPolicyProductSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<WarehouseWorkPolicyProduct>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicySingle _WarehouseWorkPolicy;
     }
-        /// <summary>
-        /// There are no comments for WarehouseWorkPolicyProduct in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for WarehouseWorkPolicyProduct in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// WorkPolicyName
@@ -120,6 +120,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -142,6 +144,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkPolicyName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WorkPolicyName is required.")]
         public virtual string WorkPolicyName
         {
             get
@@ -164,6 +168,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ItemNumber is required.")]
         public virtual string ItemNumber
         {
             get
@@ -186,6 +192,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReleasedProduct in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReleasedProduct is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ReleasedProductV2 ReleasedProduct
         {
             get
@@ -208,6 +216,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WarehouseWorkPolicy in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WarehouseWorkPolicy is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicy WarehouseWorkPolicy
         {
             get

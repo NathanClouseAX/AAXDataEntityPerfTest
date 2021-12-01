@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for PhysicalProductDimensionDetailsSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PhysicalProductDimensionDetailsSingle in the schema.
+    /// </summary>
     public partial class PhysicalProductDimensionDetailsSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PhysicalProductDimensionDetails>
     {
         /// <summary>
@@ -140,9 +140,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.UnitOfMeasureSingle _LengthUnitOfMeasure;
     }
-        /// <summary>
-        /// There are no comments for PhysicalProductDimensionDetails in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PhysicalProductDimensionDetails in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// ProductNumber
     /// DimensionType
@@ -217,6 +217,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductNumber is required.")]
         public virtual string ProductNumber
         {
             get
@@ -239,6 +241,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EcoResPhysicalDimensionType> DimensionType
         {
             get
@@ -261,6 +264,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PhysicalUnitSymbol in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PhysicalUnitSymbol is required.")]
         public virtual string PhysicalUnitSymbol
         {
             get
@@ -283,6 +288,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MassUnitSymbol in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MassUnitSymbol
         {
             get
@@ -305,6 +311,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PhysicalDepth in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PhysicalDepth is required.")]
         public virtual decimal PhysicalDepth
         {
             get
@@ -327,6 +335,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VolumeUnitSymbol in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VolumeUnitSymbol
         {
             get
@@ -349,6 +358,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PhysicalWidth in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PhysicalWidth is required.")]
         public virtual decimal PhysicalWidth
         {
             get
@@ -371,6 +382,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PhysicalWeight in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PhysicalWeight is required.")]
         public virtual decimal PhysicalWeight
         {
             get
@@ -393,6 +406,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LengthUnitSymbol in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LengthUnitSymbol
         {
             get
@@ -415,6 +429,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PhysicalHeight in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PhysicalHeight is required.")]
         public virtual decimal PhysicalHeight
         {
             get
@@ -437,6 +453,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductV2 is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ProductV2 ProductV2
         {
             get
@@ -459,6 +477,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PhysicalUnitOfMeasure in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PhysicalUnitOfMeasure is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.UnitOfMeasure PhysicalUnitOfMeasure
         {
             get
@@ -481,6 +501,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VolumeUnitOfMeasure in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "VolumeUnitOfMeasure is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.UnitOfMeasure VolumeUnitOfMeasure
         {
             get
@@ -503,6 +525,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MassDefinedUnitOfMeasure in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MassDefinedUnitOfMeasure is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.UnitOfMeasure MassDefinedUnitOfMeasure
         {
             get
@@ -525,6 +549,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LengthUnitOfMeasure in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LengthUnitOfMeasure is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.UnitOfMeasure LengthUnitOfMeasure
         {
             get

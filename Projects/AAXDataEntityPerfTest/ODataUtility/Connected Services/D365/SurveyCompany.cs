@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for SurveyCompanySingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for SurveyCompanySingle in the schema.
+    /// </summary>
     public partial class SurveyCompanySingle : global::Microsoft.OData.Client.DataServiceQuerySingle<SurveyCompany>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Job> _Jobs;
     }
-        /// <summary>
-        /// There are no comments for SurveyCompany in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for SurveyCompany in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// SurveyCompanyId
     /// </KeyProperties>
@@ -81,6 +81,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SurveyCompanyId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SurveyCompanyId is required.")]
         public virtual string SurveyCompanyId
         {
             get
@@ -103,6 +105,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Email in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Email
         {
             get
@@ -125,6 +128,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SMS in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SMS
         {
             get
@@ -147,6 +151,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LocationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LocationId
         {
             get
@@ -169,6 +174,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -191,6 +197,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Note in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Note
         {
             get
@@ -213,6 +220,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InternetAddress in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string InternetAddress
         {
             get
@@ -235,6 +243,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Extension in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Extension
         {
             get
@@ -257,6 +266,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Telephone in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Telephone
         {
             get
@@ -279,6 +289,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Fax in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Fax
         {
             get
@@ -301,6 +312,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Jobs in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Job> Jobs
         {
             get

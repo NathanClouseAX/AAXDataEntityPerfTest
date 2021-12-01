@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for EngineeringChangeOrderProductSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for EngineeringChangeOrderProductSingle in the schema.
+    /// </summary>
     public partial class EngineeringChangeOrderProductSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<EngineeringChangeOrderProduct>
     {
         /// <summary>
@@ -34,48 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public EngineeringChangeOrderProductSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<EngineeringChangeOrderProduct> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for EngineeringChangeOrderProductWhereUsedAnalyses in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductWhereUsedAnalysis> EngineeringChangeOrderProductWhereUsedAnalyses
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._EngineeringChangeOrderProductWhereUsedAnalyses == null))
-                {
-                    this._EngineeringChangeOrderProductWhereUsedAnalyses = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductWhereUsedAnalysis>(GetPath("EngineeringChangeOrderProductWhereUsedAnalyses"));
-                }
-                return this._EngineeringChangeOrderProductWhereUsedAnalyses;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductWhereUsedAnalysis> _EngineeringChangeOrderProductWhereUsedAnalyses;
-        /// <summary>
-        /// There are no comments for EngineeringChangeOrderProductRouteHeadersV2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeaderV2> EngineeringChangeOrderProductRouteHeadersV2
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._EngineeringChangeOrderProductRouteHeadersV2 == null))
-                {
-                    this._EngineeringChangeOrderProductRouteHeadersV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeaderV2>(GetPath("EngineeringChangeOrderProductRouteHeadersV2"));
-                }
-                return this._EngineeringChangeOrderProductRouteHeadersV2;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeaderV2> _EngineeringChangeOrderProductRouteHeadersV2;
         /// <summary>
         /// There are no comments for ProductOwner in the schema.
         /// </summary>
@@ -245,10 +203,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderHeaderSingle _EngineeringChangeOrderHeader;
         /// <summary>
-        /// There are no comments for EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCodes in the schema.
+        /// There are no comments for EngineeringChangeOrderProductAttributes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCode> EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCodes
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductAttribute> EngineeringChangeOrderProductAttributes
         {
             get
             {
@@ -256,20 +214,20 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCodes == null))
+                if ((this._EngineeringChangeOrderProductAttributes == null))
                 {
-                    this._EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCodes = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCode>(GetPath("EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCodes"));
+                    this._EngineeringChangeOrderProductAttributes = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductAttribute>(GetPath("EngineeringChangeOrderProductAttributes"));
                 }
-                return this._EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCodes;
+                return this._EngineeringChangeOrderProductAttributes;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCode> _EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCodes;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductAttribute> _EngineeringChangeOrderProductAttributes;
         /// <summary>
-        /// There are no comments for EngineeringChangeOrderProductRouteHeaders in the schema.
+        /// There are no comments for EngineeringChangeOrderProductRouteHeadersV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeader> EngineeringChangeOrderProductRouteHeaders
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeaderV2> EngineeringChangeOrderProductRouteHeadersV2
         {
             get
             {
@@ -277,15 +235,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._EngineeringChangeOrderProductRouteHeaders == null))
+                if ((this._EngineeringChangeOrderProductRouteHeadersV2 == null))
                 {
-                    this._EngineeringChangeOrderProductRouteHeaders = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeader>(GetPath("EngineeringChangeOrderProductRouteHeaders"));
+                    this._EngineeringChangeOrderProductRouteHeadersV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeaderV2>(GetPath("EngineeringChangeOrderProductRouteHeadersV2"));
                 }
-                return this._EngineeringChangeOrderProductRouteHeaders;
+                return this._EngineeringChangeOrderProductRouteHeadersV2;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeader> _EngineeringChangeOrderProductRouteHeaders;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeaderV2> _EngineeringChangeOrderProductRouteHeadersV2;
         /// <summary>
         /// There are no comments for EngineeringChangeOrderProductBillOfMaterialsHeaders in the schema.
         /// </summary>
@@ -308,10 +266,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductBillOfMaterialsHeader> _EngineeringChangeOrderProductBillOfMaterialsHeaders;
         /// <summary>
-        /// There are no comments for EngineeringChangeOrderProductAttributes in the schema.
+        /// There are no comments for EngineeringChangeOrderProductRouteHeaders in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductAttribute> EngineeringChangeOrderProductAttributes
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeader> EngineeringChangeOrderProductRouteHeaders
         {
             get
             {
@@ -319,20 +277,20 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._EngineeringChangeOrderProductAttributes == null))
+                if ((this._EngineeringChangeOrderProductRouteHeaders == null))
                 {
-                    this._EngineeringChangeOrderProductAttributes = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductAttribute>(GetPath("EngineeringChangeOrderProductAttributes"));
+                    this._EngineeringChangeOrderProductRouteHeaders = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeader>(GetPath("EngineeringChangeOrderProductRouteHeaders"));
                 }
-                return this._EngineeringChangeOrderProductAttributes;
+                return this._EngineeringChangeOrderProductRouteHeaders;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductAttribute> _EngineeringChangeOrderProductAttributes;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeader> _EngineeringChangeOrderProductRouteHeaders;
         /// <summary>
-        /// There are no comments for EngineeringChangeOrderProductBillOfMaterialsHeadersV2 in the schema.
+        /// There are no comments for EngineeringChangeOrderProductWhereUsedAnalyses in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductBillOfMaterialsHeaderV2> EngineeringChangeOrderProductBillOfMaterialsHeadersV2
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductWhereUsedAnalysis> EngineeringChangeOrderProductWhereUsedAnalyses
         {
             get
             {
@@ -340,15 +298,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._EngineeringChangeOrderProductBillOfMaterialsHeadersV2 == null))
+                if ((this._EngineeringChangeOrderProductWhereUsedAnalyses == null))
                 {
-                    this._EngineeringChangeOrderProductBillOfMaterialsHeadersV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductBillOfMaterialsHeaderV2>(GetPath("EngineeringChangeOrderProductBillOfMaterialsHeadersV2"));
+                    this._EngineeringChangeOrderProductWhereUsedAnalyses = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductWhereUsedAnalysis>(GetPath("EngineeringChangeOrderProductWhereUsedAnalyses"));
                 }
-                return this._EngineeringChangeOrderProductBillOfMaterialsHeadersV2;
+                return this._EngineeringChangeOrderProductWhereUsedAnalyses;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductBillOfMaterialsHeaderV2> _EngineeringChangeOrderProductBillOfMaterialsHeadersV2;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductWhereUsedAnalysis> _EngineeringChangeOrderProductWhereUsedAnalyses;
         /// <summary>
         /// There are no comments for EngineeringChangeOrderProductDocuments in the schema.
         /// </summary>
@@ -370,10 +328,52 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductDocument> _EngineeringChangeOrderProductDocuments;
-    }
         /// <summary>
-        /// There are no comments for EngineeringChangeOrderProduct in the schema.
+        /// There are no comments for EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCodes in the schema.
         /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCode> EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCodes
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCodes == null))
+                {
+                    this._EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCodes = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCode>(GetPath("EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCodes"));
+                }
+                return this._EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCodes;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCode> _EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCodes;
+        /// <summary>
+        /// There are no comments for EngineeringChangeOrderProductBillOfMaterialsHeadersV2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductBillOfMaterialsHeaderV2> EngineeringChangeOrderProductBillOfMaterialsHeadersV2
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._EngineeringChangeOrderProductBillOfMaterialsHeadersV2 == null))
+                {
+                    this._EngineeringChangeOrderProductBillOfMaterialsHeadersV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductBillOfMaterialsHeaderV2>(GetPath("EngineeringChangeOrderProductBillOfMaterialsHeadersV2"));
+                }
+                return this._EngineeringChangeOrderProductBillOfMaterialsHeadersV2;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductBillOfMaterialsHeaderV2> _EngineeringChangeOrderProductBillOfMaterialsHeadersV2;
+    }
+    /// <summary>
+    /// There are no comments for EngineeringChangeOrderProduct in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// EngineeringChangeOrderNumber
@@ -454,6 +454,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -476,6 +478,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngineeringChangeOrderNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EngineeringChangeOrderNumber is required.")]
         public virtual string EngineeringChangeOrderNumber
         {
             get
@@ -498,6 +502,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LineNumber is required.")]
         public virtual decimal LineNumber
         {
             get
@@ -520,6 +526,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RequiredSpecialToolingDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RequiredSpecialToolingDescription
         {
             get
@@ -542,6 +549,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductSearchName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductSearchName
         {
             get
@@ -564,6 +572,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductLifecycleStateId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductLifecycleStateId
         {
             get
@@ -586,6 +595,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductionConsumptionWidthConversionFactor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductionConsumptionWidthConversionFactor is required.")]
         public virtual decimal ProductionConsumptionWidthConversionFactor
         {
             get
@@ -608,6 +619,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductDescription
         {
             get
@@ -630,6 +642,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngineeringChangeImpactType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EngChgEcmImpact> EngineeringChangeImpactType
         {
             get
@@ -652,6 +665,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductVolume in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductVolume is required.")]
         public virtual decimal ProductVolume
         {
             get
@@ -674,6 +689,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsCustomerApprovalRequired in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsCustomerApprovalRequired
         {
             get
@@ -696,6 +712,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductNumber
         {
             get
@@ -718,6 +735,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsEnvironmentalHealthAndSafetyApplicable in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsEnvironmentalHealthAndSafetyApplicable
         {
             get
@@ -740,6 +758,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ItemNumber
         {
             get
@@ -762,6 +781,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property GrossProductHeight in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "GrossProductHeight is required.")]
         public virtual decimal GrossProductHeight
         {
             get
@@ -784,6 +805,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductName
         {
             get
@@ -806,6 +828,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductOwnerId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductOwnerId
         {
             get
@@ -828,6 +851,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngineeringProductCategoryDetailsName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string EngineeringProductCategoryDetailsName
         {
             get
@@ -850,6 +874,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CurrentProductVersionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CurrentProductVersionId
         {
             get
@@ -872,6 +897,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductionConsumptionDensityConversionFactor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductionConsumptionDensityConversionFactor is required.")]
         public virtual decimal ProductionConsumptionDensityConversionFactor
         {
             get
@@ -894,6 +921,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngineeringChangeCustomerApprovalTypeName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string EngineeringChangeCustomerApprovalTypeName
         {
             get
@@ -916,6 +944,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaterialDisposalCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MaterialDisposalCode
         {
             get
@@ -938,6 +967,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EffectiveFromDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EffectiveFromDate is required.")]
         public virtual global::System.DateTimeOffset EffectiveFromDate
         {
             get
@@ -960,6 +991,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BOMUnitSymbol in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BOMUnitSymbol
         {
             get
@@ -982,6 +1014,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngineeringChangeReasonName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string EngineeringChangeReasonName
         {
             get
@@ -1004,6 +1037,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ChangeDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ChangeDescription
         {
             get
@@ -1026,6 +1060,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductionConsumptionHeightConversionFactor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductionConsumptionHeightConversionFactor is required.")]
         public virtual decimal ProductionConsumptionHeightConversionFactor
         {
             get
@@ -1048,6 +1084,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EffectiveToDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EffectiveToDate is required.")]
         public virtual global::System.DateTimeOffset EffectiveToDate
         {
             get
@@ -1070,6 +1108,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property GrossDepth in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "GrossDepth is required.")]
         public virtual decimal GrossDepth
         {
             get
@@ -1092,6 +1132,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NewProductVersionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string NewProductVersionId
         {
             get
@@ -1114,6 +1155,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property GrossProductWidth in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "GrossProductWidth is required.")]
         public virtual decimal GrossProductWidth
         {
             get
@@ -1136,6 +1179,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductionConsumptionDepthConversionFactor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductionConsumptionDepthConversionFactor is required.")]
         public virtual decimal ProductionConsumptionDepthConversionFactor
         {
             get
@@ -1158,6 +1203,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NetProductWeight in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "NetProductWeight is required.")]
         public virtual decimal NetProductWeight
         {
             get
@@ -1180,6 +1227,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TareProductWeight in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TareProductWeight is required.")]
         public virtual decimal TareProductWeight
         {
             get
@@ -1199,53 +1248,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnTareProductWeightChanging(decimal value);
         partial void OnTareProductWeightChanged();
         /// <summary>
-        /// There are no comments for Property EngineeringChangeOrderProductWhereUsedAnalyses in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductWhereUsedAnalysis> EngineeringChangeOrderProductWhereUsedAnalyses
-        {
-            get
-            {
-                return this._EngineeringChangeOrderProductWhereUsedAnalyses;
-            }
-            set
-            {
-                this.OnEngineeringChangeOrderProductWhereUsedAnalysesChanging(value);
-                this._EngineeringChangeOrderProductWhereUsedAnalyses = value;
-                this.OnEngineeringChangeOrderProductWhereUsedAnalysesChanged();
-                this.OnPropertyChanged("EngineeringChangeOrderProductWhereUsedAnalyses");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductWhereUsedAnalysis> _EngineeringChangeOrderProductWhereUsedAnalyses = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductWhereUsedAnalysis>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnEngineeringChangeOrderProductWhereUsedAnalysesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductWhereUsedAnalysis> value);
-        partial void OnEngineeringChangeOrderProductWhereUsedAnalysesChanged();
-        /// <summary>
-        /// There are no comments for Property EngineeringChangeOrderProductRouteHeadersV2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeaderV2> EngineeringChangeOrderProductRouteHeadersV2
-        {
-            get
-            {
-                return this._EngineeringChangeOrderProductRouteHeadersV2;
-            }
-            set
-            {
-                this.OnEngineeringChangeOrderProductRouteHeadersV2Changing(value);
-                this._EngineeringChangeOrderProductRouteHeadersV2 = value;
-                this.OnEngineeringChangeOrderProductRouteHeadersV2Changed();
-                this.OnPropertyChanged("EngineeringChangeOrderProductRouteHeadersV2");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeaderV2> _EngineeringChangeOrderProductRouteHeadersV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeaderV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnEngineeringChangeOrderProductRouteHeadersV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeaderV2> value);
-        partial void OnEngineeringChangeOrderProductRouteHeadersV2Changed();
-        /// <summary>
         /// There are no comments for Property ProductOwner in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ProductOwner ProductOwner
         {
             get
@@ -1268,6 +1274,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CurrentProductVersion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ProductVersion CurrentProductVersion
         {
             get
@@ -1290,6 +1297,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngineeringChangeCustomerApprovalType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.EngineeringChangeCustomerApprovalType EngineeringChangeCustomerApprovalType
         {
             get
@@ -1312,6 +1320,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngineeringProductCategoryDetails in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EngineeringProductCategoryDetails is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetails EngineeringProductCategoryDetails
         {
             get
@@ -1334,6 +1344,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NewProductVersion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ProductVersion NewProductVersion
         {
             get
@@ -1356,6 +1367,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngineeringChangeReason in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.EngineeringChangeReason EngineeringChangeReason
         {
             get
@@ -1378,6 +1390,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductLifecycleState in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ProductLifecycleState ProductLifecycleState
         {
             get
@@ -1400,6 +1413,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngineeringChangeOrderHeader in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EngineeringChangeOrderHeader is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderHeader EngineeringChangeOrderHeader
         {
             get
@@ -1419,75 +1434,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnEngineeringChangeOrderHeaderChanging(global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderHeader value);
         partial void OnEngineeringChangeOrderHeaderChanged();
         /// <summary>
-        /// There are no comments for Property EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCodes in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCode> EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCodes
-        {
-            get
-            {
-                return this._EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCodes;
-            }
-            set
-            {
-                this.OnEngineeringChangeOrderProductEnvironmentalHealthAndSafetyCodesChanging(value);
-                this._EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCodes = value;
-                this.OnEngineeringChangeOrderProductEnvironmentalHealthAndSafetyCodesChanged();
-                this.OnPropertyChanged("EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCodes");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCode> _EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCodes = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCode>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnEngineeringChangeOrderProductEnvironmentalHealthAndSafetyCodesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCode> value);
-        partial void OnEngineeringChangeOrderProductEnvironmentalHealthAndSafetyCodesChanged();
-        /// <summary>
-        /// There are no comments for Property EngineeringChangeOrderProductRouteHeaders in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeader> EngineeringChangeOrderProductRouteHeaders
-        {
-            get
-            {
-                return this._EngineeringChangeOrderProductRouteHeaders;
-            }
-            set
-            {
-                this.OnEngineeringChangeOrderProductRouteHeadersChanging(value);
-                this._EngineeringChangeOrderProductRouteHeaders = value;
-                this.OnEngineeringChangeOrderProductRouteHeadersChanged();
-                this.OnPropertyChanged("EngineeringChangeOrderProductRouteHeaders");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeader> _EngineeringChangeOrderProductRouteHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeader>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnEngineeringChangeOrderProductRouteHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeader> value);
-        partial void OnEngineeringChangeOrderProductRouteHeadersChanged();
-        /// <summary>
-        /// There are no comments for Property EngineeringChangeOrderProductBillOfMaterialsHeaders in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductBillOfMaterialsHeader> EngineeringChangeOrderProductBillOfMaterialsHeaders
-        {
-            get
-            {
-                return this._EngineeringChangeOrderProductBillOfMaterialsHeaders;
-            }
-            set
-            {
-                this.OnEngineeringChangeOrderProductBillOfMaterialsHeadersChanging(value);
-                this._EngineeringChangeOrderProductBillOfMaterialsHeaders = value;
-                this.OnEngineeringChangeOrderProductBillOfMaterialsHeadersChanged();
-                this.OnPropertyChanged("EngineeringChangeOrderProductBillOfMaterialsHeaders");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductBillOfMaterialsHeader> _EngineeringChangeOrderProductBillOfMaterialsHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductBillOfMaterialsHeader>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnEngineeringChangeOrderProductBillOfMaterialsHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductBillOfMaterialsHeader> value);
-        partial void OnEngineeringChangeOrderProductBillOfMaterialsHeadersChanged();
-        /// <summary>
         /// There are no comments for Property EngineeringChangeOrderProductAttributes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductAttribute> EngineeringChangeOrderProductAttributes
         {
             get
@@ -1507,31 +1457,102 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnEngineeringChangeOrderProductAttributesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductAttribute> value);
         partial void OnEngineeringChangeOrderProductAttributesChanged();
         /// <summary>
-        /// There are no comments for Property EngineeringChangeOrderProductBillOfMaterialsHeadersV2 in the schema.
+        /// There are no comments for Property EngineeringChangeOrderProductRouteHeadersV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductBillOfMaterialsHeaderV2> EngineeringChangeOrderProductBillOfMaterialsHeadersV2
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeaderV2> EngineeringChangeOrderProductRouteHeadersV2
         {
             get
             {
-                return this._EngineeringChangeOrderProductBillOfMaterialsHeadersV2;
+                return this._EngineeringChangeOrderProductRouteHeadersV2;
             }
             set
             {
-                this.OnEngineeringChangeOrderProductBillOfMaterialsHeadersV2Changing(value);
-                this._EngineeringChangeOrderProductBillOfMaterialsHeadersV2 = value;
-                this.OnEngineeringChangeOrderProductBillOfMaterialsHeadersV2Changed();
-                this.OnPropertyChanged("EngineeringChangeOrderProductBillOfMaterialsHeadersV2");
+                this.OnEngineeringChangeOrderProductRouteHeadersV2Changing(value);
+                this._EngineeringChangeOrderProductRouteHeadersV2 = value;
+                this.OnEngineeringChangeOrderProductRouteHeadersV2Changed();
+                this.OnPropertyChanged("EngineeringChangeOrderProductRouteHeadersV2");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductBillOfMaterialsHeaderV2> _EngineeringChangeOrderProductBillOfMaterialsHeadersV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductBillOfMaterialsHeaderV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnEngineeringChangeOrderProductBillOfMaterialsHeadersV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductBillOfMaterialsHeaderV2> value);
-        partial void OnEngineeringChangeOrderProductBillOfMaterialsHeadersV2Changed();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeaderV2> _EngineeringChangeOrderProductRouteHeadersV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeaderV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnEngineeringChangeOrderProductRouteHeadersV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeaderV2> value);
+        partial void OnEngineeringChangeOrderProductRouteHeadersV2Changed();
+        /// <summary>
+        /// There are no comments for Property EngineeringChangeOrderProductBillOfMaterialsHeaders in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductBillOfMaterialsHeader> EngineeringChangeOrderProductBillOfMaterialsHeaders
+        {
+            get
+            {
+                return this._EngineeringChangeOrderProductBillOfMaterialsHeaders;
+            }
+            set
+            {
+                this.OnEngineeringChangeOrderProductBillOfMaterialsHeadersChanging(value);
+                this._EngineeringChangeOrderProductBillOfMaterialsHeaders = value;
+                this.OnEngineeringChangeOrderProductBillOfMaterialsHeadersChanged();
+                this.OnPropertyChanged("EngineeringChangeOrderProductBillOfMaterialsHeaders");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductBillOfMaterialsHeader> _EngineeringChangeOrderProductBillOfMaterialsHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductBillOfMaterialsHeader>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnEngineeringChangeOrderProductBillOfMaterialsHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductBillOfMaterialsHeader> value);
+        partial void OnEngineeringChangeOrderProductBillOfMaterialsHeadersChanged();
+        /// <summary>
+        /// There are no comments for Property EngineeringChangeOrderProductRouteHeaders in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeader> EngineeringChangeOrderProductRouteHeaders
+        {
+            get
+            {
+                return this._EngineeringChangeOrderProductRouteHeaders;
+            }
+            set
+            {
+                this.OnEngineeringChangeOrderProductRouteHeadersChanging(value);
+                this._EngineeringChangeOrderProductRouteHeaders = value;
+                this.OnEngineeringChangeOrderProductRouteHeadersChanged();
+                this.OnPropertyChanged("EngineeringChangeOrderProductRouteHeaders");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeader> _EngineeringChangeOrderProductRouteHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeader>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnEngineeringChangeOrderProductRouteHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteHeader> value);
+        partial void OnEngineeringChangeOrderProductRouteHeadersChanged();
+        /// <summary>
+        /// There are no comments for Property EngineeringChangeOrderProductWhereUsedAnalyses in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductWhereUsedAnalysis> EngineeringChangeOrderProductWhereUsedAnalyses
+        {
+            get
+            {
+                return this._EngineeringChangeOrderProductWhereUsedAnalyses;
+            }
+            set
+            {
+                this.OnEngineeringChangeOrderProductWhereUsedAnalysesChanging(value);
+                this._EngineeringChangeOrderProductWhereUsedAnalyses = value;
+                this.OnEngineeringChangeOrderProductWhereUsedAnalysesChanged();
+                this.OnPropertyChanged("EngineeringChangeOrderProductWhereUsedAnalyses");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductWhereUsedAnalysis> _EngineeringChangeOrderProductWhereUsedAnalyses = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductWhereUsedAnalysis>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnEngineeringChangeOrderProductWhereUsedAnalysesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductWhereUsedAnalysis> value);
+        partial void OnEngineeringChangeOrderProductWhereUsedAnalysesChanged();
         /// <summary>
         /// There are no comments for Property EngineeringChangeOrderProductDocuments in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductDocument> EngineeringChangeOrderProductDocuments
         {
             get
@@ -1550,6 +1571,52 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductDocument> _EngineeringChangeOrderProductDocuments = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductDocument>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnEngineeringChangeOrderProductDocumentsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductDocument> value);
         partial void OnEngineeringChangeOrderProductDocumentsChanged();
+        /// <summary>
+        /// There are no comments for Property EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCodes in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCode> EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCodes
+        {
+            get
+            {
+                return this._EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCodes;
+            }
+            set
+            {
+                this.OnEngineeringChangeOrderProductEnvironmentalHealthAndSafetyCodesChanging(value);
+                this._EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCodes = value;
+                this.OnEngineeringChangeOrderProductEnvironmentalHealthAndSafetyCodesChanged();
+                this.OnPropertyChanged("EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCodes");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCode> _EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCodes = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCode>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnEngineeringChangeOrderProductEnvironmentalHealthAndSafetyCodesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductEnvironmentalHealthAndSafetyCode> value);
+        partial void OnEngineeringChangeOrderProductEnvironmentalHealthAndSafetyCodesChanged();
+        /// <summary>
+        /// There are no comments for Property EngineeringChangeOrderProductBillOfMaterialsHeadersV2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductBillOfMaterialsHeaderV2> EngineeringChangeOrderProductBillOfMaterialsHeadersV2
+        {
+            get
+            {
+                return this._EngineeringChangeOrderProductBillOfMaterialsHeadersV2;
+            }
+            set
+            {
+                this.OnEngineeringChangeOrderProductBillOfMaterialsHeadersV2Changing(value);
+                this._EngineeringChangeOrderProductBillOfMaterialsHeadersV2 = value;
+                this.OnEngineeringChangeOrderProductBillOfMaterialsHeadersV2Changed();
+                this.OnPropertyChanged("EngineeringChangeOrderProductBillOfMaterialsHeadersV2");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductBillOfMaterialsHeaderV2> _EngineeringChangeOrderProductBillOfMaterialsHeadersV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductBillOfMaterialsHeaderV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnEngineeringChangeOrderProductBillOfMaterialsHeadersV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductBillOfMaterialsHeaderV2> value);
+        partial void OnEngineeringChangeOrderProductBillOfMaterialsHeadersV2Changed();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

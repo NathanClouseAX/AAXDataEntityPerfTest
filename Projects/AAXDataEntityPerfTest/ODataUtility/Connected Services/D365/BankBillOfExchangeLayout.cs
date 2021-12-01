@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for BankBillOfExchangeLayoutSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BankBillOfExchangeLayoutSingle in the schema.
+    /// </summary>
     public partial class BankBillOfExchangeLayoutSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<BankBillOfExchangeLayout>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.BankAccountSingle _BankAccount;
     }
-        /// <summary>
-        /// There are no comments for BankBillOfExchangeLayout in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BankBillOfExchangeLayout in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// BankAccountId
@@ -107,6 +107,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -129,6 +131,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BankAccountId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BankAccountId is required.")]
         public virtual string BankAccountId
         {
             get
@@ -151,6 +155,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrintBankCity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PrintBankCity
         {
             get
@@ -173,6 +178,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PaperLength in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PaperLength is required.")]
         public virtual decimal PaperLength
         {
             get
@@ -195,6 +202,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NumberOfSlipCopies in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "NumberOfSlipCopies is required.")]
         public virtual int NumberOfSlipCopies
         {
             get
@@ -217,6 +226,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrintBankAccount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PrintBankAccount
         {
             get
@@ -239,6 +249,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FirstSignatureAmountLimit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FirstSignatureAmountLimit is required.")]
         public virtual decimal FirstSignatureAmountLimit
         {
             get
@@ -261,6 +273,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StartPosition in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "StartPosition is required.")]
         public virtual decimal StartPosition
         {
             get
@@ -283,6 +297,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrintTransactionDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PrintTransactionDate
         {
             get
@@ -305,6 +320,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NumberMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.BankBillOfExchangeNumMethod> NumberMethod
         {
             get
@@ -327,6 +343,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrintBankNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PrintBankNumber
         {
             get
@@ -349,6 +366,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PaperLengthUnit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.Units> PaperLengthUnit
         {
             get
@@ -371,6 +389,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrintBankName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PrintBankName
         {
             get
@@ -393,6 +412,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrintDueDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PrintDueDate
         {
             get
@@ -415,6 +435,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SecondSignatureAmountLimit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SecondSignatureAmountLimit is required.")]
         public virtual decimal SecondSignatureAmountLimit
         {
             get
@@ -437,6 +459,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AmountPrefix in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AmountPrefix
         {
             get
@@ -459,6 +482,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrintCompanyName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PrintCompanyName
         {
             get
@@ -481,6 +505,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrintSecondSignature in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PrintSecondSignature
         {
             get
@@ -503,6 +528,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StartPositionUnit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.Units> StartPositionUnit
         {
             get
@@ -525,6 +551,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrintCompanyLogo in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PrintCompanyLogo
         {
             get
@@ -547,6 +574,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FormatType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.BankBillOfExchangeFormType> FormatType
         {
             get
@@ -569,6 +597,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrintFirstSignature in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PrintFirstSignature
         {
             get
@@ -591,6 +620,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BankAccount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BankAccount is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.BankAccount BankAccount
         {
             get

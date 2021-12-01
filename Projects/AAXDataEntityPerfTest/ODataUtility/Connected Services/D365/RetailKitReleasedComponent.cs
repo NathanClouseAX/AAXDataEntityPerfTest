@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RetailKitReleasedComponentSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailKitReleasedComponentSingle in the schema.
+    /// </summary>
     public partial class RetailKitReleasedComponentSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RetailKitReleasedComponent>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.RetailKitComponentSingle _RetailKitComponent;
     }
-        /// <summary>
-        /// There are no comments for RetailKitReleasedComponent in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailKitReleasedComponent in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// KitProductNumber
@@ -102,6 +102,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -124,6 +126,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property KitProductNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "KitProductNumber is required.")]
         public virtual string KitProductNumber
         {
             get
@@ -146,6 +150,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property KitComponentLineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "KitComponentLineNumber is required.")]
         public virtual decimal KitComponentLineNumber
         {
             get
@@ -168,6 +174,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BasePrice in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BasePrice is required.")]
         public virtual decimal BasePrice
         {
             get
@@ -190,6 +198,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property KitPrice in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "KitPrice is required.")]
         public virtual decimal KitPrice
         {
             get
@@ -212,6 +222,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailKitComponent in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetailKitComponent is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RetailKitComponent RetailKitComponent
         {
             get

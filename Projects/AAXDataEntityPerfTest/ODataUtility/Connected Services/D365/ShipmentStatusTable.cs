@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ShipmentStatusTableSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ShipmentStatusTableSingle in the schema.
+    /// </summary>
     public partial class ShipmentStatusTableSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ShipmentStatusTable>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for ShipmentStatusTable in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ShipmentStatusTable in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// CostArea
@@ -64,6 +64,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -86,6 +88,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CostArea in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ITMCostArea> CostArea
         {
             get
@@ -108,6 +111,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StatusId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "StatusId is required.")]
         public virtual string StatusId
         {
             get
@@ -130,6 +135,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsStatusMandatory in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsStatusMandatory
         {
             get
@@ -152,6 +158,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StatusDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string StatusDescription
         {
             get
@@ -174,6 +181,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ParentStatusId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ParentStatusId
         {
             get
@@ -196,6 +204,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsStatusAllowingModification in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsStatusAllowingModification
         {
             get
@@ -218,6 +227,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsStatusAllowingDelete in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsStatusAllowingDelete
         {
             get

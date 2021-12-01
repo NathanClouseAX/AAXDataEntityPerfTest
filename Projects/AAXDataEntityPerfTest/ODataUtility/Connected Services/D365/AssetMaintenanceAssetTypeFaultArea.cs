@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for AssetMaintenanceAssetTypeFaultAreaSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AssetMaintenanceAssetTypeFaultAreaSingle in the schema.
+    /// </summary>
     public partial class AssetMaintenanceAssetTypeFaultAreaSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AssetMaintenanceAssetTypeFaultArea>
     {
         /// <summary>
@@ -98,9 +98,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFaultSymptomSingle _AssetMaintenanceFaultSymptom;
     }
-        /// <summary>
-        /// There are no comments for AssetMaintenanceAssetTypeFaultArea in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AssetMaintenanceAssetTypeFaultArea in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// MaintenanceAssetTypeId
@@ -156,6 +156,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -178,6 +180,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaintenanceAssetTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MaintenanceAssetTypeId is required.")]
         public virtual string MaintenanceAssetTypeId
         {
             get
@@ -200,6 +204,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FaultAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FaultAreaId is required.")]
         public virtual string FaultAreaId
         {
             get
@@ -222,6 +228,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FaultSymptomId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FaultSymptomId is required.")]
         public virtual string FaultSymptomId
         {
             get
@@ -244,6 +252,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetMaintenanceFaultArea in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AssetMaintenanceFaultArea is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFaultArea AssetMaintenanceFaultArea
         {
             get
@@ -266,6 +276,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetMaintenanceAssetType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AssetMaintenanceAssetType is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetType AssetMaintenanceAssetType
         {
             get
@@ -288,6 +300,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetMaintenanceFaultSymptom in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AssetMaintenanceFaultSymptom is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFaultSymptom AssetMaintenanceFaultSymptom
         {
             get

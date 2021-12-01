@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for AssetParametersProposalJournalNameSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AssetParametersProposalJournalNameSingle in the schema.
+    /// </summary>
     public partial class AssetParametersProposalJournalNameSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AssetParametersProposalJournalName>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.AssetParameterSingle _AssetParameterProposalJournalNameParameters;
     }
-        /// <summary>
-        /// There are no comments for AssetParametersProposalJournalName in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AssetParametersProposalJournalName in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// AssetParameters
@@ -106,6 +106,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -128,6 +130,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetParameters in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AssetParameters is required.")]
         public virtual int AssetParameters
         {
             get
@@ -150,6 +154,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostingType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.CurrentOperationsTax> PostingType
         {
             get
@@ -172,6 +177,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JournalName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string JournalName
         {
             get
@@ -194,6 +200,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetParameterProposalJournalName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.JournalName AssetParameterProposalJournalName
         {
             get
@@ -216,6 +223,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetParameterProposalJournalNameParameters in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.AssetParameter AssetParameterProposalJournalNameParameters
         {
             get

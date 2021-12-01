@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for LedgerJournalCDSLineSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LedgerJournalCDSLineSingle in the schema.
+    /// </summary>
     public partial class LedgerJournalCDSLineSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<LedgerJournalCDSLine>
     {
         /// <summary>
@@ -266,9 +266,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.LedgerJournalHeaderCDSSingle _LedgerJournalHeaderCDS;
     }
-        /// <summary>
-        /// There are no comments for LedgerJournalCDSLine in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LedgerJournalCDSLine in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// IntegrationComputedKey
@@ -355,6 +355,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -377,6 +379,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IntegrationComputedKey in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "IntegrationComputedKey is required.")]
         public virtual string IntegrationComputedKey
         {
             get
@@ -399,6 +403,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LineNumber is required.")]
         public virtual decimal LineNumber
         {
             get
@@ -421,6 +427,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PaymentId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PaymentId
         {
             get
@@ -443,6 +450,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CreditAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CreditAmount is required.")]
         public virtual decimal CreditAmount
         {
             get
@@ -465,6 +474,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OffsetAccountType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.LedgerJournalACType> OffsetAccountType
         {
             get
@@ -487,6 +497,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CashDiscountDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CashDiscountDate is required.")]
         public virtual global::System.DateTimeOffset CashDiscountDate
         {
             get
@@ -509,6 +521,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExchRate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ExchRate is required.")]
         public virtual decimal ExchRate
         {
             get
@@ -531,6 +545,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemSalesTaxGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ItemSalesTaxGroup
         {
             get
@@ -553,6 +568,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReverseEntry in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ReverseEntry
         {
             get
@@ -575,6 +591,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReverseDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReverseDate is required.")]
         public virtual global::System.DateTimeOffset ReverseDate
         {
             get
@@ -597,6 +615,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JournalBatchNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string JournalBatchNumber
         {
             get
@@ -619,6 +638,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccountDisplayValue
         {
             get
@@ -641,6 +661,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OffsetDefaultDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OffsetDefaultDimensionDisplayValue
         {
             get
@@ -663,6 +684,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Company in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Company
         {
             get
@@ -685,6 +707,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OffsetAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OffsetAccountDisplayValue
         {
             get
@@ -707,6 +730,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportingCurrencyExchRate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReportingCurrencyExchRate is required.")]
         public virtual decimal ReportingCurrencyExchRate
         {
             get
@@ -729,6 +754,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DocumentDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DocumentDate is required.")]
         public virtual global::System.DateTimeOffset DocumentDate
         {
             get
@@ -751,6 +778,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Text in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Text
         {
             get
@@ -773,6 +801,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PaymentMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PaymentMethod
         {
             get
@@ -795,6 +824,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransDate is required.")]
         public virtual global::System.DateTimeOffset TransDate
         {
             get
@@ -817,6 +848,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CurrencyCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CurrencyCode
         {
             get
@@ -839,6 +871,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OffsetCompany in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OffsetCompany
         {
             get
@@ -861,6 +894,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesTaxCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SalesTaxCode
         {
             get
@@ -883,6 +917,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DiscountPercentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DiscountPercentage is required.")]
         public virtual decimal DiscountPercentage
         {
             get
@@ -905,6 +941,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PaymentReference in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PaymentReference
         {
             get
@@ -927,6 +964,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Invoice in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Invoice
         {
             get
@@ -949,6 +987,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DebitAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DebitAmount is required.")]
         public virtual decimal DebitAmount
         {
             get
@@ -971,6 +1011,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostingProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PostingProfile
         {
             get
@@ -993,6 +1034,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Voucher in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Voucher
         {
             get
@@ -1015,6 +1057,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DueDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DueDate is required.")]
         public virtual global::System.DateTimeOffset DueDate
         {
             get
@@ -1037,6 +1081,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CashDiscountAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CashDiscountAmount is required.")]
         public virtual decimal CashDiscountAmount
         {
             get
@@ -1059,6 +1105,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.LedgerJournalACType> AccountType
         {
             get
@@ -1081,6 +1128,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CashDiscount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CashDiscount
         {
             get
@@ -1103,6 +1151,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Document in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Document
         {
             get
@@ -1125,6 +1174,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportingCurrencyExchRateSecondary in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReportingCurrencyExchRateSecondary is required.")]
         public virtual decimal ReportingCurrencyExchRateSecondary
         {
             get
@@ -1147,6 +1198,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxExemptNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxExemptNumber
         {
             get
@@ -1169,6 +1221,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExchRateSecond in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ExchRateSecond is required.")]
         public virtual decimal ExchRateSecond
         {
             get
@@ -1191,6 +1245,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OffsetText in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OffsetText
         {
             get
@@ -1213,6 +1268,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesTaxGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SalesTaxGroup
         {
             get
@@ -1235,6 +1291,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultDimensionDisplayValue
         {
             get
@@ -1257,6 +1314,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity is required.")]
         public virtual decimal Quantity
         {
             get
@@ -1279,6 +1338,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerJournalLineCDSOffsetCompany in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.LegalEntity LedgerJournalLineCDSOffsetCompany
         {
             get
@@ -1301,6 +1361,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerJournalLineCDSItemSalesTaxGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.TaxItemGroup LedgerJournalLineCDSItemSalesTaxGroup
         {
             get
@@ -1323,6 +1384,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerJournalLineCDSOffsetDefaultDimension in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionSet LedgerJournalLineCDSOffsetDefaultDimension
         {
             get
@@ -1345,6 +1407,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerJournalLineCDSCompany in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.LegalEntity LedgerJournalLineCDSCompany
         {
             get
@@ -1367,6 +1430,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerJournalLineCDSOffsetLedgerDimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination LedgerJournalLineCDSOffsetLedgerDimensionCombination
         {
             get
@@ -1389,6 +1453,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerJournalLineCDSCurrency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LedgerJournalLineCDSCurrency is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Currency LedgerJournalLineCDSCurrency
         {
             get
@@ -1411,6 +1477,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LegalEntityCDS in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.LegalEntity LegalEntityCDS
         {
             get
@@ -1433,6 +1500,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerJournalLineCDSLedgerDimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination LedgerJournalLineCDSLedgerDimensionCombination
         {
             get
@@ -1455,6 +1523,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerJournalLineCDSDefaultDimension in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionSet LedgerJournalLineCDSDefaultDimension
         {
             get
@@ -1477,6 +1546,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerJournalLineCDSSalesTaxGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.TaxGroup LedgerJournalLineCDSSalesTaxGroup
         {
             get
@@ -1499,6 +1569,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerJournalHeaderCDS in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LedgerJournalHeaderCDS is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.LedgerJournalHeaderCDS LedgerJournalHeaderCDS
         {
             get

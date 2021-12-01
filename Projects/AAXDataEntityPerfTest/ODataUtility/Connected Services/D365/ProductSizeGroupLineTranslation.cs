@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ProductSizeGroupLineTranslationSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ProductSizeGroupLineTranslationSingle in the schema.
+    /// </summary>
     public partial class ProductSizeGroupLineTranslationSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ProductSizeGroupLineTranslation>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ProductSizeGroupLineSingle _ProductSizeGroupLine;
     }
-        /// <summary>
-        /// There are no comments for ProductSizeGroupLineTranslation in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ProductSizeGroupLineTranslation in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// ProductSizeGroupId
     /// ProductSizeId
@@ -93,6 +93,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductSizeGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductSizeGroupId is required.")]
         public virtual string ProductSizeGroupId
         {
             get
@@ -115,6 +117,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductSizeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductSizeId is required.")]
         public virtual string ProductSizeId
         {
             get
@@ -137,6 +141,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LanguageId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LanguageId is required.")]
         public virtual string LanguageId
         {
             get
@@ -159,6 +165,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TranslatedSizeDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TranslatedSizeDescription
         {
             get
@@ -181,6 +188,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TranslatedSizeName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TranslatedSizeName
         {
             get
@@ -203,6 +211,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductSizeGroupLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductSizeGroupLine is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ProductSizeGroupLine ProductSizeGroupLine
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for TotalCompStatementSectionBenefitSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TotalCompStatementSectionBenefitSingle in the schema.
+    /// </summary>
     public partial class TotalCompStatementSectionBenefitSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<TotalCompStatementSectionBenefit>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.TotalCompStatementSectionHeaderSingle _HcmTotalCompStatementSectionHeaderEntity;
     }
-        /// <summary>
-        /// There are no comments for TotalCompStatementSectionBenefit in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TotalCompStatementSectionBenefit in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// StatementSectionId
     /// BenefitId
@@ -117,6 +117,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StatementSectionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "StatementSectionId is required.")]
         public virtual string StatementSectionId
         {
             get
@@ -139,6 +141,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BenefitId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BenefitId is required.")]
         public virtual string BenefitId
         {
             get
@@ -161,6 +165,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HcmBenefitEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "HcmBenefitEntity is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Benefit HcmBenefitEntity
         {
             get
@@ -183,6 +189,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HcmTotalCompStatementSectionHeaderEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "HcmTotalCompStatementSectionHeaderEntity is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.TotalCompStatementSectionHeader HcmTotalCompStatementSectionHeaderEntity
         {
             get

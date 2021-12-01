@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for CustomerProductDescriptionV2Single in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CustomerProductDescriptionV2Single in the schema.
+    /// </summary>
     public partial class CustomerProductDescriptionV2Single : global::Microsoft.OData.Client.DataServiceQuerySingle<CustomerProductDescriptionV2>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ReleasedProductV2Single _ReleasedProduct;
     }
-        /// <summary>
-        /// There are no comments for CustomerProductDescriptionV2 in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CustomerProductDescriptionV2 in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// ItemNumber
@@ -141,6 +141,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -163,6 +165,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ItemNumber is required.")]
         public virtual string ItemNumber
         {
             get
@@ -185,6 +189,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductColorId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductColorId is required.")]
         public virtual string ProductColorId
         {
             get
@@ -207,6 +213,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductConfigurationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductConfigurationId is required.")]
         public virtual string ProductConfigurationId
         {
             get
@@ -229,6 +237,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductSizeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductSizeId is required.")]
         public virtual string ProductSizeId
         {
             get
@@ -251,6 +261,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductStyleId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductStyleId is required.")]
         public virtual string ProductStyleId
         {
             get
@@ -273,6 +285,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductVersionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductVersionId is required.")]
         public virtual string ProductVersionId
         {
             get
@@ -295,6 +309,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CustomerAccountNumber is required.")]
         public virtual string CustomerAccountNumber
         {
             get
@@ -317,6 +333,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductDescriptionCustomerGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductDescriptionCustomerGroupId is required.")]
         public virtual string ProductDescriptionCustomerGroupId
         {
             get
@@ -339,6 +357,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerABCCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ABC> CustomerABCCode
         {
             get
@@ -361,6 +380,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerProductDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CustomerProductDescription
         {
             get
@@ -383,6 +403,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerABCCodeNote in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CustomerABCCodeNote
         {
             get
@@ -405,6 +426,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerProductNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CustomerProductNumber
         {
             get
@@ -427,6 +449,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Customer in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.CustomerV3 Customer
         {
             get
@@ -449,6 +472,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReleasedProduct in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReleasedProduct is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ReleasedProductV2 ReleasedProduct
         {
             get

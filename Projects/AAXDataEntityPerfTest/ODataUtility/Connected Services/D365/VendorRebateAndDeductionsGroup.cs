@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for VendorRebateAndDeductionsGroupSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for VendorRebateAndDeductionsGroupSingle in the schema.
+    /// </summary>
     public partial class VendorRebateAndDeductionsGroupSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<VendorRebateAndDeductionsGroup>
     {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for VendorRebateAndDeductionsGroupAssignments in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendorRebateAndDeductionsGroupAssignment> VendorRebateAndDeductionsGroupAssignments
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._VendorRebateAndDeductionsGroupAssignments == null))
-                {
-                    this._VendorRebateAndDeductionsGroupAssignments = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.VendorRebateAndDeductionsGroupAssignment>(GetPath("VendorRebateAndDeductionsGroupAssignments"));
-                }
-                return this._VendorRebateAndDeductionsGroupAssignments;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendorRebateAndDeductionsGroupAssignment> _VendorRebateAndDeductionsGroupAssignments;
-        /// <summary>
         /// There are no comments for RebateAndDeductionsAgreementHeaders in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,10 +55,31 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> _RebateAndDeductionsAgreementHeaders;
-    }
         /// <summary>
-        /// There are no comments for VendorRebateAndDeductionsGroup in the schema.
+        /// There are no comments for VendorRebateAndDeductionsGroupAssignments in the schema.
         /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendorRebateAndDeductionsGroupAssignment> VendorRebateAndDeductionsGroupAssignments
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._VendorRebateAndDeductionsGroupAssignments == null))
+                {
+                    this._VendorRebateAndDeductionsGroupAssignments = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.VendorRebateAndDeductionsGroupAssignment>(GetPath("VendorRebateAndDeductionsGroupAssignments"));
+                }
+                return this._VendorRebateAndDeductionsGroupAssignments;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendorRebateAndDeductionsGroupAssignment> _VendorRebateAndDeductionsGroupAssignments;
+    }
+    /// <summary>
+    /// There are no comments for VendorRebateAndDeductionsGroup in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// GroupId
@@ -105,6 +105,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -127,6 +129,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property GroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "GroupId is required.")]
         public virtual string GroupId
         {
             get
@@ -149,6 +153,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property GroupDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string GroupDescription
         {
             get
@@ -168,31 +173,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnGroupDescriptionChanging(string value);
         partial void OnGroupDescriptionChanged();
         /// <summary>
-        /// There are no comments for Property VendorRebateAndDeductionsGroupAssignments in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorRebateAndDeductionsGroupAssignment> VendorRebateAndDeductionsGroupAssignments
-        {
-            get
-            {
-                return this._VendorRebateAndDeductionsGroupAssignments;
-            }
-            set
-            {
-                this.OnVendorRebateAndDeductionsGroupAssignmentsChanging(value);
-                this._VendorRebateAndDeductionsGroupAssignments = value;
-                this.OnVendorRebateAndDeductionsGroupAssignmentsChanged();
-                this.OnPropertyChanged("VendorRebateAndDeductionsGroupAssignments");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorRebateAndDeductionsGroupAssignment> _VendorRebateAndDeductionsGroupAssignments = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorRebateAndDeductionsGroupAssignment>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnVendorRebateAndDeductionsGroupAssignmentsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorRebateAndDeductionsGroupAssignment> value);
-        partial void OnVendorRebateAndDeductionsGroupAssignmentsChanged();
-        /// <summary>
         /// There are no comments for Property RebateAndDeductionsAgreementHeaders in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> RebateAndDeductionsAgreementHeaders
         {
             get
@@ -211,6 +195,29 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> _RebateAndDeductionsAgreementHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnRebateAndDeductionsAgreementHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> value);
         partial void OnRebateAndDeductionsAgreementHeadersChanged();
+        /// <summary>
+        /// There are no comments for Property VendorRebateAndDeductionsGroupAssignments in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorRebateAndDeductionsGroupAssignment> VendorRebateAndDeductionsGroupAssignments
+        {
+            get
+            {
+                return this._VendorRebateAndDeductionsGroupAssignments;
+            }
+            set
+            {
+                this.OnVendorRebateAndDeductionsGroupAssignmentsChanging(value);
+                this._VendorRebateAndDeductionsGroupAssignments = value;
+                this.OnVendorRebateAndDeductionsGroupAssignmentsChanged();
+                this.OnPropertyChanged("VendorRebateAndDeductionsGroupAssignments");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorRebateAndDeductionsGroupAssignment> _VendorRebateAndDeductionsGroupAssignments = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorRebateAndDeductionsGroupAssignment>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnVendorRebateAndDeductionsGroupAssignmentsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorRebateAndDeductionsGroupAssignment> value);
+        partial void OnVendorRebateAndDeductionsGroupAssignmentsChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

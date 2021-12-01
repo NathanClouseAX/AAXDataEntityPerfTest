@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for TimeAndAttendanceTimeActivityRegistrationCalculationSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TimeAndAttendanceTimeActivityRegistrationCalculationSingle in the schema.
+    /// </summary>
     public partial class TimeAndAttendanceTimeActivityRegistrationCalculationSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<TimeAndAttendanceTimeActivityRegistrationCalculation>
     {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public TimeAndAttendanceTimeActivityRegistrationCalculationSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<TimeAndAttendanceTimeActivityRegistrationCalculation> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for Worker in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.WorkerSingle Worker
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._Worker == null))
-                {
-                    this._Worker = new global::Microsoft.Dynamics.DataEntities.WorkerSingle(this.Context, GetPath("Worker"));
-                }
-                return this._Worker;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.WorkerSingle _Worker;
         /// <summary>
         /// There are no comments for DimensionSet in the schema.
         /// </summary>
@@ -77,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionSetSingle _DimensionSet;
     }
-        /// <summary>
-        /// There are no comments for TimeAndAttendanceTimeActivityRegistrationCalculation in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TimeAndAttendanceTimeActivityRegistrationCalculation in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// WorkerPersonnelNumber
@@ -123,7 +102,6 @@ namespace Microsoft.Dynamics.DataEntities
         /// <param name="workEndDate">Initial value of WorkEndDate.</param>
         /// <param name="totalPayOverTimeSeconds">Initial value of TotalPayOverTimeSeconds.</param>
         /// <param name="totalPaySeconds">Initial value of TotalPaySeconds.</param>
-        /// <param name="worker">Initial value of Worker.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public static TimeAndAttendanceTimeActivityRegistrationCalculation CreateTimeAndAttendanceTimeActivityRegistrationCalculation(string dataAreaId, 
                     string workerPersonnelNumber, 
@@ -155,8 +133,7 @@ namespace Microsoft.Dynamics.DataEntities
                     int totalPayFlexTimeBalanceSeconds, 
                     global::System.DateTimeOffset workEndDate, 
                     int totalPayOverTimeSeconds, 
-                    int totalPaySeconds, 
-                    global::Microsoft.Dynamics.DataEntities.Worker worker)
+                    int totalPaySeconds)
         {
             TimeAndAttendanceTimeActivityRegistrationCalculation timeAndAttendanceTimeActivityRegistrationCalculation = new TimeAndAttendanceTimeActivityRegistrationCalculation();
             timeAndAttendanceTimeActivityRegistrationCalculation.dataAreaId = dataAreaId;
@@ -190,17 +167,14 @@ namespace Microsoft.Dynamics.DataEntities
             timeAndAttendanceTimeActivityRegistrationCalculation.WorkEndDate = workEndDate;
             timeAndAttendanceTimeActivityRegistrationCalculation.TotalPayOverTimeSeconds = totalPayOverTimeSeconds;
             timeAndAttendanceTimeActivityRegistrationCalculation.TotalPaySeconds = totalPaySeconds;
-            if ((worker == null))
-            {
-                throw new global::System.ArgumentNullException("worker");
-            }
-            timeAndAttendanceTimeActivityRegistrationCalculation.Worker = worker;
             return timeAndAttendanceTimeActivityRegistrationCalculation;
         }
         /// <summary>
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -223,6 +197,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkerPersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WorkerPersonnelNumber is required.")]
         public virtual string WorkerPersonnelNumber
         {
             get
@@ -245,6 +221,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TimeProfileDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TimeProfileDate is required.")]
         public virtual global::System.DateTimeOffset TimeProfileDate
         {
             get
@@ -267,6 +245,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TotalPayFlexTimeCorrectionSeconds in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TotalPayFlexTimeCorrectionSeconds is required.")]
         public virtual int TotalPayFlexTimeCorrectionSeconds
         {
             get
@@ -289,6 +269,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TotalPayFlexTimeSubSeconds in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TotalPayFlexTimeSubSeconds is required.")]
         public virtual int TotalPayFlexTimeSubSeconds
         {
             get
@@ -311,6 +293,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayStartTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PayStartTime is required.")]
         public virtual int PayStartTime
         {
             get
@@ -333,6 +317,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayAgreementId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PayAgreementId
         {
             get
@@ -355,6 +340,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TimeAndAttendanceApprovalGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TimeAndAttendanceApprovalGroupId
         {
             get
@@ -377,6 +363,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayEndDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PayEndDate is required.")]
         public virtual global::System.DateTimeOffset PayEndDate
         {
             get
@@ -399,6 +387,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ApproverPersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ApproverPersonnelNumber
         {
             get
@@ -421,6 +410,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsTimeProfileChanged in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsTimeProfileChanged
         {
             get
@@ -443,6 +433,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TimeProfileEndDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TimeProfileEndDate is required.")]
         public virtual global::System.DateTimeOffset TimeProfileEndDate
         {
             get
@@ -465,6 +457,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TotalNonPaidBreakSeconds in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TotalNonPaidBreakSeconds is required.")]
         public virtual int TotalNonPaidBreakSeconds
         {
             get
@@ -487,6 +481,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TimeProfileStartDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TimeProfileStartDate is required.")]
         public virtual global::System.DateTimeOffset TimeProfileStartDate
         {
             get
@@ -509,6 +505,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TimeAndAttendanceCalculationGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TimeAndAttendanceCalculationGroupId
         {
             get
@@ -531,6 +528,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ErrorLogText in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ErrorLogText
         {
             get
@@ -553,6 +551,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkStartDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WorkStartDate is required.")]
         public virtual global::System.DateTimeOffset WorkStartDate
         {
             get
@@ -575,6 +575,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsApproved in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsApproved
         {
             get
@@ -597,6 +598,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TotalPayIllegalAbsenceSeconds in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TotalPayIllegalAbsenceSeconds is required.")]
         public virtual int TotalPayIllegalAbsenceSeconds
         {
             get
@@ -619,6 +622,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TimeProfileId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TimeProfileId
         {
             get
@@ -641,6 +645,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TotalPayAbsenceSeconds in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TotalPayAbsenceSeconds is required.")]
         public virtual int TotalPayAbsenceSeconds
         {
             get
@@ -663,6 +669,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TotalPaidBreakSeconds in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TotalPaidBreakSeconds is required.")]
         public virtual int TotalPaidBreakSeconds
         {
             get
@@ -685,6 +693,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkflowStatus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.JmgDaysTotalWorkflowStatus> WorkflowStatus
         {
             get
@@ -707,6 +716,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkEndTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WorkEndTime is required.")]
         public virtual int WorkEndTime
         {
             get
@@ -729,6 +740,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsFlexTimeAllowed in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsFlexTimeAllowed
         {
             get
@@ -751,6 +763,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransferrerPeronnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TransferrerPeronnelNumber
         {
             get
@@ -773,6 +786,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsClockOutToleranceDropped in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsClockOutToleranceDropped
         {
             get
@@ -795,6 +809,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TimeProfileStartTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TimeProfileStartTime is required.")]
         public virtual int TimeProfileStartTime
         {
             get
@@ -817,6 +833,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkStartTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WorkStartTime is required.")]
         public virtual int WorkStartTime
         {
             get
@@ -839,6 +857,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TotalPayFlexTimeAddSeconds in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TotalPayFlexTimeAddSeconds is required.")]
         public virtual int TotalPayFlexTimeAddSeconds
         {
             get
@@ -861,6 +881,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TimeProfileNormSeconds in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TimeProfileNormSeconds is required.")]
         public virtual int TimeProfileNormSeconds
         {
             get
@@ -883,6 +905,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsCalculated in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsCalculated
         {
             get
@@ -905,6 +928,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayStartDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PayStartDate is required.")]
         public virtual global::System.DateTimeOffset PayStartDate
         {
             get
@@ -927,6 +952,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TimeProfileEndTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TimeProfileEndTime is required.")]
         public virtual int TimeProfileEndTime
         {
             get
@@ -949,6 +976,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HasErrors in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> HasErrors
         {
             get
@@ -971,6 +999,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TimeProfileSeconds in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TimeProfileSeconds is required.")]
         public virtual int TimeProfileSeconds
         {
             get
@@ -993,6 +1023,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TotalWorkSeconds in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TotalWorkSeconds is required.")]
         public virtual int TotalWorkSeconds
         {
             get
@@ -1015,6 +1047,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TotalWorkSecondsNotAllocated in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TotalWorkSecondsNotAllocated is required.")]
         public virtual int TotalWorkSecondsNotAllocated
         {
             get
@@ -1037,6 +1071,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayEndTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PayEndTime is required.")]
         public virtual int PayEndTime
         {
             get
@@ -1059,6 +1095,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsTransferred in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsTransferred
         {
             get
@@ -1081,6 +1118,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TimeProfileNormFlexTimeSeconds in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TimeProfileNormFlexTimeSeconds is required.")]
         public virtual int TimeProfileNormFlexTimeSeconds
         {
             get
@@ -1103,6 +1142,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TotalPayLegalAbsenceSeconds in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TotalPayLegalAbsenceSeconds is required.")]
         public virtual int TotalPayLegalAbsenceSeconds
         {
             get
@@ -1125,6 +1166,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TotalPayFlexTimeBalanceSeconds in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TotalPayFlexTimeBalanceSeconds is required.")]
         public virtual int TotalPayFlexTimeBalanceSeconds
         {
             get
@@ -1147,6 +1190,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsClockInToleranceDropped in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsClockInToleranceDropped
         {
             get
@@ -1169,6 +1213,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkEndDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WorkEndDate is required.")]
         public virtual global::System.DateTimeOffset WorkEndDate
         {
             get
@@ -1191,6 +1237,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TotalPayOverTimeSeconds in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TotalPayOverTimeSeconds is required.")]
         public virtual int TotalPayOverTimeSeconds
         {
             get
@@ -1213,6 +1261,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultDimensionDisplayValue
         {
             get
@@ -1235,6 +1284,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TotalPaySeconds in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TotalPaySeconds is required.")]
         public virtual int TotalPaySeconds
         {
             get
@@ -1257,6 +1308,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CalculatorPersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CalculatorPersonnelNumber
         {
             get
@@ -1276,31 +1328,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnCalculatorPersonnelNumberChanging(string value);
         partial void OnCalculatorPersonnelNumberChanged();
         /// <summary>
-        /// There are no comments for Property Worker in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.Worker Worker
-        {
-            get
-            {
-                return this._Worker;
-            }
-            set
-            {
-                this.OnWorkerChanging(value);
-                this._Worker = value;
-                this.OnWorkerChanged();
-                this.OnPropertyChanged("Worker");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.Worker _Worker;
-        partial void OnWorkerChanging(global::Microsoft.Dynamics.DataEntities.Worker value);
-        partial void OnWorkerChanged();
-        /// <summary>
         /// There are no comments for Property DimensionSet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionSet DimensionSet
         {
             get

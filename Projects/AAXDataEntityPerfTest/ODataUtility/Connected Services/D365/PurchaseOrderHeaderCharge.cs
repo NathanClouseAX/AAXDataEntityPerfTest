@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for PurchaseOrderHeaderChargeSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PurchaseOrderHeaderChargeSingle in the schema.
+    /// </summary>
     public partial class PurchaseOrderHeaderChargeSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PurchaseOrderHeaderCharge>
     {
         /// <summary>
@@ -119,9 +119,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.TaxItemGroupSingle _TaxItemGroup;
     }
-        /// <summary>
-        /// There are no comments for PurchaseOrderHeaderCharge in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PurchaseOrderHeaderCharge in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// PurchaseOrderNumber
@@ -178,6 +178,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -200,6 +202,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchaseOrderNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PurchaseOrderNumber is required.")]
         public virtual string PurchaseOrderNumber
         {
             get
@@ -222,6 +226,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ChargeLineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ChargeLineNumber is required.")]
         public virtual decimal ChargeLineNumber
         {
             get
@@ -244,6 +250,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProportionalChargeAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProportionalChargeAmount is required.")]
         public virtual decimal ProportionalChargeAmount
         {
             get
@@ -266,6 +274,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ChargeAccountingCurrencyCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ChargeAccountingCurrencyCode
         {
             get
@@ -288,6 +297,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesTaxGroupCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SalesTaxGroupCode
         {
             get
@@ -310,6 +320,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ChargeDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ChargeDescription
         {
             get
@@ -332,6 +343,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchaseChargeCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PurchaseChargeCode
         {
             get
@@ -354,6 +366,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsIntercompanyCharge in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsIntercompanyCharge
         {
             get
@@ -376,6 +389,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ChargePercentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ChargePercentage is required.")]
         public virtual decimal ChargePercentage
         {
             get
@@ -398,6 +413,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesTaxItemGroupCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SalesTaxItemGroupCode
         {
             get
@@ -420,6 +436,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FixedChargeAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FixedChargeAmount is required.")]
         public virtual decimal FixedChargeAmount
         {
             get
@@ -442,6 +460,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExternalChargeAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ExternalChargeAmount is required.")]
         public virtual decimal ExternalChargeAmount
         {
             get
@@ -464,6 +484,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ChargeCategory in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.MarkupCategory> ChargeCategory
         {
             get
@@ -486,6 +507,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchaseOrderHeaderV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PurchaseOrderHeaderV2 is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.PurchaseOrderHeaderV2 PurchaseOrderHeaderV2
         {
             get
@@ -508,6 +531,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Currency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Currency is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Currency Currency
         {
             get
@@ -530,6 +555,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.TaxGroup TaxGroup
         {
             get
@@ -552,6 +578,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxItemGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.TaxItemGroup TaxItemGroup
         {
             get

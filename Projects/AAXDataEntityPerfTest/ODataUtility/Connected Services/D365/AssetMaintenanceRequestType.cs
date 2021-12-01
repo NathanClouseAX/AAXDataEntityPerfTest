@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for AssetMaintenanceRequestTypeSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AssetMaintenanceRequestTypeSingle in the schema.
+    /// </summary>
     public partial class AssetMaintenanceRequestTypeSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AssetMaintenanceRequestType>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.AssetMaintenanceWorkOrderTypeSingle _AssetMaintenanceWorkOrderType;
     }
-        /// <summary>
-        /// There are no comments for AssetMaintenanceRequestType in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AssetMaintenanceRequestType in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// RequestTypeId
@@ -111,6 +111,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -133,6 +135,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RequestTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RequestTypeId is required.")]
         public virtual string RequestTypeId
         {
             get
@@ -155,6 +159,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Name
         {
             get
@@ -177,6 +182,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RequestLifecycleModelId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RequestLifecycleModelId
         {
             get
@@ -199,6 +205,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkOrderTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string WorkOrderTypeId
         {
             get
@@ -221,6 +228,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetMaintenanceRequestLifecycleModel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AssetMaintenanceRequestLifecycleModel is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.AssetMaintenanceRequestLifecycleModel AssetMaintenanceRequestLifecycleModel
         {
             get
@@ -243,6 +252,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetMaintenanceWorkOrderType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.AssetMaintenanceWorkOrderType AssetMaintenanceWorkOrderType
         {
             get

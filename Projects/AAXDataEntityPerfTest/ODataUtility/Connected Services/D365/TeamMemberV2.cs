@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for TeamMemberV2Single in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TeamMemberV2Single in the schema.
+    /// </summary>
     public partial class TeamMemberV2Single : global::Microsoft.OData.Client.DataServiceQuerySingle<TeamMemberV2>
     {
         /// <summary>
@@ -34,6 +34,27 @@ namespace Microsoft.Dynamics.DataEntities
         public TeamMemberV2Single(global::Microsoft.OData.Client.DataServiceQuerySingle<TeamMemberV2> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for Teams in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.PersonSingle Teams
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Teams == null))
+                {
+                    this._Teams = new global::Microsoft.Dynamics.DataEntities.PersonSingle(this.Context, GetPath("Teams"));
+                }
+                return this._Teams;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.PersonSingle _Teams;
         /// <summary>
         /// There are no comments for Team in the schema.
         /// </summary>
@@ -56,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.TeamV2Single _Team;
     }
-        /// <summary>
-        /// There are no comments for TeamMemberV2 in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TeamMemberV2 in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// TeamMemberPartyNumber
     /// TeamName
@@ -75,15 +96,26 @@ namespace Microsoft.Dynamics.DataEntities
         /// <param name="teamName">Initial value of TeamName.</param>
         /// <param name="validFrom">Initial value of ValidFrom.</param>
         /// <param name="validTo">Initial value of ValidTo.</param>
+        /// <param name="teams">Initial value of Teams.</param>
         /// <param name="team">Initial value of Team.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public static TeamMemberV2 CreateTeamMemberV2(string teamMemberPartyNumber, string teamName, global::System.DateTimeOffset validFrom, global::System.DateTimeOffset validTo, global::Microsoft.Dynamics.DataEntities.TeamV2 team)
+        public static TeamMemberV2 CreateTeamMemberV2(string teamMemberPartyNumber, 
+                    string teamName, 
+                    global::System.DateTimeOffset validFrom, 
+                    global::System.DateTimeOffset validTo, 
+                    global::Microsoft.Dynamics.DataEntities.Person teams, 
+                    global::Microsoft.Dynamics.DataEntities.TeamV2 team)
         {
             TeamMemberV2 teamMemberV2 = new TeamMemberV2();
             teamMemberV2.TeamMemberPartyNumber = teamMemberPartyNumber;
             teamMemberV2.TeamName = teamName;
             teamMemberV2.ValidFrom = validFrom;
             teamMemberV2.ValidTo = validTo;
+            if ((teams == null))
+            {
+                throw new global::System.ArgumentNullException("teams");
+            }
+            teamMemberV2.Teams = teams;
             if ((team == null))
             {
                 throw new global::System.ArgumentNullException("team");
@@ -95,6 +127,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TeamMemberPartyNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TeamMemberPartyNumber is required.")]
         public virtual string TeamMemberPartyNumber
         {
             get
@@ -117,6 +151,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TeamName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TeamName is required.")]
         public virtual string TeamName
         {
             get
@@ -139,6 +175,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidFrom in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValidFrom is required.")]
         public virtual global::System.DateTimeOffset ValidFrom
         {
             get
@@ -161,6 +199,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsTeamLead in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsTeamLead
         {
             get
@@ -183,6 +222,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidTo in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValidTo is required.")]
         public virtual global::System.DateTimeOffset ValidTo
         {
             get
@@ -205,6 +246,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TeamMemberName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TeamMemberName
         {
             get
@@ -224,9 +266,35 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnTeamMemberNameChanging(string value);
         partial void OnTeamMemberNameChanged();
         /// <summary>
+        /// There are no comments for Property Teams in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Teams is required.")]
+        public virtual global::Microsoft.Dynamics.DataEntities.Person Teams
+        {
+            get
+            {
+                return this._Teams;
+            }
+            set
+            {
+                this.OnTeamsChanging(value);
+                this._Teams = value;
+                this.OnTeamsChanged();
+                this.OnPropertyChanged("Teams");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.Person _Teams;
+        partial void OnTeamsChanging(global::Microsoft.Dynamics.DataEntities.Person value);
+        partial void OnTeamsChanged();
+        /// <summary>
         /// There are no comments for Property Team in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Team is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.TeamV2 Team
         {
             get

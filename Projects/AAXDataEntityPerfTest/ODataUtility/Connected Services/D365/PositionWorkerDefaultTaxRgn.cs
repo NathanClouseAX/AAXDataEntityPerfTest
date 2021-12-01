@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for PositionWorkerDefaultTaxRgnSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PositionWorkerDefaultTaxRgnSingle in the schema.
+    /// </summary>
     public partial class PositionWorkerDefaultTaxRgnSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PositionWorkerDefaultTaxRgn>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.PositionV2Single _PositionV2;
     }
-        /// <summary>
-        /// There are no comments for PositionWorkerDefaultTaxRgn in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PositionWorkerDefaultTaxRgn in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// PersonnelNumber
     /// PositionId
@@ -90,6 +90,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PersonnelNumber is required.")]
         public virtual string PersonnelNumber
         {
             get
@@ -112,6 +114,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PositionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PositionId is required.")]
         public virtual string PositionId
         {
             get
@@ -134,6 +138,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LocationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LocationId
         {
             get
@@ -156,6 +161,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PositionV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PositionV2 is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.PositionV2 PositionV2
         {
             get

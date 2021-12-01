@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ReleasedProductReadinessCheckSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ReleasedProductReadinessCheckSingle in the schema.
+    /// </summary>
     public partial class ReleasedProductReadinessCheckSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ReleasedProductReadinessCheck>
     {
         /// <summary>
@@ -161,9 +161,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ReleasedProductV2Single _ReleasedProductV2;
     }
-        /// <summary>
-        /// There are no comments for ReleasedProductReadinessCheck in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ReleasedProductReadinessCheck in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// ProductReadinessCheckRecordId
@@ -210,6 +210,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -232,6 +234,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductReadinessCheckRecordId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductReadinessCheckRecordId is required.")]
         public virtual long ProductReadinessCheckRecordId
         {
             get
@@ -254,6 +258,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductReadinessPolicyCheckName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductReadinessPolicyCheckName
         {
             get
@@ -276,6 +281,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property QuestionnaireQuestionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string QuestionnaireQuestionId
         {
             get
@@ -298,6 +304,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductConfigurationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductConfigurationId
         {
             get
@@ -320,6 +327,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OwningPersonPartyNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OwningPersonPartyNumber
         {
             get
@@ -342,6 +350,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ApprovedDateTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ApprovedDateTime is required.")]
         public virtual global::System.DateTimeOffset ApprovedDateTime
         {
             get
@@ -364,6 +374,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OwningTeamName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OwningTeamName
         {
             get
@@ -386,6 +397,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProcessArea in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EngChgReadinessModule> ProcessArea
         {
             get
@@ -408,6 +420,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CheckNotes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CheckNotes
         {
             get
@@ -430,6 +443,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductSizeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductSizeId
         {
             get
@@ -452,6 +466,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ItemNumber
         {
             get
@@ -474,6 +489,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CheckStatus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EngChgReadinessStatus> CheckStatus
         {
             get
@@ -496,6 +512,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property QuestionnaireAnswerText in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string QuestionnaireAnswerText
         {
             get
@@ -518,6 +535,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ApproverPersonPartyNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ApproverPersonPartyNumber
         {
             get
@@ -540,6 +558,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductReadinessPolicyCheckLegalEntityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductReadinessPolicyCheckLegalEntityId
         {
             get
@@ -562,6 +581,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngineeringProductVersionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string EngineeringProductVersionId
         {
             get
@@ -584,6 +604,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductReadinessPolicyCheckProcessArea in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EngChgReadinessModule> ProductReadinessPolicyCheckProcessArea
         {
             get
@@ -606,6 +627,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property QuestionnaireQuestionSequenceNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "QuestionnaireQuestionSequenceNumber is required.")]
         public virtual int QuestionnaireQuestionSequenceNumber
         {
             get
@@ -628,6 +651,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngineeringProductNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string EngineeringProductNumber
         {
             get
@@ -650,6 +674,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property QuestionnaireQuestionInputType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.KMQuestionAnswerInputType> QuestionnaireQuestionInputType
         {
             get
@@ -672,6 +697,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property QuestionnaireAnswerComment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string QuestionnaireAnswerComment
         {
             get
@@ -694,6 +720,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property QuestionnaireQuestionText in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string QuestionnaireQuestionText
         {
             get
@@ -716,6 +743,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductReadinessPolicyName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductReadinessPolicyName
         {
             get
@@ -738,6 +766,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductColorId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductColorId
         {
             get
@@ -760,6 +789,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CheckLog in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CheckLog
         {
             get
@@ -782,6 +812,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property QuestionnaireQuestionInstruction in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string QuestionnaireQuestionInstruction
         {
             get
@@ -804,6 +835,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsCheckMandatory in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsCheckMandatory
         {
             get
@@ -826,6 +858,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductStyleId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductStyleId
         {
             get
@@ -848,6 +881,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReleasedEngineeringProductVersion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersion ReleasedEngineeringProductVersion
         {
             get
@@ -870,6 +904,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ApproverPerson in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.Person ApproverPerson
         {
             get
@@ -892,6 +927,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductReadinessPolicyCheck in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductReadinessPolicyCheck is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ProductReadinessPolicyCheck ProductReadinessPolicyCheck
         {
             get
@@ -914,6 +951,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OwningPerson in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.Person OwningPerson
         {
             get
@@ -936,6 +974,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OwningTeamV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.TeamV2 OwningTeamV2
         {
             get
@@ -958,6 +997,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReleasedProductV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReleasedProductV2 is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ReleasedProductV2 ReleasedProductV2
         {
             get

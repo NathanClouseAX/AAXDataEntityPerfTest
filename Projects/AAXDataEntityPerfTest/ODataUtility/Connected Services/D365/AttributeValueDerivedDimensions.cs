@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for AttributeValueDerivedDimensionsSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AttributeValueDerivedDimensionsSingle in the schema.
+    /// </summary>
     public partial class AttributeValueDerivedDimensionsSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AttributeValueDerivedDimensions>
     {
         /// <summary>
@@ -266,9 +266,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionAttributeSingle _DerivedDimension_RelatedRole_DerivedDimension8;
     }
-        /// <summary>
-        /// There are no comments for AttributeValueDerivedDimensions in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AttributeValueDerivedDimensions in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// DrivingDimensionAttributeName
     /// DrivingDimensionAttributeValue
@@ -294,6 +294,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DrivingDimensionAttributeName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DrivingDimensionAttributeName is required.")]
         public virtual string DrivingDimensionAttributeName
         {
             get
@@ -316,6 +318,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DrivingDimensionAttributeValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DrivingDimensionAttributeValue is required.")]
         public virtual string DrivingDimensionAttributeValue
         {
             get
@@ -338,6 +342,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerivedDimensionAttributeName8 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DerivedDimensionAttributeName8
         {
             get
@@ -360,6 +365,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerivedDimensionAttributeName6 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DerivedDimensionAttributeName6
         {
             get
@@ -382,6 +388,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerivedDimensionAttributeName10 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DerivedDimensionAttributeName10
         {
             get
@@ -404,6 +411,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerivedDimensionAttributeName4 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DerivedDimensionAttributeName4
         {
             get
@@ -426,6 +434,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerivedDimensionAttributeName2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DerivedDimensionAttributeName2
         {
             get
@@ -448,6 +457,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerivedDimensionAttributeName9 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DerivedDimensionAttributeName9
         {
             get
@@ -470,6 +480,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerivedDimensionAttributeValue10 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DerivedDimensionAttributeValue10
         {
             get
@@ -492,6 +503,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerivedDimensionAttributeName7 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DerivedDimensionAttributeName7
         {
             get
@@ -514,6 +526,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerivedDimensionAttributeValue9 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DerivedDimensionAttributeValue9
         {
             get
@@ -536,6 +549,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerivedDimensionAttributeValue8 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DerivedDimensionAttributeValue8
         {
             get
@@ -558,6 +572,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerivedDimensionAttributeValue1 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DerivedDimensionAttributeValue1
         {
             get
@@ -580,6 +595,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerivedDimensionAttributeValue3 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DerivedDimensionAttributeValue3
         {
             get
@@ -602,6 +618,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerivedDimensionAttributeValue2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DerivedDimensionAttributeValue2
         {
             get
@@ -624,6 +641,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerivedDimensionAttributeValue5 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DerivedDimensionAttributeValue5
         {
             get
@@ -646,6 +664,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerivedDimensionAttributeValue4 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DerivedDimensionAttributeValue4
         {
             get
@@ -668,6 +687,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerivedDimensionAttributeValue7 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DerivedDimensionAttributeValue7
         {
             get
@@ -690,6 +710,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerivedDimensionAttributeValue6 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DerivedDimensionAttributeValue6
         {
             get
@@ -712,6 +733,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerivedDimensionAttributeName5 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DerivedDimensionAttributeName5
         {
             get
@@ -734,6 +756,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerivedDimensionAttributeName3 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DerivedDimensionAttributeName3
         {
             get
@@ -756,6 +779,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerivedDimensionAttributeName1 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DerivedDimensionAttributeName1
         {
             get
@@ -778,6 +802,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerivedDimension_RelatedRole_DrivingDimension in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute DerivedDimension_RelatedRole_DrivingDimension
         {
             get
@@ -800,6 +825,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerivedDimension_RelatedRole_DerivedDimension10 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute DerivedDimension_RelatedRole_DerivedDimension10
         {
             get
@@ -822,6 +848,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerivedDimension_RelatedRole_DerivedDimension1 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute DerivedDimension_RelatedRole_DerivedDimension1
         {
             get
@@ -844,6 +871,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerivedDimension_RelatedRole_DerivedDimension3 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute DerivedDimension_RelatedRole_DerivedDimension3
         {
             get
@@ -866,6 +894,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerivedDimension_RelatedRole_DerivedDimension2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute DerivedDimension_RelatedRole_DerivedDimension2
         {
             get
@@ -888,6 +917,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerivedDimension_RelatedRole_DerivedDimension5 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute DerivedDimension_RelatedRole_DerivedDimension5
         {
             get
@@ -910,6 +940,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerivedDimension_RelatedRole_DerivedDimension4 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute DerivedDimension_RelatedRole_DerivedDimension4
         {
             get
@@ -932,6 +963,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerivedDimension_RelatedRole_DerivedDimension7 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute DerivedDimension_RelatedRole_DerivedDimension7
         {
             get
@@ -954,6 +986,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerivedDimension_RelatedRole_DerivedDimension6 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute DerivedDimension_RelatedRole_DerivedDimension6
         {
             get
@@ -976,6 +1009,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerivedDimension_RelatedRole_DerivedDimension9 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute DerivedDimension_RelatedRole_DerivedDimension9
         {
             get
@@ -998,6 +1032,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerivedDimension_RelatedRole_DerivedDimension8 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute DerivedDimension_RelatedRole_DerivedDimension8
         {
             get

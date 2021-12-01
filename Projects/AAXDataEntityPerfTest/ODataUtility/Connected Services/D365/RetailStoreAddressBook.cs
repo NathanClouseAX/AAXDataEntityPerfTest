@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RetailStoreAddressBookSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailStoreAddressBookSingle in the schema.
+    /// </summary>
     public partial class RetailStoreAddressBookSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RetailStoreAddressBook>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.AddressBooksSingle _AddressBooks;
     }
-        /// <summary>
-        /// There are no comments for RetailStoreAddressBook in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailStoreAddressBook in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// RetailChannelId
     /// AddressBookName
@@ -118,6 +118,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailChannelId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetailChannelId is required.")]
         public virtual string RetailChannelId
         {
             get
@@ -140,6 +142,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AddressBookName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AddressBookName is required.")]
         public virtual string AddressBookName
         {
             get
@@ -162,6 +166,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AddressBookType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailAddressBookType> AddressBookType
         {
             get
@@ -184,6 +189,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailChannel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetailChannel is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RetailChannel RetailChannel
         {
             get
@@ -206,6 +213,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AddressBooks in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AddressBooks is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.AddressBooks AddressBooks
         {
             get

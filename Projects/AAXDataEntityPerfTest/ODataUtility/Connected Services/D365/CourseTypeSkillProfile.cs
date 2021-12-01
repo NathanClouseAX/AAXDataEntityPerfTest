@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for CourseTypeSkillProfileSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CourseTypeSkillProfileSingle in the schema.
+    /// </summary>
     public partial class CourseTypeSkillProfileSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<CourseTypeSkillProfile>
     {
         /// <summary>
@@ -119,9 +119,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.SkillSingle _Skill;
     }
-        /// <summary>
-        /// There are no comments for CourseTypeSkillProfile in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CourseTypeSkillProfile in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// CourseTypeId
     /// SkillId
@@ -176,6 +176,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CourseTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CourseTypeId is required.")]
         public virtual string CourseTypeId
         {
             get
@@ -198,6 +200,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SkillId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SkillId is required.")]
         public virtual string SkillId
         {
             get
@@ -220,6 +224,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LevelId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LevelId
         {
             get
@@ -242,6 +247,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RatingId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RatingId
         {
             get
@@ -264,6 +270,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RatingModel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RatingModel is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RatingModel RatingModel
         {
             get
@@ -286,6 +294,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CourseType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CourseType is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.CourseType CourseType
         {
             get
@@ -308,6 +318,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RatingLevel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RatingLevel is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RatingLevel RatingLevel
         {
             get
@@ -330,6 +342,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Skill in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Skill is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Skill Skill
         {
             get

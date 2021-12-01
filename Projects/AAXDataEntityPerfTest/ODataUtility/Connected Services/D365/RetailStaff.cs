@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RetailStaffSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailStaffSingle in the schema.
+    /// </summary>
     public partial class RetailStaffSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RetailStaff>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.RetailTillLayoutSingle _RetailTillLayout;
     }
-        /// <summary>
-        /// There are no comments for RetailStaff in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailStaff in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// PersonnelNumber
     /// </KeyProperties>
@@ -108,6 +108,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PersonnelNumber is required.")]
         public virtual string PersonnelNumber
         {
             get
@@ -130,6 +132,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EmploymentType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailCashierSalesPersonOther> EmploymentType
         {
             get
@@ -152,6 +155,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NameOnReceipt in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string NameOnReceipt
         {
             get
@@ -174,6 +178,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExternalIdentifier in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ExternalIdentifier
         {
             get
@@ -196,6 +201,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CultureName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CultureName
         {
             get
@@ -218,6 +224,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LayoutId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LayoutId
         {
             get
@@ -240,6 +247,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExternalName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ExternalName
         {
             get
@@ -262,6 +270,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExternalSubIdentifier in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ExternalSubIdentifier
         {
             get
@@ -284,6 +293,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExternalIdentityAlias in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ExternalIdentityAlias
         {
             get
@@ -306,6 +316,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Image in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Image
         {
             get
@@ -328,6 +339,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Worker in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Worker is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Worker Worker
         {
             get
@@ -350,6 +363,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailTillLayout in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.RetailTillLayout RetailTillLayout
         {
             get

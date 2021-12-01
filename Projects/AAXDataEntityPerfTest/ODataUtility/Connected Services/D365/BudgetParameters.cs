@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for BudgetParametersSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BudgetParametersSingle in the schema.
+    /// </summary>
     public partial class BudgetParametersSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<BudgetParameters>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.JournalNameSingle _BudgetParametersJournalName;
     }
-        /// <summary>
-        /// There are no comments for BudgetParameters in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BudgetParameters in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// </KeyProperties>
@@ -102,6 +102,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -124,6 +126,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UseRulesForBudgetTransfers in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> UseRulesForBudgetTransfers
         {
             get
@@ -146,6 +149,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DoCompleteRegisterEntriesOnTransferFromFixedAssets in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DoCompleteRegisterEntriesOnTransferFromFixedAssets
         {
             get
@@ -168,6 +172,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TimePeriodForBudgetBalances in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.BudgetCheckRevenueBalanceInterval> TimePeriodForBudgetBalances
         {
             get
@@ -190,6 +195,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DoCompleteRegisterEntriesOnTransferFromProject in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DoCompleteRegisterEntriesOnTransferFromProject
         {
             get
@@ -212,6 +218,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DoCompleteRegisterEntriesOnTransferFromSupplyForecast in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DoCompleteRegisterEntriesOnTransferFromSupplyForecast
         {
             get
@@ -234,6 +241,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UseFrenchPublicSectorAccountingRules in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> UseFrenchPublicSectorAccountingRules
         {
             get
@@ -256,6 +264,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllocationKey in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AllocationKey
         {
             get
@@ -278,6 +287,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DoCompleteRegisterEntriesOnTransferFromFixedAssetsRU in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DoCompleteRegisterEntriesOnTransferFromFixedAssetsRU
         {
             get
@@ -300,6 +310,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DoCompleteRegisterEntriesOnTransferFromDemandForecast in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DoCompleteRegisterEntriesOnTransferFromDemandForecast
         {
             get
@@ -322,6 +333,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UseGeneralBudgetReservationPublicSectorAccountingRules in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> UseGeneralBudgetReservationPublicSectorAccountingRules
         {
             get
@@ -344,6 +356,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CheckRevenueBudgetForZeroBudgetBalances in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.BudgetCheckRevenueBalanceOption> CheckRevenueBudgetForZeroBudgetBalances
         {
             get
@@ -366,6 +379,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetJournal in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BudgetJournal
         {
             get
@@ -388,6 +402,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PeriodAllocationCategory in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.PeriodAllocationCategory PeriodAllocationCategory
         {
             get
@@ -410,6 +425,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetParametersJournalName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.JournalName BudgetParametersJournalName
         {
             get

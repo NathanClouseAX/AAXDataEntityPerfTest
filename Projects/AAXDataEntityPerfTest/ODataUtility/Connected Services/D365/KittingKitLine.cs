@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for KittingKitLineSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for KittingKitLineSingle in the schema.
+    /// </summary>
     public partial class KittingKitLineSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<KittingKitLine>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.Kitting_KitHeaderSingle _KitHeader;
     }
-        /// <summary>
-        /// There are no comments for KittingKitLine in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for KittingKitLine in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// KitId
@@ -148,6 +148,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -170,6 +172,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property KitId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "KitId is required.")]
         public virtual string KitId
         {
             get
@@ -192,6 +196,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LineNumber is required.")]
         public virtual decimal LineNumber
         {
             get
@@ -214,6 +220,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PhysicalProductWidth in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PhysicalProductWidth is required.")]
         public virtual decimal PhysicalProductWidth
         {
             get
@@ -236,6 +244,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ConsumptionWarehouseId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ConsumptionWarehouseId
         {
             get
@@ -258,6 +267,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RoundingUpMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.BOMRoundUp> RoundingUpMethod
         {
             get
@@ -280,6 +290,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductConfigurationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductConfigurationId
         {
             get
@@ -302,6 +313,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductUnitSymbol in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductUnitSymbol
         {
             get
@@ -324,6 +336,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductSizeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductSizeId
         {
             get
@@ -346,6 +359,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ConsumptionCalculationConstant in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ConsumptionCalculationConstant is required.")]
         public virtual decimal ConsumptionCalculationConstant
         {
             get
@@ -368,6 +383,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property QuantityDenominator in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "QuantityDenominator is required.")]
         public virtual decimal QuantityDenominator
         {
             get
@@ -390,6 +407,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PhysicalProductDepth in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PhysicalProductDepth is required.")]
         public virtual decimal PhysicalProductDepth
         {
             get
@@ -412,6 +431,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ItemNumber
         {
             get
@@ -434,6 +454,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductColorId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductColorId
         {
             get
@@ -456,6 +477,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property QuantityRoundingUpMultiples in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "QuantityRoundingUpMultiples is required.")]
         public virtual decimal QuantityRoundingUpMultiples
         {
             get
@@ -478,6 +501,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PhysicalProductHeight in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PhysicalProductHeight is required.")]
         public virtual decimal PhysicalProductHeight
         {
             get
@@ -500,6 +525,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductStyleId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductStyleId
         {
             get
@@ -522,6 +548,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PhysicalProductDensity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PhysicalProductDensity is required.")]
         public virtual decimal PhysicalProductDensity
         {
             get
@@ -544,6 +572,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ConsumptionCalculationMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.BOMFormula> ConsumptionCalculationMethod
         {
             get
@@ -566,6 +595,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ConsumptionSiteId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ConsumptionSiteId
         {
             get
@@ -588,6 +618,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ConsumptionType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.BOMConsumpType> ConsumptionType
         {
             get
@@ -610,6 +641,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity is required.")]
         public virtual decimal Quantity
         {
             get
@@ -632,6 +665,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Kitting_KitHeader in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Kitting_KitHeader is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Kitting_KitHeader Kitting_KitHeader
         {
             get
@@ -654,6 +689,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property KitHeader in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "KitHeader is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Kitting_KitHeader KitHeader
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for BudgetCodeSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BudgetCodeSingle in the schema.
+    /// </summary>
     public partial class BudgetCodeSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<BudgetCode>
     {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public BudgetCodeSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<BudgetCode> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for BudgetRegisterEntryHeaderBudgetCode in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeaderSingle BudgetRegisterEntryHeaderBudgetCode
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._BudgetRegisterEntryHeaderBudgetCode == null))
-                {
-                    this._BudgetRegisterEntryHeaderBudgetCode = new global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeaderSingle(this.Context, GetPath("BudgetRegisterEntryHeaderBudgetCode"));
-                }
-                return this._BudgetRegisterEntryHeaderBudgetCode;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeaderSingle _BudgetRegisterEntryHeaderBudgetCode;
         /// <summary>
         /// There are no comments for LedgerFinancialReason in the schema.
         /// </summary>
@@ -97,10 +76,31 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntrySingle _BudgetRegisterEntryBudgetCode;
-    }
         /// <summary>
-        /// There are no comments for BudgetCode in the schema.
+        /// There are no comments for BudgetRegisterEntryHeaderBudgetCode in the schema.
         /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeaderSingle BudgetRegisterEntryHeaderBudgetCode
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._BudgetRegisterEntryHeaderBudgetCode == null))
+                {
+                    this._BudgetRegisterEntryHeaderBudgetCode = new global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeaderSingle(this.Context, GetPath("BudgetRegisterEntryHeaderBudgetCode"));
+                }
+                return this._BudgetRegisterEntryHeaderBudgetCode;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeaderSingle _BudgetRegisterEntryHeaderBudgetCode;
+    }
+    /// <summary>
+    /// There are no comments for BudgetCode in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// BudgetCode
@@ -114,30 +114,32 @@ namespace Microsoft.Dynamics.DataEntities
         /// </summary>
         /// <param name="dataAreaId">Initial value of dataAreaId.</param>
         /// <param name="budgetCode1">Initial value of BudgetCode1.</param>
-        /// <param name="budgetRegisterEntryHeaderBudgetCode">Initial value of BudgetRegisterEntryHeaderBudgetCode.</param>
         /// <param name="budgetRegisterEntryBudgetCode">Initial value of BudgetRegisterEntryBudgetCode.</param>
+        /// <param name="budgetRegisterEntryHeaderBudgetCode">Initial value of BudgetRegisterEntryHeaderBudgetCode.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public static BudgetCode CreateBudgetCode(string dataAreaId, string budgetCode1, global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeader budgetRegisterEntryHeaderBudgetCode, global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntry budgetRegisterEntryBudgetCode)
+        public static BudgetCode CreateBudgetCode(string dataAreaId, string budgetCode1, global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntry budgetRegisterEntryBudgetCode, global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeader budgetRegisterEntryHeaderBudgetCode)
         {
             BudgetCode budgetCode = new BudgetCode();
             budgetCode.dataAreaId = dataAreaId;
             budgetCode.BudgetCode1 = budgetCode1;
-            if ((budgetRegisterEntryHeaderBudgetCode == null))
-            {
-                throw new global::System.ArgumentNullException("budgetRegisterEntryHeaderBudgetCode");
-            }
-            budgetCode.BudgetRegisterEntryHeaderBudgetCode = budgetRegisterEntryHeaderBudgetCode;
             if ((budgetRegisterEntryBudgetCode == null))
             {
                 throw new global::System.ArgumentNullException("budgetRegisterEntryBudgetCode");
             }
             budgetCode.BudgetRegisterEntryBudgetCode = budgetRegisterEntryBudgetCode;
+            if ((budgetRegisterEntryHeaderBudgetCode == null))
+            {
+                throw new global::System.ArgumentNullException("budgetRegisterEntryHeaderBudgetCode");
+            }
+            budgetCode.BudgetRegisterEntryHeaderBudgetCode = budgetRegisterEntryHeaderBudgetCode;
             return budgetCode;
         }
         /// <summary>
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -160,7 +162,9 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetCode1 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         [global::Microsoft.OData.Client.OriginalNameAttribute("BudgetCode")]
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BudgetCode1 is required.")]
         public virtual string BudgetCode1
         {
             get
@@ -183,6 +187,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkflowId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string WorkflowId
         {
             get
@@ -205,6 +210,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.BudgetTransactionType> BudgetType
         {
             get
@@ -227,6 +233,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsDefaultCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsDefaultCode
         {
             get
@@ -249,6 +256,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -271,6 +279,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReasonCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ReasonCode
         {
             get
@@ -290,31 +299,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnReasonCodeChanging(string value);
         partial void OnReasonCodeChanged();
         /// <summary>
-        /// There are no comments for Property BudgetRegisterEntryHeaderBudgetCode in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeader BudgetRegisterEntryHeaderBudgetCode
-        {
-            get
-            {
-                return this._BudgetRegisterEntryHeaderBudgetCode;
-            }
-            set
-            {
-                this.OnBudgetRegisterEntryHeaderBudgetCodeChanging(value);
-                this._BudgetRegisterEntryHeaderBudgetCode = value;
-                this.OnBudgetRegisterEntryHeaderBudgetCodeChanged();
-                this.OnPropertyChanged("BudgetRegisterEntryHeaderBudgetCode");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeader _BudgetRegisterEntryHeaderBudgetCode;
-        partial void OnBudgetRegisterEntryHeaderBudgetCodeChanging(global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeader value);
-        partial void OnBudgetRegisterEntryHeaderBudgetCodeChanged();
-        /// <summary>
         /// There are no comments for Property LedgerFinancialReason in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.LedgerFinancialReason LedgerFinancialReason
         {
             get
@@ -337,6 +325,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetRegisterEntryBudgetCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BudgetRegisterEntryBudgetCode is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntry BudgetRegisterEntryBudgetCode
         {
             get
@@ -355,6 +345,30 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntry _BudgetRegisterEntryBudgetCode;
         partial void OnBudgetRegisterEntryBudgetCodeChanging(global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntry value);
         partial void OnBudgetRegisterEntryBudgetCodeChanged();
+        /// <summary>
+        /// There are no comments for Property BudgetRegisterEntryHeaderBudgetCode in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BudgetRegisterEntryHeaderBudgetCode is required.")]
+        public virtual global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeader BudgetRegisterEntryHeaderBudgetCode
+        {
+            get
+            {
+                return this._BudgetRegisterEntryHeaderBudgetCode;
+            }
+            set
+            {
+                this.OnBudgetRegisterEntryHeaderBudgetCodeChanging(value);
+                this._BudgetRegisterEntryHeaderBudgetCode = value;
+                this.OnBudgetRegisterEntryHeaderBudgetCodeChanged();
+                this.OnPropertyChanged("BudgetRegisterEntryHeaderBudgetCode");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeader _BudgetRegisterEntryHeaderBudgetCode;
+        partial void OnBudgetRegisterEntryHeaderBudgetCodeChanging(global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeader value);
+        partial void OnBudgetRegisterEntryHeaderBudgetCodeChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

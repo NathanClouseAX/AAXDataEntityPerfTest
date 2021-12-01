@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for SADDocumentPurchaseOrderSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for SADDocumentPurchaseOrderSingle in the schema.
+    /// </summary>
     public partial class SADDocumentPurchaseOrderSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<SADDocumentPurchaseOrder>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionSetSingle _DimensionSet;
     }
-        /// <summary>
-        /// There are no comments for SADDocumentPurchaseOrder in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for SADDocumentPurchaseOrder in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// DocumentCode
@@ -103,6 +103,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -125,6 +127,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DocumentCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DocumentCode is required.")]
         public virtual string DocumentCode
         {
             get
@@ -147,6 +151,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DateOfVATRegister in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DateOfVATRegister is required.")]
         public virtual global::System.DateTimeOffset DateOfVATRegister
         {
             get
@@ -169,6 +175,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SADDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SADDate is required.")]
         public virtual global::System.DateTimeOffset SADDate
         {
             get
@@ -191,6 +199,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DutyGovernment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DutyGovernment
         {
             get
@@ -213,6 +222,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionDisplayValue
         {
             get
@@ -235,6 +245,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Posted in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> Posted
         {
             get
@@ -257,6 +268,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Currency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Currency
         {
             get
@@ -279,6 +291,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Date in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Date is required.")]
         public virtual global::System.DateTimeOffset Date
         {
             get
@@ -301,6 +315,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MiscPayments in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MiscPayments is required.")]
         public virtual decimal MiscPayments
         {
             get
@@ -323,6 +339,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExchangeRate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ExchangeRate is required.")]
         public virtual decimal ExchangeRate
         {
             get
@@ -345,6 +363,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SAD in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SAD
         {
             get
@@ -367,6 +386,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Transport in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Transport is required.")]
         public virtual decimal Transport
         {
             get
@@ -389,6 +410,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionSet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionSet DimensionSet
         {
             get

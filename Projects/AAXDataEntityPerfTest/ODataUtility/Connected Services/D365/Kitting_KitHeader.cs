@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for Kitting_KitHeaderSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for Kitting_KitHeaderSingle in the schema.
+    /// </summary>
     public partial class Kitting_KitHeaderSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<Kitting_KitHeader>
     {
         /// <summary>
@@ -35,10 +35,10 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for KittingKitVersion in the schema.
+        /// There are no comments for ProductionSite in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.KittingKitVersion> KittingKitVersion
+        public virtual global::Microsoft.Dynamics.DataEntities.OperationalSiteSingle ProductionSite
         {
             get
             {
@@ -46,15 +46,36 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._KittingKitVersion == null))
+                if ((this._ProductionSite == null))
                 {
-                    this._KittingKitVersion = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.KittingKitVersion>(GetPath("KittingKitVersion"));
+                    this._ProductionSite = new global::Microsoft.Dynamics.DataEntities.OperationalSiteSingle(this.Context, GetPath("ProductionSite"));
                 }
-                return this._KittingKitVersion;
+                return this._ProductionSite;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.KittingKitVersion> _KittingKitVersion;
+        private global::Microsoft.Dynamics.DataEntities.OperationalSiteSingle _ProductionSite;
+        /// <summary>
+        /// There are no comments for ApprovingWorker in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.WorkerSingle ApprovingWorker
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ApprovingWorker == null))
+                {
+                    this._ApprovingWorker = new global::Microsoft.Dynamics.DataEntities.WorkerSingle(this.Context, GetPath("ApprovingWorker"));
+                }
+                return this._ApprovingWorker;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.WorkerSingle _ApprovingWorker;
         /// <summary>
         /// There are no comments for KittingKitLine in the schema.
         /// </summary>
@@ -98,10 +119,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.KittingKitLine> _KitLines;
         /// <summary>
-        /// There are no comments for ProductionSite in the schema.
+        /// There are no comments for KittingKitVersion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.OperationalSiteSingle ProductionSite
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.KittingKitVersion> KittingKitVersion
         {
             get
             {
@@ -109,40 +130,19 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._ProductionSite == null))
+                if ((this._KittingKitVersion == null))
                 {
-                    this._ProductionSite = new global::Microsoft.Dynamics.DataEntities.OperationalSiteSingle(this.Context, GetPath("ProductionSite"));
+                    this._KittingKitVersion = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.KittingKitVersion>(GetPath("KittingKitVersion"));
                 }
-                return this._ProductionSite;
+                return this._KittingKitVersion;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.OperationalSiteSingle _ProductionSite;
-        /// <summary>
-        /// There are no comments for ApprovingWorker in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.WorkerSingle ApprovingWorker
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ApprovingWorker == null))
-                {
-                    this._ApprovingWorker = new global::Microsoft.Dynamics.DataEntities.WorkerSingle(this.Context, GetPath("ApprovingWorker"));
-                }
-                return this._ApprovingWorker;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.WorkerSingle _ApprovingWorker;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.KittingKitVersion> _KittingKitVersion;
     }
-        /// <summary>
-        /// There are no comments for Kitting_KitHeader in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for Kitting_KitHeader in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// KitId
@@ -168,6 +168,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -190,6 +192,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property KitId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "KitId is required.")]
         public virtual string KitId
         {
             get
@@ -212,6 +216,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property KitName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string KitName
         {
             get
@@ -234,6 +239,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductionSiteId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductionSiteId
         {
             get
@@ -256,6 +262,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductGroupId
         {
             get
@@ -278,6 +285,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ApproverPersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ApproverPersonnelNumber
         {
             get
@@ -300,6 +308,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsApproved in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsApproved
         {
             get
@@ -319,75 +328,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnIsApprovedChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> value);
         partial void OnIsApprovedChanged();
         /// <summary>
-        /// There are no comments for Property KittingKitVersion in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.KittingKitVersion> KittingKitVersion
-        {
-            get
-            {
-                return this._KittingKitVersion;
-            }
-            set
-            {
-                this.OnKittingKitVersionChanging(value);
-                this._KittingKitVersion = value;
-                this.OnKittingKitVersionChanged();
-                this.OnPropertyChanged("KittingKitVersion");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.KittingKitVersion> _KittingKitVersion = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.KittingKitVersion>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnKittingKitVersionChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.KittingKitVersion> value);
-        partial void OnKittingKitVersionChanged();
-        /// <summary>
-        /// There are no comments for Property KittingKitLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.KittingKitLine> KittingKitLine
-        {
-            get
-            {
-                return this._KittingKitLine;
-            }
-            set
-            {
-                this.OnKittingKitLineChanging(value);
-                this._KittingKitLine = value;
-                this.OnKittingKitLineChanged();
-                this.OnPropertyChanged("KittingKitLine");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.KittingKitLine> _KittingKitLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.KittingKitLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnKittingKitLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.KittingKitLine> value);
-        partial void OnKittingKitLineChanged();
-        /// <summary>
-        /// There are no comments for Property KitLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.KittingKitLine> KitLines
-        {
-            get
-            {
-                return this._KitLines;
-            }
-            set
-            {
-                this.OnKitLinesChanging(value);
-                this._KitLines = value;
-                this.OnKitLinesChanged();
-                this.OnPropertyChanged("KitLines");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.KittingKitLine> _KitLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.KittingKitLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnKitLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.KittingKitLine> value);
-        partial void OnKitLinesChanged();
-        /// <summary>
         /// There are no comments for Property ProductionSite in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.OperationalSite ProductionSite
         {
             get
@@ -410,6 +354,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ApprovingWorker in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.Worker ApprovingWorker
         {
             get
@@ -428,6 +373,75 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.Worker _ApprovingWorker;
         partial void OnApprovingWorkerChanging(global::Microsoft.Dynamics.DataEntities.Worker value);
         partial void OnApprovingWorkerChanged();
+        /// <summary>
+        /// There are no comments for Property KittingKitLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.KittingKitLine> KittingKitLine
+        {
+            get
+            {
+                return this._KittingKitLine;
+            }
+            set
+            {
+                this.OnKittingKitLineChanging(value);
+                this._KittingKitLine = value;
+                this.OnKittingKitLineChanged();
+                this.OnPropertyChanged("KittingKitLine");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.KittingKitLine> _KittingKitLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.KittingKitLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnKittingKitLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.KittingKitLine> value);
+        partial void OnKittingKitLineChanged();
+        /// <summary>
+        /// There are no comments for Property KitLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.KittingKitLine> KitLines
+        {
+            get
+            {
+                return this._KitLines;
+            }
+            set
+            {
+                this.OnKitLinesChanging(value);
+                this._KitLines = value;
+                this.OnKitLinesChanged();
+                this.OnPropertyChanged("KitLines");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.KittingKitLine> _KitLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.KittingKitLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnKitLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.KittingKitLine> value);
+        partial void OnKitLinesChanged();
+        /// <summary>
+        /// There are no comments for Property KittingKitVersion in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.KittingKitVersion> KittingKitVersion
+        {
+            get
+            {
+                return this._KittingKitVersion;
+            }
+            set
+            {
+                this.OnKittingKitVersionChanging(value);
+                this._KittingKitVersion = value;
+                this.OnKittingKitVersionChanged();
+                this.OnPropertyChanged("KittingKitVersion");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.KittingKitVersion> _KittingKitVersion = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.KittingKitVersion>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnKittingKitVersionChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.KittingKitVersion> value);
+        partial void OnKittingKitVersionChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

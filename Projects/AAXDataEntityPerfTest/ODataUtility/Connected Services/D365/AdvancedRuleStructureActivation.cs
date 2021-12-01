@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for AdvancedRuleStructureActivationSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AdvancedRuleStructureActivationSingle in the schema.
+    /// </summary>
     public partial class AdvancedRuleStructureActivationSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AdvancedRuleStructureActivation>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructureSingle _LedgerAdvancedRuleStructureActivationEntity_RelatedRole_LedgerAdvancedRuleStructureEntity;
     }
-        /// <summary>
-        /// There are no comments for AdvancedRuleStructureActivation in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AdvancedRuleStructureActivation in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// AdvancedRuleStructure
     /// </KeyProperties>
@@ -87,6 +87,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AdvancedRuleStructure in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AdvancedRuleStructure is required.")]
         public virtual string AdvancedRuleStructure
         {
             get
@@ -109,6 +111,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DoActivate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DoActivate
         {
             get
@@ -131,6 +134,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerAdvancedRuleStructureActivationEntity_RelatedRole_LedgerAdvancedRuleStructureEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LedgerAdvancedRuleStructureActivationEntity_RelatedRole_LedgerAdvancedRuleStructureEntity is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure LedgerAdvancedRuleStructureActivationEntity_RelatedRole_LedgerAdvancedRuleStructureEntity
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for WithholdingTaxCodeValueSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for WithholdingTaxCodeValueSingle in the schema.
+    /// </summary>
     public partial class WithholdingTaxCodeValueSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<WithholdingTaxCodeValue>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.WithholdingTaxCodeSingle _WithholdingTaxCode;
     }
-        /// <summary>
-        /// There are no comments for WithholdingTaxCodeValue in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for WithholdingTaxCodeValue in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// TaxWithholdCodeId
@@ -105,6 +105,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -127,6 +129,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxWithholdCodeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TaxWithholdCodeId is required.")]
         public virtual string TaxWithholdCodeId
         {
             get
@@ -149,6 +153,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FromDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FromDate is required.")]
         public virtual global::System.DateTimeOffset FromDate
         {
             get
@@ -171,6 +177,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ToDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ToDate is required.")]
         public virtual global::System.DateTimeOffset ToDate
         {
             get
@@ -193,6 +201,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Value in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Value is required.")]
         public virtual decimal Value
         {
             get
@@ -215,6 +225,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaximumLimit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MaximumLimit is required.")]
         public virtual decimal MaximumLimit
         {
             get
@@ -237,6 +249,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MinimumLimit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MinimumLimit is required.")]
         public virtual decimal MinimumLimit
         {
             get
@@ -259,6 +273,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExcludePercentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ExcludePercentage is required.")]
         public virtual decimal ExcludePercentage
         {
             get
@@ -281,6 +297,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WithholdingTaxCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.WithholdingTaxCode WithholdingTaxCode
         {
             get

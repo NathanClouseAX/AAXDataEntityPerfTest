@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for PersonUserSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PersonUserSingle in the schema.
+    /// </summary>
     public partial class PersonUserSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PersonUser>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.SystemUserSingle _SystemUserEntities;
     }
-        /// <summary>
-        /// There are no comments for PersonUser in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PersonUser in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// UserId
     /// PartyNumber
@@ -89,6 +89,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UserId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "UserId is required.")]
         public virtual string UserId
         {
             get
@@ -111,6 +113,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PartyNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PartyNumber is required.")]
         public virtual string PartyNumber
         {
             get
@@ -133,6 +137,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidFrom in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValidFrom is required.")]
         public virtual global::System.DateTimeOffset ValidFrom
         {
             get
@@ -155,6 +161,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UserEmail in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string UserEmail
         {
             get
@@ -177,6 +184,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PersonNameAlias in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PersonNameAlias
         {
             get
@@ -199,6 +207,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidTo in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValidTo is required.")]
         public virtual global::System.DateTimeOffset ValidTo
         {
             get
@@ -221,6 +231,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PersonName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PersonName
         {
             get
@@ -243,6 +254,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PersonPrimaryEmail in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PersonPrimaryEmail
         {
             get
@@ -265,6 +277,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SystemUserEntities in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.SystemUser SystemUserEntities
         {
             get

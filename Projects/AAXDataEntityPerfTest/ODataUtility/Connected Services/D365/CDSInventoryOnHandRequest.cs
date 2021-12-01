@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for CDSInventoryOnHandRequestSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CDSInventoryOnHandRequestSingle in the schema.
+    /// </summary>
     public partial class CDSInventoryOnHandRequestSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<CDSInventoryOnHandRequest>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.CDSReleasedDistinctProductSingle _CDSReleasedDistinctProducts;
     }
-        /// <summary>
-        /// There are no comments for CDSInventoryOnHandRequest in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CDSInventoryOnHandRequest in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// RequestId
@@ -115,6 +115,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -137,6 +139,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RequestId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RequestId is required.")]
         public virtual string RequestId
         {
             get
@@ -159,6 +163,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsATPCalculation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsATPCalculation
         {
             get
@@ -181,6 +186,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InventorySiteId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string InventorySiteId
         {
             get
@@ -203,6 +209,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InventoryWarehouseId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string InventoryWarehouseId
         {
             get
@@ -225,6 +232,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OrderQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "OrderQuantity is required.")]
         public virtual decimal OrderQuantity
         {
             get
@@ -247,6 +256,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReferenceNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ReferenceNumber
         {
             get
@@ -269,6 +279,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineCreationSequenceNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LineCreationSequenceNumber is required.")]
         public virtual int LineCreationSequenceNumber
         {
             get
@@ -291,6 +303,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductNumber
         {
             get
@@ -313,6 +326,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CDSInventoryOnHandEntries in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CDSInventoryOnHandEntry> CDSInventoryOnHandEntries
         {
             get
@@ -335,6 +349,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CDSReleasedDistinctProducts in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CDSReleasedDistinctProducts is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.CDSReleasedDistinctProduct CDSReleasedDistinctProducts
         {
             get

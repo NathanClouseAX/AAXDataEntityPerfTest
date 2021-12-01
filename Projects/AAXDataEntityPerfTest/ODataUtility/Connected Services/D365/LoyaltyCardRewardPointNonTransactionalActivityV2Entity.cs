@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for LoyaltyCardRewardPointNonTransactionalActivityV2EntitySingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LoyaltyCardRewardPointNonTransactionalActivityV2EntitySingle in the schema.
+    /// </summary>
     public partial class LoyaltyCardRewardPointNonTransactionalActivityV2EntitySingle : global::Microsoft.OData.Client.DataServiceQuerySingle<LoyaltyCardRewardPointNonTransactionalActivityV2Entity>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.OperatingUnitSingle _OperatingUnit;
     }
-        /// <summary>
-        /// There are no comments for LoyaltyCardRewardPointNonTransactionalActivityV2Entity in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LoyaltyCardRewardPointNonTransactionalActivityV2Entity in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// NonTransactionalActivityId
     /// </KeyProperties>
@@ -114,6 +114,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NonTransactionalActivityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "NonTransactionalActivityId is required.")]
         public virtual string NonTransactionalActivityId
         {
             get
@@ -136,6 +138,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CardNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CardNumber
         {
             get
@@ -158,6 +161,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailAffiliationName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RetailAffiliationName
         {
             get
@@ -180,6 +184,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Status in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailLoyaltyCardRewardPointNonTransactionalActivityStatus> Status
         {
             get
@@ -202,6 +207,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EntryTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EntryTime is required.")]
         public virtual int EntryTime
         {
             get
@@ -224,6 +231,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LoyaltyOtherActivityTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LoyaltyOtherActivityTypeId
         {
             get
@@ -246,6 +254,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EntryDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EntryDate is required.")]
         public virtual global::System.DateTimeOffset EntryDate
         {
             get
@@ -268,6 +278,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ErrorLogs in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ErrorLogs
         {
             get
@@ -290,6 +301,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailAffiliationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetailAffiliationId is required.")]
         public virtual long RetailAffiliationId
         {
             get
@@ -312,6 +325,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OMOperatingUnitNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OMOperatingUnitNumber
         {
             get
@@ -334,6 +348,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailAffiliation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetailAffiliation is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RetailAffiliation RetailAffiliation
         {
             get
@@ -356,6 +372,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OperatingUnit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.OperatingUnit OperatingUnit
         {
             get

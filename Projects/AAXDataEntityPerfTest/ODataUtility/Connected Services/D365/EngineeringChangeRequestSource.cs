@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for EngineeringChangeRequestSourceSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for EngineeringChangeRequestSourceSingle in the schema.
+    /// </summary>
     public partial class EngineeringChangeRequestSourceSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<EngineeringChangeRequestSource>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestHeaderSingle _EngineeringChangeRequestHeader;
     }
-        /// <summary>
-        /// There are no comments for EngineeringChangeRequestSource in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for EngineeringChangeRequestSource in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// EngineeringChangeRequestNumber
     /// </KeyProperties>
@@ -87,6 +87,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngineeringChangeRequestNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EngineeringChangeRequestNumber is required.")]
         public virtual string EngineeringChangeRequestNumber
         {
             get
@@ -109,6 +111,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SourceType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SourceType
         {
             get
@@ -131,6 +134,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SourceLegalEntityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SourceLegalEntityId
         {
             get
@@ -153,6 +157,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SourceTransactionDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SourceTransactionDescription
         {
             get
@@ -175,6 +180,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngineeringChangeRequestHeader in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EngineeringChangeRequestHeader is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestHeader EngineeringChangeRequestHeader
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for HumanResourcesSharedParametersSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for HumanResourcesSharedParametersSingle in the schema.
+    /// </summary>
     public partial class HumanResourcesSharedParametersSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<HumanResourcesSharedParameters>
     {
         /// <summary>
@@ -119,9 +119,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.IdentificationTypeSingle _NationalIdentificationType;
     }
-        /// <summary>
-        /// There are no comments for HumanResourcesSharedParameters in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for HumanResourcesSharedParameters in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// Key
     /// </KeyProperties>
@@ -144,6 +144,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Key in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Key is required.")]
         public virtual int Key
         {
             get
@@ -166,6 +168,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllowCompletedPositionActionDeletion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AllowCompletedPositionActionDeletion
         {
             get
@@ -188,6 +191,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PersonnelActionWorker in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PersonnelActionWorker
         {
             get
@@ -210,6 +214,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TrackADA in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> TrackADA
         {
             get
@@ -232,6 +237,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PersonalIdentificationTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PersonalIdentificationTypeId
         {
             get
@@ -254,6 +260,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllowCompletedWorkerActionDeletion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AllowCompletedWorkerActionDeletion
         {
             get
@@ -276,6 +283,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NationalIdentificationTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string NationalIdentificationTypeId
         {
             get
@@ -298,6 +306,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SocialSecurityNumberIdentificationTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SocialSecurityNumberIdentificationTypeId
         {
             get
@@ -320,6 +329,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VerifyI9EmplEligibility in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> VerifyI9EmplEligibility
         {
             get
@@ -342,6 +352,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AlienIdentificationTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AlienIdentificationTypeId
         {
             get
@@ -364,6 +375,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PositionAvailableForAssignmentDefault in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HcmPositionAvailableForAssignment> PositionAvailableForAssignmentDefault
         {
             get
@@ -386,6 +398,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PersonnelActionPosition in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PersonnelActionPosition
         {
             get
@@ -408,6 +421,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DepartmentMandatoryForPosition in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DepartmentMandatoryForPosition
         {
             get
@@ -430,6 +444,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PSNJobDescriptionLockOnPositionForecast in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PSNJobDescriptionLockOnPositionForecast
         {
             get
@@ -452,6 +467,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PersonalIdentificationType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.IdentificationType PersonalIdentificationType
         {
             get
@@ -474,6 +490,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SocialSecurityNumberIdentificationType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.IdentificationType SocialSecurityNumberIdentificationType
         {
             get
@@ -496,6 +513,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AlienIdentificationType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.IdentificationType AlienIdentificationType
         {
             get
@@ -518,6 +536,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NationalIdentificationType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.IdentificationType NationalIdentificationType
         {
             get

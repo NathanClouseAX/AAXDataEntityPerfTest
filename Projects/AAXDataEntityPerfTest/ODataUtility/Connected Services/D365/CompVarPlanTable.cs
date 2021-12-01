@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for CompVarPlanTableSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CompVarPlanTableSingle in the schema.
+    /// </summary>
     public partial class CompVarPlanTableSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<CompVarPlanTable>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.CurrencySingle _Currency;
     }
-        /// <summary>
-        /// There are no comments for CompVarPlanTable in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CompVarPlanTable in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// PlanId
@@ -136,6 +136,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -158,6 +160,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PlanId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PlanId is required.")]
         public virtual string PlanId
         {
             get
@@ -180,6 +184,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExpirationDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ExpirationDate is required.")]
         public virtual global::System.DateTimeOffset ExpirationDate
         {
             get
@@ -202,6 +208,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VariableCompensationType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VariableCompensationType
         {
             get
@@ -224,6 +231,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -246,6 +254,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LeverageOverObjective in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LeverageOverObjective is required.")]
         public virtual decimal LeverageOverObjective
         {
             get
@@ -268,6 +278,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnitValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "UnitValue is required.")]
         public virtual decimal UnitValue
         {
             get
@@ -290,6 +302,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EnableRecommendation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> EnableRecommendation
         {
             get
@@ -312,6 +325,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnitRelationship in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> UnitRelationship
         {
             get
@@ -334,6 +348,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LeverageToleranceMax in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmCompTolerance> LeverageToleranceMax
         {
             get
@@ -356,6 +371,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LeverageMaximum in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LeverageMaximum is required.")]
         public virtual decimal LeverageMaximum
         {
             get
@@ -378,6 +395,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EnableLevels in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> EnableLevels
         {
             get
@@ -400,6 +418,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LeverageToleranceMin in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmCompTolerance> LeverageToleranceMin
         {
             get
@@ -422,6 +441,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VariableAwardBasis in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmCompVarAwardBasis> VariableAwardBasis
         {
             get
@@ -444,6 +464,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EffectiveDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EffectiveDate is required.")]
         public virtual global::System.DateTimeOffset EffectiveDate
         {
             get
@@ -466,6 +488,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EnableEnrollment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> EnableEnrollment
         {
             get
@@ -488,6 +511,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HireRule in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmCompHireRule> HireRule
         {
             get
@@ -510,6 +534,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Leverage100Percent in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Leverage100Percent is required.")]
         public virtual decimal Leverage100Percent
         {
             get
@@ -532,6 +558,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PercentOfBasis in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PercentOfBasis is required.")]
         public virtual decimal PercentOfBasis
         {
             get
@@ -554,6 +582,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnitCurrencyCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string UnitCurrencyCode
         {
             get
@@ -576,6 +605,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LeverageUnderObjective in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LeverageUnderObjective is required.")]
         public virtual decimal LeverageUnderObjective
         {
             get
@@ -598,6 +629,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VestingRule in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VestingRule
         {
             get
@@ -620,6 +652,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CalculationType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmCompVarPlanCalcType> CalculationType
         {
             get
@@ -642,6 +675,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LeverageMinimum in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LeverageMinimum is required.")]
         public virtual decimal LeverageMinimum
         {
             get
@@ -664,6 +699,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NumberOfUnits in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "NumberOfUnits is required.")]
         public virtual int NumberOfUnits
         {
             get
@@ -686,6 +723,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AwardBasisCalculation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmCompVarPlanAwardBasis> AwardBasisCalculation
         {
             get
@@ -708,6 +746,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CompVarPlanLevel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompVarPlanLevel> CompVarPlanLevel
         {
             get
@@ -730,6 +769,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Currency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.Currency Currency
         {
             get

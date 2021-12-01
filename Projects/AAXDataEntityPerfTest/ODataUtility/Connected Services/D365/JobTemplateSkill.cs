@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for JobTemplateSkillSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for JobTemplateSkillSingle in the schema.
+    /// </summary>
     public partial class JobTemplateSkillSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<JobTemplateSkill>
     {
         /// <summary>
@@ -98,9 +98,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.SkillSingle _Skill;
     }
-        /// <summary>
-        /// There are no comments for JobTemplateSkill in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for JobTemplateSkill in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// JobTemplateId
     /// SkillId
@@ -144,6 +144,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JobTemplateId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "JobTemplateId is required.")]
         public virtual string JobTemplateId
         {
             get
@@ -166,6 +168,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SkillId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SkillId is required.")]
         public virtual string SkillId
         {
             get
@@ -188,6 +192,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LevelId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LevelId
         {
             get
@@ -210,6 +215,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RatingId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RatingId
         {
             get
@@ -232,6 +238,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Importance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmSkillImportance> Importance
         {
             get
@@ -254,6 +261,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JobTemplate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "JobTemplate is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.JobTemplate JobTemplate
         {
             get
@@ -276,6 +285,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RatingLevel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RatingLevel is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RatingLevel RatingLevel
         {
             get
@@ -298,6 +309,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Skill in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Skill is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Skill Skill
         {
             get

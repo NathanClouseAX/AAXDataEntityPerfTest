@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for EngineeringChangeOrderProductBillOfMaterialsHeaderSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for EngineeringChangeOrderProductBillOfMaterialsHeaderSingle in the schema.
+    /// </summary>
     public partial class EngineeringChangeOrderProductBillOfMaterialsHeaderSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<EngineeringChangeOrderProductBillOfMaterialsHeader>
     {
         /// <summary>
@@ -98,9 +98,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.WorkerSingle _ApproverWorker;
     }
-        /// <summary>
-        /// There are no comments for EngineeringChangeOrderProductBillOfMaterialsHeader in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for EngineeringChangeOrderProductBillOfMaterialsHeader in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// EngineeringChangeOrderNumber
@@ -149,6 +149,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -171,6 +173,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngineeringChangeOrderNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EngineeringChangeOrderNumber is required.")]
         public virtual string EngineeringChangeOrderNumber
         {
             get
@@ -193,6 +197,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngineeringChangeOrderProductLineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EngineeringChangeOrderProductLineNumber is required.")]
         public virtual decimal EngineeringChangeOrderProductLineNumber
         {
             get
@@ -215,6 +221,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductionSiteId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductionSiteId is required.")]
         public virtual string ProductionSiteId
         {
             get
@@ -237,6 +245,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BOMId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BOMId is required.")]
         public virtual string BOMId
         {
             get
@@ -259,6 +269,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ApproverPersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ApproverPersonnelNumber
         {
             get
@@ -281,6 +292,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BOMName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BOMName
         {
             get
@@ -303,6 +315,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsApproved in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "IsApproved is required.")]
         public virtual bool IsApproved
         {
             get
@@ -325,6 +339,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngineeringChangeOrderProductBillOfMaterialsLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductBillOfMaterialsLine> EngineeringChangeOrderProductBillOfMaterialsLines
         {
             get
@@ -347,6 +362,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngineeringChangeOrderProduct in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EngineeringChangeOrderProduct is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProduct EngineeringChangeOrderProduct
         {
             get
@@ -369,6 +386,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ApproverWorker in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.Worker ApproverWorker
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for TransferOrderLineSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TransferOrderLineSingle in the schema.
+    /// </summary>
     public partial class TransferOrderLineSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<TransferOrderLine>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.TransferOrderHeaderSingle _TransferOrderHeader;
     }
-        /// <summary>
-        /// There are no comments for TransferOrderLine in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TransferOrderLine in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// TransferOrderNumber
@@ -213,6 +213,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -235,6 +237,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransferOrderNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransferOrderNumber is required.")]
         public virtual string TransferOrderNumber
         {
             get
@@ -257,6 +261,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LineNumber is required.")]
         public virtual decimal LineNumber
         {
             get
@@ -279,6 +285,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IntrastatSpecialMovementCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string IntrastatSpecialMovementCode
         {
             get
@@ -301,6 +308,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ATPTimeFenceDays in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ATPTimeFenceDays is required.")]
         public virtual int ATPTimeFenceDays
         {
             get
@@ -323,6 +332,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllowedUnderdeliveryPercentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AllowedUnderdeliveryPercentage is required.")]
         public virtual decimal AllowedUnderdeliveryPercentage
         {
             get
@@ -345,6 +356,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillProductReceivingCrossDockProducts in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillProductReceivingCrossDockProducts
         {
             get
@@ -367,6 +379,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IntrastatPortId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string IntrastatPortId
         {
             get
@@ -389,6 +402,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OrderedInventoryStatusId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OrderedInventoryStatusId
         {
             get
@@ -411,6 +425,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductStyleId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductStyleId
         {
             get
@@ -433,6 +448,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransferQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransferQuantity is required.")]
         public virtual decimal TransferQuantity
         {
             get
@@ -455,6 +472,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShippingSiteId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ShippingSiteId
         {
             get
@@ -477,6 +495,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineStatus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.InventTransferRemainStatus> LineStatus
         {
             get
@@ -499,6 +518,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ScrappedCatchWeightQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ScrappedCatchWeightQuantity is required.")]
         public virtual decimal ScrappedCatchWeightQuantity
         {
             get
@@ -521,6 +542,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OriginStateId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OriginStateId
         {
             get
@@ -543,6 +565,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IntrastatCommodityCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string IntrastatCommodityCode
         {
             get
@@ -565,6 +588,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShippingWarehouseLocationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ShippingWarehouseLocationId
         {
             get
@@ -587,6 +611,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ItemNumber
         {
             get
@@ -609,6 +634,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReceivingLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ReceivingLedgerDimensionDisplayValue
         {
             get
@@ -631,6 +657,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShippingWarehouseId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ShippingWarehouseId
         {
             get
@@ -653,6 +680,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ATPBackwardDemandTimeFenceDays in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ATPBackwardDemandTimeFenceDays is required.")]
         public virtual int ATPBackwardDemandTimeFenceDays
         {
             get
@@ -675,6 +704,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RequestedReceiptDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RequestedReceiptDate is required.")]
         public virtual global::System.DateTimeOffset RequestedReceiptDate
         {
             get
@@ -697,6 +728,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductSizeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductSizeId
         {
             get
@@ -719,6 +751,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShippingLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ShippingLedgerDimensionDisplayValue
         {
             get
@@ -741,6 +774,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ScrappedQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ScrappedQuantity is required.")]
         public virtual decimal ScrappedQuantity
         {
             get
@@ -763,6 +798,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShippedCatchWeightQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ShippedCatchWeightQuantity is required.")]
         public virtual decimal ShippedCatchWeightQuantity
         {
             get
@@ -785,6 +822,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OverrideFEFODateControl in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> OverrideFEFODateControl
         {
             get
@@ -807,6 +845,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IntrastatTransactionCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string IntrastatTransactionCode
         {
             get
@@ -829,6 +868,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShippedQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ShippedQuantity is required.")]
         public virtual decimal ShippedQuantity
         {
             get
@@ -851,6 +892,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReceivedQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReceivedQuantity is required.")]
         public virtual decimal ReceivedQuantity
         {
             get
@@ -873,6 +916,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IntrastatCostAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "IntrastatCostAmount is required.")]
         public virtual decimal IntrastatCostAmount
         {
             get
@@ -895,6 +940,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ATPDelayedSupplyOffsetDays in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ATPDelayedSupplyOffsetDays is required.")]
         public virtual int ATPDelayedSupplyOffsetDays
         {
             get
@@ -917,6 +964,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IntrastatStatisticalValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "IntrastatStatisticalValue is required.")]
         public virtual decimal IntrastatStatisticalValue
         {
             get
@@ -939,6 +988,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReceivingInventoryLotId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ReceivingInventoryLotId
         {
             get
@@ -961,6 +1011,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShippingInventoryLotId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ShippingInventoryLotId
         {
             get
@@ -983,6 +1034,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RemainingShippedQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RemainingShippedQuantity is required.")]
         public virtual decimal RemainingShippedQuantity
         {
             get
@@ -1005,6 +1058,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RemainingReceivedCatchWeightQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RemainingReceivedCatchWeightQuantity is required.")]
         public virtual decimal RemainingReceivedCatchWeightQuantity
         {
             get
@@ -1027,6 +1082,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OriginCountyId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OriginCountyId
         {
             get
@@ -1049,6 +1105,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IntrastatTransportModeCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string IntrastatTransportModeCode
         {
             get
@@ -1071,6 +1128,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemSerialNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ItemSerialNumber
         {
             get
@@ -1093,6 +1151,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ScrapInventoryLotId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ScrapInventoryLotId
         {
             get
@@ -1115,6 +1174,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductConfigurationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductConfigurationId
         {
             get
@@ -1137,6 +1197,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReceivedCatchWeightQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReceivedCatchWeightQuantity is required.")]
         public virtual decimal ReceivedCatchWeightQuantity
         {
             get
@@ -1159,6 +1221,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransferCatchWeightQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransferCatchWeightQuantity is required.")]
         public virtual decimal TransferCatchWeightQuantity
         {
             get
@@ -1181,6 +1245,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RequestedShippingDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RequestedShippingDate is required.")]
         public virtual global::System.DateTimeOffset RequestedShippingDate
         {
             get
@@ -1203,6 +1269,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductVersionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductVersionId
         {
             get
@@ -1225,6 +1292,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OriginCountryRegionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OriginCountryRegionId
         {
             get
@@ -1247,6 +1315,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllowedOverdeliveryPercentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AllowedOverdeliveryPercentage is required.")]
         public virtual decimal AllowedOverdeliveryPercentage
         {
             get
@@ -1269,6 +1339,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransferOrderPromisingMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.SalesDeliveryDateControlType> TransferOrderPromisingMethod
         {
             get
@@ -1291,6 +1362,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OutboundShipmentPolicy in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.WHSOutboundShipmentPolicy> OutboundShipmentPolicy
         {
             get
@@ -1313,6 +1385,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ATPBackwardSupplyTimeFenceDays in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ATPBackwardSupplyTimeFenceDays is required.")]
         public virtual int ATPBackwardSupplyTimeFenceDays
         {
             get
@@ -1335,6 +1409,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReceivingTransitInventoryLotId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ReceivingTransitInventoryLotId
         {
             get
@@ -1357,6 +1432,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RemainingShippedCatchWeightQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RemainingShippedCatchWeightQuantity is required.")]
         public virtual decimal RemainingShippedCatchWeightQuantity
         {
             get
@@ -1379,6 +1456,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemBatchNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ItemBatchNumber
         {
             get
@@ -1401,6 +1479,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IntrastatStatisticsProcedureCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string IntrastatStatisticsProcedureCode
         {
             get
@@ -1423,6 +1502,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductColorId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductColorId
         {
             get
@@ -1445,6 +1525,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InventoryUnitSymbol in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string InventoryUnitSymbol
         {
             get
@@ -1467,6 +1548,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsAutomaticallyReserved in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsAutomaticallyReserved
         {
             get
@@ -1489,6 +1571,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsATPIncludingPlannedOrders in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "IsATPIncludingPlannedOrders is required.")]
         public virtual bool IsATPIncludingPlannedOrders
         {
             get
@@ -1511,6 +1595,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShippingTransitInventoryLotId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ShippingTransitInventoryLotId
         {
             get
@@ -1533,6 +1618,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RemainingReceivedQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RemainingReceivedQuantity is required.")]
         public virtual decimal RemainingReceivedQuantity
         {
             get
@@ -1555,6 +1642,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ATPDelayedDemandOffsetDays in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ATPDelayedDemandOffsetDays is required.")]
         public virtual int ATPDelayedDemandOffsetDays
         {
             get
@@ -1577,6 +1666,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VATPriceType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PriceType_IN> VATPriceType
         {
             get
@@ -1599,6 +1689,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnitId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string UnitId
         {
             get
@@ -1621,6 +1712,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InventCostPriceCalculated in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "InventCostPriceCalculated is required.")]
         public virtual decimal InventCostPriceCalculated
         {
             get
@@ -1643,6 +1736,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InvntCostPrice in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "InvntCostPrice is required.")]
         public virtual decimal InvntCostPrice
         {
             get
@@ -1665,6 +1760,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VATRetentionCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VATRetentionCode
         {
             get
@@ -1687,6 +1783,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PriceType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PriceType_IN> PriceType
         {
             get
@@ -1709,6 +1806,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxItemGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxItemGroup
         {
             get
@@ -1731,6 +1829,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CurrencyCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CurrencyCode
         {
             get
@@ -1753,6 +1852,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssessableValueTransactionCurrency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AssessableValueTransactionCurrency is required.")]
         public virtual decimal AssessableValueTransactionCurrency
         {
             get
@@ -1775,6 +1876,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultDimension in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DefaultDimension is required.")]
         public virtual long DefaultDimension
         {
             get
@@ -1797,6 +1900,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnitPrice in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "UnitPrice is required.")]
         public virtual decimal UnitPrice
         {
             get
@@ -1819,6 +1924,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Retention in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Retention is required.")]
         public virtual decimal Retention
         {
             get
@@ -1841,6 +1948,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaximumRetailPrice in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MaximumRetailPrice is required.")]
         public virtual decimal MaximumRetailPrice
         {
             get
@@ -1863,6 +1972,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxGroup
         {
             get
@@ -1885,6 +1995,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NetAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "NetAmount is required.")]
         public virtual decimal NetAmount
         {
             get
@@ -1907,6 +2019,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionSet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionSet DimensionSet
         {
             get
@@ -1929,6 +2042,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransferOrderHeader in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransferOrderHeader is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.TransferOrderHeader TransferOrderHeader
         {
             get

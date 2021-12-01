@@ -140,6 +140,26 @@
       <Name>AAXCustCustomerV3EntityMaintain</Name>
       <Link>Security Privileges\AAXCustCustomerV3EntityMaintain</Link>
     </Content>
+    <Content Include="AxSecurityPrivilege\AAXCustCustomerV4EntityMaintain">
+      <SubType>Content</SubType>
+      <Name>AAXCustCustomerV4EntityMaintain</Name>
+      <Link>Security Privileges\AAXCustCustomerV4EntityMaintain</Link>
+    </Content>
+    <Content Include="AxSecurityPrivilege\AAXCustCustomerV4EntityView">
+      <SubType>Content</SubType>
+      <Name>AAXCustCustomerV4EntityView</Name>
+      <Link>Security Privileges\AAXCustCustomerV4EntityView</Link>
+    </Content>
+    <Content Include="AxSecurityPrivilege\AAXCustCustomerV5EntityMaintain">
+      <SubType>Content</SubType>
+      <Name>AAXCustCustomerV5EntityMaintain</Name>
+      <Link>Security Privileges\AAXCustCustomerV5EntityMaintain</Link>
+    </Content>
+    <Content Include="AxSecurityPrivilege\AAXCustCustomerV5EntityView">
+      <SubType>Content</SubType>
+      <Name>AAXCustCustomerV5EntityView</Name>
+      <Link>Security Privileges\AAXCustCustomerV5EntityView</Link>
+    </Content>
     <Content Include="AxSecurityPrivilege\AAXSalesLineEntityMaintain">
       <SubType>Content</SubType>
       <Name>AAXSalesLineEntityMaintain</Name>

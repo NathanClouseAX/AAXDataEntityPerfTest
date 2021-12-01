@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for AssetMaintenanceRequestLifecycleModelSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AssetMaintenanceRequestLifecycleModelSingle in the schema.
+    /// </summary>
     public partial class AssetMaintenanceRequestLifecycleModelSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AssetMaintenanceRequestLifecycleModel>
     {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for AssetMaintenanceRequestLifecycleModelState in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceRequestLifecycleModelState> AssetMaintenanceRequestLifecycleModelState
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._AssetMaintenanceRequestLifecycleModelState == null))
-                {
-                    this._AssetMaintenanceRequestLifecycleModelState = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceRequestLifecycleModelState>(GetPath("AssetMaintenanceRequestLifecycleModelState"));
-                }
-                return this._AssetMaintenanceRequestLifecycleModelState;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceRequestLifecycleModelState> _AssetMaintenanceRequestLifecycleModelState;
-        /// <summary>
         /// There are no comments for AssetMaintenanceRequestType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,10 +55,31 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceRequestType> _AssetMaintenanceRequestType;
-    }
         /// <summary>
-        /// There are no comments for AssetMaintenanceRequestLifecycleModel in the schema.
+        /// There are no comments for AssetMaintenanceRequestLifecycleModelState in the schema.
         /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceRequestLifecycleModelState> AssetMaintenanceRequestLifecycleModelState
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._AssetMaintenanceRequestLifecycleModelState == null))
+                {
+                    this._AssetMaintenanceRequestLifecycleModelState = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceRequestLifecycleModelState>(GetPath("AssetMaintenanceRequestLifecycleModelState"));
+                }
+                return this._AssetMaintenanceRequestLifecycleModelState;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceRequestLifecycleModelState> _AssetMaintenanceRequestLifecycleModelState;
+    }
+    /// <summary>
+    /// There are no comments for AssetMaintenanceRequestLifecycleModel in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// RequestLifecycleModelId
@@ -105,6 +105,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -127,6 +129,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RequestLifecycleModelId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RequestLifecycleModelId is required.")]
         public virtual string RequestLifecycleModelId
         {
             get
@@ -149,6 +153,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Name
         {
             get
@@ -171,6 +176,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReceivedMaintenanceAssetsLifecycleStateId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ReceivedMaintenanceAssetsLifecycleStateId
         {
             get
@@ -193,6 +199,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DeliveredMaintenanceAssetsLifecycleStateId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DeliveredMaintenanceAssetsLifecycleStateId
         {
             get
@@ -212,31 +219,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDeliveredMaintenanceAssetsLifecycleStateIdChanging(string value);
         partial void OnDeliveredMaintenanceAssetsLifecycleStateIdChanged();
         /// <summary>
-        /// There are no comments for Property AssetMaintenanceRequestLifecycleModelState in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceRequestLifecycleModelState> AssetMaintenanceRequestLifecycleModelState
-        {
-            get
-            {
-                return this._AssetMaintenanceRequestLifecycleModelState;
-            }
-            set
-            {
-                this.OnAssetMaintenanceRequestLifecycleModelStateChanging(value);
-                this._AssetMaintenanceRequestLifecycleModelState = value;
-                this.OnAssetMaintenanceRequestLifecycleModelStateChanged();
-                this.OnPropertyChanged("AssetMaintenanceRequestLifecycleModelState");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceRequestLifecycleModelState> _AssetMaintenanceRequestLifecycleModelState = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceRequestLifecycleModelState>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAssetMaintenanceRequestLifecycleModelStateChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceRequestLifecycleModelState> value);
-        partial void OnAssetMaintenanceRequestLifecycleModelStateChanged();
-        /// <summary>
         /// There are no comments for Property AssetMaintenanceRequestType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceRequestType> AssetMaintenanceRequestType
         {
             get
@@ -255,6 +241,29 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceRequestType> _AssetMaintenanceRequestType = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceRequestType>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnAssetMaintenanceRequestTypeChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceRequestType> value);
         partial void OnAssetMaintenanceRequestTypeChanged();
+        /// <summary>
+        /// There are no comments for Property AssetMaintenanceRequestLifecycleModelState in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceRequestLifecycleModelState> AssetMaintenanceRequestLifecycleModelState
+        {
+            get
+            {
+                return this._AssetMaintenanceRequestLifecycleModelState;
+            }
+            set
+            {
+                this.OnAssetMaintenanceRequestLifecycleModelStateChanging(value);
+                this._AssetMaintenanceRequestLifecycleModelState = value;
+                this.OnAssetMaintenanceRequestLifecycleModelStateChanged();
+                this.OnPropertyChanged("AssetMaintenanceRequestLifecycleModelState");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceRequestLifecycleModelState> _AssetMaintenanceRequestLifecycleModelState = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceRequestLifecycleModelState>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnAssetMaintenanceRequestLifecycleModelStateChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceRequestLifecycleModelState> value);
+        partial void OnAssetMaintenanceRequestLifecycleModelStateChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

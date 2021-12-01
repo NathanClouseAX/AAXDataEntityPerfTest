@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for PayStatementAccrualBalanceSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PayStatementAccrualBalanceSingle in the schema.
+    /// </summary>
     public partial class PayStatementAccrualBalanceSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PayStatementAccrualBalance>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.PayStatementHeaderSingle _PayStatementHeader;
     }
-        /// <summary>
-        /// There are no comments for PayStatementAccrualBalance in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PayStatementAccrualBalance in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// PayStatementNumber
@@ -111,6 +111,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -133,6 +135,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayStatementNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PayStatementNumber is required.")]
         public virtual string PayStatementNumber
         {
             get
@@ -155,6 +159,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccrualId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AccrualId is required.")]
         public virtual string AccrualId
         {
             get
@@ -177,6 +183,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TotalAvailableHours in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TotalAvailableHours is required.")]
         public virtual decimal TotalAvailableHours
         {
             get
@@ -199,6 +207,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TotalUsedHours in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TotalUsedHours is required.")]
         public virtual decimal TotalUsedHours
         {
             get
@@ -221,6 +231,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TotalAccruedHours in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TotalAccruedHours is required.")]
         public virtual decimal TotalAccruedHours
         {
             get
@@ -243,6 +255,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccruedHours in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AccruedHours is required.")]
         public virtual decimal AccruedHours
         {
             get
@@ -265,6 +279,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UsedHours in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "UsedHours is required.")]
         public virtual decimal UsedHours
         {
             get
@@ -287,6 +303,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayStatementHeader in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PayStatementHeader is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.PayStatementHeader PayStatementHeader
         {
             get

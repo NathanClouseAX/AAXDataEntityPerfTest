@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ProductReleasePolicyLegalEntityRuleSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ProductReleasePolicyLegalEntityRuleSingle in the schema.
+    /// </summary>
     public partial class ProductReleasePolicyLegalEntityRuleSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ProductReleasePolicyLegalEntityRule>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ProductReleasePolicySingle _ProductReleasePolicy;
     }
-        /// <summary>
-        /// There are no comments for ProductReleasePolicyLegalEntityRule in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ProductReleasePolicyLegalEntityRule in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// LegalEntityId
     /// ProductReleasePolicyName
@@ -90,6 +90,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LegalEntityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LegalEntityId is required.")]
         public virtual string LegalEntityId
         {
             get
@@ -112,6 +114,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductReleasePolicyName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductReleasePolicyName is required.")]
         public virtual string ProductReleasePolicyName
         {
             get
@@ -134,6 +138,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillProductReleaseCopyRouteApproval in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillProductReleaseCopyRouteApproval
         {
             get
@@ -156,6 +161,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillProductReleaseCopyBOMApproval in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillProductReleaseCopyBOMApproval
         {
             get
@@ -178,6 +184,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TemplateBOMId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TemplateBOMId
         {
             get
@@ -200,6 +207,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillProductReleaseCopyRouteActivation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillProductReleaseCopyRouteActivation
         {
             get
@@ -222,6 +230,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TemplateRouteId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TemplateRouteId
         {
             get
@@ -244,6 +253,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillEngineeringChangeOrderImpactedProductSearchAutoRelease in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillEngineeringChangeOrderImpactedProductSearchAutoRelease
         {
             get
@@ -266,6 +276,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TemplateItemNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TemplateItemNumber
         {
             get
@@ -288,6 +299,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillProductReleaseCopyDateEffectivity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillProductReleaseCopyDateEffectivity
         {
             get
@@ -310,6 +322,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillProductReleaseCreateRoute in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillProductReleaseCreateRoute
         {
             get
@@ -332,6 +345,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillProductReleaseCopyBOMActivation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillProductReleaseCopyBOMActivation
         {
             get
@@ -354,6 +368,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillProductReleaseCreateBOM in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillProductReleaseCreateBOM
         {
             get
@@ -376,6 +391,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductReleasePolicy in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductReleasePolicy is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ProductReleasePolicy ProductReleasePolicy
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for BudgetPlanProcessSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BudgetPlanProcessSingle in the schema.
+    /// </summary>
     public partial class BudgetPlanProcessSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<BudgetPlanProcess>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> _BudgetTrackingWorkspaceParametersBudgetPlanProcess;
     }
-        /// <summary>
-        /// There are no comments for BudgetPlanProcess in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BudgetPlanProcess in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// Name
     /// </KeyProperties>
@@ -81,6 +81,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Name is required.")]
         public virtual string Name
         {
             get
@@ -103,6 +105,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountStructure in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccountStructure
         {
             get
@@ -125,6 +128,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OrganizationtHierarchyType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OrganizationtHierarchyType
         {
             get
@@ -147,6 +151,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ApprovalProcessState in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.BudgetPlanningApprovalProcessState> ApprovalProcessState
         {
             get
@@ -169,6 +174,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FiscalCalendarId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FiscalCalendarId
         {
             get
@@ -191,6 +197,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -213,6 +220,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetCycle in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BudgetCycle
         {
             get
@@ -235,6 +243,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetCycleTimeSpan in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BudgetCycleTimeSpan
         {
             get
@@ -257,6 +266,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Ledger in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Ledger
         {
             get
@@ -279,6 +289,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetTrackingWorkspaceParametersBudgetPlanProcess in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> BudgetTrackingWorkspaceParametersBudgetPlanProcess
         {
             get

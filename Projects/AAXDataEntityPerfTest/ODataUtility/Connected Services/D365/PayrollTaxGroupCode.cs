@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for PayrollTaxGroupCodeSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PayrollTaxGroupCodeSingle in the schema.
+    /// </summary>
     public partial class PayrollTaxGroupCodeSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PayrollTaxGroupCode>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.PayrollTaxGroupSingle _TaxGroup;
     }
-        /// <summary>
-        /// There are no comments for PayrollTaxGroupCode in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PayrollTaxGroupCode in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// TaxGroupId
     /// TaxCodeId
@@ -93,6 +93,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TaxGroupId is required.")]
         public virtual string TaxGroupId
         {
             get
@@ -115,6 +117,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxCodeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TaxCodeId is required.")]
         public virtual string TaxCodeId
         {
             get
@@ -137,6 +141,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxCodeCountryRegionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TaxCodeCountryRegionId is required.")]
         public virtual string TaxCodeCountryRegionId
         {
             get
@@ -159,6 +165,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TaxGroup is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.PayrollTaxGroup TaxGroup
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for LocationRoleCDSSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LocationRoleCDSSingle in the schema.
+    /// </summary>
     public partial class LocationRoleCDSSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<LocationRoleCDS>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for LocationRoleCDS in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LocationRoleCDS in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// Purpose
     /// </KeyProperties>
@@ -60,6 +60,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Purpose in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Purpose is required.")]
         public virtual string Purpose
         {
             get
@@ -82,6 +84,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsContactInformation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsContactInformation
         {
             get
@@ -104,6 +107,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsPostalAddress in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsPostalAddress
         {
             get
@@ -126,6 +130,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Type in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.LogisticsLocationRoleType> Type
         {
             get

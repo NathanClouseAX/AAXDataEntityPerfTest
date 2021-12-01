@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RetailStoreHardwareStationSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailStoreHardwareStationSingle in the schema.
+    /// </summary>
     public partial class RetailStoreHardwareStationSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RetailStoreHardwareStation>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.RetailHardwareStationSingle _RetailHardwareStation;
     }
-        /// <summary>
-        /// There are no comments for RetailStoreHardwareStation in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailStoreHardwareStation in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// StoreNumber
     /// EftTerminalId
@@ -137,6 +137,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StoreNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "StoreNumber is required.")]
         public virtual string StoreNumber
         {
             get
@@ -159,6 +161,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EftTerminalId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EftTerminalId is required.")]
         public virtual string EftTerminalId
         {
             get
@@ -181,6 +185,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HostName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "HostName is required.")]
         public virtual string HostName
         {
             get
@@ -203,6 +209,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HardwareProfileId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "HardwareProfileId is required.")]
         public virtual string HardwareProfileId
         {
             get
@@ -225,6 +233,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MergedSelfServicePackageReference in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MergedSelfServicePackageReference is required.")]
         public virtual long MergedSelfServicePackageReference
         {
             get
@@ -247,6 +257,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HardwareStationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string HardwareStationId
         {
             get
@@ -269,6 +280,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SelfServicePackage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SelfServicePackage is required.")]
         public virtual long SelfServicePackage
         {
             get
@@ -291,6 +304,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HardwareStationType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailHardwareStationEnumType> HardwareStationType
         {
             get
@@ -313,6 +327,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -335,6 +350,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CertificateThumbprint in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CertificateThumbprint
         {
             get
@@ -357,6 +373,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Port in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Port is required.")]
         public virtual int Port
         {
             get
@@ -379,6 +397,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailStore in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetailStore is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RetailStore RetailStore
         {
             get
@@ -401,6 +421,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailHardwareStation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetailHardwareStation is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RetailHardwareStation RetailHardwareStation
         {
             get

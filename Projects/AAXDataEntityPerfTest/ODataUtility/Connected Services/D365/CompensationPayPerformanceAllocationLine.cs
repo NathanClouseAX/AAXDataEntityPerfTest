@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for CompensationPayPerformanceAllocationLineSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CompensationPayPerformanceAllocationLineSingle in the schema.
+    /// </summary>
     public partial class CompensationPayPerformanceAllocationLineSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<CompensationPayPerformanceAllocationLine>
     {
         /// <summary>
@@ -98,9 +98,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocationSingle _CompensationPayPerformanceAllocation;
     }
-        /// <summary>
-        /// There are no comments for CompensationPayPerformanceAllocationLine in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CompensationPayPerformanceAllocationLine in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// RatingLevelId
@@ -151,6 +151,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -173,6 +175,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RatingLevelId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RatingLevelId is required.")]
         public virtual string RatingLevelId
         {
             get
@@ -195,6 +199,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllocationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AllocationId is required.")]
         public virtual string AllocationId
         {
             get
@@ -217,6 +223,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PlanType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmCompPlanType> PlanType
         {
             get
@@ -239,6 +246,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RatingModelType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmCompRatingModel> RatingModelType
         {
             get
@@ -261,6 +269,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CompPerfRatingId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CompPerfRatingId is required.")]
         public virtual string CompPerfRatingId
         {
             get
@@ -283,6 +293,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RatingModelId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RatingModelId is required.")]
         public virtual string RatingModelId
         {
             get
@@ -305,6 +317,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PerfFactorPercent in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PerfFactorPercent is required.")]
         public virtual decimal PerfFactorPercent
         {
             get
@@ -327,6 +341,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CompensationPerformanceRating in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.CompensationPerformanceRating CompensationPerformanceRating
         {
             get
@@ -349,6 +364,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RatingLevel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.RatingLevel RatingLevel
         {
             get
@@ -371,6 +387,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CompensationPayPerformanceAllocation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CompensationPayPerformanceAllocation is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.CompensationPayPerformanceAllocation CompensationPayPerformanceAllocation
         {
             get

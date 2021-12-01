@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for BillOfMaterialsHeaderSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BillOfMaterialsHeaderSingle in the schema.
+    /// </summary>
     public partial class BillOfMaterialsHeaderSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<BillOfMaterialsHeader>
     {
         /// <summary>
@@ -77,111 +77,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsLine> _BillOfMaterialsLines;
         /// <summary>
-        /// There are no comments for BillOfMaterialsVersionsV2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersionV2> BillOfMaterialsVersionsV2
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._BillOfMaterialsVersionsV2 == null))
-                {
-                    this._BillOfMaterialsVersionsV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersionV2>(GetPath("BillOfMaterialsVersionsV2"));
-                }
-                return this._BillOfMaterialsVersionsV2;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersionV2> _BillOfMaterialsVersionsV2;
-        /// <summary>
-        /// There are no comments for BillOfMaterialsVersions in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersion> BillOfMaterialsVersions
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._BillOfMaterialsVersions == null))
-                {
-                    this._BillOfMaterialsVersions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersion>(GetPath("BillOfMaterialsVersions"));
-                }
-                return this._BillOfMaterialsVersions;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersion> _BillOfMaterialsVersions;
-        /// <summary>
-        /// There are no comments for BillOfMaterialsLineV3 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsLineV3> BillOfMaterialsLineV3
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._BillOfMaterialsLineV3 == null))
-                {
-                    this._BillOfMaterialsLineV3 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsLineV3>(GetPath("BillOfMaterialsLineV3"));
-                }
-                return this._BillOfMaterialsLineV3;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsLineV3> _BillOfMaterialsLineV3;
-        /// <summary>
-        /// There are no comments for BillOfMaterialsLines3 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsLineV3> BillOfMaterialsLines3
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._BillOfMaterialsLines3 == null))
-                {
-                    this._BillOfMaterialsLines3 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsLineV3>(GetPath("BillOfMaterialsLines3"));
-                }
-                return this._BillOfMaterialsLines3;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsLineV3> _BillOfMaterialsLines3;
-        /// <summary>
-        /// There are no comments for PlannedOrders in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PlannedOrder> PlannedOrders
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._PlannedOrders == null))
-                {
-                    this._PlannedOrders = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PlannedOrder>(GetPath("PlannedOrders"));
-                }
-                return this._PlannedOrders;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PlannedOrder> _PlannedOrders;
-        /// <summary>
         /// There are no comments for BillOfMaterialsLineV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -244,10 +139,115 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SupplyForecastEntry> _SupplyForecastEntries;
-    }
         /// <summary>
-        /// There are no comments for BillOfMaterialsHeader in the schema.
+        /// There are no comments for BillOfMaterialsVersions in the schema.
         /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersion> BillOfMaterialsVersions
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._BillOfMaterialsVersions == null))
+                {
+                    this._BillOfMaterialsVersions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersion>(GetPath("BillOfMaterialsVersions"));
+                }
+                return this._BillOfMaterialsVersions;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersion> _BillOfMaterialsVersions;
+        /// <summary>
+        /// There are no comments for PlannedOrders in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PlannedOrder> PlannedOrders
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._PlannedOrders == null))
+                {
+                    this._PlannedOrders = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PlannedOrder>(GetPath("PlannedOrders"));
+                }
+                return this._PlannedOrders;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PlannedOrder> _PlannedOrders;
+        /// <summary>
+        /// There are no comments for BillOfMaterialsVersionsV2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersionODataV2> BillOfMaterialsVersionsV2
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._BillOfMaterialsVersionsV2 == null))
+                {
+                    this._BillOfMaterialsVersionsV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersionODataV2>(GetPath("BillOfMaterialsVersionsV2"));
+                }
+                return this._BillOfMaterialsVersionsV2;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersionODataV2> _BillOfMaterialsVersionsV2;
+        /// <summary>
+        /// There are no comments for BillOfMaterialsLineV3 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsLineV3> BillOfMaterialsLineV3
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._BillOfMaterialsLineV3 == null))
+                {
+                    this._BillOfMaterialsLineV3 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsLineV3>(GetPath("BillOfMaterialsLineV3"));
+                }
+                return this._BillOfMaterialsLineV3;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsLineV3> _BillOfMaterialsLineV3;
+        /// <summary>
+        /// There are no comments for BillOfMaterialsLines3 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsLineV3> BillOfMaterialsLines3
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._BillOfMaterialsLines3 == null))
+                {
+                    this._BillOfMaterialsLines3 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsLineV3>(GetPath("BillOfMaterialsLines3"));
+                }
+                return this._BillOfMaterialsLines3;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsLineV3> _BillOfMaterialsLines3;
+    }
+    /// <summary>
+    /// There are no comments for BillOfMaterialsHeader in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// BOMId
@@ -275,6 +275,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -297,6 +299,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BOMId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BOMId is required.")]
         public virtual string BOMId
         {
             get
@@ -319,6 +323,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductionSiteId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductionSiteId
         {
             get
@@ -341,6 +346,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductGroupId
         {
             get
@@ -363,6 +369,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ApproverPersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ApproverPersonnelNumber
         {
             get
@@ -385,6 +392,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BOMName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BOMName
         {
             get
@@ -407,6 +415,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsApproved in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsApproved
         {
             get
@@ -429,6 +438,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngChgReleasedProductVersion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EngChgReleasedProductVersion is required.")]
         public virtual long EngChgReleasedProductVersion
         {
             get
@@ -451,6 +462,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngineeringVersionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string EngineeringVersionId
         {
             get
@@ -473,6 +485,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngChgEngineeringBomReference in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string EngChgEngineeringBomReference
         {
             get
@@ -495,6 +508,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngChgDisplayProductNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string EngChgDisplayProductNumber
         {
             get
@@ -517,6 +531,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BillOfMaterialsLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsLine> BillOfMaterialsLine
         {
             get
@@ -539,6 +554,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BillOfMaterialsLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsLine> BillOfMaterialsLines
         {
             get
@@ -558,119 +574,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnBillOfMaterialsLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsLine> value);
         partial void OnBillOfMaterialsLinesChanged();
         /// <summary>
-        /// There are no comments for Property BillOfMaterialsVersionsV2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersionV2> BillOfMaterialsVersionsV2
-        {
-            get
-            {
-                return this._BillOfMaterialsVersionsV2;
-            }
-            set
-            {
-                this.OnBillOfMaterialsVersionsV2Changing(value);
-                this._BillOfMaterialsVersionsV2 = value;
-                this.OnBillOfMaterialsVersionsV2Changed();
-                this.OnPropertyChanged("BillOfMaterialsVersionsV2");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersionV2> _BillOfMaterialsVersionsV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersionV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnBillOfMaterialsVersionsV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersionV2> value);
-        partial void OnBillOfMaterialsVersionsV2Changed();
-        /// <summary>
-        /// There are no comments for Property BillOfMaterialsVersions in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersion> BillOfMaterialsVersions
-        {
-            get
-            {
-                return this._BillOfMaterialsVersions;
-            }
-            set
-            {
-                this.OnBillOfMaterialsVersionsChanging(value);
-                this._BillOfMaterialsVersions = value;
-                this.OnBillOfMaterialsVersionsChanged();
-                this.OnPropertyChanged("BillOfMaterialsVersions");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersion> _BillOfMaterialsVersions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersion>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnBillOfMaterialsVersionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersion> value);
-        partial void OnBillOfMaterialsVersionsChanged();
-        /// <summary>
-        /// There are no comments for Property BillOfMaterialsLineV3 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsLineV3> BillOfMaterialsLineV3
-        {
-            get
-            {
-                return this._BillOfMaterialsLineV3;
-            }
-            set
-            {
-                this.OnBillOfMaterialsLineV3Changing(value);
-                this._BillOfMaterialsLineV3 = value;
-                this.OnBillOfMaterialsLineV3Changed();
-                this.OnPropertyChanged("BillOfMaterialsLineV3");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsLineV3> _BillOfMaterialsLineV3 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsLineV3>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnBillOfMaterialsLineV3Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsLineV3> value);
-        partial void OnBillOfMaterialsLineV3Changed();
-        /// <summary>
-        /// There are no comments for Property BillOfMaterialsLines3 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsLineV3> BillOfMaterialsLines3
-        {
-            get
-            {
-                return this._BillOfMaterialsLines3;
-            }
-            set
-            {
-                this.OnBillOfMaterialsLines3Changing(value);
-                this._BillOfMaterialsLines3 = value;
-                this.OnBillOfMaterialsLines3Changed();
-                this.OnPropertyChanged("BillOfMaterialsLines3");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsLineV3> _BillOfMaterialsLines3 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsLineV3>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnBillOfMaterialsLines3Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsLineV3> value);
-        partial void OnBillOfMaterialsLines3Changed();
-        /// <summary>
-        /// There are no comments for Property PlannedOrders in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PlannedOrder> PlannedOrders
-        {
-            get
-            {
-                return this._PlannedOrders;
-            }
-            set
-            {
-                this.OnPlannedOrdersChanging(value);
-                this._PlannedOrders = value;
-                this.OnPlannedOrdersChanged();
-                this.OnPropertyChanged("PlannedOrders");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PlannedOrder> _PlannedOrders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PlannedOrder>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPlannedOrdersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PlannedOrder> value);
-        partial void OnPlannedOrdersChanged();
-        /// <summary>
         /// There are no comments for Property BillOfMaterialsLineV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsLineV2> BillOfMaterialsLineV2
         {
             get
@@ -693,6 +600,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BillOfMaterialsVersionsV3 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersionV3> BillOfMaterialsVersionsV3
         {
             get
@@ -715,6 +623,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SupplyForecastEntries in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SupplyForecastEntry> SupplyForecastEntries
         {
             get
@@ -733,6 +642,121 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SupplyForecastEntry> _SupplyForecastEntries = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SupplyForecastEntry>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnSupplyForecastEntriesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SupplyForecastEntry> value);
         partial void OnSupplyForecastEntriesChanged();
+        /// <summary>
+        /// There are no comments for Property BillOfMaterialsVersions in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersion> BillOfMaterialsVersions
+        {
+            get
+            {
+                return this._BillOfMaterialsVersions;
+            }
+            set
+            {
+                this.OnBillOfMaterialsVersionsChanging(value);
+                this._BillOfMaterialsVersions = value;
+                this.OnBillOfMaterialsVersionsChanged();
+                this.OnPropertyChanged("BillOfMaterialsVersions");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersion> _BillOfMaterialsVersions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersion>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnBillOfMaterialsVersionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersion> value);
+        partial void OnBillOfMaterialsVersionsChanged();
+        /// <summary>
+        /// There are no comments for Property PlannedOrders in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PlannedOrder> PlannedOrders
+        {
+            get
+            {
+                return this._PlannedOrders;
+            }
+            set
+            {
+                this.OnPlannedOrdersChanging(value);
+                this._PlannedOrders = value;
+                this.OnPlannedOrdersChanged();
+                this.OnPropertyChanged("PlannedOrders");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PlannedOrder> _PlannedOrders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PlannedOrder>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPlannedOrdersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PlannedOrder> value);
+        partial void OnPlannedOrdersChanged();
+        /// <summary>
+        /// There are no comments for Property BillOfMaterialsVersionsV2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersionODataV2> BillOfMaterialsVersionsV2
+        {
+            get
+            {
+                return this._BillOfMaterialsVersionsV2;
+            }
+            set
+            {
+                this.OnBillOfMaterialsVersionsV2Changing(value);
+                this._BillOfMaterialsVersionsV2 = value;
+                this.OnBillOfMaterialsVersionsV2Changed();
+                this.OnPropertyChanged("BillOfMaterialsVersionsV2");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersionODataV2> _BillOfMaterialsVersionsV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersionODataV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnBillOfMaterialsVersionsV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersionODataV2> value);
+        partial void OnBillOfMaterialsVersionsV2Changed();
+        /// <summary>
+        /// There are no comments for Property BillOfMaterialsLineV3 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsLineV3> BillOfMaterialsLineV3
+        {
+            get
+            {
+                return this._BillOfMaterialsLineV3;
+            }
+            set
+            {
+                this.OnBillOfMaterialsLineV3Changing(value);
+                this._BillOfMaterialsLineV3 = value;
+                this.OnBillOfMaterialsLineV3Changed();
+                this.OnPropertyChanged("BillOfMaterialsLineV3");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsLineV3> _BillOfMaterialsLineV3 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsLineV3>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnBillOfMaterialsLineV3Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsLineV3> value);
+        partial void OnBillOfMaterialsLineV3Changed();
+        /// <summary>
+        /// There are no comments for Property BillOfMaterialsLines3 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsLineV3> BillOfMaterialsLines3
+        {
+            get
+            {
+                return this._BillOfMaterialsLines3;
+            }
+            set
+            {
+                this.OnBillOfMaterialsLines3Changing(value);
+                this._BillOfMaterialsLines3 = value;
+                this.OnBillOfMaterialsLines3Changed();
+                this.OnPropertyChanged("BillOfMaterialsLines3");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsLineV3> _BillOfMaterialsLines3 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsLineV3>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnBillOfMaterialsLines3Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsLineV3> value);
+        partial void OnBillOfMaterialsLines3Changed();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

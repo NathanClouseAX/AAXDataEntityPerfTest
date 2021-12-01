@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RetailVisualProfileSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailVisualProfileSingle in the schema.
+    /// </summary>
     public partial class RetailVisualProfileSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RetailVisualProfile>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTerminal> _RetailTerminal;
     }
-        /// <summary>
-        /// There are no comments for RetailVisualProfile in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailVisualProfile in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// ProfileId
     /// </KeyProperties>
@@ -99,6 +99,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProfileId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProfileId is required.")]
         public virtual string ProfileId
         {
             get
@@ -121,6 +123,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DesignAllowedOnPos in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DesignAllowedOnPos
         {
             get
@@ -143,6 +146,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PictureIdPortrait in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PictureIdPortrait is required.")]
         public virtual int PictureIdPortrait
         {
             get
@@ -165,6 +170,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FontScheme in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailFontScheme> FontScheme
         {
             get
@@ -187,6 +193,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Name
         {
             get
@@ -209,6 +216,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HideCursor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> HideCursor
         {
             get
@@ -231,6 +239,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FullScreenMode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> FullScreenMode
         {
             get
@@ -253,6 +262,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BackgroundPictureId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BackgroundPictureId is required.")]
         public virtual int BackgroundPictureId
         {
             get
@@ -275,6 +286,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ScreenWidth in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ScreenWidth is required.")]
         public virtual int ScreenWidth
         {
             get
@@ -297,6 +310,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PictureId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PictureId is required.")]
         public virtual int PictureId
         {
             get
@@ -319,6 +334,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property POSSkinName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string POSSkinName
         {
             get
@@ -341,6 +357,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Pallet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Pallet
         {
             get
@@ -363,6 +380,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShowApplicationBarLabel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ShowApplicationBarLabel
         {
             get
@@ -385,6 +403,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ScreenHeight in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ScreenHeight is required.")]
         public virtual int ScreenHeight
         {
             get
@@ -407,6 +427,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShowDateTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ShowDateTime
         {
             get
@@ -429,6 +450,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailDeviceTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetailDeviceTypeId is required.")]
         public virtual int RetailDeviceTypeId
         {
             get
@@ -451,6 +474,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SkinFile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual byte[] SkinFile
         {
             get
@@ -473,6 +497,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailTerminal in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTerminal> RetailTerminal
         {
             get

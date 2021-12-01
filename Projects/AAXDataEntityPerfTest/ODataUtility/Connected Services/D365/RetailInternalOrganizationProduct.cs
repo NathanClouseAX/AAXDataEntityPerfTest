@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RetailInternalOrganizationProductSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailInternalOrganizationProductSingle in the schema.
+    /// </summary>
     public partial class RetailInternalOrganizationProductSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RetailInternalOrganizationProduct>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailInternalOrganizationProductAttributeValue2> _RetailInternalOrganizationProductAttributeValue2;
     }
-        /// <summary>
-        /// There are no comments for RetailInternalOrganizationProduct in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailInternalOrganizationProduct in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// PartyNumber
     /// DisplayProductNumber
@@ -84,6 +84,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PartyNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PartyNumber is required.")]
         public virtual string PartyNumber
         {
             get
@@ -106,6 +108,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisplayProductNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DisplayProductNumber is required.")]
         public virtual string DisplayProductNumber
         {
             get
@@ -128,6 +132,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailInternalOrganizationProductAttributeValue2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailInternalOrganizationProductAttributeValue2> RetailInternalOrganizationProductAttributeValue2
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for FixedAssetPostingProfileSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for FixedAssetPostingProfileSingle in the schema.
+    /// </summary>
     public partial class FixedAssetPostingProfileSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<FixedAssetPostingProfile>
     {
         /// <summary>
@@ -34,6 +34,27 @@ namespace Microsoft.Dynamics.DataEntities
         public FixedAssetPostingProfileSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<FixedAssetPostingProfile> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for AssetParameter in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.AssetParameterSingle AssetParameter
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._AssetParameter == null))
+                {
+                    this._AssetParameter = new global::Microsoft.Dynamics.DataEntities.AssetParameterSingle(this.Context, GetPath("AssetParameter"));
+                }
+                return this._AssetParameter;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.AssetParameterSingle _AssetParameter;
         /// <summary>
         /// There are no comments for DimensionCombination in the schema.
         /// </summary>
@@ -118,31 +139,10 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.FixedAssetSingle _AssetPostingProfileAssetNumber;
-        /// <summary>
-        /// There are no comments for AssetParameter in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.AssetParameterSingle AssetParameter
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._AssetParameter == null))
-                {
-                    this._AssetParameter = new global::Microsoft.Dynamics.DataEntities.AssetParameterSingle(this.Context, GetPath("AssetParameter"));
-                }
-                return this._AssetParameter;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.AssetParameterSingle _AssetParameter;
     }
-        /// <summary>
-        /// There are no comments for FixedAssetPostingProfile in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for FixedAssetPostingProfile in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// PostingProfileId
@@ -182,6 +182,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -204,6 +206,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostingProfileId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PostingProfileId is required.")]
         public virtual string PostingProfileId
         {
             get
@@ -226,6 +230,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetTransType> TransactionType
         {
             get
@@ -248,6 +253,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValueModelId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValueModelId is required.")]
         public virtual string ValueModelId
         {
             get
@@ -270,6 +277,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountGroupings in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TableGroupAll> AccountGroupings
         {
             get
@@ -292,6 +300,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountRelation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AccountRelation is required.")]
         public virtual string AccountRelation
         {
             get
@@ -314,6 +324,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllocationRuleId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AllocationRuleId
         {
             get
@@ -336,6 +347,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MainAccountIdDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MainAccountIdDisplayValue
         {
             get
@@ -358,6 +370,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -380,6 +393,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OffsetMainAccountIdDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OffsetMainAccountIdDisplayValue
         {
             get
@@ -399,9 +413,33 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnOffsetMainAccountIdDisplayValueChanging(string value);
         partial void OnOffsetMainAccountIdDisplayValueChanged();
         /// <summary>
+        /// There are no comments for Property AssetParameter in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.Dynamics.DataEntities.AssetParameter AssetParameter
+        {
+            get
+            {
+                return this._AssetParameter;
+            }
+            set
+            {
+                this.OnAssetParameterChanging(value);
+                this._AssetParameter = value;
+                this.OnAssetParameterChanged();
+                this.OnPropertyChanged("AssetParameter");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.AssetParameter _AssetParameter;
+        partial void OnAssetParameterChanging(global::Microsoft.Dynamics.DataEntities.AssetParameter value);
+        partial void OnAssetParameterChanged();
+        /// <summary>
         /// There are no comments for Property DimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination DimensionCombination
         {
             get
@@ -424,6 +462,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetPostingProfileAssetGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.FixedAssetGroup AssetPostingProfileAssetGroup
         {
             get
@@ -446,6 +485,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetPostingProfileValueModel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AssetPostingProfileValueModel is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ValueModelSetup AssetPostingProfileValueModel
         {
             get
@@ -468,6 +509,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetPostingProfileAssetNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.FixedAsset AssetPostingProfileAssetNumber
         {
             get
@@ -486,28 +528,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.FixedAsset _AssetPostingProfileAssetNumber;
         partial void OnAssetPostingProfileAssetNumberChanging(global::Microsoft.Dynamics.DataEntities.FixedAsset value);
         partial void OnAssetPostingProfileAssetNumberChanged();
-        /// <summary>
-        /// There are no comments for Property AssetParameter in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.AssetParameter AssetParameter
-        {
-            get
-            {
-                return this._AssetParameter;
-            }
-            set
-            {
-                this.OnAssetParameterChanging(value);
-                this._AssetParameter = value;
-                this.OnAssetParameterChanged();
-                this.OnPropertyChanged("AssetParameter");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.AssetParameter _AssetParameter;
-        partial void OnAssetParameterChanging(global::Microsoft.Dynamics.DataEntities.AssetParameter value);
-        partial void OnAssetParameterChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

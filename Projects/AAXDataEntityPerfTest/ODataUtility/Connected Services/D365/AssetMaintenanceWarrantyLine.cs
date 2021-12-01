@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for AssetMaintenanceWarrantyLineSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AssetMaintenanceWarrantyLineSingle in the schema.
+    /// </summary>
     public partial class AssetMaintenanceWarrantyLineSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AssetMaintenanceWarrantyLine>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.AssetMaintenanceWarrantySingle _AssetMaintenanceWarranty;
     }
-        /// <summary>
-        /// There are no comments for AssetMaintenanceWarrantyLine in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AssetMaintenanceWarrantyLine in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// WarrantyId
@@ -102,6 +102,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -124,6 +126,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WarrantyId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WarrantyId is required.")]
         public virtual string WarrantyId
         {
             get
@@ -146,6 +150,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LineNumber is required.")]
         public virtual decimal LineNumber
         {
             get
@@ -168,6 +174,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Percent in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Percent is required.")]
         public virtual decimal Percent
         {
             get
@@ -190,6 +198,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Interval in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Interval is required.")]
         public virtual int Interval
         {
             get
@@ -212,6 +222,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Period in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.DayWeekMonthQuarterYear> Period
         {
             get
@@ -234,6 +245,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetMaintenanceWarranty in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AssetMaintenanceWarranty is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.AssetMaintenanceWarranty AssetMaintenanceWarranty
         {
             get

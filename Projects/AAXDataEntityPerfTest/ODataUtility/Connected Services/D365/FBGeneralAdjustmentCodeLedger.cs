@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for FBGeneralAdjustmentCodeLedgerSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for FBGeneralAdjustmentCodeLedgerSingle in the schema.
+    /// </summary>
     public partial class FBGeneralAdjustmentCodeLedgerSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<FBGeneralAdjustmentCodeLedger>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _DimensionCombination;
     }
-        /// <summary>
-        /// There are no comments for FBGeneralAdjustmentCodeLedger in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for FBGeneralAdjustmentCodeLedger in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// FBGeneralAdjustmentCodeIdentification
     /// Company
@@ -84,6 +84,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FBGeneralAdjustmentCodeIdentification in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FBGeneralAdjustmentCodeIdentification is required.")]
         public virtual string FBGeneralAdjustmentCodeIdentification
         {
             get
@@ -106,6 +108,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Company in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Company is required.")]
         public virtual string Company
         {
             get
@@ -128,6 +132,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LedgerDimensionDisplayValue
         {
             get
@@ -150,6 +155,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxCode
         {
             get
@@ -172,6 +178,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination DimensionCombination
         {
             get

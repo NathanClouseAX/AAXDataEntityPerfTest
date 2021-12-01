@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for CustomerAttachmentSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CustomerAttachmentSingle in the schema.
+    /// </summary>
     public partial class CustomerAttachmentSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<CustomerAttachment>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.CustomerV3Single _CustomerAttachmentsEntity;
     }
-        /// <summary>
-        /// There are no comments for CustomerAttachment in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CustomerAttachment in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// DocumentId
@@ -90,6 +90,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -112,6 +114,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DocumentId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DocumentId is required.")]
         public virtual global::System.Guid DocumentId
         {
             get
@@ -134,6 +138,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FileContents in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual byte[] FileContents
         {
             get
@@ -156,6 +161,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FileType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FileType
         {
             get
@@ -178,6 +184,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Name
         {
             get
@@ -200,6 +207,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TypeId
         {
             get
@@ -222,6 +230,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Restriction in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.DocuRestriction> Restriction
         {
             get
@@ -244,6 +253,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Notes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Notes
         {
             get
@@ -266,6 +276,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FileName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FileName
         {
             get
@@ -288,6 +299,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CustomerAccountNumber
         {
             get
@@ -310,6 +322,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultAttachment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DefaultAttachment
         {
             get
@@ -332,6 +345,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerAttachmentsEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CustomerAttachmentsEntity is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.CustomerV3 CustomerAttachmentsEntity
         {
             get

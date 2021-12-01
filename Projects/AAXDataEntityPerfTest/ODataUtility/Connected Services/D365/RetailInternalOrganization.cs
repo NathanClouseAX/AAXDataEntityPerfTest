@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RetailInternalOrganizationSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailInternalOrganizationSingle in the schema.
+    /// </summary>
     public partial class RetailInternalOrganizationSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RetailInternalOrganization>
     {
         /// <summary>
@@ -34,6 +34,27 @@ namespace Microsoft.Dynamics.DataEntities
         public RetailInternalOrganizationSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<RetailInternalOrganization> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for RetailCatalogInternalOrganizationProductAttributeValue2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalogInternalOrganizationProductAttributeValue2> RetailCatalogInternalOrganizationProductAttributeValue2
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RetailCatalogInternalOrganizationProductAttributeValue2 == null))
+                {
+                    this._RetailCatalogInternalOrganizationProductAttributeValue2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalogInternalOrganizationProductAttributeValue2>(GetPath("RetailCatalogInternalOrganizationProductAttributeValue2"));
+                }
+                return this._RetailCatalogInternalOrganizationProductAttributeValue2;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalogInternalOrganizationProductAttributeValue2> _RetailCatalogInternalOrganizationProductAttributeValue2;
         /// <summary>
         /// There are no comments for RetailInternalOrganizationAttributeGroup in the schema.
         /// </summary>
@@ -77,27 +98,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailInternalOrganizationProductAttributeValue> _RetailInternalOrganizationProductAttributeValue;
         /// <summary>
-        /// There are no comments for RetailCatalogInternalOrganizationProductAttributeValue2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalogInternalOrganizationProductAttributeValue2> RetailCatalogInternalOrganizationProductAttributeValue2
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._RetailCatalogInternalOrganizationProductAttributeValue2 == null))
-                {
-                    this._RetailCatalogInternalOrganizationProductAttributeValue2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalogInternalOrganizationProductAttributeValue2>(GetPath("RetailCatalogInternalOrganizationProductAttributeValue2"));
-                }
-                return this._RetailCatalogInternalOrganizationProductAttributeValue2;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailCatalogInternalOrganizationProductAttributeValue2> _RetailCatalogInternalOrganizationProductAttributeValue2;
-        /// <summary>
         /// There are no comments for RetailInternalOrganizationProductAttributeValue2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -119,9 +119,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailInternalOrganizationProductAttributeValue2> _RetailInternalOrganizationProductAttributeValue2;
     }
-        /// <summary>
-        /// There are no comments for RetailInternalOrganization in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailInternalOrganization in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// PartyNumber
     /// </KeyProperties>
@@ -144,6 +144,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PartyNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PartyNumber is required.")]
         public virtual string PartyNumber
         {
             get
@@ -166,6 +168,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InheritEnabled in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> InheritEnabled
         {
             get
@@ -188,6 +191,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OrganizationName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OrganizationName
         {
             get
@@ -210,6 +214,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CategoryHierarchyName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CategoryHierarchyName
         {
             get
@@ -229,9 +234,33 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnCategoryHierarchyNameChanging(string value);
         partial void OnCategoryHierarchyNameChanged();
         /// <summary>
+        /// There are no comments for Property RetailCatalogInternalOrganizationProductAttributeValue2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogInternalOrganizationProductAttributeValue2> RetailCatalogInternalOrganizationProductAttributeValue2
+        {
+            get
+            {
+                return this._RetailCatalogInternalOrganizationProductAttributeValue2;
+            }
+            set
+            {
+                this.OnRetailCatalogInternalOrganizationProductAttributeValue2Changing(value);
+                this._RetailCatalogInternalOrganizationProductAttributeValue2 = value;
+                this.OnRetailCatalogInternalOrganizationProductAttributeValue2Changed();
+                this.OnPropertyChanged("RetailCatalogInternalOrganizationProductAttributeValue2");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogInternalOrganizationProductAttributeValue2> _RetailCatalogInternalOrganizationProductAttributeValue2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogInternalOrganizationProductAttributeValue2>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRetailCatalogInternalOrganizationProductAttributeValue2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogInternalOrganizationProductAttributeValue2> value);
+        partial void OnRetailCatalogInternalOrganizationProductAttributeValue2Changed();
+        /// <summary>
         /// There are no comments for Property RetailInternalOrganizationAttributeGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailInternalOrganizationAttributeGroup> RetailInternalOrganizationAttributeGroup
         {
             get
@@ -254,6 +283,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailInternalOrganizationProductAttributeValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailInternalOrganizationProductAttributeValue> RetailInternalOrganizationProductAttributeValue
         {
             get
@@ -273,31 +303,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnRetailInternalOrganizationProductAttributeValueChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailInternalOrganizationProductAttributeValue> value);
         partial void OnRetailInternalOrganizationProductAttributeValueChanged();
         /// <summary>
-        /// There are no comments for Property RetailCatalogInternalOrganizationProductAttributeValue2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogInternalOrganizationProductAttributeValue2> RetailCatalogInternalOrganizationProductAttributeValue2
-        {
-            get
-            {
-                return this._RetailCatalogInternalOrganizationProductAttributeValue2;
-            }
-            set
-            {
-                this.OnRetailCatalogInternalOrganizationProductAttributeValue2Changing(value);
-                this._RetailCatalogInternalOrganizationProductAttributeValue2 = value;
-                this.OnRetailCatalogInternalOrganizationProductAttributeValue2Changed();
-                this.OnPropertyChanged("RetailCatalogInternalOrganizationProductAttributeValue2");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogInternalOrganizationProductAttributeValue2> _RetailCatalogInternalOrganizationProductAttributeValue2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogInternalOrganizationProductAttributeValue2>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRetailCatalogInternalOrganizationProductAttributeValue2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailCatalogInternalOrganizationProductAttributeValue2> value);
-        partial void OnRetailCatalogInternalOrganizationProductAttributeValue2Changed();
-        /// <summary>
         /// There are no comments for Property RetailInternalOrganizationProductAttributeValue2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailInternalOrganizationProductAttributeValue2> RetailInternalOrganizationProductAttributeValue2
         {
             get

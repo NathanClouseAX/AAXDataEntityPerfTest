@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ServiceOrderHeaderSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ServiceOrderHeaderSingle in the schema.
+    /// </summary>
     public partial class ServiceOrderHeaderSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ServiceOrderHeader>
     {
         /// <summary>
@@ -161,9 +161,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.CustomerV3Single _ServiceCustomer;
     }
-        /// <summary>
-        /// There are no comments for ServiceOrderHeader in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ServiceOrderHeader in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// ServiceOrderNumber
@@ -219,6 +219,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -241,6 +243,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceOrderNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ServiceOrderNumber is required.")]
         public virtual string ServiceOrderNumber
         {
             get
@@ -263,6 +267,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceAddressCity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ServiceAddressCity
         {
             get
@@ -285,6 +290,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ContactPersonId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ContactPersonId
         {
             get
@@ -307,6 +313,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FormattedServiceAddress in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FormattedServiceAddress
         {
             get
@@ -329,6 +336,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceAddressBuildingCompliment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ServiceAddressBuildingCompliment
         {
             get
@@ -351,6 +359,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceAddressLatitude in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ServiceAddressLatitude is required.")]
         public virtual decimal ServiceAddressLatitude
         {
             get
@@ -373,6 +383,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceAddressZipCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ServiceAddressZipCode
         {
             get
@@ -395,6 +406,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HasCalendarConflict in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> HasCalendarConflict
         {
             get
@@ -417,6 +429,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceOrderSignOffDateTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ServiceOrderSignOffDateTime is required.")]
         public virtual global::System.DateTimeOffset ServiceOrderSignOffDateTime
         {
             get
@@ -439,6 +453,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceOrderProgress in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.SMAServiceOrderProgress> ServiceOrderProgress
         {
             get
@@ -461,6 +476,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceAddressCountryRegionISOCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ServiceAddressCountryRegionISOCode
         {
             get
@@ -483,6 +499,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceAddressPostBox in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ServiceAddressPostBox
         {
             get
@@ -505,6 +522,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceAddressDunsNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ServiceAddressDunsNumber
         {
             get
@@ -527,6 +545,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceOrderStageId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ServiceOrderStageId
         {
             get
@@ -549,6 +568,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PreferredTechnicianPersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PreferredTechnicianPersonnelNumber
         {
             get
@@ -571,6 +591,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsServiceAddressPrivate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsServiceAddressPrivate
         {
             get
@@ -593,6 +614,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultLineActivityTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultLineActivityTypeId
         {
             get
@@ -615,6 +637,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceResponsiblePersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ServiceResponsiblePersonnelNumber
         {
             get
@@ -637,6 +660,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsServiceOrderSignedOff in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsServiceOrderSignedOff
         {
             get
@@ -659,6 +683,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PreferredServiceDateTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PreferredServiceDateTime is required.")]
         public virtual global::System.DateTimeOffset PreferredServiceDateTime
         {
             get
@@ -681,6 +707,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceAddressStreetNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ServiceAddressStreetNumber
         {
             get
@@ -703,6 +730,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceAddressName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ServiceAddressName
         {
             get
@@ -725,6 +753,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceAddressCountryRegionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ServiceAddressCountryRegionId
         {
             get
@@ -747,6 +776,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TimeRecordingStatus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.SMALogStatus> TimeRecordingStatus
         {
             get
@@ -769,6 +799,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceAddressCityInKana in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ServiceAddressCityInKana
         {
             get
@@ -791,6 +822,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceAddressLocationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ServiceAddressLocationId
         {
             get
@@ -813,6 +845,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceAddressDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ServiceAddressDescription
         {
             get
@@ -835,6 +868,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceOrderPriority in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.smmActivityPriority> ServiceOrderPriority
         {
             get
@@ -857,6 +891,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProjectActivityNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProjectActivityNumber
         {
             get
@@ -879,6 +914,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceCustomerAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ServiceCustomerAccountNumber
         {
             get
@@ -901,6 +937,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceLevelAgreementId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ServiceLevelAgreementId
         {
             get
@@ -923,6 +960,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceOrderOrigin in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.SMAServiceOrderOrigin> ServiceOrderOrigin
         {
             get
@@ -945,6 +983,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceAddressLongitude in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ServiceAddressLongitude is required.")]
         public virtual decimal ServiceAddressLongitude
         {
             get
@@ -967,6 +1007,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceAddressStreetInKana in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ServiceAddressStreetInKana
         {
             get
@@ -989,6 +1030,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceOrderDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ServiceOrderDescription
         {
             get
@@ -1011,6 +1053,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProjectId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProjectId
         {
             get
@@ -1033,6 +1076,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceAddressCountyId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ServiceAddressCountyId
         {
             get
@@ -1055,6 +1099,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceAddressTimeZone in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.Timezone> ServiceAddressTimeZone
         {
             get
@@ -1077,6 +1122,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsServiceAddressOrderSpecific in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsServiceAddressOrderSpecific
         {
             get
@@ -1099,6 +1145,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceAddressDistrictName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ServiceAddressDistrictName
         {
             get
@@ -1121,6 +1168,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceLevelAgreementCompliancePercentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ServiceLevelAgreementCompliancePercentage is required.")]
         public virtual decimal ServiceLevelAgreementCompliancePercentage
         {
             get
@@ -1143,6 +1192,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceAgreementId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ServiceAgreementId
         {
             get
@@ -1165,6 +1215,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceAddressStateId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ServiceAddressStateId
         {
             get
@@ -1187,6 +1238,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceAddressStreet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ServiceAddressStreet
         {
             get
@@ -1209,6 +1261,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceOrderLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ServiceOrderLine> ServiceOrderLines
         {
             get
@@ -1231,6 +1284,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ContactPerson in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ContactPerson ContactPerson
         {
             get
@@ -1253,6 +1307,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceAgreement in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ServiceAgreement is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ServiceAgreementHeader ServiceAgreement
         {
             get
@@ -1275,6 +1331,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Project in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.Project Project
         {
             get
@@ -1297,6 +1354,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceResponsible in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.Worker ServiceResponsible
         {
             get
@@ -1319,6 +1377,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceCustomer in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ServiceCustomer is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.CustomerV3 ServiceCustomer
         {
             get

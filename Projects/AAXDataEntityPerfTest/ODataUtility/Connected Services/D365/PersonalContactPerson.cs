@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for PersonalContactPersonSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PersonalContactPersonSingle in the schema.
+    /// </summary>
     public partial class PersonalContactPersonSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PersonalContactPerson>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.WorkerSingle _PersonalContactPersonWorker;
     }
-        /// <summary>
-        /// There are no comments for PersonalContactPerson in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PersonalContactPerson in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// WorkerPersonnelNumber
     /// ContactPersonPartyNumber
@@ -129,6 +129,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkerPersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WorkerPersonnelNumber is required.")]
         public virtual string WorkerPersonnelNumber
         {
             get
@@ -151,6 +153,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ContactPersonPartyNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ContactPersonPartyNumber is required.")]
         public virtual string ContactPersonPartyNumber
         {
             get
@@ -173,6 +177,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RelationshipType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RelationshipType
         {
             get
@@ -195,6 +200,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ContactLastName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ContactLastName
         {
             get
@@ -217,6 +223,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Gender in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HcmPersonGender> Gender
         {
             get
@@ -239,6 +246,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ContactFirstName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ContactFirstName
         {
             get
@@ -261,6 +269,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DependentCourtOrderedExpirationDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DependentCourtOrderedExpirationDate is required.")]
         public virtual global::System.DateTimeOffset DependentCourtOrderedExpirationDate
         {
             get
@@ -283,6 +293,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsDependent in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsDependent
         {
             get
@@ -305,6 +316,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisabledVerificationDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DisabledVerificationDate is required.")]
         public virtual global::System.DateTimeOffset DisabledVerificationDate
         {
             get
@@ -327,6 +340,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsBeneficiary in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsBeneficiary
         {
             get
@@ -349,6 +363,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ContactLastNamePrefix in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ContactLastNamePrefix
         {
             get
@@ -371,6 +386,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BirthDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BirthDate is required.")]
         public virtual global::System.DateTimeOffset BirthDate
         {
             get
@@ -393,6 +410,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsDependentDomesticPartnerVerified in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsDependentDomesticPartnerVerified
         {
             get
@@ -415,6 +433,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsDisabled in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsDisabled
         {
             get
@@ -437,6 +456,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsFulltimeStudent in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsFulltimeStudent
         {
             get
@@ -459,6 +479,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ContactMiddleName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ContactMiddleName
         {
             get
@@ -481,6 +502,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EmergencyContactPrimarySecondary in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HcmPrimarySecondary> EmergencyContactPrimarySecondary
         {
             get
@@ -503,6 +525,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsDependentCourtOrdered in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsDependentCourtOrdered
         {
             get
@@ -525,6 +548,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsEmergencyContact in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsEmergencyContact
         {
             get
@@ -547,6 +571,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PersonalContactPersonRelationshipType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PersonalContactPersonRelationshipType is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RelationshipType PersonalContactPersonRelationshipType
         {
             get
@@ -569,6 +595,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PersonalContactPersonWorker in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PersonalContactPersonWorker is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Worker PersonalContactPersonWorker
         {
             get

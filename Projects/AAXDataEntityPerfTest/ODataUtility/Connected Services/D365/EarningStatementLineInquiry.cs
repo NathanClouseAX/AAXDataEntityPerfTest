@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for EarningStatementLineInquirySingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for EarningStatementLineInquirySingle in the schema.
+    /// </summary>
     public partial class EarningStatementLineInquirySingle : global::Microsoft.OData.Client.DataServiceQuerySingle<EarningStatementLineInquiry>
     {
         /// <summary>
@@ -119,9 +119,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.PayPeriodSingle _PayrollPayPeriod;
     }
-        /// <summary>
-        /// There are no comments for EarningStatementLineInquiry in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for EarningStatementLineInquiry in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// DocumentNumber
@@ -193,6 +193,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -215,6 +217,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DocumentNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DocumentNumber is required.")]
         public virtual string DocumentNumber
         {
             get
@@ -237,6 +241,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PaymentStatus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PayrollPaymentProcessingStatus> PaymentStatus
         {
             get
@@ -259,6 +264,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EarningRate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EarningRate is required.")]
         public virtual decimal EarningRate
         {
             get
@@ -281,6 +288,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountingDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AccountingDate is required.")]
         public virtual global::System.DateTimeOffset AccountingDate
         {
             get
@@ -303,6 +312,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EarningCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string EarningCode
         {
             get
@@ -325,6 +335,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayCycleId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PayCycleId
         {
             get
@@ -347,6 +358,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PeriodStartDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PeriodStartDate is required.")]
         public virtual global::System.DateTimeOffset PeriodStartDate
         {
             get
@@ -369,6 +382,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetroactivePriorRate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetroactivePriorRate is required.")]
         public virtual decimal RetroactivePriorRate
         {
             get
@@ -391,6 +406,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property QuantityUnit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PayrollQuantityUnit> QuantityUnit
         {
             get
@@ -413,6 +429,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PositionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PositionId
         {
             get
@@ -435,6 +452,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property GenerationSource in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PayrollGenerationSource> GenerationSource
         {
             get
@@ -457,6 +475,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsProductive in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsProductive
         {
             get
@@ -479,6 +498,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EarningCodeDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string EarningCodeDescription
         {
             get
@@ -501,6 +521,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PersonnelNumber
         {
             get
@@ -523,6 +544,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountingCurrencyAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AccountingCurrencyAmount is required.")]
         public virtual decimal AccountingCurrencyAmount
         {
             get
@@ -545,6 +568,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PremiumCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PremiumCode
         {
             get
@@ -567,6 +591,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FringeBenefitType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PayrollFringeBenefitType> FringeBenefitType
         {
             get
@@ -589,6 +614,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Worker in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Worker
         {
             get
@@ -611,6 +637,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkerCompensationBenefitId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string WorkerCompensationBenefitId
         {
             get
@@ -633,6 +660,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkerGLIBenefitId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string WorkerGLIBenefitId
         {
             get
@@ -655,6 +683,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PeriodEndDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PeriodEndDate is required.")]
         public virtual global::System.DateTimeOffset PeriodEndDate
         {
             get
@@ -677,6 +707,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxRegion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxRegion
         {
             get
@@ -699,6 +730,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EarningDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EarningDate is required.")]
         public virtual global::System.DateTimeOffset EarningDate
         {
             get
@@ -721,6 +754,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity is required.")]
         public virtual decimal Quantity
         {
             get
@@ -743,6 +778,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PositionV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PositionV2 is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.PositionV2 PositionV2
         {
             get
@@ -765,6 +802,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PremiumEarningCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.PremiumEarningCode PremiumEarningCode
         {
             get
@@ -787,6 +825,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayrollEarningStatement in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PayrollEarningStatement is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.EarningStatement PayrollEarningStatement
         {
             get
@@ -809,6 +849,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayrollPayPeriod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PayrollPayPeriod is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.PayPeriod PayrollPayPeriod
         {
             get

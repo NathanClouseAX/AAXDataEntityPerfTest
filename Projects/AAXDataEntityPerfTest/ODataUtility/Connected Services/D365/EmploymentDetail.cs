@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for EmploymentDetailSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for EmploymentDetailSingle in the schema.
+    /// </summary>
     public partial class EmploymentDetailSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<EmploymentDetail>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ReasonCodeSingle _ReasonCode;
     }
-        /// <summary>
-        /// There are no comments for EmploymentDetail in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for EmploymentDetail in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// PersonnelNumber
     /// LegalEntityId
@@ -147,6 +147,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PersonnelNumber is required.")]
         public virtual string PersonnelNumber
         {
             get
@@ -169,6 +171,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LegalEntityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LegalEntityId is required.")]
         public virtual string LegalEntityId
         {
             get
@@ -191,6 +195,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EmploymentStartDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EmploymentStartDate is required.")]
         public virtual global::System.DateTimeOffset EmploymentStartDate
         {
             get
@@ -213,6 +219,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EmploymentEndDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EmploymentEndDate is required.")]
         public virtual global::System.DateTimeOffset EmploymentEndDate
         {
             get
@@ -235,6 +243,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidFrom in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValidFrom is required.")]
         public virtual global::System.DateTimeOffset ValidFrom
         {
             get
@@ -257,6 +267,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidTo in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValidTo is required.")]
         public virtual global::System.DateTimeOffset ValidTo
         {
             get
@@ -279,6 +291,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkerNoticeAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WorkerNoticeAmount is required.")]
         public virtual int WorkerNoticeAmount
         {
             get
@@ -301,6 +315,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EmploymentType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HcmEmploymentType> EmploymentType
         {
             get
@@ -323,6 +338,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransitionDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransitionDate is required.")]
         public virtual global::System.DateTimeOffset TransitionDate
         {
             get
@@ -345,6 +362,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LastDateWorked in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LastDateWorked is required.")]
         public virtual global::System.DateTimeOffset LastDateWorked
         {
             get
@@ -367,6 +386,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EmployerNoticeAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EmployerNoticeAmount is required.")]
         public virtual int EmployerNoticeAmount
         {
             get
@@ -389,6 +410,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReasonCodeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ReasonCodeId
         {
             get
@@ -411,6 +433,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AdjustedWorkerStartDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AdjustedWorkerStartDate is required.")]
         public virtual global::System.DateTimeOffset AdjustedWorkerStartDate
         {
             get
@@ -433,6 +457,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EmployerUnitOfNotice in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HcmUnitOfNotice> EmployerUnitOfNotice
         {
             get
@@ -455,6 +480,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkerStartDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WorkerStartDate is required.")]
         public virtual global::System.DateTimeOffset WorkerStartDate
         {
             get
@@ -477,6 +504,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkerUnitOfNotice in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HcmUnitOfNotice> WorkerUnitOfNotice
         {
             get
@@ -499,6 +527,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Employment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Employment is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Employment Employment
         {
             get
@@ -521,6 +551,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReasonCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ReasonCode ReasonCode
         {
             get

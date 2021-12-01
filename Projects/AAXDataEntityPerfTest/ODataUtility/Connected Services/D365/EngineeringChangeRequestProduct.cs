@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for EngineeringChangeRequestProductSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for EngineeringChangeRequestProductSingle in the schema.
+    /// </summary>
     public partial class EngineeringChangeRequestProductSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<EngineeringChangeRequestProduct>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestHeaderSingle _EngineeringChangeRequestHeader;
     }
-        /// <summary>
-        /// There are no comments for EngineeringChangeRequestProduct in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for EngineeringChangeRequestProduct in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// EngineeringChangeRequestNumber
     /// ProductNumber
@@ -90,6 +90,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngineeringChangeRequestNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EngineeringChangeRequestNumber is required.")]
         public virtual string EngineeringChangeRequestNumber
         {
             get
@@ -112,6 +114,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductNumber is required.")]
         public virtual string ProductNumber
         {
             get
@@ -134,6 +138,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngineeringChangeRequestHeader in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EngineeringChangeRequestHeader is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestHeader EngineeringChangeRequestHeader
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for EmploymentContractorSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for EmploymentContractorSingle in the schema.
+    /// </summary>
     public partial class EmploymentContractorSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<EmploymentContractor>
     {
         /// <summary>
@@ -119,9 +119,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.PurchaseOrderHeaderV2Single _PurchaseOrderHeaderV2;
     }
-        /// <summary>
-        /// There are no comments for EmploymentContractor in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for EmploymentContractor in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// PersonnelNumber
     /// EmploymentLegalEntityId
@@ -171,6 +171,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PersonnelNumber is required.")]
         public virtual string PersonnelNumber
         {
             get
@@ -193,6 +195,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EmploymentLegalEntityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EmploymentLegalEntityId is required.")]
         public virtual string EmploymentLegalEntityId
         {
             get
@@ -215,6 +219,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EmploymentStartDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EmploymentStartDate is required.")]
         public virtual global::System.DateTimeOffset EmploymentStartDate
         {
             get
@@ -237,6 +243,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EmploymentEndDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EmploymentEndDate is required.")]
         public virtual global::System.DateTimeOffset EmploymentEndDate
         {
             get
@@ -259,6 +267,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StartDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "StartDate is required.")]
         public virtual global::System.DateTimeOffset StartDate
         {
             get
@@ -281,6 +291,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EndDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EndDate is required.")]
         public virtual global::System.DateTimeOffset EndDate
         {
             get
@@ -303,6 +315,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchaseOrderNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PurchaseOrderNumber
         {
             get
@@ -325,6 +338,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchaseRequisitionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PurchaseRequisitionId
         {
             get
@@ -347,6 +361,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VendorAccountNumber
         {
             get
@@ -369,6 +384,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.VendorV2 VendorV2
         {
             get
@@ -391,6 +407,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchaseOrderHeader in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.PurchaseOrderHeader PurchaseOrderHeader
         {
             get
@@ -413,6 +430,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Employment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Employment is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Employment Employment
         {
             get
@@ -435,6 +454,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchaseOrderHeaderV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.PurchaseOrderHeaderV2 PurchaseOrderHeaderV2
         {
             get

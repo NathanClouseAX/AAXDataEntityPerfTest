@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for AssetMaintenanceWorkOrderLineNoteSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AssetMaintenanceWorkOrderLineNoteSingle in the schema.
+    /// </summary>
     public partial class AssetMaintenanceWorkOrderLineNoteSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AssetMaintenanceWorkOrderLineNote>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.AssetMaintenanceWorkOrderLineSingle _AssetMaintenanceWorkOrderLine;
     }
-        /// <summary>
-        /// There are no comments for AssetMaintenanceWorkOrderLineNote in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AssetMaintenanceWorkOrderLineNote in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// WorkOrderId
@@ -93,6 +93,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -115,6 +117,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkOrderId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WorkOrderId is required.")]
         public virtual string WorkOrderId
         {
             get
@@ -137,6 +141,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkOrderLineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WorkOrderLineNumber is required.")]
         public virtual long WorkOrderLineNumber
         {
             get
@@ -159,6 +165,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Employee in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Employee
         {
             get
@@ -181,6 +188,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Notes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Notes
         {
             get
@@ -203,6 +211,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Internal in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Internal
         {
             get
@@ -225,6 +234,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetMaintenanceWorkOrderLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AssetMaintenanceWorkOrderLine is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.AssetMaintenanceWorkOrderLine AssetMaintenanceWorkOrderLine
         {
             get

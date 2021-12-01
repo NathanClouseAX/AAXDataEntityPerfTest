@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ProductMasterConfigurationTranslationSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ProductMasterConfigurationTranslationSingle in the schema.
+    /// </summary>
     public partial class ProductMasterConfigurationTranslationSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ProductMasterConfigurationTranslation>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ProductMasterConfigurationSingle _ProductMasterConfiguration;
     }
-        /// <summary>
-        /// There are no comments for ProductMasterConfigurationTranslation in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ProductMasterConfigurationTranslation in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// ProductMasterNumber
     /// ProductMasterConfigurationId
@@ -93,6 +93,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductMasterNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductMasterNumber is required.")]
         public virtual string ProductMasterNumber
         {
             get
@@ -115,6 +117,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductMasterConfigurationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductMasterConfigurationId is required.")]
         public virtual string ProductMasterConfigurationId
         {
             get
@@ -137,6 +141,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LanguageId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LanguageId is required.")]
         public virtual string LanguageId
         {
             get
@@ -159,6 +165,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TranslatedConfigurationName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TranslatedConfigurationName
         {
             get
@@ -181,6 +188,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TranslatedConfigurationDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TranslatedConfigurationDescription
         {
             get
@@ -203,6 +211,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductMasterConfiguration in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductMasterConfiguration is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ProductMasterConfiguration ProductMasterConfiguration
         {
             get

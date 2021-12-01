@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for InventoryCountingReasonCodeSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for InventoryCountingReasonCodeSingle in the schema.
+    /// </summary>
     public partial class InventoryCountingReasonCodeSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<InventoryCountingReasonCode>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InventoryCountingJournalLine> _InventoryCountingJournalLine;
     }
-        /// <summary>
-        /// There are no comments for InventoryCountingReasonCode in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for InventoryCountingReasonCode in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// ReasonCode
@@ -84,6 +84,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -106,6 +108,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReasonCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReasonCode is required.")]
         public virtual string ReasonCode
         {
             get
@@ -128,6 +132,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -150,6 +155,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InventoryCountingJournalLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventoryCountingJournalLine> InventoryCountingJournalLine
         {
             get

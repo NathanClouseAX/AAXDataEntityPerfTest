@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RouteOperationSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RouteOperationSingle in the schema.
+    /// </summary>
     public partial class RouteOperationSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RouteOperation>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.RouteHeaderSingle _RouteHeader;
     }
-        /// <summary>
-        /// There are no comments for RouteOperation in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RouteOperation in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// RouteId
@@ -137,6 +137,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -159,6 +161,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RouteId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RouteId is required.")]
         public virtual string RouteId
         {
             get
@@ -181,6 +185,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OperationNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "OperationNumber is required.")]
         public virtual int OperationNumber
         {
             get
@@ -203,6 +209,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OperationPriority in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "OperationPriority is required.")]
         public virtual int OperationPriority
         {
             get
@@ -225,6 +233,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccumulatedScrapPercentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AccumulatedScrapPercentage is required.")]
         public virtual decimal AccumulatedScrapPercentage
         {
             get
@@ -247,6 +257,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NextRouteOperationNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "NextRouteOperationNumber is required.")]
         public virtual int NextRouteOperationNumber
         {
             get
@@ -269,6 +281,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ScrapPercentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ScrapPercentage is required.")]
         public virtual decimal ScrapPercentage
         {
             get
@@ -291,6 +305,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NextOperationAttachmentType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.SchedJobLinkType> NextOperationAttachmentType
         {
             get
@@ -313,6 +328,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OperationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OperationId
         {
             get
@@ -335,6 +351,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Operation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Operation is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Operation Operation
         {
             get
@@ -357,6 +375,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RouteHeader in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RouteHeader is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RouteHeader RouteHeader
         {
             get

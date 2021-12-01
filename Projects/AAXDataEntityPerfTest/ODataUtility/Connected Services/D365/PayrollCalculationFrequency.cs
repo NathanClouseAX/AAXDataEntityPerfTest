@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for PayrollCalculationFrequencySingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PayrollCalculationFrequencySingle in the schema.
+    /// </summary>
     public partial class PayrollCalculationFrequencySingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PayrollCalculationFrequency>
     {
         /// <summary>
@@ -98,9 +98,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PremiumEarningCode> _PremiumEarnings;
     }
-        /// <summary>
-        /// There are no comments for PayrollCalculationFrequency in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PayrollCalculationFrequency in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// Frequency
     /// </KeyProperties>
@@ -123,6 +123,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Frequency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Frequency is required.")]
         public virtual string Frequency
         {
             get
@@ -145,6 +147,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FrequencyControl in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PayrollCalculationBasis> FrequencyControl
         {
             get
@@ -167,6 +170,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsImmutable in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsImmutable
         {
             get
@@ -189,6 +193,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -211,6 +216,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkerPositionEarningCodeV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerPositionEarningCodeV2> WorkerPositionEarningCodeV2
         {
             get
@@ -233,6 +239,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkerPositionEarningCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerPositionEarningCode> WorkerPositionEarningCode
         {
             get
@@ -255,6 +262,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PremiumEarnings in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PremiumEarningCode> PremiumEarnings
         {
             get

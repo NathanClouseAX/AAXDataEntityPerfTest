@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ShippingActivityTableSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ShippingActivityTableSingle in the schema.
+    /// </summary>
     public partial class ShippingActivityTableSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ShippingActivityTable>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for ShippingActivityTable in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ShippingActivityTable in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// ActivityId
@@ -63,6 +63,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -85,6 +87,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ActivityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ActivityId is required.")]
         public virtual string ActivityId
         {
             get
@@ -107,6 +111,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShippingVendorAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ShippingVendorAccountNumber
         {
             get
@@ -129,6 +134,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ActivityDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ActivityDescription
         {
             get

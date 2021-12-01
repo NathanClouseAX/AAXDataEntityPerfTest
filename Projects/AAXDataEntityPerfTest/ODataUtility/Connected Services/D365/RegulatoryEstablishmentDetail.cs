@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RegulatoryEstablishmentDetailSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RegulatoryEstablishmentDetailSingle in the schema.
+    /// </summary>
     public partial class RegulatoryEstablishmentDetailSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RegulatoryEstablishmentDetail>
     {
         /// <summary>
@@ -56,27 +56,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.EmploymentPerCompanySingle _EmploymentPerCompany;
         /// <summary>
-        /// There are no comments for Employment in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.EmploymentSingle Employment
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._Employment == null))
-                {
-                    this._Employment = new global::Microsoft.Dynamics.DataEntities.EmploymentSingle(this.Context, GetPath("Employment"));
-                }
-                return this._Employment;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.EmploymentSingle _Employment;
-        /// <summary>
         /// There are no comments for LegalEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -118,10 +97,31 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.RegulatoryEstablishmentSingle _RegulatoryEstablishment;
-    }
         /// <summary>
-        /// There are no comments for RegulatoryEstablishmentDetail in the schema.
+        /// There are no comments for Employment in the schema.
         /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.EmploymentSingle Employment
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Employment == null))
+                {
+                    this._Employment = new global::Microsoft.Dynamics.DataEntities.EmploymentSingle(this.Context, GetPath("Employment"));
+                }
+                return this._Employment;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.EmploymentSingle _Employment;
+    }
+    /// <summary>
+    /// There are no comments for RegulatoryEstablishmentDetail in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// RegulatoryEstablishmentId
     /// LegalEntityId
@@ -159,6 +159,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RegulatoryEstablishmentId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RegulatoryEstablishmentId is required.")]
         public virtual string RegulatoryEstablishmentId
         {
             get
@@ -181,6 +183,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LegalEntityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LegalEntityId is required.")]
         public virtual string LegalEntityId
         {
             get
@@ -203,6 +207,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EmploymentPerCompany in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.EmploymentPerCompany EmploymentPerCompany
         {
             get
@@ -222,31 +227,11 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnEmploymentPerCompanyChanging(global::Microsoft.Dynamics.DataEntities.EmploymentPerCompany value);
         partial void OnEmploymentPerCompanyChanged();
         /// <summary>
-        /// There are no comments for Property Employment in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.Employment Employment
-        {
-            get
-            {
-                return this._Employment;
-            }
-            set
-            {
-                this.OnEmploymentChanging(value);
-                this._Employment = value;
-                this.OnEmploymentChanged();
-                this.OnPropertyChanged("Employment");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.Employment _Employment;
-        partial void OnEmploymentChanging(global::Microsoft.Dynamics.DataEntities.Employment value);
-        partial void OnEmploymentChanged();
-        /// <summary>
         /// There are no comments for Property LegalEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LegalEntity is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.LegalEntity LegalEntity
         {
             get
@@ -269,6 +254,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RegulatoryEstablishment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RegulatoryEstablishment is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RegulatoryEstablishment RegulatoryEstablishment
         {
             get
@@ -287,6 +274,29 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.RegulatoryEstablishment _RegulatoryEstablishment;
         partial void OnRegulatoryEstablishmentChanging(global::Microsoft.Dynamics.DataEntities.RegulatoryEstablishment value);
         partial void OnRegulatoryEstablishmentChanged();
+        /// <summary>
+        /// There are no comments for Property Employment in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.Dynamics.DataEntities.Employment Employment
+        {
+            get
+            {
+                return this._Employment;
+            }
+            set
+            {
+                this.OnEmploymentChanging(value);
+                this._Employment = value;
+                this.OnEmploymentChanged();
+                this.OnPropertyChanged("Employment");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.Employment _Employment;
+        partial void OnEmploymentChanging(global::Microsoft.Dynamics.DataEntities.Employment value);
+        partial void OnEmploymentChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for PayrollCalculationFrequencyPayPeriodSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PayrollCalculationFrequencyPayPeriodSingle in the schema.
+    /// </summary>
     public partial class PayrollCalculationFrequencyPayPeriodSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PayrollCalculationFrequencyPayPeriod>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.PayPeriodSingle _PayPeriod;
     }
-        /// <summary>
-        /// There are no comments for PayrollCalculationFrequencyPayPeriod in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PayrollCalculationFrequencyPayPeriod in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// CalculationFrequencyId
     /// PayCycleId
@@ -102,6 +102,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CalculationFrequencyId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CalculationFrequencyId is required.")]
         public virtual string CalculationFrequencyId
         {
             get
@@ -124,6 +126,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayCycleId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PayCycleId is required.")]
         public virtual string PayCycleId
         {
             get
@@ -146,6 +150,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PeriodEndDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PeriodEndDate is required.")]
         public virtual global::System.DateTimeOffset PeriodEndDate
         {
             get
@@ -168,6 +174,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PeriodStatus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PayrollPeriodStatus> PeriodStatus
         {
             get
@@ -190,6 +197,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -212,6 +220,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PeriodStartDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PeriodStartDate is required.")]
         public virtual global::System.DateTimeOffset PeriodStartDate
         {
             get
@@ -234,6 +244,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultPaymentDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DefaultPaymentDate is required.")]
         public virtual global::System.DateTimeOffset DefaultPaymentDate
         {
             get
@@ -256,6 +268,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayPeriod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PayPeriod is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.PayPeriod PayPeriod
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ProductReleaseProductDetailSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ProductReleaseProductDetailSingle in the schema.
+    /// </summary>
     public partial class ProductReleaseProductDetailSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ProductReleaseProductDetail>
     {
         /// <summary>
@@ -35,10 +35,10 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for ReceivedProductReleaseLines in the schema.
+        /// There are no comments for EngineeringProductVersion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReceivedProductReleaseLine> ReceivedProductReleaseLines
+        public virtual global::Microsoft.Dynamics.DataEntities.EngineeringProductVersionSingle EngineeringProductVersion
         {
             get
             {
@@ -46,15 +46,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._ReceivedProductReleaseLines == null))
+                if ((this._EngineeringProductVersion == null))
                 {
-                    this._ReceivedProductReleaseLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ReceivedProductReleaseLine>(GetPath("ReceivedProductReleaseLines"));
+                    this._EngineeringProductVersion = new global::Microsoft.Dynamics.DataEntities.EngineeringProductVersionSingle(this.Context, GetPath("EngineeringProductVersion"));
                 }
-                return this._ReceivedProductReleaseLines;
+                return this._EngineeringProductVersion;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReceivedProductReleaseLine> _ReceivedProductReleaseLines;
+        private global::Microsoft.Dynamics.DataEntities.EngineeringProductVersionSingle _EngineeringProductVersion;
         /// <summary>
         /// There are no comments for SentProductReleaseLines in the schema.
         /// </summary>
@@ -77,10 +77,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ChgSentProductReleaseLine> _SentProductReleaseLines;
         /// <summary>
-        /// There are no comments for EngineeringProductVersion in the schema.
+        /// There are no comments for ReceivedProductReleaseLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.EngineeringProductVersionSingle EngineeringProductVersion
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReceivedProductReleaseLine> ReceivedProductReleaseLines
         {
             get
             {
@@ -88,19 +88,19 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._EngineeringProductVersion == null))
+                if ((this._ReceivedProductReleaseLines == null))
                 {
-                    this._EngineeringProductVersion = new global::Microsoft.Dynamics.DataEntities.EngineeringProductVersionSingle(this.Context, GetPath("EngineeringProductVersion"));
+                    this._ReceivedProductReleaseLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ReceivedProductReleaseLine>(GetPath("ReceivedProductReleaseLines"));
                 }
-                return this._EngineeringProductVersion;
+                return this._ReceivedProductReleaseLines;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.EngineeringProductVersionSingle _EngineeringProductVersion;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReceivedProductReleaseLine> _ReceivedProductReleaseLines;
     }
-        /// <summary>
-        /// There are no comments for ProductReleaseProductDetail in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ProductReleaseProductDetail in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// ProductNumber
@@ -135,6 +135,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -157,6 +159,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductNumber is required.")]
         public virtual string ProductNumber
         {
             get
@@ -179,6 +183,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductVersionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductVersionId is required.")]
         public virtual string ProductVersionId
         {
             get
@@ -201,6 +207,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TemplateBOMId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TemplateBOMId
         {
             get
@@ -223,6 +230,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TemplateItemNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TemplateItemNumber
         {
             get
@@ -245,6 +253,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillProductReleaseReleaseRoute in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillProductReleaseReleaseRoute
         {
             get
@@ -267,6 +276,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillProductReleaseCopyBillOfMaterialsApproval in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillProductReleaseCopyBillOfMaterialsApproval
         {
             get
@@ -289,6 +299,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TemplateRouteId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TemplateRouteId
         {
             get
@@ -311,6 +322,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReleaseStatus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EngChgProductReleaseStatus> ReleaseStatus
         {
             get
@@ -333,6 +345,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillProductReleaseReleaseBillOfMaterials in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillProductReleaseReleaseBillOfMaterials
         {
             get
@@ -355,6 +368,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillProductReleaseCopyRouteApproval in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillProductReleaseCopyRouteApproval
         {
             get
@@ -374,31 +388,34 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnWillProductReleaseCopyRouteApprovalChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> value);
         partial void OnWillProductReleaseCopyRouteApprovalChanged();
         /// <summary>
-        /// There are no comments for Property ReceivedProductReleaseLines in the schema.
+        /// There are no comments for Property EngineeringProductVersion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReceivedProductReleaseLine> ReceivedProductReleaseLines
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EngineeringProductVersion is required.")]
+        public virtual global::Microsoft.Dynamics.DataEntities.EngineeringProductVersion EngineeringProductVersion
         {
             get
             {
-                return this._ReceivedProductReleaseLines;
+                return this._EngineeringProductVersion;
             }
             set
             {
-                this.OnReceivedProductReleaseLinesChanging(value);
-                this._ReceivedProductReleaseLines = value;
-                this.OnReceivedProductReleaseLinesChanged();
-                this.OnPropertyChanged("ReceivedProductReleaseLines");
+                this.OnEngineeringProductVersionChanging(value);
+                this._EngineeringProductVersion = value;
+                this.OnEngineeringProductVersionChanged();
+                this.OnPropertyChanged("EngineeringProductVersion");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReceivedProductReleaseLine> _ReceivedProductReleaseLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReceivedProductReleaseLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnReceivedProductReleaseLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReceivedProductReleaseLine> value);
-        partial void OnReceivedProductReleaseLinesChanged();
+        private global::Microsoft.Dynamics.DataEntities.EngineeringProductVersion _EngineeringProductVersion;
+        partial void OnEngineeringProductVersionChanging(global::Microsoft.Dynamics.DataEntities.EngineeringProductVersion value);
+        partial void OnEngineeringProductVersionChanged();
         /// <summary>
         /// There are no comments for Property SentProductReleaseLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ChgSentProductReleaseLine> SentProductReleaseLines
         {
             get
@@ -418,27 +435,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnSentProductReleaseLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ChgSentProductReleaseLine> value);
         partial void OnSentProductReleaseLinesChanged();
         /// <summary>
-        /// There are no comments for Property EngineeringProductVersion in the schema.
+        /// There are no comments for Property ReceivedProductReleaseLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.EngineeringProductVersion EngineeringProductVersion
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReceivedProductReleaseLine> ReceivedProductReleaseLines
         {
             get
             {
-                return this._EngineeringProductVersion;
+                return this._ReceivedProductReleaseLines;
             }
             set
             {
-                this.OnEngineeringProductVersionChanging(value);
-                this._EngineeringProductVersion = value;
-                this.OnEngineeringProductVersionChanged();
-                this.OnPropertyChanged("EngineeringProductVersion");
+                this.OnReceivedProductReleaseLinesChanging(value);
+                this._ReceivedProductReleaseLines = value;
+                this.OnReceivedProductReleaseLinesChanged();
+                this.OnPropertyChanged("ReceivedProductReleaseLines");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.EngineeringProductVersion _EngineeringProductVersion;
-        partial void OnEngineeringProductVersionChanging(global::Microsoft.Dynamics.DataEntities.EngineeringProductVersion value);
-        partial void OnEngineeringProductVersionChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReceivedProductReleaseLine> _ReceivedProductReleaseLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReceivedProductReleaseLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnReceivedProductReleaseLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReceivedProductReleaseLine> value);
+        partial void OnReceivedProductReleaseLinesChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

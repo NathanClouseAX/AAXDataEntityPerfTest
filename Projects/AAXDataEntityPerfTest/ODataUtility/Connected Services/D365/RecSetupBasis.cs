@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RecSetupBasisSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RecSetupBasisSingle in the schema.
+    /// </summary>
     public partial class RecSetupBasisSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RecSetupBasis>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ReleasedProductV2Single _Item;
     }
-        /// <summary>
-        /// There are no comments for RecSetupBasis in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RecSetupBasis in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// ItemId
@@ -120,6 +120,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -142,6 +144,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ItemId is required.")]
         public virtual string ItemId
         {
             get
@@ -164,6 +168,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ItemGroup is required.")]
         public virtual string ItemGroup
         {
             get
@@ -186,6 +192,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -208,6 +215,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemProductGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ItemProductGroup is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ProductGroup ItemProductGroup
         {
             get
@@ -230,6 +239,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Item in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Item is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ReleasedProductV2 Item
         {
             get

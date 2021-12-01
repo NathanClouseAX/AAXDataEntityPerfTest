@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ExpenseSubCategorySingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ExpenseSubCategorySingle in the schema.
+    /// </summary>
     public partial class ExpenseSubCategorySingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ExpenseSubCategory>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _DimensionCombination;
     }
-        /// <summary>
-        /// There are no comments for ExpenseSubCategory in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ExpenseSubCategory in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// ExpenseCategory
@@ -116,6 +116,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -138,6 +140,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExpenseCategory in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ExpenseCategory is required.")]
         public virtual string ExpenseCategory
         {
             get
@@ -160,6 +164,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SharedSubCategoryName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SharedSubCategoryName is required.")]
         public virtual string SharedSubCategoryName
         {
             get
@@ -182,6 +188,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LedgerDimensionDisplayValue
         {
             get
@@ -204,6 +211,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisplayOrder in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DisplayOrder is required.")]
         public virtual int DisplayOrder
         {
             get
@@ -226,6 +235,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxItemGroupIfBilledToEmployee in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxItemGroupIfBilledToEmployee
         {
             get
@@ -248,6 +258,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsInactive in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsInactive
         {
             get
@@ -270,6 +281,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxItemGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxItemGroup
         {
             get
@@ -292,6 +304,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExpenseSharedSubCategory in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ExpenseSharedSubCategory is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ExpenseSharedSubCategory ExpenseSharedSubCategory
         {
             get
@@ -314,6 +328,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination DimensionCombination
         {
             get

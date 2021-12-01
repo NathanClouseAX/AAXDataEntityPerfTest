@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RetailAffiliationPriceGroupSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailAffiliationPriceGroupSingle in the schema.
+    /// </summary>
     public partial class RetailAffiliationPriceGroupSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RetailAffiliationPriceGroup>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.RetailAffiliationSingle _RetailAffiliation;
     }
-        /// <summary>
-        /// There are no comments for RetailAffiliationPriceGroup in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailAffiliationPriceGroup in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// AffiliationName
@@ -120,6 +120,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -142,6 +144,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AffiliationName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AffiliationName is required.")]
         public virtual string AffiliationName
         {
             get
@@ -164,6 +168,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PriceCustomerGroupCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PriceCustomerGroupCode is required.")]
         public virtual string PriceCustomerGroupCode
         {
             get
@@ -186,6 +192,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PriceCustomerGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PriceCustomerGroup is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.PriceCustomerGroup PriceCustomerGroup
         {
             get
@@ -208,6 +216,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailAffiliation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetailAffiliation is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RetailAffiliation RetailAffiliation
         {
             get

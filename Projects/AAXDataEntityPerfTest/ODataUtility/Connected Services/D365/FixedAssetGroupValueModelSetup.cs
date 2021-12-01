@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for FixedAssetGroupValueModelSetupSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for FixedAssetGroupValueModelSetupSingle in the schema.
+    /// </summary>
     public partial class FixedAssetGroupValueModelSetupSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<FixedAssetGroupValueModelSetup>
     {
         /// <summary>
@@ -140,9 +140,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ValueModelSetupSingle _AssetGroupValueModelSetupValueModel;
     }
-        /// <summary>
-        /// There are no comments for FixedAssetGroupValueModelSetup in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for FixedAssetGroupValueModelSetup in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// FixedAssetGroupId
@@ -195,6 +195,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -217,6 +219,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FixedAssetGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FixedAssetGroupId is required.")]
         public virtual string FixedAssetGroupId
         {
             get
@@ -239,6 +243,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValueModelId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValueModelId is required.")]
         public virtual string ValueModelId
         {
             get
@@ -261,6 +267,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AlternativeDepreciationProfileId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AlternativeDepreciationProfileId
         {
             get
@@ -283,6 +290,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SpecialDepreciationAllocationPeriods in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SpecialDepreciationAllocationPeriods is required.")]
         public virtual int SpecialDepreciationAllocationPeriods
         {
             get
@@ -305,6 +314,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExtraordinaryDepreciationProfileId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ExtraordinaryDepreciationProfileId
         {
             get
@@ -327,6 +337,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceLifeMonths in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ServiceLifeMonths is required.")]
         public virtual int ServiceLifeMonths
         {
             get
@@ -349,6 +361,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SpecialDepreciationAllocationStartConvention in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetSpecialDepAllocationConvention_JP> SpecialDepreciationAllocationStartConvention
         {
             get
@@ -371,6 +384,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SpecialDepreciationAllocationUnit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetAccrualFiscal> SpecialDepreciationAllocationUnit
         {
             get
@@ -393,6 +407,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DepreciationProfileId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DepreciationProfileId
         {
             get
@@ -415,6 +430,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AcceleratedDepreciationProfileId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AcceleratedDepreciationProfileId
         {
             get
@@ -437,6 +453,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DepreciationPeriods in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DepreciationPeriods is required.")]
         public virtual int DepreciationPeriods
         {
             get
@@ -459,6 +477,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DepreciationGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DepreciationGroupId
         {
             get
@@ -481,6 +500,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllowableLimitForAccumulatedDepreciation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetLimitForAccumulatedDepType_JP> AllowableLimitForAccumulatedDepreciation
         {
             get
@@ -503,6 +523,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsAssetGroupDepreciation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsAssetGroupDepreciation
         {
             get
@@ -525,6 +546,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DepreciationConvention in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetDepreciationConvention> DepreciationConvention
         {
             get
@@ -547,6 +569,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceLifeYears in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ServiceLifeYears is required.")]
         public virtual int ServiceLifeYears
         {
             get
@@ -569,6 +593,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CalculateDepreciation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> CalculateDepreciation
         {
             get
@@ -591,6 +616,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceLife in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ServiceLife is required.")]
         public virtual decimal ServiceLife
         {
             get
@@ -613,6 +640,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetDepreciationProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DepreciationProfile AssetDepreciationProfile
         {
             get
@@ -635,6 +663,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetExtraordinaryDepreciationProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DepreciationProfile AssetExtraordinaryDepreciationProfile
         {
             get
@@ -657,6 +686,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetAlternativeDepreciationProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DepreciationProfile AssetAlternativeDepreciationProfile
         {
             get
@@ -679,6 +709,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetAcceleratedDepreciationProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DepreciationProfile AssetAcceleratedDepreciationProfile
         {
             get
@@ -701,6 +732,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetGroupValueModelSetupValueModel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AssetGroupValueModelSetupValueModel is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ValueModelSetup AssetGroupValueModelSetupValueModel
         {
             get

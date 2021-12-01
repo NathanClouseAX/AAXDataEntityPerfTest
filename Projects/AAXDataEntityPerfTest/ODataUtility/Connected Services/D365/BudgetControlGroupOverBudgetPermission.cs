@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for BudgetControlGroupOverBudgetPermissionSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BudgetControlGroupOverBudgetPermissionSingle in the schema.
+    /// </summary>
     public partial class BudgetControlGroupOverBudgetPermissionSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<BudgetControlGroupOverBudgetPermission>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.BudgetControlGroupSingle _BudgetControlGroups;
     }
-        /// <summary>
-        /// There are no comments for BudgetControlGroupOverBudgetPermission in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BudgetControlGroupOverBudgetPermission in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// LegalEntityId
@@ -129,6 +129,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -151,6 +153,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LegalEntityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LegalEntityId is required.")]
         public virtual string LegalEntityId
         {
             get
@@ -173,6 +177,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Status in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.BudgetControlConfigurationStatus> Status
         {
             get
@@ -195,6 +200,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetGroupName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BudgetGroupName is required.")]
         public virtual string BudgetGroupName
         {
             get
@@ -217,6 +224,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UserGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "UserGroupId is required.")]
         public virtual string UserGroupId
         {
             get
@@ -239,6 +248,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OverrideOverbudgetOption in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.BudgetCheckOverbudgetOption> OverrideOverbudgetOption
         {
             get
@@ -261,6 +271,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UserGroupName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string UserGroupName
         {
             get
@@ -283,6 +294,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InUseBy in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string InUseBy
         {
             get
@@ -305,6 +317,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SystemUserGroups in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SystemUserGroups is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.UserGroup SystemUserGroups
         {
             get
@@ -327,6 +341,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetControlGroups in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BudgetControlGroups is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.BudgetControlGroup BudgetControlGroups
         {
             get

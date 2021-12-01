@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for BankClientPaymentSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BankClientPaymentSingle in the schema.
+    /// </summary>
     public partial class BankClientPaymentSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<BankClientPayment>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionSetSingle _DimensionSet;
     }
-        /// <summary>
-        /// There are no comments for BankClientPayment in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BankClientPayment in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// PaymentDirection
@@ -127,6 +127,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -149,6 +151,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PaymentDirection in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.BankClientPaymentDirection_RU> PaymentDirection
         {
             get
@@ -171,6 +174,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DocumentNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DocumentNumber is required.")]
         public virtual string DocumentNumber
         {
             get
@@ -193,6 +198,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DocumentDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DocumentDate is required.")]
         public virtual global::System.DateTimeOffset DocumentDate
         {
             get
@@ -215,6 +222,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayerAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PayerAccountNumber is required.")]
         public virtual string PayerAccountNumber
         {
             get
@@ -237,6 +246,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayeeAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PayeeAccountNumber is required.")]
         public virtual string PayeeAccountNumber
         {
             get
@@ -259,6 +270,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Amount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Amount is required.")]
         public virtual decimal Amount
         {
             get
@@ -281,6 +294,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Currency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Currency is required.")]
         public virtual string Currency
         {
             get
@@ -303,6 +318,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Payer in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Payer
         {
             get
@@ -325,6 +341,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemSalesTaxGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ItemSalesTaxGroup
         {
             get
@@ -347,6 +364,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property QuittanceDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "QuittanceDate is required.")]
         public virtual global::System.DateTimeOffset QuittanceDate
         {
             get
@@ -369,6 +388,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Voucher in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Voucher
         {
             get
@@ -391,6 +411,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionDisplayValue
         {
             get
@@ -413,6 +434,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CounteragentType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ModuleCustVend> CounteragentType
         {
             get
@@ -435,6 +457,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WithdrawalDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WithdrawalDate is required.")]
         public virtual global::System.DateTimeOffset WithdrawalDate
         {
             get
@@ -457,6 +481,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayeeBankAddress in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PayeeBankAddress
         {
             get
@@ -479,6 +504,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CurrencyOfConversion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CurrencyOfConversion
         {
             get
@@ -501,6 +527,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BankAccount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BankAccount
         {
             get
@@ -523,6 +550,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AmbiguousText in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AmbiguousText
         {
             get
@@ -545,6 +573,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurposeText in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PurposeText
         {
             get
@@ -567,6 +596,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BankExchangeRate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BankExchangeRate is required.")]
         public virtual decimal BankExchangeRate
         {
             get
@@ -589,6 +620,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionDate is required.")]
         public virtual global::System.DateTimeOffset TransactionDate
         {
             get
@@ -611,6 +644,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BankTransactionType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BankTransactionType
         {
             get
@@ -633,6 +667,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayerBankAddress in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PayerBankAddress
         {
             get
@@ -655,6 +690,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReceiptDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReceiptDate is required.")]
         public virtual global::System.DateTimeOffset ReceiptDate
         {
             get
@@ -677,6 +714,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayeeBankName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PayeeBankName
         {
             get
@@ -699,6 +737,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Recipient in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Recipient
         {
             get
@@ -721,6 +760,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UCI in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string UCI
         {
             get
@@ -743,6 +783,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayeeRegistryReasonCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PayeeRegistryReasonCode
         {
             get
@@ -765,6 +806,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property QuittanceTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "QuittanceTime is required.")]
         public virtual int QuittanceTime
         {
             get
@@ -787,6 +830,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayerBankCorrAccount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PayerBankCorrAccount
         {
             get
@@ -809,6 +853,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Posted in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> Posted
         {
             get
@@ -831,6 +876,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JournalNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string JournalNumber
         {
             get
@@ -853,6 +899,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayerBankAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PayerBankAccountNumber
         {
             get
@@ -875,6 +922,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Include in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> Include
         {
             get
@@ -897,6 +945,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property QuittanceContent in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string QuittanceContent
         {
             get
@@ -919,6 +968,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayerBankBIC in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PayerBankBIC
         {
             get
@@ -941,6 +991,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesTaxGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SalesTaxGroup
         {
             get
@@ -963,6 +1014,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Counteragent in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Counteragent
         {
             get
@@ -985,6 +1037,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExchangeRate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ExchangeRate is required.")]
         public virtual decimal ExchangeRate
         {
             get
@@ -1007,6 +1061,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AgreementId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AgreementId
         {
             get
@@ -1029,6 +1084,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AgreementNumberLocking in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AgreementNumberLocking
         {
             get
@@ -1051,6 +1107,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostingProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PostingProfile
         {
             get
@@ -1073,6 +1130,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayerRegistryReasonCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PayerRegistryReasonCode
         {
             get
@@ -1095,6 +1153,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Error in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> Error
         {
             get
@@ -1117,6 +1176,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayeeBankAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PayeeBankAccountNumber
         {
             get
@@ -1139,6 +1199,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayeeBankBIC in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PayeeBankBIC
         {
             get
@@ -1161,6 +1222,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayerBankName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PayerBankName
         {
             get
@@ -1183,6 +1245,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrepaymentJournalVoucher in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PrepaymentJournalVoucher
         {
             get
@@ -1205,6 +1268,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayeeBankCorrAccount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PayeeBankCorrAccount
         {
             get
@@ -1227,6 +1291,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ErrorCause in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ErrorCause
         {
             get
@@ -1249,6 +1314,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayerINN in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PayerINN
         {
             get
@@ -1271,6 +1337,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DocumentType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DocumentType
         {
             get
@@ -1293,6 +1360,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayeeINN in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PayeeINN
         {
             get
@@ -1315,6 +1383,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionSet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionSet DimensionSet
         {
             get

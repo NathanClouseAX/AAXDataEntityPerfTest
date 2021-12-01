@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for BenefitAccountingRuleSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BenefitAccountingRuleSingle in the schema.
+    /// </summary>
     public partial class BenefitAccountingRuleSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<BenefitAccountingRule>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _DimensionCombination;
     }
-        /// <summary>
-        /// There are no comments for BenefitAccountingRule in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BenefitAccountingRule in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// PlanId
     /// LegalEntityId
@@ -85,6 +85,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PlanId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PlanId is required.")]
         public virtual string PlanId
         {
             get
@@ -107,6 +109,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LegalEntityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LegalEntityId is required.")]
         public virtual string LegalEntityId
         {
             get
@@ -129,6 +133,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayrollType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PayrollType> PayrollType
         {
             get
@@ -151,6 +156,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MainAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MainAccountDisplayValue
         {
             get
@@ -173,6 +179,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination DimensionCombination
         {
             get

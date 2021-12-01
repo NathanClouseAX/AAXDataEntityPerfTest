@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for WorkerGarnishmentRuleSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for WorkerGarnishmentRuleSingle in the schema.
+    /// </summary>
     public partial class WorkerGarnishmentRuleSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<WorkerGarnishmentRule>
     {
         /// <summary>
@@ -98,9 +98,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DisposableIncomeSingle _DisposableIncome;
     }
-        /// <summary>
-        /// There are no comments for WorkerGarnishmentRule in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for WorkerGarnishmentRule in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// GarnishmentTaxLevyType
     /// PersonnelNumber
@@ -153,6 +153,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property GarnishmentTaxLevyType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PayrollGarnishmentTaxLevyType> GarnishmentTaxLevyType
         {
             get
@@ -175,6 +176,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PersonnelNumber is required.")]
         public virtual string PersonnelNumber
         {
             get
@@ -197,6 +200,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StateId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "StateId is required.")]
         public virtual string StateId
         {
             get
@@ -219,6 +224,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MultipleMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PayrollMultipleGarnishmentMethod> MultipleMethod
         {
             get
@@ -241,6 +247,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisposableEarningsPercent in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DisposableEarningsPercent is required.")]
         public virtual decimal DisposableEarningsPercent
         {
             get
@@ -263,6 +271,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LimitMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PayrollLimitMethod> LimitMethod
         {
             get
@@ -285,6 +294,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisposableIncomeExemption in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DisposableIncomeExemption is required.")]
         public virtual decimal DisposableIncomeExemption
         {
             get
@@ -307,6 +318,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExemptEarningAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ExemptEarningAmount is required.")]
         public virtual decimal ExemptEarningAmount
         {
             get
@@ -329,6 +342,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AlternateLimit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AlternateLimit is required.")]
         public virtual decimal AlternateLimit
         {
             get
@@ -351,6 +366,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MinimumWageMultiplier in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MinimumWageMultiplier is required.")]
         public virtual decimal MinimumWageMultiplier
         {
             get
@@ -373,6 +390,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MinimumWage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MinimumWage is required.")]
         public virtual decimal MinimumWage
         {
             get
@@ -395,6 +414,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllowReduction in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AllowReduction
         {
             get
@@ -417,6 +437,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisposableIncomeName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DisposableIncomeName
         {
             get
@@ -439,6 +460,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property State in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.AddressState State
         {
             get
@@ -461,6 +483,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Worker in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Worker is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Worker Worker
         {
             get
@@ -483,6 +507,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisposableIncome in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DisposableIncome DisposableIncome
         {
             get

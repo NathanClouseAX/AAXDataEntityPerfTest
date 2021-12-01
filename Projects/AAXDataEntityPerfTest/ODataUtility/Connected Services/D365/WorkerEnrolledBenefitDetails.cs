@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for WorkerEnrolledBenefitDetailsSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for WorkerEnrolledBenefitDetailsSingle in the schema.
+    /// </summary>
     public partial class WorkerEnrolledBenefitDetailsSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<WorkerEnrolledBenefitDetails>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.PositionV2Single _PositionV2;
     }
-        /// <summary>
-        /// There are no comments for WorkerEnrolledBenefitDetails in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for WorkerEnrolledBenefitDetails in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// BenefitId
     /// PersonnelNumber
@@ -141,6 +141,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BenefitId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BenefitId is required.")]
         public virtual string BenefitId
         {
             get
@@ -163,6 +165,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PersonnelNumber is required.")]
         public virtual string PersonnelNumber
         {
             get
@@ -185,6 +189,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EnrollmentStart in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EnrollmentStart is required.")]
         public virtual global::System.DateTimeOffset EnrollmentStart
         {
             get
@@ -207,6 +213,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EnrollmentEnd in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EnrollmentEnd is required.")]
         public virtual global::System.DateTimeOffset EnrollmentEnd
         {
             get
@@ -229,6 +237,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BenefitDetailValidFrom in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BenefitDetailValidFrom is required.")]
         public virtual global::System.DateTimeOffset BenefitDetailValidFrom
         {
             get
@@ -251,6 +261,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BenefitDetailValidTo in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BenefitDetailValidTo is required.")]
         public virtual global::System.DateTimeOffset BenefitDetailValidTo
         {
             get
@@ -273,6 +285,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ContributionAmountCur in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ContributionAmountCur is required.")]
         public virtual decimal ContributionAmountCur
         {
             get
@@ -295,6 +309,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ContributionBasis in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PayrollContributionBasis> ContributionBasis
         {
             get
@@ -317,6 +332,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PartyNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PartyNumber
         {
             get
@@ -339,6 +355,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DeductionPriorityNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DeductionPriorityNumber is required.")]
         public virtual long DeductionPriorityNumber
         {
             get
@@ -361,6 +379,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DeductionBasis in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PayrollDeductionBasis> DeductionBasis
         {
             get
@@ -383,6 +402,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ContributionRateSource in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PayrollBenefitRateSource> ContributionRateSource
         {
             get
@@ -405,6 +425,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PositionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PositionId
         {
             get
@@ -427,6 +448,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OverrideLimit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> OverrideLimit
         {
             get
@@ -449,6 +471,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CalculationPriorityNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CalculationPriorityNumber is required.")]
         public virtual long CalculationPriorityNumber
         {
             get
@@ -471,6 +495,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DataArea in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DataArea
         {
             get
@@ -493,6 +518,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DeductionAmountCur in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DeductionAmountCur is required.")]
         public virtual decimal DeductionAmountCur
         {
             get
@@ -515,6 +542,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Note in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Note
         {
             get
@@ -537,6 +565,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DeductionRateSource in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PayrollBenefitRateSource> DeductionRateSource
         {
             get
@@ -559,6 +588,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsRetirementCatchUp in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsRetirementCatchUp
         {
             get
@@ -581,6 +611,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendAccountNum in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VendAccountNum
         {
             get
@@ -603,6 +634,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkerEnrolledBenefit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WorkerEnrolledBenefit is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.WorkerEnrolledBenefit WorkerEnrolledBenefit
         {
             get
@@ -625,6 +658,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PositionV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.PositionV2 PositionV2
         {
             get

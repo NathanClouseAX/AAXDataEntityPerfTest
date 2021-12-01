@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RetailCatalogPriceGroupSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailCatalogPriceGroupSingle in the schema.
+    /// </summary>
     public partial class RetailCatalogPriceGroupSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RetailCatalogPriceGroup>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.RetailCatalogSingle _RetailCatalog;
     }
-        /// <summary>
-        /// There are no comments for RetailCatalogPriceGroup in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailCatalogPriceGroup in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// CatalogNumber
     /// PriceGroupLegalEntity
@@ -93,6 +93,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CatalogNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CatalogNumber is required.")]
         public virtual string CatalogNumber
         {
             get
@@ -115,6 +117,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PriceGroupLegalEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PriceGroupLegalEntity is required.")]
         public virtual string PriceGroupLegalEntity
         {
             get
@@ -137,6 +141,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PriceGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PriceGroupId is required.")]
         public virtual string PriceGroupId
         {
             get
@@ -159,6 +165,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailCatalog in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetailCatalog is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RetailCatalog RetailCatalog
         {
             get

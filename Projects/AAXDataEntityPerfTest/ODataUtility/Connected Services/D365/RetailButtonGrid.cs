@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RetailButtonGridSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailButtonGridSingle in the schema.
+    /// </summary>
     public partial class RetailButtonGridSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RetailButtonGrid>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutButtonGridZone> _RetailTillLayoutButtonGridZone;
     }
-        /// <summary>
-        /// There are no comments for RetailButtonGrid in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailButtonGrid in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// ButtonGridId
     /// </KeyProperties>
@@ -85,6 +85,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ButtonGridId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ButtonGridId is required.")]
         public virtual string ButtonGridId
         {
             get
@@ -107,6 +109,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SpaceBetweenButtons in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SpaceBetweenButtons is required.")]
         public virtual int SpaceBetweenButtons
         {
             get
@@ -129,6 +133,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Name
         {
             get
@@ -151,6 +156,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Font in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Font
         {
             get
@@ -173,6 +179,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultFontStyle in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailFontStyleBase> DefaultFontStyle
         {
             get
@@ -195,6 +202,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultFontSize in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DefaultFontSize is required.")]
         public virtual int DefaultFontSize
         {
             get
@@ -217,6 +226,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultColor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailButtonColorBase> DefaultColor
         {
             get
@@ -239,6 +249,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property KeyboardUsed in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string KeyboardUsed
         {
             get
@@ -261,6 +272,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailTillLayoutButtonGridZone in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutButtonGridZone> RetailTillLayoutButtonGridZone
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ProductMasterVersionTranslationSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ProductMasterVersionTranslationSingle in the schema.
+    /// </summary>
     public partial class ProductMasterVersionTranslationSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ProductMasterVersionTranslation>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ProductMasterVersionSingle _ProductMasterVersion;
     }
-        /// <summary>
-        /// There are no comments for ProductMasterVersionTranslation in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ProductMasterVersionTranslation in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// ProductMasterNumber
     /// ProductMasterVersionId
@@ -93,6 +93,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductMasterNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductMasterNumber is required.")]
         public virtual string ProductMasterNumber
         {
             get
@@ -115,6 +117,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductMasterVersionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductMasterVersionId is required.")]
         public virtual string ProductMasterVersionId
         {
             get
@@ -137,6 +141,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LanguageId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LanguageId is required.")]
         public virtual string LanguageId
         {
             get
@@ -159,6 +165,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TranslatedVersionName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TranslatedVersionName
         {
             get
@@ -181,6 +188,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TranslatedVersionDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TranslatedVersionDescription
         {
             get
@@ -203,6 +211,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductMasterVersion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductMasterVersion is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ProductMasterVersion ProductMasterVersion
         {
             get

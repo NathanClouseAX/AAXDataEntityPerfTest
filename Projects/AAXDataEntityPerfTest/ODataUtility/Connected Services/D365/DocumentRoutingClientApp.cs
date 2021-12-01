@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for DocumentRoutingClientAppSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for DocumentRoutingClientAppSingle in the schema.
+    /// </summary>
     public partial class DocumentRoutingClientAppSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<DocumentRoutingClientApp>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for DocumentRoutingClientApp in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for DocumentRoutingClientApp in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// ClientApplicationId
     /// </KeyProperties>
@@ -60,6 +60,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ClientApplicationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ClientApplicationId is required.")]
         public virtual string ClientApplicationId
         {
             get
@@ -82,6 +84,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ClientApplicationDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ClientApplicationDescription
         {
             get

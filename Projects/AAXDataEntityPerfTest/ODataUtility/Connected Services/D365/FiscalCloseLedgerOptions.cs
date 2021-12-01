@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for FiscalCloseLedgerOptionsSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for FiscalCloseLedgerOptionsSingle in the schema.
+    /// </summary>
     public partial class FiscalCloseLedgerOptionsSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<FiscalCloseLedgerOptions>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionSetSingle _DimensionSet;
     }
-        /// <summary>
-        /// There are no comments for FiscalCloseLedgerOptions in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for FiscalCloseLedgerOptions in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// LedgerFiscalCloseGroupName
     /// LegalEntity
@@ -84,6 +84,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerFiscalCloseGroupName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LedgerFiscalCloseGroupName is required.")]
         public virtual string LedgerFiscalCloseGroupName
         {
             get
@@ -106,6 +108,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LegalEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LegalEntity is required.")]
         public virtual string LegalEntity
         {
             get
@@ -128,6 +132,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProfitLossDefaultDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProfitLossDefaultDimensionDisplayValue
         {
             get
@@ -150,6 +155,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransferBalanceSheetDimensions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> TransferBalanceSheetDimensions
         {
             get
@@ -172,6 +178,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProfitLossCloseDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProfitLossCloseDimensionDisplayValue
         {
             get
@@ -194,6 +201,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetainedEarningsMainAccount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RetainedEarningsMainAccount
         {
             get
@@ -216,6 +224,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionSet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionSet DimensionSet
         {
             get

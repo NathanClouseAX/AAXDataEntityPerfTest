@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for PersonIdentificationNumberSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PersonIdentificationNumberSingle in the schema.
+    /// </summary>
     public partial class PersonIdentificationNumberSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PersonIdentificationNumber>
     {
         /// <summary>
@@ -98,9 +98,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.IssuingAgencySingle _IssuingAgency;
     }
-        /// <summary>
-        /// There are no comments for PersonIdentificationNumber in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PersonIdentificationNumber in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// PartyNumber
     /// IdentificationTypeId
@@ -144,6 +144,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PartyNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PartyNumber is required.")]
         public virtual string PartyNumber
         {
             get
@@ -166,6 +168,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IdentificationTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "IdentificationTypeId is required.")]
         public virtual string IdentificationTypeId
         {
             get
@@ -188,6 +192,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IdentificationNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "IdentificationNumber is required.")]
         public virtual string IdentificationNumber
         {
             get
@@ -210,6 +216,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EntryType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string EntryType
         {
             get
@@ -232,6 +239,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IssuingAgencyId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string IssuingAgencyId
         {
             get
@@ -254,6 +262,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsPrimary in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsPrimary
         {
             get
@@ -276,6 +285,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -298,6 +308,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IssuedDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "IssuedDate is required.")]
         public virtual global::System.DateTimeOffset IssuedDate
         {
             get
@@ -320,6 +332,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExpirationDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ExpirationDate is required.")]
         public virtual global::System.DateTimeOffset ExpirationDate
         {
             get
@@ -342,6 +356,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Person in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Person is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Person Person
         {
             get
@@ -364,6 +380,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IdentificationType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.IdentificationType IdentificationType
         {
             get
@@ -386,6 +403,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IssuingAgency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.IssuingAgency IssuingAgency
         {
             get

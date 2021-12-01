@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RetailEcoResCategorySingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailEcoResCategorySingle in the schema.
+    /// </summary>
     public partial class RetailEcoResCategorySingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RetailEcoResCategory>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.RetailProductHierarchyCategorySingle _RetailProductHierarchyCategory;
     }
-        /// <summary>
-        /// There are no comments for RetailEcoResCategory in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailEcoResCategory in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// Name
     /// EcoResCategoryHierarchy_Name
@@ -116,6 +116,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Name is required.")]
         public virtual string Name
         {
             get
@@ -138,6 +140,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EcoResCategoryHierarchy_Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EcoResCategoryHierarchy_Name is required.")]
         public virtual string EcoResCategoryHierarchy_Name
         {
             get
@@ -160,6 +164,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Level in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Level is required.")]
         public virtual long Level
         {
             get
@@ -182,6 +188,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AxRecId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AxRecId is required.")]
         public virtual long AxRecId
         {
             get
@@ -204,6 +212,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ParentCategory in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ParentCategory is required.")]
         public virtual long ParentCategory
         {
             get
@@ -226,6 +236,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SharedCategory_CategoryId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SharedCategory_CategoryId
         {
             get
@@ -248,6 +259,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NestedSetLeft in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "NestedSetLeft is required.")]
         public virtual long NestedSetLeft
         {
             get
@@ -270,6 +283,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ChangeStatus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EcoResCategoryChangeStatus> ChangeStatus
         {
             get
@@ -292,6 +306,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EcoResCategory1_Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string EcoResCategory1_Name
         {
             get
@@ -314,6 +329,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsActive in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsActive
         {
             get
@@ -336,6 +352,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InstanceRelationType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "InstanceRelationType is required.")]
         public virtual long InstanceRelationType
         {
             get
@@ -358,6 +376,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultThreshold_PSN in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DefaultThreshold_PSN is required.")]
         public virtual decimal DefaultThreshold_PSN
         {
             get
@@ -380,6 +400,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NestedSetRight in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "NestedSetRight is required.")]
         public virtual long NestedSetRight
         {
             get
@@ -402,6 +424,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EcoResCategoryHierarchy1_Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string EcoResCategoryHierarchy1_Name
         {
             get
@@ -424,6 +447,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Code in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Code
         {
             get
@@ -446,6 +470,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsCategoryAttributesInherited in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsCategoryAttributesInherited
         {
             get
@@ -468,6 +493,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PKWiUCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PKWiUCode
         {
             get
@@ -490,6 +516,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CategoryHierarchy in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CategoryHierarchy is required.")]
         public virtual long CategoryHierarchy
         {
             get
@@ -512,6 +540,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsTangible in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsTangible
         {
             get
@@ -534,6 +563,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailProductHierarchyCategory in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetailProductHierarchyCategory is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RetailProductHierarchyCategory RetailProductHierarchyCategory
         {
             get

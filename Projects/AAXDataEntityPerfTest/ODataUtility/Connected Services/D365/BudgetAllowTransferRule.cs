@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for BudgetAllowTransferRuleSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BudgetAllowTransferRuleSingle in the schema.
+    /// </summary>
     public partial class BudgetAllowTransferRuleSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<BudgetAllowTransferRule>
     {
         /// <summary>
@@ -98,9 +98,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.BudgetDimensionSingle _BudgetDimensions;
     }
-        /// <summary>
-        /// There are no comments for BudgetAllowTransferRule in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BudgetAllowTransferRule in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// LegalEntityId
@@ -153,6 +153,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -175,6 +177,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LegalEntityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LegalEntityId is required.")]
         public virtual string LegalEntityId
         {
             get
@@ -197,6 +201,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetTransferRule in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BudgetTransferRule is required.")]
         public virtual string BudgetTransferRule
         {
             get
@@ -219,6 +225,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RuleMember in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RuleMember is required.")]
         public virtual string RuleMember
         {
             get
@@ -241,6 +249,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionAttributeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DimensionAttributeId is required.")]
         public virtual string DimensionAttributeId
         {
             get
@@ -263,6 +273,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountStructureId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccountStructureId
         {
             get
@@ -285,6 +296,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -307,6 +319,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Criterion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Criterion
         {
             get
@@ -329,6 +342,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountStructures in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AccountStructures is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.AccountStructure AccountStructures
         {
             get
@@ -351,6 +366,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LegalEntities in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LegalEntities is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Ledger LegalEntities
         {
             get
@@ -373,6 +390,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetDimensions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.BudgetDimension BudgetDimensions
         {
             get

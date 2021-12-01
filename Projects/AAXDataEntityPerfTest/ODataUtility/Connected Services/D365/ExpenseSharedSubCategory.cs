@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ExpenseSharedSubCategorySingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ExpenseSharedSubCategorySingle in the schema.
+    /// </summary>
     public partial class ExpenseSharedSubCategorySingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ExpenseSharedSubCategory>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ExpenseSubCategory> _ExpenseSubCategory;
     }
-        /// <summary>
-        /// There are no comments for ExpenseSharedSubCategory in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ExpenseSharedSubCategory in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// Name
     /// SharedCategoryId
@@ -113,6 +113,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Name is required.")]
         public virtual string Name
         {
             get
@@ -135,6 +137,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SharedCategoryId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SharedCategoryId is required.")]
         public virtual string SharedCategoryId
         {
             get
@@ -157,6 +161,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ChargeType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ChargeType is required.")]
         public virtual int ChargeType
         {
             get
@@ -179,6 +185,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SystemCreated in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> SystemCreated
         {
             get
@@ -201,6 +208,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -223,6 +231,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExcludeFromRecovery in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ExcludeFromRecovery
         {
             get
@@ -245,6 +254,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BelongsTo in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BelongsTo is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.SharedCategory BelongsTo
         {
             get
@@ -267,6 +278,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExpenseSubCategory in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ExpenseSubCategory> ExpenseSubCategory
         {
             get

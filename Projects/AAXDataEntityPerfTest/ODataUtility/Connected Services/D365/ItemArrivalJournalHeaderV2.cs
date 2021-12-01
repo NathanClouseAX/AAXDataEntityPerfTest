@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ItemArrivalJournalHeaderV2Single in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ItemArrivalJournalHeaderV2Single in the schema.
+    /// </summary>
     public partial class ItemArrivalJournalHeaderV2Single : global::Microsoft.OData.Client.DataServiceQuerySingle<ItemArrivalJournalHeaderV2>
     {
         /// <summary>
@@ -182,9 +182,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ReturnDispositionCodeSingle _DefaultReturnDispositionCode;
     }
-        /// <summary>
-        /// There are no comments for ItemArrivalJournalHeaderV2 in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ItemArrivalJournalHeaderV2 in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// JournalNumber
@@ -212,6 +212,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -234,6 +236,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JournalNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "JournalNumber is required.")]
         public virtual string JournalNumber
         {
             get
@@ -256,6 +260,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultReceivingSiteId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultReceivingSiteId
         {
             get
@@ -278,6 +283,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsPosted in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsPosted
         {
             get
@@ -300,6 +306,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultReturnItemNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultReturnItemNumber
         {
             get
@@ -322,6 +329,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsItemMovedToDefaultItemPickingWarehouseLocation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsItemMovedToDefaultItemPickingWarehouseLocation
         {
             get
@@ -344,6 +352,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JournalDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string JournalDescription
         {
             get
@@ -366,6 +375,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PackingSlipId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PackingSlipId
         {
             get
@@ -388,6 +398,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultTransactionReferenceType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.InventTransType> DefaultTransactionReferenceType
         {
             get
@@ -410,6 +421,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JournalNameId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string JournalNameId
         {
             get
@@ -432,6 +444,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultReceivingWarehouseLocationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultReceivingWarehouseLocationId
         {
             get
@@ -454,6 +467,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultAccountNumber
         {
             get
@@ -476,6 +490,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultReturnDispositionCodeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultReturnDispositionCodeId
         {
             get
@@ -498,6 +513,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostedDateTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PostedDateTime is required.")]
         public virtual global::System.DateTimeOffset PostedDateTime
         {
             get
@@ -520,6 +537,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultReceivingInventoryStatusId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultReceivingInventoryStatusId
         {
             get
@@ -542,6 +560,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsQuarantineOrderCreatedForReceivedItem in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsQuarantineOrderCreatedForReceivedItem
         {
             get
@@ -564,6 +583,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultReceivingWarehouseId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultReceivingWarehouseId
         {
             get
@@ -586,6 +606,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultTransactionReferenceNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultTransactionReferenceNumber
         {
             get
@@ -608,6 +629,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AreLinesDeletedAfterPosting in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AreLinesDeletedAfterPosting
         {
             get
@@ -630,6 +652,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostedUserId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PostedUserId
         {
             get
@@ -652,6 +675,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultReceivingLicensePlateNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultReceivingLicensePlateNumber
         {
             get
@@ -674,6 +698,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemArrivalJournalLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemArrivalJournalLineV2> ItemArrivalJournalLine
         {
             get
@@ -696,6 +721,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostedUser in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.SystemUser PostedUser
         {
             get
@@ -718,6 +744,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultReceivingWarehouse in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.Warehouse DefaultReceivingWarehouse
         {
             get
@@ -740,6 +767,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultVendorV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.VendorV2 DefaultVendorV2
         {
             get
@@ -762,6 +790,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultReceivingWarehouseLocation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.WarehouseLocation DefaultReceivingWarehouseLocation
         {
             get
@@ -784,6 +813,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultReceivingSite in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.OperationalSite DefaultReceivingSite
         {
             get
@@ -806,6 +836,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultReturnDispositionCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ReturnDispositionCode DefaultReturnDispositionCode
         {
             get

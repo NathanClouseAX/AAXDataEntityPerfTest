@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for FiscalEstablishmentSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for FiscalEstablishmentSingle in the schema.
+    /// </summary>
     public partial class FiscalEstablishmentSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<FiscalEstablishment>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FiscalEstablishmentIEPerState> _FiscalEstablishmentIEPerState;
     }
-        /// <summary>
-        /// There are no comments for FiscalEstablishment in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for FiscalEstablishment in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// FiscalEstablishmentId
@@ -111,6 +111,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -133,6 +135,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FiscalEstablishmentId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FiscalEstablishmentId is required.")]
         public virtual string FiscalEstablishmentId
         {
             get
@@ -155,6 +159,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Name
         {
             get
@@ -177,6 +182,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PreprintedSecurityForm in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PreprintedSecurityForm
         {
             get
@@ -199,6 +205,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EmailTemplateApprovedNFe in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string EmailTemplateApprovedNFe
         {
             get
@@ -221,6 +228,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MatchNfeXmlOnPosting in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> MatchNfeXmlOnPosting
         {
             get
@@ -243,6 +251,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CSCToken in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CSCToken
         {
             get
@@ -265,6 +274,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NextFiscalPrinterDailyReportNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "NextFiscalPrinterDailyReportNumber is required.")]
         public virtual int NextFiscalPrinterDailyReportNumber
         {
             get
@@ -287,6 +298,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BlockPostingNotValidatedNfeXml in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> BlockPostingNotValidatedNfeXml
         {
             get
@@ -309,6 +321,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrintDanfeWhenAproved in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PrintDanfeWhenAproved is required.")]
         public virtual bool PrintDanfeWhenAproved
         {
             get
@@ -331,6 +345,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PartyNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PartyNumber
         {
             get
@@ -353,6 +368,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SendDanfePdfInEmail in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> SendDanfePdfInEmail
         {
             get
@@ -375,6 +391,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NFeEnvironment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EFDocEnvironment_BR> NFeEnvironment
         {
             get
@@ -397,6 +414,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FiscalEstablishmentGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FiscalEstablishmentGroupId
         {
             get
@@ -419,6 +437,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NFCeEnvironment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EFDocEnvironment_BR> NFCeEnvironment
         {
             get
@@ -441,6 +460,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EmailTemplateCorrectionLetterNFe in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string EmailTemplateCorrectionLetterNFe
         {
             get
@@ -463,6 +483,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidateXmlSchema in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValidateXmlSchema is required.")]
         public virtual bool ValidateXmlSchema
         {
             get
@@ -485,6 +507,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ClosedWarehouse in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ClosedWarehouse
         {
             get
@@ -507,6 +530,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NFCeSendPdfInEmail in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> NFCeSendPdfInEmail
         {
             get
@@ -529,6 +553,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CSC in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CSC
         {
             get
@@ -551,6 +576,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CNPJ in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CNPJ
         {
             get
@@ -573,6 +599,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SPEDContribReportingType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.SPEDContribReportingType_BR> SPEDContribReportingType
         {
             get
@@ -595,6 +622,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CCM in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CCM
         {
             get
@@ -617,6 +645,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FciToIntrastateEnabled in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> FciToIntrastateEnabled
         {
             get
@@ -639,6 +668,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EmailTemplateCanceledNFe in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string EmailTemplateCanceledNFe
         {
             get
@@ -661,6 +691,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NFeDigitalCertificate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string NFeDigitalCertificate
         {
             get
@@ -683,6 +714,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NFeAuthority in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string NFeAuthority
         {
             get
@@ -705,6 +737,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NFCeAuthority in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string NFCeAuthority
         {
             get
@@ -727,6 +760,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NFeVersion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EFiscalDocVersion_BR> NFeVersion
         {
             get
@@ -749,6 +783,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EFDocNFeTechNotes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EFDocNFeTechNotes_BR> EFDocNFeTechNotes
         {
             get
@@ -771,6 +806,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountantCRC in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccountantCRC
         {
             get
@@ -793,6 +829,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IE in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string IE
         {
             get
@@ -815,6 +852,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FiscalEstablishmentSalesIssuerId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FiscalEstablishmentSalesIssuerId
         {
             get
@@ -837,6 +875,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NIRE in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string NIRE
         {
             get
@@ -859,6 +898,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NFCeEmailApproved in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string NFCeEmailApproved
         {
             get
@@ -881,6 +921,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NFCeVersion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EFiscalDocVersion_BR> NFCeVersion
         {
             get
@@ -903,6 +944,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EFDocNFe402018005v110 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> EFDocNFe402018005v110
         {
             get
@@ -925,6 +967,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AddressName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AddressName
         {
             get
@@ -947,6 +990,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountantCPF in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccountantCPF
         {
             get
@@ -969,6 +1013,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OperationalSite in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.OperationalSite> OperationalSite
         {
             get
@@ -991,6 +1036,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FiscalEstablishmentIEPerState in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FiscalEstablishmentIEPerState> FiscalEstablishmentIEPerState
         {
             get

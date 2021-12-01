@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ProductOwnerWorkerSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ProductOwnerWorkerSingle in the schema.
+    /// </summary>
     public partial class ProductOwnerWorkerSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ProductOwnerWorker>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.WorkerSingle _AssignedWorker;
     }
-        /// <summary>
-        /// There are no comments for ProductOwnerWorker in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ProductOwnerWorker in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// ProductOwnerId
     /// AssignedPersonnelNumber
@@ -117,6 +117,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductOwnerId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductOwnerId is required.")]
         public virtual string ProductOwnerId
         {
             get
@@ -139,6 +141,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssignedPersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AssignedPersonnelNumber is required.")]
         public virtual string AssignedPersonnelNumber
         {
             get
@@ -161,6 +165,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductOwner in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductOwner is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ProductOwner ProductOwner
         {
             get
@@ -183,6 +189,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssignedWorker in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AssignedWorker is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Worker AssignedWorker
         {
             get

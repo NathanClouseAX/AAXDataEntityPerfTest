@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for TimeAndAttendanceManualPremiumRegistrationSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TimeAndAttendanceManualPremiumRegistrationSingle in the schema.
+    /// </summary>
     public partial class TimeAndAttendanceManualPremiumRegistrationSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<TimeAndAttendanceManualPremiumRegistration>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.WorkerSingle _Worker;
     }
-        /// <summary>
-        /// There are no comments for TimeAndAttendanceManualPremiumRegistration in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TimeAndAttendanceManualPremiumRegistration in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// TimeProfileDate
@@ -106,6 +106,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -128,6 +130,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TimeProfileDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TimeProfileDate is required.")]
         public virtual global::System.DateTimeOffset TimeProfileDate
         {
             get
@@ -150,6 +154,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ManualPremiumRegistrationEntryNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ManualPremiumRegistrationEntryNumber is required.")]
         public virtual long ManualPremiumRegistrationEntryNumber
         {
             get
@@ -172,6 +178,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkerPersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WorkerPersonnelNumber is required.")]
         public virtual string WorkerPersonnelNumber
         {
             get
@@ -194,6 +202,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnitPrice in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "UnitPrice is required.")]
         public virtual decimal UnitPrice
         {
             get
@@ -216,6 +226,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ActivityRegistrationTransactionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ActivityRegistrationTransactionId
         {
             get
@@ -238,6 +249,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnitQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "UnitQuantity is required.")]
         public virtual decimal UnitQuantity
         {
             get
@@ -260,6 +273,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TimeAndAttendanceManualPremiumId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TimeAndAttendanceManualPremiumId
         {
             get
@@ -282,6 +296,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Worker in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Worker is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Worker Worker
         {
             get

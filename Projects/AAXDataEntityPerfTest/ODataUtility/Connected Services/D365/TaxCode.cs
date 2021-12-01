@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for TaxCodeSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TaxCodeSingle in the schema.
+    /// </summary>
     public partial class TaxCodeSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<TaxCode>
     {
         /// <summary>
@@ -34,6 +34,69 @@ namespace Microsoft.Dynamics.DataEntities
         public TaxCodeSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<TaxCode> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for TaxCodeValue in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TaxCodeValue> TaxCodeValue
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._TaxCodeValue == null))
+                {
+                    this._TaxCodeValue = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TaxCodeValue>(GetPath("TaxCodeValue"));
+                }
+                return this._TaxCodeValue;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TaxCodeValue> _TaxCodeValue;
+        /// <summary>
+        /// There are no comments for TaxCodeLimit in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TaxCodeLimit> TaxCodeLimit
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._TaxCodeLimit == null))
+                {
+                    this._TaxCodeLimit = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TaxCodeLimit>(GetPath("TaxCodeLimit"));
+                }
+                return this._TaxCodeLimit;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TaxCodeLimit> _TaxCodeLimit;
+        /// <summary>
+        /// There are no comments for TaxItemGroup in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TaxItemGroup> TaxItemGroup
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._TaxItemGroup == null))
+                {
+                    this._TaxItemGroup = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TaxItemGroup>(GetPath("TaxItemGroup"));
+                }
+                return this._TaxItemGroup;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TaxItemGroup> _TaxItemGroup;
         /// <summary>
         /// There are no comments for TaxReportingCodeEntity in the schema.
         /// </summary>
@@ -98,27 +161,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.TaxPeriodSingle _TaxPeriod;
         /// <summary>
-        /// There are no comments for TaxCodeLimit in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TaxCodeLimit> TaxCodeLimit
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._TaxCodeLimit == null))
-                {
-                    this._TaxCodeLimit = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TaxCodeLimit>(GetPath("TaxCodeLimit"));
-                }
-                return this._TaxCodeLimit;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TaxCodeLimit> _TaxCodeLimit;
-        /// <summary>
         /// There are no comments for TaxCodeValueV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -160,52 +202,10 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TaxGroupData> _TaxGroupData;
-        /// <summary>
-        /// There are no comments for TaxCodeValue in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TaxCodeValue> TaxCodeValue
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._TaxCodeValue == null))
-                {
-                    this._TaxCodeValue = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TaxCodeValue>(GetPath("TaxCodeValue"));
-                }
-                return this._TaxCodeValue;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TaxCodeValue> _TaxCodeValue;
-        /// <summary>
-        /// There are no comments for TaxItemGroup in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TaxItemGroup> TaxItemGroup
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._TaxItemGroup == null))
-                {
-                    this._TaxItemGroup = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TaxItemGroup>(GetPath("TaxItemGroup"));
-                }
-                return this._TaxItemGroup;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TaxItemGroup> _TaxItemGroup;
     }
-        /// <summary>
-        /// There are no comments for TaxCode in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TaxCode in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// TaxCode
@@ -313,6 +313,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -335,7 +337,9 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxCode1 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         [global::Microsoft.OData.Client.OriginalNameAttribute("TaxCode")]
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TaxCode1 is required.")]
         public virtual string TaxCode1
         {
             get
@@ -358,6 +362,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JapanTaxType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TaxType_JP> JapanTaxType
         {
             get
@@ -380,6 +385,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportingCodeTaxablePurchasesCreditNote in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReportingCodeTaxablePurchasesCreditNote is required.")]
         public virtual int ReportingCodeTaxablePurchasesCreditNote
         {
             get
@@ -402,6 +409,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetainedTax in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> RetainedTax
         {
             get
@@ -424,6 +432,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportingCodeTaxableImport in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReportingCodeTaxableImport is required.")]
         public virtual int ReportingCodeTaxableImport
         {
             get
@@ -446,6 +456,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxSubstitutionMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TaxSubstitutionEnum_BR> TaxSubstitutionMethod
         {
             get
@@ -468,6 +479,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NotEUSalesList in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> NotEUSalesList
         {
             get
@@ -490,6 +502,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportingCodeUseTaxOffsetCreditNote in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReportingCodeUseTaxOffsetCreditNote is required.")]
         public virtual int ReportingCodeUseTaxOffsetCreditNote
         {
             get
@@ -512,6 +526,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DomesticCustomsPractice in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DomesticCustomsPractice
         {
             get
@@ -534,6 +549,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportingCodeTaxFreeSalesDebitNote in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReportingCodeTaxFreeSalesDebitNote is required.")]
         public virtual int ReportingCodeTaxFreeSalesDebitNote
         {
             get
@@ -556,6 +573,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxSubstitutionCalculationMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TaxSubstitutionBaseRedCalculationMode_BR> TaxSubstitutionCalculationMethod
         {
             get
@@ -578,6 +596,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxOnTax in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxOnTax
         {
             get
@@ -600,6 +619,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PackingDuty in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PackingDuty
         {
             get
@@ -622,6 +642,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportingCodeTaxFreeSale in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReportingCodeTaxFreeSale is required.")]
         public virtual int ReportingCodeTaxFreeSale
         {
             get
@@ -644,6 +666,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxationCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxationCode
         {
             get
@@ -666,6 +689,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportingCodeTaxFreePurchase in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReportingCodeTaxFreePurchase is required.")]
         public virtual int ReportingCodeTaxFreePurchase
         {
             get
@@ -688,6 +713,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExcludeFromInvoice in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ExcludeFromInvoice
         {
             get
@@ -710,6 +736,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrintCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrintCode
         {
             get
@@ -732,6 +759,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PaymentTaxCodeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PaymentTaxCodeId
         {
             get
@@ -754,6 +782,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RevenueCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RevenueCode
         {
             get
@@ -776,6 +805,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportingCodeUseTaxCreditNote in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReportingCodeUseTaxCreditNote is required.")]
         public virtual int ReportingCodeUseTaxCreditNote
         {
             get
@@ -798,6 +829,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportingCodeSalesTaxPayableCreditNote in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReportingCodeSalesTaxPayableCreditNote is required.")]
         public virtual int ReportingCodeSalesTaxPayableCreditNote
         {
             get
@@ -820,6 +853,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportingCodeSalesTaxReceivable in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReportingCodeSalesTaxReceivable is required.")]
         public virtual int ReportingCodeSalesTaxReceivable
         {
             get
@@ -842,6 +877,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxCalculationMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TaxCalcMode> TaxCalculationMethod
         {
             get
@@ -864,6 +900,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SingaporeTaxType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TaxType_SG> SingaporeTaxType
         {
             get
@@ -886,6 +923,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportingCodeUseTaxOffset in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReportingCodeUseTaxOffset is required.")]
         public virtual int ReportingCodeUseTaxOffset
         {
             get
@@ -908,6 +947,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrintCodeType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TaxWriteSelection> PrintCodeType
         {
             get
@@ -930,6 +970,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportingCodeUseTax in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReportingCodeUseTax is required.")]
         public virtual int ReportingCodeUseTax
         {
             get
@@ -952,6 +994,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxRoundOffType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RoundOffType> TaxRoundOffType
         {
             get
@@ -974,6 +1017,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxVatReportCategoryCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxVatReportCategoryCode
         {
             get
@@ -996,6 +1040,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxLimitBase in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TaxLimitBase> TaxLimitBase
         {
             get
@@ -1018,6 +1063,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportingCodeSalesTaxPayable in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReportingCodeSalesTaxPayable is required.")]
         public virtual int ReportingCodeSalesTaxPayable
         {
             get
@@ -1040,6 +1087,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxCountryRegionType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.CountryRegionType> TaxCountryRegionType
         {
             get
@@ -1062,6 +1110,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsGST in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsGST
         {
             get
@@ -1084,6 +1133,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FiscalValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TaxFiscalValue_BR> FiscalValue
         {
             get
@@ -1106,6 +1156,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportingCodeTaxOutgoingDebitNote in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReportingCodeTaxOutgoingDebitNote is required.")]
         public virtual int ReportingCodeTaxOutgoingDebitNote
         {
             get
@@ -1128,6 +1180,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportingCodeSalesTaxReceivableCreditNote in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReportingCodeSalesTaxReceivableCreditNote is required.")]
         public virtual int ReportingCodeSalesTaxReceivableCreditNote
         {
             get
@@ -1150,6 +1204,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportingCodeTaxFreeSaleCreditNote in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReportingCodeTaxFreeSaleCreditNote is required.")]
         public virtual int ReportingCodeTaxFreeSaleCreditNote
         {
             get
@@ -1172,6 +1228,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxBase in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TaxBaseType> TaxBase
         {
             get
@@ -1194,6 +1251,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportingCodeTaxIncomingDebitNote in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReportingCodeTaxIncomingDebitNote is required.")]
         public virtual int ReportingCodeTaxIncomingDebitNote
         {
             get
@@ -1216,6 +1275,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IncludedTax in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IncludedTax
         {
             get
@@ -1238,6 +1298,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportingCodeTaxFreeBuyDebitNote in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReportingCodeTaxFreeBuyDebitNote is required.")]
         public virtual int ReportingCodeTaxFreeBuyDebitNote
         {
             get
@@ -1260,6 +1322,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DiotAddInfo in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DiotAddInfo
         {
             get
@@ -1282,6 +1345,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportingCodeTaxableImportOffset in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReportingCodeTaxableImportOffset is required.")]
         public virtual int ReportingCodeTaxableImportOffset
         {
             get
@@ -1304,6 +1369,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PackingDutySortCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PackingDutySortCode
         {
             get
@@ -1326,6 +1392,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VATChargeSource in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.VATChargeSource_RU> VATChargeSource
         {
             get
@@ -1348,6 +1415,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxPeriodId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxPeriodId
         {
             get
@@ -1370,6 +1438,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportingCodeTaxableImportOffsetCreditNote in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReportingCodeTaxableImportOffsetCreditNote is required.")]
         public virtual int ReportingCodeTaxableImportOffsetCreditNote
         {
             get
@@ -1392,6 +1462,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TaxType_TH> TaxType
         {
             get
@@ -1414,6 +1485,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CalculateUnitTaxBeforeSalesTax in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> CalculateUnitTaxBeforeSalesTax
         {
             get
@@ -1436,6 +1508,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportingCodeTaxFreePurchaseCreditNote in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReportingCodeTaxFreePurchaseCreditNote is required.")]
         public virtual int ReportingCodeTaxFreePurchaseCreditNote
         {
             get
@@ -1458,6 +1532,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxCurrencyCodeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxCurrencyCodeId
         {
             get
@@ -1480,6 +1555,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportingCodeTaxableImportCreditNote in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReportingCodeTaxableImportCreditNote is required.")]
         public virtual int ReportingCodeTaxableImportCreditNote
         {
             get
@@ -1502,6 +1579,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportingCodeTaxableSales in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReportingCodeTaxableSales is required.")]
         public virtual int ReportingCodeTaxableSales
         {
             get
@@ -1524,6 +1603,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnrealizedTax in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> UnrealizedTax
         {
             get
@@ -1546,6 +1626,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BrazilTaxType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TaxType_BR> BrazilTaxType
         {
             get
@@ -1568,6 +1649,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MexicoTaxType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TaxType_MX> MexicoTaxType
         {
             get
@@ -1590,6 +1672,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxName
         {
             get
@@ -1612,6 +1695,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportingCodeTaxablePurchases in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReportingCodeTaxablePurchases is required.")]
         public virtual int ReportingCodeTaxablePurchases
         {
             get
@@ -1634,6 +1719,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NegativeTax in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> NegativeTax
         {
             get
@@ -1656,6 +1742,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportingCodeTaxableSalesCreditNote in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReportingCodeTaxableSalesCreditNote is required.")]
         public virtual int ReportingCodeTaxableSalesCreditNote
         {
             get
@@ -1678,6 +1766,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxPostingGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxPostingGroupId
         {
             get
@@ -1700,6 +1789,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TypeOfTax in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TaxType_W> TypeOfTax
         {
             get
@@ -1722,6 +1812,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportingCodeBaseOutgoingDebitNote in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReportingCodeBaseOutgoingDebitNote is required.")]
         public virtual int ReportingCodeBaseOutgoingDebitNote
         {
             get
@@ -1744,6 +1836,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxUnitId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxUnitId
         {
             get
@@ -1766,6 +1859,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportingCodeBaseIncomingDebitNote in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReportingCodeBaseIncomingDebitNote is required.")]
         public virtual int ReportingCodeBaseIncomingDebitNote
         {
             get
@@ -1788,6 +1883,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxRoundOff in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TaxRoundOff is required.")]
         public virtual decimal TaxRoundOff
         {
             get
@@ -1810,6 +1907,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DescriptionQRBill in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DescriptionQRBill
         {
             get
@@ -1829,9 +1927,79 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDescriptionQRBillChanging(string value);
         partial void OnDescriptionQRBillChanged();
         /// <summary>
+        /// There are no comments for Property TaxCodeValue in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCodeValue> TaxCodeValue
+        {
+            get
+            {
+                return this._TaxCodeValue;
+            }
+            set
+            {
+                this.OnTaxCodeValueChanging(value);
+                this._TaxCodeValue = value;
+                this.OnTaxCodeValueChanged();
+                this.OnPropertyChanged("TaxCodeValue");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCodeValue> _TaxCodeValue = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCodeValue>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnTaxCodeValueChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCodeValue> value);
+        partial void OnTaxCodeValueChanged();
+        /// <summary>
+        /// There are no comments for Property TaxCodeLimit in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCodeLimit> TaxCodeLimit
+        {
+            get
+            {
+                return this._TaxCodeLimit;
+            }
+            set
+            {
+                this.OnTaxCodeLimitChanging(value);
+                this._TaxCodeLimit = value;
+                this.OnTaxCodeLimitChanged();
+                this.OnPropertyChanged("TaxCodeLimit");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCodeLimit> _TaxCodeLimit = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCodeLimit>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnTaxCodeLimitChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCodeLimit> value);
+        partial void OnTaxCodeLimitChanged();
+        /// <summary>
+        /// There are no comments for Property TaxItemGroup in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxItemGroup> TaxItemGroup
+        {
+            get
+            {
+                return this._TaxItemGroup;
+            }
+            set
+            {
+                this.OnTaxItemGroupChanging(value);
+                this._TaxItemGroup = value;
+                this.OnTaxItemGroupChanged();
+                this.OnPropertyChanged("TaxItemGroup");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxItemGroup> _TaxItemGroup = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxItemGroup>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnTaxItemGroupChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxItemGroup> value);
+        partial void OnTaxItemGroupChanged();
+        /// <summary>
         /// There are no comments for Property TaxReportingCodeEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.TaxReportingCodeEntity TaxReportingCodeEntity
         {
             get
@@ -1854,6 +2022,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxPostingGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.TaxPostingGroup TaxPostingGroup
         {
             get
@@ -1876,6 +2045,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxPeriod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.TaxPeriod TaxPeriod
         {
             get
@@ -1895,31 +2065,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnTaxPeriodChanging(global::Microsoft.Dynamics.DataEntities.TaxPeriod value);
         partial void OnTaxPeriodChanged();
         /// <summary>
-        /// There are no comments for Property TaxCodeLimit in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCodeLimit> TaxCodeLimit
-        {
-            get
-            {
-                return this._TaxCodeLimit;
-            }
-            set
-            {
-                this.OnTaxCodeLimitChanging(value);
-                this._TaxCodeLimit = value;
-                this.OnTaxCodeLimitChanged();
-                this.OnPropertyChanged("TaxCodeLimit");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCodeLimit> _TaxCodeLimit = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCodeLimit>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnTaxCodeLimitChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCodeLimit> value);
-        partial void OnTaxCodeLimitChanged();
-        /// <summary>
         /// There are no comments for Property TaxCodeValueV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCodeValueV2> TaxCodeValueV2
         {
             get
@@ -1942,6 +2091,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxGroupData in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxGroupData> TaxGroupData
         {
             get
@@ -1960,50 +2110,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxGroupData> _TaxGroupData = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxGroupData>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnTaxGroupDataChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxGroupData> value);
         partial void OnTaxGroupDataChanged();
-        /// <summary>
-        /// There are no comments for Property TaxCodeValue in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCodeValue> TaxCodeValue
-        {
-            get
-            {
-                return this._TaxCodeValue;
-            }
-            set
-            {
-                this.OnTaxCodeValueChanging(value);
-                this._TaxCodeValue = value;
-                this.OnTaxCodeValueChanged();
-                this.OnPropertyChanged("TaxCodeValue");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCodeValue> _TaxCodeValue = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCodeValue>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnTaxCodeValueChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxCodeValue> value);
-        partial void OnTaxCodeValueChanged();
-        /// <summary>
-        /// There are no comments for Property TaxItemGroup in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxItemGroup> TaxItemGroup
-        {
-            get
-            {
-                return this._TaxItemGroup;
-            }
-            set
-            {
-                this.OnTaxItemGroupChanging(value);
-                this._TaxItemGroup = value;
-                this.OnTaxItemGroupChanged();
-                this.OnPropertyChanged("TaxItemGroup");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxItemGroup> _TaxItemGroup = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxItemGroup>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnTaxItemGroupChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxItemGroup> value);
-        partial void OnTaxItemGroupChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

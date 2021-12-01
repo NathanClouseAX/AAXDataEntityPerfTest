@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for CourseLocationHotelSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CourseLocationHotelSingle in the schema.
+    /// </summary>
     public partial class CourseLocationHotelSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<CourseLocationHotel>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.CourseHotelSingle _CourseHotel;
     }
-        /// <summary>
-        /// There are no comments for CourseLocationHotel in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CourseLocationHotel in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// CourseId
@@ -128,6 +128,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -150,6 +152,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CourseId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CourseId is required.")]
         public virtual string CourseId
         {
             get
@@ -172,6 +176,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CourseLocation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CourseLocation is required.")]
         public virtual string CourseLocation
         {
             get
@@ -194,6 +200,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Hotel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Hotel is required.")]
         public virtual string Hotel
         {
             get
@@ -216,6 +224,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Note in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Note
         {
             get
@@ -238,6 +247,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CourseTable in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CourseTable is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.CourseTable CourseTable
         {
             get
@@ -260,6 +271,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CourseHotel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CourseHotel is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.CourseHotel CourseHotel
         {
             get

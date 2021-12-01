@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for BudgetAllocationTermSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BudgetAllocationTermSingle in the schema.
+    /// </summary>
     public partial class BudgetAllocationTermSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<BudgetAllocationTerm>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionSetSingle _DimensionSetEntity_BudgetAllocationTermEntity;
     }
-        /// <summary>
-        /// There are no comments for BudgetAllocationTerm in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BudgetAllocationTerm in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// BudgetAllocationTerm
@@ -89,6 +89,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -111,7 +113,9 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetAllocationTerm1 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         [global::Microsoft.OData.Client.OriginalNameAttribute("BudgetAllocationTerm")]
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BudgetAllocationTerm1 is required.")]
         public virtual string BudgetAllocationTerm1
         {
             get
@@ -134,6 +138,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LineNumber is required.")]
         public virtual decimal LineNumber
         {
             get
@@ -156,6 +162,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultDimensionDisplayValue
         {
             get
@@ -178,6 +185,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Percent in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Percent is required.")]
         public virtual decimal Percent
         {
             get
@@ -200,6 +209,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -222,6 +232,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionSetEntity_BudgetAllocationTermEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionSet DimensionSetEntity_BudgetAllocationTermEntity
         {
             get

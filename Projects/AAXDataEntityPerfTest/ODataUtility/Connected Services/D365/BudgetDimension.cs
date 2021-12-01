@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for BudgetDimensionSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BudgetDimensionSingle in the schema.
+    /// </summary>
     public partial class BudgetDimensionSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<BudgetDimension>
     {
         /// <summary>
@@ -34,6 +34,27 @@ namespace Microsoft.Dynamics.DataEntities
         public BudgetDimensionSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<BudgetDimension> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for BudgetAllowTransferRuleBudgetDimension in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetAllowTransferRule> BudgetAllowTransferRuleBudgetDimension
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._BudgetAllowTransferRuleBudgetDimension == null))
+                {
+                    this._BudgetAllowTransferRuleBudgetDimension = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetAllowTransferRule>(GetPath("BudgetAllowTransferRuleBudgetDimension"));
+                }
+                return this._BudgetAllowTransferRuleBudgetDimension;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetAllowTransferRule> _BudgetAllowTransferRuleBudgetDimension;
         /// <summary>
         /// There are no comments for BudgetDimensions in the schema.
         /// </summary>
@@ -76,31 +97,10 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionAttributeSingle _BudgetPrimaryLedgers;
-        /// <summary>
-        /// There are no comments for BudgetAllowTransferRuleBudgetDimension in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetAllowTransferRule> BudgetAllowTransferRuleBudgetDimension
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._BudgetAllowTransferRuleBudgetDimension == null))
-                {
-                    this._BudgetAllowTransferRuleBudgetDimension = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetAllowTransferRule>(GetPath("BudgetAllowTransferRuleBudgetDimension"));
-                }
-                return this._BudgetAllowTransferRuleBudgetDimension;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetAllowTransferRule> _BudgetAllowTransferRuleBudgetDimension;
     }
-        /// <summary>
-        /// There are no comments for BudgetDimension in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BudgetDimension in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// LegalEntityId
@@ -141,6 +141,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -163,6 +165,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LegalEntityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LegalEntityId is required.")]
         public virtual string LegalEntityId
         {
             get
@@ -185,6 +189,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionAttributeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DimensionAttributeId is required.")]
         public virtual string DimensionAttributeId
         {
             get
@@ -204,9 +210,34 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDimensionAttributeIdChanging(string value);
         partial void OnDimensionAttributeIdChanged();
         /// <summary>
+        /// There are no comments for Property BudgetAllowTransferRuleBudgetDimension in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetAllowTransferRule> BudgetAllowTransferRuleBudgetDimension
+        {
+            get
+            {
+                return this._BudgetAllowTransferRuleBudgetDimension;
+            }
+            set
+            {
+                this.OnBudgetAllowTransferRuleBudgetDimensionChanging(value);
+                this._BudgetAllowTransferRuleBudgetDimension = value;
+                this.OnBudgetAllowTransferRuleBudgetDimensionChanged();
+                this.OnPropertyChanged("BudgetAllowTransferRuleBudgetDimension");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetAllowTransferRule> _BudgetAllowTransferRuleBudgetDimension = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetAllowTransferRule>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnBudgetAllowTransferRuleBudgetDimensionChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetAllowTransferRule> value);
+        partial void OnBudgetAllowTransferRuleBudgetDimensionChanged();
+        /// <summary>
         /// There are no comments for Property BudgetDimensions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BudgetDimensions is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Ledger BudgetDimensions
         {
             get
@@ -229,6 +260,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetPrimaryLedgers in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BudgetPrimaryLedgers is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute BudgetPrimaryLedgers
         {
             get
@@ -247,28 +280,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.DimensionAttribute _BudgetPrimaryLedgers;
         partial void OnBudgetPrimaryLedgersChanging(global::Microsoft.Dynamics.DataEntities.DimensionAttribute value);
         partial void OnBudgetPrimaryLedgersChanged();
-        /// <summary>
-        /// There are no comments for Property BudgetAllowTransferRuleBudgetDimension in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetAllowTransferRule> BudgetAllowTransferRuleBudgetDimension
-        {
-            get
-            {
-                return this._BudgetAllowTransferRuleBudgetDimension;
-            }
-            set
-            {
-                this.OnBudgetAllowTransferRuleBudgetDimensionChanging(value);
-                this._BudgetAllowTransferRuleBudgetDimension = value;
-                this.OnBudgetAllowTransferRuleBudgetDimensionChanged();
-                this.OnPropertyChanged("BudgetAllowTransferRuleBudgetDimension");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetAllowTransferRule> _BudgetAllowTransferRuleBudgetDimension = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetAllowTransferRule>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnBudgetAllowTransferRuleBudgetDimensionChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetAllowTransferRule> value);
-        partial void OnBudgetAllowTransferRuleBudgetDimensionChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for AllocationRuleSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AllocationRuleSingle in the schema.
+    /// </summary>
     public partial class AllocationRuleSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AllocationRule>
     {
         /// <summary>
@@ -56,6 +56,27 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AllocationRuleDestination> _AllocationRuleDestination;
         /// <summary>
+        /// There are no comments for AllocationRuleSource in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AllocationRuleSource> AllocationRuleSource
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._AllocationRuleSource == null))
+                {
+                    this._AllocationRuleSource = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AllocationRuleSource>(GetPath("AllocationRuleSource"));
+                }
+                return this._AllocationRuleSource;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AllocationRuleSource> _AllocationRuleSource;
+        /// <summary>
         /// There are no comments for DimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -97,31 +118,10 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionSetSingle _DimensionSet;
-        /// <summary>
-        /// There are no comments for AllocationRuleSource in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AllocationRuleSource> AllocationRuleSource
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._AllocationRuleSource == null))
-                {
-                    this._AllocationRuleSource = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AllocationRuleSource>(GetPath("AllocationRuleSource"));
-                }
-                return this._AllocationRuleSource;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AllocationRuleSource> _AllocationRuleSource;
     }
-        /// <summary>
-        /// There are no comments for AllocationRule in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AllocationRule in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// Rule
@@ -163,6 +163,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -185,6 +187,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Rule in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Rule is required.")]
         public virtual string Rule
         {
             get
@@ -207,6 +211,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DateLastRun in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DateLastRun is required.")]
         public virtual global::System.DateTimeOffset DateLastRun
         {
             get
@@ -229,6 +235,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExpirationDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ExpirationDate is required.")]
         public virtual global::System.DateTimeOffset ExpirationDate
         {
             get
@@ -251,6 +259,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IntercompanyRule in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IntercompanyRule
         {
             get
@@ -273,6 +282,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -295,6 +305,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JournalName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string JournalName
         {
             get
@@ -317,6 +328,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property KeepDimensionFrom in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.LedgerAllocationFromTo> KeepDimensionFrom
         {
             get
@@ -339,6 +351,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Active in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> Active
         {
             get
@@ -361,6 +374,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property KeepAccountFrom in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.LedgerAllocationFromTo> KeepAccountFrom
         {
             get
@@ -383,6 +397,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MathematicalOperation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.LedgerAllocationMathType> MathematicalOperation
         {
             get
@@ -405,6 +420,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EffectiveDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EffectiveDate is required.")]
         public virtual global::System.DateTimeOffset EffectiveDate
         {
             get
@@ -427,6 +444,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OffsetAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OffsetAccountDisplayValue
         {
             get
@@ -449,6 +467,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DataSource in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.LedgerAllocationSource> DataSource
         {
             get
@@ -471,6 +490,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Amount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Amount is required.")]
         public virtual decimal Amount
         {
             get
@@ -493,6 +514,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionDisplayValue
         {
             get
@@ -515,6 +537,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FixedValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FixedValue is required.")]
         public virtual decimal FixedValue
         {
             get
@@ -537,6 +561,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllocationMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.LedgerAllocationMethod> AllocationMethod
         {
             get
@@ -559,6 +584,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OffsetAccountFrom in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.LedgerAllocationFromTo> OffsetAccountFrom
         {
             get
@@ -581,6 +607,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OffsetDimensionFrom in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.LedgerAllocationFromTo> OffsetDimensionFrom
         {
             get
@@ -603,6 +630,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DateIntervalCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DateIntervalCode
         {
             get
@@ -625,6 +653,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllocationRuleDestination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AllocationRuleDestination> AllocationRuleDestination
         {
             get
@@ -644,9 +673,33 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnAllocationRuleDestinationChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AllocationRuleDestination> value);
         partial void OnAllocationRuleDestinationChanged();
         /// <summary>
+        /// There are no comments for Property AllocationRuleSource in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AllocationRuleSource> AllocationRuleSource
+        {
+            get
+            {
+                return this._AllocationRuleSource;
+            }
+            set
+            {
+                this.OnAllocationRuleSourceChanging(value);
+                this._AllocationRuleSource = value;
+                this.OnAllocationRuleSourceChanged();
+                this.OnPropertyChanged("AllocationRuleSource");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AllocationRuleSource> _AllocationRuleSource = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AllocationRuleSource>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnAllocationRuleSourceChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AllocationRuleSource> value);
+        partial void OnAllocationRuleSourceChanged();
+        /// <summary>
         /// There are no comments for Property DimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination DimensionCombination
         {
             get
@@ -669,6 +722,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionSet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionSet DimensionSet
         {
             get
@@ -687,28 +741,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.DimensionSet _DimensionSet;
         partial void OnDimensionSetChanging(global::Microsoft.Dynamics.DataEntities.DimensionSet value);
         partial void OnDimensionSetChanged();
-        /// <summary>
-        /// There are no comments for Property AllocationRuleSource in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AllocationRuleSource> AllocationRuleSource
-        {
-            get
-            {
-                return this._AllocationRuleSource;
-            }
-            set
-            {
-                this.OnAllocationRuleSourceChanging(value);
-                this._AllocationRuleSource = value;
-                this.OnAllocationRuleSourceChanged();
-                this.OnPropertyChanged("AllocationRuleSource");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AllocationRuleSource> _AllocationRuleSource = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AllocationRuleSource>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAllocationRuleSourceChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AllocationRuleSource> value);
-        partial void OnAllocationRuleSourceChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

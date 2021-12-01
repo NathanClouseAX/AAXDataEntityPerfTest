@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for EngineeringProductVersionNumberingRuleListMemberSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for EngineeringProductVersionNumberingRuleListMemberSingle in the schema.
+    /// </summary>
     public partial class EngineeringProductVersionNumberingRuleListMemberSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<EngineeringProductVersionNumberingRuleListMember>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.EngineeringProductVersionNumberingRuleSingle _EngineeringProductVersionNumberingRule;
     }
-        /// <summary>
-        /// There are no comments for EngineeringProductVersionNumberingRuleListMember in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for EngineeringProductVersionNumberingRuleListMember in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// VersionNumberingRuleName
     /// ProductVersionName
@@ -92,6 +92,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VersionNumberingRuleName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "VersionNumberingRuleName is required.")]
         public virtual string VersionNumberingRuleName
         {
             get
@@ -114,6 +116,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductVersionName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductVersionName is required.")]
         public virtual string ProductVersionName
         {
             get
@@ -136,6 +140,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SequenceNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SequenceNumber is required.")]
         public virtual decimal SequenceNumber
         {
             get
@@ -158,6 +164,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngineeringProductVersionNumberingRule in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EngineeringProductVersionNumberingRule is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.EngineeringProductVersionNumberingRule EngineeringProductVersionNumberingRule
         {
             get

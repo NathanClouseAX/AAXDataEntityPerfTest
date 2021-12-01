@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for LoanItemSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LoanItemSingle in the schema.
+    /// </summary>
     public partial class LoanItemSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<LoanItem>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LoanedEquipment> _LoanedEquipments;
     }
-        /// <summary>
-        /// There are no comments for LoanItem in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LoanItem in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// LoanItemId
     /// </KeyProperties>
@@ -85,6 +85,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LoanItemId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LoanItemId is required.")]
         public virtual string LoanItemId
         {
             get
@@ -107,6 +109,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PersonInCharge in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PersonInCharge
         {
             get
@@ -129,6 +132,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LoanTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LoanTypeId
         {
             get
@@ -151,6 +155,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxReporting in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmLoanItemTax> TaxReporting
         {
             get
@@ -173,6 +178,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property GracePeriodDays in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "GracePeriodDays is required.")]
         public virtual int GracePeriodDays
         {
             get
@@ -195,6 +202,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SerialNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SerialNumber
         {
             get
@@ -217,6 +225,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -239,6 +248,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LoanDays in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LoanDays is required.")]
         public virtual int LoanDays
         {
             get
@@ -261,6 +272,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LoanedEquipments in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LoanedEquipment> LoanedEquipments
         {
             get

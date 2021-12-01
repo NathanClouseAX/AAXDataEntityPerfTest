@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for InjuryFilingAgencySingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for InjuryFilingAgencySingle in the schema.
+    /// </summary>
     public partial class InjuryFilingAgencySingle : global::Microsoft.OData.Client.DataServiceQuerySingle<InjuryFilingAgency>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.InjuryIncidentFilingAgencySingle _InjuryIncidentFilingAgency;
     }
-        /// <summary>
-        /// There are no comments for InjuryFilingAgency in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for InjuryFilingAgency in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// FilingAgencyId
     /// </KeyProperties>
@@ -81,6 +81,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FilingAgencyId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FilingAgencyId is required.")]
         public virtual string FilingAgencyId
         {
             get
@@ -103,6 +105,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -125,6 +128,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Default in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> Default
         {
             get
@@ -147,6 +151,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InjuryIncidentFilingAgency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.InjuryIncidentFilingAgency InjuryIncidentFilingAgency
         {
             get

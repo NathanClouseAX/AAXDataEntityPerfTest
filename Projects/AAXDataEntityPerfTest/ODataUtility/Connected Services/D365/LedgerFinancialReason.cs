@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for LedgerFinancialReasonSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LedgerFinancialReasonSingle in the schema.
+    /// </summary>
     public partial class LedgerFinancialReasonSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<LedgerFinancialReason>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetCode> _BudgetCode;
     }
-        /// <summary>
-        /// There are no comments for LedgerFinancialReason in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LedgerFinancialReason in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// ReasonCode
@@ -84,6 +84,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -106,6 +108,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReasonCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReasonCode is required.")]
         public virtual string ReasonCode
         {
             get
@@ -128,6 +132,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ForRAssetTransactionType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ForRAssetTransactionType
         {
             get
@@ -150,6 +155,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurposeCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PurposeCode
         {
             get
@@ -172,6 +178,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ForLedgerTransactionType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ForLedgerTransactionType
         {
             get
@@ -194,6 +201,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ForAssetTransactionType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ForAssetTransactionType
         {
             get
@@ -216,6 +224,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ForVendorTransactionType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ForVendorTransactionType
         {
             get
@@ -238,6 +247,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ForCustomerTransactionType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ForCustomerTransactionType
         {
             get
@@ -260,6 +270,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultComment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultComment
         {
             get
@@ -282,6 +293,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CancellationReason in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> CancellationReason
         {
             get
@@ -304,6 +316,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ForBankTransactionType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ForBankTransactionType
         {
             get
@@ -326,6 +339,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ForRCashTransactionType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ForRCashTransactionType
         {
             get
@@ -348,6 +362,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetCode> BudgetCode
         {
             get

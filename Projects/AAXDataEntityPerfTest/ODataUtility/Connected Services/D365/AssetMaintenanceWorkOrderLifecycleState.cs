@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for AssetMaintenanceWorkOrderLifecycleStateSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AssetMaintenanceWorkOrderLifecycleStateSingle in the schema.
+    /// </summary>
     public partial class AssetMaintenanceWorkOrderLifecycleStateSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AssetMaintenanceWorkOrderLifecycleState>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetLifecycleStateSingle _AssetMaintenanceAssetLifecycleState;
     }
-        /// <summary>
-        /// There are no comments for AssetMaintenanceWorkOrderLifecycleState in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AssetMaintenanceWorkOrderLifecycleState in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// LifecycleStateId
@@ -105,6 +105,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -127,6 +129,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LifecycleStateId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LifecycleStateId is required.")]
         public virtual string LifecycleStateId
         {
             get
@@ -149,6 +153,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CopyForecastExpense in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> CopyForecastExpense
         {
             get
@@ -171,6 +176,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ScheduleEnd in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ScheduleEnd
         {
             get
@@ -193,6 +199,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Name
         {
             get
@@ -215,6 +222,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkOrderCreateJob in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WorkOrderCreateJob
         {
             get
@@ -237,6 +245,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkOrderLineScheduleDelete in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WorkOrderLineScheduleDelete
         {
             get
@@ -259,6 +268,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UpdateMaintenanceAssetBOM in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> UpdateMaintenanceAssetBOM
         {
             get
@@ -281,6 +291,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidateCommitedCost in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ValidateCommitedCost
         {
             get
@@ -303,6 +314,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkOrderAllowScheduling in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WorkOrderAllowScheduling
         {
             get
@@ -325,6 +337,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidateFaultSymptom in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ValidateFaultSymptom
         {
             get
@@ -347,6 +360,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidateFaultCauseInfoType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EntAssetInfoType> ValidateFaultCauseInfoType
         {
             get
@@ -369,6 +383,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidateFaultCause in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ValidateFaultCause
         {
             get
@@ -391,6 +406,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkOrderSetActualStart in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WorkOrderSetActualStart
         {
             get
@@ -413,6 +429,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkOrderValidateChecklist in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WorkOrderValidateChecklist
         {
             get
@@ -435,6 +452,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidateProductionStop in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ValidateProductionStop
         {
             get
@@ -457,6 +475,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostWorkOrderJournals in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PostWorkOrderJournals
         {
             get
@@ -479,6 +498,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkOrderAllowDelete in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WorkOrderAllowDelete
         {
             get
@@ -501,6 +521,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ScheduleReady in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ScheduleReady
         {
             get
@@ -523,6 +544,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProjectStatus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ProjStatus> ProjectStatus
         {
             get
@@ -545,6 +567,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidateFaultSymptomInfoType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EntAssetInfoType> ValidateFaultSymptomInfoType
         {
             get
@@ -567,6 +590,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkOrderSetActualEnd in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WorkOrderSetActualEnd
         {
             get
@@ -589,6 +613,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidateCommitedCostInfoType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EntAssetInfoType> ValidateCommitedCostInfoType
         {
             get
@@ -611,6 +636,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidateFaultRemedyInfoType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EntAssetInfoType> ValidateFaultRemedyInfoType
         {
             get
@@ -633,6 +659,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkOrderAllowLineDelete in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WorkOrderAllowLineDelete
         {
             get
@@ -655,6 +682,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkOrderActive in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WorkOrderActive
         {
             get
@@ -677,6 +705,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CopyForecastItem in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> CopyForecastItem
         {
             get
@@ -699,6 +728,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidateProductionStopInfoType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EntAssetInfoType> ValidateProductionStopInfoType
         {
             get
@@ -721,6 +751,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidateFaultRemedy in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ValidateFaultRemedy
         {
             get
@@ -743,6 +774,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkOrderPoolDelete in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WorkOrderPoolDelete
         {
             get
@@ -765,6 +797,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ScheduleStart in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ScheduleStart
         {
             get
@@ -787,6 +820,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CopyForecastHour in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> CopyForecastHour
         {
             get
@@ -809,6 +843,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RequestLifecycleStateId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RequestLifecycleStateId
         {
             get
@@ -831,6 +866,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CloseActivities in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> CloseActivities
         {
             get
@@ -853,6 +889,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaintenanceAssetLifecycleStateId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MaintenanceAssetLifecycleStateId
         {
             get
@@ -875,6 +912,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkOrderValidateChecklistInfoType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EntAssetInfoType> WorkOrderValidateChecklistInfoType
         {
             get
@@ -897,6 +935,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetMaintenanceWorkOrderLifecycleModelState in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceWorkOrderLifecycleModelState> AssetMaintenanceWorkOrderLifecycleModelState
         {
             get
@@ -919,6 +958,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetMaintenanceAssetLifecycleState in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetLifecycleState AssetMaintenanceAssetLifecycleState
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for PurchaseRequisitionHeaderSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PurchaseRequisitionHeaderSingle in the schema.
+    /// </summary>
     public partial class PurchaseRequisitionHeaderSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PurchaseRequisitionHeader>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseRequisitionLine> _PurchaseRequisitionLines;
     }
-        /// <summary>
-        /// There are no comments for PurchaseRequisitionHeader in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PurchaseRequisitionHeader in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// RequisitionNumber
     /// </KeyProperties>
@@ -85,6 +85,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RequisitionNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RequisitionNumber is required.")]
         public virtual string RequisitionNumber
         {
             get
@@ -107,6 +109,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RequisitionStatus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PurchReqRequisitionStatus> RequisitionStatus
         {
             get
@@ -129,6 +132,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultAccountingDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DefaultAccountingDate is required.")]
         public virtual global::System.DateTimeOffset DefaultAccountingDate
         {
             get
@@ -151,6 +156,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultBusinessJustificationDetails in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultBusinessJustificationDetails
         {
             get
@@ -173,6 +179,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultProjectId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultProjectId
         {
             get
@@ -195,6 +202,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultRequestedDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DefaultRequestedDate is required.")]
         public virtual global::System.DateTimeOffset DefaultRequestedDate
         {
             get
@@ -217,6 +226,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProjectBuyingLegalEntityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProjectBuyingLegalEntityId
         {
             get
@@ -239,6 +249,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PreparerPersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PreparerPersonnelNumber
         {
             get
@@ -261,6 +272,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultBusinessJustificationCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultBusinessJustificationCode
         {
             get
@@ -283,6 +295,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RequisitionName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RequisitionName
         {
             get
@@ -305,6 +318,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OnHoldExplanation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OnHoldExplanation
         {
             get
@@ -327,6 +341,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsPurchaseRequisitionOnHold in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsPurchaseRequisitionOnHold
         {
             get
@@ -349,6 +364,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RequisitionPurpose in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RequisitionPurpose> RequisitionPurpose
         {
             get
@@ -371,6 +387,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchaseRequisitionLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseRequisitionLine> PurchaseRequisitionLines
         {
             get

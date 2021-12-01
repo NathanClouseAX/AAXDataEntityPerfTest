@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for CustomerRebateAndDeductionsGroupAssignmentSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CustomerRebateAndDeductionsGroupAssignmentSingle in the schema.
+    /// </summary>
     public partial class CustomerRebateAndDeductionsGroupAssignmentSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<CustomerRebateAndDeductionsGroupAssignment>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.CustomerV3Single _CustomerV3;
     }
-        /// <summary>
-        /// There are no comments for CustomerRebateAndDeductionsGroupAssignment in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CustomerRebateAndDeductionsGroupAssignment in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// CustomerRebateAndDeductionsGroupId
@@ -120,6 +120,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -142,6 +144,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerRebateAndDeductionsGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CustomerRebateAndDeductionsGroupId is required.")]
         public virtual string CustomerRebateAndDeductionsGroupId
         {
             get
@@ -164,6 +168,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CustomerAccountNumber is required.")]
         public virtual string CustomerAccountNumber
         {
             get
@@ -186,6 +192,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerRebateAndDeductionsGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CustomerRebateAndDeductionsGroup is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.CustomerRebateAndDeductionsGroup CustomerRebateAndDeductionsGroup
         {
             get
@@ -208,6 +216,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerV3 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CustomerV3 is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.CustomerV3 CustomerV3
         {
             get

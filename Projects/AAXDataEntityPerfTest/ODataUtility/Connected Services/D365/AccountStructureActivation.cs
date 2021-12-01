@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for AccountStructureActivationSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AccountStructureActivationSingle in the schema.
+    /// </summary>
     public partial class AccountStructureActivationSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AccountStructureActivation>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.AccountStructureSingle _LedgerAccountStructureActivationEntity_RelatedRole_LedgerAccountStructureEntity;
     }
-        /// <summary>
-        /// There are no comments for AccountStructureActivation in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AccountStructureActivation in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// AccountStructure
     /// </KeyProperties>
@@ -87,6 +87,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountStructure in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AccountStructure is required.")]
         public virtual string AccountStructure
         {
             get
@@ -109,6 +111,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DoActivate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DoActivate
         {
             get
@@ -131,6 +134,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerAccountStructureActivationEntity_RelatedRole_LedgerAccountStructureEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LedgerAccountStructureActivationEntity_RelatedRole_LedgerAccountStructureEntity is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.AccountStructure LedgerAccountStructureActivationEntity_RelatedRole_LedgerAccountStructureEntity
         {
             get

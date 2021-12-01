@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for PeriodCloseTemplateTaskSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PeriodCloseTemplateTaskSingle in the schema.
+    /// </summary>
     public partial class PeriodCloseTemplateTaskSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PeriodCloseTemplateTask>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for PeriodCloseTemplateTask in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PeriodCloseTemplateTask in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// Template
     /// LineNumber
@@ -67,6 +67,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Template in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Template is required.")]
         public virtual string Template
         {
             get
@@ -89,6 +91,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LineNumber is required.")]
         public virtual decimal LineNumber
         {
             get
@@ -111,6 +115,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Area in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Area
         {
             get
@@ -133,6 +138,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Task in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Task
         {
             get
@@ -155,6 +161,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CompanySelection in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CompanySelection
         {
             get
@@ -177,6 +184,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaskLinkType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.LedgerPeriodCloseTaskAction> TaskLinkType
         {
             get
@@ -199,6 +207,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ClosingRole in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ClosingRole
         {
             get
@@ -221,6 +230,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DueTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DueTime is required.")]
         public virtual int DueTime
         {
             get
@@ -243,6 +254,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TargetDaysFromProjectComplete in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TargetDaysFromProjectComplete is required.")]
         public virtual int TargetDaysFromProjectComplete
         {
             get
@@ -265,6 +278,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaskLink in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaskLink
         {
             get

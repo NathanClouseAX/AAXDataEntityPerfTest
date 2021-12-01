@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for AccrualSchemeSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AccrualSchemeSingle in the schema.
+    /// </summary>
     public partial class AccrualSchemeSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AccrualScheme>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _DimensionCombination;
     }
-        /// <summary>
-        /// There are no comments for AccrualScheme in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AccrualScheme in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// AccrualIdentification
@@ -86,6 +86,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -108,6 +110,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccrualIdentification in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AccrualIdentification is required.")]
         public virtual string AccrualIdentification
         {
             get
@@ -130,6 +134,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NumberSequenceTable_NumberSequence in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string NumberSequenceTable_NumberSequence
         {
             get
@@ -152,6 +157,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccrualSchemeDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccrualSchemeDescription
         {
             get
@@ -174,6 +180,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostTransactions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.DayWeekMonth> PostTransactions
         {
             get
@@ -196,6 +203,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TransactionDescription
         {
             get
@@ -218,6 +226,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FiscalPeriodFrequency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetAccrualFiscal> FiscalPeriodFrequency
         {
             get
@@ -240,6 +249,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FiscalCalendar_CalendarId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FiscalCalendar_CalendarId
         {
             get
@@ -262,6 +272,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LegalEntity_DataArea in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LegalEntity_DataArea
         {
             get
@@ -284,6 +295,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OperatingUnit_PartyNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OperatingUnit_PartyNumber
         {
             get
@@ -306,6 +318,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccrualBasis in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.LedgerAccrualPeriod> AccrualBasis
         {
             get
@@ -328,6 +341,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PeriodKey in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PeriodKey
         {
             get
@@ -350,6 +364,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NumberOfOccurrencesPerPeriod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "NumberOfOccurrencesPerPeriod is required.")]
         public virtual int NumberOfOccurrencesPerPeriod
         {
             get
@@ -372,6 +388,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SpreadMonthAndQuarterValues in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.LedgerAccrualEvenScale> SpreadMonthAndQuarterValues
         {
             get
@@ -394,6 +411,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NumberSequenceScope_OperatingUnitType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.OMOperatingUnitType> NumberSequenceScope_OperatingUnitType
         {
             get
@@ -416,6 +434,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CreditLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CreditLedgerDimensionDisplayValue
         {
             get
@@ -438,6 +457,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FiscalCalendarYear_Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FiscalCalendarYear_Name
         {
             get
@@ -460,6 +480,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Voucher in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.LedgerAccrualVoucher> Voucher
         {
             get
@@ -482,6 +503,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DebitLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DebitLedgerDimensionDisplayValue
         {
             get
@@ -504,6 +526,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostInWeekMonthOrQuarter in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PrimoMedioUltimo> PostInWeekMonthOrQuarter
         {
             get
@@ -526,6 +549,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NumberSequenceScope_DataArea in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string NumberSequenceScope_DataArea
         {
             get
@@ -548,6 +572,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LegalEntity_PartyNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LegalEntity_PartyNumber
         {
             get
@@ -570,6 +595,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CalendarPeriodFrequency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetAccrualCalendar> CalendarPeriodFrequency
         {
             get
@@ -592,6 +618,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FiscalCalendarPeriod_Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FiscalCalendarPeriod_Name
         {
             get
@@ -614,6 +641,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination DimensionCombination
         {
             get

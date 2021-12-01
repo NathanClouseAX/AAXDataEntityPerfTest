@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for WorkerGarnishmentDetailSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for WorkerGarnishmentDetailSingle in the schema.
+    /// </summary>
     public partial class WorkerGarnishmentDetailSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<WorkerGarnishmentDetail>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.WorkerEnrolledBenefitSingle _WorkerEnrolledBenefit;
     }
-        /// <summary>
-        /// There are no comments for WorkerGarnishmentDetail in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for WorkerGarnishmentDetail in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// BenefitID
     /// PersonnelNumber
@@ -103,6 +103,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BenefitID in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BenefitID is required.")]
         public virtual string BenefitID
         {
             get
@@ -125,6 +127,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PersonnelNumber is required.")]
         public virtual string PersonnelNumber
         {
             get
@@ -147,6 +151,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EnrollmentStart in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EnrollmentStart is required.")]
         public virtual global::System.DateTimeOffset EnrollmentStart
         {
             get
@@ -169,6 +175,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EnrollmentEnd in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EnrollmentEnd is required.")]
         public virtual global::System.DateTimeOffset EnrollmentEnd
         {
             get
@@ -191,6 +199,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property State in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string State
         {
             get
@@ -213,6 +222,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AdministrativeFee in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AdministrativeFee is required.")]
         public virtual decimal AdministrativeFee
         {
             get
@@ -235,6 +246,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CountryRegionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CountryRegionId
         {
             get
@@ -257,6 +269,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CaseNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CaseNumber
         {
             get
@@ -279,6 +292,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property GarnishmentTaxLevyType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PayrollGarnishmentTaxLevyType> GarnishmentTaxLevyType
         {
             get
@@ -301,6 +315,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkerEnrolledBenefit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WorkerEnrolledBenefit is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.WorkerEnrolledBenefit WorkerEnrolledBenefit
         {
             get

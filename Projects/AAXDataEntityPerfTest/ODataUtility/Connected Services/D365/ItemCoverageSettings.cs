@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ItemCoverageSettingsSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ItemCoverageSettingsSingle in the schema.
+    /// </summary>
     public partial class ItemCoverageSettingsSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ItemCoverageSettings>
     {
         /// <summary>
@@ -182,9 +182,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ReleasedProductV2Single _PlanningFormulaReleasedProduct;
     }
-        /// <summary>
-        /// There are no comments for ItemCoverageSettings in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ItemCoverageSettings in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// ItemNumber
@@ -309,6 +309,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -331,6 +333,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ItemNumber is required.")]
         public virtual string ItemNumber
         {
             get
@@ -353,6 +357,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CoverageWarehouseLocationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CoverageWarehouseLocationId is required.")]
         public virtual string CoverageWarehouseLocationId
         {
             get
@@ -375,6 +381,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CoverageItemBatchNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CoverageItemBatchNumber is required.")]
         public virtual string CoverageItemBatchNumber
         {
             get
@@ -397,6 +405,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CoverageProductColorId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CoverageProductColorId is required.")]
         public virtual string CoverageProductColorId
         {
             get
@@ -419,6 +429,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CoverageProductSizeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CoverageProductSizeId is required.")]
         public virtual string CoverageProductSizeId
         {
             get
@@ -441,6 +453,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CoverageProductStyleId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CoverageProductStyleId is required.")]
         public virtual string CoverageProductStyleId
         {
             get
@@ -463,6 +477,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CoverageWarehouseId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CoverageWarehouseId is required.")]
         public virtual string CoverageWarehouseId
         {
             get
@@ -485,6 +501,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CoverageItemSerialNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CoverageItemSerialNumber is required.")]
         public virtual string CoverageItemSerialNumber
         {
             get
@@ -507,6 +525,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CoverageSiteId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CoverageSiteId is required.")]
         public virtual string CoverageSiteId
         {
             get
@@ -529,6 +549,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CoverageInventoryStatusId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CoverageInventoryStatusId is required.")]
         public virtual string CoverageInventoryStatusId
         {
             get
@@ -551,6 +573,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CoverageProductConfigurationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CoverageProductConfigurationId is required.")]
         public virtual string CoverageProductConfigurationId
         {
             get
@@ -573,6 +597,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CoveragePeriodDays in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CoveragePeriodDays is required.")]
         public virtual int CoveragePeriodDays
         {
             get
@@ -595,6 +621,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VendorAccountNumber
         {
             get
@@ -617,6 +644,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ApprovedRequisitionTimeFenceDays in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ApprovedRequisitionTimeFenceDays is required.")]
         public virtual int ApprovedRequisitionTimeFenceDays
         {
             get
@@ -639,6 +668,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LastPlanningFormulaPriorityChangedDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LastPlanningFormulaPriorityChangedDate is required.")]
         public virtual global::System.DateTimeOffset LastPlanningFormulaPriorityChangedDate
         {
             get
@@ -661,6 +692,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProcurementLeadTimeDays in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProcurementLeadTimeDays is required.")]
         public virtual int ProcurementLeadTimeDays
         {
             get
@@ -683,6 +716,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultPlanningFormulaPriority in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DefaultPlanningFormulaPriority is required.")]
         public virtual int DefaultPlanningFormulaPriority
         {
             get
@@ -705,6 +740,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsProcurementLeadTimeOverridden in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsProcurementLeadTimeOverridden
         {
             get
@@ -727,6 +763,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AutomaticFirmingTimeFenceDays in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AutomaticFirmingTimeFenceDays is required.")]
         public virtual int AutomaticFirmingTimeFenceDays
         {
             get
@@ -749,6 +787,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsConsumeOnHandOverridden in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsConsumeOnHandOverridden
         {
             get
@@ -771,6 +810,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductionLeadTimeDays in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductionLeadTimeDays is required.")]
         public virtual int ProductionLeadTimeDays
         {
             get
@@ -793,6 +834,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MinimumOnHandFulfillmentMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ReqMinSatisfy> MinimumOnHandFulfillmentMethod
         {
             get
@@ -815,6 +857,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PlanningFormulaItemNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PlanningFormulaItemNumber
         {
             get
@@ -837,6 +880,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaximumOnHandInventoryQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MaximumOnHandInventoryQuantity is required.")]
         public virtual decimal MaximumOnHandInventoryQuantity
         {
             get
@@ -859,6 +904,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AreTimeFencesOverridden in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AreTimeFencesOverridden
         {
             get
@@ -881,6 +927,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FreezeTimeFenceDays in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FreezeTimeFenceDays is required.")]
         public virtual int FreezeTimeFenceDays
         {
             get
@@ -903,6 +951,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsTransferLeadTimeOverridden in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsTransferLeadTimeOverridden
         {
             get
@@ -925,6 +974,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CapacitySchedulingTimeFenceDays in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CapacitySchedulingTimeFenceDays is required.")]
         public virtual int CapacitySchedulingTimeFenceDays
         {
             get
@@ -947,6 +998,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NegativeDays in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "NegativeDays is required.")]
         public virtual int NegativeDays
         {
             get
@@ -969,6 +1022,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MinimumOnHandInventoryQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MinimumOnHandInventoryQuantity is required.")]
         public virtual decimal MinimumOnHandInventoryQuantity
         {
             get
@@ -991,6 +1046,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaximumOnHandInventorySafetyKeyId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MaximumOnHandInventorySafetyKeyId
         {
             get
@@ -1013,6 +1069,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PositiveDays in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PositiveDays is required.")]
         public virtual int PositiveDays
         {
             get
@@ -1035,6 +1093,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CoverageTimeFenceDays in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CoverageTimeFenceDays is required.")]
         public virtual int CoverageTimeFenceDays
         {
             get
@@ -1057,6 +1117,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CurrentPlanningFormulaPriority in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CurrentPlanningFormulaPriority is required.")]
         public virtual int CurrentPlanningFormulaPriority
         {
             get
@@ -1079,6 +1141,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductCoverageGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductCoverageGroupId
         {
             get
@@ -1101,6 +1164,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MinimumOnHandInventorySafetyKeyId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MinimumOnHandInventorySafetyKeyId
         {
             get
@@ -1123,6 +1187,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AreCoverageGroupSettingsOverridden in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AreCoverageGroupSettingsOverridden
         {
             get
@@ -1145,6 +1210,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsTransferLeadTimeUsingWorkingDays in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsTransferLeadTimeUsingWorkingDays
         {
             get
@@ -1167,6 +1233,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsProcumentLeadTimeUsingWorkingDays in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsProcumentLeadTimeUsingWorkingDays
         {
             get
@@ -1189,6 +1256,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BOMOrFormulaExplosionTimeFenceDays in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BOMOrFormulaExplosionTimeFenceDays is required.")]
         public virtual int BOMOrFormulaExplosionTimeFenceDays
         {
             get
@@ -1211,6 +1280,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AreGeneralSettingsOverridden in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AreGeneralSettingsOverridden
         {
             get
@@ -1233,6 +1303,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultPlannedTransferOrderFromWarehouseId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultPlannedTransferOrderFromWarehouseId
         {
             get
@@ -1255,6 +1326,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CoverageMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ReqCovType> CoverageMethod
         {
             get
@@ -1277,6 +1349,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ConsumeOnHandInventoryMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ReqOnHandConsumptionStrategy> ConsumeOnHandInventoryMethod
         {
             get
@@ -1299,6 +1372,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransferLeadTimeDays in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransferLeadTimeDays is required.")]
         public virtual int TransferLeadTimeDays
         {
             get
@@ -1321,6 +1396,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PlannedOrderType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ReqPOType> PlannedOrderType
         {
             get
@@ -1343,6 +1419,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsPlannedOrderTypeOverridden in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsPlannedOrderTypeOverridden
         {
             get
@@ -1365,6 +1442,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsProductionLeadTimeOverridden in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsProductionLeadTimeOverridden
         {
             get
@@ -1387,6 +1465,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsProductionLeadTimeUsingWorkingDays in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsProductionLeadTimeUsingWorkingDays
         {
             get
@@ -1409,6 +1488,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsMinimumOnHandSafetyPeriodUsed in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsMinimumOnHandSafetyPeriodUsed
         {
             get
@@ -1431,6 +1511,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CoverageWarehouse in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.Warehouse CoverageWarehouse
         {
             get
@@ -1453,6 +1534,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Vendor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.VendorV2 Vendor
         {
             get
@@ -1475,6 +1557,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CoverageSite in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.OperationalSite CoverageSite
         {
             get
@@ -1497,6 +1580,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CoverageWarehouseLocation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.WarehouseLocation CoverageWarehouseLocation
         {
             get
@@ -1519,6 +1603,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReleasedProduct in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReleasedProduct is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ReleasedProductV2 ReleasedProduct
         {
             get
@@ -1541,6 +1627,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultPlannedTransferOrderFromWarehouse in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.Warehouse DefaultPlannedTransferOrderFromWarehouse
         {
             get
@@ -1563,6 +1650,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PlanningFormulaReleasedProduct in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ReleasedProductV2 PlanningFormulaReleasedProduct
         {
             get

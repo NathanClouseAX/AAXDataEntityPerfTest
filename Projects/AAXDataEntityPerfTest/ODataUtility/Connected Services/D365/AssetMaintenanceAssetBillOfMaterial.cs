@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for AssetMaintenanceAssetBillOfMaterialSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AssetMaintenanceAssetBillOfMaterialSingle in the schema.
+    /// </summary>
     public partial class AssetMaintenanceAssetBillOfMaterialSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AssetMaintenanceAssetBillOfMaterial>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetSingle _AssetMaintenanceAsset;
     }
-        /// <summary>
-        /// There are no comments for AssetMaintenanceAssetBillOfMaterial in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AssetMaintenanceAssetBillOfMaterial in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// MaintenanceAssetId
@@ -110,6 +110,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -132,6 +134,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaintenanceAssetId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MaintenanceAssetId is required.")]
         public virtual string MaintenanceAssetId
         {
             get
@@ -154,6 +158,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LineNumber is required.")]
         public virtual long LineNumber
         {
             get
@@ -176,6 +182,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidFrom in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValidFrom is required.")]
         public virtual global::System.DateTimeOffset ValidFrom
         {
             get
@@ -198,6 +206,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidTo in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValidTo is required.")]
         public virtual global::System.DateTimeOffset ValidTo
         {
             get
@@ -220,6 +230,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InventoryColorId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string InventoryColorId
         {
             get
@@ -242,6 +253,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InventoryConfigId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string InventoryConfigId
         {
             get
@@ -264,6 +276,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InventorySerialId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string InventorySerialId
         {
             get
@@ -286,6 +299,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InventoryBatchId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string InventoryBatchId
         {
             get
@@ -308,6 +322,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InventoryVersionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string InventoryVersionId
         {
             get
@@ -330,6 +345,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineNumberReplacedBy in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LineNumberReplacedBy is required.")]
         public virtual long LineNumberReplacedBy
         {
             get
@@ -352,6 +369,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BillOfMaterialQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BillOfMaterialQuantity is required.")]
         public virtual decimal BillOfMaterialQuantity
         {
             get
@@ -374,6 +393,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InventorySizeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string InventorySizeId
         {
             get
@@ -396,6 +416,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InventVersionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string InventVersionId
         {
             get
@@ -418,6 +439,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ItemId
         {
             get
@@ -440,6 +462,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InventoryStyleId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string InventoryStyleId
         {
             get
@@ -462,6 +485,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetMaintenanceAsset in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AssetMaintenanceAsset is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAsset AssetMaintenanceAsset
         {
             get

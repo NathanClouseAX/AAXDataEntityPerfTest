@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for OpenPurchaseTotalDiscountJournalLineSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for OpenPurchaseTotalDiscountJournalLineSingle in the schema.
+    /// </summary>
     public partial class OpenPurchaseTotalDiscountJournalLineSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<OpenPurchaseTotalDiscountJournalLine>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.VendorV2Single _VendorV2;
     }
-        /// <summary>
-        /// There are no comments for OpenPurchaseTotalDiscountJournalLine in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for OpenPurchaseTotalDiscountJournalLine in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// TradeAgreementJournalNumber
@@ -131,6 +131,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -153,6 +155,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TradeAgreementJournalNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TradeAgreementJournalNumber is required.")]
         public virtual string TradeAgreementJournalNumber
         {
             get
@@ -175,6 +179,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LineNumber is required.")]
         public virtual decimal LineNumber
         {
             get
@@ -197,6 +203,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DiscountAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DiscountAmount is required.")]
         public virtual decimal DiscountAmount
         {
             get
@@ -219,6 +227,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DiscountCurrencyCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DiscountCurrencyCode
         {
             get
@@ -241,6 +250,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VendorAccountNumber
         {
             get
@@ -263,6 +273,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DiscountApplicableFromDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DiscountApplicableFromDate is required.")]
         public virtual global::System.DateTimeOffset DiscountApplicableFromDate
         {
             get
@@ -285,6 +297,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TotalDiscountVendorGroupCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TotalDiscountVendorGroupCode
         {
             get
@@ -307,6 +320,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DiscountPercentage2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DiscountPercentage2 is required.")]
         public virtual decimal DiscountPercentage2
         {
             get
@@ -329,6 +344,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DiscountPercentage1 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DiscountPercentage1 is required.")]
         public virtual decimal DiscountPercentage1
         {
             get
@@ -351,6 +368,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DiscountApplicableToDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DiscountApplicableToDate is required.")]
         public virtual global::System.DateTimeOffset DiscountApplicableToDate
         {
             get
@@ -373,6 +392,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProcessingLog in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProcessingLog
         {
             get
@@ -395,6 +415,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ToOrderSubtotalAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ToOrderSubtotalAmount is required.")]
         public virtual decimal ToOrderSubtotalAmount
         {
             get
@@ -417,6 +439,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillSearchContinue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillSearchContinue
         {
             get
@@ -439,6 +462,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FromOrderSubtotalAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FromOrderSubtotalAmount is required.")]
         public virtual decimal FromOrderSubtotalAmount
         {
             get
@@ -461,6 +486,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TotalDiscountVendorGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.TotalDiscountVendorGroup TotalDiscountVendorGroup
         {
             get
@@ -483,6 +509,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.VendorV2 VendorV2
         {
             get

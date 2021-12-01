@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for TimeAndAttendanceTimeProfileLineSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TimeAndAttendanceTimeProfileLineSingle in the schema.
+    /// </summary>
     public partial class TimeAndAttendanceTimeProfileLineSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<TimeAndAttendanceTimeProfileLine>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.TimeAndAttendanceTimeProfileSingle _TimeAndAttendanceTimeProfile;
     }
-        /// <summary>
-        /// There are no comments for TimeAndAttendanceTimeProfileLine in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TimeAndAttendanceTimeProfileLine in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// RecordId
@@ -153,6 +153,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -175,6 +177,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RecordId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RecordId is required.")]
         public virtual long RecordId
         {
             get
@@ -197,6 +201,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TimeAndAttendanceSwitchCodeActivityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TimeAndAttendanceSwitchCodeActivityId
         {
             get
@@ -219,6 +224,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ToleranceBeforeEndMinutes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ToleranceBeforeEndMinutes is required.")]
         public virtual int ToleranceBeforeEndMinutes
         {
             get
@@ -241,6 +248,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LineNumber is required.")]
         public virtual decimal LineNumber
         {
             get
@@ -263,6 +272,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ToleranceAfterEndMinutes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ToleranceAfterEndMinutes is required.")]
         public virtual int ToleranceAfterEndMinutes
         {
             get
@@ -285,6 +296,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProfileLineStartWeekDay in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProfileLineStartWeekDay is required.")]
         public virtual int ProfileLineStartWeekDay
         {
             get
@@ -307,6 +320,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TimeProfileId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TimeProfileId
         {
             get
@@ -329,6 +343,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProfileLineStartTimeSeconds in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProfileLineStartTimeSeconds is required.")]
         public virtual int ProfileLineStartTimeSeconds
         {
             get
@@ -351,6 +367,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProfileLineEndTimeSeconds in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProfileLineEndTimeSeconds is required.")]
         public virtual int ProfileLineEndTimeSeconds
         {
             get
@@ -373,6 +391,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SecondaryTimeProfileTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SecondaryTimeProfileTypeId is required.")]
         public virtual long SecondaryTimeProfileTypeId
         {
             get
@@ -395,6 +415,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryTimeProfileTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PrimaryTimeProfileTypeId is required.")]
         public virtual long PrimaryTimeProfileTypeId
         {
             get
@@ -417,6 +439,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ToleranceBeforeStartMinutes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ToleranceBeforeStartMinutes is required.")]
         public virtual int ToleranceBeforeStartMinutes
         {
             get
@@ -439,6 +463,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ToleranceAfterStartMinutes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ToleranceAfterStartMinutes is required.")]
         public virtual int ToleranceAfterStartMinutes
         {
             get
@@ -461,6 +487,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TimeProfileWeekDay in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.JmgDayIdEnum> TimeProfileWeekDay
         {
             get
@@ -483,6 +510,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProfileLineEndWeekDay in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProfileLineEndWeekDay is required.")]
         public virtual int ProfileLineEndWeekDay
         {
             get
@@ -505,6 +534,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TimeAndAttendanceTimeProfileDetails in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TimeAndAttendanceTimeProfileDetails is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.TimeAndAttendanceTimeProfileDetails TimeAndAttendanceTimeProfileDetails
         {
             get
@@ -527,6 +558,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TimeAndAttendanceTimeProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TimeAndAttendanceTimeProfile is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.TimeAndAttendanceTimeProfile TimeAndAttendanceTimeProfile
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for PartyContactV2Single in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PartyContactV2Single in the schema.
+    /// </summary>
     public partial class PartyContactV2Single : global::Microsoft.OData.Client.DataServiceQuerySingle<PartyContactV2>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for PartyContactV2 in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PartyContactV2 in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// PartyNumber
     /// ElectronicAddressId
@@ -63,6 +63,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PartyNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PartyNumber is required.")]
         public virtual string PartyNumber
         {
             get
@@ -85,6 +87,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ElectronicAddressId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ElectronicAddressId is required.")]
         public virtual string ElectronicAddressId
         {
             get
@@ -107,6 +111,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsInstantMessage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsInstantMessage
         {
             get
@@ -129,6 +134,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsMobilePhone in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsMobilePhone
         {
             get
@@ -151,6 +157,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CountryRegionCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CountryRegionCode
         {
             get
@@ -173,6 +180,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Purpose in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Purpose
         {
             get
@@ -195,6 +203,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Locator in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Locator
         {
             get
@@ -217,6 +226,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LocatorExtension in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LocatorExtension
         {
             get
@@ -239,6 +249,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LocationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LocationId
         {
             get
@@ -261,6 +272,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -283,6 +295,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsPrimary in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsPrimary
         {
             get
@@ -305,6 +318,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Type in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.LogisticsElectronicAddressMethodType> Type
         {
             get
@@ -327,6 +341,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsPrivate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsPrivate
         {
             get

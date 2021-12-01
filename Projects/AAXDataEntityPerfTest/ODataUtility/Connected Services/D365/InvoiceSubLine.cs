@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for InvoiceSubLineSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for InvoiceSubLineSingle in the schema.
+    /// </summary>
     public partial class InvoiceSubLineSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<InvoiceSubLine>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.VendorInvoiceLineSingle _VendorInvoiceLine;
     }
-        /// <summary>
-        /// There are no comments for InvoiceSubLine in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for InvoiceSubLine in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// ProductReceiptNumber
@@ -107,6 +107,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -129,6 +131,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductReceiptNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductReceiptNumber is required.")]
         public virtual string ProductReceiptNumber
         {
             get
@@ -151,6 +155,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InvoiceLineReference in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "InvoiceLineReference is required.")]
         public virtual string InvoiceLineReference
         {
             get
@@ -173,6 +179,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchaseOrder in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PurchaseOrder is required.")]
         public virtual string PurchaseOrder
         {
             get
@@ -195,6 +203,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InvoiceLineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "InvoiceLineNumber is required.")]
         public virtual decimal InvoiceLineNumber
         {
             get
@@ -217,6 +227,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchaseQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PurchaseQuantity is required.")]
         public virtual decimal PurchaseQuantity
         {
             get
@@ -239,6 +251,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorInvoiceLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "VendorInvoiceLine is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.VendorInvoiceLine VendorInvoiceLine
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for AddressPostalCodeV3Single in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AddressPostalCodeV3Single in the schema.
+    /// </summary>
     public partial class AddressPostalCodeV3Single : global::Microsoft.OData.Client.DataServiceQuerySingle<AddressPostalCodeV3>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetLocation> _AssetLocation;
     }
-        /// <summary>
-        /// There are no comments for AddressPostalCodeV3 in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AddressPostalCodeV3 in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// ZipCode
     /// CountryRegionId
@@ -115,6 +115,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ZipCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ZipCode is required.")]
         public virtual string ZipCode
         {
             get
@@ -137,6 +139,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CountryRegionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CountryRegionId is required.")]
         public virtual string CountryRegionId
         {
             get
@@ -159,6 +163,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StateId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "StateId is required.")]
         public virtual string StateId
         {
             get
@@ -181,6 +187,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CountyId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CountyId is required.")]
         public virtual string CountyId
         {
             get
@@ -203,6 +211,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CityId is required.")]
         public virtual string CityId
         {
             get
@@ -225,6 +235,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DistrictId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DistrictId is required.")]
         public virtual string DistrictId
         {
             get
@@ -247,6 +259,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StreetNumberMinimum in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "StreetNumberMinimum is required.")]
         public virtual int StreetNumberMinimum
         {
             get
@@ -269,6 +283,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StreetNumberMaximum in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "StreetNumberMaximum is required.")]
         public virtual int StreetNumberMaximum
         {
             get
@@ -291,6 +307,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StreetNumberValidity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AllEvenOdd> StreetNumberValidity
         {
             get
@@ -313,6 +330,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Street in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Street is required.")]
         public virtual string Street
         {
             get
@@ -335,6 +354,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TimeZone in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.Timezone> TimeZone
         {
             get
@@ -357,6 +377,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CityAlias in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CityAlias
         {
             get
@@ -379,6 +400,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetLocation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetLocation> AssetLocation
         {
             get

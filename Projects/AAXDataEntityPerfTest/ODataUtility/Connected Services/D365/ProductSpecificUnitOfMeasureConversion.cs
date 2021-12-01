@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ProductSpecificUnitOfMeasureConversionSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ProductSpecificUnitOfMeasureConversionSingle in the schema.
+    /// </summary>
     public partial class ProductSpecificUnitOfMeasureConversionSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ProductSpecificUnitOfMeasureConversion>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.EveryProductSingle _EveryProduct;
     }
-        /// <summary>
-        /// There are no comments for ProductSpecificUnitOfMeasureConversion in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ProductSpecificUnitOfMeasureConversion in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// ProductNumber
     /// FromUnitSymbol
@@ -111,6 +111,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductNumber is required.")]
         public virtual string ProductNumber
         {
             get
@@ -133,6 +135,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FromUnitSymbol in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FromUnitSymbol is required.")]
         public virtual string FromUnitSymbol
         {
             get
@@ -155,6 +159,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ToUnitSymbol in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ToUnitSymbol is required.")]
         public virtual string ToUnitSymbol
         {
             get
@@ -177,6 +183,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InnerOffset in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "InnerOffset is required.")]
         public virtual decimal InnerOffset
         {
             get
@@ -199,6 +207,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Rounding in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.UnitOfMeasureConversionRounding> Rounding
         {
             get
@@ -221,6 +230,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OuterOffset in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "OuterOffset is required.")]
         public virtual decimal OuterOffset
         {
             get
@@ -243,6 +254,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Numerator in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Numerator is required.")]
         public virtual int Numerator
         {
             get
@@ -265,6 +278,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Factor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Factor is required.")]
         public virtual decimal Factor
         {
             get
@@ -287,6 +302,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Denominator in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Denominator is required.")]
         public virtual int Denominator
         {
             get
@@ -309,6 +326,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EveryProduct in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EveryProduct is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.EveryProduct EveryProduct
         {
             get

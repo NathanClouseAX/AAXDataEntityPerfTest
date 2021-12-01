@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for PositionForecastSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PositionForecastSingle in the schema.
+    /// </summary>
     public partial class PositionForecastSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PositionForecast>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _DimensionCombination;
     }
-        /// <summary>
-        /// There are no comments for PositionForecast in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PositionForecast in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// ForecastPositionId
     /// BudgetPlanningProcessName
@@ -134,6 +134,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ForecastPositionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ForecastPositionId is required.")]
         public virtual string ForecastPositionId
         {
             get
@@ -156,6 +158,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetPlanningProcessName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BudgetPlanningProcessName is required.")]
         public virtual string BudgetPlanningProcessName
         {
             get
@@ -178,6 +182,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetPlanScenarioName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BudgetPlanScenarioName is required.")]
         public virtual string BudgetPlanScenarioName
         {
             get
@@ -200,6 +206,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CostElementName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CostElementName is required.")]
         public virtual string CostElementName
         {
             get
@@ -222,6 +230,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CostElementDataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CostElementDataAreaId is required.")]
         public virtual string CostElementDataAreaId
         {
             get
@@ -244,6 +254,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CostElementEffectiveDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CostElementEffectiveDate is required.")]
         public virtual global::System.DateTimeOffset CostElementEffectiveDate
         {
             get
@@ -266,6 +278,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CostElementExpirationDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CostElementExpirationDate is required.")]
         public virtual global::System.DateTimeOffset CostElementExpirationDate
         {
             get
@@ -288,6 +302,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CostElementLineStartDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CostElementLineStartDate is required.")]
         public virtual global::System.DateTimeOffset CostElementLineStartDate
         {
             get
@@ -310,6 +326,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CostElementLineEndDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CostElementLineEndDate is required.")]
         public virtual global::System.DateTimeOffset CostElementLineEndDate
         {
             get
@@ -332,6 +350,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BudgetAmount is required.")]
         public virtual decimal BudgetAmount
         {
             get
@@ -354,6 +374,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ForecastPositionRefPointSetupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ForecastPositionRefPointSetupId
         {
             get
@@ -376,6 +397,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ForecastPositionCompensationGroupDataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ForecastPositionCompensationGroupDataAreaId
         {
             get
@@ -398,6 +420,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DepartmentNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DepartmentNumber
         {
             get
@@ -420,6 +443,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JobId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string JobId
         {
             get
@@ -442,6 +466,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ForecastPositionCompensationGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ForecastPositionCompensationGroupId
         {
             get
@@ -464,6 +489,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CostElementLineReferenceSetupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CostElementLineReferenceSetupId
         {
             get
@@ -486,6 +512,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TitleId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TitleId
         {
             get
@@ -508,6 +535,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -530,6 +558,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AnnualAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AnnualAmount is required.")]
         public virtual decimal AnnualAmount
         {
             get
@@ -552,6 +582,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ForecastPositionActivationDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ForecastPositionActivationDate is required.")]
         public virtual global::System.DateTimeOffset ForecastPositionActivationDate
         {
             get
@@ -574,6 +606,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ForecastPositionRefPointId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ForecastPositionRefPointId
         {
             get
@@ -596,6 +629,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AnniversaryDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AnniversaryDate is required.")]
         public virtual global::System.DateTimeOffset AnniversaryDate
         {
             get
@@ -618,6 +653,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PositionTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PositionTypeId
         {
             get
@@ -640,6 +676,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CostElementLineReferencePointId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CostElementLineReferencePointId
         {
             get
@@ -662,6 +699,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ForecastPositionFullTimeEquivalency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ForecastPositionFullTimeEquivalency is required.")]
         public virtual decimal ForecastPositionFullTimeEquivalency
         {
             get
@@ -684,6 +723,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CostElementLineMainAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CostElementLineMainAccountDisplayValue
         {
             get
@@ -706,6 +746,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ForecastPositionLegalEnitytName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ForecastPositionLegalEnitytName
         {
             get
@@ -728,6 +769,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ForecastPositionRetirementDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ForecastPositionRetirementDate is required.")]
         public virtual global::System.DateTimeOffset ForecastPositionRetirementDate
         {
             get
@@ -750,6 +793,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property isPercentageBased in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> isPercentageBased
         {
             get
@@ -772,6 +816,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CostElementSource in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HcmPositionForecastBudgetAcctLineSource> CostElementSource
         {
             get
@@ -794,6 +839,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Percent in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Percent is required.")]
         public virtual decimal Percent
         {
             get
@@ -816,6 +863,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CompensationRegionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CompensationRegionId
         {
             get
@@ -838,6 +886,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CompensationLevelId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CompensationLevelId
         {
             get
@@ -860,6 +909,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssignedWorker in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AssignedWorker
         {
             get
@@ -882,6 +932,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination DimensionCombination
         {
             get

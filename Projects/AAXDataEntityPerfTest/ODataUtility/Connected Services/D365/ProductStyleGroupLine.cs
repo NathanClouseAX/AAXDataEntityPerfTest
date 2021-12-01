@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ProductStyleGroupLineSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ProductStyleGroupLineSingle in the schema.
+    /// </summary>
     public partial class ProductStyleGroupLineSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ProductStyleGroupLine>
     {
         /// <summary>
@@ -98,9 +98,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductStyleGroupLineTranslation> _ProductStyleGroupLineTranslations;
     }
-        /// <summary>
-        /// There are no comments for ProductStyleGroupLine in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ProductStyleGroupLine in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// ProductStyleGroupId
     /// ProductStyleId
@@ -147,6 +147,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductStyleGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductStyleGroupId is required.")]
         public virtual string ProductStyleGroupId
         {
             get
@@ -169,6 +171,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductStyleId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductStyleId is required.")]
         public virtual string ProductStyleId
         {
             get
@@ -191,6 +195,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisplayOrder in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DisplayOrder is required.")]
         public virtual decimal DisplayOrder
         {
             get
@@ -213,6 +219,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StyleDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string StyleDescription
         {
             get
@@ -235,6 +242,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReplenishmentWeight in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReplenishmentWeight is required.")]
         public virtual int ReplenishmentWeight
         {
             get
@@ -257,6 +266,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BarcodeNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BarcodeNumber
         {
             get
@@ -279,6 +289,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StyleName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string StyleName
         {
             get
@@ -301,6 +312,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductStyle in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductStyle is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ProductStyle ProductStyle
         {
             get
@@ -323,6 +336,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductStyleGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductStyleGroup is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ProductStyleGroup ProductStyleGroup
         {
             get
@@ -345,6 +360,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductStyleGroupLineTranslations in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductStyleGroupLineTranslation> ProductStyleGroupLineTranslations
         {
             get

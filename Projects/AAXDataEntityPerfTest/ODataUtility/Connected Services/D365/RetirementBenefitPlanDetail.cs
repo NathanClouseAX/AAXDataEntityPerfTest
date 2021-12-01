@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RetirementBenefitPlanDetailSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetirementBenefitPlanDetailSingle in the schema.
+    /// </summary>
     public partial class RetirementBenefitPlanDetailSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RetirementBenefitPlanDetail>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.BenefitPlanSingle _BenefitPlan;
     }
-        /// <summary>
-        /// There are no comments for RetirementBenefitPlanDetail in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetirementBenefitPlanDetail in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// BenefitPlanID
     /// </KeyProperties>
@@ -87,6 +87,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BenefitPlanID in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BenefitPlanID is required.")]
         public virtual string BenefitPlanID
         {
             get
@@ -109,6 +111,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ContributionLimitMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PayrollContributionLimitMethod> ContributionLimitMethod
         {
             get
@@ -131,6 +134,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetirementType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PayrollRetirementType> RetirementType
         {
             get
@@ -153,6 +157,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BenefitPlan in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BenefitPlan is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.BenefitPlan BenefitPlan
         {
             get

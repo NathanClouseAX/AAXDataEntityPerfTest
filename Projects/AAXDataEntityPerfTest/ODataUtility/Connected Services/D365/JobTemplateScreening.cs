@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for JobTemplateScreeningSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for JobTemplateScreeningSingle in the schema.
+    /// </summary>
     public partial class JobTemplateScreeningSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<JobTemplateScreening>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.JobTemplateSingle _JobTemplate;
     }
-        /// <summary>
-        /// There are no comments for JobTemplateScreening in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for JobTemplateScreening in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// JobTemplateId
     /// ScreeningTypeId
@@ -117,6 +117,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JobTemplateId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "JobTemplateId is required.")]
         public virtual string JobTemplateId
         {
             get
@@ -139,6 +141,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ScreeningTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ScreeningTypeId is required.")]
         public virtual string ScreeningTypeId
         {
             get
@@ -161,6 +165,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ScreeningType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ScreeningType is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ScreeningType ScreeningType
         {
             get
@@ -183,6 +189,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JobTemplate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "JobTemplate is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.JobTemplate JobTemplate
         {
             get

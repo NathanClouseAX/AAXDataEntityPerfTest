@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for CostCalculationGroupSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CostCalculationGroupSingle in the schema.
+    /// </summary>
     public partial class CostCalculationGroupSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<CostCalculationGroup>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductV2> _ReleasedProductsV2;
     }
-        /// <summary>
-        /// There are no comments for CostCalculationGroup in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CostCalculationGroup in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// GroupId
@@ -88,6 +88,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -110,6 +112,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property GroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "GroupId is required.")]
         public virtual string GroupId
         {
             get
@@ -132,6 +136,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShowWarningIfContributionMarginPercentageLowerThan in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ShowWarningIfContributionMarginPercentageLowerThan is required.")]
         public virtual decimal ShowWarningIfContributionMarginPercentageLowerThan
         {
             get
@@ -154,6 +160,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillCostCalculationIssueZeroConsumptionWarning in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillCostCalculationIssueZeroConsumptionWarning
         {
             get
@@ -176,6 +183,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillCostCalculationIssueNoActiveAssignedRouteWarning in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillCostCalculationIssueNoActiveAssignedRouteWarning
         {
             get
@@ -198,6 +206,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property GroupName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string GroupName
         {
             get
@@ -220,6 +229,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnitCostCalculationMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.BOMCalcCostPrice> UnitCostCalculationMethod
         {
             get
@@ -242,6 +252,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesPriceCalculationMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.BOMCalcSalesPrice> SalesPriceCalculationMethod
         {
             get
@@ -264,6 +275,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillCostCalculationIssueNoActiveAssignedBOMWarning in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillCostCalculationIssueNoActiveAssignedBOMWarning
         {
             get
@@ -286,6 +298,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillCostCalulationIssueOperationsResourceRequirementNotMetWarning in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillCostCalulationIssueOperationsResourceRequirementNotMetWarning
         {
             get
@@ -308,6 +321,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShowWarningIfCostPriceCalculationOlderThanDays in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ShowWarningIfCostPriceCalculationOlderThanDays is required.")]
         public virtual int ShowWarningIfCostPriceCalculationOlderThanDays
         {
             get
@@ -330,6 +345,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillCostCalulationIssueZeroCostPriceWarning in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillCostCalulationIssueZeroCostPriceWarning
         {
             get
@@ -352,6 +368,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StopExplosionAtItem in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> StopExplosionAtItem
         {
             get
@@ -374,6 +391,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AlternativeUnitCostCalculationMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.BOMCalcCostPrice> AlternativeUnitCostCalculationMethod
         {
             get
@@ -396,6 +414,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReleasedProductsV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductV2> ReleasedProductsV2
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for DepartmentV2Single in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for DepartmentV2Single in the schema.
+    /// </summary>
     public partial class DepartmentV2Single : global::Microsoft.OData.Client.DataServiceQuerySingle<DepartmentV2>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for DepartmentV2 in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for DepartmentV2 in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// OperatingUnitNumber
     /// </KeyProperties>
@@ -64,6 +64,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OperatingUnitNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "OperatingUnitNumber is required.")]
         public virtual string OperatingUnitNumber
         {
             get
@@ -86,6 +88,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryContactFacebookIsPrivate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PrimaryContactFacebookIsPrivate
         {
             get
@@ -108,6 +111,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryContactLinkedInDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryContactLinkedInDescription
         {
             get
@@ -130,6 +134,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryContactPhonePurpose in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryContactPhonePurpose
         {
             get
@@ -152,6 +157,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryAddressCounty in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryAddressCounty
         {
             get
@@ -174,6 +180,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryContactFacebook in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryContactFacebook
         {
             get
@@ -196,6 +203,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AddressLocationRoles in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AddressLocationRoles
         {
             get
@@ -218,6 +226,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryContactFaxExtension in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryContactFaxExtension
         {
             get
@@ -240,6 +249,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SearchName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SearchName
         {
             get
@@ -262,6 +272,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryContactPhoneExtension in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryContactPhoneExtension
         {
             get
@@ -284,6 +295,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryAddressValidFrom in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PrimaryAddressValidFrom is required.")]
         public virtual global::System.DateTimeOffset PrimaryAddressValidFrom
         {
             get
@@ -306,6 +319,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryContactPhoneIsMobile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PrimaryContactPhoneIsMobile
         {
             get
@@ -328,6 +342,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryContactFaxPurpose in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryContactFaxPurpose
         {
             get
@@ -350,6 +365,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryContactTelexDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryContactTelexDescription
         {
             get
@@ -372,6 +388,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryContactPhoneDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryContactPhoneDescription
         {
             get
@@ -394,6 +411,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Memo in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Memo
         {
             get
@@ -416,6 +434,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property KnownAs in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string KnownAs
         {
             get
@@ -438,6 +457,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryAddressCountryRegionISOCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryAddressCountryRegionISOCode
         {
             get
@@ -460,6 +480,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryContactEmailDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryContactEmailDescription
         {
             get
@@ -482,6 +503,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryContactTwitterPurpose in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryContactTwitterPurpose
         {
             get
@@ -504,6 +526,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryAddressCountryRegionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryAddressCountryRegionId
         {
             get
@@ -526,6 +549,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryContactEmailPurpose in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryContactEmailPurpose
         {
             get
@@ -548,6 +572,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryContactTwitter in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryContactTwitter
         {
             get
@@ -570,6 +595,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryContactTelex in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryContactTelex
         {
             get
@@ -592,6 +618,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryContactFacebookDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryContactFacebookDescription
         {
             get
@@ -614,6 +641,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PartyNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PartyNumber
         {
             get
@@ -636,6 +664,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OperatingUnitTypes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.OMOperatingUnitType> OperatingUnitTypes
         {
             get
@@ -658,6 +687,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryContactPhone in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryContactPhone
         {
             get
@@ -680,6 +710,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PartyType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PartyType
         {
             get
@@ -702,6 +733,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Language in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Language
         {
             get
@@ -724,6 +756,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryContactEmail in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryContactEmail
         {
             get
@@ -746,6 +779,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryAddressValidTo in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PrimaryAddressValidTo is required.")]
         public virtual global::System.DateTimeOffset PrimaryAddressValidTo
         {
             get
@@ -768,6 +803,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Name
         {
             get
@@ -790,6 +826,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryAddressStreet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryAddressStreet
         {
             get
@@ -812,6 +849,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryContactLinkedIn in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryContactLinkedIn
         {
             get
@@ -834,6 +872,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryContactFacebookPurpose in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryContactFacebookPurpose
         {
             get
@@ -856,6 +895,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryContactURL in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryContactURL
         {
             get
@@ -878,6 +918,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryContactURLDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryContactURLDescription
         {
             get
@@ -900,6 +941,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryContactTelexPurpose in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryContactTelexPurpose
         {
             get
@@ -922,6 +964,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryContactEmailIsIM in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PrimaryContactEmailIsIM
         {
             get
@@ -944,6 +987,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryAddressDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryAddressDescription
         {
             get
@@ -966,6 +1010,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryAddressCity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryAddressCity
         {
             get
@@ -988,6 +1033,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryAddressZipCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryAddressZipCode
         {
             get
@@ -1010,6 +1056,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OrganizationType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.OMInternalOrganizationType> OrganizationType
         {
             get
@@ -1032,6 +1079,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryContactLinkedInIsPrivate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PrimaryContactLinkedInIsPrivate
         {
             get
@@ -1054,6 +1102,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryContactTwitterIsPrivate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PrimaryContactTwitterIsPrivate
         {
             get
@@ -1076,6 +1125,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryContactURLPurpose in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryContactURLPurpose
         {
             get
@@ -1098,6 +1148,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryContactFax in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryContactFax
         {
             get
@@ -1120,6 +1171,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryAddressState in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryAddressState
         {
             get
@@ -1142,6 +1194,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryContactFaxDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryContactFaxDescription
         {
             get
@@ -1164,6 +1217,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryContactTwitterDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryContactTwitterDescription
         {
             get
@@ -1186,6 +1240,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryContactLinkedInPurpose in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryContactLinkedInPurpose
         {
             get

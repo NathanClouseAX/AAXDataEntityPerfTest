@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for FinancialDimensionValueTranslationSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for FinancialDimensionValueTranslationSingle in the schema.
+    /// </summary>
     public partial class FinancialDimensionValueTranslationSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<FinancialDimensionValueTranslation>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionAttributeSingle _FinancialDimensionValueTranslationEntity_RelatedRole_DimensionAttributeEntity;
     }
-        /// <summary>
-        /// There are no comments for FinancialDimensionValueTranslation in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for FinancialDimensionValueTranslation in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// FinancialDimension
     /// LanguageCode
@@ -93,6 +93,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FinancialDimension in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FinancialDimension is required.")]
         public virtual string FinancialDimension
         {
             get
@@ -115,6 +117,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LanguageCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LanguageCode is required.")]
         public virtual string LanguageCode
         {
             get
@@ -137,6 +141,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FinancialDimensionValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FinancialDimensionValue is required.")]
         public virtual string FinancialDimensionValue
         {
             get
@@ -159,6 +165,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TranslatedDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TranslatedDescription
         {
             get
@@ -181,6 +188,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FinancialDimensionValueTranslationEntity_RelatedRole_DimensionAttributeEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FinancialDimensionValueTranslationEntity_RelatedRole_DimensionAttributeEntity is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute FinancialDimensionValueTranslationEntity_RelatedRole_DimensionAttributeEntity
         {
             get

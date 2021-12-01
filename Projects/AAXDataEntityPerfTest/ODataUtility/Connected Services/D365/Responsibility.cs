@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ResponsibilitySingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ResponsibilitySingle in the schema.
+    /// </summary>
     public partial class ResponsibilitySingle : global::Microsoft.OData.Client.DataServiceQuerySingle<Responsibility>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobResponsibility> _JobResponsibilities;
     }
-        /// <summary>
-        /// There are no comments for Responsibility in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for Responsibility in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// ResponsibilityId
     /// </KeyProperties>
@@ -102,6 +102,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ResponsibilityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ResponsibilityId is required.")]
         public virtual string ResponsibilityId
         {
             get
@@ -124,6 +126,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -146,6 +149,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Note in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Note
         {
             get
@@ -168,6 +172,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JobTemplateResponsibilities in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateResponsibility> JobTemplateResponsibilities
         {
             get
@@ -190,6 +195,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JobResponsibilities in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobResponsibility> JobResponsibilities
         {
             get

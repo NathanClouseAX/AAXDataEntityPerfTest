@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for DisposableIncomeEarningSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for DisposableIncomeEarningSingle in the schema.
+    /// </summary>
     public partial class DisposableIncomeEarningSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<DisposableIncomeEarning>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DisposableIncomeSingle _DisposableIncome;
     }
-        /// <summary>
-        /// There are no comments for DisposableIncomeEarning in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for DisposableIncomeEarning in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// EarningCodeId
     /// Name
@@ -90,6 +90,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EarningCodeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EarningCodeId is required.")]
         public virtual string EarningCodeId
         {
             get
@@ -112,6 +114,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Name is required.")]
         public virtual string Name
         {
             get
@@ -134,6 +138,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisposableIncome in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DisposableIncome is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.DisposableIncome DisposableIncome
         {
             get

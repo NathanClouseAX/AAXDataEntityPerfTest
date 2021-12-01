@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for PayRateConversionSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PayRateConversionSingle in the schema.
+    /// </summary>
     public partial class PayRateConversionSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PayRateConversion>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompFixedPlanTable> _CompFixedPlanTable;
     }
-        /// <summary>
-        /// There are no comments for PayRateConversion in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PayRateConversion in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// PayRateConversion
@@ -97,6 +97,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -119,7 +121,9 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayRateConversion1 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         [global::Microsoft.OData.Client.OriginalNameAttribute("PayRateConversion")]
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PayRateConversion1 is required.")]
         public virtual string PayRateConversion1
         {
             get
@@ -142,6 +146,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AnnualConversionFactor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AnnualConversionFactor is required.")]
         public virtual decimal AnnualConversionFactor
         {
             get
@@ -164,6 +170,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MonthlyConversionFactor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MonthlyConversionFactor is required.")]
         public virtual decimal MonthlyConversionFactor
         {
             get
@@ -186,6 +194,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -208,6 +217,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WeeklyConversionFactor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WeeklyConversionFactor is required.")]
         public virtual decimal WeeklyConversionFactor
         {
             get
@@ -230,6 +241,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Period in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmCompPayFrequencyPeriod> Period
         {
             get
@@ -252,6 +264,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HourlyConversionFactor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "HourlyConversionFactor is required.")]
         public virtual decimal HourlyConversionFactor
         {
             get
@@ -274,6 +288,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CompFixedPlanTable in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompFixedPlanTable> CompFixedPlanTable
         {
             get

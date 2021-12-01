@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ShippingContainerTypeTableSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ShippingContainerTypeTableSingle in the schema.
+    /// </summary>
     public partial class ShippingContainerTypeTableSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ShippingContainerTypeTable>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for ShippingContainerTypeTable in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ShippingContainerTypeTable in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// ShippingContainerTypeId
@@ -67,6 +67,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -89,6 +91,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShippingContainerTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ShippingContainerTypeId is required.")]
         public virtual string ShippingContainerTypeId
         {
             get
@@ -111,6 +115,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShippingContainerTypeDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ShippingContainerTypeDescription
         {
             get
@@ -133,6 +138,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaximumShippingContainerVolume in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MaximumShippingContainerVolume is required.")]
         public virtual decimal MaximumShippingContainerVolume
         {
             get
@@ -155,6 +162,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaximumShippingContainerWeight in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MaximumShippingContainerWeight is required.")]
         public virtual decimal MaximumShippingContainerWeight
         {
             get
@@ -177,6 +186,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsShippingContainerReturnable in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsShippingContainerReturnable
         {
             get

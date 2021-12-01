@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for PersonSkillMappingSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PersonSkillMappingSingle in the schema.
+    /// </summary>
     public partial class PersonSkillMappingSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PersonSkillMapping>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ReasonCodeSingle _ReasonCode;
     }
-        /// <summary>
-        /// There are no comments for PersonSkillMapping in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PersonSkillMapping in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// PartyNumber
     /// </KeyProperties>
@@ -102,6 +102,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PartyNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PartyNumber is required.")]
         public virtual string PartyNumber
         {
             get
@@ -124,6 +126,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReasonCodeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ReasonCodeId
         {
             get
@@ -146,6 +149,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsSkillMappingEnabled in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsSkillMappingEnabled
         {
             get
@@ -168,6 +172,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Applicant in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.Applicant Applicant
         {
             get
@@ -190,6 +195,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReasonCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ReasonCode ReasonCode
         {
             get

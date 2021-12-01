@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for JobPreferredExamSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for JobPreferredExamSingle in the schema.
+    /// </summary>
     public partial class JobPreferredExamSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<JobPreferredExam>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.TestTypeSingle _TestType;
     }
-        /// <summary>
-        /// There are no comments for JobPreferredExam in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for JobPreferredExam in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// JobId
     /// TestId
@@ -117,6 +117,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JobId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "JobId is required.")]
         public virtual string JobId
         {
             get
@@ -139,6 +141,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TestId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TestId is required.")]
         public virtual string TestId
         {
             get
@@ -161,6 +165,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Job in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Job is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Job Job
         {
             get
@@ -183,6 +189,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TestType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TestType is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.TestType TestType
         {
             get

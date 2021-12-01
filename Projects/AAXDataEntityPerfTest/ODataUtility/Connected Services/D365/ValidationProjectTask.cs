@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ValidationProjectTaskSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ValidationProjectTaskSingle in the schema.
+    /// </summary>
     public partial class ValidationProjectTaskSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ValidationProjectTask>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ValidationProjectSingle _ValidationProject;
     }
-        /// <summary>
-        /// There are no comments for ValidationProjectTask in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ValidationProjectTask in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// DataValidationProject_Name
     /// LineNumber
@@ -113,6 +113,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DataValidationProject_Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DataValidationProject_Name is required.")]
         public virtual string DataValidationProject_Name
         {
             get
@@ -135,6 +137,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LineNumber is required.")]
         public virtual decimal LineNumber
         {
             get
@@ -157,6 +161,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisplayOrder in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DisplayOrder is required.")]
         public virtual decimal DisplayOrder
         {
             get
@@ -179,6 +185,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Name
         {
             get
@@ -201,6 +208,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MenuItemType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.MenuItemType> MenuItemType
         {
             get
@@ -223,6 +231,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MenuItem in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MenuItem
         {
             get
@@ -245,6 +254,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Area_Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Area_Name
         {
             get
@@ -267,6 +277,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidationTaskArea in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValidationTaskArea is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ValidationTaskArea ValidationTaskArea
         {
             get
@@ -289,6 +301,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidationProject in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ValidationProject ValidationProject
         {
             get

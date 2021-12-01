@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for BudgetControlRuleSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BudgetControlRuleSingle in the schema.
+    /// </summary>
     public partial class BudgetControlRuleSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<BudgetControlRule>
     {
         /// <summary>
@@ -34,48 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public BudgetControlRuleSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<BudgetControlRule> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for BudgetControlRuleCriterionRule in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleCriterion> BudgetControlRuleCriterionRule
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._BudgetControlRuleCriterionRule == null))
-                {
-                    this._BudgetControlRuleCriterionRule = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleCriterion>(GetPath("BudgetControlRuleCriterionRule"));
-                }
-                return this._BudgetControlRuleCriterionRule;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleCriterion> _BudgetControlRuleCriterionRule;
-        /// <summary>
-        /// There are no comments for BudgetControlRuleOverBudgetPermissionsBudgetControlRule in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleOverBudgetPermission> BudgetControlRuleOverBudgetPermissionsBudgetControlRule
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._BudgetControlRuleOverBudgetPermissionsBudgetControlRule == null))
-                {
-                    this._BudgetControlRuleOverBudgetPermissionsBudgetControlRule = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleOverBudgetPermission>(GetPath("BudgetControlRuleOverBudgetPermissionsBudgetControlRule"));
-                }
-                return this._BudgetControlRuleOverBudgetPermissionsBudgetControlRule;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleOverBudgetPermission> _BudgetControlRuleOverBudgetPermissionsBudgetControlRule;
         /// <summary>
         /// There are no comments for BudgetManagers in the schema.
         /// </summary>
@@ -139,10 +97,52 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.BudgetCycleTimeSpanSingle _BudgetCycleTimeSpans;
-    }
         /// <summary>
-        /// There are no comments for BudgetControlRule in the schema.
+        /// There are no comments for BudgetControlRuleOverBudgetPermissionsBudgetControlRule in the schema.
         /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleOverBudgetPermission> BudgetControlRuleOverBudgetPermissionsBudgetControlRule
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._BudgetControlRuleOverBudgetPermissionsBudgetControlRule == null))
+                {
+                    this._BudgetControlRuleOverBudgetPermissionsBudgetControlRule = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleOverBudgetPermission>(GetPath("BudgetControlRuleOverBudgetPermissionsBudgetControlRule"));
+                }
+                return this._BudgetControlRuleOverBudgetPermissionsBudgetControlRule;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleOverBudgetPermission> _BudgetControlRuleOverBudgetPermissionsBudgetControlRule;
+        /// <summary>
+        /// There are no comments for BudgetControlRuleCriterionRule in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleCriterion> BudgetControlRuleCriterionRule
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._BudgetControlRuleCriterionRule == null))
+                {
+                    this._BudgetControlRuleCriterionRule = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleCriterion>(GetPath("BudgetControlRuleCriterionRule"));
+                }
+                return this._BudgetControlRuleCriterionRule;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleCriterion> _BudgetControlRuleCriterionRule;
+    }
+    /// <summary>
+    /// There are no comments for BudgetControlRule in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// LegalEntityId
@@ -180,6 +180,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -202,6 +204,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LegalEntityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LegalEntityId is required.")]
         public virtual string LegalEntityId
         {
             get
@@ -224,6 +228,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Status in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.BudgetControlConfigurationStatus> Status
         {
             get
@@ -246,6 +251,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Name is required.")]
         public virtual string Name
         {
             get
@@ -268,6 +275,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetControlInterval in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.BudgetInterval> BudgetControlInterval
         {
             get
@@ -290,6 +298,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetManager in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BudgetManager
         {
             get
@@ -312,6 +321,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetCycleTimeSpanName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BudgetCycleTimeSpanName
         {
             get
@@ -334,6 +344,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetCycleTimeSpanFiscalCalendarId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BudgetCycleTimeSpanFiscalCalendarId
         {
             get
@@ -356,6 +367,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetThresholdPercent in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BudgetThresholdPercent is required.")]
         public virtual decimal BudgetThresholdPercent
         {
             get
@@ -378,6 +391,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -400,6 +414,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InUseBy in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string InUseBy
         {
             get
@@ -419,53 +434,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnInUseByChanging(string value);
         partial void OnInUseByChanged();
         /// <summary>
-        /// There are no comments for Property BudgetControlRuleCriterionRule in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleCriterion> BudgetControlRuleCriterionRule
-        {
-            get
-            {
-                return this._BudgetControlRuleCriterionRule;
-            }
-            set
-            {
-                this.OnBudgetControlRuleCriterionRuleChanging(value);
-                this._BudgetControlRuleCriterionRule = value;
-                this.OnBudgetControlRuleCriterionRuleChanged();
-                this.OnPropertyChanged("BudgetControlRuleCriterionRule");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleCriterion> _BudgetControlRuleCriterionRule = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleCriterion>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnBudgetControlRuleCriterionRuleChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleCriterion> value);
-        partial void OnBudgetControlRuleCriterionRuleChanged();
-        /// <summary>
-        /// There are no comments for Property BudgetControlRuleOverBudgetPermissionsBudgetControlRule in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleOverBudgetPermission> BudgetControlRuleOverBudgetPermissionsBudgetControlRule
-        {
-            get
-            {
-                return this._BudgetControlRuleOverBudgetPermissionsBudgetControlRule;
-            }
-            set
-            {
-                this.OnBudgetControlRuleOverBudgetPermissionsBudgetControlRuleChanging(value);
-                this._BudgetControlRuleOverBudgetPermissionsBudgetControlRule = value;
-                this.OnBudgetControlRuleOverBudgetPermissionsBudgetControlRuleChanged();
-                this.OnPropertyChanged("BudgetControlRuleOverBudgetPermissionsBudgetControlRule");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleOverBudgetPermission> _BudgetControlRuleOverBudgetPermissionsBudgetControlRule = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleOverBudgetPermission>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnBudgetControlRuleOverBudgetPermissionsBudgetControlRuleChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleOverBudgetPermission> value);
-        partial void OnBudgetControlRuleOverBudgetPermissionsBudgetControlRuleChanged();
-        /// <summary>
         /// There are no comments for Property BudgetManagers in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.SystemUser BudgetManagers
         {
             get
@@ -488,6 +460,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetControlConfigurations in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BudgetControlConfigurations is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.BudgetControlConfiguration BudgetControlConfigurations
         {
             get
@@ -510,6 +484,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetCycleTimeSpans in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.BudgetCycleTimeSpan BudgetCycleTimeSpans
         {
             get
@@ -528,6 +503,52 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.BudgetCycleTimeSpan _BudgetCycleTimeSpans;
         partial void OnBudgetCycleTimeSpansChanging(global::Microsoft.Dynamics.DataEntities.BudgetCycleTimeSpan value);
         partial void OnBudgetCycleTimeSpansChanged();
+        /// <summary>
+        /// There are no comments for Property BudgetControlRuleOverBudgetPermissionsBudgetControlRule in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleOverBudgetPermission> BudgetControlRuleOverBudgetPermissionsBudgetControlRule
+        {
+            get
+            {
+                return this._BudgetControlRuleOverBudgetPermissionsBudgetControlRule;
+            }
+            set
+            {
+                this.OnBudgetControlRuleOverBudgetPermissionsBudgetControlRuleChanging(value);
+                this._BudgetControlRuleOverBudgetPermissionsBudgetControlRule = value;
+                this.OnBudgetControlRuleOverBudgetPermissionsBudgetControlRuleChanged();
+                this.OnPropertyChanged("BudgetControlRuleOverBudgetPermissionsBudgetControlRule");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleOverBudgetPermission> _BudgetControlRuleOverBudgetPermissionsBudgetControlRule = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleOverBudgetPermission>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnBudgetControlRuleOverBudgetPermissionsBudgetControlRuleChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleOverBudgetPermission> value);
+        partial void OnBudgetControlRuleOverBudgetPermissionsBudgetControlRuleChanged();
+        /// <summary>
+        /// There are no comments for Property BudgetControlRuleCriterionRule in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleCriterion> BudgetControlRuleCriterionRule
+        {
+            get
+            {
+                return this._BudgetControlRuleCriterionRule;
+            }
+            set
+            {
+                this.OnBudgetControlRuleCriterionRuleChanging(value);
+                this._BudgetControlRuleCriterionRule = value;
+                this.OnBudgetControlRuleCriterionRuleChanged();
+                this.OnPropertyChanged("BudgetControlRuleCriterionRule");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleCriterion> _BudgetControlRuleCriterionRule = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleCriterion>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnBudgetControlRuleCriterionRuleChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRuleCriterion> value);
+        partial void OnBudgetControlRuleCriterionRuleChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

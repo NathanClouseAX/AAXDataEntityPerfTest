@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for CDSAIntegrationEntitySingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CDSAIntegrationEntitySingle in the schema.
+    /// </summary>
     public partial class CDSAIntegrationEntitySingle : global::Microsoft.OData.Client.DataServiceQuerySingle<CDSAIntegrationEntity>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for CDSAIntegrationEntity in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CDSAIntegrationEntity in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// Id
     /// </KeyProperties>
@@ -62,6 +62,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Id in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Id is required.")]
         public virtual global::System.Guid Id
         {
             get
@@ -84,6 +86,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AzureSubscriptionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AzureSubscriptionId
         {
             get
@@ -106,6 +109,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StorageAccountKey in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string StorageAccountKey
         {
             get
@@ -128,6 +132,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property KeyVaultSecretName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string KeyVaultSecretName
         {
             get
@@ -150,6 +155,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property KeyVaultName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string KeyVaultName
         {
             get
@@ -172,6 +178,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AzureResourceGroupName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AzureResourceGroupName
         {
             get
@@ -194,6 +201,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsEnabled in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "IsEnabled is required.")]
         public virtual bool IsEnabled
         {
             get
@@ -216,6 +225,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UPNEmailAccounts in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string UPNEmailAccounts
         {
             get
@@ -238,6 +248,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StorageAccountName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string StorageAccountName
         {
             get
@@ -260,6 +271,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TenantId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TenantId
         {
             get

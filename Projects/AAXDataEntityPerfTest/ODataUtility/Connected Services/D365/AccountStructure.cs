@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for AccountStructureSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AccountStructureSingle in the schema.
+    /// </summary>
     public partial class AccountStructureSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AccountStructure>
     {
         /// <summary>
@@ -35,10 +35,10 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for LedgerAccountStructureConstraintEntity_Role_LedgerAccountStructureEntity in the schema.
+        /// There are no comments for LedgerAdvancedRuleEntity_Role_LedgerAccountStructureEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AccountStructureConstraint> LedgerAccountStructureConstraintEntity_Role_LedgerAccountStructureEntity
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AdvancedRule> LedgerAdvancedRuleEntity_Role_LedgerAccountStructureEntity
         {
             get
             {
@@ -46,15 +46,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._LedgerAccountStructureConstraintEntity_Role_LedgerAccountStructureEntity == null))
+                if ((this._LedgerAdvancedRuleEntity_Role_LedgerAccountStructureEntity == null))
                 {
-                    this._LedgerAccountStructureConstraintEntity_Role_LedgerAccountStructureEntity = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AccountStructureConstraint>(GetPath("LedgerAccountStructureConstraintEntity_Role_LedgerAccountStructureEntity"));
+                    this._LedgerAdvancedRuleEntity_Role_LedgerAccountStructureEntity = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AdvancedRule>(GetPath("LedgerAdvancedRuleEntity_Role_LedgerAccountStructureEntity"));
                 }
-                return this._LedgerAccountStructureConstraintEntity_Role_LedgerAccountStructureEntity;
+                return this._LedgerAdvancedRuleEntity_Role_LedgerAccountStructureEntity;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AccountStructureConstraint> _LedgerAccountStructureConstraintEntity_Role_LedgerAccountStructureEntity;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AdvancedRule> _LedgerAdvancedRuleEntity_Role_LedgerAccountStructureEntity;
         /// <summary>
         /// There are no comments for BudgetAllowTransferRuleAccountStructure in the schema.
         /// </summary>
@@ -76,6 +76,69 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetAllowTransferRule> _BudgetAllowTransferRuleAccountStructure;
+        /// <summary>
+        /// There are no comments for AccountStructure in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlConfiguration> AccountStructure
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._AccountStructure == null))
+                {
+                    this._AccountStructure = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlConfiguration>(GetPath("AccountStructure"));
+                }
+                return this._AccountStructure;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlConfiguration> _AccountStructure;
+        /// <summary>
+        /// There are no comments for LedgerAccountStructureActivationEntity_Role_LedgerAccountStructureEntity in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AccountStructureActivation> LedgerAccountStructureActivationEntity_Role_LedgerAccountStructureEntity
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._LedgerAccountStructureActivationEntity_Role_LedgerAccountStructureEntity == null))
+                {
+                    this._LedgerAccountStructureActivationEntity_Role_LedgerAccountStructureEntity = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AccountStructureActivation>(GetPath("LedgerAccountStructureActivationEntity_Role_LedgerAccountStructureEntity"));
+                }
+                return this._LedgerAccountStructureActivationEntity_Role_LedgerAccountStructureEntity;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AccountStructureActivation> _LedgerAccountStructureActivationEntity_Role_LedgerAccountStructureEntity;
+        /// <summary>
+        /// There are no comments for LedgerAccountStructureConstraintEntity_Role_LedgerAccountStructureEntity in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AccountStructureConstraint> LedgerAccountStructureConstraintEntity_Role_LedgerAccountStructureEntity
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._LedgerAccountStructureConstraintEntity_Role_LedgerAccountStructureEntity == null))
+                {
+                    this._LedgerAccountStructureConstraintEntity_Role_LedgerAccountStructureEntity = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AccountStructureConstraint>(GetPath("LedgerAccountStructureConstraintEntity_Role_LedgerAccountStructureEntity"));
+                }
+                return this._LedgerAccountStructureConstraintEntity_Role_LedgerAccountStructureEntity;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AccountStructureConstraint> _LedgerAccountStructureConstraintEntity_Role_LedgerAccountStructureEntity;
         /// <summary>
         /// There are no comments for LedgerAccountStructureEntity_RelatedRole_SegmentName10 in the schema.
         /// </summary>
@@ -307,73 +370,10 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionAttributeSingle _LedgerAccountStructureEntity_RelatedRole_SegmentName09;
-        /// <summary>
-        /// There are no comments for AccountStructure in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlConfiguration> AccountStructure
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._AccountStructure == null))
-                {
-                    this._AccountStructure = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlConfiguration>(GetPath("AccountStructure"));
-                }
-                return this._AccountStructure;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlConfiguration> _AccountStructure;
-        /// <summary>
-        /// There are no comments for LedgerAccountStructureActivationEntity_Role_LedgerAccountStructureEntity in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AccountStructureActivation> LedgerAccountStructureActivationEntity_Role_LedgerAccountStructureEntity
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._LedgerAccountStructureActivationEntity_Role_LedgerAccountStructureEntity == null))
-                {
-                    this._LedgerAccountStructureActivationEntity_Role_LedgerAccountStructureEntity = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AccountStructureActivation>(GetPath("LedgerAccountStructureActivationEntity_Role_LedgerAccountStructureEntity"));
-                }
-                return this._LedgerAccountStructureActivationEntity_Role_LedgerAccountStructureEntity;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AccountStructureActivation> _LedgerAccountStructureActivationEntity_Role_LedgerAccountStructureEntity;
-        /// <summary>
-        /// There are no comments for LedgerAdvancedRuleEntity_Role_LedgerAccountStructureEntity in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AdvancedRule> LedgerAdvancedRuleEntity_Role_LedgerAccountStructureEntity
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._LedgerAdvancedRuleEntity_Role_LedgerAccountStructureEntity == null))
-                {
-                    this._LedgerAdvancedRuleEntity_Role_LedgerAccountStructureEntity = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AdvancedRule>(GetPath("LedgerAdvancedRuleEntity_Role_LedgerAccountStructureEntity"));
-                }
-                return this._LedgerAdvancedRuleEntity_Role_LedgerAccountStructureEntity;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AdvancedRule> _LedgerAdvancedRuleEntity_Role_LedgerAccountStructureEntity;
     }
-        /// <summary>
-        /// There are no comments for AccountStructure in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AccountStructure in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// AccountStructureName
     /// Status
@@ -397,6 +397,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountStructureName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AccountStructureName is required.")]
         public virtual string AccountStructureName
         {
             get
@@ -419,6 +421,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Status in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.DimensionHierarchyConstraintStatus> Status
         {
             get
@@ -441,6 +444,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentName10 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentName10
         {
             get
@@ -463,6 +467,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentName11 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentName11
         {
             get
@@ -485,6 +490,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentName04 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentName04
         {
             get
@@ -507,6 +513,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentName05 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentName05
         {
             get
@@ -529,6 +536,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentName06 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentName06
         {
             get
@@ -551,6 +559,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentName07 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentName07
         {
             get
@@ -573,6 +582,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentName01 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentName01
         {
             get
@@ -595,6 +605,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentName02 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentName02
         {
             get
@@ -617,6 +628,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentName03 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentName03
         {
             get
@@ -639,6 +651,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -661,6 +674,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentName08 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentName08
         {
             get
@@ -683,6 +697,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentName09 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentName09
         {
             get
@@ -702,31 +717,33 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnSegmentName09Changing(string value);
         partial void OnSegmentName09Changed();
         /// <summary>
-        /// There are no comments for Property LedgerAccountStructureConstraintEntity_Role_LedgerAccountStructureEntity in the schema.
+        /// There are no comments for Property LedgerAdvancedRuleEntity_Role_LedgerAccountStructureEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AccountStructureConstraint> LedgerAccountStructureConstraintEntity_Role_LedgerAccountStructureEntity
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AdvancedRule> LedgerAdvancedRuleEntity_Role_LedgerAccountStructureEntity
         {
             get
             {
-                return this._LedgerAccountStructureConstraintEntity_Role_LedgerAccountStructureEntity;
+                return this._LedgerAdvancedRuleEntity_Role_LedgerAccountStructureEntity;
             }
             set
             {
-                this.OnLedgerAccountStructureConstraintEntity_Role_LedgerAccountStructureEntityChanging(value);
-                this._LedgerAccountStructureConstraintEntity_Role_LedgerAccountStructureEntity = value;
-                this.OnLedgerAccountStructureConstraintEntity_Role_LedgerAccountStructureEntityChanged();
-                this.OnPropertyChanged("LedgerAccountStructureConstraintEntity_Role_LedgerAccountStructureEntity");
+                this.OnLedgerAdvancedRuleEntity_Role_LedgerAccountStructureEntityChanging(value);
+                this._LedgerAdvancedRuleEntity_Role_LedgerAccountStructureEntity = value;
+                this.OnLedgerAdvancedRuleEntity_Role_LedgerAccountStructureEntityChanged();
+                this.OnPropertyChanged("LedgerAdvancedRuleEntity_Role_LedgerAccountStructureEntity");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AccountStructureConstraint> _LedgerAccountStructureConstraintEntity_Role_LedgerAccountStructureEntity = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AccountStructureConstraint>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnLedgerAccountStructureConstraintEntity_Role_LedgerAccountStructureEntityChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AccountStructureConstraint> value);
-        partial void OnLedgerAccountStructureConstraintEntity_Role_LedgerAccountStructureEntityChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AdvancedRule> _LedgerAdvancedRuleEntity_Role_LedgerAccountStructureEntity = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AdvancedRule>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnLedgerAdvancedRuleEntity_Role_LedgerAccountStructureEntityChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AdvancedRule> value);
+        partial void OnLedgerAdvancedRuleEntity_Role_LedgerAccountStructureEntityChanged();
         /// <summary>
         /// There are no comments for Property BudgetAllowTransferRuleAccountStructure in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetAllowTransferRule> BudgetAllowTransferRuleAccountStructure
         {
             get
@@ -746,251 +763,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnBudgetAllowTransferRuleAccountStructureChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetAllowTransferRule> value);
         partial void OnBudgetAllowTransferRuleAccountStructureChanged();
         /// <summary>
-        /// There are no comments for Property LedgerAccountStructureEntity_RelatedRole_SegmentName10 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute LedgerAccountStructureEntity_RelatedRole_SegmentName10
-        {
-            get
-            {
-                return this._LedgerAccountStructureEntity_RelatedRole_SegmentName10;
-            }
-            set
-            {
-                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName10Changing(value);
-                this._LedgerAccountStructureEntity_RelatedRole_SegmentName10 = value;
-                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName10Changed();
-                this.OnPropertyChanged("LedgerAccountStructureEntity_RelatedRole_SegmentName10");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.DimensionAttribute _LedgerAccountStructureEntity_RelatedRole_SegmentName10;
-        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName10Changing(global::Microsoft.Dynamics.DataEntities.DimensionAttribute value);
-        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName10Changed();
-        /// <summary>
-        /// There are no comments for Property LedgerAccountStructureEntity_RelatedRole_SegmentName11 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute LedgerAccountStructureEntity_RelatedRole_SegmentName11
-        {
-            get
-            {
-                return this._LedgerAccountStructureEntity_RelatedRole_SegmentName11;
-            }
-            set
-            {
-                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName11Changing(value);
-                this._LedgerAccountStructureEntity_RelatedRole_SegmentName11 = value;
-                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName11Changed();
-                this.OnPropertyChanged("LedgerAccountStructureEntity_RelatedRole_SegmentName11");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.DimensionAttribute _LedgerAccountStructureEntity_RelatedRole_SegmentName11;
-        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName11Changing(global::Microsoft.Dynamics.DataEntities.DimensionAttribute value);
-        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName11Changed();
-        /// <summary>
-        /// There are no comments for Property LedgerAccountStructureEntity_RelatedRole_SegmentName04 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute LedgerAccountStructureEntity_RelatedRole_SegmentName04
-        {
-            get
-            {
-                return this._LedgerAccountStructureEntity_RelatedRole_SegmentName04;
-            }
-            set
-            {
-                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName04Changing(value);
-                this._LedgerAccountStructureEntity_RelatedRole_SegmentName04 = value;
-                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName04Changed();
-                this.OnPropertyChanged("LedgerAccountStructureEntity_RelatedRole_SegmentName04");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.DimensionAttribute _LedgerAccountStructureEntity_RelatedRole_SegmentName04;
-        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName04Changing(global::Microsoft.Dynamics.DataEntities.DimensionAttribute value);
-        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName04Changed();
-        /// <summary>
-        /// There are no comments for Property LedgerAccountStructureEntity_RelatedRole_SegmentName05 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute LedgerAccountStructureEntity_RelatedRole_SegmentName05
-        {
-            get
-            {
-                return this._LedgerAccountStructureEntity_RelatedRole_SegmentName05;
-            }
-            set
-            {
-                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName05Changing(value);
-                this._LedgerAccountStructureEntity_RelatedRole_SegmentName05 = value;
-                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName05Changed();
-                this.OnPropertyChanged("LedgerAccountStructureEntity_RelatedRole_SegmentName05");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.DimensionAttribute _LedgerAccountStructureEntity_RelatedRole_SegmentName05;
-        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName05Changing(global::Microsoft.Dynamics.DataEntities.DimensionAttribute value);
-        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName05Changed();
-        /// <summary>
-        /// There are no comments for Property LedgerAccountStructureEntity_RelatedRole_SegmentName06 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute LedgerAccountStructureEntity_RelatedRole_SegmentName06
-        {
-            get
-            {
-                return this._LedgerAccountStructureEntity_RelatedRole_SegmentName06;
-            }
-            set
-            {
-                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName06Changing(value);
-                this._LedgerAccountStructureEntity_RelatedRole_SegmentName06 = value;
-                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName06Changed();
-                this.OnPropertyChanged("LedgerAccountStructureEntity_RelatedRole_SegmentName06");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.DimensionAttribute _LedgerAccountStructureEntity_RelatedRole_SegmentName06;
-        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName06Changing(global::Microsoft.Dynamics.DataEntities.DimensionAttribute value);
-        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName06Changed();
-        /// <summary>
-        /// There are no comments for Property LedgerAccountStructureEntity_RelatedRole_SegmentName07 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute LedgerAccountStructureEntity_RelatedRole_SegmentName07
-        {
-            get
-            {
-                return this._LedgerAccountStructureEntity_RelatedRole_SegmentName07;
-            }
-            set
-            {
-                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName07Changing(value);
-                this._LedgerAccountStructureEntity_RelatedRole_SegmentName07 = value;
-                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName07Changed();
-                this.OnPropertyChanged("LedgerAccountStructureEntity_RelatedRole_SegmentName07");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.DimensionAttribute _LedgerAccountStructureEntity_RelatedRole_SegmentName07;
-        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName07Changing(global::Microsoft.Dynamics.DataEntities.DimensionAttribute value);
-        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName07Changed();
-        /// <summary>
-        /// There are no comments for Property LedgerAccountStructureEntity_RelatedRole_SegmentName01 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute LedgerAccountStructureEntity_RelatedRole_SegmentName01
-        {
-            get
-            {
-                return this._LedgerAccountStructureEntity_RelatedRole_SegmentName01;
-            }
-            set
-            {
-                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName01Changing(value);
-                this._LedgerAccountStructureEntity_RelatedRole_SegmentName01 = value;
-                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName01Changed();
-                this.OnPropertyChanged("LedgerAccountStructureEntity_RelatedRole_SegmentName01");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.DimensionAttribute _LedgerAccountStructureEntity_RelatedRole_SegmentName01;
-        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName01Changing(global::Microsoft.Dynamics.DataEntities.DimensionAttribute value);
-        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName01Changed();
-        /// <summary>
-        /// There are no comments for Property LedgerAccountStructureEntity_RelatedRole_SegmentName02 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute LedgerAccountStructureEntity_RelatedRole_SegmentName02
-        {
-            get
-            {
-                return this._LedgerAccountStructureEntity_RelatedRole_SegmentName02;
-            }
-            set
-            {
-                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName02Changing(value);
-                this._LedgerAccountStructureEntity_RelatedRole_SegmentName02 = value;
-                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName02Changed();
-                this.OnPropertyChanged("LedgerAccountStructureEntity_RelatedRole_SegmentName02");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.DimensionAttribute _LedgerAccountStructureEntity_RelatedRole_SegmentName02;
-        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName02Changing(global::Microsoft.Dynamics.DataEntities.DimensionAttribute value);
-        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName02Changed();
-        /// <summary>
-        /// There are no comments for Property LedgerAccountStructureEntity_RelatedRole_SegmentName03 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute LedgerAccountStructureEntity_RelatedRole_SegmentName03
-        {
-            get
-            {
-                return this._LedgerAccountStructureEntity_RelatedRole_SegmentName03;
-            }
-            set
-            {
-                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName03Changing(value);
-                this._LedgerAccountStructureEntity_RelatedRole_SegmentName03 = value;
-                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName03Changed();
-                this.OnPropertyChanged("LedgerAccountStructureEntity_RelatedRole_SegmentName03");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.DimensionAttribute _LedgerAccountStructureEntity_RelatedRole_SegmentName03;
-        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName03Changing(global::Microsoft.Dynamics.DataEntities.DimensionAttribute value);
-        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName03Changed();
-        /// <summary>
-        /// There are no comments for Property LedgerAccountStructureEntity_RelatedRole_SegmentName08 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute LedgerAccountStructureEntity_RelatedRole_SegmentName08
-        {
-            get
-            {
-                return this._LedgerAccountStructureEntity_RelatedRole_SegmentName08;
-            }
-            set
-            {
-                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName08Changing(value);
-                this._LedgerAccountStructureEntity_RelatedRole_SegmentName08 = value;
-                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName08Changed();
-                this.OnPropertyChanged("LedgerAccountStructureEntity_RelatedRole_SegmentName08");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.DimensionAttribute _LedgerAccountStructureEntity_RelatedRole_SegmentName08;
-        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName08Changing(global::Microsoft.Dynamics.DataEntities.DimensionAttribute value);
-        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName08Changed();
-        /// <summary>
-        /// There are no comments for Property LedgerAccountStructureEntity_RelatedRole_SegmentName09 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute LedgerAccountStructureEntity_RelatedRole_SegmentName09
-        {
-            get
-            {
-                return this._LedgerAccountStructureEntity_RelatedRole_SegmentName09;
-            }
-            set
-            {
-                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName09Changing(value);
-                this._LedgerAccountStructureEntity_RelatedRole_SegmentName09 = value;
-                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName09Changed();
-                this.OnPropertyChanged("LedgerAccountStructureEntity_RelatedRole_SegmentName09");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.DimensionAttribute _LedgerAccountStructureEntity_RelatedRole_SegmentName09;
-        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName09Changing(global::Microsoft.Dynamics.DataEntities.DimensionAttribute value);
-        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName09Changed();
-        /// <summary>
         /// There are no comments for Property AccountStructure1 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         [global::Microsoft.OData.Client.OriginalNameAttribute("AccountStructure")]
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlConfiguration> AccountStructure1
         {
@@ -1014,6 +790,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerAccountStructureActivationEntity_Role_LedgerAccountStructureEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AccountStructureActivation> LedgerAccountStructureActivationEntity_Role_LedgerAccountStructureEntity
         {
             get
@@ -1033,27 +810,281 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnLedgerAccountStructureActivationEntity_Role_LedgerAccountStructureEntityChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AccountStructureActivation> value);
         partial void OnLedgerAccountStructureActivationEntity_Role_LedgerAccountStructureEntityChanged();
         /// <summary>
-        /// There are no comments for Property LedgerAdvancedRuleEntity_Role_LedgerAccountStructureEntity in the schema.
+        /// There are no comments for Property LedgerAccountStructureConstraintEntity_Role_LedgerAccountStructureEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AdvancedRule> LedgerAdvancedRuleEntity_Role_LedgerAccountStructureEntity
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AccountStructureConstraint> LedgerAccountStructureConstraintEntity_Role_LedgerAccountStructureEntity
         {
             get
             {
-                return this._LedgerAdvancedRuleEntity_Role_LedgerAccountStructureEntity;
+                return this._LedgerAccountStructureConstraintEntity_Role_LedgerAccountStructureEntity;
             }
             set
             {
-                this.OnLedgerAdvancedRuleEntity_Role_LedgerAccountStructureEntityChanging(value);
-                this._LedgerAdvancedRuleEntity_Role_LedgerAccountStructureEntity = value;
-                this.OnLedgerAdvancedRuleEntity_Role_LedgerAccountStructureEntityChanged();
-                this.OnPropertyChanged("LedgerAdvancedRuleEntity_Role_LedgerAccountStructureEntity");
+                this.OnLedgerAccountStructureConstraintEntity_Role_LedgerAccountStructureEntityChanging(value);
+                this._LedgerAccountStructureConstraintEntity_Role_LedgerAccountStructureEntity = value;
+                this.OnLedgerAccountStructureConstraintEntity_Role_LedgerAccountStructureEntityChanged();
+                this.OnPropertyChanged("LedgerAccountStructureConstraintEntity_Role_LedgerAccountStructureEntity");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AdvancedRule> _LedgerAdvancedRuleEntity_Role_LedgerAccountStructureEntity = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AdvancedRule>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnLedgerAdvancedRuleEntity_Role_LedgerAccountStructureEntityChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AdvancedRule> value);
-        partial void OnLedgerAdvancedRuleEntity_Role_LedgerAccountStructureEntityChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AccountStructureConstraint> _LedgerAccountStructureConstraintEntity_Role_LedgerAccountStructureEntity = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AccountStructureConstraint>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnLedgerAccountStructureConstraintEntity_Role_LedgerAccountStructureEntityChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AccountStructureConstraint> value);
+        partial void OnLedgerAccountStructureConstraintEntity_Role_LedgerAccountStructureEntityChanged();
+        /// <summary>
+        /// There are no comments for Property LedgerAccountStructureEntity_RelatedRole_SegmentName10 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute LedgerAccountStructureEntity_RelatedRole_SegmentName10
+        {
+            get
+            {
+                return this._LedgerAccountStructureEntity_RelatedRole_SegmentName10;
+            }
+            set
+            {
+                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName10Changing(value);
+                this._LedgerAccountStructureEntity_RelatedRole_SegmentName10 = value;
+                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName10Changed();
+                this.OnPropertyChanged("LedgerAccountStructureEntity_RelatedRole_SegmentName10");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.DimensionAttribute _LedgerAccountStructureEntity_RelatedRole_SegmentName10;
+        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName10Changing(global::Microsoft.Dynamics.DataEntities.DimensionAttribute value);
+        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName10Changed();
+        /// <summary>
+        /// There are no comments for Property LedgerAccountStructureEntity_RelatedRole_SegmentName11 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute LedgerAccountStructureEntity_RelatedRole_SegmentName11
+        {
+            get
+            {
+                return this._LedgerAccountStructureEntity_RelatedRole_SegmentName11;
+            }
+            set
+            {
+                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName11Changing(value);
+                this._LedgerAccountStructureEntity_RelatedRole_SegmentName11 = value;
+                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName11Changed();
+                this.OnPropertyChanged("LedgerAccountStructureEntity_RelatedRole_SegmentName11");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.DimensionAttribute _LedgerAccountStructureEntity_RelatedRole_SegmentName11;
+        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName11Changing(global::Microsoft.Dynamics.DataEntities.DimensionAttribute value);
+        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName11Changed();
+        /// <summary>
+        /// There are no comments for Property LedgerAccountStructureEntity_RelatedRole_SegmentName04 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute LedgerAccountStructureEntity_RelatedRole_SegmentName04
+        {
+            get
+            {
+                return this._LedgerAccountStructureEntity_RelatedRole_SegmentName04;
+            }
+            set
+            {
+                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName04Changing(value);
+                this._LedgerAccountStructureEntity_RelatedRole_SegmentName04 = value;
+                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName04Changed();
+                this.OnPropertyChanged("LedgerAccountStructureEntity_RelatedRole_SegmentName04");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.DimensionAttribute _LedgerAccountStructureEntity_RelatedRole_SegmentName04;
+        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName04Changing(global::Microsoft.Dynamics.DataEntities.DimensionAttribute value);
+        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName04Changed();
+        /// <summary>
+        /// There are no comments for Property LedgerAccountStructureEntity_RelatedRole_SegmentName05 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute LedgerAccountStructureEntity_RelatedRole_SegmentName05
+        {
+            get
+            {
+                return this._LedgerAccountStructureEntity_RelatedRole_SegmentName05;
+            }
+            set
+            {
+                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName05Changing(value);
+                this._LedgerAccountStructureEntity_RelatedRole_SegmentName05 = value;
+                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName05Changed();
+                this.OnPropertyChanged("LedgerAccountStructureEntity_RelatedRole_SegmentName05");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.DimensionAttribute _LedgerAccountStructureEntity_RelatedRole_SegmentName05;
+        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName05Changing(global::Microsoft.Dynamics.DataEntities.DimensionAttribute value);
+        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName05Changed();
+        /// <summary>
+        /// There are no comments for Property LedgerAccountStructureEntity_RelatedRole_SegmentName06 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute LedgerAccountStructureEntity_RelatedRole_SegmentName06
+        {
+            get
+            {
+                return this._LedgerAccountStructureEntity_RelatedRole_SegmentName06;
+            }
+            set
+            {
+                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName06Changing(value);
+                this._LedgerAccountStructureEntity_RelatedRole_SegmentName06 = value;
+                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName06Changed();
+                this.OnPropertyChanged("LedgerAccountStructureEntity_RelatedRole_SegmentName06");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.DimensionAttribute _LedgerAccountStructureEntity_RelatedRole_SegmentName06;
+        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName06Changing(global::Microsoft.Dynamics.DataEntities.DimensionAttribute value);
+        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName06Changed();
+        /// <summary>
+        /// There are no comments for Property LedgerAccountStructureEntity_RelatedRole_SegmentName07 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute LedgerAccountStructureEntity_RelatedRole_SegmentName07
+        {
+            get
+            {
+                return this._LedgerAccountStructureEntity_RelatedRole_SegmentName07;
+            }
+            set
+            {
+                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName07Changing(value);
+                this._LedgerAccountStructureEntity_RelatedRole_SegmentName07 = value;
+                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName07Changed();
+                this.OnPropertyChanged("LedgerAccountStructureEntity_RelatedRole_SegmentName07");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.DimensionAttribute _LedgerAccountStructureEntity_RelatedRole_SegmentName07;
+        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName07Changing(global::Microsoft.Dynamics.DataEntities.DimensionAttribute value);
+        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName07Changed();
+        /// <summary>
+        /// There are no comments for Property LedgerAccountStructureEntity_RelatedRole_SegmentName01 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute LedgerAccountStructureEntity_RelatedRole_SegmentName01
+        {
+            get
+            {
+                return this._LedgerAccountStructureEntity_RelatedRole_SegmentName01;
+            }
+            set
+            {
+                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName01Changing(value);
+                this._LedgerAccountStructureEntity_RelatedRole_SegmentName01 = value;
+                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName01Changed();
+                this.OnPropertyChanged("LedgerAccountStructureEntity_RelatedRole_SegmentName01");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.DimensionAttribute _LedgerAccountStructureEntity_RelatedRole_SegmentName01;
+        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName01Changing(global::Microsoft.Dynamics.DataEntities.DimensionAttribute value);
+        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName01Changed();
+        /// <summary>
+        /// There are no comments for Property LedgerAccountStructureEntity_RelatedRole_SegmentName02 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute LedgerAccountStructureEntity_RelatedRole_SegmentName02
+        {
+            get
+            {
+                return this._LedgerAccountStructureEntity_RelatedRole_SegmentName02;
+            }
+            set
+            {
+                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName02Changing(value);
+                this._LedgerAccountStructureEntity_RelatedRole_SegmentName02 = value;
+                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName02Changed();
+                this.OnPropertyChanged("LedgerAccountStructureEntity_RelatedRole_SegmentName02");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.DimensionAttribute _LedgerAccountStructureEntity_RelatedRole_SegmentName02;
+        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName02Changing(global::Microsoft.Dynamics.DataEntities.DimensionAttribute value);
+        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName02Changed();
+        /// <summary>
+        /// There are no comments for Property LedgerAccountStructureEntity_RelatedRole_SegmentName03 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute LedgerAccountStructureEntity_RelatedRole_SegmentName03
+        {
+            get
+            {
+                return this._LedgerAccountStructureEntity_RelatedRole_SegmentName03;
+            }
+            set
+            {
+                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName03Changing(value);
+                this._LedgerAccountStructureEntity_RelatedRole_SegmentName03 = value;
+                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName03Changed();
+                this.OnPropertyChanged("LedgerAccountStructureEntity_RelatedRole_SegmentName03");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.DimensionAttribute _LedgerAccountStructureEntity_RelatedRole_SegmentName03;
+        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName03Changing(global::Microsoft.Dynamics.DataEntities.DimensionAttribute value);
+        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName03Changed();
+        /// <summary>
+        /// There are no comments for Property LedgerAccountStructureEntity_RelatedRole_SegmentName08 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute LedgerAccountStructureEntity_RelatedRole_SegmentName08
+        {
+            get
+            {
+                return this._LedgerAccountStructureEntity_RelatedRole_SegmentName08;
+            }
+            set
+            {
+                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName08Changing(value);
+                this._LedgerAccountStructureEntity_RelatedRole_SegmentName08 = value;
+                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName08Changed();
+                this.OnPropertyChanged("LedgerAccountStructureEntity_RelatedRole_SegmentName08");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.DimensionAttribute _LedgerAccountStructureEntity_RelatedRole_SegmentName08;
+        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName08Changing(global::Microsoft.Dynamics.DataEntities.DimensionAttribute value);
+        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName08Changed();
+        /// <summary>
+        /// There are no comments for Property LedgerAccountStructureEntity_RelatedRole_SegmentName09 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute LedgerAccountStructureEntity_RelatedRole_SegmentName09
+        {
+            get
+            {
+                return this._LedgerAccountStructureEntity_RelatedRole_SegmentName09;
+            }
+            set
+            {
+                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName09Changing(value);
+                this._LedgerAccountStructureEntity_RelatedRole_SegmentName09 = value;
+                this.OnLedgerAccountStructureEntity_RelatedRole_SegmentName09Changed();
+                this.OnPropertyChanged("LedgerAccountStructureEntity_RelatedRole_SegmentName09");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.DimensionAttribute _LedgerAccountStructureEntity_RelatedRole_SegmentName09;
+        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName09Changing(global::Microsoft.Dynamics.DataEntities.DimensionAttribute value);
+        partial void OnLedgerAccountStructureEntity_RelatedRole_SegmentName09Changed();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

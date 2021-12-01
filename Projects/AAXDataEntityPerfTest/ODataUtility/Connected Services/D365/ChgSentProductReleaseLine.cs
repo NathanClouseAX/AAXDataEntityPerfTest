@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ChgSentProductReleaseLineSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ChgSentProductReleaseLineSingle in the schema.
+    /// </summary>
     public partial class ChgSentProductReleaseLineSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ChgSentProductReleaseLine>
     {
         /// <summary>
@@ -161,9 +161,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ProductReleaseProductDetailSingle _ProductReleaseProductDetails;
     }
-        /// <summary>
-        /// There are no comments for ChgSentProductReleaseLine in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ChgSentProductReleaseLine in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// HeaderProductNumber
@@ -223,6 +223,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -245,6 +247,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HeaderProductNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "HeaderProductNumber is required.")]
         public virtual string HeaderProductNumber
         {
             get
@@ -267,6 +271,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HeaderProductVersionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "HeaderProductVersionId is required.")]
         public virtual string HeaderProductVersionId
         {
             get
@@ -289,6 +295,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LineNumber is required.")]
         public virtual decimal LineNumber
         {
             get
@@ -311,6 +319,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReleasingLegalEntityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReleasingLegalEntityId is required.")]
         public virtual string ReleasingLegalEntityId
         {
             get
@@ -333,6 +343,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReleaseStatus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EngChgReleaseStatus> ReleaseStatus
         {
             get
@@ -355,6 +366,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HasSetupErrors in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> HasSetupErrors
         {
             get
@@ -377,6 +389,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillProductReleaseIncludeLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillProductReleaseIncludeLine
         {
             get
@@ -399,6 +412,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineProductVersionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LineProductVersionId
         {
             get
@@ -421,6 +435,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BillOfMaterialsLineCreationSequenceNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BillOfMaterialsLineCreationSequenceNumber is required.")]
         public virtual int BillOfMaterialsLineCreationSequenceNumber
         {
             get
@@ -443,6 +459,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ActiveRouteId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ActiveRouteId
         {
             get
@@ -465,6 +482,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ParentLineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ParentLineNumber is required.")]
         public virtual decimal ParentLineNumber
         {
             get
@@ -487,6 +506,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ActiveBOMId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ActiveBOMId
         {
             get
@@ -509,6 +529,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineProductNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LineProductNumber
         {
             get
@@ -531,6 +552,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SentProductReleaseHeader in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SentProductReleaseHeader is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.SentProductReleaseHeader SentProductReleaseHeader
         {
             get
@@ -553,6 +576,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BOMBillOfMaterialsHeader in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.BillOfMaterialsLineV3 BOMBillOfMaterialsHeader
         {
             get
@@ -575,6 +599,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RouteHeader in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.RouteHeader RouteHeader
         {
             get
@@ -597,6 +622,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ParentSentProductReleaseLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ChgSentProductReleaseLine ParentSentProductReleaseLine
         {
             get
@@ -619,6 +645,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SentProductReleaseLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ChgSentProductReleaseLine> SentProductReleaseLines
         {
             get
@@ -641,6 +668,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductReleaseProductDetails in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductReleaseProductDetails is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ProductReleaseProductDetail ProductReleaseProductDetails
         {
             get

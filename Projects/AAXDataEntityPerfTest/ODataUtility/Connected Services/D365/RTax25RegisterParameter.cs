@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RTax25RegisterParameterSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RTax25RegisterParameterSingle in the schema.
+    /// </summary>
     public partial class RTax25RegisterParameterSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RTax25RegisterParameter>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _DimensionCombination;
     }
-        /// <summary>
-        /// There are no comments for RTax25RegisterParameter in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RTax25RegisterParameter in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// RegisterCode
@@ -87,6 +87,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -109,6 +111,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RegisterCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RegisterCode is required.")]
         public virtual string RegisterCode
         {
             get
@@ -131,6 +135,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ParameterCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ParameterCode is required.")]
         public virtual int ParameterCode
         {
             get
@@ -153,6 +159,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Value in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Value
         {
             get
@@ -175,6 +182,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MainAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MainAccountDisplayValue
         {
             get
@@ -197,6 +205,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ParameterName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ParameterName
         {
             get
@@ -219,6 +228,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination DimensionCombination
         {
             get

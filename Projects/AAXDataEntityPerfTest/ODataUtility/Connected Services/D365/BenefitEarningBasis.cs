@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for BenefitEarningBasisSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BenefitEarningBasisSingle in the schema.
+    /// </summary>
     public partial class BenefitEarningBasisSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<BenefitEarningBasis>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.BenefitSingle _Benefit;
     }
-        /// <summary>
-        /// There are no comments for BenefitEarningBasis in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BenefitEarningBasis in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// EarningCodeId
     /// BenefitPlanId
@@ -104,6 +104,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EarningCodeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EarningCodeId is required.")]
         public virtual string EarningCodeId
         {
             get
@@ -126,6 +128,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BenefitPlanId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BenefitPlanId is required.")]
         public virtual string BenefitPlanId
         {
             get
@@ -148,6 +152,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BenefitOptionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BenefitOptionId is required.")]
         public virtual string BenefitOptionId
         {
             get
@@ -170,6 +176,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Effective in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Effective is required.")]
         public virtual global::System.DateTimeOffset Effective
         {
             get
@@ -192,6 +200,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Expiration in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Expiration is required.")]
         public virtual global::System.DateTimeOffset Expiration
         {
             get
@@ -214,6 +224,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BenefitId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BenefitId
         {
             get
@@ -236,6 +247,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Benefit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Benefit is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Benefit Benefit
         {
             get

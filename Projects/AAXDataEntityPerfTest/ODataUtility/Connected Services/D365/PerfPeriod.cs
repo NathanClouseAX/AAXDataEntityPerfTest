@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for PerfPeriodSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PerfPeriodSingle in the schema.
+    /// </summary>
     public partial class PerfPeriodSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PerfPeriod>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Discussion> _Discussion;
     }
-        /// <summary>
-        /// There are no comments for PerfPeriod in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PerfPeriod in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// PerfPeriodId
     /// </KeyProperties>
@@ -85,6 +85,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PerfPeriodId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PerfPeriodId is required.")]
         public virtual string PerfPeriodId
         {
             get
@@ -107,6 +109,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StartDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "StartDate is required.")]
         public virtual global::System.DateTimeOffset StartDate
         {
             get
@@ -129,6 +133,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EndDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EndDate is required.")]
         public virtual global::System.DateTimeOffset EndDate
         {
             get
@@ -151,6 +157,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Discussion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Discussion> Discussion
         {
             get

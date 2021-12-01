@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RebateAndDeductionAgreementHeaderSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RebateAndDeductionAgreementHeaderSingle in the schema.
+    /// </summary>
     public partial class RebateAndDeductionAgreementHeaderSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RebateAndDeductionAgreementHeader>
     {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public RebateAndDeductionAgreementHeaderSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<RebateAndDeductionAgreementHeader> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for RebateAndDeductionsDateSetups in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDateSetup> RebateAndDeductionsDateSetups
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._RebateAndDeductionsDateSetups == null))
-                {
-                    this._RebateAndDeductionsDateSetups = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDateSetup>(GetPath("RebateAndDeductionsDateSetups"));
-                }
-                return this._RebateAndDeductionsDateSetups;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDateSetup> _RebateAndDeductionsDateSetups;
         /// <summary>
         /// There are no comments for ProductSize in the schema.
         /// </summary>
@@ -454,10 +433,31 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsPostingProfileSingle _GuaranteeRebateAndDeductionsPostingProfile;
-    }
         /// <summary>
-        /// There are no comments for RebateAndDeductionAgreementHeader in the schema.
+        /// There are no comments for RebateAndDeductionsDateSetups in the schema.
         /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDateSetup> RebateAndDeductionsDateSetups
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RebateAndDeductionsDateSetups == null))
+                {
+                    this._RebateAndDeductionsDateSetups = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDateSetup>(GetPath("RebateAndDeductionsDateSetups"));
+                }
+                return this._RebateAndDeductionsDateSetups;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDateSetup> _RebateAndDeductionsDateSetups;
+    }
+    /// <summary>
+    /// There are no comments for RebateAndDeductionAgreementHeader in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// AgreementNumber
     /// </KeyProperties>
@@ -490,6 +490,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AgreementNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AgreementNumber is required.")]
         public virtual string AgreementNumber
         {
             get
@@ -512,6 +514,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property GuaranteePostingProfileId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string GuaranteePostingProfileId
         {
             get
@@ -534,6 +537,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RebateAndDeductionsDealNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RebateAndDeductionsDealNumber
         {
             get
@@ -556,6 +560,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillRebateProcessingCalculationIncludeTax in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillRebateProcessingCalculationIncludeTax
         {
             get
@@ -578,6 +583,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductConfigurationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductConfigurationId
         {
             get
@@ -600,6 +606,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerRebateReductionPrincipleId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CustomerRebateReductionPrincipleId
         {
             get
@@ -622,6 +629,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InventoryStatusId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string InventoryStatusId
         {
             get
@@ -644,6 +652,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RebatePriceBasis in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TAMRebatePriceBasis> RebatePriceBasis
         {
             get
@@ -666,6 +675,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SourceDocumentType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TAMRebateSourceType> SourceDocumentType
         {
             get
@@ -688,6 +698,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PackedQuery in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual byte[] PackedQuery
         {
             get
@@ -710,6 +721,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AgreementDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AgreementDescription
         {
             get
@@ -732,6 +744,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RebateCalculationBasis in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TAMRebateBasis> RebateCalculationBasis
         {
             get
@@ -754,6 +767,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductSizeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductSizeId
         {
             get
@@ -776,6 +790,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ItemNumber
         {
             get
@@ -798,6 +813,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorRebateAndDeductionsGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VendorRebateAndDeductionsGroupId
         {
             get
@@ -820,6 +836,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemSerialNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ItemSerialNumber
         {
             get
@@ -842,6 +859,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WarehouseLocationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string WarehouseLocationId
         {
             get
@@ -864,6 +882,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerRebateAndDeductionsGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CustomerRebateAndDeductionsGroupId
         {
             get
@@ -886,6 +905,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DocumentNotes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DocumentNotes
         {
             get
@@ -908,6 +928,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AveragePurchasePriceBasisCalculationMonthRange in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AveragePurchasePriceBasisCalculationMonthRange is required.")]
         public virtual int AveragePurchasePriceBasisCalculationMonthRange
         {
             get
@@ -930,6 +952,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CustomerAccountNumber
         {
             get
@@ -952,6 +975,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LegalEntityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LegalEntityId
         {
             get
@@ -974,6 +998,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OperationalSiteId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OperationalSiteId
         {
             get
@@ -996,6 +1021,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RebateAndDeductionsPostingProfileId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RebateAndDeductionsPostingProfileId
         {
             get
@@ -1018,6 +1044,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnitSymbol in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string UnitSymbol
         {
             get
@@ -1040,6 +1067,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemBatchNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ItemBatchNumber
         {
             get
@@ -1062,6 +1090,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RebateAndDeductionsType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TAMRebateType> RebateAndDeductionsType
         {
             get
@@ -1084,6 +1113,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillRebateProcessingCalculationIncludeFreeText in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillRebateProcessingCalculationIncludeFreeText
         {
             get
@@ -1106,6 +1136,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WarehouseId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string WarehouseId
         {
             get
@@ -1128,6 +1159,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillRebateProcessingCalculationIncludePaidInvoicesOnly in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillRebateProcessingCalculationIncludePaidInvoicesOnly
         {
             get
@@ -1150,6 +1182,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AgreementModule in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ModuleInventCustVend> AgreementModule
         {
             get
@@ -1172,6 +1205,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MinimumAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MinimumAmount is required.")]
         public virtual decimal MinimumAmount
         {
             get
@@ -1194,6 +1229,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailProductVariantNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RetailProductVariantNumber
         {
             get
@@ -1216,6 +1252,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillRebateProcessingCalculationIncludeCreditNote in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillRebateProcessingCalculationIncludeCreditNote
         {
             get
@@ -1238,6 +1275,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VendorAccountNumber
         {
             get
@@ -1260,6 +1298,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorRebateCalculationTransactionBasis in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TAMRebateBasisVend> VendorRebateCalculationTransactionBasis
         {
             get
@@ -1282,6 +1321,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductColorId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductColorId
         {
             get
@@ -1304,6 +1344,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillRebateProcessingCalculationIncludeDiscountedAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillRebateProcessingCalculationIncludeDiscountedAmount
         {
             get
@@ -1326,6 +1367,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CalculationMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TAMRebateCalcMethod> CalculationMethod
         {
             get
@@ -1348,6 +1390,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductRebateAndDeductionsGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductRebateAndDeductionsGroupId
         {
             get
@@ -1370,6 +1413,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RebateAndDeductionsStatusId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RebateAndDeductionsStatusId
         {
             get
@@ -1392,6 +1436,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillRebateProcessingCalculationIncludeSettlementDiscount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillRebateProcessingCalculationIncludeSettlementDiscount
         {
             get
@@ -1414,6 +1459,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductStyleId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductStyleId
         {
             get
@@ -1433,31 +1479,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnProductStyleIdChanging(string value);
         partial void OnProductStyleIdChanged();
         /// <summary>
-        /// There are no comments for Property RebateAndDeductionsDateSetups in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDateSetup> RebateAndDeductionsDateSetups
-        {
-            get
-            {
-                return this._RebateAndDeductionsDateSetups;
-            }
-            set
-            {
-                this.OnRebateAndDeductionsDateSetupsChanging(value);
-                this._RebateAndDeductionsDateSetups = value;
-                this.OnRebateAndDeductionsDateSetupsChanged();
-                this.OnPropertyChanged("RebateAndDeductionsDateSetups");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDateSetup> _RebateAndDeductionsDateSetups = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDateSetup>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRebateAndDeductionsDateSetupsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDateSetup> value);
-        partial void OnRebateAndDeductionsDateSetupsChanged();
-        /// <summary>
         /// There are no comments for Property ProductSize in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ProductSize ProductSize
         {
             get
@@ -1480,6 +1505,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductRebateAndDeductionsGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ProductRebateAndDeductionsGroup ProductRebateAndDeductionsGroup
         {
             get
@@ -1502,6 +1528,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerRebateReductionPrinciple in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.CustomerRebateReductionPrinciple CustomerRebateReductionPrinciple
         {
             get
@@ -1524,6 +1551,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerRebateAndDeductionsGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.CustomerRebateAndDeductionsGroup CustomerRebateAndDeductionsGroup
         {
             get
@@ -1546,6 +1574,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReleasedProductV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ReleasedProductV2 ReleasedProductV2
         {
             get
@@ -1568,6 +1597,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductStyle in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ProductStyle ProductStyle
         {
             get
@@ -1590,6 +1620,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WarehouseLocation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.WarehouseLocation WarehouseLocation
         {
             get
@@ -1612,6 +1643,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RebateAndDeductionsAgreementDeal in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RebateAndDeductionsAgreementDeal is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDeal RebateAndDeductionsAgreementDeal
         {
             get
@@ -1634,6 +1667,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RebateAndDeductionsPostingProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsPostingProfile RebateAndDeductionsPostingProfile
         {
             get
@@ -1656,6 +1690,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnitOfMeasure in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.UnitOfMeasure UnitOfMeasure
         {
             get
@@ -1678,6 +1713,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerV3 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.CustomerV3 CustomerV3
         {
             get
@@ -1700,6 +1736,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RebateAndDeductionsStatus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.RebateStatusTable RebateAndDeductionsStatus
         {
             get
@@ -1722,6 +1759,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductColor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ProductColor ProductColor
         {
             get
@@ -1744,6 +1782,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OperationSite in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.OperationalSite OperationSite
         {
             get
@@ -1766,6 +1805,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorRebateAndDeductionsGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.VendorRebateAndDeductionsGroup VendorRebateAndDeductionsGroup
         {
             get
@@ -1788,6 +1828,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.VendorV2 VendorV2
         {
             get
@@ -1810,6 +1851,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Warehouse in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.Warehouse Warehouse
         {
             get
@@ -1832,6 +1874,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemBatch in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ItemBatch ItemBatch
         {
             get
@@ -1854,6 +1897,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property GuaranteeRebateAndDeductionsPostingProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsPostingProfile GuaranteeRebateAndDeductionsPostingProfile
         {
             get
@@ -1872,6 +1916,29 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsPostingProfile _GuaranteeRebateAndDeductionsPostingProfile;
         partial void OnGuaranteeRebateAndDeductionsPostingProfileChanging(global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsPostingProfile value);
         partial void OnGuaranteeRebateAndDeductionsPostingProfileChanged();
+        /// <summary>
+        /// There are no comments for Property RebateAndDeductionsDateSetups in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDateSetup> RebateAndDeductionsDateSetups
+        {
+            get
+            {
+                return this._RebateAndDeductionsDateSetups;
+            }
+            set
+            {
+                this.OnRebateAndDeductionsDateSetupsChanging(value);
+                this._RebateAndDeductionsDateSetups = value;
+                this.OnRebateAndDeductionsDateSetupsChanged();
+                this.OnPropertyChanged("RebateAndDeductionsDateSetups");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDateSetup> _RebateAndDeductionsDateSetups = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDateSetup>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRebateAndDeductionsDateSetupsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDateSetup> value);
+        partial void OnRebateAndDeductionsDateSetupsChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

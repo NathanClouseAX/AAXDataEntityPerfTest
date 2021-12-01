@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ProjWBSTemplateTaskSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ProjWBSTemplateTaskSingle in the schema.
+    /// </summary>
     public partial class ProjWBSTemplateTaskSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ProjWBSTemplateTask>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ResourceCategorySingle _ResourceCategory;
     }
-        /// <summary>
-        /// There are no comments for ProjWBSTemplateTask in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ProjWBSTemplateTask in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// HierarchyId
@@ -112,6 +112,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -134,6 +136,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HierarchyId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "HierarchyId is required.")]
         public virtual string HierarchyId
         {
             get
@@ -156,6 +160,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WBSId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WBSId is required.")]
         public virtual string WBSId
         {
             get
@@ -178,6 +184,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Task in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Task
         {
             get
@@ -200,6 +207,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaskPriority in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.smmActivityPriority> TaskPriority
         {
             get
@@ -222,6 +230,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NumberOfResources in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "NumberOfResources is required.")]
         public virtual decimal NumberOfResources
         {
             get
@@ -244,6 +254,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Effort in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Effort is required.")]
         public virtual decimal Effort
         {
             get
@@ -266,6 +278,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsCategoryMandatory in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsCategoryMandatory
         {
             get
@@ -288,6 +301,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Predecessors in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Predecessors
         {
             get
@@ -310,6 +324,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ActivityStatus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.smmActivityTaskTimeType> ActivityStatus
         {
             get
@@ -332,6 +347,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Notes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Notes
         {
             get
@@ -354,6 +370,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Category in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Category
         {
             get
@@ -376,6 +393,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Role in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Role
         {
             get
@@ -398,6 +416,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProjectCategories in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ProjectCategoryEntity ProjectCategories
         {
             get
@@ -420,6 +439,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ResourceCategory in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ResourceCategory ResourceCategory
         {
             get

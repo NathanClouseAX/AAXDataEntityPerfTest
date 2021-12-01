@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for AllocationForMainAccountSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AllocationForMainAccountSingle in the schema.
+    /// </summary>
     public partial class AllocationForMainAccountSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AllocationForMainAccount>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _DimensionCombination;
     }
-        /// <summary>
-        /// There are no comments for AllocationForMainAccount in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AllocationForMainAccount in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// MainAccountId
@@ -110,6 +110,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -132,6 +134,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MainAccountId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MainAccountId is required.")]
         public virtual string MainAccountId
         {
             get
@@ -154,6 +158,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LineNumber is required.")]
         public virtual decimal LineNumber
         {
             get
@@ -176,6 +182,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SourceSelectionCriteriaDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SourceSelectionCriteriaDisplayValue
         {
             get
@@ -198,6 +205,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DestinationKeepSourceDimensionsDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DestinationKeepSourceDimensionsDisplayValue
         {
             get
@@ -220,6 +228,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SourceSelectionCriteriaDimensionsDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SourceSelectionCriteriaDimensionsDisplayValue
         {
             get
@@ -242,6 +251,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllocationPercentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AllocationPercentage is required.")]
         public virtual decimal AllocationPercentage
         {
             get
@@ -264,6 +275,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DestinationDimensionsDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DestinationDimensionsDisplayValue
         {
             get
@@ -286,6 +298,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DestinationAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DestinationAccountDisplayValue
         {
             get
@@ -308,6 +321,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionSet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionSet DimensionSet
         {
             get
@@ -330,6 +344,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination DimensionCombination
         {
             get

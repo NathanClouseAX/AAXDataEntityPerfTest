@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for BenefitExternalReportingSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BenefitExternalReportingSingle in the schema.
+    /// </summary>
     public partial class BenefitExternalReportingSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<BenefitExternalReporting>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.AddressCountryRegionSingle _AddressCountryRegion;
     }
-        /// <summary>
-        /// There are no comments for BenefitExternalReporting in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BenefitExternalReporting in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// BenefitPlanID
     /// ValidFrom
@@ -128,6 +128,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BenefitPlanID in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BenefitPlanID is required.")]
         public virtual string BenefitPlanID
         {
             get
@@ -150,6 +152,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidFrom in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValidFrom is required.")]
         public virtual global::System.DateTimeOffset ValidFrom
         {
             get
@@ -172,6 +176,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidTo in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValidTo is required.")]
         public virtual global::System.DateTimeOffset ValidTo
         {
             get
@@ -194,6 +200,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CountryRegionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CountryRegionId is required.")]
         public virtual string CountryRegionId
         {
             get
@@ -216,6 +224,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property W2BoxNumberContribution in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PayrollW2BoxNumber> W2BoxNumberContribution
         {
             get
@@ -238,6 +247,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property W2BoxNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PayrollW2BoxNumber> W2BoxNumber
         {
             get
@@ -260,6 +270,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property W2BoxLabelContribution in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string W2BoxLabelContribution
         {
             get
@@ -282,6 +293,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property W2BoxLabel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string W2BoxLabel
         {
             get
@@ -304,6 +316,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BenefitPlan in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BenefitPlan is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.BenefitPlan BenefitPlan
         {
             get
@@ -326,6 +340,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AddressCountryRegion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AddressCountryRegion is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.AddressCountryRegion AddressCountryRegion
         {
             get

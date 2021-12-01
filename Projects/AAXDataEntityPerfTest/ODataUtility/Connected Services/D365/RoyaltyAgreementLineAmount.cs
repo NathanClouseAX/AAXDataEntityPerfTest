@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RoyaltyAgreementLineAmountSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RoyaltyAgreementLineAmountSingle in the schema.
+    /// </summary>
     public partial class RoyaltyAgreementLineAmountSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RoyaltyAgreementLineAmount>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.RoyaltyAgreementLineSingle _RoyaltyAgreementLine;
     }
-        /// <summary>
-        /// There are no comments for RoyaltyAgreementLineAmount in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RoyaltyAgreementLineAmount in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// RoyaltyAgreementId
@@ -124,6 +124,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -146,6 +148,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RoyaltyAgreementId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RoyaltyAgreementId is required.")]
         public virtual string RoyaltyAgreementId
         {
             get
@@ -168,6 +172,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RoyaltyAgreementLineId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RoyaltyAgreementLineId is required.")]
         public virtual string RoyaltyAgreementLineId
         {
             get
@@ -190,6 +196,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LineNumber is required.")]
         public virtual long LineNumber
         {
             get
@@ -212,6 +220,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ToNetSalesAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ToNetSalesAmount is required.")]
         public virtual decimal ToNetSalesAmount
         {
             get
@@ -234,6 +244,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FromGrossSalesAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FromGrossSalesAmount is required.")]
         public virtual decimal FromGrossSalesAmount
         {
             get
@@ -256,6 +268,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FromNetSalesAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FromNetSalesAmount is required.")]
         public virtual decimal FromNetSalesAmount
         {
             get
@@ -278,6 +292,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ToGrossSalesAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ToGrossSalesAmount is required.")]
         public virtual decimal ToGrossSalesAmount
         {
             get
@@ -300,6 +316,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FixedRoyaltyAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FixedRoyaltyAmount is required.")]
         public virtual decimal FixedRoyaltyAmount
         {
             get
@@ -322,6 +340,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RoyaltyAmountPerProductUnitSold in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RoyaltyAmountPerProductUnitSold is required.")]
         public virtual decimal RoyaltyAmountPerProductUnitSold
         {
             get
@@ -344,6 +364,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesUnitSymbol in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SalesUnitSymbol
         {
             get
@@ -366,6 +387,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesPriceQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SalesPriceQuantity is required.")]
         public virtual decimal SalesPriceQuantity
         {
             get
@@ -388,6 +411,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RoyaltyPercentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RoyaltyPercentage is required.")]
         public virtual decimal RoyaltyPercentage
         {
             get
@@ -410,6 +435,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VendorAccountNumber
         {
             get
@@ -432,6 +458,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RoyaltyAgreementLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RoyaltyAgreementLine is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RoyaltyAgreementLine RoyaltyAgreementLine
         {
             get

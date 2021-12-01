@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for TillLayoutConfigurationSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TillLayoutConfigurationSingle in the schema.
+    /// </summary>
     public partial class TillLayoutConfigurationSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<TillLayoutConfiguration>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.RetailTillLayoutSingle _RetailTillLayout;
     }
-        /// <summary>
-        /// There are no comments for TillLayoutConfiguration in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TillLayoutConfiguration in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// LayoutId
     /// LayoutSizeId
@@ -117,6 +117,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LayoutId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LayoutId is required.")]
         public virtual string LayoutId
         {
             get
@@ -139,6 +141,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LayoutSizeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LayoutSizeId is required.")]
         public virtual string LayoutSizeId
         {
             get
@@ -161,6 +165,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CashChangerLayout in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CashChangerLayout
         {
             get
@@ -183,6 +188,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerLayoutId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CustomerLayoutId
         {
             get
@@ -205,6 +211,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReceiptPaymentLayout in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ReceiptPaymentLayout
         {
             get
@@ -227,6 +234,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReceiptId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ReceiptId
         {
             get
@@ -249,6 +257,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LayoutPortrait in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LayoutPortrait
         {
             get
@@ -271,6 +280,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReceiptItemsLayout in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ReceiptItemsLayout
         {
             get
@@ -293,6 +303,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerLayout in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CustomerLayout
         {
             get
@@ -315,6 +326,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TotalsLayout in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TotalsLayout
         {
             get
@@ -337,6 +349,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IMG_CashChangerLayout in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual byte[] IMG_CashChangerLayout
         {
             get
@@ -359,6 +372,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TotalId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TotalId
         {
             get
@@ -381,6 +395,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LayoutLandscape in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LayoutLandscape
         {
             get
@@ -403,6 +418,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TillLayoutSize in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TillLayoutSize is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.TillLayoutSize TillLayoutSize
         {
             get
@@ -425,6 +442,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailTillLayout in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetailTillLayout is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RetailTillLayout RetailTillLayout
         {
             get

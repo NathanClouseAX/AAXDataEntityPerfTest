@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RetailOnlineChannelLanguageSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailOnlineChannelLanguageSingle in the schema.
+    /// </summary>
     public partial class RetailOnlineChannelLanguageSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RetailOnlineChannelLanguage>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.OnlineChannelSingle _OnlineChannel;
     }
-        /// <summary>
-        /// There are no comments for RetailOnlineChannelLanguage in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailOnlineChannelLanguage in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// LanguageId
     /// OperatingUnitNumber
@@ -90,6 +90,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LanguageId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LanguageId is required.")]
         public virtual string LanguageId
         {
             get
@@ -112,6 +114,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OperatingUnitNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "OperatingUnitNumber is required.")]
         public virtual string OperatingUnitNumber
         {
             get
@@ -134,6 +138,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsDefault in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsDefault
         {
             get
@@ -156,6 +161,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OnlineChannel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "OnlineChannel is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.OnlineChannel OnlineChannel
         {
             get

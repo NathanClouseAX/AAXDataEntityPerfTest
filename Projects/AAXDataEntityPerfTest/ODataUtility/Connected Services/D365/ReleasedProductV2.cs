@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ReleasedProductV2Single in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ReleasedProductV2Single in the schema.
+    /// </summary>
     public partial class ReleasedProductV2Single : global::Microsoft.OData.Client.DataServiceQuerySingle<ReleasedProductV2>
     {
         /// <summary>
@@ -35,10 +35,10 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for ReleasedProductReadinessChecks in the schema.
+        /// There are no comments for WarehouseWorkPolicyProducts in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> ReleasedProductReadinessChecks
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyProduct> WarehouseWorkPolicyProducts
         {
             get
             {
@@ -46,20 +46,20 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._ReleasedProductReadinessChecks == null))
+                if ((this._WarehouseWorkPolicyProducts == null))
                 {
-                    this._ReleasedProductReadinessChecks = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck>(GetPath("ReleasedProductReadinessChecks"));
+                    this._WarehouseWorkPolicyProducts = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyProduct>(GetPath("WarehouseWorkPolicyProducts"));
                 }
-                return this._ReleasedProductReadinessChecks;
+                return this._WarehouseWorkPolicyProducts;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> _ReleasedProductReadinessChecks;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyProduct> _WarehouseWorkPolicyProducts;
         /// <summary>
-        /// There are no comments for ProductApprovedVendors in the schema.
+        /// There are no comments for VendInvoicePriceTolerance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductApprovedVendor> ProductApprovedVendors
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendInvoicePriceTolerance> VendInvoicePriceTolerance
         {
             get
             {
@@ -67,20 +67,20 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._ProductApprovedVendors == null))
+                if ((this._VendInvoicePriceTolerance == null))
                 {
-                    this._ProductApprovedVendors = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductApprovedVendor>(GetPath("ProductApprovedVendors"));
+                    this._VendInvoicePriceTolerance = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.VendInvoicePriceTolerance>(GetPath("VendInvoicePriceTolerance"));
                 }
-                return this._ProductApprovedVendors;
+                return this._VendInvoicePriceTolerance;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductApprovedVendor> _ProductApprovedVendors;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendInvoicePriceTolerance> _VendInvoicePriceTolerance;
         /// <summary>
-        /// There are no comments for ProductAllocationLines in the schema.
+        /// There are no comments for SalesAgreementConfirmationLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductAllocationLine> ProductAllocationLines
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine> SalesAgreementConfirmationLines
         {
             get
             {
@@ -88,15 +88,78 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._ProductAllocationLines == null))
+                if ((this._SalesAgreementConfirmationLines == null))
                 {
-                    this._ProductAllocationLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductAllocationLine>(GetPath("ProductAllocationLines"));
+                    this._SalesAgreementConfirmationLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine>(GetPath("SalesAgreementConfirmationLines"));
                 }
-                return this._ProductAllocationLines;
+                return this._SalesAgreementConfirmationLines;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductAllocationLine> _ProductAllocationLines;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine> _SalesAgreementConfirmationLines;
+        /// <summary>
+        /// There are no comments for RebateAndDeductionsAgreementHeaders in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> RebateAndDeductionsAgreementHeaders
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RebateAndDeductionsAgreementHeaders == null))
+                {
+                    this._RebateAndDeductionsAgreementHeaders = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader>(GetPath("RebateAndDeductionsAgreementHeaders"));
+                }
+                return this._RebateAndDeductionsAgreementHeaders;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> _RebateAndDeductionsAgreementHeaders;
+        /// <summary>
+        /// There are no comments for ReportAsFinishedProductionJournalEntries in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReportAsFinishedProductionJournalEntry> ReportAsFinishedProductionJournalEntries
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ReportAsFinishedProductionJournalEntries == null))
+                {
+                    this._ReportAsFinishedProductionJournalEntries = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ReportAsFinishedProductionJournalEntry>(GetPath("ReportAsFinishedProductionJournalEntries"));
+                }
+                return this._ReportAsFinishedProductionJournalEntries;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReportAsFinishedProductionJournalEntry> _ReportAsFinishedProductionJournalEntries;
+        /// <summary>
+        /// There are no comments for ProductBarcodes in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductBarcode> ProductBarcodes
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ProductBarcodes == null))
+                {
+                    this._ProductBarcodes = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductBarcode>(GetPath("ProductBarcodes"));
+                }
+                return this._ProductBarcodes;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductBarcode> _ProductBarcodes;
         /// <summary>
         /// There are no comments for ItemArrivalJournalLinesV2 in the schema.
         /// </summary>
@@ -119,10 +182,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ItemArrivalJournalLineV2> _ItemArrivalJournalLinesV2;
         /// <summary>
-        /// There are no comments for RetailDeliveryModeProductLine in the schema.
+        /// There are no comments for ReleasedEngineeringProductVersions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailDeliveryModeProductLine> RetailDeliveryModeProductLine
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersion> ReleasedEngineeringProductVersions
         {
             get
             {
@@ -130,15 +193,225 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._RetailDeliveryModeProductLine == null))
+                if ((this._ReleasedEngineeringProductVersions == null))
                 {
-                    this._RetailDeliveryModeProductLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailDeliveryModeProductLine>(GetPath("RetailDeliveryModeProductLine"));
+                    this._ReleasedEngineeringProductVersions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersion>(GetPath("ReleasedEngineeringProductVersions"));
                 }
-                return this._RetailDeliveryModeProductLine;
+                return this._ReleasedEngineeringProductVersions;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailDeliveryModeProductLine> _RetailDeliveryModeProductLine;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersion> _ReleasedEngineeringProductVersions;
+        /// <summary>
+        /// There are no comments for TradeAllowanceAgreementProductsV2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2> TradeAllowanceAgreementProductsV2
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._TradeAllowanceAgreementProductsV2 == null))
+                {
+                    this._TradeAllowanceAgreementProductsV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2>(GetPath("TradeAllowanceAgreementProductsV2"));
+                }
+                return this._TradeAllowanceAgreementProductsV2;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2> _TradeAllowanceAgreementProductsV2;
+        /// <summary>
+        /// There are no comments for CustomerProductDescriptions in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CustomerProductDescription> CustomerProductDescriptions
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._CustomerProductDescriptions == null))
+                {
+                    this._CustomerProductDescriptions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CustomerProductDescription>(GetPath("CustomerProductDescriptions"));
+                }
+                return this._CustomerProductDescriptions;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CustomerProductDescription> _CustomerProductDescriptions;
+        /// <summary>
+        /// There are no comments for ProductDefaultOrderSettings in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.ProductDefaultOrderSettingsSingle ProductDefaultOrderSettings
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ProductDefaultOrderSettings == null))
+                {
+                    this._ProductDefaultOrderSettings = new global::Microsoft.Dynamics.DataEntities.ProductDefaultOrderSettingsSingle(this.Context, GetPath("ProductDefaultOrderSettings"));
+                }
+                return this._ProductDefaultOrderSettings;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.ProductDefaultOrderSettingsSingle _ProductDefaultOrderSettings;
+        /// <summary>
+        /// There are no comments for ProductApprovedVendors in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductApprovedVendor> ProductApprovedVendors
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ProductApprovedVendors == null))
+                {
+                    this._ProductApprovedVendors = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductApprovedVendor>(GetPath("ProductApprovedVendors"));
+                }
+                return this._ProductApprovedVendors;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductApprovedVendor> _ProductApprovedVendors;
+        /// <summary>
+        /// There are no comments for VendorProductDescriptionsV2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendorProductDescriptionV2> VendorProductDescriptionsV2
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._VendorProductDescriptionsV2 == null))
+                {
+                    this._VendorProductDescriptionsV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.VendorProductDescriptionV2>(GetPath("VendorProductDescriptionsV2"));
+                }
+                return this._VendorProductDescriptionsV2;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendorProductDescriptionV2> _VendorProductDescriptionsV2;
+        /// <summary>
+        /// There are no comments for ReleasedProductRebateAndDeductionsGroupAssignments in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductRebateAndDeductionsGroupAssignment> ReleasedProductRebateAndDeductionsGroupAssignments
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ReleasedProductRebateAndDeductionsGroupAssignments == null))
+                {
+                    this._ReleasedProductRebateAndDeductionsGroupAssignments = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductRebateAndDeductionsGroupAssignment>(GetPath("ReleasedProductRebateAndDeductionsGroupAssignments"));
+                }
+                return this._ReleasedProductRebateAndDeductionsGroupAssignments;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductRebateAndDeductionsGroupAssignment> _ReleasedProductRebateAndDeductionsGroupAssignments;
+        /// <summary>
+        /// There are no comments for ProductBarcodesV2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductBarcodeAssociation> ProductBarcodesV2
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ProductBarcodesV2 == null))
+                {
+                    this._ProductBarcodesV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductBarcodeAssociation>(GetPath("ProductBarcodesV2"));
+                }
+                return this._ProductBarcodesV2;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductBarcodeAssociation> _ProductBarcodesV2;
+        /// <summary>
+        /// There are no comments for PurchaseAgreementLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementLine> PurchaseAgreementLine
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._PurchaseAgreementLine == null))
+                {
+                    this._PurchaseAgreementLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementLine>(GetPath("PurchaseAgreementLine"));
+                }
+                return this._PurchaseAgreementLine;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementLine> _PurchaseAgreementLine;
+        /// <summary>
+        /// There are no comments for RevRecSetupBasis in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RecSetupBasis> RevRecSetupBasis
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RevRecSetupBasis == null))
+                {
+                    this._RevRecSetupBasis = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RecSetupBasis>(GetPath("RevRecSetupBasis"));
+                }
+                return this._RevRecSetupBasis;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RecSetupBasis> _RevRecSetupBasis;
+        /// <summary>
+        /// There are no comments for FormulaVersions in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FormulaVersion> FormulaVersions
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._FormulaVersions == null))
+                {
+                    this._FormulaVersions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FormulaVersion>(GetPath("FormulaVersions"));
+                }
+                return this._FormulaVersions;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FormulaVersion> _FormulaVersions;
         /// <summary>
         /// There are no comments for CycleCountingWarehouseWorkLinesV2 in the schema.
         /// </summary>
@@ -160,6 +433,69 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLineV2> _CycleCountingWarehouseWorkLinesV2;
+        /// <summary>
+        /// There are no comments for ReleasedDistinctProductCDS in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.CDSReleasedDistinctProductSingle ReleasedDistinctProductCDS
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ReleasedDistinctProductCDS == null))
+                {
+                    this._ReleasedDistinctProductCDS = new global::Microsoft.Dynamics.DataEntities.CDSReleasedDistinctProductSingle(this.Context, GetPath("ReleasedDistinctProductCDS"));
+                }
+                return this._ReleasedDistinctProductCDS;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.CDSReleasedDistinctProductSingle _ReleasedDistinctProductCDS;
+        /// <summary>
+        /// There are no comments for OrderCommittedLicensePlateReservations in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.OrderCommittedLicensePlateReservation> OrderCommittedLicensePlateReservations
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._OrderCommittedLicensePlateReservations == null))
+                {
+                    this._OrderCommittedLicensePlateReservations = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.OrderCommittedLicensePlateReservation>(GetPath("OrderCommittedLicensePlateReservations"));
+                }
+                return this._OrderCommittedLicensePlateReservations;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.OrderCommittedLicensePlateReservation> _OrderCommittedLicensePlateReservations;
+        /// <summary>
+        /// There are no comments for VendorProductDescriptions in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendorProductDescription> VendorProductDescriptions
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._VendorProductDescriptions == null))
+                {
+                    this._VendorProductDescriptions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.VendorProductDescription>(GetPath("VendorProductDescriptions"));
+                }
+                return this._VendorProductDescriptions;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendorProductDescription> _VendorProductDescriptions;
         /// <summary>
         /// There are no comments for BarcodeSetup in the schema.
         /// </summary>
@@ -854,69 +1190,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.CatchWeightItemHandlingPolicySingle _CatchWeightItemHandlingPolicy;
         /// <summary>
-        /// There are no comments for PurchaseAgreementLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementLine> PurchaseAgreementLine
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._PurchaseAgreementLine == null))
-                {
-                    this._PurchaseAgreementLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementLine>(GetPath("PurchaseAgreementLine"));
-                }
-                return this._PurchaseAgreementLine;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementLine> _PurchaseAgreementLine;
-        /// <summary>
-        /// There are no comments for ReleasedEngineeringProductVersions in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersion> ReleasedEngineeringProductVersions
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ReleasedEngineeringProductVersions == null))
-                {
-                    this._ReleasedEngineeringProductVersions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersion>(GetPath("ReleasedEngineeringProductVersions"));
-                }
-                return this._ReleasedEngineeringProductVersions;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersion> _ReleasedEngineeringProductVersions;
-        /// <summary>
-        /// There are no comments for SalesAgreementLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesAgreementLine> SalesAgreementLines
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._SalesAgreementLines == null))
-                {
-                    this._SalesAgreementLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.SalesAgreementLine>(GetPath("SalesAgreementLines"));
-                }
-                return this._SalesAgreementLines;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesAgreementLine> _SalesAgreementLines;
-        /// <summary>
         /// There are no comments for ProductSpecificOrderSettingsV3 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -938,10 +1211,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductSpecificOrderSettingV3> _ProductSpecificOrderSettingsV3;
         /// <summary>
-        /// There are no comments for TradeAllowanceAgreementMerchandisingEventProductsV2 in the schema.
+        /// There are no comments for SalesAgreementLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2> TradeAllowanceAgreementMerchandisingEventProductsV2
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesAgreementLine> SalesAgreementLines
         {
             get
             {
@@ -949,603 +1222,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._TradeAllowanceAgreementMerchandisingEventProductsV2 == null))
+                if ((this._SalesAgreementLines == null))
                 {
-                    this._TradeAllowanceAgreementMerchandisingEventProductsV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2>(GetPath("TradeAllowanceAgreementMerchandisingEventProductsV2"));
+                    this._SalesAgreementLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.SalesAgreementLine>(GetPath("SalesAgreementLines"));
                 }
-                return this._TradeAllowanceAgreementMerchandisingEventProductsV2;
+                return this._SalesAgreementLines;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2> _TradeAllowanceAgreementMerchandisingEventProductsV2;
-        /// <summary>
-        /// There are no comments for ProductBarcodesV2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV2> ProductBarcodesV2
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ProductBarcodesV2 == null))
-                {
-                    this._ProductBarcodesV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV2>(GetPath("ProductBarcodesV2"));
-                }
-                return this._ProductBarcodesV2;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV2> _ProductBarcodesV2;
-        /// <summary>
-        /// There are no comments for ItemBatches in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ItemBatch> ItemBatches
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ItemBatches == null))
-                {
-                    this._ItemBatches = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ItemBatch>(GetPath("ItemBatches"));
-                }
-                return this._ItemBatches;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ItemBatch> _ItemBatches;
-        /// <summary>
-        /// There are no comments for ProductBarcodesV3 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV3> ProductBarcodesV3
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ProductBarcodesV3 == null))
-                {
-                    this._ProductBarcodesV3 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV3>(GetPath("ProductBarcodesV3"));
-                }
-                return this._ProductBarcodesV3;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV3> _ProductBarcodesV3;
-        /// <summary>
-        /// There are no comments for BillOfMaterialsVersionsV2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersionV2> BillOfMaterialsVersionsV2
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._BillOfMaterialsVersionsV2 == null))
-                {
-                    this._BillOfMaterialsVersionsV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersionV2>(GetPath("BillOfMaterialsVersionsV2"));
-                }
-                return this._BillOfMaterialsVersionsV2;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersionV2> _BillOfMaterialsVersionsV2;
-        /// <summary>
-        /// There are no comments for ProductBarcodes in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductBarcode> ProductBarcodes
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ProductBarcodes == null))
-                {
-                    this._ProductBarcodes = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductBarcode>(GetPath("ProductBarcodes"));
-                }
-                return this._ProductBarcodes;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductBarcode> _ProductBarcodes;
-        /// <summary>
-        /// There are no comments for VendInvoicePriceTolerance in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendInvoicePriceTolerance> VendInvoicePriceTolerance
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._VendInvoicePriceTolerance == null))
-                {
-                    this._VendInvoicePriceTolerance = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.VendInvoicePriceTolerance>(GetPath("VendInvoicePriceTolerance"));
-                }
-                return this._VendInvoicePriceTolerance;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendInvoicePriceTolerance> _VendInvoicePriceTolerance;
-        /// <summary>
-        /// There are no comments for CycleCountingWarehouseWorkLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLine> CycleCountingWarehouseWorkLines
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._CycleCountingWarehouseWorkLines == null))
-                {
-                    this._CycleCountingWarehouseWorkLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLine>(GetPath("CycleCountingWarehouseWorkLines"));
-                }
-                return this._CycleCountingWarehouseWorkLines;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLine> _CycleCountingWarehouseWorkLines;
-        /// <summary>
-        /// There are no comments for RevRecSetupBasis in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RecSetupBasis> RevRecSetupBasis
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._RevRecSetupBasis == null))
-                {
-                    this._RevRecSetupBasis = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RecSetupBasis>(GetPath("RevRecSetupBasis"));
-                }
-                return this._RevRecSetupBasis;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RecSetupBasis> _RevRecSetupBasis;
-        /// <summary>
-        /// There are no comments for CatchWeightTags in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CatchWeightTag> CatchWeightTags
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._CatchWeightTags == null))
-                {
-                    this._CatchWeightTags = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CatchWeightTag>(GetPath("CatchWeightTags"));
-                }
-                return this._CatchWeightTags;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CatchWeightTag> _CatchWeightTags;
-        /// <summary>
-        /// There are no comments for InventoryTagCountingJournalLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InventoryTagCountingJournalLine> InventoryTagCountingJournalLines
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._InventoryTagCountingJournalLines == null))
-                {
-                    this._InventoryTagCountingJournalLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.InventoryTagCountingJournalLine>(GetPath("InventoryTagCountingJournalLines"));
-                }
-                return this._InventoryTagCountingJournalLines;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InventoryTagCountingJournalLine> _InventoryTagCountingJournalLines;
-        /// <summary>
-        /// There are no comments for ProductSpecificOrderSettingsV2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductSpecificOrderSettingV2> ProductSpecificOrderSettingsV2
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ProductSpecificOrderSettingsV2 == null))
-                {
-                    this._ProductSpecificOrderSettingsV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductSpecificOrderSettingV2>(GetPath("ProductSpecificOrderSettingsV2"));
-                }
-                return this._ProductSpecificOrderSettingsV2;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductSpecificOrderSettingV2> _ProductSpecificOrderSettingsV2;
-        /// <summary>
-        /// There are no comments for CustomerProductDescriptions in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CustomerProductDescription> CustomerProductDescriptions
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._CustomerProductDescriptions == null))
-                {
-                    this._CustomerProductDescriptions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CustomerProductDescription>(GetPath("CustomerProductDescriptions"));
-                }
-                return this._CustomerProductDescriptions;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CustomerProductDescription> _CustomerProductDescriptions;
-        /// <summary>
-        /// There are no comments for QualityOrderHeaders in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> QualityOrderHeaders
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._QualityOrderHeaders == null))
-                {
-                    this._QualityOrderHeaders = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader>(GetPath("QualityOrderHeaders"));
-                }
-                return this._QualityOrderHeaders;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> _QualityOrderHeaders;
-        /// <summary>
-        /// There are no comments for RebateAndDeductionsAgreementHeaders in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> RebateAndDeductionsAgreementHeaders
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._RebateAndDeductionsAgreementHeaders == null))
-                {
-                    this._RebateAndDeductionsAgreementHeaders = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader>(GetPath("RebateAndDeductionsAgreementHeaders"));
-                }
-                return this._RebateAndDeductionsAgreementHeaders;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> _RebateAndDeductionsAgreementHeaders;
-        /// <summary>
-        /// There are no comments for EngineeringChangeOrderProductReleases in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRelease> EngineeringChangeOrderProductReleases
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._EngineeringChangeOrderProductReleases == null))
-                {
-                    this._EngineeringChangeOrderProductReleases = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRelease>(GetPath("EngineeringChangeOrderProductReleases"));
-                }
-                return this._EngineeringChangeOrderProductReleases;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRelease> _EngineeringChangeOrderProductReleases;
-        /// <summary>
-        /// There are no comments for RetailItemLabel in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailItemLabel> RetailItemLabel
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._RetailItemLabel == null))
-                {
-                    this._RetailItemLabel = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailItemLabel>(GetPath("RetailItemLabel"));
-                }
-                return this._RetailItemLabel;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailItemLabel> _RetailItemLabel;
-        /// <summary>
-        /// There are no comments for TradeAllowanceAgreementMerchandisingEventProducts in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProduct> TradeAllowanceAgreementMerchandisingEventProducts
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._TradeAllowanceAgreementMerchandisingEventProducts == null))
-                {
-                    this._TradeAllowanceAgreementMerchandisingEventProducts = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProduct>(GetPath("TradeAllowanceAgreementMerchandisingEventProducts"));
-                }
-                return this._TradeAllowanceAgreementMerchandisingEventProducts;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProduct> _TradeAllowanceAgreementMerchandisingEventProducts;
-        /// <summary>
-        /// There are no comments for PurchaseAgreementLinesV2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmationLine> PurchaseAgreementLinesV2
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._PurchaseAgreementLinesV2 == null))
-                {
-                    this._PurchaseAgreementLinesV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmationLine>(GetPath("PurchaseAgreementLinesV2"));
-                }
-                return this._PurchaseAgreementLinesV2;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmationLine> _PurchaseAgreementLinesV2;
-        /// <summary>
-        /// There are no comments for PlannedOrders in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PlannedOrder> PlannedOrders
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._PlannedOrders == null))
-                {
-                    this._PlannedOrders = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PlannedOrder>(GetPath("PlannedOrders"));
-                }
-                return this._PlannedOrders;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PlannedOrder> _PlannedOrders;
-        /// <summary>
-        /// There are no comments for TradeAllowanceAgreementProducts in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProduct> TradeAllowanceAgreementProducts
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._TradeAllowanceAgreementProducts == null))
-                {
-                    this._TradeAllowanceAgreementProducts = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProduct>(GetPath("TradeAllowanceAgreementProducts"));
-                }
-                return this._TradeAllowanceAgreementProducts;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProduct> _TradeAllowanceAgreementProducts;
-        /// <summary>
-        /// There are no comments for ProductDefaultOrderSettings in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ProductDefaultOrderSettingsSingle ProductDefaultOrderSettings
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ProductDefaultOrderSettings == null))
-                {
-                    this._ProductDefaultOrderSettings = new global::Microsoft.Dynamics.DataEntities.ProductDefaultOrderSettingsSingle(this.Context, GetPath("ProductDefaultOrderSettings"));
-                }
-                return this._ProductDefaultOrderSettings;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ProductDefaultOrderSettingsSingle _ProductDefaultOrderSettings;
-        /// <summary>
-        /// There are no comments for ReleasedProductRebateAndDeductionsGroupAssignments in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductRebateAndDeductionsGroupAssignment> ReleasedProductRebateAndDeductionsGroupAssignments
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ReleasedProductRebateAndDeductionsGroupAssignments == null))
-                {
-                    this._ReleasedProductRebateAndDeductionsGroupAssignments = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductRebateAndDeductionsGroupAssignment>(GetPath("ReleasedProductRebateAndDeductionsGroupAssignments"));
-                }
-                return this._ReleasedProductRebateAndDeductionsGroupAssignments;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductRebateAndDeductionsGroupAssignment> _ReleasedProductRebateAndDeductionsGroupAssignments;
-        /// <summary>
-        /// There are no comments for ReportAsFinishedProductionJournalEntries in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReportAsFinishedProductionJournalEntry> ReportAsFinishedProductionJournalEntries
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ReportAsFinishedProductionJournalEntries == null))
-                {
-                    this._ReportAsFinishedProductionJournalEntries = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ReportAsFinishedProductionJournalEntry>(GetPath("ReportAsFinishedProductionJournalEntries"));
-                }
-                return this._ReportAsFinishedProductionJournalEntries;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReportAsFinishedProductionJournalEntry> _ReportAsFinishedProductionJournalEntries;
-        /// <summary>
-        /// There are no comments for FormulaVersions in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FormulaVersion> FormulaVersions
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._FormulaVersions == null))
-                {
-                    this._FormulaVersions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FormulaVersion>(GetPath("FormulaVersions"));
-                }
-                return this._FormulaVersions;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FormulaVersion> _FormulaVersions;
-        /// <summary>
-        /// There are no comments for RetailPackageLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailPackageLines> RetailPackageLines
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._RetailPackageLines == null))
-                {
-                    this._RetailPackageLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailPackageLines>(GetPath("RetailPackageLines"));
-                }
-                return this._RetailPackageLines;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailPackageLines> _RetailPackageLines;
-        /// <summary>
-        /// There are no comments for TradeAllowanceAgreementProductsV2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2> TradeAllowanceAgreementProductsV2
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._TradeAllowanceAgreementProductsV2 == null))
-                {
-                    this._TradeAllowanceAgreementProductsV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2>(GetPath("TradeAllowanceAgreementProductsV2"));
-                }
-                return this._TradeAllowanceAgreementProductsV2;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2> _TradeAllowanceAgreementProductsV2;
-        /// <summary>
-        /// There are no comments for ProductionPickingListJournalEntries in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductionPickingListJournalEntry> ProductionPickingListJournalEntries
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ProductionPickingListJournalEntries == null))
-                {
-                    this._ProductionPickingListJournalEntries = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductionPickingListJournalEntry>(GetPath("ProductionPickingListJournalEntries"));
-                }
-                return this._ProductionPickingListJournalEntries;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductionPickingListJournalEntry> _ProductionPickingListJournalEntries;
-        /// <summary>
-        /// There are no comments for OrderCommittedLicensePlateReservations in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.OrderCommittedLicensePlateReservation> OrderCommittedLicensePlateReservations
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._OrderCommittedLicensePlateReservations == null))
-                {
-                    this._OrderCommittedLicensePlateReservations = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.OrderCommittedLicensePlateReservation>(GetPath("OrderCommittedLicensePlateReservations"));
-                }
-                return this._OrderCommittedLicensePlateReservations;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.OrderCommittedLicensePlateReservation> _OrderCommittedLicensePlateReservations;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesAgreementLine> _SalesAgreementLines;
         /// <summary>
         /// There are no comments for ServiceAgreementLines in the schema.
         /// </summary>
@@ -1610,10 +1295,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ItemCoverageSettings> _PlanningFormulaItemCoverageSettings;
         /// <summary>
-        /// There are no comments for SalesAgreementConfirmationLines in the schema.
+        /// There are no comments for ItemBatches in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine> SalesAgreementConfirmationLines
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ItemBatch> ItemBatches
         {
             get
             {
@@ -1621,20 +1306,20 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._SalesAgreementConfirmationLines == null))
+                if ((this._ItemBatches == null))
                 {
-                    this._SalesAgreementConfirmationLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine>(GetPath("SalesAgreementConfirmationLines"));
+                    this._ItemBatches = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ItemBatch>(GetPath("ItemBatches"));
                 }
-                return this._SalesAgreementConfirmationLines;
+                return this._ItemBatches;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine> _SalesAgreementConfirmationLines;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ItemBatch> _ItemBatches;
         /// <summary>
-        /// There are no comments for ReleasedDistinctProductCDS in the schema.
+        /// There are no comments for ProductSpecificOrderSettingsV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.CDSReleasedDistinctProductSingle ReleasedDistinctProductCDS
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductSpecificOrderSettingV2> ProductSpecificOrderSettingsV2
         {
             get
             {
@@ -1642,36 +1327,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._ReleasedDistinctProductCDS == null))
+                if ((this._ProductSpecificOrderSettingsV2 == null))
                 {
-                    this._ReleasedDistinctProductCDS = new global::Microsoft.Dynamics.DataEntities.CDSReleasedDistinctProductSingle(this.Context, GetPath("ReleasedDistinctProductCDS"));
+                    this._ProductSpecificOrderSettingsV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductSpecificOrderSettingV2>(GetPath("ProductSpecificOrderSettingsV2"));
                 }
-                return this._ReleasedDistinctProductCDS;
+                return this._ProductSpecificOrderSettingsV2;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.CDSReleasedDistinctProductSingle _ReleasedDistinctProductCDS;
-        /// <summary>
-        /// There are no comments for WarehouseWorkPolicyProducts in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyProduct> WarehouseWorkPolicyProducts
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._WarehouseWorkPolicyProducts == null))
-                {
-                    this._WarehouseWorkPolicyProducts = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyProduct>(GetPath("WarehouseWorkPolicyProducts"));
-                }
-                return this._WarehouseWorkPolicyProducts;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyProduct> _WarehouseWorkPolicyProducts;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductSpecificOrderSettingV2> _ProductSpecificOrderSettingsV2;
         /// <summary>
         /// There are no comments for BillOfMaterialsVersionsV3 in the schema.
         /// </summary>
@@ -1694,10 +1358,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersionV3> _BillOfMaterialsVersionsV3;
         /// <summary>
-        /// There are no comments for VendorProductDescriptionsV2 in the schema.
+        /// There are no comments for QualityOrderHeaders in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendorProductDescriptionV2> VendorProductDescriptionsV2
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> QualityOrderHeaders
         {
             get
             {
@@ -1705,15 +1369,204 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._VendorProductDescriptionsV2 == null))
+                if ((this._QualityOrderHeaders == null))
                 {
-                    this._VendorProductDescriptionsV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.VendorProductDescriptionV2>(GetPath("VendorProductDescriptionsV2"));
+                    this._QualityOrderHeaders = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader>(GetPath("QualityOrderHeaders"));
                 }
-                return this._VendorProductDescriptionsV2;
+                return this._QualityOrderHeaders;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendorProductDescriptionV2> _VendorProductDescriptionsV2;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> _QualityOrderHeaders;
+        /// <summary>
+        /// There are no comments for PurchaseAgreementLinesV2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmationLine> PurchaseAgreementLinesV2
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._PurchaseAgreementLinesV2 == null))
+                {
+                    this._PurchaseAgreementLinesV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmationLine>(GetPath("PurchaseAgreementLinesV2"));
+                }
+                return this._PurchaseAgreementLinesV2;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmationLine> _PurchaseAgreementLinesV2;
+        /// <summary>
+        /// There are no comments for PlannedOrders in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PlannedOrder> PlannedOrders
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._PlannedOrders == null))
+                {
+                    this._PlannedOrders = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PlannedOrder>(GetPath("PlannedOrders"));
+                }
+                return this._PlannedOrders;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PlannedOrder> _PlannedOrders;
+        /// <summary>
+        /// There are no comments for EngineeringChangeOrderProductReleases in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRelease> EngineeringChangeOrderProductReleases
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._EngineeringChangeOrderProductReleases == null))
+                {
+                    this._EngineeringChangeOrderProductReleases = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRelease>(GetPath("EngineeringChangeOrderProductReleases"));
+                }
+                return this._EngineeringChangeOrderProductReleases;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRelease> _EngineeringChangeOrderProductReleases;
+        /// <summary>
+        /// There are no comments for ProductBarcodesV3 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV3> ProductBarcodesV3
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ProductBarcodesV3 == null))
+                {
+                    this._ProductBarcodesV3 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV3>(GetPath("ProductBarcodesV3"));
+                }
+                return this._ProductBarcodesV3;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV3> _ProductBarcodesV3;
+        /// <summary>
+        /// There are no comments for CatchWeightTags in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CatchWeightTag> CatchWeightTags
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._CatchWeightTags == null))
+                {
+                    this._CatchWeightTags = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CatchWeightTag>(GetPath("CatchWeightTags"));
+                }
+                return this._CatchWeightTags;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CatchWeightTag> _CatchWeightTags;
+        /// <summary>
+        /// There are no comments for InventoryTagCountingJournalLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InventoryTagCountingJournalLine> InventoryTagCountingJournalLines
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._InventoryTagCountingJournalLines == null))
+                {
+                    this._InventoryTagCountingJournalLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.InventoryTagCountingJournalLine>(GetPath("InventoryTagCountingJournalLines"));
+                }
+                return this._InventoryTagCountingJournalLines;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.InventoryTagCountingJournalLine> _InventoryTagCountingJournalLines;
+        /// <summary>
+        /// There are no comments for TradeAllowanceAgreementProducts in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProduct> TradeAllowanceAgreementProducts
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._TradeAllowanceAgreementProducts == null))
+                {
+                    this._TradeAllowanceAgreementProducts = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProduct>(GetPath("TradeAllowanceAgreementProducts"));
+                }
+                return this._TradeAllowanceAgreementProducts;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProduct> _TradeAllowanceAgreementProducts;
+        /// <summary>
+        /// There are no comments for RetailDeliveryModeProductLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailDeliveryModeProductLine> RetailDeliveryModeProductLine
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RetailDeliveryModeProductLine == null))
+                {
+                    this._RetailDeliveryModeProductLine = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailDeliveryModeProductLine>(GetPath("RetailDeliveryModeProductLine"));
+                }
+                return this._RetailDeliveryModeProductLine;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailDeliveryModeProductLine> _RetailDeliveryModeProductLine;
+        /// <summary>
+        /// There are no comments for ProductAllocationLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductAllocationLine> ProductAllocationLines
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ProductAllocationLines == null))
+                {
+                    this._ProductAllocationLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductAllocationLine>(GetPath("ProductAllocationLines"));
+                }
+                return this._ProductAllocationLines;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductAllocationLine> _ProductAllocationLines;
         /// <summary>
         /// There are no comments for CustomerProductDescriptionsV2 in the schema.
         /// </summary>
@@ -1736,10 +1589,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CustomerProductDescriptionV2> _CustomerProductDescriptionsV2;
         /// <summary>
-        /// There are no comments for VendorProductDescriptions in the schema.
+        /// There are no comments for BillOfMaterialsVersionsV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendorProductDescription> VendorProductDescriptions
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersionV2> BillOfMaterialsVersionsV2
         {
             get
             {
@@ -1747,19 +1600,166 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._VendorProductDescriptions == null))
+                if ((this._BillOfMaterialsVersionsV2 == null))
                 {
-                    this._VendorProductDescriptions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.VendorProductDescription>(GetPath("VendorProductDescriptions"));
+                    this._BillOfMaterialsVersionsV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersionV2>(GetPath("BillOfMaterialsVersionsV2"));
                 }
-                return this._VendorProductDescriptions;
+                return this._BillOfMaterialsVersionsV2;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendorProductDescription> _VendorProductDescriptions;
-    }
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersionV2> _BillOfMaterialsVersionsV2;
         /// <summary>
-        /// There are no comments for ReleasedProductV2 in the schema.
+        /// There are no comments for TradeAllowanceAgreementMerchandisingEventProducts in the schema.
         /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProduct> TradeAllowanceAgreementMerchandisingEventProducts
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._TradeAllowanceAgreementMerchandisingEventProducts == null))
+                {
+                    this._TradeAllowanceAgreementMerchandisingEventProducts = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProduct>(GetPath("TradeAllowanceAgreementMerchandisingEventProducts"));
+                }
+                return this._TradeAllowanceAgreementMerchandisingEventProducts;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProduct> _TradeAllowanceAgreementMerchandisingEventProducts;
+        /// <summary>
+        /// There are no comments for RetailPackageLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailPackageLines> RetailPackageLines
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RetailPackageLines == null))
+                {
+                    this._RetailPackageLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailPackageLines>(GetPath("RetailPackageLines"));
+                }
+                return this._RetailPackageLines;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailPackageLines> _RetailPackageLines;
+        /// <summary>
+        /// There are no comments for CycleCountingWarehouseWorkLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLine> CycleCountingWarehouseWorkLines
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._CycleCountingWarehouseWorkLines == null))
+                {
+                    this._CycleCountingWarehouseWorkLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLine>(GetPath("CycleCountingWarehouseWorkLines"));
+                }
+                return this._CycleCountingWarehouseWorkLines;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLine> _CycleCountingWarehouseWorkLines;
+        /// <summary>
+        /// There are no comments for ProductionPickingListJournalEntries in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductionPickingListJournalEntry> ProductionPickingListJournalEntries
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ProductionPickingListJournalEntries == null))
+                {
+                    this._ProductionPickingListJournalEntries = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductionPickingListJournalEntry>(GetPath("ProductionPickingListJournalEntries"));
+                }
+                return this._ProductionPickingListJournalEntries;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductionPickingListJournalEntry> _ProductionPickingListJournalEntries;
+        /// <summary>
+        /// There are no comments for ReleasedProductReadinessChecks in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> ReleasedProductReadinessChecks
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ReleasedProductReadinessChecks == null))
+                {
+                    this._ReleasedProductReadinessChecks = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck>(GetPath("ReleasedProductReadinessChecks"));
+                }
+                return this._ReleasedProductReadinessChecks;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> _ReleasedProductReadinessChecks;
+        /// <summary>
+        /// There are no comments for RetailItemLabel in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailItemLabel> RetailItemLabel
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RetailItemLabel == null))
+                {
+                    this._RetailItemLabel = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailItemLabel>(GetPath("RetailItemLabel"));
+                }
+                return this._RetailItemLabel;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailItemLabel> _RetailItemLabel;
+        /// <summary>
+        /// There are no comments for TradeAllowanceAgreementMerchandisingEventProductsV2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2> TradeAllowanceAgreementMerchandisingEventProductsV2
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._TradeAllowanceAgreementMerchandisingEventProductsV2 == null))
+                {
+                    this._TradeAllowanceAgreementMerchandisingEventProductsV2 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2>(GetPath("TradeAllowanceAgreementMerchandisingEventProductsV2"));
+                }
+                return this._TradeAllowanceAgreementMerchandisingEventProductsV2;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2> _TradeAllowanceAgreementMerchandisingEventProductsV2;
+    }
+    /// <summary>
+    /// There are no comments for ReleasedProductV2 in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// ItemNumber
@@ -2010,6 +2010,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -2032,6 +2034,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ItemNumber is required.")]
         public virtual string ItemNumber
         {
             get
@@ -2054,6 +2058,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FixedSalesPriceCharges in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FixedSalesPriceCharges is required.")]
         public virtual decimal FixedSalesPriceCharges
         {
             get
@@ -2076,6 +2082,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PKWiUCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PKWiUCode
         {
             get
@@ -2098,6 +2105,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsDiscountPOSRegistrationProhibited in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsDiscountPOSRegistrationProhibited
         {
             get
@@ -2120,6 +2128,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TrackingDimensionGroupName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TrackingDimensionGroupName
         {
             get
@@ -2142,6 +2151,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductTaxationOrigin in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.FITaxationOrigin_BR> ProductTaxationOrigin
         {
             get
@@ -2164,6 +2174,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BOMUnitSymbol in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BOMUnitSymbol
         {
             get
@@ -2186,6 +2197,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MinimumCatchWeightQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MinimumCatchWeightQuantity is required.")]
         public virtual decimal MinimumCatchWeightQuantity
         {
             get
@@ -2208,6 +2221,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UpperWarrantablePriceRangeLimit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "UpperWarrantablePriceRangeLimit is required.")]
         public virtual decimal UpperWarrantablePriceRangeLimit
         {
             get
@@ -2230,6 +2245,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchasePriceToleranceGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PurchasePriceToleranceGroupId
         {
             get
@@ -2252,6 +2268,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VariableScrapPercentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "VariableScrapPercentage is required.")]
         public virtual decimal VariableScrapPercentage
         {
             get
@@ -2274,6 +2292,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EcoResProductServiceType> ServiceType
         {
             get
@@ -2296,6 +2315,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CostCalculationBOMLevel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CostCalculationBOMLevel is required.")]
         public virtual int CostCalculationBOMLevel
         {
             get
@@ -2318,6 +2339,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnitCostQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "UnitCostQuantity is required.")]
         public virtual decimal UnitCostQuantity
         {
             get
@@ -2340,6 +2363,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CatchWeightItemHandlingPolicyName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CatchWeightItemHandlingPolicyName
         {
             get
@@ -2362,6 +2386,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TareProductWeight in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TareProductWeight is required.")]
         public virtual decimal TareProductWeight
         {
             get
@@ -2384,6 +2410,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShelfLifePeriodDays in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ShelfLifePeriodDays is required.")]
         public virtual int ShelfLifePeriodDays
         {
             get
@@ -2406,6 +2434,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InventoryCountingReasonCodePolicyName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string InventoryCountingReasonCodePolicyName
         {
             get
@@ -2428,6 +2457,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NetProductWeight in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "NetProductWeight is required.")]
         public virtual decimal NetProductWeight
         {
             get
@@ -2450,6 +2481,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultDirectDeliveryWarehouse in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultDirectDeliveryWarehouse
         {
             get
@@ -2472,6 +2504,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProjectCategoryId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProjectCategoryId
         {
             get
@@ -2494,6 +2527,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MarginABCCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ABC> MarginABCCode
         {
             get
@@ -2516,6 +2550,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FixedPurchasePriceCharges in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FixedPurchasePriceCharges is required.")]
         public virtual decimal FixedPurchasePriceCharges
         {
             get
@@ -2538,6 +2574,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ContinuityScheduleId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ContinuityScheduleId
         {
             get
@@ -2560,6 +2597,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WarehouseFilterGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string WarehouseFilterGroup
         {
             get
@@ -2582,6 +2620,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CommissionProductGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CommissionProductGroupId
         {
             get
@@ -2604,6 +2643,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsSalesWithholdingTaxCalculated in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsSalesWithholdingTaxCalculated
         {
             get
@@ -2626,6 +2666,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchaseOverdeliveryPercentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PurchaseOverdeliveryPercentage is required.")]
         public virtual decimal PurchaseOverdeliveryPercentage
         {
             get
@@ -2648,6 +2690,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsPurchaseWithholdingTaxCalculated in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsPurchaseWithholdingTaxCalculated
         {
             get
@@ -2670,6 +2713,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomsImportTariffCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CustomsImportTariffCode
         {
             get
@@ -2692,6 +2736,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Exempt in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> Exempt
         {
             get
@@ -2714,6 +2759,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SellStartDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SellStartDate is required.")]
         public virtual global::System.DateTimeOffset SellStartDate
         {
             get
@@ -2736,6 +2783,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesMultilineDiscountProductGroupCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SalesMultilineDiscountProductGroupCode
         {
             get
@@ -2758,6 +2806,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property POSRegistrationActivationDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "POSRegistrationActivationDate is required.")]
         public virtual global::System.DateTimeOffset POSRegistrationActivationDate
         {
             get
@@ -2780,6 +2830,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesChargeProductGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SalesChargeProductGroupId
         {
             get
@@ -2802,6 +2853,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultProductSizeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultProductSizeId
         {
             get
@@ -2824,6 +2876,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductFiscalInformationType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductFiscalInformationType
         {
             get
@@ -2846,6 +2899,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryVendorAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrimaryVendorAccountNumber
         {
             get
@@ -2868,6 +2922,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductLifeCycleSeasonCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductLifeCycleSeasonCode
         {
             get
@@ -2890,6 +2945,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductionGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductionGroupId
         {
             get
@@ -2912,6 +2968,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsIntercompanyPurchaseUsageBlocked in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsIntercompanyPurchaseUsageBlocked
         {
             get
@@ -2934,6 +2991,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillInventoryReceiptIgnoreFlushingPrinciple in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillInventoryReceiptIgnoreFlushingPrinciple
         {
             get
@@ -2956,6 +3014,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaximumCatchWeightQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MaximumCatchWeightQuantity is required.")]
         public virtual decimal MaximumCatchWeightQuantity
         {
             get
@@ -2978,6 +3038,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorInvoiceLineMatchingPolicy in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PurchMatchingPolicyWithNotSetOption> VendorInvoiceLineMatchingPolicy
         {
             get
@@ -3000,6 +3061,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BaseSalesPriceSource in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.SalesPriceModelBasic> BaseSalesPriceSource
         {
             get
@@ -3022,6 +3084,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillInventoryIssueAutomaticallyReportAsFinished in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillInventoryIssueAutomaticallyReportAsFinished
         {
             get
@@ -3044,6 +3107,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchaseChargeProductGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PurchaseChargeProductGroupId
         {
             get
@@ -3066,6 +3130,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PackageHandlingTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PackageHandlingTime is required.")]
         public virtual int PackageHandlingTime
         {
             get
@@ -3088,6 +3154,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultProductVersionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultProductVersionId
         {
             get
@@ -3110,6 +3177,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PlanningFormulaItemNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PlanningFormulaItemNumber
         {
             get
@@ -3132,6 +3200,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductionConsumptionWidthConversionFactor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductionConsumptionWidthConversionFactor is required.")]
         public virtual decimal ProductionConsumptionWidthConversionFactor
         {
             get
@@ -3154,6 +3224,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SearchName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SearchName
         {
             get
@@ -3176,6 +3247,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsRetailDiscountPOSRegistrationProhibited in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsRetailDiscountPOSRegistrationProhibited
         {
             get
@@ -3198,6 +3270,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StorageDimensionGroupName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string StorageDimensionGroupName
         {
             get
@@ -3220,6 +3293,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsICMSTaxAppliedOnService in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsICMSTaxAppliedOnService
         {
             get
@@ -3242,6 +3316,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnitConversionSequenceGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string UnitConversionSequenceGroupId
         {
             get
@@ -3264,6 +3339,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RevenueABCCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ABC> RevenueABCCode
         {
             get
@@ -3286,6 +3362,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchaseUnitSymbol in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PurchaseUnitSymbol
         {
             get
@@ -3308,6 +3385,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillTotalSalesDiscountCalculationIncludeProduct in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillTotalSalesDiscountCalculationIncludeProduct
         {
             get
@@ -3330,6 +3408,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CNPJ in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CNPJ
         {
             get
@@ -3352,6 +3431,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UpdateProductVariantLifecycleState in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> UpdateProductVariantLifecycleState
         {
             get
@@ -3374,6 +3454,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchaseLineDiscountProductGroupCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PurchaseLineDiscountProductGroupCode
         {
             get
@@ -3396,6 +3477,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesRetailInventoryAvailabilityLevelProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SalesRetailInventoryAvailabilityLevelProfile
         {
             get
@@ -3418,6 +3500,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AlternativeProductUsageCondition in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ItemNumAlternative> AlternativeProductUsageCondition
         {
             get
@@ -3440,6 +3523,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NonGST in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> NonGST
         {
             get
@@ -3462,6 +3546,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultProductColorId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultProductColorId
         {
             get
@@ -3484,6 +3569,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchaseRebateProductGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PurchaseRebateProductGroupId
         {
             get
@@ -3506,6 +3592,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesRebateProductGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SalesRebateProductGroupId
         {
             get
@@ -3528,6 +3615,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MustKeyInCommentAtPOSRegister in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> MustKeyInCommentAtPOSRegister
         {
             get
@@ -3550,6 +3638,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsIntercompanySalesUsageBlocked in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsIntercompanySalesUsageBlocked
         {
             get
@@ -3572,6 +3661,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesUnitSymbol in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SalesUnitSymbol
         {
             get
@@ -3594,6 +3684,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValueABCCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ABC> ValueABCCode
         {
             get
@@ -3616,6 +3707,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchasePricingPrecision in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PurchasePricingPrecision is required.")]
         public virtual int PurchasePricingPrecision
         {
             get
@@ -3638,6 +3731,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsPurchasePriceIncludingCharges in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsPurchasePriceIncludingCharges
         {
             get
@@ -3660,6 +3754,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ApprovedVendorCheckMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PdsVendorCheckItem> ApprovedVendorCheckMethod
         {
             get
@@ -3682,6 +3777,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchasePriceDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PurchasePriceDate is required.")]
         public virtual global::System.DateTimeOffset PurchasePriceDate
         {
             get
@@ -3704,6 +3801,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductionConsumptionDepthConversionFactor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductionConsumptionDepthConversionFactor is required.")]
         public virtual decimal ProductionConsumptionDepthConversionFactor
         {
             get
@@ -3726,6 +3825,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LowerWarrantablePriceRangeLimit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LowerWarrantablePriceRangeLimit is required.")]
         public virtual decimal LowerWarrantablePriceRangeLimit
         {
             get
@@ -3748,6 +3849,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsCatchWeightProduct in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsCatchWeightProduct
         {
             get
@@ -3770,6 +3872,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PackingMaterialGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PackingMaterialGroupId
         {
             get
@@ -3792,6 +3895,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property GrossDepth in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "GrossDepth is required.")]
         public virtual decimal GrossDepth
         {
             get
@@ -3814,6 +3919,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillPickingWorkbenchApplyBoxingLogic in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillPickingWorkbenchApplyBoxingLogic
         {
             get
@@ -3836,6 +3942,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesChargesQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SalesChargesQuantity is required.")]
         public virtual decimal SalesChargesQuantity
         {
             get
@@ -3858,6 +3966,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchasePriceQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PurchasePriceQuantity is required.")]
         public virtual decimal PurchasePriceQuantity
         {
             get
@@ -3880,6 +3990,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NecessaryProductionWorkingTimeSchedulingPropertyId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string NecessaryProductionWorkingTimeSchedulingPropertyId
         {
             get
@@ -3902,6 +4013,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsUnitCostIncludingCharges in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsUnitCostIncludingCharges
         {
             get
@@ -3924,6 +4036,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property KeyInQuantityRequirementsAtPOSRegister in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailQtyKeyingRequirement> KeyInQuantityRequirementsAtPOSRegister
         {
             get
@@ -3946,6 +4059,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductionPoolId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductionPoolId
         {
             get
@@ -3968,6 +4082,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property POSRegistrationPlannedBlockedDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "POSRegistrationPlannedBlockedDate is required.")]
         public virtual global::System.DateTimeOffset POSRegistrationPlannedBlockedDate
         {
             get
@@ -3990,6 +4106,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceFiscalInformationCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ServiceFiscalInformationCode
         {
             get
@@ -4012,6 +4129,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchaseItemWithholdingTaxGroupCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PurchaseItemWithholdingTaxGroupCode
         {
             get
@@ -4034,6 +4152,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PhysicalDimensionGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PhysicalDimensionGroupId
         {
             get
@@ -4056,6 +4175,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FlushingPrinciple in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ProdFlushingPrincipItem> FlushingPrinciple
         {
             get
@@ -4078,6 +4198,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SecondProductFilterGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SecondProductFilterGroupId
         {
             get
@@ -4100,6 +4221,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WarrantyDurationTimeUnit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.WarrantyDurationTimeUnit> WarrantyDurationTimeUnit
         {
             get
@@ -4122,6 +4244,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PackSizeCategoryId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PackSizeCategoryId
         {
             get
@@ -4144,6 +4267,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShipStartDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ShipStartDate is required.")]
         public virtual global::System.DateTimeOffset ShipStartDate
         {
             get
@@ -4166,6 +4291,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxSubstitutionCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxSubstitutionCode
         {
             get
@@ -4188,6 +4314,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsPurchasePriceAutomaticallyUpdated in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsPurchasePriceAutomaticallyUpdated
         {
             get
@@ -4210,6 +4337,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SATCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SATCode
         {
             get
@@ -4232,6 +4360,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchaseSalesTaxItemGroupCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PurchaseSalesTaxItemGroupCode
         {
             get
@@ -4254,6 +4383,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NGPCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "NGPCode is required.")]
         public virtual int NGPCode
         {
             get
@@ -4276,6 +4407,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property GrossProductHeight in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "GrossProductHeight is required.")]
         public virtual decimal GrossProductHeight
         {
             get
@@ -4298,6 +4431,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CostChargesQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CostChargesQuantity is required.")]
         public virtual decimal CostChargesQuantity
         {
             get
@@ -4320,6 +4455,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransferOrderUnderdeliveryPercentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransferOrderUnderdeliveryPercentage is required.")]
         public virtual decimal TransferOrderUnderdeliveryPercentage
         {
             get
@@ -4342,6 +4479,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property YieldPercentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "YieldPercentage is required.")]
         public virtual decimal YieldPercentage
         {
             get
@@ -4364,6 +4503,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OriginStateId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OriginStateId
         {
             get
@@ -4386,6 +4526,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CostGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CostGroupId
         {
             get
@@ -4408,6 +4549,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WarrantyDurationTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WarrantyDurationTime is required.")]
         public virtual int WarrantyDurationTime
         {
             get
@@ -4430,6 +4573,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxRateType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxRateType
         {
             get
@@ -4452,6 +4596,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnitCost in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "UnitCost is required.")]
         public virtual decimal UnitCost
         {
             get
@@ -4474,6 +4620,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemFiscalClassificationExceptionCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ItemFiscalClassificationExceptionCode
         {
             get
@@ -4496,6 +4643,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SecondProductFilterCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SecondProductFilterCode
         {
             get
@@ -4518,6 +4666,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EcoResProductType> ProductType
         {
             get
@@ -4540,6 +4689,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WarrantablePriceRangeBaseType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.WarrantablePriceRangeBaseType> WarrantablePriceRangeBaseType
         {
             get
@@ -4562,6 +4712,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsExemptFromAutomaticNotificationAndCancellation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsExemptFromAutomaticNotificationAndCancellation
         {
             get
@@ -4584,6 +4735,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesPriceCalculationChargesPercentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SalesPriceCalculationChargesPercentage is required.")]
         public virtual decimal SalesPriceCalculationChargesPercentage
         {
             get
@@ -4606,6 +4759,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BuyerGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BuyerGroupId
         {
             get
@@ -4628,6 +4782,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CatchWeightUnitSymbol in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CatchWeightUnitSymbol
         {
             get
@@ -4650,6 +4805,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsUnitCostAutomaticallyUpdated in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsUnitCostAutomaticallyUpdated
         {
             get
@@ -4672,6 +4828,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CostCalculationGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CostCalculationGroupId
         {
             get
@@ -4694,6 +4851,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductGroupId
         {
             get
@@ -4716,6 +4874,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ScaleIndicator in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ScaleIndicator_BR> ScaleIndicator
         {
             get
@@ -4738,6 +4897,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WarehouseFilterCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string WarehouseFilterCode
         {
             get
@@ -4760,6 +4920,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property POSRegistrationBlockedDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "POSRegistrationBlockedDate is required.")]
         public virtual global::System.DateTimeOffset POSRegistrationBlockedDate
         {
             get
@@ -4782,6 +4944,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultProductConfigurationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultProductConfigurationId
         {
             get
@@ -4804,6 +4967,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InventoryGSTReliefCategoryCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string InventoryGSTReliefCategoryCode
         {
             get
@@ -4826,6 +4990,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductSearchName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductSearchName
         {
             get
@@ -4848,6 +5013,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesUnderdeliveryPercentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SalesUnderdeliveryPercentage is required.")]
         public virtual decimal SalesUnderdeliveryPercentage
         {
             get
@@ -4870,6 +5037,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransferOrderOverdeliveryPercentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransferOrderOverdeliveryPercentage is required.")]
         public virtual decimal TransferOrderOverdeliveryPercentage
         {
             get
@@ -4892,6 +5061,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RawMaterialPickingPrinciple in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.WHSAllowMaterialOverPick> RawMaterialPickingPrinciple
         {
             get
@@ -4914,6 +5084,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesLineDiscountProductGroupCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SalesLineDiscountProductGroupCode
         {
             get
@@ -4936,6 +5107,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesPriceCalculationContributionRatio in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SalesPriceCalculationContributionRatio is required.")]
         public virtual decimal SalesPriceCalculationContributionRatio
         {
             get
@@ -4958,6 +5131,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesPriceDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SalesPriceDate is required.")]
         public virtual global::System.DateTimeOffset SalesPriceDate
         {
             get
@@ -4980,6 +5155,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomsExportTariffCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CustomsExportTariffCode
         {
             get
@@ -5002,6 +5178,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultReceivingQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DefaultReceivingQuantity is required.")]
         public virtual decimal DefaultReceivingQuantity
         {
             get
@@ -5024,6 +5202,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillWorkCenterPickingAllowNegativeInventory in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillWorkCenterPickingAllowNegativeInventory
         {
             get
@@ -5046,6 +5225,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FreightAllocationGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FreightAllocationGroupId
         {
             get
@@ -5068,6 +5248,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsDeliveredDirectly in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsDeliveredDirectly
         {
             get
@@ -5090,6 +5271,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesPriceCalculationModel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.SalesPriceModel> SalesPriceCalculationModel
         {
             get
@@ -5112,6 +5294,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductLifeCycleValidToDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductLifeCycleValidToDate is required.")]
         public virtual global::System.DateTimeOffset ProductLifeCycleValidToDate
         {
             get
@@ -5134,6 +5318,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ArrivalHandlingTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ArrivalHandlingTime is required.")]
         public virtual int ArrivalHandlingTime
         {
             get
@@ -5156,6 +5342,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WarehouseMobileDeviceDescriptionLine1 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string WarehouseMobileDeviceDescriptionLine1
         {
             get
@@ -5178,6 +5365,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WarehouseMobileDeviceDescriptionLine2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string WarehouseMobileDeviceDescriptionLine2
         {
             get
@@ -5200,6 +5388,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsScaleProduct in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsScaleProduct
         {
             get
@@ -5222,6 +5411,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BOMLevel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BOMLevel is required.")]
         public virtual int BOMLevel
         {
             get
@@ -5244,6 +5435,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsShipAloneEnabled in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsShipAloneEnabled
         {
             get
@@ -5266,6 +5458,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BestBeforePeriodDays in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BestBeforePeriodDays is required.")]
         public virtual int BestBeforePeriodDays
         {
             get
@@ -5288,6 +5482,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ContinuityEventDuration in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ContinuityEventDuration is required.")]
         public virtual int ContinuityEventDuration
         {
             get
@@ -5310,6 +5506,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SerialNumberGroupCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SerialNumberGroupCode
         {
             get
@@ -5332,6 +5529,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ApproximateSalesTaxPercentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ApproximateSalesTaxPercentage is required.")]
         public virtual decimal ApproximateSalesTaxPercentage
         {
             get
@@ -5354,6 +5553,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IntrastatChargePercentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "IntrastatChargePercentage is required.")]
         public virtual decimal IntrastatChargePercentage
         {
             get
@@ -5376,6 +5577,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductLifecycleStateId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductLifecycleStateId
         {
             get
@@ -5398,6 +5600,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductionConsumptionDensityConversionFactor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductionConsumptionDensityConversionFactor is required.")]
         public virtual decimal ProductionConsumptionDensityConversionFactor
         {
             get
@@ -5420,6 +5624,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PotencyBaseAttibuteTargetValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PotencyBaseAttibuteTargetValue is required.")]
         public virtual decimal PotencyBaseAttibuteTargetValue
         {
             get
@@ -5442,6 +5648,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ConstantScrapQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ConstantScrapQuantity is required.")]
         public virtual decimal ConstantScrapQuantity
         {
             get
@@ -5464,6 +5672,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnitCostDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "UnitCostDate is required.")]
         public virtual global::System.DateTimeOffset UnitCostDate
         {
             get
@@ -5486,6 +5696,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultProductStyleId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultProductStyleId
         {
             get
@@ -5508,6 +5719,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FirstProductFilterGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FirstProductFilterGroupId
         {
             get
@@ -5530,6 +5742,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchasePrice in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PurchasePrice is required.")]
         public virtual decimal PurchasePrice
         {
             get
@@ -5552,6 +5766,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductionConsumptionHeightConversionFactor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductionConsumptionHeightConversionFactor is required.")]
         public virtual decimal ProductionConsumptionHeightConversionFactor
         {
             get
@@ -5574,6 +5790,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillTotalPurchaseDiscountCalculationIncludeProduct in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillTotalPurchaseDiscountCalculationIncludeProduct
         {
             get
@@ -5596,6 +5813,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PackageClassId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PackageClassId
         {
             get
@@ -5618,6 +5836,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesPrice in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SalesPrice is required.")]
         public virtual decimal SalesPrice
         {
             get
@@ -5640,6 +5860,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SellEndDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SellEndDate is required.")]
         public virtual global::System.DateTimeOffset SellEndDate
         {
             get
@@ -5662,6 +5884,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaximumPickQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MaximumPickQuantity is required.")]
         public virtual decimal MaximumPickQuantity
         {
             get
@@ -5684,6 +5908,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchaseUnderdeliveryPercentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PurchaseUnderdeliveryPercentage is required.")]
         public virtual decimal PurchaseUnderdeliveryPercentage
         {
             get
@@ -5706,6 +5932,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsSalesPriceIncludingCharges in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsSalesPriceIncludingCharges
         {
             get
@@ -5728,6 +5955,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SADGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SADGroup
         {
             get
@@ -5750,6 +5978,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsInstallmentEligible in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsInstallmentEligible
         {
             get
@@ -5772,6 +6001,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HSNCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string HSNCode
         {
             get
@@ -5794,6 +6024,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductionType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PmfProductType> ProductionType
         {
             get
@@ -5816,6 +6047,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShelfAdvicePeriodDays in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ShelfAdvicePeriodDays is required.")]
         public virtual int ShelfAdvicePeriodDays
         {
             get
@@ -5838,6 +6071,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsZeroPricePOSRegistrationAllowed in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsZeroPricePOSRegistrationAllowed
         {
             get
@@ -5860,6 +6094,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesSupplementaryProductProductGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SalesSupplementaryProductProductGroupId
         {
             get
@@ -5882,6 +6117,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsRestrictedForCoupons in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsRestrictedForCoupons
         {
             get
@@ -5904,6 +6140,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BarcodeSetupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BarcodeSetupId
         {
             get
@@ -5926,6 +6163,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AlternativeProductStyleId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AlternativeProductStyleId
         {
             get
@@ -5948,6 +6186,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceAccountingCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ServiceAccountingCode
         {
             get
@@ -5970,6 +6209,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsTenderDiscountPOSRegistrationProhibited in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsTenderDiscountPOSRegistrationProhibited
         {
             get
@@ -5992,6 +6232,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FirstProductFilterCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FirstProductFilterCode
         {
             get
@@ -6014,6 +6255,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemFiscalClassificationCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ItemFiscalClassificationCode
         {
             get
@@ -6036,6 +6278,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsSalesPriceAdjustmentAllowed in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsSalesPriceAdjustmentAllowed
         {
             get
@@ -6058,6 +6301,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductNumber
         {
             get
@@ -6080,6 +6324,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IntrastatCommodityCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string IntrastatCommodityCode
         {
             get
@@ -6102,6 +6347,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultLedgerDimensionDisplayValue
         {
             get
@@ -6124,6 +6370,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchaseMultilineDiscountProductGroupCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PurchaseMultilineDiscountProductGroupCode
         {
             get
@@ -6146,6 +6393,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductLifeCycleValidFromDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductLifeCycleValidFromDate is required.")]
         public virtual global::System.DateTimeOffset ProductLifeCycleValidFromDate
         {
             get
@@ -6168,6 +6417,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesItemWithholdingTaxGroupCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SalesItemWithholdingTaxGroupCode
         {
             get
@@ -6190,6 +6440,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CarryingCostABCCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ABC> CarryingCostABCCode
         {
             get
@@ -6212,6 +6463,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShippingAndReceivingSortOrderCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ShippingAndReceivingSortOrderCode is required.")]
         public virtual int ShippingAndReceivingSortOrderCode
         {
             get
@@ -6234,6 +6487,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesGSTReliefCategoryCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SalesGSTReliefCategoryCode
         {
             get
@@ -6256,6 +6510,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InventoryReservationHierarchyName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string InventoryReservationHierarchyName
         {
             get
@@ -6278,6 +6533,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FourthProductFilterCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FourthProductFilterCode
         {
             get
@@ -6300,6 +6556,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property GrossProductWidth in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "GrossProductWidth is required.")]
         public virtual decimal GrossProductWidth
         {
             get
@@ -6322,6 +6580,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ThirdProductFilterCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ThirdProductFilterCode
         {
             get
@@ -6344,6 +6603,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsPhantom in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsPhantom
         {
             get
@@ -6366,6 +6626,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsUnitCostProductVariantSpecific in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsUnitCostProductVariantSpecific
         {
             get
@@ -6388,6 +6649,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsPOSRegistrationQuantityNegative in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsPOSRegistrationQuantityNegative
         {
             get
@@ -6410,6 +6672,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductCoverageGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductCoverageGroupId
         {
             get
@@ -6432,6 +6695,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FixedCostCharges in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FixedCostCharges is required.")]
         public virtual decimal FixedCostCharges
         {
             get
@@ -6454,6 +6719,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property KeyInPriceRequirementsAtPOSRegister in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailPriceKeyingRequirement> KeyInPriceRequirementsAtPOSRegister
         {
             get
@@ -6476,6 +6742,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesSalesTaxItemGroupCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SalesSalesTaxItemGroupCode
         {
             get
@@ -6498,6 +6765,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AlternativeItemNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AlternativeItemNumber
         {
             get
@@ -6520,6 +6788,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesPricingPrecision in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SalesPricingPrecision is required.")]
         public virtual int SalesPricingPrecision
         {
             get
@@ -6542,6 +6812,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OriginCountryRegionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OriginCountryRegionId
         {
             get
@@ -6564,6 +6835,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductVolume in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductVolume is required.")]
         public virtual decimal ProductVolume
         {
             get
@@ -6586,6 +6859,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesOverdeliveryPercentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SalesOverdeliveryPercentage is required.")]
         public virtual decimal SalesOverdeliveryPercentage
         {
             get
@@ -6608,6 +6883,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BatchNumberGroupCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BatchNumberGroupCode
         {
             get
@@ -6630,6 +6906,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchaseGSTReliefCategoryCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PurchaseGSTReliefCategoryCode
         {
             get
@@ -6652,6 +6929,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesPriceQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SalesPriceQuantity is required.")]
         public virtual decimal SalesPriceQuantity
         {
             get
@@ -6674,6 +6953,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesRetailInventoryAvailabilityBuffer in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SalesRetailInventoryAvailabilityBuffer is required.")]
         public virtual decimal SalesRetailInventoryAvailabilityBuffer
         {
             get
@@ -6696,6 +6977,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PotencyBaseAttributeValueEntryEvent in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PDSPotencyAttribRecordingEnum> PotencyBaseAttributeValueEntryEvent
         {
             get
@@ -6718,6 +7000,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemModelGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ItemModelGroupId
         {
             get
@@ -6740,6 +7023,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultOrderType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ReqPOType> DefaultOrderType
         {
             get
@@ -6762,6 +7046,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchaseChargesQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PurchaseChargesQuantity is required.")]
         public virtual decimal PurchaseChargesQuantity
         {
             get
@@ -6784,6 +7070,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BatchMergeDateCalculationMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.InventBatchMergeDateCalculationMethod> BatchMergeDateCalculationMethod
         {
             get
@@ -6806,6 +7093,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AlternativeProductVersionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AlternativeProductVersionId
         {
             get
@@ -6828,6 +7116,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AlternativeProductConfigurationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AlternativeProductConfigurationId
         {
             get
@@ -6850,6 +7139,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsVariantShelfLabelsPrintingEnabled in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsVariantShelfLabelsPrintingEnabled
         {
             get
@@ -6872,6 +7162,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PackingDutyQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PackingDutyQuantity is required.")]
         public virtual decimal PackingDutyQuantity
         {
             get
@@ -6894,6 +7186,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AlternativeProductSizeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AlternativeProductSizeId
         {
             get
@@ -6916,6 +7209,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductDimensionGroupName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductDimensionGroupName
         {
             get
@@ -6938,6 +7232,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsManualDiscountPOSRegistrationProhibited in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsManualDiscountPOSRegistrationProhibited
         {
             get
@@ -6960,6 +7255,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsPOSRegistrationBlocked in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsPOSRegistrationBlocked
         {
             get
@@ -6982,6 +7278,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AlternativeProductColorId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AlternativeProductColorId
         {
             get
@@ -7004,6 +7301,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ComparisonPriceBaseUnitSymbol in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ComparisonPriceBaseUnitSymbol
         {
             get
@@ -7026,6 +7324,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AreTransportationManagementProcessesEnabled in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AreTransportationManagementProcessesEnabled
         {
             get
@@ -7048,6 +7347,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchaseSupplementaryProductProductGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PurchaseSupplementaryProductProductGroupId
         {
             get
@@ -7070,6 +7370,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InventoryUnitSymbol in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string InventoryUnitSymbol
         {
             get
@@ -7092,6 +7393,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductSubType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EcoResProductSubtype> ProductSubType
         {
             get
@@ -7114,6 +7416,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemOverUnderdeliveryToleranceGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ItemOverUnderdeliveryToleranceGroupId
         {
             get
@@ -7136,6 +7439,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomsDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CustomsDescription
         {
             get
@@ -7158,6 +7462,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransferOrderLandedCostGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TransferOrderLandedCostGroupId
         {
             get
@@ -7180,6 +7485,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VoyageArrivalGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VoyageArrivalGroupId
         {
             get
@@ -7202,6 +7508,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LandedCostTypeGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LandedCostTypeGroupId
         {
             get
@@ -7224,6 +7531,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CommodityCodeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CommodityCodeId
         {
             get
@@ -7246,6 +7554,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RevRecBundle in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> RevRecBundle
         {
             get
@@ -7268,6 +7577,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RevRecMedianPriceMaximumTolerance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RevRecMedianPriceMaximumTolerance is required.")]
         public virtual decimal RevRecMedianPriceMaximumTolerance
         {
             get
@@ -7290,6 +7601,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RevRecMedianPrice in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> RevRecMedianPrice
         {
             get
@@ -7312,6 +7624,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RevRecDefaultRevenueRecognitionSchedule in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RevRecDefaultRevenueRecognitionSchedule
         {
             get
@@ -7334,6 +7647,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RevRecExcludeFromCarveOut in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> RevRecExcludeFromCarveOut
         {
             get
@@ -7356,6 +7670,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RevRecMedianPriceMinimumTolerance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RevRecMedianPriceMinimumTolerance is required.")]
         public virtual decimal RevRecMedianPriceMinimumTolerance
         {
             get
@@ -7378,6 +7694,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RevRecRevenueRecognitionEnabled in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> RevRecRevenueRecognitionEnabled
         {
             get
@@ -7400,6 +7717,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RevRecRevenueType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RevRecRevenueType> RevRecRevenueType
         {
             get
@@ -7419,75 +7737,148 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnRevRecRevenueTypeChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RevRecRevenueType> value);
         partial void OnRevRecRevenueTypeChanged();
         /// <summary>
-        /// There are no comments for Property ReleasedProductReadinessChecks in the schema.
+        /// There are no comments for Property WarehouseWorkPolicyProducts in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> ReleasedProductReadinessChecks
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyProduct> WarehouseWorkPolicyProducts
         {
             get
             {
-                return this._ReleasedProductReadinessChecks;
+                return this._WarehouseWorkPolicyProducts;
             }
             set
             {
-                this.OnReleasedProductReadinessChecksChanging(value);
-                this._ReleasedProductReadinessChecks = value;
-                this.OnReleasedProductReadinessChecksChanged();
-                this.OnPropertyChanged("ReleasedProductReadinessChecks");
+                this.OnWarehouseWorkPolicyProductsChanging(value);
+                this._WarehouseWorkPolicyProducts = value;
+                this.OnWarehouseWorkPolicyProductsChanged();
+                this.OnPropertyChanged("WarehouseWorkPolicyProducts");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> _ReleasedProductReadinessChecks = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnReleasedProductReadinessChecksChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> value);
-        partial void OnReleasedProductReadinessChecksChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyProduct> _WarehouseWorkPolicyProducts = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyProduct>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnWarehouseWorkPolicyProductsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyProduct> value);
+        partial void OnWarehouseWorkPolicyProductsChanged();
         /// <summary>
-        /// There are no comments for Property ProductApprovedVendors in the schema.
+        /// There are no comments for Property VendInvoicePriceTolerance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductApprovedVendor> ProductApprovedVendors
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendInvoicePriceTolerance> VendInvoicePriceTolerance
         {
             get
             {
-                return this._ProductApprovedVendors;
+                return this._VendInvoicePriceTolerance;
             }
             set
             {
-                this.OnProductApprovedVendorsChanging(value);
-                this._ProductApprovedVendors = value;
-                this.OnProductApprovedVendorsChanged();
-                this.OnPropertyChanged("ProductApprovedVendors");
+                this.OnVendInvoicePriceToleranceChanging(value);
+                this._VendInvoicePriceTolerance = value;
+                this.OnVendInvoicePriceToleranceChanged();
+                this.OnPropertyChanged("VendInvoicePriceTolerance");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductApprovedVendor> _ProductApprovedVendors = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductApprovedVendor>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnProductApprovedVendorsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductApprovedVendor> value);
-        partial void OnProductApprovedVendorsChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendInvoicePriceTolerance> _VendInvoicePriceTolerance = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendInvoicePriceTolerance>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnVendInvoicePriceToleranceChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendInvoicePriceTolerance> value);
+        partial void OnVendInvoicePriceToleranceChanged();
         /// <summary>
-        /// There are no comments for Property ProductAllocationLines in the schema.
+        /// There are no comments for Property SalesAgreementConfirmationLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductAllocationLine> ProductAllocationLines
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine> SalesAgreementConfirmationLines
         {
             get
             {
-                return this._ProductAllocationLines;
+                return this._SalesAgreementConfirmationLines;
             }
             set
             {
-                this.OnProductAllocationLinesChanging(value);
-                this._ProductAllocationLines = value;
-                this.OnProductAllocationLinesChanged();
-                this.OnPropertyChanged("ProductAllocationLines");
+                this.OnSalesAgreementConfirmationLinesChanging(value);
+                this._SalesAgreementConfirmationLines = value;
+                this.OnSalesAgreementConfirmationLinesChanged();
+                this.OnPropertyChanged("SalesAgreementConfirmationLines");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductAllocationLine> _ProductAllocationLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductAllocationLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnProductAllocationLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductAllocationLine> value);
-        partial void OnProductAllocationLinesChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine> _SalesAgreementConfirmationLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnSalesAgreementConfirmationLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine> value);
+        partial void OnSalesAgreementConfirmationLinesChanged();
+        /// <summary>
+        /// There are no comments for Property RebateAndDeductionsAgreementHeaders in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> RebateAndDeductionsAgreementHeaders
+        {
+            get
+            {
+                return this._RebateAndDeductionsAgreementHeaders;
+            }
+            set
+            {
+                this.OnRebateAndDeductionsAgreementHeadersChanging(value);
+                this._RebateAndDeductionsAgreementHeaders = value;
+                this.OnRebateAndDeductionsAgreementHeadersChanged();
+                this.OnPropertyChanged("RebateAndDeductionsAgreementHeaders");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> _RebateAndDeductionsAgreementHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRebateAndDeductionsAgreementHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> value);
+        partial void OnRebateAndDeductionsAgreementHeadersChanged();
+        /// <summary>
+        /// There are no comments for Property ReportAsFinishedProductionJournalEntries in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReportAsFinishedProductionJournalEntry> ReportAsFinishedProductionJournalEntries
+        {
+            get
+            {
+                return this._ReportAsFinishedProductionJournalEntries;
+            }
+            set
+            {
+                this.OnReportAsFinishedProductionJournalEntriesChanging(value);
+                this._ReportAsFinishedProductionJournalEntries = value;
+                this.OnReportAsFinishedProductionJournalEntriesChanged();
+                this.OnPropertyChanged("ReportAsFinishedProductionJournalEntries");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReportAsFinishedProductionJournalEntry> _ReportAsFinishedProductionJournalEntries = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReportAsFinishedProductionJournalEntry>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnReportAsFinishedProductionJournalEntriesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReportAsFinishedProductionJournalEntry> value);
+        partial void OnReportAsFinishedProductionJournalEntriesChanged();
+        /// <summary>
+        /// There are no comments for Property ProductBarcodes in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcode> ProductBarcodes
+        {
+            get
+            {
+                return this._ProductBarcodes;
+            }
+            set
+            {
+                this.OnProductBarcodesChanging(value);
+                this._ProductBarcodes = value;
+                this.OnProductBarcodesChanged();
+                this.OnPropertyChanged("ProductBarcodes");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcode> _ProductBarcodes = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcode>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnProductBarcodesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcode> value);
+        partial void OnProductBarcodesChanged();
         /// <summary>
         /// There are no comments for Property ItemArrivalJournalLinesV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemArrivalJournalLineV2> ItemArrivalJournalLinesV2
         {
             get
@@ -7507,31 +7898,263 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnItemArrivalJournalLinesV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemArrivalJournalLineV2> value);
         partial void OnItemArrivalJournalLinesV2Changed();
         /// <summary>
-        /// There are no comments for Property RetailDeliveryModeProductLine in the schema.
+        /// There are no comments for Property ReleasedEngineeringProductVersions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailDeliveryModeProductLine> RetailDeliveryModeProductLine
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersion> ReleasedEngineeringProductVersions
         {
             get
             {
-                return this._RetailDeliveryModeProductLine;
+                return this._ReleasedEngineeringProductVersions;
             }
             set
             {
-                this.OnRetailDeliveryModeProductLineChanging(value);
-                this._RetailDeliveryModeProductLine = value;
-                this.OnRetailDeliveryModeProductLineChanged();
-                this.OnPropertyChanged("RetailDeliveryModeProductLine");
+                this.OnReleasedEngineeringProductVersionsChanging(value);
+                this._ReleasedEngineeringProductVersions = value;
+                this.OnReleasedEngineeringProductVersionsChanged();
+                this.OnPropertyChanged("ReleasedEngineeringProductVersions");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailDeliveryModeProductLine> _RetailDeliveryModeProductLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailDeliveryModeProductLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRetailDeliveryModeProductLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailDeliveryModeProductLine> value);
-        partial void OnRetailDeliveryModeProductLineChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersion> _ReleasedEngineeringProductVersions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersion>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnReleasedEngineeringProductVersionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersion> value);
+        partial void OnReleasedEngineeringProductVersionsChanged();
+        /// <summary>
+        /// There are no comments for Property TradeAllowanceAgreementProductsV2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2> TradeAllowanceAgreementProductsV2
+        {
+            get
+            {
+                return this._TradeAllowanceAgreementProductsV2;
+            }
+            set
+            {
+                this.OnTradeAllowanceAgreementProductsV2Changing(value);
+                this._TradeAllowanceAgreementProductsV2 = value;
+                this.OnTradeAllowanceAgreementProductsV2Changed();
+                this.OnPropertyChanged("TradeAllowanceAgreementProductsV2");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2> _TradeAllowanceAgreementProductsV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnTradeAllowanceAgreementProductsV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2> value);
+        partial void OnTradeAllowanceAgreementProductsV2Changed();
+        /// <summary>
+        /// There are no comments for Property CustomerProductDescriptions in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerProductDescription> CustomerProductDescriptions
+        {
+            get
+            {
+                return this._CustomerProductDescriptions;
+            }
+            set
+            {
+                this.OnCustomerProductDescriptionsChanging(value);
+                this._CustomerProductDescriptions = value;
+                this.OnCustomerProductDescriptionsChanged();
+                this.OnPropertyChanged("CustomerProductDescriptions");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerProductDescription> _CustomerProductDescriptions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerProductDescription>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnCustomerProductDescriptionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerProductDescription> value);
+        partial void OnCustomerProductDescriptionsChanged();
+        /// <summary>
+        /// There are no comments for Property ProductDefaultOrderSettings in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.Dynamics.DataEntities.ProductDefaultOrderSettings ProductDefaultOrderSettings
+        {
+            get
+            {
+                return this._ProductDefaultOrderSettings;
+            }
+            set
+            {
+                this.OnProductDefaultOrderSettingsChanging(value);
+                this._ProductDefaultOrderSettings = value;
+                this.OnProductDefaultOrderSettingsChanged();
+                this.OnPropertyChanged("ProductDefaultOrderSettings");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.ProductDefaultOrderSettings _ProductDefaultOrderSettings;
+        partial void OnProductDefaultOrderSettingsChanging(global::Microsoft.Dynamics.DataEntities.ProductDefaultOrderSettings value);
+        partial void OnProductDefaultOrderSettingsChanged();
+        /// <summary>
+        /// There are no comments for Property ProductApprovedVendors in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductApprovedVendor> ProductApprovedVendors
+        {
+            get
+            {
+                return this._ProductApprovedVendors;
+            }
+            set
+            {
+                this.OnProductApprovedVendorsChanging(value);
+                this._ProductApprovedVendors = value;
+                this.OnProductApprovedVendorsChanged();
+                this.OnPropertyChanged("ProductApprovedVendors");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductApprovedVendor> _ProductApprovedVendors = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductApprovedVendor>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnProductApprovedVendorsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductApprovedVendor> value);
+        partial void OnProductApprovedVendorsChanged();
+        /// <summary>
+        /// There are no comments for Property VendorProductDescriptionsV2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorProductDescriptionV2> VendorProductDescriptionsV2
+        {
+            get
+            {
+                return this._VendorProductDescriptionsV2;
+            }
+            set
+            {
+                this.OnVendorProductDescriptionsV2Changing(value);
+                this._VendorProductDescriptionsV2 = value;
+                this.OnVendorProductDescriptionsV2Changed();
+                this.OnPropertyChanged("VendorProductDescriptionsV2");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorProductDescriptionV2> _VendorProductDescriptionsV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorProductDescriptionV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnVendorProductDescriptionsV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorProductDescriptionV2> value);
+        partial void OnVendorProductDescriptionsV2Changed();
+        /// <summary>
+        /// There are no comments for Property ReleasedProductRebateAndDeductionsGroupAssignments in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductRebateAndDeductionsGroupAssignment> ReleasedProductRebateAndDeductionsGroupAssignments
+        {
+            get
+            {
+                return this._ReleasedProductRebateAndDeductionsGroupAssignments;
+            }
+            set
+            {
+                this.OnReleasedProductRebateAndDeductionsGroupAssignmentsChanging(value);
+                this._ReleasedProductRebateAndDeductionsGroupAssignments = value;
+                this.OnReleasedProductRebateAndDeductionsGroupAssignmentsChanged();
+                this.OnPropertyChanged("ReleasedProductRebateAndDeductionsGroupAssignments");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductRebateAndDeductionsGroupAssignment> _ReleasedProductRebateAndDeductionsGroupAssignments = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductRebateAndDeductionsGroupAssignment>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnReleasedProductRebateAndDeductionsGroupAssignmentsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductRebateAndDeductionsGroupAssignment> value);
+        partial void OnReleasedProductRebateAndDeductionsGroupAssignmentsChanged();
+        /// <summary>
+        /// There are no comments for Property ProductBarcodesV2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcodeAssociation> ProductBarcodesV2
+        {
+            get
+            {
+                return this._ProductBarcodesV2;
+            }
+            set
+            {
+                this.OnProductBarcodesV2Changing(value);
+                this._ProductBarcodesV2 = value;
+                this.OnProductBarcodesV2Changed();
+                this.OnPropertyChanged("ProductBarcodesV2");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcodeAssociation> _ProductBarcodesV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcodeAssociation>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnProductBarcodesV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcodeAssociation> value);
+        partial void OnProductBarcodesV2Changed();
+        /// <summary>
+        /// There are no comments for Property PurchaseAgreementLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementLine> PurchaseAgreementLine
+        {
+            get
+            {
+                return this._PurchaseAgreementLine;
+            }
+            set
+            {
+                this.OnPurchaseAgreementLineChanging(value);
+                this._PurchaseAgreementLine = value;
+                this.OnPurchaseAgreementLineChanged();
+                this.OnPropertyChanged("PurchaseAgreementLine");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementLine> _PurchaseAgreementLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPurchaseAgreementLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementLine> value);
+        partial void OnPurchaseAgreementLineChanged();
+        /// <summary>
+        /// There are no comments for Property RevRecSetupBasis in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RecSetupBasis> RevRecSetupBasis
+        {
+            get
+            {
+                return this._RevRecSetupBasis;
+            }
+            set
+            {
+                this.OnRevRecSetupBasisChanging(value);
+                this._RevRecSetupBasis = value;
+                this.OnRevRecSetupBasisChanged();
+                this.OnPropertyChanged("RevRecSetupBasis");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RecSetupBasis> _RevRecSetupBasis = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RecSetupBasis>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRevRecSetupBasisChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RecSetupBasis> value);
+        partial void OnRevRecSetupBasisChanged();
+        /// <summary>
+        /// There are no comments for Property FormulaVersions in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FormulaVersion> FormulaVersions
+        {
+            get
+            {
+                return this._FormulaVersions;
+            }
+            set
+            {
+                this.OnFormulaVersionsChanging(value);
+                this._FormulaVersions = value;
+                this.OnFormulaVersionsChanged();
+                this.OnPropertyChanged("FormulaVersions");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FormulaVersion> _FormulaVersions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FormulaVersion>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnFormulaVersionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FormulaVersion> value);
+        partial void OnFormulaVersionsChanged();
         /// <summary>
         /// There are no comments for Property CycleCountingWarehouseWorkLinesV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLineV2> CycleCountingWarehouseWorkLinesV2
         {
             get
@@ -7551,9 +8174,79 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnCycleCountingWarehouseWorkLinesV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLineV2> value);
         partial void OnCycleCountingWarehouseWorkLinesV2Changed();
         /// <summary>
+        /// There are no comments for Property ReleasedDistinctProductCDS in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.Dynamics.DataEntities.CDSReleasedDistinctProduct ReleasedDistinctProductCDS
+        {
+            get
+            {
+                return this._ReleasedDistinctProductCDS;
+            }
+            set
+            {
+                this.OnReleasedDistinctProductCDSChanging(value);
+                this._ReleasedDistinctProductCDS = value;
+                this.OnReleasedDistinctProductCDSChanged();
+                this.OnPropertyChanged("ReleasedDistinctProductCDS");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.CDSReleasedDistinctProduct _ReleasedDistinctProductCDS;
+        partial void OnReleasedDistinctProductCDSChanging(global::Microsoft.Dynamics.DataEntities.CDSReleasedDistinctProduct value);
+        partial void OnReleasedDistinctProductCDSChanged();
+        /// <summary>
+        /// There are no comments for Property OrderCommittedLicensePlateReservations in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.OrderCommittedLicensePlateReservation> OrderCommittedLicensePlateReservations
+        {
+            get
+            {
+                return this._OrderCommittedLicensePlateReservations;
+            }
+            set
+            {
+                this.OnOrderCommittedLicensePlateReservationsChanging(value);
+                this._OrderCommittedLicensePlateReservations = value;
+                this.OnOrderCommittedLicensePlateReservationsChanged();
+                this.OnPropertyChanged("OrderCommittedLicensePlateReservations");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.OrderCommittedLicensePlateReservation> _OrderCommittedLicensePlateReservations = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.OrderCommittedLicensePlateReservation>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnOrderCommittedLicensePlateReservationsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.OrderCommittedLicensePlateReservation> value);
+        partial void OnOrderCommittedLicensePlateReservationsChanged();
+        /// <summary>
+        /// There are no comments for Property VendorProductDescriptions in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorProductDescription> VendorProductDescriptions
+        {
+            get
+            {
+                return this._VendorProductDescriptions;
+            }
+            set
+            {
+                this.OnVendorProductDescriptionsChanging(value);
+                this._VendorProductDescriptions = value;
+                this.OnVendorProductDescriptionsChanged();
+                this.OnPropertyChanged("VendorProductDescriptions");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorProductDescription> _VendorProductDescriptions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorProductDescription>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnVendorProductDescriptionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorProductDescription> value);
+        partial void OnVendorProductDescriptionsChanged();
+        /// <summary>
         /// There are no comments for Property BarcodeSetup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.BarcodeSetup BarcodeSetup
         {
             get
@@ -7576,6 +8269,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchaseUnitOfMeasure in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.UnitOfMeasure PurchaseUnitOfMeasure
         {
             get
@@ -7598,6 +8292,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductV2 is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ProductV2 ProductV2
         {
             get
@@ -7620,6 +8316,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AlternativeProductVersion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ProductVersion AlternativeProductVersion
         {
             get
@@ -7642,6 +8339,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultProductColor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ProductColor DefaultProductColor
         {
             get
@@ -7664,6 +8362,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OriginCountryRegion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.AddressCountryRegion OriginCountryRegion
         {
             get
@@ -7686,6 +8385,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxServiceAccountingCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ServiceAccountingCode TaxServiceAccountingCode
         {
             get
@@ -7708,6 +8408,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AlternativeProductStyle in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ProductStyle AlternativeProductStyle
         {
             get
@@ -7730,6 +8431,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductCoverageGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.MasterPlanningProductCoverageGroup ProductCoverageGroup
         {
             get
@@ -7752,6 +8454,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InventCountingReasonCodePolicy in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.InventCountingReasonCodePolicy InventCountingReasonCodePolicy
         {
             get
@@ -7774,6 +8477,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FiscalClassificationCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.FiscalClassificationCode FiscalClassificationCode
         {
             get
@@ -7796,6 +8500,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchaseLineDiscountProductGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.LineDiscountProductGroup PurchaseLineDiscountProductGroup
         {
             get
@@ -7818,6 +8523,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CostGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.CostGroup CostGroup
         {
             get
@@ -7840,6 +8546,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PlanningFormulaReleasedProductV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ReleasedProductV2 PlanningFormulaReleasedProductV2
         {
             get
@@ -7862,6 +8569,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReleasedProductsV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductV2> ReleasedProductsV2
         {
             get
@@ -7884,6 +8592,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EveryProduct in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EveryProduct is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.EveryProduct EveryProduct
         {
             get
@@ -7906,6 +8616,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AlternativeProductSize in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ProductSize AlternativeProductSize
         {
             get
@@ -7928,6 +8639,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OriginState in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.AddressState OriginState
         {
             get
@@ -7950,6 +8662,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProjectCategory in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ProjectCategoryEntity ProjectCategory
         {
             get
@@ -7972,6 +8685,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchasePriceToleranceGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ItemPriceToleranceGroup PurchasePriceToleranceGroup
         {
             get
@@ -7994,6 +8708,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ProductGroup ProductGroup
         {
             get
@@ -8016,6 +8731,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property GSTReliefCategory in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.GSTReliefCategory GSTReliefCategory
         {
             get
@@ -8038,6 +8754,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductionPool in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ProductionPool ProductionPool
         {
             get
@@ -8060,6 +8777,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductLifecycleState in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ProductLifecycleState ProductLifecycleState
         {
             get
@@ -8082,6 +8800,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InventoryPolicy in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.InventoryPolicy InventoryPolicy
         {
             get
@@ -8104,6 +8823,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CostCalculationGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.CostCalculationGroup CostCalculationGroup
         {
             get
@@ -8126,6 +8846,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InventoryReservationHierarchy in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.InventoryReservationHierarchy InventoryReservationHierarchy
         {
             get
@@ -8148,6 +8869,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductLifeCycleSeason in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.Season ProductLifeCycleSeason
         {
             get
@@ -8170,6 +8892,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchaseMultilineDiscountProductGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.MultilineDiscountProductGroup PurchaseMultilineDiscountProductGroup
         {
             get
@@ -8192,6 +8915,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryVendorV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.VendorV2 PrimaryVendorV2
         {
             get
@@ -8214,6 +8938,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CatchWeightItemHandlingPolicyV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.CatchWeightItemHandlingPolicyV2 CatchWeightItemHandlingPolicyV2
         {
             get
@@ -8236,6 +8961,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionSet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionSet DimensionSet
         {
             get
@@ -8258,6 +8984,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CatchWeightItemHandlingPolicy in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.CatchWeightItemHandlingPolicy CatchWeightItemHandlingPolicy
         {
             get
@@ -8277,75 +9004,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnCatchWeightItemHandlingPolicyChanging(global::Microsoft.Dynamics.DataEntities.CatchWeightItemHandlingPolicy value);
         partial void OnCatchWeightItemHandlingPolicyChanged();
         /// <summary>
-        /// There are no comments for Property PurchaseAgreementLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementLine> PurchaseAgreementLine
-        {
-            get
-            {
-                return this._PurchaseAgreementLine;
-            }
-            set
-            {
-                this.OnPurchaseAgreementLineChanging(value);
-                this._PurchaseAgreementLine = value;
-                this.OnPurchaseAgreementLineChanged();
-                this.OnPropertyChanged("PurchaseAgreementLine");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementLine> _PurchaseAgreementLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPurchaseAgreementLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementLine> value);
-        partial void OnPurchaseAgreementLineChanged();
-        /// <summary>
-        /// There are no comments for Property ReleasedEngineeringProductVersions in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersion> ReleasedEngineeringProductVersions
-        {
-            get
-            {
-                return this._ReleasedEngineeringProductVersions;
-            }
-            set
-            {
-                this.OnReleasedEngineeringProductVersionsChanging(value);
-                this._ReleasedEngineeringProductVersions = value;
-                this.OnReleasedEngineeringProductVersionsChanged();
-                this.OnPropertyChanged("ReleasedEngineeringProductVersions");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersion> _ReleasedEngineeringProductVersions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersion>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnReleasedEngineeringProductVersionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersion> value);
-        partial void OnReleasedEngineeringProductVersionsChanged();
-        /// <summary>
-        /// There are no comments for Property SalesAgreementLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementLine> SalesAgreementLines
-        {
-            get
-            {
-                return this._SalesAgreementLines;
-            }
-            set
-            {
-                this.OnSalesAgreementLinesChanging(value);
-                this._SalesAgreementLines = value;
-                this.OnSalesAgreementLinesChanged();
-                this.OnPropertyChanged("SalesAgreementLines");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementLine> _SalesAgreementLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnSalesAgreementLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementLine> value);
-        partial void OnSalesAgreementLinesChanged();
-        /// <summary>
         /// There are no comments for Property ProductSpecificOrderSettingsV3 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductSpecificOrderSettingV3> ProductSpecificOrderSettingsV3
         {
             get
@@ -8365,647 +9027,33 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnProductSpecificOrderSettingsV3Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductSpecificOrderSettingV3> value);
         partial void OnProductSpecificOrderSettingsV3Changed();
         /// <summary>
-        /// There are no comments for Property TradeAllowanceAgreementMerchandisingEventProductsV2 in the schema.
+        /// There are no comments for Property SalesAgreementLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2> TradeAllowanceAgreementMerchandisingEventProductsV2
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementLine> SalesAgreementLines
         {
             get
             {
-                return this._TradeAllowanceAgreementMerchandisingEventProductsV2;
+                return this._SalesAgreementLines;
             }
             set
             {
-                this.OnTradeAllowanceAgreementMerchandisingEventProductsV2Changing(value);
-                this._TradeAllowanceAgreementMerchandisingEventProductsV2 = value;
-                this.OnTradeAllowanceAgreementMerchandisingEventProductsV2Changed();
-                this.OnPropertyChanged("TradeAllowanceAgreementMerchandisingEventProductsV2");
+                this.OnSalesAgreementLinesChanging(value);
+                this._SalesAgreementLines = value;
+                this.OnSalesAgreementLinesChanged();
+                this.OnPropertyChanged("SalesAgreementLines");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2> _TradeAllowanceAgreementMerchandisingEventProductsV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnTradeAllowanceAgreementMerchandisingEventProductsV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2> value);
-        partial void OnTradeAllowanceAgreementMerchandisingEventProductsV2Changed();
-        /// <summary>
-        /// There are no comments for Property ProductBarcodesV2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV2> ProductBarcodesV2
-        {
-            get
-            {
-                return this._ProductBarcodesV2;
-            }
-            set
-            {
-                this.OnProductBarcodesV2Changing(value);
-                this._ProductBarcodesV2 = value;
-                this.OnProductBarcodesV2Changed();
-                this.OnPropertyChanged("ProductBarcodesV2");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV2> _ProductBarcodesV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnProductBarcodesV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV2> value);
-        partial void OnProductBarcodesV2Changed();
-        /// <summary>
-        /// There are no comments for Property ItemBatches in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemBatch> ItemBatches
-        {
-            get
-            {
-                return this._ItemBatches;
-            }
-            set
-            {
-                this.OnItemBatchesChanging(value);
-                this._ItemBatches = value;
-                this.OnItemBatchesChanged();
-                this.OnPropertyChanged("ItemBatches");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemBatch> _ItemBatches = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemBatch>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnItemBatchesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemBatch> value);
-        partial void OnItemBatchesChanged();
-        /// <summary>
-        /// There are no comments for Property ProductBarcodesV3 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV3> ProductBarcodesV3
-        {
-            get
-            {
-                return this._ProductBarcodesV3;
-            }
-            set
-            {
-                this.OnProductBarcodesV3Changing(value);
-                this._ProductBarcodesV3 = value;
-                this.OnProductBarcodesV3Changed();
-                this.OnPropertyChanged("ProductBarcodesV3");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV3> _ProductBarcodesV3 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV3>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnProductBarcodesV3Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV3> value);
-        partial void OnProductBarcodesV3Changed();
-        /// <summary>
-        /// There are no comments for Property BillOfMaterialsVersionsV2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersionV2> BillOfMaterialsVersionsV2
-        {
-            get
-            {
-                return this._BillOfMaterialsVersionsV2;
-            }
-            set
-            {
-                this.OnBillOfMaterialsVersionsV2Changing(value);
-                this._BillOfMaterialsVersionsV2 = value;
-                this.OnBillOfMaterialsVersionsV2Changed();
-                this.OnPropertyChanged("BillOfMaterialsVersionsV2");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersionV2> _BillOfMaterialsVersionsV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersionV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnBillOfMaterialsVersionsV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersionV2> value);
-        partial void OnBillOfMaterialsVersionsV2Changed();
-        /// <summary>
-        /// There are no comments for Property ProductBarcodes in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcode> ProductBarcodes
-        {
-            get
-            {
-                return this._ProductBarcodes;
-            }
-            set
-            {
-                this.OnProductBarcodesChanging(value);
-                this._ProductBarcodes = value;
-                this.OnProductBarcodesChanged();
-                this.OnPropertyChanged("ProductBarcodes");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcode> _ProductBarcodes = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcode>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnProductBarcodesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcode> value);
-        partial void OnProductBarcodesChanged();
-        /// <summary>
-        /// There are no comments for Property VendInvoicePriceTolerance in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendInvoicePriceTolerance> VendInvoicePriceTolerance
-        {
-            get
-            {
-                return this._VendInvoicePriceTolerance;
-            }
-            set
-            {
-                this.OnVendInvoicePriceToleranceChanging(value);
-                this._VendInvoicePriceTolerance = value;
-                this.OnVendInvoicePriceToleranceChanged();
-                this.OnPropertyChanged("VendInvoicePriceTolerance");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendInvoicePriceTolerance> _VendInvoicePriceTolerance = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendInvoicePriceTolerance>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnVendInvoicePriceToleranceChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendInvoicePriceTolerance> value);
-        partial void OnVendInvoicePriceToleranceChanged();
-        /// <summary>
-        /// There are no comments for Property CycleCountingWarehouseWorkLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLine> CycleCountingWarehouseWorkLines
-        {
-            get
-            {
-                return this._CycleCountingWarehouseWorkLines;
-            }
-            set
-            {
-                this.OnCycleCountingWarehouseWorkLinesChanging(value);
-                this._CycleCountingWarehouseWorkLines = value;
-                this.OnCycleCountingWarehouseWorkLinesChanged();
-                this.OnPropertyChanged("CycleCountingWarehouseWorkLines");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLine> _CycleCountingWarehouseWorkLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnCycleCountingWarehouseWorkLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLine> value);
-        partial void OnCycleCountingWarehouseWorkLinesChanged();
-        /// <summary>
-        /// There are no comments for Property RevRecSetupBasis in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RecSetupBasis> RevRecSetupBasis
-        {
-            get
-            {
-                return this._RevRecSetupBasis;
-            }
-            set
-            {
-                this.OnRevRecSetupBasisChanging(value);
-                this._RevRecSetupBasis = value;
-                this.OnRevRecSetupBasisChanged();
-                this.OnPropertyChanged("RevRecSetupBasis");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RecSetupBasis> _RevRecSetupBasis = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RecSetupBasis>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRevRecSetupBasisChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RecSetupBasis> value);
-        partial void OnRevRecSetupBasisChanged();
-        /// <summary>
-        /// There are no comments for Property CatchWeightTags in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CatchWeightTag> CatchWeightTags
-        {
-            get
-            {
-                return this._CatchWeightTags;
-            }
-            set
-            {
-                this.OnCatchWeightTagsChanging(value);
-                this._CatchWeightTags = value;
-                this.OnCatchWeightTagsChanged();
-                this.OnPropertyChanged("CatchWeightTags");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CatchWeightTag> _CatchWeightTags = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CatchWeightTag>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnCatchWeightTagsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CatchWeightTag> value);
-        partial void OnCatchWeightTagsChanged();
-        /// <summary>
-        /// There are no comments for Property InventoryTagCountingJournalLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventoryTagCountingJournalLine> InventoryTagCountingJournalLines
-        {
-            get
-            {
-                return this._InventoryTagCountingJournalLines;
-            }
-            set
-            {
-                this.OnInventoryTagCountingJournalLinesChanging(value);
-                this._InventoryTagCountingJournalLines = value;
-                this.OnInventoryTagCountingJournalLinesChanged();
-                this.OnPropertyChanged("InventoryTagCountingJournalLines");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventoryTagCountingJournalLine> _InventoryTagCountingJournalLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventoryTagCountingJournalLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnInventoryTagCountingJournalLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventoryTagCountingJournalLine> value);
-        partial void OnInventoryTagCountingJournalLinesChanged();
-        /// <summary>
-        /// There are no comments for Property ProductSpecificOrderSettingsV2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductSpecificOrderSettingV2> ProductSpecificOrderSettingsV2
-        {
-            get
-            {
-                return this._ProductSpecificOrderSettingsV2;
-            }
-            set
-            {
-                this.OnProductSpecificOrderSettingsV2Changing(value);
-                this._ProductSpecificOrderSettingsV2 = value;
-                this.OnProductSpecificOrderSettingsV2Changed();
-                this.OnPropertyChanged("ProductSpecificOrderSettingsV2");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductSpecificOrderSettingV2> _ProductSpecificOrderSettingsV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductSpecificOrderSettingV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnProductSpecificOrderSettingsV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductSpecificOrderSettingV2> value);
-        partial void OnProductSpecificOrderSettingsV2Changed();
-        /// <summary>
-        /// There are no comments for Property CustomerProductDescriptions in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerProductDescription> CustomerProductDescriptions
-        {
-            get
-            {
-                return this._CustomerProductDescriptions;
-            }
-            set
-            {
-                this.OnCustomerProductDescriptionsChanging(value);
-                this._CustomerProductDescriptions = value;
-                this.OnCustomerProductDescriptionsChanged();
-                this.OnPropertyChanged("CustomerProductDescriptions");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerProductDescription> _CustomerProductDescriptions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerProductDescription>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnCustomerProductDescriptionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerProductDescription> value);
-        partial void OnCustomerProductDescriptionsChanged();
-        /// <summary>
-        /// There are no comments for Property QualityOrderHeaders in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> QualityOrderHeaders
-        {
-            get
-            {
-                return this._QualityOrderHeaders;
-            }
-            set
-            {
-                this.OnQualityOrderHeadersChanging(value);
-                this._QualityOrderHeaders = value;
-                this.OnQualityOrderHeadersChanged();
-                this.OnPropertyChanged("QualityOrderHeaders");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> _QualityOrderHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnQualityOrderHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> value);
-        partial void OnQualityOrderHeadersChanged();
-        /// <summary>
-        /// There are no comments for Property RebateAndDeductionsAgreementHeaders in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> RebateAndDeductionsAgreementHeaders
-        {
-            get
-            {
-                return this._RebateAndDeductionsAgreementHeaders;
-            }
-            set
-            {
-                this.OnRebateAndDeductionsAgreementHeadersChanging(value);
-                this._RebateAndDeductionsAgreementHeaders = value;
-                this.OnRebateAndDeductionsAgreementHeadersChanged();
-                this.OnPropertyChanged("RebateAndDeductionsAgreementHeaders");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> _RebateAndDeductionsAgreementHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRebateAndDeductionsAgreementHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader> value);
-        partial void OnRebateAndDeductionsAgreementHeadersChanged();
-        /// <summary>
-        /// There are no comments for Property EngineeringChangeOrderProductReleases in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRelease> EngineeringChangeOrderProductReleases
-        {
-            get
-            {
-                return this._EngineeringChangeOrderProductReleases;
-            }
-            set
-            {
-                this.OnEngineeringChangeOrderProductReleasesChanging(value);
-                this._EngineeringChangeOrderProductReleases = value;
-                this.OnEngineeringChangeOrderProductReleasesChanged();
-                this.OnPropertyChanged("EngineeringChangeOrderProductReleases");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRelease> _EngineeringChangeOrderProductReleases = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRelease>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnEngineeringChangeOrderProductReleasesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRelease> value);
-        partial void OnEngineeringChangeOrderProductReleasesChanged();
-        /// <summary>
-        /// There are no comments for Property RetailItemLabel in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailItemLabel> RetailItemLabel
-        {
-            get
-            {
-                return this._RetailItemLabel;
-            }
-            set
-            {
-                this.OnRetailItemLabelChanging(value);
-                this._RetailItemLabel = value;
-                this.OnRetailItemLabelChanged();
-                this.OnPropertyChanged("RetailItemLabel");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailItemLabel> _RetailItemLabel = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailItemLabel>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRetailItemLabelChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailItemLabel> value);
-        partial void OnRetailItemLabelChanged();
-        /// <summary>
-        /// There are no comments for Property TradeAllowanceAgreementMerchandisingEventProducts in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProduct> TradeAllowanceAgreementMerchandisingEventProducts
-        {
-            get
-            {
-                return this._TradeAllowanceAgreementMerchandisingEventProducts;
-            }
-            set
-            {
-                this.OnTradeAllowanceAgreementMerchandisingEventProductsChanging(value);
-                this._TradeAllowanceAgreementMerchandisingEventProducts = value;
-                this.OnTradeAllowanceAgreementMerchandisingEventProductsChanged();
-                this.OnPropertyChanged("TradeAllowanceAgreementMerchandisingEventProducts");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProduct> _TradeAllowanceAgreementMerchandisingEventProducts = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProduct>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnTradeAllowanceAgreementMerchandisingEventProductsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProduct> value);
-        partial void OnTradeAllowanceAgreementMerchandisingEventProductsChanged();
-        /// <summary>
-        /// There are no comments for Property PurchaseAgreementLinesV2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmationLine> PurchaseAgreementLinesV2
-        {
-            get
-            {
-                return this._PurchaseAgreementLinesV2;
-            }
-            set
-            {
-                this.OnPurchaseAgreementLinesV2Changing(value);
-                this._PurchaseAgreementLinesV2 = value;
-                this.OnPurchaseAgreementLinesV2Changed();
-                this.OnPropertyChanged("PurchaseAgreementLinesV2");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmationLine> _PurchaseAgreementLinesV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmationLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPurchaseAgreementLinesV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmationLine> value);
-        partial void OnPurchaseAgreementLinesV2Changed();
-        /// <summary>
-        /// There are no comments for Property PlannedOrders in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PlannedOrder> PlannedOrders
-        {
-            get
-            {
-                return this._PlannedOrders;
-            }
-            set
-            {
-                this.OnPlannedOrdersChanging(value);
-                this._PlannedOrders = value;
-                this.OnPlannedOrdersChanged();
-                this.OnPropertyChanged("PlannedOrders");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PlannedOrder> _PlannedOrders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PlannedOrder>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPlannedOrdersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PlannedOrder> value);
-        partial void OnPlannedOrdersChanged();
-        /// <summary>
-        /// There are no comments for Property TradeAllowanceAgreementProducts in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProduct> TradeAllowanceAgreementProducts
-        {
-            get
-            {
-                return this._TradeAllowanceAgreementProducts;
-            }
-            set
-            {
-                this.OnTradeAllowanceAgreementProductsChanging(value);
-                this._TradeAllowanceAgreementProducts = value;
-                this.OnTradeAllowanceAgreementProductsChanged();
-                this.OnPropertyChanged("TradeAllowanceAgreementProducts");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProduct> _TradeAllowanceAgreementProducts = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProduct>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnTradeAllowanceAgreementProductsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProduct> value);
-        partial void OnTradeAllowanceAgreementProductsChanged();
-        /// <summary>
-        /// There are no comments for Property ProductDefaultOrderSettings in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ProductDefaultOrderSettings ProductDefaultOrderSettings
-        {
-            get
-            {
-                return this._ProductDefaultOrderSettings;
-            }
-            set
-            {
-                this.OnProductDefaultOrderSettingsChanging(value);
-                this._ProductDefaultOrderSettings = value;
-                this.OnProductDefaultOrderSettingsChanged();
-                this.OnPropertyChanged("ProductDefaultOrderSettings");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ProductDefaultOrderSettings _ProductDefaultOrderSettings;
-        partial void OnProductDefaultOrderSettingsChanging(global::Microsoft.Dynamics.DataEntities.ProductDefaultOrderSettings value);
-        partial void OnProductDefaultOrderSettingsChanged();
-        /// <summary>
-        /// There are no comments for Property ReleasedProductRebateAndDeductionsGroupAssignments in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductRebateAndDeductionsGroupAssignment> ReleasedProductRebateAndDeductionsGroupAssignments
-        {
-            get
-            {
-                return this._ReleasedProductRebateAndDeductionsGroupAssignments;
-            }
-            set
-            {
-                this.OnReleasedProductRebateAndDeductionsGroupAssignmentsChanging(value);
-                this._ReleasedProductRebateAndDeductionsGroupAssignments = value;
-                this.OnReleasedProductRebateAndDeductionsGroupAssignmentsChanged();
-                this.OnPropertyChanged("ReleasedProductRebateAndDeductionsGroupAssignments");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductRebateAndDeductionsGroupAssignment> _ReleasedProductRebateAndDeductionsGroupAssignments = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductRebateAndDeductionsGroupAssignment>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnReleasedProductRebateAndDeductionsGroupAssignmentsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductRebateAndDeductionsGroupAssignment> value);
-        partial void OnReleasedProductRebateAndDeductionsGroupAssignmentsChanged();
-        /// <summary>
-        /// There are no comments for Property ReportAsFinishedProductionJournalEntries in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReportAsFinishedProductionJournalEntry> ReportAsFinishedProductionJournalEntries
-        {
-            get
-            {
-                return this._ReportAsFinishedProductionJournalEntries;
-            }
-            set
-            {
-                this.OnReportAsFinishedProductionJournalEntriesChanging(value);
-                this._ReportAsFinishedProductionJournalEntries = value;
-                this.OnReportAsFinishedProductionJournalEntriesChanged();
-                this.OnPropertyChanged("ReportAsFinishedProductionJournalEntries");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReportAsFinishedProductionJournalEntry> _ReportAsFinishedProductionJournalEntries = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReportAsFinishedProductionJournalEntry>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnReportAsFinishedProductionJournalEntriesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReportAsFinishedProductionJournalEntry> value);
-        partial void OnReportAsFinishedProductionJournalEntriesChanged();
-        /// <summary>
-        /// There are no comments for Property FormulaVersions in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FormulaVersion> FormulaVersions
-        {
-            get
-            {
-                return this._FormulaVersions;
-            }
-            set
-            {
-                this.OnFormulaVersionsChanging(value);
-                this._FormulaVersions = value;
-                this.OnFormulaVersionsChanged();
-                this.OnPropertyChanged("FormulaVersions");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FormulaVersion> _FormulaVersions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FormulaVersion>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnFormulaVersionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FormulaVersion> value);
-        partial void OnFormulaVersionsChanged();
-        /// <summary>
-        /// There are no comments for Property RetailPackageLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailPackageLines> RetailPackageLines
-        {
-            get
-            {
-                return this._RetailPackageLines;
-            }
-            set
-            {
-                this.OnRetailPackageLinesChanging(value);
-                this._RetailPackageLines = value;
-                this.OnRetailPackageLinesChanged();
-                this.OnPropertyChanged("RetailPackageLines");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailPackageLines> _RetailPackageLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailPackageLines>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRetailPackageLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailPackageLines> value);
-        partial void OnRetailPackageLinesChanged();
-        /// <summary>
-        /// There are no comments for Property TradeAllowanceAgreementProductsV2 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2> TradeAllowanceAgreementProductsV2
-        {
-            get
-            {
-                return this._TradeAllowanceAgreementProductsV2;
-            }
-            set
-            {
-                this.OnTradeAllowanceAgreementProductsV2Changing(value);
-                this._TradeAllowanceAgreementProductsV2 = value;
-                this.OnTradeAllowanceAgreementProductsV2Changed();
-                this.OnPropertyChanged("TradeAllowanceAgreementProductsV2");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2> _TradeAllowanceAgreementProductsV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnTradeAllowanceAgreementProductsV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProductV2> value);
-        partial void OnTradeAllowanceAgreementProductsV2Changed();
-        /// <summary>
-        /// There are no comments for Property ProductionPickingListJournalEntries in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductionPickingListJournalEntry> ProductionPickingListJournalEntries
-        {
-            get
-            {
-                return this._ProductionPickingListJournalEntries;
-            }
-            set
-            {
-                this.OnProductionPickingListJournalEntriesChanging(value);
-                this._ProductionPickingListJournalEntries = value;
-                this.OnProductionPickingListJournalEntriesChanged();
-                this.OnPropertyChanged("ProductionPickingListJournalEntries");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductionPickingListJournalEntry> _ProductionPickingListJournalEntries = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductionPickingListJournalEntry>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnProductionPickingListJournalEntriesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductionPickingListJournalEntry> value);
-        partial void OnProductionPickingListJournalEntriesChanged();
-        /// <summary>
-        /// There are no comments for Property OrderCommittedLicensePlateReservations in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.OrderCommittedLicensePlateReservation> OrderCommittedLicensePlateReservations
-        {
-            get
-            {
-                return this._OrderCommittedLicensePlateReservations;
-            }
-            set
-            {
-                this.OnOrderCommittedLicensePlateReservationsChanging(value);
-                this._OrderCommittedLicensePlateReservations = value;
-                this.OnOrderCommittedLicensePlateReservationsChanged();
-                this.OnPropertyChanged("OrderCommittedLicensePlateReservations");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.OrderCommittedLicensePlateReservation> _OrderCommittedLicensePlateReservations = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.OrderCommittedLicensePlateReservation>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnOrderCommittedLicensePlateReservationsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.OrderCommittedLicensePlateReservation> value);
-        partial void OnOrderCommittedLicensePlateReservationsChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementLine> _SalesAgreementLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnSalesAgreementLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementLine> value);
+        partial void OnSalesAgreementLinesChanged();
         /// <summary>
         /// There are no comments for Property ServiceAgreementLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ServiceAgreementLine> ServiceAgreementLines
         {
             get
@@ -9028,6 +9076,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemCoverageSettings in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemCoverageSettings> ItemCoverageSettings
         {
             get
@@ -9050,6 +9099,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PlanningFormulaItemCoverageSettings in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemCoverageSettings> PlanningFormulaItemCoverageSettings
         {
             get
@@ -9069,75 +9119,56 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnPlanningFormulaItemCoverageSettingsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemCoverageSettings> value);
         partial void OnPlanningFormulaItemCoverageSettingsChanged();
         /// <summary>
-        /// There are no comments for Property SalesAgreementConfirmationLines in the schema.
+        /// There are no comments for Property ItemBatches in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine> SalesAgreementConfirmationLines
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemBatch> ItemBatches
         {
             get
             {
-                return this._SalesAgreementConfirmationLines;
+                return this._ItemBatches;
             }
             set
             {
-                this.OnSalesAgreementConfirmationLinesChanging(value);
-                this._SalesAgreementConfirmationLines = value;
-                this.OnSalesAgreementConfirmationLinesChanged();
-                this.OnPropertyChanged("SalesAgreementConfirmationLines");
+                this.OnItemBatchesChanging(value);
+                this._ItemBatches = value;
+                this.OnItemBatchesChanged();
+                this.OnPropertyChanged("ItemBatches");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine> _SalesAgreementConfirmationLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnSalesAgreementConfirmationLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmationLine> value);
-        partial void OnSalesAgreementConfirmationLinesChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemBatch> _ItemBatches = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemBatch>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnItemBatchesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemBatch> value);
+        partial void OnItemBatchesChanged();
         /// <summary>
-        /// There are no comments for Property ReleasedDistinctProductCDS in the schema.
+        /// There are no comments for Property ProductSpecificOrderSettingsV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.CDSReleasedDistinctProduct ReleasedDistinctProductCDS
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductSpecificOrderSettingV2> ProductSpecificOrderSettingsV2
         {
             get
             {
-                return this._ReleasedDistinctProductCDS;
+                return this._ProductSpecificOrderSettingsV2;
             }
             set
             {
-                this.OnReleasedDistinctProductCDSChanging(value);
-                this._ReleasedDistinctProductCDS = value;
-                this.OnReleasedDistinctProductCDSChanged();
-                this.OnPropertyChanged("ReleasedDistinctProductCDS");
+                this.OnProductSpecificOrderSettingsV2Changing(value);
+                this._ProductSpecificOrderSettingsV2 = value;
+                this.OnProductSpecificOrderSettingsV2Changed();
+                this.OnPropertyChanged("ProductSpecificOrderSettingsV2");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.CDSReleasedDistinctProduct _ReleasedDistinctProductCDS;
-        partial void OnReleasedDistinctProductCDSChanging(global::Microsoft.Dynamics.DataEntities.CDSReleasedDistinctProduct value);
-        partial void OnReleasedDistinctProductCDSChanged();
-        /// <summary>
-        /// There are no comments for Property WarehouseWorkPolicyProducts in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyProduct> WarehouseWorkPolicyProducts
-        {
-            get
-            {
-                return this._WarehouseWorkPolicyProducts;
-            }
-            set
-            {
-                this.OnWarehouseWorkPolicyProductsChanging(value);
-                this._WarehouseWorkPolicyProducts = value;
-                this.OnWarehouseWorkPolicyProductsChanged();
-                this.OnPropertyChanged("WarehouseWorkPolicyProducts");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyProduct> _WarehouseWorkPolicyProducts = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyProduct>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnWarehouseWorkPolicyProductsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseWorkPolicyProduct> value);
-        partial void OnWarehouseWorkPolicyProductsChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductSpecificOrderSettingV2> _ProductSpecificOrderSettingsV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductSpecificOrderSettingV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnProductSpecificOrderSettingsV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductSpecificOrderSettingV2> value);
+        partial void OnProductSpecificOrderSettingsV2Changed();
         /// <summary>
         /// There are no comments for Property BillOfMaterialsVersionsV3 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersionV3> BillOfMaterialsVersionsV3
         {
             get
@@ -9157,31 +9188,240 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnBillOfMaterialsVersionsV3Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersionV3> value);
         partial void OnBillOfMaterialsVersionsV3Changed();
         /// <summary>
-        /// There are no comments for Property VendorProductDescriptionsV2 in the schema.
+        /// There are no comments for Property QualityOrderHeaders in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorProductDescriptionV2> VendorProductDescriptionsV2
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> QualityOrderHeaders
         {
             get
             {
-                return this._VendorProductDescriptionsV2;
+                return this._QualityOrderHeaders;
             }
             set
             {
-                this.OnVendorProductDescriptionsV2Changing(value);
-                this._VendorProductDescriptionsV2 = value;
-                this.OnVendorProductDescriptionsV2Changed();
-                this.OnPropertyChanged("VendorProductDescriptionsV2");
+                this.OnQualityOrderHeadersChanging(value);
+                this._QualityOrderHeaders = value;
+                this.OnQualityOrderHeadersChanged();
+                this.OnPropertyChanged("QualityOrderHeaders");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorProductDescriptionV2> _VendorProductDescriptionsV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorProductDescriptionV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnVendorProductDescriptionsV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorProductDescriptionV2> value);
-        partial void OnVendorProductDescriptionsV2Changed();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> _QualityOrderHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnQualityOrderHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.QualityOrderHeader> value);
+        partial void OnQualityOrderHeadersChanged();
+        /// <summary>
+        /// There are no comments for Property PurchaseAgreementLinesV2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmationLine> PurchaseAgreementLinesV2
+        {
+            get
+            {
+                return this._PurchaseAgreementLinesV2;
+            }
+            set
+            {
+                this.OnPurchaseAgreementLinesV2Changing(value);
+                this._PurchaseAgreementLinesV2 = value;
+                this.OnPurchaseAgreementLinesV2Changed();
+                this.OnPropertyChanged("PurchaseAgreementLinesV2");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmationLine> _PurchaseAgreementLinesV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmationLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPurchaseAgreementLinesV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmationLine> value);
+        partial void OnPurchaseAgreementLinesV2Changed();
+        /// <summary>
+        /// There are no comments for Property PlannedOrders in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PlannedOrder> PlannedOrders
+        {
+            get
+            {
+                return this._PlannedOrders;
+            }
+            set
+            {
+                this.OnPlannedOrdersChanging(value);
+                this._PlannedOrders = value;
+                this.OnPlannedOrdersChanged();
+                this.OnPropertyChanged("PlannedOrders");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PlannedOrder> _PlannedOrders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PlannedOrder>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPlannedOrdersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PlannedOrder> value);
+        partial void OnPlannedOrdersChanged();
+        /// <summary>
+        /// There are no comments for Property EngineeringChangeOrderProductReleases in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRelease> EngineeringChangeOrderProductReleases
+        {
+            get
+            {
+                return this._EngineeringChangeOrderProductReleases;
+            }
+            set
+            {
+                this.OnEngineeringChangeOrderProductReleasesChanging(value);
+                this._EngineeringChangeOrderProductReleases = value;
+                this.OnEngineeringChangeOrderProductReleasesChanged();
+                this.OnPropertyChanged("EngineeringChangeOrderProductReleases");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRelease> _EngineeringChangeOrderProductReleases = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRelease>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnEngineeringChangeOrderProductReleasesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRelease> value);
+        partial void OnEngineeringChangeOrderProductReleasesChanged();
+        /// <summary>
+        /// There are no comments for Property ProductBarcodesV3 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV3> ProductBarcodesV3
+        {
+            get
+            {
+                return this._ProductBarcodesV3;
+            }
+            set
+            {
+                this.OnProductBarcodesV3Changing(value);
+                this._ProductBarcodesV3 = value;
+                this.OnProductBarcodesV3Changed();
+                this.OnPropertyChanged("ProductBarcodesV3");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV3> _ProductBarcodesV3 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV3>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnProductBarcodesV3Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductBarcodeV3> value);
+        partial void OnProductBarcodesV3Changed();
+        /// <summary>
+        /// There are no comments for Property CatchWeightTags in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CatchWeightTag> CatchWeightTags
+        {
+            get
+            {
+                return this._CatchWeightTags;
+            }
+            set
+            {
+                this.OnCatchWeightTagsChanging(value);
+                this._CatchWeightTags = value;
+                this.OnCatchWeightTagsChanged();
+                this.OnPropertyChanged("CatchWeightTags");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CatchWeightTag> _CatchWeightTags = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CatchWeightTag>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnCatchWeightTagsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CatchWeightTag> value);
+        partial void OnCatchWeightTagsChanged();
+        /// <summary>
+        /// There are no comments for Property InventoryTagCountingJournalLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventoryTagCountingJournalLine> InventoryTagCountingJournalLines
+        {
+            get
+            {
+                return this._InventoryTagCountingJournalLines;
+            }
+            set
+            {
+                this.OnInventoryTagCountingJournalLinesChanging(value);
+                this._InventoryTagCountingJournalLines = value;
+                this.OnInventoryTagCountingJournalLinesChanged();
+                this.OnPropertyChanged("InventoryTagCountingJournalLines");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventoryTagCountingJournalLine> _InventoryTagCountingJournalLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventoryTagCountingJournalLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnInventoryTagCountingJournalLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.InventoryTagCountingJournalLine> value);
+        partial void OnInventoryTagCountingJournalLinesChanged();
+        /// <summary>
+        /// There are no comments for Property TradeAllowanceAgreementProducts in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProduct> TradeAllowanceAgreementProducts
+        {
+            get
+            {
+                return this._TradeAllowanceAgreementProducts;
+            }
+            set
+            {
+                this.OnTradeAllowanceAgreementProductsChanging(value);
+                this._TradeAllowanceAgreementProducts = value;
+                this.OnTradeAllowanceAgreementProductsChanged();
+                this.OnPropertyChanged("TradeAllowanceAgreementProducts");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProduct> _TradeAllowanceAgreementProducts = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProduct>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnTradeAllowanceAgreementProductsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementProduct> value);
+        partial void OnTradeAllowanceAgreementProductsChanged();
+        /// <summary>
+        /// There are no comments for Property RetailDeliveryModeProductLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailDeliveryModeProductLine> RetailDeliveryModeProductLine
+        {
+            get
+            {
+                return this._RetailDeliveryModeProductLine;
+            }
+            set
+            {
+                this.OnRetailDeliveryModeProductLineChanging(value);
+                this._RetailDeliveryModeProductLine = value;
+                this.OnRetailDeliveryModeProductLineChanged();
+                this.OnPropertyChanged("RetailDeliveryModeProductLine");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailDeliveryModeProductLine> _RetailDeliveryModeProductLine = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailDeliveryModeProductLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRetailDeliveryModeProductLineChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailDeliveryModeProductLine> value);
+        partial void OnRetailDeliveryModeProductLineChanged();
+        /// <summary>
+        /// There are no comments for Property ProductAllocationLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductAllocationLine> ProductAllocationLines
+        {
+            get
+            {
+                return this._ProductAllocationLines;
+            }
+            set
+            {
+                this.OnProductAllocationLinesChanging(value);
+                this._ProductAllocationLines = value;
+                this.OnProductAllocationLinesChanged();
+                this.OnPropertyChanged("ProductAllocationLines");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductAllocationLine> _ProductAllocationLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductAllocationLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnProductAllocationLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductAllocationLine> value);
+        partial void OnProductAllocationLinesChanged();
         /// <summary>
         /// There are no comments for Property CustomerProductDescriptionsV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerProductDescriptionV2> CustomerProductDescriptionsV2
         {
             get
@@ -9201,27 +9441,189 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnCustomerProductDescriptionsV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerProductDescriptionV2> value);
         partial void OnCustomerProductDescriptionsV2Changed();
         /// <summary>
-        /// There are no comments for Property VendorProductDescriptions in the schema.
+        /// There are no comments for Property BillOfMaterialsVersionsV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorProductDescription> VendorProductDescriptions
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersionV2> BillOfMaterialsVersionsV2
         {
             get
             {
-                return this._VendorProductDescriptions;
+                return this._BillOfMaterialsVersionsV2;
             }
             set
             {
-                this.OnVendorProductDescriptionsChanging(value);
-                this._VendorProductDescriptions = value;
-                this.OnVendorProductDescriptionsChanged();
-                this.OnPropertyChanged("VendorProductDescriptions");
+                this.OnBillOfMaterialsVersionsV2Changing(value);
+                this._BillOfMaterialsVersionsV2 = value;
+                this.OnBillOfMaterialsVersionsV2Changed();
+                this.OnPropertyChanged("BillOfMaterialsVersionsV2");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorProductDescription> _VendorProductDescriptions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorProductDescription>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnVendorProductDescriptionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorProductDescription> value);
-        partial void OnVendorProductDescriptionsChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersionV2> _BillOfMaterialsVersionsV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersionV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnBillOfMaterialsVersionsV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BillOfMaterialsVersionV2> value);
+        partial void OnBillOfMaterialsVersionsV2Changed();
+        /// <summary>
+        /// There are no comments for Property TradeAllowanceAgreementMerchandisingEventProducts in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProduct> TradeAllowanceAgreementMerchandisingEventProducts
+        {
+            get
+            {
+                return this._TradeAllowanceAgreementMerchandisingEventProducts;
+            }
+            set
+            {
+                this.OnTradeAllowanceAgreementMerchandisingEventProductsChanging(value);
+                this._TradeAllowanceAgreementMerchandisingEventProducts = value;
+                this.OnTradeAllowanceAgreementMerchandisingEventProductsChanged();
+                this.OnPropertyChanged("TradeAllowanceAgreementMerchandisingEventProducts");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProduct> _TradeAllowanceAgreementMerchandisingEventProducts = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProduct>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnTradeAllowanceAgreementMerchandisingEventProductsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProduct> value);
+        partial void OnTradeAllowanceAgreementMerchandisingEventProductsChanged();
+        /// <summary>
+        /// There are no comments for Property RetailPackageLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailPackageLines> RetailPackageLines
+        {
+            get
+            {
+                return this._RetailPackageLines;
+            }
+            set
+            {
+                this.OnRetailPackageLinesChanging(value);
+                this._RetailPackageLines = value;
+                this.OnRetailPackageLinesChanged();
+                this.OnPropertyChanged("RetailPackageLines");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailPackageLines> _RetailPackageLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailPackageLines>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRetailPackageLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailPackageLines> value);
+        partial void OnRetailPackageLinesChanged();
+        /// <summary>
+        /// There are no comments for Property CycleCountingWarehouseWorkLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLine> CycleCountingWarehouseWorkLines
+        {
+            get
+            {
+                return this._CycleCountingWarehouseWorkLines;
+            }
+            set
+            {
+                this.OnCycleCountingWarehouseWorkLinesChanging(value);
+                this._CycleCountingWarehouseWorkLines = value;
+                this.OnCycleCountingWarehouseWorkLinesChanged();
+                this.OnPropertyChanged("CycleCountingWarehouseWorkLines");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLine> _CycleCountingWarehouseWorkLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnCycleCountingWarehouseWorkLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CycleCountingWarehouseWorkLine> value);
+        partial void OnCycleCountingWarehouseWorkLinesChanged();
+        /// <summary>
+        /// There are no comments for Property ProductionPickingListJournalEntries in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductionPickingListJournalEntry> ProductionPickingListJournalEntries
+        {
+            get
+            {
+                return this._ProductionPickingListJournalEntries;
+            }
+            set
+            {
+                this.OnProductionPickingListJournalEntriesChanging(value);
+                this._ProductionPickingListJournalEntries = value;
+                this.OnProductionPickingListJournalEntriesChanged();
+                this.OnPropertyChanged("ProductionPickingListJournalEntries");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductionPickingListJournalEntry> _ProductionPickingListJournalEntries = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductionPickingListJournalEntry>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnProductionPickingListJournalEntriesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductionPickingListJournalEntry> value);
+        partial void OnProductionPickingListJournalEntriesChanged();
+        /// <summary>
+        /// There are no comments for Property ReleasedProductReadinessChecks in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> ReleasedProductReadinessChecks
+        {
+            get
+            {
+                return this._ReleasedProductReadinessChecks;
+            }
+            set
+            {
+                this.OnReleasedProductReadinessChecksChanging(value);
+                this._ReleasedProductReadinessChecks = value;
+                this.OnReleasedProductReadinessChecksChanged();
+                this.OnPropertyChanged("ReleasedProductReadinessChecks");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> _ReleasedProductReadinessChecks = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnReleasedProductReadinessChecksChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductReadinessCheck> value);
+        partial void OnReleasedProductReadinessChecksChanged();
+        /// <summary>
+        /// There are no comments for Property RetailItemLabel in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailItemLabel> RetailItemLabel
+        {
+            get
+            {
+                return this._RetailItemLabel;
+            }
+            set
+            {
+                this.OnRetailItemLabelChanging(value);
+                this._RetailItemLabel = value;
+                this.OnRetailItemLabelChanged();
+                this.OnPropertyChanged("RetailItemLabel");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailItemLabel> _RetailItemLabel = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailItemLabel>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRetailItemLabelChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailItemLabel> value);
+        partial void OnRetailItemLabelChanged();
+        /// <summary>
+        /// There are no comments for Property TradeAllowanceAgreementMerchandisingEventProductsV2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2> TradeAllowanceAgreementMerchandisingEventProductsV2
+        {
+            get
+            {
+                return this._TradeAllowanceAgreementMerchandisingEventProductsV2;
+            }
+            set
+            {
+                this.OnTradeAllowanceAgreementMerchandisingEventProductsV2Changing(value);
+                this._TradeAllowanceAgreementMerchandisingEventProductsV2 = value;
+                this.OnTradeAllowanceAgreementMerchandisingEventProductsV2Changed();
+                this.OnPropertyChanged("TradeAllowanceAgreementMerchandisingEventProductsV2");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2> _TradeAllowanceAgreementMerchandisingEventProductsV2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnTradeAllowanceAgreementMerchandisingEventProductsV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventProductV2> value);
+        partial void OnTradeAllowanceAgreementMerchandisingEventProductsV2Changed();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

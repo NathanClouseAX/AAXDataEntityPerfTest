@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ItemShipTxtTranslationSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ItemShipTxtTranslationSingle in the schema.
+    /// </summary>
     public partial class ItemShipTxtTranslationSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ItemShipTxtTranslation>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for ItemShipTxtTranslation in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ItemShipTxtTranslation in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// LanguageId
@@ -66,6 +66,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -88,6 +90,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LanguageId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LanguageId is required.")]
         public virtual string LanguageId
         {
             get
@@ -110,6 +114,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Material in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Material is required.")]
         public virtual long Material
         {
             get
@@ -132,6 +138,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShippingPrintText in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ShippingPrintText
         {
             get
@@ -154,6 +161,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RegCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RegCode
         {
             get
@@ -176,6 +184,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ItemId
         {
             get

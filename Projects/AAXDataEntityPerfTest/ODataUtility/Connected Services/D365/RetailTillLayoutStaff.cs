@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RetailTillLayoutStaffSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailTillLayoutStaffSingle in the schema.
+    /// </summary>
     public partial class RetailTillLayoutStaffSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RetailTillLayoutStaff>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.RetailTillLayoutSingle _RetailTillLayout;
     }
-        /// <summary>
-        /// There are no comments for RetailTillLayoutStaff in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailTillLayoutStaff in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// LayoutId
     /// StaffId
@@ -90,6 +90,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LayoutId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LayoutId is required.")]
         public virtual string LayoutId
         {
             get
@@ -112,6 +114,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StaffId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "StaffId is required.")]
         public virtual string StaffId
         {
             get
@@ -134,6 +138,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailTillLayout in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetailTillLayout is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RetailTillLayout RetailTillLayout
         {
             get

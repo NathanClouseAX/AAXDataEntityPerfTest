@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for EngineeringChangeOrderProductRouteOperationPropertiesSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for EngineeringChangeOrderProductRouteOperationPropertiesSingle in the schema.
+    /// </summary>
     public partial class EngineeringChangeOrderProductRouteOperationPropertiesSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<EngineeringChangeOrderProductRouteOperationProperties>
     {
         /// <summary>
@@ -35,10 +35,10 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for EngineeringChangeOrderProductRouteOperationPropertiesDocuments in the schema.
+        /// There are no comments for EngineeringChangeOrderProductRouteOperation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteOperationPropertiesDocument> EngineeringChangeOrderProductRouteOperationPropertiesDocuments
+        public virtual global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteOperationSingle EngineeringChangeOrderProductRouteOperation
         {
             get
             {
@@ -46,15 +46,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._EngineeringChangeOrderProductRouteOperationPropertiesDocuments == null))
+                if ((this._EngineeringChangeOrderProductRouteOperation == null))
                 {
-                    this._EngineeringChangeOrderProductRouteOperationPropertiesDocuments = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteOperationPropertiesDocument>(GetPath("EngineeringChangeOrderProductRouteOperationPropertiesDocuments"));
+                    this._EngineeringChangeOrderProductRouteOperation = new global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteOperationSingle(this.Context, GetPath("EngineeringChangeOrderProductRouteOperation"));
                 }
-                return this._EngineeringChangeOrderProductRouteOperationPropertiesDocuments;
+                return this._EngineeringChangeOrderProductRouteOperation;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteOperationPropertiesDocument> _EngineeringChangeOrderProductRouteOperationPropertiesDocuments;
+        private global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteOperationSingle _EngineeringChangeOrderProductRouteOperation;
         /// <summary>
         /// There are no comments for EngineeringChangeOrderProductRouteOperationPropertiesResourceRequirements in the schema.
         /// </summary>
@@ -77,10 +77,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteOperationPropertiesResourceRequirement> _EngineeringChangeOrderProductRouteOperationPropertiesResourceRequirements;
         /// <summary>
-        /// There are no comments for EngineeringChangeOrderProductRouteOperation in the schema.
+        /// There are no comments for EngineeringChangeOrderProductRouteOperationPropertiesDocuments in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteOperationSingle EngineeringChangeOrderProductRouteOperation
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteOperationPropertiesDocument> EngineeringChangeOrderProductRouteOperationPropertiesDocuments
         {
             get
             {
@@ -88,19 +88,19 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._EngineeringChangeOrderProductRouteOperation == null))
+                if ((this._EngineeringChangeOrderProductRouteOperationPropertiesDocuments == null))
                 {
-                    this._EngineeringChangeOrderProductRouteOperation = new global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteOperationSingle(this.Context, GetPath("EngineeringChangeOrderProductRouteOperation"));
+                    this._EngineeringChangeOrderProductRouteOperationPropertiesDocuments = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteOperationPropertiesDocument>(GetPath("EngineeringChangeOrderProductRouteOperationPropertiesDocuments"));
                 }
-                return this._EngineeringChangeOrderProductRouteOperation;
+                return this._EngineeringChangeOrderProductRouteOperationPropertiesDocuments;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteOperationSingle _EngineeringChangeOrderProductRouteOperation;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteOperationPropertiesDocument> _EngineeringChangeOrderProductRouteOperationPropertiesDocuments;
     }
-        /// <summary>
-        /// There are no comments for EngineeringChangeOrderProductRouteOperationProperties in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for EngineeringChangeOrderProductRouteOperationProperties in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// EngineeringChangeOrderNumber
@@ -193,6 +193,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -215,6 +217,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngineeringChangeOrderNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EngineeringChangeOrderNumber is required.")]
         public virtual string EngineeringChangeOrderNumber
         {
             get
@@ -237,6 +241,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngineeringChangeOrderProductLineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EngineeringChangeOrderProductLineNumber is required.")]
         public virtual decimal EngineeringChangeOrderProductLineNumber
         {
             get
@@ -259,6 +265,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngineeringChangeOrderProductRouteProductionSiteId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EngineeringChangeOrderProductRouteProductionSiteId is required.")]
         public virtual string EngineeringChangeOrderProductRouteProductionSiteId
         {
             get
@@ -281,6 +289,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngineeringChangeOrderProductRouteOperationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EngineeringChangeOrderProductRouteOperationId is required.")]
         public virtual string EngineeringChangeOrderProductRouteOperationId
         {
             get
@@ -303,6 +313,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngineeringChangeOrderProductRouteOperationNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EngineeringChangeOrderProductRouteOperationNumber is required.")]
         public virtual int EngineeringChangeOrderProductRouteOperationNumber
         {
             get
@@ -325,6 +337,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RouteId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RouteId is required.")]
         public virtual string RouteId
         {
             get
@@ -347,6 +361,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductConfigurationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductConfigurationId is required.")]
         public virtual string ProductConfigurationId
         {
             get
@@ -369,6 +385,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductGroupId is required.")]
         public virtual string ProductGroupId
         {
             get
@@ -391,6 +409,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ItemNumber is required.")]
         public virtual string ItemNumber
         {
             get
@@ -413,6 +433,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OperationsTimeToHourConversionFactor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "OperationsTimeToHourConversionFactor is required.")]
         public virtual decimal OperationsTimeToHourConversionFactor
         {
             get
@@ -435,6 +457,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProcessQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProcessQuantity is required.")]
         public virtual decimal ProcessQuantity
         {
             get
@@ -457,6 +481,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProcessCostCategoryId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProcessCostCategoryId
         {
             get
@@ -479,6 +504,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RouteGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RouteGroupId
         {
             get
@@ -501,6 +527,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngineeringChangeOrderProductRouteOperationPriority in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RouteOprPriority> EngineeringChangeOrderProductRouteOperationPriority
         {
             get
@@ -523,6 +550,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransferBatchQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransferBatchQuantity is required.")]
         public virtual decimal TransferBatchQuantity
         {
             get
@@ -545,6 +574,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property QueueTimeBefore in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "QueueTimeBefore is required.")]
         public virtual decimal QueueTimeBefore
         {
             get
@@ -567,6 +598,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransitTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransitTime is required.")]
         public virtual decimal TransitTime
         {
             get
@@ -589,6 +622,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProcessTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProcessTime is required.")]
         public virtual decimal ProcessTime
         {
             get
@@ -611,6 +646,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ConsumptionCalculationFactor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ConsumptionCalculationFactor is required.")]
         public virtual decimal ConsumptionCalculationFactor
         {
             get
@@ -633,6 +670,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property QuantityCostCategoryId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string QuantityCostCategoryId
         {
             get
@@ -655,6 +693,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property QueueTimeAfter in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "QueueTimeAfter is required.")]
         public virtual decimal QueueTimeAfter
         {
             get
@@ -677,6 +717,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkingTimeSchedulingPropertyId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string WorkingTimeSchedulingPropertyId
         {
             get
@@ -699,6 +740,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CostingOperationResourceId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CostingOperationResourceId
         {
             get
@@ -721,6 +763,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RouteType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RouteOprType> RouteType
         {
             get
@@ -743,6 +786,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ConsumptionCalculationFormula in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RouteFormula> ConsumptionCalculationFormula
         {
             get
@@ -765,6 +809,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SetupCategoryId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SetupCategoryId
         {
             get
@@ -787,6 +832,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductionSiteId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductionSiteId
         {
             get
@@ -809,6 +855,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SetupTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SetupTime is required.")]
         public virtual decimal SetupTime
         {
             get
@@ -828,31 +876,34 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnSetupTimeChanging(decimal value);
         partial void OnSetupTimeChanged();
         /// <summary>
-        /// There are no comments for Property EngineeringChangeOrderProductRouteOperationPropertiesDocuments in the schema.
+        /// There are no comments for Property EngineeringChangeOrderProductRouteOperation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteOperationPropertiesDocument> EngineeringChangeOrderProductRouteOperationPropertiesDocuments
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EngineeringChangeOrderProductRouteOperation is required.")]
+        public virtual global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteOperation EngineeringChangeOrderProductRouteOperation
         {
             get
             {
-                return this._EngineeringChangeOrderProductRouteOperationPropertiesDocuments;
+                return this._EngineeringChangeOrderProductRouteOperation;
             }
             set
             {
-                this.OnEngineeringChangeOrderProductRouteOperationPropertiesDocumentsChanging(value);
-                this._EngineeringChangeOrderProductRouteOperationPropertiesDocuments = value;
-                this.OnEngineeringChangeOrderProductRouteOperationPropertiesDocumentsChanged();
-                this.OnPropertyChanged("EngineeringChangeOrderProductRouteOperationPropertiesDocuments");
+                this.OnEngineeringChangeOrderProductRouteOperationChanging(value);
+                this._EngineeringChangeOrderProductRouteOperation = value;
+                this.OnEngineeringChangeOrderProductRouteOperationChanged();
+                this.OnPropertyChanged("EngineeringChangeOrderProductRouteOperation");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteOperationPropertiesDocument> _EngineeringChangeOrderProductRouteOperationPropertiesDocuments = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteOperationPropertiesDocument>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnEngineeringChangeOrderProductRouteOperationPropertiesDocumentsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteOperationPropertiesDocument> value);
-        partial void OnEngineeringChangeOrderProductRouteOperationPropertiesDocumentsChanged();
+        private global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteOperation _EngineeringChangeOrderProductRouteOperation;
+        partial void OnEngineeringChangeOrderProductRouteOperationChanging(global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteOperation value);
+        partial void OnEngineeringChangeOrderProductRouteOperationChanged();
         /// <summary>
         /// There are no comments for Property EngineeringChangeOrderProductRouteOperationPropertiesResourceRequirements in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteOperationPropertiesResourceRequirement> EngineeringChangeOrderProductRouteOperationPropertiesResourceRequirements
         {
             get
@@ -872,27 +923,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnEngineeringChangeOrderProductRouteOperationPropertiesResourceRequirementsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteOperationPropertiesResourceRequirement> value);
         partial void OnEngineeringChangeOrderProductRouteOperationPropertiesResourceRequirementsChanged();
         /// <summary>
-        /// There are no comments for Property EngineeringChangeOrderProductRouteOperation in the schema.
+        /// There are no comments for Property EngineeringChangeOrderProductRouteOperationPropertiesDocuments in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteOperation EngineeringChangeOrderProductRouteOperation
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteOperationPropertiesDocument> EngineeringChangeOrderProductRouteOperationPropertiesDocuments
         {
             get
             {
-                return this._EngineeringChangeOrderProductRouteOperation;
+                return this._EngineeringChangeOrderProductRouteOperationPropertiesDocuments;
             }
             set
             {
-                this.OnEngineeringChangeOrderProductRouteOperationChanging(value);
-                this._EngineeringChangeOrderProductRouteOperation = value;
-                this.OnEngineeringChangeOrderProductRouteOperationChanged();
-                this.OnPropertyChanged("EngineeringChangeOrderProductRouteOperation");
+                this.OnEngineeringChangeOrderProductRouteOperationPropertiesDocumentsChanging(value);
+                this._EngineeringChangeOrderProductRouteOperationPropertiesDocuments = value;
+                this.OnEngineeringChangeOrderProductRouteOperationPropertiesDocumentsChanged();
+                this.OnPropertyChanged("EngineeringChangeOrderProductRouteOperationPropertiesDocuments");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteOperation _EngineeringChangeOrderProductRouteOperation;
-        partial void OnEngineeringChangeOrderProductRouteOperationChanging(global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteOperation value);
-        partial void OnEngineeringChangeOrderProductRouteOperationChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteOperationPropertiesDocument> _EngineeringChangeOrderProductRouteOperationPropertiesDocuments = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteOperationPropertiesDocument>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnEngineeringChangeOrderProductRouteOperationPropertiesDocumentsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductRouteOperationPropertiesDocument> value);
+        partial void OnEngineeringChangeOrderProductRouteOperationPropertiesDocumentsChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ProjExpenseCategoryExportSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ProjExpenseCategoryExportSingle in the schema.
+    /// </summary>
     public partial class ProjExpenseCategoryExportSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ProjExpenseCategoryExport>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for ProjExpenseCategoryExport in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ProjExpenseCategoryExport in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// CostType
@@ -63,6 +63,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -85,6 +87,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CostType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CostType is required.")]
         public virtual string CostType
         {
             get
@@ -107,6 +111,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CostTxt in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CostTxt
         {
             get
@@ -129,6 +134,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionCategoryId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TransactionCategoryId
         {
             get
@@ -151,6 +157,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExpType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TrvExpType> ExpType
         {
             get
@@ -173,6 +180,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsInactive in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsInactive
         {
             get

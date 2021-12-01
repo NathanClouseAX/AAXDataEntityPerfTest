@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RetailAffiliationSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailAffiliationSingle in the schema.
+    /// </summary>
     public partial class RetailAffiliationSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RetailAffiliation>
     {
         /// <summary>
@@ -98,9 +98,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LoyaltyCardRewardPointNonTransactionalActivityV2Entity> _LoyaltyCardRewardPointNonTransactionalActivityV2Entity;
     }
-        /// <summary>
-        /// There are no comments for RetailAffiliation in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailAffiliation in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// Name
     /// </KeyProperties>
@@ -123,6 +123,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Name is required.")]
         public virtual string Name
         {
             get
@@ -145,6 +147,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HideInChannels in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYesCombo> HideInChannels
         {
             get
@@ -167,6 +170,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LoyaltyCardRewardPointNonTransactionalActivity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LoyaltyCardRewardPointNonTransactionalActivity> LoyaltyCardRewardPointNonTransactionalActivity
         {
             get
@@ -189,6 +193,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailAffiliationPriceGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailAffiliationPriceGroup> RetailAffiliationPriceGroup
         {
             get
@@ -211,6 +216,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LoyaltyCardRewardPointNonTransactionalActivityV2Entity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LoyaltyCardRewardPointNonTransactionalActivityV2Entity> LoyaltyCardRewardPointNonTransactionalActivityV2Entity
         {
             get

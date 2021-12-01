@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for AddressCountryRegionTranslationSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AddressCountryRegionTranslationSingle in the schema.
+    /// </summary>
     public partial class AddressCountryRegionTranslationSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AddressCountryRegionTranslation>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.AddressCountryRegionSingle _AddressCountryRegion;
     }
-        /// <summary>
-        /// There are no comments for AddressCountryRegionTranslation in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AddressCountryRegionTranslation in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// CountryRegionId
     /// LanguageId
@@ -90,6 +90,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CountryRegionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CountryRegionId is required.")]
         public virtual string CountryRegionId
         {
             get
@@ -112,6 +114,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LanguageId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LanguageId is required.")]
         public virtual string LanguageId
         {
             get
@@ -134,6 +138,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LongName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LongName
         {
             get
@@ -156,6 +161,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShortName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ShortName
         {
             get
@@ -178,6 +184,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AddressCountryRegion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AddressCountryRegion is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.AddressCountryRegion AddressCountryRegion
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RetailTillLayoutReportZoneSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailTillLayoutReportZoneSingle in the schema.
+    /// </summary>
     public partial class RetailTillLayoutReportZoneSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RetailTillLayoutReportZone>
     {
         /// <summary>
@@ -119,9 +119,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.RetailTillLayoutSingle _RetailTillLayout;
     }
-        /// <summary>
-        /// There are no comments for RetailTillLayoutReportZone in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailTillLayoutReportZone in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// LayoutId
     /// DeviceType
@@ -177,6 +177,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LayoutId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LayoutId is required.")]
         public virtual string LayoutId
         {
             get
@@ -199,6 +201,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DeviceType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DeviceType is required.")]
         public virtual int DeviceType
         {
             get
@@ -221,6 +225,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ZoneId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ZoneId is required.")]
         public virtual string ZoneId
         {
             get
@@ -243,6 +249,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportID in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReportID is required.")]
         public virtual string ReportID
         {
             get
@@ -265,6 +273,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LayoutSizeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LayoutSizeId
         {
             get
@@ -287,6 +296,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailChannelReport in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.RetailChannelReport RetailChannelReport
         {
             get
@@ -309,6 +319,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TillLayoutSize in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TillLayoutSize is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.TillLayoutSize TillLayoutSize
         {
             get
@@ -331,6 +343,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailTillLayoutZone in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetailTillLayoutZone is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RetailTillLayoutZone RetailTillLayoutZone
         {
             get
@@ -353,6 +367,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailTillLayout in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetailTillLayout is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RetailTillLayout RetailTillLayout
         {
             get

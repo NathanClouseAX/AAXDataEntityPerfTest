@@ -50,6 +50,10 @@
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.5.0.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
@@ -82,6 +86,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connected Services\D365\AAXCustomerV3.cs" />
+    <Compile Include="Connected Services\D365\AAXCustomerV4.cs" />
+    <Compile Include="Connected Services\D365\AAXCustomerV5.cs" />
     <Compile Include="Connected Services\D365\AAXSalesLine.cs" />
     <Compile Include="Connected Services\D365\AAXSalesOrderHeaderV2EntityOnlySalesOrderNumber.cs" />
     <Compile Include="Connected Services\D365\AAXSalesTable.cs" />
@@ -520,6 +526,9 @@
     <Compile Include="Connected Services\D365\CustomerContactInfo.cs" />
     <Compile Include="Connected Services\D365\CustomerGroup.cs" />
     <Compile Include="Connected Services\D365\CustomerInvoiceOriginType.cs" />
+    <Compile Include="Connected Services\D365\CustomerPackingSlipJournalHeader.cs" />
+    <Compile Include="Connected Services\D365\CustomerPackingSlipJournalLineHistory.cs" />
+    <Compile Include="Connected Services\D365\CustomerPackingSlipJournalLines.cs" />
     <Compile Include="Connected Services\D365\CustomerParameters.cs" />
     <Compile Include="Connected Services\D365\CustomerPaymentFee.cs" />
     <Compile Include="Connected Services\D365\CustomerPaymentJournalFee.cs" />
@@ -1001,6 +1010,7 @@
     <Compile Include="Connected Services\D365\JobType.cs" />
     <Compile Include="Connected Services\D365\JournalizingDefinitionSignId.cs" />
     <Compile Include="Connected Services\D365\JournalName.cs" />
+    <Compile Include="Connected Services\D365\JournalPostedState.cs" />
     <Compile Include="Connected Services\D365\JournalTable.cs" />
     <Compile Include="Connected Services\D365\JournalTrans.cs" />
     <Compile Include="Connected Services\D365\JournalVoucherDraw.cs" />
@@ -1569,6 +1579,7 @@
     <Compile Include="Connected Services\D365\RecruitingProject.cs" />
     <Compile Include="Connected Services\D365\RecSetupBasis.cs" />
     <Compile Include="Connected Services\D365\Reference.cs" />
+    <Compile Include="Connected Services\D365\RefNum.cs" />
     <Compile Include="Connected Services\D365\RegulatoryEstablishment.cs" />
     <Compile Include="Connected Services\D365\RegulatoryEstablishmentDetail.cs" />
     <Compile Include="Connected Services\D365\RelationshipType.cs" />

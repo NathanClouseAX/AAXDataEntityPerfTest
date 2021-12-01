@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for JournalNameSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for JournalNameSingle in the schema.
+    /// </summary>
     public partial class JournalNameSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<JournalName>
     {
         /// <summary>
@@ -35,6 +35,90 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
+        /// There are no comments for AssetParameterProposalJournalName in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> AssetParameterProposalJournalName
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._AssetParameterProposalJournalName == null))
+                {
+                    this._AssetParameterProposalJournalName = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName>(GetPath("AssetParameterProposalJournalName"));
+                }
+                return this._AssetParameterProposalJournalName;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> _AssetParameterProposalJournalName;
+        /// <summary>
+        /// There are no comments for VendorPaymentMethod in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendorPaymentMethod> VendorPaymentMethod
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._VendorPaymentMethod == null))
+                {
+                    this._VendorPaymentMethod = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.VendorPaymentMethod>(GetPath("VendorPaymentMethod"));
+                }
+                return this._VendorPaymentMethod;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendorPaymentMethod> _VendorPaymentMethod;
+        /// <summary>
+        /// There are no comments for BudgetJournalName in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetParameters> BudgetJournalName
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._BudgetJournalName == null))
+                {
+                    this._BudgetJournalName = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetParameters>(GetPath("BudgetJournalName"));
+                }
+                return this._BudgetJournalName;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetParameters> _BudgetJournalName;
+        /// <summary>
+        /// There are no comments for CustomerPaymentMethod in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CustomerPaymentMethod> CustomerPaymentMethod
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._CustomerPaymentMethod == null))
+                {
+                    this._CustomerPaymentMethod = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CustomerPaymentMethod>(GetPath("CustomerPaymentMethod"));
+                }
+                return this._CustomerPaymentMethod;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CustomerPaymentMethod> _CustomerPaymentMethod;
+        /// <summary>
         /// There are no comments for BankAccount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -55,6 +139,69 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BankAccount> _BankAccount;
+        /// <summary>
+        /// There are no comments for LedgerIntercompanyJournalName in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerInterCompanyAccount> LedgerIntercompanyJournalName
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._LedgerIntercompanyJournalName == null))
+                {
+                    this._LedgerIntercompanyJournalName = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerInterCompanyAccount>(GetPath("LedgerIntercompanyJournalName"));
+                }
+                return this._LedgerIntercompanyJournalName;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerInterCompanyAccount> _LedgerIntercompanyJournalName;
+        /// <summary>
+        /// There are no comments for DimensionCombination in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle DimensionCombination
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._DimensionCombination == null))
+                {
+                    this._DimensionCombination = new global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle(this.Context, GetPath("DimensionCombination"));
+                }
+                return this._DimensionCombination;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _DimensionCombination;
+        /// <summary>
+        /// There are no comments for DimensionSet in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.DimensionSetSingle DimensionSet
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._DimensionSet == null))
+                {
+                    this._DimensionSet = new global::Microsoft.Dynamics.DataEntities.DimensionSetSingle(this.Context, GetPath("DimensionSet"));
+                }
+                return this._DimensionSet;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.DimensionSetSingle _DimensionSet;
         /// <summary>
         /// There are no comments for ProvisionJournalNameAssignedRebateAndDeductionsPostingProfiles in the schema.
         /// </summary>
@@ -118,157 +265,10 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsPostingProfile> _WriteOffJournalNameAssignedRebateAndDeductionsPostingProfiles;
-        /// <summary>
-        /// There are no comments for VendorPaymentMethod in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendorPaymentMethod> VendorPaymentMethod
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._VendorPaymentMethod == null))
-                {
-                    this._VendorPaymentMethod = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.VendorPaymentMethod>(GetPath("VendorPaymentMethod"));
-                }
-                return this._VendorPaymentMethod;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendorPaymentMethod> _VendorPaymentMethod;
-        /// <summary>
-        /// There are no comments for LedgerIntercompanyJournalName in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerInterCompanyAccount> LedgerIntercompanyJournalName
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._LedgerIntercompanyJournalName == null))
-                {
-                    this._LedgerIntercompanyJournalName = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerInterCompanyAccount>(GetPath("LedgerIntercompanyJournalName"));
-                }
-                return this._LedgerIntercompanyJournalName;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerInterCompanyAccount> _LedgerIntercompanyJournalName;
-        /// <summary>
-        /// There are no comments for CustomerPaymentMethod in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CustomerPaymentMethod> CustomerPaymentMethod
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._CustomerPaymentMethod == null))
-                {
-                    this._CustomerPaymentMethod = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CustomerPaymentMethod>(GetPath("CustomerPaymentMethod"));
-                }
-                return this._CustomerPaymentMethod;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CustomerPaymentMethod> _CustomerPaymentMethod;
-        /// <summary>
-        /// There are no comments for DimensionCombination in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle DimensionCombination
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._DimensionCombination == null))
-                {
-                    this._DimensionCombination = new global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle(this.Context, GetPath("DimensionCombination"));
-                }
-                return this._DimensionCombination;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _DimensionCombination;
-        /// <summary>
-        /// There are no comments for DimensionSet in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.DimensionSetSingle DimensionSet
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._DimensionSet == null))
-                {
-                    this._DimensionSet = new global::Microsoft.Dynamics.DataEntities.DimensionSetSingle(this.Context, GetPath("DimensionSet"));
-                }
-                return this._DimensionSet;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.DimensionSetSingle _DimensionSet;
-        /// <summary>
-        /// There are no comments for AssetParameterProposalJournalName in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> AssetParameterProposalJournalName
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._AssetParameterProposalJournalName == null))
-                {
-                    this._AssetParameterProposalJournalName = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName>(GetPath("AssetParameterProposalJournalName"));
-                }
-                return this._AssetParameterProposalJournalName;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> _AssetParameterProposalJournalName;
-        /// <summary>
-        /// There are no comments for BudgetJournalName in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetParameters> BudgetJournalName
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._BudgetJournalName == null))
-                {
-                    this._BudgetJournalName = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetParameters>(GetPath("BudgetJournalName"));
-                }
-                return this._BudgetJournalName;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetParameters> _BudgetJournalName;
     }
-        /// <summary>
-        /// There are no comments for JournalName in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for JournalName in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// Name
@@ -296,6 +296,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -318,6 +320,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Name is required.")]
         public virtual string Name
         {
             get
@@ -340,6 +344,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostingLayer in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.CurrentOperationsTax> PostingLayer
         {
             get
@@ -362,6 +367,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OffsetAccountType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.LedgerJournalACType> OffsetAccountType
         {
             get
@@ -384,6 +390,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VoucherSeriesCompanyId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VoucherSeriesCompanyId
         {
             get
@@ -406,6 +413,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsWorkflowApprovalActive in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsWorkflowApprovalActive
         {
             get
@@ -428,6 +436,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrepaymentJournalVoucher in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PrepaymentJournalVoucher
         {
             get
@@ -450,6 +459,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Currency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Currency
         {
             get
@@ -472,6 +482,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultFinancialDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultFinancialDimensionDisplayValue
         {
             get
@@ -494,6 +505,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DetailLevel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.DetailSummary> DetailLevel
         {
             get
@@ -516,6 +528,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HideSalesTaxFieldsInJournalEntryForms in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> HideSalesTaxFieldsInJournalEntryForms
         {
             get
@@ -538,6 +551,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllowOnlyPositiveDebitsAndCredits in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AllowOnlyPositiveDebitsAndCredits
         {
             get
@@ -560,6 +574,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultCashAccount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultCashAccount
         {
             get
@@ -582,6 +597,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DeleteLinesAfterPosting in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DeleteLinesAfterPosting
         {
             get
@@ -604,6 +620,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VoucherSeriesCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VoucherSeriesCode
         {
             get
@@ -626,6 +643,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OffsetAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OffsetAccountDisplayValue
         {
             get
@@ -648,6 +666,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkflowId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string WorkflowId
         {
             get
@@ -670,6 +689,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -692,6 +712,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsFixedExchangeRate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsFixedExchangeRate
         {
             get
@@ -714,6 +735,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Type in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.LedgerJournalType> Type
         {
             get
@@ -736,6 +758,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrincipleOfDateInitialization in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.LedgerJournalDateInitType_RU> PrincipleOfDateInitialization
         {
             get
@@ -758,6 +781,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FeesPosting in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.LedgerJournalFeePosting> FeesPosting
         {
             get
@@ -780,6 +804,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DocumentNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DocumentNumber
         {
             get
@@ -802,6 +827,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsApprovalActive in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsApprovalActive
         {
             get
@@ -824,6 +850,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VoucherAllocationAtPosting in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> VoucherAllocationAtPosting
         {
             get
@@ -846,6 +873,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property GeneratePaymentsBeforePosting in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> GeneratePaymentsBeforePosting
         {
             get
@@ -868,6 +896,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NewVoucher in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NewVoucher> NewVoucher
         {
             get
@@ -890,6 +919,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostingDateControl in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PostingDateControl
         {
             get
@@ -912,6 +942,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ApprovalUserGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ApprovalUserGroup
         {
             get
@@ -934,6 +965,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EndBalanceControl in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> EndBalanceControl
         {
             get
@@ -956,6 +988,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostingLineLimit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PostingLineLimit is required.")]
         public virtual int PostingLineLimit
         {
             get
@@ -978,6 +1012,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsFixedOffsetAccount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsFixedOffsetAccount
         {
             get
@@ -1000,6 +1035,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrivateForUserGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrivateForUserGroup
         {
             get
@@ -1022,6 +1058,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AmountsIncludeSalesTax in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AmountsIncludeSalesTax
         {
             get
@@ -1044,6 +1081,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RequiresSimulationValidation_IT in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> RequiresSimulationValidation_IT
         {
             get
@@ -1063,97 +1101,33 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnRequiresSimulationValidation_ITChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> value);
         partial void OnRequiresSimulationValidation_ITChanged();
         /// <summary>
-        /// There are no comments for Property BankAccount in the schema.
+        /// There are no comments for Property AssetParameterProposalJournalName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BankAccount> BankAccount
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> AssetParameterProposalJournalName
         {
             get
             {
-                return this._BankAccount;
+                return this._AssetParameterProposalJournalName;
             }
             set
             {
-                this.OnBankAccountChanging(value);
-                this._BankAccount = value;
-                this.OnBankAccountChanged();
-                this.OnPropertyChanged("BankAccount");
+                this.OnAssetParameterProposalJournalNameChanging(value);
+                this._AssetParameterProposalJournalName = value;
+                this.OnAssetParameterProposalJournalNameChanged();
+                this.OnPropertyChanged("AssetParameterProposalJournalName");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BankAccount> _BankAccount = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BankAccount>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnBankAccountChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BankAccount> value);
-        partial void OnBankAccountChanged();
-        /// <summary>
-        /// There are no comments for Property ProvisionJournalNameAssignedRebateAndDeductionsPostingProfiles in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsPostingProfile> ProvisionJournalNameAssignedRebateAndDeductionsPostingProfiles
-        {
-            get
-            {
-                return this._ProvisionJournalNameAssignedRebateAndDeductionsPostingProfiles;
-            }
-            set
-            {
-                this.OnProvisionJournalNameAssignedRebateAndDeductionsPostingProfilesChanging(value);
-                this._ProvisionJournalNameAssignedRebateAndDeductionsPostingProfiles = value;
-                this.OnProvisionJournalNameAssignedRebateAndDeductionsPostingProfilesChanged();
-                this.OnPropertyChanged("ProvisionJournalNameAssignedRebateAndDeductionsPostingProfiles");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsPostingProfile> _ProvisionJournalNameAssignedRebateAndDeductionsPostingProfiles = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsPostingProfile>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnProvisionJournalNameAssignedRebateAndDeductionsPostingProfilesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsPostingProfile> value);
-        partial void OnProvisionJournalNameAssignedRebateAndDeductionsPostingProfilesChanged();
-        /// <summary>
-        /// There are no comments for Property RebateJournalNameAssignedRebateAndDeductionsPostingProfiles in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsPostingProfile> RebateJournalNameAssignedRebateAndDeductionsPostingProfiles
-        {
-            get
-            {
-                return this._RebateJournalNameAssignedRebateAndDeductionsPostingProfiles;
-            }
-            set
-            {
-                this.OnRebateJournalNameAssignedRebateAndDeductionsPostingProfilesChanging(value);
-                this._RebateJournalNameAssignedRebateAndDeductionsPostingProfiles = value;
-                this.OnRebateJournalNameAssignedRebateAndDeductionsPostingProfilesChanged();
-                this.OnPropertyChanged("RebateJournalNameAssignedRebateAndDeductionsPostingProfiles");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsPostingProfile> _RebateJournalNameAssignedRebateAndDeductionsPostingProfiles = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsPostingProfile>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRebateJournalNameAssignedRebateAndDeductionsPostingProfilesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsPostingProfile> value);
-        partial void OnRebateJournalNameAssignedRebateAndDeductionsPostingProfilesChanged();
-        /// <summary>
-        /// There are no comments for Property WriteOffJournalNameAssignedRebateAndDeductionsPostingProfiles in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsPostingProfile> WriteOffJournalNameAssignedRebateAndDeductionsPostingProfiles
-        {
-            get
-            {
-                return this._WriteOffJournalNameAssignedRebateAndDeductionsPostingProfiles;
-            }
-            set
-            {
-                this.OnWriteOffJournalNameAssignedRebateAndDeductionsPostingProfilesChanging(value);
-                this._WriteOffJournalNameAssignedRebateAndDeductionsPostingProfiles = value;
-                this.OnWriteOffJournalNameAssignedRebateAndDeductionsPostingProfilesChanged();
-                this.OnPropertyChanged("WriteOffJournalNameAssignedRebateAndDeductionsPostingProfiles");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsPostingProfile> _WriteOffJournalNameAssignedRebateAndDeductionsPostingProfiles = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsPostingProfile>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnWriteOffJournalNameAssignedRebateAndDeductionsPostingProfilesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsPostingProfile> value);
-        partial void OnWriteOffJournalNameAssignedRebateAndDeductionsPostingProfilesChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> _AssetParameterProposalJournalName = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnAssetParameterProposalJournalNameChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> value);
+        partial void OnAssetParameterProposalJournalNameChanged();
         /// <summary>
         /// There are no comments for Property VendorPaymentMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorPaymentMethod> VendorPaymentMethod
         {
             get
@@ -1173,31 +1147,33 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnVendorPaymentMethodChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorPaymentMethod> value);
         partial void OnVendorPaymentMethodChanged();
         /// <summary>
-        /// There are no comments for Property LedgerIntercompanyJournalName in the schema.
+        /// There are no comments for Property BudgetJournalName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerInterCompanyAccount> LedgerIntercompanyJournalName
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetParameters> BudgetJournalName
         {
             get
             {
-                return this._LedgerIntercompanyJournalName;
+                return this._BudgetJournalName;
             }
             set
             {
-                this.OnLedgerIntercompanyJournalNameChanging(value);
-                this._LedgerIntercompanyJournalName = value;
-                this.OnLedgerIntercompanyJournalNameChanged();
-                this.OnPropertyChanged("LedgerIntercompanyJournalName");
+                this.OnBudgetJournalNameChanging(value);
+                this._BudgetJournalName = value;
+                this.OnBudgetJournalNameChanged();
+                this.OnPropertyChanged("BudgetJournalName");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerInterCompanyAccount> _LedgerIntercompanyJournalName = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerInterCompanyAccount>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnLedgerIntercompanyJournalNameChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerInterCompanyAccount> value);
-        partial void OnLedgerIntercompanyJournalNameChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetParameters> _BudgetJournalName = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetParameters>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnBudgetJournalNameChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetParameters> value);
+        partial void OnBudgetJournalNameChanged();
         /// <summary>
         /// There are no comments for Property CustomerPaymentMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerPaymentMethod> CustomerPaymentMethod
         {
             get
@@ -1217,9 +1193,56 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnCustomerPaymentMethodChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CustomerPaymentMethod> value);
         partial void OnCustomerPaymentMethodChanged();
         /// <summary>
+        /// There are no comments for Property BankAccount in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BankAccount> BankAccount
+        {
+            get
+            {
+                return this._BankAccount;
+            }
+            set
+            {
+                this.OnBankAccountChanging(value);
+                this._BankAccount = value;
+                this.OnBankAccountChanged();
+                this.OnPropertyChanged("BankAccount");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BankAccount> _BankAccount = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BankAccount>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnBankAccountChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BankAccount> value);
+        partial void OnBankAccountChanged();
+        /// <summary>
+        /// There are no comments for Property LedgerIntercompanyJournalName in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerInterCompanyAccount> LedgerIntercompanyJournalName
+        {
+            get
+            {
+                return this._LedgerIntercompanyJournalName;
+            }
+            set
+            {
+                this.OnLedgerIntercompanyJournalNameChanging(value);
+                this._LedgerIntercompanyJournalName = value;
+                this.OnLedgerIntercompanyJournalNameChanged();
+                this.OnPropertyChanged("LedgerIntercompanyJournalName");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerInterCompanyAccount> _LedgerIntercompanyJournalName = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerInterCompanyAccount>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnLedgerIntercompanyJournalNameChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerInterCompanyAccount> value);
+        partial void OnLedgerIntercompanyJournalNameChanged();
+        /// <summary>
         /// There are no comments for Property DimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination DimensionCombination
         {
             get
@@ -1242,6 +1265,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionSet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionSet DimensionSet
         {
             get
@@ -1261,49 +1285,74 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDimensionSetChanging(global::Microsoft.Dynamics.DataEntities.DimensionSet value);
         partial void OnDimensionSetChanged();
         /// <summary>
-        /// There are no comments for Property AssetParameterProposalJournalName in the schema.
+        /// There are no comments for Property ProvisionJournalNameAssignedRebateAndDeductionsPostingProfiles in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> AssetParameterProposalJournalName
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsPostingProfile> ProvisionJournalNameAssignedRebateAndDeductionsPostingProfiles
         {
             get
             {
-                return this._AssetParameterProposalJournalName;
+                return this._ProvisionJournalNameAssignedRebateAndDeductionsPostingProfiles;
             }
             set
             {
-                this.OnAssetParameterProposalJournalNameChanging(value);
-                this._AssetParameterProposalJournalName = value;
-                this.OnAssetParameterProposalJournalNameChanged();
-                this.OnPropertyChanged("AssetParameterProposalJournalName");
+                this.OnProvisionJournalNameAssignedRebateAndDeductionsPostingProfilesChanging(value);
+                this._ProvisionJournalNameAssignedRebateAndDeductionsPostingProfiles = value;
+                this.OnProvisionJournalNameAssignedRebateAndDeductionsPostingProfilesChanged();
+                this.OnPropertyChanged("ProvisionJournalNameAssignedRebateAndDeductionsPostingProfiles");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> _AssetParameterProposalJournalName = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAssetParameterProposalJournalNameChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> value);
-        partial void OnAssetParameterProposalJournalNameChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsPostingProfile> _ProvisionJournalNameAssignedRebateAndDeductionsPostingProfiles = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsPostingProfile>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnProvisionJournalNameAssignedRebateAndDeductionsPostingProfilesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsPostingProfile> value);
+        partial void OnProvisionJournalNameAssignedRebateAndDeductionsPostingProfilesChanged();
         /// <summary>
-        /// There are no comments for Property BudgetJournalName in the schema.
+        /// There are no comments for Property RebateJournalNameAssignedRebateAndDeductionsPostingProfiles in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetParameters> BudgetJournalName
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsPostingProfile> RebateJournalNameAssignedRebateAndDeductionsPostingProfiles
         {
             get
             {
-                return this._BudgetJournalName;
+                return this._RebateJournalNameAssignedRebateAndDeductionsPostingProfiles;
             }
             set
             {
-                this.OnBudgetJournalNameChanging(value);
-                this._BudgetJournalName = value;
-                this.OnBudgetJournalNameChanged();
-                this.OnPropertyChanged("BudgetJournalName");
+                this.OnRebateJournalNameAssignedRebateAndDeductionsPostingProfilesChanging(value);
+                this._RebateJournalNameAssignedRebateAndDeductionsPostingProfiles = value;
+                this.OnRebateJournalNameAssignedRebateAndDeductionsPostingProfilesChanged();
+                this.OnPropertyChanged("RebateJournalNameAssignedRebateAndDeductionsPostingProfiles");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetParameters> _BudgetJournalName = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetParameters>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnBudgetJournalNameChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetParameters> value);
-        partial void OnBudgetJournalNameChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsPostingProfile> _RebateJournalNameAssignedRebateAndDeductionsPostingProfiles = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsPostingProfile>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRebateJournalNameAssignedRebateAndDeductionsPostingProfilesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsPostingProfile> value);
+        partial void OnRebateJournalNameAssignedRebateAndDeductionsPostingProfilesChanged();
+        /// <summary>
+        /// There are no comments for Property WriteOffJournalNameAssignedRebateAndDeductionsPostingProfiles in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsPostingProfile> WriteOffJournalNameAssignedRebateAndDeductionsPostingProfiles
+        {
+            get
+            {
+                return this._WriteOffJournalNameAssignedRebateAndDeductionsPostingProfiles;
+            }
+            set
+            {
+                this.OnWriteOffJournalNameAssignedRebateAndDeductionsPostingProfilesChanging(value);
+                this._WriteOffJournalNameAssignedRebateAndDeductionsPostingProfiles = value;
+                this.OnWriteOffJournalNameAssignedRebateAndDeductionsPostingProfilesChanged();
+                this.OnPropertyChanged("WriteOffJournalNameAssignedRebateAndDeductionsPostingProfiles");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsPostingProfile> _WriteOffJournalNameAssignedRebateAndDeductionsPostingProfiles = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsPostingProfile>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnWriteOffJournalNameAssignedRebateAndDeductionsPostingProfilesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsPostingProfile> value);
+        partial void OnWriteOffJournalNameAssignedRebateAndDeductionsPostingProfilesChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for LedgerInterCompanyAccountSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LedgerInterCompanyAccountSingle in the schema.
+    /// </summary>
     public partial class LedgerInterCompanyAccountSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<LedgerInterCompanyAccount>
     {
         /// <summary>
@@ -140,9 +140,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _LedgerInterCompanyAccountSourceDebitDimension;
     }
-        /// <summary>
-        /// There are no comments for LedgerInterCompanyAccount in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LedgerInterCompanyAccount in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// OriginatingLegalEntityId
     /// DestinationLegalEntityId
@@ -174,6 +174,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OriginatingLegalEntityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "OriginatingLegalEntityId is required.")]
         public virtual string OriginatingLegalEntityId
         {
             get
@@ -196,6 +198,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DestinationLegalEntityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DestinationLegalEntityId is required.")]
         public virtual string DestinationLegalEntityId
         {
             get
@@ -218,6 +222,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorPaymentPostFinancialInterest in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.CustVendSettleCompanyPostOption> VendorPaymentPostFinancialInterest
         {
             get
@@ -240,6 +245,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OriginatingDebitAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OriginatingDebitAccountDisplayValue
         {
             get
@@ -262,6 +268,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostInterest in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.CustVendSettleCompanyPostOption> PostInterest
         {
             get
@@ -284,6 +291,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostCurrencyExchangeGainOrLoss in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.CustVendSettleCompanyPostOption> PostCurrencyExchangeGainOrLoss
         {
             get
@@ -306,6 +314,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DestinationCreditAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DestinationCreditAccountDisplayValue
         {
             get
@@ -328,6 +337,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Journal in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Journal
         {
             get
@@ -350,6 +360,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorPaymentPostFine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.CustVendSettleCompanyPostOption> VendorPaymentPostFine
         {
             get
@@ -372,6 +383,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DestinationDebitAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DestinationDebitAccountDisplayValue
         {
             get
@@ -394,6 +406,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OriginatingCreditAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OriginatingCreditAccountDisplayValue
         {
             get
@@ -416,6 +429,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostCashDiscount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.CustVendSettleCompanyPostOption> PostCashDiscount
         {
             get
@@ -438,6 +452,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostFine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.CustVendSettleCompanyPostOption> PostFine
         {
             get
@@ -460,6 +475,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerInterCompanyAccountSourceCreditDimension in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination LedgerInterCompanyAccountSourceCreditDimension
         {
             get
@@ -482,6 +498,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerInterCompanyAccountDestinationCreditDimension in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination LedgerInterCompanyAccountDestinationCreditDimension
         {
             get
@@ -504,6 +521,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerInterCompanyAccountDestinationDebitDimension in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination LedgerInterCompanyAccountDestinationDebitDimension
         {
             get
@@ -526,6 +544,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerIntercompanyJournalName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LedgerIntercompanyJournalName is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.JournalName LedgerIntercompanyJournalName
         {
             get
@@ -548,6 +568,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerInterCompanyAccountSourceDebitDimension in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination LedgerInterCompanyAccountSourceDebitDimension
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for AssetMaintenanceJobTypeHourForecastSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AssetMaintenanceJobTypeHourForecastSingle in the schema.
+    /// </summary>
     public partial class AssetMaintenanceJobTypeHourForecastSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AssetMaintenanceJobTypeHourForecast>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for AssetMaintenanceJobTypeHourForecast in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AssetMaintenanceJobTypeHourForecast in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// MaintenanceAssetId
@@ -107,6 +107,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -129,6 +131,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaintenanceAssetId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MaintenanceAssetId is required.")]
         public virtual string MaintenanceAssetId
         {
             get
@@ -151,6 +155,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FunctionalLocationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FunctionalLocationId is required.")]
         public virtual string FunctionalLocationId
         {
             get
@@ -173,6 +179,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JobTradeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "JobTradeId is required.")]
         public virtual string JobTradeId
         {
             get
@@ -195,6 +203,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JobTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "JobTypeId is required.")]
         public virtual string JobTypeId
         {
             get
@@ -217,6 +227,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JobVariantId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "JobVariantId is required.")]
         public virtual string JobVariantId
         {
             get
@@ -239,6 +251,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ModelId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ModelId is required.")]
         public virtual string ModelId
         {
             get
@@ -261,6 +275,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ModelProductId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ModelProductId is required.")]
         public virtual string ModelProductId
         {
             get
@@ -283,6 +299,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaintenanceAssetTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MaintenanceAssetTypeId is required.")]
         public virtual string MaintenanceAssetTypeId
         {
             get
@@ -305,6 +323,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductId is required.")]
         public virtual string ProductId
         {
             get
@@ -327,6 +347,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ForecastCategoryId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ForecastCategoryId is required.")]
         public virtual string ForecastCategoryId
         {
             get
@@ -349,6 +371,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ForecastLinePropertyId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ForecastLinePropertyId is required.")]
         public virtual string ForecastLinePropertyId
         {
             get
@@ -371,6 +395,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ForecastHours in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ForecastHours is required.")]
         public virtual decimal ForecastHours
         {
             get
@@ -393,6 +419,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ForecastCurrencyId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ForecastCurrencyId
         {
             get
@@ -415,6 +442,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ForecastModelId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ForecastModelId
         {
             get
@@ -437,6 +465,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ForecastProjectId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ForecastProjectId
         {
             get

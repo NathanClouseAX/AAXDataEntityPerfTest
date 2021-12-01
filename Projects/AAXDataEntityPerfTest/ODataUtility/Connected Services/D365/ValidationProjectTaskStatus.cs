@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ValidationProjectTaskStatusSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ValidationProjectTaskStatusSingle in the schema.
+    /// </summary>
     public partial class ValidationProjectTaskStatusSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ValidationProjectTaskStatus>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for ValidationProjectTaskStatus in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ValidationProjectTaskStatus in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// DataValidationProject_Name
     /// DataValidationProjectTask_LineNumber
@@ -68,6 +68,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DataValidationProject_Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DataValidationProject_Name is required.")]
         public virtual string DataValidationProject_Name
         {
             get
@@ -90,6 +92,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DataValidationProjectTask_LineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DataValidationProjectTask_LineNumber is required.")]
         public virtual decimal DataValidationProjectTask_LineNumber
         {
             get
@@ -112,6 +116,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LegalEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LegalEntity is required.")]
         public virtual string LegalEntity
         {
             get
@@ -134,6 +140,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CompletedByWorker_PersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CompletedByWorker_PersonnelNumber
         {
             get
@@ -156,6 +163,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Status in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.DataValidationTaskStatus> Status
         {
             get
@@ -178,6 +186,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CompletedDateTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CompletedDateTime is required.")]
         public virtual global::System.DateTimeOffset CompletedDateTime
         {
             get
@@ -200,6 +210,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DataValidationProjectTask_Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DataValidationProjectTask_Name
         {
             get
@@ -222,6 +233,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ResponsibleWorker_PersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ResponsibleWorker_PersonnelNumber
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ProductDocumentAttachmentSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ProductDocumentAttachmentSingle in the schema.
+    /// </summary>
     public partial class ProductDocumentAttachmentSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ProductDocumentAttachment>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DocumentTypeSingle _DocumentAttachmentType;
     }
-        /// <summary>
-        /// There are no comments for ProductDocumentAttachment in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ProductDocumentAttachment in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// ProductNumber
     /// DocumentAttachmentTypeCode
@@ -128,6 +128,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductNumber is required.")]
         public virtual string ProductNumber
         {
             get
@@ -150,6 +152,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DocumentAttachmentTypeCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DocumentAttachmentTypeCode is required.")]
         public virtual string DocumentAttachmentTypeCode
         {
             get
@@ -172,6 +176,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AttachmentDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AttachmentDescription is required.")]
         public virtual string AttachmentDescription
         {
             get
@@ -194,6 +200,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AttachedDateTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AttachedDateTime is required.")]
         public virtual global::System.DateTimeOffset AttachedDateTime
         {
             get
@@ -216,6 +224,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AttachingUserId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AttachingUserId
         {
             get
@@ -238,6 +247,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OriginalFileName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OriginalFileName
         {
             get
@@ -260,6 +270,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FileType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FileType
         {
             get
@@ -282,6 +293,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductImageUsage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EcoResProductImageUsage> ProductImageUsage
         {
             get
@@ -304,6 +316,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DocumentAttachmentTypeLegalEntityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DocumentAttachmentTypeLegalEntityId
         {
             get
@@ -326,6 +339,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsDefaultProductImage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsDefaultProductImage
         {
             get
@@ -348,6 +362,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccessRestriction in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.DocuRestriction> AccessRestriction
         {
             get
@@ -370,6 +385,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Notes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Notes
         {
             get
@@ -392,6 +408,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FileLocation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FileLocation
         {
             get
@@ -414,6 +431,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsProductImage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsProductImage
         {
             get
@@ -436,6 +454,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Attachment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual byte[] Attachment
         {
             get
@@ -458,6 +477,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductV2 is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ProductV2 ProductV2
         {
             get
@@ -480,6 +501,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DocumentAttachmentType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DocumentAttachmentType is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.DocumentType DocumentAttachmentType
         {
             get

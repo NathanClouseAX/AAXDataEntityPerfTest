@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for EngineeringChangeOrderDependencyActionSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for EngineeringChangeOrderDependencyActionSingle in the schema.
+    /// </summary>
     public partial class EngineeringChangeOrderDependencyActionSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<EngineeringChangeOrderDependencyAction>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.WorkerSingle _ProcessorWorker;
     }
-        /// <summary>
-        /// There are no comments for EngineeringChangeOrderDependencyAction in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for EngineeringChangeOrderDependencyAction in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// ActionClassName
     /// DependentProductNumber
@@ -128,6 +128,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ActionClassName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ActionClassName is required.")]
         public virtual string ActionClassName
         {
             get
@@ -150,6 +152,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DependentProductNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DependentProductNumber is required.")]
         public virtual string DependentProductNumber
         {
             get
@@ -172,6 +176,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DependencyLegalEntityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DependencyLegalEntityId is required.")]
         public virtual string DependencyLegalEntityId
         {
             get
@@ -194,6 +200,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DependencyTransactionDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DependencyTransactionDescription is required.")]
         public virtual string DependencyTransactionDescription
         {
             get
@@ -216,6 +224,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngineeringChangeOrderNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EngineeringChangeOrderNumber is required.")]
         public virtual string EngineeringChangeOrderNumber
         {
             get
@@ -238,6 +248,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProcessorPersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProcessorPersonnelNumber
         {
             get
@@ -260,6 +271,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ActionName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ActionName
         {
             get
@@ -282,6 +294,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProcessedDateTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProcessedDateTime is required.")]
         public virtual global::System.DateTimeOffset ProcessedDateTime
         {
             get
@@ -304,6 +318,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngineeringChangeOrderDependency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EngineeringChangeOrderDependency is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderDependency EngineeringChangeOrderDependency
         {
             get
@@ -326,6 +342,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProcessorWorker in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.Worker ProcessorWorker
         {
             get

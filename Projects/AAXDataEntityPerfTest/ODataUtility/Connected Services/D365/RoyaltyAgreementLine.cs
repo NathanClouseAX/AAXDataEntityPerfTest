@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RoyaltyAgreementLineSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RoyaltyAgreementLineSingle in the schema.
+    /// </summary>
     public partial class RoyaltyAgreementLineSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RoyaltyAgreementLine>
     {
         /// <summary>
@@ -56,27 +56,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.RoyaltyAgreementHeaderSingle _RoyaltyAgreementHeader;
         /// <summary>
-        /// There are no comments for RoyaltyAgreementLineAmounts in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RoyaltyAgreementLineAmount> RoyaltyAgreementLineAmounts
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._RoyaltyAgreementLineAmounts == null))
-                {
-                    this._RoyaltyAgreementLineAmounts = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RoyaltyAgreementLineAmount>(GetPath("RoyaltyAgreementLineAmounts"));
-                }
-                return this._RoyaltyAgreementLineAmounts;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RoyaltyAgreementLineAmount> _RoyaltyAgreementLineAmounts;
-        /// <summary>
         /// There are no comments for RoyaltyAgreementLineProductSelections in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -97,6 +76,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RoyaltyAgreementLineProductSelection> _RoyaltyAgreementLineProductSelections;
+        /// <summary>
+        /// There are no comments for RoyaltyAgreementLineAmounts in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RoyaltyAgreementLineAmount> RoyaltyAgreementLineAmounts
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RoyaltyAgreementLineAmounts == null))
+                {
+                    this._RoyaltyAgreementLineAmounts = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RoyaltyAgreementLineAmount>(GetPath("RoyaltyAgreementLineAmounts"));
+                }
+                return this._RoyaltyAgreementLineAmounts;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RoyaltyAgreementLineAmount> _RoyaltyAgreementLineAmounts;
         /// <summary>
         /// There are no comments for RoyaltyAgreementLineProductSelectionsV2 in the schema.
         /// </summary>
@@ -119,9 +119,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RoyaltyAgreementLineProductSelectionV2> _RoyaltyAgreementLineProductSelectionsV2;
     }
-        /// <summary>
-        /// There are no comments for RoyaltyAgreementLine in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RoyaltyAgreementLine in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// RoyaltyAgreementLineId
@@ -165,6 +165,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -187,6 +189,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RoyaltyAgreementLineId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RoyaltyAgreementLineId is required.")]
         public virtual string RoyaltyAgreementLineId
         {
             get
@@ -209,6 +213,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RoyaltyAgreementId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RoyaltyAgreementId is required.")]
         public virtual string RoyaltyAgreementId
         {
             get
@@ -231,6 +237,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CurrencyCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CurrencyCode
         {
             get
@@ -253,6 +260,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AgreementLineNotes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AgreementLineNotes
         {
             get
@@ -275,6 +283,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AgreementLineDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AgreementLineDescription
         {
             get
@@ -297,6 +306,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesUnitSymbol in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SalesUnitSymbol
         {
             get
@@ -319,6 +329,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CalculationSearchDateType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.MCRTradeCustCalcDates> CalculationSearchDateType
         {
             get
@@ -341,6 +352,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExpirationDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ExpirationDate is required.")]
         public virtual global::System.DateTimeOffset ExpirationDate
         {
             get
@@ -363,6 +376,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VendorAccountNumber
         {
             get
@@ -385,6 +399,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EffectiveDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EffectiveDate is required.")]
         public virtual global::System.DateTimeOffset EffectiveDate
         {
             get
@@ -407,6 +423,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RoyaltyAgreementHeader in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RoyaltyAgreementHeader is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RoyaltyAgreementHeader RoyaltyAgreementHeader
         {
             get
@@ -426,31 +444,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnRoyaltyAgreementHeaderChanging(global::Microsoft.Dynamics.DataEntities.RoyaltyAgreementHeader value);
         partial void OnRoyaltyAgreementHeaderChanged();
         /// <summary>
-        /// There are no comments for Property RoyaltyAgreementLineAmounts in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RoyaltyAgreementLineAmount> RoyaltyAgreementLineAmounts
-        {
-            get
-            {
-                return this._RoyaltyAgreementLineAmounts;
-            }
-            set
-            {
-                this.OnRoyaltyAgreementLineAmountsChanging(value);
-                this._RoyaltyAgreementLineAmounts = value;
-                this.OnRoyaltyAgreementLineAmountsChanged();
-                this.OnPropertyChanged("RoyaltyAgreementLineAmounts");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RoyaltyAgreementLineAmount> _RoyaltyAgreementLineAmounts = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RoyaltyAgreementLineAmount>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRoyaltyAgreementLineAmountsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RoyaltyAgreementLineAmount> value);
-        partial void OnRoyaltyAgreementLineAmountsChanged();
-        /// <summary>
         /// There are no comments for Property RoyaltyAgreementLineProductSelections in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RoyaltyAgreementLineProductSelection> RoyaltyAgreementLineProductSelections
         {
             get
@@ -470,9 +467,33 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnRoyaltyAgreementLineProductSelectionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RoyaltyAgreementLineProductSelection> value);
         partial void OnRoyaltyAgreementLineProductSelectionsChanged();
         /// <summary>
+        /// There are no comments for Property RoyaltyAgreementLineAmounts in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RoyaltyAgreementLineAmount> RoyaltyAgreementLineAmounts
+        {
+            get
+            {
+                return this._RoyaltyAgreementLineAmounts;
+            }
+            set
+            {
+                this.OnRoyaltyAgreementLineAmountsChanging(value);
+                this._RoyaltyAgreementLineAmounts = value;
+                this.OnRoyaltyAgreementLineAmountsChanged();
+                this.OnPropertyChanged("RoyaltyAgreementLineAmounts");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RoyaltyAgreementLineAmount> _RoyaltyAgreementLineAmounts = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RoyaltyAgreementLineAmount>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRoyaltyAgreementLineAmountsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RoyaltyAgreementLineAmount> value);
+        partial void OnRoyaltyAgreementLineAmountsChanged();
+        /// <summary>
         /// There are no comments for Property RoyaltyAgreementLineProductSelectionsV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RoyaltyAgreementLineProductSelectionV2> RoyaltyAgreementLineProductSelectionsV2
         {
             get

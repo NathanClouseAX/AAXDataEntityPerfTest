@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for JobTaskSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for JobTaskSingle in the schema.
+    /// </summary>
     public partial class JobTaskSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<JobTask>
     {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for JobTaskAssignments in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobTaskAssignment> JobTaskAssignments
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._JobTaskAssignments == null))
-                {
-                    this._JobTaskAssignments = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.JobTaskAssignment>(GetPath("JobTaskAssignments"));
-                }
-                return this._JobTaskAssignments;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobTaskAssignment> _JobTaskAssignments;
-        /// <summary>
         /// There are no comments for JobTemplateTasks in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,10 +55,31 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobTemplateTask> _JobTemplateTasks;
-    }
         /// <summary>
-        /// There are no comments for JobTask in the schema.
+        /// There are no comments for JobTaskAssignments in the schema.
         /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobTaskAssignment> JobTaskAssignments
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._JobTaskAssignments == null))
+                {
+                    this._JobTaskAssignments = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.JobTaskAssignment>(GetPath("JobTaskAssignments"));
+                }
+                return this._JobTaskAssignments;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobTaskAssignment> _JobTaskAssignments;
+    }
+    /// <summary>
+    /// There are no comments for JobTask in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// JobTaskId
     /// </KeyProperties>
@@ -102,6 +102,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JobTaskId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "JobTaskId is required.")]
         public virtual string JobTaskId
         {
             get
@@ -124,6 +126,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -146,6 +149,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Note in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Note
         {
             get
@@ -165,31 +169,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnNoteChanging(string value);
         partial void OnNoteChanged();
         /// <summary>
-        /// There are no comments for Property JobTaskAssignments in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTaskAssignment> JobTaskAssignments
-        {
-            get
-            {
-                return this._JobTaskAssignments;
-            }
-            set
-            {
-                this.OnJobTaskAssignmentsChanging(value);
-                this._JobTaskAssignments = value;
-                this.OnJobTaskAssignmentsChanged();
-                this.OnPropertyChanged("JobTaskAssignments");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTaskAssignment> _JobTaskAssignments = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTaskAssignment>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnJobTaskAssignmentsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTaskAssignment> value);
-        partial void OnJobTaskAssignmentsChanged();
-        /// <summary>
         /// There are no comments for Property JobTemplateTasks in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateTask> JobTemplateTasks
         {
             get
@@ -208,6 +191,29 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateTask> _JobTemplateTasks = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateTask>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnJobTemplateTasksChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateTask> value);
         partial void OnJobTemplateTasksChanged();
+        /// <summary>
+        /// There are no comments for Property JobTaskAssignments in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTaskAssignment> JobTaskAssignments
+        {
+            get
+            {
+                return this._JobTaskAssignments;
+            }
+            set
+            {
+                this.OnJobTaskAssignmentsChanging(value);
+                this._JobTaskAssignments = value;
+                this.OnJobTaskAssignmentsChanged();
+                this.OnPropertyChanged("JobTaskAssignments");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTaskAssignment> _JobTaskAssignments = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTaskAssignment>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnJobTaskAssignmentsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTaskAssignment> value);
+        partial void OnJobTaskAssignmentsChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

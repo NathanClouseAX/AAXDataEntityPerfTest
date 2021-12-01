@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for DeliveryModeChannelLineSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for DeliveryModeChannelLineSingle in the schema.
+    /// </summary>
     public partial class DeliveryModeChannelLineSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<DeliveryModeChannelLine>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DeliveryModeV2Single _DeliveryModeV2;
     }
-        /// <summary>
-        /// There are no comments for DeliveryModeChannelLine in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for DeliveryModeChannelLine in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// ModeOfDeliveryCode
@@ -96,6 +96,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -118,6 +120,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ModeOfDeliveryCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ModeOfDeliveryCode is required.")]
         public virtual string ModeOfDeliveryCode
         {
             get
@@ -140,6 +144,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PartyNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PartyNumber is required.")]
         public virtual string PartyNumber
         {
             get
@@ -162,6 +168,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OrganizationHierarchyType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "OrganizationHierarchyType is required.")]
         public virtual string OrganizationHierarchyType
         {
             get
@@ -184,6 +192,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OrganizationName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OrganizationName
         {
             get
@@ -206,6 +215,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DeliveryModeV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DeliveryModeV2 is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.DeliveryModeV2 DeliveryModeV2
         {
             get

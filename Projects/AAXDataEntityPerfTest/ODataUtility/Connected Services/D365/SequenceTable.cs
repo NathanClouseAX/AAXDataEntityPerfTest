@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for SequenceTableSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for SequenceTableSingle in the schema.
+    /// </summary>
     public partial class SequenceTableSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<SequenceTable>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetGroup> _AssetGroupBarcodeNumberSequence;
     }
-        /// <summary>
-        /// There are no comments for SequenceTable in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for SequenceTable in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// NumberSequenceCode
     /// ScopeType
@@ -125,6 +125,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NumberSequenceCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "NumberSequenceCode is required.")]
         public virtual string NumberSequenceCode
         {
             get
@@ -147,6 +149,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ScopeType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NumberSequenceType> ScopeType
         {
             get
@@ -169,6 +172,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ScopeValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ScopeValue is required.")]
         public virtual string ScopeValue
         {
             get
@@ -191,6 +196,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property QuantityOfNumbers in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "QuantityOfNumbers is required.")]
         public virtual int QuantityOfNumbers
         {
             get
@@ -213,6 +220,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ToAHigherNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ToAHigherNumber
         {
             get
@@ -235,6 +243,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Next in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Next is required.")]
         public virtual int Next
         {
             get
@@ -257,6 +267,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Continuous in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> Continuous
         {
             get
@@ -279,6 +290,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Preallocation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> Preallocation
         {
             get
@@ -301,6 +313,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Interval in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Interval is required.")]
         public virtual decimal Interval
         {
             get
@@ -323,6 +337,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OperatingUnitTypes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.OMOperatingUnitType> OperatingUnitTypes
         {
             get
@@ -345,6 +360,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SkipCounting in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> SkipCounting
         {
             get
@@ -367,6 +383,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Company in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Company
         {
             get
@@ -389,6 +406,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AnnotatedFormat in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AnnotatedFormat
         {
             get
@@ -411,6 +429,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CleanUp in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> CleanUp
         {
             get
@@ -433,6 +452,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DateTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DateTime is required.")]
         public virtual global::System.DateTimeOffset DateTime
         {
             get
@@ -455,6 +476,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Manual in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> Manual
         {
             get
@@ -477,6 +499,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Cyclical in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> Cyclical
         {
             get
@@ -499,6 +522,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Format in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Format
         {
             get
@@ -521,6 +545,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Name
         {
             get
@@ -543,6 +568,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Largest in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Largest is required.")]
         public virtual int Largest
         {
             get
@@ -565,6 +592,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InUse in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> InUse
         {
             get
@@ -587,6 +615,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Stopped in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> Stopped
         {
             get
@@ -609,6 +638,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Smallest in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Smallest is required.")]
         public virtual int Smallest
         {
             get
@@ -631,6 +662,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ToALowerNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ToALowerNumber
         {
             get
@@ -653,6 +685,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetGroupNumberSequence in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroup> AssetGroupNumberSequence
         {
             get
@@ -675,6 +708,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetGroupBarcodeNumberSequence in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroup> AssetGroupBarcodeNumberSequence
         {
             get

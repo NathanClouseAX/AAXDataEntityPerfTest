@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for EarningStatementLineSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for EarningStatementLineSingle in the schema.
+    /// </summary>
     public partial class EarningStatementLineSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<EarningStatementLine>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionSetSingle _DimensionSet;
     }
-        /// <summary>
-        /// There are no comments for EarningStatementLine in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for EarningStatementLine in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// Company
     /// EarningsStatementNumber
@@ -138,6 +138,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Company in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Company is required.")]
         public virtual string Company
         {
             get
@@ -160,6 +162,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EarningsStatementNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EarningsStatementNumber is required.")]
         public virtual string EarningsStatementNumber
         {
             get
@@ -182,6 +186,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LineNumber is required.")]
         public virtual decimal LineNumber
         {
             get
@@ -204,6 +210,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OriginalRetroactiveRate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "OriginalRetroactiveRate is required.")]
         public virtual decimal OriginalRetroactiveRate
         {
             get
@@ -226,6 +234,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProjectID in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProjectID
         {
             get
@@ -248,6 +257,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PaymentStatus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PayrollPaymentProcessingStatus> PaymentStatus
         {
             get
@@ -270,6 +280,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkerGeneralLiabilityInsuranceBenefitId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string WorkerGeneralLiabilityInsuranceBenefitId
         {
             get
@@ -292,6 +303,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EarningRate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EarningRate is required.")]
         public virtual decimal EarningRate
         {
             get
@@ -314,6 +327,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountingDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AccountingDate is required.")]
         public virtual global::System.DateTimeOffset AccountingDate
         {
             get
@@ -336,6 +351,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkerTaxRegionLocationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string WorkerTaxRegionLocationId
         {
             get
@@ -358,6 +374,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProjectLineProperty in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProjectLineProperty
         {
             get
@@ -380,6 +397,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountingDistributionTemplate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccountingDistributionTemplate
         {
             get
@@ -402,6 +420,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsManual in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsManual
         {
             get
@@ -424,6 +443,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EarningCodeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string EarningCodeId
         {
             get
@@ -446,6 +466,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ActivityNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ActivityNumber
         {
             get
@@ -468,6 +489,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OriginatingEarningStatementLineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "OriginatingEarningStatementLineNumber is required.")]
         public virtual decimal OriginatingEarningStatementLineNumber
         {
             get
@@ -490,6 +513,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EarningsDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EarningsDate is required.")]
         public virtual global::System.DateTimeOffset EarningsDate
         {
             get
@@ -512,6 +537,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PositionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PositionId
         {
             get
@@ -534,6 +560,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property GenerationSource in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PayrollGenerationSource> GenerationSource
         {
             get
@@ -556,6 +583,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionDisplayValue
         {
             get
@@ -578,6 +606,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineModified in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> LineModified
         {
             get
@@ -600,6 +629,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PersonnelNumber
         {
             get
@@ -622,6 +652,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Note in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Note
         {
             get
@@ -644,6 +675,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OriginatingEarningStatementNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OriginatingEarningStatementNumber
         {
             get
@@ -666,6 +698,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProjectCategory in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProjectCategory
         {
             get
@@ -688,6 +721,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkerCompensationBenefitId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string WorkerCompensationBenefitId
         {
             get
@@ -710,6 +744,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Amount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Amount is required.")]
         public virtual decimal Amount
         {
             get
@@ -732,6 +768,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PremiumEarningCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PremiumEarningCode
         {
             get
@@ -754,6 +791,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity is required.")]
         public virtual decimal Quantity
         {
             get
@@ -776,6 +815,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EarningStatement in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EarningStatement is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.EarningStatement EarningStatement
         {
             get
@@ -798,6 +839,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionSet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionSet DimensionSet
         {
             get

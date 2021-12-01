@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RebateAndDeductionsAgreementDateSetupCriterionSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RebateAndDeductionsAgreementDateSetupCriterionSingle in the schema.
+    /// </summary>
     public partial class RebateAndDeductionsAgreementDateSetupCriterionSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RebateAndDeductionsAgreementDateSetupCriterion>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDateSetupSingle _RebateAndDeductionsAgreementDateSetup;
     }
-        /// <summary>
-        /// There are no comments for RebateAndDeductionsAgreementDateSetupCriterion in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RebateAndDeductionsAgreementDateSetupCriterion in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// AgreementNumber
     /// AgreementLineNumber
@@ -126,6 +126,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AgreementNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AgreementNumber is required.")]
         public virtual string AgreementNumber
         {
             get
@@ -148,6 +150,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AgreementLineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AgreementLineNumber is required.")]
         public virtual decimal AgreementLineNumber
         {
             get
@@ -170,6 +174,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RebateValidFromQuantityAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RebateValidFromQuantityAmount is required.")]
         public virtual decimal RebateValidFromQuantityAmount
         {
             get
@@ -192,6 +198,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RebateValidToQuantityAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RebateValidToQuantityAmount is required.")]
         public virtual decimal RebateValidToQuantityAmount
         {
             get
@@ -214,6 +222,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RebateAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RebateAmount is required.")]
         public virtual decimal RebateAmount
         {
             get
@@ -236,6 +246,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RebateCalculationMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TAMRebateMethod> RebateCalculationMethod
         {
             get
@@ -258,6 +269,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RebateAndDeductionsAgreementHeaderDateSetupCriterionItems in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDateSetupCriterionItem> RebateAndDeductionsAgreementHeaderDateSetupCriterionItems
         {
             get
@@ -280,6 +292,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RebateAndDeductionsAgreementDateSetup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RebateAndDeductionsAgreementDateSetup is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDateSetup RebateAndDeductionsAgreementDateSetup
         {
             get

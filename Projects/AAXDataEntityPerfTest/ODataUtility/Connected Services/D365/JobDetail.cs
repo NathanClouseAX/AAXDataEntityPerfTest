@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for JobDetailSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for JobDetailSingle in the schema.
+    /// </summary>
     public partial class JobDetailSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<JobDetail>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.JobSingle _Job;
     }
-        /// <summary>
-        /// There are no comments for JobDetail in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for JobDetail in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// JobId
     /// ValidFrom
@@ -108,6 +108,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JobId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "JobId is required.")]
         public virtual string JobId
         {
             get
@@ -130,6 +132,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidFrom in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValidFrom is required.")]
         public virtual global::System.DateTimeOffset ValidFrom
         {
             get
@@ -152,6 +156,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidTo in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValidTo is required.")]
         public virtual global::System.DateTimeOffset ValidTo
         {
             get
@@ -174,6 +180,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MarketPriceHighThreshold in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MarketPriceHighThreshold is required.")]
         public virtual decimal MarketPriceHighThreshold
         {
             get
@@ -196,6 +204,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MarketPriceLowThreshold in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MarketPriceLowThreshold is required.")]
         public virtual decimal MarketPriceLowThreshold
         {
             get
@@ -218,6 +228,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JobDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string JobDescription
         {
             get
@@ -240,6 +251,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TitleId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TitleId
         {
             get
@@ -262,6 +274,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PaidHourly in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PaidHourly
         {
             get
@@ -284,6 +297,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CompensationReferenceJob in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CompensationReferenceJob
         {
             get
@@ -306,6 +320,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CompensationLevelId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CompensationLevelId
         {
             get
@@ -328,6 +343,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JobTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string JobTypeId
         {
             get
@@ -350,6 +366,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CompensationSurveyCompanyId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CompensationSurveyCompanyId
         {
             get
@@ -372,6 +389,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MarketPriceControlPoint in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MarketPriceControlPoint is required.")]
         public virtual decimal MarketPriceControlPoint
         {
             get
@@ -394,6 +413,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -416,6 +436,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MarketPriceSource in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MarketPriceSource
         {
             get
@@ -438,6 +459,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FunctionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FunctionId
         {
             get
@@ -460,6 +482,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FullTimeEquivalent in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FullTimeEquivalent is required.")]
         public virtual decimal FullTimeEquivalent
         {
             get
@@ -482,6 +506,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Job in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Job is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Job Job
         {
             get

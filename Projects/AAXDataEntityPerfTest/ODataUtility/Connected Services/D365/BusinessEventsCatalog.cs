@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for BusinessEventsCatalogSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BusinessEventsCatalogSingle in the schema.
+    /// </summary>
     public partial class BusinessEventsCatalogSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<BusinessEventsCatalog>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for BusinessEventsCatalog in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BusinessEventsCatalog in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// BusinessEventId
     /// </KeyProperties>
@@ -60,6 +60,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BusinessEventId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BusinessEventId is required.")]
         public virtual string BusinessEventId
         {
             get
@@ -82,6 +84,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DescParam1 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DescParam1
         {
             get
@@ -104,6 +107,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Module in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ModuleAxapta> Module
         {
             get
@@ -126,6 +130,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Contract in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Contract
         {
             get
@@ -148,6 +153,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Name
         {
             get
@@ -170,6 +176,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DescParam2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DescParam2
         {
             get
@@ -192,6 +199,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NameParam1 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string NameParam1
         {
             get
@@ -214,6 +222,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -236,6 +245,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NameParam2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string NameParam2
         {
             get

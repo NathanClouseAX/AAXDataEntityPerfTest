@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for AccrualPlanRuleSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AccrualPlanRuleSingle in the schema.
+    /// </summary>
     public partial class AccrualPlanRuleSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AccrualPlanRule>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.AccrualPlanSingle _AccrualPlan;
     }
-        /// <summary>
-        /// There are no comments for AccrualPlanRule in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AccrualPlanRule in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// AccrualId
     /// EmploymentMonths
@@ -104,6 +104,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccrualId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AccrualId is required.")]
         public virtual string AccrualId
         {
             get
@@ -126,6 +128,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EmploymentMonths in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EmploymentMonths is required.")]
         public virtual decimal EmploymentMonths
         {
             get
@@ -148,6 +152,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaximumLimit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MaximumLimit is required.")]
         public virtual decimal MaximumLimit
         {
             get
@@ -170,6 +176,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HourlyRate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "HourlyRate is required.")]
         public virtual decimal HourlyRate
         {
             get
@@ -192,6 +200,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MinimumLimit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MinimumLimit is required.")]
         public virtual decimal MinimumLimit
         {
             get
@@ -214,6 +224,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CarryForwardLimit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CarryForwardLimit is required.")]
         public virtual decimal CarryForwardLimit
         {
             get
@@ -236,6 +248,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccrualPlan in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AccrualPlan is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.AccrualPlan AccrualPlan
         {
             get

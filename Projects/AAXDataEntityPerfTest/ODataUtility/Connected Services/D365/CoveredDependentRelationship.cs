@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for CoveredDependentRelationshipSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CoveredDependentRelationshipSingle in the schema.
+    /// </summary>
     public partial class CoveredDependentRelationshipSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<CoveredDependentRelationship>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.WorkerEnrolledBenefitSingle _WorkerEnrolledBenefit;
     }
-        /// <summary>
-        /// There are no comments for CoveredDependentRelationship in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CoveredDependentRelationship in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// BenefitId
     /// PersonnelNumber
@@ -128,6 +128,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BenefitId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BenefitId is required.")]
         public virtual string BenefitId
         {
             get
@@ -150,6 +152,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PersonnelNumber is required.")]
         public virtual string PersonnelNumber
         {
             get
@@ -172,6 +176,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EnrollmentStart in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EnrollmentStart is required.")]
         public virtual global::System.DateTimeOffset EnrollmentStart
         {
             get
@@ -194,6 +200,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EnrollmentEnd in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EnrollmentEnd is required.")]
         public virtual global::System.DateTimeOffset EnrollmentEnd
         {
             get
@@ -216,6 +224,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RelationshipTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RelationshipTypeId is required.")]
         public virtual string RelationshipTypeId
         {
             get
@@ -238,6 +248,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ChildPartyId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ChildPartyId is required.")]
         public virtual string ChildPartyId
         {
             get
@@ -260,6 +272,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PartyRelationshipDataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PartyRelationshipDataAreaId is required.")]
         public virtual string PartyRelationshipDataAreaId
         {
             get
@@ -282,6 +296,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PartyRelationshipValidTo in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PartyRelationshipValidTo is required.")]
         public virtual global::System.DateTimeOffset PartyRelationshipValidTo
         {
             get
@@ -304,6 +320,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PartyRelationshipValidFrom in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PartyRelationshipValidFrom is required.")]
         public virtual global::System.DateTimeOffset PartyRelationshipValidFrom
         {
             get
@@ -326,6 +344,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidFrom in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValidFrom is required.")]
         public virtual global::System.DateTimeOffset ValidFrom
         {
             get
@@ -348,6 +368,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidTo in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValidTo is required.")]
         public virtual global::System.DateTimeOffset ValidTo
         {
             get
@@ -370,6 +392,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkerEnrolledBenefit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WorkerEnrolledBenefit is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.WorkerEnrolledBenefit WorkerEnrolledBenefit
         {
             get

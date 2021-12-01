@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for VendInvoicePriceToleranceSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for VendInvoicePriceToleranceSingle in the schema.
+    /// </summary>
     public partial class VendInvoicePriceToleranceSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<VendInvoicePriceTolerance>
     {
         /// <summary>
@@ -119,9 +119,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ReleasedProductV2Single _ReleasedProductV2;
     }
-        /// <summary>
-        /// There are no comments for VendInvoicePriceTolerance in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for VendInvoicePriceTolerance in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// PriceToleranceItemNumber
@@ -163,6 +163,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -185,6 +187,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PriceToleranceItemNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PriceToleranceItemNumber is required.")]
         public virtual string PriceToleranceItemNumber
         {
             get
@@ -207,6 +211,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PriceToleranceItemGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PriceToleranceItemGroup is required.")]
         public virtual string PriceToleranceItemGroup
         {
             get
@@ -229,6 +235,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PriceToleranceAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PriceToleranceAccountNumber is required.")]
         public virtual string PriceToleranceAccountNumber
         {
             get
@@ -251,6 +259,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PriceToleranceAccountGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PriceToleranceAccountGroup is required.")]
         public virtual string PriceToleranceAccountGroup
         {
             get
@@ -273,6 +283,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PercentTolerance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PercentTolerance is required.")]
         public virtual decimal PercentTolerance
         {
             get
@@ -295,6 +307,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.VendorV2 VendorV2
         {
             get
@@ -317,6 +330,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorPriceToleranceGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.VendorPriceToleranceGroup VendorPriceToleranceGroup
         {
             get
@@ -339,6 +353,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemPriceToleranceGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ItemPriceToleranceGroup ItemPriceToleranceGroup
         {
             get
@@ -361,6 +376,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReleasedProductV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ReleasedProductV2 ReleasedProductV2
         {
             get

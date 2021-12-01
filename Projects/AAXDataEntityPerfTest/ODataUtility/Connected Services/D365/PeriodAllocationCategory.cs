@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for PeriodAllocationCategorySingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PeriodAllocationCategorySingle in the schema.
+    /// </summary>
     public partial class PeriodAllocationCategorySingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PeriodAllocationCategory>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetParameters> _BudgetParameters;
     }
-        /// <summary>
-        /// There are no comments for PeriodAllocationCategory in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PeriodAllocationCategory in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// PeriodKey
@@ -91,6 +91,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -113,6 +115,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PeriodKey in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PeriodKey is required.")]
         public virtual string PeriodKey
         {
             get
@@ -135,6 +139,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LineNumber is required.")]
         public virtual decimal LineNumber
         {
             get
@@ -157,6 +163,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Name
         {
             get
@@ -179,6 +186,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionDisplayValue
         {
             get
@@ -201,6 +209,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllocationPercentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AllocationPercentage is required.")]
         public virtual decimal AllocationPercentage
         {
             get
@@ -223,6 +233,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsFixed in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsFixed
         {
             get
@@ -245,6 +256,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TimeInterval in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TimeInterval is required.")]
         public virtual int TimeInterval
         {
             get
@@ -267,6 +280,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnitOfTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PeriodUnit> UnitOfTime
         {
             get
@@ -289,6 +303,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetParameters in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetParameters> BudgetParameters
         {
             get

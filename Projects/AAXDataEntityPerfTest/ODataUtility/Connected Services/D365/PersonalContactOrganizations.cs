@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for PersonalContactOrganizationsSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PersonalContactOrganizationsSingle in the schema.
+    /// </summary>
     public partial class PersonalContactOrganizationsSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PersonalContactOrganizations>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.WorkerSingle _PersonalContactOrganizationWorker;
     }
-        /// <summary>
-        /// There are no comments for PersonalContactOrganizations in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PersonalContactOrganizations in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// WorkerPersonnelNumber
     /// ContactOrganizationPartyNumber
@@ -117,6 +117,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkerPersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WorkerPersonnelNumber is required.")]
         public virtual string WorkerPersonnelNumber
         {
             get
@@ -139,6 +141,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ContactOrganizationPartyNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ContactOrganizationPartyNumber is required.")]
         public virtual string ContactOrganizationPartyNumber
         {
             get
@@ -161,6 +165,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OrganizationName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OrganizationName
         {
             get
@@ -183,6 +188,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RelationshipType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RelationshipType
         {
             get
@@ -205,6 +211,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsBeneficiary in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsBeneficiary
         {
             get
@@ -227,6 +234,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PersonalContactOrganizationRelationshipType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PersonalContactOrganizationRelationshipType is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RelationshipType PersonalContactOrganizationRelationshipType
         {
             get
@@ -249,6 +258,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PersonalContactOrganizationWorker in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PersonalContactOrganizationWorker is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Worker PersonalContactOrganizationWorker
         {
             get

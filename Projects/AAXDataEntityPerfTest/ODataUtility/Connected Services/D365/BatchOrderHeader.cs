@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for BatchOrderHeaderSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BatchOrderHeaderSingle in the schema.
+    /// </summary>
     public partial class BatchOrderHeaderSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<BatchOrderHeader>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionSetSingle _DimensionSet;
     }
-        /// <summary>
-        /// There are no comments for BatchOrderHeader in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BatchOrderHeader in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// BatchOrderNumber
@@ -181,6 +181,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -203,6 +205,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BatchOrderNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BatchOrderNumber is required.")]
         public virtual string BatchOrderNumber
         {
             get
@@ -225,6 +229,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SourceFormulaVersionValidityDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SourceFormulaVersionValidityDate is required.")]
         public virtual global::System.DateTimeOffset SourceFormulaVersionValidityDate
         {
             get
@@ -247,6 +253,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ScheduledEndDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ScheduledEndDate is required.")]
         public virtual global::System.DateTimeOffset ScheduledEndDate
         {
             get
@@ -269,6 +277,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductStyleId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductStyleId
         {
             get
@@ -291,6 +300,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsBatchOrderRouteOperationValid in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsBatchOrderRouteOperationValid
         {
             get
@@ -313,6 +323,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsReworkBatchOrder in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsReworkBatchOrder
         {
             get
@@ -335,6 +346,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RemainingReportAsFinishedCatchWeightQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RemainingReportAsFinishedCatchWeightQuantity is required.")]
         public virtual decimal RemainingReportAsFinishedCatchWeightQuantity
         {
             get
@@ -357,6 +370,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SubcontractingPurchaseOrderNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SubcontractingPurchaseOrderNumber
         {
             get
@@ -379,6 +393,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BatchOrderProfitSettingMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.CostProfitSet> BatchOrderProfitSettingMethod
         {
             get
@@ -401,6 +416,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductionGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductionGroupId
         {
             get
@@ -423,6 +439,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DeliveryTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DeliveryTime is required.")]
         public virtual int DeliveryTime
         {
             get
@@ -445,6 +463,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AutoReservationMode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ProdReservation> AutoReservationMode
         {
             get
@@ -467,6 +486,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EndedDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EndedDate is required.")]
         public virtual global::System.DateTimeOffset EndedDate
         {
             get
@@ -489,6 +510,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DemandBatchOrderLineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DemandBatchOrderLineNumber
         {
             get
@@ -511,6 +533,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InventoryStatusId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string InventoryStatusId
         {
             get
@@ -533,6 +556,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ItemNumber
         {
             get
@@ -555,6 +579,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BatchSizeCatchWeightQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BatchSizeCatchWeightQuantity is required.")]
         public virtual decimal BatchSizeCatchWeightQuantity
         {
             get
@@ -577,6 +603,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsBulkOrder in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsBulkOrder
         {
             get
@@ -599,6 +626,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BatchOrderLedgerPostingRule in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ProdPostingType> BatchOrderLedgerPostingRule
         {
             get
@@ -621,6 +649,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportedAsFinishedDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReportedAsFinishedDate is required.")]
         public virtual global::System.DateTimeOffset ReportedAsFinishedDate
         {
             get
@@ -643,6 +673,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductionSiteId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductionSiteId
         {
             get
@@ -665,6 +696,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SkipCreateBatchOrderFormulaLines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> SkipCreateBatchOrderFormulaLines
         {
             get
@@ -687,6 +719,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PlannedReceiptWarehouseId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PlannedReceiptWarehouseId
         {
             get
@@ -709,6 +742,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ScheduledDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ScheduledDate is required.")]
         public virtual global::System.DateTimeOffset ScheduledDate
         {
             get
@@ -731,6 +766,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DemandTransferOrderNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DemandTransferOrderNumber
         {
             get
@@ -753,6 +789,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductSizeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductSizeId
         {
             get
@@ -775,6 +812,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DemandBatchOrderLineInventoryLotId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DemandBatchOrderLineInventoryLotId
         {
             get
@@ -797,6 +835,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DemandSalesOrderNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DemandSalesOrderNumber
         {
             get
@@ -819,6 +858,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BatchOrderStatus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ProdStatus> BatchOrderStatus
         {
             get
@@ -841,6 +881,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BatchOrderName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BatchOrderName
         {
             get
@@ -863,6 +904,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StartedDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "StartedDate is required.")]
         public virtual global::System.DateTimeOffset StartedDate
         {
             get
@@ -885,6 +928,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SubcontractingPurchaseOrderLineInventoryLotId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SubcontractingPurchaseOrderLineInventoryLotId
         {
             get
@@ -907,6 +951,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SchedulingMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ProdSchedStatus> SchedulingMethod
         {
             get
@@ -929,6 +974,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ScheduledStartDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ScheduledStartDate is required.")]
         public virtual global::System.DateTimeOffset ScheduledStartDate
         {
             get
@@ -951,6 +998,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsTotalCostAllocationEnabled in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsTotalCostAllocationEnabled
         {
             get
@@ -973,6 +1021,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DemandInventoryJournalLineInventoryLotId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DemandInventoryJournalLineInventoryLotId
         {
             get
@@ -995,6 +1044,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BatchOrderLevel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BatchOrderLevel is required.")]
         public virtual int BatchOrderLevel
         {
             get
@@ -1017,6 +1068,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ScheduledQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ScheduledQuantity is required.")]
         public virtual decimal ScheduledQuantity
         {
             get
@@ -1039,6 +1092,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ConsumptionDensityConversionFactor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ConsumptionDensityConversionFactor is required.")]
         public virtual decimal ConsumptionDensityConversionFactor
         {
             get
@@ -1061,6 +1116,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SkipCreateBatchOrderRouteOperations in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> SkipCreateBatchOrderRouteOperations
         {
             get
@@ -1083,6 +1139,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EstimatedDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EstimatedDate is required.")]
         public virtual global::System.DateTimeOffset EstimatedDate
         {
             get
@@ -1105,6 +1163,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DemandBatchOrderNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DemandBatchOrderNumber
         {
             get
@@ -1127,6 +1186,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkingTimeSchedulingPropertyId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string WorkingTimeSchedulingPropertyId
         {
             get
@@ -1149,6 +1209,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ConsolidatedBatchOrderNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ConsolidatedBatchOrderNumber
         {
             get
@@ -1171,6 +1232,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ConsumptionDepthConversionFactor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ConsumptionDepthConversionFactor is required.")]
         public virtual decimal ConsumptionDepthConversionFactor
         {
             get
@@ -1193,6 +1256,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EstimatedCatchWeightQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EstimatedCatchWeightQuantity is required.")]
         public virtual decimal EstimatedCatchWeightQuantity
         {
             get
@@ -1215,6 +1280,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InventoryLotId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string InventoryLotId
         {
             get
@@ -1237,6 +1303,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReleasedDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReleasedDate is required.")]
         public virtual global::System.DateTimeOffset ReleasedDate
         {
             get
@@ -1259,6 +1327,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BatchOrderRemainderStatus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ProdBackStatus> BatchOrderRemainderStatus
         {
             get
@@ -1281,6 +1350,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SourcePlannedOrderNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SourcePlannedOrderNumber
         {
             get
@@ -1303,6 +1373,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemSerialNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ItemSerialNumber
         {
             get
@@ -1325,6 +1396,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductConfigurationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductConfigurationId
         {
             get
@@ -1347,6 +1419,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LastSchedulingDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LastSchedulingDate is required.")]
         public virtual global::System.DateTimeOffset LastSchedulingDate
         {
             get
@@ -1369,6 +1443,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductionPoolId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductionPoolId
         {
             get
@@ -1391,6 +1466,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StartedQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "StartedQuantity is required.")]
         public virtual decimal StartedQuantity
         {
             get
@@ -1413,6 +1490,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LicensePlateNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LicensePlateNumber
         {
             get
@@ -1435,6 +1513,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DemandTransferOrderLineReceivingInventoryLotId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DemandTransferOrderLineReceivingInventoryLotId
         {
             get
@@ -1457,6 +1536,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ScheduledCatchWeightQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ScheduledCatchWeightQuantity is required.")]
         public virtual decimal ScheduledCatchWeightQuantity
         {
             get
@@ -1479,6 +1560,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsBatchOrderSchedulingLocked in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsBatchOrderSchedulingLocked
         {
             get
@@ -1501,6 +1583,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DemandBatchOrderHeaderInventoryLotId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DemandBatchOrderHeaderInventoryLotId
         {
             get
@@ -1523,6 +1606,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductVersionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductVersionId
         {
             get
@@ -1545,6 +1629,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LastSchedulingTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LastSchedulingTime is required.")]
         public virtual int LastSchedulingTime
         {
             get
@@ -1567,6 +1653,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EstimatedQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EstimatedQuantity is required.")]
         public virtual decimal EstimatedQuantity
         {
             get
@@ -1589,6 +1677,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BatchOrderPriority in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BatchOrderPriority is required.")]
         public virtual int BatchOrderPriority
         {
             get
@@ -1611,6 +1701,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DemandSalesOrderLineInventoryLotId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DemandSalesOrderLineInventoryLotId
         {
             get
@@ -1633,6 +1724,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SourceFormulaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SourceFormulaId
         {
             get
@@ -1655,6 +1747,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property YieldPercentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "YieldPercentage is required.")]
         public virtual decimal YieldPercentage
         {
             get
@@ -1677,6 +1771,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SourceMasterPlanId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SourceMasterPlanId
         {
             get
@@ -1699,6 +1794,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LastSchedulingDateDirection in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.SchedDirection> LastSchedulingDateDirection
         {
             get
@@ -1721,6 +1817,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemBatchNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ItemBatchNumber
         {
             get
@@ -1743,6 +1840,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductColorId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductColorId
         {
             get
@@ -1765,6 +1863,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RemainingReportAsFinishedQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RemainingReportAsFinishedQuantity is required.")]
         public virtual decimal RemainingReportAsFinishedQuantity
         {
             get
@@ -1787,6 +1887,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ConsumptionHeightConversionFactor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ConsumptionHeightConversionFactor is required.")]
         public virtual decimal ConsumptionHeightConversionFactor
         {
             get
@@ -1809,6 +1911,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SourceRouteId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SourceRouteId
         {
             get
@@ -1831,6 +1934,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AreRouteJobsGenerated in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AreRouteJobsGenerated
         {
             get
@@ -1853,6 +1957,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PlannedReceiptWarehouseLocationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PlannedReceiptWarehouseLocationId
         {
             get
@@ -1875,6 +1980,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WarehouseReleaseReservationRequirementRule in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ProdWHSReleasePolicy> WarehouseReleaseReservationRequirementRule
         {
             get
@@ -1897,6 +2003,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsCoByProductVariationAllowed in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsCoByProductVariationAllowed
         {
             get
@@ -1919,6 +2026,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ScheduledStartTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ScheduledStartTime is required.")]
         public virtual int ScheduledStartTime
         {
             get
@@ -1941,6 +2050,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DeliveryDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DeliveryDate is required.")]
         public virtual global::System.DateTimeOffset DeliveryDate
         {
             get
@@ -1963,6 +2074,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ScheduledEndTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ScheduledEndTime is required.")]
         public virtual int ScheduledEndTime
         {
             get
@@ -1985,6 +2098,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultLedgerDimensionDisplayValue
         {
             get
@@ -2007,6 +2121,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property GanttChartColorNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "GanttChartColorNumber is required.")]
         public virtual int GanttChartColorNumber
         {
             get
@@ -2029,6 +2145,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ConsumptionWidthConversionFactor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ConsumptionWidthConversionFactor is required.")]
         public virtual decimal ConsumptionWidthConversionFactor
         {
             get
@@ -2051,6 +2169,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StartedCatchWeightQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "StartedCatchWeightQuantity is required.")]
         public virtual decimal StartedCatchWeightQuantity
         {
             get
@@ -2073,6 +2193,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ParentBatchOrderNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ParentBatchOrderNumber
         {
             get
@@ -2095,6 +2216,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DemandInventoryJournalNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DemandInventoryJournalNumber
         {
             get
@@ -2117,6 +2239,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InventoryOwnerId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string InventoryOwnerId
         {
             get
@@ -2139,6 +2262,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionSet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionSet DimensionSet
         {
             get

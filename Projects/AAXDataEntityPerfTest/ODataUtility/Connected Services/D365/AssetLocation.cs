@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for AssetLocationSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AssetLocationSingle in the schema.
+    /// </summary>
     public partial class AssetLocationSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AssetLocation>
     {
         /// <summary>
@@ -55,6 +55,48 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetV2Entity> _AssetFixedAssetV2LocationAsset;
+        /// <summary>
+        /// There are no comments for AssetLocationAssetGroup in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetGroup> AssetLocationAssetGroup
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._AssetLocationAssetGroup == null))
+                {
+                    this._AssetLocationAssetGroup = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetGroup>(GetPath("AssetLocationAssetGroup"));
+                }
+                return this._AssetLocationAssetGroup;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetGroup> _AssetLocationAssetGroup;
+        /// <summary>
+        /// There are no comments for LocationFixedAsset in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAsset> LocationFixedAsset
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._LocationFixedAsset == null))
+                {
+                    this._LocationFixedAsset = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAsset>(GetPath("LocationFixedAsset"));
+                }
+                return this._LocationFixedAsset;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAsset> _LocationFixedAsset;
         /// <summary>
         /// There are no comments for Cities in the schema.
         /// </summary>
@@ -160,52 +202,10 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.AddressCountySingle _Counties;
-        /// <summary>
-        /// There are no comments for AssetLocationAssetGroup in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetGroup> AssetLocationAssetGroup
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._AssetLocationAssetGroup == null))
-                {
-                    this._AssetLocationAssetGroup = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetGroup>(GetPath("AssetLocationAssetGroup"));
-                }
-                return this._AssetLocationAssetGroup;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetGroup> _AssetLocationAssetGroup;
-        /// <summary>
-        /// There are no comments for LocationFixedAsset in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAsset> LocationFixedAsset
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._LocationFixedAsset == null))
-                {
-                    this._LocationFixedAsset = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAsset>(GetPath("LocationFixedAsset"));
-                }
-                return this._LocationFixedAsset;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAsset> _LocationFixedAsset;
     }
-        /// <summary>
-        /// There are no comments for AssetLocation in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AssetLocation in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// LocationId
@@ -235,6 +235,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -257,6 +259,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LocationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LocationId is required.")]
         public virtual string LocationId
         {
             get
@@ -279,6 +283,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AddressCountryRegionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AddressCountryRegionId
         {
             get
@@ -301,6 +306,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AddressStreet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AddressStreet
         {
             get
@@ -323,6 +329,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Name
         {
             get
@@ -345,6 +352,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AddressCounty in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AddressCounty
         {
             get
@@ -367,6 +375,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AddressCityInKana in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AddressCityInKana
         {
             get
@@ -389,6 +398,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AddressValidTo in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AddressValidTo is required.")]
         public virtual global::System.DateTimeOffset AddressValidTo
         {
             get
@@ -411,6 +422,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AddressStreetInKana in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AddressStreetInKana
         {
             get
@@ -433,6 +445,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AddressValidFrom in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AddressValidFrom is required.")]
         public virtual global::System.DateTimeOffset AddressValidFrom
         {
             get
@@ -455,6 +469,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AddressState in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AddressState
         {
             get
@@ -477,6 +492,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AddressZipCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AddressZipCode
         {
             get
@@ -499,6 +515,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AddressCity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AddressCity
         {
             get
@@ -521,6 +538,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AddressCountryRegionISOCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AddressCountryRegionISOCode
         {
             get
@@ -543,6 +561,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetFixedAssetV2LocationAsset in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetV2Entity> AssetFixedAssetV2LocationAsset
         {
             get
@@ -562,119 +581,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnAssetFixedAssetV2LocationAssetChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetV2Entity> value);
         partial void OnAssetFixedAssetV2LocationAssetChanged();
         /// <summary>
-        /// There are no comments for Property Cities in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.AddressCity Cities
-        {
-            get
-            {
-                return this._Cities;
-            }
-            set
-            {
-                this.OnCitiesChanging(value);
-                this._Cities = value;
-                this.OnCitiesChanged();
-                this.OnPropertyChanged("Cities");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.AddressCity _Cities;
-        partial void OnCitiesChanging(global::Microsoft.Dynamics.DataEntities.AddressCity value);
-        partial void OnCitiesChanged();
-        /// <summary>
-        /// There are no comments for Property States in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.AddressState States
-        {
-            get
-            {
-                return this._States;
-            }
-            set
-            {
-                this.OnStatesChanging(value);
-                this._States = value;
-                this.OnStatesChanged();
-                this.OnPropertyChanged("States");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.AddressState _States;
-        partial void OnStatesChanging(global::Microsoft.Dynamics.DataEntities.AddressState value);
-        partial void OnStatesChanged();
-        /// <summary>
-        /// There are no comments for Property AddressPostalCodeV3 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.AddressPostalCodeV3 AddressPostalCodeV3
-        {
-            get
-            {
-                return this._AddressPostalCodeV3;
-            }
-            set
-            {
-                this.OnAddressPostalCodeV3Changing(value);
-                this._AddressPostalCodeV3 = value;
-                this.OnAddressPostalCodeV3Changed();
-                this.OnPropertyChanged("AddressPostalCodeV3");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.AddressPostalCodeV3 _AddressPostalCodeV3;
-        partial void OnAddressPostalCodeV3Changing(global::Microsoft.Dynamics.DataEntities.AddressPostalCodeV3 value);
-        partial void OnAddressPostalCodeV3Changed();
-        /// <summary>
-        /// There are no comments for Property AddressCountryRegion in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.AddressCountryRegion AddressCountryRegion
-        {
-            get
-            {
-                return this._AddressCountryRegion;
-            }
-            set
-            {
-                this.OnAddressCountryRegionChanging(value);
-                this._AddressCountryRegion = value;
-                this.OnAddressCountryRegionChanged();
-                this.OnPropertyChanged("AddressCountryRegion");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.AddressCountryRegion _AddressCountryRegion;
-        partial void OnAddressCountryRegionChanging(global::Microsoft.Dynamics.DataEntities.AddressCountryRegion value);
-        partial void OnAddressCountryRegionChanged();
-        /// <summary>
-        /// There are no comments for Property Counties in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.AddressCounty Counties
-        {
-            get
-            {
-                return this._Counties;
-            }
-            set
-            {
-                this.OnCountiesChanging(value);
-                this._Counties = value;
-                this.OnCountiesChanged();
-                this.OnPropertyChanged("Counties");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.AddressCounty _Counties;
-        partial void OnCountiesChanging(global::Microsoft.Dynamics.DataEntities.AddressCounty value);
-        partial void OnCountiesChanged();
-        /// <summary>
         /// There are no comments for Property AssetLocationAssetGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroup> AssetLocationAssetGroup
         {
             get
@@ -697,6 +607,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LocationFixedAsset in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAsset> LocationFixedAsset
         {
             get
@@ -715,6 +626,121 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAsset> _LocationFixedAsset = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAsset>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnLocationFixedAssetChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAsset> value);
         partial void OnLocationFixedAssetChanged();
+        /// <summary>
+        /// There are no comments for Property Cities in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.Dynamics.DataEntities.AddressCity Cities
+        {
+            get
+            {
+                return this._Cities;
+            }
+            set
+            {
+                this.OnCitiesChanging(value);
+                this._Cities = value;
+                this.OnCitiesChanged();
+                this.OnPropertyChanged("Cities");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.AddressCity _Cities;
+        partial void OnCitiesChanging(global::Microsoft.Dynamics.DataEntities.AddressCity value);
+        partial void OnCitiesChanged();
+        /// <summary>
+        /// There are no comments for Property States in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.Dynamics.DataEntities.AddressState States
+        {
+            get
+            {
+                return this._States;
+            }
+            set
+            {
+                this.OnStatesChanging(value);
+                this._States = value;
+                this.OnStatesChanged();
+                this.OnPropertyChanged("States");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.AddressState _States;
+        partial void OnStatesChanging(global::Microsoft.Dynamics.DataEntities.AddressState value);
+        partial void OnStatesChanged();
+        /// <summary>
+        /// There are no comments for Property AddressPostalCodeV3 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.Dynamics.DataEntities.AddressPostalCodeV3 AddressPostalCodeV3
+        {
+            get
+            {
+                return this._AddressPostalCodeV3;
+            }
+            set
+            {
+                this.OnAddressPostalCodeV3Changing(value);
+                this._AddressPostalCodeV3 = value;
+                this.OnAddressPostalCodeV3Changed();
+                this.OnPropertyChanged("AddressPostalCodeV3");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.AddressPostalCodeV3 _AddressPostalCodeV3;
+        partial void OnAddressPostalCodeV3Changing(global::Microsoft.Dynamics.DataEntities.AddressPostalCodeV3 value);
+        partial void OnAddressPostalCodeV3Changed();
+        /// <summary>
+        /// There are no comments for Property AddressCountryRegion in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.Dynamics.DataEntities.AddressCountryRegion AddressCountryRegion
+        {
+            get
+            {
+                return this._AddressCountryRegion;
+            }
+            set
+            {
+                this.OnAddressCountryRegionChanging(value);
+                this._AddressCountryRegion = value;
+                this.OnAddressCountryRegionChanged();
+                this.OnPropertyChanged("AddressCountryRegion");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.AddressCountryRegion _AddressCountryRegion;
+        partial void OnAddressCountryRegionChanging(global::Microsoft.Dynamics.DataEntities.AddressCountryRegion value);
+        partial void OnAddressCountryRegionChanged();
+        /// <summary>
+        /// There are no comments for Property Counties in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.Dynamics.DataEntities.AddressCounty Counties
+        {
+            get
+            {
+                return this._Counties;
+            }
+            set
+            {
+                this.OnCountiesChanging(value);
+                this._Counties = value;
+                this.OnCountiesChanged();
+                this.OnPropertyChanged("Counties");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.AddressCounty _Counties;
+        partial void OnCountiesChanging(global::Microsoft.Dynamics.DataEntities.AddressCounty value);
+        partial void OnCountiesChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

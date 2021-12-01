@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for WarehouseZoneSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for WarehouseZoneSingle in the schema.
+    /// </summary>
     public partial class WarehouseZoneSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<WarehouseZone>
     {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public WarehouseZoneSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<WarehouseZone> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for WarehouseZoneGroup in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.WarehouseZoneGroupSingle WarehouseZoneGroup
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._WarehouseZoneGroup == null))
-                {
-                    this._WarehouseZoneGroup = new global::Microsoft.Dynamics.DataEntities.WarehouseZoneGroupSingle(this.Context, GetPath("WarehouseZoneGroup"));
-                }
-                return this._WarehouseZoneGroup;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.WarehouseZoneGroupSingle _WarehouseZoneGroup;
         /// <summary>
         /// There are no comments for SecondAdditionalZoneWarehouseLocations in the schema.
         /// </summary>
@@ -139,10 +118,31 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WarehouseLocation> _WarehouseLocations;
-    }
         /// <summary>
-        /// There are no comments for WarehouseZone in the schema.
+        /// There are no comments for WarehouseZoneGroup in the schema.
         /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.WarehouseZoneGroupSingle WarehouseZoneGroup
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._WarehouseZoneGroup == null))
+                {
+                    this._WarehouseZoneGroup = new global::Microsoft.Dynamics.DataEntities.WarehouseZoneGroupSingle(this.Context, GetPath("WarehouseZoneGroup"));
+                }
+                return this._WarehouseZoneGroup;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.WarehouseZoneGroupSingle _WarehouseZoneGroup;
+    }
+    /// <summary>
+    /// There are no comments for WarehouseZone in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// ZoneId
@@ -174,6 +174,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -196,6 +198,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ZoneId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ZoneId is required.")]
         public virtual string ZoneId
         {
             get
@@ -218,6 +222,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ZoneName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ZoneName
         {
             get
@@ -240,6 +245,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WarehouseZoneGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string WarehouseZoneGroupId
         {
             get
@@ -259,31 +265,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnWarehouseZoneGroupIdChanging(string value);
         partial void OnWarehouseZoneGroupIdChanged();
         /// <summary>
-        /// There are no comments for Property WarehouseZoneGroup in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.WarehouseZoneGroup WarehouseZoneGroup
-        {
-            get
-            {
-                return this._WarehouseZoneGroup;
-            }
-            set
-            {
-                this.OnWarehouseZoneGroupChanging(value);
-                this._WarehouseZoneGroup = value;
-                this.OnWarehouseZoneGroupChanged();
-                this.OnPropertyChanged("WarehouseZoneGroup");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.WarehouseZoneGroup _WarehouseZoneGroup;
-        partial void OnWarehouseZoneGroupChanging(global::Microsoft.Dynamics.DataEntities.WarehouseZoneGroup value);
-        partial void OnWarehouseZoneGroupChanged();
-        /// <summary>
         /// There are no comments for Property SecondAdditionalZoneWarehouseLocations in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseLocation> SecondAdditionalZoneWarehouseLocations
         {
             get
@@ -306,6 +291,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FirstAdditionalZoneWarehouseLocations in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseLocation> FirstAdditionalZoneWarehouseLocations
         {
             get
@@ -328,6 +314,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ThirdAdditionalZoneWarehouseLocations in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseLocation> ThirdAdditionalZoneWarehouseLocations
         {
             get
@@ -350,6 +337,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WarehouseLocations in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseLocation> WarehouseLocations
         {
             get
@@ -368,6 +356,30 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseLocation> _WarehouseLocations = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseLocation>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnWarehouseLocationsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WarehouseLocation> value);
         partial void OnWarehouseLocationsChanged();
+        /// <summary>
+        /// There are no comments for Property WarehouseZoneGroup in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WarehouseZoneGroup is required.")]
+        public virtual global::Microsoft.Dynamics.DataEntities.WarehouseZoneGroup WarehouseZoneGroup
+        {
+            get
+            {
+                return this._WarehouseZoneGroup;
+            }
+            set
+            {
+                this.OnWarehouseZoneGroupChanging(value);
+                this._WarehouseZoneGroup = value;
+                this.OnWarehouseZoneGroupChanged();
+                this.OnPropertyChanged("WarehouseZoneGroup");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.WarehouseZoneGroup _WarehouseZoneGroup;
+        partial void OnWarehouseZoneGroupChanging(global::Microsoft.Dynamics.DataEntities.WarehouseZoneGroup value);
+        partial void OnWarehouseZoneGroupChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

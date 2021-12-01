@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for TestTypeSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TestTypeSingle in the schema.
+    /// </summary>
     public partial class TestTypeSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<TestType>
     {
         /// <summary>
@@ -35,10 +35,10 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for WorkerExam in the schema.
+        /// There are no comments for JobPreferredExam in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WorkerExam> WorkerExam
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredExam> JobPreferredExam
         {
             get
             {
@@ -46,36 +46,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._WorkerExam == null))
+                if ((this._JobPreferredExam == null))
                 {
-                    this._WorkerExam = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.WorkerExam>(GetPath("WorkerExam"));
+                    this._JobPreferredExam = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredExam>(GetPath("JobPreferredExam"));
                 }
-                return this._WorkerExam;
+                return this._JobPreferredExam;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WorkerExam> _WorkerExam;
-        /// <summary>
-        /// There are no comments for PersonExam in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonExam> PersonExam
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._PersonExam == null))
-                {
-                    this._PersonExam = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PersonExam>(GetPath("PersonExam"));
-                }
-                return this._PersonExam;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonExam> _PersonExam;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredExam> _JobPreferredExam;
         /// <summary>
         /// There are no comments for JobTemplateExam in the schema.
         /// </summary>
@@ -98,10 +77,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobTemplateExam> _JobTemplateExam;
         /// <summary>
-        /// There are no comments for JobPreferredExam in the schema.
+        /// There are no comments for PersonExam in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredExam> JobPreferredExam
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonExam> PersonExam
         {
             get
             {
@@ -109,19 +88,40 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._JobPreferredExam == null))
+                if ((this._PersonExam == null))
                 {
-                    this._JobPreferredExam = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredExam>(GetPath("JobPreferredExam"));
+                    this._PersonExam = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PersonExam>(GetPath("PersonExam"));
                 }
-                return this._JobPreferredExam;
+                return this._PersonExam;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredExam> _JobPreferredExam;
-    }
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonExam> _PersonExam;
         /// <summary>
-        /// There are no comments for TestType in the schema.
+        /// There are no comments for WorkerExam in the schema.
         /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WorkerExam> WorkerExam
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._WorkerExam == null))
+                {
+                    this._WorkerExam = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.WorkerExam>(GetPath("WorkerExam"));
+                }
+                return this._WorkerExam;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WorkerExam> _WorkerExam;
+    }
+    /// <summary>
+    /// There are no comments for TestType in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// TestId
     /// </KeyProperties>
@@ -148,6 +148,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TestId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TestId is required.")]
         public virtual string TestId
         {
             get
@@ -170,6 +172,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property GenerateFrom in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HcmFrequencyGenerateFrom> GenerateFrom
         {
             get
@@ -192,6 +195,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Interval in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Interval is required.")]
         public virtual int Interval
         {
             get
@@ -214,6 +219,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -236,6 +242,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PassingScore in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PassingScore is required.")]
         public virtual int PassingScore
         {
             get
@@ -258,6 +266,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Frequency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HcmFrequencyUnit> Frequency
         {
             get
@@ -277,53 +286,33 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnFrequencyChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HcmFrequencyUnit> value);
         partial void OnFrequencyChanged();
         /// <summary>
-        /// There are no comments for Property WorkerExam in the schema.
+        /// There are no comments for Property JobPreferredExam in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerExam> WorkerExam
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredExam> JobPreferredExam
         {
             get
             {
-                return this._WorkerExam;
+                return this._JobPreferredExam;
             }
             set
             {
-                this.OnWorkerExamChanging(value);
-                this._WorkerExam = value;
-                this.OnWorkerExamChanged();
-                this.OnPropertyChanged("WorkerExam");
+                this.OnJobPreferredExamChanging(value);
+                this._JobPreferredExam = value;
+                this.OnJobPreferredExamChanged();
+                this.OnPropertyChanged("JobPreferredExam");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerExam> _WorkerExam = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerExam>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnWorkerExamChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerExam> value);
-        partial void OnWorkerExamChanged();
-        /// <summary>
-        /// There are no comments for Property PersonExam in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonExam> PersonExam
-        {
-            get
-            {
-                return this._PersonExam;
-            }
-            set
-            {
-                this.OnPersonExamChanging(value);
-                this._PersonExam = value;
-                this.OnPersonExamChanged();
-                this.OnPropertyChanged("PersonExam");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonExam> _PersonExam = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonExam>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPersonExamChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonExam> value);
-        partial void OnPersonExamChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredExam> _JobPreferredExam = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredExam>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnJobPreferredExamChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredExam> value);
+        partial void OnJobPreferredExamChanged();
         /// <summary>
         /// There are no comments for Property JobTemplateExam in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateExam> JobTemplateExam
         {
             get
@@ -343,27 +332,51 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnJobTemplateExamChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateExam> value);
         partial void OnJobTemplateExamChanged();
         /// <summary>
-        /// There are no comments for Property JobPreferredExam in the schema.
+        /// There are no comments for Property PersonExam in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredExam> JobPreferredExam
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonExam> PersonExam
         {
             get
             {
-                return this._JobPreferredExam;
+                return this._PersonExam;
             }
             set
             {
-                this.OnJobPreferredExamChanging(value);
-                this._JobPreferredExam = value;
-                this.OnJobPreferredExamChanged();
-                this.OnPropertyChanged("JobPreferredExam");
+                this.OnPersonExamChanging(value);
+                this._PersonExam = value;
+                this.OnPersonExamChanged();
+                this.OnPropertyChanged("PersonExam");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredExam> _JobPreferredExam = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredExam>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnJobPreferredExamChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredExam> value);
-        partial void OnJobPreferredExamChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonExam> _PersonExam = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonExam>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPersonExamChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonExam> value);
+        partial void OnPersonExamChanged();
+        /// <summary>
+        /// There are no comments for Property WorkerExam in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerExam> WorkerExam
+        {
+            get
+            {
+                return this._WorkerExam;
+            }
+            set
+            {
+                this.OnWorkerExamChanging(value);
+                this._WorkerExam = value;
+                this.OnWorkerExamChanged();
+                this.OnPropertyChanged("WorkerExam");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerExam> _WorkerExam = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerExam>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnWorkerExamChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerExam> value);
+        partial void OnWorkerExamChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

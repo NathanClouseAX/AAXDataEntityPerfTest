@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for WorkerExamSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for WorkerExamSingle in the schema.
+    /// </summary>
     public partial class WorkerExamSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<WorkerExam>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.WorkerSingle _Worker;
     }
-        /// <summary>
-        /// There are no comments for WorkerExam in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for WorkerExam in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// RequiredBy
     /// PersonnelNumber
@@ -130,6 +130,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RequiredBy in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RequiredBy is required.")]
         public virtual global::System.DateTimeOffset RequiredBy
         {
             get
@@ -152,6 +154,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PersonnelNumber is required.")]
         public virtual string PersonnelNumber
         {
             get
@@ -174,6 +178,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TestId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TestId is required.")]
         public virtual string TestId
         {
             get
@@ -196,6 +202,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Score in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Score is required.")]
         public virtual int Score
         {
             get
@@ -218,6 +226,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CompletedOn in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CompletedOn is required.")]
         public virtual global::System.DateTimeOffset CompletedOn
         {
             get
@@ -240,6 +250,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Status in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HcmCompletionStatus> Status
         {
             get
@@ -262,6 +273,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Notes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Notes
         {
             get
@@ -284,6 +296,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TestType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TestType is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.TestType TestType
         {
             get
@@ -306,6 +320,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Worker in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Worker is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Worker Worker
         {
             get

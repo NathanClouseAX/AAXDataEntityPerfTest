@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for LedgerAccountAliasSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LedgerAccountAliasSingle in the schema.
+    /// </summary>
     public partial class LedgerAccountAliasSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<LedgerAccountAlias>
     {
         /// <summary>
@@ -140,9 +140,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.UserGroupSingle _UserGroup;
     }
-        /// <summary>
-        /// There are no comments for LedgerAccountAlias in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LedgerAccountAlias in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// Name
     /// AliasType
@@ -181,6 +181,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Name is required.")]
         public virtual string Name
         {
             get
@@ -203,6 +205,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AliasType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.DimensionAliasType> AliasType
         {
             get
@@ -225,6 +228,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UserInfo in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "UserInfo is required.")]
         public virtual string UserInfo
         {
             get
@@ -247,6 +252,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionAttributeName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionAttributeName
         {
             get
@@ -269,6 +275,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LegalEntityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LegalEntityId
         {
             get
@@ -291,6 +298,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionAttributeValueCombinationAccountStructure in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionAttributeValueCombinationAccountStructure
         {
             get
@@ -313,6 +321,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UserGroupInfo in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string UserGroupInfo
         {
             get
@@ -335,6 +344,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionAttributeValueCombinationDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionAttributeValueCombinationDisplayValue
         {
             get
@@ -357,6 +367,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DimensionCombination is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination DimensionCombination
         {
             get
@@ -379,6 +391,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LegalEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.LegalEntity LegalEntity
         {
             get
@@ -401,6 +414,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SystemUser in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.SystemUser SystemUser
         {
             get
@@ -423,6 +437,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionAttribute in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DimensionAttribute is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute DimensionAttribute
         {
             get
@@ -445,6 +461,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UserGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.UserGroup UserGroup
         {
             get

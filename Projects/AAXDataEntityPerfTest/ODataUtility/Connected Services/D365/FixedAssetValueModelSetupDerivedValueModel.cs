@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for FixedAssetValueModelSetupDerivedValueModelSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for FixedAssetValueModelSetupDerivedValueModelSingle in the schema.
+    /// </summary>
     public partial class FixedAssetValueModelSetupDerivedValueModelSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<FixedAssetValueModelSetupDerivedValueModel>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ValueModelSetupSingle _ValueModelSetupValueModel;
     }
-        /// <summary>
-        /// There are no comments for FixedAssetValueModelSetupDerivedValueModel in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for FixedAssetValueModelSetupDerivedValueModel in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// ValueModelId
@@ -115,6 +115,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -137,6 +139,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValueModelId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValueModelId is required.")]
         public virtual string ValueModelId
         {
             get
@@ -159,6 +163,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerivedValueModelId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DerivedValueModelId is required.")]
         public virtual string DerivedValueModelId
         {
             get
@@ -181,6 +187,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetTransType> TransactionType
         {
             get
@@ -203,6 +210,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValueModelSetupDerivedValueModel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ValueModelSetup ValueModelSetupDerivedValueModel
         {
             get
@@ -225,6 +233,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValueModelSetupValueModel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValueModelSetupValueModel is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ValueModelSetup ValueModelSetupValueModel
         {
             get

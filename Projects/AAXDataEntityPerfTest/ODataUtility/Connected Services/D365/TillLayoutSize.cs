@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for TillLayoutSizeSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TillLayoutSizeSingle in the schema.
+    /// </summary>
     public partial class TillLayoutSizeSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<TillLayoutSize>
     {
         /// <summary>
@@ -34,48 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public TillLayoutSizeSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<TillLayoutSize> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for TillLayoutConfiguration in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TillLayoutConfiguration> TillLayoutConfiguration
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._TillLayoutConfiguration == null))
-                {
-                    this._TillLayoutConfiguration = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TillLayoutConfiguration>(GetPath("TillLayoutConfiguration"));
-                }
-                return this._TillLayoutConfiguration;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TillLayoutConfiguration> _TillLayoutConfiguration;
-        /// <summary>
-        /// There are no comments for RetailTillLayoutImageZone in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutImageZone> RetailTillLayoutImageZone
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._RetailTillLayoutImageZone == null))
-                {
-                    this._RetailTillLayoutImageZone = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutImageZone>(GetPath("RetailTillLayoutImageZone"));
-                }
-                return this._RetailTillLayoutImageZone;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutImageZone> _RetailTillLayoutImageZone;
         /// <summary>
         /// There are no comments for RetailTillLayoutButtonGridZone in the schema.
         /// </summary>
@@ -98,6 +56,27 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutButtonGridZone> _RetailTillLayoutButtonGridZone;
         /// <summary>
+        /// There are no comments for RetailTillLayoutImageZone in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutImageZone> RetailTillLayoutImageZone
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RetailTillLayoutImageZone == null))
+                {
+                    this._RetailTillLayoutImageZone = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutImageZone>(GetPath("RetailTillLayoutImageZone"));
+                }
+                return this._RetailTillLayoutImageZone;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutImageZone> _RetailTillLayoutImageZone;
+        /// <summary>
         /// There are no comments for RetailTillLayoutReportZone in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -118,10 +97,31 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutReportZone> _RetailTillLayoutReportZone;
-    }
         /// <summary>
-        /// There are no comments for TillLayoutSize in the schema.
+        /// There are no comments for TillLayoutConfiguration in the schema.
         /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TillLayoutConfiguration> TillLayoutConfiguration
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._TillLayoutConfiguration == null))
+                {
+                    this._TillLayoutConfiguration = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TillLayoutConfiguration>(GetPath("TillLayoutConfiguration"));
+                }
+                return this._TillLayoutConfiguration;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TillLayoutConfiguration> _TillLayoutConfiguration;
+    }
+    /// <summary>
+    /// There are no comments for TillLayoutSize in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// LayoutSizeId
     /// </KeyProperties>
@@ -148,6 +148,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LayoutSizeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LayoutSizeId is required.")]
         public virtual string LayoutSizeId
         {
             get
@@ -170,6 +172,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Height in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Height is required.")]
         public virtual int Height
         {
             get
@@ -192,6 +196,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LayoutType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailLayoutType> LayoutType
         {
             get
@@ -214,6 +219,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Width in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Width is required.")]
         public virtual int Width
         {
             get
@@ -233,53 +240,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnWidthChanging(int value);
         partial void OnWidthChanged();
         /// <summary>
-        /// There are no comments for Property TillLayoutConfiguration in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TillLayoutConfiguration> TillLayoutConfiguration
-        {
-            get
-            {
-                return this._TillLayoutConfiguration;
-            }
-            set
-            {
-                this.OnTillLayoutConfigurationChanging(value);
-                this._TillLayoutConfiguration = value;
-                this.OnTillLayoutConfigurationChanged();
-                this.OnPropertyChanged("TillLayoutConfiguration");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TillLayoutConfiguration> _TillLayoutConfiguration = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TillLayoutConfiguration>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnTillLayoutConfigurationChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TillLayoutConfiguration> value);
-        partial void OnTillLayoutConfigurationChanged();
-        /// <summary>
-        /// There are no comments for Property RetailTillLayoutImageZone in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutImageZone> RetailTillLayoutImageZone
-        {
-            get
-            {
-                return this._RetailTillLayoutImageZone;
-            }
-            set
-            {
-                this.OnRetailTillLayoutImageZoneChanging(value);
-                this._RetailTillLayoutImageZone = value;
-                this.OnRetailTillLayoutImageZoneChanged();
-                this.OnPropertyChanged("RetailTillLayoutImageZone");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutImageZone> _RetailTillLayoutImageZone = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutImageZone>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRetailTillLayoutImageZoneChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutImageZone> value);
-        partial void OnRetailTillLayoutImageZoneChanged();
-        /// <summary>
         /// There are no comments for Property RetailTillLayoutButtonGridZone in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutButtonGridZone> RetailTillLayoutButtonGridZone
         {
             get
@@ -299,9 +263,33 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnRetailTillLayoutButtonGridZoneChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutButtonGridZone> value);
         partial void OnRetailTillLayoutButtonGridZoneChanged();
         /// <summary>
+        /// There are no comments for Property RetailTillLayoutImageZone in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutImageZone> RetailTillLayoutImageZone
+        {
+            get
+            {
+                return this._RetailTillLayoutImageZone;
+            }
+            set
+            {
+                this.OnRetailTillLayoutImageZoneChanging(value);
+                this._RetailTillLayoutImageZone = value;
+                this.OnRetailTillLayoutImageZoneChanged();
+                this.OnPropertyChanged("RetailTillLayoutImageZone");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutImageZone> _RetailTillLayoutImageZone = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutImageZone>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRetailTillLayoutImageZoneChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutImageZone> value);
+        partial void OnRetailTillLayoutImageZoneChanged();
+        /// <summary>
         /// There are no comments for Property RetailTillLayoutReportZone in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutReportZone> RetailTillLayoutReportZone
         {
             get
@@ -320,6 +308,29 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutReportZone> _RetailTillLayoutReportZone = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutReportZone>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnRetailTillLayoutReportZoneChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailTillLayoutReportZone> value);
         partial void OnRetailTillLayoutReportZoneChanged();
+        /// <summary>
+        /// There are no comments for Property TillLayoutConfiguration in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TillLayoutConfiguration> TillLayoutConfiguration
+        {
+            get
+            {
+                return this._TillLayoutConfiguration;
+            }
+            set
+            {
+                this.OnTillLayoutConfigurationChanging(value);
+                this._TillLayoutConfiguration = value;
+                this.OnTillLayoutConfigurationChanged();
+                this.OnPropertyChanged("TillLayoutConfiguration");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TillLayoutConfiguration> _TillLayoutConfiguration = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TillLayoutConfiguration>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnTillLayoutConfigurationChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TillLayoutConfiguration> value);
+        partial void OnTillLayoutConfigurationChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

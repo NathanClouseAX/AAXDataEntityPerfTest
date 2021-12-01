@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for FinancialDimensionSetSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for FinancialDimensionSetSingle in the schema.
+    /// </summary>
     public partial class FinancialDimensionSetSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<FinancialDimensionSet>
     {
         /// <summary>
@@ -308,9 +308,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParametersSingle _BudgetTrackingWorkspaceParametersRevenueFinancialDimensionSet;
     }
-        /// <summary>
-        /// There are no comments for FinancialDimensionSet in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for FinancialDimensionSet in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// Name
     /// </KeyProperties>
@@ -333,6 +333,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Name is required.")]
         public virtual string Name
         {
             get
@@ -355,6 +357,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentName10 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentName10
         {
             get
@@ -377,6 +380,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentName11 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentName11
         {
             get
@@ -399,6 +403,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentName04 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentName04
         {
             get
@@ -421,6 +426,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentName05 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentName05
         {
             get
@@ -443,6 +449,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentName06 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentName06
         {
             get
@@ -465,6 +472,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentName07 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentName07
         {
             get
@@ -487,6 +495,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentName01 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentName01
         {
             get
@@ -509,6 +518,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentName02 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentName02
         {
             get
@@ -531,6 +541,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentName03 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentName03
         {
             get
@@ -553,6 +564,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -575,6 +587,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentName08 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentName08
         {
             get
@@ -597,6 +610,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentName09 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentName09
         {
             get
@@ -619,6 +633,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FocusState in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.DimensionFocusBalanceInitializationState> FocusState
         {
             get
@@ -641,6 +656,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FinancialDimensionSetEntity_RelatedRole_SegmentName09 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute FinancialDimensionSetEntity_RelatedRole_SegmentName09
         {
             get
@@ -663,6 +679,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FinancialDimensionSetEntity_RelatedRole_SegmentName11 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute FinancialDimensionSetEntity_RelatedRole_SegmentName11
         {
             get
@@ -685,6 +702,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FinancialDimensionSetEntity_RelatedRole_SegmentName01 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute FinancialDimensionSetEntity_RelatedRole_SegmentName01
         {
             get
@@ -707,6 +725,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FinancialDimensionSetEntity_RelatedRole_SegmentName05 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute FinancialDimensionSetEntity_RelatedRole_SegmentName05
         {
             get
@@ -729,6 +748,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FinancialDimensionSetEntity_RelatedRole_SegmentName02 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute FinancialDimensionSetEntity_RelatedRole_SegmentName02
         {
             get
@@ -751,6 +771,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FinancialDimensionSetEntity_RelatedRole_SegmentName06 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute FinancialDimensionSetEntity_RelatedRole_SegmentName06
         {
             get
@@ -773,6 +794,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FinancialDimensionSetEntity_RelatedRole_SegmentName03 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute FinancialDimensionSetEntity_RelatedRole_SegmentName03
         {
             get
@@ -795,6 +817,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FinancialDimensionSetEntity_RelatedRole_SegmentName07 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute FinancialDimensionSetEntity_RelatedRole_SegmentName07
         {
             get
@@ -817,6 +840,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FinancialDimensionSetEntity_RelatedRole_SegmentName08 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute FinancialDimensionSetEntity_RelatedRole_SegmentName08
         {
             get
@@ -839,6 +863,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FinancialDimensionSetEntity_RelatedRole_SegmentName10 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute FinancialDimensionSetEntity_RelatedRole_SegmentName10
         {
             get
@@ -861,6 +886,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FinancialDimensionSetEntity_RelatedRole_SegmentName04 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute FinancialDimensionSetEntity_RelatedRole_SegmentName04
         {
             get
@@ -883,6 +909,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetTrackingWorkspaceParametersExpenseFinancialDimensionSet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters BudgetTrackingWorkspaceParametersExpenseFinancialDimensionSet
         {
             get
@@ -905,6 +932,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetTrackingWorkspaceParametersRevenueFinancialDimensionSet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters BudgetTrackingWorkspaceParametersRevenueFinancialDimensionSet
         {
             get

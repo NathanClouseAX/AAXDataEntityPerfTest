@@ -54,8 +54,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomerV3Tester.cs" />
+    <Compile Include="AAXCustomerV3Tester.cs" />
+    <Compile Include="AAXCustomerV4Tester.cs" />
+    <Compile Include="AAXCustomerV5Tester.cs" />
     <Compile Include="AAXSalesTableEntityReadOnlyTester.cs" />
     <Compile Include="AAXSalesTableEntityTester.cs" />
+    <Compile Include="CustomerTester.cs" />
+    <Compile Include="CustomerValues.cs" />
     <Compile Include="Logger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SalesOrderHeaderV2EntityDSReadOnlyV2Tester.cs" />

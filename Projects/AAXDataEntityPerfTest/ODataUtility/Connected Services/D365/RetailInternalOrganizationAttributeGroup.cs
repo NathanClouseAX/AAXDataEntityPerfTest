@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RetailInternalOrganizationAttributeGroupSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailInternalOrganizationAttributeGroupSingle in the schema.
+    /// </summary>
     public partial class RetailInternalOrganizationAttributeGroupSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RetailInternalOrganizationAttributeGroup>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.RetailInternalOrganizationSingle _RetailInternalOrganization;
     }
-        /// <summary>
-        /// There are no comments for RetailInternalOrganizationAttributeGroup in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailInternalOrganizationAttributeGroup in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// PartyNumber
     /// AttributeGroupName
@@ -119,6 +119,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PartyNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PartyNumber is required.")]
         public virtual string PartyNumber
         {
             get
@@ -141,6 +143,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AttributeGroupName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AttributeGroupName is required.")]
         public virtual string AttributeGroupName
         {
             get
@@ -163,6 +167,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AttributeGroupDisplayOrder in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AttributeGroupDisplayOrder is required.")]
         public virtual decimal AttributeGroupDisplayOrder
         {
             get
@@ -185,6 +191,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AttributeGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AttributeGroup is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.AttributeGroup AttributeGroup
         {
             get
@@ -207,6 +215,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailInternalOrganization in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetailInternalOrganization is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RetailInternalOrganization RetailInternalOrganization
         {
             get

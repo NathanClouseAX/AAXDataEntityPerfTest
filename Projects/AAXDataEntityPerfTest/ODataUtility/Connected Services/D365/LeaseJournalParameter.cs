@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for LeaseJournalParameterSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LeaseJournalParameterSingle in the schema.
+    /// </summary>
     public partial class LeaseJournalParameterSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<LeaseJournalParameter>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for LeaseJournalParameter in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LeaseJournalParameter in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// InitialRecognitionJournalName
@@ -63,6 +63,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -85,6 +87,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InitialRecognitionJournalName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "InitialRecognitionJournalName is required.")]
         public virtual string InitialRecognitionJournalName
         {
             get
@@ -107,6 +111,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OverrideLeaseType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> OverrideLeaseType
         {
             get
@@ -129,6 +134,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CrossEntityBatch in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> CrossEntityBatch
         {
             get
@@ -151,6 +157,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllowConfirmedLeaseDeletion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AllowConfirmedLeaseDeletion
         {
             get
@@ -173,6 +180,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Company in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Company
         {
             get
@@ -195,6 +203,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MonthlyJournalName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MonthlyJournalName
         {
             get
@@ -217,6 +226,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VoucherTypeMnthJourNameCN in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VoucherTypeMnthJourNameCN
         {
             get
@@ -239,6 +249,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InvoiceJournalName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string InvoiceJournalName
         {
             get
@@ -261,6 +272,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VoucherTypeInitRecoNameCN in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VoucherTypeInitRecoNameCN
         {
             get
@@ -283,6 +295,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VoucherTypeInvJourNameCN in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VoucherTypeInvJourNameCN
         {
             get

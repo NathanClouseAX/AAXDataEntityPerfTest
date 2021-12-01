@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ProductCategoryAssignmentSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ProductCategoryAssignmentSingle in the schema.
+    /// </summary>
     public partial class ProductCategoryAssignmentSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ProductCategoryAssignment>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ProductCategorySingle _ProductCategory;
     }
-        /// <summary>
-        /// There are no comments for ProductCategoryAssignment in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ProductCategoryAssignment in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// ProductNumber
     /// ProductCategoryName
@@ -127,6 +127,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductNumber is required.")]
         public virtual string ProductNumber
         {
             get
@@ -149,6 +151,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductCategoryName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductCategoryName is required.")]
         public virtual string ProductCategoryName
         {
             get
@@ -171,6 +175,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductCategoryHierarchyName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductCategoryHierarchyName is required.")]
         public virtual string ProductCategoryHierarchyName
         {
             get
@@ -193,6 +199,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisplayOrder in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DisplayOrder is required.")]
         public virtual decimal DisplayOrder
         {
             get
@@ -215,6 +223,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductV2 is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ProductV2 ProductV2
         {
             get
@@ -237,6 +247,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductCategory in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductCategory is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ProductCategory ProductCategory
         {
             get

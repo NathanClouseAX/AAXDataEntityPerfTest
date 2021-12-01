@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for FiscalOrganizationSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for FiscalOrganizationSingle in the schema.
+    /// </summary>
     public partial class FiscalOrganizationSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<FiscalOrganization>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _DimensionCombination;
     }
-        /// <summary>
-        /// There are no comments for FiscalOrganization in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for FiscalOrganization in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// RootFiscalEstablishmentDataArea
     /// RootFiscalEstablishment
@@ -88,6 +88,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RootFiscalEstablishmentDataArea in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RootFiscalEstablishmentDataArea is required.")]
         public virtual string RootFiscalEstablishmentDataArea
         {
             get
@@ -110,6 +112,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RootFiscalEstablishment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RootFiscalEstablishment is required.")]
         public virtual string RootFiscalEstablishment
         {
             get
@@ -132,6 +136,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TypeOfAssessmentContribution in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.FBContribAssessmentContributionType_BR> TypeOfAssessmentContribution
         {
             get
@@ -154,6 +159,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesTaxPISExpenseDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SalesTaxPISExpenseDisplayValue
         {
             get
@@ -176,6 +182,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LegalEntityType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.FBContribLegalEntityType_BR> LegalEntityType
         {
             get
@@ -198,6 +205,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TypeOfActivity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.FBContribActivityType_BR> TypeOfActivity
         {
             get
@@ -220,6 +228,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CompanyType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.FBCompanyType_BR> CompanyType
         {
             get
@@ -242,6 +251,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BookingAndAssessmentCriteria in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.FBContribAssessmentCriteria_BR> BookingAndAssessmentCriteria
         {
             get
@@ -264,6 +274,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SCPParticipation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.FBSCPType_BR> SCPParticipation
         {
             get
@@ -286,6 +297,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ConstitutionArchiveDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ConstitutionArchiveDate is required.")]
         public virtual global::System.DateTimeOffset ConstitutionArchiveDate
         {
             get
@@ -308,6 +321,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SCPCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SCPCode
         {
             get
@@ -330,6 +344,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LegalNature in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LegalNature
         {
             get
@@ -352,6 +367,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LayoutVersion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.FBContribVersion_BR> LayoutVersion
         {
             get
@@ -374,6 +390,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesTaxCOFINSExpenseDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SalesTaxCOFINSExpenseDisplayValue
         {
             get
@@ -396,6 +413,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ConversionArchiveDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ConversionArchiveDate is required.")]
         public virtual global::System.DateTimeOffset ConversionArchiveDate
         {
             get
@@ -418,6 +437,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CreditAllocationMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.FBContribCreditAllocationMethod_BR> CreditAllocationMethod
         {
             get
@@ -440,6 +460,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssessmentRegimen in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.FBContribAssessmentRegimen_BR> AssessmentRegimen
         {
             get
@@ -462,6 +483,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LargeCompany in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> LargeCompany
         {
             get
@@ -484,6 +506,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination DimensionCombination
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for InjuryIncidentSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for InjuryIncidentSingle in the schema.
+    /// </summary>
     public partial class InjuryIncidentSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<InjuryIncident>
     {
         /// <summary>
@@ -55,6 +55,27 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.InjuryIncidentFilingAgencySingle _InjuryIncidentFilingAgency;
+        /// <summary>
+        /// There are no comments for InjuryIncidentTreatment in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.InjuryIncidentTreatmentSingle InjuryIncidentTreatment
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._InjuryIncidentTreatment == null))
+                {
+                    this._InjuryIncidentTreatment = new global::Microsoft.Dynamics.DataEntities.InjuryIncidentTreatmentSingle(this.Context, GetPath("InjuryIncidentTreatment"));
+                }
+                return this._InjuryIncidentTreatment;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.InjuryIncidentTreatmentSingle _InjuryIncidentTreatment;
         /// <summary>
         /// There are no comments for InjuryIncidentCostType in the schema.
         /// </summary>
@@ -202,31 +223,10 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.InjuryBodyPartSingle _BodyPart;
-        /// <summary>
-        /// There are no comments for InjuryIncidentTreatment in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.InjuryIncidentTreatmentSingle InjuryIncidentTreatment
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._InjuryIncidentTreatment == null))
-                {
-                    this._InjuryIncidentTreatment = new global::Microsoft.Dynamics.DataEntities.InjuryIncidentTreatmentSingle(this.Context, GetPath("InjuryIncidentTreatment"));
-                }
-                return this._InjuryIncidentTreatment;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.InjuryIncidentTreatmentSingle _InjuryIncidentTreatment;
     }
-        /// <summary>
-        /// There are no comments for InjuryIncident in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for InjuryIncident in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// CaseNumber
@@ -291,6 +291,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -313,6 +315,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CaseNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CaseNumber is required.")]
         public virtual string CaseNumber
         {
             get
@@ -335,6 +339,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrivacyCase in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PrivacyCase
         {
             get
@@ -357,6 +362,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ActionToBeTaken in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ActionToBeTaken
         {
             get
@@ -379,6 +385,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportedById in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ReportedById
         {
             get
@@ -401,6 +408,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SeverityLevelId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SeverityLevelId
         {
             get
@@ -423,6 +431,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OshaCaseType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HcmInjuryOshaCaseType> OshaCaseType
         {
             get
@@ -445,6 +454,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ComplianceRecordableCase in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ComplianceRecordableCase
         {
             get
@@ -467,6 +477,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DateAndTimeBeganWork in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DateAndTimeBeganWork is required.")]
         public virtual global::System.DateTimeOffset DateAndTimeBeganWork
         {
             get
@@ -489,6 +501,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CauseOfIncident in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CauseOfIncident
         {
             get
@@ -511,6 +524,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OutcomeTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OutcomeTypeId
         {
             get
@@ -533,6 +547,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CaseDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CaseDescription
         {
             get
@@ -555,6 +570,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BodyPartId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BodyPartId
         {
             get
@@ -577,6 +593,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DaysOnJobTransferOrRestriction in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DaysOnJobTransferOrRestriction is required.")]
         public virtual int DaysOnJobTransferOrRestriction
         {
             get
@@ -599,6 +617,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SupervisorId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SupervisorId
         {
             get
@@ -621,6 +640,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PositionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PositionId
         {
             get
@@ -643,6 +663,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OnWorkPremises in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> OnWorkPremises
         {
             get
@@ -665,6 +686,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EmployeeJobOrTask in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string EmployeeJobOrTask
         {
             get
@@ -687,6 +709,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CaseStatus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmInjuryCaseStatus> CaseStatus
         {
             get
@@ -709,6 +732,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WhereIncidentOccurred in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string WhereIncidentOccurred
         {
             get
@@ -731,6 +755,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CaseOpenedDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CaseOpenedDate is required.")]
         public virtual global::System.DateTimeOffset CaseOpenedDate
         {
             get
@@ -753,6 +779,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DaysAwayFromWork in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DaysAwayFromWork is required.")]
         public virtual int DaysAwayFromWork
         {
             get
@@ -775,6 +803,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InjuryOrIllnessTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string InjuryOrIllnessTypeId
         {
             get
@@ -797,6 +826,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SafeguardsThatWereProvided in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SafeguardsThatWereProvided
         {
             get
@@ -819,6 +849,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CaseClosedDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CaseClosedDate is required.")]
         public virtual global::System.DateTimeOffset CaseClosedDate
         {
             get
@@ -841,6 +873,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DateAndTimeOfIncident in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DateAndTimeOfIncident is required.")]
         public virtual global::System.DateTimeOffset DateAndTimeOfIncident
         {
             get
@@ -863,6 +897,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OshaInjuryType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HcmInjuryOshaInjuryType> OshaInjuryType
         {
             get
@@ -885,6 +920,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HumanResourcesContactId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string HumanResourcesContactId
         {
             get
@@ -907,6 +943,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkerId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string WorkerId
         {
             get
@@ -929,6 +966,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DateAndTimeReported in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DateAndTimeReported is required.")]
         public virtual global::System.DateTimeOffset DateAndTimeReported
         {
             get
@@ -951,6 +990,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExpectedDaysAwayFromWork in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ExpectedDaysAwayFromWork is required.")]
         public virtual int ExpectedDaysAwayFromWork
         {
             get
@@ -973,6 +1014,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InjuryIncidentFilingAgency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.InjuryIncidentFilingAgency InjuryIncidentFilingAgency
         {
             get
@@ -992,9 +1034,33 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnInjuryIncidentFilingAgencyChanging(global::Microsoft.Dynamics.DataEntities.InjuryIncidentFilingAgency value);
         partial void OnInjuryIncidentFilingAgencyChanged();
         /// <summary>
+        /// There are no comments for Property InjuryIncidentTreatment in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.Dynamics.DataEntities.InjuryIncidentTreatment InjuryIncidentTreatment
+        {
+            get
+            {
+                return this._InjuryIncidentTreatment;
+            }
+            set
+            {
+                this.OnInjuryIncidentTreatmentChanging(value);
+                this._InjuryIncidentTreatment = value;
+                this.OnInjuryIncidentTreatmentChanged();
+                this.OnPropertyChanged("InjuryIncidentTreatment");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.InjuryIncidentTreatment _InjuryIncidentTreatment;
+        partial void OnInjuryIncidentTreatmentChanging(global::Microsoft.Dynamics.DataEntities.InjuryIncidentTreatment value);
+        partial void OnInjuryIncidentTreatmentChanged();
+        /// <summary>
         /// There are no comments for Property InjuryIncidentCostType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.InjuryIncidentCostType InjuryIncidentCostType
         {
             get
@@ -1017,6 +1083,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HumanResourcesContactWorker in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.Worker HumanResourcesContactWorker
         {
             get
@@ -1039,6 +1106,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Position in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.PositionV2 Position
         {
             get
@@ -1061,6 +1129,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OutcomeType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.InjuryOutcomeType OutcomeType
         {
             get
@@ -1083,6 +1152,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IncidentType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "IncidentType is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.InjuryType IncidentType
         {
             get
@@ -1105,6 +1176,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InjurySeverityLevel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.InjurySeverityLevel InjurySeverityLevel
         {
             get
@@ -1127,6 +1199,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BodyPart in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BodyPart is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.InjuryBodyPart BodyPart
         {
             get
@@ -1145,28 +1219,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.InjuryBodyPart _BodyPart;
         partial void OnBodyPartChanging(global::Microsoft.Dynamics.DataEntities.InjuryBodyPart value);
         partial void OnBodyPartChanged();
-        /// <summary>
-        /// There are no comments for Property InjuryIncidentTreatment in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.InjuryIncidentTreatment InjuryIncidentTreatment
-        {
-            get
-            {
-                return this._InjuryIncidentTreatment;
-            }
-            set
-            {
-                this.OnInjuryIncidentTreatmentChanging(value);
-                this._InjuryIncidentTreatment = value;
-                this.OnInjuryIncidentTreatmentChanged();
-                this.OnPropertyChanged("InjuryIncidentTreatment");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.InjuryIncidentTreatment _InjuryIncidentTreatment;
-        partial void OnInjuryIncidentTreatmentChanging(global::Microsoft.Dynamics.DataEntities.InjuryIncidentTreatment value);
-        partial void OnInjuryIncidentTreatmentChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

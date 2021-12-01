@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for EmploymentSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for EmploymentSingle in the schema.
+    /// </summary>
     public partial class EmploymentSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<Employment>
     {
         /// <summary>
@@ -34,6 +34,27 @@ namespace Microsoft.Dynamics.DataEntities
         public EmploymentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<Employment> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for EmploymentContractor in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EmploymentContractor> EmploymentContractor
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._EmploymentContractor == null))
+                {
+                    this._EmploymentContractor = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.EmploymentContractor>(GetPath("EmploymentContractor"));
+                }
+                return this._EmploymentContractor;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EmploymentContractor> _EmploymentContractor;
         /// <summary>
         /// There are no comments for EmploymentTerms in the schema.
         /// </summary>
@@ -98,6 +119,27 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.RegulatoryEstablishmentDetailSingle _RegulatoryEstablishmentDetail;
         /// <summary>
+        /// There are no comments for Worker in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.WorkerSingle Worker
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Worker == null))
+                {
+                    this._Worker = new global::Microsoft.Dynamics.DataEntities.WorkerSingle(this.Context, GetPath("Worker"));
+                }
+                return this._Worker;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.WorkerSingle _Worker;
+        /// <summary>
         /// There are no comments for DimensionSet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -118,31 +160,10 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionSetSingle _DimensionSet;
-        /// <summary>
-        /// There are no comments for EmploymentContractor in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EmploymentContractor> EmploymentContractor
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._EmploymentContractor == null))
-                {
-                    this._EmploymentContractor = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.EmploymentContractor>(GetPath("EmploymentContractor"));
-                }
-                return this._EmploymentContractor;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EmploymentContractor> _EmploymentContractor;
     }
-        /// <summary>
-        /// There are no comments for Employment in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for Employment in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// PersonnelNumber
     /// LegalEntityId
@@ -160,20 +181,28 @@ namespace Microsoft.Dynamics.DataEntities
         /// <param name="legalEntityId">Initial value of LegalEntityId.</param>
         /// <param name="employmentStartDate">Initial value of EmploymentStartDate.</param>
         /// <param name="employmentEndDate">Initial value of EmploymentEndDate.</param>
+        /// <param name="worker">Initial value of Worker.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public static Employment CreateEmployment(string personnelNumber, string legalEntityId, global::System.DateTimeOffset employmentStartDate, global::System.DateTimeOffset employmentEndDate)
+        public static Employment CreateEmployment(string personnelNumber, string legalEntityId, global::System.DateTimeOffset employmentStartDate, global::System.DateTimeOffset employmentEndDate, global::Microsoft.Dynamics.DataEntities.Worker worker)
         {
             Employment employment = new Employment();
             employment.PersonnelNumber = personnelNumber;
             employment.LegalEntityId = legalEntityId;
             employment.EmploymentStartDate = employmentStartDate;
             employment.EmploymentEndDate = employmentEndDate;
+            if ((worker == null))
+            {
+                throw new global::System.ArgumentNullException("worker");
+            }
+            employment.Worker = worker;
             return employment;
         }
         /// <summary>
         /// There are no comments for Property PersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PersonnelNumber is required.")]
         public virtual string PersonnelNumber
         {
             get
@@ -196,6 +225,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LegalEntityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LegalEntityId is required.")]
         public virtual string LegalEntityId
         {
             get
@@ -218,6 +249,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EmploymentStartDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EmploymentStartDate is required.")]
         public virtual global::System.DateTimeOffset EmploymentStartDate
         {
             get
@@ -240,6 +273,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EmploymentEndDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EmploymentEndDate is required.")]
         public virtual global::System.DateTimeOffset EmploymentEndDate
         {
             get
@@ -262,6 +297,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionDisplayValue
         {
             get
@@ -284,6 +320,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RegulatoryEstablishmentId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RegulatoryEstablishmentId
         {
             get
@@ -306,6 +343,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkerType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HcmEmploymentType> WorkerType
         {
             get
@@ -328,6 +366,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CalendarId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CalendarId
         {
             get
@@ -347,9 +386,33 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnCalendarIdChanging(string value);
         partial void OnCalendarIdChanged();
         /// <summary>
+        /// There are no comments for Property EmploymentContractor in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EmploymentContractor> EmploymentContractor
+        {
+            get
+            {
+                return this._EmploymentContractor;
+            }
+            set
+            {
+                this.OnEmploymentContractorChanging(value);
+                this._EmploymentContractor = value;
+                this.OnEmploymentContractorChanged();
+                this.OnPropertyChanged("EmploymentContractor");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EmploymentContractor> _EmploymentContractor = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EmploymentContractor>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnEmploymentContractorChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EmploymentContractor> value);
+        partial void OnEmploymentContractorChanged();
+        /// <summary>
         /// There are no comments for Property EmploymentTerms in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EmploymentTerm> EmploymentTerms
         {
             get
@@ -372,6 +435,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EmploymentDetails in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EmploymentDetail> EmploymentDetails
         {
             get
@@ -394,6 +458,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RegulatoryEstablishmentDetail in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.RegulatoryEstablishmentDetail RegulatoryEstablishmentDetail
         {
             get
@@ -413,9 +478,34 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnRegulatoryEstablishmentDetailChanging(global::Microsoft.Dynamics.DataEntities.RegulatoryEstablishmentDetail value);
         partial void OnRegulatoryEstablishmentDetailChanged();
         /// <summary>
+        /// There are no comments for Property Worker in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Worker is required.")]
+        public virtual global::Microsoft.Dynamics.DataEntities.Worker Worker
+        {
+            get
+            {
+                return this._Worker;
+            }
+            set
+            {
+                this.OnWorkerChanging(value);
+                this._Worker = value;
+                this.OnWorkerChanged();
+                this.OnPropertyChanged("Worker");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.Worker _Worker;
+        partial void OnWorkerChanging(global::Microsoft.Dynamics.DataEntities.Worker value);
+        partial void OnWorkerChanged();
+        /// <summary>
         /// There are no comments for Property DimensionSet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionSet DimensionSet
         {
             get
@@ -434,28 +524,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.DimensionSet _DimensionSet;
         partial void OnDimensionSetChanging(global::Microsoft.Dynamics.DataEntities.DimensionSet value);
         partial void OnDimensionSetChanged();
-        /// <summary>
-        /// There are no comments for Property EmploymentContractor in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EmploymentContractor> EmploymentContractor
-        {
-            get
-            {
-                return this._EmploymentContractor;
-            }
-            set
-            {
-                this.OnEmploymentContractorChanging(value);
-                this._EmploymentContractor = value;
-                this.OnEmploymentContractorChanged();
-                this.OnPropertyChanged("EmploymentContractor");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EmploymentContractor> _EmploymentContractor = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EmploymentContractor>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnEmploymentContractorChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EmploymentContractor> value);
-        partial void OnEmploymentContractorChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

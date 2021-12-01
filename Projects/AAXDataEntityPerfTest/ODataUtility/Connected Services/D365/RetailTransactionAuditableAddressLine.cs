@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RetailTransactionAuditableAddressLineSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailTransactionAuditableAddressLineSingle in the schema.
+    /// </summary>
     public partial class RetailTransactionAuditableAddressLineSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RetailTransactionAuditableAddressLine>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableSingle _RetailTransactionAuditable;
     }
-        /// <summary>
-        /// There are no comments for RetailTransactionAuditableAddressLine in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailTransactionAuditableAddressLine in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// OperatingUnitNumber
@@ -136,6 +136,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -158,6 +160,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OperatingUnitNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "OperatingUnitNumber is required.")]
         public virtual string OperatingUnitNumber
         {
             get
@@ -180,6 +184,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StoreNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "StoreNumber is required.")]
         public virtual string StoreNumber
         {
             get
@@ -202,6 +208,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RegisterNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RegisterNumber is required.")]
         public virtual string RegisterNumber
         {
             get
@@ -224,6 +232,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransactionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TransactionId is required.")]
         public virtual string TransactionId
         {
             get
@@ -246,6 +256,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesLineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SalesLineNumber is required.")]
         public virtual decimal SalesLineNumber
         {
             get
@@ -268,6 +280,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property State in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string State
         {
             get
@@ -290,6 +303,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HeaderAsynchronousOrderStatus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailTransactionOrderStatusType> HeaderAsynchronousOrderStatus
         {
             get
@@ -312,6 +326,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property County in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string County
         {
             get
@@ -334,6 +349,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property District in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string District
         {
             get
@@ -356,6 +372,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CountryRegionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CountryRegionId
         {
             get
@@ -378,6 +395,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property City in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string City
         {
             get
@@ -400,6 +418,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Email in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Email
         {
             get
@@ -422,6 +441,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StreetNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string StreetNumber
         {
             get
@@ -444,6 +464,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SalesName
         {
             get
@@ -466,6 +487,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DeliveryName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DeliveryName
         {
             get
@@ -488,6 +510,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Attention in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Attention
         {
             get
@@ -510,6 +533,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HeaderValidationStatus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailTransactionValidationStatus> HeaderValidationStatus
         {
             get
@@ -532,6 +556,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ZipCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ZipCode
         {
             get
@@ -554,6 +579,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Telephone in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Telephone
         {
             get
@@ -576,6 +602,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Street in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Street
         {
             get
@@ -598,6 +625,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HeaderTransactionType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailTransactionType> HeaderTransactionType
         {
             get
@@ -620,6 +648,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailTransactionAuditableSalesLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetailTransactionAuditableSalesLine is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditableSalesLine RetailTransactionAuditableSalesLine
         {
             get
@@ -642,6 +672,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailTransactionAuditable in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetailTransactionAuditable is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RetailTransactionAuditable RetailTransactionAuditable
         {
             get

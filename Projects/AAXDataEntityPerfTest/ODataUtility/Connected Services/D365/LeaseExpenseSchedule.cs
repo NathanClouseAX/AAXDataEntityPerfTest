@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for LeaseExpenseScheduleSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LeaseExpenseScheduleSingle in the schema.
+    /// </summary>
     public partial class LeaseExpenseScheduleSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<LeaseExpenseSchedule>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _DimensionCombinationEntity;
     }
-        /// <summary>
-        /// There are no comments for LeaseExpenseSchedule in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LeaseExpenseSchedule in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// LineNumber
@@ -91,6 +91,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -113,6 +115,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LineNumber is required.")]
         public virtual int LineNumber
         {
             get
@@ -135,6 +139,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LeaseId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LeaseId is required.")]
         public virtual string LeaseId
         {
             get
@@ -157,6 +163,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Invoice in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Invoice
         {
             get
@@ -179,6 +186,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JournalBatchNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string JournalBatchNumber
         {
             get
@@ -201,6 +209,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JournalPosted in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> JournalPosted
         {
             get
@@ -223,6 +232,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LatestJournalNum in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LatestJournalNum
         {
             get
@@ -245,6 +255,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExpenseType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ExpenseType
         {
             get
@@ -267,6 +278,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OffsetAccountType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.LedgerJournalACType> OffsetAccountType
         {
             get
@@ -289,6 +301,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Company in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Company
         {
             get
@@ -311,6 +324,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ScheduleLineDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ScheduleLineDate is required.")]
         public virtual global::System.DateTimeOffset ScheduleLineDate
         {
             get
@@ -333,6 +348,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Reversed in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> Reversed
         {
             get
@@ -355,6 +371,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JournalCreated in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> JournalCreated
         {
             get
@@ -377,6 +394,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PaymentAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PaymentAmount is required.")]
         public virtual decimal PaymentAmount
         {
             get
@@ -399,6 +418,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OffsetLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OffsetLedgerDimensionDisplayValue
         {
             get
@@ -421,6 +441,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionCombinationEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination DimensionCombinationEntity
         {
             get

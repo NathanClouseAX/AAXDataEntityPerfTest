@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for TimeAndAttendanceActivityRegistrationSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TimeAndAttendanceActivityRegistrationSingle in the schema.
+    /// </summary>
     public partial class TimeAndAttendanceActivityRegistrationSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<TimeAndAttendanceActivityRegistration>
     {
         /// <summary>
@@ -34,6 +34,27 @@ namespace Microsoft.Dynamics.DataEntities
         public TimeAndAttendanceActivityRegistrationSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<TimeAndAttendanceActivityRegistration> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for Worker in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.WorkerSingle Worker
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Worker == null))
+                {
+                    this._Worker = new global::Microsoft.Dynamics.DataEntities.WorkerSingle(this.Context, GetPath("Worker"));
+                }
+                return this._Worker;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.WorkerSingle _Worker;
         /// <summary>
         /// There are no comments for DimensionSet in the schema.
         /// </summary>
@@ -56,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionSetSingle _DimensionSet;
     }
-        /// <summary>
-        /// There are no comments for TimeAndAttendanceActivityRegistration in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TimeAndAttendanceActivityRegistration in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// WorkerPersonnelNumber
@@ -97,6 +118,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// <param name="calculatedTimeBeforeAllocationSeconds">Initial value of CalculatedTimeBeforeAllocationSeconds.</param>
         /// <param name="startTime">Initial value of StartTime.</param>
         /// <param name="startedCatchWeightQuantity">Initial value of StartedCatchWeightQuantity.</param>
+        /// <param name="worker">Initial value of Worker.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public static TimeAndAttendanceActivityRegistration CreateTimeAndAttendanceActivityRegistration(string dataAreaId, 
                     string workerPersonnelNumber, 
@@ -122,7 +144,8 @@ namespace Microsoft.Dynamics.DataEntities
                     decimal reportedErrorCatchWeightQuantity, 
                     int calculatedTimeBeforeAllocationSeconds, 
                     int startTime, 
-                    decimal startedCatchWeightQuantity)
+                    decimal startedCatchWeightQuantity, 
+                    global::Microsoft.Dynamics.DataEntities.Worker worker)
         {
             TimeAndAttendanceActivityRegistration timeAndAttendanceActivityRegistration = new TimeAndAttendanceActivityRegistration();
             timeAndAttendanceActivityRegistration.dataAreaId = dataAreaId;
@@ -150,12 +173,19 @@ namespace Microsoft.Dynamics.DataEntities
             timeAndAttendanceActivityRegistration.CalculatedTimeBeforeAllocationSeconds = calculatedTimeBeforeAllocationSeconds;
             timeAndAttendanceActivityRegistration.StartTime = startTime;
             timeAndAttendanceActivityRegistration.StartedCatchWeightQuantity = startedCatchWeightQuantity;
+            if ((worker == null))
+            {
+                throw new global::System.ArgumentNullException("worker");
+            }
+            timeAndAttendanceActivityRegistration.Worker = worker;
             return timeAndAttendanceActivityRegistration;
         }
         /// <summary>
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -178,6 +208,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkerPersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WorkerPersonnelNumber is required.")]
         public virtual string WorkerPersonnelNumber
         {
             get
@@ -200,6 +232,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TimeProfileDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TimeProfileDate is required.")]
         public virtual global::System.DateTimeOffset TimeProfileDate
         {
             get
@@ -222,6 +256,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ActivityRegistrationEntryNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ActivityRegistrationEntryNumber is required.")]
         public virtual long ActivityRegistrationEntryNumber
         {
             get
@@ -244,6 +280,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsWorkInProgress in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsWorkInProgress
         {
             get
@@ -266,6 +303,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ErrorSpecification in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ErrorSpecification
         {
             get
@@ -288,6 +326,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportedGoodQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReportedGoodQuantity is required.")]
         public virtual decimal ReportedGoodQuantity
         {
             get
@@ -310,6 +350,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ErrorLogText in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ErrorLogText
         {
             get
@@ -332,6 +373,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EndStopTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EndStopTime is required.")]
         public virtual int EndStopTime
         {
             get
@@ -354,6 +397,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OperationsResourcePilotId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OperationsResourcePilotId
         {
             get
@@ -376,6 +420,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CalculatedTimeSeconds in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CalculatedTimeSeconds is required.")]
         public virtual int CalculatedTimeSeconds
         {
             get
@@ -398,6 +444,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CorrectedEndTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CorrectedEndTime is required.")]
         public virtual int CorrectedEndTime
         {
             get
@@ -420,6 +468,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AbsencePayUnits in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AbsencePayUnits is required.")]
         public virtual decimal AbsencePayUnits
         {
             get
@@ -442,6 +492,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CorrectedStartDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CorrectedStartDate is required.")]
         public virtual global::System.DateTimeOffset CorrectedStartDate
         {
             get
@@ -464,6 +516,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BreakToleranceSeconds in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BreakToleranceSeconds is required.")]
         public virtual int BreakToleranceSeconds
         {
             get
@@ -486,6 +540,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportedGoodCatchWeightQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReportedGoodCatchWeightQuantity is required.")]
         public virtual decimal ReportedGoodCatchWeightQuantity
         {
             get
@@ -508,6 +564,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsJobFinished in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsJobFinished
         {
             get
@@ -530,6 +587,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CorrectedStartTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CorrectedStartTime is required.")]
         public virtual int CorrectedStartTime
         {
             get
@@ -552,6 +611,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TimeAllocationType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.JmgJobTypeEnum> TimeAllocationType
         {
             get
@@ -574,6 +634,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultDimensionDisplayValue
         {
             get
@@ -596,6 +657,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ActivityRegistrationTransactionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ActivityRegistrationTransactionId
         {
             get
@@ -618,6 +680,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IndirectActivityCategoryId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string IndirectActivityCategoryId
         {
             get
@@ -640,6 +703,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PilotPersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PilotPersonnelNumber
         {
             get
@@ -662,6 +726,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OperationNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "OperationNumber is required.")]
         public virtual int OperationNumber
         {
             get
@@ -684,6 +750,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EndDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EndDate is required.")]
         public virtual global::System.DateTimeOffset EndDate
         {
             get
@@ -706,6 +774,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AbsenceCodeTimeAndAttendanceJobId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AbsenceCodeTimeAndAttendanceJobId
         {
             get
@@ -728,6 +797,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JobPayRateMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.JmgJobPayTypeEnum> JobPayRateMethod
         {
             get
@@ -750,6 +820,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OperationsResourceId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OperationsResourceId
         {
             get
@@ -772,6 +843,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IndirectActivityName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string IndirectActivityName
         {
             get
@@ -794,6 +866,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ActivityType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.JmgJobRefTypeEnum> ActivityType
         {
             get
@@ -816,6 +889,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StartedQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "StartedQuantity is required.")]
         public virtual decimal StartedQuantity
         {
             get
@@ -838,6 +913,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CorrectedEndDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CorrectedEndDate is required.")]
         public virtual global::System.DateTimeOffset CorrectedEndDate
         {
             get
@@ -860,6 +937,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CalculatedTimeAfterAllocationSeconds in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CalculatedTimeAfterAllocationSeconds is required.")]
         public virtual int CalculatedTimeAfterAllocationSeconds
         {
             get
@@ -882,6 +961,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StopRegistrationTerminalId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string StopRegistrationTerminalId
         {
             get
@@ -904,6 +984,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BreakSeconds in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BreakSeconds is required.")]
         public virtual int BreakSeconds
         {
             get
@@ -926,6 +1008,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RegistrationType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.JmgStampTypeEnum> RegistrationType
         {
             get
@@ -948,6 +1031,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProjectId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProjectId
         {
             get
@@ -970,6 +1054,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TimeAndAttendanceJobId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TimeAndAttendanceJobId
         {
             get
@@ -992,6 +1077,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RouteJobType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RouteJobType> RouteJobType
         {
             get
@@ -1014,6 +1100,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductionOrderNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductionOrderNumber
         {
             get
@@ -1036,6 +1123,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StartDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "StartDate is required.")]
         public virtual global::System.DateTimeOffset StartDate
         {
             get
@@ -1058,6 +1147,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportedErrorQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReportedErrorQuantity is required.")]
         public virtual decimal ReportedErrorQuantity
         {
             get
@@ -1080,6 +1171,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportedErrorCatchWeightQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReportedErrorCatchWeightQuantity is required.")]
         public virtual decimal ReportedErrorCatchWeightQuantity
         {
             get
@@ -1102,6 +1195,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OnCallTimeAndAttendanceJobId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OnCallTimeAndAttendanceJobId
         {
             get
@@ -1124,6 +1218,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RegistrationSubType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.JmgStampTypeSpecEnum> RegistrationSubType
         {
             get
@@ -1146,6 +1241,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProjectCategoryId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProjectCategoryId
         {
             get
@@ -1168,6 +1264,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkflowStatus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.JmgJournalRegWorkflowStatus> WorkflowStatus
         {
             get
@@ -1190,6 +1287,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CalculatedTimeBeforeAllocationSeconds in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CalculatedTimeBeforeAllocationSeconds is required.")]
         public virtual int CalculatedTimeBeforeAllocationSeconds
         {
             get
@@ -1212,6 +1311,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StartTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "StartTime is required.")]
         public virtual int StartTime
         {
             get
@@ -1234,6 +1335,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StartRegistrationTerminalId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string StartRegistrationTerminalId
         {
             get
@@ -1256,6 +1358,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StartedCatchWeightQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "StartedCatchWeightQuantity is required.")]
         public virtual decimal StartedCatchWeightQuantity
         {
             get
@@ -1278,6 +1382,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JournalRegistrationType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.JmgJourRegTypeEnum> JournalRegistrationType
         {
             get
@@ -1300,6 +1405,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ErrorCause in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ProdErrorCause> ErrorCause
         {
             get
@@ -1319,9 +1425,34 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnErrorCauseChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ProdErrorCause> value);
         partial void OnErrorCauseChanged();
         /// <summary>
+        /// There are no comments for Property Worker in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Worker is required.")]
+        public virtual global::Microsoft.Dynamics.DataEntities.Worker Worker
+        {
+            get
+            {
+                return this._Worker;
+            }
+            set
+            {
+                this.OnWorkerChanging(value);
+                this._Worker = value;
+                this.OnWorkerChanged();
+                this.OnPropertyChanged("Worker");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.Worker _Worker;
+        partial void OnWorkerChanging(global::Microsoft.Dynamics.DataEntities.Worker value);
+        partial void OnWorkerChanged();
+        /// <summary>
         /// There are no comments for Property DimensionSet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionSet DimensionSet
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for CompVarPlanLevelSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CompVarPlanLevelSingle in the schema.
+    /// </summary>
     public partial class CompVarPlanLevelSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<CompVarPlanLevel>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.CompensationLevelSingle _CompensationLevel;
     }
-        /// <summary>
-        /// There are no comments for CompVarPlanLevel in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CompVarPlanLevel in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// CompensationLevelId
@@ -133,6 +133,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -155,6 +157,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CompensationLevelId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CompensationLevelId is required.")]
         public virtual string CompensationLevelId
         {
             get
@@ -177,6 +181,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PlanId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PlanId is required.")]
         public virtual string PlanId
         {
             get
@@ -199,6 +205,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AwardPercent in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AwardPercent is required.")]
         public virtual decimal AwardPercent
         {
             get
@@ -221,6 +229,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AwardUnits in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AwardUnits is required.")]
         public virtual int AwardUnits
         {
             get
@@ -243,6 +253,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AwardAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AwardAmount is required.")]
         public virtual decimal AwardAmount
         {
             get
@@ -265,6 +277,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CompVarPlanTable in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CompVarPlanTable is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.CompVarPlanTable CompVarPlanTable
         {
             get
@@ -287,6 +301,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CompensationLevel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CompensationLevel is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.CompensationLevel CompensationLevel
         {
             get

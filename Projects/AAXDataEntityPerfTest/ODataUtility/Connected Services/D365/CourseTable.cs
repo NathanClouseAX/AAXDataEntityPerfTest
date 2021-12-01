@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for CourseTableSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CourseTableSingle in the schema.
+    /// </summary>
     public partial class CourseTableSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<CourseTable>
     {
         /// <summary>
@@ -34,6 +34,27 @@ namespace Microsoft.Dynamics.DataEntities
         public CourseTableSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<CourseTable> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for PersonCourse in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonCourse> PersonCourse
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._PersonCourse == null))
+                {
+                    this._PersonCourse = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PersonCourse>(GetPath("PersonCourse"));
+                }
+                return this._PersonCourse;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonCourse> _PersonCourse;
         /// <summary>
         /// There are no comments for CourseLocationHotel in the schema.
         /// </summary>
@@ -76,27 +97,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CourseParticipant> _CourseParticipant;
-        /// <summary>
-        /// There are no comments for PersonCourse in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonCourse> PersonCourse
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._PersonCourse == null))
-                {
-                    this._PersonCourse = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PersonCourse>(GetPath("PersonCourse"));
-                }
-                return this._PersonCourse;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonCourse> _PersonCourse;
         /// <summary>
         /// There are no comments for CourseRoom in the schema.
         /// </summary>
@@ -182,9 +182,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionSetSingle _DimensionSet;
     }
-        /// <summary>
-        /// There are no comments for CourseTable in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CourseTable in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// CourseId
@@ -236,6 +236,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -258,6 +260,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CourseId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CourseId is required.")]
         public virtual string CourseId
         {
             get
@@ -280,6 +284,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Setup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmCourseSetup> Setup
         {
             get
@@ -302,6 +307,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Courses in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Courses
         {
             get
@@ -324,6 +330,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Workflow in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Workflow
         {
             get
@@ -346,6 +353,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllowEmployeeSelfRegistration in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AllowEmployeeSelfRegistration
         {
             get
@@ -368,6 +376,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RegistrationDeadline in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RegistrationDeadline is required.")]
         public virtual global::System.DateTimeOffset RegistrationDeadline
         {
             get
@@ -390,6 +400,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Classroom in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Classroom
         {
             get
@@ -412,6 +423,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StartDateTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "StartDateTime is required.")]
         public virtual global::System.DateTimeOffset StartDateTime
         {
             get
@@ -434,6 +447,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaxAttendees in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MaxAttendees is required.")]
         public virtual int MaxAttendees
         {
             get
@@ -456,6 +471,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EndDateTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EndDateTime is required.")]
         public virtual global::System.DateTimeOffset EndDateTime
         {
             get
@@ -478,6 +495,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Note in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Note
         {
             get
@@ -500,6 +518,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MinimumNumberOfParticipants in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MinimumNumberOfParticipants is required.")]
         public virtual int MinimumNumberOfParticipants
         {
             get
@@ -522,6 +542,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CourseLocation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CourseLocation
         {
             get
@@ -544,6 +565,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CourseTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CourseTypeId
         {
             get
@@ -566,6 +588,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionDisplayValue
         {
             get
@@ -588,6 +611,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InstructorId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "InstructorId is required.")]
         public virtual long InstructorId
         {
             get
@@ -610,6 +635,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CourseStatus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmCourseTableStatus> CourseStatus
         {
             get
@@ -632,6 +658,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Organizer in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Organizer
         {
             get
@@ -651,9 +678,33 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnOrganizerChanging(string value);
         partial void OnOrganizerChanged();
         /// <summary>
+        /// There are no comments for Property PersonCourse in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonCourse> PersonCourse
+        {
+            get
+            {
+                return this._PersonCourse;
+            }
+            set
+            {
+                this.OnPersonCourseChanging(value);
+                this._PersonCourse = value;
+                this.OnPersonCourseChanged();
+                this.OnPropertyChanged("PersonCourse");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonCourse> _PersonCourse = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonCourse>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPersonCourseChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonCourse> value);
+        partial void OnPersonCourseChanged();
+        /// <summary>
         /// There are no comments for Property CourseLocationHotel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CourseLocationHotel> CourseLocationHotel
         {
             get
@@ -676,6 +727,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CourseParticipant in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CourseParticipant> CourseParticipant
         {
             get
@@ -695,31 +747,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnCourseParticipantChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CourseParticipant> value);
         partial void OnCourseParticipantChanged();
         /// <summary>
-        /// There are no comments for Property PersonCourse in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonCourse> PersonCourse
-        {
-            get
-            {
-                return this._PersonCourse;
-            }
-            set
-            {
-                this.OnPersonCourseChanging(value);
-                this._PersonCourse = value;
-                this.OnPersonCourseChanged();
-                this.OnPropertyChanged("PersonCourse");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonCourse> _PersonCourse = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonCourse>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPersonCourseChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonCourse> value);
-        partial void OnPersonCourseChanged();
-        /// <summary>
         /// There are no comments for Property CourseRoom in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.CourseRoom CourseRoom
         {
             get
@@ -742,6 +773,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CourseType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CourseType is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.CourseType CourseType
         {
             get
@@ -764,6 +797,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CourseInstructor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.CourseInstructor CourseInstructor
         {
             get
@@ -786,6 +820,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionSet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionSet DimensionSet
         {
             get

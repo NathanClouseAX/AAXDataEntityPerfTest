@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for TaxAuthoritySingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TaxAuthoritySingle in the schema.
+    /// </summary>
     public partial class TaxAuthoritySingle : global::Microsoft.OData.Client.DataServiceQuerySingle<TaxAuthority>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TaxPeriod> _TaxPeriod;
     }
-        /// <summary>
-        /// There are no comments for TaxAuthority in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TaxAuthority in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// TaxAuthorityCode
@@ -90,6 +90,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -112,6 +114,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxAuthorityCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TaxAuthorityCode is required.")]
         public virtual string TaxAuthorityCode
         {
             get
@@ -134,6 +138,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TeleFax in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TeleFax
         {
             get
@@ -156,6 +161,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CellularPhone in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CellularPhone
         {
             get
@@ -178,6 +184,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -200,6 +207,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Country in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Country
         {
             get
@@ -222,6 +230,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ZipCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ZipCode
         {
             get
@@ -244,6 +253,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RoundOff in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RoundOff is required.")]
         public virtual decimal RoundOff
         {
             get
@@ -266,6 +277,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostBox in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PostBox
         {
             get
@@ -288,6 +300,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PhoneLocal in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PhoneLocal
         {
             get
@@ -310,6 +323,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DistrictName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DistrictName
         {
             get
@@ -332,6 +346,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BuildingCompliment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BuildingCompliment
         {
             get
@@ -354,6 +369,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Agency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.Agency_BR> Agency
         {
             get
@@ -376,6 +392,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Telex in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Telex
         {
             get
@@ -398,6 +415,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Pager in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Pager
         {
             get
@@ -420,6 +438,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Email in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Email
         {
             get
@@ -442,6 +461,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorAccountNum in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VendorAccountNum
         {
             get
@@ -464,6 +484,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RoundOffType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TaxRepRoundOffType> RoundOffType
         {
             get
@@ -486,6 +507,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TimeZone in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.Timezone> TimeZone
         {
             get
@@ -508,6 +530,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Longitude in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Longitude is required.")]
         public virtual decimal Longitude
         {
             get
@@ -530,6 +554,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property County in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string County
         {
             get
@@ -552,6 +577,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StreetNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string StreetNumber
         {
             get
@@ -574,6 +600,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxAuthorityIdentification in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxAuthorityIdentification
         {
             get
@@ -596,6 +623,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Latitude in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Latitude is required.")]
         public virtual decimal Latitude
         {
             get
@@ -618,6 +647,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CountryISOCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CountryISOCode
         {
             get
@@ -640,6 +670,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property City in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string City
         {
             get
@@ -662,6 +693,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Location in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Location
         {
             get
@@ -684,6 +716,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportLayout in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TaxReportLayout> ReportLayout
         {
             get
@@ -706,6 +739,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SMS in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SMS
         {
             get
@@ -728,6 +762,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Street in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Street
         {
             get
@@ -750,6 +785,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Phone in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Phone
         {
             get
@@ -772,6 +808,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property URL in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string URL
         {
             get
@@ -794,6 +831,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property State in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string State
         {
             get
@@ -816,6 +854,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxPeriod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxPeriod> TaxPeriod
         {
             get

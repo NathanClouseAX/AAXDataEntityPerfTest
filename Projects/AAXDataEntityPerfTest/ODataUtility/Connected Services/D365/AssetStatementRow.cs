@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for AssetStatementRowSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AssetStatementRowSingle in the schema.
+    /// </summary>
     public partial class AssetStatementRowSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AssetStatementRow>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.FixedAssetGroupSingle _FixedAssetGroup;
     }
-        /// <summary>
-        /// There are no comments for AssetStatementRow in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AssetStatementRow in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// LineNumber
@@ -111,6 +111,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -133,6 +135,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LineNumber is required.")]
         public virtual decimal LineNumber
         {
             get
@@ -155,6 +159,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FromFixedAssetNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FromFixedAssetNumber is required.")]
         public virtual string FromFixedAssetNumber
         {
             get
@@ -177,6 +183,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ToFixedAssetNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ToFixedAssetNumber is required.")]
         public virtual string ToFixedAssetNumber
         {
             get
@@ -199,6 +207,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RowName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RowName
         {
             get
@@ -221,6 +230,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetIntervalRelation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetIntervalRelation> AssetIntervalRelation
         {
             get
@@ -243,6 +253,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RowType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RowType> RowType
         {
             get
@@ -265,6 +276,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FixedAsset in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.FixedAsset FixedAsset
         {
             get
@@ -287,6 +299,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FixedAssetGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.FixedAssetGroup FixedAssetGroup
         {
             get

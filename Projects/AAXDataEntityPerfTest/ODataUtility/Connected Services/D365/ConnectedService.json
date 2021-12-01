@@ -1,6 +1,6 @@
 ﻿{
   "ProviderId": "Microsoft.OData.ConnectedService",
-  "Version": "0.12.1.0",
+  "Version": "0.13.0.0",
   "GettingStartedDocument": {
     "Uri": "http://odata.github.io/odata.net/"
   },
@@ -131,10 +131,12 @@
     "IncludeWebProxy": false,
     "WebProxyHost": null,
     "IncludeWebProxyNetworkCredentials": false,
+    "StoreWebProxyNetworkCredentials": false,
     "WebProxyNetworkCredentialsUsername": null,
     "WebProxyNetworkCredentialsPassword": null,
     "WebProxyNetworkCredentialsDomain": null,
     "IncludeCustomHeaders": false,
+    "StoreCustomHttpHeaders": false,
     "ExcludedSchemaTypes": [
       "Microsoft.Dynamics.DataEntities.Abbreviations",
       "Microsoft.Dynamics.DataEntities.AbsenceCode",

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for CategorySingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CategorySingle in the schema.
+    /// </summary>
     public partial class CategorySingle : global::Microsoft.OData.Client.DataServiceQuerySingle<Category>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.SharedCategorySingle _SharedCategory;
     }
-        /// <summary>
-        /// There are no comments for Category in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for Category in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// CategoryId
@@ -111,6 +111,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -133,6 +135,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CategoryId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CategoryId is required.")]
         public virtual string CategoryId
         {
             get
@@ -155,6 +159,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SharedCategoryId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SharedCategoryId
         {
             get
@@ -177,6 +182,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UseInExpense in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> UseInExpense
         {
             get
@@ -199,6 +205,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UseInProject in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> UseInProject
         {
             get
@@ -221,6 +228,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CategoryName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CategoryName
         {
             get
@@ -243,6 +251,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UseInProduction in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> UseInProduction
         {
             get
@@ -265,6 +274,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngineeringProductCategoryDetails in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.EngineeringProductCategoryDetails EngineeringProductCategoryDetails
         {
             get
@@ -287,6 +297,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SharedCategory in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SharedCategory is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.SharedCategory SharedCategory
         {
             get

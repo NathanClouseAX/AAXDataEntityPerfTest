@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for SalesOrderHeaderDocumentAttachmentSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for SalesOrderHeaderDocumentAttachmentSingle in the schema.
+    /// </summary>
     public partial class SalesOrderHeaderDocumentAttachmentSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<SalesOrderHeaderDocumentAttachment>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.CDSSalesOrderHeaderSingle _CDSSalesOrderHeader;
     }
-        /// <summary>
-        /// There are no comments for SalesOrderHeaderDocumentAttachment in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for SalesOrderHeaderDocumentAttachment in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// DocumentId
@@ -90,6 +90,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -112,6 +114,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DocumentId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DocumentId is required.")]
         public virtual global::System.Guid DocumentId
         {
             get
@@ -134,6 +138,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FileType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FileType
         {
             get
@@ -156,6 +161,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsDefaultAttachment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsDefaultAttachment
         {
             get
@@ -178,6 +184,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesOrderNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SalesOrderNumber
         {
             get
@@ -200,6 +207,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccessRestriction in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.DocuRestriction> AccessRestriction
         {
             get
@@ -222,6 +230,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AttachmentDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AttachmentDescription
         {
             get
@@ -244,6 +253,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Notes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Notes
         {
             get
@@ -266,6 +276,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DocumentAttachmentTypeCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DocumentAttachmentTypeCode
         {
             get
@@ -288,6 +299,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FileName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FileName
         {
             get
@@ -310,6 +322,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Attachment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual byte[] Attachment
         {
             get
@@ -332,6 +345,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CDSSalesOrderHeader in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CDSSalesOrderHeader is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.CDSSalesOrderHeader CDSSalesOrderHeader
         {
             get

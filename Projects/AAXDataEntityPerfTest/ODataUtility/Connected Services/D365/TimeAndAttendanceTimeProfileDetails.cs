@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for TimeAndAttendanceTimeProfileDetailsSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TimeAndAttendanceTimeProfileDetailsSingle in the schema.
+    /// </summary>
     public partial class TimeAndAttendanceTimeProfileDetailsSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<TimeAndAttendanceTimeProfileDetails>
     {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for TimeAndAttendanceTimeProfileLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TimeAndAttendanceTimeProfileLine> TimeAndAttendanceTimeProfileLines
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._TimeAndAttendanceTimeProfileLines == null))
-                {
-                    this._TimeAndAttendanceTimeProfileLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TimeAndAttendanceTimeProfileLine>(GetPath("TimeAndAttendanceTimeProfileLines"));
-                }
-                return this._TimeAndAttendanceTimeProfileLines;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TimeAndAttendanceTimeProfileLine> _TimeAndAttendanceTimeProfileLines;
-        /// <summary>
         /// There are no comments for TimeAndAttendanceTimeProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,10 +55,31 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.TimeAndAttendanceTimeProfileSingle _TimeAndAttendanceTimeProfile;
-    }
         /// <summary>
-        /// There are no comments for TimeAndAttendanceTimeProfileDetails in the schema.
+        /// There are no comments for TimeAndAttendanceTimeProfileLines in the schema.
         /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TimeAndAttendanceTimeProfileLine> TimeAndAttendanceTimeProfileLines
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._TimeAndAttendanceTimeProfileLines == null))
+                {
+                    this._TimeAndAttendanceTimeProfileLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TimeAndAttendanceTimeProfileLine>(GetPath("TimeAndAttendanceTimeProfileLines"));
+                }
+                return this._TimeAndAttendanceTimeProfileLines;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TimeAndAttendanceTimeProfileLine> _TimeAndAttendanceTimeProfileLines;
+    }
+    /// <summary>
+    /// There are no comments for TimeAndAttendanceTimeProfileDetails in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// TimeProfileId
@@ -123,6 +123,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -145,6 +147,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TimeProfileId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TimeProfileId is required.")]
         public virtual string TimeProfileId
         {
             get
@@ -167,6 +171,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WeekDay in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.JmgDayIdEnum> WeekDay
         {
             get
@@ -189,6 +194,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CanPayrollCalculationPushProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> CanPayrollCalculationPushProfile
         {
             get
@@ -211,6 +217,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HourPeriodStartSeconds in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "HourPeriodStartSeconds is required.")]
         public virtual int HourPeriodStartSeconds
         {
             get
@@ -233,6 +241,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HourPeriodStartRule in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.JmgProfileStartCodeBlankPrev> HourPeriodStartRule
         {
             get
@@ -255,6 +264,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OvertimeFlexLimitSeconds in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "OvertimeFlexLimitSeconds is required.")]
         public virtual int OvertimeFlexLimitSeconds
         {
             get
@@ -277,6 +288,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaximumFlexLimitSeconds in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MaximumFlexLimitSeconds is required.")]
         public virtual int MaximumFlexLimitSeconds
         {
             get
@@ -296,31 +309,11 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnMaximumFlexLimitSecondsChanging(int value);
         partial void OnMaximumFlexLimitSecondsChanged();
         /// <summary>
-        /// There are no comments for Property TimeAndAttendanceTimeProfileLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TimeAndAttendanceTimeProfileLine> TimeAndAttendanceTimeProfileLines
-        {
-            get
-            {
-                return this._TimeAndAttendanceTimeProfileLines;
-            }
-            set
-            {
-                this.OnTimeAndAttendanceTimeProfileLinesChanging(value);
-                this._TimeAndAttendanceTimeProfileLines = value;
-                this.OnTimeAndAttendanceTimeProfileLinesChanged();
-                this.OnPropertyChanged("TimeAndAttendanceTimeProfileLines");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TimeAndAttendanceTimeProfileLine> _TimeAndAttendanceTimeProfileLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TimeAndAttendanceTimeProfileLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnTimeAndAttendanceTimeProfileLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TimeAndAttendanceTimeProfileLine> value);
-        partial void OnTimeAndAttendanceTimeProfileLinesChanged();
-        /// <summary>
         /// There are no comments for Property TimeAndAttendanceTimeProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TimeAndAttendanceTimeProfile is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.TimeAndAttendanceTimeProfile TimeAndAttendanceTimeProfile
         {
             get
@@ -339,6 +332,29 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.TimeAndAttendanceTimeProfile _TimeAndAttendanceTimeProfile;
         partial void OnTimeAndAttendanceTimeProfileChanging(global::Microsoft.Dynamics.DataEntities.TimeAndAttendanceTimeProfile value);
         partial void OnTimeAndAttendanceTimeProfileChanged();
+        /// <summary>
+        /// There are no comments for Property TimeAndAttendanceTimeProfileLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TimeAndAttendanceTimeProfileLine> TimeAndAttendanceTimeProfileLines
+        {
+            get
+            {
+                return this._TimeAndAttendanceTimeProfileLines;
+            }
+            set
+            {
+                this.OnTimeAndAttendanceTimeProfileLinesChanging(value);
+                this._TimeAndAttendanceTimeProfileLines = value;
+                this.OnTimeAndAttendanceTimeProfileLinesChanged();
+                this.OnPropertyChanged("TimeAndAttendanceTimeProfileLines");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TimeAndAttendanceTimeProfileLine> _TimeAndAttendanceTimeProfileLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TimeAndAttendanceTimeProfileLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnTimeAndAttendanceTimeProfileLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TimeAndAttendanceTimeProfileLine> value);
+        partial void OnTimeAndAttendanceTimeProfileLinesChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

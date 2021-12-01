@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for LeaseBookSetupSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LeaseBookSetupSingle in the schema.
+    /// </summary>
     public partial class LeaseBookSetupSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<LeaseBookSetup>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for LeaseBookSetup in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LeaseBookSetup in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// BookType
@@ -76,6 +76,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -98,6 +100,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BookType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BookType is required.")]
         public virtual string BookType
         {
             get
@@ -120,6 +124,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountingFramework in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetLeaseAccountingFrameworkType> AccountingFramework
         {
             get
@@ -142,6 +147,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PresentValueOverFairValueBookSetUp in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PresentValueOverFairValueBookSetUp is required.")]
         public virtual decimal PresentValueOverFairValueBookSetUp
         {
             get
@@ -164,6 +171,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayToVendor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PayToVendor
         {
             get
@@ -186,6 +194,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShortTermMonths in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ShortTermMonths is required.")]
         public virtual int ShortTermMonths
         {
             get
@@ -208,6 +218,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LowValueThreshold in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LowValueThreshold is required.")]
         public virtual decimal LowValueThreshold
         {
             get
@@ -230,6 +242,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Company in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Company
         {
             get
@@ -252,6 +265,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -274,6 +288,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostingLayer in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.CurrentOperationsTax> PostingLayer
         {
             get
@@ -296,6 +311,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LeaseType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetLeaseType> LeaseType
         {
             get
@@ -318,6 +334,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LeaseTermOverAssetUsefulLifeBookSetUp in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LeaseTermOverAssetUsefulLifeBookSetUp is required.")]
         public virtual decimal LeaseTermOverAssetUsefulLifeBookSetUp
         {
             get

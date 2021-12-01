@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for VendorPaymentMethodSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for VendorPaymentMethodSingle in the schema.
+    /// </summary>
     public partial class VendorPaymentMethodSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<VendorPaymentMethod>
     {
         /// <summary>
@@ -35,10 +35,10 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for PurchaseAgreementHeaders in the schema.
+        /// There are no comments for VendorPaymentJournalLinePaymentMethodEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreement> PurchaseAgreementHeaders
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendorPaymentJournalLine> VendorPaymentJournalLinePaymentMethodEntity
         {
             get
             {
@@ -46,15 +46,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._PurchaseAgreementHeaders == null))
+                if ((this._VendorPaymentJournalLinePaymentMethodEntity == null))
                 {
-                    this._PurchaseAgreementHeaders = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreement>(GetPath("PurchaseAgreementHeaders"));
+                    this._VendorPaymentJournalLinePaymentMethodEntity = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.VendorPaymentJournalLine>(GetPath("VendorPaymentJournalLinePaymentMethodEntity"));
                 }
-                return this._PurchaseAgreementHeaders;
+                return this._VendorPaymentJournalLinePaymentMethodEntity;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreement> _PurchaseAgreementHeaders;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendorPaymentJournalLine> _VendorPaymentJournalLinePaymentMethodEntity;
         /// <summary>
         /// There are no comments for JournalName in the schema.
         /// </summary>
@@ -98,27 +98,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _DimensionCombination;
         /// <summary>
-        /// There are no comments for VendorPaymentJournalLinePaymentMethodEntity in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendorPaymentJournalLine> VendorPaymentJournalLinePaymentMethodEntity
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._VendorPaymentJournalLinePaymentMethodEntity == null))
-                {
-                    this._VendorPaymentJournalLinePaymentMethodEntity = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.VendorPaymentJournalLine>(GetPath("VendorPaymentJournalLinePaymentMethodEntity"));
-                }
-                return this._VendorPaymentJournalLinePaymentMethodEntity;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendorPaymentJournalLine> _VendorPaymentJournalLinePaymentMethodEntity;
-        /// <summary>
         /// There are no comments for VendorPaymentMethodSpecification in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -139,10 +118,31 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.VendorPaymentMethodSpecification> _VendorPaymentMethodSpecification;
-    }
         /// <summary>
-        /// There are no comments for VendorPaymentMethod in the schema.
+        /// There are no comments for PurchaseAgreementHeaders in the schema.
         /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmation> PurchaseAgreementHeaders
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._PurchaseAgreementHeaders == null))
+                {
+                    this._PurchaseAgreementHeaders = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmation>(GetPath("PurchaseAgreementHeaders"));
+                }
+                return this._PurchaseAgreementHeaders;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmation> _PurchaseAgreementHeaders;
+    }
+    /// <summary>
+    /// There are no comments for VendorPaymentMethod in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// Name
@@ -190,6 +190,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -212,6 +214,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Name is required.")]
         public virtual string Name
         {
             get
@@ -234,6 +238,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LastFileDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LastFileDate is required.")]
         public virtual global::System.DateTimeOffset LastFileDate
         {
             get
@@ -256,6 +262,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CreateAndDrawPromissoryNoteDuringInvoicePosting in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> CreateAndDrawPromissoryNoteDuringInvoicePosting
         {
             get
@@ -278,6 +285,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidateCheckNumberIsMandatory in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ValidateCheckNumberIsMandatory
         {
             get
@@ -300,6 +308,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ElectronicReportingSolution in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ElectronicReportingSolution
         {
             get
@@ -322,6 +331,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LocalInstrument in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LocalInstrument is required.")]
         public virtual long LocalInstrument
         {
             get
@@ -344,6 +355,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PaymentStatus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.CustVendPaymStatus> PaymentStatus
         {
             get
@@ -366,6 +378,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AttributePaymentIdEnabled in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AttributePaymentIdEnabled
         {
             get
@@ -388,6 +401,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidatePaymentReferenceIsMandatory in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ValidatePaymentReferenceIsMandatory
         {
             get
@@ -410,6 +424,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PaymentAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PaymentAccountDisplayValue
         {
             get
@@ -432,6 +447,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionControl in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DimensionControl
         {
             get
@@ -454,6 +470,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ElectronicReportingVendor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ElectronicReportingVendor
         {
             get
@@ -476,6 +493,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidatePaymentIdIsMandatory in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ValidatePaymentIdIsMandatory
         {
             get
@@ -498,6 +516,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceLevel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ServiceLevel is required.")]
         public virtual long ServiceLevel
         {
             get
@@ -520,6 +540,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PromissoryNoteDraftType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TypeOfDraft> PromissoryNoteDraftType
         {
             get
@@ -542,6 +563,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidatePaymentSpecificationIsMandatory in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ValidatePaymentSpecificationIsMandatory
         {
             get
@@ -564,6 +586,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -586,6 +609,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SATPaymentType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PaymentType_MX> SATPaymentType
         {
             get
@@ -608,6 +632,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SumByPeriod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PaymSumBy> SumByPeriod
         {
             get
@@ -630,6 +655,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidateOffsetTransactionTypeIsBank in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ValidateOffsetTransactionTypeIsBank
         {
             get
@@ -652,6 +678,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SPEDPrimaryPaymentMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PrimaryMethod_BR> SPEDPrimaryPaymentMethod
         {
             get
@@ -674,6 +701,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AttributeBelgianStructuredPaymentIdEnabled in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AttributeBelgianStructuredPaymentIdEnabled
         {
             get
@@ -696,6 +724,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SPEDPrimaryPaymentMethodDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SPEDPrimaryPaymentMethodDescription
         {
             get
@@ -718,6 +747,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReturnLayoutGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ReturnLayoutGroupId
         {
             get
@@ -740,6 +770,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PaymentJournalName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PaymentJournalName
         {
             get
@@ -762,6 +793,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ChargeBearerValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ChargeBearerValue
         {
             get
@@ -784,6 +816,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExportLayoutGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ExportLayoutGroupId
         {
             get
@@ -806,6 +839,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ERFormatMapping in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ERFormatMapping
         {
             get
@@ -828,6 +862,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EnablePostdatedCheckClearingPosting in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> EnablePostdatedCheckClearingPosting
         {
             get
@@ -850,6 +885,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BridgingPostingEnabled in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> BridgingPostingEnabled
         {
             get
@@ -872,6 +908,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidatePaymentNoteIsMandatory in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ValidatePaymentNoteIsMandatory
         {
             get
@@ -894,6 +931,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RemittanceFormatClassName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RemittanceFormatClassName
         {
             get
@@ -916,6 +954,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BankTransactionType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BankTransactionType
         {
             get
@@ -938,6 +977,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidateTransactionTypeIsBank in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ValidateTransactionTypeIsBank
         {
             get
@@ -960,6 +1000,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property GeneratePaymentOneVoucher in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.Posting_BR> GeneratePaymentOneVoucher
         {
             get
@@ -982,6 +1023,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CategoryPurpose in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CategoryPurpose is required.")]
         public virtual long CategoryPurpose
         {
             get
@@ -1004,6 +1047,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DiscountGracePeriodDays in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DiscountGracePeriodDays is required.")]
         public virtual int DiscountGracePeriodDays
         {
             get
@@ -1026,6 +1071,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReturnFormatClassName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ReturnFormatClassName
         {
             get
@@ -1048,6 +1094,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LastFileNumberToday in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LastFileNumberToday is required.")]
         public virtual int LastFileNumberToday
         {
             get
@@ -1070,6 +1118,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllowPaymentCopies in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AllowPaymentCopies
         {
             get
@@ -1092,6 +1141,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PaymentType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PaymentType> PaymentType
         {
             get
@@ -1114,6 +1164,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.LedgerJournalACType> AccountType
         {
             get
@@ -1136,6 +1187,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExportFormatClassName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ExportFormatClassName
         {
             get
@@ -1158,6 +1210,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AttributeThirdPartyBankEnabled in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AttributeThirdPartyBankEnabled
         {
             get
@@ -1180,6 +1233,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AttributePaymentAccountEnabled in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AttributePaymentAccountEnabled
         {
             get
@@ -1202,6 +1256,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BridgingPostingAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BridgingPostingAccountDisplayValue
         {
             get
@@ -1224,6 +1279,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UseGERConfiguration in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> UseGERConfiguration
         {
             get
@@ -1246,6 +1302,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExportPromissoryNoteDuringInvoicePosting in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ExportPromissoryNoteDuringInvoicePosting
         {
             get
@@ -1268,6 +1325,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LastFileNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LastFileNumber is required.")]
         public virtual int LastFileNumber
         {
             get
@@ -1290,6 +1349,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DirectDebit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DirectDebit
         {
             get
@@ -1312,6 +1372,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionAttributeDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionAttributeDisplayValue
         {
             get
@@ -1334,6 +1395,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostingProfileRemitNotes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PostingProfileRemitNotes
         {
             get
@@ -1353,31 +1415,33 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnPostingProfileRemitNotesChanging(string value);
         partial void OnPostingProfileRemitNotesChanged();
         /// <summary>
-        /// There are no comments for Property PurchaseAgreementHeaders in the schema.
+        /// There are no comments for Property VendorPaymentJournalLinePaymentMethodEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreement> PurchaseAgreementHeaders
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorPaymentJournalLine> VendorPaymentJournalLinePaymentMethodEntity
         {
             get
             {
-                return this._PurchaseAgreementHeaders;
+                return this._VendorPaymentJournalLinePaymentMethodEntity;
             }
             set
             {
-                this.OnPurchaseAgreementHeadersChanging(value);
-                this._PurchaseAgreementHeaders = value;
-                this.OnPurchaseAgreementHeadersChanged();
-                this.OnPropertyChanged("PurchaseAgreementHeaders");
+                this.OnVendorPaymentJournalLinePaymentMethodEntityChanging(value);
+                this._VendorPaymentJournalLinePaymentMethodEntity = value;
+                this.OnVendorPaymentJournalLinePaymentMethodEntityChanged();
+                this.OnPropertyChanged("VendorPaymentJournalLinePaymentMethodEntity");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreement> _PurchaseAgreementHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreement>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPurchaseAgreementHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreement> value);
-        partial void OnPurchaseAgreementHeadersChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorPaymentJournalLine> _VendorPaymentJournalLinePaymentMethodEntity = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorPaymentJournalLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnVendorPaymentJournalLinePaymentMethodEntityChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorPaymentJournalLine> value);
+        partial void OnVendorPaymentJournalLinePaymentMethodEntityChanged();
         /// <summary>
         /// There are no comments for Property JournalName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.JournalName JournalName
         {
             get
@@ -1400,6 +1464,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination DimensionCombination
         {
             get
@@ -1419,31 +1484,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDimensionCombinationChanging(global::Microsoft.Dynamics.DataEntities.DimensionCombination value);
         partial void OnDimensionCombinationChanged();
         /// <summary>
-        /// There are no comments for Property VendorPaymentJournalLinePaymentMethodEntity in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorPaymentJournalLine> VendorPaymentJournalLinePaymentMethodEntity
-        {
-            get
-            {
-                return this._VendorPaymentJournalLinePaymentMethodEntity;
-            }
-            set
-            {
-                this.OnVendorPaymentJournalLinePaymentMethodEntityChanging(value);
-                this._VendorPaymentJournalLinePaymentMethodEntity = value;
-                this.OnVendorPaymentJournalLinePaymentMethodEntityChanged();
-                this.OnPropertyChanged("VendorPaymentJournalLinePaymentMethodEntity");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorPaymentJournalLine> _VendorPaymentJournalLinePaymentMethodEntity = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorPaymentJournalLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnVendorPaymentJournalLinePaymentMethodEntityChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorPaymentJournalLine> value);
-        partial void OnVendorPaymentJournalLinePaymentMethodEntityChanged();
-        /// <summary>
         /// There are no comments for Property VendorPaymentMethodSpecification in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorPaymentMethodSpecification> VendorPaymentMethodSpecification
         {
             get
@@ -1462,6 +1506,29 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorPaymentMethodSpecification> _VendorPaymentMethodSpecification = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorPaymentMethodSpecification>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnVendorPaymentMethodSpecificationChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.VendorPaymentMethodSpecification> value);
         partial void OnVendorPaymentMethodSpecificationChanged();
+        /// <summary>
+        /// There are no comments for Property PurchaseAgreementHeaders in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmation> PurchaseAgreementHeaders
+        {
+            get
+            {
+                return this._PurchaseAgreementHeaders;
+            }
+            set
+            {
+                this.OnPurchaseAgreementHeadersChanging(value);
+                this._PurchaseAgreementHeaders = value;
+                this.OnPurchaseAgreementHeadersChanged();
+                this.OnPropertyChanged("PurchaseAgreementHeaders");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmation> _PurchaseAgreementHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmation>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPurchaseAgreementHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PurchaseAgreementConfirmation> value);
+        partial void OnPurchaseAgreementHeadersChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for SADDocumentInvoiceLineLedgerJournalSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for SADDocumentInvoiceLineLedgerJournalSingle in the schema.
+    /// </summary>
     public partial class SADDocumentInvoiceLineLedgerJournalSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<SADDocumentInvoiceLineLedgerJournal>
     {
         /// <summary>
@@ -98,9 +98,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.SADDocumentLineLedgerJournalSingle _SADDocumentLineLedgerJournal;
     }
-        /// <summary>
-        /// There are no comments for SADDocumentInvoiceLineLedgerJournal in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for SADDocumentInvoiceLineLedgerJournal in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// RecordId
@@ -153,6 +153,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -175,6 +177,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RecordId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RecordId is required.")]
         public virtual long RecordId
         {
             get
@@ -197,6 +201,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Invoice in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Invoice
         {
             get
@@ -219,6 +224,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SADDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SADDate is required.")]
         public virtual global::System.DateTimeOffset SADDate
         {
             get
@@ -241,6 +248,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InvoiceDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "InvoiceDate is required.")]
         public virtual global::System.DateTimeOffset InvoiceDate
         {
             get
@@ -263,6 +272,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SADNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SADNumber
         {
             get
@@ -285,6 +295,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LedgerAccountDisplayValue
         {
             get
@@ -307,6 +318,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Position in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Position is required.")]
         public virtual int Position
         {
             get
@@ -329,6 +342,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemCommodityCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ItemCommodityCode
         {
             get
@@ -351,6 +365,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Amount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Amount is required.")]
         public virtual decimal Amount
         {
             get
@@ -373,6 +389,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination DimensionCombination
         {
             get
@@ -395,6 +412,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SADDocumentInvoiceLedgerJournal in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SADDocumentInvoiceLedgerJournal is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.SADDocumentInvoiceLedgerJournal SADDocumentInvoiceLedgerJournal
         {
             get
@@ -417,6 +436,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SADDocumentLineLedgerJournal in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SADDocumentLineLedgerJournal is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.SADDocumentLineLedgerJournal SADDocumentLineLedgerJournal
         {
             get

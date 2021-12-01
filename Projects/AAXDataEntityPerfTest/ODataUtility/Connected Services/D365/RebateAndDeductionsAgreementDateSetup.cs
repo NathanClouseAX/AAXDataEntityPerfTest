@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RebateAndDeductionsAgreementDateSetupSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RebateAndDeductionsAgreementDateSetupSingle in the schema.
+    /// </summary>
     public partial class RebateAndDeductionsAgreementDateSetupSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RebateAndDeductionsAgreementDateSetup>
     {
         /// <summary>
@@ -119,9 +119,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ProjectPeriodSingle _CustomRebateProvisionPeriod;
     }
-        /// <summary>
-        /// There are no comments for RebateAndDeductionsAgreementDateSetup in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RebateAndDeductionsAgreementDateSetup in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// AgreementNumber
     /// LineNumber
@@ -173,6 +173,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AgreementNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AgreementNumber is required.")]
         public virtual string AgreementNumber
         {
             get
@@ -195,6 +197,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LineNumber is required.")]
         public virtual decimal LineNumber
         {
             get
@@ -217,6 +221,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AgreementValidFromDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AgreementValidFromDate is required.")]
         public virtual global::System.DateTimeOffset AgreementValidFromDate
         {
             get
@@ -239,6 +245,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MinimumGuaranteeAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MinimumGuaranteeAmount is required.")]
         public virtual decimal MinimumGuaranteeAmount
         {
             get
@@ -261,6 +269,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ClaimPeriodFrequency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TAMRebatePeriodCode> ClaimPeriodFrequency
         {
             get
@@ -283,6 +292,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProvisionPeriodFrequency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TAMRebatePeriodCode> ProvisionPeriodFrequency
         {
             get
@@ -305,6 +315,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property GuaranteePaymentRule in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TAMRebateGuaranteePaid> GuaranteePaymentRule
         {
             get
@@ -327,6 +338,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property GuaranteePeriodRecurrence in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "GuaranteePeriodRecurrence is required.")]
         public virtual int GuaranteePeriodRecurrence
         {
             get
@@ -349,6 +362,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomClaimPeriodId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CustomClaimPeriodId
         {
             get
@@ -371,6 +385,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProvisionPeriodRecurrence in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProvisionPeriodRecurrence is required.")]
         public virtual int ProvisionPeriodRecurrence
         {
             get
@@ -393,6 +409,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillSourceDocumentPostingCalculateProvision in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillSourceDocumentPostingCalculateProvision
         {
             get
@@ -415,6 +432,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomProvisionPeriodId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CustomProvisionPeriodId
         {
             get
@@ -437,6 +455,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AgreementValidToDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AgreementValidToDate is required.")]
         public virtual global::System.DateTimeOffset AgreementValidToDate
         {
             get
@@ -459,6 +479,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProvisionWeekDayPeriodStart in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.WeekDays> ProvisionWeekDayPeriodStart
         {
             get
@@ -481,6 +502,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ClaimPeriodRecurrence in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ClaimPeriodRecurrence is required.")]
         public virtual int ClaimPeriodRecurrence
         {
             get
@@ -503,6 +526,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RebateAndDeductionsAgreementDateSetupCriteria in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RebateAndDeductionsAgreementDateSetupCriterion> RebateAndDeductionsAgreementDateSetupCriteria
         {
             get
@@ -525,6 +549,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomRebateClaimPeriod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ProjectPeriod CustomRebateClaimPeriod
         {
             get
@@ -547,6 +572,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RebateAndDeductionsAgreementHeader in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RebateAndDeductionsAgreementHeader is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RebateAndDeductionAgreementHeader RebateAndDeductionsAgreementHeader
         {
             get
@@ -569,6 +596,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomRebateProvisionPeriod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ProjectPeriod CustomRebateProvisionPeriod
         {
             get

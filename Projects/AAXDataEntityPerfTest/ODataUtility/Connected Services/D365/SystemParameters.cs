@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for SystemParametersSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for SystemParametersSingle in the schema.
+    /// </summary>
     public partial class SystemParametersSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<SystemParameters>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.CurrencySingle _Currency;
     }
-        /// <summary>
-        /// There are no comments for SystemParameters in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for SystemParameters in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// ID
     /// </KeyProperties>
@@ -106,6 +106,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ID in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ID is required.")]
         public virtual int ID
         {
             get
@@ -128,6 +130,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ChartOfAccountsDelimiter in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.DimensionLedgerAccountDelimiter> ChartOfAccountsDelimiter
         {
             get
@@ -150,6 +153,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Increment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Increment is required.")]
         public virtual int Increment
         {
             get
@@ -172,6 +177,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ThaiSoftwareSequenceNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ThaiSoftwareSequenceNumber
         {
             get
@@ -194,6 +200,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SystemLanguage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SystemLanguage
         {
             get
@@ -216,6 +223,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaximumRowsOfSSRSReports in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MaximumRowsOfSSRSReports is required.")]
         public virtual int MaximumRowsOfSSRSReports
         {
             get
@@ -238,6 +247,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SystemExchangeRateTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SystemExchangeRateTypeId
         {
             get
@@ -260,6 +270,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SystemCurrencyCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SystemCurrencyCode
         {
             get
@@ -282,6 +293,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExchangeRate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ExchangeRate ExchangeRate
         {
             get
@@ -304,6 +316,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Currency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.Currency Currency
         {
             get

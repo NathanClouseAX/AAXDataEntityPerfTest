@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for CustomerPaymentMethodSpecificationSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CustomerPaymentMethodSpecificationSingle in the schema.
+    /// </summary>
     public partial class CustomerPaymentMethodSpecificationSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<CustomerPaymentMethodSpecification>
     {
         /// <summary>
@@ -34,6 +34,27 @@ namespace Microsoft.Dynamics.DataEntities
         public CustomerPaymentMethodSpecificationSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<CustomerPaymentMethodSpecification> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for CustomerPaymentMethod in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.CustomerPaymentMethodSingle CustomerPaymentMethod
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._CustomerPaymentMethod == null))
+                {
+                    this._CustomerPaymentMethod = new global::Microsoft.Dynamics.DataEntities.CustomerPaymentMethodSingle(this.Context, GetPath("CustomerPaymentMethod"));
+                }
+                return this._CustomerPaymentMethod;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.CustomerPaymentMethodSingle _CustomerPaymentMethod;
         /// <summary>
         /// There are no comments for SalesAgreementHeaders in the schema.
         /// </summary>
@@ -76,31 +97,10 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmation> _SalesAgreementConfirmationHeaders;
-        /// <summary>
-        /// There are no comments for CustomerPaymentMethod in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.CustomerPaymentMethodSingle CustomerPaymentMethod
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._CustomerPaymentMethod == null))
-                {
-                    this._CustomerPaymentMethod = new global::Microsoft.Dynamics.DataEntities.CustomerPaymentMethodSingle(this.Context, GetPath("CustomerPaymentMethod"));
-                }
-                return this._CustomerPaymentMethod;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.CustomerPaymentMethodSingle _CustomerPaymentMethod;
     }
-        /// <summary>
-        /// There are no comments for CustomerPaymentMethodSpecification in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CustomerPaymentMethodSpecification in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// PaymentMethodName
@@ -135,6 +135,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -157,6 +159,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PaymentMethodName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PaymentMethodName is required.")]
         public virtual string PaymentMethodName
         {
             get
@@ -179,6 +183,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Name is required.")]
         public virtual string Name
         {
             get
@@ -201,6 +207,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SpecParameters in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SpecParameters
         {
             get
@@ -223,6 +230,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PaymentWay in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PaymentWay
         {
             get
@@ -245,6 +253,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ClassName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ClassName
         {
             get
@@ -267,6 +276,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReturnSegment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ReturnSegment
         {
             get
@@ -289,6 +299,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -311,6 +322,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RemittanceSegment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RemittanceSegment
         {
             get
@@ -333,6 +345,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PaymentType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PaymentType
         {
             get
@@ -352,9 +365,34 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnPaymentTypeChanging(string value);
         partial void OnPaymentTypeChanged();
         /// <summary>
+        /// There are no comments for Property CustomerPaymentMethod in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CustomerPaymentMethod is required.")]
+        public virtual global::Microsoft.Dynamics.DataEntities.CustomerPaymentMethod CustomerPaymentMethod
+        {
+            get
+            {
+                return this._CustomerPaymentMethod;
+            }
+            set
+            {
+                this.OnCustomerPaymentMethodChanging(value);
+                this._CustomerPaymentMethod = value;
+                this.OnCustomerPaymentMethodChanged();
+                this.OnPropertyChanged("CustomerPaymentMethod");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.CustomerPaymentMethod _CustomerPaymentMethod;
+        partial void OnCustomerPaymentMethodChanging(global::Microsoft.Dynamics.DataEntities.CustomerPaymentMethod value);
+        partial void OnCustomerPaymentMethodChanged();
+        /// <summary>
         /// There are no comments for Property SalesAgreementHeaders in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreement> SalesAgreementHeaders
         {
             get
@@ -377,6 +415,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesAgreementConfirmationHeaders in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmation> SalesAgreementConfirmationHeaders
         {
             get
@@ -395,28 +434,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmation> _SalesAgreementConfirmationHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmation>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnSalesAgreementConfirmationHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesAgreementConfirmation> value);
         partial void OnSalesAgreementConfirmationHeadersChanged();
-        /// <summary>
-        /// There are no comments for Property CustomerPaymentMethod in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.CustomerPaymentMethod CustomerPaymentMethod
-        {
-            get
-            {
-                return this._CustomerPaymentMethod;
-            }
-            set
-            {
-                this.OnCustomerPaymentMethodChanging(value);
-                this._CustomerPaymentMethod = value;
-                this.OnCustomerPaymentMethodChanged();
-                this.OnPropertyChanged("CustomerPaymentMethod");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.CustomerPaymentMethod _CustomerPaymentMethod;
-        partial void OnCustomerPaymentMethodChanging(global::Microsoft.Dynamics.DataEntities.CustomerPaymentMethod value);
-        partial void OnCustomerPaymentMethodChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

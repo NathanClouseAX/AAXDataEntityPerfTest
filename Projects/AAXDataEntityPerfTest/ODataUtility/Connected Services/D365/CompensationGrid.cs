@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for CompensationGridSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CompensationGridSingle in the schema.
+    /// </summary>
     public partial class CompensationGridSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<CompensationGrid>
     {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public CompensationGridSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<CompensationGrid> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for CompFixedPlanTable in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompFixedPlanTable> CompFixedPlanTable
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._CompFixedPlanTable == null))
-                {
-                    this._CompFixedPlanTable = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CompFixedPlanTable>(GetPath("CompFixedPlanTable"));
-                }
-                return this._CompFixedPlanTable;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompFixedPlanTable> _CompFixedPlanTable;
         /// <summary>
         /// There are no comments for CompensationReferencePoint in the schema.
         /// </summary>
@@ -77,6 +56,27 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.CompensationReferencePointSingle _CompensationReferencePoint;
         /// <summary>
+        /// There are no comments for CompFixedPlanTable in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompFixedPlanTable> CompFixedPlanTable
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._CompFixedPlanTable == null))
+                {
+                    this._CompFixedPlanTable = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CompFixedPlanTable>(GetPath("CompFixedPlanTable"));
+                }
+                return this._CompFixedPlanTable;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompFixedPlanTable> _CompFixedPlanTable;
+        /// <summary>
         /// There are no comments for CompensationStructures in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -98,9 +98,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationStructure> _CompensationStructures;
     }
-        /// <summary>
-        /// There are no comments for CompensationGrid in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CompensationGrid in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// GridId
@@ -136,6 +136,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -158,6 +160,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property GridId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "GridId is required.")]
         public virtual string GridId
         {
             get
@@ -180,6 +184,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Currency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Currency
         {
             get
@@ -202,6 +207,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -224,6 +230,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Type in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HcmCompensationType> Type
         {
             get
@@ -246,6 +253,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReferenceSetup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ReferenceSetup
         {
             get
@@ -268,6 +276,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExpirationDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ExpirationDate is required.")]
         public virtual global::System.DateTimeOffset ExpirationDate
         {
             get
@@ -290,6 +300,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EffectiveDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EffectiveDate is required.")]
         public virtual global::System.DateTimeOffset EffectiveDate
         {
             get
@@ -309,31 +321,11 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnEffectiveDateChanging(global::System.DateTimeOffset value);
         partial void OnEffectiveDateChanged();
         /// <summary>
-        /// There are no comments for Property CompFixedPlanTable in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompFixedPlanTable> CompFixedPlanTable
-        {
-            get
-            {
-                return this._CompFixedPlanTable;
-            }
-            set
-            {
-                this.OnCompFixedPlanTableChanging(value);
-                this._CompFixedPlanTable = value;
-                this.OnCompFixedPlanTableChanged();
-                this.OnPropertyChanged("CompFixedPlanTable");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompFixedPlanTable> _CompFixedPlanTable = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompFixedPlanTable>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnCompFixedPlanTableChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompFixedPlanTable> value);
-        partial void OnCompFixedPlanTableChanged();
-        /// <summary>
         /// There are no comments for Property CompensationReferencePoint in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CompensationReferencePoint is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.CompensationReferencePoint CompensationReferencePoint
         {
             get
@@ -353,9 +345,33 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnCompensationReferencePointChanging(global::Microsoft.Dynamics.DataEntities.CompensationReferencePoint value);
         partial void OnCompensationReferencePointChanged();
         /// <summary>
+        /// There are no comments for Property CompFixedPlanTable in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompFixedPlanTable> CompFixedPlanTable
+        {
+            get
+            {
+                return this._CompFixedPlanTable;
+            }
+            set
+            {
+                this.OnCompFixedPlanTableChanging(value);
+                this._CompFixedPlanTable = value;
+                this.OnCompFixedPlanTableChanged();
+                this.OnPropertyChanged("CompFixedPlanTable");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompFixedPlanTable> _CompFixedPlanTable = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompFixedPlanTable>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnCompFixedPlanTableChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompFixedPlanTable> value);
+        partial void OnCompFixedPlanTableChanged();
+        /// <summary>
         /// There are no comments for Property CompensationStructures in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationStructure> CompensationStructures
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for PlannedTimeAndAttendanceAbsenceRegistrationSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PlannedTimeAndAttendanceAbsenceRegistrationSingle in the schema.
+    /// </summary>
     public partial class PlannedTimeAndAttendanceAbsenceRegistrationSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PlannedTimeAndAttendanceAbsenceRegistration>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.WorkerSingle _Worker;
     }
-        /// <summary>
-        /// There are no comments for PlannedTimeAndAttendanceAbsenceRegistration in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PlannedTimeAndAttendanceAbsenceRegistration in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// WorkerPersonnelNumber
@@ -105,6 +105,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -127,6 +129,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkerPersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WorkerPersonnelNumber is required.")]
         public virtual string WorkerPersonnelNumber
         {
             get
@@ -149,6 +153,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PlannedAbsenceRegistrationEntryNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PlannedAbsenceRegistrationEntryNumber is required.")]
         public virtual long PlannedAbsenceRegistrationEntryNumber
         {
             get
@@ -171,6 +177,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StartDateTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "StartDateTime is required.")]
         public virtual global::System.DateTimeOffset StartDateTime
         {
             get
@@ -193,6 +201,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsPlannedAbsenceInterrupted in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsPlannedAbsenceInterrupted
         {
             get
@@ -215,6 +224,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EndDateTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EndDateTime is required.")]
         public virtual global::System.DateTimeOffset EndDateTime
         {
             get
@@ -237,6 +248,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsTimeAndAttendanceActivityRegistration in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsTimeAndAttendanceActivityRegistration
         {
             get
@@ -259,6 +271,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CalculatedTimeSeconds in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CalculatedTimeSeconds is required.")]
         public virtual int CalculatedTimeSeconds
         {
             get
@@ -281,6 +295,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TimeAndAttendanceJobId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TimeAndAttendanceJobId
         {
             get
@@ -303,6 +318,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsPlannedAbsenceInterruptionAllowed in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsPlannedAbsenceInterruptionAllowed
         {
             get
@@ -325,6 +341,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Worker in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Worker is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Worker Worker
         {
             get

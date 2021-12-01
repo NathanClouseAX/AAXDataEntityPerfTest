@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for FreightBillDetailSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for FreightBillDetailSingle in the schema.
+    /// </summary>
     public partial class FreightBillDetailSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<FreightBillDetail>
     {
         /// <summary>
@@ -98,9 +98,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.CustomerV3Single _LoadCustomer;
     }
-        /// <summary>
-        /// There are no comments for FreightBillDetail in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for FreightBillDetail in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// FreightBillId
@@ -167,6 +167,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -189,6 +191,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FreightBillId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FreightBillId is required.")]
         public virtual string FreightBillId
         {
             get
@@ -211,6 +215,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FreightBillDetailEntryNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FreightBillDetailEntryNumber is required.")]
         public virtual long FreightBillDetailEntryNumber
         {
             get
@@ -233,6 +239,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransportationHubId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TransportationHubId
         {
             get
@@ -255,6 +262,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PickupAddressLocationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PickupAddressLocationId
         {
             get
@@ -277,6 +285,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PickupAddressStreetInKana in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PickupAddressStreetInKana
         {
             get
@@ -299,6 +308,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TractorNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TractorNumber
         {
             get
@@ -321,6 +331,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PickupAddressBuildingCompliment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PickupAddressBuildingCompliment
         {
             get
@@ -343,6 +354,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VoyageNum in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VoyageNum
         {
             get
@@ -365,6 +377,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShipmentId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ShipmentId
         {
             get
@@ -387,6 +400,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DropOffAddressCountyId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DropOffAddressCountyId
         {
             get
@@ -409,6 +423,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DropOffAddressCity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DropOffAddressCity
         {
             get
@@ -431,6 +446,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LoadCustomerAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LoadCustomerAccountNumber
         {
             get
@@ -453,6 +469,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PickupAddressCityInKana in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PickupAddressCityInKana
         {
             get
@@ -475,6 +492,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StandardTransportationCommodityCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string StandardTransportationCommodityCode
         {
             get
@@ -497,6 +515,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LoadSalesOrderNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LoadSalesOrderNumber
         {
             get
@@ -519,6 +538,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransportationEquipmentCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TransportationEquipmentCode
         {
             get
@@ -541,6 +561,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DropOffAddressDistrictName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DropOffAddressDistrictName
         {
             get
@@ -563,6 +584,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DropOffAddressStreetNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DropOffAddressStreetNumber
         {
             get
@@ -585,6 +607,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DropOffAddressStreetInKana in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DropOffAddressStreetInKana
         {
             get
@@ -607,6 +630,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PickupAddressDunsNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PickupAddressDunsNumber
         {
             get
@@ -629,6 +653,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PickupAddressLongitude in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PickupAddressLongitude is required.")]
         public virtual decimal PickupAddressLongitude
         {
             get
@@ -651,6 +677,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductMovementDirectionRule in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TMSDirection> ProductMovementDirectionRule
         {
             get
@@ -673,6 +700,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PickupAddressCountyId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PickupAddressCountyId
         {
             get
@@ -695,6 +723,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FreightBillOrderAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FreightBillOrderAmount
         {
             get
@@ -717,6 +746,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PickupAddressStreetNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PickupAddressStreetNumber
         {
             get
@@ -739,6 +769,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DropOffAddressTimeZone in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.Timezone> DropOffAddressTimeZone
         {
             get
@@ -761,6 +792,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FormattedDropOffAddress in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FormattedDropOffAddress
         {
             get
@@ -783,6 +815,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransportationModeCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TransportationModeCode
         {
             get
@@ -805,6 +838,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransportationRoutePlanId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TransportationRoutePlanId
         {
             get
@@ -827,6 +861,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PickupAddressDistrictName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PickupAddressDistrictName
         {
             get
@@ -849,6 +884,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccessorialChargeMasterCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccessorialChargeMasterCode
         {
             get
@@ -871,6 +907,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DropOffAddressCityInKana in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DropOffAddressCityInKana
         {
             get
@@ -893,6 +930,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RateUnit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RateUnit is required.")]
         public virtual decimal RateUnit
         {
             get
@@ -915,6 +954,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DropOffAddressDunsNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DropOffAddressDunsNumber
         {
             get
@@ -937,6 +977,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HoldingFreightEndDatetime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "HoldingFreightEndDatetime is required.")]
         public virtual global::System.DateTimeOffset HoldingFreightEndDatetime
         {
             get
@@ -959,6 +1001,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DropOffAddressLocationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DropOffAddressLocationId
         {
             get
@@ -981,6 +1024,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PickupAddressCity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PickupAddressCity
         {
             get
@@ -1003,6 +1047,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FormattedPickupAddress in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FormattedPickupAddress
         {
             get
@@ -1025,6 +1070,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransportationExternalCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TransportationExternalCode
         {
             get
@@ -1047,6 +1093,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TrailerNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TrailerNumber
         {
             get
@@ -1069,6 +1116,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CurrencyCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CurrencyCode
         {
             get
@@ -1091,6 +1139,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DropOffAddressDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DropOffAddressDescription
         {
             get
@@ -1113,6 +1162,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReconciliationStatus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TMSFreightBillMatchStatus> ReconciliationStatus
         {
             get
@@ -1135,6 +1185,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LastCycleCountDateTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LastCycleCountDateTime is required.")]
         public virtual global::System.DateTimeOffset LastCycleCountDateTime
         {
             get
@@ -1157,6 +1209,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DropOffAddressPostBox in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DropOffAddressPostBox
         {
             get
@@ -1179,6 +1232,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PickupAddressPostBox in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PickupAddressPostBox
         {
             get
@@ -1201,6 +1255,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShippingCarrierVendorAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ShippingCarrierVendorAccountNumber
         {
             get
@@ -1223,6 +1278,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShippingCarrierId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ShippingCarrierId
         {
             get
@@ -1245,6 +1301,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DropOffAddressZipCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DropOffAddressZipCode
         {
             get
@@ -1267,6 +1324,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TotalRate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TotalRate is required.")]
         public virtual decimal TotalRate
         {
             get
@@ -1289,6 +1348,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DropOffAddressLatitude in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DropOffAddressLatitude is required.")]
         public virtual decimal DropOffAddressLatitude
         {
             get
@@ -1311,6 +1372,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PickupAddressCountryRegionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PickupAddressCountryRegionId
         {
             get
@@ -1333,6 +1395,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FreightBillOrderQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FreightBillOrderQuantity is required.")]
         public virtual decimal FreightBillOrderQuantity
         {
             get
@@ -1355,6 +1419,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsPickupAddressPrivate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsPickupAddressPrivate
         {
             get
@@ -1377,6 +1442,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PickupAddressStateId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PickupAddressStateId
         {
             get
@@ -1399,6 +1465,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LoadId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LoadId
         {
             get
@@ -1421,6 +1488,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PhysicalWeight in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PhysicalWeight is required.")]
         public virtual decimal PhysicalWeight
         {
             get
@@ -1443,6 +1512,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LoadVendorAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LoadVendorAccountNumber
         {
             get
@@ -1465,6 +1535,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DropOffAddressCountryRegionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DropOffAddressCountryRegionId
         {
             get
@@ -1487,6 +1558,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DropOffAddressBuildingCompliment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DropOffAddressBuildingCompliment
         {
             get
@@ -1509,6 +1581,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DropOffAddressStreet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DropOffAddressStreet
         {
             get
@@ -1531,6 +1604,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PickupAddressTimeZone in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.Timezone> PickupAddressTimeZone
         {
             get
@@ -1553,6 +1627,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LoadPurchaseOrderNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LoadPurchaseOrderNumber
         {
             get
@@ -1575,6 +1650,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DropOffAddressCountryRegionISOCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DropOffAddressCountryRegionISOCode
         {
             get
@@ -1597,6 +1673,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsDropOffAddressPrivate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsDropOffAddressPrivate
         {
             get
@@ -1619,6 +1696,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransportationBookingNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TransportationBookingNumber
         {
             get
@@ -1641,6 +1719,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProNumberCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProNumberCode
         {
             get
@@ -1663,6 +1742,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransportationBillingGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TransportationBillingGroupId
         {
             get
@@ -1685,6 +1765,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PickupAddressStreet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PickupAddressStreet
         {
             get
@@ -1707,6 +1788,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RateUnitMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RateUnitMethod is required.")]
         public virtual decimal RateUnitMethod
         {
             get
@@ -1729,6 +1812,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PickupAddressDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PickupAddressDescription
         {
             get
@@ -1751,6 +1835,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InvoiceVendorAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string InvoiceVendorAccountNumber
         {
             get
@@ -1773,6 +1858,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DropOffAddressLongitude in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DropOffAddressLongitude is required.")]
         public virtual decimal DropOffAddressLongitude
         {
             get
@@ -1795,6 +1882,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PickupAddressLatitude in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PickupAddressLatitude is required.")]
         public virtual decimal PickupAddressLatitude
         {
             get
@@ -1817,6 +1906,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShippingCarrierServiceId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ShippingCarrierServiceId
         {
             get
@@ -1839,6 +1929,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SequenceNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SequenceNumber is required.")]
         public virtual int SequenceNumber
         {
             get
@@ -1861,6 +1953,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InvoiceLineType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TMSLineType> InvoiceLineType
         {
             get
@@ -1883,6 +1976,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FreightBillTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FreightBillTypeId
         {
             get
@@ -1905,6 +1999,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DropOffAddressStateId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DropOffAddressStateId
         {
             get
@@ -1927,6 +2022,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BillOfLadingId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BillOfLadingId
         {
             get
@@ -1949,6 +2045,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PickupAddressZipCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PickupAddressZipCode
         {
             get
@@ -1971,6 +2068,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VesselName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VesselName
         {
             get
@@ -1993,6 +2091,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RateNotes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RateNotes
         {
             get
@@ -2015,6 +2114,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PickupAddressCountryRegionISOCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PickupAddressCountryRegionISOCode
         {
             get
@@ -2037,6 +2137,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LoadVendor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.VendorV2 LoadVendor
         {
             get
@@ -2059,6 +2160,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShippingCarrier in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ShippingCarrier ShippingCarrier
         {
             get
@@ -2081,6 +2183,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LoadCustomer in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.CustomerV3 LoadCustomer
         {
             get

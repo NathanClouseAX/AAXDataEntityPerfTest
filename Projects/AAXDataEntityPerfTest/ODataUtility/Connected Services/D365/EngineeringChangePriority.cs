@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for EngineeringChangePrioritySingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for EngineeringChangePrioritySingle in the schema.
+    /// </summary>
     public partial class EngineeringChangePrioritySingle : global::Microsoft.OData.Client.DataServiceQuerySingle<EngineeringChangePriority>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestHeader> _EngineeringChangeRequestHeaders;
     }
-        /// <summary>
-        /// There are no comments for EngineeringChangePriority in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for EngineeringChangePriority in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// PriorityName
     /// </KeyProperties>
@@ -104,6 +104,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PriorityName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PriorityName is required.")]
         public virtual string PriorityName
         {
             get
@@ -126,6 +128,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SequenceNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SequenceNumber is required.")]
         public virtual decimal SequenceNumber
         {
             get
@@ -148,6 +152,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngineeringChangeOrderHeaders in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderHeader> EngineeringChangeOrderHeaders
         {
             get
@@ -170,6 +175,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EngineeringChangeRequestHeaders in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeRequestHeader> EngineeringChangeRequestHeaders
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RetailHardwareStationSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailHardwareStationSingle in the schema.
+    /// </summary>
     public partial class RetailHardwareStationSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RetailHardwareStation>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailStoreHardwareStation> _RetailStoreHardwareStation;
     }
-        /// <summary>
-        /// There are no comments for RetailHardwareStation in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailHardwareStation in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// HardwareStationId
     /// </KeyProperties>
@@ -85,6 +85,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HardwareStationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "HardwareStationId is required.")]
         public virtual string HardwareStationId
         {
             get
@@ -107,6 +109,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HardwareStationName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string HardwareStationName
         {
             get
@@ -129,6 +132,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MergedSelfServicePackageReference in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MergedSelfServicePackageReference is required.")]
         public virtual long MergedSelfServicePackageReference
         {
             get
@@ -151,6 +156,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HardwareStationPortNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "HardwareStationPortNumber is required.")]
         public virtual int HardwareStationPortNumber
         {
             get
@@ -173,6 +180,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HardwareProfileId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string HardwareProfileId
         {
             get
@@ -195,6 +203,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SelfServicePackageName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SelfServicePackageName
         {
             get
@@ -217,6 +226,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailStoreHardwareStation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailStoreHardwareStation> RetailStoreHardwareStation
         {
             get

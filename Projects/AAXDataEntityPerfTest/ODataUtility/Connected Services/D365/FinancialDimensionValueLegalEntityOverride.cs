@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for FinancialDimensionValueLegalEntityOverrideSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for FinancialDimensionValueLegalEntityOverrideSingle in the schema.
+    /// </summary>
     public partial class FinancialDimensionValueLegalEntityOverrideSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<FinancialDimensionValueLegalEntityOverride>
     {
         /// <summary>
@@ -98,9 +98,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.WorkerSingle _Worker;
     }
-        /// <summary>
-        /// There are no comments for FinancialDimensionValueLegalEntityOverride in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for FinancialDimensionValueLegalEntityOverride in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// FinancialDimension
     /// DimensionValue
@@ -151,6 +151,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FinancialDimension in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FinancialDimension is required.")]
         public virtual string FinancialDimension
         {
             get
@@ -173,6 +175,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DimensionValue is required.")]
         public virtual string DimensionValue
         {
             get
@@ -195,6 +199,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LegalEntityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LegalEntityId is required.")]
         public virtual string LegalEntityId
         {
             get
@@ -217,6 +223,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsSuspended in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsSuspended
         {
             get
@@ -239,6 +246,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ActiveFrom in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ActiveFrom is required.")]
         public virtual global::System.DateTimeOffset ActiveFrom
         {
             get
@@ -261,6 +270,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ActiveTo in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ActiveTo is required.")]
         public virtual global::System.DateTimeOffset ActiveTo
         {
             get
@@ -283,6 +294,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Owner in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Owner
         {
             get
@@ -305,6 +317,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FinancialDimensionValueLegalEntityOverrideEntity_RelatedRole_LegalEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FinancialDimensionValueLegalEntityOverrideEntity_RelatedRole_LegalEntity is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.OfficeAddinLegalEntity FinancialDimensionValueLegalEntityOverrideEntity_RelatedRole_LegalEntity
         {
             get
@@ -327,6 +341,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FinancialDimensionValueLegalEntityOverrideEntity_RelatedRole_FinancialDimension in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FinancialDimensionValueLegalEntityOverrideEntity_RelatedRole_FinancialDimension is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute FinancialDimensionValueLegalEntityOverrideEntity_RelatedRole_FinancialDimension
         {
             get
@@ -349,6 +365,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Worker in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.Worker Worker
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for SkillTypeSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for SkillTypeSingle in the schema.
+    /// </summary>
     public partial class SkillTypeSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<SkillType>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Skill> _HcmSkill;
     }
-        /// <summary>
-        /// There are no comments for SkillType in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for SkillType in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// SkillType
     /// </KeyProperties>
@@ -83,7 +83,9 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SkillType1 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         [global::Microsoft.OData.Client.OriginalNameAttribute("SkillType")]
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SkillType1 is required.")]
         public virtual string SkillType1
         {
             get
@@ -106,6 +108,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Color in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Color is required.")]
         public virtual int Color
         {
             get
@@ -128,6 +132,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -150,6 +155,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HcmSkill in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Skill> HcmSkill
         {
             get

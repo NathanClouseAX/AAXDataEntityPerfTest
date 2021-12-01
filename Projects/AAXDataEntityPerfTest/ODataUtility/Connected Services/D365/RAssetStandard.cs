@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RAssetStandardSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RAssetStandardSingle in the schema.
+    /// </summary>
     public partial class RAssetStandardSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RAssetStandard>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionSetSingle _DimensionSet;
     }
-        /// <summary>
-        /// There are no comments for RAssetStandard in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RAssetStandard in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// FAInventoryNumber
@@ -98,6 +98,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -120,6 +122,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FAInventoryNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FAInventoryNumber is required.")]
         public virtual string FAInventoryNumber
         {
             get
@@ -142,6 +146,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValueModel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValueModel is required.")]
         public virtual string ValueModel
         {
             get
@@ -164,6 +170,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DepreciationStartDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DepreciationStartDate is required.")]
         public virtual global::System.DateTimeOffset DepreciationStartDate
         {
             get
@@ -186,6 +194,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Currency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Currency
         {
             get
@@ -208,6 +217,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionOfRentedFADisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionOfRentedFADisplayValue
         {
             get
@@ -230,6 +240,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ScrapValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ScrapValue is required.")]
         public virtual decimal ScrapValue
         {
             get
@@ -252,6 +264,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DepreciationSubgroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DepreciationSubgroup
         {
             get
@@ -274,6 +287,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PuttingIntoOperationAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PuttingIntoOperationAmount is required.")]
         public virtual decimal PuttingIntoOperationAmount
         {
             get
@@ -296,6 +311,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DepreciationGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DepreciationGroup
         {
             get
@@ -318,6 +334,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Depreciation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> Depreciation
         {
             get
@@ -340,6 +357,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultFinancialDimensionsDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultFinancialDimensionsDisplayValue
         {
             get
@@ -362,6 +380,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostingProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PostingProfile
         {
             get
@@ -384,6 +403,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LendingPostingProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LendingPostingProfile
         {
             get
@@ -406,6 +426,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DepreciationMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DepreciationMethod
         {
             get
@@ -428,6 +449,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AnalysisCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AnalysisCode
         {
             get
@@ -450,6 +472,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionSet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionSet DimensionSet
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RetailServiceCategorySingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailServiceCategorySingle in the schema.
+    /// </summary>
     public partial class RetailServiceCategorySingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RetailServiceCategory>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.RetailReplenishmentRuleSingle _RetailReplenishmentRule;
     }
-        /// <summary>
-        /// There are no comments for RetailServiceCategory in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailServiceCategory in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// ServiceCategory
@@ -126,6 +126,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -148,6 +150,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceCategory in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ServiceCategory is required.")]
         public virtual string ServiceCategory
         {
             get
@@ -170,6 +174,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SalesDate is required.")]
         public virtual int SalesDate
         {
             get
@@ -192,6 +198,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReplenishmentRule in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ReplenishmentRule
         {
             get
@@ -214,6 +221,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReplenishmentWarehouse in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ReplenishmentWarehouse
         {
             get
@@ -236,6 +244,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Calendar in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Calendar
         {
             get
@@ -258,6 +267,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CrossDockingWarehouse in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CrossDockingWarehouse
         {
             get
@@ -280,6 +290,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -302,6 +313,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LocalDeliveryDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LocalDeliveryDate is required.")]
         public virtual int LocalDeliveryDate
         {
             get
@@ -324,6 +337,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Warehouse in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Warehouse is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Warehouse Warehouse
         {
             get
@@ -346,6 +361,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailReplenishmentRule in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetailReplenishmentRule is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RetailReplenishmentRule RetailReplenishmentRule
         {
             get

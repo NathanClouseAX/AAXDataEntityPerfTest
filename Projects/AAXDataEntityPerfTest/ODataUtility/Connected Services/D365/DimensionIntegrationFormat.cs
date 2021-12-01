@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for DimensionIntegrationFormatSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for DimensionIntegrationFormatSingle in the schema.
+    /// </summary>
     public partial class DimensionIntegrationFormatSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<DimensionIntegrationFormat>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for DimensionIntegrationFormat in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for DimensionIntegrationFormat in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// DimensionFormatName
     /// DimensionFormatType
@@ -61,6 +61,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionFormatName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DimensionFormatName is required.")]
         public virtual string DimensionFormatName
         {
             get
@@ -83,6 +85,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionFormatType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.DimensionHierarchyType> DimensionFormatType
         {
             get
@@ -105,6 +108,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FinancialDimensionFormat in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FinancialDimensionFormat
         {
             get
@@ -127,6 +131,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsActive in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsActive
         {
             get

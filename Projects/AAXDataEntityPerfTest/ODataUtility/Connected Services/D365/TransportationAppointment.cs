@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for TransportationAppointmentSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TransportationAppointmentSingle in the schema.
+    /// </summary>
     public partial class TransportationAppointmentSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<TransportationAppointment>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.CustomerV3Single _Customer;
     }
-        /// <summary>
-        /// There are no comments for TransportationAppointment in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TransportationAppointment in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// AppointmentId
@@ -109,6 +109,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -131,6 +133,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AppointmentId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AppointmentId is required.")]
         public virtual string AppointmentId
         {
             get
@@ -153,6 +157,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsCustomerPickupAllowed in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsCustomerPickupAllowed
         {
             get
@@ -175,6 +180,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LoadId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LoadId
         {
             get
@@ -197,6 +203,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TractorNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TractorNumber
         {
             get
@@ -219,6 +226,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VendorAccountNumber
         {
             get
@@ -241,6 +249,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AppointmentNote in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AppointmentNote
         {
             get
@@ -263,6 +272,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AppointmentWarehouseId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AppointmentWarehouseId
         {
             get
@@ -285,6 +295,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductMovementDirectionRule in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TMSApptDirection> ProductMovementDirectionRule
         {
             get
@@ -307,6 +318,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AppointmentSiteId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AppointmentSiteId
         {
             get
@@ -329,6 +341,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesOrderNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SalesOrderNumber
         {
             get
@@ -351,6 +364,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransportationCarrierId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TransportationCarrierId
         {
             get
@@ -373,6 +387,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TrailerNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TrailerNumber
         {
             get
@@ -395,6 +410,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AppointmentStatus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TMSApptStatus> AppointmentStatus
         {
             get
@@ -417,6 +433,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransportationBrokerId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TransportationBrokerId
         {
             get
@@ -439,6 +456,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AppointmentName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AppointmentName
         {
             get
@@ -461,6 +479,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransportationAppointmentRuleId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TransportationAppointmentRuleId
         {
             get
@@ -483,6 +502,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AppointmentWarehouseLocationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AppointmentWarehouseLocationId
         {
             get
@@ -505,6 +525,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchaseOrderNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PurchaseOrderNumber
         {
             get
@@ -527,6 +548,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PlannedStartDateTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PlannedStartDateTime is required.")]
         public virtual global::System.DateTimeOffset PlannedStartDateTime
         {
             get
@@ -549,6 +572,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CustomerAccountNumber
         {
             get
@@ -571,6 +595,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShippingCarrierVendorAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ShippingCarrierVendorAccountNumber
         {
             get
@@ -593,6 +618,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PlannedEndDateTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PlannedEndDateTime is required.")]
         public virtual global::System.DateTimeOffset PlannedEndDateTime
         {
             get
@@ -615,6 +642,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Vendor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.VendorV2 Vendor
         {
             get
@@ -637,6 +665,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Customer in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.CustomerV3 Customer
         {
             get

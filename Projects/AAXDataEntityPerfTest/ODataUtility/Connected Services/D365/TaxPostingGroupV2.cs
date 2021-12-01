@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for TaxPostingGroupV2Single in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TaxPostingGroupV2Single in the schema.
+    /// </summary>
     public partial class TaxPostingGroupV2Single : global::Microsoft.OData.Client.DataServiceQuerySingle<TaxPostingGroupV2>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _DimensionCombination;
     }
-        /// <summary>
-        /// There are no comments for TaxPostingGroupV2 in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TaxPostingGroupV2 in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// TaxPostingGroupCode
@@ -84,6 +84,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -106,6 +108,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxPostingGroupCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TaxPostingGroupCode is required.")]
         public virtual string TaxPostingGroupCode
         {
             get
@@ -128,6 +132,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -150,6 +155,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxSettlementMainAccountIdDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxSettlementMainAccountIdDisplayValue
         {
             get
@@ -172,6 +178,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxUnrealizedPayablesMainAccountIdDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxUnrealizedPayablesMainAccountIdDisplayValue
         {
             get
@@ -194,6 +201,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxReceivableShortTermMainAccountIdDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxReceivableShortTermMainAccountIdDisplayValue
         {
             get
@@ -216,6 +224,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxReceivableMainAccountIdDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxReceivableMainAccountIdDisplayValue
         {
             get
@@ -238,6 +247,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxFromCustomerCashDiscountMainAccountIdDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxFromCustomerCashDiscountMainAccountIdDisplayValue
         {
             get
@@ -260,6 +270,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxSalesExpenseMainAccountIdDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxSalesExpenseMainAccountIdDisplayValue
         {
             get
@@ -282,6 +293,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UseTaxMainAccountIdDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string UseTaxMainAccountIdDisplayValue
         {
             get
@@ -304,6 +316,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UseTaxPayableMainAccountIdDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string UseTaxPayableMainAccountIdDisplayValue
         {
             get
@@ -326,6 +339,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxReceivableLongTermMainAccountIdDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxReceivableLongTermMainAccountIdDisplayValue
         {
             get
@@ -348,6 +362,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxPayableMainAccountIdDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxPayableMainAccountIdDisplayValue
         {
             get
@@ -370,6 +385,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxOutgoingOffsetLedgerMainAccountIdDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxOutgoingOffsetLedgerMainAccountIdDisplayValue
         {
             get
@@ -392,6 +408,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxUnrealizedReceivablesMainAccountIdDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxUnrealizedReceivablesMainAccountIdDisplayValue
         {
             get
@@ -414,6 +431,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxFromVendorCashDiscountMainAccountIdDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxFromVendorCashDiscountMainAccountIdDisplayValue
         {
             get
@@ -436,6 +454,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxIncomingDifferenceMainAccountIdDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxIncomingDifferenceMainAccountIdDisplayValue
         {
             get
@@ -458,6 +477,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxOutgoingDifferenceMainAccountIdDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxOutgoingDifferenceMainAccountIdDisplayValue
         {
             get
@@ -480,6 +500,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxOutgoingDiffOffsetMainAccountIdDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxOutgoingDiffOffsetMainAccountIdDisplayValue
         {
             get
@@ -502,6 +523,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxIncomingDiffOffsetMainAccountIdDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxIncomingDiffOffsetMainAccountIdDisplayValue
         {
             get
@@ -524,6 +546,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination DimensionCombination
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for GroupSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for GroupSingle in the schema.
+    /// </summary>
     public partial class GroupSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<Group>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionSetSingle _DimensionSet;
     }
-        /// <summary>
-        /// There are no comments for Group in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for Group in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// DeferralsGroup
@@ -86,6 +86,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -108,6 +110,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DeferralsGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DeferralsGroup is required.")]
         public virtual string DeferralsGroup
         {
             get
@@ -130,6 +134,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WritingOffTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WritingOffTime is required.")]
         public virtual int WritingOffTime
         {
             get
@@ -152,6 +158,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WritingOffMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string WritingOffMethod
         {
             get
@@ -174,6 +181,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Name
         {
             get
@@ -196,6 +204,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionDisplayValue
         {
             get
@@ -218,6 +227,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostingProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PostingProfile
         {
             get
@@ -240,6 +250,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VATOffsetMethodForDeferrals in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RDeferralsVATRefundingMethod> VATOffsetMethodForDeferrals
         {
             get
@@ -262,6 +273,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BeginningDateOfWritingOff in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RDeferralsInitWriteStartDate> BeginningDateOfWritingOff
         {
             get
@@ -284,6 +296,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ModelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ModelNumber
         {
             get
@@ -306,6 +319,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisposalDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RDeferralsInitRetirementDate> DisposalDate
         {
             get
@@ -328,6 +342,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionSet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionSet DimensionSet
         {
             get

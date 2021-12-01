@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for TradeAllowanceAgreementMerchandisingEventLumpSumSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TradeAllowanceAgreementMerchandisingEventLumpSumSingle in the schema.
+    /// </summary>
     public partial class TradeAllowanceAgreementMerchandisingEventLumpSumSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<TradeAllowanceAgreementMerchandisingEventLumpSum>
     {
         /// <summary>
@@ -119,9 +119,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeaderSingle _TradeAllowanceAgreementHeader;
     }
-        /// <summary>
-        /// There are no comments for TradeAllowanceAgreementMerchandisingEventLumpSum in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TradeAllowanceAgreementMerchandisingEventLumpSum in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// TradeAllowanceAgreementId
@@ -173,6 +173,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -195,6 +197,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TradeAllowanceAgreementId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TradeAllowanceAgreementId is required.")]
         public virtual string TradeAllowanceAgreementId
         {
             get
@@ -217,6 +221,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CustomerAccountNumber is required.")]
         public virtual string CustomerAccountNumber
         {
             get
@@ -239,6 +245,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TradeAllowanceAgreementMerchandisingEventId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TradeAllowanceAgreementMerchandisingEventId is required.")]
         public virtual string TradeAllowanceAgreementMerchandisingEventId
         {
             get
@@ -261,6 +269,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LumpSumId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LumpSumId is required.")]
         public virtual long LumpSumId
         {
             get
@@ -283,6 +293,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SuggestedLumpSumAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SuggestedLumpSumAmount is required.")]
         public virtual decimal SuggestedLumpSumAmount
         {
             get
@@ -305,6 +317,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LumpSumApprovalStatus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.MCRLumpSumStatus> LumpSumApprovalStatus
         {
             get
@@ -327,6 +340,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ApprovedLumpSumAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ApprovedLumpSumAmount is required.")]
         public virtual decimal ApprovedLumpSumAmount
         {
             get
@@ -349,6 +364,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ClaimPaymentRecipientCustomerAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ClaimPaymentRecipientCustomerAccountNumber
         {
             get
@@ -371,6 +387,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ClaimPaymentMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TAMPaymentType> ClaimPaymentMethod
         {
             get
@@ -393,6 +410,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ClaimPaymentRecipientVendorAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ClaimPaymentRecipientVendorAccountNumber
         {
             get
@@ -415,6 +433,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LumpSumDetails in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LumpSumDetails
         {
             get
@@ -437,6 +456,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ClaimPaymentRecipientVendor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.VendorV2 ClaimPaymentRecipientVendor
         {
             get
@@ -459,6 +479,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ClaimPaymentRecipientCustomer in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.CustomerV3 ClaimPaymentRecipientCustomer
         {
             get
@@ -481,6 +502,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TradeAllowanceAgreementMerchandisingEvent in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TradeAllowanceAgreementMerchandisingEvent is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEvent TradeAllowanceAgreementMerchandisingEvent
         {
             get
@@ -503,6 +526,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TradeAllowanceAgreementHeader in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeader TradeAllowanceAgreementHeader
         {
             get

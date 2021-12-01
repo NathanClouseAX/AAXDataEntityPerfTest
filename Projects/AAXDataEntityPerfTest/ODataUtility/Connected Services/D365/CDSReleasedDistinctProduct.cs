@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for CDSReleasedDistinctProductSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CDSReleasedDistinctProductSingle in the schema.
+    /// </summary>
     public partial class CDSReleasedDistinctProductSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<CDSReleasedDistinctProduct>
     {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for CDSInventoryOnHandRequests in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.CDSInventoryOnHandRequestSingle CDSInventoryOnHandRequests
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._CDSInventoryOnHandRequests == null))
-                {
-                    this._CDSInventoryOnHandRequests = new global::Microsoft.Dynamics.DataEntities.CDSInventoryOnHandRequestSingle(this.Context, GetPath("CDSInventoryOnHandRequests"));
-                }
-                return this._CDSInventoryOnHandRequests;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.CDSInventoryOnHandRequestSingle _CDSInventoryOnHandRequests;
-        /// <summary>
         /// There are no comments for ReleasedProductV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,10 +55,31 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ReleasedProductV2Single _ReleasedProductV2;
-    }
         /// <summary>
-        /// There are no comments for CDSReleasedDistinctProduct in the schema.
+        /// There are no comments for CDSInventoryOnHandRequests in the schema.
         /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.CDSInventoryOnHandRequestSingle CDSInventoryOnHandRequests
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._CDSInventoryOnHandRequests == null))
+                {
+                    this._CDSInventoryOnHandRequests = new global::Microsoft.Dynamics.DataEntities.CDSInventoryOnHandRequestSingle(this.Context, GetPath("CDSInventoryOnHandRequests"));
+                }
+                return this._CDSInventoryOnHandRequests;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.CDSInventoryOnHandRequestSingle _CDSInventoryOnHandRequests;
+    }
+    /// <summary>
+    /// There are no comments for CDSReleasedDistinctProduct in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// ProductNumber
@@ -134,6 +134,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -156,6 +158,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductNumber is required.")]
         public virtual string ProductNumber
         {
             get
@@ -178,6 +182,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EcoResProductType> ProductType
         {
             get
@@ -200,6 +205,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WarrantyDurationTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WarrantyDurationTime is required.")]
         public virtual int WarrantyDurationTime
         {
             get
@@ -222,6 +229,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InventoryUnitSymbol in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string InventoryUnitSymbol
         {
             get
@@ -244,6 +252,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WarrantablePriceRangeBaseType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.WarrantablePriceRangeBaseType> WarrantablePriceRangeBaseType
         {
             get
@@ -266,6 +275,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductConfigurationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductConfigurationId
         {
             get
@@ -288,6 +298,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UpperWarrantablePriceRangeLimit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "UpperWarrantablePriceRangeLimit is required.")]
         public virtual decimal UpperWarrantablePriceRangeLimit
         {
             get
@@ -310,6 +322,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductSizeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductSizeId
         {
             get
@@ -332,6 +345,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InventoryUnitDecimalPrecision in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "InventoryUnitDecimalPrecision is required.")]
         public virtual int InventoryUnitDecimalPrecision
         {
             get
@@ -354,6 +369,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CurrencyCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CurrencyCode
         {
             get
@@ -376,6 +392,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ItemNumber
         {
             get
@@ -398,6 +415,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductColorId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductColorId
         {
             get
@@ -420,6 +438,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductVersionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductVersionId
         {
             get
@@ -442,6 +461,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductStyleId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductStyleId
         {
             get
@@ -464,6 +484,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EcoResProductServiceType> ServiceType
         {
             get
@@ -486,6 +507,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesPrice in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SalesPrice is required.")]
         public virtual decimal SalesPrice
         {
             get
@@ -508,6 +531,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WarrantyDurationTimeUnit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.WarrantyDurationTimeUnit> WarrantyDurationTimeUnit
         {
             get
@@ -530,6 +554,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesUnitDecimalPrecision in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SalesUnitDecimalPrecision is required.")]
         public virtual int SalesUnitDecimalPrecision
         {
             get
@@ -552,6 +578,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FieldServiceProductType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EcoResFieldServiceProductType> FieldServiceProductType
         {
             get
@@ -574,6 +601,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnitCost in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "UnitCost is required.")]
         public virtual decimal UnitCost
         {
             get
@@ -596,6 +625,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsCatchWeightProduct in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsCatchWeightProduct
         {
             get
@@ -618,6 +648,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesUnitSymbol in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SalesUnitSymbol
         {
             get
@@ -640,6 +671,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductDescription
         {
             get
@@ -662,6 +694,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LowerWarrantablePriceRangeLimit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LowerWarrantablePriceRangeLimit is required.")]
         public virtual decimal LowerWarrantablePriceRangeLimit
         {
             get
@@ -684,6 +718,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductName
         {
             get
@@ -706,6 +741,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsStockedProduct in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsStockedProduct
         {
             get
@@ -725,31 +761,11 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnIsStockedProductChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> value);
         partial void OnIsStockedProductChanged();
         /// <summary>
-        /// There are no comments for Property CDSInventoryOnHandRequests in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.CDSInventoryOnHandRequest CDSInventoryOnHandRequests
-        {
-            get
-            {
-                return this._CDSInventoryOnHandRequests;
-            }
-            set
-            {
-                this.OnCDSInventoryOnHandRequestsChanging(value);
-                this._CDSInventoryOnHandRequests = value;
-                this.OnCDSInventoryOnHandRequestsChanged();
-                this.OnPropertyChanged("CDSInventoryOnHandRequests");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.CDSInventoryOnHandRequest _CDSInventoryOnHandRequests;
-        partial void OnCDSInventoryOnHandRequestsChanging(global::Microsoft.Dynamics.DataEntities.CDSInventoryOnHandRequest value);
-        partial void OnCDSInventoryOnHandRequestsChanged();
-        /// <summary>
         /// There are no comments for Property ReleasedProductV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReleasedProductV2 is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ReleasedProductV2 ReleasedProductV2
         {
             get
@@ -768,6 +784,29 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.ReleasedProductV2 _ReleasedProductV2;
         partial void OnReleasedProductV2Changing(global::Microsoft.Dynamics.DataEntities.ReleasedProductV2 value);
         partial void OnReleasedProductV2Changed();
+        /// <summary>
+        /// There are no comments for Property CDSInventoryOnHandRequests in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.Dynamics.DataEntities.CDSInventoryOnHandRequest CDSInventoryOnHandRequests
+        {
+            get
+            {
+                return this._CDSInventoryOnHandRequests;
+            }
+            set
+            {
+                this.OnCDSInventoryOnHandRequestsChanging(value);
+                this._CDSInventoryOnHandRequests = value;
+                this.OnCDSInventoryOnHandRequestsChanged();
+                this.OnPropertyChanged("CDSInventoryOnHandRequests");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.CDSInventoryOnHandRequest _CDSInventoryOnHandRequests;
+        partial void OnCDSInventoryOnHandRequestsChanging(global::Microsoft.Dynamics.DataEntities.CDSInventoryOnHandRequest value);
+        partial void OnCDSInventoryOnHandRequestsChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

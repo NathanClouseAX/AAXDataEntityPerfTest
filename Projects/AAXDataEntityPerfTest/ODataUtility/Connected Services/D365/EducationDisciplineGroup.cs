@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for EducationDisciplineGroupSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for EducationDisciplineGroupSingle in the schema.
+    /// </summary>
     public partial class EducationDisciplineGroupSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<EducationDisciplineGroup>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.EducationDisciplineCategorySingle _EducationDisciplineCategory;
     }
-        /// <summary>
-        /// There are no comments for EducationDisciplineGroup in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for EducationDisciplineGroup in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// EducationId
     /// EducationDisciplineCategoryId
@@ -117,6 +117,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EducationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EducationId is required.")]
         public virtual string EducationId
         {
             get
@@ -139,6 +141,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EducationDisciplineCategoryId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EducationDisciplineCategoryId is required.")]
         public virtual string EducationDisciplineCategoryId
         {
             get
@@ -161,6 +165,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EducationDiscipline in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EducationDiscipline is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.EducationDiscipline EducationDiscipline
         {
             get
@@ -183,6 +189,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EducationDisciplineCategory in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EducationDisciplineCategory is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.EducationDisciplineCategory EducationDisciplineCategory
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for DualWriteProjectConfigurationSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for DualWriteProjectConfigurationSingle in the schema.
+    /// </summary>
     public partial class DualWriteProjectConfigurationSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<DualWriteProjectConfiguration>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for DualWriteProjectConfiguration in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for DualWriteProjectConfiguration in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// ProjectName
     /// </KeyProperties>
@@ -60,6 +60,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProjectName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProjectName is required.")]
         public virtual string ProjectName
         {
             get
@@ -82,6 +84,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EnableBatchLookup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> EnableBatchLookup
         {
             get
@@ -104,6 +107,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceBusConnectionString in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ServiceBusConnectionString
         {
             get
@@ -126,6 +130,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DualWriteAlertSettings in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DualWriteAlertSettings
         {
             get
@@ -148,6 +153,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExternalEntityName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ExternalEntityName
         {
             get
@@ -170,6 +176,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EnableCache in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> EnableCache
         {
             get
@@ -192,6 +199,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IntegrationKey in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string IntegrationKey
         {
             get
@@ -214,6 +222,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StorageAccountSASConnectionString in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string StorageAccountSASConnectionString
         {
             get
@@ -236,6 +245,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property QueryFilterExpression in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string QueryFilterExpression
         {
             get
@@ -258,6 +268,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsDebugMode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsDebugMode
         {
             get
@@ -280,6 +291,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisablePerfEnhancements in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DisablePerfEnhancements
         {
             get
@@ -302,6 +314,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EnableFailureReconciliation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> EnableFailureReconciliation
         {
             get
@@ -324,6 +337,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FieldMap in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FieldMap
         {
             get
@@ -346,6 +360,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExternalLookupUrls in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ExternalLookupUrls
         {
             get
@@ -368,6 +383,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PartitionMap in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PartitionMap
         {
             get
@@ -390,6 +406,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExternalEnvironmentUrl in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ExternalEnvironmentUrl
         {
             get
@@ -412,6 +429,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Status in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.DualWriteProjectStatus> Status
         {
             get
@@ -434,6 +452,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsDelete in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsDelete
         {
             get
@@ -456,6 +475,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InternalEntityName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string InternalEntityName
         {
             get
@@ -478,6 +498,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DualWriteAutoPauseThresholdSetting in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DualWriteAutoPauseThresholdSetting
         {
             get

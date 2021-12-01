@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for FiscalClassificationCodeSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for FiscalClassificationCodeSingle in the schema.
+    /// </summary>
     public partial class FiscalClassificationCodeSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<FiscalClassificationCode>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductV2> _ReleasedProductsV2;
     }
-        /// <summary>
-        /// There are no comments for FiscalClassificationCode in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for FiscalClassificationCode in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// FiscalClassificationCode
@@ -88,6 +88,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -110,7 +112,9 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FiscalClassificationCode1 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         [global::Microsoft.OData.Client.OriginalNameAttribute("FiscalClassificationCode")]
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FiscalClassificationCode1 is required.")]
         public virtual string FiscalClassificationCode1
         {
             get
@@ -133,6 +137,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FiscalClassificationName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FiscalClassificationName
         {
             get
@@ -155,6 +160,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ApproximateTaxRateForImportedProducts in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ApproximateTaxRateForImportedProducts is required.")]
         public virtual decimal ApproximateTaxRateForImportedProducts
         {
             get
@@ -177,6 +184,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ApproximateTaxRateForNationalProducts in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ApproximateTaxRateForNationalProducts is required.")]
         public virtual decimal ApproximateTaxRateForNationalProducts
         {
             get
@@ -199,6 +208,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReleasedProductsV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductV2> ReleasedProductsV2
         {
             get

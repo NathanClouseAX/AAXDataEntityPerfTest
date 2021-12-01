@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for LoanedEquipmentSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LoanedEquipmentSingle in the schema.
+    /// </summary>
     public partial class LoanedEquipmentSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<LoanedEquipment>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.PersonSingle _DirPerson;
     }
-        /// <summary>
-        /// There are no comments for LoanedEquipment in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LoanedEquipment in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// PersonId
     /// LoanItemId
@@ -130,6 +130,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PersonId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PersonId is required.")]
         public virtual string PersonId
         {
             get
@@ -152,6 +154,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LoanItemId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LoanItemId is required.")]
         public virtual string LoanItemId
         {
             get
@@ -174,6 +178,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Loaned in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Loaned is required.")]
         public virtual global::System.DateTimeOffset Loaned
         {
             get
@@ -196,6 +202,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ActualReturn in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ActualReturn is required.")]
         public virtual global::System.DateTimeOffset ActualReturn
         {
             get
@@ -218,6 +226,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PlannedReturn in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PlannedReturn is required.")]
         public virtual global::System.DateTimeOffset PlannedReturn
         {
             get
@@ -240,6 +250,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LoanItem in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LoanItem is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.LoanItem LoanItem
         {
             get
@@ -262,6 +274,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DirPerson in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DirPerson is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Person DirPerson
         {
             get

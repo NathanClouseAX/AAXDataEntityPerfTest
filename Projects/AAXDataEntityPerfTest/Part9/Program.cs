@@ -61,6 +61,7 @@ namespace Part9
 
             Console.WriteLine("Connected To " + ClientConfiguration.Default.UriString);
 
+            /*
             Stopwatch sw = new Stopwatch();
 
             context.SalesOrderHeadersV2.FirstOrDefault();
@@ -93,6 +94,23 @@ namespace Part9
                 SalesOrderHeaderV2EntityOnlySalesTablePostLoadExtendedTester.runOneRead(context, filePath, SalesOrderTester.TestType.Random, SalesOrderTester.TestWorkload.ReadPostLoadExtended, values.SalesId, values.DataAreaId);
             }
             
+            */
+
+            //int count = context.AAXTables.countRecordsStatic().GetValue();
+
+            //Thread.Sleep(10);
+
+            var x = context.AAXTables.FirstOrDefault();
+            System.Threading.Thread.Sleep(1000);
+
+
+            int count = x.countRecordsInstance().GetValue();
+            /*
+            context.SalesOrderHeadersV2EntityOnlySalesTable.Where(x => x.dataAreaId == DataAreaId && x.OrderingCustomerAccountNumber == customerAccount)
+                                                        .Select(x => new { x.SalesOrderNumber, x.OrderingCustomerAccountNumber, x.InvoiceCustomerAccountNumber, x.SalesOrderStatus, x.dataAreaId })
+                                                        .Take(count)
+                                                        .ToList();
+            */
 
             Console.WriteLine("Complete. Press enter.");
             Console.ReadLine();

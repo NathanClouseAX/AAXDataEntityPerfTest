@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ProductLifecycleStateProcessSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ProductLifecycleStateProcessSingle in the schema.
+    /// </summary>
     public partial class ProductLifecycleStateProcessSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ProductLifecycleStateProcess>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ProductLifecycleStateSingle _ProductLifecycleState;
     }
-        /// <summary>
-        /// There are no comments for ProductLifecycleStateProcess in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ProductLifecycleStateProcess in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// ProductLifecycleStateId
     /// ProcessName
@@ -90,6 +90,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductLifecycleStateId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductLifecycleStateId is required.")]
         public virtual string ProductLifecycleStateId
         {
             get
@@ -112,6 +114,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProcessName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProcessName is required.")]
         public virtual string ProcessName
         {
             get
@@ -134,6 +138,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ApplicableProcessArea in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EngChgReadinessModule> ApplicableProcessArea
         {
             get
@@ -156,6 +161,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProcessPolicy in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EngChgEcoResStateBlockRule> ProcessPolicy
         {
             get
@@ -178,6 +184,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductLifecycleState in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductLifecycleState is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ProductLifecycleState ProductLifecycleState
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for CourseRoomSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CourseRoomSingle in the schema.
+    /// </summary>
     public partial class CourseRoomSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<CourseRoom>
     {
         /// <summary>
@@ -98,9 +98,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CourseTable> _CourseTable;
     }
-        /// <summary>
-        /// There are no comments for CourseRoom in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CourseRoom in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// Classroom
@@ -130,6 +130,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -152,6 +154,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Classroom in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Classroom is required.")]
         public virtual string Classroom
         {
             get
@@ -174,6 +178,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaxAttendees in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MaxAttendees is required.")]
         public virtual int MaxAttendees
         {
             get
@@ -196,6 +202,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CourseLocation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CourseLocation
         {
             get
@@ -218,6 +225,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -240,6 +248,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Note in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Note
         {
             get
@@ -262,6 +271,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UseIntensity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "UseIntensity is required.")]
         public virtual int UseIntensity
         {
             get
@@ -284,6 +295,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ClassroomGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ClassroomGroup
         {
             get
@@ -306,6 +318,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Location in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.CourseLocation Location
         {
             get
@@ -328,6 +341,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Group in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ClassroomGroup Group
         {
             get
@@ -350,6 +364,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CourseTable in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CourseTable> CourseTable
         {
             get

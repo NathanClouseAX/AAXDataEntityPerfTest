@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for AssetParameterSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AssetParameterSingle in the schema.
+    /// </summary>
     public partial class AssetParameterSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AssetParameter>
     {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public AssetParameterSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AssetParameter> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for AssetParameterProposalJournalNameParameters in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> AssetParameterProposalJournalNameParameters
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._AssetParameterProposalJournalNameParameters == null))
-                {
-                    this._AssetParameterProposalJournalNameParameters = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName>(GetPath("AssetParameterProposalJournalNameParameters"));
-                }
-                return this._AssetParameterProposalJournalNameParameters;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> _AssetParameterProposalJournalNameParameters;
         /// <summary>
         /// There are no comments for AssetParmeterDefaultValueModel in the schema.
         /// </summary>
@@ -118,10 +97,31 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _DimensionCombination;
-    }
         /// <summary>
-        /// There are no comments for AssetParameter in the schema.
+        /// There are no comments for AssetParameterProposalJournalNameParameters in the schema.
         /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> AssetParameterProposalJournalNameParameters
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._AssetParameterProposalJournalNameParameters == null))
+                {
+                    this._AssetParameterProposalJournalNameParameters = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName>(GetPath("AssetParameterProposalJournalNameParameters"));
+                }
+                return this._AssetParameterProposalJournalNameParameters;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> _AssetParameterProposalJournalNameParameters;
+    }
+    /// <summary>
+    /// There are no comments for AssetParameter in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// </KeyProperties>
@@ -180,6 +180,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -202,6 +204,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AutoNumberAssets in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AutoNumberAssets
         {
             get
@@ -224,6 +227,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InventoryJournalId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string InventoryJournalId
         {
             get
@@ -246,6 +250,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DeductCashDiscount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DeductCashDiscount
         {
             get
@@ -268,6 +273,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UseSpecialDepreciationBalance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> UseSpecialDepreciationBalance
         {
             get
@@ -290,6 +296,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetSaleBasis in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetSaleBasis_IN> AssetSaleBasis
         {
             get
@@ -312,6 +319,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AcceleratedDepreciationRateThreshold in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AcceleratedDepreciationRateThreshold is required.")]
         public virtual decimal AcceleratedDepreciationRateThreshold
         {
             get
@@ -334,6 +343,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WriteUpAdjustment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WriteUpAdjustment
         {
             get
@@ -356,6 +366,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostingProfileId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PostingProfileId
         {
             get
@@ -378,6 +389,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BarCodeEqualsFixedAssetNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> BarCodeEqualsFixedAssetNumber
         {
             get
@@ -400,6 +412,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProvisionForReserve in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ProvisionForReserve
         {
             get
@@ -422,6 +435,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetGroupDepreciationThreshold in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AssetGroupDepreciationThreshold is required.")]
         public virtual int AssetGroupDepreciationThreshold
         {
             get
@@ -444,6 +459,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CalculateProratedDepreciation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> CalculateProratedDepreciation
         {
             get
@@ -466,6 +482,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaxAcquisitionValueToAvailFullDepreciation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MaxAcquisitionValueToAvailFullDepreciation is required.")]
         public virtual decimal MaxAcquisitionValueToAvailFullDepreciation
         {
             get
@@ -488,6 +506,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsIncomeTaxActDepreciation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsIncomeTaxActDepreciation
         {
             get
@@ -510,6 +529,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RestrictAssetAcquisitionPostingToUserGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RestrictAssetAcquisitionPostingToUserGroupId
         {
             get
@@ -532,6 +552,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CreateDepreciationAdjustmentsWithDisposal in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> CreateDepreciationAdjustmentsWithDisposal
         {
             get
@@ -554,6 +575,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AcquisitionAdjustment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AcquisitionAdjustment
         {
             get
@@ -576,6 +598,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExtraOrdinaryDepreciation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ExtraOrdinaryDepreciation
         {
             get
@@ -598,6 +621,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Revaluation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> Revaluation
         {
             get
@@ -620,6 +644,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultValueModelId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultValueModelId
         {
             get
@@ -642,6 +667,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Acquisition in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> Acquisition
         {
             get
@@ -664,6 +690,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DepreciationThresholdPercentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DepreciationThresholdPercentage is required.")]
         public virtual decimal DepreciationThresholdPercentage
         {
             get
@@ -686,6 +714,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsDepreciationPolicyEnabled in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsDepreciationPolicyEnabled
         {
             get
@@ -708,6 +737,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MinWorkingDaysForNonSeasonalIndustries in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MinWorkingDaysForNonSeasonalIndustries is required.")]
         public virtual int MinWorkingDaysForNonSeasonalIndustries
         {
             get
@@ -730,6 +761,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AreDepreciationMethodsEnabled in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AreDepreciationMethodsEnabled
         {
             get
@@ -752,6 +784,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CapitalizationThreshold in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CapitalizationThreshold is required.")]
         public virtual decimal CapitalizationThreshold
         {
             get
@@ -774,6 +808,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisposalSale in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DisposalSale
         {
             get
@@ -796,6 +831,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ICMSCreditInstallments in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ICMSCreditInstallments is required.")]
         public virtual int ICMSCreditInstallments
         {
             get
@@ -818,6 +855,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransferFromReserve in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> TransferFromReserve
         {
             get
@@ -840,6 +878,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerogatoryDecrease in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DerogatoryDecrease
         {
             get
@@ -862,6 +901,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DepreciationCatchUpInterval in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetDepreciationCatchUpInterval_JP> DepreciationCatchUpInterval
         {
             get
@@ -884,6 +924,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InventoryAssembleAndDisassemble in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> InventoryAssembleAndDisassemble
         {
             get
@@ -906,6 +947,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllowTheDepreciationMethodToBeManuallyChanged in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AllowTheDepreciationMethodToBeManuallyChanged
         {
             get
@@ -928,6 +970,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MinimumDepreciationAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MinimumDepreciationAmount is required.")]
         public virtual decimal MinimumDepreciationAmount
         {
             get
@@ -950,6 +994,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MinimumDepreciationAmountReportingCurrency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MinimumDepreciationAmountReportingCurrency is required.")]
         public virtual decimal MinimumDepreciationAmountReportingCurrency
         {
             get
@@ -972,6 +1018,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllowLocationTransfer in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AllowLocationTransfer
         {
             get
@@ -994,6 +1041,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CheckForAssetCreationDuringLineEntry in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> CheckForAssetCreationDuringLineEntry
         {
             get
@@ -1016,6 +1064,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RequireReasonsForAssetChanges in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> RequireReasonsForAssetChanges
         {
             get
@@ -1038,6 +1087,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisposalScrap in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DisposalScrap
         {
             get
@@ -1060,6 +1110,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsCompaniesActDepreciation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsCompaniesActDepreciation
         {
             get
@@ -1082,6 +1133,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssemblingReservationType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetAssemblingReservation> AssemblingReservationType
         {
             get
@@ -1104,6 +1156,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountingStandard in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetAccountingStandard_JP> AccountingStandard
         {
             get
@@ -1126,6 +1179,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DepreciationAdjustment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DepreciationAdjustment
         {
             get
@@ -1148,6 +1202,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ImpairmentWarningPeriod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ImpairmentWarningPeriod is required.")]
         public virtual int ImpairmentWarningPeriod
         {
             get
@@ -1170,6 +1226,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CheckMaximumPercentageForReducingBalance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> CheckMaximumPercentageForReducingBalance
         {
             get
@@ -1192,6 +1249,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WriteDownAdjustment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WriteDownAdjustment
         {
             get
@@ -1214,6 +1272,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UseCatchUpMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> UseCatchUpMethod
         {
             get
@@ -1236,6 +1295,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AcceleratedDepreciationCalculationMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetAcceleratedDepCalcMethod_JP> AcceleratedDepreciationCalculationMethod
         {
             get
@@ -1258,6 +1318,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllowMultipleAcquisitions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AllowMultipleAcquisitions
         {
             get
@@ -1280,6 +1341,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountForUntransferredReservesDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccountForUntransferredReservesDisplayValue
         {
             get
@@ -1302,6 +1364,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AcceleratedDepreciationRateFactor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AcceleratedDepreciationRateFactor is required.")]
         public virtual decimal AcceleratedDepreciationRateFactor
         {
             get
@@ -1324,6 +1388,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CreateAssetDuringReceiptOrInvoicePosting in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> CreateAssetDuringReceiptOrInvoicePosting
         {
             get
@@ -1346,6 +1411,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ConsiderCapitalizationThreshold in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ConsiderCapitalizationThreshold
         {
             get
@@ -1368,6 +1434,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MinWorkingDaysForSeasonalIndustries in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MinWorkingDaysForSeasonalIndustries is required.")]
         public virtual int MinWorkingDaysForSeasonalIndustries
         {
             get
@@ -1390,6 +1458,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllowAcquisitionFromPurchasing in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AllowAcquisitionFromPurchasing
         {
             get
@@ -1412,6 +1481,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Depreciation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> Depreciation
         {
             get
@@ -1434,6 +1504,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerogatoryIncrease in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DerogatoryIncrease
         {
             get
@@ -1453,31 +1524,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDerogatoryIncreaseChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> value);
         partial void OnDerogatoryIncreaseChanged();
         /// <summary>
-        /// There are no comments for Property AssetParameterProposalJournalNameParameters in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> AssetParameterProposalJournalNameParameters
-        {
-            get
-            {
-                return this._AssetParameterProposalJournalNameParameters;
-            }
-            set
-            {
-                this.OnAssetParameterProposalJournalNameParametersChanging(value);
-                this._AssetParameterProposalJournalNameParameters = value;
-                this.OnAssetParameterProposalJournalNameParametersChanged();
-                this.OnPropertyChanged("AssetParameterProposalJournalNameParameters");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> _AssetParameterProposalJournalNameParameters = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAssetParameterProposalJournalNameParametersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> value);
-        partial void OnAssetParameterProposalJournalNameParametersChanged();
-        /// <summary>
         /// There are no comments for Property AssetParmeterDefaultValueModel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ValueModelSetup AssetParmeterDefaultValueModel
         {
             get
@@ -1500,6 +1550,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FixedAssetPostingProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.FixedAssetPostingProfile FixedAssetPostingProfile
         {
             get
@@ -1522,6 +1573,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination DimensionCombination
         {
             get
@@ -1540,6 +1592,29 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.DimensionCombination _DimensionCombination;
         partial void OnDimensionCombinationChanging(global::Microsoft.Dynamics.DataEntities.DimensionCombination value);
         partial void OnDimensionCombinationChanged();
+        /// <summary>
+        /// There are no comments for Property AssetParameterProposalJournalNameParameters in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> AssetParameterProposalJournalNameParameters
+        {
+            get
+            {
+                return this._AssetParameterProposalJournalNameParameters;
+            }
+            set
+            {
+                this.OnAssetParameterProposalJournalNameParametersChanging(value);
+                this._AssetParameterProposalJournalNameParameters = value;
+                this.OnAssetParameterProposalJournalNameParametersChanged();
+                this.OnPropertyChanged("AssetParameterProposalJournalNameParameters");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> _AssetParameterProposalJournalNameParameters = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnAssetParameterProposalJournalNameParametersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetParametersProposalJournalName> value);
+        partial void OnAssetParameterProposalJournalNameParametersChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

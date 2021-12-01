@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RetailStoreTenderTypeCardSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailStoreTenderTypeCardSingle in the schema.
+    /// </summary>
     public partial class RetailStoreTenderTypeCardSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RetailStoreTenderTypeCard>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _DimensionCombination;
     }
-        /// <summary>
-        /// There are no comments for RetailStoreTenderTypeCard in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailStoreTenderTypeCard in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// TenderTypeId
@@ -111,6 +111,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -133,6 +135,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TenderTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TenderTypeId is required.")]
         public virtual string TenderTypeId
         {
             get
@@ -155,6 +159,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CardTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CardTypeId is required.")]
         public virtual string CardTypeId
         {
             get
@@ -177,6 +183,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OMOperatingUnitNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "OMOperatingUnitNumber is required.")]
         public virtual string OMOperatingUnitNumber
         {
             get
@@ -199,6 +207,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Name
         {
             get
@@ -221,6 +230,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CardFeeOffsetLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CardFeeOffsetLedgerDimensionDisplayValue
         {
             get
@@ -243,6 +253,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CardFeeMax in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CardFeeMax is required.")]
         public virtual decimal CardFeeMax
         {
             get
@@ -265,6 +277,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CashBackLimit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CashBackLimit is required.")]
         public virtual decimal CashBackLimit
         {
             get
@@ -287,6 +301,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CardInquiryFee in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CardInquiryFee is required.")]
         public virtual decimal CardInquiryFee
         {
             get
@@ -309,6 +325,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SameCardAllowed in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> SameCardAllowed
         {
             get
@@ -331,6 +348,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsPinRequired in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsPinRequired
         {
             get
@@ -353,6 +371,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ManualAuthorization in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ManualAuthorization
         {
             get
@@ -375,6 +394,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BrokerId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BrokerId
         {
             get
@@ -397,6 +417,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProcessLocally in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ProcessLocally
         {
             get
@@ -419,6 +440,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CardFeeLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CardFeeLedgerDimensionDisplayValue
         {
             get
@@ -441,6 +463,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaxNormalDifferenceAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MaxNormalDifferenceAmount is required.")]
         public virtual decimal MaxNormalDifferenceAmount
         {
             get
@@ -463,6 +487,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EnterFleetInfo in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> EnterFleetInfo
         {
             get
@@ -485,6 +510,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CheckModulus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> CheckModulus
         {
             get
@@ -507,6 +533,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DifferenceAccLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DifferenceAccLedgerDimensionDisplayValue
         {
             get
@@ -529,6 +556,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsExpirationDateRequired in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsExpirationDateRequired
         {
             get
@@ -551,6 +579,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CardFee in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CardFee is required.")]
         public virtual decimal CardFee
         {
             get
@@ -573,6 +603,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CardFeeMin in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CardFeeMin is required.")]
         public virtual decimal CardFeeMin
         {
             get
@@ -595,6 +627,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CardNumberSwiped in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> CardNumberSwiped
         {
             get
@@ -617,6 +650,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DiffAccBigDiffLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DiffAccBigDiffLedgerDimensionDisplayValue
         {
             get
@@ -639,6 +673,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllowManualInput in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AllowManualInput
         {
             get
@@ -661,6 +696,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailLedgerBank> AccountType
         {
             get
@@ -683,6 +719,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LedgerDimensionDisplayValue
         {
             get
@@ -705,6 +742,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CountingRequired in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> CountingRequired
         {
             get
@@ -727,6 +765,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CheckExpiredDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> CheckExpiredDate
         {
             get
@@ -749,6 +788,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination DimensionCombination
         {
             get

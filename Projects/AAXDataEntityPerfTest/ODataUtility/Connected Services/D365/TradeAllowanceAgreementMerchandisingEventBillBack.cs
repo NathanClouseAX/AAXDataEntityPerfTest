@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for TradeAllowanceAgreementMerchandisingEventBillBackSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TradeAllowanceAgreementMerchandisingEventBillBackSingle in the schema.
+    /// </summary>
     public partial class TradeAllowanceAgreementMerchandisingEventBillBackSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<TradeAllowanceAgreementMerchandisingEventBillBack>
     {
         /// <summary>
@@ -34,6 +34,27 @@ namespace Microsoft.Dynamics.DataEntities
         public TradeAllowanceAgreementMerchandisingEventBillBackSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<TradeAllowanceAgreementMerchandisingEventBillBack> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for TradeAllowanceAgreementMerchandisingEventBillBackLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventBillBackLine> TradeAllowanceAgreementMerchandisingEventBillBackLines
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._TradeAllowanceAgreementMerchandisingEventBillBackLines == null))
+                {
+                    this._TradeAllowanceAgreementMerchandisingEventBillBackLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventBillBackLine>(GetPath("TradeAllowanceAgreementMerchandisingEventBillBackLines"));
+                }
+                return this._TradeAllowanceAgreementMerchandisingEventBillBackLines;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventBillBackLine> _TradeAllowanceAgreementMerchandisingEventBillBackLines;
         /// <summary>
         /// There are no comments for ExpenseMainAccount in the schema.
         /// </summary>
@@ -118,31 +139,10 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeaderSingle _TradeAllowanceAgreementHeader;
-        /// <summary>
-        /// There are no comments for TradeAllowanceAgreementMerchandisingEventBillBackLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventBillBackLine> TradeAllowanceAgreementMerchandisingEventBillBackLines
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._TradeAllowanceAgreementMerchandisingEventBillBackLines == null))
-                {
-                    this._TradeAllowanceAgreementMerchandisingEventBillBackLines = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventBillBackLine>(GetPath("TradeAllowanceAgreementMerchandisingEventBillBackLines"));
-                }
-                return this._TradeAllowanceAgreementMerchandisingEventBillBackLines;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventBillBackLine> _TradeAllowanceAgreementMerchandisingEventBillBackLines;
     }
-        /// <summary>
-        /// There are no comments for TradeAllowanceAgreementMerchandisingEventBillBack in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TradeAllowanceAgreementMerchandisingEventBillBack in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// TradeAllowanceAgreementId
@@ -208,6 +208,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -230,6 +232,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TradeAllowanceAgreementId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TradeAllowanceAgreementId is required.")]
         public virtual string TradeAllowanceAgreementId
         {
             get
@@ -252,6 +256,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CustomerAccountNumber is required.")]
         public virtual string CustomerAccountNumber
         {
             get
@@ -274,6 +280,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TradeAllowanceAgreementMerchandisingEventId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TradeAllowanceAgreementMerchandisingEventId is required.")]
         public virtual string TradeAllowanceAgreementMerchandisingEventId
         {
             get
@@ -296,6 +304,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BillBackId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BillBackId is required.")]
         public virtual string BillBackId
         {
             get
@@ -318,6 +328,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MinimumBillBackQuantityQualifyingRebate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MinimumBillBackQuantityQualifyingRebate is required.")]
         public virtual int MinimumBillBackQuantityQualifyingRebate
         {
             get
@@ -340,6 +352,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineAmountBasis in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PdsRebateTakenFrom> LineAmountBasis
         {
             get
@@ -362,6 +375,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesRebateProgramTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SalesRebateProgramTypeId
         {
             get
@@ -384,6 +398,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExpenseMainAccountIdDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ExpenseMainAccountIdDisplayValue
         {
             get
@@ -406,6 +421,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BillBackUnitSymbol in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BillBackUnitSymbol
         {
             get
@@ -428,6 +444,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsApprovalRequired in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsApprovalRequired
         {
             get
@@ -450,6 +467,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesCumulationMethodCustomizedPeriodType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SalesCumulationMethodCustomizedPeriodType
         {
             get
@@ -472,6 +490,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccrualMainAccountIdDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccrualMainAccountIdDisplayValue
         {
             get
@@ -494,6 +513,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsTaxable in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsTaxable
         {
             get
@@ -516,6 +536,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MinimumBillBackAmountQualifyingRebate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MinimumBillBackAmountQualifyingRebate is required.")]
         public virtual decimal MinimumBillBackAmountQualifyingRebate
         {
             get
@@ -538,6 +560,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BillBackQuantityType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PdsUnitType> BillBackQuantityType
         {
             get
@@ -560,6 +583,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BillBackAmountCalculationOption in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PdsRebateUOMOption> BillBackAmountCalculationOption
         {
             get
@@ -582,6 +606,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BillBackClaimVendorAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BillBackClaimVendorAccountNumber
         {
             get
@@ -604,6 +629,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RebateBreakBasis in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PdsRebateLineBreakType> RebateBreakBasis
         {
             get
@@ -626,6 +652,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesCumulationMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PdsCumulationPeriod> SalesCumulationMethod
         {
             get
@@ -648,6 +675,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CalculationSearchDateType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PdsRebateCalcDateType> CalculationSearchDateType
         {
             get
@@ -667,9 +695,34 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnCalculationSearchDateTypeChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PdsRebateCalcDateType> value);
         partial void OnCalculationSearchDateTypeChanged();
         /// <summary>
+        /// There are no comments for Property TradeAllowanceAgreementMerchandisingEventBillBackLines in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventBillBackLine> TradeAllowanceAgreementMerchandisingEventBillBackLines
+        {
+            get
+            {
+                return this._TradeAllowanceAgreementMerchandisingEventBillBackLines;
+            }
+            set
+            {
+                this.OnTradeAllowanceAgreementMerchandisingEventBillBackLinesChanging(value);
+                this._TradeAllowanceAgreementMerchandisingEventBillBackLines = value;
+                this.OnTradeAllowanceAgreementMerchandisingEventBillBackLinesChanged();
+                this.OnPropertyChanged("TradeAllowanceAgreementMerchandisingEventBillBackLines");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventBillBackLine> _TradeAllowanceAgreementMerchandisingEventBillBackLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventBillBackLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnTradeAllowanceAgreementMerchandisingEventBillBackLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventBillBackLine> value);
+        partial void OnTradeAllowanceAgreementMerchandisingEventBillBackLinesChanged();
+        /// <summary>
         /// There are no comments for Property ExpenseMainAccount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ExpenseMainAccount is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination ExpenseMainAccount
         {
             get
@@ -692,6 +745,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccrualMainAccount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AccrualMainAccount is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination AccrualMainAccount
         {
             get
@@ -714,6 +769,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TradeAllowanceAgreementMerchandisingEvent in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TradeAllowanceAgreementMerchandisingEvent is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEvent TradeAllowanceAgreementMerchandisingEvent
         {
             get
@@ -736,6 +793,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TradeAllowanceAgreementHeader in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeader TradeAllowanceAgreementHeader
         {
             get
@@ -754,28 +812,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeader _TradeAllowanceAgreementHeader;
         partial void OnTradeAllowanceAgreementHeaderChanging(global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementHeader value);
         partial void OnTradeAllowanceAgreementHeaderChanged();
-        /// <summary>
-        /// There are no comments for Property TradeAllowanceAgreementMerchandisingEventBillBackLines in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventBillBackLine> TradeAllowanceAgreementMerchandisingEventBillBackLines
-        {
-            get
-            {
-                return this._TradeAllowanceAgreementMerchandisingEventBillBackLines;
-            }
-            set
-            {
-                this.OnTradeAllowanceAgreementMerchandisingEventBillBackLinesChanging(value);
-                this._TradeAllowanceAgreementMerchandisingEventBillBackLines = value;
-                this.OnTradeAllowanceAgreementMerchandisingEventBillBackLinesChanged();
-                this.OnPropertyChanged("TradeAllowanceAgreementMerchandisingEventBillBackLines");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventBillBackLine> _TradeAllowanceAgreementMerchandisingEventBillBackLines = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventBillBackLine>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnTradeAllowanceAgreementMerchandisingEventBillBackLinesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TradeAllowanceAgreementMerchandisingEventBillBackLine> value);
-        partial void OnTradeAllowanceAgreementMerchandisingEventBillBackLinesChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

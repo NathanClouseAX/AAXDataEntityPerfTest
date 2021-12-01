@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RetailCatalogProductCategorySingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailCatalogProductCategorySingle in the schema.
+    /// </summary>
     public partial class RetailCatalogProductCategorySingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RetailCatalogProductCategory>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ProductCategorySingle _ProductCategory;
     }
-        /// <summary>
-        /// There are no comments for RetailCatalogProductCategory in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailCatalogProductCategory in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// CatalogNumber
     /// DisplayProductNumber
@@ -128,6 +128,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CatalogNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CatalogNumber is required.")]
         public virtual string CatalogNumber
         {
             get
@@ -150,6 +152,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisplayProductNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DisplayProductNumber is required.")]
         public virtual string DisplayProductNumber
         {
             get
@@ -172,6 +176,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CategoryName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CategoryName is required.")]
         public virtual string CategoryName
         {
             get
@@ -194,6 +200,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CategoryHierarchyName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CategoryHierarchyName is required.")]
         public virtual string CategoryHierarchyName
         {
             get
@@ -216,6 +224,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IncludeExcludeType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.CatalogProductExcludeIncludeType> IncludeExcludeType
         {
             get
@@ -238,6 +247,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailCatalogProduct in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetailCatalogProduct is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RetailCatalogProduct RetailCatalogProduct
         {
             get
@@ -260,6 +271,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductCategory in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductCategory is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ProductCategory ProductCategory
         {
             get

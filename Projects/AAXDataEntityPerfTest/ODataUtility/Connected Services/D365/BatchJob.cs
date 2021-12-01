@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for BatchJobSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BatchJobSingle in the schema.
+    /// </summary>
     public partial class BatchJobSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<BatchJob>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for BatchJob in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BatchJob in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// BatchJobRecId
     /// </KeyProperties>
@@ -81,6 +81,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BatchJobRecId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BatchJobRecId is required.")]
         public virtual long BatchJobRecId
         {
             get
@@ -103,6 +105,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Finishing in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Finishing is required.")]
         public virtual int Finishing
         {
             get
@@ -125,6 +129,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StartDateTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "StartDateTime is required.")]
         public virtual global::System.DateTimeOffset StartDateTime
         {
             get
@@ -147,6 +153,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StartTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "StartTime is required.")]
         public virtual int StartTime
         {
             get
@@ -169,6 +177,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EndDateTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EndDateTime is required.")]
         public virtual global::System.DateTimeOffset EndDateTime
         {
             get
@@ -191,6 +201,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JobDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string JobDescription
         {
             get
@@ -213,6 +224,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CompanyAccounts in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CompanyAccounts
         {
             get
@@ -235,6 +247,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Status in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.BatchStatus> Status
         {
             get
@@ -257,6 +270,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OrigStartDateTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "OrigStartDateTime is required.")]
         public virtual global::System.DateTimeOffset OrigStartDateTime
         {
             get
@@ -279,6 +294,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExecutingBy in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ExecutingBy
         {
             get
@@ -301,6 +317,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StartDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "StartDate is required.")]
         public virtual global::System.DateTimeOffset StartDate
         {
             get
@@ -323,6 +341,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PartitionKey in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PartitionKey
         {
             get
@@ -345,6 +364,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CanceledBy in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CanceledBy
         {
             get
@@ -367,6 +387,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Recurrence in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual byte[] Recurrence
         {
             get
@@ -389,6 +410,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SaveJobToHistory in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.BatchLogLevel> SaveJobToHistory
         {
             get
@@ -411,6 +433,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RuntimeJob in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RuntimeJob is required.")]
         public virtual bool RuntimeJob
         {
             get

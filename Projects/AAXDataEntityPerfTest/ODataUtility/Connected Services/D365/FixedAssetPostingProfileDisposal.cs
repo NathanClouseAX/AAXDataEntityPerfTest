@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for FixedAssetPostingProfileDisposalSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for FixedAssetPostingProfileDisposalSingle in the schema.
+    /// </summary>
     public partial class FixedAssetPostingProfileDisposalSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<FixedAssetPostingProfileDisposal>
     {
         /// <summary>
@@ -98,9 +98,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ValueModelSetupSingle _AssetPostingProfileDisposalValueModel;
     }
-        /// <summary>
-        /// There are no comments for FixedAssetPostingProfileDisposal in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for FixedAssetPostingProfileDisposal in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// PostingProfileId
@@ -142,6 +142,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -164,6 +166,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostingProfileId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PostingProfileId is required.")]
         public virtual string PostingProfileId
         {
             get
@@ -186,6 +190,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SaleOrScrap in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetSoldScrap> SaleOrScrap
         {
             get
@@ -208,6 +213,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValueModelId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValueModelId is required.")]
         public virtual string ValueModelId
         {
             get
@@ -230,6 +237,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountGroupings in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TableGroupAll> AccountGroupings
         {
             get
@@ -252,6 +260,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountRelation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AccountRelation is required.")]
         public virtual string AccountRelation
         {
             get
@@ -274,6 +284,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetPostValue> PostValue
         {
             get
@@ -296,6 +307,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesValueType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetPostType> SalesValueType
         {
             get
@@ -318,6 +330,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OffsetMainAccountIdDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OffsetMainAccountIdDisplayValue
         {
             get
@@ -340,6 +353,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MainAccountIdDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MainAccountIdDisplayValue
         {
             get
@@ -362,6 +376,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination DimensionCombination
         {
             get
@@ -384,6 +399,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetPostingProfileDisposalAssetGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.FixedAssetGroup AssetPostingProfileDisposalAssetGroup
         {
             get
@@ -406,6 +422,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetPostingProfileDisposalValueModel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AssetPostingProfileDisposalValueModel is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ValueModelSetup AssetPostingProfileDisposalValueModel
         {
             get

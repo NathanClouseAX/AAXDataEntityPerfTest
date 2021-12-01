@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for CostingVersionSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CostingVersionSingle in the schema.
+    /// </summary>
     public partial class CostingVersionSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<CostingVersion>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RoutePendingRouteCostCategoryUnitCost> _PendingRouteCostCategoryUnitCosts;
     }
-        /// <summary>
-        /// There are no comments for CostingVersion in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CostingVersion in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// VersionId
@@ -90,6 +90,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -112,6 +114,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VersionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "VersionId is required.")]
         public virtual string VersionId
         {
             get
@@ -134,6 +138,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ArePriceCalculationsUsingPurchaseProcurementModeAllowed in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ArePriceCalculationsUsingPurchaseProcurementModeAllowed
         {
             get
@@ -156,6 +161,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExplosionMode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.BOMCalcExplosionMode> ExplosionMode
         {
             get
@@ -178,6 +184,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LastUpdateDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LastUpdateDate is required.")]
         public virtual global::System.DateTimeOffset LastUpdateDate
         {
             get
@@ -200,6 +208,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AreSalesPricesAllowed in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AreSalesPricesAllowed
         {
             get
@@ -222,6 +231,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ArePurchasePricesAllowed in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ArePurchasePricesAllowed
         {
             get
@@ -244,6 +254,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsActivationBlocked in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYesCombo> IsActivationBlocked
         {
             get
@@ -266,6 +277,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsProductionProcurementModePriceCalculationAllowed in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsProductionProcurementModePriceCalculationAllowed
         {
             get
@@ -288,6 +300,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FallbackCostingVersionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FallbackCostingVersionId
         {
             get
@@ -310,6 +323,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchasePriceModel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PurchPriceModel> PurchasePriceModel
         {
             get
@@ -332,6 +346,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProfitSetting in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.CostProfitSet> ProfitSetting
         {
             get
@@ -354,6 +369,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FallbackPrinciple in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.BOMCalcFallBack> FallbackPrinciple
         {
             get
@@ -376,6 +392,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsUnitPriceIncludingCharge in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsUnitPriceIncludingCharge
         {
             get
@@ -398,6 +415,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RecordingRestriction in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> RecordingRestriction
         {
             get
@@ -420,6 +438,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RestrictingPriceSiteId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RestrictingPriceSiteId
         {
             get
@@ -442,6 +461,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsVersionBlocked in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYesCombo> IsVersionBlocked
         {
             get
@@ -464,6 +484,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultFromDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DefaultFromDate is required.")]
         public virtual global::System.DateTimeOffset DefaultFromDate
         {
             get
@@ -486,6 +508,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LastActivationDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LastActivationDate is required.")]
         public virtual global::System.DateTimeOffset LastActivationDate
         {
             get
@@ -508,6 +532,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CostingType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.CostingVersionCostingType> CostingType
         {
             get
@@ -530,6 +555,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VersionName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VersionName
         {
             get
@@ -552,6 +578,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AreCostPricesAllowed in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AreCostPricesAllowed
         {
             get
@@ -574,6 +601,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CostPriceModel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.BOMCostPriceModel> CostPriceModel
         {
             get
@@ -596,6 +624,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RestrictCalculation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> RestrictCalculation
         {
             get
@@ -618,6 +647,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RoundOffCalculation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> RoundOffCalculation
         {
             get
@@ -640,6 +670,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PendingRouteCostCategoryUnitCosts in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RoutePendingRouteCostCategoryUnitCost> PendingRouteCostCategoryUnitCosts
         {
             get

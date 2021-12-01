@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ScreeningTypeSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ScreeningTypeSingle in the schema.
+    /// </summary>
     public partial class ScreeningTypeSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ScreeningType>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredScreening> _JobPreferredScreenings;
     }
-        /// <summary>
-        /// There are no comments for ScreeningType in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ScreeningType in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// ScreeningTypeId
     /// </KeyProperties>
@@ -104,6 +104,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ScreeningTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ScreeningTypeId is required.")]
         public virtual string ScreeningTypeId
         {
             get
@@ -126,6 +128,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property GenerateFrom in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HcmFrequencyGenerateFrom> GenerateFrom
         {
             get
@@ -148,6 +151,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -170,6 +174,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FrequencyUnit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HcmFrequencyUnit> FrequencyUnit
         {
             get
@@ -192,6 +197,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FrequencyInterval in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FrequencyInterval is required.")]
         public virtual int FrequencyInterval
         {
             get
@@ -214,6 +221,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JobTemplateScreenings in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateScreening> JobTemplateScreenings
         {
             get
@@ -236,6 +244,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JobPreferredScreenings in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredScreening> JobPreferredScreenings
         {
             get

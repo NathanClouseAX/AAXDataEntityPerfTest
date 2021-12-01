@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for LeasePostingAccountsSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LeasePostingAccountsSingle in the schema.
+    /// </summary>
     public partial class LeasePostingAccountsSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<LeasePostingAccounts>
     {
         /// <summary>
@@ -34,52 +34,10 @@ namespace Microsoft.Dynamics.DataEntities
         public LeasePostingAccountsSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<LeasePostingAccounts> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for OperatingDimensionCombinationEntity in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle OperatingDimensionCombinationEntity
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._OperatingDimensionCombinationEntity == null))
-                {
-                    this._OperatingDimensionCombinationEntity = new global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle(this.Context, GetPath("OperatingDimensionCombinationEntity"));
-                }
-                return this._OperatingDimensionCombinationEntity;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _OperatingDimensionCombinationEntity;
-        /// <summary>
-        /// There are no comments for FinanceDimensionCombinationEntity in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle FinanceDimensionCombinationEntity
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._FinanceDimensionCombinationEntity == null))
-                {
-                    this._FinanceDimensionCombinationEntity = new global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle(this.Context, GetPath("FinanceDimensionCombinationEntity"));
-                }
-                return this._FinanceDimensionCombinationEntity;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _FinanceDimensionCombinationEntity;
     }
-        /// <summary>
-        /// There are no comments for LeasePostingAccounts in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LeasePostingAccounts in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// LineNum
@@ -105,6 +63,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -127,6 +87,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineNum in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LineNum is required.")]
         public virtual int LineNum
         {
             get
@@ -149,6 +111,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BookTableBookType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BookTableBookType
         {
             get
@@ -171,6 +134,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetLeasePostingAccountCode> AccountCode
         {
             get
@@ -193,6 +157,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OperatingLeaseMainAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OperatingLeaseMainAccountDisplayValue
         {
             get
@@ -215,6 +180,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Company in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Company
         {
             get
@@ -237,6 +203,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FinanceLeaseMainAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FinanceLeaseMainAccountDisplayValue
         {
             get
@@ -259,6 +226,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Relation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Relation
         {
             get
@@ -281,6 +249,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostingTypesForTheLease in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetLeasePostingTypes> PostingTypesForTheLease
         {
             get
@@ -299,50 +268,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetLeasePostingTypes> _PostingTypesForTheLease;
         partial void OnPostingTypesForTheLeaseChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetLeasePostingTypes> value);
         partial void OnPostingTypesForTheLeaseChanged();
-        /// <summary>
-        /// There are no comments for Property OperatingDimensionCombinationEntity in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination OperatingDimensionCombinationEntity
-        {
-            get
-            {
-                return this._OperatingDimensionCombinationEntity;
-            }
-            set
-            {
-                this.OnOperatingDimensionCombinationEntityChanging(value);
-                this._OperatingDimensionCombinationEntity = value;
-                this.OnOperatingDimensionCombinationEntityChanged();
-                this.OnPropertyChanged("OperatingDimensionCombinationEntity");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.DimensionCombination _OperatingDimensionCombinationEntity;
-        partial void OnOperatingDimensionCombinationEntityChanging(global::Microsoft.Dynamics.DataEntities.DimensionCombination value);
-        partial void OnOperatingDimensionCombinationEntityChanged();
-        /// <summary>
-        /// There are no comments for Property FinanceDimensionCombinationEntity in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination FinanceDimensionCombinationEntity
-        {
-            get
-            {
-                return this._FinanceDimensionCombinationEntity;
-            }
-            set
-            {
-                this.OnFinanceDimensionCombinationEntityChanging(value);
-                this._FinanceDimensionCombinationEntity = value;
-                this.OnFinanceDimensionCombinationEntityChanged();
-                this.OnPropertyChanged("FinanceDimensionCombinationEntity");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.DimensionCombination _FinanceDimensionCombinationEntity;
-        partial void OnFinanceDimensionCombinationEntityChanging(global::Microsoft.Dynamics.DataEntities.DimensionCombination value);
-        partial void OnFinanceDimensionCombinationEntityChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

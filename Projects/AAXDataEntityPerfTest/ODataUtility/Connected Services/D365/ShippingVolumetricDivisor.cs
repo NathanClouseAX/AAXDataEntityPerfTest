@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ShippingVolumetricDivisorSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ShippingVolumetricDivisorSingle in the schema.
+    /// </summary>
     public partial class ShippingVolumetricDivisorSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ShippingVolumetricDivisor>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for ShippingVolumetricDivisor in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ShippingVolumetricDivisor in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// ShippingVendorAccountNumber
@@ -71,6 +71,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -93,6 +95,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShippingVendorAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ShippingVendorAccountNumber is required.")]
         public virtual string ShippingVendorAccountNumber
         {
             get
@@ -115,6 +119,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LandedCostTypeCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LandedCostTypeCode is required.")]
         public virtual string LandedCostTypeCode
         {
             get
@@ -137,6 +143,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FromShippingPortCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FromShippingPortCode is required.")]
         public virtual string FromShippingPortCode
         {
             get
@@ -159,6 +167,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VolumetricDivisor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "VolumetricDivisor is required.")]
         public virtual decimal VolumetricDivisor
         {
             get

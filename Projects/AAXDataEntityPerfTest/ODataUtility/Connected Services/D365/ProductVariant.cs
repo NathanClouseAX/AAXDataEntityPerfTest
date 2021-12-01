@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ProductVariantSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ProductVariantSingle in the schema.
+    /// </summary>
     public partial class ProductVariantSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ProductVariant>
     {
         /// <summary>
@@ -34,48 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public ProductVariantSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ProductVariant> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for ProductMaster in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ProductMasterSingle ProductMaster
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ProductMaster == null))
-                {
-                    this._ProductMaster = new global::Microsoft.Dynamics.DataEntities.ProductMasterSingle(this.Context, GetPath("ProductMaster"));
-                }
-                return this._ProductMaster;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ProductMasterSingle _ProductMaster;
-        /// <summary>
-        /// There are no comments for RetailKitComponent in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailKitComponent> RetailKitComponent
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._RetailKitComponent == null))
-                {
-                    this._RetailKitComponent = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailKitComponent>(GetPath("RetailKitComponent"));
-                }
-                return this._RetailKitComponent;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailKitComponent> _RetailKitComponent;
         /// <summary>
         /// There are no comments for ProductTranslation in the schema.
         /// </summary>
@@ -98,10 +56,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductTranslation> _ProductTranslation;
         /// <summary>
-        /// There are no comments for ReleasedProductVariant in the schema.
+        /// There are no comments for RetailKitComponent in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariant> ReleasedProductVariant
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailKitComponent> RetailKitComponent
         {
             get
             {
@@ -109,15 +67,36 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._ReleasedProductVariant == null))
+                if ((this._RetailKitComponent == null))
                 {
-                    this._ReleasedProductVariant = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariant>(GetPath("ReleasedProductVariant"));
+                    this._RetailKitComponent = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.RetailKitComponent>(GetPath("RetailKitComponent"));
                 }
-                return this._ReleasedProductVariant;
+                return this._RetailKitComponent;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariant> _ReleasedProductVariant;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailKitComponent> _RetailKitComponent;
+        /// <summary>
+        /// There are no comments for ProductMaster in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.ProductMasterSingle ProductMaster
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ProductMaster == null))
+                {
+                    this._ProductMaster = new global::Microsoft.Dynamics.DataEntities.ProductMasterSingle(this.Context, GetPath("ProductMaster"));
+                }
+                return this._ProductMaster;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.ProductMasterSingle _ProductMaster;
         /// <summary>
         /// There are no comments for SpecialCategoryMember in the schema.
         /// </summary>
@@ -139,10 +118,31 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SpecialCategoryMember> _SpecialCategoryMember;
-    }
         /// <summary>
-        /// There are no comments for ProductVariant in the schema.
+        /// There are no comments for ReleasedProductVariant in the schema.
         /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariant> ReleasedProductVariant
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ReleasedProductVariant == null))
+                {
+                    this._ReleasedProductVariant = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariant>(GetPath("ReleasedProductVariant"));
+                }
+                return this._ReleasedProductVariant;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariant> _ReleasedProductVariant;
+    }
+    /// <summary>
+    /// There are no comments for ProductVariant in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// ProductMasterNumber
     /// ProductConfigurationId
@@ -188,6 +188,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductMasterNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductMasterNumber is required.")]
         public virtual string ProductMasterNumber
         {
             get
@@ -210,6 +212,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductConfigurationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductConfigurationId is required.")]
         public virtual string ProductConfigurationId
         {
             get
@@ -232,6 +236,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductSizeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductSizeId is required.")]
         public virtual string ProductSizeId
         {
             get
@@ -254,6 +260,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductColorId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductColorId is required.")]
         public virtual string ProductColorId
         {
             get
@@ -276,6 +284,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductStyleId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductStyleId is required.")]
         public virtual string ProductStyleId
         {
             get
@@ -298,6 +308,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductDescription
         {
             get
@@ -320,6 +331,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductVariantNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductVariantNumber
         {
             get
@@ -342,6 +354,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductSearchName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductSearchName
         {
             get
@@ -364,6 +377,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductName
         {
             get
@@ -383,53 +397,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnProductNameChanging(string value);
         partial void OnProductNameChanged();
         /// <summary>
-        /// There are no comments for Property ProductMaster in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.ProductMaster ProductMaster
-        {
-            get
-            {
-                return this._ProductMaster;
-            }
-            set
-            {
-                this.OnProductMasterChanging(value);
-                this._ProductMaster = value;
-                this.OnProductMasterChanged();
-                this.OnPropertyChanged("ProductMaster");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.ProductMaster _ProductMaster;
-        partial void OnProductMasterChanging(global::Microsoft.Dynamics.DataEntities.ProductMaster value);
-        partial void OnProductMasterChanged();
-        /// <summary>
-        /// There are no comments for Property RetailKitComponent in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailKitComponent> RetailKitComponent
-        {
-            get
-            {
-                return this._RetailKitComponent;
-            }
-            set
-            {
-                this.OnRetailKitComponentChanging(value);
-                this._RetailKitComponent = value;
-                this.OnRetailKitComponentChanged();
-                this.OnPropertyChanged("RetailKitComponent");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailKitComponent> _RetailKitComponent = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailKitComponent>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnRetailKitComponentChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailKitComponent> value);
-        partial void OnRetailKitComponentChanged();
-        /// <summary>
         /// There are no comments for Property ProductTranslation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductTranslation> ProductTranslation
         {
             get
@@ -449,31 +420,57 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnProductTranslationChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductTranslation> value);
         partial void OnProductTranslationChanged();
         /// <summary>
-        /// There are no comments for Property ReleasedProductVariant in the schema.
+        /// There are no comments for Property RetailKitComponent in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariant> ReleasedProductVariant
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailKitComponent> RetailKitComponent
         {
             get
             {
-                return this._ReleasedProductVariant;
+                return this._RetailKitComponent;
             }
             set
             {
-                this.OnReleasedProductVariantChanging(value);
-                this._ReleasedProductVariant = value;
-                this.OnReleasedProductVariantChanged();
-                this.OnPropertyChanged("ReleasedProductVariant");
+                this.OnRetailKitComponentChanging(value);
+                this._RetailKitComponent = value;
+                this.OnRetailKitComponentChanged();
+                this.OnPropertyChanged("RetailKitComponent");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariant> _ReleasedProductVariant = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariant>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnReleasedProductVariantChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariant> value);
-        partial void OnReleasedProductVariantChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailKitComponent> _RetailKitComponent = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailKitComponent>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRetailKitComponentChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailKitComponent> value);
+        partial void OnRetailKitComponentChanged();
+        /// <summary>
+        /// There are no comments for Property ProductMaster in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductMaster is required.")]
+        public virtual global::Microsoft.Dynamics.DataEntities.ProductMaster ProductMaster
+        {
+            get
+            {
+                return this._ProductMaster;
+            }
+            set
+            {
+                this.OnProductMasterChanging(value);
+                this._ProductMaster = value;
+                this.OnProductMasterChanged();
+                this.OnPropertyChanged("ProductMaster");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.ProductMaster _ProductMaster;
+        partial void OnProductMasterChanging(global::Microsoft.Dynamics.DataEntities.ProductMaster value);
+        partial void OnProductMasterChanged();
         /// <summary>
         /// There are no comments for Property SpecialCategoryMember in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SpecialCategoryMember> SpecialCategoryMember
         {
             get
@@ -492,6 +489,29 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SpecialCategoryMember> _SpecialCategoryMember = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SpecialCategoryMember>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnSpecialCategoryMemberChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SpecialCategoryMember> value);
         partial void OnSpecialCategoryMemberChanged();
+        /// <summary>
+        /// There are no comments for Property ReleasedProductVariant in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariant> ReleasedProductVariant
+        {
+            get
+            {
+                return this._ReleasedProductVariant;
+            }
+            set
+            {
+                this.OnReleasedProductVariantChanging(value);
+                this._ReleasedProductVariant = value;
+                this.OnReleasedProductVariantChanged();
+                this.OnPropertyChanged("ReleasedProductVariant");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariant> _ReleasedProductVariant = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariant>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnReleasedProductVariantChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedProductVariant> value);
+        partial void OnReleasedProductVariantChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

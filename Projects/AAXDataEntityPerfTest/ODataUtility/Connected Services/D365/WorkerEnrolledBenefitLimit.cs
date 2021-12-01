@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for WorkerEnrolledBenefitLimitSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for WorkerEnrolledBenefitLimitSingle in the schema.
+    /// </summary>
     public partial class WorkerEnrolledBenefitLimitSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<WorkerEnrolledBenefitLimit>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.WorkerEnrolledBenefitSingle _WorkerEnrolledBenefit;
     }
-        /// <summary>
-        /// There are no comments for WorkerEnrolledBenefitLimit in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for WorkerEnrolledBenefitLimit in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// BenefitId
     /// PersonnelNumber
@@ -118,6 +118,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BenefitId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BenefitId is required.")]
         public virtual string BenefitId
         {
             get
@@ -140,6 +142,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PersonnelNumber is required.")]
         public virtual string PersonnelNumber
         {
             get
@@ -162,6 +166,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EnrollmentStart in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EnrollmentStart is required.")]
         public virtual global::System.DateTimeOffset EnrollmentStart
         {
             get
@@ -184,6 +190,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EnrollmentEnd in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EnrollmentEnd is required.")]
         public virtual global::System.DateTimeOffset EnrollmentEnd
         {
             get
@@ -206,6 +214,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DeductionLimitPeriodRemaining in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DeductionLimitPeriodRemaining is required.")]
         public virtual decimal DeductionLimitPeriodRemaining
         {
             get
@@ -228,6 +238,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DeductionLimitAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DeductionLimitAmount is required.")]
         public virtual decimal DeductionLimitAmount
         {
             get
@@ -250,6 +262,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ContributionLimitEndDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ContributionLimitEndDate is required.")]
         public virtual global::System.DateTimeOffset ContributionLimitEndDate
         {
             get
@@ -272,6 +286,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ContributionLimitPeriod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PayrollLimitPeriod> ContributionLimitPeriod
         {
             get
@@ -294,6 +309,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DeductionLimitEndDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DeductionLimitEndDate is required.")]
         public virtual global::System.DateTimeOffset DeductionLimitEndDate
         {
             get
@@ -316,6 +333,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ContributionLimitPeriodRemaining in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ContributionLimitPeriodRemaining is required.")]
         public virtual decimal ContributionLimitPeriodRemaining
         {
             get
@@ -338,6 +357,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DeductionLimitPeriod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PayrollLimitPeriod> DeductionLimitPeriod
         {
             get
@@ -360,6 +380,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ContributionLimitAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ContributionLimitAmount is required.")]
         public virtual decimal ContributionLimitAmount
         {
             get
@@ -382,6 +404,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkerEnrolledBenefit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WorkerEnrolledBenefit is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.WorkerEnrolledBenefit WorkerEnrolledBenefit
         {
             get

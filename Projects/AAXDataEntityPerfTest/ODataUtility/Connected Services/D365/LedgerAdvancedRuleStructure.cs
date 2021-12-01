@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for LedgerAdvancedRuleStructureSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LedgerAdvancedRuleStructureSingle in the schema.
+    /// </summary>
     public partial class LedgerAdvancedRuleStructureSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<LedgerAdvancedRuleStructure>
     {
         /// <summary>
@@ -34,48 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public LedgerAdvancedRuleStructureSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<LedgerAdvancedRuleStructure> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for LedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_Role_LedgerAdvancedRuleStructureEntity in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructureConstraint> LedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_Role_LedgerAdvancedRuleStructureEntity
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._LedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_Role_LedgerAdvancedRuleStructureEntity == null))
-                {
-                    this._LedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_Role_LedgerAdvancedRuleStructureEntity = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructureConstraint>(GetPath("LedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_Role_LedgerAdvancedRuleStructureEntity"));
-                }
-                return this._LedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_Role_LedgerAdvancedRuleStructureEntity;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructureConstraint> _LedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_Role_LedgerAdvancedRuleStructureEntity;
-        /// <summary>
-        /// There are no comments for LedgerAdvancedRuleStructureActivationEntity_Role_LedgerAdvancedRuleStructureEntity in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AdvancedRuleStructureActivation> LedgerAdvancedRuleStructureActivationEntity_Role_LedgerAdvancedRuleStructureEntity
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._LedgerAdvancedRuleStructureActivationEntity_Role_LedgerAdvancedRuleStructureEntity == null))
-                {
-                    this._LedgerAdvancedRuleStructureActivationEntity_Role_LedgerAdvancedRuleStructureEntity = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AdvancedRuleStructureActivation>(GetPath("LedgerAdvancedRuleStructureActivationEntity_Role_LedgerAdvancedRuleStructureEntity"));
-                }
-                return this._LedgerAdvancedRuleStructureActivationEntity_Role_LedgerAdvancedRuleStructureEntity;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AdvancedRuleStructureActivation> _LedgerAdvancedRuleStructureActivationEntity_Role_LedgerAdvancedRuleStructureEntity;
         /// <summary>
         /// There are no comments for LedgerAdvancedRuleStructureEntity_RelatedRole_SegmentName10 in the schema.
         /// </summary>
@@ -391,10 +349,52 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AdvancedRule> _LedgerAdvancedRuleEntity_Role_LedgerAdvancedRuleStructureEntity2;
-    }
         /// <summary>
-        /// There are no comments for LedgerAdvancedRuleStructure in the schema.
+        /// There are no comments for LedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_Role_LedgerAdvancedRuleStructureEntity in the schema.
         /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructureConstraint> LedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_Role_LedgerAdvancedRuleStructureEntity
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._LedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_Role_LedgerAdvancedRuleStructureEntity == null))
+                {
+                    this._LedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_Role_LedgerAdvancedRuleStructureEntity = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructureConstraint>(GetPath("LedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_Role_LedgerAdvancedRuleStructureEntity"));
+                }
+                return this._LedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_Role_LedgerAdvancedRuleStructureEntity;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructureConstraint> _LedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_Role_LedgerAdvancedRuleStructureEntity;
+        /// <summary>
+        /// There are no comments for LedgerAdvancedRuleStructureActivationEntity_Role_LedgerAdvancedRuleStructureEntity in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AdvancedRuleStructureActivation> LedgerAdvancedRuleStructureActivationEntity_Role_LedgerAdvancedRuleStructureEntity
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._LedgerAdvancedRuleStructureActivationEntity_Role_LedgerAdvancedRuleStructureEntity == null))
+                {
+                    this._LedgerAdvancedRuleStructureActivationEntity_Role_LedgerAdvancedRuleStructureEntity = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AdvancedRuleStructureActivation>(GetPath("LedgerAdvancedRuleStructureActivationEntity_Role_LedgerAdvancedRuleStructureEntity"));
+                }
+                return this._LedgerAdvancedRuleStructureActivationEntity_Role_LedgerAdvancedRuleStructureEntity;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AdvancedRuleStructureActivation> _LedgerAdvancedRuleStructureActivationEntity_Role_LedgerAdvancedRuleStructureEntity;
+    }
+    /// <summary>
+    /// There are no comments for LedgerAdvancedRuleStructure in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// AccountRuleStructureName
     /// Status
@@ -418,6 +418,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountRuleStructureName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AccountRuleStructureName is required.")]
         public virtual string AccountRuleStructureName
         {
             get
@@ -440,6 +442,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Status in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.DimensionHierarchyConstraintStatus> Status
         {
             get
@@ -462,6 +465,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentName10 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentName10
         {
             get
@@ -484,6 +488,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentName11 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentName11
         {
             get
@@ -506,6 +511,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentName04 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentName04
         {
             get
@@ -528,6 +534,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentName05 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentName05
         {
             get
@@ -550,6 +557,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentName06 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentName06
         {
             get
@@ -572,6 +580,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentName07 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentName07
         {
             get
@@ -594,6 +603,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentName01 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentName01
         {
             get
@@ -616,6 +626,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentName02 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentName02
         {
             get
@@ -638,6 +649,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentName03 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentName03
         {
             get
@@ -660,6 +672,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -682,6 +695,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentName08 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentName08
         {
             get
@@ -704,6 +718,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentName09 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentName09
         {
             get
@@ -723,53 +738,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnSegmentName09Changing(string value);
         partial void OnSegmentName09Changed();
         /// <summary>
-        /// There are no comments for Property LedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_Role_LedgerAdvancedRuleStructureEntity in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructureConstraint> LedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_Role_LedgerAdvancedRuleStructureEntity
-        {
-            get
-            {
-                return this._LedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_Role_LedgerAdvancedRuleStructureEntity;
-            }
-            set
-            {
-                this.OnLedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_Role_LedgerAdvancedRuleStructureEntityChanging(value);
-                this._LedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_Role_LedgerAdvancedRuleStructureEntity = value;
-                this.OnLedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_Role_LedgerAdvancedRuleStructureEntityChanged();
-                this.OnPropertyChanged("LedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_Role_LedgerAdvancedRuleStructureEntity");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructureConstraint> _LedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_Role_LedgerAdvancedRuleStructureEntity = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructureConstraint>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnLedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_Role_LedgerAdvancedRuleStructureEntityChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructureConstraint> value);
-        partial void OnLedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_Role_LedgerAdvancedRuleStructureEntityChanged();
-        /// <summary>
-        /// There are no comments for Property LedgerAdvancedRuleStructureActivationEntity_Role_LedgerAdvancedRuleStructureEntity in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AdvancedRuleStructureActivation> LedgerAdvancedRuleStructureActivationEntity_Role_LedgerAdvancedRuleStructureEntity
-        {
-            get
-            {
-                return this._LedgerAdvancedRuleStructureActivationEntity_Role_LedgerAdvancedRuleStructureEntity;
-            }
-            set
-            {
-                this.OnLedgerAdvancedRuleStructureActivationEntity_Role_LedgerAdvancedRuleStructureEntityChanging(value);
-                this._LedgerAdvancedRuleStructureActivationEntity_Role_LedgerAdvancedRuleStructureEntity = value;
-                this.OnLedgerAdvancedRuleStructureActivationEntity_Role_LedgerAdvancedRuleStructureEntityChanged();
-                this.OnPropertyChanged("LedgerAdvancedRuleStructureActivationEntity_Role_LedgerAdvancedRuleStructureEntity");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AdvancedRuleStructureActivation> _LedgerAdvancedRuleStructureActivationEntity_Role_LedgerAdvancedRuleStructureEntity = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AdvancedRuleStructureActivation>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnLedgerAdvancedRuleStructureActivationEntity_Role_LedgerAdvancedRuleStructureEntityChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AdvancedRuleStructureActivation> value);
-        partial void OnLedgerAdvancedRuleStructureActivationEntity_Role_LedgerAdvancedRuleStructureEntityChanged();
-        /// <summary>
         /// There are no comments for Property LedgerAdvancedRuleStructureEntity_RelatedRole_SegmentName10 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute LedgerAdvancedRuleStructureEntity_RelatedRole_SegmentName10
         {
             get
@@ -792,6 +764,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerAdvancedRuleStructureEntity_RelatedRole_SegmentName11 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute LedgerAdvancedRuleStructureEntity_RelatedRole_SegmentName11
         {
             get
@@ -814,6 +787,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerAdvancedRuleStructureEntity_RelatedRole_SegmentName04 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute LedgerAdvancedRuleStructureEntity_RelatedRole_SegmentName04
         {
             get
@@ -836,6 +810,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerAdvancedRuleStructureEntity_RelatedRole_SegmentName05 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute LedgerAdvancedRuleStructureEntity_RelatedRole_SegmentName05
         {
             get
@@ -858,6 +833,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerAdvancedRuleStructureEntity_RelatedRole_SegmentName06 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute LedgerAdvancedRuleStructureEntity_RelatedRole_SegmentName06
         {
             get
@@ -880,6 +856,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerAdvancedRuleStructureEntity_RelatedRole_SegmentName07 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute LedgerAdvancedRuleStructureEntity_RelatedRole_SegmentName07
         {
             get
@@ -902,6 +879,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerAdvancedRuleStructureEntity_RelatedRole_SegmentName01 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute LedgerAdvancedRuleStructureEntity_RelatedRole_SegmentName01
         {
             get
@@ -924,6 +902,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerAdvancedRuleStructureEntity_RelatedRole_SegmentName02 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute LedgerAdvancedRuleStructureEntity_RelatedRole_SegmentName02
         {
             get
@@ -946,6 +925,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerAdvancedRuleStructureEntity_RelatedRole_SegmentName03 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute LedgerAdvancedRuleStructureEntity_RelatedRole_SegmentName03
         {
             get
@@ -968,6 +948,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerAdvancedRuleStructureEntity_RelatedRole_SegmentName08 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute LedgerAdvancedRuleStructureEntity_RelatedRole_SegmentName08
         {
             get
@@ -990,6 +971,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerAdvancedRuleStructureEntity_RelatedRole_SegmentName09 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute LedgerAdvancedRuleStructureEntity_RelatedRole_SegmentName09
         {
             get
@@ -1012,6 +994,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerAdvancedRuleEntity_Role_LedgerAdvancedRuleStructureEntity3 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AdvancedRule> LedgerAdvancedRuleEntity_Role_LedgerAdvancedRuleStructureEntity3
         {
             get
@@ -1034,6 +1017,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerAdvancedRuleEntity_Role_LedgerAdvancedRuleStructureEntity4 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AdvancedRule> LedgerAdvancedRuleEntity_Role_LedgerAdvancedRuleStructureEntity4
         {
             get
@@ -1056,6 +1040,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerAdvancedRuleEntity_Role_LedgerAdvancedRuleStructureEntity1 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AdvancedRule> LedgerAdvancedRuleEntity_Role_LedgerAdvancedRuleStructureEntity1
         {
             get
@@ -1078,6 +1063,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerAdvancedRuleEntity_Role_LedgerAdvancedRuleStructureEntity2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AdvancedRule> LedgerAdvancedRuleEntity_Role_LedgerAdvancedRuleStructureEntity2
         {
             get
@@ -1096,6 +1082,52 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AdvancedRule> _LedgerAdvancedRuleEntity_Role_LedgerAdvancedRuleStructureEntity2 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AdvancedRule>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnLedgerAdvancedRuleEntity_Role_LedgerAdvancedRuleStructureEntity2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AdvancedRule> value);
         partial void OnLedgerAdvancedRuleEntity_Role_LedgerAdvancedRuleStructureEntity2Changed();
+        /// <summary>
+        /// There are no comments for Property LedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_Role_LedgerAdvancedRuleStructureEntity in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructureConstraint> LedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_Role_LedgerAdvancedRuleStructureEntity
+        {
+            get
+            {
+                return this._LedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_Role_LedgerAdvancedRuleStructureEntity;
+            }
+            set
+            {
+                this.OnLedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_Role_LedgerAdvancedRuleStructureEntityChanging(value);
+                this._LedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_Role_LedgerAdvancedRuleStructureEntity = value;
+                this.OnLedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_Role_LedgerAdvancedRuleStructureEntityChanged();
+                this.OnPropertyChanged("LedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_Role_LedgerAdvancedRuleStructureEntity");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructureConstraint> _LedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_Role_LedgerAdvancedRuleStructureEntity = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructureConstraint>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnLedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_Role_LedgerAdvancedRuleStructureEntityChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructureConstraint> value);
+        partial void OnLedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_Role_LedgerAdvancedRuleStructureEntityChanged();
+        /// <summary>
+        /// There are no comments for Property LedgerAdvancedRuleStructureActivationEntity_Role_LedgerAdvancedRuleStructureEntity in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AdvancedRuleStructureActivation> LedgerAdvancedRuleStructureActivationEntity_Role_LedgerAdvancedRuleStructureEntity
+        {
+            get
+            {
+                return this._LedgerAdvancedRuleStructureActivationEntity_Role_LedgerAdvancedRuleStructureEntity;
+            }
+            set
+            {
+                this.OnLedgerAdvancedRuleStructureActivationEntity_Role_LedgerAdvancedRuleStructureEntityChanging(value);
+                this._LedgerAdvancedRuleStructureActivationEntity_Role_LedgerAdvancedRuleStructureEntity = value;
+                this.OnLedgerAdvancedRuleStructureActivationEntity_Role_LedgerAdvancedRuleStructureEntityChanged();
+                this.OnPropertyChanged("LedgerAdvancedRuleStructureActivationEntity_Role_LedgerAdvancedRuleStructureEntity");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AdvancedRuleStructureActivation> _LedgerAdvancedRuleStructureActivationEntity_Role_LedgerAdvancedRuleStructureEntity = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AdvancedRuleStructureActivation>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnLedgerAdvancedRuleStructureActivationEntity_Role_LedgerAdvancedRuleStructureEntityChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AdvancedRuleStructureActivation> value);
+        partial void OnLedgerAdvancedRuleStructureActivationEntity_Role_LedgerAdvancedRuleStructureEntityChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

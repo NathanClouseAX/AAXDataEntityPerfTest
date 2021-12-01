@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for CompensationEligibilityRuleSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CompensationEligibilityRuleSingle in the schema.
+    /// </summary>
     public partial class CompensationEligibilityRuleSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<CompensationEligibilityRule>
     {
         /// <summary>
@@ -203,9 +203,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.UnionsSingle _LaborUnion;
     }
-        /// <summary>
-        /// There are no comments for CompensationEligibilityRule in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CompensationEligibilityRule in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// Eligibility
@@ -235,6 +235,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -257,6 +259,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Eligibility in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Eligibility is required.")]
         public virtual string Eligibility
         {
             get
@@ -279,6 +283,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExpirationDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ExpirationDate is required.")]
         public virtual global::System.DateTimeOffset ExpirationDate
         {
             get
@@ -301,6 +307,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -323,6 +330,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LaborUnionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LaborUnionId
         {
             get
@@ -345,6 +353,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DepartmentNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DepartmentNumber
         {
             get
@@ -367,6 +376,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JobId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string JobId
         {
             get
@@ -389,6 +399,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FunctionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FunctionId
         {
             get
@@ -411,6 +422,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EffectiveDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EffectiveDate is required.")]
         public virtual global::System.DateTimeOffset EffectiveDate
         {
             get
@@ -433,6 +446,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LocationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LocationId
         {
             get
@@ -455,6 +469,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Plan in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Plan
         {
             get
@@ -477,6 +492,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Type in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmCompPlanType> Type
         {
             get
@@ -499,6 +515,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JobTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string JobTypeId
         {
             get
@@ -521,6 +538,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RestrictEligibilityToWorkersInSelectedLevels in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> RestrictEligibilityToWorkersInSelectedLevels
         {
             get
@@ -543,6 +561,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JobType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.JobType JobType
         {
             get
@@ -565,6 +584,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Location in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.CompensationRegion Location
         {
             get
@@ -587,6 +607,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Job in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.Job Job
         {
             get
@@ -609,6 +630,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CompFixedPlanTable in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.CompFixedPlanTable CompFixedPlanTable
         {
             get
@@ -631,6 +653,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Department in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.Department Department
         {
             get
@@ -653,6 +676,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OMOperatingUnit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.OperatingUnit OMOperatingUnit
         {
             get
@@ -675,6 +699,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JobFunction in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.JobFunction JobFunction
         {
             get
@@ -697,6 +722,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LaborUnion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.Unions LaborUnion
         {
             get

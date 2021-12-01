@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for KittingParametersSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for KittingParametersSingle in the schema.
+    /// </summary>
     public partial class KittingParametersSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<KittingParameters>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for KittingParameters in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for KittingParameters in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// ValidFor
@@ -64,6 +64,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -86,6 +88,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidFor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TableGroupAll> ValidFor
         {
             get
@@ -108,6 +111,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemRelation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ItemRelation is required.")]
         public virtual string ItemRelation
         {
             get
@@ -130,6 +135,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UseKitFinancialDimensions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> UseKitFinancialDimensions
         {
             get
@@ -152,6 +158,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PartPrice in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PartPrice
         {
             get
@@ -174,6 +181,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PartialReturn in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PartialReturn
         {
             get
@@ -196,6 +204,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UseKitTradeAgreement in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> UseKitTradeAgreement
         {
             get
@@ -218,6 +227,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PartialDelivery in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PartialDelivery
         {
             get
@@ -240,6 +250,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReserveItemsAutomatically in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ReserveItemsAutomatically
         {
             get
@@ -262,6 +273,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SetUpStorageDimensions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> SetUpStorageDimensions
         {
             get
@@ -284,6 +296,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ManualPosting in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ManualPosting
         {
             get
@@ -306,6 +319,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CompleteKitCheck in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.KittingCheckPickingListRegistration> CompleteKitCheck
         {
             get
@@ -328,6 +342,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SetUpProductDimensions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> SetUpProductDimensions
         {
             get
@@ -350,6 +365,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReserveCompleteKits in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ReserveCompleteKits
         {
             get
@@ -372,6 +388,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WHSCompleteKitCheck in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.KittingCheckLoad> WHSCompleteKitCheck
         {
             get
@@ -394,6 +411,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShowKitPriceOnKit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ShowKitPriceOnKit
         {
             get

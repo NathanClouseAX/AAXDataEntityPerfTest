@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for DeductionArrearSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for DeductionArrearSingle in the schema.
+    /// </summary>
     public partial class DeductionArrearSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<DeductionArrear>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.PayStatementHeaderSingle _PayStatementHeader;
     }
-        /// <summary>
-        /// There are no comments for DeductionArrear in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for DeductionArrear in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// PayStatementNumber
@@ -116,6 +116,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -138,6 +140,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayStatementNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PayStatementNumber is required.")]
         public virtual string PayStatementNumber
         {
             get
@@ -160,6 +164,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BenefitId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BenefitId is required.")]
         public virtual string BenefitId
         {
             get
@@ -182,6 +188,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FullyRecovered in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> FullyRecovered
         {
             get
@@ -204,6 +211,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AmountInTransactionCurrency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AmountInTransactionCurrency is required.")]
         public virtual decimal AmountInTransactionCurrency
         {
             get
@@ -226,6 +235,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Benefit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.Benefit Benefit
         {
             get
@@ -248,6 +258,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayStatementHeader in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PayStatementHeader is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.PayStatementHeader PayStatementHeader
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for AccrualEarningCodeSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AccrualEarningCodeSingle in the schema.
+    /// </summary>
     public partial class AccrualEarningCodeSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AccrualEarningCode>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.AccrualPlanSingle _AccrualPlan;
     }
-        /// <summary>
-        /// There are no comments for AccrualEarningCode in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AccrualEarningCode in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// AccrualId
     /// EarningCodeId
@@ -90,6 +90,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccrualId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AccrualId is required.")]
         public virtual string AccrualId
         {
             get
@@ -112,6 +114,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EarningCodeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EarningCodeId is required.")]
         public virtual string EarningCodeId
         {
             get
@@ -134,6 +138,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccrualPlan in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AccrualPlan is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.AccrualPlan AccrualPlan
         {
             get

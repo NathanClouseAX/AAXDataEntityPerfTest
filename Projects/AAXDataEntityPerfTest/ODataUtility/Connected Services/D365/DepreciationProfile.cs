@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for DepreciationProfileSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for DepreciationProfileSingle in the schema.
+    /// </summary>
     public partial class DepreciationProfileSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<DepreciationProfile>
     {
         /// <summary>
@@ -119,10 +119,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupValueModelSetup> _AssetGroupValueModelSetupAcceleratedDepreciationProfile;
         /// <summary>
-        /// There are no comments for DepreciationProfileIdManualSchedule in the schema.
+        /// There are no comments for AssetValueModelDepreciationProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.DepreciationProfileManualSchedule> DepreciationProfileIdManualSchedule
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> AssetValueModelDepreciationProfile
         {
             get
             {
@@ -130,20 +130,20 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._DepreciationProfileIdManualSchedule == null))
+                if ((this._AssetValueModelDepreciationProfile == null))
                 {
-                    this._DepreciationProfileIdManualSchedule = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.DepreciationProfileManualSchedule>(GetPath("DepreciationProfileIdManualSchedule"));
+                    this._AssetValueModelDepreciationProfile = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel>(GetPath("AssetValueModelDepreciationProfile"));
                 }
-                return this._DepreciationProfileIdManualSchedule;
+                return this._AssetValueModelDepreciationProfile;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.DepreciationProfileManualSchedule> _DepreciationProfileIdManualSchedule;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> _AssetValueModelDepreciationProfile;
         /// <summary>
-        /// There are no comments for AssetBookV2DepreciationProfileAsset in the schema.
+        /// There are no comments for AssetValueModelExtraordinaryDepreciationProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> AssetBookV2DepreciationProfileAsset
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> AssetValueModelExtraordinaryDepreciationProfile
         {
             get
             {
@@ -151,20 +151,20 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._AssetBookV2DepreciationProfileAsset == null))
+                if ((this._AssetValueModelExtraordinaryDepreciationProfile == null))
                 {
-                    this._AssetBookV2DepreciationProfileAsset = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2>(GetPath("AssetBookV2DepreciationProfileAsset"));
+                    this._AssetValueModelExtraordinaryDepreciationProfile = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel>(GetPath("AssetValueModelExtraordinaryDepreciationProfile"));
                 }
-                return this._AssetBookV2DepreciationProfileAsset;
+                return this._AssetValueModelExtraordinaryDepreciationProfile;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> _AssetBookV2DepreciationProfileAsset;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> _AssetValueModelExtraordinaryDepreciationProfile;
         /// <summary>
-        /// There are no comments for AssetBookV2AcceleratedDepreciationProfileAsset in the schema.
+        /// There are no comments for AssetValueModelAlternativeDepreciationProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> AssetBookV2AcceleratedDepreciationProfileAsset
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> AssetValueModelAlternativeDepreciationProfile
         {
             get
             {
@@ -172,20 +172,20 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._AssetBookV2AcceleratedDepreciationProfileAsset == null))
+                if ((this._AssetValueModelAlternativeDepreciationProfile == null))
                 {
-                    this._AssetBookV2AcceleratedDepreciationProfileAsset = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2>(GetPath("AssetBookV2AcceleratedDepreciationProfileAsset"));
+                    this._AssetValueModelAlternativeDepreciationProfile = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel>(GetPath("AssetValueModelAlternativeDepreciationProfile"));
                 }
-                return this._AssetBookV2AcceleratedDepreciationProfileAsset;
+                return this._AssetValueModelAlternativeDepreciationProfile;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> _AssetBookV2AcceleratedDepreciationProfileAsset;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> _AssetValueModelAlternativeDepreciationProfile;
         /// <summary>
-        /// There are no comments for AssetBookV2AlternativeDepreciationProfileAsset in the schema.
+        /// There are no comments for AssetValueModelAcceleratedDepreciationProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> AssetBookV2AlternativeDepreciationProfileAsset
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> AssetValueModelAcceleratedDepreciationProfile
         {
             get
             {
@@ -193,36 +193,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._AssetBookV2AlternativeDepreciationProfileAsset == null))
+                if ((this._AssetValueModelAcceleratedDepreciationProfile == null))
                 {
-                    this._AssetBookV2AlternativeDepreciationProfileAsset = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2>(GetPath("AssetBookV2AlternativeDepreciationProfileAsset"));
+                    this._AssetValueModelAcceleratedDepreciationProfile = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel>(GetPath("AssetValueModelAcceleratedDepreciationProfile"));
                 }
-                return this._AssetBookV2AlternativeDepreciationProfileAsset;
+                return this._AssetValueModelAcceleratedDepreciationProfile;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> _AssetBookV2AlternativeDepreciationProfileAsset;
-        /// <summary>
-        /// There are no comments for AssetBookV2ExtraordinaryDepreciationProfileAsset in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> AssetBookV2ExtraordinaryDepreciationProfileAsset
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._AssetBookV2ExtraordinaryDepreciationProfileAsset == null))
-                {
-                    this._AssetBookV2ExtraordinaryDepreciationProfileAsset = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2>(GetPath("AssetBookV2ExtraordinaryDepreciationProfileAsset"));
-                }
-                return this._AssetBookV2ExtraordinaryDepreciationProfileAsset;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> _AssetBookV2ExtraordinaryDepreciationProfileAsset;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> _AssetValueModelAcceleratedDepreciationProfile;
         /// <summary>
         /// There are no comments for AssetValueModelSetupDepreciationProfile in the schema.
         /// </summary>
@@ -308,10 +287,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ValueModelSetup> _AssetValueModelSetupAcceleratedDepreciationProfile;
         /// <summary>
-        /// There are no comments for AssetValueModelDepreciationProfile in the schema.
+        /// There are no comments for AssetBookV2DepreciationProfileAsset in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> AssetValueModelDepreciationProfile
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> AssetBookV2DepreciationProfileAsset
         {
             get
             {
@@ -319,20 +298,20 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._AssetValueModelDepreciationProfile == null))
+                if ((this._AssetBookV2DepreciationProfileAsset == null))
                 {
-                    this._AssetValueModelDepreciationProfile = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel>(GetPath("AssetValueModelDepreciationProfile"));
+                    this._AssetBookV2DepreciationProfileAsset = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2>(GetPath("AssetBookV2DepreciationProfileAsset"));
                 }
-                return this._AssetValueModelDepreciationProfile;
+                return this._AssetBookV2DepreciationProfileAsset;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> _AssetValueModelDepreciationProfile;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> _AssetBookV2DepreciationProfileAsset;
         /// <summary>
-        /// There are no comments for AssetValueModelExtraordinaryDepreciationProfile in the schema.
+        /// There are no comments for AssetBookV2AcceleratedDepreciationProfileAsset in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> AssetValueModelExtraordinaryDepreciationProfile
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> AssetBookV2AcceleratedDepreciationProfileAsset
         {
             get
             {
@@ -340,20 +319,20 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._AssetValueModelExtraordinaryDepreciationProfile == null))
+                if ((this._AssetBookV2AcceleratedDepreciationProfileAsset == null))
                 {
-                    this._AssetValueModelExtraordinaryDepreciationProfile = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel>(GetPath("AssetValueModelExtraordinaryDepreciationProfile"));
+                    this._AssetBookV2AcceleratedDepreciationProfileAsset = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2>(GetPath("AssetBookV2AcceleratedDepreciationProfileAsset"));
                 }
-                return this._AssetValueModelExtraordinaryDepreciationProfile;
+                return this._AssetBookV2AcceleratedDepreciationProfileAsset;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> _AssetValueModelExtraordinaryDepreciationProfile;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> _AssetBookV2AcceleratedDepreciationProfileAsset;
         /// <summary>
-        /// There are no comments for AssetValueModelAlternativeDepreciationProfile in the schema.
+        /// There are no comments for AssetBookV2AlternativeDepreciationProfileAsset in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> AssetValueModelAlternativeDepreciationProfile
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> AssetBookV2AlternativeDepreciationProfileAsset
         {
             get
             {
@@ -361,20 +340,20 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._AssetValueModelAlternativeDepreciationProfile == null))
+                if ((this._AssetBookV2AlternativeDepreciationProfileAsset == null))
                 {
-                    this._AssetValueModelAlternativeDepreciationProfile = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel>(GetPath("AssetValueModelAlternativeDepreciationProfile"));
+                    this._AssetBookV2AlternativeDepreciationProfileAsset = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2>(GetPath("AssetBookV2AlternativeDepreciationProfileAsset"));
                 }
-                return this._AssetValueModelAlternativeDepreciationProfile;
+                return this._AssetBookV2AlternativeDepreciationProfileAsset;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> _AssetValueModelAlternativeDepreciationProfile;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> _AssetBookV2AlternativeDepreciationProfileAsset;
         /// <summary>
-        /// There are no comments for AssetValueModelAcceleratedDepreciationProfile in the schema.
+        /// There are no comments for AssetBookV2ExtraordinaryDepreciationProfileAsset in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> AssetValueModelAcceleratedDepreciationProfile
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> AssetBookV2ExtraordinaryDepreciationProfileAsset
         {
             get
             {
@@ -382,19 +361,40 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._AssetValueModelAcceleratedDepreciationProfile == null))
+                if ((this._AssetBookV2ExtraordinaryDepreciationProfileAsset == null))
                 {
-                    this._AssetValueModelAcceleratedDepreciationProfile = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel>(GetPath("AssetValueModelAcceleratedDepreciationProfile"));
+                    this._AssetBookV2ExtraordinaryDepreciationProfileAsset = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2>(GetPath("AssetBookV2ExtraordinaryDepreciationProfileAsset"));
                 }
-                return this._AssetValueModelAcceleratedDepreciationProfile;
+                return this._AssetBookV2ExtraordinaryDepreciationProfileAsset;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> _AssetValueModelAcceleratedDepreciationProfile;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> _AssetBookV2ExtraordinaryDepreciationProfileAsset;
+        /// <summary>
+        /// There are no comments for DepreciationProfileIdManualSchedule in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.DepreciationProfileManualSchedule> DepreciationProfileIdManualSchedule
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._DepreciationProfileIdManualSchedule == null))
+                {
+                    this._DepreciationProfileIdManualSchedule = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.DepreciationProfileManualSchedule>(GetPath("DepreciationProfileIdManualSchedule"));
+                }
+                return this._DepreciationProfileIdManualSchedule;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.DepreciationProfileManualSchedule> _DepreciationProfileIdManualSchedule;
     }
-        /// <summary>
-        /// There are no comments for DepreciationProfile in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for DepreciationProfile in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// DepreciationProfileId
@@ -445,6 +445,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -467,6 +469,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DepreciationProfileId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DepreciationProfileId is required.")]
         public virtual string DepreciationProfileId
         {
             get
@@ -489,6 +493,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LowValuePoolPercentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LowValuePoolPercentage is required.")]
         public virtual decimal LowValuePoolPercentage
         {
             get
@@ -511,6 +517,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DepreciationRateScheduleName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DepreciationRateScheduleName
         {
             get
@@ -533,6 +540,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FullYearDepreciationOnAdditionalAcquisitions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> FullYearDepreciationOnAdditionalAcquisitions
         {
             get
@@ -555,6 +563,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Percentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Percentage is required.")]
         public virtual decimal Percentage
         {
             get
@@ -577,6 +587,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Method in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetDepreciationMethod> Method
         {
             get
@@ -599,6 +610,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SpecialDepreciationBaseRatio in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SpecialDepreciationBaseRatio is required.")]
         public virtual decimal SpecialDepreciationBaseRatio
         {
             get
@@ -621,6 +634,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SpecialDepreciationRate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SpecialDepreciationRate is required.")]
         public virtual decimal SpecialDepreciationRate
         {
             get
@@ -643,6 +658,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DepreciationYear in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetDepreciationYear> DepreciationYear
         {
             get
@@ -665,6 +681,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Interval in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetDepreciationInterval> Interval
         {
             get
@@ -687,6 +704,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SpecialDepreciationApplyNumberOfPeriods in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SpecialDepreciationApplyNumberOfPeriods is required.")]
         public virtual int SpecialDepreciationApplyNumberOfPeriods
         {
             get
@@ -709,6 +728,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DepreciationRateScheduleDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DepreciationRateScheduleDescription
         {
             get
@@ -731,6 +751,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FullDepreciation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> FullDepreciation
         {
             get
@@ -753,6 +774,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NumberOfYearsToEquallyDivideDepreciationAmounts in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "NumberOfYearsToEquallyDivideDepreciationAmounts is required.")]
         public virtual int NumberOfYearsToEquallyDivideDepreciationAmounts
         {
             get
@@ -775,6 +798,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CalculationBasis in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetDepreciationCalculationBase> CalculationBasis
         {
             get
@@ -797,6 +821,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Name
         {
             get
@@ -819,6 +844,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PeriodFrequency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetAccrual> PeriodFrequency
         {
             get
@@ -841,6 +867,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsShiftDepreciation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsShiftDepreciation
         {
             get
@@ -863,6 +890,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LowValuePoolLowCostValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LowValuePoolLowCostValue is required.")]
         public virtual decimal LowValuePoolLowCostValue
         {
             get
@@ -885,6 +914,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SpecialDepreciationAccountingMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetSpecialDepAccountingMethod_JP> SpecialDepreciationAccountingMethod
         {
             get
@@ -907,6 +937,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LowValuePoolPercentFirstYear in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LowValuePoolPercentFirstYear is required.")]
         public virtual decimal LowValuePoolPercentFirstYear
         {
             get
@@ -929,6 +961,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EquallySplitDepreciationAmount95PercentOfAcquisitionCost in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> EquallySplitDepreciationAmount95PercentOfAcquisitionCost
         {
             get
@@ -951,6 +984,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetGroupValueModelSetupDepreciationProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupValueModelSetup> AssetGroupValueModelSetupDepreciationProfile
         {
             get
@@ -973,6 +1007,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetGroupValueModelSetupExtraordinaryDepreciationProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupValueModelSetup> AssetGroupValueModelSetupExtraordinaryDepreciationProfile
         {
             get
@@ -995,6 +1030,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetGroupValueModelSetupAlternativeDepreciationProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupValueModelSetup> AssetGroupValueModelSetupAlternativeDepreciationProfile
         {
             get
@@ -1017,6 +1053,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetGroupValueModelSetupAcceleratedDepreciationProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupValueModelSetup> AssetGroupValueModelSetupAcceleratedDepreciationProfile
         {
             get
@@ -1036,207 +1073,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnAssetGroupValueModelSetupAcceleratedDepreciationProfileChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetGroupValueModelSetup> value);
         partial void OnAssetGroupValueModelSetupAcceleratedDepreciationProfileChanged();
         /// <summary>
-        /// There are no comments for Property DepreciationProfileIdManualSchedule in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DepreciationProfileManualSchedule> DepreciationProfileIdManualSchedule
-        {
-            get
-            {
-                return this._DepreciationProfileIdManualSchedule;
-            }
-            set
-            {
-                this.OnDepreciationProfileIdManualScheduleChanging(value);
-                this._DepreciationProfileIdManualSchedule = value;
-                this.OnDepreciationProfileIdManualScheduleChanged();
-                this.OnPropertyChanged("DepreciationProfileIdManualSchedule");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DepreciationProfileManualSchedule> _DepreciationProfileIdManualSchedule = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DepreciationProfileManualSchedule>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnDepreciationProfileIdManualScheduleChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DepreciationProfileManualSchedule> value);
-        partial void OnDepreciationProfileIdManualScheduleChanged();
-        /// <summary>
-        /// There are no comments for Property AssetBookV2DepreciationProfileAsset in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> AssetBookV2DepreciationProfileAsset
-        {
-            get
-            {
-                return this._AssetBookV2DepreciationProfileAsset;
-            }
-            set
-            {
-                this.OnAssetBookV2DepreciationProfileAssetChanging(value);
-                this._AssetBookV2DepreciationProfileAsset = value;
-                this.OnAssetBookV2DepreciationProfileAssetChanged();
-                this.OnPropertyChanged("AssetBookV2DepreciationProfileAsset");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> _AssetBookV2DepreciationProfileAsset = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAssetBookV2DepreciationProfileAssetChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> value);
-        partial void OnAssetBookV2DepreciationProfileAssetChanged();
-        /// <summary>
-        /// There are no comments for Property AssetBookV2AcceleratedDepreciationProfileAsset in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> AssetBookV2AcceleratedDepreciationProfileAsset
-        {
-            get
-            {
-                return this._AssetBookV2AcceleratedDepreciationProfileAsset;
-            }
-            set
-            {
-                this.OnAssetBookV2AcceleratedDepreciationProfileAssetChanging(value);
-                this._AssetBookV2AcceleratedDepreciationProfileAsset = value;
-                this.OnAssetBookV2AcceleratedDepreciationProfileAssetChanged();
-                this.OnPropertyChanged("AssetBookV2AcceleratedDepreciationProfileAsset");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> _AssetBookV2AcceleratedDepreciationProfileAsset = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAssetBookV2AcceleratedDepreciationProfileAssetChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> value);
-        partial void OnAssetBookV2AcceleratedDepreciationProfileAssetChanged();
-        /// <summary>
-        /// There are no comments for Property AssetBookV2AlternativeDepreciationProfileAsset in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> AssetBookV2AlternativeDepreciationProfileAsset
-        {
-            get
-            {
-                return this._AssetBookV2AlternativeDepreciationProfileAsset;
-            }
-            set
-            {
-                this.OnAssetBookV2AlternativeDepreciationProfileAssetChanging(value);
-                this._AssetBookV2AlternativeDepreciationProfileAsset = value;
-                this.OnAssetBookV2AlternativeDepreciationProfileAssetChanged();
-                this.OnPropertyChanged("AssetBookV2AlternativeDepreciationProfileAsset");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> _AssetBookV2AlternativeDepreciationProfileAsset = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAssetBookV2AlternativeDepreciationProfileAssetChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> value);
-        partial void OnAssetBookV2AlternativeDepreciationProfileAssetChanged();
-        /// <summary>
-        /// There are no comments for Property AssetBookV2ExtraordinaryDepreciationProfileAsset in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> AssetBookV2ExtraordinaryDepreciationProfileAsset
-        {
-            get
-            {
-                return this._AssetBookV2ExtraordinaryDepreciationProfileAsset;
-            }
-            set
-            {
-                this.OnAssetBookV2ExtraordinaryDepreciationProfileAssetChanging(value);
-                this._AssetBookV2ExtraordinaryDepreciationProfileAsset = value;
-                this.OnAssetBookV2ExtraordinaryDepreciationProfileAssetChanged();
-                this.OnPropertyChanged("AssetBookV2ExtraordinaryDepreciationProfileAsset");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> _AssetBookV2ExtraordinaryDepreciationProfileAsset = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAssetBookV2ExtraordinaryDepreciationProfileAssetChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> value);
-        partial void OnAssetBookV2ExtraordinaryDepreciationProfileAssetChanged();
-        /// <summary>
-        /// There are no comments for Property AssetValueModelSetupDepreciationProfile in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ValueModelSetup> AssetValueModelSetupDepreciationProfile
-        {
-            get
-            {
-                return this._AssetValueModelSetupDepreciationProfile;
-            }
-            set
-            {
-                this.OnAssetValueModelSetupDepreciationProfileChanging(value);
-                this._AssetValueModelSetupDepreciationProfile = value;
-                this.OnAssetValueModelSetupDepreciationProfileChanged();
-                this.OnPropertyChanged("AssetValueModelSetupDepreciationProfile");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ValueModelSetup> _AssetValueModelSetupDepreciationProfile = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ValueModelSetup>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAssetValueModelSetupDepreciationProfileChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ValueModelSetup> value);
-        partial void OnAssetValueModelSetupDepreciationProfileChanged();
-        /// <summary>
-        /// There are no comments for Property AssetValueModelSetupExtraordinaryDepreciationProfile in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ValueModelSetup> AssetValueModelSetupExtraordinaryDepreciationProfile
-        {
-            get
-            {
-                return this._AssetValueModelSetupExtraordinaryDepreciationProfile;
-            }
-            set
-            {
-                this.OnAssetValueModelSetupExtraordinaryDepreciationProfileChanging(value);
-                this._AssetValueModelSetupExtraordinaryDepreciationProfile = value;
-                this.OnAssetValueModelSetupExtraordinaryDepreciationProfileChanged();
-                this.OnPropertyChanged("AssetValueModelSetupExtraordinaryDepreciationProfile");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ValueModelSetup> _AssetValueModelSetupExtraordinaryDepreciationProfile = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ValueModelSetup>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAssetValueModelSetupExtraordinaryDepreciationProfileChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ValueModelSetup> value);
-        partial void OnAssetValueModelSetupExtraordinaryDepreciationProfileChanged();
-        /// <summary>
-        /// There are no comments for Property AssetValueModelSetupAlternativeDepreciationProfile in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ValueModelSetup> AssetValueModelSetupAlternativeDepreciationProfile
-        {
-            get
-            {
-                return this._AssetValueModelSetupAlternativeDepreciationProfile;
-            }
-            set
-            {
-                this.OnAssetValueModelSetupAlternativeDepreciationProfileChanging(value);
-                this._AssetValueModelSetupAlternativeDepreciationProfile = value;
-                this.OnAssetValueModelSetupAlternativeDepreciationProfileChanged();
-                this.OnPropertyChanged("AssetValueModelSetupAlternativeDepreciationProfile");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ValueModelSetup> _AssetValueModelSetupAlternativeDepreciationProfile = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ValueModelSetup>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAssetValueModelSetupAlternativeDepreciationProfileChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ValueModelSetup> value);
-        partial void OnAssetValueModelSetupAlternativeDepreciationProfileChanged();
-        /// <summary>
-        /// There are no comments for Property AssetValueModelSetupAcceleratedDepreciationProfile in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ValueModelSetup> AssetValueModelSetupAcceleratedDepreciationProfile
-        {
-            get
-            {
-                return this._AssetValueModelSetupAcceleratedDepreciationProfile;
-            }
-            set
-            {
-                this.OnAssetValueModelSetupAcceleratedDepreciationProfileChanging(value);
-                this._AssetValueModelSetupAcceleratedDepreciationProfile = value;
-                this.OnAssetValueModelSetupAcceleratedDepreciationProfileChanged();
-                this.OnPropertyChanged("AssetValueModelSetupAcceleratedDepreciationProfile");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ValueModelSetup> _AssetValueModelSetupAcceleratedDepreciationProfile = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ValueModelSetup>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAssetValueModelSetupAcceleratedDepreciationProfileChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ValueModelSetup> value);
-        partial void OnAssetValueModelSetupAcceleratedDepreciationProfileChanged();
-        /// <summary>
         /// There are no comments for Property AssetValueModelDepreciationProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> AssetValueModelDepreciationProfile
         {
             get
@@ -1259,6 +1099,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetValueModelExtraordinaryDepreciationProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> AssetValueModelExtraordinaryDepreciationProfile
         {
             get
@@ -1281,6 +1122,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetValueModelAlternativeDepreciationProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> AssetValueModelAlternativeDepreciationProfile
         {
             get
@@ -1303,6 +1145,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetValueModelAcceleratedDepreciationProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> AssetValueModelAcceleratedDepreciationProfile
         {
             get
@@ -1321,6 +1164,213 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> _AssetValueModelAcceleratedDepreciationProfile = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnAssetValueModelAcceleratedDepreciationProfileChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetValueModel> value);
         partial void OnAssetValueModelAcceleratedDepreciationProfileChanged();
+        /// <summary>
+        /// There are no comments for Property AssetValueModelSetupDepreciationProfile in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ValueModelSetup> AssetValueModelSetupDepreciationProfile
+        {
+            get
+            {
+                return this._AssetValueModelSetupDepreciationProfile;
+            }
+            set
+            {
+                this.OnAssetValueModelSetupDepreciationProfileChanging(value);
+                this._AssetValueModelSetupDepreciationProfile = value;
+                this.OnAssetValueModelSetupDepreciationProfileChanged();
+                this.OnPropertyChanged("AssetValueModelSetupDepreciationProfile");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ValueModelSetup> _AssetValueModelSetupDepreciationProfile = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ValueModelSetup>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnAssetValueModelSetupDepreciationProfileChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ValueModelSetup> value);
+        partial void OnAssetValueModelSetupDepreciationProfileChanged();
+        /// <summary>
+        /// There are no comments for Property AssetValueModelSetupExtraordinaryDepreciationProfile in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ValueModelSetup> AssetValueModelSetupExtraordinaryDepreciationProfile
+        {
+            get
+            {
+                return this._AssetValueModelSetupExtraordinaryDepreciationProfile;
+            }
+            set
+            {
+                this.OnAssetValueModelSetupExtraordinaryDepreciationProfileChanging(value);
+                this._AssetValueModelSetupExtraordinaryDepreciationProfile = value;
+                this.OnAssetValueModelSetupExtraordinaryDepreciationProfileChanged();
+                this.OnPropertyChanged("AssetValueModelSetupExtraordinaryDepreciationProfile");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ValueModelSetup> _AssetValueModelSetupExtraordinaryDepreciationProfile = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ValueModelSetup>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnAssetValueModelSetupExtraordinaryDepreciationProfileChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ValueModelSetup> value);
+        partial void OnAssetValueModelSetupExtraordinaryDepreciationProfileChanged();
+        /// <summary>
+        /// There are no comments for Property AssetValueModelSetupAlternativeDepreciationProfile in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ValueModelSetup> AssetValueModelSetupAlternativeDepreciationProfile
+        {
+            get
+            {
+                return this._AssetValueModelSetupAlternativeDepreciationProfile;
+            }
+            set
+            {
+                this.OnAssetValueModelSetupAlternativeDepreciationProfileChanging(value);
+                this._AssetValueModelSetupAlternativeDepreciationProfile = value;
+                this.OnAssetValueModelSetupAlternativeDepreciationProfileChanged();
+                this.OnPropertyChanged("AssetValueModelSetupAlternativeDepreciationProfile");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ValueModelSetup> _AssetValueModelSetupAlternativeDepreciationProfile = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ValueModelSetup>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnAssetValueModelSetupAlternativeDepreciationProfileChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ValueModelSetup> value);
+        partial void OnAssetValueModelSetupAlternativeDepreciationProfileChanged();
+        /// <summary>
+        /// There are no comments for Property AssetValueModelSetupAcceleratedDepreciationProfile in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ValueModelSetup> AssetValueModelSetupAcceleratedDepreciationProfile
+        {
+            get
+            {
+                return this._AssetValueModelSetupAcceleratedDepreciationProfile;
+            }
+            set
+            {
+                this.OnAssetValueModelSetupAcceleratedDepreciationProfileChanging(value);
+                this._AssetValueModelSetupAcceleratedDepreciationProfile = value;
+                this.OnAssetValueModelSetupAcceleratedDepreciationProfileChanged();
+                this.OnPropertyChanged("AssetValueModelSetupAcceleratedDepreciationProfile");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ValueModelSetup> _AssetValueModelSetupAcceleratedDepreciationProfile = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ValueModelSetup>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnAssetValueModelSetupAcceleratedDepreciationProfileChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ValueModelSetup> value);
+        partial void OnAssetValueModelSetupAcceleratedDepreciationProfileChanged();
+        /// <summary>
+        /// There are no comments for Property AssetBookV2DepreciationProfileAsset in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> AssetBookV2DepreciationProfileAsset
+        {
+            get
+            {
+                return this._AssetBookV2DepreciationProfileAsset;
+            }
+            set
+            {
+                this.OnAssetBookV2DepreciationProfileAssetChanging(value);
+                this._AssetBookV2DepreciationProfileAsset = value;
+                this.OnAssetBookV2DepreciationProfileAssetChanged();
+                this.OnPropertyChanged("AssetBookV2DepreciationProfileAsset");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> _AssetBookV2DepreciationProfileAsset = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnAssetBookV2DepreciationProfileAssetChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> value);
+        partial void OnAssetBookV2DepreciationProfileAssetChanged();
+        /// <summary>
+        /// There are no comments for Property AssetBookV2AcceleratedDepreciationProfileAsset in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> AssetBookV2AcceleratedDepreciationProfileAsset
+        {
+            get
+            {
+                return this._AssetBookV2AcceleratedDepreciationProfileAsset;
+            }
+            set
+            {
+                this.OnAssetBookV2AcceleratedDepreciationProfileAssetChanging(value);
+                this._AssetBookV2AcceleratedDepreciationProfileAsset = value;
+                this.OnAssetBookV2AcceleratedDepreciationProfileAssetChanged();
+                this.OnPropertyChanged("AssetBookV2AcceleratedDepreciationProfileAsset");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> _AssetBookV2AcceleratedDepreciationProfileAsset = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnAssetBookV2AcceleratedDepreciationProfileAssetChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> value);
+        partial void OnAssetBookV2AcceleratedDepreciationProfileAssetChanged();
+        /// <summary>
+        /// There are no comments for Property AssetBookV2AlternativeDepreciationProfileAsset in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> AssetBookV2AlternativeDepreciationProfileAsset
+        {
+            get
+            {
+                return this._AssetBookV2AlternativeDepreciationProfileAsset;
+            }
+            set
+            {
+                this.OnAssetBookV2AlternativeDepreciationProfileAssetChanging(value);
+                this._AssetBookV2AlternativeDepreciationProfileAsset = value;
+                this.OnAssetBookV2AlternativeDepreciationProfileAssetChanged();
+                this.OnPropertyChanged("AssetBookV2AlternativeDepreciationProfileAsset");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> _AssetBookV2AlternativeDepreciationProfileAsset = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnAssetBookV2AlternativeDepreciationProfileAssetChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> value);
+        partial void OnAssetBookV2AlternativeDepreciationProfileAssetChanged();
+        /// <summary>
+        /// There are no comments for Property AssetBookV2ExtraordinaryDepreciationProfileAsset in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> AssetBookV2ExtraordinaryDepreciationProfileAsset
+        {
+            get
+            {
+                return this._AssetBookV2ExtraordinaryDepreciationProfileAsset;
+            }
+            set
+            {
+                this.OnAssetBookV2ExtraordinaryDepreciationProfileAssetChanging(value);
+                this._AssetBookV2ExtraordinaryDepreciationProfileAsset = value;
+                this.OnAssetBookV2ExtraordinaryDepreciationProfileAssetChanged();
+                this.OnPropertyChanged("AssetBookV2ExtraordinaryDepreciationProfileAsset");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> _AssetBookV2ExtraordinaryDepreciationProfileAsset = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnAssetBookV2ExtraordinaryDepreciationProfileAssetChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookV2> value);
+        partial void OnAssetBookV2ExtraordinaryDepreciationProfileAssetChanged();
+        /// <summary>
+        /// There are no comments for Property DepreciationProfileIdManualSchedule in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DepreciationProfileManualSchedule> DepreciationProfileIdManualSchedule
+        {
+            get
+            {
+                return this._DepreciationProfileIdManualSchedule;
+            }
+            set
+            {
+                this.OnDepreciationProfileIdManualScheduleChanging(value);
+                this._DepreciationProfileIdManualSchedule = value;
+                this.OnDepreciationProfileIdManualScheduleChanged();
+                this.OnPropertyChanged("DepreciationProfileIdManualSchedule");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DepreciationProfileManualSchedule> _DepreciationProfileIdManualSchedule = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DepreciationProfileManualSchedule>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnDepreciationProfileIdManualScheduleChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DepreciationProfileManualSchedule> value);
+        partial void OnDepreciationProfileIdManualScheduleChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

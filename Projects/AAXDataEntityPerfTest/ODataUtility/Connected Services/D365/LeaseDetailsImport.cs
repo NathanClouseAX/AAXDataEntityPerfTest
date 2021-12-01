@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for LeaseDetailsImportSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LeaseDetailsImportSingle in the schema.
+    /// </summary>
     public partial class LeaseDetailsImportSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<LeaseDetailsImport>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for LeaseDetailsImport in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LeaseDetailsImport in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// LeaseId
     /// ImportId
@@ -280,6 +280,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LeaseId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LeaseId is required.")]
         public virtual string LeaseId
         {
             get
@@ -302,6 +304,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ImportId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ImportId is required.")]
         public virtual string ImportId
         {
             get
@@ -324,6 +328,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SignatureDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SignatureDate is required.")]
         public virtual global::System.DateTimeOffset SignatureDate
         {
             get
@@ -346,6 +352,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MileageLimit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MileageLimit is required.")]
         public virtual decimal MileageLimit
         {
             get
@@ -368,6 +376,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PenaltyForTerminatingLease in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PenaltyForTerminatingLease is required.")]
         public virtual decimal PenaltyForTerminatingLease
         {
             get
@@ -390,6 +400,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LeaseIncentives in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LeaseIncentives is required.")]
         public virtual decimal LeaseIncentives
         {
             get
@@ -412,6 +424,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OptionForRenewal in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> OptionForRenewal
         {
             get
@@ -434,6 +447,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NextMaintenance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "NextMaintenance is required.")]
         public virtual global::System.DateTimeOffset NextMaintenance
         {
             get
@@ -456,6 +471,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendAccount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VendAccount
         {
             get
@@ -478,6 +494,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RateIncreaseCap in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RateIncreaseCap is required.")]
         public virtual decimal RateIncreaseCap
         {
             get
@@ -500,6 +518,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ApprovalStatus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetLeaseApprovalStatus> ApprovalStatus
         {
             get
@@ -522,6 +541,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InterestPeriodsRemaining in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "InterestPeriodsRemaining is required.")]
         public virtual int InterestPeriodsRemaining
         {
             get
@@ -544,6 +565,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BallonPaymentAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BallonPaymentAmount is required.")]
         public virtual decimal BallonPaymentAmount
         {
             get
@@ -566,6 +589,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LogisticsLocationFKLocationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LogisticsLocationFKLocationId
         {
             get
@@ -588,6 +612,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Adjusted in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> Adjusted
         {
             get
@@ -610,6 +635,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PresentValueOverFairValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PresentValueOverFairValue is required.")]
         public virtual decimal PresentValueOverFairValue
         {
             get
@@ -632,6 +659,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsFixedPayment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetLeaseRateValue> IsFixedPayment
         {
             get
@@ -654,6 +682,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OveruseFee in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "OveruseFee is required.")]
         public virtual decimal OveruseFee
         {
             get
@@ -676,6 +706,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CommercialTerms in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CommercialTerms
         {
             get
@@ -698,6 +729,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransferOwnership in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYesCombo> TransferOwnership
         {
             get
@@ -720,6 +752,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UndiscountedPaymentsRemaining in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "UndiscountedPaymentsRemaining is required.")]
         public virtual decimal UndiscountedPaymentsRemaining
         {
             get
@@ -742,6 +776,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LastMaintenance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LastMaintenance is required.")]
         public virtual global::System.DateTimeOffset LastMaintenance
         {
             get
@@ -764,6 +800,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Responsible in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Responsible
         {
             get
@@ -786,6 +823,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CreateFixedAsset in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> CreateFixedAsset
         {
             get
@@ -808,6 +846,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LeaseModificationDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LeaseModificationDate is required.")]
         public virtual global::System.DateTimeOffset LeaseModificationDate
         {
             get
@@ -830,6 +870,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DeferredRentTreatment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DeferredRentTreatment
         {
             get
@@ -852,6 +893,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LeaseDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LeaseDescription
         {
             get
@@ -874,6 +916,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaxCoverage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MaxCoverage is required.")]
         public virtual decimal MaxCoverage
         {
             get
@@ -896,6 +940,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AssetId
         {
             get
@@ -918,6 +963,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PercentCommonAreaMaintenance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PercentCommonAreaMaintenance is required.")]
         public virtual decimal PercentCommonAreaMaintenance
         {
             get
@@ -940,6 +987,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LegalEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LegalEntity
         {
             get
@@ -962,6 +1010,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FairValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FairValue is required.")]
         public virtual decimal FairValue
         {
             get
@@ -984,6 +1034,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DismantlingCosts in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DismantlingCosts is required.")]
         public virtual decimal DismantlingCosts
         {
             get
@@ -1006,6 +1058,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MonthsBtwRevaluation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MonthsBtwRevaluation is required.")]
         public virtual int MonthsBtwRevaluation
         {
             get
@@ -1028,6 +1082,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MonthName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MonthName
         {
             get
@@ -1050,6 +1105,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ImportProcessType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetLeaseImportProcessType> ImportProcessType
         {
             get
@@ -1072,6 +1128,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExchangeRate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ExchangeRate is required.")]
         public virtual decimal ExchangeRate
         {
             get
@@ -1094,6 +1152,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LeaseType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetLeaseType> LeaseType
         {
             get
@@ -1116,6 +1175,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Prepayments in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Prepayments is required.")]
         public virtual decimal Prepayments
         {
             get
@@ -1138,6 +1199,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IncidentalCost in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "IncidentalCost is required.")]
         public virtual decimal IncidentalCost
         {
             get
@@ -1160,6 +1223,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PresentValuePaymentsRemaining in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PresentValuePaymentsRemaining is required.")]
         public virtual decimal PresentValuePaymentsRemaining
         {
             get
@@ -1182,6 +1247,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DeliveryDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DeliveryDate is required.")]
         public virtual global::System.DateTimeOffset DeliveryDate
         {
             get
@@ -1204,6 +1271,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CenterOpeningDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CenterOpeningDate is required.")]
         public virtual global::System.DateTimeOffset CenterOpeningDate
         {
             get
@@ -1226,6 +1295,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SecurityDepositReminderDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SecurityDepositReminderDate is required.")]
         public virtual global::System.DateTimeOffset SecurityDepositReminderDate
         {
             get
@@ -1248,6 +1319,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FixedExchangeRateReporting in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> FixedExchangeRateReporting
         {
             get
@@ -1270,6 +1342,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LastDepreciationDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LastDepreciationDate is required.")]
         public virtual global::System.DateTimeOffset LastDepreciationDate
         {
             get
@@ -1292,6 +1366,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MonthsOfYear in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.MonthsOfYear> MonthsOfYear
         {
             get
@@ -1314,6 +1389,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RentableArea in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RentableArea is required.")]
         public virtual decimal RentableArea
         {
             get
@@ -1336,6 +1413,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IndexRatePercent in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "IndexRatePercent is required.")]
         public virtual decimal IndexRatePercent
         {
             get
@@ -1358,6 +1437,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CurrentPrincipalAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CurrentPrincipalAmount is required.")]
         public virtual decimal CurrentPrincipalAmount
         {
             get
@@ -1380,6 +1461,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property YearName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "YearName is required.")]
         public virtual int YearName
         {
             get
@@ -1402,6 +1485,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MonthsOfUsefulLife in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MonthsOfUsefulLife is required.")]
         public virtual int MonthsOfUsefulLife
         {
             get
@@ -1424,6 +1509,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CommencementDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CommencementDate is required.")]
         public virtual global::System.DateTimeOffset CommencementDate
         {
             get
@@ -1446,6 +1533,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MonthNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MonthNumber is required.")]
         public virtual int MonthNumber
         {
             get
@@ -1468,6 +1557,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VariableComponent in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VariableComponent
         {
             get
@@ -1490,6 +1580,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExpirationDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ExpirationDate is required.")]
         public virtual global::System.DateTimeOffset ExpirationDate
         {
             get
@@ -1512,6 +1604,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnpostedDepreciationJournals in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "UnpostedDepreciationJournals is required.")]
         public virtual int UnpostedDepreciationJournals
         {
             get
@@ -1534,6 +1628,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IndexRate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "IndexRate is required.")]
         public virtual decimal IndexRate
         {
             get
@@ -1556,6 +1652,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LastDatePaymentJournal in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LastDatePaymentJournal is required.")]
         public virtual global::System.DateTimeOffset LastDatePaymentJournal
         {
             get
@@ -1578,6 +1676,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LeasePaymentsRemaining in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LeasePaymentsRemaining is required.")]
         public virtual int LeasePaymentsRemaining
         {
             get
@@ -1600,6 +1700,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property City in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string City
         {
             get
@@ -1622,6 +1723,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DiscountRate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DiscountRate is required.")]
         public virtual decimal DiscountRate
         {
             get
@@ -1644,6 +1747,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DeferredRentCarryover in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DeferredRentCarryover is required.")]
         public virtual decimal DeferredRentCarryover
         {
             get
@@ -1666,6 +1771,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CurrentMileage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CurrentMileage is required.")]
         public virtual decimal CurrentMileage
         {
             get
@@ -1688,6 +1795,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExchangeRateReporting in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ExchangeRateReporting is required.")]
         public virtual decimal ExchangeRateReporting
         {
             get
@@ -1710,6 +1819,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SecurityDepositRefundable in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> SecurityDepositRefundable
         {
             get
@@ -1732,6 +1842,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LessorContactName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LessorContactName
         {
             get
@@ -1754,6 +1865,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostingLayer in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.CurrentOperationsTax> PostingLayer
         {
             get
@@ -1776,6 +1888,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RevaluationDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RevaluationDate is required.")]
         public virtual global::System.DateTimeOffset RevaluationDate
         {
             get
@@ -1798,6 +1912,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DepreciationPeriodsRemaining in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DepreciationPeriodsRemaining is required.")]
         public virtual int DepreciationPeriodsRemaining
         {
             get
@@ -1820,6 +1936,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnpostedLeasePayments in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "UnpostedLeasePayments is required.")]
         public virtual int UnpostedLeasePayments
         {
             get
@@ -1842,6 +1960,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LeaseGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LeaseGroup
         {
             get
@@ -1864,6 +1983,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UniqueAsset in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> UniqueAsset
         {
             get
@@ -1886,6 +2006,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ZipCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ZipCode
         {
             get
@@ -1908,6 +2029,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkflowStatus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetLeaseWorkflowStatus> WorkflowStatus
         {
             get
@@ -1930,6 +2052,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PaymentContractModified in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PaymentContractModified
         {
             get
@@ -1952,6 +2075,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CentreNum in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CentreNum
         {
             get
@@ -1974,6 +2098,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExpectedTerminationDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ExpectedTerminationDate is required.")]
         public virtual global::System.DateTimeOffset ExpectedTerminationDate
         {
             get
@@ -1996,6 +2122,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExtensionPeriod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ExtensionPeriod is required.")]
         public virtual int ExtensionPeriod
         {
             get
@@ -2018,6 +2146,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionDefaultDisplay in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionDefaultDisplay
         {
             get
@@ -2040,6 +2169,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CurrencyCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CurrencyCode
         {
             get
@@ -2062,6 +2192,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CompoundingInterval in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetLeaseCompoundingInterval> CompoundingInterval
         {
             get
@@ -2084,6 +2215,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CurrentLiabilityBalance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CurrentLiabilityBalance is required.")]
         public virtual decimal CurrentLiabilityBalance
         {
             get
@@ -2106,6 +2239,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PresentValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PresentValue is required.")]
         public virtual decimal PresentValue
         {
             get
@@ -2128,6 +2263,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ManuallyRevalue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ManuallyRevalue
         {
             get
@@ -2150,6 +2286,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CurrentAssetBalance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CurrentAssetBalance is required.")]
         public virtual decimal CurrentAssetBalance
         {
             get
@@ -2172,6 +2310,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property YearsOfLease in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "YearsOfLease is required.")]
         public virtual decimal YearsOfLease
         {
             get
@@ -2194,6 +2334,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnpostedInterestJournals in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "UnpostedInterestJournals is required.")]
         public virtual int UnpostedInterestJournals
         {
             get
@@ -2216,6 +2358,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ContractNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ContractNumber
         {
             get
@@ -2238,6 +2381,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OriginationDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "OriginationDate is required.")]
         public virtual global::System.DateTimeOffset OriginationDate
         {
             get
@@ -2260,6 +2405,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IndexType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string IndexType
         {
             get
@@ -2282,6 +2428,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PaymentInterval in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetLeasePaymentInterval> PaymentInterval
         {
             get
@@ -2304,6 +2451,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BorrowingRate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BorrowingRate is required.")]
         public virtual decimal BorrowingRate
         {
             get
@@ -2326,6 +2475,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DateEntryToPost in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DateEntryToPost is required.")]
         public virtual global::System.DateTimeOffset DateEntryToPost
         {
             get
@@ -2348,6 +2499,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LastDateInterestJournal in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LastDateInterestJournal is required.")]
         public virtual global::System.DateTimeOffset LastDateInterestJournal
         {
             get
@@ -2370,6 +2523,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IntendToExtendLease in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYesCombo> IntendToExtendLease
         {
             get
@@ -2392,6 +2546,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountingFramework in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetLeaseAccountingFramework> AccountingFramework
         {
             get
@@ -2414,6 +2569,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property YearOfUsefulLife in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "YearOfUsefulLife is required.")]
         public virtual decimal YearOfUsefulLife
         {
             get
@@ -2436,6 +2593,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FairValueOfAsset in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FairValueOfAsset is required.")]
         public virtual decimal FairValueOfAsset
         {
             get
@@ -2458,6 +2617,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnitOfMeasure in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string UnitOfMeasure
         {
             get
@@ -2480,6 +2640,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkerResponsibleFKPersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string WorkerResponsibleFKPersonnelNumber
         {
             get
@@ -2502,6 +2663,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AnnuityType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetLeaseAnnuityType> AnnuityType
         {
             get
@@ -2524,6 +2686,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InterestRate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "InterestRate is required.")]
         public virtual decimal InterestRate
         {
             get
@@ -2546,6 +2710,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CountryRegionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CountryRegionId
         {
             get
@@ -2568,6 +2733,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OverrideLeaseType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> OverrideLeaseType
         {
             get
@@ -2590,6 +2756,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LogisticsAddressCountryRegionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LogisticsAddressCountryRegionId
         {
             get
@@ -2612,6 +2779,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LowValueLease in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> LowValueLease
         {
             get
@@ -2634,6 +2802,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShortTermLease in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ShortTermLease
         {
             get
@@ -2656,6 +2825,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LeaseTermOverUsefulLife in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LeaseTermOverUsefulLife is required.")]
         public virtual decimal LeaseTermOverUsefulLife
         {
             get
@@ -2678,6 +2849,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllowDecreases in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AllowDecreases
         {
             get
@@ -2700,6 +2872,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PaymentAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PaymentAmount is required.")]
         public virtual decimal PaymentAmount
         {
             get
@@ -2722,6 +2896,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HoldoverFee in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "HoldoverFee is required.")]
         public virtual decimal HoldoverFee
         {
             get
@@ -2744,6 +2920,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MinLiability in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MinLiability is required.")]
         public virtual decimal MinLiability
         {
             get
@@ -2766,6 +2944,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InitialDirectCost in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "InitialDirectCost is required.")]
         public virtual decimal InitialDirectCost
         {
             get
@@ -2788,6 +2968,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ResidualValueGuarantee in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ResidualValueGuarantee is required.")]
         public virtual decimal ResidualValueGuarantee
         {
             get
@@ -2810,6 +2992,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CostPerMile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CostPerMile is required.")]
         public virtual decimal CostPerMile
         {
             get
@@ -2832,6 +3016,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Street in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Street
         {
             get
@@ -2854,6 +3039,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PreviousLeaseType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetLeaseType> PreviousLeaseType
         {
             get
@@ -2876,6 +3062,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LatePayment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LatePayment is required.")]
         public virtual decimal LatePayment
         {
             get
@@ -2898,6 +3086,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property County in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string County
         {
             get
@@ -2920,6 +3109,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BookTableBookType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BookTableBookType
         {
             get
@@ -2942,6 +3132,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BalloonPayment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYesCombo> BalloonPayment
         {
             get
@@ -2964,6 +3155,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SecurityDeposit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SecurityDeposit is required.")]
         public virtual decimal SecurityDeposit
         {
             get
@@ -2986,6 +3179,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LessorReferenceNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LessorReferenceNumber
         {
             get
@@ -3008,6 +3202,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NumberOfPeriods in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "NumberOfPeriods is required.")]
         public virtual int NumberOfPeriods
         {
             get
@@ -3030,6 +3226,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExtensionPayment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ExtensionPayment is required.")]
         public virtual decimal ExtensionPayment
         {
             get
@@ -3052,6 +3250,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LocationMemo in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LocationMemo
         {
             get
@@ -3074,6 +3273,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LeaseTermMonths in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LeaseTermMonths is required.")]
         public virtual int LeaseTermMonths
         {
             get
@@ -3096,6 +3297,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LeaseStatus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetLeaseLeaseStatus> LeaseStatus
         {
             get
@@ -3118,6 +3320,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property State in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string State
         {
             get
@@ -3140,6 +3343,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PeriodsRemaining in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PeriodsRemaining is required.")]
         public virtual int PeriodsRemaining
         {
             get
@@ -3162,6 +3367,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FixedExchangeRate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> FixedExchangeRate
         {
             get

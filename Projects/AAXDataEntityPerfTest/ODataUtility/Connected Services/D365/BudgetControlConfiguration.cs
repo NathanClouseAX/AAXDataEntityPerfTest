@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for BudgetControlConfigurationSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BudgetControlConfigurationSingle in the schema.
+    /// </summary>
     public partial class BudgetControlConfigurationSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<BudgetControlConfiguration>
     {
         /// <summary>
@@ -34,6 +34,48 @@ namespace Microsoft.Dynamics.DataEntities
         public BudgetControlConfigurationSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<BudgetControlConfiguration> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for BudgetControlCycleModelConfiguration in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlCycleModel> BudgetControlCycleModelConfiguration
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._BudgetControlCycleModelConfiguration == null))
+                {
+                    this._BudgetControlCycleModelConfiguration = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlCycleModel>(GetPath("BudgetControlCycleModelConfiguration"));
+                }
+                return this._BudgetControlCycleModelConfiguration;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlCycleModel> _BudgetControlCycleModelConfiguration;
+        /// <summary>
+        /// There are no comments for BudgetControlGroupConfiguration in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlGroup> BudgetControlGroupConfiguration
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._BudgetControlGroupConfiguration == null))
+                {
+                    this._BudgetControlGroupConfiguration = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlGroup>(GetPath("BudgetControlGroupConfiguration"));
+                }
+                return this._BudgetControlGroupConfiguration;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlGroup> _BudgetControlGroupConfiguration;
         /// <summary>
         /// There are no comments for BudgetControlDocumentsAndJournalsConfiguration in the schema.
         /// </summary>
@@ -56,10 +98,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlDocumentsAndJournals> _BudgetControlDocumentsAndJournalsConfiguration;
         /// <summary>
-        /// There are no comments for BudgetOverrideUserGroupOptionConfiguration in the schema.
+        /// There are no comments for BudgetControlRuleConfiguration in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlOverBudgetPermission> BudgetOverrideUserGroupOptionConfiguration
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlRule> BudgetControlRuleConfiguration
         {
             get
             {
@@ -67,57 +109,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._BudgetOverrideUserGroupOptionConfiguration == null))
+                if ((this._BudgetControlRuleConfiguration == null))
                 {
-                    this._BudgetOverrideUserGroupOptionConfiguration = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlOverBudgetPermission>(GetPath("BudgetOverrideUserGroupOptionConfiguration"));
+                    this._BudgetControlRuleConfiguration = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlRule>(GetPath("BudgetControlRuleConfiguration"));
                 }
-                return this._BudgetOverrideUserGroupOptionConfiguration;
+                return this._BudgetControlRuleConfiguration;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlOverBudgetPermission> _BudgetOverrideUserGroupOptionConfiguration;
-        /// <summary>
-        /// There are no comments for BudgetControlDimensionAttributeConfiguration in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlDimensionAttribute> BudgetControlDimensionAttributeConfiguration
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._BudgetControlDimensionAttributeConfiguration == null))
-                {
-                    this._BudgetControlDimensionAttributeConfiguration = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlDimensionAttribute>(GetPath("BudgetControlDimensionAttributeConfiguration"));
-                }
-                return this._BudgetControlDimensionAttributeConfiguration;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlDimensionAttribute> _BudgetControlDimensionAttributeConfiguration;
-        /// <summary>
-        /// There are no comments for BudgetControlGroupConfiguration in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlGroup> BudgetControlGroupConfiguration
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._BudgetControlGroupConfiguration == null))
-                {
-                    this._BudgetControlGroupConfiguration = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlGroup>(GetPath("BudgetControlGroupConfiguration"));
-                }
-                return this._BudgetControlGroupConfiguration;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlGroup> _BudgetControlGroupConfiguration;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlRule> _BudgetControlRuleConfiguration;
         /// <summary>
         /// There are no comments for BudgetControlConfigurationAccountStructure in the schema.
         /// </summary>
@@ -203,6 +203,48 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.BudgetCycleTimeSpanSingle _BudgetControlConfigurationBudgetCycleTimeSpan;
         /// <summary>
+        /// There are no comments for BudgetOverrideUserGroupOptionConfiguration in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlOverBudgetPermission> BudgetOverrideUserGroupOptionConfiguration
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._BudgetOverrideUserGroupOptionConfiguration == null))
+                {
+                    this._BudgetOverrideUserGroupOptionConfiguration = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlOverBudgetPermission>(GetPath("BudgetOverrideUserGroupOptionConfiguration"));
+                }
+                return this._BudgetOverrideUserGroupOptionConfiguration;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlOverBudgetPermission> _BudgetOverrideUserGroupOptionConfiguration;
+        /// <summary>
+        /// There are no comments for BudgetControlDimensionAttributeConfiguration in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlDimensionAttribute> BudgetControlDimensionAttributeConfiguration
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._BudgetControlDimensionAttributeConfiguration == null))
+                {
+                    this._BudgetControlDimensionAttributeConfiguration = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlDimensionAttribute>(GetPath("BudgetControlDimensionAttributeConfiguration"));
+                }
+                return this._BudgetControlDimensionAttributeConfiguration;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlDimensionAttribute> _BudgetControlDimensionAttributeConfiguration;
+        /// <summary>
         /// There are no comments for BudgetControlMessageLevelConfiguration in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -223,52 +265,10 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlMessageLevel> _BudgetControlMessageLevelConfiguration;
-        /// <summary>
-        /// There are no comments for BudgetControlRuleConfiguration in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlRule> BudgetControlRuleConfiguration
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._BudgetControlRuleConfiguration == null))
-                {
-                    this._BudgetControlRuleConfiguration = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlRule>(GetPath("BudgetControlRuleConfiguration"));
-                }
-                return this._BudgetControlRuleConfiguration;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlRule> _BudgetControlRuleConfiguration;
-        /// <summary>
-        /// There are no comments for BudgetControlCycleModelConfiguration in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlCycleModel> BudgetControlCycleModelConfiguration
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._BudgetControlCycleModelConfiguration == null))
-                {
-                    this._BudgetControlCycleModelConfiguration = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlCycleModel>(GetPath("BudgetControlCycleModelConfiguration"));
-                }
-                return this._BudgetControlCycleModelConfiguration;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlCycleModel> _BudgetControlCycleModelConfiguration;
     }
-        /// <summary>
-        /// There are no comments for BudgetControlConfiguration in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BudgetControlConfiguration in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// LegalEntityId
@@ -316,6 +316,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -338,6 +340,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LegalEntityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LegalEntityId is required.")]
         public virtual string LegalEntityId
         {
             get
@@ -360,6 +364,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Status in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.BudgetControlConfigurationStatus> Status
         {
             get
@@ -382,6 +387,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultBudgetCycleTimeSpanName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultBudgetCycleTimeSpanName
         {
             get
@@ -404,6 +410,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SubtractUnconfirmedPreencumbrancesInBudgetFundsAvailableCalculation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> SubtractUnconfirmedPreencumbrancesInBudgetFundsAvailableCalculation
         {
             get
@@ -426,6 +433,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SumDraftRevisionsInBudgetFundsAvailableCalculation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> SumDraftRevisionsInBudgetFundsAvailableCalculation
         {
             get
@@ -448,6 +456,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SubtractActualExpendituresInBudgetFundsAvailableCalculation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> SubtractActualExpendituresInBudgetFundsAvailableCalculation
         {
             get
@@ -470,6 +479,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultBudgetControlInterval in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.BudgetInterval> DefaultBudgetControlInterval
         {
             get
@@ -492,6 +502,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SumPreliminaryBudgetInBudgetFundsAvailableCalculation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> SumPreliminaryBudgetInBudgetFundsAvailableCalculation
         {
             get
@@ -514,6 +525,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SumDraftTransfersOutInBudgetFundsAvailableCalculation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> SumDraftTransfersOutInBudgetFundsAvailableCalculation
         {
             get
@@ -536,6 +548,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UseOnlyApportionedAmountInBudgetFundsAvailableCalculation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> UseOnlyApportionedAmountInBudgetFundsAvailableCalculation
         {
             get
@@ -558,6 +571,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultBudgetThresholdPercent in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DefaultBudgetThresholdPercent is required.")]
         public virtual decimal DefaultBudgetThresholdPercent
         {
             get
@@ -580,6 +595,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SumRevisionsInBudgetFundsAvailableCalculation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> SumRevisionsInBudgetFundsAvailableCalculation
         {
             get
@@ -602,6 +618,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SubtractUnpostedActualExpendituresInBudgetFundsAvailableCalculation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> SubtractUnpostedActualExpendituresInBudgetFundsAvailableCalculation
         {
             get
@@ -624,6 +641,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultBudgetCycleTimeSpanFiscalCalendarId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultBudgetCycleTimeSpanFiscalCalendarId
         {
             get
@@ -646,6 +664,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SubtractUnconfirmedEncumbrancesInBudgetFundsAvailableCalculation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> SubtractUnconfirmedEncumbrancesInBudgetFundsAvailableCalculation
         {
             get
@@ -668,6 +687,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SubtractEncumbrancesInBudgetFundsAvailableCalculation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> SubtractEncumbrancesInBudgetFundsAvailableCalculation
         {
             get
@@ -690,6 +710,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SubtractPreencumbrancesInBudgetFundsAvailableCalculation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> SubtractPreencumbrancesInBudgetFundsAvailableCalculation
         {
             get
@@ -712,6 +733,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SumTransfersInBudgetFundsAvailableCalculation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> SumTransfersInBudgetFundsAvailableCalculation
         {
             get
@@ -734,6 +756,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InUseBy in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string InUseBy
         {
             get
@@ -756,6 +779,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InUseSinceDateTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "InUseSinceDateTime is required.")]
         public virtual global::System.DateTimeOffset InUseSinceDateTime
         {
             get
@@ -778,6 +803,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisplayAMessageWhenExceedingBudgetThreshold in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DisplayAMessageWhenExceedingBudgetThreshold
         {
             get
@@ -800,6 +826,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SubtractUnconfirmedEncumbranceReductionsInBudgetFundsAvailableCalculation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> SubtractUnconfirmedEncumbranceReductionsInBudgetFundsAvailableCalculation
         {
             get
@@ -822,6 +849,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IncludeCarryforwardAmountsInBudgetFundsAvailableCalculation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IncludeCarryforwardAmountsInBudgetFundsAvailableCalculation
         {
             get
@@ -844,6 +872,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultBudgetManager in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultBudgetManager
         {
             get
@@ -866,6 +895,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountStructure in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccountStructure
         {
             get
@@ -888,6 +918,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SumDraftTransfersInInBudgetFundsAvailableCalculation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> SumDraftTransfersInInBudgetFundsAvailableCalculation
         {
             get
@@ -910,6 +941,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SumOriginalBudgetInBudgetFundsAvailableCalculation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> SumOriginalBudgetInBudgetFundsAvailableCalculation
         {
             get
@@ -929,75 +961,33 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnSumOriginalBudgetInBudgetFundsAvailableCalculationChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> value);
         partial void OnSumOriginalBudgetInBudgetFundsAvailableCalculationChanged();
         /// <summary>
-        /// There are no comments for Property BudgetControlDocumentsAndJournalsConfiguration in the schema.
+        /// There are no comments for Property BudgetControlCycleModelConfiguration in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlDocumentsAndJournals> BudgetControlDocumentsAndJournalsConfiguration
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlCycleModel> BudgetControlCycleModelConfiguration
         {
             get
             {
-                return this._BudgetControlDocumentsAndJournalsConfiguration;
+                return this._BudgetControlCycleModelConfiguration;
             }
             set
             {
-                this.OnBudgetControlDocumentsAndJournalsConfigurationChanging(value);
-                this._BudgetControlDocumentsAndJournalsConfiguration = value;
-                this.OnBudgetControlDocumentsAndJournalsConfigurationChanged();
-                this.OnPropertyChanged("BudgetControlDocumentsAndJournalsConfiguration");
+                this.OnBudgetControlCycleModelConfigurationChanging(value);
+                this._BudgetControlCycleModelConfiguration = value;
+                this.OnBudgetControlCycleModelConfigurationChanged();
+                this.OnPropertyChanged("BudgetControlCycleModelConfiguration");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlDocumentsAndJournals> _BudgetControlDocumentsAndJournalsConfiguration = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlDocumentsAndJournals>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnBudgetControlDocumentsAndJournalsConfigurationChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlDocumentsAndJournals> value);
-        partial void OnBudgetControlDocumentsAndJournalsConfigurationChanged();
-        /// <summary>
-        /// There are no comments for Property BudgetOverrideUserGroupOptionConfiguration in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlOverBudgetPermission> BudgetOverrideUserGroupOptionConfiguration
-        {
-            get
-            {
-                return this._BudgetOverrideUserGroupOptionConfiguration;
-            }
-            set
-            {
-                this.OnBudgetOverrideUserGroupOptionConfigurationChanging(value);
-                this._BudgetOverrideUserGroupOptionConfiguration = value;
-                this.OnBudgetOverrideUserGroupOptionConfigurationChanged();
-                this.OnPropertyChanged("BudgetOverrideUserGroupOptionConfiguration");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlOverBudgetPermission> _BudgetOverrideUserGroupOptionConfiguration = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlOverBudgetPermission>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnBudgetOverrideUserGroupOptionConfigurationChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlOverBudgetPermission> value);
-        partial void OnBudgetOverrideUserGroupOptionConfigurationChanged();
-        /// <summary>
-        /// There are no comments for Property BudgetControlDimensionAttributeConfiguration in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlDimensionAttribute> BudgetControlDimensionAttributeConfiguration
-        {
-            get
-            {
-                return this._BudgetControlDimensionAttributeConfiguration;
-            }
-            set
-            {
-                this.OnBudgetControlDimensionAttributeConfigurationChanging(value);
-                this._BudgetControlDimensionAttributeConfiguration = value;
-                this.OnBudgetControlDimensionAttributeConfigurationChanged();
-                this.OnPropertyChanged("BudgetControlDimensionAttributeConfiguration");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlDimensionAttribute> _BudgetControlDimensionAttributeConfiguration = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlDimensionAttribute>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnBudgetControlDimensionAttributeConfigurationChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlDimensionAttribute> value);
-        partial void OnBudgetControlDimensionAttributeConfigurationChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlCycleModel> _BudgetControlCycleModelConfiguration = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlCycleModel>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnBudgetControlCycleModelConfigurationChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlCycleModel> value);
+        partial void OnBudgetControlCycleModelConfigurationChanged();
         /// <summary>
         /// There are no comments for Property BudgetControlGroupConfiguration in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlGroup> BudgetControlGroupConfiguration
         {
             get
@@ -1017,9 +1007,57 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnBudgetControlGroupConfigurationChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlGroup> value);
         partial void OnBudgetControlGroupConfigurationChanged();
         /// <summary>
+        /// There are no comments for Property BudgetControlDocumentsAndJournalsConfiguration in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlDocumentsAndJournals> BudgetControlDocumentsAndJournalsConfiguration
+        {
+            get
+            {
+                return this._BudgetControlDocumentsAndJournalsConfiguration;
+            }
+            set
+            {
+                this.OnBudgetControlDocumentsAndJournalsConfigurationChanging(value);
+                this._BudgetControlDocumentsAndJournalsConfiguration = value;
+                this.OnBudgetControlDocumentsAndJournalsConfigurationChanged();
+                this.OnPropertyChanged("BudgetControlDocumentsAndJournalsConfiguration");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlDocumentsAndJournals> _BudgetControlDocumentsAndJournalsConfiguration = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlDocumentsAndJournals>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnBudgetControlDocumentsAndJournalsConfigurationChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlDocumentsAndJournals> value);
+        partial void OnBudgetControlDocumentsAndJournalsConfigurationChanged();
+        /// <summary>
+        /// There are no comments for Property BudgetControlRuleConfiguration in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRule> BudgetControlRuleConfiguration
+        {
+            get
+            {
+                return this._BudgetControlRuleConfiguration;
+            }
+            set
+            {
+                this.OnBudgetControlRuleConfigurationChanging(value);
+                this._BudgetControlRuleConfiguration = value;
+                this.OnBudgetControlRuleConfigurationChanged();
+                this.OnPropertyChanged("BudgetControlRuleConfiguration");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRule> _BudgetControlRuleConfiguration = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRule>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnBudgetControlRuleConfigurationChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRule> value);
+        partial void OnBudgetControlRuleConfigurationChanged();
+        /// <summary>
         /// There are no comments for Property BudgetControlConfigurationAccountStructure in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BudgetControlConfigurationAccountStructure is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.AccountStructure BudgetControlConfigurationAccountStructure
         {
             get
@@ -1042,6 +1080,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetControlConfigurationLedgerEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BudgetControlConfigurationLedgerEntity is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Ledger BudgetControlConfigurationLedgerEntity
         {
             get
@@ -1064,6 +1104,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetControlConfigurationDefaultBudgetManager in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.SystemUser BudgetControlConfigurationDefaultBudgetManager
         {
             get
@@ -1086,6 +1127,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetControlConfigurationBudgetCycleTimeSpan in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.BudgetCycleTimeSpan BudgetControlConfigurationBudgetCycleTimeSpan
         {
             get
@@ -1105,9 +1147,56 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnBudgetControlConfigurationBudgetCycleTimeSpanChanging(global::Microsoft.Dynamics.DataEntities.BudgetCycleTimeSpan value);
         partial void OnBudgetControlConfigurationBudgetCycleTimeSpanChanged();
         /// <summary>
+        /// There are no comments for Property BudgetOverrideUserGroupOptionConfiguration in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlOverBudgetPermission> BudgetOverrideUserGroupOptionConfiguration
+        {
+            get
+            {
+                return this._BudgetOverrideUserGroupOptionConfiguration;
+            }
+            set
+            {
+                this.OnBudgetOverrideUserGroupOptionConfigurationChanging(value);
+                this._BudgetOverrideUserGroupOptionConfiguration = value;
+                this.OnBudgetOverrideUserGroupOptionConfigurationChanged();
+                this.OnPropertyChanged("BudgetOverrideUserGroupOptionConfiguration");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlOverBudgetPermission> _BudgetOverrideUserGroupOptionConfiguration = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlOverBudgetPermission>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnBudgetOverrideUserGroupOptionConfigurationChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlOverBudgetPermission> value);
+        partial void OnBudgetOverrideUserGroupOptionConfigurationChanged();
+        /// <summary>
+        /// There are no comments for Property BudgetControlDimensionAttributeConfiguration in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlDimensionAttribute> BudgetControlDimensionAttributeConfiguration
+        {
+            get
+            {
+                return this._BudgetControlDimensionAttributeConfiguration;
+            }
+            set
+            {
+                this.OnBudgetControlDimensionAttributeConfigurationChanging(value);
+                this._BudgetControlDimensionAttributeConfiguration = value;
+                this.OnBudgetControlDimensionAttributeConfigurationChanged();
+                this.OnPropertyChanged("BudgetControlDimensionAttributeConfiguration");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlDimensionAttribute> _BudgetControlDimensionAttributeConfiguration = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlDimensionAttribute>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnBudgetControlDimensionAttributeConfigurationChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlDimensionAttribute> value);
+        partial void OnBudgetControlDimensionAttributeConfigurationChanged();
+        /// <summary>
         /// There are no comments for Property BudgetControlMessageLevelConfiguration in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlMessageLevel> BudgetControlMessageLevelConfiguration
         {
             get
@@ -1126,50 +1215,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlMessageLevel> _BudgetControlMessageLevelConfiguration = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlMessageLevel>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnBudgetControlMessageLevelConfigurationChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlMessageLevel> value);
         partial void OnBudgetControlMessageLevelConfigurationChanged();
-        /// <summary>
-        /// There are no comments for Property BudgetControlRuleConfiguration in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRule> BudgetControlRuleConfiguration
-        {
-            get
-            {
-                return this._BudgetControlRuleConfiguration;
-            }
-            set
-            {
-                this.OnBudgetControlRuleConfigurationChanging(value);
-                this._BudgetControlRuleConfiguration = value;
-                this.OnBudgetControlRuleConfigurationChanged();
-                this.OnPropertyChanged("BudgetControlRuleConfiguration");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRule> _BudgetControlRuleConfiguration = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRule>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnBudgetControlRuleConfigurationChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRule> value);
-        partial void OnBudgetControlRuleConfigurationChanged();
-        /// <summary>
-        /// There are no comments for Property BudgetControlCycleModelConfiguration in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlCycleModel> BudgetControlCycleModelConfiguration
-        {
-            get
-            {
-                return this._BudgetControlCycleModelConfiguration;
-            }
-            set
-            {
-                this.OnBudgetControlCycleModelConfigurationChanging(value);
-                this._BudgetControlCycleModelConfiguration = value;
-                this.OnBudgetControlCycleModelConfigurationChanged();
-                this.OnPropertyChanged("BudgetControlCycleModelConfiguration");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlCycleModel> _BudgetControlCycleModelConfiguration = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlCycleModel>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnBudgetControlCycleModelConfigurationChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlCycleModel> value);
-        partial void OnBudgetControlCycleModelConfigurationChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for PublishedRequestForQuotationHeaderSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PublishedRequestForQuotationHeaderSingle in the schema.
+    /// </summary>
     public partial class PublishedRequestForQuotationHeaderSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PublishedRequestForQuotationHeader>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.WorkerSingle _Worker;
     }
-        /// <summary>
-        /// There are no comments for PublishedRequestForQuotationHeader in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PublishedRequestForQuotationHeader in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// RFQCaseNumber
@@ -90,6 +90,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -112,6 +114,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RFQCaseNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RFQCaseNumber is required.")]
         public virtual string RFQCaseNumber
         {
             get
@@ -134,6 +138,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RFQCancellationDateTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RFQCancellationDateTime is required.")]
         public virtual global::System.DateTimeOffset RFQCancellationDateTime
         {
             get
@@ -156,6 +162,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CurrencyCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CurrencyCode
         {
             get
@@ -178,6 +185,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RFQBidType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PurchRFQBidType> RFQBidType
         {
             get
@@ -200,6 +208,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AreAlternateProductsAllowed in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AreAlternateProductsAllowed
         {
             get
@@ -222,6 +231,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RequestingDepartmentName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RequestingDepartmentName
         {
             get
@@ -244,6 +254,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DeliveryAddressName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DeliveryAddressName
         {
             get
@@ -266,6 +277,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RFQCaseTitle in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RFQCaseTitle
         {
             get
@@ -288,6 +300,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RFQSolicitationTypeName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RFQSolicitationTypeName
         {
             get
@@ -310,6 +323,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RFQExpirationDateTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RFQExpirationDateTime is required.")]
         public virtual global::System.DateTimeOffset RFQExpirationDateTime
         {
             get
@@ -332,6 +347,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AreOnlyInvitedVendorBidsAllowed in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AreOnlyInvitedVendorBidsAllowed
         {
             get
@@ -354,6 +370,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RFQCancellationReasonDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RFQCancellationReasonDescription
         {
             get
@@ -376,6 +393,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RequesterName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RequesterName
         {
             get
@@ -398,6 +416,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RFQDeliveryDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RFQDeliveryDate is required.")]
         public virtual global::System.DateTimeOffset RFQDeliveryDate
         {
             get
@@ -420,6 +440,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Worker in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.Worker Worker
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ProjectLedgerPostingDefinitionSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ProjectLedgerPostingDefinitionSingle in the schema.
+    /// </summary>
     public partial class ProjectLedgerPostingDefinitionSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ProjectLedgerPostingDefinition>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _DimensionCombination;
     }
-        /// <summary>
-        /// There are no comments for ProjectLedgerPostingDefinition in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ProjectLedgerPostingDefinition in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// ProjectAccountType
@@ -118,6 +118,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -140,6 +142,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProjectAccountType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ProjAccountType> ProjectAccountType
         {
             get
@@ -162,6 +165,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProjectId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProjectId is required.")]
         public virtual string ProjectId
         {
             get
@@ -184,6 +189,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProjectGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProjectGroup is required.")]
         public virtual string ProjectGroup
         {
             get
@@ -206,6 +213,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CategoryId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CategoryId is required.")]
         public virtual string CategoryId
         {
             get
@@ -228,6 +237,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CategoryGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CategoryGroup is required.")]
         public virtual string CategoryGroup
         {
             get
@@ -250,6 +261,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TaxGroupId is required.")]
         public virtual string TaxGroupId
         {
             get
@@ -272,6 +285,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProjectContractId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProjectContractId is required.")]
         public virtual string ProjectContractId
         {
             get
@@ -294,6 +309,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FundingSourceId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FundingSourceId is required.")]
         public virtual string FundingSourceId
         {
             get
@@ -316,6 +333,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BorrowingLegalEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BorrowingLegalEntity is required.")]
         public virtual string BorrowingLegalEntity
         {
             get
@@ -338,6 +357,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LendingLegalEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LendingLegalEntity is required.")]
         public virtual string LendingLegalEntity
         {
             get
@@ -360,6 +381,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MainAccountIdDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MainAccountIdDisplayValue
         {
             get
@@ -382,6 +404,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination DimensionCombination
         {
             get

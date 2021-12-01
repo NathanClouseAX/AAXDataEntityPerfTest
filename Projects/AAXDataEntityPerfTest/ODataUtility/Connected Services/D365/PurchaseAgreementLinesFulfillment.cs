@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for PurchaseAgreementLinesFulfillmentSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PurchaseAgreementLinesFulfillmentSingle in the schema.
+    /// </summary>
     public partial class PurchaseAgreementLinesFulfillmentSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PurchaseAgreementLinesFulfillment>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.PurchaseAgreementLineV2Single _PurchPurchaseAgreementLineV2;
     }
-        /// <summary>
-        /// There are no comments for PurchaseAgreementLinesFulfillment in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PurchaseAgreementLinesFulfillment in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// PurchaseAgreementId
@@ -169,6 +169,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -191,6 +193,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchaseAgreementId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PurchaseAgreementId is required.")]
         public virtual string PurchaseAgreementId
         {
             get
@@ -213,6 +217,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LineNumber is required.")]
         public virtual decimal LineNumber
         {
             get
@@ -235,6 +241,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InvoicedAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "InvoicedAmount is required.")]
         public virtual decimal InvoicedAmount
         {
             get
@@ -257,6 +265,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InvoicedQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "InvoicedQuantity is required.")]
         public virtual decimal InvoicedQuantity
         {
             get
@@ -279,6 +289,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RemainingAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RemainingAmount is required.")]
         public virtual decimal RemainingAmount
         {
             get
@@ -301,6 +313,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReleasedAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReleasedAmount is required.")]
         public virtual decimal ReleasedAmount
         {
             get
@@ -323,6 +337,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RemainingCatchWeightQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RemainingCatchWeightQuantity is required.")]
         public virtual decimal RemainingCatchWeightQuantity
         {
             get
@@ -345,6 +361,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CommittedCatchWeightQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CommittedCatchWeightQuantity is required.")]
         public virtual decimal CommittedCatchWeightQuantity
         {
             get
@@ -367,6 +385,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReceivedAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReceivedAmount is required.")]
         public virtual decimal ReceivedAmount
         {
             get
@@ -389,6 +409,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CommittedAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CommittedAmount is required.")]
         public virtual decimal CommittedAmount
         {
             get
@@ -411,6 +433,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReleasedCatchWeightQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReleasedCatchWeightQuantity is required.")]
         public virtual decimal ReleasedCatchWeightQuantity
         {
             get
@@ -433,6 +457,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InvoicedCatchWeightQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "InvoicedCatchWeightQuantity is required.")]
         public virtual decimal InvoicedCatchWeightQuantity
         {
             get
@@ -455,6 +481,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnitSymbol in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string UnitSymbol
         {
             get
@@ -477,6 +504,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReleasedQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReleasedQuantity is required.")]
         public virtual decimal ReleasedQuantity
         {
             get
@@ -499,6 +528,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchaseAgreementLegalEntityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PurchaseAgreementLegalEntityId
         {
             get
@@ -521,6 +551,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CommittedQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CommittedQuantity is required.")]
         public virtual decimal CommittedQuantity
         {
             get
@@ -543,6 +575,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReceivedQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReceivedQuantity is required.")]
         public virtual decimal ReceivedQuantity
         {
             get
@@ -565,6 +599,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RemainingQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RemainingQuantity is required.")]
         public virtual decimal RemainingQuantity
         {
             get
@@ -587,6 +623,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReceivedCatchWeightQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReceivedCatchWeightQuantity is required.")]
         public virtual decimal ReceivedCatchWeightQuantity
         {
             get
@@ -609,6 +647,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchaseAgreementLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PurchaseAgreementLine is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.PurchaseAgreementLine PurchaseAgreementLine
         {
             get
@@ -631,6 +671,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchPurchaseAgreementLineV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PurchPurchaseAgreementLineV2 is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.PurchaseAgreementLineV2 PurchPurchaseAgreementLineV2
         {
             get

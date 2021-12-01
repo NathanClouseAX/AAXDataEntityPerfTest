@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for WithholdingTaxCodeSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for WithholdingTaxCodeSingle in the schema.
+    /// </summary>
     public partial class WithholdingTaxCodeSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<WithholdingTaxCode>
     {
         /// <summary>
@@ -55,27 +55,6 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WithholdingGroupData> _WithholdingGroupData;
-        /// <summary>
-        /// There are no comments for WithholdingTaxCodeLimit in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WithholdingTaxCodeLimit> WithholdingTaxCodeLimit
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._WithholdingTaxCodeLimit == null))
-                {
-                    this._WithholdingTaxCodeLimit = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.WithholdingTaxCodeLimit>(GetPath("WithholdingTaxCodeLimit"));
-                }
-                return this._WithholdingTaxCodeLimit;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WithholdingTaxCodeLimit> _WithholdingTaxCodeLimit;
         /// <summary>
         /// There are no comments for WithholdingTaxCodeValue in the schema.
         /// </summary>
@@ -160,10 +139,31 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.WithholdingPeriodSingle _WithholdingPeriod;
-    }
         /// <summary>
-        /// There are no comments for WithholdingTaxCode in the schema.
+        /// There are no comments for WithholdingTaxCodeLimit in the schema.
         /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WithholdingTaxCodeLimit> WithholdingTaxCodeLimit
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._WithholdingTaxCodeLimit == null))
+                {
+                    this._WithholdingTaxCodeLimit = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.WithholdingTaxCodeLimit>(GetPath("WithholdingTaxCodeLimit"));
+                }
+                return this._WithholdingTaxCodeLimit;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WithholdingTaxCodeLimit> _WithholdingTaxCodeLimit;
+    }
+    /// <summary>
+    /// There are no comments for WithholdingTaxCode in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// WithholdingCode
@@ -191,6 +191,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -213,6 +215,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WithholdingCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WithholdingCode is required.")]
         public virtual string WithholdingCode
         {
             get
@@ -235,6 +239,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WithholdingComponentGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string WithholdingComponentGroup
         {
             get
@@ -257,6 +262,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WithholdingTaxBase in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TaxWithholdBaseType> WithholdingTaxBase
         {
             get
@@ -279,6 +285,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WithholdingTaxName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string WithholdingTaxName
         {
             get
@@ -301,6 +308,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BrazilianTaxWithholdType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TaxWithholdType_BR> BrazilianTaxWithholdType
         {
             get
@@ -323,6 +331,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WithholdingTaxRoundOffType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RoundOffType> WithholdingTaxRoundOffType
         {
             get
@@ -345,6 +354,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxWithholdAccountGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxWithholdAccountGroup
         {
             get
@@ -367,6 +377,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SettlementPeriod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SettlementPeriod
         {
             get
@@ -389,6 +400,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxWithholdPeriod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxWithholdPeriod
         {
             get
@@ -411,6 +423,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MainAccountIdDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MainAccountIdDisplayValue
         {
             get
@@ -433,6 +446,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TaxWithholdCodeType_IN> TaxType
         {
             get
@@ -455,6 +469,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BrazilianTaxWithholdPeriod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BrazilianTaxWithholdPeriod
         {
             get
@@ -477,6 +492,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WithholdingTaxComponent in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string WithholdingTaxComponent
         {
             get
@@ -499,6 +515,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WithholdingTaxReceivableDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string WithholdingTaxReceivableDisplayValue
         {
             get
@@ -521,6 +538,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ApplyThreshold in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ApplyThreshold
         {
             get
@@ -543,6 +561,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CurrencyCodeID in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CurrencyCodeID
         {
             get
@@ -565,6 +584,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SettlementAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SettlementAccountDisplayValue
         {
             get
@@ -587,6 +607,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReceivableAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ReceivableAccountDisplayValue
         {
             get
@@ -609,6 +630,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WithholdingTaxRoundOff in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WithholdingTaxRoundOff is required.")]
         public virtual decimal WithholdingTaxRoundOff
         {
             get
@@ -631,6 +654,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WithholdingGroupData in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WithholdingGroupData> WithholdingGroupData
         {
             get
@@ -650,31 +674,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnWithholdingGroupDataChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WithholdingGroupData> value);
         partial void OnWithholdingGroupDataChanged();
         /// <summary>
-        /// There are no comments for Property WithholdingTaxCodeLimit in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WithholdingTaxCodeLimit> WithholdingTaxCodeLimit
-        {
-            get
-            {
-                return this._WithholdingTaxCodeLimit;
-            }
-            set
-            {
-                this.OnWithholdingTaxCodeLimitChanging(value);
-                this._WithholdingTaxCodeLimit = value;
-                this.OnWithholdingTaxCodeLimitChanged();
-                this.OnPropertyChanged("WithholdingTaxCodeLimit");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WithholdingTaxCodeLimit> _WithholdingTaxCodeLimit = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WithholdingTaxCodeLimit>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnWithholdingTaxCodeLimitChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WithholdingTaxCodeLimit> value);
-        partial void OnWithholdingTaxCodeLimitChanged();
-        /// <summary>
         /// There are no comments for Property WithholdingTaxCodeValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WithholdingTaxCodeValue> WithholdingTaxCodeValue
         {
             get
@@ -697,6 +700,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WithholdLedgerAccountGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.WithholdLedgerAccountGroup WithholdLedgerAccountGroup
         {
             get
@@ -719,6 +723,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination DimensionCombination
         {
             get
@@ -741,6 +746,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WithholdingPeriod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.WithholdingPeriod WithholdingPeriod
         {
             get
@@ -759,6 +765,29 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.WithholdingPeriod _WithholdingPeriod;
         partial void OnWithholdingPeriodChanging(global::Microsoft.Dynamics.DataEntities.WithholdingPeriod value);
         partial void OnWithholdingPeriodChanged();
+        /// <summary>
+        /// There are no comments for Property WithholdingTaxCodeLimit in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WithholdingTaxCodeLimit> WithholdingTaxCodeLimit
+        {
+            get
+            {
+                return this._WithholdingTaxCodeLimit;
+            }
+            set
+            {
+                this.OnWithholdingTaxCodeLimitChanging(value);
+                this._WithholdingTaxCodeLimit = value;
+                this.OnWithholdingTaxCodeLimitChanged();
+                this.OnPropertyChanged("WithholdingTaxCodeLimit");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WithholdingTaxCodeLimit> _WithholdingTaxCodeLimit = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WithholdingTaxCodeLimit>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnWithholdingTaxCodeLimitChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WithholdingTaxCodeLimit> value);
+        partial void OnWithholdingTaxCodeLimitChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

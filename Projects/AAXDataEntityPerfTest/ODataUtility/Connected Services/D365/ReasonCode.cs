@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ReasonCodeSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ReasonCodeSingle in the schema.
+    /// </summary>
     public partial class ReasonCodeSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ReasonCode>
     {
         /// <summary>
@@ -35,10 +35,10 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for Applicants in the schema.
+        /// There are no comments for AbsenceReason in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Applicant> Applicants
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AbsenceReason> AbsenceReason
         {
             get
             {
@@ -46,20 +46,20 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._Applicants == null))
+                if ((this._AbsenceReason == null))
                 {
-                    this._Applicants = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.Applicant>(GetPath("Applicants"));
+                    this._AbsenceReason = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AbsenceReason>(GetPath("AbsenceReason"));
                 }
-                return this._Applicants;
+                return this._AbsenceReason;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Applicant> _Applicants;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AbsenceReason> _AbsenceReason;
         /// <summary>
-        /// There are no comments for PersonSkillMapping in the schema.
+        /// There are no comments for Positions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonSkillMapping> PersonSkillMapping
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Position> Positions
         {
             get
             {
@@ -67,15 +67,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._PersonSkillMapping == null))
+                if ((this._Positions == null))
                 {
-                    this._PersonSkillMapping = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PersonSkillMapping>(GetPath("PersonSkillMapping"));
+                    this._Positions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.Position>(GetPath("Positions"));
                 }
-                return this._PersonSkillMapping;
+                return this._Positions;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonSkillMapping> _PersonSkillMapping;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Position> _Positions;
         /// <summary>
         /// There are no comments for EmploymentDetail in the schema.
         /// </summary>
@@ -98,10 +98,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EmploymentDetail> _EmploymentDetail;
         /// <summary>
-        /// There are no comments for Positions in the schema.
+        /// There are no comments for Applicants in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PositionV2> Positions
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Applicant> Applicants
         {
             get
             {
@@ -109,15 +109,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._Positions == null))
+                if ((this._Applicants == null))
                 {
-                    this._Positions = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PositionV2>(GetPath("Positions"));
+                    this._Applicants = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.Applicant>(GetPath("Applicants"));
                 }
-                return this._Positions;
+                return this._Applicants;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PositionV2> _Positions;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Applicant> _Applicants;
         /// <summary>
         /// There are no comments for Applications in the schema.
         /// </summary>
@@ -140,10 +140,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.Application> _Applications;
         /// <summary>
-        /// There are no comments for AbsenceReason in the schema.
+        /// There are no comments for PersonSkillMapping in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AbsenceReason> AbsenceReason
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonSkillMapping> PersonSkillMapping
         {
             get
             {
@@ -151,19 +151,19 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._AbsenceReason == null))
+                if ((this._PersonSkillMapping == null))
                 {
-                    this._AbsenceReason = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.AbsenceReason>(GetPath("AbsenceReason"));
+                    this._PersonSkillMapping = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PersonSkillMapping>(GetPath("PersonSkillMapping"));
                 }
-                return this._AbsenceReason;
+                return this._PersonSkillMapping;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AbsenceReason> _AbsenceReason;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonSkillMapping> _PersonSkillMapping;
     }
-        /// <summary>
-        /// There are no comments for ReasonCode in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ReasonCode in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// ReasonCodeId
     /// </KeyProperties>
@@ -186,6 +186,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReasonCodeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReasonCodeId is required.")]
         public virtual string ReasonCodeId
         {
             get
@@ -208,6 +210,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsSkillMappingApplicable in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsSkillMappingApplicable
         {
             get
@@ -230,6 +233,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsCreateNewPositionApplicable in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsCreateNewPositionApplicable
         {
             get
@@ -252,6 +256,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsCompensationApplicable in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsCompensationApplicable
         {
             get
@@ -274,6 +279,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsTerminationApplicable in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsTerminationApplicable
         {
             get
@@ -296,6 +302,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsTransferApplicable in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsTransferApplicable
         {
             get
@@ -318,6 +325,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -340,6 +348,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsAbsenceApplicable in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsAbsenceApplicable
         {
             get
@@ -362,6 +371,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsEditPositionApplicable in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsEditPositionApplicable
         {
             get
@@ -384,6 +394,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Type in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmReasonCodeType> Type
         {
             get
@@ -406,6 +417,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsApplicationApplicable in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsApplicationApplicable
         {
             get
@@ -428,6 +440,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsHireApplicable in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsHireApplicable
         {
             get
@@ -447,53 +460,56 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnIsHireApplicableChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> value);
         partial void OnIsHireApplicableChanged();
         /// <summary>
-        /// There are no comments for Property Applicants in the schema.
+        /// There are no comments for Property AbsenceReason in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Applicant> Applicants
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AbsenceReason> AbsenceReason
         {
             get
             {
-                return this._Applicants;
+                return this._AbsenceReason;
             }
             set
             {
-                this.OnApplicantsChanging(value);
-                this._Applicants = value;
-                this.OnApplicantsChanged();
-                this.OnPropertyChanged("Applicants");
+                this.OnAbsenceReasonChanging(value);
+                this._AbsenceReason = value;
+                this.OnAbsenceReasonChanged();
+                this.OnPropertyChanged("AbsenceReason");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Applicant> _Applicants = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Applicant>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnApplicantsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Applicant> value);
-        partial void OnApplicantsChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AbsenceReason> _AbsenceReason = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AbsenceReason>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnAbsenceReasonChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AbsenceReason> value);
+        partial void OnAbsenceReasonChanged();
         /// <summary>
-        /// There are no comments for Property PersonSkillMapping in the schema.
+        /// There are no comments for Property Positions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonSkillMapping> PersonSkillMapping
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Position> Positions
         {
             get
             {
-                return this._PersonSkillMapping;
+                return this._Positions;
             }
             set
             {
-                this.OnPersonSkillMappingChanging(value);
-                this._PersonSkillMapping = value;
-                this.OnPersonSkillMappingChanged();
-                this.OnPropertyChanged("PersonSkillMapping");
+                this.OnPositionsChanging(value);
+                this._Positions = value;
+                this.OnPositionsChanged();
+                this.OnPropertyChanged("Positions");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonSkillMapping> _PersonSkillMapping = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonSkillMapping>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPersonSkillMappingChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonSkillMapping> value);
-        partial void OnPersonSkillMappingChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Position> _Positions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Position>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPositionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Position> value);
+        partial void OnPositionsChanged();
         /// <summary>
         /// There are no comments for Property EmploymentDetail in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EmploymentDetail> EmploymentDetail
         {
             get
@@ -513,31 +529,33 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnEmploymentDetailChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EmploymentDetail> value);
         partial void OnEmploymentDetailChanged();
         /// <summary>
-        /// There are no comments for Property Positions in the schema.
+        /// There are no comments for Property Applicants in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PositionV2> Positions
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Applicant> Applicants
         {
             get
             {
-                return this._Positions;
+                return this._Applicants;
             }
             set
             {
-                this.OnPositionsChanging(value);
-                this._Positions = value;
-                this.OnPositionsChanged();
-                this.OnPropertyChanged("Positions");
+                this.OnApplicantsChanging(value);
+                this._Applicants = value;
+                this.OnApplicantsChanged();
+                this.OnPropertyChanged("Applicants");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PositionV2> _Positions = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PositionV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPositionsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PositionV2> value);
-        partial void OnPositionsChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Applicant> _Applicants = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Applicant>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnApplicantsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Applicant> value);
+        partial void OnApplicantsChanged();
         /// <summary>
         /// There are no comments for Property Applications in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Application> Applications
         {
             get
@@ -557,27 +575,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnApplicationsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.Application> value);
         partial void OnApplicationsChanged();
         /// <summary>
-        /// There are no comments for Property AbsenceReason in the schema.
+        /// There are no comments for Property PersonSkillMapping in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AbsenceReason> AbsenceReason
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonSkillMapping> PersonSkillMapping
         {
             get
             {
-                return this._AbsenceReason;
+                return this._PersonSkillMapping;
             }
             set
             {
-                this.OnAbsenceReasonChanging(value);
-                this._AbsenceReason = value;
-                this.OnAbsenceReasonChanged();
-                this.OnPropertyChanged("AbsenceReason");
+                this.OnPersonSkillMappingChanging(value);
+                this._PersonSkillMapping = value;
+                this.OnPersonSkillMappingChanged();
+                this.OnPropertyChanged("PersonSkillMapping");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AbsenceReason> _AbsenceReason = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AbsenceReason>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnAbsenceReasonChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AbsenceReason> value);
-        partial void OnAbsenceReasonChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonSkillMapping> _PersonSkillMapping = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonSkillMapping>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPersonSkillMappingChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonSkillMapping> value);
+        partial void OnPersonSkillMappingChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

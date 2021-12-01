@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for PayStatementTaxLineSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PayStatementTaxLineSingle in the schema.
+    /// </summary>
     public partial class PayStatementTaxLineSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PayStatementTaxLine>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.PayStatementHeaderSingle _PayStatementHeader;
     }
-        /// <summary>
-        /// There are no comments for PayStatementTaxLine in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PayStatementTaxLine in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// PayStatementNumber
     /// LineNumber
@@ -101,6 +101,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayStatementNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PayStatementNumber is required.")]
         public virtual string PayStatementNumber
         {
             get
@@ -123,6 +125,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LineNumber is required.")]
         public virtual decimal LineNumber
         {
             get
@@ -145,6 +149,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AmountInTransactionCurrency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AmountInTransactionCurrency is required.")]
         public virtual decimal AmountInTransactionCurrency
         {
             get
@@ -167,6 +173,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EmployerContribution in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> EmployerContribution
         {
             get
@@ -189,6 +196,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxCodeCountryRegionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxCodeCountryRegionId
         {
             get
@@ -211,6 +219,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountingDistributionLegalEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccountingDistributionLegalEntity
         {
             get
@@ -233,6 +242,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PositionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PositionId
         {
             get
@@ -255,6 +265,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineOverridden in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> LineOverridden
         {
             get
@@ -277,6 +288,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Company in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Company
         {
             get
@@ -299,6 +311,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountingDistributionTemplateId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccountingDistributionTemplateId
         {
             get
@@ -321,6 +334,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxCodeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxCodeId
         {
             get
@@ -343,6 +357,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountingDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AccountingDate is required.")]
         public virtual global::System.DateTimeOffset AccountingDate
         {
             get
@@ -365,6 +381,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayStatementLineSource in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PayrollPayStatementLineSource> PayStatementLineSource
         {
             get
@@ -387,6 +404,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReversedPayStatementNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ReversedPayStatementNumber
         {
             get
@@ -409,6 +427,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineToRemove in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> LineToRemove
         {
             get
@@ -431,6 +450,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReversedPayStatementLineNum in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReversedPayStatementLineNum is required.")]
         public virtual decimal ReversedPayStatementLineNum
         {
             get
@@ -453,6 +474,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayStatementHeader in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PayStatementHeader is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.PayStatementHeader PayStatementHeader
         {
             get

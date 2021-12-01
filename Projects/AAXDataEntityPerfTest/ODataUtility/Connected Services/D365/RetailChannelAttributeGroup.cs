@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RetailChannelAttributeGroupSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailChannelAttributeGroupSingle in the schema.
+    /// </summary>
     public partial class RetailChannelAttributeGroupSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RetailChannelAttributeGroup>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.OnlineChannelSingle _OnlineChannel;
     }
-        /// <summary>
-        /// There are no comments for RetailChannelAttributeGroup in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailChannelAttributeGroup in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// OMOperatingUnitNumber
     /// AttributeGroupName
@@ -85,6 +85,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OMOperatingUnitNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "OMOperatingUnitNumber is required.")]
         public virtual string OMOperatingUnitNumber
         {
             get
@@ -107,6 +109,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AttributeGroupName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AttributeGroupName is required.")]
         public virtual string AttributeGroupName
         {
             get
@@ -129,6 +133,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AttributeModifier in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailChannelAttributeModifier> AttributeModifier
         {
             get
@@ -151,6 +156,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AttributeAppliesToModifier in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailAttributeAppliesToModifier> AttributeAppliesToModifier
         {
             get
@@ -173,6 +179,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OnlineChannel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.OnlineChannel OnlineChannel
         {
             get

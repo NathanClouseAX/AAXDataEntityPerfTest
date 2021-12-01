@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for WithholdLedgerAccountGroupSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for WithholdLedgerAccountGroupSingle in the schema.
+    /// </summary>
     public partial class WithholdLedgerAccountGroupSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<WithholdLedgerAccountGroup>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WithholdingTaxCode> _WithholdingTaxCode;
     }
-        /// <summary>
-        /// There are no comments for WithholdLedgerAccountGroup in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for WithholdLedgerAccountGroup in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// TaxWithholdAccountGroup
@@ -105,6 +105,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -127,6 +129,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxWithholdAccountGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TaxWithholdAccountGroup is required.")]
         public virtual string TaxWithholdAccountGroup
         {
             get
@@ -149,6 +153,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Name
         {
             get
@@ -171,6 +176,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExpenseLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ExpenseLedgerDimensionDisplayValue
         {
             get
@@ -193,6 +199,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxWithholdLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxWithholdLedgerDimensionDisplayValue
         {
             get
@@ -215,6 +222,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxWithhodlSettlementLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxWithhodlSettlementLedgerDimensionDisplayValue
         {
             get
@@ -237,6 +245,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxWithholdOffsetLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxWithholdOffsetLedgerDimensionDisplayValue
         {
             get
@@ -259,6 +268,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination DimensionCombination
         {
             get
@@ -281,6 +291,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WithholdingTaxCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WithholdingTaxCode> WithholdingTaxCode
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for SalesOrderOriginCodeSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for SalesOrderOriginCodeSingle in the schema.
+    /// </summary>
     public partial class SalesOrderOriginCodeSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<SalesOrderOriginCode>
     {
         /// <summary>
@@ -38,7 +38,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for SalesOrderHeaders in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesOrderHeaderV2> SalesOrderHeaders
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesOrderHeaderV2EntityReadOnlyNoGlobalization> SalesOrderHeaders
         {
             get
             {
@@ -48,18 +48,18 @@ namespace Microsoft.Dynamics.DataEntities
                 }
                 if ((this._SalesOrderHeaders == null))
                 {
-                    this._SalesOrderHeaders = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.SalesOrderHeaderV2>(GetPath("SalesOrderHeaders"));
+                    this._SalesOrderHeaders = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.SalesOrderHeaderV2EntityReadOnlyNoGlobalization>(GetPath("SalesOrderHeaders"));
                 }
                 return this._SalesOrderHeaders;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesOrderHeaderV2> _SalesOrderHeaders;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesOrderHeaderV2EntityReadOnlyNoGlobalization> _SalesOrderHeaders;
         /// <summary>
         /// There are no comments for SalesInvoiceHeaders in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesInvoiceJournalHeader> SalesInvoiceHeaders
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesInvoiceHeader> SalesInvoiceHeaders
         {
             get
             {
@@ -69,17 +69,17 @@ namespace Microsoft.Dynamics.DataEntities
                 }
                 if ((this._SalesInvoiceHeaders == null))
                 {
-                    this._SalesInvoiceHeaders = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.SalesInvoiceJournalHeader>(GetPath("SalesInvoiceHeaders"));
+                    this._SalesInvoiceHeaders = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.SalesInvoiceHeader>(GetPath("SalesInvoiceHeaders"));
                 }
                 return this._SalesInvoiceHeaders;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesInvoiceJournalHeader> _SalesInvoiceHeaders;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.SalesInvoiceHeader> _SalesInvoiceHeaders;
     }
-        /// <summary>
-        /// There are no comments for SalesOrderOriginCode in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for SalesOrderOriginCode in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// OriginCode
@@ -105,6 +105,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -127,6 +129,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OriginCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "OriginCode is required.")]
         public virtual string OriginCode
         {
             get
@@ -149,6 +153,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OriginDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OriginDescription
         {
             get
@@ -171,6 +176,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsOriginTypeAssigned in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsOriginTypeAssigned
         {
             get
@@ -193,6 +199,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OriginType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.SalesOriginType> OriginType
         {
             get
@@ -215,7 +222,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesOrderHeaders in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesOrderHeaderV2> SalesOrderHeaders
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesOrderHeaderV2EntityReadOnlyNoGlobalization> SalesOrderHeaders
         {
             get
             {
@@ -230,14 +238,15 @@ namespace Microsoft.Dynamics.DataEntities
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesOrderHeaderV2> _SalesOrderHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesOrderHeaderV2>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnSalesOrderHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesOrderHeaderV2> value);
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesOrderHeaderV2EntityReadOnlyNoGlobalization> _SalesOrderHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesOrderHeaderV2EntityReadOnlyNoGlobalization>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnSalesOrderHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesOrderHeaderV2EntityReadOnlyNoGlobalization> value);
         partial void OnSalesOrderHeadersChanged();
         /// <summary>
         /// There are no comments for Property SalesInvoiceHeaders in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesInvoiceJournalHeader> SalesInvoiceHeaders
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesInvoiceHeader> SalesInvoiceHeaders
         {
             get
             {
@@ -252,8 +261,8 @@ namespace Microsoft.Dynamics.DataEntities
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesInvoiceJournalHeader> _SalesInvoiceHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesInvoiceJournalHeader>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnSalesInvoiceHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesInvoiceJournalHeader> value);
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesInvoiceHeader> _SalesInvoiceHeaders = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesInvoiceHeader>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnSalesInvoiceHeadersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.SalesInvoiceHeader> value);
         partial void OnSalesInvoiceHeadersChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed

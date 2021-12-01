@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for WithholdingPeriodSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for WithholdingPeriodSingle in the schema.
+    /// </summary>
     public partial class WithholdingPeriodSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<WithholdingPeriod>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WithholdingTaxCode> _WithholdingTaxCode;
     }
-        /// <summary>
-        /// There are no comments for WithholdingPeriod in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for WithholdingPeriod in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// TaxWithholdPeriod
@@ -92,6 +92,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -114,6 +116,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxWithholdPeriod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TaxWithholdPeriod is required.")]
         public virtual string TaxWithholdPeriod
         {
             get
@@ -136,6 +140,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxWithholdFromDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TaxWithholdFromDate is required.")]
         public virtual global::System.DateTimeOffset TaxWithholdFromDate
         {
             get
@@ -158,6 +164,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxWithholdToDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TaxWithholdToDate is required.")]
         public virtual global::System.DateTimeOffset TaxWithholdToDate
         {
             get
@@ -180,6 +188,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxAuthority in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxAuthority
         {
             get
@@ -202,6 +211,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Name
         {
             get
@@ -224,6 +234,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PaymentCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PaymentCode
         {
             get
@@ -246,6 +257,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PeriodUnit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PeriodUnit> PeriodUnit
         {
             get
@@ -268,6 +280,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property QtyUnit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "QtyUnit is required.")]
         public virtual int QtyUnit
         {
             get
@@ -290,6 +304,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WithholdingTaxCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WithholdingTaxCode> WithholdingTaxCode
         {
             get

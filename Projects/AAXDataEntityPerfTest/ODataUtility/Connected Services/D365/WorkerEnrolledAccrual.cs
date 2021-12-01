@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for WorkerEnrolledAccrualSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for WorkerEnrolledAccrualSingle in the schema.
+    /// </summary>
     public partial class WorkerEnrolledAccrualSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<WorkerEnrolledAccrual>
     {
         /// <summary>
@@ -98,9 +98,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WorkerAccrualAdjustment> _WorkerAccrualAdjustments;
     }
-        /// <summary>
-        /// There are no comments for WorkerEnrolledAccrual in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for WorkerEnrolledAccrual in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// AccrualId
@@ -148,6 +148,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -170,6 +172,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccrualId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AccrualId is required.")]
         public virtual string AccrualId
         {
             get
@@ -192,6 +196,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PersonnelNumber is required.")]
         public virtual string PersonnelNumber
         {
             get
@@ -214,6 +220,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccrualDateBasis in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PayrollAccrualDateBasis> AccrualDateBasis
         {
             get
@@ -236,6 +243,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsAccrualStopped in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsAccrualStopped
         {
             get
@@ -258,6 +266,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomAccuralDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CustomAccuralDate is required.")]
         public virtual global::System.DateTimeOffset CustomAccuralDate
         {
             get
@@ -280,6 +290,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsUsageStopped in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsUsageStopped
         {
             get
@@ -302,6 +313,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayrollAccrualPlan in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PayrollAccrualPlan is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.AccrualPlan PayrollAccrualPlan
         {
             get
@@ -324,6 +337,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HcmWorker in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "HcmWorker is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Worker HcmWorker
         {
             get
@@ -346,6 +361,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkerAccrualAdjustments in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerAccrualAdjustment> WorkerAccrualAdjustments
         {
             get

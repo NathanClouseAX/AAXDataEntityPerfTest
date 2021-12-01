@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for JobTaskAssignmentSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for JobTaskAssignmentSingle in the schema.
+    /// </summary>
     public partial class JobTaskAssignmentSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<JobTaskAssignment>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.JobTaskSingle _JobTask;
     }
-        /// <summary>
-        /// There are no comments for JobTaskAssignment in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for JobTaskAssignment in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// JobId
     /// JobTaskId
@@ -117,6 +117,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JobId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "JobId is required.")]
         public virtual string JobId
         {
             get
@@ -139,6 +141,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JobTaskId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "JobTaskId is required.")]
         public virtual string JobTaskId
         {
             get
@@ -161,6 +165,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Note in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Note
         {
             get
@@ -183,6 +188,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Job in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Job is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Job Job
         {
             get
@@ -205,6 +212,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JobTask in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "JobTask is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.JobTask JobTask
         {
             get

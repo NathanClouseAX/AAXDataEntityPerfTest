@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for BillOfMaterialsVersionV2Single in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BillOfMaterialsVersionV2Single in the schema.
+    /// </summary>
     public partial class BillOfMaterialsVersionV2Single : global::Microsoft.OData.Client.DataServiceQuerySingle<BillOfMaterialsVersionV2>
     {
         /// <summary>
@@ -98,27 +98,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.OperationalSiteSingle _ProductionSite;
         /// <summary>
-        /// There are no comments for ApprovingWorker in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.WorkerSingle ApprovingWorker
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ApprovingWorker == null))
-                {
-                    this._ApprovingWorker = new global::Microsoft.Dynamics.DataEntities.WorkerSingle(this.Context, GetPath("ApprovingWorker"));
-                }
-                return this._ApprovingWorker;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.WorkerSingle _ApprovingWorker;
-        /// <summary>
         /// There are no comments for ManufacturedReleasedProduct in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -160,31 +139,10 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ProductSizeSingle _ProductSize;
-        /// <summary>
-        /// There are no comments for BillOfMaterialsHeader in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.BillOfMaterialsHeaderSingle BillOfMaterialsHeader
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._BillOfMaterialsHeader == null))
-                {
-                    this._BillOfMaterialsHeader = new global::Microsoft.Dynamics.DataEntities.BillOfMaterialsHeaderSingle(this.Context, GetPath("BillOfMaterialsHeader"));
-                }
-                return this._BillOfMaterialsHeader;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.BillOfMaterialsHeaderSingle _BillOfMaterialsHeader;
     }
-        /// <summary>
-        /// There are no comments for BillOfMaterialsVersionV2 in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BillOfMaterialsVersionV2 in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// ManufacturedItemNumber
@@ -219,7 +177,6 @@ namespace Microsoft.Dynamics.DataEntities
         /// <param name="fromCatchWeightQuantity">Initial value of FromCatchWeightQuantity.</param>
         /// <param name="validToDate">Initial value of ValidToDate.</param>
         /// <param name="manufacturedReleasedProduct">Initial value of ManufacturedReleasedProduct.</param>
-        /// <param name="billOfMaterialsHeader">Initial value of BillOfMaterialsHeader.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public static BillOfMaterialsVersionV2 CreateBillOfMaterialsVersionV2(string dataAreaId, 
                     string manufacturedItemNumber, 
@@ -234,8 +191,7 @@ namespace Microsoft.Dynamics.DataEntities
                     decimal catchWeightSize, 
                     decimal fromCatchWeightQuantity, 
                     global::System.DateTimeOffset validToDate, 
-                    global::Microsoft.Dynamics.DataEntities.ReleasedProductV2 manufacturedReleasedProduct, 
-                    global::Microsoft.Dynamics.DataEntities.BillOfMaterialsHeader billOfMaterialsHeader)
+                    global::Microsoft.Dynamics.DataEntities.ReleasedProductV2 manufacturedReleasedProduct)
         {
             BillOfMaterialsVersionV2 billOfMaterialsVersionV2 = new BillOfMaterialsVersionV2();
             billOfMaterialsVersionV2.dataAreaId = dataAreaId;
@@ -256,17 +212,14 @@ namespace Microsoft.Dynamics.DataEntities
                 throw new global::System.ArgumentNullException("manufacturedReleasedProduct");
             }
             billOfMaterialsVersionV2.ManufacturedReleasedProduct = manufacturedReleasedProduct;
-            if ((billOfMaterialsHeader == null))
-            {
-                throw new global::System.ArgumentNullException("billOfMaterialsHeader");
-            }
-            billOfMaterialsVersionV2.BillOfMaterialsHeader = billOfMaterialsHeader;
             return billOfMaterialsVersionV2;
         }
         /// <summary>
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -289,6 +242,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ManufacturedItemNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ManufacturedItemNumber is required.")]
         public virtual string ManufacturedItemNumber
         {
             get
@@ -311,6 +266,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BOMId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BOMId is required.")]
         public virtual string BOMId
         {
             get
@@ -333,6 +290,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductionSiteId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductionSiteId is required.")]
         public virtual string ProductionSiteId
         {
             get
@@ -355,6 +314,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductConfigurationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductConfigurationId is required.")]
         public virtual string ProductConfigurationId
         {
             get
@@ -377,6 +338,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductColorId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductColorId is required.")]
         public virtual string ProductColorId
         {
             get
@@ -399,6 +362,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductSizeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductSizeId is required.")]
         public virtual string ProductSizeId
         {
             get
@@ -421,6 +386,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductStyleId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductStyleId is required.")]
         public virtual string ProductStyleId
         {
             get
@@ -443,6 +410,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsActive in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsActive
         {
             get
@@ -465,6 +433,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidFromDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValidFromDate is required.")]
         public virtual global::System.DateTimeOffset ValidFromDate
         {
             get
@@ -487,6 +457,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FromQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FromQuantity is required.")]
         public virtual decimal FromQuantity
         {
             get
@@ -509,6 +481,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CatchWeightSize in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CatchWeightSize is required.")]
         public virtual decimal CatchWeightSize
         {
             get
@@ -531,6 +505,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VersionName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VersionName
         {
             get
@@ -553,6 +528,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsSelectedForDesigner in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsSelectedForDesigner
         {
             get
@@ -575,6 +551,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FromCatchWeightQuantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FromCatchWeightQuantity is required.")]
         public virtual decimal FromCatchWeightQuantity
         {
             get
@@ -597,6 +575,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ApproverPersonnelNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ApproverPersonnelNumber
         {
             get
@@ -619,6 +598,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsApproved in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsApproved
         {
             get
@@ -641,6 +621,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidToDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValidToDate is required.")]
         public virtual global::System.DateTimeOffset ValidToDate
         {
             get
@@ -663,6 +645,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductColor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ProductColor ProductColor
         {
             get
@@ -685,6 +668,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductStyle in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ProductStyle ProductStyle
         {
             get
@@ -707,6 +691,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductionSite in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.OperationalSite ProductionSite
         {
             get
@@ -726,31 +711,11 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnProductionSiteChanging(global::Microsoft.Dynamics.DataEntities.OperationalSite value);
         partial void OnProductionSiteChanged();
         /// <summary>
-        /// There are no comments for Property ApprovingWorker in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.Worker ApprovingWorker
-        {
-            get
-            {
-                return this._ApprovingWorker;
-            }
-            set
-            {
-                this.OnApprovingWorkerChanging(value);
-                this._ApprovingWorker = value;
-                this.OnApprovingWorkerChanged();
-                this.OnPropertyChanged("ApprovingWorker");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.Worker _ApprovingWorker;
-        partial void OnApprovingWorkerChanging(global::Microsoft.Dynamics.DataEntities.Worker value);
-        partial void OnApprovingWorkerChanged();
-        /// <summary>
         /// There are no comments for Property ManufacturedReleasedProduct in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ManufacturedReleasedProduct is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ReleasedProductV2 ManufacturedReleasedProduct
         {
             get
@@ -773,6 +738,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductSize in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ProductSize ProductSize
         {
             get
@@ -791,28 +757,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.ProductSize _ProductSize;
         partial void OnProductSizeChanging(global::Microsoft.Dynamics.DataEntities.ProductSize value);
         partial void OnProductSizeChanged();
-        /// <summary>
-        /// There are no comments for Property BillOfMaterialsHeader in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.BillOfMaterialsHeader BillOfMaterialsHeader
-        {
-            get
-            {
-                return this._BillOfMaterialsHeader;
-            }
-            set
-            {
-                this.OnBillOfMaterialsHeaderChanging(value);
-                this._BillOfMaterialsHeader = value;
-                this.OnBillOfMaterialsHeaderChanged();
-                this.OnPropertyChanged("BillOfMaterialsHeader");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.BillOfMaterialsHeader _BillOfMaterialsHeader;
-        partial void OnBillOfMaterialsHeaderChanging(global::Microsoft.Dynamics.DataEntities.BillOfMaterialsHeader value);
-        partial void OnBillOfMaterialsHeaderChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

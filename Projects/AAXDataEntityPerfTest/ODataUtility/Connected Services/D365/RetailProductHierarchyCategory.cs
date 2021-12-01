@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RetailProductHierarchyCategorySingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailProductHierarchyCategorySingle in the schema.
+    /// </summary>
     public partial class RetailProductHierarchyCategorySingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RetailProductHierarchyCategory>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.RetailEcoResCategorySingle _RetailEcoResCategory;
     }
-        /// <summary>
-        /// There are no comments for RetailProductHierarchyCategory in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailProductHierarchyCategory in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// CategoryName
     /// CategoryHierarchyName
@@ -126,6 +126,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CategoryName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CategoryName is required.")]
         public virtual string CategoryName
         {
             get
@@ -148,6 +150,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CategoryHierarchyName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CategoryHierarchyName is required.")]
         public virtual string CategoryHierarchyName
         {
             get
@@ -170,6 +174,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ParentCategoryName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ParentCategoryName
         {
             get
@@ -192,6 +197,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CategoryRecordId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CategoryRecordId is required.")]
         public virtual long CategoryRecordId
         {
             get
@@ -214,6 +221,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ParentCategoryRecordId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ParentCategoryRecordId is required.")]
         public virtual long ParentCategoryRecordId
         {
             get
@@ -236,6 +245,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductCategoryHierarchy in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductCategoryHierarchy is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ProductCategoryHierarchy ProductCategoryHierarchy
         {
             get
@@ -258,6 +269,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailEcoResCategory in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetailEcoResCategory is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RetailEcoResCategory RetailEcoResCategory
         {
             get

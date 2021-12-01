@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for BenefitTaxRuleUSSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BenefitTaxRuleUSSingle in the schema.
+    /// </summary>
     public partial class BenefitTaxRuleUSSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<BenefitTaxRuleUS>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.PayrollTaxGroupSingle _PayrollTaxGroup;
     }
-        /// <summary>
-        /// There are no comments for BenefitTaxRuleUS in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BenefitTaxRuleUS in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// BenefitPlanID
     /// </KeyProperties>
@@ -108,6 +108,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BenefitPlanID in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BenefitPlanID is required.")]
         public virtual string BenefitPlanID
         {
             get
@@ -130,6 +132,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsExemptFromLocalIncomeTax in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsExemptFromLocalIncomeTax
         {
             get
@@ -152,6 +155,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsExemptFromStateDisabilityInsurance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsExemptFromStateDisabilityInsurance
         {
             get
@@ -174,6 +178,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PreTaxBasis in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PayrollPreTaxBasis> PreTaxBasis
         {
             get
@@ -196,6 +201,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsExemptFromMedicare in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsExemptFromMedicare
         {
             get
@@ -218,6 +224,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsExemptFromStateUnemployment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsExemptFromStateUnemployment
         {
             get
@@ -240,6 +247,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsExemptFromFederalIncomeTax in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsExemptFromFederalIncomeTax
         {
             get
@@ -262,6 +270,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsExemptFromFICA in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsExemptFromFICA
         {
             get
@@ -284,6 +293,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxGroupId
         {
             get
@@ -306,6 +316,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomPretaxMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PayrollCustomPretaxMethod> CustomPretaxMethod
         {
             get
@@ -328,6 +339,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsExemptFromStateIncomeTax in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsExemptFromStateIncomeTax
         {
             get
@@ -350,6 +362,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BenefitPlan in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BenefitPlan is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.BenefitPlan BenefitPlan
         {
             get
@@ -372,6 +386,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayrollTaxGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.PayrollTaxGroup PayrollTaxGroup
         {
             get

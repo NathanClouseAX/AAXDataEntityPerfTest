@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for InjuryIncidentCostTypeSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for InjuryIncidentCostTypeSingle in the schema.
+    /// </summary>
     public partial class InjuryIncidentCostTypeSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<InjuryIncidentCostType>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.InjuryIncidentSingle _InjuryIncident;
     }
-        /// <summary>
-        /// There are no comments for InjuryIncidentCostType in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for InjuryIncidentCostType in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// CaseNumber
     /// LineNum
@@ -126,6 +126,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CaseNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CaseNumber is required.")]
         public virtual string CaseNumber
         {
             get
@@ -148,6 +150,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineNum in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LineNum is required.")]
         public virtual decimal LineNum
         {
             get
@@ -170,6 +174,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CostDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CostDate is required.")]
         public virtual global::System.DateTimeOffset CostDate
         {
             get
@@ -192,6 +198,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CostTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CostTypeId
         {
             get
@@ -214,6 +221,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CostAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CostAmount is required.")]
         public virtual decimal CostAmount
         {
             get
@@ -236,6 +245,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InjuryCostType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "InjuryCostType is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.InjuryCostType InjuryCostType
         {
             get
@@ -258,6 +269,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InjuryIncident in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "InjuryIncident is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.InjuryIncident InjuryIncident
         {
             get

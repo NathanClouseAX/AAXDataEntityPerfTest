@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for PickupTimeslotTemplateSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PickupTimeslotTemplateSingle in the schema.
+    /// </summary>
     public partial class PickupTimeslotTemplateSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PickupTimeslotTemplate>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for PickupTimeslotTemplate in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PickupTimeslotTemplate in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// TimeslotId
@@ -67,6 +67,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -89,6 +91,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TimeslotId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TimeslotId is required.")]
         public virtual string TimeslotId
         {
             get
@@ -111,6 +115,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaximumLimit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MaximumLimit is required.")]
         public virtual int MaximumLimit
         {
             get
@@ -133,6 +139,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -155,6 +162,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MinimumLimit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MinimumLimit is required.")]
         public virtual int MinimumLimit
         {
             get

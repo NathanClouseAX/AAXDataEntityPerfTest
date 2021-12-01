@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for TaxExemptCodeSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TaxExemptCodeSingle in the schema.
+    /// </summary>
     public partial class TaxExemptCodeSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<TaxExemptCode>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TaxGroupData> _TaxGroupData;
     }
-        /// <summary>
-        /// There are no comments for TaxExemptCode in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for TaxExemptCode in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// TaxExemptCode
@@ -87,6 +87,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -109,7 +111,9 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxExemptCode1 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         [global::Microsoft.OData.Client.OriginalNameAttribute("TaxExemptCode")]
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TaxExemptCode1 is required.")]
         public virtual string TaxExemptCode1
         {
             get
@@ -132,6 +136,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Language in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Language is required.")]
         public virtual string Language
         {
             get
@@ -154,6 +160,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -176,6 +183,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Text in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Text
         {
             get
@@ -198,6 +206,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxGroupData in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TaxGroupData> TaxGroupData
         {
             get

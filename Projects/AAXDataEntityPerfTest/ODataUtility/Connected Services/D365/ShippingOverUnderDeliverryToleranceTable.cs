@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ShippingOverUnderDeliverryToleranceTableSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ShippingOverUnderDeliverryToleranceTableSingle in the schema.
+    /// </summary>
     public partial class ShippingOverUnderDeliverryToleranceTableSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ShippingOverUnderDeliverryToleranceTable>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for ShippingOverUnderDeliverryToleranceTable in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ShippingOverUnderDeliverryToleranceTable in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// VendorAccountNumber
@@ -82,6 +82,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -104,6 +106,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "VendorAccountNumber is required.")]
         public virtual string VendorAccountNumber
         {
             get
@@ -126,6 +130,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorOverUnderdeliveryToleranceGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "VendorOverUnderdeliveryToleranceGroupId is required.")]
         public virtual string VendorOverUnderdeliveryToleranceGroupId
         {
             get
@@ -148,6 +154,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ItemNumber is required.")]
         public virtual string ItemNumber
         {
             get
@@ -170,6 +178,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemOverUnderdeliveryToleranceGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ItemOverUnderdeliveryToleranceGroupId is required.")]
         public virtual string ItemOverUnderdeliveryToleranceGroupId
         {
             get
@@ -192,6 +202,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TolerancePercentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TolerancePercentage is required.")]
         public virtual decimal TolerancePercentage
         {
             get
@@ -214,6 +226,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ToleranceAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ToleranceAmount is required.")]
         public virtual decimal ToleranceAmount
         {
             get

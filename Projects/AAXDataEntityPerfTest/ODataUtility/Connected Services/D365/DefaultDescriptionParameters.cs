@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for DefaultDescriptionParametersSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for DefaultDescriptionParametersSingle in the schema.
+    /// </summary>
     public partial class DefaultDescriptionParametersSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<DefaultDescriptionParameters>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DefaultDescriptionsSingle _DefaultDescriptions;
     }
-        /// <summary>
-        /// There are no comments for DefaultDescriptionParameters in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for DefaultDescriptionParameters in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// Description
@@ -88,6 +88,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -110,6 +112,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.LedgerTransTxt> Description
         {
             get
@@ -132,6 +135,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Language in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Language is required.")]
         public virtual string Language
         {
             get
@@ -154,6 +159,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ParameterNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ParameterNumber is required.")]
         public virtual int ParameterNumber
         {
             get
@@ -176,6 +183,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReferenceFieldName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ReferenceFieldName
         {
             get
@@ -198,6 +206,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReferenceTableName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ReferenceTableName
         {
             get
@@ -220,6 +229,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultDescriptions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DefaultDescriptions DefaultDescriptions
         {
             get

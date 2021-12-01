@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for JobADARequirementSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for JobADARequirementSingle in the schema.
+    /// </summary>
     public partial class JobADARequirementSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<JobADARequirement>
     {
         /// <summary>
@@ -34,31 +34,10 @@ namespace Microsoft.Dynamics.DataEntities
         public JobADARequirementSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<JobADARequirement> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for Job in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.JobSingle Job
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._Job == null))
-                {
-                    this._Job = new global::Microsoft.Dynamics.DataEntities.JobSingle(this.Context, GetPath("Job"));
-                }
-                return this._Job;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.JobSingle _Job;
     }
-        /// <summary>
-        /// There are no comments for JobADARequirement in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for JobADARequirement in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// JobId
     /// </KeyProperties>
@@ -70,23 +49,19 @@ namespace Microsoft.Dynamics.DataEntities
         /// Create a new JobADARequirement object.
         /// </summary>
         /// <param name="jobId">Initial value of JobId.</param>
-        /// <param name="job">Initial value of Job.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public static JobADARequirement CreateJobADARequirement(string jobId, global::Microsoft.Dynamics.DataEntities.Job job)
+        public static JobADARequirement CreateJobADARequirement(string jobId)
         {
             JobADARequirement jobADARequirement = new JobADARequirement();
             jobADARequirement.JobId = jobId;
-            if ((job == null))
-            {
-                throw new global::System.ArgumentNullException("job");
-            }
-            jobADARequirement.Job = job;
             return jobADARequirement;
         }
         /// <summary>
         /// There are no comments for Property JobId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "JobId is required.")]
         public virtual string JobId
         {
             get
@@ -109,6 +84,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EnvironmentOutside in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> EnvironmentOutside
         {
             get
@@ -131,6 +107,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Noise in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> Noise
         {
             get
@@ -153,6 +130,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Feeling in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> Feeling
         {
             get
@@ -175,6 +153,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AtmosphericConditions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> AtmosphericConditions
         {
             get
@@ -197,6 +176,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NarrowAisles in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> NarrowAisles
         {
             get
@@ -219,6 +199,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EnvironmentHeat in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> EnvironmentHeat
         {
             get
@@ -241,6 +222,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Oils in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> Oils
         {
             get
@@ -263,6 +245,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Talking in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> Talking
         {
             get
@@ -285,6 +268,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VisualAcuity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HcmADAVisualAcuity> VisualAcuity
         {
             get
@@ -307,6 +291,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Kneeling in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> Kneeling
         {
             get
@@ -329,6 +314,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Standing in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> Standing
         {
             get
@@ -351,6 +337,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AdverseConditions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> AdverseConditions
         {
             get
@@ -373,6 +360,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Balancing in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> Balancing
         {
             get
@@ -395,6 +383,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Crouching in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> Crouching
         {
             get
@@ -417,6 +406,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Climbing in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> Climbing
         {
             get
@@ -439,6 +429,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Lifting in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> Lifting
         {
             get
@@ -461,6 +452,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MentalPatients in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> MentalPatients
         {
             get
@@ -483,6 +475,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Hazards in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> Hazards
         {
             get
@@ -505,6 +498,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Vibration in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> Vibration
         {
             get
@@ -527,6 +521,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RepetitiveMotions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> RepetitiveMotions
         {
             get
@@ -549,6 +544,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Crawling in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> Crawling
         {
             get
@@ -571,6 +567,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EnvironmentCold in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> EnvironmentCold
         {
             get
@@ -593,6 +590,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Pulling in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> Pulling
         {
             get
@@ -615,6 +613,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Grasping in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> Grasping
         {
             get
@@ -637,6 +636,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Respirator in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> Respirator
         {
             get
@@ -659,6 +659,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Walking in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> Walking
         {
             get
@@ -681,6 +682,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Fingering in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> Fingering
         {
             get
@@ -703,6 +705,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Hearing in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> Hearing
         {
             get
@@ -725,6 +728,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Reaching in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> Reaching
         {
             get
@@ -747,6 +751,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Pushing in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> Pushing
         {
             get
@@ -769,6 +774,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Stooping in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> Stooping
         {
             get
@@ -791,6 +797,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PhysicalRequirement in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HcmADAPhysicalRequirement> PhysicalRequirement
         {
             get
@@ -813,6 +820,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InfectiousDisease in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> InfectiousDisease
         {
             get
@@ -835,6 +843,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EnvironmentInside in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> EnvironmentInside
         {
             get
@@ -857,6 +866,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CloseQuaters in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> CloseQuaters
         {
             get
@@ -879,6 +889,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EnvironmentBoth in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> EnvironmentBoth
         {
             get
@@ -897,28 +908,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> _EnvironmentBoth;
         partial void OnEnvironmentBothChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmADAFrequency> value);
         partial void OnEnvironmentBothChanged();
-        /// <summary>
-        /// There are no comments for Property Job in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.Job Job
-        {
-            get
-            {
-                return this._Job;
-            }
-            set
-            {
-                this.OnJobChanging(value);
-                this._Job = value;
-                this.OnJobChanged();
-                this.OnPropertyChanged("Job");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.Job _Job;
-        partial void OnJobChanging(global::Microsoft.Dynamics.DataEntities.Job value);
-        partial void OnJobChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for PostingProfileLineSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PostingProfileLineSingle in the schema.
+    /// </summary>
     public partial class PostingProfileLineSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PostingProfileLine>
     {
         /// <summary>
@@ -140,9 +140,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _VendorPostingProfileArrivalAccountRole;
     }
-        /// <summary>
-        /// There are no comments for PostingProfileLine in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PostingProfileLine in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// PostingProfile
@@ -172,6 +172,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -194,6 +196,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostingProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PostingProfile is required.")]
         public virtual string PostingProfile
         {
             get
@@ -216,6 +220,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TableGroupAll> AccountCode
         {
             get
@@ -238,6 +243,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountGroupNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AccountGroupNumber is required.")]
         public virtual string AccountGroupNumber
         {
             get
@@ -260,6 +267,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SettleAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SettleAccountDisplayValue
         {
             get
@@ -282,6 +290,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OffsetAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OffsetAccountDisplayValue
         {
             get
@@ -304,6 +313,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FinancialInterestAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FinancialInterestAccountDisplayValue
         {
             get
@@ -326,6 +336,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesTaxPrepaymentsAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SalesTaxPrepaymentsAccountDisplayValue
         {
             get
@@ -348,6 +359,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxTransferAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxTransferAccountDisplayValue
         {
             get
@@ -370,6 +382,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -392,6 +405,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HierarchyStatus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.DimensionHierarchyConstraintStatus> HierarchyStatus
         {
             get
@@ -414,6 +428,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SummaryAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SummaryAccountDisplayValue
         {
             get
@@ -436,6 +451,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HierarchyName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string HierarchyName
         {
             get
@@ -458,6 +474,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ArrivalAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ArrivalAccountDisplayValue
         {
             get
@@ -480,6 +497,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FineAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FineAccountDisplayValue
         {
             get
@@ -502,6 +520,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HierarchyType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.DimensionHierarchyType> HierarchyType
         {
             get
@@ -524,6 +543,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorPostingProfileOffsetAccountRole in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination VendorPostingProfileOffsetAccountRole
         {
             get
@@ -546,6 +566,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorPostingProfileSalesTaxPrepayRole in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination VendorPostingProfileSalesTaxPrepayRole
         {
             get
@@ -568,6 +589,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorPostingProfileSettleAccountRole in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination VendorPostingProfileSettleAccountRole
         {
             get
@@ -590,6 +612,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorPostingProfileSummaryAccountRole in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination VendorPostingProfileSummaryAccountRole
         {
             get
@@ -612,6 +635,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorPostingProfileArrivalAccountRole in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination VendorPostingProfileArrivalAccountRole
         {
             get

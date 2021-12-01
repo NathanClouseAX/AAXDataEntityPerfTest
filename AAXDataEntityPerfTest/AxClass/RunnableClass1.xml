@@ -53,12 +53,24 @@ class RunnableClass1
         */
 
 
+        /*
         ttsbegin;
         CustTable CustTable = CustTable::find("US-001", true);
         CustTable.skipDatabaseLog(true);
         CustTable.IdentificationNumber = int2Str(new Random().nextInt());
         CustTable.update();
         ttscommit;
+        */
+
+
+        AAXTable table;
+
+        AAXTableEntity AAXTableEntity;
+
+        //AAXTableEntity.countRecordsInstance();
+
+        AAXTableEntity::countRecordsStatic();
+
 
 
 

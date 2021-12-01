@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ItemBatchAttributeValueSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ItemBatchAttributeValueSingle in the schema.
+    /// </summary>
     public partial class ItemBatchAttributeValueSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ItemBatchAttributeValue>
     {
         /// <summary>
@@ -98,9 +98,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ItemBatchSingle _ItemBatch;
     }
-        /// <summary>
-        /// There are no comments for ItemBatchAttributeValue in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ItemBatchAttributeValue in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// ItemNumber
@@ -158,6 +158,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -180,6 +182,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ItemNumber is required.")]
         public virtual string ItemNumber
         {
             get
@@ -202,6 +206,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemBatchNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ItemBatchNumber is required.")]
         public virtual string ItemBatchNumber
         {
             get
@@ -224,6 +230,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemBatchAttributeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ItemBatchAttributeId is required.")]
         public virtual string ItemBatchAttributeId
         {
             get
@@ -246,6 +254,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IntegerValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "IntegerValue is required.")]
         public virtual int IntegerValue
         {
             get
@@ -268,6 +278,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DecimalValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DecimalValue is required.")]
         public virtual decimal DecimalValue
         {
             get
@@ -290,6 +302,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AttributeType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PdsBatchAttribType> AttributeType
         {
             get
@@ -312,6 +325,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property QualityOrderNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string QualityOrderNumber
         {
             get
@@ -334,6 +348,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AttributeDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AttributeDescription
         {
             get
@@ -356,6 +371,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsInherited in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsInherited
         {
             get
@@ -378,6 +394,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DateValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DateValue is required.")]
         public virtual global::System.DateTimeOffset DateValue
         {
             get
@@ -400,6 +418,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StringValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string StringValue
         {
             get
@@ -422,6 +441,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property QualityOrderHeader in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.QualityOrderHeader QualityOrderHeader
         {
             get
@@ -444,6 +464,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemBatchAttribute in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ItemBatchAttribute is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ItemBatchAttribute ItemBatchAttribute
         {
             get
@@ -466,6 +488,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemBatch in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ItemBatch is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ItemBatch ItemBatch
         {
             get

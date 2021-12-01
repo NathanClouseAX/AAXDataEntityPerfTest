@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for AccrualPlanSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AccrualPlanSingle in the schema.
+    /// </summary>
     public partial class AccrualPlanSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AccrualPlan>
     {
         /// <summary>
@@ -34,48 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public AccrualPlanSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AccrualPlan> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for WorkerEnrolledAccrualInquiry in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledAccrualInquiry> WorkerEnrolledAccrualInquiry
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._WorkerEnrolledAccrualInquiry == null))
-                {
-                    this._WorkerEnrolledAccrualInquiry = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledAccrualInquiry>(GetPath("WorkerEnrolledAccrualInquiry"));
-                }
-                return this._WorkerEnrolledAccrualInquiry;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledAccrualInquiry> _WorkerEnrolledAccrualInquiry;
-        /// <summary>
-        /// There are no comments for WorkerEnrolledAccruals in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledAccrual> WorkerEnrolledAccruals
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._WorkerEnrolledAccruals == null))
-                {
-                    this._WorkerEnrolledAccruals = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledAccrual>(GetPath("WorkerEnrolledAccruals"));
-                }
-                return this._WorkerEnrolledAccruals;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledAccrual> _WorkerEnrolledAccruals;
         /// <summary>
         /// There are no comments for AccrualEarningCodes in the schema.
         /// </summary>
@@ -119,6 +77,27 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AccrualPlanRule> _AccrualPlanRules;
         /// <summary>
+        /// There are no comments for WorkerEnrolledAccrualInquiry in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledAccrualInquiry> WorkerEnrolledAccrualInquiry
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._WorkerEnrolledAccrualInquiry == null))
+                {
+                    this._WorkerEnrolledAccrualInquiry = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledAccrualInquiry>(GetPath("WorkerEnrolledAccrualInquiry"));
+                }
+                return this._WorkerEnrolledAccrualInquiry;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledAccrualInquiry> _WorkerEnrolledAccrualInquiry;
+        /// <summary>
         /// There are no comments for AccrualBasisEarningCodes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -139,10 +118,31 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AccrualBasisEarningCode> _AccrualBasisEarningCodes;
-    }
         /// <summary>
-        /// There are no comments for AccrualPlan in the schema.
+        /// There are no comments for WorkerEnrolledAccruals in the schema.
         /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledAccrual> WorkerEnrolledAccruals
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._WorkerEnrolledAccruals == null))
+                {
+                    this._WorkerEnrolledAccruals = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledAccrual>(GetPath("WorkerEnrolledAccruals"));
+                }
+                return this._WorkerEnrolledAccruals;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledAccrual> _WorkerEnrolledAccruals;
+    }
+    /// <summary>
+    /// There are no comments for AccrualPlan in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// AccrualId
     /// </KeyProperties>
@@ -169,6 +169,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccrualId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AccrualId is required.")]
         public virtual string AccrualId
         {
             get
@@ -191,6 +193,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsIncludedInAccrual in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsIncludedInAccrual
         {
             get
@@ -213,6 +216,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomAccrualDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CustomAccrualDate is required.")]
         public virtual global::System.DateTimeOffset CustomAccrualDate
         {
             get
@@ -235,6 +240,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CanCarryForward in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> CanCarryForward
         {
             get
@@ -257,6 +263,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkerAccrualDateMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PayrollWorkerAccrualDateMethod> WorkerAccrualDateMethod
         {
             get
@@ -279,6 +286,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -301,6 +309,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccrualMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PayrollAccrualMethod> AccrualMethod
         {
             get
@@ -323,6 +332,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StartingDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "StartingDate is required.")]
         public virtual global::System.DateTimeOffset StartingDate
         {
             get
@@ -345,6 +356,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CalculationFrequency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CalculationFrequency
         {
             get
@@ -364,53 +376,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnCalculationFrequencyChanging(string value);
         partial void OnCalculationFrequencyChanged();
         /// <summary>
-        /// There are no comments for Property WorkerEnrolledAccrualInquiry in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledAccrualInquiry> WorkerEnrolledAccrualInquiry
-        {
-            get
-            {
-                return this._WorkerEnrolledAccrualInquiry;
-            }
-            set
-            {
-                this.OnWorkerEnrolledAccrualInquiryChanging(value);
-                this._WorkerEnrolledAccrualInquiry = value;
-                this.OnWorkerEnrolledAccrualInquiryChanged();
-                this.OnPropertyChanged("WorkerEnrolledAccrualInquiry");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledAccrualInquiry> _WorkerEnrolledAccrualInquiry = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledAccrualInquiry>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnWorkerEnrolledAccrualInquiryChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledAccrualInquiry> value);
-        partial void OnWorkerEnrolledAccrualInquiryChanged();
-        /// <summary>
-        /// There are no comments for Property WorkerEnrolledAccruals in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledAccrual> WorkerEnrolledAccruals
-        {
-            get
-            {
-                return this._WorkerEnrolledAccruals;
-            }
-            set
-            {
-                this.OnWorkerEnrolledAccrualsChanging(value);
-                this._WorkerEnrolledAccruals = value;
-                this.OnWorkerEnrolledAccrualsChanged();
-                this.OnPropertyChanged("WorkerEnrolledAccruals");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledAccrual> _WorkerEnrolledAccruals = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledAccrual>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnWorkerEnrolledAccrualsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledAccrual> value);
-        partial void OnWorkerEnrolledAccrualsChanged();
-        /// <summary>
         /// There are no comments for Property AccrualEarningCodes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AccrualEarningCode> AccrualEarningCodes
         {
             get
@@ -433,6 +402,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccrualPlanRules in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AccrualPlanRule> AccrualPlanRules
         {
             get
@@ -452,9 +422,33 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnAccrualPlanRulesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AccrualPlanRule> value);
         partial void OnAccrualPlanRulesChanged();
         /// <summary>
+        /// There are no comments for Property WorkerEnrolledAccrualInquiry in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledAccrualInquiry> WorkerEnrolledAccrualInquiry
+        {
+            get
+            {
+                return this._WorkerEnrolledAccrualInquiry;
+            }
+            set
+            {
+                this.OnWorkerEnrolledAccrualInquiryChanging(value);
+                this._WorkerEnrolledAccrualInquiry = value;
+                this.OnWorkerEnrolledAccrualInquiryChanged();
+                this.OnPropertyChanged("WorkerEnrolledAccrualInquiry");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledAccrualInquiry> _WorkerEnrolledAccrualInquiry = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledAccrualInquiry>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnWorkerEnrolledAccrualInquiryChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledAccrualInquiry> value);
+        partial void OnWorkerEnrolledAccrualInquiryChanged();
+        /// <summary>
         /// There are no comments for Property AccrualBasisEarningCodes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AccrualBasisEarningCode> AccrualBasisEarningCodes
         {
             get
@@ -473,6 +467,29 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AccrualBasisEarningCode> _AccrualBasisEarningCodes = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AccrualBasisEarningCode>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnAccrualBasisEarningCodesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AccrualBasisEarningCode> value);
         partial void OnAccrualBasisEarningCodesChanged();
+        /// <summary>
+        /// There are no comments for Property WorkerEnrolledAccruals in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledAccrual> WorkerEnrolledAccruals
+        {
+            get
+            {
+                return this._WorkerEnrolledAccruals;
+            }
+            set
+            {
+                this.OnWorkerEnrolledAccrualsChanging(value);
+                this._WorkerEnrolledAccruals = value;
+                this.OnWorkerEnrolledAccrualsChanged();
+                this.OnPropertyChanged("WorkerEnrolledAccruals");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledAccrual> _WorkerEnrolledAccruals = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledAccrual>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnWorkerEnrolledAccrualsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.WorkerEnrolledAccrual> value);
+        partial void OnWorkerEnrolledAccrualsChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

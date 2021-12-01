@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ShippingParametersSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ShippingParametersSingle in the schema.
+    /// </summary>
     public partial class ShippingParametersSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ShippingParameters>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for ShippingParameters in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ShippingParameters in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// </KeyProperties>
@@ -68,6 +68,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -90,6 +92,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MultipleVendorInvoicePerCostTransactionTolerance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ErrorTolerance> MultipleVendorInvoicePerCostTransactionTolerance
         {
             get
@@ -112,6 +115,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CostingReadyShipmentStatusId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CostingReadyShipmentStatusId
         {
             get
@@ -134,6 +138,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillCostAccrualUseVendorInvoiceVoucherNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillCostAccrualUseVendorInvoiceVoucherNumber
         {
             get
@@ -156,6 +161,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VoyageCreatorVolumeTolerancePercentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "VoyageCreatorVolumeTolerancePercentage is required.")]
         public virtual decimal VoyageCreatorVolumeTolerancePercentage
         {
             get
@@ -178,6 +185,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CostCalculationMissingItemVolumeTolerance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ErrorTolerance> CostCalculationMissingItemVolumeTolerance
         {
             get
@@ -200,6 +208,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RentalContainerJourneyTemplateId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RentalContainerJourneyTemplateId
         {
             get
@@ -222,6 +231,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MultipleVendorPerFolioTolerance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ErrorTolerance> MultipleVendorPerFolioTolerance
         {
             get
@@ -244,6 +254,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsContainerHeaderCartonsAutomaticallyUpdated in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsContainerHeaderCartonsAutomaticallyUpdated
         {
             get
@@ -266,6 +277,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RentalContainerShipmentStatusId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RentalContainerShipmentStatusId
         {
             get
@@ -288,6 +300,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillLandedCostCalculationUseShippingExchangeRate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillLandedCostCalculationUseShippingExchangeRate
         {
             get
@@ -310,6 +323,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CostedShipmentStatusId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CostedShipmentStatusId
         {
             get
@@ -332,6 +346,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Activate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> Activate
         {
             get
@@ -354,6 +369,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchaseOrderLineQuantityUpdateTolerance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ErrorTolerance> PurchaseOrderLineQuantityUpdateTolerance
         {
             get
@@ -376,6 +392,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CostAdjustmentAccountingDateRule in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ITMCostPostingDatePrinciple> CostAdjustmentAccountingDateRule
         {
             get
@@ -398,6 +415,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillLandedCostCalculationAllowZeroCost in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillLandedCostCalculationAllowZeroCost
         {
             get
@@ -420,6 +438,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ClosedGoodsInTransitOrderReceiptGracePeriodDays in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ClosedGoodsInTransitOrderReceiptGracePeriodDays is required.")]
         public virtual int ClosedGoodsInTransitOrderReceiptGracePeriodDays
         {
             get
@@ -442,6 +462,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsOverUnderNonGITPurch in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsOverUnderNonGITPurch
         {
             get
@@ -464,6 +485,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnderDeliveryInventoryTransferJournalNameId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string UnderDeliveryInventoryTransferJournalNameId
         {
             get
@@ -486,6 +508,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CostPostingSpecificationRule in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.InventAdjustmentSpec> CostPostingSpecificationRule
         {
             get
@@ -508,6 +531,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MultipleWarehousePerVoyageTolerance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ErrorTolerance> MultipleWarehousePerVoyageTolerance
         {
             get
@@ -530,6 +554,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InTransitShipmentStatusId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string InTransitShipmentStatusId
         {
             get
@@ -552,6 +577,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShippingExchangeRateTypeName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ShippingExchangeRateTypeName
         {
             get
@@ -574,6 +600,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillCostingUseLandedCostTypeChargeAccrualMainAccount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillCostingUseLandedCostTypeChargeAccrualMainAccount
         {
             get
@@ -596,6 +623,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultCostingVersionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultCostingVersionId
         {
             get
@@ -618,6 +646,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VoyageCreatorWeightTolerancePercentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "VoyageCreatorWeightTolerancePercentage is required.")]
         public virtual decimal VoyageCreatorWeightTolerancePercentage
         {
             get
@@ -640,6 +670,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceProviderVendorInvoiceTolerance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ErrorTolerance> ServiceProviderVendorInvoiceTolerance
         {
             get
@@ -662,6 +693,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WillMovingAveragePostAdjustmentAsVariance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WillMovingAveragePostAdjustmentAsVariance
         {
             get
@@ -684,6 +716,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsOverUnderNonShipPurch in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsOverUnderNonShipPurch
         {
             get
@@ -706,6 +739,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SingletonKey in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SingletonKey is required.")]
         public virtual int SingletonKey
         {
             get
@@ -728,6 +763,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemArrivalJournalNameId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ItemArrivalJournalNameId
         {
             get
@@ -750,6 +786,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MultipleDeliveryModePerVoyageTolerance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ErrorTolerance> MultipleDeliveryModePerVoyageTolerance
         {
             get
@@ -772,6 +809,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PreCostedShipmentStatusId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PreCostedShipmentStatusId
         {
             get
@@ -794,6 +832,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OverUnderDeliveryInventoryMovementJournalNameId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OverUnderDeliveryInventoryMovementJournalNameId
         {
             get

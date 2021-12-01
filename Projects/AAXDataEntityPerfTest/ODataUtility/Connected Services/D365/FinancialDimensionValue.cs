@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for FinancialDimensionValueSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for FinancialDimensionValueSingle in the schema.
+    /// </summary>
     public partial class FinancialDimensionValueSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<FinancialDimensionValue>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionAttributeSingle _FinancialDimensionValueEntity_RelatedRole_FinancialDimension;
     }
-        /// <summary>
-        /// There are no comments for FinancialDimensionValue in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for FinancialDimensionValue in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// FinancialDimension
     /// LegalEntityId
@@ -123,6 +123,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FinancialDimension in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FinancialDimension is required.")]
         public virtual string FinancialDimension
         {
             get
@@ -145,6 +147,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LegalEntityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LegalEntityId is required.")]
         public virtual string LegalEntityId
         {
             get
@@ -167,6 +171,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DimensionValue is required.")]
         public virtual string DimensionValue
         {
             get
@@ -189,6 +195,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property GroupDimension in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string GroupDimension
         {
             get
@@ -211,6 +218,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsSuspended in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsSuspended
         {
             get
@@ -233,6 +241,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsBlockedForManualEntry in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsBlockedForManualEntry
         {
             get
@@ -255,6 +264,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsTotal in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsTotal
         {
             get
@@ -277,6 +287,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -299,6 +310,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ActiveFrom in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ActiveFrom is required.")]
         public virtual global::System.DateTimeOffset ActiveFrom
         {
             get
@@ -321,6 +334,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ActiveTo in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ActiveTo is required.")]
         public virtual global::System.DateTimeOffset ActiveTo
         {
             get
@@ -343,6 +358,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Owner in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Owner
         {
             get
@@ -365,6 +381,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsBalancing_PSN in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsBalancing_PSN
         {
             get
@@ -387,6 +404,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FinancialDimensionValueEntity_RelatedRole_LegalEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.OfficeAddinLegalEntity FinancialDimensionValueEntity_RelatedRole_LegalEntity
         {
             get
@@ -409,6 +427,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FinancialDimensionValueEntity_RelatedRole_FinancialDimension in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FinancialDimensionValueEntity_RelatedRole_FinancialDimension is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute FinancialDimensionValueEntity_RelatedRole_FinancialDimension
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for CompensationReferencePointSetupLineSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CompensationReferencePointSetupLineSingle in the schema.
+    /// </summary>
     public partial class CompensationReferencePointSetupLineSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<CompensationReferencePointSetupLine>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CompensationStructure> _CompensationStructures;
     }
-        /// <summary>
-        /// There are no comments for CompensationReferencePointSetupLine in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CompensationReferencePointSetupLine in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// RefPointSetupId
@@ -114,6 +114,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -136,6 +138,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RefPointSetupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RefPointSetupId is required.")]
         public virtual string RefPointSetupId
         {
             get
@@ -158,6 +162,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineNum in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LineNum is required.")]
         public virtual decimal LineNum
         {
             get
@@ -180,6 +186,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RefPointId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RefPointId
         {
             get
@@ -202,6 +209,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -224,6 +232,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HRCCompRefPointSetup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "HRCCompRefPointSetup is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.CompensationReferencePoint HRCCompRefPointSetup
         {
             get
@@ -246,6 +256,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CompensationStructures in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CompensationStructure> CompensationStructures
         {
             get

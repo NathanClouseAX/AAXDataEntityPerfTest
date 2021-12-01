@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for WorkflowExternalElementSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for WorkflowExternalElementSingle in the schema.
+    /// </summary>
     public partial class WorkflowExternalElementSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<WorkflowExternalElement>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for WorkflowExternalElement in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for WorkflowExternalElement in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// CorrelationId
     /// ElementId
@@ -65,6 +65,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CorrelationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CorrelationId is required.")]
         public virtual global::System.Guid CorrelationId
         {
             get
@@ -87,6 +89,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ElementId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ElementId is required.")]
         public virtual global::System.Guid ElementId
         {
             get
@@ -109,6 +113,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ElementStartedDateTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ElementStartedDateTime is required.")]
         public virtual global::System.DateTimeOffset ElementStartedDateTime
         {
             get

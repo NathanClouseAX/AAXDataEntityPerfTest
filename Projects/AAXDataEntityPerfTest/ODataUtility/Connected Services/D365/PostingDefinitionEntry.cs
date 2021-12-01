@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for PostingDefinitionEntrySingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PostingDefinitionEntrySingle in the schema.
+    /// </summary>
     public partial class PostingDefinitionEntrySingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PostingDefinitionEntry>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _DimensionCombination;
     }
-        /// <summary>
-        /// There are no comments for PostingDefinitionEntry in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PostingDefinitionEntry in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// MatchCriteriaLedgerAccountDisplayValue
@@ -104,6 +104,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -126,6 +128,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MatchCriteriaLedgerAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MatchCriteriaLedgerAccountDisplayValue is required.")]
         public virtual string MatchCriteriaLedgerAccountDisplayValue
         {
             get
@@ -148,6 +152,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MatchCriteriaLedgerAccountAccountStructure in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MatchCriteriaLedgerAccountAccountStructure is required.")]
         public virtual string MatchCriteriaLedgerAccountAccountStructure
         {
             get
@@ -170,6 +176,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property GeneratedEntryLedgerAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "GeneratedEntryLedgerAccountDisplayValue is required.")]
         public virtual string GeneratedEntryLedgerAccountDisplayValue
         {
             get
@@ -192,6 +200,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostingDefinitionId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PostingDefinitionId is required.")]
         public virtual string PostingDefinitionId
         {
             get
@@ -214,6 +224,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidFrom in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValidFrom is required.")]
         public virtual global::System.DateTimeOffset ValidFrom
         {
             get
@@ -236,6 +248,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property GeneratedEntriesDebitCredit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.JournalizingDefinitionSignId> GeneratedEntriesDebitCredit
         {
             get
@@ -258,6 +271,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property GeneratedEntryLedgerAccountAccountStructure in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string GeneratedEntryLedgerAccountAccountStructure
         {
             get
@@ -280,6 +294,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Priority in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Priority is required.")]
         public virtual int Priority
         {
             get
@@ -302,6 +318,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination DimensionCombination
         {
             get

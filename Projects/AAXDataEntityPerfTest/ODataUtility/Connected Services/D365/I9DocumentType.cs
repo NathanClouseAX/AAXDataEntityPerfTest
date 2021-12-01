@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for I9DocumentTypeSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for I9DocumentTypeSingle in the schema.
+    /// </summary>
     public partial class I9DocumentTypeSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<I9DocumentType>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.IssuingAgencySingle _IssuingAgency;
     }
-        /// <summary>
-        /// There are no comments for I9DocumentType in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for I9DocumentType in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// I9DocumentTypeId
     /// </KeyProperties>
@@ -104,6 +104,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property I9DocumentTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "I9DocumentTypeId is required.")]
         public virtual string I9DocumentTypeId
         {
             get
@@ -126,6 +128,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IdentificationTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string IdentificationTypeId
         {
             get
@@ -148,6 +151,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsActive in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsActive
         {
             get
@@ -170,6 +174,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ListType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.Hcmi9ListType> ListType
         {
             get
@@ -192,6 +197,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IssuingAgencyId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string IssuingAgencyId
         {
             get
@@ -214,6 +220,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExpireDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ExpireDate is required.")]
         public virtual global::System.DateTimeOffset ExpireDate
         {
             get
@@ -236,6 +244,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FormId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FormId
         {
             get
@@ -258,6 +267,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IdentificationType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.IdentificationType IdentificationType
         {
             get
@@ -280,6 +290,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IssuingAgency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.IssuingAgency IssuingAgency
         {
             get

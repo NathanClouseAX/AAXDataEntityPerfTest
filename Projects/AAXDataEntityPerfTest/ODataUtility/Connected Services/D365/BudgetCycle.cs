@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for BudgetCycleSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BudgetCycleSingle in the schema.
+    /// </summary>
     public partial class BudgetCycleSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<BudgetCycle>
     {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for BudgetTrackingWorkspaceParametersBudgetCycle in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> BudgetTrackingWorkspaceParametersBudgetCycle
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._BudgetTrackingWorkspaceParametersBudgetCycle == null))
-                {
-                    this._BudgetTrackingWorkspaceParametersBudgetCycle = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters>(GetPath("BudgetTrackingWorkspaceParametersBudgetCycle"));
-                }
-                return this._BudgetTrackingWorkspaceParametersBudgetCycle;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> _BudgetTrackingWorkspaceParametersBudgetCycle;
-        /// <summary>
         /// There are no comments for BudgetControlCycleModelBudgetCycle in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,10 +55,31 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlCycleModel> _BudgetControlCycleModelBudgetCycle;
-    }
         /// <summary>
-        /// There are no comments for BudgetCycle in the schema.
+        /// There are no comments for BudgetTrackingWorkspaceParametersBudgetCycle in the schema.
         /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> BudgetTrackingWorkspaceParametersBudgetCycle
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._BudgetTrackingWorkspaceParametersBudgetCycle == null))
+                {
+                    this._BudgetTrackingWorkspaceParametersBudgetCycle = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters>(GetPath("BudgetTrackingWorkspaceParametersBudgetCycle"));
+                }
+                return this._BudgetTrackingWorkspaceParametersBudgetCycle;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> _BudgetTrackingWorkspaceParametersBudgetCycle;
+    }
+    /// <summary>
+    /// There are no comments for BudgetCycle in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// BudgetCycleTimeSpanName
     /// FiscalCalendar
@@ -119,6 +119,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetCycleTimeSpanName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BudgetCycleTimeSpanName is required.")]
         public virtual string BudgetCycleTimeSpanName
         {
             get
@@ -141,6 +143,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FiscalCalendar in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FiscalCalendar is required.")]
         public virtual string FiscalCalendar
         {
             get
@@ -163,6 +167,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetCycleName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BudgetCycleName is required.")]
         public virtual string BudgetCycleName
         {
             get
@@ -185,6 +191,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StartDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "StartDate is required.")]
         public virtual global::System.DateTimeOffset StartDate
         {
             get
@@ -207,6 +215,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EndDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EndDate is required.")]
         public virtual global::System.DateTimeOffset EndDate
         {
             get
@@ -229,6 +239,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NumberOfFiscalPeriods in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "NumberOfFiscalPeriods is required.")]
         public virtual int NumberOfFiscalPeriods
         {
             get
@@ -251,6 +263,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LengthOfBudgetCycle in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.BudgetCycleLengthOption> LengthOfBudgetCycle
         {
             get
@@ -270,31 +283,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnLengthOfBudgetCycleChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.BudgetCycleLengthOption> value);
         partial void OnLengthOfBudgetCycleChanged();
         /// <summary>
-        /// There are no comments for Property BudgetTrackingWorkspaceParametersBudgetCycle in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> BudgetTrackingWorkspaceParametersBudgetCycle
-        {
-            get
-            {
-                return this._BudgetTrackingWorkspaceParametersBudgetCycle;
-            }
-            set
-            {
-                this.OnBudgetTrackingWorkspaceParametersBudgetCycleChanging(value);
-                this._BudgetTrackingWorkspaceParametersBudgetCycle = value;
-                this.OnBudgetTrackingWorkspaceParametersBudgetCycleChanged();
-                this.OnPropertyChanged("BudgetTrackingWorkspaceParametersBudgetCycle");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> _BudgetTrackingWorkspaceParametersBudgetCycle = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnBudgetTrackingWorkspaceParametersBudgetCycleChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> value);
-        partial void OnBudgetTrackingWorkspaceParametersBudgetCycleChanged();
-        /// <summary>
         /// There are no comments for Property BudgetControlCycleModelBudgetCycle in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlCycleModel> BudgetControlCycleModelBudgetCycle
         {
             get
@@ -313,6 +305,29 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlCycleModel> _BudgetControlCycleModelBudgetCycle = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlCycleModel>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnBudgetControlCycleModelBudgetCycleChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlCycleModel> value);
         partial void OnBudgetControlCycleModelBudgetCycleChanged();
+        /// <summary>
+        /// There are no comments for Property BudgetTrackingWorkspaceParametersBudgetCycle in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> BudgetTrackingWorkspaceParametersBudgetCycle
+        {
+            get
+            {
+                return this._BudgetTrackingWorkspaceParametersBudgetCycle;
+            }
+            set
+            {
+                this.OnBudgetTrackingWorkspaceParametersBudgetCycleChanging(value);
+                this._BudgetTrackingWorkspaceParametersBudgetCycle = value;
+                this.OnBudgetTrackingWorkspaceParametersBudgetCycleChanged();
+                this.OnPropertyChanged("BudgetTrackingWorkspaceParametersBudgetCycle");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> _BudgetTrackingWorkspaceParametersBudgetCycle = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnBudgetTrackingWorkspaceParametersBudgetCycleChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> value);
+        partial void OnBudgetTrackingWorkspaceParametersBudgetCycleChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

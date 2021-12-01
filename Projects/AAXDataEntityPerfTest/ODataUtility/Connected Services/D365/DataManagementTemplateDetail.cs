@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for DataManagementTemplateDetailSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for DataManagementTemplateDetailSingle in the schema.
+    /// </summary>
     public partial class DataManagementTemplateDetailSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<DataManagementTemplateDetail>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DataManagementTemplateSingle _DefinitionGroupTemplate;
     }
-        /// <summary>
-        /// There are no comments for DataManagementTemplateDetail in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for DataManagementTemplateDetail in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// TemplateId
     /// EntityName
@@ -101,6 +101,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TemplateId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TemplateId is required.")]
         public virtual string TemplateId
         {
             get
@@ -123,6 +125,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EntityName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EntityName is required.")]
         public virtual string EntityName
         {
             get
@@ -145,6 +149,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LevelInExecutionUnit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LevelInExecutionUnit is required.")]
         public virtual int LevelInExecutionUnit
         {
             get
@@ -167,6 +173,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FailLevelOnError in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> FailLevelOnError
         {
             get
@@ -189,6 +196,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidationStatus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYesError> ValidationStatus
         {
             get
@@ -211,6 +219,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FailExecutionUnitOnError in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> FailExecutionUnitOnError
         {
             get
@@ -233,6 +242,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExecutionUnit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ExecutionUnit is required.")]
         public virtual int ExecutionUnit
         {
             get
@@ -255,6 +266,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SequenceInLevel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SequenceInLevel is required.")]
         public virtual int SequenceInLevel
         {
             get
@@ -277,6 +290,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefinitionGroupTemplate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DefinitionGroupTemplate is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.DataManagementTemplate DefinitionGroupTemplate
         {
             get

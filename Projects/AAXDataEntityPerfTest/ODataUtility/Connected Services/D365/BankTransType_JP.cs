@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for BankTransType_JP in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BankTransType_JP in the schema.
+    /// </summary>
     public enum BankTransType_JP
     {
         OrdinarySavings = 1,

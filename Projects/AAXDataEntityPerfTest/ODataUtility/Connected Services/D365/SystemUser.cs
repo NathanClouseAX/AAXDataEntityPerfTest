@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for SystemUserSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for SystemUserSingle in the schema.
+    /// </summary>
     public partial class SystemUserSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<SystemUser>
     {
         /// <summary>
@@ -34,69 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public SystemUserSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<SystemUser> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for PersonUserSystemUserEntity in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.PersonUserSingle PersonUserSystemUserEntity
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._PersonUserSystemUserEntity == null))
-                {
-                    this._PersonUserSystemUserEntity = new global::Microsoft.Dynamics.DataEntities.PersonUserSingle(this.Context, GetPath("PersonUserSystemUserEntity"));
-                }
-                return this._PersonUserSystemUserEntity;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.PersonUserSingle _PersonUserSystemUserEntity;
-        /// <summary>
-        /// There are no comments for UserGroupUserList in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.UserGroupUserList> UserGroupUserList
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._UserGroupUserList == null))
-                {
-                    this._UserGroupUserList = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.UserGroupUserList>(GetPath("UserGroupUserList"));
-                }
-                return this._UserGroupUserList;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.UserGroupUserList> _UserGroupUserList;
-        /// <summary>
-        /// There are no comments for LedgerAccountAlias in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias> LedgerAccountAlias
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._LedgerAccountAlias == null))
-                {
-                    this._LedgerAccountAlias = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias>(GetPath("LedgerAccountAlias"));
-                }
-                return this._LedgerAccountAlias;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias> _LedgerAccountAlias;
         /// <summary>
         /// There are no comments for BudgetControlGroupBudgetManager in the schema.
         /// </summary>
@@ -119,10 +56,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlGroup> _BudgetControlGroupBudgetManager;
         /// <summary>
-        /// There are no comments for DefaultBudgetManager in the schema.
+        /// There are no comments for UserGroupUserList in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlConfiguration> DefaultBudgetManager
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.UserGroupUserList> UserGroupUserList
         {
             get
             {
@@ -130,36 +67,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._DefaultBudgetManager == null))
+                if ((this._UserGroupUserList == null))
                 {
-                    this._DefaultBudgetManager = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlConfiguration>(GetPath("DefaultBudgetManager"));
+                    this._UserGroupUserList = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.UserGroupUserList>(GetPath("UserGroupUserList"));
                 }
-                return this._DefaultBudgetManager;
+                return this._UserGroupUserList;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlConfiguration> _DefaultBudgetManager;
-        /// <summary>
-        /// There are no comments for BudgetTrackingWorkspaceParametersSystemUser in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> BudgetTrackingWorkspaceParametersSystemUser
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._BudgetTrackingWorkspaceParametersSystemUser == null))
-                {
-                    this._BudgetTrackingWorkspaceParametersSystemUser = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters>(GetPath("BudgetTrackingWorkspaceParametersSystemUser"));
-                }
-                return this._BudgetTrackingWorkspaceParametersSystemUser;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> _BudgetTrackingWorkspaceParametersSystemUser;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.UserGroupUserList> _UserGroupUserList;
         /// <summary>
         /// There are no comments for ItemArrivalJournalHeadersV2 in the schema.
         /// </summary>
@@ -182,6 +98,27 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ItemArrivalJournalHeaderV2> _ItemArrivalJournalHeadersV2;
         /// <summary>
+        /// There are no comments for BudgetTrackingWorkspaceParametersSystemUser in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> BudgetTrackingWorkspaceParametersSystemUser
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._BudgetTrackingWorkspaceParametersSystemUser == null))
+                {
+                    this._BudgetTrackingWorkspaceParametersSystemUser = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters>(GetPath("BudgetTrackingWorkspaceParametersSystemUser"));
+                }
+                return this._BudgetTrackingWorkspaceParametersSystemUser;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> _BudgetTrackingWorkspaceParametersSystemUser;
+        /// <summary>
         /// There are no comments for BudgetControlRuleBudgetManager in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -202,10 +139,73 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlRule> _BudgetControlRuleBudgetManager;
-    }
         /// <summary>
-        /// There are no comments for SystemUser in the schema.
+        /// There are no comments for DefaultBudgetManager in the schema.
         /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlConfiguration> DefaultBudgetManager
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._DefaultBudgetManager == null))
+                {
+                    this._DefaultBudgetManager = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlConfiguration>(GetPath("DefaultBudgetManager"));
+                }
+                return this._DefaultBudgetManager;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetControlConfiguration> _DefaultBudgetManager;
+        /// <summary>
+        /// There are no comments for LedgerAccountAlias in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias> LedgerAccountAlias
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._LedgerAccountAlias == null))
+                {
+                    this._LedgerAccountAlias = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias>(GetPath("LedgerAccountAlias"));
+                }
+                return this._LedgerAccountAlias;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias> _LedgerAccountAlias;
+        /// <summary>
+        /// There are no comments for PersonUserSystemUserEntity in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.PersonUserSingle PersonUserSystemUserEntity
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._PersonUserSystemUserEntity == null))
+                {
+                    this._PersonUserSystemUserEntity = new global::Microsoft.Dynamics.DataEntities.PersonUserSingle(this.Context, GetPath("PersonUserSystemUserEntity"));
+                }
+                return this._PersonUserSystemUserEntity;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.PersonUserSingle _PersonUserSystemUserEntity;
+    }
+    /// <summary>
+    /// There are no comments for SystemUser in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// UserID
     /// </KeyProperties>
@@ -262,6 +262,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UserID in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "UserID is required.")]
         public virtual string UserID
         {
             get
@@ -284,6 +286,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WorkflowLineItemNotificationFormat in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.WorkflowLineItemNotificationFormat> WorkflowLineItemNotificationFormat
         {
             get
@@ -306,6 +309,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DocumentHandlingActive in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DocumentHandlingActive
         {
             get
@@ -328,6 +332,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UserInfo_defaultPartition in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "UserInfo_defaultPartition is required.")]
         public virtual bool UserInfo_defaultPartition
         {
             get
@@ -350,6 +356,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property GlobalListPageLinkMode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "GlobalListPageLinkMode is required.")]
         public virtual int GlobalListPageLinkMode
         {
             get
@@ -372,6 +380,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property GlobalExcelExportMode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "GlobalExcelExportMode is required.")]
         public virtual int GlobalExcelExportMode
         {
             get
@@ -394,6 +404,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShowAttachmentStatus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ShowAttachmentStatus
         {
             get
@@ -416,6 +427,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EventPopUpLinkDestination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EventPopUpLinkDestination> EventPopUpLinkDestination
         {
             get
@@ -438,6 +450,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NetworkDomain in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string NetworkDomain
         {
             get
@@ -460,6 +473,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Company in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Company
         {
             get
@@ -482,6 +496,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SqmGUID in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SqmGUID is required.")]
         public virtual global::System.Guid SqmGUID
         {
             get
@@ -504,6 +520,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SendNotificationsInEmail in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> SendNotificationsInEmail
         {
             get
@@ -526,6 +543,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Alias in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Alias
         {
             get
@@ -548,6 +566,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EmailProviderID in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string EmailProviderID
         {
             get
@@ -570,6 +589,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Email in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Email
         {
             get
@@ -592,6 +612,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Density in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.SysUserInfoDensity> Density
         {
             get
@@ -614,6 +635,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultCountryRegion in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultCountryRegion
         {
             get
@@ -636,6 +658,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PersonName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PersonName
         {
             get
@@ -658,6 +681,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SendAlertAsEmailMessage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EventEmailSendDefineMode> SendAlertAsEmailMessage
         {
             get
@@ -680,6 +704,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SqmEnabled in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.SysSqmEnabledClient> SqmEnabled
         {
             get
@@ -702,6 +727,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property GlobalExcelExportFilePath in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string GlobalExcelExportFilePath
         {
             get
@@ -724,6 +750,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Language in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Language
         {
             get
@@ -746,6 +773,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EventPopUpDisplayWhen in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EventPopupShowDefineMode> EventPopUpDisplayWhen
         {
             get
@@ -768,6 +796,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EventPollFrequency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EventPollFrequency is required.")]
         public virtual int EventPollFrequency
         {
             get
@@ -790,6 +820,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EventWorkflowShowPopup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> EventWorkflowShowPopup
         {
             get
@@ -812,6 +843,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StartPage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string StartPage
         {
             get
@@ -834,6 +866,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PreferredTimeZone in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.Timezone> PreferredTimeZone
         {
             get
@@ -856,6 +889,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HomePageRefreshDuration in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "HomePageRefreshDuration is required.")]
         public virtual int HomePageRefreshDuration
         {
             get
@@ -878,6 +913,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UserInfo_language in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string UserInfo_language
         {
             get
@@ -900,6 +936,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AutoLogOff in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AutoLogOff is required.")]
         public virtual int AutoLogOff
         {
             get
@@ -922,6 +960,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Theme in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.SysUserInfoTheme> Theme
         {
             get
@@ -944,6 +983,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MarkEmptyLinks in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> MarkEmptyLinks
         {
             get
@@ -966,6 +1006,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Enabled in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Enabled is required.")]
         public virtual bool Enabled
         {
             get
@@ -988,6 +1030,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShowNotificationsInTheMicrosoftDynamicsAX7Client in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ShowNotificationsInTheMicrosoftDynamicsAX7Client
         {
             get
@@ -1010,6 +1053,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Helplanguage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Helplanguage
         {
             get
@@ -1032,6 +1076,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UserName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string UserName
         {
             get
@@ -1054,6 +1099,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.UserAccountType> AccountType
         {
             get
@@ -1076,6 +1122,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EventPopUps in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> EventPopUps
         {
             get
@@ -1098,6 +1145,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PreferredCalendar in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PreferredCalendar> PreferredCalendar
         {
             get
@@ -1120,6 +1168,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PreferredLocale in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PreferredLocale
         {
             get
@@ -1142,6 +1191,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExternalUser in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ExternalUser is required.")]
         public virtual bool ExternalUser
         {
             get
@@ -1164,6 +1215,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AutomaticUrlUpdate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AutomaticUrlUpdate
         {
             get
@@ -1183,75 +1235,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnAutomaticUrlUpdateChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> value);
         partial void OnAutomaticUrlUpdateChanged();
         /// <summary>
-        /// There are no comments for Property PersonUserSystemUserEntity in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.PersonUser PersonUserSystemUserEntity
-        {
-            get
-            {
-                return this._PersonUserSystemUserEntity;
-            }
-            set
-            {
-                this.OnPersonUserSystemUserEntityChanging(value);
-                this._PersonUserSystemUserEntity = value;
-                this.OnPersonUserSystemUserEntityChanged();
-                this.OnPropertyChanged("PersonUserSystemUserEntity");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.PersonUser _PersonUserSystemUserEntity;
-        partial void OnPersonUserSystemUserEntityChanging(global::Microsoft.Dynamics.DataEntities.PersonUser value);
-        partial void OnPersonUserSystemUserEntityChanged();
-        /// <summary>
-        /// There are no comments for Property UserGroupUserList in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.UserGroupUserList> UserGroupUserList
-        {
-            get
-            {
-                return this._UserGroupUserList;
-            }
-            set
-            {
-                this.OnUserGroupUserListChanging(value);
-                this._UserGroupUserList = value;
-                this.OnUserGroupUserListChanged();
-                this.OnPropertyChanged("UserGroupUserList");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.UserGroupUserList> _UserGroupUserList = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.UserGroupUserList>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnUserGroupUserListChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.UserGroupUserList> value);
-        partial void OnUserGroupUserListChanged();
-        /// <summary>
-        /// There are no comments for Property LedgerAccountAlias in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias> LedgerAccountAlias
-        {
-            get
-            {
-                return this._LedgerAccountAlias;
-            }
-            set
-            {
-                this.OnLedgerAccountAliasChanging(value);
-                this._LedgerAccountAlias = value;
-                this.OnLedgerAccountAliasChanged();
-                this.OnPropertyChanged("LedgerAccountAlias");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias> _LedgerAccountAlias = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnLedgerAccountAliasChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias> value);
-        partial void OnLedgerAccountAliasChanged();
-        /// <summary>
         /// There are no comments for Property BudgetControlGroupBudgetManager in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlGroup> BudgetControlGroupBudgetManager
         {
             get
@@ -1271,53 +1258,33 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnBudgetControlGroupBudgetManagerChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlGroup> value);
         partial void OnBudgetControlGroupBudgetManagerChanged();
         /// <summary>
-        /// There are no comments for Property DefaultBudgetManager in the schema.
+        /// There are no comments for Property UserGroupUserList in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlConfiguration> DefaultBudgetManager
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.UserGroupUserList> UserGroupUserList
         {
             get
             {
-                return this._DefaultBudgetManager;
+                return this._UserGroupUserList;
             }
             set
             {
-                this.OnDefaultBudgetManagerChanging(value);
-                this._DefaultBudgetManager = value;
-                this.OnDefaultBudgetManagerChanged();
-                this.OnPropertyChanged("DefaultBudgetManager");
+                this.OnUserGroupUserListChanging(value);
+                this._UserGroupUserList = value;
+                this.OnUserGroupUserListChanged();
+                this.OnPropertyChanged("UserGroupUserList");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlConfiguration> _DefaultBudgetManager = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlConfiguration>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnDefaultBudgetManagerChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlConfiguration> value);
-        partial void OnDefaultBudgetManagerChanged();
-        /// <summary>
-        /// There are no comments for Property BudgetTrackingWorkspaceParametersSystemUser in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> BudgetTrackingWorkspaceParametersSystemUser
-        {
-            get
-            {
-                return this._BudgetTrackingWorkspaceParametersSystemUser;
-            }
-            set
-            {
-                this.OnBudgetTrackingWorkspaceParametersSystemUserChanging(value);
-                this._BudgetTrackingWorkspaceParametersSystemUser = value;
-                this.OnBudgetTrackingWorkspaceParametersSystemUserChanged();
-                this.OnPropertyChanged("BudgetTrackingWorkspaceParametersSystemUser");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> _BudgetTrackingWorkspaceParametersSystemUser = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnBudgetTrackingWorkspaceParametersSystemUserChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> value);
-        partial void OnBudgetTrackingWorkspaceParametersSystemUserChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.UserGroupUserList> _UserGroupUserList = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.UserGroupUserList>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnUserGroupUserListChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.UserGroupUserList> value);
+        partial void OnUserGroupUserListChanged();
         /// <summary>
         /// There are no comments for Property ItemArrivalJournalHeadersV2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemArrivalJournalHeaderV2> ItemArrivalJournalHeadersV2
         {
             get
@@ -1337,9 +1304,33 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnItemArrivalJournalHeadersV2Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemArrivalJournalHeaderV2> value);
         partial void OnItemArrivalJournalHeadersV2Changed();
         /// <summary>
+        /// There are no comments for Property BudgetTrackingWorkspaceParametersSystemUser in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> BudgetTrackingWorkspaceParametersSystemUser
+        {
+            get
+            {
+                return this._BudgetTrackingWorkspaceParametersSystemUser;
+            }
+            set
+            {
+                this.OnBudgetTrackingWorkspaceParametersSystemUserChanging(value);
+                this._BudgetTrackingWorkspaceParametersSystemUser = value;
+                this.OnBudgetTrackingWorkspaceParametersSystemUserChanged();
+                this.OnPropertyChanged("BudgetTrackingWorkspaceParametersSystemUser");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> _BudgetTrackingWorkspaceParametersSystemUser = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnBudgetTrackingWorkspaceParametersSystemUserChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetTrackingWorkspaceParameters> value);
+        partial void OnBudgetTrackingWorkspaceParametersSystemUserChanged();
+        /// <summary>
         /// There are no comments for Property BudgetControlRuleBudgetManager in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRule> BudgetControlRuleBudgetManager
         {
             get
@@ -1358,6 +1349,76 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRule> _BudgetControlRuleBudgetManager = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRule>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnBudgetControlRuleBudgetManagerChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlRule> value);
         partial void OnBudgetControlRuleBudgetManagerChanged();
+        /// <summary>
+        /// There are no comments for Property DefaultBudgetManager in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlConfiguration> DefaultBudgetManager
+        {
+            get
+            {
+                return this._DefaultBudgetManager;
+            }
+            set
+            {
+                this.OnDefaultBudgetManagerChanging(value);
+                this._DefaultBudgetManager = value;
+                this.OnDefaultBudgetManagerChanged();
+                this.OnPropertyChanged("DefaultBudgetManager");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlConfiguration> _DefaultBudgetManager = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlConfiguration>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnDefaultBudgetManagerChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlConfiguration> value);
+        partial void OnDefaultBudgetManagerChanged();
+        /// <summary>
+        /// There are no comments for Property LedgerAccountAlias in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias> LedgerAccountAlias
+        {
+            get
+            {
+                return this._LedgerAccountAlias;
+            }
+            set
+            {
+                this.OnLedgerAccountAliasChanging(value);
+                this._LedgerAccountAlias = value;
+                this.OnLedgerAccountAliasChanged();
+                this.OnPropertyChanged("LedgerAccountAlias");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias> _LedgerAccountAlias = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnLedgerAccountAliasChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.LedgerAccountAlias> value);
+        partial void OnLedgerAccountAliasChanged();
+        /// <summary>
+        /// There are no comments for Property PersonUserSystemUserEntity in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PersonUserSystemUserEntity is required.")]
+        public virtual global::Microsoft.Dynamics.DataEntities.PersonUser PersonUserSystemUserEntity
+        {
+            get
+            {
+                return this._PersonUserSystemUserEntity;
+            }
+            set
+            {
+                this.OnPersonUserSystemUserEntityChanging(value);
+                this._PersonUserSystemUserEntity = value;
+                this.OnPersonUserSystemUserEntityChanged();
+                this.OnPropertyChanged("PersonUserSystemUserEntity");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.PersonUser _PersonUserSystemUserEntity;
+        partial void OnPersonUserSystemUserEntityChanging(global::Microsoft.Dynamics.DataEntities.PersonUser value);
+        partial void OnPersonUserSystemUserEntityChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

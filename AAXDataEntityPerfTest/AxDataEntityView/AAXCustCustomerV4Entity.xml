@@ -1046,13 +1046,23 @@ public class AAXCustCustomerV4Entity extends common
     {
         return strFmt('SELECT Isnull(Sum(InvoiceAmountMST), 0)   ' + 
                       'FROM   CustInvoiceJour          ' +
-                      'WHERE  DataAreaId = \'%1\'     ' +
+                      'WHERE  DataAreaId = %1     ' +
                       'AND partition = %2      ' +
-                      'AND OrderAccount = \'%3\'     ' +
+                      'AND OrderAccount = %3     ' +
                       'AND Datepart(yyyy, invoicedate) = Datepart(yyyy, Dateadd(year, -1, Getdate()))',
-                      SysComputedColumn::returnField(tableStr(AAXCustCustomerV3Entity), identifierStr(CustTable), fieldStr(CustTable, DataAreaId)),
-                      SysComputedColumn::returnField(tableStr(AAXCustCustomerV3Entity), identifierStr(CustTable), fieldStr(CustTable, Partition)),
-                      SysComputedColumn::returnField(tableStr(AAXCustCustomerV3Entity), identifierStr(CustTable), fieldStr(CustTable, InvoiceAccount)));
+                      SysComputedColumn::returnField(tableStr(AAXCustCustomerV4Entity), identifierStr(CustTable), fieldStr(CustTable, DataAreaId)),
+                      SysComputedColumn::returnField(tableStr(AAXCustCustomerV4Entity), identifierStr(CustTable), fieldStr(CustTable, Partition)),
+                      SysComputedColumn::returnField(tableStr(AAXCustCustomerV4Entity), identifierStr(CustTable), fieldStr(CustTable, InvoiceAccount)));
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>SalesCurrentYearMST</Name>
+				<Source><![CDATA[
+    public static server str SalesCurrentYearMST()
+    {
+        return(AAXCustCustomerV4Entity::salesByYearMST(year(systemDateGet())));
     }
 
 ]]></Source>
@@ -1144,13 +1154,13 @@ public class AAXCustCustomerV4Entity extends common
     {
         return strFmt('SELECT Isnull(Sum(InvoiceAmountMST), 0)   ' +
                       'FROM   CustInvoiceJour          ' +
-                      'WHERE  DataAreaId = \'%1\'     ' +
+                      'WHERE  DataAreaId = %1     ' +
                       'AND partition = %2      ' +
-                      'AND OrderAccount = \'%3\'     ' +
+                      'AND OrderAccount = %3     ' +
                       'AND Datepart(yyyy, invoicedate) = \'%4\'',
-                      SysComputedColumn::returnField(tableStr(AAXCustCustomerV3Entity), identifierStr(CustTable), fieldStr(CustTable, DataAreaId)),
-                      SysComputedColumn::returnField(tableStr(AAXCustCustomerV3Entity), identifierStr(CustTable), fieldStr(CustTable, Partition)),
-                      SysComputedColumn::returnField(tableStr(AAXCustCustomerV3Entity), identifierStr(CustTable), fieldStr(CustTable, InvoiceAccount)),
+                      SysComputedColumn::returnField(tableStr(AAXCustCustomerV4Entity), identifierStr(CustTable), fieldStr(CustTable, DataAreaId)),
+                      SysComputedColumn::returnField(tableStr(AAXCustCustomerV4Entity), identifierStr(CustTable), fieldStr(CustTable, Partition)),
+                      SysComputedColumn::returnField(tableStr(AAXCustCustomerV4Entity), identifierStr(CustTable), fieldStr(CustTable, InvoiceAccount)),
                       _year);
     }
 
@@ -1226,8 +1236,8 @@ public class AAXCustCustomerV4Entity extends common
 	<Modules>AccountsReceivable</Modules>
 	<PrimaryCompanyContext>DataAreaId</PrimaryCompanyContext>
 	<PrimaryKey>EntityKey</PrimaryKey>
-	<PublicCollectionName>AAXCustomersV3</PublicCollectionName>
-	<PublicEntityName>AAXCustomerV3</PublicEntityName>
+	<PublicCollectionName>AAXCustomersV4</PublicCollectionName>
+	<PublicEntityName>AAXCustomerV4</PublicEntityName>
 	<DeleteActions />
 	<FieldGroups>
 		<AxTableFieldGroup>
@@ -3373,8 +3383,9 @@ public class AAXCustCustomerV4Entity extends common
 		</AxDataEntityViewField>
 		<AxDataEntityViewField xmlns=""
 			i:type="AxDataEntityViewUnmappedFieldReal">
-			<Name>SalesFor2021MST</Name>
-			<ComputedFieldMethod>SalesFor2021MST</ComputedFieldMethod>
+			<Name>SalesCurrentYearMST</Name>
+			<ComputedFieldMethod>SalesCurrentYearMST</ComputedFieldMethod>
+			<ExtendedDataType>AmountMST</ExtendedDataType>
 		</AxDataEntityViewField>
 	</Fields>
 	<Keys>

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for SpecialCategoryMemberSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for SpecialCategoryMemberSingle in the schema.
+    /// </summary>
     public partial class SpecialCategoryMemberSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<SpecialCategoryMember>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ProductVariantSingle _ProductVariant;
     }
-        /// <summary>
-        /// There are no comments for SpecialCategoryMember in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for SpecialCategoryMember in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// HeaderProductCategoryHierarchyName
     /// HeaderProductCategoryName
@@ -122,6 +122,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HeaderProductCategoryHierarchyName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "HeaderProductCategoryHierarchyName is required.")]
         public virtual string HeaderProductCategoryHierarchyName
         {
             get
@@ -144,6 +146,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HeaderProductCategoryName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "HeaderProductCategoryName is required.")]
         public virtual string HeaderProductCategoryName
         {
             get
@@ -166,6 +170,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineProductCategoryHierarchyName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LineProductCategoryHierarchyName is required.")]
         public virtual string LineProductCategoryHierarchyName
         {
             get
@@ -188,6 +194,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineProductCategoryName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LineProductCategoryName is required.")]
         public virtual string LineProductCategoryName
         {
             get
@@ -210,6 +218,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductNumber is required.")]
         public virtual string ProductNumber
         {
             get
@@ -232,6 +242,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductVariantNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductVariantNumber is required.")]
         public virtual string ProductVariantNumber
         {
             get
@@ -254,6 +266,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProductName
         {
             get
@@ -276,6 +289,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductCategory in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ProductCategory ProductCategory
         {
             get
@@ -298,6 +312,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductVariant in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ProductVariant ProductVariant
         {
             get

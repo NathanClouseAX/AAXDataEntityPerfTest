@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for EducationDisciplineSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for EducationDisciplineSingle in the schema.
+    /// </summary>
     public partial class EducationDisciplineSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<EducationDiscipline>
     {
         /// <summary>
@@ -34,6 +34,27 @@ namespace Microsoft.Dynamics.DataEntities
         public EducationDisciplineSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<EducationDiscipline> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for CourseTypeEducationProfile in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CourseTypeEducationProfile> CourseTypeEducationProfile
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._CourseTypeEducationProfile == null))
+                {
+                    this._CourseTypeEducationProfile = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CourseTypeEducationProfile>(GetPath("CourseTypeEducationProfile"));
+                }
+                return this._CourseTypeEducationProfile;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CourseTypeEducationProfile> _CourseTypeEducationProfile;
         /// <summary>
         /// There are no comments for JobPreferredEducationDisciplines in the schema.
         /// </summary>
@@ -77,27 +98,6 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EducationDisciplineGroup> _EducationDisciplineGroups;
         /// <summary>
-        /// There are no comments for CourseTypeEducationProfile in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CourseTypeEducationProfile> CourseTypeEducationProfile
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._CourseTypeEducationProfile == null))
-                {
-                    this._CourseTypeEducationProfile = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CourseTypeEducationProfile>(GetPath("CourseTypeEducationProfile"));
-                }
-                return this._CourseTypeEducationProfile;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CourseTypeEducationProfile> _CourseTypeEducationProfile;
-        /// <summary>
         /// There are no comments for JobTemplateEducationDisciplines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -119,9 +119,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobTemplateEducationDiscipline> _JobTemplateEducationDisciplines;
     }
-        /// <summary>
-        /// There are no comments for EducationDiscipline in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for EducationDiscipline in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// EducationDiscipline
     /// </KeyProperties>
@@ -144,7 +144,9 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EducationDiscipline1 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         [global::Microsoft.OData.Client.OriginalNameAttribute("EducationDiscipline")]
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EducationDiscipline1 is required.")]
         public virtual string EducationDiscipline1
         {
             get
@@ -167,6 +169,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -186,9 +189,33 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDescriptionChanging(string value);
         partial void OnDescriptionChanged();
         /// <summary>
+        /// There are no comments for Property CourseTypeEducationProfile in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CourseTypeEducationProfile> CourseTypeEducationProfile
+        {
+            get
+            {
+                return this._CourseTypeEducationProfile;
+            }
+            set
+            {
+                this.OnCourseTypeEducationProfileChanging(value);
+                this._CourseTypeEducationProfile = value;
+                this.OnCourseTypeEducationProfileChanged();
+                this.OnPropertyChanged("CourseTypeEducationProfile");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CourseTypeEducationProfile> _CourseTypeEducationProfile = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CourseTypeEducationProfile>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnCourseTypeEducationProfileChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CourseTypeEducationProfile> value);
+        partial void OnCourseTypeEducationProfileChanged();
+        /// <summary>
         /// There are no comments for Property JobPreferredEducationDisciplines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredEducationDiscipline> JobPreferredEducationDisciplines
         {
             get
@@ -211,6 +238,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EducationDisciplineGroups in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EducationDisciplineGroup> EducationDisciplineGroups
         {
             get
@@ -230,31 +258,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnEducationDisciplineGroupsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EducationDisciplineGroup> value);
         partial void OnEducationDisciplineGroupsChanged();
         /// <summary>
-        /// There are no comments for Property CourseTypeEducationProfile in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CourseTypeEducationProfile> CourseTypeEducationProfile
-        {
-            get
-            {
-                return this._CourseTypeEducationProfile;
-            }
-            set
-            {
-                this.OnCourseTypeEducationProfileChanging(value);
-                this._CourseTypeEducationProfile = value;
-                this.OnCourseTypeEducationProfileChanged();
-                this.OnPropertyChanged("CourseTypeEducationProfile");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CourseTypeEducationProfile> _CourseTypeEducationProfile = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CourseTypeEducationProfile>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnCourseTypeEducationProfileChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CourseTypeEducationProfile> value);
-        partial void OnCourseTypeEducationProfileChanged();
-        /// <summary>
         /// There are no comments for Property JobTemplateEducationDisciplines in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateEducationDiscipline> JobTemplateEducationDisciplines
         {
             get

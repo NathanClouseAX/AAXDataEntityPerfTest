@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for WithholdingGroupDataSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for WithholdingGroupDataSingle in the schema.
+    /// </summary>
     public partial class WithholdingGroupDataSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<WithholdingGroupData>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.WithholdingGroupSingle _WithholdingGroup;
     }
-        /// <summary>
-        /// There are no comments for WithholdingGroupData in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for WithholdingGroupData in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// WithholdingTaxGroupId
@@ -108,6 +108,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -130,6 +132,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WithholdingTaxGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WithholdingTaxGroupId is required.")]
         public virtual string WithholdingTaxGroupId
         {
             get
@@ -152,6 +156,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WithholdingTaxCodeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "WithholdingTaxCodeId is required.")]
         public virtual string WithholdingTaxCodeId
         {
             get
@@ -174,6 +180,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OverlookThreshold in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> OverlookThreshold
         {
             get
@@ -196,6 +203,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Exempt in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> Exempt
         {
             get
@@ -218,6 +226,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WithholdingTaxCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.WithholdingTaxCode WithholdingTaxCode
         {
             get
@@ -240,6 +249,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WithholdingGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.WithholdingGroup WithholdingGroup
         {
             get

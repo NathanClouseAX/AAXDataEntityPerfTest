@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for LedgerAdvancedRuleStructureConstraintSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LedgerAdvancedRuleStructureConstraintSingle in the schema.
+    /// </summary>
     public partial class LedgerAdvancedRuleStructureConstraintSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<LedgerAdvancedRuleStructureConstraint>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructureSingle _LedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureEntity;
     }
-        /// <summary>
-        /// There are no comments for LedgerAdvancedRuleStructureConstraint in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LedgerAdvancedRuleStructureConstraint in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// AdvancedRuleStructure
     /// Status
@@ -95,6 +95,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AdvancedRuleStructure in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AdvancedRuleStructure is required.")]
         public virtual string AdvancedRuleStructure
         {
             get
@@ -117,6 +119,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Status in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.DimensionHierarchyConstraintStatus> Status
         {
             get
@@ -139,6 +142,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Position in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Position is required.")]
         public virtual int Position
         {
             get
@@ -161,6 +166,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentCriteria05 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentCriteria05
         {
             get
@@ -183,6 +189,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentCriteria04 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentCriteria04
         {
             get
@@ -205,6 +212,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentCriteria07 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentCriteria07
         {
             get
@@ -227,6 +235,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentCriteria06 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentCriteria06
         {
             get
@@ -249,6 +258,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentCriteria01 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentCriteria01
         {
             get
@@ -271,6 +281,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentCriteria03 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentCriteria03
         {
             get
@@ -293,6 +304,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentCriteria02 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentCriteria02
         {
             get
@@ -315,6 +327,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentCriteria11 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentCriteria11
         {
             get
@@ -337,6 +350,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentCriteria10 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentCriteria10
         {
             get
@@ -359,6 +373,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentCriteria09 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentCriteria09
         {
             get
@@ -381,6 +396,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SegmentCriteria08 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SegmentCriteria08
         {
             get
@@ -403,6 +419,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ActiveFrom in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ActiveFrom is required.")]
         public virtual global::System.DateTimeOffset ActiveFrom
         {
             get
@@ -425,6 +443,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ActiveTo in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ActiveTo is required.")]
         public virtual global::System.DateTimeOffset ActiveTo
         {
             get
@@ -447,6 +467,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureEntity is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.LedgerAdvancedRuleStructure LedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureConstraintEntity_RelatedRole_LedgerAdvancedRuleStructureEntity
         {
             get

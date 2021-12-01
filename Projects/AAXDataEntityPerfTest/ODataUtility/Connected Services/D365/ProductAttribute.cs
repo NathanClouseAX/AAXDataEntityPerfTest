@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ProductAttributeSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ProductAttributeSingle in the schema.
+    /// </summary>
     public partial class ProductAttributeSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ProductAttribute>
     {
         /// <summary>
@@ -56,10 +56,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersionAttributeValue> _ReleasedEngineeringProductVersionAttributeValues;
         /// <summary>
-        /// There are no comments for ProductAttributeTranslations in the schema.
+        /// There are no comments for ReleasedEngineeringProductVersionAttributes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductAttributeTranslation> ProductAttributeTranslations
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersionAttribute> ReleasedEngineeringProductVersionAttributes
         {
             get
             {
@@ -67,15 +67,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._ProductAttributeTranslations == null))
+                if ((this._ReleasedEngineeringProductVersionAttributes == null))
                 {
-                    this._ProductAttributeTranslations = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductAttributeTranslation>(GetPath("ProductAttributeTranslations"));
+                    this._ReleasedEngineeringProductVersionAttributes = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersionAttribute>(GetPath("ReleasedEngineeringProductVersionAttributes"));
                 }
-                return this._ProductAttributeTranslations;
+                return this._ReleasedEngineeringProductVersionAttributes;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductAttributeTranslation> _ProductAttributeTranslations;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersionAttribute> _ReleasedEngineeringProductVersionAttributes;
         /// <summary>
         /// There are no comments for EngineeringChangeOrderProductAttributes in the schema.
         /// </summary>
@@ -119,10 +119,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AttributeMetadata> _AttributeMetadata;
         /// <summary>
-        /// There are no comments for ReleasedEngineeringProductVersionAttributes in the schema.
+        /// There are no comments for ProductAttributeTranslations in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersionAttribute> ReleasedEngineeringProductVersionAttributes
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductAttributeTranslation> ProductAttributeTranslations
         {
             get
             {
@@ -130,19 +130,19 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._ReleasedEngineeringProductVersionAttributes == null))
+                if ((this._ProductAttributeTranslations == null))
                 {
-                    this._ReleasedEngineeringProductVersionAttributes = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersionAttribute>(GetPath("ReleasedEngineeringProductVersionAttributes"));
+                    this._ProductAttributeTranslations = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductAttributeTranslation>(GetPath("ProductAttributeTranslations"));
                 }
-                return this._ReleasedEngineeringProductVersionAttributes;
+                return this._ProductAttributeTranslations;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersionAttribute> _ReleasedEngineeringProductVersionAttributes;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductAttributeTranslation> _ProductAttributeTranslations;
     }
-        /// <summary>
-        /// There are no comments for ProductAttribute in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ProductAttribute in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// ProductAttributeTypeName
     /// AttributeName
@@ -181,6 +181,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductAttributeTypeName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductAttributeTypeName is required.")]
         public virtual string ProductAttributeTypeName
         {
             get
@@ -203,6 +205,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AttributeName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AttributeName is required.")]
         public virtual string AttributeName
         {
             get
@@ -225,6 +229,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultDateTimeValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DefaultDateTimeValue is required.")]
         public virtual global::System.DateTimeOffset DefaultDateTimeValue
         {
             get
@@ -247,6 +253,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultCurrencyValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DefaultCurrencyValue is required.")]
         public virtual decimal DefaultCurrencyValue
         {
             get
@@ -269,6 +277,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultBooleanValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DefaultBooleanValue
         {
             get
@@ -291,6 +300,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultDecimalValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DefaultDecimalValue is required.")]
         public virtual decimal DefaultDecimalValue
         {
             get
@@ -313,6 +324,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultIntegerValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DefaultIntegerValue is required.")]
         public virtual int DefaultIntegerValue
         {
             get
@@ -335,6 +348,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultCurrencyCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultCurrencyCode
         {
             get
@@ -357,6 +371,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AttributeDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AttributeDescription
         {
             get
@@ -379,6 +394,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultTextValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultTextValue
         {
             get
@@ -401,6 +417,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AttributeHelpText in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AttributeHelpText
         {
             get
@@ -423,6 +440,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FriendlyAttributeName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FriendlyAttributeName
         {
             get
@@ -445,6 +463,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReleasedEngineeringProductVersionAttributeValues in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersionAttributeValue> ReleasedEngineeringProductVersionAttributeValues
         {
             get
@@ -464,31 +483,33 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnReleasedEngineeringProductVersionAttributeValuesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersionAttributeValue> value);
         partial void OnReleasedEngineeringProductVersionAttributeValuesChanged();
         /// <summary>
-        /// There are no comments for Property ProductAttributeTranslations in the schema.
+        /// There are no comments for Property ReleasedEngineeringProductVersionAttributes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductAttributeTranslation> ProductAttributeTranslations
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersionAttribute> ReleasedEngineeringProductVersionAttributes
         {
             get
             {
-                return this._ProductAttributeTranslations;
+                return this._ReleasedEngineeringProductVersionAttributes;
             }
             set
             {
-                this.OnProductAttributeTranslationsChanging(value);
-                this._ProductAttributeTranslations = value;
-                this.OnProductAttributeTranslationsChanged();
-                this.OnPropertyChanged("ProductAttributeTranslations");
+                this.OnReleasedEngineeringProductVersionAttributesChanging(value);
+                this._ReleasedEngineeringProductVersionAttributes = value;
+                this.OnReleasedEngineeringProductVersionAttributesChanged();
+                this.OnPropertyChanged("ReleasedEngineeringProductVersionAttributes");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductAttributeTranslation> _ProductAttributeTranslations = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductAttributeTranslation>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnProductAttributeTranslationsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductAttributeTranslation> value);
-        partial void OnProductAttributeTranslationsChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersionAttribute> _ReleasedEngineeringProductVersionAttributes = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersionAttribute>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnReleasedEngineeringProductVersionAttributesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersionAttribute> value);
+        partial void OnReleasedEngineeringProductVersionAttributesChanged();
         /// <summary>
         /// There are no comments for Property EngineeringChangeOrderProductAttributes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EngineeringChangeOrderProductAttribute> EngineeringChangeOrderProductAttributes
         {
             get
@@ -511,6 +532,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AttributeMetadata in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeMetadata> AttributeMetadata
         {
             get
@@ -530,27 +552,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnAttributeMetadataChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AttributeMetadata> value);
         partial void OnAttributeMetadataChanged();
         /// <summary>
-        /// There are no comments for Property ReleasedEngineeringProductVersionAttributes in the schema.
+        /// There are no comments for Property ProductAttributeTranslations in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersionAttribute> ReleasedEngineeringProductVersionAttributes
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductAttributeTranslation> ProductAttributeTranslations
         {
             get
             {
-                return this._ReleasedEngineeringProductVersionAttributes;
+                return this._ProductAttributeTranslations;
             }
             set
             {
-                this.OnReleasedEngineeringProductVersionAttributesChanging(value);
-                this._ReleasedEngineeringProductVersionAttributes = value;
-                this.OnReleasedEngineeringProductVersionAttributesChanged();
-                this.OnPropertyChanged("ReleasedEngineeringProductVersionAttributes");
+                this.OnProductAttributeTranslationsChanging(value);
+                this._ProductAttributeTranslations = value;
+                this.OnProductAttributeTranslationsChanged();
+                this.OnPropertyChanged("ProductAttributeTranslations");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersionAttribute> _ReleasedEngineeringProductVersionAttributes = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersionAttribute>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnReleasedEngineeringProductVersionAttributesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ReleasedEngineeringProductVersionAttribute> value);
-        partial void OnReleasedEngineeringProductVersionAttributesChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductAttributeTranslation> _ProductAttributeTranslations = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductAttributeTranslation>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnProductAttributeTranslationsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductAttributeTranslation> value);
+        partial void OnProductAttributeTranslationsChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

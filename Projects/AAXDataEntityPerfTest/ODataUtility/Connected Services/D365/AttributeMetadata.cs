@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for AttributeMetadataSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AttributeMetadataSingle in the schema.
+    /// </summary>
     public partial class AttributeMetadataSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AttributeMetadata>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ProductAttributeSingle _ProductAttribute;
     }
-        /// <summary>
-        /// There are no comments for AttributeMetadata in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AttributeMetadata in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// AttributeName
     /// TypeName
@@ -92,6 +92,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AttributeName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AttributeName is required.")]
         public virtual string AttributeName
         {
             get
@@ -114,6 +116,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TypeName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TypeName is required.")]
         public virtual string TypeName
         {
             get
@@ -136,6 +140,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property XmlMetadata in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string XmlMetadata
         {
             get
@@ -158,6 +163,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property XmlMetadataVersionNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "XmlMetadataVersionNumber is required.")]
         public virtual int XmlMetadataVersionNumber
         {
             get
@@ -180,6 +187,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductAttribute in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductAttribute is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ProductAttribute ProductAttribute
         {
             get

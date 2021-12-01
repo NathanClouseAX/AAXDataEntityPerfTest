@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for AssetMaintenanceAssetCounterSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AssetMaintenanceAssetCounterSingle in the schema.
+    /// </summary>
     public partial class AssetMaintenanceAssetCounterSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AssetMaintenanceAssetCounter>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetTypeCounterAssociation> _AssetMaintenanceAssetTypeCounterAssociation;
     }
-        /// <summary>
-        /// There are no comments for AssetMaintenanceAssetCounter in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AssetMaintenanceAssetCounter in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// CounterId
@@ -88,6 +88,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -110,6 +112,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CounterId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CounterId is required.")]
         public virtual string CounterId
         {
             get
@@ -132,6 +136,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CounterUpdate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EntAssetObjectCounterUpdate> CounterUpdate
         {
             get
@@ -154,6 +159,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Name
         {
             get
@@ -176,6 +182,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Inherit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> Inherit
         {
             get
@@ -198,6 +205,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValueDeviationOver in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValueDeviationOver is required.")]
         public virtual decimal ValueDeviationOver
         {
             get
@@ -220,6 +229,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValueDeviationUnder in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValueDeviationUnder is required.")]
         public virtual decimal ValueDeviationUnder
         {
             get
@@ -242,6 +253,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValueDeviationInfoType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EntAssetInfoType> ValueDeviationInfoType
         {
             get
@@ -264,6 +276,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CounterAggregate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EntAssetCounterAggregate> CounterAggregate
         {
             get
@@ -286,6 +299,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnitId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string UnitId
         {
             get
@@ -308,6 +322,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetMaintenanceAssetTypeCounterAssociation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.AssetMaintenanceAssetTypeCounterAssociation> AssetMaintenanceAssetTypeCounterAssociation
         {
             get

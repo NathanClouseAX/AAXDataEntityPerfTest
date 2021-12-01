@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for PersonDetailsSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PersonDetailsSingle in the schema.
+    /// </summary>
     public partial class PersonDetailsSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PersonDetails>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.VeteranStatusSingle _VeteranStatus;
     }
-        /// <summary>
-        /// There are no comments for PersonDetails in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PersonDetails in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// PartyNumber
     /// ValidFrom
@@ -132,6 +132,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PartyNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PartyNumber is required.")]
         public virtual string PartyNumber
         {
             get
@@ -154,6 +156,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidFrom in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValidFrom is required.")]
         public virtual global::System.DateTimeOffset ValidFrom
         {
             get
@@ -176,6 +180,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidTo in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValidTo is required.")]
         public virtual global::System.DateTimeOffset ValidTo
         {
             get
@@ -198,6 +204,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaritalStatus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HcmPersonMaritalStatus> MaritalStatus
         {
             get
@@ -220,6 +227,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExpatriateRulingValidFrom in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ExpatriateRulingValidFrom is required.")]
         public virtual global::System.DateTimeOffset ExpatriateRulingValidFrom
         {
             get
@@ -242,6 +251,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExpatriateRulingValidTo in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ExpatriateRulingValidTo is required.")]
         public virtual global::System.DateTimeOffset ExpatriateRulingValidTo
         {
             get
@@ -264,6 +275,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MilitaryServiceStartDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MilitaryServiceStartDate is required.")]
         public virtual global::System.DateTimeOffset MilitaryServiceStartDate
         {
             get
@@ -286,6 +299,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsExpatriateRulingApplicable in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsExpatriateRulingApplicable
         {
             get
@@ -308,6 +322,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsDisabledVeteran in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsDisabledVeteran
         {
             get
@@ -330,6 +345,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VeteranStatusId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VeteranStatusId
         {
             get
@@ -352,6 +368,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MilitaryServiceEndDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MilitaryServiceEndDate is required.")]
         public virtual global::System.DateTimeOffset MilitaryServiceEndDate
         {
             get
@@ -374,6 +392,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NumberOfDependents in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "NumberOfDependents is required.")]
         public virtual int NumberOfDependents
         {
             get
@@ -396,6 +416,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Person in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Person is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.Person Person
         {
             get
@@ -418,6 +440,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VeteranStatus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.VeteranStatus VeteranStatus
         {
             get

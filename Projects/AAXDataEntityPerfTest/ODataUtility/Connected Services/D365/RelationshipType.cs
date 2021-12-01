@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RelationshipTypeSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RelationshipTypeSingle in the schema.
+    /// </summary>
     public partial class RelationshipTypeSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RelationshipType>
     {
         /// <summary>
@@ -35,10 +35,10 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for PersonalContactOrganizationWorkerRelationshipType1 in the schema.
+        /// There are no comments for PersonalContactPersonWorkerRelationshipType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonalContactOrganizations> PersonalContactOrganizationWorkerRelationshipType1
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonalContactPerson> PersonalContactPersonWorkerRelationshipType
         {
             get
             {
@@ -46,15 +46,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._PersonalContactOrganizationWorkerRelationshipType1 == null))
+                if ((this._PersonalContactPersonWorkerRelationshipType == null))
                 {
-                    this._PersonalContactOrganizationWorkerRelationshipType1 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PersonalContactOrganizations>(GetPath("PersonalContactOrganizationWorkerRelationshipType1"));
+                    this._PersonalContactPersonWorkerRelationshipType = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PersonalContactPerson>(GetPath("PersonalContactPersonWorkerRelationshipType"));
                 }
-                return this._PersonalContactOrganizationWorkerRelationshipType1;
+                return this._PersonalContactPersonWorkerRelationshipType;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonalContactOrganizations> _PersonalContactOrganizationWorkerRelationshipType1;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonalContactPerson> _PersonalContactPersonWorkerRelationshipType;
         /// <summary>
         /// There are no comments for TeamMember in the schema.
         /// </summary>
@@ -77,10 +77,10 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.TeamMember> _TeamMember;
         /// <summary>
-        /// There are no comments for PersonalContactPersonWorkerRelationshipType in the schema.
+        /// There are no comments for PersonalContactOrganizationWorkerRelationshipType1 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonalContactPerson> PersonalContactPersonWorkerRelationshipType
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonalContactOrganizations> PersonalContactOrganizationWorkerRelationshipType1
         {
             get
             {
@@ -88,19 +88,19 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._PersonalContactPersonWorkerRelationshipType == null))
+                if ((this._PersonalContactOrganizationWorkerRelationshipType1 == null))
                 {
-                    this._PersonalContactPersonWorkerRelationshipType = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PersonalContactPerson>(GetPath("PersonalContactPersonWorkerRelationshipType"));
+                    this._PersonalContactOrganizationWorkerRelationshipType1 = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PersonalContactOrganizations>(GetPath("PersonalContactOrganizationWorkerRelationshipType1"));
                 }
-                return this._PersonalContactPersonWorkerRelationshipType;
+                return this._PersonalContactOrganizationWorkerRelationshipType1;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonalContactPerson> _PersonalContactPersonWorkerRelationshipType;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonalContactOrganizations> _PersonalContactOrganizationWorkerRelationshipType1;
     }
-        /// <summary>
-        /// There are no comments for RelationshipType in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RelationshipType in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// ID
     /// </KeyProperties>
@@ -123,6 +123,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ID in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ID is required.")]
         public virtual string ID
         {
             get
@@ -145,6 +147,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SystemType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.DirSystemRelationshipType> SystemType
         {
             get
@@ -167,6 +170,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PartyBType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.DirPartyType> PartyBType
         {
             get
@@ -189,6 +193,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PartyAType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.DirPartyType> PartyAType
         {
             get
@@ -211,6 +216,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Symmetric in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> Symmetric
         {
             get
@@ -233,6 +239,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RelationshipAToB in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RelationshipAToB
         {
             get
@@ -255,6 +262,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -277,6 +285,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RelationshipBToA in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RelationshipBToA
         {
             get
@@ -296,31 +305,33 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnRelationshipBToAChanging(string value);
         partial void OnRelationshipBToAChanged();
         /// <summary>
-        /// There are no comments for Property PersonalContactOrganizationWorkerRelationshipType1 in the schema.
+        /// There are no comments for Property PersonalContactPersonWorkerRelationshipType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonalContactOrganizations> PersonalContactOrganizationWorkerRelationshipType1
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonalContactPerson> PersonalContactPersonWorkerRelationshipType
         {
             get
             {
-                return this._PersonalContactOrganizationWorkerRelationshipType1;
+                return this._PersonalContactPersonWorkerRelationshipType;
             }
             set
             {
-                this.OnPersonalContactOrganizationWorkerRelationshipType1Changing(value);
-                this._PersonalContactOrganizationWorkerRelationshipType1 = value;
-                this.OnPersonalContactOrganizationWorkerRelationshipType1Changed();
-                this.OnPropertyChanged("PersonalContactOrganizationWorkerRelationshipType1");
+                this.OnPersonalContactPersonWorkerRelationshipTypeChanging(value);
+                this._PersonalContactPersonWorkerRelationshipType = value;
+                this.OnPersonalContactPersonWorkerRelationshipTypeChanged();
+                this.OnPropertyChanged("PersonalContactPersonWorkerRelationshipType");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonalContactOrganizations> _PersonalContactOrganizationWorkerRelationshipType1 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonalContactOrganizations>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPersonalContactOrganizationWorkerRelationshipType1Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonalContactOrganizations> value);
-        partial void OnPersonalContactOrganizationWorkerRelationshipType1Changed();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonalContactPerson> _PersonalContactPersonWorkerRelationshipType = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonalContactPerson>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPersonalContactPersonWorkerRelationshipTypeChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonalContactPerson> value);
+        partial void OnPersonalContactPersonWorkerRelationshipTypeChanged();
         /// <summary>
         /// There are no comments for Property TeamMember in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TeamMember> TeamMember
         {
             get
@@ -340,27 +351,28 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnTeamMemberChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.TeamMember> value);
         partial void OnTeamMemberChanged();
         /// <summary>
-        /// There are no comments for Property PersonalContactPersonWorkerRelationshipType in the schema.
+        /// There are no comments for Property PersonalContactOrganizationWorkerRelationshipType1 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonalContactPerson> PersonalContactPersonWorkerRelationshipType
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonalContactOrganizations> PersonalContactOrganizationWorkerRelationshipType1
         {
             get
             {
-                return this._PersonalContactPersonWorkerRelationshipType;
+                return this._PersonalContactOrganizationWorkerRelationshipType1;
             }
             set
             {
-                this.OnPersonalContactPersonWorkerRelationshipTypeChanging(value);
-                this._PersonalContactPersonWorkerRelationshipType = value;
-                this.OnPersonalContactPersonWorkerRelationshipTypeChanged();
-                this.OnPropertyChanged("PersonalContactPersonWorkerRelationshipType");
+                this.OnPersonalContactOrganizationWorkerRelationshipType1Changing(value);
+                this._PersonalContactOrganizationWorkerRelationshipType1 = value;
+                this.OnPersonalContactOrganizationWorkerRelationshipType1Changed();
+                this.OnPropertyChanged("PersonalContactOrganizationWorkerRelationshipType1");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonalContactPerson> _PersonalContactPersonWorkerRelationshipType = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonalContactPerson>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPersonalContactPersonWorkerRelationshipTypeChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonalContactPerson> value);
-        partial void OnPersonalContactPersonWorkerRelationshipTypeChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonalContactOrganizations> _PersonalContactOrganizationWorkerRelationshipType1 = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonalContactOrganizations>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPersonalContactOrganizationWorkerRelationshipType1Changing(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonalContactOrganizations> value);
+        partial void OnPersonalContactOrganizationWorkerRelationshipType1Changed();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

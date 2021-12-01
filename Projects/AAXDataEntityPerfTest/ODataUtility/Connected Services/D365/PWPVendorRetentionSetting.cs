@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for PWPVendorRetentionSettingSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PWPVendorRetentionSettingSingle in the schema.
+    /// </summary>
     public partial class PWPVendorRetentionSettingSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PWPVendorRetentionSetting>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for PWPVendorRetentionSetting in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PWPVendorRetentionSetting in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// ProjId
@@ -71,6 +71,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -93,6 +95,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProjId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProjId is required.")]
         public virtual string ProjId
         {
             get
@@ -115,6 +119,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "VendorId is required.")]
         public virtual string VendorId
         {
             get
@@ -137,6 +143,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "VendorGroup is required.")]
         public virtual string VendorGroup
         {
             get
@@ -159,6 +167,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RuleId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RuleId
         {
             get
@@ -181,6 +190,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PwpThresholdPercent in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PwpThresholdPercent is required.")]
         public virtual decimal PwpThresholdPercent
         {
             get

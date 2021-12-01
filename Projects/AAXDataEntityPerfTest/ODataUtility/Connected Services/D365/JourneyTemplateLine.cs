@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for JourneyTemplateLineSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for JourneyTemplateLineSingle in the schema.
+    /// </summary>
     public partial class JourneyTemplateLineSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<JourneyTemplateLine>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for JourneyTemplateLine in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for JourneyTemplateLine in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// JourneyTemplateId
@@ -68,6 +68,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -90,6 +92,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JourneyTemplateId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "JourneyTemplateId is required.")]
         public virtual string JourneyTemplateId
         {
             get
@@ -112,6 +116,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property JourneyLegId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "JourneyLegId is required.")]
         public virtual string JourneyLegId
         {
             get
@@ -134,6 +140,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LineNumber is required.")]
         public virtual decimal LineNumber
         {
             get
@@ -156,6 +164,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShippingVendorAccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ShippingVendorAccountNumber
         {
             get
@@ -178,6 +187,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FromShippingPortId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FromShippingPortId
         {
             get
@@ -200,6 +210,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DeliveryModeCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DeliveryModeCode
         {
             get
@@ -222,6 +233,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsFromPortJourneyOriginPort in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsFromPortJourneyOriginPort
         {
             get
@@ -244,6 +256,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsToPortJourneyDestinationPort in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsToPortJourneyDestinationPort
         {
             get
@@ -266,6 +279,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ToShippingPortID in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ToShippingPortID
         {
             get

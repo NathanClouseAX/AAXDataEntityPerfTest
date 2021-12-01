@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for AssetMaintenanceFunctionalLocationAttributeSpecificationSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AssetMaintenanceFunctionalLocationAttributeSpecificationSingle in the schema.
+    /// </summary>
     public partial class AssetMaintenanceFunctionalLocationAttributeSpecificationSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AssetMaintenanceFunctionalLocationAttributeSpecification>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocationSingle _AssetMaintenanceFunctionalLocation;
     }
-        /// <summary>
-        /// There are no comments for AssetMaintenanceFunctionalLocationAttributeSpecification in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for AssetMaintenanceFunctionalLocationAttributeSpecification in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// FunctionalLocationId
@@ -133,6 +133,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -155,6 +157,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FunctionalLocationId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FunctionalLocationId is required.")]
         public virtual string FunctionalLocationId
         {
             get
@@ -177,6 +181,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AttributeTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AttributeTypeId is required.")]
         public virtual string AttributeTypeId
         {
             get
@@ -199,6 +205,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValueReal in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValueReal is required.")]
         public virtual decimal ValueReal
         {
             get
@@ -221,6 +229,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValueNoYes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ValueNoYes
         {
             get
@@ -243,6 +252,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValueDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValueDate is required.")]
         public virtual global::System.DateTimeOffset ValueDate
         {
             get
@@ -265,6 +276,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValueString in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ValueString
         {
             get
@@ -287,6 +299,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -309,6 +322,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValueInteger in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ValueInteger is required.")]
         public virtual int ValueInteger
         {
             get
@@ -331,6 +346,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AttributeTypeDataType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EntAssetConditionType> AttributeTypeDataType
         {
             get
@@ -353,6 +369,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnitId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string UnitId
         {
             get
@@ -375,6 +392,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ThresholdCriteria in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.CuesThresholdCriteria> ThresholdCriteria
         {
             get
@@ -397,6 +415,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetMaintenanceSpecificationType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AssetMaintenanceSpecificationType is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.AssetMaintenanceSpecificationType AssetMaintenanceSpecificationType
         {
             get
@@ -419,6 +439,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetMaintenanceFunctionalLocation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AssetMaintenanceFunctionalLocation is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.AssetMaintenanceFunctionalLocation AssetMaintenanceFunctionalLocation
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for CourseTypeNotesSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CourseTypeNotesSingle in the schema.
+    /// </summary>
     public partial class CourseTypeNotesSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<CourseTypeNotes>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.CourseTypeSingle _CourseType;
     }
-        /// <summary>
-        /// There are no comments for CourseTypeNotes in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CourseTypeNotes in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// CourseTypeId
     /// NotesType
@@ -88,6 +88,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CourseTypeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CourseTypeId is required.")]
         public virtual string CourseTypeId
         {
             get
@@ -110,6 +112,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NotesType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HrmCourseNotesType> NotesType
         {
             get
@@ -132,6 +135,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Notes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Notes
         {
             get
@@ -154,6 +158,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CourseType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CourseType is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.CourseType CourseType
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RetailKitOrderSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailKitOrderSingle in the schema.
+    /// </summary>
     public partial class RetailKitOrderSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RetailKitOrder>
     {
         /// <summary>
@@ -35,27 +35,6 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for RetailKit in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.RetailKitSingle RetailKit
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._RetailKit == null))
-                {
-                    this._RetailKit = new global::Microsoft.Dynamics.DataEntities.RetailKitSingle(this.Context, GetPath("RetailKit"));
-                }
-                return this._RetailKit;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.RetailKitSingle _RetailKit;
-        /// <summary>
         /// There are no comments for RetailKitOrderJournal in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -76,10 +55,31 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailKitOrderJournal> _RetailKitOrderJournal;
-    }
         /// <summary>
-        /// There are no comments for RetailKitOrder in the schema.
+        /// There are no comments for RetailKit in the schema.
         /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.RetailKitSingle RetailKit
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RetailKit == null))
+                {
+                    this._RetailKit = new global::Microsoft.Dynamics.DataEntities.RetailKitSingle(this.Context, GetPath("RetailKit"));
+                }
+                return this._RetailKit;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.RetailKitSingle _RetailKit;
+    }
+    /// <summary>
+    /// There are no comments for RetailKitOrder in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// Name
     /// </KeyProperties>
@@ -112,6 +112,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Name is required.")]
         public virtual string Name
         {
             get
@@ -134,6 +136,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OrderSource in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailKitOrderSource> OrderSource
         {
             get
@@ -156,6 +159,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property KitProductNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string KitProductNumber
         {
             get
@@ -178,6 +182,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Comments in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Comments
         {
             get
@@ -200,6 +205,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LegalEntityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LegalEntityId
         {
             get
@@ -222,6 +228,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Kit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Kit is required.")]
         public virtual long Kit
         {
             get
@@ -244,6 +252,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Warehouse in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Warehouse
         {
             get
@@ -266,6 +275,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity is required.")]
         public virtual decimal Quantity
         {
             get
@@ -288,6 +299,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsAssembly in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsAssembly
         {
             get
@@ -310,6 +322,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OrderType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailKitOrderType> OrderType
         {
             get
@@ -329,31 +342,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnOrderTypeChanging(global::System.Nullable<global::Microsoft.Dynamics.DataEntities.RetailKitOrderType> value);
         partial void OnOrderTypeChanged();
         /// <summary>
-        /// There are no comments for Property RetailKit in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.RetailKit RetailKit
-        {
-            get
-            {
-                return this._RetailKit;
-            }
-            set
-            {
-                this.OnRetailKitChanging(value);
-                this._RetailKit = value;
-                this.OnRetailKitChanged();
-                this.OnPropertyChanged("RetailKit");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.RetailKit _RetailKit;
-        partial void OnRetailKitChanging(global::Microsoft.Dynamics.DataEntities.RetailKit value);
-        partial void OnRetailKitChanged();
-        /// <summary>
         /// There are no comments for Property RetailKitOrderJournal in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailKitOrderJournal> RetailKitOrderJournal
         {
             get
@@ -372,6 +364,30 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailKitOrderJournal> _RetailKitOrderJournal = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailKitOrderJournal>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnRetailKitOrderJournalChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailKitOrderJournal> value);
         partial void OnRetailKitOrderJournalChanged();
+        /// <summary>
+        /// There are no comments for Property RetailKit in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetailKit is required.")]
+        public virtual global::Microsoft.Dynamics.DataEntities.RetailKit RetailKit
+        {
+            get
+            {
+                return this._RetailKit;
+            }
+            set
+            {
+                this.OnRetailKitChanging(value);
+                this._RetailKit = value;
+                this.OnRetailKitChanged();
+                this.OnPropertyChanged("RetailKit");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.RetailKit _RetailKit;
+        partial void OnRetailKitChanging(global::Microsoft.Dynamics.DataEntities.RetailKit value);
+        partial void OnRetailKitChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

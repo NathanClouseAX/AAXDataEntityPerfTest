@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for CertificateTypeSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CertificateTypeSingle in the schema.
+    /// </summary>
     public partial class CertificateTypeSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<CertificateType>
     {
         /// <summary>
@@ -35,10 +35,10 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for JobPreferredCertificates in the schema.
+        /// There are no comments for PersonCertificate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredCertificate> JobPreferredCertificates
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonCertificate> PersonCertificate
         {
             get
             {
@@ -46,15 +46,15 @@ namespace Microsoft.Dynamics.DataEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._JobPreferredCertificates == null))
+                if ((this._PersonCertificate == null))
                 {
-                    this._JobPreferredCertificates = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredCertificate>(GetPath("JobPreferredCertificates"));
+                    this._PersonCertificate = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PersonCertificate>(GetPath("PersonCertificate"));
                 }
-                return this._JobPreferredCertificates;
+                return this._PersonCertificate;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredCertificate> _JobPreferredCertificates;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonCertificate> _PersonCertificate;
         /// <summary>
         /// There are no comments for JobTemplateCertificates in the schema.
         /// </summary>
@@ -77,6 +77,27 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobTemplateCertificate> _JobTemplateCertificates;
         /// <summary>
+        /// There are no comments for JobPreferredCertificates in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredCertificate> JobPreferredCertificates
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._JobPreferredCertificates == null))
+                {
+                    this._JobPreferredCertificates = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredCertificate>(GetPath("JobPreferredCertificates"));
+                }
+                return this._JobPreferredCertificates;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.JobPreferredCertificate> _JobPreferredCertificates;
+        /// <summary>
         /// There are no comments for CourseTypeCertificateProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -97,31 +118,10 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CourseTypeCertificateProfile> _CourseTypeCertificateProfile;
-        /// <summary>
-        /// There are no comments for PersonCertificate in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonCertificate> PersonCertificate
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._PersonCertificate == null))
-                {
-                    this._PersonCertificate = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PersonCertificate>(GetPath("PersonCertificate"));
-                }
-                return this._PersonCertificate;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PersonCertificate> _PersonCertificate;
     }
-        /// <summary>
-        /// There are no comments for CertificateType in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CertificateType in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// CertificateType
     /// </KeyProperties>
@@ -144,7 +144,9 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CertificateType1 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         [global::Microsoft.OData.Client.OriginalNameAttribute("CertificateType")]
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CertificateType1 is required.")]
         public virtual string CertificateType1
         {
             get
@@ -167,6 +169,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RequireRenewal in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> RequireRenewal
         {
             get
@@ -189,6 +192,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -208,31 +212,33 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDescriptionChanging(string value);
         partial void OnDescriptionChanged();
         /// <summary>
-        /// There are no comments for Property JobPreferredCertificates in the schema.
+        /// There are no comments for Property PersonCertificate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredCertificate> JobPreferredCertificates
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonCertificate> PersonCertificate
         {
             get
             {
-                return this._JobPreferredCertificates;
+                return this._PersonCertificate;
             }
             set
             {
-                this.OnJobPreferredCertificatesChanging(value);
-                this._JobPreferredCertificates = value;
-                this.OnJobPreferredCertificatesChanged();
-                this.OnPropertyChanged("JobPreferredCertificates");
+                this.OnPersonCertificateChanging(value);
+                this._PersonCertificate = value;
+                this.OnPersonCertificateChanged();
+                this.OnPropertyChanged("PersonCertificate");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredCertificate> _JobPreferredCertificates = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredCertificate>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnJobPreferredCertificatesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredCertificate> value);
-        partial void OnJobPreferredCertificatesChanged();
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonCertificate> _PersonCertificate = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonCertificate>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPersonCertificateChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonCertificate> value);
+        partial void OnPersonCertificateChanged();
         /// <summary>
         /// There are no comments for Property JobTemplateCertificates in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateCertificate> JobTemplateCertificates
         {
             get
@@ -252,9 +258,33 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnJobTemplateCertificatesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobTemplateCertificate> value);
         partial void OnJobTemplateCertificatesChanged();
         /// <summary>
+        /// There are no comments for Property JobPreferredCertificates in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredCertificate> JobPreferredCertificates
+        {
+            get
+            {
+                return this._JobPreferredCertificates;
+            }
+            set
+            {
+                this.OnJobPreferredCertificatesChanging(value);
+                this._JobPreferredCertificates = value;
+                this.OnJobPreferredCertificatesChanged();
+                this.OnPropertyChanged("JobPreferredCertificates");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredCertificate> _JobPreferredCertificates = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredCertificate>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnJobPreferredCertificatesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.JobPreferredCertificate> value);
+        partial void OnJobPreferredCertificatesChanged();
+        /// <summary>
         /// There are no comments for Property CourseTypeCertificateProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CourseTypeCertificateProfile> CourseTypeCertificateProfile
         {
             get
@@ -273,28 +303,6 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CourseTypeCertificateProfile> _CourseTypeCertificateProfile = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CourseTypeCertificateProfile>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnCourseTypeCertificateProfileChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CourseTypeCertificateProfile> value);
         partial void OnCourseTypeCertificateProfileChanged();
-        /// <summary>
-        /// There are no comments for Property PersonCertificate in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonCertificate> PersonCertificate
-        {
-            get
-            {
-                return this._PersonCertificate;
-            }
-            set
-            {
-                this.OnPersonCertificateChanging(value);
-                this._PersonCertificate = value;
-                this.OnPersonCertificateChanged();
-                this.OnPropertyChanged("PersonCertificate");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonCertificate> _PersonCertificate = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonCertificate>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPersonCertificateChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PersonCertificate> value);
-        partial void OnPersonCertificateChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

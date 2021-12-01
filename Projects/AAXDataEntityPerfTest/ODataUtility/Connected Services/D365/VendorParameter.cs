@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for VendorParameterSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for VendorParameterSingle in the schema.
+    /// </summary>
     public partial class VendorParameterSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<VendorParameter>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _DimensionCombination;
     }
-        /// <summary>
-        /// There are no comments for VendorParameter in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for VendorParameter in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// </KeyProperties>
@@ -117,6 +117,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -139,6 +141,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Draft in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> Draft
         {
             get
@@ -161,6 +164,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsCashDiscountCalculatedOnAmountIncludingSalesTax in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsCashDiscountCalculatedOnAmountIncludingSalesTax
         {
             get
@@ -183,6 +187,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BrokerCategoryName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BrokerCategoryName
         {
             get
@@ -205,6 +210,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchasePriceTotalTolerance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PurchasePriceTotalTolerance is required.")]
         public virtual decimal PurchasePriceTotalTolerance
         {
             get
@@ -227,6 +234,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UseFiscalDataFromInvoiceAccount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.UseFiscalInvoiceAccount> UseFiscalDataFromInvoiceAccount
         {
             get
@@ -249,6 +257,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultSettlementTypeForCreditNotes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.SettlementType> DefaultSettlementTypeForCreditNotes
         {
             get
@@ -271,6 +280,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AutomationTotalsReqForWorkflowSubmission in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AutomationTotalsReqForWorkflowSubmission
         {
             get
@@ -293,6 +303,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AutomationProductReceiptMatchingMaxAttempts in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AutomationProductReceiptMatchingMaxAttempts is required.")]
         public virtual int AutomationProductReceiptMatchingMaxAttempts
         {
             get
@@ -315,6 +327,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostingProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PostingProfile
         {
             get
@@ -337,6 +350,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SettlementWriteOffReasonCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SettlementWriteOffReasonCode
         {
             get
@@ -359,6 +373,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MandatoryTaxGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> MandatoryTaxGroup
         {
             get
@@ -381,6 +396,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AutomaticHeaderMatching in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.UnknownNoYes> AutomaticHeaderMatching
         {
             get
@@ -403,6 +419,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccrualAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccrualAccountDisplayValue
         {
             get
@@ -425,6 +442,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryDiscountPosting in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ItemVend> PrimaryDiscountPosting
         {
             get
@@ -447,6 +465,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SequenceNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SequenceNumber is required.")]
         public virtual long SequenceNumber
         {
             get
@@ -469,6 +489,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CheckTheTaxInvoiceNumberUsed in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ReuseVoucher> CheckTheTaxInvoiceNumberUsed
         {
             get
@@ -491,6 +512,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendInvoiceInUseRecoverEnable in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> VendInvoiceInUseRecoverEnable
         {
             get
@@ -513,6 +535,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionTreeName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionTreeName
         {
             get
@@ -535,6 +558,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryRelationTaxMatrix in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ItemVend> PrimaryRelationTaxMatrix
         {
             get
@@ -557,6 +581,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ManualPosting in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ManualPosting
         {
             get
@@ -579,6 +604,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RemitPromissoryNote in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RemitPromissoryNote
         {
             get
@@ -601,6 +627,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TermsOfPayment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TermsOfPayment
         {
             get
@@ -623,6 +650,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ChangeProposalIsEnabled in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ChangeProposalIsEnabled
         {
             get
@@ -645,6 +673,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ChangeProposalDataEntityBehavior in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.VendTableChangeProposalDataEntityBehavior> ChangeProposalDataEntityBehavior
         {
             get
@@ -667,6 +696,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EditCashDiscountsWhenDueDateChanged in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> EditCashDiscountsWhenDueDateChanged
         {
             get
@@ -689,6 +719,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CashDiscountAdministration in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.UnspecificSpecific> CashDiscountAdministration
         {
             get
@@ -711,6 +742,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidationsOnPromissoryNotesJournals in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ValidationsOnPromissoryNotesJournals
         {
             get
@@ -733,6 +765,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UseConsolidatedInvoice in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> UseConsolidatedInvoice
         {
             get
@@ -755,6 +788,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsPrintTransportationDetails in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsPrintTransportationDetails
         {
             get
@@ -777,6 +811,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchPrepayApplicationPolicy in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PurchPrepayApplicationPolicy> PurchPrepayApplicationPolicy
         {
             get
@@ -799,6 +834,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BypassValidationOfAccountingDistributions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> BypassValidationOfAccountingDistributions
         {
             get
@@ -821,6 +857,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InvoiceTotalsTolerancePercentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "InvoiceTotalsTolerancePercentage is required.")]
         public virtual decimal InvoiceTotalsTolerancePercentage
         {
             get
@@ -843,6 +881,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchasePriceTotalTolerancePercent in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PurchasePriceTotalTolerancePercent is required.")]
         public virtual decimal PurchasePriceTotalTolerancePercent
         {
             get
@@ -865,6 +905,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CategoryHierarchyName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CategoryHierarchyName
         {
             get
@@ -887,6 +928,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DifferentialJournalName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DifferentialJournalName
         {
             get
@@ -909,6 +951,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InvoicingPeriod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string InvoicingPeriod
         {
             get
@@ -931,6 +974,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllocationKey in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AllocationKey
         {
             get
@@ -953,6 +997,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrimaryReceiptPosting in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ItemVend> PrimaryReceiptPosting
         {
             get
@@ -975,6 +1020,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionHierarchyIsSystemGenerated in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DimensionHierarchyIsSystemGenerated
         {
             get
@@ -997,6 +1043,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RequireDocumentDateOnVendorInvoice in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.VendInvoiceDocDate> RequireDocumentDateOnVendorInvoice
         {
             get
@@ -1019,6 +1066,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaximumOverpaymentOrUnderpayment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MaximumOverpaymentOrUnderpayment is required.")]
         public virtual decimal MaximumOverpaymentOrUnderpayment
         {
             get
@@ -1041,6 +1090,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostProductReceiptInLedger in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PostProductReceiptInLedger
         {
             get
@@ -1063,6 +1113,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisplayInvoiceTotalsMatchIcon in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.DisplayTotalPriceMatchOption> DisplayInvoiceTotalsMatchIcon
         {
             get
@@ -1085,6 +1136,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CreditNoteAsCorrection in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> CreditNoteAsCorrection
         {
             get
@@ -1107,6 +1159,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ResponseToInvoicesThatFailValidation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.InvoicePolicyViolationStatus> ResponseToInvoicesThatFailValidation
         {
             get
@@ -1129,6 +1182,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InvoiceJoiningPreventionOnPromissoryNoteJournals in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> InvoiceJoiningPreventionOnPromissoryNoteJournals
         {
             get
@@ -1151,6 +1205,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AutomationProductReceiptMatching in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AutomationProductReceiptMatching
         {
             get
@@ -1173,6 +1228,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AutomationWorkflowSubmission in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AutomationWorkflowSubmission
         {
             get
@@ -1195,6 +1251,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExpenseJournalName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ExpenseJournalName
         {
             get
@@ -1217,6 +1274,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsCashDiscountCalculatedForPartialPayments in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsCashDiscountCalculatedForPartialPayments
         {
             get
@@ -1239,6 +1297,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostToChargeAccountInLedger in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PostToChargeAccountInLedger
         {
             get
@@ -1261,6 +1320,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PollingInterval_Minutes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PollingInterval_Minutes is required.")]
         public virtual int PollingInterval_Minutes
         {
             get
@@ -1283,6 +1344,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BrokerCategoryHierarchyName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BrokerCategoryHierarchyName
         {
             get
@@ -1305,6 +1367,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SettlePeriod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SettlePeriod
         {
             get
@@ -1327,6 +1390,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxWithholdCompany in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxWithholdCompany
         {
             get
@@ -1349,6 +1413,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostInvoiceMatchDiscrepancies in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.InvoiceMatchPostingOption> PostInvoiceMatchDiscrepancies
         {
             get
@@ -1371,6 +1436,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TimeOfSalesTaxPosting in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.VendTaxRegisterApproval> TimeOfSalesTaxPosting
         {
             get
@@ -1393,6 +1459,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CashFlowLiquidityAccountForPaymentsDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CashFlowLiquidityAccountForPaymentsDisplayValue
         {
             get
@@ -1415,6 +1482,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MatchPriceTotals in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ExtendedPriceMatching> MatchPriceTotals
         {
             get
@@ -1437,6 +1505,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SettlementWriteOffJournalName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SettlementWriteOffJournalName
         {
             get
@@ -1459,6 +1528,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CashFlowPercentageOfAmountToAllocateToCashFlowForecast in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CashFlowPercentageOfAmountToAllocateToCashFlowForecast
         {
             get
@@ -1481,6 +1551,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsCheckInvoiceNumberUsed in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ReuseVoucher> IsCheckInvoiceNumberUsed
         {
             get
@@ -1503,6 +1574,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CreditMaxCheck in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TypeOfCreditmaxCheck> CreditMaxCheck
         {
             get
@@ -1525,6 +1597,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisplayPriceTotalMatchIcon in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ExtendedPriceMatchIcon> DisplayPriceTotalMatchIcon
         {
             get
@@ -1547,6 +1620,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisplayMiscChargeToleranceIcon in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.DisplayInvoiceMiscChargeMatchOption> DisplayMiscChargeToleranceIcon
         {
             get
@@ -1569,6 +1643,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AutomationMatchingPriorToWorkflow in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AutomationMatchingPriorToWorkflow
         {
             get
@@ -1591,6 +1666,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CashFlowTimeBetweenDeliveryDateAndInvoiceDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CashFlowTimeBetweenDeliveryDateAndInvoiceDate
         {
             get
@@ -1613,6 +1689,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionHierarchyType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.DimensionHierarchyType> DimensionHierarchyType
         {
             get
@@ -1635,6 +1712,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InvoiceRemit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string InvoiceRemit
         {
             get
@@ -1657,6 +1735,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RoyaltyExpenseAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RoyaltyExpenseAccountDisplayValue
         {
             get
@@ -1679,6 +1758,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SplitDeliveryInvoice in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> SplitDeliveryInvoice
         {
             get
@@ -1701,6 +1781,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsCashDiscountCalculatedForCreditNotes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsCashDiscountCalculatedForCreditNotes
         {
             get
@@ -1723,6 +1804,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EnableInvoiceMatchingValidation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.UnknownNoYes> EnableInvoiceMatchingValidation
         {
             get
@@ -1745,6 +1827,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxWithholdCalculateCrossCompany in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> TaxWithholdCalculateCrossCompany
         {
             get
@@ -1767,6 +1850,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CashFlowTimeBetweenInvoiceDueDateAndPaymentDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CashFlowTimeBetweenInvoiceDueDateAndPaymentDate
         {
             get
@@ -1789,6 +1873,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Include3wayMatching in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> Include3wayMatching
         {
             get
@@ -1811,6 +1896,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsW9Validation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsW9Validation
         {
             get
@@ -1833,6 +1919,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostingProfileForPaymentJournalWithPrepayment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PostingProfileForPaymentJournalWithPrepayment
         {
             get
@@ -1855,6 +1942,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsAutomaticSettlement in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsAutomaticSettlement
         {
             get
@@ -1877,6 +1965,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ValidateInvoicesInTheJournal in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ValidateInvoicesInTheJournal
         {
             get
@@ -1899,6 +1988,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PrepaymentInvoicePostingProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PrepaymentInvoicePostingProfile
         {
             get
@@ -1921,6 +2011,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FactureIssuePeriod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FactureIssuePeriod is required.")]
         public virtual int FactureIssuePeriod
         {
             get
@@ -1943,6 +2035,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PromissoryNotes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PromissoryNotes
         {
             get
@@ -1965,6 +2058,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CategoryName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CategoryName
         {
             get
@@ -1987,6 +2081,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisplayPriceMatchIcon in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.DisplayPriceMatchOption> DisplayPriceMatchIcon
         {
             get
@@ -2009,6 +2104,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ChargesTolerancePercentage in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ChargesTolerancePercentage is required.")]
         public virtual decimal ChargesTolerancePercentage
         {
             get
@@ -2031,6 +2128,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomCodeForInvoiceGroups in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CustomCodeForInvoiceGroups
         {
             get
@@ -2053,6 +2151,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsMatchCharges in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsMatchCharges
         {
             get
@@ -2075,6 +2174,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllowMatchingPolicyOverride in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PurchMatchingPolicyOverrideOption> AllowMatchingPolicyOverride
         {
             get
@@ -2097,6 +2197,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SettlementWriteOffEnabled in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> SettlementWriteOffEnabled
         {
             get
@@ -2119,6 +2220,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UseDocumentDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> UseDocumentDate
         {
             get
@@ -2141,6 +2243,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultVend in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DefaultVend
         {
             get
@@ -2163,6 +2266,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsShowAmountDebitCredit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsShowAmountDebitCredit
         {
             get
@@ -2185,6 +2289,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsMatchInvoiceTotals in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsMatchInvoiceTotals
         {
             get
@@ -2207,6 +2312,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MandatoryVATNum in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TaxVATNumCountryRegionType> MandatoryVATNum
         {
             get
@@ -2229,6 +2335,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxExemptNumberRequirement in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TaxVATNumCountryRegionType> TaxExemptNumberRequirement
         {
             get
@@ -2251,6 +2358,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultFilterForVendorTransactions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.CustVendShowTransaction> DefaultFilterForVendorTransactions
         {
             get
@@ -2273,6 +2381,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomCodeForWebServiceInvoices in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CustomCodeForWebServiceInvoices
         {
             get
@@ -2295,6 +2404,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DateTreatmentOnPromissoryNoteJournals in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DateTreatmentOnPromissoryNoteJournals
         {
             get
@@ -2317,6 +2427,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DiscountOffsetAccounts in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.DiscountOffsetMethod> DiscountOffsetAccounts
         {
             get
@@ -2339,6 +2450,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RoyaltyAccrualJournalName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RoyaltyAccrualJournalName
         {
             get
@@ -2361,6 +2473,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaximumPennyDifference in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MaximumPennyDifference is required.")]
         public virtual decimal MaximumPennyDifference
         {
             get
@@ -2383,6 +2497,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UseInvoiceGroupsForThisCompany in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> UseInvoiceGroupsForThisCompany
         {
             get
@@ -2405,6 +2520,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SplitDeliveryPackingSlip in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> SplitDeliveryPackingSlip
         {
             get
@@ -2427,6 +2543,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StartingDayOfWeek in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.WeekDays> StartingDayOfWeek
         {
             get
@@ -2449,6 +2566,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaxWaitTimeForInvoiceScheduledStatus_Hours in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MaxWaitTimeForInvoiceScheduledStatus_Hours is required.")]
         public virtual int MaxWaitTimeForInvoiceScheduledStatus_Hours
         {
             get
@@ -2471,6 +2590,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ActivateInvoicePaymentGroups in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ActivateInvoicePaymentGroups
         {
             get
@@ -2493,6 +2613,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property KeepSalesTaxAdjustmentsForPOInvoices in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> KeepSalesTaxAdjustmentsForPOInvoices
         {
             get
@@ -2515,6 +2636,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineMatchingPolicy in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PurchMatchingPolicyOption> LineMatchingPolicy
         {
             get
@@ -2537,6 +2659,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchAgreementDimensionName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PurchAgreementDimensionName
         {
             get
@@ -2559,6 +2682,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultCodeForInvoiceGroups in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.VendInvoiceDefaultGroupType> DefaultCodeForInvoiceGroups
         {
             get
@@ -2581,6 +2705,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WarnIfPaymentProposalUsesMultipleMethodsOfPayment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> WarnIfPaymentProposalUsesMultipleMethodsOfPayment
         {
             get
@@ -2603,6 +2728,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesTaxOnPrepaymentInPaymentJournal in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> SalesTaxOnPrepaymentInPaymentJournal
         {
             get
@@ -2625,6 +2751,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaxInvoicesPerBatch in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MaxInvoicesPerBatch is required.")]
         public virtual int MaxInvoicesPerBatch
         {
             get
@@ -2647,6 +2775,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CashFlowTermsOfPayment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CashFlowTermsOfPayment
         {
             get
@@ -2669,6 +2798,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AdvanceHoldersAutoSettle in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AdvanceHoldersAutoSettle
         {
             get
@@ -2691,6 +2821,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SettlePrepaymentVATType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.CustSettlePrepaymentVATType_RU> SettlePrepaymentVATType
         {
             get
@@ -2713,6 +2844,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxItemGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxItemGroup
         {
             get
@@ -2735,6 +2867,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ImportFormatMappingNameQRBill in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ImportFormatMappingNameQRBill
         {
             get
@@ -2757,6 +2890,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AdvanceHoldersPostingProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AdvanceHoldersPostingProfile
         {
             get
@@ -2779,6 +2913,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AdvanceHoldersSettlementByDimension in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.DimSettlementCtrlType_RU> AdvanceHoldersSettlementByDimension
         {
             get
@@ -2801,6 +2936,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxGroup in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxGroup
         {
             get
@@ -2823,6 +2959,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReversePrepayment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ReversePrepayment
         {
             get
@@ -2845,6 +2982,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisablePaymentIDValidation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DisablePaymentIDValidation
         {
             get
@@ -2867,6 +3005,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PSNPostingDefinitionCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PSNPostingDefinitionCode
         {
             get
@@ -2889,6 +3028,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PSNActivatePurchasingCard in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> PSNActivatePurchasingCard
         {
             get
@@ -2911,6 +3051,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination DimensionCombination
         {
             get

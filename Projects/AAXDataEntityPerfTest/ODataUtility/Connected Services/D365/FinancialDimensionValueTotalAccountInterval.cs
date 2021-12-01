@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for FinancialDimensionValueTotalAccountIntervalSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for FinancialDimensionValueTotalAccountIntervalSingle in the schema.
+    /// </summary>
     public partial class FinancialDimensionValueTotalAccountIntervalSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<FinancialDimensionValueTotalAccountInterval>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionAttributeSingle _FinancialDimensionValueTotalAccountIntervalEntity_RelatedRole_DimensionAttributeEntity;
     }
-        /// <summary>
-        /// There are no comments for FinancialDimensionValueTotalAccountInterval in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for FinancialDimensionValueTotalAccountInterval in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// FinancialDimension
     /// DimensionValue
@@ -117,6 +117,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FinancialDimension in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FinancialDimension is required.")]
         public virtual string FinancialDimension
         {
             get
@@ -139,6 +141,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DimensionValue is required.")]
         public virtual string DimensionValue
         {
             get
@@ -161,6 +165,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FromValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FromValue is required.")]
         public virtual string FromValue
         {
             get
@@ -183,6 +189,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ToValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ToValue is required.")]
         public virtual string ToValue
         {
             get
@@ -205,6 +213,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LegalEntityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LegalEntityId
         {
             get
@@ -227,6 +236,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InvertTotalSign in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> InvertTotalSign
         {
             get
@@ -249,6 +259,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FinancialDimensionValueTotalAccountIntervalEntity_RelatedRole_OfficeAddinLegalEntityEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.OfficeAddinLegalEntity FinancialDimensionValueTotalAccountIntervalEntity_RelatedRole_OfficeAddinLegalEntityEntity
         {
             get
@@ -271,6 +282,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FinancialDimensionValueTotalAccountIntervalEntity_RelatedRole_DimensionAttributeEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FinancialDimensionValueTotalAccountIntervalEntity_RelatedRole_DimensionAttributeEntity is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionAttribute FinancialDimensionValueTotalAccountIntervalEntity_RelatedRole_DimensionAttributeEntity
         {
             get

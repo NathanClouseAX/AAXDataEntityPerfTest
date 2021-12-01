@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for CallCenterCatalogCouponSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CallCenterCatalogCouponSingle in the schema.
+    /// </summary>
     public partial class CallCenterCatalogCouponSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<CallCenterCatalogCoupon>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.RetailCatalogSingle _RetailCatalog;
     }
-        /// <summary>
-        /// There are no comments for CallCenterCatalogCoupon in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CallCenterCatalogCoupon in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// CatalogCode
@@ -94,6 +94,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -116,6 +118,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CatalogCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.MCRTableAll> CatalogCode
         {
             get
@@ -138,6 +141,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CouponId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CouponId is required.")]
         public virtual string CouponId
         {
             get
@@ -160,6 +165,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CatalogNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CatalogNumber is required.")]
         public virtual string CatalogNumber
         {
             get
@@ -182,6 +189,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailCatalog in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetailCatalog is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RetailCatalog RetailCatalog
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ProductMasterColorSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ProductMasterColorSingle in the schema.
+    /// </summary>
     public partial class ProductMasterColorSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ProductMasterColor>
     {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public ProductMasterColorSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ProductMasterColor> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for ProductMasterColorTranslations in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductMasterColorTranslation> ProductMasterColorTranslations
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ProductMasterColorTranslations == null))
-                {
-                    this._ProductMasterColorTranslations = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductMasterColorTranslation>(GetPath("ProductMasterColorTranslations"));
-                }
-                return this._ProductMasterColorTranslations;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductMasterColorTranslation> _ProductMasterColorTranslations;
         /// <summary>
         /// There are no comments for ProductColor in the schema.
         /// </summary>
@@ -97,10 +76,31 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ProductMasterSingle _ProductMaster;
-    }
         /// <summary>
-        /// There are no comments for ProductMasterColor in the schema.
+        /// There are no comments for ProductMasterColorTranslations in the schema.
         /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductMasterColorTranslation> ProductMasterColorTranslations
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ProductMasterColorTranslations == null))
+                {
+                    this._ProductMasterColorTranslations = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.ProductMasterColorTranslation>(GetPath("ProductMasterColorTranslations"));
+                }
+                return this._ProductMasterColorTranslations;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ProductMasterColorTranslation> _ProductMasterColorTranslations;
+    }
+    /// <summary>
+    /// There are no comments for ProductMasterColor in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// ProductMasterNumber
     /// ProductColorId
@@ -147,6 +147,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductMasterNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductMasterNumber is required.")]
         public virtual string ProductMasterNumber
         {
             get
@@ -169,6 +171,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductColorId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductColorId is required.")]
         public virtual string ProductColorId
         {
             get
@@ -191,6 +195,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisplaySequenceNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DisplaySequenceNumber is required.")]
         public virtual decimal DisplaySequenceNumber
         {
             get
@@ -213,6 +219,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReplenishmentWeight in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReplenishmentWeight is required.")]
         public virtual int ReplenishmentWeight
         {
             get
@@ -232,31 +240,11 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnReplenishmentWeightChanging(int value);
         partial void OnReplenishmentWeightChanged();
         /// <summary>
-        /// There are no comments for Property ProductMasterColorTranslations in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductMasterColorTranslation> ProductMasterColorTranslations
-        {
-            get
-            {
-                return this._ProductMasterColorTranslations;
-            }
-            set
-            {
-                this.OnProductMasterColorTranslationsChanging(value);
-                this._ProductMasterColorTranslations = value;
-                this.OnProductMasterColorTranslationsChanged();
-                this.OnPropertyChanged("ProductMasterColorTranslations");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductMasterColorTranslation> _ProductMasterColorTranslations = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductMasterColorTranslation>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnProductMasterColorTranslationsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductMasterColorTranslation> value);
-        partial void OnProductMasterColorTranslationsChanged();
-        /// <summary>
         /// There are no comments for Property ProductColor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductColor is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ProductColor ProductColor
         {
             get
@@ -279,6 +267,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductMaster in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductMaster is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ProductMaster ProductMaster
         {
             get
@@ -297,6 +287,29 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.ProductMaster _ProductMaster;
         partial void OnProductMasterChanging(global::Microsoft.Dynamics.DataEntities.ProductMaster value);
         partial void OnProductMasterChanged();
+        /// <summary>
+        /// There are no comments for Property ProductMasterColorTranslations in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductMasterColorTranslation> ProductMasterColorTranslations
+        {
+            get
+            {
+                return this._ProductMasterColorTranslations;
+            }
+            set
+            {
+                this.OnProductMasterColorTranslationsChanging(value);
+                this._ProductMasterColorTranslations = value;
+                this.OnProductMasterColorTranslationsChanged();
+                this.OnPropertyChanged("ProductMasterColorTranslations");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductMasterColorTranslation> _ProductMasterColorTranslations = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductMasterColorTranslation>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnProductMasterColorTranslationsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ProductMasterColorTranslation> value);
+        partial void OnProductMasterColorTranslationsChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for BudgetTrackingWorkspaceParametersSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BudgetTrackingWorkspaceParametersSingle in the schema.
+    /// </summary>
     public partial class BudgetTrackingWorkspaceParametersSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<BudgetTrackingWorkspaceParameters>
     {
         /// <summary>
@@ -203,9 +203,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.BudgetCycleSingle _BudgetCycles;
     }
-        /// <summary>
-        /// There are no comments for BudgetTrackingWorkspaceParameters in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for BudgetTrackingWorkspaceParameters in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// UserId
@@ -293,6 +293,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -315,6 +317,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UserId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "UserId is required.")]
         public virtual string UserId
         {
             get
@@ -337,6 +341,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetCycleTimeSpanName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BudgetCycleTimeSpanName
         {
             get
@@ -359,6 +364,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ActiveForecastingProcess in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ActiveForecastingProcess
         {
             get
@@ -381,6 +387,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RevenueBudgetThresholdPercent in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RevenueBudgetThresholdPercent is required.")]
         public virtual decimal RevenueBudgetThresholdPercent
         {
             get
@@ -403,6 +411,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExpenseBudgetThresholdPercent in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ExpenseBudgetThresholdPercent is required.")]
         public virtual decimal ExpenseBudgetThresholdPercent
         {
             get
@@ -425,6 +435,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FiscalPeriodEnd in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FiscalPeriodEnd is required.")]
         public virtual global::System.DateTimeOffset FiscalPeriodEnd
         {
             get
@@ -447,6 +459,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FiscalPeriodYear in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FiscalPeriodYear
         {
             get
@@ -469,6 +482,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RevenueDimensionSet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RevenueDimensionSet
         {
             get
@@ -491,6 +505,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetCycleName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BudgetCycleName
         {
             get
@@ -513,6 +528,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetCycleTimeSpanFiscalCalendar in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BudgetCycleTimeSpanFiscalCalendar
         {
             get
@@ -535,6 +551,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FiscalPeriodCalendar in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FiscalPeriodCalendar
         {
             get
@@ -557,6 +574,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetModelId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BudgetModelId
         {
             get
@@ -579,6 +597,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExpenseDimensionSet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ExpenseDimensionSet
         {
             get
@@ -601,6 +620,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FiscalPeriodName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FiscalPeriodName
         {
             get
@@ -623,6 +643,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FiscalPeriodStart in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FiscalPeriodStart is required.")]
         public virtual global::System.DateTimeOffset FiscalPeriodStart
         {
             get
@@ -645,6 +667,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsDefault in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsDefault
         {
             get
@@ -667,6 +690,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OrganizationHierarchy in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OrganizationHierarchy
         {
             get
@@ -689,6 +713,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetAnalysisPeriod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.BudgetAnalysisPeriod> BudgetAnalysisPeriod
         {
             get
@@ -711,6 +736,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExpenseFinancialDimensionSets in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ExpenseFinancialDimensionSets is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet ExpenseFinancialDimensionSets
         {
             get
@@ -733,6 +760,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetModels in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BudgetModels is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.BudgetModel BudgetModels
         {
             get
@@ -755,6 +784,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FiscalPeriods in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FiscalPeriods is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.FiscalPeriod FiscalPeriods
         {
             get
@@ -777,6 +808,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OrganizationHierarchyTypes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "OrganizationHierarchyTypes is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.OrganizationHierarchyType OrganizationHierarchyTypes
         {
             get
@@ -799,6 +832,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SystemUsers in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.SystemUser SystemUsers
         {
             get
@@ -821,6 +855,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RevenueFinancialDimensionSets in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RevenueFinancialDimensionSets is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.FinancialDimensionSet RevenueFinancialDimensionSets
         {
             get
@@ -843,6 +879,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetPlanProcesses in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BudgetPlanProcesses is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.BudgetPlanProcess BudgetPlanProcesses
         {
             get
@@ -865,6 +903,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetCycles in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BudgetCycles is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.BudgetCycle BudgetCycles
         {
             get

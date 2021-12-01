@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for DataManagementTemplateSourceSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for DataManagementTemplateSourceSingle in the schema.
+    /// </summary>
     public partial class DataManagementTemplateSourceSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<DataManagementTemplateSource>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.DataManagementTemplateSourceDependency> _Dependencies;
     }
-        /// <summary>
-        /// There are no comments for DataManagementTemplateSource in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for DataManagementTemplateSource in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// TemplateId
     /// SourceEntity
@@ -111,6 +111,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TemplateId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TemplateId is required.")]
         public virtual string TemplateId
         {
             get
@@ -133,6 +135,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SourceEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SourceEntity is required.")]
         public virtual string SourceEntity
         {
             get
@@ -155,6 +159,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -177,6 +182,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefinitionGroupTemplate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DefinitionGroupTemplate is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.DataManagementTemplate DefinitionGroupTemplate
         {
             get
@@ -199,6 +206,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Dependencies in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.DataManagementTemplateSourceDependency> Dependencies
         {
             get

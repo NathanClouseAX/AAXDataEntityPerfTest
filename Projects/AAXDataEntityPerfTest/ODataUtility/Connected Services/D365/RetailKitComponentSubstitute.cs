@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for RetailKitComponentSubstituteSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailKitComponentSubstituteSingle in the schema.
+    /// </summary>
     public partial class RetailKitComponentSubstituteSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RetailKitComponentSubstitute>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.RetailKitReleasedSubstitute> _RetailKitReleasedSubstitute;
     }
-        /// <summary>
-        /// There are no comments for RetailKitComponentSubstitute in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for RetailKitComponentSubstitute in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// KitProductNumber
     /// KitComponentLineNumber
@@ -116,6 +116,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property KitProductNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "KitProductNumber is required.")]
         public virtual string KitProductNumber
         {
             get
@@ -138,6 +140,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property KitComponentLineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "KitComponentLineNumber is required.")]
         public virtual decimal KitComponentLineNumber
         {
             get
@@ -160,6 +164,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SubstituteProductNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SubstituteProductNumber is required.")]
         public virtual string SubstituteProductNumber
         {
             get
@@ -182,6 +188,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnitOfMeasureSymbol in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string UnitOfMeasureSymbol
         {
             get
@@ -204,6 +211,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Quantity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Quantity is required.")]
         public virtual decimal Quantity
         {
             get
@@ -226,6 +235,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailKitComponent in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetailKitComponent is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RetailKitComponent RetailKitComponent
         {
             get
@@ -248,6 +259,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailKitReleasedSubstitute in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.RetailKitReleasedSubstitute> RetailKitReleasedSubstitute
         {
             get

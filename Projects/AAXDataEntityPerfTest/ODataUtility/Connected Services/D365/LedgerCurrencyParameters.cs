@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for LedgerCurrencyParametersSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LedgerCurrencyParametersSingle in the schema.
+    /// </summary>
     public partial class LedgerCurrencyParametersSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<LedgerCurrencyParameters>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _DimensionCombination;
     }
-        /// <summary>
-        /// There are no comments for LedgerCurrencyParameters in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LedgerCurrencyParameters in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// Ledger_Name
@@ -87,6 +87,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -109,6 +111,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Ledger_Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Ledger_Name is required.")]
         public virtual string Ledger_Name
         {
             get
@@ -131,6 +135,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CurrencyCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CurrencyCode is required.")]
         public virtual string CurrencyCode
         {
             get
@@ -153,6 +159,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LossVendExpenseCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LossVendExpenseCode
         {
             get
@@ -175,6 +182,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ConvertProfitIncomeCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ConvertProfitIncomeCode
         {
             get
@@ -197,6 +205,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProfitCustIncomeCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProfitCustIncomeCode
         {
             get
@@ -219,6 +228,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RealizedProfitEmplLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RealizedProfitEmplLedgerDimensionDisplayValue
         {
             get
@@ -241,6 +251,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RealizedLossEmplLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RealizedLossEmplLedgerDimensionDisplayValue
         {
             get
@@ -263,6 +274,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustPostingMode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.CustVendAmountDiffPostingMode_RU> CustPostingMode
         {
             get
@@ -285,6 +297,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExchRateNonrealLossTaxCust in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ExchAdjTaxableType_W> ExchRateNonrealLossTaxCust
         {
             get
@@ -307,6 +320,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendPostingModeTax in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.CustVendAmountDiffPostingMode_RU> VendPostingModeTax
         {
             get
@@ -329,6 +343,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustPostingModeTax in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.CustVendAmountDiffPostingMode_RU> CustPostingModeTax
         {
             get
@@ -351,6 +366,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExchRateProfitTaxVend in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ExchAdjTaxableType_W> ExchRateProfitTaxVend
         {
             get
@@ -373,6 +389,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExchRatePos in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ExchAdjTaxableType_W> ExchRatePos
         {
             get
@@ -395,6 +412,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExchRateLossTaxVend in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ExchAdjTaxableType_W> ExchRateLossTaxVend
         {
             get
@@ -417,6 +435,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LossCustExpenseCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LossCustExpenseCode
         {
             get
@@ -439,6 +458,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProfitVendPrepaymentIncomeCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProfitVendPrepaymentIncomeCode
         {
             get
@@ -461,6 +481,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExchRateNonrealProfitTaxCust in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ExchAdjTaxableType_W> ExchRateNonrealProfitTaxCust
         {
             get
@@ -483,6 +504,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxAmountDifferenceLoss in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> TaxAmountDifferenceLoss
         {
             get
@@ -505,6 +527,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnrealizedProfitEmplLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string UnrealizedProfitEmplLedgerDimensionDisplayValue
         {
             get
@@ -527,6 +550,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxAmountDiffLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxAmountDiffLedgerDimensionDisplayValue
         {
             get
@@ -549,6 +573,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProfitCustPrepaymentIncomeCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProfitCustPrepaymentIncomeCode
         {
             get
@@ -571,6 +596,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnrealizedProfitCustLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string UnrealizedProfitCustLedgerDimensionDisplayValue
         {
             get
@@ -593,6 +619,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RealizedProfitVendLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RealizedProfitVendLedgerDimensionDisplayValue
         {
             get
@@ -615,6 +642,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxAmountDifference in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> TaxAmountDifference
         {
             get
@@ -637,6 +665,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnrealizedLossEmplLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string UnrealizedLossEmplLedgerDimensionDisplayValue
         {
             get
@@ -659,6 +688,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RealizedLossVendLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RealizedLossVendLedgerDimensionDisplayValue
         {
             get
@@ -681,6 +711,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LossGeneralExpenseCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LossGeneralExpenseCode
         {
             get
@@ -703,6 +734,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnrealizedLossVendLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string UnrealizedLossVendLedgerDimensionDisplayValue
         {
             get
@@ -725,6 +757,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LossVendPrepaymentExpenseCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LossVendPrepaymentExpenseCode
         {
             get
@@ -747,6 +780,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExchRateNeg in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.ExchAdjTaxableType_W> ExchRateNeg
         {
             get
@@ -769,6 +803,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendPostingMode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.CustVendAmountDiffPostingMode_RU> VendPostingMode
         {
             get
@@ -791,6 +826,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProfitEmplIncomeCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProfitEmplIncomeCode
         {
             get
@@ -813,6 +849,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CurConvertLossLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CurConvertLossLedgerDimensionDisplayValue
         {
             get
@@ -835,6 +872,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LossEmplExpenseCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LossEmplExpenseCode
         {
             get
@@ -857,6 +895,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CurConvertProfitLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CurConvertProfitLedgerDimensionDisplayValue
         {
             get
@@ -879,6 +918,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RealizedProfitCustLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RealizedProfitCustLedgerDimensionDisplayValue
         {
             get
@@ -901,6 +941,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LossCustPrepaymentExpenseCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LossCustPrepaymentExpenseCode
         {
             get
@@ -923,6 +964,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RealizedLossCustLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RealizedLossCustLedgerDimensionDisplayValue
         {
             get
@@ -945,6 +987,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProfitVendIncomeCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProfitVendIncomeCode
         {
             get
@@ -967,6 +1010,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxAmountDiffLossLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxAmountDiffLossLedgerDimensionDisplayValue
         {
             get
@@ -989,6 +1033,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxAmountDiffProfitLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxAmountDiffProfitLedgerDimensionDisplayValue
         {
             get
@@ -1011,6 +1056,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnrealizedLossCustLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string UnrealizedLossCustLedgerDimensionDisplayValue
         {
             get
@@ -1033,6 +1079,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnrealizedProfitVendLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string UnrealizedProfitVendLedgerDimensionDisplayValue
         {
             get
@@ -1055,6 +1102,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ConvertLossExpenseCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ConvertLossExpenseCode
         {
             get
@@ -1077,6 +1125,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProfitGeneralIncomeCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProfitGeneralIncomeCode
         {
             get
@@ -1099,6 +1148,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination DimensionCombination
         {
             get

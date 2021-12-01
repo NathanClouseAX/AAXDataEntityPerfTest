@@ -1046,9 +1046,9 @@ public class AAXCustCustomerV5Entity extends common
     {
         return strFmt('SELECT Isnull(Sum(InvoiceAmountMST), 0)   ' + 
                       'FROM   CustInvoiceJour          ' +
-                      'WHERE  DataAreaId = \'%1\'     ' +
+                      'WHERE  DataAreaId = %1     ' +
                       'AND partition = %2      ' +
-                      'AND OrderAccount = \'%3\'     ' +
+                      'AND OrderAccount = %3     ' +
                       'AND Datepart(yyyy, invoicedate) = Datepart(yyyy, Dateadd(year, -1, Getdate()))',
                       SysComputedColumn::returnField(tableStr(AAXCustCustomerV3Entity), identifierStr(CustTable), fieldStr(CustTable, DataAreaId)),
                       SysComputedColumn::returnField(tableStr(AAXCustCustomerV3Entity), identifierStr(CustTable), fieldStr(CustTable, Partition)),
@@ -1064,9 +1064,9 @@ public class AAXCustCustomerV5Entity extends common
     {
         return strFmt('SELECT Isnull(Sum(InvoiceAmountMST), 0)   ' +
                       'FROM   CustInvoiceJour          ' +
-                      'WHERE  DataAreaId = \'%1\'     ' +
+                      'WHERE  DataAreaId = %1     ' +
                       'AND partition = %2      ' +
-                      'AND OrderAccount = \'%3\'     ' +
+                      'AND OrderAccount = %3     ' +
                       'AND Datepart(yyyy, invoicedate) = \'%4\'',
                       SysComputedColumn::returnField(tableStr(AAXCustCustomerV3Entity), identifierStr(CustTable), fieldStr(CustTable, DataAreaId)),
                       SysComputedColumn::returnField(tableStr(AAXCustCustomerV3Entity), identifierStr(CustTable), fieldStr(CustTable, Partition)),
@@ -1134,11 +1134,21 @@ public class AAXCustCustomerV5Entity extends common
 ]]></Source>
 			</Method>
 			<Method>
+				<Name>SalesCurrentYearMST</Name>
+				<Source><![CDATA[
+    public static server str SalesCurrentYearMST()
+    {
+        return(AAXCustCustomerV5Entity::salesByYearMST(year(systemDateGet())));
+    }
+
+]]></Source>
+			</Method>
+			<Method>
 				<Name>SalesFor2021MST</Name>
 				<Source><![CDATA[
     public static server str SalesFor2021MST()
     {
-        return(AAXCustCustomerV4Entity::salesByYearMST(2021));
+        return(AAXCustCustomerV5Entity::salesByYearMST(2021));
     }
 
 ]]></Source>
@@ -1148,7 +1158,7 @@ public class AAXCustCustomerV5Entity extends common
 				<Source><![CDATA[
     public static server str SalesFor2020MST()
     {
-        return(AAXCustCustomerV4Entity::salesByYearMST(2020));
+        return(AAXCustCustomerV5Entity::salesByYearMST(2020));
     }
 
 ]]></Source>
@@ -1158,7 +1168,7 @@ public class AAXCustCustomerV5Entity extends common
 				<Source><![CDATA[
     public static server str SalesFor2019MST()
     {
-        return(AAXCustCustomerV4Entity::salesByYearMST(2019));
+        return(AAXCustCustomerV5Entity::salesByYearMST(2019));
     }
 
 ]]></Source>
@@ -1168,7 +1178,7 @@ public class AAXCustCustomerV5Entity extends common
 				<Source><![CDATA[
     public static server str SalesFor2018MST()
     {
-        return(AAXCustCustomerV4Entity::salesByYearMST(2018));
+        return(AAXCustCustomerV5Entity::salesByYearMST(2018));
     }
 
 ]]></Source>
@@ -1178,7 +1188,7 @@ public class AAXCustCustomerV5Entity extends common
 				<Source><![CDATA[
     public static server str SalesFor2017MST()
     {
-        return(AAXCustCustomerV4Entity::salesByYearMST(2017));
+        return(AAXCustCustomerV5Entity::salesByYearMST(2017));
     }
 
 ]]></Source>
@@ -1188,7 +1198,7 @@ public class AAXCustCustomerV5Entity extends common
 				<Source><![CDATA[
     public static server str SalesFor2016MST()
     {
-        return(AAXCustCustomerV4Entity::salesByYearMST(2016));
+        return(AAXCustCustomerV5Entity::salesByYearMST(2016));
     }
 
 ]]></Source>
@@ -1198,7 +1208,7 @@ public class AAXCustCustomerV5Entity extends common
 				<Source><![CDATA[
     public static server str SalesFor2015MST()
     {
-        return(AAXCustCustomerV4Entity::salesByYearMST(2015));
+        return(AAXCustCustomerV5Entity::salesByYearMST(2015));
     }
 
 ]]></Source>
@@ -1208,7 +1218,7 @@ public class AAXCustCustomerV5Entity extends common
 				<Source><![CDATA[
     public static server str SalesFor2014MST()
     {
-        return(AAXCustCustomerV4Entity::salesByYearMST(2014));
+        return(AAXCustCustomerV5Entity::salesByYearMST(2014));
     }
 
 ]]></Source>
@@ -1218,7 +1228,7 @@ public class AAXCustCustomerV5Entity extends common
 				<Source><![CDATA[
     public static server str SalesFor2013MST()
     {
-        return(AAXCustCustomerV4Entity::salesByYearMST(2013));
+        return(AAXCustCustomerV5Entity::salesByYearMST(2013));
     }
 
 ]]></Source>
@@ -1228,7 +1238,7 @@ public class AAXCustCustomerV5Entity extends common
 				<Source><![CDATA[
     public static server str SalesFor2012MST()
     {
-        return(AAXCustCustomerV4Entity::salesByYearMST(2012));
+        return(AAXCustCustomerV5Entity::salesByYearMST(2012));
     }
 
 ]]></Source>
@@ -1238,7 +1248,7 @@ public class AAXCustCustomerV5Entity extends common
 				<Source><![CDATA[
     public static server str SalesFor2011MST()
     {
-        return(AAXCustCustomerV4Entity::salesByYearMST(2011));
+        return(AAXCustCustomerV5Entity::salesByYearMST(2011));
     }
 
 ]]></Source>
@@ -1248,7 +1258,7 @@ public class AAXCustCustomerV5Entity extends common
 				<Source><![CDATA[
     public static server str SalesFor2010MST()
     {
-        return(AAXCustCustomerV4Entity::salesByYearMST(2010));
+        return(AAXCustCustomerV5Entity::salesByYearMST(2010));
     }
 
 ]]></Source>
@@ -1258,7 +1268,7 @@ public class AAXCustCustomerV5Entity extends common
 				<Source><![CDATA[
     public static server str SalesFor2009MST()
     {
-        return(AAXCustCustomerV4Entity::salesByYearMST(2009));
+        return(AAXCustCustomerV5Entity::salesByYearMST(2009));
     }
 
 ]]></Source>
@@ -1268,7 +1278,7 @@ public class AAXCustCustomerV5Entity extends common
 				<Source><![CDATA[
     public static server str SalesFor2008MST()
     {
-        return(AAXCustCustomerV4Entity::salesByYearMST(2008));
+        return(AAXCustCustomerV5Entity::salesByYearMST(2008));
     }
 
 ]]></Source>
@@ -1278,7 +1288,7 @@ public class AAXCustCustomerV5Entity extends common
 				<Source><![CDATA[
     public static server str SalesFor2007MST()
     {
-        return(AAXCustCustomerV4Entity::salesByYearMST(2007));
+        return(AAXCustCustomerV5Entity::salesByYearMST(2007));
     }
 
 ]]></Source>
@@ -1288,7 +1298,7 @@ public class AAXCustCustomerV5Entity extends common
 				<Source><![CDATA[
     public static server str SalesFor2006MST()
     {
-        return(AAXCustCustomerV4Entity::salesByYearMST(2006));
+        return(AAXCustCustomerV5Entity::salesByYearMST(2006));
     }
 
 ]]></Source>
@@ -1298,7 +1308,7 @@ public class AAXCustCustomerV5Entity extends common
 				<Source><![CDATA[
     public static server str SalesFor2005MST()
     {
-        return(AAXCustCustomerV4Entity::salesByYearMST(2005));
+        return(AAXCustCustomerV5Entity::salesByYearMST(2005));
     }
 
 ]]></Source>
@@ -1308,7 +1318,7 @@ public class AAXCustCustomerV5Entity extends common
 				<Source><![CDATA[
     public static server str SalesFor2004MST()
     {
-        return(AAXCustCustomerV4Entity::salesByYearMST(2004));
+        return(AAXCustCustomerV5Entity::salesByYearMST(2004));
     }
 
 ]]></Source>
@@ -1318,7 +1328,7 @@ public class AAXCustCustomerV5Entity extends common
 				<Source><![CDATA[
     public static server str SalesFor2003MST()
     {
-        return(AAXCustCustomerV4Entity::salesByYearMST(2003));
+        return(AAXCustCustomerV5Entity::salesByYearMST(2003));
     }
 
 ]]></Source>
@@ -1328,7 +1338,7 @@ public class AAXCustCustomerV5Entity extends common
 				<Source><![CDATA[
     public static server str SalesFor2002MST()
     {
-        return(AAXCustCustomerV4Entity::salesByYearMST(2002));
+        return(AAXCustCustomerV5Entity::salesByYearMST(2002));
     }
 
 ]]></Source>
@@ -1346,8 +1356,8 @@ public class AAXCustCustomerV5Entity extends common
 	<Modules>AccountsReceivable</Modules>
 	<PrimaryCompanyContext>DataAreaId</PrimaryCompanyContext>
 	<PrimaryKey>EntityKey</PrimaryKey>
-	<PublicCollectionName>AAXCustomersV3</PublicCollectionName>
-	<PublicEntityName>AAXCustomerV3</PublicEntityName>
+	<PublicCollectionName>AAXCustomersV5</PublicCollectionName>
+	<PublicEntityName>AAXCustomerV5</PublicEntityName>
 	<DeleteActions />
 	<FieldGroups>
 		<AxTableFieldGroup>
@@ -3484,6 +3494,137 @@ public class AAXCustCustomerV5Entity extends common
 			<Label>@SYS316635</Label>
 			<ComputedFieldMethod>employeeResponsibleWorker</ComputedFieldMethod>
 			<ExtendedDataType>HcmPersonnelNumberId</ExtendedDataType>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewUnmappedFieldReal">
+			<Name>SalesCurrentYearMST</Name>
+			<ComputedFieldMethod>SalesCurrentYearMST</ComputedFieldMethod>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewUnmappedFieldReal">
+			<Name>salesLastYearMST</Name>
+			<ComputedFieldMethod>salesLastYearMST</ComputedFieldMethod>
+			<ExtendedDataType>AmountMST</ExtendedDataType>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewUnmappedFieldReal">
+			<Name>SalesYear2021MST</Name>
+			<ComputedFieldMethod>SalesFor2021MST</ComputedFieldMethod>
+			<ExtendedDataType>AmountMST</ExtendedDataType>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewUnmappedFieldReal">
+			<Name>SalesYear2020MST</Name>
+			<ComputedFieldMethod>SalesFor2020MST</ComputedFieldMethod>
+			<ExtendedDataType>AmountMST</ExtendedDataType>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewUnmappedFieldReal">
+			<Name>SalesYear2019MST</Name>
+			<ComputedFieldMethod>SalesFor2019MST</ComputedFieldMethod>
+			<ExtendedDataType>AmountMST</ExtendedDataType>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewUnmappedFieldReal">
+			<Name>SalesYear2018MST</Name>
+			<ComputedFieldMethod>SalesFor2018MST</ComputedFieldMethod>
+			<ExtendedDataType>AmountMST</ExtendedDataType>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewUnmappedFieldReal">
+			<Name>SalesYear2017MST</Name>
+			<ComputedFieldMethod>SalesFor2017MST</ComputedFieldMethod>
+			<ExtendedDataType>AmountMST</ExtendedDataType>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewUnmappedFieldReal">
+			<Name>SalesYear2016MST</Name>
+			<ComputedFieldMethod>SalesFor2016MST</ComputedFieldMethod>
+			<ExtendedDataType>AmountMST</ExtendedDataType>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewUnmappedFieldReal">
+			<Name>SalesYear2015MST</Name>
+			<ComputedFieldMethod>SalesFor2015MST</ComputedFieldMethod>
+			<ExtendedDataType>AmountMST</ExtendedDataType>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewUnmappedFieldReal">
+			<Name>SalesYear2014MST</Name>
+			<ComputedFieldMethod>SalesFor2014MST</ComputedFieldMethod>
+			<ExtendedDataType>AmountMST</ExtendedDataType>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewUnmappedFieldReal">
+			<Name>SalesYear2013MST</Name>
+			<ComputedFieldMethod>SalesFor2013MST</ComputedFieldMethod>
+			<ExtendedDataType>AmountMST</ExtendedDataType>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewUnmappedFieldReal">
+			<Name>SalesYear2012MST</Name>
+			<ComputedFieldMethod>SalesFor2012MST</ComputedFieldMethod>
+			<ExtendedDataType>AmountMST</ExtendedDataType>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewUnmappedFieldReal">
+			<Name>SalesYear2011MST</Name>
+			<ComputedFieldMethod>SalesFor2011MST</ComputedFieldMethod>
+			<ExtendedDataType>AmountMST</ExtendedDataType>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewUnmappedFieldReal">
+			<Name>SalesYear2010MST</Name>
+			<ComputedFieldMethod>SalesFor2010MST</ComputedFieldMethod>
+			<ExtendedDataType>AmountMST</ExtendedDataType>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewUnmappedFieldReal">
+			<Name>SalesYear2009MST</Name>
+			<ComputedFieldMethod>SalesFor2009MST</ComputedFieldMethod>
+			<ExtendedDataType>AmountMST</ExtendedDataType>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewUnmappedFieldReal">
+			<Name>SalesYear2008MST</Name>
+			<ComputedFieldMethod>SalesFor2008MST</ComputedFieldMethod>
+			<ExtendedDataType>AmountMST</ExtendedDataType>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewUnmappedFieldReal">
+			<Name>SalesYear2007MST</Name>
+			<ComputedFieldMethod>SalesFor2007MST</ComputedFieldMethod>
+			<ExtendedDataType>AmountMST</ExtendedDataType>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewUnmappedFieldReal">
+			<Name>SalesYear2006MST</Name>
+			<ComputedFieldMethod>SalesFor2006MST</ComputedFieldMethod>
+			<ExtendedDataType>AmountMST</ExtendedDataType>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewUnmappedFieldReal">
+			<Name>SalesYear2005MST</Name>
+			<ComputedFieldMethod>SalesFor2005MST</ComputedFieldMethod>
+			<ExtendedDataType>AmountMST</ExtendedDataType>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewUnmappedFieldReal">
+			<Name>SalesYear2004MST</Name>
+			<ComputedFieldMethod>SalesFor2004MST</ComputedFieldMethod>
+			<ExtendedDataType>AmountMST</ExtendedDataType>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewUnmappedFieldReal">
+			<Name>SalesYear2003MST</Name>
+			<ComputedFieldMethod>SalesFor2003MST</ComputedFieldMethod>
+			<ExtendedDataType>AmountMST</ExtendedDataType>
+		</AxDataEntityViewField>
+		<AxDataEntityViewField xmlns=""
+			i:type="AxDataEntityViewUnmappedFieldReal">
+			<Name>SalesYear2002MST</Name>
+			<ComputedFieldMethod>SalesFor2002MST</ComputedFieldMethod>
+			<ExtendedDataType>AmountMST</ExtendedDataType>
 		</AxDataEntityViewField>
 	</Fields>
 	<Keys>

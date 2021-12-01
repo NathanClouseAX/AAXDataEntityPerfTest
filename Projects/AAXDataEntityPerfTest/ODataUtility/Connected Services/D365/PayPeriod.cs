@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for PayPeriodSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for PayPeriodSingle in the schema.
+    /// </summary>
     public partial class PayPeriodSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PayPeriod>
     {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public PayPeriodSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<PayPeriod> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for PayrollCalculationFrequencyPayPeriod in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayrollCalculationFrequencyPayPeriod> PayrollCalculationFrequencyPayPeriod
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._PayrollCalculationFrequencyPayPeriod == null))
-                {
-                    this._PayrollCalculationFrequencyPayPeriod = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PayrollCalculationFrequencyPayPeriod>(GetPath("PayrollCalculationFrequencyPayPeriod"));
-                }
-                return this._PayrollCalculationFrequencyPayPeriod;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayrollCalculationFrequencyPayPeriod> _PayrollCalculationFrequencyPayPeriod;
         /// <summary>
         /// There are no comments for PayCycle in the schema.
         /// </summary>
@@ -97,10 +76,31 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.EarningStatementLineInquiry> _PayrollEarningStatement;
-    }
         /// <summary>
-        /// There are no comments for PayPeriod in the schema.
+        /// There are no comments for PayrollCalculationFrequencyPayPeriod in the schema.
         /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayrollCalculationFrequencyPayPeriod> PayrollCalculationFrequencyPayPeriod
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._PayrollCalculationFrequencyPayPeriod == null))
+                {
+                    this._PayrollCalculationFrequencyPayPeriod = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.PayrollCalculationFrequencyPayPeriod>(GetPath("PayrollCalculationFrequencyPayPeriod"));
+                }
+                return this._PayrollCalculationFrequencyPayPeriod;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.PayrollCalculationFrequencyPayPeriod> _PayrollCalculationFrequencyPayPeriod;
+    }
+    /// <summary>
+    /// There are no comments for PayPeriod in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// PayCycleId
     /// PeriodStartDate
@@ -137,6 +137,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayCycleId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PayCycleId is required.")]
         public virtual string PayCycleId
         {
             get
@@ -159,6 +161,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PeriodStartDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PeriodStartDate is required.")]
         public virtual global::System.DateTimeOffset PeriodStartDate
         {
             get
@@ -181,6 +185,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PeriodEndDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PeriodEndDate is required.")]
         public virtual global::System.DateTimeOffset PeriodEndDate
         {
             get
@@ -203,6 +209,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Comments in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Comments
         {
             get
@@ -225,6 +232,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Status in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PayrollPeriodStatus> Status
         {
             get
@@ -247,6 +255,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DefaultPaymentDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DefaultPaymentDate is required.")]
         public virtual global::System.DateTimeOffset DefaultPaymentDate
         {
             get
@@ -266,31 +276,11 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnDefaultPaymentDateChanging(global::System.DateTimeOffset value);
         partial void OnDefaultPaymentDateChanged();
         /// <summary>
-        /// There are no comments for Property PayrollCalculationFrequencyPayPeriod in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayrollCalculationFrequencyPayPeriod> PayrollCalculationFrequencyPayPeriod
-        {
-            get
-            {
-                return this._PayrollCalculationFrequencyPayPeriod;
-            }
-            set
-            {
-                this.OnPayrollCalculationFrequencyPayPeriodChanging(value);
-                this._PayrollCalculationFrequencyPayPeriod = value;
-                this.OnPayrollCalculationFrequencyPayPeriodChanged();
-                this.OnPropertyChanged("PayrollCalculationFrequencyPayPeriod");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayrollCalculationFrequencyPayPeriod> _PayrollCalculationFrequencyPayPeriod = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayrollCalculationFrequencyPayPeriod>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPayrollCalculationFrequencyPayPeriodChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayrollCalculationFrequencyPayPeriod> value);
-        partial void OnPayrollCalculationFrequencyPayPeriodChanged();
-        /// <summary>
         /// There are no comments for Property PayCycle in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PayCycle is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.PayCycle PayCycle
         {
             get
@@ -313,6 +303,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PayrollEarningStatement in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EarningStatementLineInquiry> PayrollEarningStatement
         {
             get
@@ -331,6 +322,29 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EarningStatementLineInquiry> _PayrollEarningStatement = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EarningStatementLineInquiry>(null, global::Microsoft.OData.Client.TrackingMode.None);
         partial void OnPayrollEarningStatementChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.EarningStatementLineInquiry> value);
         partial void OnPayrollEarningStatementChanged();
+        /// <summary>
+        /// There are no comments for Property PayrollCalculationFrequencyPayPeriod in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayrollCalculationFrequencyPayPeriod> PayrollCalculationFrequencyPayPeriod
+        {
+            get
+            {
+                return this._PayrollCalculationFrequencyPayPeriod;
+            }
+            set
+            {
+                this.OnPayrollCalculationFrequencyPayPeriodChanging(value);
+                this._PayrollCalculationFrequencyPayPeriod = value;
+                this.OnPayrollCalculationFrequencyPayPeriodChanged();
+                this.OnPropertyChanged("PayrollCalculationFrequencyPayPeriod");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayrollCalculationFrequencyPayPeriod> _PayrollCalculationFrequencyPayPeriod = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayrollCalculationFrequencyPayPeriod>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPayrollCalculationFrequencyPayPeriodChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.PayrollCalculationFrequencyPayPeriod> value);
+        partial void OnPayrollCalculationFrequencyPayPeriodChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for MainAccountTotalAccountIntervalSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for MainAccountTotalAccountIntervalSingle in the schema.
+    /// </summary>
     public partial class MainAccountTotalAccountIntervalSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<MainAccountTotalAccountInterval>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.MainAccountSingle _TotalAccountMainAccountEntityRole;
     }
-        /// <summary>
-        /// There are no comments for MainAccountTotalAccountInterval in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for MainAccountTotalAccountInterval in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// MainAccountId
     /// ChartOfAccounts
@@ -128,6 +128,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MainAccountId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MainAccountId is required.")]
         public virtual string MainAccountId
         {
             get
@@ -150,6 +152,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ChartOfAccounts in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ChartOfAccounts is required.")]
         public virtual string ChartOfAccounts
         {
             get
@@ -172,6 +176,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FromValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FromValue is required.")]
         public virtual string FromValue
         {
             get
@@ -194,6 +200,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ToValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ToValue is required.")]
         public virtual string ToValue
         {
             get
@@ -216,6 +224,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InvertTotalSign in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> InvertTotalSign
         {
             get
@@ -238,6 +247,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TotalAccountLedgerChartOfAccountsEntityRole in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TotalAccountLedgerChartOfAccountsEntityRole is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ChartOfAccounts TotalAccountLedgerChartOfAccountsEntityRole
         {
             get
@@ -260,6 +271,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TotalAccountMainAccountEntityRole in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "TotalAccountMainAccountEntityRole is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.MainAccount TotalAccountMainAccountEntityRole
         {
             get

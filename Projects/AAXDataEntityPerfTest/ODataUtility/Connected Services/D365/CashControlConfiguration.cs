@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for CashControlConfigurationSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CashControlConfigurationSingle in the schema.
+    /// </summary>
     public partial class CashControlConfigurationSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<CashControlConfiguration>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _CashAccountDimension;
     }
-        /// <summary>
-        /// There are no comments for CashControlConfiguration in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CashControlConfiguration in the schema.
+    /// </summary>
     [global::Microsoft.OData.Client.EntityType()]
     [global::Microsoft.OData.Client.EntitySet("CashControlConfigurations")]
     public partial class CashControlConfiguration : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
@@ -99,6 +99,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CashAccountLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CashAccountLedgerDimensionDisplayValue
         {
             get
@@ -121,6 +122,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ParticipateInCashControl in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ParticipateInCashControl
         {
             get
@@ -143,6 +145,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountsPayableAccountLedgerDimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccountsPayableAccountLedgerDimensionDisplayValue
         {
             get
@@ -165,6 +168,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string dataAreaId
         {
             get
@@ -187,6 +191,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ThresholdAmount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ThresholdAmount is required.")]
         public virtual decimal ThresholdAmount
         {
             get
@@ -209,6 +215,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property APAccountDimension in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination APAccountDimension
         {
             get
@@ -231,6 +238,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CashAccountDimension in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination CashAccountDimension
         {
             get

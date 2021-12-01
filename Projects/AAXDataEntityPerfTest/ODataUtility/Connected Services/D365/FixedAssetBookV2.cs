@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for FixedAssetBookV2Single in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for FixedAssetBookV2Single in the schema.
+    /// </summary>
     public partial class FixedAssetBookV2Single : global::Microsoft.OData.Client.DataServiceQuerySingle<FixedAssetBookV2>
     {
         /// <summary>
@@ -34,27 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public FixedAssetBookV2Single(global::Microsoft.OData.Client.DataServiceQuerySingle<FixedAssetBookV2> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for VendInvoiceJournalLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.VendInvoiceJournalLineSingle VendInvoiceJournalLine
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._VendInvoiceJournalLine == null))
-                {
-                    this._VendInvoiceJournalLine = new global::Microsoft.Dynamics.DataEntities.VendInvoiceJournalLineSingle(this.Context, GetPath("VendInvoiceJournalLine"));
-                }
-                return this._VendInvoiceJournalLine;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.VendInvoiceJournalLineSingle _VendInvoiceJournalLine;
         /// <summary>
         /// There are no comments for FixedAssetBookSpecialDepreciationAllowance in the schema.
         /// </summary>
@@ -433,10 +412,31 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ConsumptionFactorSingle _AssetBookV2ConsumptionFactor;
-    }
         /// <summary>
-        /// There are no comments for FixedAssetBookV2 in the schema.
+        /// There are no comments for VendInvoiceJournalLine in the schema.
         /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.VendInvoiceJournalLineSingle VendInvoiceJournalLine
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._VendInvoiceJournalLine == null))
+                {
+                    this._VendInvoiceJournalLine = new global::Microsoft.Dynamics.DataEntities.VendInvoiceJournalLineSingle(this.Context, GetPath("VendInvoiceJournalLine"));
+                }
+                return this._VendInvoiceJournalLine;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.VendInvoiceJournalLineSingle _VendInvoiceJournalLine;
+    }
+    /// <summary>
+    /// There are no comments for FixedAssetBookV2 in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// FixedAssetNumber
@@ -573,6 +573,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -595,6 +597,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FixedAssetNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FixedAssetNumber is required.")]
         public virtual string FixedAssetNumber
         {
             get
@@ -617,6 +621,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BookId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BookId is required.")]
         public virtual string BookId
         {
             get
@@ -639,6 +645,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceLifeYears in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ServiceLifeYears is required.")]
         public virtual int ServiceLifeYears
         {
             get
@@ -661,6 +669,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllowNetBookValueHigherThanAcquisitionCosts in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AllowNetBookValueHigherThanAcquisitionCosts
         {
             get
@@ -683,6 +692,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DimensionDisplayValue
         {
             get
@@ -705,6 +715,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RevaluationGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RevaluationGroupId
         {
             get
@@ -727,6 +738,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExpectedScrapValueReportingCurrency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ExpectedScrapValueReportingCurrency is required.")]
         public virtual decimal ExpectedScrapValueReportingCurrency
         {
             get
@@ -749,6 +762,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SpecialDepreciationRunDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SpecialDepreciationRunDate is required.")]
         public virtual global::System.DateTimeOffset SpecialDepreciationRunDate
         {
             get
@@ -771,6 +786,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostingProfileId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PostingProfileId
         {
             get
@@ -793,6 +809,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LowValuePoolTransferId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LowValuePoolTransferId
         {
             get
@@ -815,6 +832,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DepreciationGroupId_W in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DepreciationGroupId_W
         {
             get
@@ -837,6 +855,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CalculateDepreciation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> CalculateDepreciation
         {
             get
@@ -859,6 +878,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorAccount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VendorAccount
         {
             get
@@ -881,6 +901,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerAccount in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CustomerAccount
         {
             get
@@ -903,6 +924,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Status in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetStatus> Status
         {
             get
@@ -925,6 +947,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerogatoryTaxModel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> DerogatoryTaxModel
         {
             get
@@ -947,6 +970,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SummarizeByMajorType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> SummarizeByMajorType
         {
             get
@@ -969,6 +993,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AcquisitionPrice in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AcquisitionPrice is required.")]
         public virtual decimal AcquisitionPrice
         {
             get
@@ -991,6 +1017,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DepreciationPeriods in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DepreciationPeriods is required.")]
         public virtual int DepreciationPeriods
         {
             get
@@ -1013,6 +1041,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SpecialDepreciationAllocationStartConvention in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetSpecialDepAllocationConvention_JP> SpecialDepreciationAllocationStartConvention
         {
             get
@@ -1035,6 +1064,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DerogatoryCalculation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DerogatoryCalculation
         {
             get
@@ -1057,6 +1087,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ConsumptionUnitDepreciationReportingCurrency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ConsumptionUnitDepreciationReportingCurrency is required.")]
         public virtual decimal ConsumptionUnitDepreciationReportingCurrency
         {
             get
@@ -1079,6 +1111,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AcquisitionMethodId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AcquisitionMethodId
         {
             get
@@ -1101,6 +1134,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DisposalDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DisposalDate is required.")]
         public virtual global::System.DateTimeOffset DisposalDate
         {
             get
@@ -1123,6 +1158,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExpectedScrapValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ExpectedScrapValue is required.")]
         public virtual decimal ExpectedScrapValue
         {
             get
@@ -1145,6 +1182,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SalesValue is required.")]
         public virtual decimal SalesValue
         {
             get
@@ -1167,6 +1206,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ConsumptionUnitDepreciation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ConsumptionUnitDepreciation is required.")]
         public virtual decimal ConsumptionUnitDepreciation
         {
             get
@@ -1189,6 +1230,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PlacedInService in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PlacedInService is required.")]
         public virtual global::System.DateTimeOffset PlacedInService
         {
             get
@@ -1211,6 +1254,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceLife in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ServiceLife is required.")]
         public virtual decimal ServiceLife
         {
             get
@@ -1233,6 +1278,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SortField2Id in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SortField2Id
         {
             get
@@ -1255,6 +1301,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RevisedAcquisitionCostStartDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RevisedAcquisitionCostStartDate is required.")]
         public virtual global::System.DateTimeOffset RevisedAcquisitionCostStartDate
         {
             get
@@ -1277,6 +1325,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CreateDepreciationAdjustmentsWithBasisAdjustments in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> CreateDepreciationAdjustmentsWithBasisAdjustments
         {
             get
@@ -1299,6 +1348,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SpecialDepreciationAllocationUnit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetAccrualFiscal> SpecialDepreciationAllocationUnit
         {
             get
@@ -1321,6 +1371,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReducingBalanceStraightLineFactor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReducingBalanceStraightLineFactor is required.")]
         public virtual decimal ReducingBalanceStraightLineFactor
         {
             get
@@ -1343,6 +1395,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property VendorInvoice in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string VendorInvoice
         {
             get
@@ -1365,6 +1418,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsAssetGroupDepreciation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsAssetGroupDepreciation
         {
             get
@@ -1387,6 +1441,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExtraordinaryDepreciationLastRunDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ExtraordinaryDepreciationLastRunDate is required.")]
         public virtual global::System.DateTimeOffset ExtraordinaryDepreciationLastRunDate
         {
             get
@@ -1409,6 +1465,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PurchaseOrder in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PurchaseOrder
         {
             get
@@ -1431,6 +1488,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProvisionType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ProvisionType
         {
             get
@@ -1453,6 +1511,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SpecialDepreciationAllocationLastRunDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SpecialDepreciationAllocationLastRunDate is required.")]
         public virtual global::System.DateTimeOffset SpecialDepreciationAllocationLastRunDate
         {
             get
@@ -1475,6 +1535,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DepreciationPeriodsRemaining in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DepreciationPeriodsRemaining is required.")]
         public virtual decimal DepreciationPeriodsRemaining
         {
             get
@@ -1497,6 +1559,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReducingBalanceCheckMaximumPercent in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ReducingBalanceCheckMaximumPercent
         {
             get
@@ -1519,6 +1582,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AcquisitionMethodDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AcquisitionMethodDescription
         {
             get
@@ -1541,6 +1605,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SortField3Id in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SortField3Id
         {
             get
@@ -1563,6 +1628,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RevisedAcquisitionCost in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RevisedAcquisitionCost is required.")]
         public virtual decimal RevisedAcquisitionCost
         {
             get
@@ -1585,6 +1652,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DepreciationRunDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DepreciationRunDate is required.")]
         public virtual global::System.DateTimeOffset DepreciationRunDate
         {
             get
@@ -1607,6 +1676,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ShortenedUsefulLife in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> ShortenedUsefulLife
         {
             get
@@ -1629,6 +1699,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ConsumptionUnitId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ConsumptionUnitId
         {
             get
@@ -1651,6 +1722,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AlternativeDepreciationProfileId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AlternativeDepreciationProfileId
         {
             get
@@ -1673,6 +1745,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SortField1Id in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SortField1Id
         {
             get
@@ -1695,6 +1768,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllowNegativeNetBookValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AllowNegativeNetBookValue
         {
             get
@@ -1717,6 +1791,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReducingBalancePercentageAfterValidation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReducingBalancePercentageAfterValidation is required.")]
         public virtual decimal ReducingBalancePercentageAfterValidation
         {
             get
@@ -1739,6 +1815,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AcceleratedDepreciationLastRunDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AcceleratedDepreciationLastRunDate is required.")]
         public virtual global::System.DateTimeOffset AcceleratedDepreciationLastRunDate
         {
             get
@@ -1761,6 +1839,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AcquisitionDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AcquisitionDate is required.")]
         public virtual global::System.DateTimeOffset AcquisitionDate
         {
             get
@@ -1783,6 +1863,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DepreciationProfileId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DepreciationProfileId
         {
             get
@@ -1805,6 +1886,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllowableLimitForAccumulatedDepreciation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetLimitForAccumulatedDepType_JP> AllowableLimitForAccumulatedDepreciation
         {
             get
@@ -1827,6 +1909,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DepreciationLastRunDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DepreciationLastRunDate is required.")]
         public virtual global::System.DateTimeOffset DepreciationLastRunDate
         {
             get
@@ -1849,6 +1933,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReplacementDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReplacementDate is required.")]
         public virtual global::System.DateTimeOffset ReplacementDate
         {
             get
@@ -1871,6 +1957,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustomerInvoice in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CustomerInvoice
         {
             get
@@ -1893,6 +1980,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExtraordinaryDepreciationProfileId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ExtraordinaryDepreciationProfileId
         {
             get
@@ -1915,6 +2003,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EquallyDividedStartDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EquallyDividedStartDate is required.")]
         public virtual global::System.DateTimeOffset EquallyDividedStartDate
         {
             get
@@ -1937,6 +2027,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AllowDepreciationWhenPlacedInServiceAndDisposalAreInTheSameFiscalYear in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> AllowDepreciationWhenPlacedInServiceAndDisposalAreInTheSameFiscalYear
         {
             get
@@ -1959,6 +2050,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReductionEntryAllocationStartDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReductionEntryAllocationStartDate is required.")]
         public virtual global::System.DateTimeOffset ReductionEntryAllocationStartDate
         {
             get
@@ -1981,6 +2074,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AcceleratedDepreciationProfileId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AcceleratedDepreciationProfileId
         {
             get
@@ -2003,6 +2097,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SpecialDepreciationAllocationPeriods in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SpecialDepreciationAllocationPeriods is required.")]
         public virtual int SpecialDepreciationAllocationPeriods
         {
             get
@@ -2025,6 +2121,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AcquisitionPriceReportingCurrency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AcquisitionPriceReportingCurrency is required.")]
         public virtual decimal AcquisitionPriceReportingCurrency
         {
             get
@@ -2047,6 +2145,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FairValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "FairValue is required.")]
         public virtual decimal FairValue
         {
             get
@@ -2069,6 +2169,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ConsumptionEstimated in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ConsumptionEstimated is required.")]
         public virtual decimal ConsumptionEstimated
         {
             get
@@ -2091,6 +2193,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FixedAssetGroupId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FixedAssetGroupId
         {
             get
@@ -2113,6 +2216,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DepreciationConvention in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetDepreciationConvention> DepreciationConvention
         {
             get
@@ -2135,6 +2239,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ServiceLifeMonths in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ServiceLifeMonths is required.")]
         public virtual int ServiceLifeMonths
         {
             get
@@ -2157,6 +2263,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LowValuePoolTransferDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LowValuePoolTransferDate is required.")]
         public virtual global::System.DateTimeOffset LowValuePoolTransferDate
         {
             get
@@ -2179,6 +2287,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReductionEntryAllocationLastRunDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ReductionEntryAllocationLastRunDate is required.")]
         public virtual global::System.DateTimeOffset ReductionEntryAllocationLastRunDate
         {
             get
@@ -2201,6 +2311,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ConsumptionFactorId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ConsumptionFactorId
         {
             get
@@ -2220,31 +2331,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnConsumptionFactorIdChanging(string value);
         partial void OnConsumptionFactorIdChanged();
         /// <summary>
-        /// There are no comments for Property VendInvoiceJournalLine in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.VendInvoiceJournalLine VendInvoiceJournalLine
-        {
-            get
-            {
-                return this._VendInvoiceJournalLine;
-            }
-            set
-            {
-                this.OnVendInvoiceJournalLineChanging(value);
-                this._VendInvoiceJournalLine = value;
-                this.OnVendInvoiceJournalLineChanged();
-                this.OnPropertyChanged("VendInvoiceJournalLine");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.VendInvoiceJournalLine _VendInvoiceJournalLine;
-        partial void OnVendInvoiceJournalLineChanging(global::Microsoft.Dynamics.DataEntities.VendInvoiceJournalLine value);
-        partial void OnVendInvoiceJournalLineChanged();
-        /// <summary>
         /// There are no comments for Property FixedAssetBookSpecialDepreciationAllowance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.FixedAssetBookSpecialDepreciationAllowance> FixedAssetBookSpecialDepreciationAllowance
         {
             get
@@ -2267,6 +2357,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetBookV2Group in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.FixedAssetGroup AssetBookV2Group
         {
             get
@@ -2289,6 +2380,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetBookV2ConsumptionUnit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.AssetConsumptionUnit AssetBookV2ConsumptionUnit
         {
             get
@@ -2311,6 +2403,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetBookV2SortField1 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.AssetSorting AssetBookV2SortField1
         {
             get
@@ -2333,6 +2426,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetBookV2DepreciationProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DepreciationProfile AssetBookV2DepreciationProfile
         {
             get
@@ -2355,6 +2449,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetBookV2ProvisionType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.AssetProvisionType AssetBookV2ProvisionType
         {
             get
@@ -2377,6 +2472,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetBookV2AcceleratedDepreciationProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DepreciationProfile AssetBookV2AcceleratedDepreciationProfile
         {
             get
@@ -2399,6 +2495,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetBookV2AcquisitionMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.AcquisitionMethod AssetBookV2AcquisitionMethod
         {
             get
@@ -2421,6 +2518,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetBookV2AlternativeDepreciationProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DepreciationProfile AssetBookV2AlternativeDepreciationProfile
         {
             get
@@ -2443,6 +2541,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetBookV2ExtraordinaryDepreciationProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DepreciationProfile AssetBookV2ExtraordinaryDepreciationProfile
         {
             get
@@ -2465,6 +2564,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetBookV2Customer in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.CustomerV3 AssetBookV2Customer
         {
             get
@@ -2487,6 +2587,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetBookV2SortField3 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.AssetSorting AssetBookV2SortField3
         {
             get
@@ -2509,6 +2610,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetProvisionType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.AssetProvisionType AssetProvisionType
         {
             get
@@ -2531,6 +2633,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetBookV2AssetBookId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AssetBookV2AssetBookId is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ValueModelSetup AssetBookV2AssetBookId
         {
             get
@@ -2553,6 +2657,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetBookV2SortField2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.AssetSorting AssetBookV2SortField2
         {
             get
@@ -2575,6 +2680,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetBookV2Vendor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.VendorV2 AssetBookV2Vendor
         {
             get
@@ -2597,6 +2703,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionSet in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionSet DimensionSet
         {
             get
@@ -2619,6 +2726,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AssetBookV2ConsumptionFactor in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.ConsumptionFactor AssetBookV2ConsumptionFactor
         {
             get
@@ -2637,6 +2745,29 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.ConsumptionFactor _AssetBookV2ConsumptionFactor;
         partial void OnAssetBookV2ConsumptionFactorChanging(global::Microsoft.Dynamics.DataEntities.ConsumptionFactor value);
         partial void OnAssetBookV2ConsumptionFactorChanged();
+        /// <summary>
+        /// There are no comments for Property VendInvoiceJournalLine in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.Dynamics.DataEntities.VendInvoiceJournalLine VendInvoiceJournalLine
+        {
+            get
+            {
+                return this._VendInvoiceJournalLine;
+            }
+            set
+            {
+                this.OnVendInvoiceJournalLineChanging(value);
+                this._VendInvoiceJournalLine = value;
+                this.OnVendInvoiceJournalLineChanged();
+                this.OnPropertyChanged("VendInvoiceJournalLine");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.VendInvoiceJournalLine _VendInvoiceJournalLine;
+        partial void OnVendInvoiceJournalLineChanging(global::Microsoft.Dynamics.DataEntities.VendInvoiceJournalLine value);
+        partial void OnVendInvoiceJournalLineChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

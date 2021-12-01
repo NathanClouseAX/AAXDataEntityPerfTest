@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for CustomerPostingProfileLineSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CustomerPostingProfileLineSingle in the schema.
+    /// </summary>
     public partial class CustomerPostingProfileLineSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<CustomerPostingProfileLine>
     {
         /// <summary>
@@ -161,9 +161,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.DimensionCombinationSingle _CustVATPrepaymentsLedgerDimensionCombination;
     }
-        /// <summary>
-        /// There are no comments for CustomerPostingProfileLine in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for CustomerPostingProfileLine in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// PostingProfile
@@ -199,6 +199,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -221,6 +223,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PostingProfile in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "PostingProfile is required.")]
         public virtual string PostingProfile
         {
             get
@@ -243,6 +247,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.TableGroupAll> AccountCode
         {
             get
@@ -265,6 +270,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountOrGroupNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AccountOrGroupNumber is required.")]
         public virtual string AccountOrGroupNumber
         {
             get
@@ -287,6 +294,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LiabilitiesForDiscountMainAccountIdDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LiabilitiesForDiscountMainAccountIdDisplayValue
         {
             get
@@ -309,6 +317,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -331,6 +340,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExportSaleDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ExportSaleDisplayValue
         {
             get
@@ -353,6 +363,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CollectionLetterSequence in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CollectionLetterSequence
         {
             get
@@ -375,6 +386,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HierarchyName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string HierarchyName
         {
             get
@@ -397,6 +409,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesTaxPrepaymentsMainAccountIdDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SalesTaxPrepaymentsMainAccountIdDisplayValue
         {
             get
@@ -419,6 +432,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FineAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FineAccountDisplayValue
         {
             get
@@ -441,6 +455,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EndorseMainAccountIdDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string EndorseMainAccountIdDisplayValue
         {
             get
@@ -463,6 +478,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HierarchyType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.DimensionHierarchyType> HierarchyType
         {
             get
@@ -485,6 +501,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property InterestCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string InterestCode
         {
             get
@@ -507,6 +524,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TaxTransferAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TaxTransferAccountDisplayValue
         {
             get
@@ -529,6 +547,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property HierarchyStatus in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.DimensionHierarchyConstraintStatus> HierarchyStatus
         {
             get
@@ -551,6 +570,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property WriteOffMainAccountIdDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string WriteOffMainAccountIdDisplayValue
         {
             get
@@ -573,6 +593,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FinancialInterestAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FinancialInterestAccountDisplayValue
         {
             get
@@ -595,6 +616,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SettleAccountDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SettleAccountDisplayValue
         {
             get
@@ -617,6 +639,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SummaryMainAccountIdDisplayValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SummaryMainAccountIdDisplayValue
         {
             get
@@ -639,6 +662,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustWriteOffLedgerDimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination CustWriteOffLedgerDimensionCombination
         {
             get
@@ -661,6 +685,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination DimensionCombination
         {
             get
@@ -683,6 +708,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustCustomerPostingProfileHeadRelation in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "CustCustomerPostingProfileHeadRelation is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.CustomerPostingProfile CustCustomerPostingProfileHeadRelation
         {
             get
@@ -705,6 +732,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustLiabilitiesForDiscountLedgerDimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination CustLiabilitiesForDiscountLedgerDimensionCombination
         {
             get
@@ -727,6 +755,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustSummaryLedgerDimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination CustSummaryLedgerDimensionCombination
         {
             get
@@ -749,6 +778,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CustVATPrepaymentsLedgerDimensionCombination in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.DimensionCombination CustVATPrepaymentsLedgerDimensionCombination
         {
             get

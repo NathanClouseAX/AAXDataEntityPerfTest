@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for MaterialSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for MaterialSingle in the schema.
+    /// </summary>
     public partial class MaterialSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<Material>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for Material in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for Material in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// MaterialCode
     /// </KeyProperties>
@@ -62,6 +62,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaterialCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MaterialCode is required.")]
         public virtual string MaterialCode
         {
             get
@@ -84,6 +86,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaterialDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MaterialDescription
         {
             get
@@ -106,6 +109,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ClassCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ClassCode
         {
             get
@@ -128,6 +132,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LabelCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string LabelCode
         {
             get
@@ -150,6 +155,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LimitedQty in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> LimitedQty
         {
             get
@@ -172,6 +178,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StowageCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string StowageCode
         {
             get
@@ -194,6 +201,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PackInstCodePassenger in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PackInstCodePassenger
         {
             get
@@ -216,6 +224,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EMSCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string EMSCode
         {
             get
@@ -238,6 +247,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PackInstCodeCargo in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PackInstCodeCargo
         {
             get
@@ -260,6 +270,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Multiplier in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Multiplier is required.")]
         public virtual decimal Multiplier
         {
             get
@@ -282,6 +294,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EnviroDangerous in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> EnviroDangerous
         {
             get
@@ -304,6 +317,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property UnitOfMeasure in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string UnitOfMeasure
         {
             get
@@ -326,6 +340,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TechnicalNameCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TechnicalNameCode
         {
             get
@@ -348,6 +363,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TransportCategoryCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TransportCategoryCode
         {
             get
@@ -370,6 +386,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IdentificationCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string IdentificationCode
         {
             get
@@ -392,6 +409,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MarinePollutant in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> MarinePollutant
         {
             get
@@ -414,6 +432,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AirType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.HMIMAirType> AirType
         {
             get
@@ -436,6 +455,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RegCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string RegCode
         {
             get
@@ -458,6 +478,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IATAStar in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IATAStar
         {
             get
@@ -480,6 +501,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property NOS in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> NOS
         {
             get
@@ -502,6 +524,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property PackingGroupCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string PackingGroupCode
         {
             get
@@ -524,6 +547,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DivisionCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string DivisionCode
         {
             get
@@ -546,6 +570,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TunnelCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TunnelCode
         {
             get

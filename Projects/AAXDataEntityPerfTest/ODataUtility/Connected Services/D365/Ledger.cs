@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for LedgerSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LedgerSingle in the schema.
+    /// </summary>
     public partial class LedgerSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<Ledger>
     {
         /// <summary>
@@ -34,111 +34,6 @@ namespace Microsoft.Dynamics.DataEntities
         public LedgerSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<Ledger> query)
             : base(query) {}
 
-        /// <summary>
-        /// There are no comments for BudgetRegisterEntryLinePrimaryLedger in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryLineSingle BudgetRegisterEntryLinePrimaryLedger
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._BudgetRegisterEntryLinePrimaryLedger == null))
-                {
-                    this._BudgetRegisterEntryLinePrimaryLedger = new global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryLineSingle(this.Context, GetPath("BudgetRegisterEntryLinePrimaryLedger"));
-                }
-                return this._BudgetRegisterEntryLinePrimaryLedger;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryLineSingle _BudgetRegisterEntryLinePrimaryLedger;
-        /// <summary>
-        /// There are no comments for CurrencyRevaluationAccount in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CurrencyRevaluationAccount> CurrencyRevaluationAccount
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._CurrencyRevaluationAccount == null))
-                {
-                    this._CurrencyRevaluationAccount = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CurrencyRevaluationAccount>(GetPath("CurrencyRevaluationAccount"));
-                }
-                return this._CurrencyRevaluationAccount;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CurrencyRevaluationAccount> _CurrencyRevaluationAccount;
-        /// <summary>
-        /// There are no comments for BudgetRegisterEntryHeaderPrimaryLedger in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeaderSingle BudgetRegisterEntryHeaderPrimaryLedger
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._BudgetRegisterEntryHeaderPrimaryLedger == null))
-                {
-                    this._BudgetRegisterEntryHeaderPrimaryLedger = new global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeaderSingle(this.Context, GetPath("BudgetRegisterEntryHeaderPrimaryLedger"));
-                }
-                return this._BudgetRegisterEntryHeaderPrimaryLedger;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeaderSingle _BudgetRegisterEntryHeaderPrimaryLedger;
-        /// <summary>
-        /// There are no comments for PrimaryLedgerBudgetDimension in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetDimension> PrimaryLedgerBudgetDimension
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._PrimaryLedgerBudgetDimension == null))
-                {
-                    this._PrimaryLedgerBudgetDimension = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetDimension>(GetPath("PrimaryLedgerBudgetDimension"));
-                }
-                return this._PrimaryLedgerBudgetDimension;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetDimension> _PrimaryLedgerBudgetDimension;
-        /// <summary>
-        /// There are no comments for BudgetAllowTransferRuleLedgerEntity in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetAllowTransferRule> BudgetAllowTransferRuleLedgerEntity
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._BudgetAllowTransferRuleLedgerEntity == null))
-                {
-                    this._BudgetAllowTransferRuleLedgerEntity = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetAllowTransferRule>(GetPath("BudgetAllowTransferRuleLedgerEntity"));
-                }
-                return this._BudgetAllowTransferRuleLedgerEntity;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetAllowTransferRule> _BudgetAllowTransferRuleLedgerEntity;
         /// <summary>
         /// There are no comments for LedgerReportingCurrency in the schema.
         /// </summary>
@@ -182,6 +77,27 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.CurrencySingle _LedgerAccountingCurrency;
         /// <summary>
+        /// There are no comments for BudgetAllowTransferRuleLedgerEntity in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetAllowTransferRule> BudgetAllowTransferRuleLedgerEntity
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._BudgetAllowTransferRuleLedgerEntity == null))
+                {
+                    this._BudgetAllowTransferRuleLedgerEntity = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetAllowTransferRule>(GetPath("BudgetAllowTransferRuleLedgerEntity"));
+                }
+                return this._BudgetAllowTransferRuleLedgerEntity;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetAllowTransferRule> _BudgetAllowTransferRuleLedgerEntity;
+        /// <summary>
         /// There are no comments for LedgerEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -223,10 +139,94 @@ namespace Microsoft.Dynamics.DataEntities
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntrySingle _BudgetRegisterEntry;
-    }
         /// <summary>
-        /// There are no comments for Ledger in the schema.
+        /// There are no comments for PrimaryLedgerBudgetDimension in the schema.
         /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetDimension> PrimaryLedgerBudgetDimension
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._PrimaryLedgerBudgetDimension == null))
+                {
+                    this._PrimaryLedgerBudgetDimension = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.BudgetDimension>(GetPath("PrimaryLedgerBudgetDimension"));
+                }
+                return this._PrimaryLedgerBudgetDimension;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.BudgetDimension> _PrimaryLedgerBudgetDimension;
+        /// <summary>
+        /// There are no comments for CurrencyRevaluationAccount in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CurrencyRevaluationAccount> CurrencyRevaluationAccount
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._CurrencyRevaluationAccount == null))
+                {
+                    this._CurrencyRevaluationAccount = Context.CreateQuery<global::Microsoft.Dynamics.DataEntities.CurrencyRevaluationAccount>(GetPath("CurrencyRevaluationAccount"));
+                }
+                return this._CurrencyRevaluationAccount;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.CurrencyRevaluationAccount> _CurrencyRevaluationAccount;
+        /// <summary>
+        /// There are no comments for BudgetRegisterEntryHeaderPrimaryLedger in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeaderSingle BudgetRegisterEntryHeaderPrimaryLedger
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._BudgetRegisterEntryHeaderPrimaryLedger == null))
+                {
+                    this._BudgetRegisterEntryHeaderPrimaryLedger = new global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeaderSingle(this.Context, GetPath("BudgetRegisterEntryHeaderPrimaryLedger"));
+                }
+                return this._BudgetRegisterEntryHeaderPrimaryLedger;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeaderSingle _BudgetRegisterEntryHeaderPrimaryLedger;
+        /// <summary>
+        /// There are no comments for BudgetRegisterEntryLinePrimaryLedger in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryLineSingle BudgetRegisterEntryLinePrimaryLedger
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._BudgetRegisterEntryLinePrimaryLedger == null))
+                {
+                    this._BudgetRegisterEntryLinePrimaryLedger = new global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryLineSingle(this.Context, GetPath("BudgetRegisterEntryLinePrimaryLedger"));
+                }
+                return this._BudgetRegisterEntryLinePrimaryLedger;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryLineSingle _BudgetRegisterEntryLinePrimaryLedger;
+    }
+    /// <summary>
+    /// There are no comments for Ledger in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// LegalEntityId
     /// </KeyProperties>
@@ -240,42 +240,44 @@ namespace Microsoft.Dynamics.DataEntities
         /// <param name="legalEntityId">Initial value of LegalEntityId.</param>
         /// <param name="chartOfAccountsRecId">Initial value of ChartOfAccountsRecId.</param>
         /// <param name="ledgerRecId">Initial value of LedgerRecId.</param>
-        /// <param name="budgetRegisterEntryLinePrimaryLedger">Initial value of BudgetRegisterEntryLinePrimaryLedger.</param>
-        /// <param name="budgetRegisterEntryHeaderPrimaryLedger">Initial value of BudgetRegisterEntryHeaderPrimaryLedger.</param>
         /// <param name="budgetRegisterEntry">Initial value of BudgetRegisterEntry.</param>
+        /// <param name="budgetRegisterEntryHeaderPrimaryLedger">Initial value of BudgetRegisterEntryHeaderPrimaryLedger.</param>
+        /// <param name="budgetRegisterEntryLinePrimaryLedger">Initial value of BudgetRegisterEntryLinePrimaryLedger.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         public static Ledger CreateLedger(string legalEntityId, 
                     long chartOfAccountsRecId, 
                     long ledgerRecId, 
-                    global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryLine budgetRegisterEntryLinePrimaryLedger, 
+                    global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntry budgetRegisterEntry, 
                     global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeader budgetRegisterEntryHeaderPrimaryLedger, 
-                    global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntry budgetRegisterEntry)
+                    global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryLine budgetRegisterEntryLinePrimaryLedger)
         {
             Ledger ledger = new Ledger();
             ledger.LegalEntityId = legalEntityId;
             ledger.ChartOfAccountsRecId = chartOfAccountsRecId;
             ledger.LedgerRecId = ledgerRecId;
-            if ((budgetRegisterEntryLinePrimaryLedger == null))
-            {
-                throw new global::System.ArgumentNullException("budgetRegisterEntryLinePrimaryLedger");
-            }
-            ledger.BudgetRegisterEntryLinePrimaryLedger = budgetRegisterEntryLinePrimaryLedger;
-            if ((budgetRegisterEntryHeaderPrimaryLedger == null))
-            {
-                throw new global::System.ArgumentNullException("budgetRegisterEntryHeaderPrimaryLedger");
-            }
-            ledger.BudgetRegisterEntryHeaderPrimaryLedger = budgetRegisterEntryHeaderPrimaryLedger;
             if ((budgetRegisterEntry == null))
             {
                 throw new global::System.ArgumentNullException("budgetRegisterEntry");
             }
             ledger.BudgetRegisterEntry = budgetRegisterEntry;
+            if ((budgetRegisterEntryHeaderPrimaryLedger == null))
+            {
+                throw new global::System.ArgumentNullException("budgetRegisterEntryHeaderPrimaryLedger");
+            }
+            ledger.BudgetRegisterEntryHeaderPrimaryLedger = budgetRegisterEntryHeaderPrimaryLedger;
+            if ((budgetRegisterEntryLinePrimaryLedger == null))
+            {
+                throw new global::System.ArgumentNullException("budgetRegisterEntryLinePrimaryLedger");
+            }
+            ledger.BudgetRegisterEntryLinePrimaryLedger = budgetRegisterEntryLinePrimaryLedger;
             return ledger;
         }
         /// <summary>
         /// There are no comments for Property LegalEntityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LegalEntityId is required.")]
         public virtual string LegalEntityId
         {
             get
@@ -298,6 +300,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountStructureName15 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccountStructureName15
         {
             get
@@ -320,6 +323,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MainAccountIdUnrealizedLoss in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MainAccountIdUnrealizedLoss
         {
             get
@@ -342,6 +346,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Name
         {
             get
@@ -364,6 +369,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MainAccountIdRealizedGain in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MainAccountIdRealizedGain
         {
             get
@@ -386,6 +392,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MainAccountIdRealizedLoss in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MainAccountIdRealizedLoss
         {
             get
@@ -408,6 +415,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountStructureName17 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccountStructureName17
         {
             get
@@ -430,6 +438,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountStructureName19 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccountStructureName19
         {
             get
@@ -452,6 +461,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MainAccountIdFinancialGain in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MainAccountIdFinancialGain
         {
             get
@@ -474,6 +484,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MainAccountIdUnrealizedGain in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MainAccountIdUnrealizedGain
         {
             get
@@ -496,6 +507,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountStructureName20 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccountStructureName20
         {
             get
@@ -518,6 +530,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Description
         {
             get
@@ -540,6 +553,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountStructureName10 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccountStructureName10
         {
             get
@@ -562,6 +576,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property FiscalCalendar in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string FiscalCalendar
         {
             get
@@ -584,6 +599,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportingCurrency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ReportingCurrency
         {
             get
@@ -606,6 +622,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ReportingCurrencyExchangeRateType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ReportingCurrencyExchangeRateType
         {
             get
@@ -628,6 +645,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountStructureName2 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccountStructureName2
         {
             get
@@ -650,6 +668,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetExchangeRateType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BudgetExchangeRateType
         {
             get
@@ -672,6 +691,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsBudgetControlEnabled in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsBudgetControlEnabled
         {
             get
@@ -694,6 +714,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountStructureName3 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccountStructureName3
         {
             get
@@ -716,6 +737,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountStructureName1 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccountStructureName1
         {
             get
@@ -738,6 +760,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountStructureName6 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccountStructureName6
         {
             get
@@ -760,6 +783,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountStructureName7 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccountStructureName7
         {
             get
@@ -782,6 +806,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountStructureName4 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccountStructureName4
         {
             get
@@ -804,6 +829,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountStructureName5 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccountStructureName5
         {
             get
@@ -826,6 +852,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountStructureName12 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccountStructureName12
         {
             get
@@ -848,6 +875,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountStructureName8 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccountStructureName8
         {
             get
@@ -870,6 +898,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountStructureName9 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccountStructureName9
         {
             get
@@ -892,6 +921,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountingCurrency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccountingCurrency
         {
             get
@@ -914,6 +944,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ChartOfAccounts in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ChartOfAccounts
         {
             get
@@ -936,6 +967,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountStructureName14 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccountStructureName14
         {
             get
@@ -958,6 +990,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ExchangeRateType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ExchangeRateType
         {
             get
@@ -980,6 +1013,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ChartOfAccountsRecId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ChartOfAccountsRecId is required.")]
         public virtual long ChartOfAccountsRecId
         {
             get
@@ -1002,6 +1037,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerRecId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LedgerRecId is required.")]
         public virtual long LedgerRecId
         {
             get
@@ -1024,6 +1061,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountStructureName16 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccountStructureName16
         {
             get
@@ -1046,6 +1084,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MainAccountIdFinancialLoss in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string MainAccountIdFinancialLoss
         {
             get
@@ -1068,6 +1107,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountStructureName11 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccountStructureName11
         {
             get
@@ -1090,6 +1130,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountStructureName18 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccountStructureName18
         {
             get
@@ -1112,6 +1153,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BalancingFinancialDimension in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string BalancingFinancialDimension
         {
             get
@@ -1134,6 +1176,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccountStructureName13 in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AccountStructureName13
         {
             get
@@ -1153,119 +1196,10 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnAccountStructureName13Changing(string value);
         partial void OnAccountStructureName13Changed();
         /// <summary>
-        /// There are no comments for Property BudgetRegisterEntryLinePrimaryLedger in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryLine BudgetRegisterEntryLinePrimaryLedger
-        {
-            get
-            {
-                return this._BudgetRegisterEntryLinePrimaryLedger;
-            }
-            set
-            {
-                this.OnBudgetRegisterEntryLinePrimaryLedgerChanging(value);
-                this._BudgetRegisterEntryLinePrimaryLedger = value;
-                this.OnBudgetRegisterEntryLinePrimaryLedgerChanged();
-                this.OnPropertyChanged("BudgetRegisterEntryLinePrimaryLedger");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryLine _BudgetRegisterEntryLinePrimaryLedger;
-        partial void OnBudgetRegisterEntryLinePrimaryLedgerChanging(global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryLine value);
-        partial void OnBudgetRegisterEntryLinePrimaryLedgerChanged();
-        /// <summary>
-        /// There are no comments for Property CurrencyRevaluationAccount in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CurrencyRevaluationAccount> CurrencyRevaluationAccount
-        {
-            get
-            {
-                return this._CurrencyRevaluationAccount;
-            }
-            set
-            {
-                this.OnCurrencyRevaluationAccountChanging(value);
-                this._CurrencyRevaluationAccount = value;
-                this.OnCurrencyRevaluationAccountChanged();
-                this.OnPropertyChanged("CurrencyRevaluationAccount");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CurrencyRevaluationAccount> _CurrencyRevaluationAccount = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CurrencyRevaluationAccount>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnCurrencyRevaluationAccountChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CurrencyRevaluationAccount> value);
-        partial void OnCurrencyRevaluationAccountChanged();
-        /// <summary>
-        /// There are no comments for Property BudgetRegisterEntryHeaderPrimaryLedger in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeader BudgetRegisterEntryHeaderPrimaryLedger
-        {
-            get
-            {
-                return this._BudgetRegisterEntryHeaderPrimaryLedger;
-            }
-            set
-            {
-                this.OnBudgetRegisterEntryHeaderPrimaryLedgerChanging(value);
-                this._BudgetRegisterEntryHeaderPrimaryLedger = value;
-                this.OnBudgetRegisterEntryHeaderPrimaryLedgerChanged();
-                this.OnPropertyChanged("BudgetRegisterEntryHeaderPrimaryLedger");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeader _BudgetRegisterEntryHeaderPrimaryLedger;
-        partial void OnBudgetRegisterEntryHeaderPrimaryLedgerChanging(global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeader value);
-        partial void OnBudgetRegisterEntryHeaderPrimaryLedgerChanged();
-        /// <summary>
-        /// There are no comments for Property PrimaryLedgerBudgetDimension in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetDimension> PrimaryLedgerBudgetDimension
-        {
-            get
-            {
-                return this._PrimaryLedgerBudgetDimension;
-            }
-            set
-            {
-                this.OnPrimaryLedgerBudgetDimensionChanging(value);
-                this._PrimaryLedgerBudgetDimension = value;
-                this.OnPrimaryLedgerBudgetDimensionChanged();
-                this.OnPropertyChanged("PrimaryLedgerBudgetDimension");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetDimension> _PrimaryLedgerBudgetDimension = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetDimension>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnPrimaryLedgerBudgetDimensionChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetDimension> value);
-        partial void OnPrimaryLedgerBudgetDimensionChanged();
-        /// <summary>
-        /// There are no comments for Property BudgetAllowTransferRuleLedgerEntity in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetAllowTransferRule> BudgetAllowTransferRuleLedgerEntity
-        {
-            get
-            {
-                return this._BudgetAllowTransferRuleLedgerEntity;
-            }
-            set
-            {
-                this.OnBudgetAllowTransferRuleLedgerEntityChanging(value);
-                this._BudgetAllowTransferRuleLedgerEntity = value;
-                this.OnBudgetAllowTransferRuleLedgerEntityChanged();
-                this.OnPropertyChanged("BudgetAllowTransferRuleLedgerEntity");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetAllowTransferRule> _BudgetAllowTransferRuleLedgerEntity = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetAllowTransferRule>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnBudgetAllowTransferRuleLedgerEntityChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetAllowTransferRule> value);
-        partial void OnBudgetAllowTransferRuleLedgerEntityChanged();
-        /// <summary>
         /// There are no comments for Property LedgerReportingCurrency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.Currency LedgerReportingCurrency
         {
             get
@@ -1288,6 +1222,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LedgerAccountingCurrency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.Dynamics.DataEntities.Currency LedgerAccountingCurrency
         {
             get
@@ -1307,9 +1242,33 @@ namespace Microsoft.Dynamics.DataEntities
         partial void OnLedgerAccountingCurrencyChanging(global::Microsoft.Dynamics.DataEntities.Currency value);
         partial void OnLedgerAccountingCurrencyChanged();
         /// <summary>
+        /// There are no comments for Property BudgetAllowTransferRuleLedgerEntity in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetAllowTransferRule> BudgetAllowTransferRuleLedgerEntity
+        {
+            get
+            {
+                return this._BudgetAllowTransferRuleLedgerEntity;
+            }
+            set
+            {
+                this.OnBudgetAllowTransferRuleLedgerEntityChanging(value);
+                this._BudgetAllowTransferRuleLedgerEntity = value;
+                this.OnBudgetAllowTransferRuleLedgerEntityChanged();
+                this.OnPropertyChanged("BudgetAllowTransferRuleLedgerEntity");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetAllowTransferRule> _BudgetAllowTransferRuleLedgerEntity = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetAllowTransferRule>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnBudgetAllowTransferRuleLedgerEntityChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetAllowTransferRule> value);
+        partial void OnBudgetAllowTransferRuleLedgerEntityChanged();
+        /// <summary>
         /// There are no comments for Property LedgerEntity in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetControlConfiguration> LedgerEntity
         {
             get
@@ -1332,6 +1291,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property BudgetRegisterEntry in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BudgetRegisterEntry is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntry BudgetRegisterEntry
         {
             get
@@ -1350,6 +1311,100 @@ namespace Microsoft.Dynamics.DataEntities
         private global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntry _BudgetRegisterEntry;
         partial void OnBudgetRegisterEntryChanging(global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntry value);
         partial void OnBudgetRegisterEntryChanged();
+        /// <summary>
+        /// There are no comments for Property PrimaryLedgerBudgetDimension in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetDimension> PrimaryLedgerBudgetDimension
+        {
+            get
+            {
+                return this._PrimaryLedgerBudgetDimension;
+            }
+            set
+            {
+                this.OnPrimaryLedgerBudgetDimensionChanging(value);
+                this._PrimaryLedgerBudgetDimension = value;
+                this.OnPrimaryLedgerBudgetDimensionChanged();
+                this.OnPropertyChanged("PrimaryLedgerBudgetDimension");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetDimension> _PrimaryLedgerBudgetDimension = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetDimension>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnPrimaryLedgerBudgetDimensionChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.BudgetDimension> value);
+        partial void OnPrimaryLedgerBudgetDimensionChanged();
+        /// <summary>
+        /// There are no comments for Property CurrencyRevaluationAccount in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CurrencyRevaluationAccount> CurrencyRevaluationAccount
+        {
+            get
+            {
+                return this._CurrencyRevaluationAccount;
+            }
+            set
+            {
+                this.OnCurrencyRevaluationAccountChanging(value);
+                this._CurrencyRevaluationAccount = value;
+                this.OnCurrencyRevaluationAccountChanged();
+                this.OnPropertyChanged("CurrencyRevaluationAccount");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CurrencyRevaluationAccount> _CurrencyRevaluationAccount = new global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CurrencyRevaluationAccount>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnCurrencyRevaluationAccountChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.CurrencyRevaluationAccount> value);
+        partial void OnCurrencyRevaluationAccountChanged();
+        /// <summary>
+        /// There are no comments for Property BudgetRegisterEntryHeaderPrimaryLedger in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BudgetRegisterEntryHeaderPrimaryLedger is required.")]
+        public virtual global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeader BudgetRegisterEntryHeaderPrimaryLedger
+        {
+            get
+            {
+                return this._BudgetRegisterEntryHeaderPrimaryLedger;
+            }
+            set
+            {
+                this.OnBudgetRegisterEntryHeaderPrimaryLedgerChanging(value);
+                this._BudgetRegisterEntryHeaderPrimaryLedger = value;
+                this.OnBudgetRegisterEntryHeaderPrimaryLedgerChanged();
+                this.OnPropertyChanged("BudgetRegisterEntryHeaderPrimaryLedger");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeader _BudgetRegisterEntryHeaderPrimaryLedger;
+        partial void OnBudgetRegisterEntryHeaderPrimaryLedgerChanging(global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryHeader value);
+        partial void OnBudgetRegisterEntryHeaderPrimaryLedgerChanged();
+        /// <summary>
+        /// There are no comments for Property BudgetRegisterEntryLinePrimaryLedger in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "BudgetRegisterEntryLinePrimaryLedger is required.")]
+        public virtual global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryLine BudgetRegisterEntryLinePrimaryLedger
+        {
+            get
+            {
+                return this._BudgetRegisterEntryLinePrimaryLedger;
+            }
+            set
+            {
+                this.OnBudgetRegisterEntryLinePrimaryLedgerChanging(value);
+                this._BudgetRegisterEntryLinePrimaryLedger = value;
+                this.OnBudgetRegisterEntryLinePrimaryLedgerChanged();
+                this.OnPropertyChanged("BudgetRegisterEntryLinePrimaryLedger");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryLine _BudgetRegisterEntryLinePrimaryLedger;
+        partial void OnBudgetRegisterEntryLinePrimaryLedgerChanging(global::Microsoft.Dynamics.DataEntities.BudgetRegisterEntryLine value);
+        partial void OnBudgetRegisterEntryLinePrimaryLedgerChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for SalesAgreementLineNoteSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for SalesAgreementLineNoteSingle in the schema.
+    /// </summary>
     public partial class SalesAgreementLineNoteSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<SalesAgreementLineNote>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.SalesAgreementLineSingle _SalesAgreementLine;
     }
-        /// <summary>
-        /// There are no comments for SalesAgreementLineNote in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for SalesAgreementLineNote in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// SalesAgreementId
@@ -108,6 +108,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -130,6 +132,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesAgreementId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SalesAgreementId is required.")]
         public virtual string SalesAgreementId
         {
             get
@@ -152,6 +156,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property LineNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "LineNumber is required.")]
         public virtual decimal LineNumber
         {
             get
@@ -174,6 +180,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DocumentAttachmentTypeCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DocumentAttachmentTypeCode is required.")]
         public virtual string DocumentAttachmentTypeCode
         {
             get
@@ -196,6 +204,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AttachmentDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AttachmentDescription is required.")]
         public virtual string AttachmentDescription
         {
             get
@@ -218,6 +228,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AttachedDateTime in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AttachedDateTime is required.")]
         public virtual global::System.DateTimeOffset AttachedDateTime
         {
             get
@@ -240,6 +252,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AttachingUserId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AttachingUserId
         {
             get
@@ -262,6 +275,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesAgreementLegalEntityId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string SalesAgreementLegalEntityId
         {
             get
@@ -284,6 +298,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AccessRestriction in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.DocuRestriction> AccessRestriction
         {
             get
@@ -306,6 +321,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Notes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Notes
         {
             get
@@ -328,6 +344,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property SalesAgreementLine in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "SalesAgreementLine is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.SalesAgreementLine SalesAgreementLine
         {
             get

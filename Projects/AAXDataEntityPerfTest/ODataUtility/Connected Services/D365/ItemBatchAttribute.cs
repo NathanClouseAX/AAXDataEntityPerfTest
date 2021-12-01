@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ItemBatchAttributeSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ItemBatchAttributeSingle in the schema.
+    /// </summary>
     public partial class ItemBatchAttributeSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ItemBatchAttribute>
     {
         /// <summary>
@@ -56,9 +56,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Microsoft.Dynamics.DataEntities.ItemBatchAttributeValue> _ItemBatchAttributeValues;
     }
-        /// <summary>
-        /// There are no comments for ItemBatchAttribute in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ItemBatchAttribute in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// dataAreaId
     /// AttributeId
@@ -112,6 +112,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property dataAreaId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "dataAreaId is required.")]
         public virtual string dataAreaId
         {
             get
@@ -134,6 +136,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AttributeId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AttributeId is required.")]
         public virtual string AttributeId
         {
             get
@@ -156,6 +160,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaximumDecimalTolerance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MaximumDecimalTolerance is required.")]
         public virtual decimal MaximumDecimalTolerance
         {
             get
@@ -178,6 +184,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AttributeType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PdsBatchAttribType> AttributeType
         {
             get
@@ -200,6 +207,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property DecimalToleranceIncrement in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DecimalToleranceIncrement is required.")]
         public virtual decimal DecimalToleranceIncrement
         {
             get
@@ -222,6 +231,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OptimalDecimal in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "OptimalDecimal is required.")]
         public virtual decimal OptimalDecimal
         {
             get
@@ -244,6 +255,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IntegerToleranceIncrement in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "IntegerToleranceIncrement is required.")]
         public virtual int IntegerToleranceIncrement
         {
             get
@@ -266,6 +279,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OptimalDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "OptimalDate is required.")]
         public virtual global::System.DateTimeOffset OptimalDate
         {
             get
@@ -288,6 +303,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AttributeDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string AttributeDescription
         {
             get
@@ -310,6 +326,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MaximumIntegerTolerance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MaximumIntegerTolerance is required.")]
         public virtual int MaximumIntegerTolerance
         {
             get
@@ -332,6 +350,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OptimalText in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string OptimalText
         {
             get
@@ -354,6 +373,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ToleranceFailingAction in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.PdsBatchAttribToleranceAction> ToleranceFailingAction
         {
             get
@@ -376,6 +396,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MinimumIntegerTolerance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MinimumIntegerTolerance is required.")]
         public virtual int MinimumIntegerTolerance
         {
             get
@@ -398,6 +420,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property MinimumDecimalTolerance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "MinimumDecimalTolerance is required.")]
         public virtual decimal MinimumDecimalTolerance
         {
             get
@@ -420,6 +444,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property OptimalInteger in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "OptimalInteger is required.")]
         public virtual int OptimalInteger
         {
             get
@@ -442,6 +468,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ItemBatchAttributeValues in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Microsoft.Dynamics.DataEntities.ItemBatchAttributeValue> ItemBatchAttributeValues
         {
             get

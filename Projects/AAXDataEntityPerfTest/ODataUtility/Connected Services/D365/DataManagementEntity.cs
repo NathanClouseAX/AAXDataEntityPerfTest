@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for DataManagementEntitySingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for DataManagementEntitySingle in the schema.
+    /// </summary>
     public partial class DataManagementEntitySingle : global::Microsoft.OData.Client.DataServiceQuerySingle<DataManagementEntity>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for DataManagementEntity in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for DataManagementEntity in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// EntityName
     /// </KeyProperties>
@@ -62,6 +62,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EntityName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "EntityName is required.")]
         public virtual string EntityName
         {
             get
@@ -84,6 +86,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RecVersionValue in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RecVersionValue is required.")]
         public virtual int RecVersionValue
         {
             get
@@ -106,6 +110,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property CountryRegionCodes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string CountryRegionCodes
         {
             get
@@ -128,6 +133,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ChangeTrackingType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.DMFChangeTrackingType> ChangeTrackingType
         {
             get
@@ -150,6 +156,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property TargetName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string TargetName
         {
             get
@@ -172,6 +179,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ConfigurationKeyName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string ConfigurationKeyName
         {
             get
@@ -194,6 +202,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property EntityKey in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string EntityKey
         {
             get
@@ -216,6 +225,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Modules in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Modules
         {
             get
@@ -238,6 +248,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StagingTableName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string StagingTableName
         {
             get
@@ -260,6 +271,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IsShared in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.NoYes> IsShared
         {
             get
@@ -282,6 +294,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Tags in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string Tags
         {
             get
@@ -304,6 +317,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property Category in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.EntityCategory> Category
         {
             get

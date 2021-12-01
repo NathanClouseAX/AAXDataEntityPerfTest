@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for LeaseIndexRateSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LeaseIndexRateSingle in the schema.
+    /// </summary>
     public partial class LeaseIndexRateSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<LeaseIndexRate>
     {
         /// <summary>
@@ -35,9 +35,9 @@ namespace Microsoft.Dynamics.DataEntities
             : base(query) {}
 
     }
-        /// <summary>
-        /// There are no comments for LeaseIndexRate in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for LeaseIndexRate in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// IndexRateTypeName
     /// StartDate
@@ -65,6 +65,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IndexRateTypeName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "IndexRateTypeName is required.")]
         public virtual string IndexRateTypeName
         {
             get
@@ -87,6 +89,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property StartDate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "StartDate is required.")]
         public virtual global::System.DateTimeOffset StartDate
         {
             get
@@ -109,6 +113,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IndexRateMethod in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual global::System.Nullable<global::Microsoft.Dynamics.DataEntities.AssetLeaseIndexRateMethod> IndexRateMethod
         {
             get
@@ -131,6 +136,7 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IndexRateTypeDescription in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
         public virtual string IndexRateTypeDescription
         {
             get
@@ -153,6 +159,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property IndexRate in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "IndexRate is required.")]
         public virtual decimal IndexRate
         {
             get

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 7/17/2021 8:49:18 PM
+// Generation date: 11/28/2021 8:55:09 PM
 namespace Microsoft.Dynamics.DataEntities
 {
-        /// <summary>
-        /// There are no comments for ChannelCategoryAttributeSingle in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ChannelCategoryAttributeSingle in the schema.
+    /// </summary>
     public partial class ChannelCategoryAttributeSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ChannelCategoryAttribute>
     {
         /// <summary>
@@ -77,9 +77,9 @@ namespace Microsoft.Dynamics.DataEntities
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.Dynamics.DataEntities.ProductCategorySingle _ProductCategory;
     }
-        /// <summary>
-        /// There are no comments for ChannelCategoryAttribute in the schema.
-        /// </summary>
+    /// <summary>
+    /// There are no comments for ChannelCategoryAttribute in the schema.
+    /// </summary>
     /// <KeyProperties>
     /// RetailChannelId
     /// ProductCategoryHierarchyName
@@ -132,6 +132,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailChannelId in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetailChannelId is required.")]
         public virtual string RetailChannelId
         {
             get
@@ -154,6 +156,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductCategoryHierarchyName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductCategoryHierarchyName is required.")]
         public virtual string ProductCategoryHierarchyName
         {
             get
@@ -176,6 +180,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductCategoryName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductCategoryName is required.")]
         public virtual string ProductCategoryName
         {
             get
@@ -198,6 +204,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AttributeName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AttributeName is required.")]
         public virtual string AttributeName
         {
             get
@@ -220,6 +228,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property AttributeTypeName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "AttributeTypeName is required.")]
         public virtual string AttributeTypeName
         {
             get
@@ -242,6 +252,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property RetailChannel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "RetailChannel is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.RetailChannel RetailChannel
         {
             get
@@ -264,6 +276,8 @@ namespace Microsoft.Dynamics.DataEntities
         /// There are no comments for Property ProductCategory in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "ProductCategory is required.")]
         public virtual global::Microsoft.Dynamics.DataEntities.ProductCategory ProductCategory
         {
             get
