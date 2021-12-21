@@ -12,8 +12,10 @@
     <ProjectGuid>{7739b07e-49de-4511-bf3d-8305edd077dd}</ProjectGuid>
     <Name>AAXDataEntityPerfTest</Name>
     <RootNamespace>AAXDataEntityPerfTest</RootNamespace>
-    <StartupObject>RunnableClass1</StartupObject>
-    <StartupType>Class</StartupType>
+    <StartupObject>
+    </StartupObject>
+    <StartupType>
+    </StartupType>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <Configuration>Debug</Configuration>

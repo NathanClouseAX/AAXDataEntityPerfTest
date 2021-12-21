@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxClass xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Name>CreateSalesData</Name>
+	<SourceCode>
+		<Declaration><![CDATA[
+class CreateSalesData
+{
+}
+]]></Declaration>
+		<Methods>
+			<Method>
+				<Name>Main</Name>
+				<Source><![CDATA[
+    public static void Main(Args args)
+    {
+        container legalEntities = ["JPMF","USMF","USRT"];
+
+        int x = new System.Random().Next(1,conLen(legalEntities)+1);
+
+        try
+        {
+            changecompany(conPeek(legalEntities, x))
+            {
+                int OrderQty = 1;
+
+                var data = AtlDataRootNode::construct();
+                var warehouse = data.invent().warehouses().default();
+                var site =  data.invent().sites().default();
+                var items = data.invent().items();
+                var onHand = data.invent().onHand();
+                var item =  items.default();
+
+                var salesOrder = data.sales().salesOrders().createDefault();
+                var salesLine = salesOrder.addLine().setItem(item).setInventDims([site,warehouse]).setQuantity(OrderQty).save();
+
+                onHand.adjust().forItem(item).forInventDims([salesLine.inventDim().inventDim().InventSite(), salesLine.InventDim().InventDim().InventLocation()]).setQty(OrderQty).execute();
+        
+                salesOrder.postConfirmation();
+                salesOrder.postPackingSlip(SalesUpdate::All);
+                salesOrder.postInvoice();
+
+            }
+        }
+        catch
+        {
+
+        }
+        
+
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>test</Name>
+				<Source><![CDATA[
+    public static void test()
+    {
+        int OrderQty = 1;
+
+        var data = AtlDataRootNode::construct();
+        var warehouse = data.invent().warehouses().default();
+        var site =  data.invent().sites().default();
+        var items = data.invent().items();
+        var onHand = data.invent().onHand();
+        var item =  items.default();
+
+        var salesOrder = data.sales().salesOrders().createDefault();
+        var salesLine = salesOrder.addLine().setItem(item).setInventDims([site,warehouse]).setQuantity(OrderQty).save();
+
+        onHand.adjust().forItem(item).forInventDims([salesLine.inventDim().inventDim().InventSite(), salesLine.InventDim().InventDim().InventLocation()]).setQty(OrderQty).execute();
+        
+        salesOrder.postConfirmation();
+        salesOrder.postPackingSlip(SalesUpdate::All);
+        salesOrder.postInvoice();
+    }
+
+]]></Source>
+			</Method>
+		</Methods>
+	</SourceCode>
+</AxClass>

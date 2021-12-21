@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxClass xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Name>AAXSynthesizeDataBatchBundleDataContract</Name>
+	<SourceCode>
+		<Declaration><![CDATA[
+[DataContractAttribute]
+class AAXSynthesizeDataBatchBundleDataContract
+{
+    Integer minWorkItemId;
+    Integer maxWorkItemId;
+
+}
+]]></Declaration>
+		<Methods>
+			<Method>
+				<Name>parmMinWorkItemId</Name>
+				<Source><![CDATA[
+    [DataMemberAttribute, SysOperationControlVisibilityAttribute(false)]
+    public Integer parmMinWorkItemId(Integer _minWorkItemId = minWorkItemId)
+    {
+        minWorkItemId = _minWorkItemId;
+
+        return minWorkItemId;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>parmMaxWorkItemId</Name>
+				<Source><![CDATA[
+    [DataMemberAttribute, SysOperationControlVisibilityAttribute(false)]
+    public Integer parmMaxWorkItemId(Integer _maxWorkItemId = maxWorkItemId)
+    {
+        maxWorkItemId = _maxWorkItemId;
+
+        return maxWorkItemId;
+    }
+
+]]></Source>
+			</Method>
+		</Methods>
+	</SourceCode>
+</AxClass>

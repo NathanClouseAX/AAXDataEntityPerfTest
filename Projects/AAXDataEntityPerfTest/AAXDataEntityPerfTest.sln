@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30621.155
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1231
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FC65038C-1B2F-41E1-A629-BED71D161FFF}") = "AAXDataEntityPerfTest (USR) [AAXDataEntityPerfTest]", "AAXDataEntityPerfTest\AAXDataEntityPerfTest.rnrproj", "{7739B07E-49DE-4511-BF3D-8305EDD077DD}"
 EndProject
@@ -43,7 +43,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part15", "Part15\Part15.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ODataThrottlingSim", "ODataThrottlingSim\ODataThrottlingSim.csproj", "{8FE652FF-D17E-4007-9CA3-AA08623A3B21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part16", "Part16\Part16.csproj", "{629C3D46-92CD-46BE-90BD-63C2714D3E72}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part17", "Part16\Part17.csproj", "{629C3D46-92CD-46BE-90BD-63C2714D3E72}"
+EndProject
+Project("{FC65038C-1B2F-41E1-A629-BED71D161FFF}") = "SynthesizeTestingData (USR) [AAXDataEntityPerfTest]", "SynthesizeTestingData\SynthesizeTestingData.rnrproj", "{76D6AA0E-081E-4F06-BA08-F9CAC2C4CEF9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +137,10 @@ Global
 		{629C3D46-92CD-46BE-90BD-63C2714D3E72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{629C3D46-92CD-46BE-90BD-63C2714D3E72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{629C3D46-92CD-46BE-90BD-63C2714D3E72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76D6AA0E-081E-4F06-BA08-F9CAC2C4CEF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76D6AA0E-081E-4F06-BA08-F9CAC2C4CEF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76D6AA0E-081E-4F06-BA08-F9CAC2C4CEF9}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{76D6AA0E-081E-4F06-BA08-F9CAC2C4CEF9}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxClass xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Name>StageOrders</Name>
+	<SourceCode>
+		<Declaration><![CDATA[
+class StageOrders
+{
+}
+]]></Declaration>
+		<Methods>
+			<Method>
+				<Name>main</Name>
+				<Source><![CDATA[
+    public static void main(Args _args)
+    {
+        BatchHeader                         batchHeader;
+        SysOperationServiceController       controller;
+        Integer                             workItemsNumber = 1000; // My work item number
+        Integer                             bundleSize = 100; // My bundle size
+
+        ttsbegin;
+
+        batchHeader = BatchHeader::construct();
+
+        AAXSynthesizeDataBatchBundleDataContract bundlesDataContract;
+
+        batchHeader.parmCaption(strFmt('Synthesize Sales Order Posting Data'));
+
+        Integer minItemId = 1;
+        Integer maxItemId = bundleSize;
+
+        while (minItemId <= workItemsNumber)
+        {
+            if (maxItemId > workItemsNumber)
+            {
+                maxItemId = workItemsNumber;
+            }
+
+            controller = AAXSynthesizeDataBatchBundleController::construct(_args);
+            bundlesDataContract = controller.getDataContractObject();
+
+            bundlesDataContract.parmMinWorkItemId(minItemId);
+            bundlesDataContract.parmMaxWorkItemId(maxItemId);
+            batchHeader.addTask(controller);
+
+            minItemId = maxItemId + 1;
+            maxItemId = maxItemId + bundleSize;
+        }
+
+        batchHeader.save();
+
+        ttsCommit;
+
+        info('Done');
+    }
+
+]]></Source>
+			</Method>
+		</Methods>
+	</SourceCode>
+</AxClass>
