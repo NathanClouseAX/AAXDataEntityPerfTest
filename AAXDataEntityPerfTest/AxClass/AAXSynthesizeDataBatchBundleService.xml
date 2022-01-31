@@ -15,7 +15,7 @@ class AAXSynthesizeDataBatchBundleService extends SysOperationServiceBase
     {
         for (Integer i=_dataContract.parmMinWorkItemId(); i<=_dataContract.parmMaxWorkItemId(); i++)
         {
-            CreateSalesData::Main(new Args());// process work item
+            CreateSalesData::Main(new Args());
         }
     }
 
