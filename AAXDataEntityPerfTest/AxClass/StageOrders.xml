@@ -15,8 +15,8 @@ class StageOrders
     {
         BatchHeader                         batchHeader;
         SysOperationServiceController       controller;
-        Integer                             workItemsNumber = 1000; // My work item number
-        Integer                             bundleSize = 100; // My bundle size
+        Integer                             workItemsNumber = 1000000;
+        Integer                             bundleSize = 1000; 
 
         ttsbegin;
 
