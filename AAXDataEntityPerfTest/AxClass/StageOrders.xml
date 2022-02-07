@@ -15,8 +15,8 @@ class StageOrders
     {
         BatchHeader                         batchHeader;
         SysOperationServiceController       controller;
-        Integer                             workItemsNumber = 1000000;
-        Integer                             bundleSize = 1000; 
+        Integer                             workItemsNumber = 1000000;   //number of orders to create
+        Integer                             bundleSize = 1000;           //number of orders per thread
 
         ttsbegin;
 
