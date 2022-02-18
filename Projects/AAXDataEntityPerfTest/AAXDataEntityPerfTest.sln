@@ -47,6 +47,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part17", "Part16\Part17.csp
 EndProject
 Project("{FC65038C-1B2F-41E1-A629-BED71D161FFF}") = "SynthesizeTestingData (USR) [AAXDataEntityPerfTest]", "SynthesizeTestingData\SynthesizeTestingData.rnrproj", "{76D6AA0E-081E-4F06-BA08-F9CAC2C4CEF9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{08D8EE09-600E-4317-A92E-CC232A773AA6}"
+	ProjectSection(SolutionItems) = preProject
+		Excel\Data Entity Method Execution.xlsx = Excel\Data Entity Method Execution.xlsx
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
