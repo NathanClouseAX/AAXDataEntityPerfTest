@@ -624,6 +624,88 @@ public class AAXTableEntity extends common
 
 ]]></Source>
 			</Method>
+			<Method>
+				<Name>postGetStagingData</Name>
+				<Source><![CDATA[
+    public static void postGetStagingData(DMFDefinitionGroupExecution _dmfDefinitionGroupExecution)
+    {
+        AAXActivityLogger::writeToFile(funcName());
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>defaultCTQuery</Name>
+				<Source><![CDATA[
+    public static Query defaultCTQuery(DictDataEntity dataEntity)
+    {
+        AAXActivityLogger::writeToFile(funcName());
+
+        return null;
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>copyCustomStagingToTarget</Name>
+				<Source><![CDATA[
+    public static container copyCustomStagingToTarget(DMFDefinitionGroupExecution _dmfDefinitionGroupExecution)
+    {
+        AAXActivityLogger::writeToFile(funcName());
+
+        return connull();
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>preTargetSetBased</Name>
+				<Source><![CDATA[
+    public static void preTargetSetBased(DMFDefinitionGroupExecution _dmfDefinitionGroupExecution)
+    {
+        AAXActivityLogger::writeToFile(funcName());
+
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>postTarget</Name>
+				<Source><![CDATA[
+    public static void postTarget(DMFDefinitionGroupExecution _dmfDefinitionGroupExecution)
+    {
+        AAXActivityLogger::writeToFile(funcName());
+
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>orderByFieldListForImportExport</Name>
+				<Source><![CDATA[
+    public static container orderByFieldListForImportExport(str _tableName, DMFOperationType _operationType = DMFOperationType::All)
+    {
+        container fieldList = conNull();
+        SortOrder sortOrder = SortOrder::Ascending;
+        DictTable dictTable = new DictTable(tablename2id(_tableName));
+
+        AAXActivityLogger::writeToFile(funcName());
+        
+        return [fieldList, sortOrder];
+    }
+
+]]></Source>
+			</Method>
+			<Method>
+				<Name>postStaging</Name>
+				<Source><![CDATA[
+    public static void postStaging(DMFDefinitionGroupExecution _dmfDefinitionGroupExecution)
+    {
+        AAXActivityLogger::writeToFile(funcName());
+    }
+
+]]></Source>
+			</Method>
 		</Methods>
 	</SourceCode>
 	<SubscriberAccessLevel>
